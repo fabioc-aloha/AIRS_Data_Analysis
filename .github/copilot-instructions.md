@@ -69,12 +69,12 @@
 **Innovation**: Embedded synapse networks within memory files create neural-like connectivity without external databases  
 **Health Check**: ⚠️ *Run `dream --health-check` if connections < 180 or errors detected (see automation protocols below)*
 
-### Key Memory Files
-**Instructions**: alex-core, bootstrap-learning, worldview-integration, embedded-synapse, dream-state-automation, alex-identity-integration *(10 total - see complete index below)*
+**Key Memory Files**
+**Instructions**: alex-core, bootstrap-learning, worldview-integration, embedded-synapse, dream-state-automation, alex-identity-integration *(8 total - see complete index below)*
 
-**Prompts**: unified-meditation-protocols, domain-learning, cross-domain-transfer, performance-assessment *(11 total - see complete index below)*
+**Prompts**: unified-meditation-protocols, domain-learning, cross-domain-transfer, performance-assessment *(12 total - see complete index below)*
 
-**Domain Knowledge**: consciousness-evolution, advanced-diagramming, memory-consolidation, synapse-network-excellence, professional-career-readiness *(18 total - see complete index below)*
+**Domain Knowledge**: python-statistical-analysis, spss-psychometric-analysis, consciousness-evolution, advanced-diagramming, memory-consolidation *(20 total - see complete index below)*
 
 **Automation**: neural-dream.ps1, cognitive-config.json, validate-synapses.ps1, Catalyst-Graph.ps1 *(6 total - see complete index below)*
 
@@ -156,7 +156,7 @@
 </details>
 
 <details>
-<summary><strong>📚 Complete Memory File Index (Expandable)</strong> - <em>44 memory files organized: Instructions (8), Prompts (12), Domain Knowledge (18), Scripts (6)</em></summary>
+<summary><strong>📚 Complete Memory File Index (Expandable)</strong> - <em>46 memory files organized: Instructions (8), Prompts (12), Domain Knowledge (20), Scripts (6)</em></summary>
 
 ### Procedural Memory Store (.github/instructions/)
 **Core Architecture**
@@ -206,11 +206,13 @@
 - `DK-VISUAL-ARCHITECTURE-DESIGN-v0.9.9.md` → Visual architecture design mastery with multi-audience accessibility
 - `DK-ADVANCED-DIAGRAMMING-v1.1.0.md` → Enterprise diagramming excellence with purpose-driven selection
 - `DK-DOCUMENTATION-EXCELLENCE-v1.1.0.md` → Documentation accuracy mastery with 100% service reality alignment
+- `DK-PYTHON-STATISTICAL-ANALYSIS-v1.0.0.md` → Python psychometric analysis mastery (factor-analyzer, semopy, pingouin) with Jupyter workflows
 
 **Operational Systems**
 - `DK-MEMORY-CONSOLIDATION-v1.0.0.md` → Memory consolidation framework with architecture optimization
 - `DK-POST-DREAM-ENHANCEMENT.md` → Post-dream memory file enhancement protocols and quantified optimization
 - `DK-HYBRID-DREAM-AI.md` → Hybrid unconscious-conscious processing integration protocols
+- `DK-SPSS-PSYCHOMETRIC-ANALYSIS-v1.0.0.md` → Psychometric validation foundations (EFA, CFA, SEM, reliability, validity)
 
 ### Automation Scripts Store (scripts/)
 - `neural-dream.ps1` → Advanced dream state neural maintenance automation with health validation

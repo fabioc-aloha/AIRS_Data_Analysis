@@ -1,0 +1,98 @@
+# Git attributes for AIRS Data Analysis Project
+
+# ============================================================================
+# Line Ending Normalization
+# ============================================================================
+
+# Auto-detect text files and normalize line endings to LF
+* text=auto
+
+# Explicitly declare text files
+*.md text
+*.txt text
+*.csv text
+*.json text
+*.yml text
+*.yaml text
+
+# Python
+*.py text
+*.ipynb text
+
+# R
+*.R text
+*.Rmd text
+
+# Documentation
+*.tex text
+LICENSE text
+README text
+
+# ============================================================================
+# Binary Files
+# ============================================================================
+
+# Images
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.svg binary
+
+# Data files
+*.sav binary
+*.rds binary
+*.RData binary
+*.rda binary
+*.pkl binary
+*.pickle binary
+
+# Documents
+*.pdf binary
+*.doc binary
+*.docx binary
+*.xls binary
+*.xlsx binary
+
+# Archives
+*.zip binary
+*.tar binary
+*.gz binary
+*.7z binary
+*.rar binary
+
+# ============================================================================
+# Jupyter Notebooks
+# ============================================================================
+
+# Keep notebook outputs for reproducibility but handle merge conflicts
+*.ipynb merge=union
+
+# ============================================================================
+# Language Statistics
+# ============================================================================
+
+# Ensure GitHub language detection is accurate
+*.ipynb linguist-detectable=true
+*.R linguist-detectable=true
+*.Rmd linguist-detectable=true
+
+# Exclude generated files from language stats
+AIRS_Analysis_files/** linguist-generated=true
+
+# Exclude Alex architecture from language stats (framework, not project code)
+.github/copilot-instructions.md linguist-documentation=true
+.github/instructions/** linguist-documentation=true
+.github/prompts/** linguist-documentation=true
+domain-knowledge/** linguist-documentation=true
+scripts/neural-dream.ps1 linguist-vendored=true
+scripts/validate-synapses.ps1 linguist-vendored=true
+
+# ============================================================================
+# Diff Settings
+# ============================================================================
+
+# Improve diff display for specific file types
+*.ipynb diff=jupyternotebook
+*.csv diff=csv

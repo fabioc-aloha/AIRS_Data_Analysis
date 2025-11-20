@@ -1,0 +1,329 @@
+# AIRS Data Analysis Project - .gitignore
+
+# ============================================================================
+# Python
+# ============================================================================
+
+# Virtual environments
+venv/
+.venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
+
+# IPython
+profile_default/
+ipython_config.py
+
+# pyenv
+.python-version
+
+# Environments
+.env
+.venv
+
+# ============================================================================
+# R
+# ============================================================================
+
+# History files
+.Rhistory
+.Rapp.history
+
+# Session Data files
+.RData
+.RDataTmp
+
+# User-specific files
+.Ruserdata
+
+# Example code in package build process
+*-Ex.R
+
+# Output files from R CMD build
+/*.tar.gz
+
+# Output files from R CMD check
+/*.Rcheck/
+
+# RStudio files
+.Rproj.user/
+*.Rproj
+
+# produced vignettes
+vignettes/*.html
+vignettes/*.pdf
+
+# OAuth2 token, see https://github.com/hadley/httr/releases/tag/v0.3
+.httr-oauth
+
+# knitr and R markdown default cache directories
+*_cache/
+/cache/
+
+# Temporary files created by R markdown
+*.utf8.md
+*.knit.md
+
+# R Environment Variables
+.Renviron
+
+# ============================================================================
+# Data Files (PRIVACY & SIZE)
+# ============================================================================
+
+# Exclude raw data files (sensitive information)
+# Keep structure but not actual data for reproducibility
+data/*.csv
+data/*.sav
+data/*.xlsx
+data/*.xls
+data/*.rds
+data/*.rda
+data/*.RData
+
+# Allow the cleaned data template/structure documentation
+!data/README.md
+!data/.gitkeep
+
+# ============================================================================
+# Analysis Outputs
+# ============================================================================
+
+# Results directory - version control code, not outputs
+results/**/*.png
+results/**/*.jpg
+results/**/*.jpeg
+results/**/*.pdf
+results/**/*.svg
+results/**/*.html
+results/**/*.pkl
+results/**/*.rds
+results/**/*.RData
+
+# Allow results structure
+!results/README.md
+!results/.gitkeep
+!results/models/.gitkeep
+!results/plots/.gitkeep
+!results/tables/.gitkeep
+
+# Keep CSV tables for reproducibility (small text files)
+!results/tables/*.csv
+
+# ============================================================================
+# Operating System
+# ============================================================================
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Linux
+*~
+.directory
+.Trash-*
+
+# ============================================================================
+# IDEs & Editors
+# ============================================================================
+
+# VS Code
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+
+# PyCharm
+.idea/
+*.iml
+*.iws
+out/
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Vim
+[._]*.s[a-v][a-z]
+[._]*.sw[a-p]
+[._]s[a-rt-v][a-z]
+[._]ss[a-gi-z]
+[._]sw[a-p]
+
+# Emacs
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+
+# ============================================================================
+# Documentation & Reports
+# ============================================================================
+
+# Keep markdown documentation but exclude generated files
+*.html
+!AIRS_Analysis_Guide_Concise*.html
+
+# LaTeX
+*.aux
+*.log
+*.toc
+*.out
+*.bbl
+*.blg
+*.synctex.gz
+*.fdb_latexmk
+*.fls
+
+# ============================================================================
+# Archives & Backups
+# ============================================================================
+
+# Compressed files
+*.zip
+*.tar
+*.tar.gz
+*.rar
+*.7z
+
+# Backup files
+*.bak
+*.backup
+*.old
+*.orig
+*~
+
+# ============================================================================
+# Logs & Temporary Files
+# ============================================================================
+
+# Log files
+*.log
+logs/
+*.log.*
+
+# Temporary files
+*.tmp
+*.temp
+temp/
+tmp/
+
+# ============================================================================
+# Alex Cognitive Architecture (Optional)
+# ============================================================================
+
+# Keep architecture files but exclude maintenance logs
+archive/
+!archive/README.md
+
+# Keep cognitive framework
+!.github/copilot-instructions.md
+!.github/instructions/
+!.github/prompts/
+!domain-knowledge/
+!scripts/
+
+# ============================================================================
+# Project-Specific
+# ============================================================================
+
+# Exclude large HTML analysis reports (regenerate from .Rmd)
+AIRS_Analysis_files/
+
+# Keep notebook outputs for dissertation but exclude checkpoint backups
+# (Jupyter outputs tracked for reproducibility)
+
+# Exclude personal notes not for publication
+**/PERSONAL_NOTES.md
+**/TODO.md
+drafts/
+
+# ============================================================================
+# Security & Credentials
+# ============================================================================
+
+# Never commit credentials
+.env
+.env.*
+credentials.json
+secrets.json
+*.key
+*.pem
+*.ppk
+
+# API keys
+**/api_keys.txt
+**/config/secrets.*
+
+# ============================================================================
+# END
+# ============================================================================

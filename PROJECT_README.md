@@ -72,7 +72,7 @@ AIRS_Data_Analysis/
 ├── AIRS Survey Instrument v5.md            # Survey documentation
 ├── AIRS DBA Project Proposal v4.md         # Theoretical framework
 ├── requirements.txt                         # Python dependencies
-└── README.md                                # This file
+└── PROJECT_README.md                        # This file
 
 Alex Cognitive Architecture Files:
 ├── .github/
