@@ -9,14 +9,16 @@ Output: data/AIRS_clean.csv (analysis-ready dataset)
 Processing Steps:
 1. Load raw data (skip Centiment metadata rows)
 2. Rename columns to construct/item codes
-3. Duration analysis and quality checks
-4. IP geolocation (IP → US state codes)
-5. Attention check filtering
-6. Convert to numeric and validate ranges
-7. Create analysis dataset with control variables
-8. Save clean dataset
+3. Filter for complete surveys only
+4. Duration analysis and quality checks
+5. IP geolocation (IP → US state codes)
+6. Attention check filtering
+7. Convert to numeric and validate ranges
+8. Create analysis dataset with control variables
+9. Save clean dataset
 
 Quality Control Features:
+- Survey completion filtering (only "complete" status included)
 - Attention check filtering (Item: "Disagree with this statement")
 - Speeder detection (< 3 minutes completion)
 - Duration outlier flagging (> 60 minutes)
@@ -94,8 +96,27 @@ class AIRSPreprocessor:
         print("✓ Variable renaming complete")
         return self
     
+    def filter_complete_surveys(self):
+        """Step 3: Filter for complete surveys only"""
+        print("\n--- Survey Completion Status ---")
+        
+        # Display completion status distribution
+        status_counts = self.data_raw['Survey_Status'].value_counts(dropna=False)
+        print(f"Survey status distribution:\n{status_counts}\n")
+        
+        # Filter for complete surveys
+        initial_n = len(self.data_raw)
+        self.data_raw = self.data_raw[self.data_raw['Survey_Status'] == 'complete'].copy()
+        filtered_n = len(self.data_raw)
+        removed_n = initial_n - filtered_n
+        
+        print(f"✓ Complete surveys: {filtered_n}")
+        print(f"✗ Incomplete surveys removed: {removed_n} ({100*removed_n/initial_n:.1f}%)")
+        
+        return self
+    
     def analyze_duration(self):
-        """Step 3: Duration analysis and quality checks"""
+        """Step 4: Duration analysis and quality checks"""
         print("\n--- Survey Duration Analysis ---")
         self.data_raw['Duration_seconds'] = pd.to_numeric(self.data_raw['Duration_seconds'], errors='coerce')
         self.data_raw['Duration_minutes'] = self.data_raw['Duration_seconds'] / 60
@@ -115,7 +136,7 @@ class AIRSPreprocessor:
         return self
     
     def geolocate_ips(self):
-        """Step 4: Convert IP addresses to US state codes using ipinfo.io"""
+        """Step 5: Convert IP addresses to US state codes using ipinfo.io"""
         print("\n--- IP Geolocation Processing ---")
         
         unique_ips = self.data_raw['IP_Address'].dropna().unique()
@@ -181,7 +202,7 @@ class AIRSPreprocessor:
             return 'Unknown'
     
     def filter_attention_check(self):
-        """Step 5: Filter responses that failed attention check"""
+        """Step 6: Filter responses that failed attention check"""
         print("\n--- Attention Check Analysis ---")
         att_counts = self.data_raw['ATT_CHECK'].value_counts(dropna=False)
         print(f"Attention check distribution:\n{att_counts}\n")
@@ -198,7 +219,7 @@ class AIRSPreprocessor:
         return self
     
     def convert_to_numeric(self):
-        """Step 6: Convert Likert items to numeric"""
+        """Step 7: Convert Likert items to numeric"""
         likert_vars = [name for name in self.item_names if name != "ATT_CHECK"]
         
         for var in likert_vars:
@@ -217,7 +238,7 @@ class AIRSPreprocessor:
         return self
     
     def apply_demographic_labels(self):
-        """Step 6.5: Apply human-readable labels to demographic variables"""
+        """Step 8: Apply human-readable labels to demographic variables"""
         print("\n--- Applying Demographic Labels ---")
         
         # Role labels (already numeric 1-8 in data)
@@ -284,7 +305,7 @@ class AIRSPreprocessor:
         return self
     
     def create_analysis_dataset(self):
-        """Step 7: Create final analysis dataset"""
+        """Step 9: Create final analysis dataset"""
         print("\n--- Dataset Creation ---")
         
         likert_vars = [name for name in self.item_names if name != "ATT_CHECK"]
@@ -340,6 +361,7 @@ class AIRSPreprocessor:
         (self
          .load_raw_data()
          .rename_columns()
+         .filter_complete_surveys()
          .analyze_duration()
          .geolocate_ips()
          .filter_attention_check()
