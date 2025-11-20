@@ -9,7 +9,7 @@ Modular Python scripts for data preprocessing and quality control.
 ### `preprocess_airs_data.py` ⭐
 **Primary data preprocessing pipeline**
 
-Converts raw Qualtrics CSV to clean analysis dataset with quality checks, geolocation, and control variables.
+Converts raw Centiment CSV to clean analysis dataset with quality checks, geolocation, and control variables.
 
 **Usage**:
 ```bash
@@ -17,7 +17,7 @@ python preprocess_airs_data.py
 ```
 
 **Processing Steps**:
-1. Load raw data (skip Qualtrics metadata)
+1. Load raw data (skip Centiment metadata)
 2. Rename to standardized codes (PE1, BI4, etc.)
 3. Duration analysis (speeders/outliers)
 4. IP → US state geolocation

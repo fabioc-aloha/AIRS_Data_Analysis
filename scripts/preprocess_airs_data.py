@@ -1,13 +1,13 @@
 """
 AIRS Data Preprocessing Pipeline
 ==================================
-Converts raw Qualtrics survey data to clean analysis-ready dataset.
+Converts raw Centiment survey data to clean analysis-ready dataset.
 
-Input:  data/AIRS---AI-Readiness-Scale.csv (raw Qualtrics export)
+Input:  data/AIRS---AI-Readiness-Scale.csv (raw Centiment export)
 Output: data/AIRS_clean.csv (analysis-ready dataset)
 
 Processing Steps:
-1. Load raw data (skip Qualtrics metadata rows)
+1. Load raw data (skip Centiment metadata rows)
 2. Rename columns to construct/item codes
 3. Duration analysis and quality checks
 4. IP geolocation (IP → US state codes)
@@ -62,7 +62,7 @@ class AIRSPreprocessor:
         ]
         
     def load_raw_data(self):
-        """Step 1: Load raw Qualtrics export (skip metadata rows)"""
+        """Step 1: Load raw Centiment export (skip metadata rows)"""
         print("=== AIRS Data Preprocessing ===\n")
         self.data_raw = pd.read_csv(self.raw_data_path, skiprows=2)
         print(f"✓ Raw data loaded: {self.data_raw.shape[0]} observations × {self.data_raw.shape[1]} variables")
@@ -75,10 +75,11 @@ class AIRSPreprocessor:
         
         # Rename key columns
         self.data_raw.rename(columns={
+            self.data_raw.columns[6]: "Survey_Status",  # Survey completion status (e.g., "complete")
             self.data_raw.columns[8]: "Duration_seconds",
             self.data_raw.columns[9]: "IP_Address",
             self.data_raw.columns[11]: "Consent",
-            self.data_raw.columns[12]: "Status",
+            self.data_raw.columns[12]: "Role",  # Respondent role (1-8 numeric codes)
             self.data_raw.columns[42]: "Usage_MSCopilot",
             self.data_raw.columns[43]: "Usage_ChatGPT",
             self.data_raw.columns[44]: "Usage_Gemini",
@@ -114,25 +115,30 @@ class AIRSPreprocessor:
         return self
     
     def geolocate_ips(self):
-        """Step 4: Convert IP addresses to US state codes"""
+        """Step 4: Convert IP addresses to US state codes using ipinfo.io"""
         print("\n--- IP Geolocation Processing ---")
         
         unique_ips = self.data_raw['IP_Address'].dropna().unique()
         print(f"Processing {len(unique_ips)} unique IP addresses...")
+        print("Using ipinfo.io (50,000 requests/month free) with ip-api.com fallback")
         
         ip_to_region = {}
         for i, ip in enumerate(unique_ips):
             ip_to_region[ip] = self._get_location_from_ip(ip)
             
-            # Rate limiting: ip-api.com allows 45 requests/minute
-            if (i + 1) % 40 == 0:
-                print(f"  Processed {i + 1}/{len(unique_ips)} IPs (pausing for rate limit)...")
-                sleep(2)
+            # Rate limiting: Process in batches with progress updates
+            if (i + 1) % 50 == 0:
+                print(f"  Processed {i + 1}/{len(unique_ips)} IPs...")
+                sleep(1)  # Brief pause to avoid overwhelming the API
         
         self.data_raw['Region'] = self.data_raw['IP_Address'].map(ip_to_region).fillna('Unknown')
         
         region_counts = self.data_raw['Region'].value_counts()
+        unknown_count = (self.data_raw['Region'] == 'Unknown').sum()
+        success_rate = ((len(self.data_raw) - unknown_count) / len(self.data_raw) * 100)
+        
         print(f"✓ Geolocation complete: {len(region_counts)} unique regions")
+        print(f"  Success rate: {success_rate:.1f}% ({len(self.data_raw) - unknown_count}/{len(self.data_raw)} IPs resolved)")
         print(f"\nTop 5 regions:")
         print(region_counts.head(5))
         
@@ -140,20 +146,38 @@ class AIRSPreprocessor:
     
     @staticmethod
     def _get_location_from_ip(ip_address):
-        """Helper: Convert IP to region using ip-api.com"""
+        """Helper: Convert IP to region using ipinfo.io (more reliable, 50k/month free)"""
         if pd.isna(ip_address) or ip_address == '':
             return 'Unknown'
         
         try:
+            # Try ipinfo.io first (more reliable)
+            response = requests.get(f'https://ipinfo.io/{ip_address}/json', timeout=5)
+            if response.status_code == 200:
+                data = response.json()
+                country = data.get('country', '')
+                
+                if country == 'US':
+                    # For US IPs, return state code
+                    region = data.get('region', 'Unknown')
+                    return region if region else 'Unknown'
+                elif country:
+                    # For non-US, return country code
+                    return f"Non-US_{country}"
+                    
+            # Fallback to ip-api.com if ipinfo fails
             response = requests.get(f'http://ip-api.com/json/{ip_address}', timeout=5)
             if response.status_code == 200:
                 data = response.json()
-                if data.get('status') == 'success' and data.get('countryCode') == 'US':
-                    return data.get('region', 'Unknown')
-                elif data.get('status') == 'success':
-                    return f"Non-US_{data.get('countryCode', 'Unknown')}"
+                if data.get('status') == 'success':
+                    country_code = data.get('countryCode', '')
+                    if country_code == 'US':
+                        return data.get('region', 'Unknown')
+                    elif country_code:
+                        return f"Non-US_{country_code}"
+                        
             return 'Unknown'
-        except Exception:
+        except Exception as e:
             return 'Unknown'
     
     def filter_attention_check(self):
@@ -192,6 +216,73 @@ class AIRSPreprocessor:
         
         return self
     
+    def apply_demographic_labels(self):
+        """Step 6.5: Apply human-readable labels to demographic variables"""
+        print("\n--- Applying Demographic Labels ---")
+        
+        # Role labels (already numeric 1-8 in data)
+        role_labels = {
+            1: 'Student',
+            2: 'Instructor/Teacher',
+            3: 'Administrator',
+            4: 'IT Professional',
+            5: 'Researcher',
+            6: 'Business Professional',
+            7: 'Healthcare Professional',
+            8: 'Other'
+        }
+        
+        # Education labels
+        education_labels = {
+            1: 'High School',
+            2: 'Some College',
+            3: "Associate's Degree",
+            4: "Bachelor's Degree",
+            5: "Master's Degree",
+            6: 'Doctoral Degree'
+        }
+        
+        # Industry labels
+        industry_labels = {
+            1: 'Healthcare',
+            2: 'Technology',
+            3: 'Manufacturing',
+            4: 'Retail',
+            5: 'Finance',
+            6: 'Government',
+            7: 'Non-profit',
+            8: 'Other',
+            9: 'Education'
+        }
+        
+        # Experience labels
+        experience_labels = {
+            1: 'Less than 1 year',
+            2: '1-3 years',
+            3: '4-6 years',
+            4: '7-10 years',
+            5: 'More than 10 years'
+        }
+        
+        # Disability labels
+        disability_labels = {
+            1: 'Yes',
+            2: 'No',
+            3: 'Prefer not to say'
+        }
+        
+        # Apply mappings
+        self.data_clean['Role'] = self.data_clean['Role'].map(role_labels)
+        self.data_clean['Education'] = self.data_clean['Education'].map(education_labels)
+        self.data_clean['Industry'] = self.data_clean['Industry'].map(industry_labels)
+        self.data_clean['Experience'] = self.data_clean['Experience'].map(experience_labels)
+        self.data_clean['Disability'] = self.data_clean['Disability'].map(disability_labels)
+        
+        print("✓ Applied labels: Role, Education, Industry, Experience, Disability")
+        print("✓ Demographic variables now use human-readable labels")
+        
+        return self
+    
     def create_analysis_dataset(self):
         """Step 7: Create final analysis dataset"""
         print("\n--- Dataset Creation ---")
@@ -201,14 +292,11 @@ class AIRSPreprocessor:
         analysis_vars = (
             ["Region", "Duration_minutes"] +  # Control variables
             likert_vars +  # 28 Likert items
-            ["Status", "Education", "Industry", "Experience", "Disability"] +  # Demographics
+            ["Role", "Education", "Industry", "Experience", "Disability"] +  # Demographics
             ["Usage_MSCopilot", "Usage_ChatGPT", "Usage_Gemini", "Usage_Other"]  # Usage
         )
         
         self.data_clean = self.data_clean[analysis_vars].copy()
-        
-        # Rename Status to Role for clarity
-        self.data_clean.rename(columns={"Status": "Role"}, inplace=True)
         
         print(f"✓ Analysis dataset: {len(self.data_clean)} obs × {len(self.data_clean.columns)} vars")
         print("✓ Includes: Region, Duration_minutes, 28 Likert items, demographics, usage")
@@ -256,6 +344,7 @@ class AIRSPreprocessor:
          .geolocate_ips()
          .filter_attention_check()
          .convert_to_numeric()
+         .apply_demographic_labels()
          .create_analysis_dataset()
          .save_clean_data()
          .print_summary())
@@ -265,9 +354,11 @@ class AIRSPreprocessor:
 
 def main():
     """Main execution function"""
-    # Define paths
-    raw_path = "../data/AIRS---AI-Readiness-Scale.csv"
-    clean_path = "../data/AIRS_clean.csv"
+    # Define paths relative to script location
+    script_dir = Path(__file__).parent
+    project_dir = script_dir.parent
+    raw_path = project_dir / "data" / "AIRS---AI-Readiness-Scale.csv"
+    clean_path = project_dir / "data" / "AIRS_clean.csv"
     
     # Run preprocessing pipeline
     preprocessor = AIRSPreprocessor(raw_path, clean_path)

@@ -19,7 +19,7 @@
 **Pipeline Steps**:
 ```python
 (self
- .load_raw_data()           # Step 1: Load from Qualtrics CSV
+ .load_raw_data()           # Step 1: Load from Centiment CSV
  .rename_columns()          # Step 2: Standardize to PE1, BI4, etc.
  .analyze_duration()        # Step 3: Speeder/outlier detection
  .geolocate_ips()          # Step 4: IP → US state codes
