@@ -1,9 +1,13 @@
-# AIRS Data Analysis Project
-## AI Readiness Score (AIRS) - Psychometric Validation and Structural Equation Modeling
+<div align="center">
+  <img src="assets/banner.svg" alt="AIRS Data Analysis Project" width="100%">
+</div>
+
+---
 
 [![Python](https://img.shields.io/badge/Python-3.12-blue.svg)](https://www.python.org/)
 [![Analysis](https://img.shields.io/badge/Analysis-Complete-brightgreen.svg)]()
 [![N](https://img.shields.io/badge/Sample-N%3D201-orange.svg)]()
+[![License](https://img.shields.io/badge/License-See%20LICENSE.md-blue.svg)](LICENSE.md)
 
 ---
 
