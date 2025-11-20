@@ -1,7 +1,7 @@
 # Hypothesis Testing Implementation Summary
 
-**Date**: 2025-01-31  
-**Version**: 1.0  
+**Date**: 2025-01-31
+**Version**: 1.0
 **Status**: Implementation Complete - Awaiting Execution
 
 ---
@@ -25,8 +25,8 @@ This document summarizes the comprehensive hypothesis testing implementation add
 ### Section 12: Hypothesis Testing Results
 
 #### 12.1 H1: UTAUT2 Prediction Test
-**Location**: Cell after Section 11 (SEM Analysis)  
-**Purpose**: Test whether UTAUT2 core constructs significantly predict behavioral intention  
+**Location**: Cell after Section 11 (SEM Analysis)
+**Purpose**: Test whether UTAUT2 core constructs significantly predict behavioral intention
 
 **Implementation**:
 ```python
@@ -49,8 +49,8 @@ sig_paths = paths[paths['p-value'] < 0.05]
 ---
 
 #### 12.2 H2: AI Constructs Incremental Validity Test
-**Location**: Cell after H1  
-**Purpose**: Test whether AI constructs (TE, TR, TST, AN, PR) add predictive power beyond UTAUT2  
+**Location**: Cell after H1
+**Purpose**: Test whether AI constructs (TE, TR, TST, AN, PR) add predictive power beyond UTAUT2
 
 **Implementation**:
 ```python
@@ -74,8 +74,8 @@ p_value = chi2.sf(delta_chi2, delta_df)  # Statistical significance
 ---
 
 #### 12.3 H3: AIRS vs UTAUT2 Variance Comparison Test
-**Location**: Cell after H2  
-**Purpose**: Test whether AIRS explains significantly more variance in BI than UTAUT2  
+**Location**: Cell after H2
+**Purpose**: Test whether AIRS explains significantly more variance in BI than UTAUT2
 
 **Implementation**:
 ```python
@@ -100,8 +100,8 @@ delta_r2 = r2_model2 - r2_model1
 #### 12.4 H4: Moderation Analysis
 
 ##### 12.4.0 H4 Preparation: Grouping Variable Feasibility Check
-**Location**: First cell in H4 section  
-**Purpose**: Verify availability and distribution of moderator variables  
+**Location**: First cell in H4 section
+**Purpose**: Verify availability and distribution of moderator variables
 
 **Implementation**:
 ```python
@@ -113,7 +113,7 @@ df_full['Role'].value_counts()
 
 # Create Usage_Composite and tertile groups
 df_full['Usage_Composite'] = df_full[usage_cols].mean(axis=1)
-df_full['Usage_Group'] = pd.qcut(df_full['Usage_Composite'], q=3, 
+df_full['Usage_Group'] = pd.qcut(df_full['Usage_Composite'], q=3,
                                   labels=['Low', 'Medium', 'High'])
 
 # Check Business_Unit availability
@@ -132,15 +132,15 @@ else:
 ---
 
 ##### 12.4.1 H4a: Role Moderation (Student vs. Employed)
-**Location**: Cell after H4 preparation  
-**Purpose**: Test whether UTAUT2 relationships differ between students and employed individuals  
+**Location**: Cell after H4 preparation
+**Purpose**: Test whether UTAUT2 relationships differ between students and employed individuals
 
 **Implementation**:
 ```python
 # Create binary Role_Group
-df_full.loc[df_full['Role'].str.contains('student', case=False, na=False), 
+df_full.loc[df_full['Role'].str.contains('student', case=False, na=False),
             'Role_Group'] = 'Student'
-df_full.loc[df_full['Role'].str.contains('employed|working', case=False, na=False), 
+df_full.loc[df_full['Role'].str.contains('employed|working', case=False, na=False),
             'Role_Group'] = 'Employed'
 
 # Fit separate models per group
@@ -169,8 +169,8 @@ paths_comparison['Δβ'] = β_Employed - β_Students
 ---
 
 ##### 12.4.2 H4b: Usage Frequency Moderation (Low/Medium/High)
-**Location**: Cell after H4a  
-**Purpose**: Test whether UTAUT2 relationships differ across AI usage experience levels  
+**Location**: Cell after H4a
+**Purpose**: Test whether UTAUT2 relationships differ across AI usage experience levels
 
 **Implementation**:
 ```python
@@ -207,23 +207,23 @@ paths_usage['β_Range'] = paths_usage[['β_Low', 'β_Medium', 'β_High']].max(ax
 ---
 
 ##### 12.4.3 H4c: Business Unit Moderation (Not Implemented)
-**Status**: Variable likely not available in dataset  
+**Status**: Variable likely not available in dataset
 **Recommendation**: Document in limitations section if Business_Unit not collected or preprocessed
 
 ---
 
 #### 12.5 Hypothesis Testing Summary
-**Location**: Cell after all hypothesis tests  
-**Purpose**: Consolidated table of all hypotheses with verdicts and implications  
+**Location**: Cell after all hypothesis tests
+**Purpose**: Consolidated table of all hypotheses with verdicts and implications
 
 **Implementation**:
 ```python
 hypothesis_summary = pd.DataFrame({
-    'Hypothesis': ['H1: UTAUT2 Prediction', 'H2: AI Incremental Validity', 
-                   'H3: AIRS vs UTAUT2', 'H4a: Role Moderation', 
+    'Hypothesis': ['H1: UTAUT2 Prediction', 'H2: AI Incremental Validity',
+                   'H3: AIRS vs UTAUT2', 'H4a: Role Moderation',
                    'H4b: Usage Moderation'],
     'Status': ['Execute cells above to determine', ...],
-    'Key Evidence': ['Path coefficients PE→BI, EE→BI, ...', 
+    'Key Evidence': ['Path coefficients PE→BI, EE→BI, ...',
                      'ΔR² from hierarchical regression', ...],
     'Theoretical Implications': ['UTAUT2 validity in AI domain', ...]
 })
@@ -301,7 +301,7 @@ Provide explicit, evidence-based answers to the two primary research questions.
 
 ---
 
-**Integration**: 
+**Integration**:
 - RQ1 identifies WHAT factors predict (comprehensive list)
 - RQ2 quantifies HOW MUCH traditional constructs predict (variance magnitude)
 - Together: Theoretical foundation + practical guidance + validated instrument (AIRS) + boundary conditions
@@ -311,8 +311,8 @@ Provide explicit, evidence-based answers to the two primary research questions.
 ## Technical Approach
 
 ### Multi-Group SEM Implementation
-**Challenge**: semopy 2.3.13 does not support native multi-group syntax  
-**Solution**: Fit separate models per group, manually compare path coefficients  
+**Challenge**: semopy 2.3.13 does not support native multi-group syntax
+**Solution**: Fit separate models per group, manually compare path coefficients
 
 **Workaround Code**:
 ```python
@@ -334,7 +334,7 @@ paths_group2 = est_group2[(est_group2['op'] == '~') & (est_group2['lval'] == 'BI
 Δβ = β_group2 - β_group1
 ```
 
-**Justification**: 
+**Justification**:
 - Separate fitting approach is computationally equivalent to multi-group SEM for path comparison
 - Allows manual specification of moderation thresholds
 - More transparent for research reporting
@@ -344,8 +344,8 @@ paths_group2 = est_group2[(est_group2['op'] == '~') & (est_group2['lval'] == 'BI
 ### Moderation Thresholds
 
 #### Role Moderation (H4a)
-**Threshold**: |Δβ| > 0.10  
-**Rationale**: 
+**Threshold**: |Δβ| > 0.10
+**Rationale**:
 - Cohen (1988) suggests d = 0.20 as "small" effect
 - In SEM, |β| = 0.10 ≈ d = 0.20 in path models
 - Indicates meaningful practical difference in predictor-outcome relationships
@@ -358,8 +358,8 @@ paths_group2 = est_group2[(est_group2['op'] == '~') & (est_group2['lval'] == 'BI
 ---
 
 #### Usage Frequency Moderation (H4b)
-**Threshold**: β_Range > 0.15  
-**Rationale**: 
+**Threshold**: β_Range > 0.15
+**Rationale**:
 - More stringent than H4a due to 3-group comparison (not binary)
 - Range = max(β_Low, β_Medium, β_High) - min(β_Low, β_Medium, β_High)
 - Captures non-linear moderation patterns
@@ -409,7 +409,7 @@ All cells in Sections 1-11 must be executed first to populate:
 ## Error Handling
 
 ### Convergence Issues
-**Scenario**: Small group sample size (n < 50) causes SEM convergence failure  
+**Scenario**: Small group sample size (n < 50) causes SEM convergence failure
 **Implementation**:
 ```python
 try:
@@ -427,7 +427,7 @@ except Exception as e:
 ---
 
 ### Missing Variables
-**Scenario**: Business_Unit variable not in dataset  
+**Scenario**: Business_Unit variable not in dataset
 **Implementation**:
 ```python
 if 'Business_Unit' not in df_full.columns:
@@ -443,7 +443,7 @@ else:
 ---
 
 ### Insufficient Group Sizes
-**Scenario**: Usage_Group tertile split results in n < 30 per group  
+**Scenario**: Usage_Group tertile split results in n < 30 per group
 **Implementation**:
 ```python
 print(f"Low usage: n={len(df_low)}")
@@ -462,7 +462,7 @@ if any(len(g) < 30 for g in [df_low, df_medium, df_high]):
 ## Interpretation Framework
 
 ### SUPPORTED Hypotheses
-**Meaning**: 
+**Meaning**:
 - Empirical evidence confirms theoretical prediction
 - Statistical threshold met (significance + practical effect size)
 - Relationships operate as theorized
@@ -472,13 +472,13 @@ if any(len(g) < 30 for g in [df_low, df_medium, df_high]):
 - Construct relationships are robust
 - Provides actionable guidance for practice
 
-**Example**: 
+**Example**:
 If H1 SUPPORTED → UTAUT2 is valid theoretical foundation for AI adoption research
 
 ---
 
 ### NOT SUPPORTED Hypotheses
-**Meaning**: 
+**Meaning**:
 - Empirical evidence does not confirm theoretical prediction
 - May indicate parsimony principle (simpler model sufficient)
 - Does not imply "failure" - provides valuable theoretical insights
@@ -488,13 +488,13 @@ If H1 SUPPORTED → UTAUT2 is valid theoretical foundation for AI adoption resea
 - Evaluate measurement considerations (construct validity, item wording)
 - Opportunity for theoretical refinement and model improvement
 
-**Example**: 
+**Example**:
 If H2 NOT SUPPORTED → UTAUT2 alone is sufficient, AI constructs redundant (parsimony)
 
 ---
 
 ### PARTIALLY SUPPORTED Hypotheses
-**Meaning**: 
+**Meaning**:
 - Mixed evidence (some predictions confirmed, others not)
 - Indicates boundary conditions or contextual moderators
 - Suggests nuanced relationships
@@ -504,7 +504,7 @@ If H2 NOT SUPPORTED → UTAUT2 alone is sufficient, AI constructs redundant (par
 - Investigate moderating factors
 - Targeted interventions for specific conditions
 
-**Example**: 
+**Example**:
 If H4a PARTIALLY SUPPORTED → Some UTAUT2 paths moderated by role, others consistent
 
 ---
@@ -531,39 +531,39 @@ If H4a PARTIALLY SUPPORTED → Some UTAUT2 paths moderated by role, others consi
 ## Documentation Outputs
 
 ### Cell Outputs (After Execution)
-1. **H1**: 
+1. **H1**:
    - Path coefficient table (7 paths × 5 columns)
    - Significant predictor count
    - Verdict statement
 
-2. **H2**: 
+2. **H2**:
    - Model comparison table (2 models × 6 fit indices)
    - ΔR² with percentage
    - Chi-square difference test (χ², df, p-value)
    - Verdict statement
 
-3. **H3**: 
+3. **H3**:
    - Side-by-side R² comparison
    - Variance percentages
    - Verdict statement
 
-4. **H4a**: 
+4. **H4a**:
    - Group sample sizes
    - Path comparison table (7 paths × 3 columns: β_Students, β_Employed, Δβ)
    - Moderated paths (|Δβ| > 0.10)
    - Verdict statement
 
-5. **H4b**: 
+5. **H4b**:
    - Group sample sizes (Low/Medium/High)
    - Path comparison table (7 paths × 4 columns: β_Low, β_Medium, β_High, β_Range)
    - Moderated paths (β_Range > 0.15)
    - Verdict statement
 
-6. **Summary**: 
+6. **Summary**:
    - Hypothesis table (5 hypotheses × 4 columns)
    - Interpretation framework (3 verdict types)
 
-7. **RQ Summary**: 
+7. **RQ Summary**:
    - RQ1 answer (5 factor categories with evidence)
    - RQ2 answer (5 quantification aspects with evidence)
    - Integration statement
