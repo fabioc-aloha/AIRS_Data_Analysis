@@ -140,7 +140,7 @@ git checkout -b feature/your-feature-name
 
 ```bash
 # Test notebook execution
-jupyter nbconvert --to notebook --execute AIRS_Analysis_Python.ipynb
+jupyter nbconvert --to notebook --execute notebooks/AIRS_Analysis_Python.ipynb
 
 # Verify outputs
 python -c "import pandas as pd; df = pd.read_csv('data/AIRS_clean.csv'); print(df.shape)"
@@ -258,7 +258,7 @@ When modifying analysis:
    - Modifying sample characteristics
    - Updating key findings
 
-2. **Update DATA_DICTIONARY.md** if:
+2. **Update docs/DATA_DICTIONARY.md** if:
    - Adding/removing variables
    - Changing scales
    - Modifying construct definitions
@@ -394,10 +394,10 @@ for construct, alpha in reliability_dict.items():
 
 ```bash
 # Full analysis pipeline
-jupyter nbconvert --to notebook --execute AIRS_Analysis_Python.ipynb --output test_output.ipynb
+jupyter nbconvert --to notebook --execute notebooks/AIRS_Analysis_Python.ipynb --output test_output.ipynb
 
-# Compare key results
-python scripts/validate_results.py
+# Compare key results (if validation script exists)
+python scripts/python/validate_results.py
 ```
 
 ---

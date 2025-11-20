@@ -61,30 +61,56 @@ This repository contains a comprehensive psychometric validation and structural 
 
 ```
 AIRS_Data_Analysis/
-├── data/                                    # Survey data
-│   ├── AIRS---AI-Readiness-Scale.csv       # Original data
-│   ├── AIRS_clean.csv                       # Preprocessed data
-│   └── AIRS---AI-Readiness-Scale.sav       # SPSS format
+├── notebooks/                               # Analysis notebooks
+│   ├── AIRS_Analysis_Python.ipynb          # Main Python analysis (63 cells)
+│   ├── AIRS_Analysis.Rmd                   # R Markdown analysis
+│   └── README.md                           # Notebook documentation
+├── data/                                    # Survey data (git-ignored)
+│   ├── AIRS---AI-Readiness-Scale.csv       # Original data (N=205)
+│   ├── AIRS_clean.csv                       # Preprocessed data (N=201)
+│   ├── AIRS---AI-Readiness-Scale.sav       # SPSS format
+│   └── README.md                           # Data access information
+├── docs/                                    # Documentation
+│   ├── DATA_DICTIONARY.md                   # Complete variable definitions
+│   ├── AIRS Survey Instrument v5.md        # Survey with item provenance
+│   ├── AIRS DBA Project Proposal v4.md     # Theoretical framework
+│   ├── NOTEBOOK_FACT_CHECK_AND_REVISIONS.md # Analysis audit trail
+│   ├── AIRS_Analysis_Guide_Concise v13.html # HTML report output
+│   └── README.md                           # Documentation guide
 ├── results/                                 # Analysis outputs
-│   ├── models/                              # SEM model objects
-│   ├── plots/                               # Visualizations
-│   └── tables/                              # Statistical tables
-│       ├── efa_loadings.csv                # Factor loadings
-│       └── reliability_analysis.csv         # Alpha/CR/AVE
-├── AIRS_Analysis_Python.ipynb              # Main analysis notebook
-├── DATA_DICTIONARY.md                       # Complete variable documentation
-├── AIRS Survey Instrument v5.md            # Survey documentation
-├── AIRS DBA Project Proposal v4.md         # Theoretical framework
-├── requirements.txt                         # Python dependencies
-└── README.md                                # This file
-
-Alex Cognitive Architecture Files:
-├── .github/
-│   ├── copilot-instructions.md             # AI assistant integration
+│   ├── tables/                              # Statistical tables (14 CSV files)
+│   │   ├── efa_loadings.csv                # Factor analysis results
+│   │   ├── reliability_analysis.csv         # α, CR, AVE values
+│   │   ├── model_comparison.csv            # Model fit comparison
+│   │   └── ...                             # Additional results tables
+│   ├── models/                              # Saved model objects (git-ignored)
+│   ├── plots/                               # Visualizations (git-ignored)
+│   └── README.md                           # Results regeneration guide
+├── scripts/                                 # Analysis scripts
+│   ├── r-preprocessing/                     # R preprocessing pipeline
+│   │   ├── setup_environment.R             # Package installation
+│   │   ├── inspect_data.R                  # Data exploration
+│   │   ├── preprocess_data.R               # Data cleaning
+│   │   └── README.md                       # R scripts documentation
+│   ├── cognitive-config.json               # Alex configuration
+│   ├── neural-dream.ps1                    # Dream automation
+│   └── README.md                           # Scripts documentation
+├── assets/                                  # Visual assets
+│   └── banner.svg                          # Repository banner
+├── .github/                                 # GitHub & Alex architecture
+│   ├── copilot-instructions.md             # AI assistant cognitive framework
 │   ├── instructions/                        # Procedural memory (8 files)
 │   └── prompts/                            # Episodic memory (12 files)
 ├── domain-knowledge/                        # Specialized expertise (20 files)
-└── scripts/                                # Neural maintenance automation
+│   ├── DK-PYTHON-STATISTICAL-ANALYSIS-v1.0.0.md
+│   ├── DK-SPSS-PSYCHOMETRIC-ANALYSIS-v1.0.0.md
+│   └── ...                                 # Additional domain files
+├── .gitignore                              # Git exclusion rules
+├── .gitattributes                          # File handling configuration
+├── requirements.txt                         # Python dependencies
+├── CONTRIBUTING_AIRS.md                    # Contribution guidelines
+├── LICENSE.md                              # License information
+└── README.md                                # This file
 ```
 
 ---
@@ -208,7 +234,7 @@ source venv/bin/activate      # macOS/Linux
 pip install -r requirements.txt
 
 # Launch Jupyter
-jupyter notebook AIRS_Analysis_Python.ipynb
+jupyter notebook notebooks/AIRS_Analysis_Python.ipynb
 ```
 
 ---
@@ -216,12 +242,12 @@ jupyter notebook AIRS_Analysis_Python.ipynb
 ## 📖 Documentation Files
 
 ### Primary Documentation
-- **`DATA_DICTIONARY.md`**: Complete variable definitions, scales, measurement notes
-- **`AIRS Survey Instrument v5.md`**: Research questions, hypotheses, complete survey with item provenance
-- **`AIRS DBA Project Proposal v4.md`**: Theoretical framework, literature review, methodology
+- **`docs/DATA_DICTIONARY.md`**: Complete variable definitions, scales, measurement notes
+- **`docs/AIRS Survey Instrument v5.md`**: Research questions, hypotheses, complete survey with item provenance
+- **`docs/AIRS DBA Project Proposal v4.md`**: Theoretical framework, literature review, methodology
 
 ### Analysis Notebook
-- **`AIRS_Analysis_Python.ipynb`**: Complete analysis with 63 cells
+- **`notebooks/AIRS_Analysis_Python.ipynb`**: Complete analysis with 63 cells
   - Data loading & preprocessing
   - Exploratory data analysis
   - Sample splitting for EFA/CFA
@@ -254,7 +280,7 @@ jupyter notebook AIRS_Analysis_Python.ipynb
 - **Kaiser (1974)**: KMO measure - *Educational and Psychological Measurement, 34*(1), 111-117
 - **Henseler et al. (2015)**: HTMT criterion - *Journal of the Academy of Marketing Science, 43*(1), 115-135
 
-**Complete Bibliography**: See final cell in `AIRS_Analysis_Python.ipynb`
+**Complete Bibliography**: See final cell in `notebooks/AIRS_Analysis_Python.ipynb`
 
 ---
 
