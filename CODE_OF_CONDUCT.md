@@ -1,4 +1,9 @@
-# Contributor Covenant Code of Conduct
+# Code of Conduct
+## AIRS Data Analysis Project
+
+This project adheres to the **Contributor Covenant Code of Conduct** with additional academic integrity standards.
+
+---
 
 ## Our Pledge
 
@@ -64,6 +69,30 @@ All complaints will be reviewed and investigated promptly and fairly.
 
 All community leaders are obligated to respect the privacy and security of the
 reporter of any incident.
+
+## Academic Integrity Standards
+
+As an academic research project, we uphold additional standards:
+
+### Research Ethics
+- **Data Privacy**: Protect participant confidentiality at all times
+- **Honest Reporting**: Present findings accurately without fabrication or falsification
+- **Proper Attribution**: Credit all sources, collaborators, and prior work appropriately
+- **Replication Transparency**: Support reproducible research practices
+
+### Prohibited Conduct
+- Plagiarism of code, analysis, or written content
+- Fabrication or falsification of data or results
+- Unauthorized sharing of raw survey data
+- Misrepresentation of research findings
+- Violation of IRB protocols or ethical guidelines
+
+### Reporting Academic Misconduct
+
+Suspected violations of academic integrity should be reported via:
+- GitHub Issues (for code/analysis concerns)
+- Direct contact with repository owner (for sensitive matters)
+- Appropriate institutional channels (for serious violations)
 
 ## Enforcement Guidelines
 

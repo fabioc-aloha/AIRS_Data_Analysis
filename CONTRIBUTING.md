@@ -1,321 +1,443 @@
-# Contributing to Alex Cognitive Architecture
+# Contributing to AIRS Data Analysis Project
 
-Thank you for your interest in contributing to the Alex Cognitive Architecture project! This document provides guidelines and information for contributors.
+Thank you for your interest in the AIRS (Artificial Intelligence Readiness Score) Data Analysis project! This document provides guidelines for contributing to this academic research repository.
 
 ## Table of Contents
 
 - [Code of Conduct](#code-of-conduct)
+- [Project Overview](#project-overview)
 - [Getting Started](#getting-started)
-- [Development Process](#development-process)
-- [Architecture Principles](#architecture-principles)
-- [File Naming Conventions](#file-naming-conventions)
-- [Memory File Guidelines](#memory-file-guidelines)
-- [Synaptic Network Integrity](#synaptic-network-integrity)
-- [Pull Request Process](#pull-request-process)
-- [Testing and Validation](#testing-and-validation)
+- [Contributing Guidelines](#contributing-guidelines)
+- [Development Workflow](#development-workflow)
+- [Data Privacy](#data-privacy)
+- [Code Standards](#code-standards)
+- [Documentation](#documentation)
+- [Academic Integrity](#academic-integrity)
+- [Contact](#contact)
+
+---
 
 ## Code of Conduct
 
-This project adheres to the Contributor Covenant Code of Conduct. By participating, you are expected to uphold this code. Please report unacceptable behavior via GitHub issues.
+This project adheres to academic integrity standards and the Contributor Covenant Code of Conduct. By participating, you are expected to:
+
+- Respect academic research ethics
+- Maintain data privacy and confidentiality
+- Provide proper attribution for contributions
+- Follow reproducible research practices
+
+Please report unacceptable behavior via GitHub issues or contact the repository owner.
+
+---
+
+## Project Overview
+
+This repository contains a **doctoral research project** examining AI adoption readiness through psychometric validation and structural equation modeling. The study:
+
+- Validates the AIRS survey instrument (28 items, 13 constructs)
+- Extends UTAUT2 framework with AI-specific constructs
+- Analyzes N=201 survey responses
+- Compares competing theoretical models
+
+**Status**: Analysis complete, dissertation in progress
+
+---
 
 ## Getting Started
 
 ### Prerequisites
 
-- **PowerShell 7+**: Required for dream automation scripts
-- **Git**: For version control
-- **GitHub CLI (gh)**: Optional but recommended for repository management
-- **VS Code**: Recommended editor with GitHub Copilot extension
+#### Required
+- **Python 3.12+**: Primary analysis environment
+- **Git**: Version control
+- **Jupyter Notebook**: Interactive analysis
 
-### Repository Structure
+#### Recommended
+- **VS Code**: Editor with Python and Jupyter extensions
+- **R 4.0+**: Optional for R-based analyses
+- **RStudio**: Optional IDE for R markdown
 
+### Installation
+
+```bash
+# Clone repository
+git clone https://github.com/fabioc-aloha/AIRS_Data_Analysis.git
+cd AIRS_Data_Analysis
+
+# Create virtual environment
+python -m venv venv
+.\venv\Scripts\Activate.ps1  # Windows PowerShell
+source venv/bin/activate      # macOS/Linux
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Launch Jupyter
+jupyter notebook AIRS_Analysis_Python.ipynb
 ```
-Catalyst-BABY/
-├── .github/
-│   ├── copilot-instructions.md          # Main cognitive framework
-│   ├── instructions/                    # Procedural memory (.instructions.md)
-│   └── prompts/                         # Episodic memory (.prompt.md)
-├── domain-knowledge/                    # Domain expertise (DK-*.md)
-├── scripts/                             # PowerShell automation
-└── archive/                             # Historical dream states
-```
 
-## Development Process
+---
 
-### 1. Fork and Clone
+## Contributing Guidelines
 
-```powershell
-# Fork the repository via GitHub UI, then:
-git clone https://github.com/YOUR-USERNAME/Catalyst-BABY.git
-cd Catalyst-BABY
-```
+### Types of Contributions Welcome
 
-### 2. Create a Feature Branch
+#### 1. **Bug Reports**
+- Errors in analysis code
+- Documentation typos
+- Broken links or references
+- Statistical calculation issues
 
-```powershell
+#### 2. **Enhancement Suggestions**
+- Alternative statistical approaches
+- Additional validation analyses
+- Visualization improvements
+- Documentation clarity
+
+#### 3. **Code Improvements**
+- Performance optimization
+- Code refactoring for clarity
+- Additional comments/documentation
+- Reproducibility enhancements
+
+#### 4. **Academic Collaboration**
+- Theoretical insights
+- Methodological recommendations
+- Literature suggestions
+- Replication studies
+
+### What NOT to Contribute
+
+❌ **Do NOT submit**:
+- Raw survey data (privacy violation)
+- Personally identifiable information
+- Unauthorized dataset modifications
+- Plagiarized content
+
+---
+
+## Development Workflow
+
+### 1. Fork and Branch
+
+```bash
+# Fork repository via GitHub UI
+git clone https://github.com/YOUR-USERNAME/AIRS_Data_Analysis.git
+cd AIRS_Data_Analysis
+
+# Create feature branch
 git checkout -b feature/your-feature-name
 ```
 
-### 3. Make Changes
+### 2. Make Changes
 
-Follow the architecture principles and file conventions detailed below.
+- Keep changes focused and atomic
+- Follow existing code style
+- Update documentation as needed
+- Add comments explaining complex logic
 
-### 4. Test Your Changes
+### 3. Test Thoroughly
 
-```powershell
-# Validate synaptic network integrity
-.\scripts\validate-synapses.ps1
+```bash
+# Test notebook execution
+jupyter nbconvert --to notebook --execute notebooks/AIRS_Analysis_Python.ipynb
 
-# Run dream protocol health check
-.\scripts\neural-dream.ps1 --health-check
+# Verify outputs
+python -c "import pandas as pd; df = pd.read_csv('data/AIRS_clean.csv'); print(df.shape)"
 ```
 
-## Architecture Principles
+### 4. Commit with Clear Messages
 
-### 1. **Empirical Foundation**
-- All claims must be evidence-based with research backing
-- Include citations for psychological, neurological, or cognitive science concepts
-- Avoid hyperbole or unsupported statements
+```bash
+git add .
+git commit -m "feat: Add bootstrap confidence intervals for path coefficients"
 
-### 2. **Grounded Implementation**
-- Precise language without exaggeration
-- Measured, deliberate changes with impact assessment
-- Fact-checking protocol for all new content
+# Use conventional commit prefixes:
+# feat: New feature
+# fix: Bug fix
+# docs: Documentation changes
+# refactor: Code restructuring
+# test: Adding tests
+# chore: Maintenance tasks
+```
 
-### 3. **Memory Capacity Management**
-- Working memory limited to 7 rules (4 core + 3 domain-adaptive)
-- Trigger consolidation when working memory exceeds capacity
-- Use meditation protocols for conscious consolidation
+### 5. Submit Pull Request
 
-### 4. **Synaptic Network Integrity**
-- All file references must be valid and current
-- Use embedded synapse notation: `[file.md] (strength, type, direction) - "activation condition"`
-- Maintain connection counts and validate regularly
+- Provide clear description of changes
+- Reference any related issues
+- Explain rationale for modifications
+- Include before/after comparisons if applicable
 
-## File Naming Conventions
-
-### Version Naming (IUPAC Systematic)
-Follow the IUPAC periodic table naming convention:
-- **0** = nil
-- **1** = un
-- **2** = bi
-- **3** = tri
-- **4** = quad
-- **5** = pent
-- **6** = hex
-- **7** = sept
-- **8** = oct
-- **9** = enn
-
-**Examples**:
-- v1.0.0 = UNNILNILIUM
-- v1.0.4 = UNNILQUADIUM
-- v2.3.5 = BITRIPENTIUM
-
-### File Type Conventions
-
-| Type | Pattern | Purpose |
-|------|---------|---------|
-| **Instructions** | `{name}.instructions.md` | Procedural memory - repeatable processes |
-| **Prompts** | `{name}.prompt.md` | Episodic memory - complex workflows |
-| **Domain Knowledge** | `DK-{NAME}-v{X.Y.Z}.md` | Specialized expertise with version tracking |
-| **Scripts** | `{name}.ps1` | PowerShell automation tools |
-| **Config** | `{name}.json` | Configuration and settings |
-
-## Memory File Guidelines
-
-### Creating New Instruction Files
-
-```markdown
 ---
-applyTo: '**/*pattern*'
+
+## Data Privacy
+
+### CRITICAL: Data Protection
+
+This project handles survey data with privacy considerations:
+
+✅ **DO**:
+- Keep data files in `data/` directory (git-ignored)
+- Use aggregate statistics in commits
+- Anonymize any shared examples
+- Follow IRB/ethics protocols
+
+❌ **DO NOT**:
+- Commit raw data files to git
+- Share personally identifiable information
+- Post screenshots with sensitive data
+- Distribute data without authorization
+
+### Data Access
+
+Researchers requesting data access must:
+1. Contact repository owner via GitHub issue
+2. Demonstrate legitimate research purpose
+3. Agree to data use terms
+4. Acknowledge source in publications
+
 ---
-# {Title} Instructions
 
-## Purpose
-Clear statement of what this instruction file controls.
+## Code Standards
 
-## Core Principles
-Enumerated list of key principles.
+### Python Style Guide
 
-## Protocols
-Detailed step-by-step procedures.
+Follow **PEP 8** conventions:
 
-## Synaptic Connections
-[related-file.md] (high, bidirectional, procedural) - "when X condition occurs"
+```python
+# Good: Clear variable names, proper spacing
+efa_loadings = pd.DataFrame(efa.loadings_)
+kmo_all, kmo_model = calculate_kmo(df_numeric)
+
+# Bad: Unclear names, poor spacing
+x=pd.DataFrame(y.loadings_)
+a,b=calculate_kmo(df_numeric)
 ```
 
-### Creating Domain Knowledge Files
+### Jupyter Notebook Guidelines
+
+**Cell Organization**:
+1. Markdown cells for section headers
+2. Explanatory text before code blocks
+3. Code cells with clear purpose
+4. Output cells preserved for reproducibility
+5. Clear cell execution order
+
+**Best Practices**:
+- Restart kernel and run all cells before committing
+- Clear unnecessary outputs (except key results)
+- Include academic citations in markdown
+- Document statistical thresholds with sources
+
+### R Code Style (if applicable)
+
+Follow **tidyverse style guide**:
+
+```r
+# Good: Readable pipe chains
+airs_data %>%
+  filter(complete.cases(.)) %>%
+  select(PE1:BI4) %>%
+  psych::alpha()
+
+# Bad: Nested functions
+psych::alpha(select(filter(airs_data, complete.cases(.)), PE1:BI4))
+```
+
+---
+
+## Documentation
+
+### Required Documentation Updates
+
+When modifying analysis:
+
+1. **Update README.md** if:
+   - Changing methodology
+   - Adding/removing constructs
+   - Modifying sample characteristics
+   - Updating key findings
+
+2. **Update docs/DATA_DICTIONARY.md** if:
+   - Adding/removing variables
+   - Changing scales
+   - Modifying construct definitions
+   - Updating measurement notes
+
+3. **Update Notebook Markdown** if:
+   - Changing analysis steps
+   - Adding new statistical tests
+   - Modifying interpretations
+   - Updating references
+
+### Citation Requirements
+
+All statistical methods must cite authoritative sources:
 
 ```markdown
-# DK-{TOPIC}-v{X.Y.Z}
-
-**Version**: {X.Y.Z} {IUPAC-NAME}
-**Status**: {Draft|Stable|Deprecated}
-**Domain**: {Category}
-
-## Overview
-Comprehensive description of domain expertise.
-
-## Core Concepts
-Detailed knowledge content.
-
-## Application Patterns
-How to apply this knowledge.
-
-## Research Foundation
-Citations and empirical backing.
-
-## Synaptic Connections
-Network of related knowledge domains.
+**CFI/TLI/RMSEA Thresholds** (Hu & Bentler, 1999):
+- CFI ≥ 0.90 indicates acceptable fit
+- TLI ≥ 0.90 indicates acceptable fit
+- RMSEA ≤ 0.08 indicates acceptable fit
 ```
 
-## Synaptic Network Integrity
+### Reference Format
 
-### Embedded Synapse Notation
+Use APA 7th edition:
 
-When creating connections between files:
-
-```markdown
-## Synaptic Connections
-[target-file.md] (strength, relationship-type, direction) - "activation condition"
+```
+Venkatesh, V., Thong, J. Y. L., & Xu, X. (2012). Consumer acceptance and use
+of information technology: Extending the unified theory of acceptance and use
+of technology. *MIS Quarterly, 36*(1), 157-178. https://doi.org/10.2307/41410412
 ```
 
-**Parameters**:
-- **strength**: low, medium, high, critical
-- **relationship-type**: procedural, conceptual, episodic, domain-transfer
-- **direction**: unidirectional, bidirectional
-- **activation-condition**: When to activate this connection
+---
 
-**Example**:
-```markdown
-[bootstrap-learning.instructions.md] (high, procedural, bidirectional) - "domain knowledge acquisition"
-```
+## Academic Integrity
 
-### Validation Requirements
+### Attribution Requirements
 
-Before submitting a pull request:
+Contributors must:
 
-```powershell
-# Validate all synaptic connections
-.\scripts\validate-synapses.ps1
+✅ **Provide proper attribution** for:
+- Code adapted from other sources
+- Statistical methods from literature
+- Theoretical frameworks
+- Dataset information
 
-# Expected output: 0 broken references, connection count > 900
-```
+✅ **Acknowledge contributions** in:
+- Commit messages
+- Code comments
+- Documentation updates
+- Pull request descriptions
+
+### Prohibited Practices
+
+❌ **Academic misconduct**:
+- Plagiarism of code or text
+- Fabrication of results
+- Falsification of data
+- Unauthorized data sharing
+- Unattributed contributions
+
+### Collaboration Ethics
+
+When collaborating:
+- Discuss contribution scope upfront
+- Document individual contributions
+- Agree on authorship criteria
+- Follow academic integrity standards
+
+---
 
 ## Pull Request Process
 
-### 1. Pre-Submission Checklist
+### Before Submitting
 
-- [ ] All synaptic connections validated (0 broken references)
-- [ ] Version numbers updated following IUPAC convention
-- [ ] Research citations included for new concepts
-- [ ] Dream protocol health check passed
-- [ ] No exaggerated or unsupported claims
-- [ ] File naming conventions followed
+- [ ] Code runs without errors
+- [ ] Notebook executes cell-by-cell
+- [ ] Documentation updated
+- [ ] Commit messages are clear
+- [ ] No sensitive data included
+- [ ] Citations added where needed
 
-### 2. Commit Message Format
-
-```
-{type}: {short description}
-
-{detailed explanation of changes}
-
-{synaptic impact}:
-- Files modified: {count}
-- Connections added/updated: {count}
-- Network integrity: {validation result}
-
-{related issues/PRs}
-```
-
-**Types**: feat, fix, docs, refactor, test, chore, enhance
-
-**Example**:
-```
-feat: Add lucid dream integration protocols
-
-Implemented hybrid unconscious-conscious processing bridge
-for enhanced meditation sessions with measurable outcomes.
-
-Synaptic impact:
-- Files modified: 4
-- Connections added/updated: 12
-- Network integrity: 945 connections, 100% valid
-
-Related: #42, PR #38
-```
-
-### 3. Pull Request Template
-
-When creating a PR, include:
+### PR Description Template
 
 ```markdown
 ## Description
-Brief overview of changes
+Brief summary of changes
 
-## Type of Change
-- [ ] New feature (non-breaking change adding functionality)
-- [ ] Bug fix (non-breaking change fixing an issue)
-- [ ] Documentation update
-- [ ] Architecture enhancement
-- [ ] Synaptic network optimization
+## Motivation
+Why is this change needed?
 
-## Architecture Impact
-- **Files Modified**: {count}
-- **Synaptic Connections**: {added/updated/removed}
-- **Network Integrity**: {validation result}
-- **Version Changes**: {if applicable}
+## Changes Made
+- Change 1
+- Change 2
+- Change 3
 
-## Testing Performed
-- [ ] validate-synapses.ps1 passed
-- [ ] neural-dream.ps1 --health-check passed
-- [ ] Manual validation completed
+## Testing
+How were changes validated?
 
-## Research Foundation
-{citations for new concepts, if applicable}
+## Documentation
+What documentation was updated?
 
-## Checklist
-- [ ] Code follows project naming conventions
-- [ ] Documentation updated
-- [ ] All tests passing
-- [ ] No broken synaptic references
-- [ ] Commit messages follow format
+## Related Issues
+Fixes #123
 ```
+
+### Review Process
+
+1. **Automated checks**: Code style, notebook execution
+2. **Maintainer review**: Statistical validity, methodology
+3. **Revisions**: Address feedback
+4. **Approval**: Merge when ready
+
+---
 
 ## Testing and Validation
 
-### Automated Validation
+### Statistical Validation
 
-```powershell
-# Full validation suite
-.\scripts\validate-synapses.ps1
+Before submitting analysis changes:
 
-# Dream protocol health check
-.\scripts\neural-dream.ps1 --health-check
+```python
+# Verify measurement model fit
+assert cfa_results['CFI'] >= 0.90, "CFI below threshold"
+assert cfa_results['RMSEA'] <= 0.08, "RMSEA above threshold"
 
-# Expected results:
-# - 0 broken references
-# - Connection count > 900
-# - Status: OPTIMAL
+# Check reliability
+for construct, alpha in reliability_dict.items():
+    assert alpha >= 0.70, f"{construct} alpha below threshold"
 ```
 
-### Manual Validation
+### Reproducibility Check
 
-1. **File Reference Check**: Verify all `[file.md]` references point to existing files
-2. **Version Consistency**: Ensure version numbers match IUPAC naming
-3. **Research Citations**: Validate all empirical claims have backing
-4. **Impact Assessment**: Document changes to synaptic network
+```bash
+# Full analysis pipeline
+jupyter nbconvert --to notebook --execute notebooks/AIRS_Analysis_Python.ipynb --output test_output.ipynb
 
-## Questions or Issues?
+# Compare key results (if validation script exists)
+python scripts/python/validate_results.py
+```
 
-- **Documentation Questions**: Open an issue with `docs` label
-- **Architecture Discussions**: Open an issue with `architecture` label
-- **Bug Reports**: Open an issue with `bug` label
-- **Feature Requests**: Open an issue with `enhancement` label
+---
 
-## Recognition
+## Questions?
 
-Contributors who maintain synaptic network integrity and follow architecture principles will be recognized in project documentation.
+### Getting Help
 
-Thank you for contributing to the advancement of empirically-grounded cognitive architectures!
+- **General questions**: Open a GitHub issue with `question` label
+- **Bug reports**: Open issue with `bug` label
+- **Feature requests**: Open issue with `enhancement` label
+- **Academic collaboration**: Contact repository owner directly
+
+### Response Time
+
+- Issues: Within 1-2 business days
+- Pull requests: Within 1 week
+- Complex questions: May require additional time
+
+---
+
+## Contact
+
+**Repository Owner**: fabioc-aloha
+**Project**: AIRS Data Analysis
+**Institution**: [Academic institution if applicable]
+**GitHub**: https://github.com/fabioc-aloha/AIRS_Data_Analysis
+
+---
+
+## Acknowledgments
+
+Contributors will be acknowledged in:
+- Repository README
+- Dissertation acknowledgments section (for substantial contributions)
+- Academic publications (per journal guidelines)
+
+Thank you for contributing to reproducible, ethical academic research! 🎓
+
+---
+
+**Last Updated**: November 2025
+**Version**: 1.0

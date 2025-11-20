@@ -1,49 +1,83 @@
-# Proprietary License
+# Academic Research License
 
-```text
-Project Catalyst - Cognitive Architecture Framework
+## AIRS Data Analysis Project
+**AI Readiness Score (AIRS) - Psychometric Validation and Structural Equation Modeling**
+
 Copyright (c) 2025 Fabio Correa. All Rights Reserved.
 
-PROPRIETARY AND CONFIDENTIAL
+---
 
-This software and associated documentation files (the "Software") are the
-proprietary and confidential information of Fabio Correa. The Software is
-protected by copyright laws and international copyright treaties, as well as
-other intellectual property laws and treaties.
+## License Terms
 
-RESTRICTIONS:
-- No part of this Software may be reproduced, distributed, or transmitted in any
-  form or by any means, including photocopying, recording, or other electronic or
-  mechanical methods, without the prior written permission of the copyright holder.
-- No reverse engineering, decompilation, or disassembly of this Software is permitted.
-- No derivative works based on this Software may be created without explicit
-  written authorization.
-- Commercial use, redistribution, sublicensing, or sale of this Software is
-  strictly prohibited without a separate commercial license agreement.
+### Academic and Research Use (Permitted)
 
-ACADEMIC AND RESEARCH USE:
-Academic and research use is permitted for non-commercial purposes, including:
-- Doctoral dissertation research and related academic publications
-- Peer-reviewed research and academic conferences
-- Educational use in academic institutions
-- Research collaboration with industry partners for academic validation
-Subject to proper attribution and citation requirements.
+This project is made available for **non-commercial academic and research purposes** under the following conditions:
 
-MICROSOFT STRATEGIC PARTNERSHIP:
-Microsoft Corporation is granted specific implementation rights for Project Catalyst
-within the Global Customer Experience (GCX) division for research validation and
-business implementation purposes, subject to separate partnership agreements.
+#### ✅ Permitted Uses:
+- **Academic Research**: Use for doctoral dissertation research and related academic publications
+- **Educational Purposes**: Use in academic coursework and teaching
+- **Replication Studies**: Validation and replication of research findings
+- **Methodology Reference**: Citation and reference in academic literature
+- **Collaborative Research**: Academic collaboration and knowledge advancement
 
-DISCLAIMER:
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-COPYRIGHT HOLDER BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
-IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
-CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+#### 📋 Requirements:
+1. **Attribution**: Proper citation of this work in all publications and presentations
+2. **Data Privacy**: Compliance with data protection and research ethics protocols
+3. **Non-Commercial**: Use limited to academic and research purposes only
+4. **Acknowledgment**: Acknowledgment of source in derivative works
 
-For licensing inquiries, please contact:
-- Email: fcorrea@student.touro.edu
-- Microsoft Contact: fabioc@microsoft.com
-- Phone: +1 (910) 930-2254
+### Recommended Citation
+
 ```
+Correa, F. (2025). AI Readiness Score (AIRS): Psychometric Validation
+and Structural Equation Modeling [Doctoral dissertation data analysis].
+GitHub. https://github.com/fabioc-aloha/AIRS_Data_Analysis
+```
+
+### Commercial Use
+
+Commercial use, redistribution for profit, or incorporation into commercial products requires explicit written permission from the copyright holder.
+
+### Data Protection
+
+**Survey Data**: The raw survey data is NOT included in this repository due to privacy considerations. Researchers seeking access to de-identified data for replication purposes should contact the author.
+
+### Restrictions
+
+❌ **Prohibited Activities**:
+- Commercial use or sale of this work
+- Redistribution of raw survey data without authorization
+- Misrepresentation of research findings
+- Use in violation of academic integrity standards
+- Removal of attribution or copyright notices
+
+---
+
+## Disclaimer
+
+THE SOFTWARE AND MATERIALS ARE PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE COPYRIGHT HOLDER BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+---
+
+## Contact
+
+For licensing inquiries, collaboration requests, or data access:
+
+- **Academic Email**: fcorrea@student.touro.edu
+- **GitHub**: https://github.com/fabioc-aloha
+- **Repository**: https://github.com/fabioc-aloha/AIRS_Data_Analysis
+
+---
+
+## Acknowledgments
+
+This research project was conducted as part of doctoral studies and benefited from:
+- Touro University Graduate School of Education and Psychology
+- Survey participants (N=201)
+- Open-source statistical computing communities (Python, R)
+- Alex Cognitive Architecture for AI-assisted analysis
+
+---
+
+**Version**: 1.0
+**Last Updated**: November 2025
