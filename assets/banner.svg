@@ -116,12 +116,6 @@
     Psychometric Validation · Structural Equation Modeling · UTAUT2 Extension
   </text>
   
-  <!-- Key metrics -->
-  <text x="600" y="205" font-family="'Inter', 'Segoe UI', system-ui, sans-serif" font-size="14" font-weight="500" 
-        fill="#64748b" text-anchor="middle" letter-spacing="0.5">
-    N=201  •  28 Items  •  13 Constructs  •  CFI=0.933
-  </text>
-  
   <!-- Bottom info bar -->
   <rect x="0" y="240" width="1200" height="60" fill="black" opacity="0.25"/>
   
