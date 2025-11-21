@@ -304,24 +304,141 @@ class AIRSPreprocessor:
         
         return self
     
+    def create_ai_adoption_groupings(self):
+        """Step 9: Create AI tool adoption grouping variables"""
+        print("\n--- AI Adoption Groupings ---")
+        
+        usage_cols = ['Usage_ChatGPT', 'Usage_MSCopilot', 'Usage_Gemini', 'Usage_Other']
+        
+        # 1. AI_Adoption: Binary indicator (0=never uses any tool, 1=uses at least one tool)
+        def classify_ai_adoption(row):
+            """Binary: 0 = never uses any AI tool, 1 = uses at least one AI tool"""
+            # If ALL usage columns equal 1 (Never), then AI_Adoption = 0
+            never_all = all(row[col] == 1 for col in usage_cols if pd.notna(row[col]))
+            return 0 if never_all else 1
+        
+        self.data_clean['AI_Adoption'] = self.data_clean.apply(classify_ai_adoption, axis=1)
+        
+        # 2. AI_Adoption_Level: Categorical (None/Single/Multiple tool adoption)
+        def classify_adoption_level(row):
+            """Categorize as None, Single, or Multiple tool user"""
+            # Count how many tools are used (usage > 1 means sometimes/often/always)
+            tools_used = sum(row[col] > 1 for col in usage_cols if pd.notna(row[col]))
+            
+            if tools_used == 0:
+                return 'None'
+            elif tools_used == 1:
+                return 'Single'
+            else:
+                return 'Multiple'
+        
+        self.data_clean['AI_Adoption_Level'] = self.data_clean.apply(classify_adoption_level, axis=1)
+        
+        # 3. Primary_Tool: Identify which tool is used most frequently
+        def identify_primary_tool(row):
+            """Identify the most frequently used AI tool"""
+            if row['AI_Adoption'] == 0:
+                return 'None'
+            
+            # Find tool with highest usage score
+            tool_scores = {
+                'ChatGPT': row['Usage_ChatGPT'],
+                'MSCopilot': row['Usage_MSCopilot'],
+                'Gemini': row['Usage_Gemini'],
+                'Other': row['Usage_Other']
+            }
+            
+            # Remove tools with usage = 1 (Never)
+            active_tools = {k: v for k, v in tool_scores.items() if v > 1}
+            
+            if not active_tools:
+                return 'None'
+            
+            # Return tool with highest usage
+            return max(active_tools, key=active_tools.get)
+        
+        self.data_clean['Primary_Tool'] = self.data_clean.apply(identify_primary_tool, axis=1)
+        
+        # Report statistics
+        adopters = (self.data_clean['AI_Adoption'] == 1).sum()
+        non_adopters = (self.data_clean['AI_Adoption'] == 0).sum()
+        
+        print(f"✓ Created AI_Adoption: {adopters} adopters ({adopters/len(self.data_clean)*100:.1f}%), {non_adopters} non-adopters ({non_adopters/len(self.data_clean)*100:.1f}%)")
+        print(f"✓ Created AI_Adoption_Level: {self.data_clean['AI_Adoption_Level'].value_counts().to_dict()}")
+        print(f"✓ Created Primary_Tool: {self.data_clean['Primary_Tool'].value_counts().to_dict()}")
+        
+        return self
+    
+    def create_demographic_groupings(self):
+        """Step 10: Create demographic grouping variables"""
+        print("\n--- Demographic Groupings ---")
+        
+        # 1. Experience_Level: Career stage progression (5 levels)
+        experience_mapping = {
+            'Less than 1 year': 'Entry',
+            '1-3 years': 'Early',
+            '4-6 years': 'Mid',
+            '7-10 years': 'Senior',
+            'More than 10 years': 'Expert'
+        }
+        self.data_clean['Experience_Level'] = self.data_clean['Experience'].map(experience_mapping)
+        
+        # 2. Work_Context: Learning vs Teaching vs Professional context (3 categories)
+        def classify_work_context(row):
+            """Classify work context based on role"""
+            if row['Role'] == 'Student':
+                return 'Academic-Student'
+            elif row['Role'] in ['Instructor/Teacher', 'Researcher']:
+                return 'Academic-Faculty'
+            else:
+                return 'Professional'
+        
+        self.data_clean['Work_Context'] = self.data_clean.apply(classify_work_context, axis=1)
+        
+        # 3. Usage_Intensity: AI engagement level beyond binary adoption (4 levels)
+        usage_cols = ['Usage_ChatGPT', 'Usage_MSCopilot', 'Usage_Gemini', 'Usage_Other']
+        self.data_clean['Total_Usage_Score'] = self.data_clean[usage_cols].sum(axis=1)
+        
+        def classify_usage_intensity(score):
+            """Categorize usage intensity from total usage score"""
+            if score <= 4:  # All "Never" = 4
+                return 'Non-User'
+            elif score <= 8:  # Low usage
+                return 'Low'
+            elif score <= 12:  # Medium usage
+                return 'Medium'
+            else:  # High usage (13-20)
+                return 'High'
+        
+        self.data_clean['Usage_Intensity'] = self.data_clean['Total_Usage_Score'].apply(classify_usage_intensity)
+        
+        # Report statistics
+        print(f"✓ Created Experience_Level: {self.data_clean['Experience_Level'].value_counts().to_dict()}")
+        print(f"✓ Created Work_Context: {self.data_clean['Work_Context'].value_counts().to_dict()}")
+        print(f"✓ Created Usage_Intensity: {self.data_clean['Usage_Intensity'].value_counts().to_dict()}")
+        
+        return self
+    
     def create_analysis_dataset(self):
-        """Step 9: Create final analysis dataset"""
+        """Step 11: Create final analysis dataset"""
         print("\n--- Dataset Creation ---")
         
         likert_vars = [name for name in self.item_names if name != "ATT_CHECK"]
         
         analysis_vars = (
-            ["Region", "Duration_minutes"] +  # Control variables
+            ["Duration_minutes"] +  # Control variables (Region removed due to poor geolocation)
             likert_vars +  # 28 Likert items
             ["Role", "Education", "Industry", "Experience", "Disability"] +  # Demographics
-            ["Usage_MSCopilot", "Usage_ChatGPT", "Usage_Gemini", "Usage_Other"]  # Usage
+            ["Usage_MSCopilot", "Usage_ChatGPT", "Usage_Gemini", "Usage_Other"] +  # Usage frequency
+            ["AI_Adoption", "AI_Adoption_Level", "Primary_Tool"] +  # AI adoption groupings
+            ["Experience_Level", "Work_Context", "Usage_Intensity", "Total_Usage_Score"]  # Demographic groupings
         )
         
         self.data_clean = self.data_clean[analysis_vars].copy()
         
         print(f"✓ Analysis dataset: {len(self.data_clean)} obs × {len(self.data_clean.columns)} vars")
-        print("✓ Includes: Region, Duration_minutes, 28 Likert items, demographics, usage")
-        print("✓ Privacy: IP addresses excluded")
+        print("✓ Includes: Duration_minutes, 28 Likert items, demographics, usage")
+        print("✓ Privacy: IP addresses and geolocation data excluded")
         
         return self
     
@@ -343,14 +460,14 @@ class AIRSPreprocessor:
         print(f"  PE1: M={self.data_clean['PE1'].mean():.2f}, SD={self.data_clean['PE1'].std():.2f}")
         print(f"  PE2: M={self.data_clean['PE2'].mean():.2f}, SD={self.data_clean['PE2'].std():.2f}")
         
-        # Region distribution
-        print("\nRegion Distribution (top 5):")
-        print(self.data_clean['Region'].value_counts().head(5))
-        
         # Duration in valid data
         print(f"\nDuration (valid responses):")
         print(f"  Mean: {self.data_clean['Duration_minutes'].mean():.1f} min")
         print(f"  Median: {self.data_clean['Duration_minutes'].median():.1f} min")
+        
+        # Role distribution
+        print("\nRole Distribution (top 5):")
+        print(self.data_clean['Role'].value_counts().head(5))
         
         print("\n✓ Data ready for psychometric analysis")
         print("="*70)
@@ -363,10 +480,12 @@ class AIRSPreprocessor:
          .rename_columns()
          .filter_complete_surveys()
          .analyze_duration()
-         .geolocate_ips()
+         # .geolocate_ips()  # Skipped: 67.6% IPs are private/VPN (unresolvable)
          .filter_attention_check()
          .convert_to_numeric()
          .apply_demographic_labels()
+         .create_ai_adoption_groupings()
+         .create_demographic_groupings()
          .create_analysis_dataset()
          .save_clean_data()
          .print_summary())
