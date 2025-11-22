@@ -168,12 +168,12 @@ This plan bridges the gap between current exploratory analysis and the dissertat
 - **Factor Solution**: 2 factors (via parallel analysis)
   - Factor 1: Mixed Readiness (PE, EE, SI, FC, HM, PV, HB, TR, VO, EX) - 10 items
   - Factor 2: Risk/Anxiety (ER, AX) - 2 items
-  - Inter-factor correlation: r = 0.135 (weak, supporting discriminant validity)
+  - Inter-factor correlation: r = 0.118 (weak, supporting discriminant validity)
 - **Psychometric Quality (Development Sample)**:
-  - Internal consistency: Cronbach's α = 0.892 (Good)
+  - Internal consistency: Cronbach's α = 0.901 (Excellent)
   - Variance explained: 58.4% (2-factor model)
   - KMO: 0.909 (Excellent sampling adequacy)
-- **Selected Items**: PE1, EE1, SI1, FC1, HM2, PV2, HB1, VO1, TR2, EX1, ER1, AX2
+- **Selected Items**: PE2, EE2, SI1, FC1, HM2, PV2, HB2, VO1, TR2, EX2, ER1, AX2
 
 **Critical Insight**: While theoretical framework posits 12 distinct constructs, empirical data converge on 2 higher-order dimensions (positive attitudes/facilitators vs. concerns/barriers). This pattern suggests potential second-order factor structure to explore in CFA.
 
@@ -794,7 +794,7 @@ This analysis plan succeeds when:
   - Factor 1 (Mixed Readiness): EXCELLENT reliability (α=0.924, CR=0.925, AVE=0.561)
   - Factor 2 (Risk/Anxiety): PROBLEMATIC reliability (α=0.529, CR=0.680), ER1 loading=0.360
   - Discriminant validity ESTABLISHED (HTMT=0.318, Fornell-Larcker met)
-- 2025-11-22 v1.2: Updated with CFA completion and actual results
+- 2025-11-22 v1.2: Updated with CFA completion and actual results (seed 42)
   - CFA Status: ✅ Complete - ADEQUATE fit (CFI=0.926, TLI=0.907, RMSEA=0.096, SRMR≈0.050)
   - Factor 1 (Mixed Readiness): EXCELLENT reliability (α=0.924, CR=0.925, AVE=0.557)
   - Factor 2 (Risk/Anxiety): PROBLEMATIC reliability (α=0.545, CR=0.688), ER1 loading=0.376
@@ -804,7 +804,7 @@ This analysis plan succeeds when:
   - Updated item list to match validated model
   - Marked CFA requirements as complete in proposal compliance table
   - Updated timeline: CFA complete in Week 24, invariance testing next
-- 2025-11-22 v1.1: Updated with Phase 1 completion status, refined 2-factor model specifications
+- 2025-11-22 v1.1: Updated with Phase 1 completion status, refined 2-factor model specifications (seed 42)
   - Documented 12-item scale development results (α=0.892)
   - Updated CFA specifications for 2-factor structure validation
   - Clarified factor composition

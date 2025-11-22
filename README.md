@@ -57,7 +57,7 @@ I am pleased to report progress on **Phase 1 & 2: Scale Development and CFA Vali
 - 🔄 **Voluntariness of Use**: Reintroduced from original UTAUT (2003) given enterprise AI context with mandatory tools and managerial expectations—aligns with organizational adoption literature
 - 🎯 **Theoretical Extension**: Tests whether AI-specific constructs add explanatory power beyond UTAUT2's seven predictors + VO
 - 📊 **Validation Complete**: CFA confirmed 2-factor structure (Mixed Readiness + Risk/Anxiety) on independent holdout sample
-- ✅ **Psychometric Quality**: Factor 1 excellent (α=0.924, CR=0.925), Factor 2 documented limitations (α=0.545)
+- ✅ **Psychometric Quality**: Factor 1 excellent (α=0.924, CR=0.925), Factor 2 documented limitations (α=0.529)
 - 🔍 **Key Test Ahead**: Phase 4 nested model comparison will test incremental validity (H3: ΔR² ≥ 0.10)
 - 💡 **Novel Contribution**: Mediation analysis (Phase 5) explores trust and anxiety as psychological mechanisms
 
@@ -134,7 +134,7 @@ Given AI's distinctive characteristics—algorithmic opacity, autonomous decisio
 ## 📊 Empirical Model: 2-Factor Structure
 
 **Phase 1 & 2: EFA and CFA Validation Results**
-*Development N=162 (EFA) • Holdout N=163 (CFA) • α = 0.892 (EFA) / 0.924 (CFA F1)*
+*Development N=162 (EFA) • Holdout N=163 (CFA) • α = 0.901 (EFA) / 0.924 (CFA F1)*
 
 ```mermaid
 graph LR
@@ -210,7 +210,7 @@ graph LR
 
 - **Design**: One best-loading item selected per construct (12 constructs total)
 - **Rationale**: Balances diagnostic coverage (all constructs represented) with efficiency (minimal respondent burden)
-- **Items**: PE1, EE1, SI1, FC1, HM2, PV2, HB1, VO1, TR2, EX1, ER1, AX2
+- **Items**: PE2, EE2, SI1, FC1, HM2, PV2, HB2, VO1, TR2, EX2, ER1, AX2
 
 **Internal Consistency (Development Sample)**:
 
@@ -314,14 +314,14 @@ graph LR
 **Factor 1: Mixed Readiness (10 items)**
 
 - General AI readiness across UTAUT2 dimensions plus trust and explainability
-- Items: PE1, EE1, SI1, FC1, HM2, PV2, HB1, VO1, TR2, EX1
-- Reliability: α=0.924, CR=0.925, AVE=0.557 (EXCELLENT)
+- Items: PE2, EE2, SI1, FC1, HM2, PV2, HB2, VO1, TR2, EX2
+- Reliability: α=0.924, CR=0.925, AVE=0.561 (EXCELLENT)
 
 **Factor 2: Risk/Anxiety (2 items)**
 
 - AI-related concerns and apprehension
 - Items: ER1, AX2
-- Reliability: α=0.545, CR=0.688, AVE=0.571 (PROBLEMATIC - documented limitation)
+- Reliability: α=0.529, CR=0.680, AVE=0.565 (PROBLEMATIC - documented limitation)
 
 ---
 
@@ -595,24 +595,24 @@ graph LR
 
 ### Scale Composition
 
-**Selected Items** (1 per construct):
+**Selected Items** (1 per construct - CFA Validated):
 
 ```
-Factor 1 - Facilitators (7 items):
-  PE1 (Performance Expectancy)    λ = 0.77
-  FC1 (Facilitating Conditions)   λ = 0.90
-  HM1 (Hedonic Motivation)         λ = 0.80
-  PV2 (Price Value)                λ = 0.98
-  HB2 (Habit)                      λ = 0.95
-  TR1 (Trust in AI)                λ = 0.78
-  VO1 (Voluntariness)              λ = 0.72
+Factor 1 - Mixed Readiness (10 items):
+  PV2 (Price Value)                λ = 0.871
+  HM2 (Hedonic Motivation)         λ = 0.868
+  TR2 (Trust in AI)                λ = 0.849
+  PE2 (Performance Expectancy)     λ = 0.831
+  VO1 (Voluntariness)              λ = 0.822
+  HB2 (Habit)                      λ = 0.769
+  SI1 (Social Influence)           λ = 0.746
+  EE2 (Effort Expectancy)          λ = 0.601
+  FC1 (Facilitating Conditions)    λ = 0.542
+  EX2 (Explainability)             λ = 0.458 ⚠️
 
-Factor 2 - Barriers (5 items):
-  AX2 (AI Anxiety)                 λ = 0.82
-  ER1 (Ethical Risk)               λ = 0.64
-  EE2 (Effort Expectancy)          λ = 0.41
-  SI2 (Social Influence)           λ = 0.59
-  EX1 (Explainability)             λ = 0.71
+Factor 2 - Risk/Anxiety (2 items):
+  AX2 (AI Anxiety)                 λ = 1.000
+  ER1 (Ethical Risk)               λ = 0.360 ⚠️
 ```
 
 ### Psychometric Quality
