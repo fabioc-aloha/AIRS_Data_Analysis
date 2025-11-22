@@ -504,10 +504,10 @@ graph LR
 
 **Key Results**:
 
-- **KMO**: 0.815 (sampling adequacy: Good)
+- **KMO**: 0.910 (sampling adequacy: Excellent)
 - **Bartlett's Test**: p < .001 (factorability confirmed)
 - **Optimal Factors**: 2 (Kaiser criterion=3, Parallel analysis=2)
-- **Reliability**: Cronbach's α = 0.897 (Good)
+- **Reliability**: Cronbach's α = 0.901 (Excellent)
 - **Loadings**: All items ≥ 0.50 (range: 0.50-0.98)
 - **Variance Explained**: 58.1% (2-factor model)
 - **Predictive Validity**: R² = 0.811 (predicting BI outcome)
@@ -528,7 +528,7 @@ graph LR
 
 **Planned Methods**:
 
-- **Sample**: Holdout N=159 (independent validation)
+- **Sample**: Holdout N=163 (independent validation)
 - **Estimator**: MLR or WLSMV for ordinal data
 - **Model**: 2 correlated factors (F1: 7 items, F2: 5 items)
 
@@ -619,9 +619,9 @@ Factor 2 - Risk/Anxiety (2 items):
 
 | Metric                       | Result    | Threshold | Status                                   |
 | ---------------------------- | --------- | --------- | ---------------------------------------- |
-| **Cronbach's α**      | 0.897     | ≥ 0.70   | ✅ Good                                  |
+| **Cronbach's α**      | 0.901     | ≥ 0.70   | ✅ Excellent                             |
 | **Variance Explained** | 58.1%     | —        | ✅ Adequate                              |
-| **KMO**                | 0.815     | ≥ 0.60   | ✅ Good                                  |
+| **KMO**                | 0.910     | ≥ 0.60   | ✅ Excellent                             |
 | **Factor Loadings**    | 0.41-0.98 | ≥ 0.50   | ✅ All adequate                          |
 | **Inter-factor r**     | 0.17      | —        | ✅ Weak (supports discriminant validity) |
 
@@ -705,15 +705,15 @@ For complete reproducibility:
 **EFA Analysis (Phase 1)**:
 
 - **Method**: Principal Axis Factoring with Promax rotation
-- **Sample**: Development N=159 (stratified random split)
-- **Factorability**: KMO=0.815, Bartlett's p<0.001
+- **Sample**: Development N=162 (stratified random split)
+- **Factorability**: KMO=0.910, Bartlett's p<0.001
 - **Factor Determination**: Parallel analysis (2 factors), Kaiser criterion (3 factors) → accepted 2
 - **Item Selection**: Best-loading item per construct from preliminary 4-factor structure
 - **Random Seed**: 42 (ensures reproducibility)
 
 **Psychometric Validation**:
 
-- **Internal Consistency**: Cronbach's α = 0.897 (12 items)
+- **Internal Consistency**: Cronbach's α = 0.901 (12 items)
 - **Convergent Validity**: Factor loadings λ = 0.41-0.98 (all ≥ 0.40)
 - **Discriminant Validity**: Inter-factor correlation r = 0.17 (weak, supports 2-factor distinction)
 - **Predictive Validity**: R² = 0.811 vs. 24-item R² = 0.842 (96.3% efficiency)
@@ -779,10 +779,10 @@ jupyter notebook notebooks/AIRS_Analysis_Python.ipynb
 ### Phase 1 Analysis (✅ Complete)
 
 - **`airs/01_EFA_Construct_Balanced_12_Item.ipynb`**: **Authoritative source** for 12-item scale development
-  - Split-sample methodology (Development N=159, Holdout N=159)
+  - Split-sample methodology (Development N=162, Holdout N=163)
   - 2-factor structure (Facilitators, Barriers)
   - Item selection (1 per 12 constructs)
-  - Psychometric validation (α=0.897, R²=0.811)
+  - Psychometric validation (α=0.901, R²=0.811)
   - Complete reproducibility documentation
 
 ### Archive - Exploratory Phase
@@ -850,12 +850,12 @@ jupyter notebook notebooks/AIRS_Analysis_Python.ipynb
 | **Theoretical Constructs** | 12 (7 UTAUT2 + VO + 4 AI)  | Comprehensive coverage of adoption determinants                       |
 | **Empirical Factors**      | 2 (Facilitators, Barriers) | Parsimonious structure for predictive modeling                        |
 | **Scale Length**           | 12 items (1 per construct) | Balanced coverage with minimal respondent burden                      |
-| **Internal Consistency**   | α = 0.897                 | Excellent reliability (exceeds α ≥ 0.70 threshold)                  |
+| **Internal Consistency**   | α = 0.901                 | Excellent reliability (exceeds α ≥ 0.70 threshold)                  |
 | **Predictive Validity**    | R² = 0.811                | Strong prediction of Behavioral Intention                             |
 | **Measurement Efficiency** | 96.3% of 24-item power     | 50% item reduction with minimal validity loss                         |
 | **Factor Loadings**        | Range: 0.41-0.98           | All items load adequately (threshold: λ ≥ 0.40)                     |
 | **Variance Explained**     | 58.1%                      | Adequate for social science (typical: 50-60%)                         |
-| **Sampling Adequacy**      | KMO = 0.815                | Good factorability (exceeds 0.60 threshold)                           |
+| **Sampling Adequacy**      | KMO = 0.910                | Excellent factorability (exceeds 0.80 threshold)                     |
 | **Timeline Status**        | Week 24 of 32              | On schedule (75% complete)                                            |
 
 ---
@@ -898,7 +898,7 @@ jupyter notebook notebooks/AIRS_Analysis_Python.ipynb
 3. **Targeted Interventions**:
    - **Low Facilitators**: Improve training (EE), demonstrate value (PE), build trust (TR)
    - **High Barriers**: Address ethical concerns (ER), provide explanations (EX), reduce anxiety (AX)
-4. **Benchmarking**: Compare organizational scores to normative data from N=318 sample
+4. **Benchmarking**: Compare organizational scores to normative data from N=325 sample
 
 ### For Researchers
 
@@ -936,9 +936,9 @@ jupyter notebook notebooks/AIRS_Analysis_Python.ipynb
 
 **Data Files** (`data/`):
 
-- `AIRS_clean.csv` - Full sample (N=318)
-- `AIRS_clean_dev.csv` - Development sample (N=159)
-- `AIRS_clean_holdout.csv` - Holdout sample (N=159)
+- `AIRS_clean.csv` - Full sample (N=325)
+- `AIRS_clean_dev.csv` - Development sample (N=162)
+- `AIRS_clean_holdout.csv` - Holdout sample (N=163)
 
 ---
 
@@ -955,7 +955,7 @@ jupyter notebook notebooks/AIRS_Analysis_Python.ipynb
 
 ## 🏆 Acknowledgments
 
-- **Study Participants** (N=318): Faculty, students, and professionals who generously shared their AI adoption experiences
+- **Study Participants** (N=325): Faculty, students, and professionals who generously shared their AI adoption experiences
 - **Dr. Venkatesh**: For developing the UTAUT2 framework that provides the theoretical foundation for this research
 - **Dr. Karina Kasztelnik**: For dissertation guidance and oversight throughout this project
 - **Open-Source Community**: Python developers of factor-analyzer, semopy, and pingouin packages enabling reproducible psychometric research
