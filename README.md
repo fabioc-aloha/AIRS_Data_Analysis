@@ -43,20 +43,20 @@ I am pleased to report progress on **Phase 1 & 2: Scale Development and CFA Vali
 
 **For Dr. Kasztelnik (Chair)**:
 
-✅ **Progress**: On schedule (Week 24/32), Phase 1 & 2 complete; data collection ongoing (N=325/500)
-✅ **Quality**: Rigorous split-sample validation, CFA confirmed 2-factor structure with adequate fit
-✅ **Achievement**: Measurement model validated - Factor 1 excellent, Factor 2 documented limitations
-✅ **Next Steps**: Continue data collection to N=500, then Phase 3 (Measurement Invariance)
-⚠️ **Status**: Psychometric validation complete; structural hypothesis testing pending target sample achievement
+- ✅ **Progress**: On schedule (Week 24/32), Phase 1 & 2 complete; data collection ongoing (N=325/500)
+- ✅ **Quality**: Rigorous split-sample validation, CFA confirmed 2-factor structure with adequate fit
+- ✅ **Achievement**: Measurement model validated - Factor 1 excellent, Factor 2 documented limitations
+- ✅ **Next Steps**: Continue data collection to N=500, then Phase 3 (Measurement Invariance)
+- ⚠️ **Status**: Psychometric validation complete; structural hypothesis testing pending target sample achievement
 
 **For Dr. Venkatesh (Mentor)**:
 
-🙏 **UTAUT2 Foundation**: Study builds directly on your seminal 2012 framework
-🎯 **Theoretical Extension**: Tests whether AI-specific constructs add explanatory power beyond UTAUT2's eight core predictors
-📊 **Validation Complete**: CFA confirmed 2-factor structure (Mixed Readiness + Risk/Anxiety) on independent holdout sample
-✅ **Psychometric Quality**: Factor 1 excellent (α=0.924, CR=0.925), Factor 2 documented limitations (α=0.545)
-🔍 **Key Test Ahead**: Phase 4 nested model comparison will test incremental validity (H3: ΔR² ≥ 0.10)
-💡 **Novel Contribution**: Mediation analysis (Phase 5) explores trust and anxiety as psychological mechanisms
+- 🙏 **UTAUT2 Foundation**: Study builds directly on your seminal 2012 framework
+- 🎯 **Theoretical Extension**: Tests whether AI-specific constructs add explanatory power beyond UTAUT2's eight core predictors
+- 📊 **Validation Complete**: CFA confirmed 2-factor structure (Mixed Readiness + Risk/Anxiety) on independent holdout sample
+- ✅ **Psychometric Quality**: Factor 1 excellent (α=0.924, CR=0.925), Factor 2 documented limitations (α=0.545)
+- 🔍 **Key Test Ahead**: Phase 4 nested model comparison will test incremental validity (H3: ΔR² ≥ 0.10)
+- 💡 **Novel Contribution**: Mediation analysis (Phase 5) explores trust and anxiety as psychological mechanisms
 
 ---
 
@@ -86,7 +86,9 @@ In the original UTAUT model, Voluntariness of Use was defined as "the degree to 
 UTAUT2 removed Voluntariness of Use as a moderator because the framework was designed for consumer contexts where technology use is almost always voluntary. Social influence operates differently in consumer decision-making, reducing the need for voluntariness as a moderating variable (Venkatesh et al., 2012). As a result, VO is conceptually present in the background of UTAUT2 but not explicitly included.
 
 **Reintroduction for Enterprise AI Research**:
+
 Given this study's focus on enterprise AI adoption, VO becomes relevant again because:
+
 - Enterprise environments often have mandatory platforms, mandatory AI tools, or strong managerial expectations
 - Employees may differ dramatically in readiness depending on whether AI use feels forced versus self-initiated
 - Many modern UTAUT extensions reintroduce voluntariness when studying organizational AI adoption because it influences perceived autonomy, psychological reactance, motivation, satisfaction, and resistance behaviors
