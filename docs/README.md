@@ -1,39 +1,86 @@
-# Documentation
+# Documentation - Active Dissertation Files
 
-This directory contains all project documentation files.
+This directory contains **active documentation** for the dissertation (N=318, Phase 1 complete).
 
-## 📚 Contents
+**Archive Location**: See `../archive/docs_exploratory/` for 15 exploratory phase reports (N=281)
 
-### Core Documentation
-- **`DATA_DICTIONARY.md`** - Complete variable definitions, scales, measurement notes (353 lines)
-- **`AIRS DBA Project Proposal v4.md`** - Theoretical framework, literature review, methodology (383 lines)
-- **`AIRS Survey Instrument v5.md`** - Research questions, hypotheses, complete survey with item provenance (192 lines)
+---
 
-### Analysis Documentation
-- **`NOTEBOOK_FACT_CHECK_AND_REVISIONS.md`** - Citation updates and measurement validation audit
-- **`ANALYSIS_SCRIPT_UPDATES.md`** - Code modification history and implementation notes
-- **`PROJECT_README.md`** - Alternative project overview (retained for reference)
+## 📚 Active Documentation
 
-### Generated Reports
-- **`AIRS_Analysis_Guide_Concise v13.html`** - HTML analysis report from R Markdown
-- **`AIRS_Analysis_files/`** - Supporting files for HTML report (plots, figures)
+### Core Dissertation Documents
+- **`AIRS DBA Project Proposal v4.md`** - Theoretical framework, hypotheses (H1-H5), methodology
+  - Updated November 2025 with H5 (mediation), VO correction
+  - 8 UTAUT2 + 4 AI-specific = 12 constructs
+  - Sample: N≈500 proposed → N=318 actual (159/159 split)
+
+- **`AIRS Survey Instrument v5.md`** - Complete survey with item provenance
+  - Research questions (RQ1-RQ5)
+  - Hypotheses (H1-H5)
+  - 24-item instrument (2 items per 12 constructs)
+  - Response scales and administration guidance
+
+- **`DATA_DICTIONARY.md`** - Variable definitions, scales, measurement notes
+  - Complete variable specifications
+  - Construct definitions
+  - Measurement issues documentation
+
+### Validation & Quality Assurance
+- **`FACT_CHECK_REPORT.md`** - Dissertation fact-checking session documentation
+  - November 20, 2025 validation session
+  - 85K token extended analysis
+  - Authoritative source identification
+  - 14 sections corrected
+
+### Visual Assets
+- **`AIRS Model.png`** - Conceptual framework diagram
+  - UTAUT2 core + AI-specific constructs
+  - Path model with directional relationships
 
 ---
 
 ## 📖 Quick Reference
 
-### For Variable Information
-→ See `DATA_DICTIONARY.md`
+### For Theoretical Framework
+→ See `AIRS DBA Project Proposal v4.md` (Section 5: Theoretical Orientation)
 
 ### For Survey Items & Wording
-→ See `AIRS Survey Instrument v5.md` (Appendix A)
+→ See `AIRS Survey Instrument v5.md` (Appendix A: Complete Survey)
 
-### For Theoretical Framework
-→ See `AIRS DBA Project Proposal v4.md`
+### For Variable Specifications
+→ See `DATA_DICTIONARY.md` (All 24 items + demographics)
 
-### For Measurement Issues
-→ See `DATA_DICTIONARY.md` sections on VO, ER, AX constructs
+### For Hypotheses
+→ See `AIRS DBA Project Proposal v4.md` (Section 6: Hypotheses H1-H5)
+
+### For Data Validation
+→ See `FACT_CHECK_REPORT.md` (Quality assurance documentation)
 
 ---
 
-**Note**: Primary analysis is in `../notebooks/AIRS_Analysis_Python.ipynb`
+## 🔗 Related Documentation
+
+- **Analysis Plan**: `../airs/ANALYSIS_PLAN.md` (Phase-by-phase roadmap, v1.1)
+- **Consistency Check**: `../airs/CONSISTENCY_CHECK.md` (Proposal/plan/code alignment)
+- **Exploratory Learnings**: `../EXPLORATORY_PHASE_LEARNINGS.md` (Methodological insights)
+- **Main README**: `../README.md` (Project overview)
+- **Archive**: `../archive/docs_exploratory/` (15 exploratory reports)
+
+---
+
+## 🗂️ Archive Status
+
+**Moved to `../archive/docs_exploratory/` (November 22, 2025)**:
+- Exploratory analysis reports (N=281 phase)
+- Item-level optimization studies
+- Outcome variable comparisons
+- Modularization experiments
+- Notebook fact-checking records
+
+**Reason for Archive**: Exploratory documents used mixed samples (N=201-309), multiple outcomes (adoption/BI/usage), and data-driven selection. Dissertation requires fixed framework (12 constructs), standardized outcome (BI), and construct-balanced approach.
+
+---
+
+**Last Updated**: November 22, 2025 (Week 24/32)
+**Status**: Phase 1 complete, Phase 2 (CFA) next
+**Primary Analysis Location**: `../airs/` (dissertation notebooks)

@@ -1,0 +1,62 @@
+{
+  "PE": {
+    "selected_item": "PE1",
+    "primary_factor": "F1",
+    "loading": 0.7661877981520502
+  },
+  "EE": {
+    "selected_item": "EE2",
+    "primary_factor": "F1",
+    "loading": 0.4116538866150842
+  },
+  "SI": {
+    "selected_item": "SI2",
+    "primary_factor": "F2",
+    "loading": 0.5887594711006008
+  },
+  "FC": {
+    "selected_item": "FC1",
+    "primary_factor": "F2",
+    "loading": 0.9036488491461004
+  },
+  "HM": {
+    "selected_item": "HM1",
+    "primary_factor": "F1",
+    "loading": 0.8017961185593474
+  },
+  "PV": {
+    "selected_item": "PV2",
+    "primary_factor": "F1",
+    "loading": 0.9784020915986835
+  },
+  "HB": {
+    "selected_item": "HB2",
+    "primary_factor": "F1",
+    "loading": 0.9493235183053784
+  },
+  "VO": {
+    "selected_item": "VO1",
+    "primary_factor": "F1",
+    "loading": 0.7205313164579705
+  },
+  "TR": {
+    "selected_item": "TR1",
+    "primary_factor": "F1",
+    "loading": 0.7777419166067777
+  },
+  "EX": {
+    "selected_item": "EX1",
+    "primary_factor": "F2",
+    "loading": 0.5355481600913872
+  },
+  "ER": {
+    "selected_item": "ER1",
+    "primary_factor": "F3",
+    "loading": 0.7108930760646868
+  },
+  "AX": {
+    "selected_item": "AX2",
+    "primary_factor": "F3",
+    "loading": 0.6513080320382901
+  }
+}

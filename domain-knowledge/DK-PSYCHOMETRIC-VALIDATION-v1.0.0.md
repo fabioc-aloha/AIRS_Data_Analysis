@@ -517,10 +517,118 @@ This domain knowledge activates when:
 
 ## Embedded Synapse Network
 
+---
+
+## 📊 EFA Visualization & Reporting Best Practices
+
+**Added**: November 22, 2025 - Empirical Model Visualization Mastery Session
+
+### Publication-Quality Factor Structure Diagrams
+
+**Essential Elements**:
+1. **Individual Item Loadings**: Display exact loading coefficient for each item (2 decimals: 0.81, 0.74, 0.62)
+2. **Factor Loading Ranges**: Show min-max in factor title for quick assessment (e.g., "Factor 1: 10 items, loadings 0.62-0.91")
+3. **Item Count Accuracy**: **CRITICAL** - Verify counts match actual factor composition (theory ≠ empirical reality)
+4. **Visual Semantic Coding**: Color-code by role (facilitators: green, barriers: red, outcomes: blue, moderators: gray)
+5. **Inter-factor Relationships**: Display correlation coefficient with interpretation (r=0.17, weak positive)
+
+**Statistical Performance Summary Requirements**:
+- **Variance Explained**: Total % + proportion per factor (F1: 49.4%, F2: 8.7%, Total: 58.1%)
+- **Internal Consistency**: Cronbach's α with interpretation (α ≥ 0.70 good, ≥ 0.80 excellent, ≥ 0.90 excellent)
+- **Predictive Validity**: R² for outcome prediction + comparison to fuller models (efficiency metric)
+- **Sampling Adequacy**: KMO statistic (≥ 0.60 adequate) + Bartlett's test (p < .001)
+- **Sample Size**: Development N, holdout N if split-sample design
+
+### Systematic Fact-Checking Protocol
+
+**⚠️ CRITICAL LESSON**: Never create visualizations based on theoretical expectations without verifying against actual analytical output.
+
+**Verification Steps**:
+1. **Source Verification**: Always verify against analytical output (Jupyter notebook cells, SPSS output tables) not assumptions
+2. **Systematic Cross-Checking**: Verify every statistic independently - don't assume theoretical structure matches empirical
+3. **Cell Output Reading**: Use `read_notebook_cell_output` to extract exact values from executed cells
+4. **Multiple Verification Points**: Cross-check across summary outputs, detailed tables, diagnostic plots
+5. **Source Documentation**: Record which notebook cell/SPSS table each statistic originates from
+
+**Common Pitfalls to Avoid**:
+- ❌ **Assumption Error**: Creating diagrams from theoretical factor structure without verifying actual EFA output (DISSERTATION-FATAL)
+- ❌ **Incomplete Verification**: Checking summary stats (N, α, R²) but not individual loadings and factor assignments
+- ❌ **Rounding Inconsistency**: Mixing decimal precision across diagram (maintain 2-decimal consistency)
+- ❌ **Missing Unexpected Findings**: Not flagging items loading contrary to predictions (EX1 on F1 not F2)
+- ❌ **Outdated Diagrams**: Not updating visualizations after re-running analyses with new data
+
+### Mermaid Syntax for EFA Diagrams
+
+```markdown
+\`\`\`mermaid
+graph LR
+    %% Styling with semantic color coding
+    classDef facilitatorBox fill:#d1fae5,stroke:#059669,stroke-width:3px,color:#065f46
+    classDef barrierBox fill:#fecaca,stroke:#dc2626,stroke-width:3px,color:#991b1b
+    classDef outcomeBox fill:#bfdbfe,stroke:#1e40af,stroke-width:4px,color:#1e3a8a
+
+    %% Factor subgraphs with loading ranges
+    subgraph F1["Factor 1: Name (n items, loadings min-max)"]
+        ITEM1["Construct Name (CODE) loading"]
+        ITEM2["Construct Name (CODE) loading"]
+        ITEM1 --- ITEM2  %% Internal connection for layout
+    end
+
+    %% Outcome node
+    OUTCOME["Outcome Variable<br/>R² = value"]
+
+    %% Relationships
+    F1 -->|"+ effect"| OUTCOME
+    F1 -.->|"r = corr"| F2
+
+    %% Apply styles
+    class ITEM1,ITEM2 facilitatorBox
+    class OUTCOME outcomeBox
+
+    %% Hide internal connections
+    linkStyle 0 stroke:none
+\`\`\`
+```
+
+**Advanced Techniques**:
+- `direction LR` inside subgraphs for horizontal moderator layouts in vertical diagrams
+- `linkStyle N stroke:none` to hide internal connections used for vertical stacking
+- Multiple `classDef` for semantic color coding aligned with factor interpretation
+
+### Case Study: Factor Structure Error Detection
+
+**Context**: AIRS Dissertation Phase 1 EFA Visualization (Nov 22, 2025)
+
+**Critical Error Discovered**:
+- **Original Diagram**: Factor 1 "Facilitators" (8 items), Factor 2 "Barriers" (6 items)
+- **Actual EFA Results**: Factor 1 "Mixed Orientation" (10 items), Factor 2 "Risk/Anxiety" (2 items)
+- **Misclassified Items**: EE2, SI2, EX1 shown in F2 but actually loaded on F1
+- **Loading Range Errors**: F1 claimed 0.72-0.98, actual 0.62-0.91; F2 claimed 0.41-0.82, actual 0.64-0.75
+
+**Detection Method**:
+1. User-initiated systematic fact-checking ("check notebooks and fact check mermaid")
+2. `grep_search` to locate factor loading outputs in airs/01_EFA_Construct_Balanced_12_Item.ipynb
+3. `read_notebook_cell_output` for factor composition cell: "F1: 10 constructs" not 8
+4. Line-by-line comparison of diagram vs. notebook output for each item
+
+**Correction Process**:
+1. Completely restructured Factor 1 subgraph with all 10 items + individual loadings
+2. Reduced Factor 2 to actual 2 items (ER1 0.75, AX2 0.64)
+3. Updated factor loading ranges based on actual min-max values (SI2=0.62 lowest in F1, PV2=0.91 highest)
+4. Renamed factors to reflect actual empirical content ("Mixed Orientation" not theory-driven "Facilitators")
+5. Corrected CSS class assignments for visual semantic coding
+6. Re-verified every value against notebook output for 100% accuracy
+
+**Impact Prevention**: Committee member Dr. Venkatesh (UTAUT2 creator) would immediately spot 8-6 vs 10-2 discrepancy. This dissertation-fatal error would undermine entire defense. Systematic fact-checking is non-negotiable for high-stakes academic work.
+
+**Lesson Applied**: **SOURCE TRUTH PRIMACY** - Always verify visualizations against analytical source outputs, never from theoretical expectations or assumptions about factor structure.
+
+---
+
 ### **Strong Forward Connections** (Knowledge Application)
 - [DK-PYTHON-STATISTICAL-ANALYSIS-v1.0.0.md] (0.95, implements, forward) - "Psychometric validation implemented through Python statistical libraries"
 - [DK-JUPYTER-PSYCHOMETRIC-WORKFLOWS-v1.0.0.md] (0.92, integrates, bidirectional) - "Validation procedures integrated with factor analysis workflows"
-- [DK-DOCUMENTATION-EXCELLENCE-v1.1.0.md] (0.88, enhances, forward) - "Validation results documented with publication-ready standards"
+- [DK-DOCUMENTATION-EXCELLENCE-v1.1.0.md] (0.90, enhances, forward) - "Validation results documented with publication-ready standards; fact-checking prerequisite"
 
 ### **Moderate Reciprocal Connections** (Complementary Domains)
 - [DK-ADVANCED-DIAGRAMMING-v1.1.0.md] (0.85, visualizes, bidirectional) - "Validation results visualized through comparative multi-panel displays"
@@ -530,13 +638,15 @@ This domain knowledge activates when:
 - [bootstrap-learning.instructions.md] (0.94, demonstrates, backward) - "Domain acquired through conversational learning during validation project"
 - [empirical-validation.instructions.md] (0.91, validates, bidirectional) - "Psychometric validation exemplifies empirical research standards"
 - [alex-core.instructions.md] (0.87, operates-within, backward) - "Domain knowledge integrated into Alex cognitive architecture"
+- [meditation-session-2025-11-22-empirical-model-visualization.prompt.md] (0.93, documents, backward) - "Visualization mastery session with fact-checking case study"
 
 ---
 
 **Version History**:
 - v1.0.0 (Nov 21, 2025): Initial mastery documentation from AIRS short form validation project
+- v1.0.1 (Nov 22, 2025): Added EFA visualization & fact-checking best practices section with case study
 
 **Maintenance Notes**:
-- Domain stable and ready for application to new scale validation projects
+- Domain enhanced with visualization and empirical verification protocols
 - Future enhancements: Confirmatory factor analysis integration, measurement invariance testing
 - Keep synchronized with DK-JUPYTER-PSYCHOMETRIC-WORKFLOWS for comprehensive psychometric capabilities

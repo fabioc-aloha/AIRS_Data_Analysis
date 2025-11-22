@@ -1,0 +1,160 @@
+Duration_minutes,PE1,PE2,EE1,EE2,SI1,SI2,FC1,FC2,HM1,HM2,PV1,PV2,HB1,HB2,VO1,VO2,TR1,TR2,EX1,EX2,ER1,ER2,AX1,AX2,BI1,BI2,BI3,BI4,Role,Education,Industry,Experience,Disability,Usage_MSCopilot,Usage_ChatGPT,Usage_Gemini,Usage_Other,AI_Adoption,AI_Adoption_Level,Primary_Tool,Experience_Level,Work_Context,Usage_Intensity,Total_Usage_Score
+7.266666666666667,4,4,4,4,3,2,4,4,3,4,4,4,4,4,2,4,4,4,4,4,4,4,5,5,5,4,5,5,Student,Some College,Retail,Less than 1 year,No,4,5,1,1,1,Multiple,ChatGPT,Entry,Academic-Student,Medium,11
+2.55,3,2,1,1,2,2,2,2,2,2,2,2,2,2,2,4,2,2,1,3,4,4,4,4,1,1,1,1,Business Professional,Some College,Education,More than 10 years,No,1,1,1,1,0,,,Expert,Professional,Non-User,4
+4.933333333333334,2,2,4,4,2,2,4,4,2,2,2,2,2,2,2,4,2,2,4,2,4,5,5,3,2,1,1,1,Administrator,Some College,Healthcare,More than 10 years,No,3,3,2,1,1,Multiple,ChatGPT,Expert,Professional,Medium,9
+3.733333333333333,4,4,4,5,4,4,5,4,4,4,5,5,5,4,4,4,4,5,5,5,4,4,4,4,4,4,4,4,IT Professional,Associate's Degree,Healthcare,4-6 years,Yes,4,3,3,4,1,Multiple,MSCopilot,Mid,Professional,High,14
+5.5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,1,2,2,3,4,4,4,4,Other,Associate's Degree,Technology,1-3 years,No,4,5,5,5,1,Multiple,ChatGPT,Early,Professional,High,19
+7.316666666666666,4,4,4,4,3,3,4,4,4,4,4,3,4,4,4,4,5,4,4,4,4,3,3,3,4,4,4,4,Other,Some College,Education,7-10 years,Yes,2,3,1,3,1,Multiple,ChatGPT,Senior,Professional,Medium,9
+8.566666666666666,1,5,5,5,5,4,5,4,4,5,5,3,5,5,4,5,4,4,4,4,2,4,2,4,2,4,4,4,Student,Associate's Degree,Retail,Less than 1 year,No,4,3,4,4,1,Multiple,MSCopilot,Entry,Academic-Student,High,15
+2.45,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,1,1,1,1,5,5,5,5,IT Professional,Associate's Degree,Government,More than 10 years,No,4,5,4,4,1,Multiple,ChatGPT,Expert,Professional,High,17
+2.783333333333333,4,4,3,4,4,3,4,4,4,4,4,5,4,4,5,2,3,3,4,3,2,4,4,3,4,4,4,3,Business Professional,Bachelor's Degree,Manufacturing,More than 10 years,No,1,4,2,1,1,Multiple,ChatGPT,Expert,Professional,Low,8
+2.933333333333333,5,4,5,4,4,5,4,4,5,4,5,4,4,5,4,5,4,5,5,4,5,5,5,4,4,5,4,5,Researcher,Master's Degree,Retail,4-6 years,No,5,4,5,4,1,Multiple,MSCopilot,Mid,Academic-Faculty,High,18
+1.45,4,5,5,4,5,5,5,4,5,4,5,4,5,4,5,4,5,4,5,4,5,4,5,4,5,4,5,4,Researcher,Associate's Degree,Healthcare,7-10 years,Yes,5,4,4,4,1,Multiple,MSCopilot,Senior,Academic-Faculty,High,17
+2.7,3,3,4,4,2,2,3,3,2,4,3,3,2,2,2,2,3,3,4,3,5,4,4,4,3,3,3,3,Administrator,High School,Manufacturing,1-3 years,No,1,3,1,1,1,Single,ChatGPT,Early,Professional,Low,6
+4.25,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,4,4,5,5,5,4,4,4,5,5,5,5,5,IT Professional,Master's Degree,Healthcare,7-10 years,No,4,5,5,3,1,Multiple,ChatGPT,Senior,Professional,High,17
+2.95,5,5,4,4,2,4,4,4,4,4,4,4,4,2,4,5,3,3,3,4,2,4,3,5,4,4,4,4,Administrator,Bachelor's Degree,Non-profit,More than 10 years,No,4,4,3,1,1,Multiple,ChatGPT,Expert,Professional,Medium,12
+3.65,4,4,4,4,4,3,4,4,2,3,5,4,4,4,4,5,4,3,2,3,2,5,2,3,4,4,5,3,Student,Some College,Education,Less than 1 year,No,1,4,1,4,1,Multiple,ChatGPT,Entry,Academic-Student,Medium,10
+2.083333333333333,4,3,4,4,2,2,2,4,4,3,4,4,4,2,4,4,2,3,2,4,2,4,4,4,3,4,4,2,Student,Some College,Education,Less than 1 year,No,3,4,2,1,1,Multiple,ChatGPT,Entry,Academic-Student,Medium,10
+4.15,4,3,3,4,2,2,2,2,4,4,4,3,4,3,4,4,3,3,4,4,5,5,4,4,3,3,4,2,Business Professional,Associate's Degree,Education,7-10 years,Yes,1,5,3,1,1,Multiple,ChatGPT,Senior,Professional,Medium,10
+6.0,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,2,5,5,5,5,5,1,1,5,5,5,5,5,IT Professional,Bachelor's Degree,Healthcare,More than 10 years,No,5,5,5,3,1,Multiple,ChatGPT,Expert,Professional,High,18
+6.133333333333334,4,4,5,4,3,4,2,2,2,2,4,2,4,2,5,5,1,2,2,4,1,4,4,2,1,4,5,2,Student,Some College,Education,Less than 1 year,No,4,5,3,2,1,Multiple,ChatGPT,Entry,Academic-Student,High,14
+4.516666666666667,4,4,4,4,3,4,4,4,3,4,4,4,4,2,4,4,4,4,4,4,4,4,3,2,4,4,4,3,Student,Some College,Education,1-3 years,No,2,4,3,4,1,Multiple,ChatGPT,Early,Academic-Student,High,13
+4.45,2,2,3,2,2,3,1,1,1,1,1,1,1,1,1,3,1,1,2,1,5,5,5,5,1,1,1,1,Administrator,High School,Government,7-10 years,No,1,1,1,1,0,,,Senior,Professional,Non-User,4
+2.65,4,4,4,4,3,2,4,4,3,3,4,3,3,2,4,4,4,4,4,4,2,4,4,4,3,4,4,2,Student,Some College,Non-profit,Less than 1 year,Yes,2,4,1,1,1,Multiple,ChatGPT,Entry,Academic-Student,Low,8
+2.716666666666667,3,3,2,2,2,3,3,2,3,3,2,2,4,4,3,2,4,2,3,2,2,4,4,4,3,3,2,2,Instructor/Teacher,Some College,Government,More than 10 years,Yes,1,1,2,1,1,Single,Gemini,Expert,Academic-Faculty,Low,5
+57.38333333333333,4,4,4,4,3,3,3,3,4,4,4,4,4,4,3,3,3,3,4,3,3,3,4,3,4,4,4,3,Student,Associate's Degree,Retail,1-3 years,No,2,5,1,2,1,Multiple,ChatGPT,Early,Academic-Student,Medium,10
+7.5,2,2,3,3,2,2,1,3,3,3,3,3,1,1,1,5,1,1,1,3,2,4,5,3,2,1,1,1,Administrator,High School,Education,More than 10 years,No,1,1,1,1,0,,,Expert,Professional,Non-User,4
+2.4,3,2,3,2,2,2,2,1,2,2,4,2,1,1,1,1,1,1,1,1,4,4,4,4,1,1,4,2,Administrator,High School,Government,4-6 years,No,1,1,1,1,0,,,Mid,Professional,Non-User,4
+2.8666666666666667,2,2,3,5,1,3,2,2,1,2,2,2,2,2,2,5,3,4,4,3,5,5,5,4,2,2,1,1,IT Professional,Associate's Degree,Technology,1-3 years,No,1,3,3,2,1,Multiple,ChatGPT,Early,Professional,Medium,9
+1.8333333333333333,1,1,5,1,1,1,2,2,1,2,2,2,2,2,1,5,1,1,1,5,4,4,5,1,1,1,1,1,Other,High School,Other,1-3 years,No,1,1,1,1,0,,,Early,Professional,Non-User,4
+3.033333333333333,4,4,4,4,5,4,4,5,5,4,5,4,4,4,5,4,4,4,5,4,4,4,4,3,4,5,3,5,IT Professional,Bachelor's Degree,Healthcare,4-6 years,No,4,3,3,2,1,Multiple,MSCopilot,Mid,Professional,Medium,12
+2.833333333333333,5,4,5,4,4,5,4,5,5,4,5,4,4,5,4,5,4,5,4,5,4,5,4,5,4,5,4,3,Administrator,Associate's Degree,Education,7-10 years,No,5,5,4,3,1,Multiple,ChatGPT,Senior,Professional,High,17
+6.85,4,4,4,4,4,4,4,4,4,4,4,4,2,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,IT Professional,Associate's Degree,Government,1-3 years,No,3,1,2,3,1,Multiple,MSCopilot,Early,Professional,Medium,9
+3.35,4,4,4,4,3,4,3,4,4,4,4,4,4,4,4,4,4,4,3,4,4,2,3,4,4,4,4,4,Administrator,Some College,Education,More than 10 years,No,4,5,4,1,1,Multiple,ChatGPT,Expert,Professional,High,14
+3.066666666666667,3,3,4,3,2,4,4,4,2,2,2,2,4,4,1,4,3,3,3,3,4,4,4,5,1,2,2,2,IT Professional,Some College,Education,7-10 years,Yes,1,1,1,1,0,,,Senior,Professional,Non-User,4
+13.95,4,3,4,3,4,2,4,3,4,4,3,4,3,3,3,3,4,2,3,3,2,3,4,2,2,3,4,3,IT Professional,Some College,Retail,4-6 years,No,3,3,3,3,1,Multiple,ChatGPT,Mid,Professional,Medium,12
+2.583333333333333,4,4,4,4,3,3,4,4,4,4,4,4,3,4,4,4,5,4,4,4,4,5,3,4,4,4,4,4,Student,Some College,Education,Less than 1 year,Yes,4,3,4,3,1,Multiple,MSCopilot,Entry,Academic-Student,High,14
+3.2333333333333334,5,4,5,5,2,3,2,3,2,2,5,5,5,5,4,2,4,4,2,3,3,2,3,2,4,5,4,5,Student,Some College,Technology,1-3 years,No,1,5,1,1,1,Single,ChatGPT,Early,Academic-Student,Low,8
+3.2,1,1,2,2,3,2,2,2,3,2,1,2,1,1,1,5,3,2,3,3,5,5,5,3,1,1,1,1,Researcher,Some College,Education,7-10 years,No,1,1,1,1,0,,,Senior,Academic-Faculty,Non-User,4
+1.2166666666666666,3,2,3,3,3,3,2,4,4,4,4,4,3,4,3,4,5,4,4,5,3,3,4,2,3,2,2,3,Instructor/Teacher,High School,Technology,4-6 years,Yes,4,4,3,3,1,Multiple,ChatGPT,Mid,Academic-Faculty,High,14
+137.66666666666666,2,2,2,1,1,1,1,2,1,1,1,1,1,1,1,1,1,1,1,1,5,5,5,5,1,1,2,1,IT Professional,Some College,Education,1-3 years,No,1,2,1,1,1,Single,ChatGPT,Early,Professional,Low,5
+9.3,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,1,1,1,1,5,5,5,5,IT Professional,Bachelor's Degree,Healthcare,4-6 years,No,5,5,5,5,1,Multiple,ChatGPT,Mid,Professional,High,20
+7.433333333333334,1,1,2,2,1,2,2,2,3,2,2,3,2,2,5,5,3,5,2,3,2,5,5,1,2,2,5,3,IT Professional,Associate's Degree,Manufacturing,More than 10 years,No,3,1,3,1,1,Multiple,MSCopilot,Expert,Professional,Low,8
+1.55,3,3,4,4,4,4,4,4,4,4,4,4,3,3,4,4,3,4,4,4,3,4,3,3,4,4,4,4,IT Professional,Associate's Degree,Technology,More than 10 years,No,1,3,1,1,1,Single,ChatGPT,Expert,Professional,Low,6
+2.3833333333333333,5,5,5,5,4,5,5,4,4,5,5,5,5,5,4,5,5,4,5,5,5,4,4,5,5,4,5,5,IT Professional,Bachelor's Degree,Healthcare,More than 10 years,No,5,5,5,4,1,Multiple,ChatGPT,Expert,Professional,High,19
+1.8166666666666669,5,4,5,5,5,5,4,5,5,5,5,5,5,5,5,5,5,5,5,5,5,4,5,5,5,5,4,5,IT Professional,Associate's Degree,Technology,4-6 years,Yes,5,5,4,5,1,Multiple,ChatGPT,Mid,Professional,High,19
+6.3,4,4,3,3,3,3,4,3,3,3,4,4,3,4,4,4,4,4,3,4,4,4,3,3,3,4,3,3,Student,High School,Manufacturing,Less than 1 year,No,2,1,1,1,1,Single,MSCopilot,Entry,Academic-Student,Low,5
+2.6333333333333333,4,3,5,5,1,1,1,1,5,4,5,4,4,4,1,5,1,2,5,4,1,4,5,1,1,1,1,1,Administrator,Associate's Degree,Technology,Less than 1 year,No,1,3,1,1,1,Single,ChatGPT,Entry,Professional,Low,6
+3.083333333333333,4,5,5,5,4,5,5,4,2,5,5,4,5,5,3,5,5,5,2,5,5,4,5,5,4,5,4,5,Researcher,Master's Degree,Government,4-6 years,No,3,4,5,5,1,Multiple,Gemini,Mid,Academic-Faculty,High,17
+2.816666666666667,4,4,4,3,4,4,5,4,2,2,3,4,4,4,4,4,3,4,4,5,2,5,5,4,4,5,4,3,Student,High School,Technology,1-3 years,No,3,4,4,1,1,Multiple,ChatGPT,Early,Academic-Student,Medium,12
+2.5,5,5,5,5,3,1,2,3,2,3,5,5,5,5,5,5,3,3,2,4,5,5,5,5,3,3,3,3,Student,Some College,Education,More than 10 years,Yes,1,4,4,2,1,Multiple,ChatGPT,Expert,Academic-Student,Medium,11
+10.316666666666666,4,4,4,4,4,5,2,3,4,3,4,4,2,4,4,5,3,4,4,4,5,4,5,4,3,3,2,2,IT Professional,Some College,Government,1-3 years,No,5,1,1,1,1,Single,MSCopilot,Early,Professional,Low,8
+8.85,2,2,3,3,2,4,3,3,1,1,2,2,1,1,1,4,2,2,4,3,1,3,4,2,2,2,2,2,Administrator,Bachelor's Degree,Other,7-10 years,No,1,1,2,1,1,Single,Gemini,Senior,Professional,Low,5
+3.4,3,4,4,4,2,2,3,4,3,4,2,3,4,2,4,4,3,3,4,5,4,3,4,4,4,3,3,3,Student,High School,Education,Less than 1 year,No,3,3,3,2,1,Multiple,ChatGPT,Entry,Academic-Student,Medium,11
+10.35,5,4,4,4,5,4,3,4,5,4,2,4,3,2,4,4,3,3,4,4,4,4,4,4,4,4,4,4,IT Professional,Bachelor's Degree,Education,4-6 years,No,4,4,3,2,1,Multiple,ChatGPT,Mid,Professional,High,13
+4.283333333333333,4,4,5,4,3,3,4,3,3,4,4,4,2,2,4,4,2,4,4,4,1,4,2,2,4,4,4,4,Administrator,Some College,Education,More than 10 years,No,3,4,3,1,1,Multiple,ChatGPT,Expert,Professional,Medium,11
+7.016666666666667,4,4,3,3,4,4,2,4,3,4,4,4,3,3,4,4,3,3,2,3,2,3,3,2,4,4,4,4,Administrator,Bachelor's Degree,Technology,More than 10 years,No,2,1,3,3,1,Multiple,Gemini,Expert,Professional,Medium,9
+4.05,2,2,2,3,2,3,3,2,3,4,3,3,3,3,2,5,3,3,2,3,1,5,5,1,1,2,4,1,Student,Some College,Manufacturing,1-3 years,No,3,2,1,1,1,Multiple,MSCopilot,Early,Academic-Student,Low,7
+9.766666666666667,2,2,2,2,3,3,2,3,2,2,2,2,2,2,2,4,2,2,2,2,4,4,4,4,2,2,2,2,Administrator,Some College,Government,7-10 years,No,1,1,1,1,0,,,Senior,Professional,Non-User,4
+5.366666666666666,3,3,4,4,3,3,2,2,4,4,4,4,4,4,3,4,3,4,4,4,2,4,3,4,3,3,3,4,Administrator,Bachelor's Degree,Education,4-6 years,No,1,4,4,1,1,Multiple,ChatGPT,Mid,Professional,Medium,10
+3.933333333333333,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,Administrator,High School,Education,1-3 years,No,1,1,1,2,1,Single,Other,Early,Professional,Low,5
+2.6333333333333333,4,3,3,3,4,4,3,3,4,4,4,4,2,2,3,4,4,4,3,4,4,4,4,5,3,3,2,2,Other,Associate's Degree,Education,More than 10 years,No,2,2,3,1,1,Multiple,Gemini,Expert,Professional,Low,8
+3.566666666666667,4,4,4,4,4,4,4,4,4,4,3,4,4,4,4,4,4,4,4,4,4,4,5,4,4,4,4,3,IT Professional,Bachelor's Degree,Healthcare,7-10 years,No,5,5,4,4,1,Multiple,ChatGPT,Senior,Professional,High,18
+2.466666666666667,1,1,5,1,1,1,4,1,1,1,1,1,1,1,1,5,1,1,2,5,5,5,5,1,1,1,1,1,Researcher,Master's Degree,Education,More than 10 years,No,2,2,1,1,1,Multiple,ChatGPT,Expert,Academic-Faculty,Low,6
+4.1,5,4,5,4,4,4,4,5,5,5,3,4,4,3,5,5,4,4,5,4,5,4,3,4,3,5,4,3,Student,High School,Technology,1-3 years,No,4,4,2,1,1,Multiple,ChatGPT,Early,Academic-Student,Medium,11
+7.616666666666666,4,3,4,4,2,4,4,4,2,1,2,3,4,2,4,5,2,2,2,5,2,4,5,4,2,1,2,1,Student,Some College,Education,1-3 years,No,1,3,1,4,1,Multiple,Other,Early,Academic-Student,Medium,9
+6.983333333333333,1,1,3,3,1,3,1,1,1,1,1,1,3,1,1,5,1,1,3,3,5,4,5,3,1,1,1,1,Student,High School,Education,Less than 1 year,No,1,1,3,1,1,Single,Gemini,Entry,Academic-Student,Low,6
+3.4166666666666665,4,4,5,4,4,4,4,5,4,4,5,4,2,1,5,5,3,3,4,4,2,4,5,2,3,4,4,4,Student,High School,Technology,4-6 years,No,4,5,3,2,1,Multiple,ChatGPT,Mid,Academic-Student,High,14
+3.85,4,4,3,4,3,3,3,2,3,4,3,4,2,2,3,3,4,4,3,4,4,3,4,3,2,2,2,2,Business Professional,Bachelor's Degree,Technology,More than 10 years,No,3,2,2,2,1,Multiple,MSCopilot,Expert,Professional,Medium,9
+4.9,4,4,5,4,4,5,5,4,5,4,5,4,4,4,5,3,5,4,5,4,3,2,2,4,5,4,5,4,IT Professional,Bachelor's Degree,Education,4-6 years,No,5,4,5,3,1,Multiple,MSCopilot,Mid,Professional,High,17
+3.883333333333333,4,3,3,3,4,5,4,3,3,3,3,3,4,3,4,4,1,3,2,5,3,4,3,1,3,1,3,1,Administrator,Associate's Degree,Retail,4-6 years,No,4,4,1,3,1,Multiple,ChatGPT,Mid,Professional,Medium,12
+3.966666666666667,3,4,2,3,3,4,2,4,4,4,2,3,2,2,4,4,4,4,2,4,2,5,4,3,2,3,4,2,IT Professional,Some College,Non-profit,More than 10 years,No,3,3,1,1,1,Multiple,ChatGPT,Expert,Professional,Low,8
+6.45,4,3,5,4,3,3,4,4,3,3,4,4,5,4,4,4,3,4,2,4,5,3,4,2,3,3,2,2,Student,Some College,Education,Less than 1 year,No,1,5,3,4,1,Multiple,ChatGPT,Entry,Academic-Student,High,13
+9.233333333333333,4,4,3,3,4,3,2,3,4,4,3,4,3,3,4,3,4,4,4,4,2,2,2,4,4,4,4,4,Administrator,Some College,Education,4-6 years,No,4,2,2,1,1,Multiple,MSCopilot,Mid,Professional,Medium,9
+2.2333333333333334,5,5,4,5,5,5,4,5,5,4,5,5,4,5,5,4,4,4,5,5,5,5,5,5,5,4,4,4,Student,Bachelor's Degree,Technology,More than 10 years,No,4,5,5,4,1,Multiple,ChatGPT,Expert,Academic-Student,High,18
+3.216666666666667,4,4,4,4,5,3,3,4,4,4,4,4,4,5,4,4,5,4,4,4,4,4,4,5,5,4,3,3,IT Professional,Bachelor's Degree,Non-profit,4-6 years,No,3,4,4,3,1,Multiple,ChatGPT,Mid,Professional,High,14
+6.916666666666667,3,3,2,2,2,4,2,2,4,4,3,3,2,2,1,4,4,3,4,4,5,5,5,5,2,2,5,3,Administrator,Some College,Education,More than 10 years,No,1,1,1,1,0,,,Expert,Professional,Non-User,4
+4.2,3,2,3,2,1,3,1,2,2,2,3,2,2,2,2,4,3,3,2,4,1,4,5,2,3,3,2,3,Administrator,High School,Government,More than 10 years,Yes,1,1,1,1,0,,,Expert,Professional,Non-User,4
+2.466666666666667,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,4,4,4,2,4,5,5,5,5,Researcher,Bachelor's Degree,Education,More than 10 years,Yes,3,5,4,2,1,Multiple,ChatGPT,Expert,Academic-Faculty,High,14
+2.9833333333333334,3,3,3,3,4,3,4,4,5,4,3,4,2,4,3,3,3,3,4,4,2,4,3,2,4,4,4,3,Student,Associate's Degree,Other,7-10 years,No,2,3,1,2,1,Multiple,ChatGPT,Senior,Academic-Student,Low,8
+3.1166666666666667,1,1,3,3,2,3,1,3,1,1,1,1,1,1,1,5,2,2,1,3,4,5,5,2,1,1,2,1,Business Professional,Associate's Degree,Education,More than 10 years,No,1,1,1,1,0,,,Expert,Professional,Non-User,4
+2.583333333333333,4,4,4,4,2,2,3,4,4,4,4,4,3,1,4,4,1,2,5,5,1,5,5,5,3,3,3,2,Business Professional,Associate's Degree,Healthcare,7-10 years,No,1,2,3,4,1,Multiple,Other,Senior,Professional,Medium,10
+10.516666666666667,5,5,5,4,4,5,5,4,5,5,4,5,5,5,4,4,5,5,5,4,4,5,4,5,5,4,5,4,IT Professional,Master's Degree,Healthcare,7-10 years,No,5,4,5,4,1,Multiple,MSCopilot,Senior,Professional,High,18
+3.75,5,4,4,4,2,2,2,2,4,4,5,4,4,3,5,4,4,3,2,4,5,4,4,4,4,4,4,3,Student,Associate's Degree,Finance,Less than 1 year,No,3,5,1,1,1,Multiple,ChatGPT,Entry,Academic-Student,Medium,10
+3.1333333333333333,4,4,3,3,3,3,3,3,3,4,3,4,3,4,3,4,4,4,3,3,3,3,3,4,3,3,4,4,Student,Some College,Finance,1-3 years,No,3,4,2,4,1,Multiple,ChatGPT,Early,Academic-Student,High,13
+2.316666666666667,4,4,4,4,4,4,2,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,3,4,4,Business Professional,High School,Other,1-3 years,Yes,1,5,2,1,1,Multiple,ChatGPT,Early,Professional,Medium,9
+2.3833333333333333,5,4,5,5,4,5,5,4,5,5,5,4,4,4,5,4,5,5,5,4,5,4,5,4,5,5,4,4,IT Professional,Bachelor's Degree,Healthcare,More than 10 years,No,5,5,5,4,1,Multiple,ChatGPT,Expert,Professional,High,19
+2.0166666666666666,3,3,4,4,2,2,3,3,4,4,4,4,3,3,2,3,3,3,3,3,3,3,3,3,3,4,4,4,Researcher,Associate's Degree,Technology,More than 10 years,No,4,3,2,1,1,Multiple,MSCopilot,Expert,Academic-Faculty,Medium,10
+4.05,2,2,3,2,1,3,3,4,1,1,1,1,1,1,1,4,1,1,2,4,4,5,5,4,2,1,1,1,Administrator,Associate's Degree,Technology,More than 10 years,Yes,1,1,1,1,0,,,Expert,Professional,Non-User,4
+3.566666666666667,2,2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,1,1,4,3,2,1,4,2,2,2,2,2,Healthcare Professional,High School,Education,Less than 1 year,No,1,1,1,1,0,,,Entry,Professional,Non-User,4
+5.25,4,4,3,3,1,2,2,4,2,2,3,3,1,1,2,4,2,2,3,4,2,4,4,2,2,2,2,2,Researcher,Bachelor's Degree,Finance,More than 10 years,No,3,3,3,1,1,Multiple,ChatGPT,Expert,Academic-Faculty,Medium,10
+2.8,5,4,5,4,5,5,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,Researcher,Bachelor's Degree,Education,4-6 years,No,4,5,5,4,1,Multiple,ChatGPT,Mid,Academic-Faculty,High,18
+5.6,5,5,5,5,5,5,5,5,5,5,5,5,5,5,3,4,5,5,5,5,1,4,1,1,5,5,5,5,Researcher,Associate's Degree,Healthcare,7-10 years,No,5,5,5,4,1,Multiple,ChatGPT,Senior,Academic-Faculty,High,19
+4.266666666666667,5,5,4,5,4,3,5,4,5,5,4,5,4,5,5,5,4,5,3,5,3,5,2,5,4,4,5,4,Student,Bachelor's Degree,Education,7-10 years,No,3,4,4,3,1,Multiple,ChatGPT,Senior,Academic-Student,High,14
+3.0166666666666666,3,3,3,3,3,3,4,4,3,3,3,3,3,3,3,3,4,4,3,3,3,3,3,3,3,3,3,3,Researcher,High School,Manufacturing,4-6 years,No,3,3,3,1,1,Multiple,ChatGPT,Mid,Academic-Faculty,Medium,10
+1.5333333333333334,5,3,4,4,4,3,4,4,4,4,4,4,4,4,4,4,4,5,4,4,4,3,2,4,4,4,4,4,Student,Some College,Other,Less than 1 year,No,1,5,1,1,1,Single,ChatGPT,Entry,Academic-Student,Low,8
+12.083333333333334,3,3,4,3,2,3,2,4,2,3,3,3,2,4,4,5,3,3,2,4,2,4,3,1,2,3,1,1,Student,Some College,Manufacturing,Less than 1 year,Prefer not to say,2,1,1,1,1,Single,MSCopilot,Entry,Academic-Student,Low,5
+3.733333333333333,4,2,4,3,4,3,2,4,2,3,5,2,2,2,2,5,2,1,4,5,1,5,5,1,1,1,1,1,Student,Some College,Technology,Less than 1 year,Yes,1,3,3,1,1,Multiple,ChatGPT,Entry,Academic-Student,Low,8
+4.816666666666666,4,4,2,2,4,5,4,4,4,4,4,4,2,4,4,4,4,4,3,4,4,5,4,5,4,4,5,5,Researcher,Associate's Degree,Finance,More than 10 years,No,4,4,3,3,1,Multiple,ChatGPT,Expert,Academic-Faculty,High,14
+3.7,2,1,4,4,2,3,3,3,1,2,2,1,2,2,2,4,1,2,2,2,4,4,5,2,2,1,1,1,Student,Some College,Technology,4-6 years,Yes,2,3,1,1,1,Multiple,ChatGPT,Mid,Academic-Student,Low,7
+6.016666666666667,4,3,4,4,2,2,3,4,2,4,1,2,2,1,4,5,1,2,4,3,2,5,5,2,2,3,3,1,Researcher,Some College,Education,Less than 1 year,Prefer not to say,3,1,3,1,1,Multiple,MSCopilot,Entry,Academic-Faculty,Low,8
+3.216666666666667,1,1,3,2,1,2,1,1,1,1,1,3,1,1,1,5,2,2,3,5,2,5,5,2,2,1,2,1,Administrator,Master's Degree,Retail,More than 10 years,No,2,1,1,1,1,Single,MSCopilot,Expert,Professional,Low,5
+2.75,4,4,4,4,4,3,3,4,4,4,4,4,4,4,4,5,4,4,2,5,2,5,4,4,4,4,4,2,Administrator,Associate's Degree,Education,7-10 years,No,4,4,4,1,1,Multiple,ChatGPT,Senior,Professional,High,13
+6.833333333333333,4,3,4,5,3,2,4,3,3,4,3,4,4,4,3,3,4,5,3,4,3,4,3,2,4,3,2,3,Student,High School,Education,4-6 years,No,4,4,4,3,1,Multiple,ChatGPT,Mid,Academic-Student,High,15
+5.116666666666666,4,5,5,4,4,5,5,4,4,5,4,4,5,4,5,5,4,5,4,5,1,2,2,2,4,4,4,4,IT Professional,Bachelor's Degree,Retail,More than 10 years,No,4,4,5,4,1,Multiple,Gemini,Expert,Professional,High,17
+2.533333333333333,4,4,4,5,3,3,4,4,3,4,4,3,3,3,4,4,3,3,4,4,4,5,3,2,4,3,3,2,Student,Associate's Degree,Education,Less than 1 year,No,2,4,2,3,1,Multiple,ChatGPT,Entry,Academic-Student,Medium,11
+573.8,4,4,3,4,3,4,3,4,4,4,3,4,3,3,4,5,4,4,4,4,3,3,3,3,3,4,3,3,Student,High School,Education,Less than 1 year,No,3,3,3,3,1,Multiple,ChatGPT,Entry,Academic-Student,Medium,12
+3.283333333333333,2,1,4,5,2,3,4,3,3,2,2,4,2,1,4,5,1,2,3,5,2,5,5,1,2,2,1,2,Business Professional,Associate's Degree,Education,More than 10 years,No,1,3,3,2,1,Multiple,ChatGPT,Expert,Professional,Medium,9
+1.2666666666666666,4,4,4,5,4,5,4,4,4,4,5,4,4,4,4,5,5,4,4,5,3,5,4,5,4,5,4,4,Student,Some College,Other,4-6 years,Yes,4,4,3,4,1,Multiple,ChatGPT,Mid,Academic-Student,High,15
+2.4166666666666665,5,4,5,4,5,4,5,4,4,5,5,4,4,5,4,5,4,5,4,4,5,4,5,4,5,5,4,5,IT Professional,Bachelor's Degree,Healthcare,7-10 years,No,4,4,5,5,1,Multiple,Gemini,Senior,Professional,High,18
+6.3,4,4,5,5,3,2,5,4,3,3,3,3,4,4,4,5,2,3,4,4,2,4,4,2,4,4,4,3,Student,High School,Manufacturing,Less than 1 year,No,1,4,4,1,1,Multiple,ChatGPT,Entry,Academic-Student,Medium,10
+1.9666666666666663,5,5,4,4,5,4,5,4,5,5,4,3,3,3,4,5,5,5,4,4,4,4,4,4,5,4,4,4,Researcher,Associate's Degree,Education,More than 10 years,No,4,5,5,4,1,Multiple,ChatGPT,Expert,Academic-Faculty,High,18
+3.8,4,4,4,4,4,5,4,4,3,4,4,4,4,4,4,2,3,3,4,4,4,5,3,4,4,4,4,5,Student,Some College,Healthcare,More than 10 years,Yes,3,4,3,5,1,Multiple,Other,Expert,Academic-Student,High,15
+4.55,5,4,3,4,4,4,2,2,5,5,5,5,4,5,5,5,5,4,2,4,1,4,2,4,4,5,5,4,Administrator,Bachelor's Degree,Technology,More than 10 years,No,1,4,1,1,1,Single,ChatGPT,Expert,Professional,Low,7
+5.85,4,4,3,2,2,4,2,2,2,3,3,3,3,3,3,4,1,2,4,4,4,4,4,4,3,3,3,3,IT Professional,Associate's Degree,Education,More than 10 years,No,3,1,1,1,1,Single,MSCopilot,Expert,Professional,Low,6
+5.433333333333334,2,2,3,3,2,3,2,3,3,3,3,3,3,2,3,4,2,3,3,3,4,5,5,3,1,1,1,1,Business Professional,Associate's Degree,Education,More than 10 years,Yes,1,1,2,2,1,Multiple,Gemini,Expert,Professional,Low,6
+5.75,4,3,3,3,3,3,2,4,3,3,4,4,4,4,4,4,3,3,4,4,3,5,3,3,4,3,4,3,Researcher,Bachelor's Degree,Education,More than 10 years,No,4,4,3,3,1,Multiple,ChatGPT,Expert,Academic-Faculty,High,14
+2.183333333333333,3,3,3,4,2,2,2,3,4,3,3,3,1,1,3,3,2,2,3,3,5,5,5,5,3,3,3,3,IT Professional,Some College,Manufacturing,4-6 years,No,4,2,3,1,1,Multiple,MSCopilot,Mid,Professional,Medium,10
+3.566666666666667,1,1,3,2,2,1,1,1,1,1,1,1,1,1,1,5,1,1,2,4,2,4,5,4,1,1,1,1,Business Professional,Bachelor's Degree,Education,More than 10 years,No,1,1,2,1,1,Single,Gemini,Expert,Professional,Low,5
+3.4166666666666665,4,2,4,4,2,4,3,4,2,3,4,4,4,2,4,5,2,3,1,5,3,4,5,4,2,3,2,2,Student,Some College,Education,Less than 1 year,No,2,1,3,4,1,Multiple,Other,Entry,Academic-Student,Medium,10
+7.166666666666667,3,3,2,4,2,2,5,3,2,3,3,2,1,1,3,5,3,3,3,3,3,4,4,3,2,2,2,2,Student,Some College,Education,Less than 1 year,No,1,1,1,1,0,,,Entry,Academic-Student,Non-User,4
+3.583333333333333,1,1,2,1,1,1,3,3,1,1,1,1,1,1,1,1,1,1,1,1,5,5,5,5,1,1,1,1,Administrator,High School,Finance,4-6 years,No,1,1,1,1,0,,,Mid,Professional,Non-User,4
+2.9,2,2,4,4,1,2,2,4,1,1,1,2,1,1,1,5,2,3,4,4,1,4,5,1,1,2,2,2,Student,Some College,Education,Less than 1 year,No,2,1,3,1,1,Multiple,Gemini,Entry,Academic-Student,Low,7
+4.75,4,4,3,4,1,5,4,3,3,4,3,3,4,4,4,4,3,3,1,3,5,2,5,3,3,3,2,3,Student,Some College,Education,Less than 1 year,No,2,4,1,1,1,Multiple,ChatGPT,Entry,Academic-Student,Low,8
+7.266666666666667,4,4,4,4,4,4,4,4,4,4,4,4,3,3,4,4,4,4,3,4,4,4,4,4,4,4,4,4,Business Professional,Associate's Degree,Healthcare,Less than 1 year,No,4,5,4,3,1,Multiple,ChatGPT,Entry,Professional,High,16
+2.783333333333333,4,3,4,4,3,3,4,4,4,3,4,4,3,4,4,4,4,4,4,4,4,4,4,2,4,3,3,3,Other,Associate's Degree,Non-profit,4-6 years,No,2,2,2,2,1,Multiple,ChatGPT,Mid,Professional,Low,8
+2.6666666666666665,5,5,4,4,3,4,5,4,3,3,4,4,4,4,4,4,4,4,3,5,4,4,2,5,4,4,4,4,IT Professional,Associate's Degree,Retail,More than 10 years,No,5,1,3,1,1,Multiple,MSCopilot,Expert,Professional,Medium,10
+2.583333333333333,4,4,4,5,4,5,5,4,4,4,4,4,4,4,4,4,4,4,4,4,2,3,2,3,4,5,5,4,Administrator,Associate's Degree,Technology,More than 10 years,No,2,3,4,2,1,Multiple,Gemini,Expert,Professional,Medium,11
+2.533333333333333,3,4,4,3,3,5,3,4,4,4,3,2,4,2,2,3,2,2,4,3,4,4,4,4,4,3,3,4,Business Professional,Some College,Education,4-6 years,No,3,4,3,2,1,Multiple,ChatGPT,Mid,Professional,Medium,12
+1.7666666666666666,3,3,3,3,3,3,3,3,3,3,3,4,4,4,4,4,4,4,3,3,3,3,3,3,3,3,3,3,Student,Some College,Education,Less than 1 year,No,1,5,3,2,1,Multiple,ChatGPT,Entry,Academic-Student,Medium,11
+3.8,4,4,4,4,3,3,2,3,4,3,3,3,4,4,4,3,3,4,4,4,2,4,4,3,3,3,4,2,Student,Some College,Manufacturing,4-6 years,No,3,2,1,1,1,Multiple,MSCopilot,Mid,Academic-Student,Low,7
+2.566666666666667,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,5,5,5,1,1,1,1,1,Student,Some College,Education,4-6 years,Yes,1,1,1,1,0,,,Mid,Academic-Student,Non-User,4
+5.8,2,1,3,3,2,1,3,2,4,2,3,2,1,1,2,4,3,3,4,3,4,5,5,2,2,2,1,2,Instructor/Teacher,Some College,Education,Less than 1 year,No,1,1,1,2,1,Single,Other,Entry,Academic-Faculty,Low,5
+4.466666666666667,5,5,4,4,4,5,3,3,5,4,5,4,4,4,3,2,4,4,4,5,2,2,2,4,4,4,4,4,Other,Bachelor's Degree,Technology,More than 10 years,No,2,5,2,1,1,Multiple,ChatGPT,Expert,Professional,Medium,10
+2.466666666666667,5,4,5,5,3,2,5,5,5,5,5,5,5,5,5,5,4,4,5,5,5,3,4,4,5,5,5,4,Student,Some College,Education,1-3 years,Yes,1,5,2,1,1,Multiple,ChatGPT,Early,Academic-Student,Medium,9
+9.433333333333334,4,4,4,3,5,5,5,5,3,4,5,5,3,2,4,1,5,4,4,4,2,1,1,3,4,5,5,5,Administrator,Associate's Degree,Healthcare,More than 10 years,No,3,4,4,1,1,Multiple,ChatGPT,Expert,Professional,Medium,12
+5.25,3,4,4,4,3,4,4,4,3,4,3,4,3,2,3,2,3,3,4,5,2,4,5,4,4,3,3,4,Administrator,Some College,Technology,Less than 1 year,No,3,3,1,1,1,Multiple,ChatGPT,Entry,Professional,Low,8
+5.6,3,2,3,2,2,2,2,2,2,3,2,3,2,2,2,5,2,2,2,4,2,4,5,2,4,3,3,4,Other,Associate's Degree,Education,More than 10 years,No,1,2,3,1,1,Multiple,Gemini,Expert,Professional,Low,7
+2.7666666666666666,2,2,2,2,2,2,1,3,2,2,2,2,1,1,1,5,3,3,2,3,3,4,4,4,2,1,2,1,Administrator,Some College,Government,More than 10 years,No,1,1,2,1,1,Single,Gemini,Expert,Professional,Low,5
+4.083333333333333,3,3,3,2,2,3,3,4,3,3,3,3,2,2,2,4,3,3,3,4,5,4,4,4,2,2,2,3,Administrator,Bachelor's Degree,Education,More than 10 years,No,3,3,3,2,1,Multiple,ChatGPT,Expert,Professional,Medium,11
+4.65,3,3,2,4,3,3,3,4,2,2,3,3,2,1,2,5,3,3,2,3,4,4,5,4,2,2,2,1,Student,Associate's Degree,Manufacturing,1-3 years,Prefer not to say,1,1,1,1,0,,,Early,Academic-Student,Non-User,4
+7.766666666666667,4,3,5,4,3,4,5,4,3,3,4,4,2,2,4,3,4,4,4,4,2,3,2,2,4,4,2,3,Student,High School,Education,Less than 1 year,No,1,4,3,2,1,Multiple,ChatGPT,Entry,Academic-Student,Medium,10
+1.2833333333333334,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,Administrator,Associate's Degree,Technology,More than 10 years,No,2,2,2,2,1,Multiple,ChatGPT,Expert,Professional,Low,8
+4.9,4,4,3,2,2,2,3,3,2,2,2,3,3,2,3,3,2,2,3,4,4,4,4,2,3,2,2,2,IT Professional,Some College,Technology,More than 10 years,No,3,1,1,1,1,Single,MSCopilot,Expert,Professional,Low,6
+1.4333333333333331,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,Researcher,Bachelor's Degree,Healthcare,4-6 years,Yes,4,5,5,4,1,Multiple,ChatGPT,Mid,Academic-Faculty,High,18
+4.433333333333334,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,Healthcare Professional,Associate's Degree,Government,More than 10 years,No,3,1,1,1,1,Single,MSCopilot,Expert,Professional,Low,6
+2.5166666666666666,3,1,5,4,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,2,1,Student,High School,Education,Less than 1 year,No,1,2,1,1,1,Single,ChatGPT,Entry,Academic-Student,Low,5
+5.4,4,4,3,4,4,4,4,4,4,3,4,4,4,4,4,4,4,4,4,4,2,3,2,2,4,4,4,5,Researcher,High School,Non-profit,More than 10 years,No,2,1,4,1,1,Multiple,Gemini,Expert,Academic-Faculty,Low,8
+2.433333333333333,4,3,3,3,2,5,4,2,2,4,4,3,2,2,4,5,2,3,3,4,4,4,5,3,3,3,4,4,Student,Associate's Degree,Technology,1-3 years,No,3,4,2,1,1,Multiple,ChatGPT,Early,Academic-Student,Medium,10
+10.15,4,1,5,4,4,2,1,4,1,1,1,1,1,1,1,5,1,1,1,4,4,5,5,5,1,1,1,1,Student,Associate's Degree,Technology,1-3 years,Yes,1,2,1,1,1,Single,ChatGPT,Early,Academic-Student,Low,5
+6.083333333333333,5,4,4,4,5,4,4,5,5,3,4,5,4,3,4,2,4,5,4,5,4,3,3,2,4,5,4,3,Researcher,Associate's Degree,Healthcare,1-3 years,No,5,5,4,3,1,Multiple,ChatGPT,Early,Academic-Faculty,High,17
+3.6,4,5,4,4,3,3,4,4,3,3,3,4,3,3,4,5,3,4,3,5,4,4,4,3,3,3,3,4,IT Professional,Some College,Manufacturing,More than 10 years,No,2,3,3,1,1,Multiple,ChatGPT,Expert,Professional,Medium,9
+3.183333333333333,3,2,3,2,3,2,4,3,2,2,2,2,2,2,2,2,2,2,3,3,5,5,5,2,2,2,3,2,Student,Some College,Technology,1-3 years,No,3,2,1,1,1,Multiple,MSCopilot,Early,Academic-Student,Low,7
+2.7,4,4,4,4,3,2,2,3,4,3,4,4,4,3,4,5,3,3,2,5,2,4,4,2,4,4,4,3,Student,Some College,Government,4-6 years,No,1,4,1,1,1,Single,ChatGPT,Mid,Academic-Student,Low,7
+7.183333333333334,3,3,4,4,3,3,3,4,4,4,3,4,4,4,4,4,4,4,3,4,3,3,3,2,3,4,4,4,Business Professional,High School,Other,Less than 1 year,Yes,1,5,2,3,1,Multiple,ChatGPT,Entry,Professional,Medium,11
+2.783333333333333,5,5,5,5,3,2,2,3,3,4,4,4,3,3,4,5,3,3,4,5,4,4,2,4,4,5,5,5,Student,Some College,Education,Less than 1 year,No,3,4,4,2,1,Multiple,ChatGPT,Entry,Academic-Student,High,13
+5.5,4,5,5,5,4,4,4,4,5,5,5,5,3,3,4,3,4,4,4,4,2,5,3,3,4,5,5,4,IT Professional,Bachelor's Degree,Retail,4-6 years,No,3,4,3,3,1,Multiple,ChatGPT,Mid,Professional,High,13
+4.25,4,2,3,2,2,2,1,3,4,3,4,4,5,5,4,5,4,4,1,4,4,4,5,2,3,4,4,3,Student,Some College,Education,Less than 1 year,No,2,4,1,4,1,Multiple,ChatGPT,Entry,Academic-Student,Medium,11
+2.15,3,3,3,2,4,4,4,1,3,4,4,4,4,1,2,5,4,4,4,1,4,3,4,4,4,2,4,3,Researcher,Master's Degree,Finance,7-10 years,No,5,1,4,1,1,Multiple,MSCopilot,Senior,Academic-Faculty,Medium,11
+3.183333333333333,3,2,2,2,3,3,3,3,2,2,2,2,1,2,1,4,1,2,2,3,4,4,4,4,2,2,2,2,IT Professional,High School,Government,More than 10 years,No,2,2,2,2,1,Multiple,ChatGPT,Expert,Professional,Low,8
+2.4833333333333334,5,1,5,5,2,2,3,5,5,3,5,5,4,4,5,5,5,4,5,2,2,1,2,4,5,4,4,3,Student,Some College,Education,1-3 years,Yes,1,4,3,1,1,Multiple,ChatGPT,Early,Academic-Student,Medium,9

@@ -128,44 +128,14 @@ vignettes/*.pdf
 # Data Files (PRIVACY & SIZE)
 # ============================================================================
 
-# Exclude raw data files (sensitive information)
-# Keep structure but not actual data for reproducibility
-data/*.csv
-data/*.sav
-data/*.xlsx
-data/*.xls
-data/*.rds
-data/*.rda
-data/*.RData
-
-# Allow the cleaned data template/structure documentation
-!data/README.md
-!data/.gitkeep
+# Data files now tracked for dissertation reproducibility
+# Archive materials also tracked for methodological transparency
 
 # ============================================================================
 # Analysis Outputs
 # ============================================================================
 
-# Results directory - version control code, not outputs
-results/**/*.png
-results/**/*.jpg
-results/**/*.jpeg
-results/**/*.pdf
-results/**/*.svg
-results/**/*.html
-results/**/*.pkl
-results/**/*.rds
-results/**/*.RData
-
-# Allow results structure
-!results/README.md
-!results/.gitkeep
-!results/models/.gitkeep
-!results/plots/.gitkeep
-!results/tables/.gitkeep
-
-# Keep CSV tables for reproducibility (small text files)
-!results/tables/*.csv
+# Results directory now tracked for dissertation reproducibility
 
 # ============================================================================
 # Operating System
@@ -281,9 +251,7 @@ tmp/
 # Alex Cognitive Architecture (Optional)
 # ============================================================================
 
-# Keep architecture files but exclude maintenance logs
-archive/
-!archive/README.md
+# Archive directory now tracked for methodological transparency
 
 # Keep cognitive framework
 !.github/copilot-instructions.md

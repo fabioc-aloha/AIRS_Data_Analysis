@@ -1,21 +1,26 @@
-<svg width="1200" height="300" xmlns="http://www.w3.org/2000/svg">
+<svg width="1200" height="320" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <!-- Modern gradient background -->
+    <!-- Deep academic gradient background -->
     <linearGradient id="bg-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#0f172a;stop-opacity:1" />
-      <stop offset="50%" style="stop-color:#1e293b;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#334155;stop-opacity:1" />
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#1e40af;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
     </linearGradient>
     
-    <!-- Accent gradients -->
+    <!-- Academic accent gradients -->
+    <linearGradient id="accent-gold" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#f59e0b;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#fbbf24;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="accent-white" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#f8fafc;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e2e8f0;stop-opacity:1" />
+    </linearGradient>
+    
     <linearGradient id="accent-blue" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" style="stop-color:#3b82f6;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#60a5fa;stop-opacity:1" />
-    </linearGradient>
-    
-    <linearGradient id="accent-purple" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" style="stop-color:#8b5cf6;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#a78bfa;stop-opacity:1" />
+      <stop offset="0%" style="stop-color:#60a5fa;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#93c5fd;stop-opacity:1" />
     </linearGradient>
     
     <linearGradient id="accent-cyan" x1="0%" y1="0%" x2="100%" y2="0%">
@@ -26,6 +31,20 @@
     <!-- Geometric pattern -->
     <pattern id="hexagon-pattern" x="0" y="0" width="60" height="52" patternUnits="userSpaceOnUse">
       <path d="M30 0 L45 13 L45 39 L30 52 L15 39 L15 13 Z" fill="none" stroke="white" stroke-width="0.5" opacity="0.08"/>
+    </pattern>
+    
+    <!-- Neural network pattern -->
+    <pattern id="neural-pattern" x="0" y="0" width="100" height="100" patternUnits="userSpaceOnUse">
+      <circle cx="10" cy="10" r="2" fill="#22d3ee" opacity="0.15"/>
+      <circle cx="50" cy="30" r="2" fill="#22d3ee" opacity="0.15"/>
+      <circle cx="90" cy="20" r="2" fill="#22d3ee" opacity="0.15"/>
+      <circle cx="30" cy="60" r="2" fill="#22d3ee" opacity="0.15"/>
+      <circle cx="70" cy="70" r="2" fill="#22d3ee" opacity="0.15"/>
+      <circle cx="20" cy="90" r="2" fill="#22d3ee" opacity="0.15"/>
+      <line x1="10" y1="10" x2="50" y2="30" stroke="#22d3ee" stroke-width="0.5" opacity="0.1"/>
+      <line x1="50" y1="30" x2="90" y2="20" stroke="#22d3ee" stroke-width="0.5" opacity="0.1"/>
+      <line x1="50" y1="30" x2="70" y2="70" stroke="#22d3ee" stroke-width="0.5" opacity="0.1"/>
+      <line x1="30" y1="60" x2="70" y2="70" stroke="#22d3ee" stroke-width="0.5" opacity="0.1"/>
     </pattern>
     
     <!-- Animated shimmer effect -->
@@ -43,122 +62,244 @@
   </defs>
   
   <!-- Background -->
-  <rect width="1200" height="300" fill="url(#bg-gradient)"/>
-  <rect width="1200" height="300" fill="url(#hexagon-pattern)"/>
+  <rect width="1200" height="320" fill="url(#bg-gradient)"/>
+  <rect width="1200" height="320" fill="url(#hexagon-pattern)"/>
+  <rect width="1200" height="320" fill="url(#neural-pattern)"/>
   
   <!-- Decorative side panels -->
-  <rect x="0" y="0" width="200" height="300" fill="url(#accent-blue)" opacity="0.05"/>
-  <rect x="1000" y="0" width="200" height="300" fill="url(#accent-purple)" opacity="0.05"/>
+  <rect x="0" y="0" width="180" height="320" fill="url(#accent-gold)" opacity="0.08"/>
+  <rect x="1020" y="0" width="180" height="320" fill="url(#accent-gold)" opacity="0.08"/>
   
-  <!-- Left side data visualization bars -->
-  <g opacity="0.2">
-    <rect x="50" y="100" width="8" height="120" rx="4" fill="url(#accent-cyan)"/>
-    <rect x="65" y="130" width="8" height="90" rx="4" fill="url(#accent-cyan)"/>
-    <rect x="80" y="110" width="8" height="110" rx="4" fill="url(#accent-cyan)"/>
-    <rect x="95" y="90" width="8" height="130" rx="4" fill="url(#accent-cyan)"/>
-    <rect x="110" y="140" width="8" height="80" rx="4" fill="url(#accent-cyan)"/>
-  </g>
-  
-  <!-- Right side data visualization bars -->
-  <g opacity="0.2">
-    <rect x="1082" y="120" width="8" height="100" rx="4" fill="url(#accent-purple)"/>
-    <rect x="1097" y="95" width="8" height="125" rx="4" fill="url(#accent-purple)"/>
-    <rect x="1112" y="135" width="8" height="85" rx="4" fill="url(#accent-purple)"/>
-    <rect x="1127" y="105" width="8" height="115" rx="4" fill="url(#accent-purple)"/>
-    <rect x="1142" y="125" width="8" height="95" rx="4" fill="url(#accent-purple)"/>
-  </g>
-  
-  <!-- Structural equation model visualization (simplified path diagram) -->
-  <g opacity="0.15">
-    <!-- Latent variables (circles) -->
-    <circle cx="320" cy="150" r="20" fill="none" stroke="url(#accent-blue)" stroke-width="2"/>
-    <circle cx="420" cy="120" r="20" fill="none" stroke="url(#accent-blue)" stroke-width="2"/>
-    <circle cx="420" cy="180" r="20" fill="none" stroke="url(#accent-blue)" stroke-width="2"/>
-    <circle cx="880" cy="120" r="20" fill="none" stroke="url(#accent-purple)" stroke-width="2"/>
-    <circle cx="880" cy="180" r="20" fill="none" stroke="url(#accent-purple)" stroke-width="2"/>
-    <circle cx="980" cy="150" r="25" fill="none" stroke="url(#accent-cyan)" stroke-width="3"/>
+  <!-- AI Brain Icon - Enhanced -->
+  <g opacity="0.6">
+    <!-- Outer brain outline with gradient -->
+    <circle cx="90" cy="160" r="60" fill="url(#accent-cyan)" opacity="0.08"/>
+    <circle cx="90" cy="160" r="60" fill="none" stroke="url(#accent-cyan)" stroke-width="4"/>
     
-    <!-- Paths (arrows) -->
-    <path d="M 340 150 L 400 130" stroke="url(#accent-blue)" stroke-width="2" marker-end="url(#arrowhead)"/>
-    <path d="M 340 150 L 400 170" stroke="url(#accent-blue)" stroke-width="2"/>
-    <path d="M 440 120 L 860 125" stroke="white" stroke-width="1.5" stroke-dasharray="3,3"/>
-    <path d="M 440 180 L 860 175" stroke="white" stroke-width="1.5" stroke-dasharray="3,3"/>
-    <path d="M 900 130 L 960 145" stroke="url(#accent-cyan)" stroke-width="2.5"/>
-    <path d="M 900 170 L 960 155" stroke="url(#accent-cyan)" stroke-width="2.5"/>
+    <!-- Brain hemisphere division -->
+    <line x1="90" y1="100" x2="90" y2="220" stroke="url(#accent-cyan)" stroke-width="2.5" opacity="0.4"/>
+    
+    <!-- Left hemisphere neural network -->
+    <g opacity="0.9">
+      <!-- Layer 1 (input) -->
+      <circle cx="55" cy="130" r="5" fill="#22d3ee">
+        <animate attributeName="r" values="5;6;5" dur="2s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="55" cy="160" r="5" fill="#22d3ee">
+        <animate attributeName="r" values="5;6;5" dur="2.3s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="55" cy="190" r="5" fill="#22d3ee">
+        <animate attributeName="r" values="5;6;5" dur="2.5s" repeatCount="indefinite"/>
+      </circle>
+      
+      <!-- Layer 2 (hidden) -->
+      <circle cx="80" cy="125" r="4.5" fill="#fbbf24">
+        <animate attributeName="opacity" values="0.6;1;0.6" dur="1.8s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="80" cy="150" r="4.5" fill="#fbbf24">
+        <animate attributeName="opacity" values="0.6;1;0.6" dur="2.1s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="80" cy="175" r="4.5" fill="#fbbf24">
+        <animate attributeName="opacity" values="0.6;1;0.6" dur="2.4s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="80" cy="195" r="4.5" fill="#fbbf24">
+        <animate attributeName="opacity" values="0.6;1;0.6" dur="2.7s" repeatCount="indefinite"/>
+      </circle>
+      
+      <!-- Connections (left) -->
+      <line x1="55" y1="130" x2="80" y2="125" stroke="#22d3ee" stroke-width="2" opacity="0.4"/>
+      <line x1="55" y1="130" x2="80" y2="150" stroke="#22d3ee" stroke-width="2" opacity="0.4"/>
+      <line x1="55" y1="160" x2="80" y2="150" stroke="#22d3ee" stroke-width="2" opacity="0.4"/>
+      <line x1="55" y1="160" x2="80" y2="175" stroke="#22d3ee" stroke-width="2" opacity="0.4"/>
+      <line x1="55" y1="190" x2="80" y2="175" stroke="#22d3ee" stroke-width="2" opacity="0.4"/>
+      <line x1="55" y1="190" x2="80" y2="195" stroke="#22d3ee" stroke-width="2" opacity="0.4"/>
+    </g>
+    
+    <!-- Right hemisphere neural network -->
+    <g opacity="0.9">
+      <!-- Layer 1 (input) -->
+      <circle cx="125" cy="130" r="5" fill="#22d3ee">
+        <animate attributeName="r" values="5;6;5" dur="2.2s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="125" cy="160" r="5" fill="#22d3ee">
+        <animate attributeName="r" values="5;6;5" dur="2.6s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="125" cy="190" r="5" fill="#22d3ee">
+        <animate attributeName="r" values="5;6;5" dur="2.9s" repeatCount="indefinite"/>
+      </circle>
+      
+      <!-- Layer 2 (hidden) -->
+      <circle cx="100" cy="125" r="4.5" fill="#fbbf24">
+        <animate attributeName="opacity" values="0.6;1;0.6" dur="2s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="100" cy="150" r="4.5" fill="#fbbf24">
+        <animate attributeName="opacity" values="0.6;1;0.6" dur="2.2s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="100" cy="175" r="4.5" fill="#fbbf24">
+        <animate attributeName="opacity" values="0.6;1;0.6" dur="2.6s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="100" cy="195" r="4.5" fill="#fbbf24">
+        <animate attributeName="opacity" values="0.6;1;0.6" dur="2.8s" repeatCount="indefinite"/>
+      </circle>
+      
+      <!-- Connections (right) -->
+      <line x1="125" y1="130" x2="100" y2="125" stroke="#22d3ee" stroke-width="2" opacity="0.4"/>
+      <line x1="125" y1="130" x2="100" y2="150" stroke="#22d3ee" stroke-width="2" opacity="0.4"/>
+      <line x1="125" y1="160" x2="100" y2="150" stroke="#22d3ee" stroke-width="2" opacity="0.4"/>
+      <line x1="125" y1="160" x2="100" y2="175" stroke="#22d3ee" stroke-width="2" opacity="0.4"/>
+      <line x1="125" y1="190" x2="100" y2="175" stroke="#22d3ee" stroke-width="2" opacity="0.4"/>
+      <line x1="125" y1="190" x2="100" y2="195" stroke="#22d3ee" stroke-width="2" opacity="0.4"/>
+    </g>
+    
+    <!-- Central processing area -->
+    <circle cx="90" cy="160" r="10" fill="#fbbf24" opacity="0.6">
+      <animate attributeName="r" values="10;13;10" dur="3s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.4;0.8;0.4" dur="3s" repeatCount="indefinite"/>
+    </circle>
+    
+    <!-- Brain waves/activity indicators -->
+    <path d="M 40 135 Q 52 132 65 135 T 90 135" stroke="#22d3ee" stroke-width="2.5" fill="none" opacity="0.5">
+      <animate attributeName="d" values="M 40 135 Q 52 132 65 135 T 90 135;M 40 135 Q 52 138 65 135 T 90 135;M 40 135 Q 52 132 65 135 T 90 135" dur="2s" repeatCount="indefinite"/>
+    </path>
+    <path d="M 90 185 Q 105 182 115 185 T 140 185" stroke="#22d3ee" stroke-width="2.5" fill="none" opacity="0.5">
+      <animate attributeName="d" values="M 90 185 Q 105 182 115 185 T 140 185;M 90 185 Q 105 188 115 185 T 140 185;M 90 185 Q 105 182 115 185 T 140 185" dur="2.3s" repeatCount="indefinite"/>
+    </path>
+  </g>
+  
+  <!-- AI Processor Chip -->
+  <g opacity="0.25">
+    <rect x="1085" y="35" width="40" height="40" rx="4" fill="none" stroke="url(#accent-gold)" stroke-width="2.5"/>
+    <!-- Chip pins -->
+    <line x1="1080" y1="45" x2="1085" y2="45" stroke="url(#accent-gold)" stroke-width="2"/>
+    <line x1="1080" y1="55" x2="1085" y2="55" stroke="url(#accent-gold)" stroke-width="2"/>
+    <line x1="1080" y1="65" x2="1085" y2="65" stroke="url(#accent-gold)" stroke-width="2"/>
+    <line x1="1125" y1="45" x2="1130" y2="45" stroke="url(#accent-gold)" stroke-width="2"/>
+    <line x1="1125" y1="55" x2="1130" y2="55" stroke="url(#accent-gold)" stroke-width="2"/>
+    <line x1="1125" y1="65" x2="1130" y2="65" stroke="url(#accent-gold)" stroke-width="2"/>
+    <!-- Inner circuit -->
+    <circle cx="1105" cy="55" r="8" fill="none" stroke="url(#accent-cyan)" stroke-width="1.5"/>
+    <path d="M 1095 55 L 1115 55 M 1105 45 L 1105 65" stroke="#22d3ee" stroke-width="1"/>
+  </g>
+  
+  <!-- Right side - Factor structure (2 factors) -->
+  <g opacity="0.3">
+    <!-- Factor 1: Facilitators (7 items) -->
+    <g>
+      <circle cx="1080" cy="115" r="18" fill="none" stroke="url(#accent-white)" stroke-width="2"/>
+      <text x="1080" y="122" font-family="Arial" font-size="11" font-weight="bold" fill="white" text-anchor="middle">F1</text>
+      <line x1="1065" y1="125" x2="1050" y2="140" stroke="url(#accent-white)" stroke-width="1.5"/>
+      <line x1="1070" y1="130" x2="1055" y2="150" stroke="url(#accent-white)" stroke-width="1.5"/>
+      <line x1="1080" y1="133" x2="1070" y2="160" stroke="url(#accent-white)" stroke-width="1.5"/>
+    </g>
+    <!-- Factor 2: Barriers (5 items) -->
+    <g>
+      <circle cx="1130" cy="180" r="18" fill="none" stroke="url(#accent-gold)" stroke-width="2"/>
+      <text x="1130" y="187" font-family="Arial" font-size="11" font-weight="bold" fill="white" text-anchor="middle">F2</text>
+      <line x1="1115" y1="190" x2="1100" y2="205" stroke="url(#accent-gold)" stroke-width="1.5"/>
+      <line x1="1120" y1="195" x2="1110" y2="215" stroke="url(#accent-gold)" stroke-width="1.5"/>
+    </g>
+    <!-- Correlation between factors -->
+    <path d="M 1098 125 Q 1105 150 1115 170" stroke="white" stroke-width="1.5" stroke-dasharray="3,2" opacity="0.6"/>
+  </g>
+  
+  <!-- Simplified UTAUT2 + AI constructs diagram -->
+  <g opacity="0.2">
+    <!-- UTAUT2 constructs (8) -->
+    <circle cx="280" cy="140" r="15" fill="none" stroke="url(#accent-white)" stroke-width="1.5"/>
+    <circle cx="320" cy="120" r="15" fill="none" stroke="url(#accent-white)" stroke-width="1.5"/>
+    <circle cx="360" cy="130" r="15" fill="none" stroke="url(#accent-white)" stroke-width="1.5"/>
+    <circle cx="280" cy="180" r="15" fill="none" stroke="url(#accent-white)" stroke-width="1.5"/>
+    <circle cx="320" cy="200" r="15" fill="none" stroke="url(#accent-white)" stroke-width="1.5"/>
+    <circle cx="360" cy="190" r="15" fill="none" stroke="url(#accent-white)" stroke-width="1.5"/>
+    <circle cx="240" cy="160" r="15" fill="none" stroke="url(#accent-white)" stroke-width="1.5"/>
+    <circle cx="400" cy="160" r="15" fill="none" stroke="url(#accent-white)" stroke-width="1.5"/>
+    
+    <!-- AI-specific constructs (4) -->
+    <circle cx="880" cy="130" r="15" fill="none" stroke="url(#accent-gold)" stroke-width="2"/>
+    <circle cx="920" cy="140" r="15" fill="none" stroke="url(#accent-gold)" stroke-width="2"/>
+    <circle cx="880" cy="190" r="15" fill="none" stroke="url(#accent-gold)" stroke-width="2"/>
+    <circle cx="920" cy="180" r="15" fill="none" stroke="url(#accent-gold)" stroke-width="2"/>
+    
+    <!-- Behavioral Intention (outcome) -->
+    <circle cx="600" cy="160" r="25" fill="none" stroke="url(#accent-blue)" stroke-width="3"/>
+    
+    <!-- Paths to outcome -->
+    <path d="M 295 145 L 575 158" stroke="white" stroke-width="1" opacity="0.5"/>
+    <path d="M 335 125 L 575 155" stroke="white" stroke-width="1" opacity="0.5"/>
+    <path d="M 895 135 L 625 158" stroke="url(#accent-gold)" stroke-width="1.5" opacity="0.7"/>
+    <path d="M 895 185 L 625 165" stroke="url(#accent-gold)" stroke-width="1.5" opacity="0.7"/>
   </g>
   
   <!-- Top decorative line -->
-  <rect x="0" y="0" width="1200" height="3" fill="url(#accent-cyan)"/>
+  <rect x="0" y="0" width="1200" height="4" fill="url(#accent-gold)"/>
   
   <!-- Main content area with subtle backdrop -->
-  <rect x="200" y="40" width="800" height="180" rx="12" fill="black" opacity="0.15"/>
+  <rect x="200" y="30" width="800" height="265" rx="15" fill="black" opacity="0.2"/>
   
-  <!-- Main title with glow effect -->
-  <text x="600" y="110" font-family="'Inter', 'Segoe UI', system-ui, sans-serif" font-size="68" font-weight="800" 
-        fill="white" text-anchor="middle" letter-spacing="2">
+  <!-- Neural nodes decorating title -->
+  <g opacity="0.4">
+    <circle cx="400" cy="105" r="5" fill="#22d3ee">
+      <animate attributeName="opacity" values="0.3;1;0.3" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="440" cy="120" r="4" fill="#22d3ee">
+      <animate attributeName="opacity" values="0.5;1;0.5" dur="2.3s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="760" cy="110" r="4" fill="#fbbf24">
+      <animate attributeName="opacity" values="0.4;1;0.4" dur="2.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="800" cy="125" r="5" fill="#fbbf24">
+      <animate attributeName="opacity" values="0.3;1;0.3" dur="2.8s" repeatCount="indefinite"/>
+    </circle>
+    <line x1="400" y1="105" x2="440" y2="120" stroke="#22d3ee" stroke-width="1" opacity="0.3"/>
+    <line x1="760" y1="110" x2="800" y2="125" stroke="#fbbf24" stroke-width="1" opacity="0.3"/>
+  </g>
+  
+  <!-- Main title with professional styling -->
+  <text x="600" y="130" font-family="'Georgia', 'Palatino', 'Times New Roman', serif" font-size="80" font-weight="700" 
+        fill="white" text-anchor="middle" letter-spacing="3">
     AIRS
   </text>
-  <text x="600" y="110" font-family="'Inter', 'Segoe UI', system-ui, sans-serif" font-size="68" font-weight="800" 
-        fill="url(#accent-cyan)" text-anchor="middle" letter-spacing="2" opacity="0.3" 
-        filter="blur(8px)">
+  <text x="600" y="130" font-family="'Georgia', 'Palatino', 'Times New Roman', serif" font-size="80" font-weight="700" 
+        fill="url(#accent-gold)" text-anchor="middle" letter-spacing="3" opacity="0.4" 
+        filter="blur(10px)">
     AIRS
   </text>
   
   <!-- Subtitle -->
-  <text x="600" y="145" font-family="'Inter', 'Segoe UI', system-ui, sans-serif" font-size="24" font-weight="400" 
-        fill="#94a3b8" text-anchor="middle" letter-spacing="1">
-    AI Readiness Score
+  <text x="600" y="180" font-family="'Inter', 'Segoe UI', system-ui, sans-serif" font-size="28" font-weight="500" 
+        fill="#fbbf24" text-anchor="middle" letter-spacing="2">
+    <tspan fill="#22d3ee">AI</tspan> Readiness Scale
   </text>
   
   <!-- Description -->
-  <text x="600" y="180" font-family="'Inter', 'Segoe UI', system-ui, sans-serif" font-size="16" font-weight="300" 
-        fill="#cbd5e1" text-anchor="middle">
-    Psychometric Validation · Structural Equation Modeling · UTAUT2 Extension
+  <text x="600" y="220" font-family="'Inter', 'Segoe UI', system-ui, sans-serif" font-size="18" font-weight="400" 
+        fill="#e2e8f0" text-anchor="middle" letter-spacing="0.5">
+    DBA Dissertation · UTAUT2 Extension · Psychometric Validation
+  </text>
+  <text x="600" y="250" font-family="'Inter', 'Segoe UI', system-ui, sans-serif" font-size="15" font-weight="300" 
+        fill="#cbd5e1" text-anchor="middle" letter-spacing="0.5" opacity="0.9">
+    Touro University Worldwide · Fabio Correa
   </text>
   
-  <!-- Bottom info bar -->
-  <rect x="0" y="240" width="1200" height="60" fill="black" opacity="0.25"/>
-  
-  <!-- Technology badges with modern styling -->
-  <g transform="translate(190, 258)">
-    <rect width="155" height="34" rx="17" fill="url(#accent-blue)" opacity="0.25"/>
-    <rect width="155" height="34" rx="17" fill="none" stroke="url(#accent-blue)" stroke-width="1.5"/>
-    <text x="77.5" y="23" font-family="'Inter', 'Segoe UI', system-ui, sans-serif" font-size="13" font-weight="600" 
-          fill="white" text-anchor="middle">
-      🐍 Python 3.12
-    </text>
-  </g>
-  
-  <g transform="translate(365, 258)">
-    <rect width="160" height="34" rx="17" fill="url(#accent-purple)" opacity="0.25"/>
-    <rect width="160" height="34" rx="17" fill="none" stroke="url(#accent-purple)" stroke-width="1.5"/>
-    <text x="80" y="23" font-family="'Inter', 'Segoe UI', system-ui, sans-serif" font-size="13" font-weight="600" 
-          fill="white" text-anchor="middle">
-      📊 SEM Analysis
-    </text>
-  </g>
-  
-  <g transform="translate(545, 258)">
-    <rect width="160" height="34" rx="17" fill="url(#accent-cyan)" opacity="0.25"/>
-    <rect width="160" height="34" rx="17" fill="none" stroke="url(#accent-cyan)" stroke-width="1.5"/>
-    <text x="80" y="23" font-family="'Inter', 'Segoe UI', system-ui, sans-serif" font-size="13" font-weight="600" 
-          fill="white" text-anchor="middle">
-      ✓ Validated
-    </text>
-  </g>
-  
-  <g transform="translate(725, 258)">
-    <rect width="160" height="34" rx="17" fill="white" opacity="0.1"/>
-    <rect width="160" height="34" rx="17" fill="none" stroke="white" stroke-width="1.5"/>
-    <text x="80" y="23" font-family="'Inter', 'Segoe UI', system-ui, sans-serif" font-size="13" font-weight="600" 
-          fill="white" text-anchor="middle">
-      🎓 Dissertation
-    </text>
-  </g>
-  
   <!-- Bottom decorative line -->
-  <rect x="0" y="297" width="1200" height="3" fill="url(#accent-purple)"/>
+  <rect x="0" y="316" width="1200" height="4" fill="url(#accent-gold)"/>
   
   <!-- Shimmer overlay effect -->
-  <rect width="1200" height="300" fill="url(#shimmer)" opacity="0.5"/>
+  <rect width="1200" height="320" fill="url(#shimmer)" opacity="0.5"/>
+  
+  <!-- AI Data Stream Animation -->
+  <g opacity="0.15">
+    <circle cx="200" cy="20" r="2" fill="#22d3ee">
+      <animate attributeName="cx" values="200;1000" dur="8s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;1;0" dur="8s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="150" cy="25" r="2" fill="#fbbf24">
+      <animate attributeName="cx" values="150;1050" dur="10s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;1;0" dur="10s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="250" cy="30" r="2" fill="#22d3ee">
+      <animate attributeName="cx" values="250;900" dur="7s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;1;0" dur="7s" repeatCount="indefinite"/>
+    </circle>
+  </g>
 </svg>
