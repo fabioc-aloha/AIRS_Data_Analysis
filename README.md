@@ -52,6 +52,7 @@ I am pleased to report progress on **Phase 1 & 2: Scale Development and CFA Vali
 **For Dr. Venkatesh (Mentor)**:
 
 - 🙏 **UTAUT2 Foundation**: Study builds directly on your seminal 2012 framework
+- 🔄 **Voluntariness of Use**: Reintroduced from original UTAUT (2003) given enterprise AI context with mandatory tools and managerial expectations—aligns with organizational adoption literature
 - 🎯 **Theoretical Extension**: Tests whether AI-specific constructs add explanatory power beyond UTAUT2's eight core predictors
 - 📊 **Validation Complete**: CFA confirmed 2-factor structure (Mixed Readiness + Risk/Anxiety) on independent holdout sample
 - ✅ **Psychometric Quality**: Factor 1 excellent (α=0.924, CR=0.925), Factor 2 documented limitations (α=0.545)
