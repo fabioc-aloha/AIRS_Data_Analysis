@@ -21,45 +21,31 @@
 
 ## 📋 Executive Summary
 
-**⚠️ Data Collection Status**: This study is currently in the **data collection phase**. All results reported below are **preliminary** based on the initial sample (N=325). The target sample size is **N=500**, and data collection is ongoing. Final results and conclusions will be based on the complete dataset.
+**⚠️ Data Collection Status**: Currently at **N=325 of target N=500**. All results are preliminary pending final sample completion.
 
-I am pleased to report progress on **Phase 1 & 2: Scale Development and CFA Validation** for the Artificial Intelligence Readiness Score (AIRS) dissertation study. The project remains on schedule and analyses have validated the 2-factor measurement model with adequate fit.
+**Progress Report** (Week 24 of 32):
 
-**Phase 1 & 2 Accomplishments** (✅ Complete):
+- ✅ **Phase 1 & 2 Complete**: 12-item scale developed and validated via split-sample CFA
+- ✅ **Measurement Model**: Good fit achieved, 2-factor structure confirmed
+- ✅ **Psychometric Quality**: Factor 1 excellent, Factor 2 limitations documented
+- ⏭️ **Next**: Phase 3 (Measurement Invariance) → Phase 4-6 (Hypothesis Testing)
 
-- Developed 12-item construct-balanced scale with excellent internal consistency (Cronbach's α = 0.901)
-- Implemented rigorous split-sample design (Development N=162, Holdout N=163) to prevent overfitting
-- Identified 2-factor empirical structure (Mixed Readiness, Risk/Anxiety) via parallel analysis
-- Validated measurement model with good fit (CFI=0.960, TLI=0.950, RMSEA=0.071)
-- Factor 1 (Mixed Readiness): EXCELLENT reliability (α=0.924, CR=0.925, AVE=0.561)
-- Factor 2 (Risk/Anxiety): Documented limitations (α=0.529, CR=0.680, ER1 loading=0.360)
-- Established discriminant validity (HTMT=0.318 < 0.85)
+**Research Foundation**: This study extends **Dr. Venkatesh's UTAUT2 framework** (Venkatesh et al., 2012) by integrating four AI-specific constructs to develop a diagnostic instrument for organizational AI readiness assessment.
 
-**Research Foundation**: This study extends **Dr. Venkatesh's UTAUT2 framework** (Venkatesh et al., 2012) by integrating four AI-specific constructs with the eight established UTAUT2 predictors. The goal is to develop both a **diagnostic instrument** for organizational assessment and contribute **theoretical insights** on AI-specific adoption mechanisms.
+**Detailed Results**: See `docs/AIRS_empirical_model_phase2_mermaid.md` for complete psychometric statistics and `airs/ANALYSIS_PLAN.md` for methodology.
 
-**Data Collection Status**: Currently at N=325 of target N=500. Data collection ongoing through academic networks and professional associations. All analyses below represent preliminary results and will be finalized upon reaching target sample size.
-
-**Next Phase**: Phase 2 (CFA) complete with adequate fit. Next priority is Phase 3 (Measurement Invariance) to test measurement equivalence across groups, followed by structural modeling and hypothesis testing (Phases 4-6).
-
-### 🎯 Dissertation Committee: Key Takeaways
+### 🎯 Committee Highlights
 
 **For Dr. Kasztelnik (Chair)**:
-
-- ✅ **Progress**: On schedule (Week 24/32), Phase 1 & 2 complete; data collection ongoing (N=325/500)
-- ✅ **Quality**: Rigorous split-sample validation, CFA confirmed 2-factor structure with adequate fit
-- ✅ **Achievement**: Measurement model validated - Factor 1 excellent, Factor 2 documented limitations
-- ✅ **Next Steps**: Continue data collection to N=500, then Phase 3 (Measurement Invariance)
-- ⚠️ **Status**: Psychometric validation complete; structural hypothesis testing pending target sample achievement
+- ✅ On schedule (Week 24/32), Phase 1 & 2 complete with good fit
+- ⏭️ Next: Continue data collection, then measurement invariance testing
+- 📊 Detailed statistics: `docs/AIRS_empirical_model_phase2_mermaid.md`
 
 **For Dr. Venkatesh (Mentor)**:
-
-- 🙏 **UTAUT2 Foundation**: Study builds directly on your seminal 2012 framework (7 core predictors: PE, EE, SI, FC, HM, PV, HB)
-- 🔄 **Voluntariness of Use**: Reintroduced from original UTAUT (2003) given enterprise AI context with mandatory tools and managerial expectations—aligns with organizational adoption literature
-- 🎯 **Theoretical Extension**: Tests whether AI-specific constructs add explanatory power beyond UTAUT2's seven predictors + VO
-- 📊 **Validation Complete**: CFA confirmed 2-factor structure (Mixed Readiness + Risk/Anxiety) on independent holdout sample
-- ✅ **Psychometric Quality**: Factor 1 excellent (α=0.924, CR=0.925), Factor 2 documented limitations (α=0.529)
-- 🔍 **Key Test Ahead**: Phase 4 nested model comparison will test incremental validity (H3: ΔR² ≥ 0.10)
-- 💡 **Novel Contribution**: Mediation analysis (Phase 5) explores trust and anxiety as psychological mechanisms
+- 🙏 Study extends your UTAUT2 framework with AI-specific constructs
+- 🔄 Reintroduced Voluntariness of Use (from UTAUT 2003) for enterprise context
+- 🔍 Key test ahead: Nested model comparison for incremental validity (H3: ΔR² ≥ 0.10)
+- 💡 Novel contribution: Mediation pathways through trust and anxiety mechanisms
 
 ---
 
@@ -202,96 +188,37 @@ graph LR
 
 ## ✅ Phase 1 & 2 Results: Scale Development and CFA Validation (Complete)
 
-### Preliminary Psychometric Validation Results
+**12-Item Scale**: PE2, EE2, SI1, FC1, HM2, PV2, HB2, VO1, TR2, EX2, ER1, AX2
 
-**⚠️ Note**: All statistics below are based on current sample (N=325). CFA validation complete on N=163 holdout sample. Structural hypothesis testing pending target N=500.
+**Validation Summary**:
+- ✅ 2-factor structure confirmed via parallel analysis (EFA) and validated on independent holdout sample (CFA)
+- ✅ Good model fit achieved (CFI=0.960, TLI=0.950, RMSEA=0.071)
+- ✅ Factor 1 (Mixed Readiness): Excellent psychometric properties
+- ⚠️ Factor 2 (Risk/Anxiety): Documented limitations (2 items, low reliability)
 
-**12-Item Construct-Balanced Scale**:
+**Interpretation**: The 12 theoretical constructs (7 UTAUT2 + VO + 4 AI-specific) converge empirically into 2 higher-order factors:
+- **Factor 1**: General AI readiness (enablers/facilitators)
+- **Factor 2**: AI-related concerns (barriers/risks)
 
-- **Design**: One best-loading item selected per construct (12 constructs total)
-- **Rationale**: Balances diagnostic coverage (all constructs represented) with efficiency (minimal respondent burden)
-- **Items**: PE2, EE2, SI1, FC1, HM2, PV2, HB2, VO1, TR2, EX2, ER1, AX2
+This dual-purpose design supports both **diagnostic assessment** (12-construct granularity) and **predictive modeling** (2-factor parsimony).
 
-**Internal Consistency (Development Sample)**:
-
-- **Cronbach's α = 0.901** (exceeds threshold of α ≥ 0.70 for "excellent" reliability)
-- All items contribute positively to scale reliability
-
-**CFA Validation (Holdout Sample)**:
-
-- **Factor 1**: α = 0.924, CR = 0.925, AVE = 0.561 (EXCELLENT)
-- **Factor 2**: α = 0.529, CR = 0.680, AVE = 0.565 (PROBLEMATIC - below 0.70 threshold)
-
-**Factor Structure**:
-
-- **Parallel Analysis**: Recommended 2 factors (empirically validated)
-- **Decision**: Accepted 2-factor structure, validated via CFA on independent holdout sample
-- **Factor 1 - Mixed Readiness** (10 items): PE, EE, SI, FC, HM, PV, HB, VO, TR, EX
-  - EFA loadings: 0.70-0.87, CFA loadings: 0.458-0.871
-- **Factor 2 - Risk/Anxiety** (2 items): ER, AX
-  - EFA loadings: 0.68-1.00, CFA loadings: 0.360-1.000 (ER1 below threshold)
-- **Inter-factor correlation**: r = 0.118 (weak, supporting discriminant validity)
-
-**Sampling Adequacy (EFA)**:
-
-- **KMO (Kaiser-Meyer-Olkin) = 0.909** (exceeds 0.80 threshold for "excellent" factorability)
-- **Bartlett's Test of Sphericity**: χ² = significant (p < .001), confirming correlations suitable for factor analysis
-
-**Model Fit (CFA)**:
-
-- **CFI = 0.960** ≥ 0.90 (excellent fit)
-- **TLI = 0.950** ≥ 0.90 (excellent fit)
-- **RMSEA = 0.071** ≤ 0.08 (good fit)
-- **SRMR ≈ 0.050** ≤ 0.08 (excellent fit)
-- **Overall Assessment**: GOOD FIT (all indices meet thresholds)
-
-**Discriminant Validity (CFA)**:
-
-- **Fornell-Larcker Criterion**: √AVE(F1)=0.749 and √AVE(F2)=0.751 both > r(F1,F2)=0.118 ✅
-- **HTMT Ratio**: 0.318 < 0.85 threshold ✅
-- **Interpretation**: Factors are empirically distinct despite weak positive correlation
-
-### Theoretical Insight: Empirical Structure
-
-**Key Finding - Validated**: CFA confirmed the 2-factor empirical structure on independent holdout sample:
-
-**Factor 1 - Mixed Readiness** (10 items):
-
-- UTAUT2 core constructs (PE, EE, SI, FC, HM, PV, HB, VO)
-- AI-specific positive factors (TR, EX)
-- **Reliability**: α=0.924, CR=0.925, AVE=0.561 (EXCELLENT)
-- **Interpretation**: General AI readiness across multiple dimensions
-
-**Factor 2 - Risk/Anxiety** (2 items):
-
-- AI-specific concerns (ER, AX)
-- **Reliability**: α=0.529, CR=0.680, AVE=0.565 (PROBLEMATIC)
-- **Critical Issue**: ER1 loading=0.360 < 0.50 threshold
-- **Interpretation**: AI-related apprehension and ethical concerns
-
-**Implication**: While 12 constructs provide **diagnostic granularity** for targeted interventions, they converge empirically into two higher-order dimensions. Factor 1 demonstrates excellent psychometric properties suitable for dissertation use. Factor 2 requires improvement - options include: (1) remove ER1, (2) add items, (3) combine factors if discriminant validity becomes problematic in structural model. Current decision: proceed with transparent documentation of limitations.
+**📊 Complete Statistics**: See `docs/AIRS_empirical_model_phase2_mermaid.md` for detailed psychometric results, fit indices, factor loadings, and reliability metrics.
 
 ---
 
 ## 🔬 Research Questions & Hypotheses
 
-**RQ1**: What is the psychometric structure of AI readiness among knowledge workers?
+**RQ1**: What is the psychometric structure of AI readiness? (✅ Complete)
+- **Finding**: 2-factor structure (Mixed Readiness, Risk/Anxiety) validated via split-sample EFA/CFA
 
-- **Phase 1 (✅)**: Identified 2-factor structure (Mixed Readiness, Risk/Anxiety) via exploratory factor analysis
-- **Phase 2 (✅)**: Validated structure via confirmatory factor analysis - ADEQUATE fit confirmed
-- **Finding**: F1 (10 items) excellent reliability; F2 (2 items) documented limitations requiring attention
+**RQ2**: Do UTAUT2 constructs predict behavioral intention to adopt AI? (⏭️ Phase 4)
+- **H1**: 7 UTAUT2 + VO constructs significantly predict BI
 
-**RQ2**: Do UTAUT2 constructs predict behavioral intention to adopt AI in the workplace?
+**RQ3**: Do AI-specific constructs add explanatory power beyond UTAUT2? (⏭️ Phase 4)
+- **H2**: 4 AI-specific constructs significantly predict BI beyond UTAUT2
+- **H3**: AIRS model explains ΔR² ≥ 0.10 additional variance vs. UTAUT2 baseline
 
-- **H1**: Seven UTAUT2 constructs + VO (reintroduced) significantly predict BI (Phase 4 structural modeling)
-
-**RQ3**: Do AI-specific constructs add explanatory power beyond UTAUT2?
-
-- **H2**: Four AI-specific constructs significantly predict BI beyond UTAUT2
-- **H3**: AIRS extended model explains ≥10% additional variance vs. UTAUT2 baseline (ΔR² ≥ 0.10)
-- **Phase 4**: Nested model comparison testing incremental validity
-
-**RQ4**: What mediating mechanisms explain AI-specific relationships with adoption?
+**RQ4**: What mediating mechanisms explain AI adoption relationships? (⏭️ Phase 5)
 
 - **H5a**: Trust mediates the positive relationship between Explainability and BI
 - **H5b**: Trust mediates the negative relationship between Ethical Risk and BI
@@ -327,37 +254,14 @@ graph LR
 
 ## 📅 Timeline & Next Steps (Weeks 24-32)
 
-### Phase 2: Confirmatory Factor Analysis (✅ Complete - Week 25)
+### Phase 2: Confirmatory Factor Analysis (✅ Complete)
 
-**Objective**: ✅ Validate the 2-factor measurement model on the independent holdout sample (N=163)
+**Validation**: 2-factor model confirmed on independent holdout sample (N=163)
+- ✅ Good model fit achieved (all indices meet thresholds)
+- ✅ Factor 1: Excellent psychometric properties
+- ⚠️ Factor 2: Documented limitations (low reliability, 2 items)
 
-**Methodology Used**:
-
-- **Estimator**: Maximum Likelihood with semopy
-- **Model Specification**: 2 correlated latent factors (Mixed Readiness: 10 items, Risk/Anxiety: 2 items)
-- **Fit Criteria** (Hu & Bentler, 1999): Applied standard thresholds
-
-**Results Achieved**:
-
-- **Model Fit**: CFI=0.960 ✅, TLI=0.950 ✅, RMSEA=0.071 ✅, SRMR≈0.050 ✅
-  - **Overall Assessment**: GOOD FIT (all key indices meet thresholds)
-- **Reliability**:
-  - F1: Cronbach's α=0.924 ✅, CR=0.925 ✅ (EXCELLENT)
-  - F2: Cronbach's α=0.529 ⚠️, CR=0.680 ⚠️ (below 0.70 threshold)
-- **Convergent Validity**:
-  - F1: AVE=0.561 ✅ (9/10 loadings ≥ 0.50)
-  - F2: AVE=0.565 ✅ (ER1 loading=0.360 < 0.50 - documented limitation)
-- **Discriminant Validity**:
-  - Fornell-Larcker criterion: ✅ Met
-  - HTMT=0.318 < 0.85: ✅ Well below threshold
-
-**Deliverables**: ✅ All Complete
-
-- ✅ `02_CFA_Measurement_Model.ipynb`: Complete CFA analysis
-- ✅ Factor 1: EXCELLENT psychometric properties
-- ✅ Factor 2: PROBLEMATIC reliability (documented for transparent reporting)
-- ✅ Decision: Proceed with 12-item scale, document F2 limitations in dissertation
-- ✅ Updated progress report to committee with CFA results
+**📊 Details**: See `docs/AIRS_empirical_model_phase2_mermaid.md` for complete results
 
 ---
 
@@ -544,76 +448,13 @@ graph LR
 
 ---
 
-### Phase 3: Structural Models & Hypothesis Testing ⏳ PENDING
+### Phase 4-6: Hypothesis Testing (⏳ Pending N=500)
 
-**H1-H3: Baseline vs. Extended Model**
+**Phase 4**: Structural model comparison (UTAUT2 vs. AIRS) → Test H1-H3
+**Phase 5**: Mediation (trust, anxiety pathways) and moderation (role, usage, adoption status) → Test H4-H5
+**Phase 6**: Comprehensive results integration and dissertation Chapter 4 preparation
 
-- Model 1 (UTAUT2): 8 constructs (PE, EE, SI, FC, HM, PV, HB, VO) → BI
-- Model 2 (AIRS): 12 constructs (UTAUT2 + TR, EX, ER, AX) → BI
-- Test incremental validity: ΔR² ≥ 0.10 expected
-
-**H5a-H5c: Mediation Analysis**
-
-- H5a: EX → TR → BI (explainability through trust)
-- H5b: ER → TR → BI (ethical risk through trust)
-- H5c: ER → AX → BI (ethical risk through anxiety)
-- Method: Bootstrap mediation (5000 iterations, 95% CI)
-
-**Notebooks**: `04_Structural_Model_Hypothesis_Testing.ipynb`, `05_Mediation_Analysis.ipynb`
-
----
-
-### Phase 4: Moderation Analysis ⏳ PENDING
-
-**H4a-H4e: Contextual Moderators**
-
-- Role (Student vs. Professional vs. Faculty)
-- AI Usage Frequency (Low vs. High)
-- AI Adoption Status (Adopter vs. Non-adopter)
-- Method: Multi-group SEM with chi-square difference tests
-- Prerequisite: Measurement invariance established in Phase 2
-
-**Notebook**: `06_Moderation_Analysis.ipynb`
-
----
-
-### Phase 5: Integration & Reporting ⏳ PENDING
-
-**Deliverables**:
-
-- Comprehensive results summary integrating all phases
-- APA-formatted tables and publication-quality figures
-- Diagnostic scoring protocol for 12-item scale
-- Model comparison summary (UTAUT2 vs. AIRS)
-- Hypothesis test outcomes (H1-H5) with effect sizes
-
-**Notebook**: `07_Comprehensive_Results.ipynb`
-
----
-
-## 📊 Phase 1 Key Results: 12-Item Scale Development
-
-### Scale Composition
-
-**Selected Items** (1 per construct - CFA Validated):
-
-```
-Factor 1 - Mixed Readiness (10 items):
-  PV2 (Price Value)                λ = 0.871
-  HM2 (Hedonic Motivation)         λ = 0.868
-  TR2 (Trust in AI)                λ = 0.849
-  PE2 (Performance Expectancy)     λ = 0.831
-  VO1 (Voluntariness)              λ = 0.822
-  HB2 (Habit)                      λ = 0.769
-  SI1 (Social Influence)           λ = 0.746
-  EE2 (Effort Expectancy)          λ = 0.601
-  FC1 (Facilitating Conditions)    λ = 0.542
-  EX2 (Explainability)             λ = 0.458 ⚠️
-
-Factor 2 - Risk/Anxiety (2 items):
-  AX2 (AI Anxiety)                 λ = 1.000
-  ER1 (Ethical Risk)               λ = 0.360 ⚠️
-```
+**📋 Methodology**: See `airs/ANALYSIS_PLAN.md` for complete analytical approach
 
 ### Psychometric Quality
 
@@ -700,25 +541,12 @@ Factor 2 - Risk/Anxiety (2 items):
 
 ### Methodological Transparency
 
-For complete reproducibility:
+**Reproducibility**:
+- Split-sample validation (Development N=162, Holdout N=163)
+- Random seed documented (seed=67 for final analysis)
+- Complete methodology in analysis notebooks
 
-**EFA Analysis (Phase 1)**:
-
-- **Method**: Principal Axis Factoring with Promax rotation
-- **Sample**: Development N=162 (stratified random split)
-- **Factorability**: KMO=0.910, Bartlett's p<0.001
-- **Factor Determination**: Parallel analysis (2 factors), Kaiser criterion (3 factors) → accepted 2
-- **Item Selection**: Best-loading item per construct from preliminary 4-factor structure
-- **Random Seed**: 42 (ensures reproducibility)
-
-**Psychometric Validation**:
-
-- **Internal Consistency**: Cronbach's α = 0.901 (12 items)
-- **Convergent Validity**: Factor loadings λ = 0.41-0.98 (all ≥ 0.40)
-- **Discriminant Validity**: Inter-factor correlation r = 0.17 (weak, supports 2-factor distinction)
-- **Predictive Validity**: R² = 0.811 vs. 24-item R² = 0.842 (96.3% efficiency)
-
-**Documentation**: See `airs/01_EFA_Construct_Balanced_12_Item_Model.ipynb` for complete Phase 1 methodology
+**📊 Detailed Methods**: See `airs/ANALYSIS_PLAN.md` and analysis notebooks for complete procedures
 
 ---
 
@@ -840,52 +668,13 @@ jupyter notebook notebooks/AIRS_Analysis_Python.ipynb
 
 ---
 
-## 📊 Summary Statistics
+## 🔬 Methodological Quality
 
-| **Metric**                 | **Value**            | **Interpretation**                                              |
-| -------------------------------- | -------------------------- | --------------------------------------------------------------------- |
-| **Total Sample Size**      | N = 318                    | Exceeds SEM minimum (N > 200), enables robust split-sample validation |
-| **Development Sample**     | N = 159                    | EFA, item selection, preliminary validation                           |
-| **Holdout Sample**         | N = 159                    | Independent CFA validation, hypothesis testing                        |
-| **Theoretical Constructs** | 12 (7 UTAUT2 + VO + 4 AI)  | Comprehensive coverage of adoption determinants                       |
-| **Empirical Factors**      | 2 (Facilitators, Barriers) | Parsimonious structure for predictive modeling                        |
-| **Scale Length**           | 12 items (1 per construct) | Balanced coverage with minimal respondent burden                      |
-| **Internal Consistency**   | α = 0.901                 | Excellent reliability (exceeds α ≥ 0.70 threshold)                  |
-| **Predictive Validity**    | R² = 0.811                | Strong prediction of Behavioral Intention                             |
-| **Measurement Efficiency** | 96.3% of 24-item power     | 50% item reduction with minimal validity loss                         |
-| **Factor Loadings**        | Range: 0.41-0.98           | All items load adequately (threshold: λ ≥ 0.40)                     |
-| **Variance Explained**     | 58.1%                      | Adequate for social science (typical: 50-60%)                         |
-| **Sampling Adequacy**      | KMO = 0.910                | Excellent factorability (exceeds 0.80 threshold)                     |
-| **Timeline Status**        | Week 24 of 32              | On schedule (75% complete)                                            |
-
----
-
-## 🔬 Methodological Rigor: Quality Assurance
-
-### Split-Sample Validation Design
-
-- **Purpose**: Prevent overfitting, ensure generalizability
-- **Implementation**: Stratified 50/50 split by Work_Context × AI_Adoption (random_state=42)
-- **Advantage**: Independent holdout sample validates findings without capitalization on chance
-
-### Data-Driven Factor Determination
-
-- **Method**: Parallel analysis (empirical) over Kaiser criterion (eigenvalue > 1)
-- **Result**: 2-factor structure (vs. Kaiser's 3) aligns with approach-avoidance theory
-- **Benefit**: More parsimonious, interpretable solution with better theoretical coherence
-
-### Construct-Balanced Item Selection
-
-- **Strategy**: One best-loading item per construct from preliminary EFA
-- **Advantage**: Maintains theoretical coverage while achieving efficiency
-- **Quality Control**: All items exceed λ ≥ 0.40 threshold (range: 0.41-0.98)
-
-### Reproducibility Standards
-
-- **Random Seed**: Set to 42 for all stochastic procedures
-- **Code Documentation**: Complete Jupyter notebooks with markdown explanations
-- **Data Availability**: Preprocessed datasets tracked in repository (`data/*.csv`)
-- **Version Control**: Git tracking ensures audit trail of analytical decisions
+**Key Strengths**:
+- Split-sample validation prevents overfitting (Development N=162, Holdout N=163)
+- Data-driven factor determination via parallel analysis
+- Construct-balanced design maintains theoretical coverage
+- Full reproducibility (documented seeds, version control, complete notebooks)
 
 ---
 
