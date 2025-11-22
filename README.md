@@ -166,6 +166,7 @@ graph LR
 ```
 
 **Key Findings**:
+
 - **Variance Explained**: 58.1% total (F1: 49.4%, F2: 8.7%)
 - **Factor 1**: 10 items representing mixed readiness orientation (includes UTAUT2 core + trust + explainability)
 - **Factor 2**: 2 items capturing risk/anxiety dimension (ethical concerns + AI apprehension)
@@ -877,7 +878,6 @@ jupyter notebook notebooks/AIRS_Analysis_Python.ipynb
 **Institution**: Touro University Worldwide
 **Program**: Doctor of Business Administration (DBA)
 **Dissertation Chair**: Dr. Karina Kasztelnik
-**Research Mentor**: Dr. Venkatesh
 **Repository**: [github.com/fabioc-aloha/AIRS_Data_Analysis](https://github.com/fabioc-aloha/AIRS_Data_Analysis)
 
 ---
