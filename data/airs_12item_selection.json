@@ -1,62 +1,218 @@
 {
   "PE": {
     "selected_item": "PE1",
-    "primary_factor": "F1",
-    "loading": 0.7661877981520502
+    "preliminary_selection": {
+      "factor": "F1",
+      "loading": 0.8375366555138153,
+      "note": "From 24-item, 4-factor EFA used for item selection"
+    },
+    "final_model": {
+      "n_factors": 2,
+      "primary_factor": "F1",
+      "primary_loading": 0.8467737900238957,
+      "all_loadings": {
+        "F1": 0.8467737900238957,
+        "F2": 0.0061493655141455945
+      },
+      "note": "From 12-item, 2-factor EFA (parallel analysis)"
+    }
   },
   "EE": {
-    "selected_item": "EE2",
-    "primary_factor": "F1",
-    "loading": 0.4116538866150842
+    "selected_item": "EE1",
+    "preliminary_selection": {
+      "factor": "F4",
+      "loading": 0.6688237401848903,
+      "note": "From 24-item, 4-factor EFA used for item selection"
+    },
+    "final_model": {
+      "n_factors": 2,
+      "primary_factor": "F1",
+      "primary_loading": 0.6103560604721813,
+      "all_loadings": {
+        "F1": 0.6103560604721813,
+        "F2": -0.007688788700790875
+      },
+      "note": "From 12-item, 2-factor EFA (parallel analysis)"
+    }
   },
   "SI": {
-    "selected_item": "SI2",
-    "primary_factor": "F2",
-    "loading": 0.5887594711006008
+    "selected_item": "SI1",
+    "preliminary_selection": {
+      "factor": "F1",
+      "loading": 0.5079813147860605,
+      "note": "From 24-item, 4-factor EFA used for item selection"
+    },
+    "final_model": {
+      "n_factors": 2,
+      "primary_factor": "F1",
+      "primary_loading": 0.7832397677392717,
+      "all_loadings": {
+        "F1": 0.7832397677392717,
+        "F2": 0.02713678997015045
+      },
+      "note": "From 12-item, 2-factor EFA (parallel analysis)"
+    }
   },
   "FC": {
     "selected_item": "FC1",
-    "primary_factor": "F2",
-    "loading": 0.9036488491461004
+    "preliminary_selection": {
+      "factor": "F3",
+      "loading": 0.6986602534297547,
+      "note": "From 24-item, 4-factor EFA used for item selection"
+    },
+    "final_model": {
+      "n_factors": 2,
+      "primary_factor": "F1",
+      "primary_loading": 0.5830496837139242,
+      "all_loadings": {
+        "F1": 0.5830496837139242,
+        "F2": 0.08140862484917706
+      },
+      "note": "From 12-item, 2-factor EFA (parallel analysis)"
+    }
   },
   "HM": {
-    "selected_item": "HM1",
-    "primary_factor": "F1",
-    "loading": 0.8017961185593474
+    "selected_item": "HM2",
+    "preliminary_selection": {
+      "factor": "F1",
+      "loading": 0.6877948267771296,
+      "note": "From 24-item, 4-factor EFA used for item selection"
+    },
+    "final_model": {
+      "n_factors": 2,
+      "primary_factor": "F1",
+      "primary_loading": 0.8471937363155778,
+      "all_loadings": {
+        "F1": 0.8471937363155778,
+        "F2": -0.025124068092880036
+      },
+      "note": "From 12-item, 2-factor EFA (parallel analysis)"
+    }
   },
   "PV": {
     "selected_item": "PV2",
-    "primary_factor": "F1",
-    "loading": 0.9784020915986835
+    "preliminary_selection": {
+      "factor": "F1",
+      "loading": 0.9145580313556502,
+      "note": "From 24-item, 4-factor EFA used for item selection"
+    },
+    "final_model": {
+      "n_factors": 2,
+      "primary_factor": "F1",
+      "primary_loading": 0.8664223712271207,
+      "all_loadings": {
+        "F1": 0.8664223712271207,
+        "F2": -0.1356735749680779
+      },
+      "note": "From 12-item, 2-factor EFA (parallel analysis)"
+    }
   },
   "HB": {
-    "selected_item": "HB2",
-    "primary_factor": "F1",
-    "loading": 0.9493235183053784
+    "selected_item": "HB1",
+    "preliminary_selection": {
+      "factor": "F1",
+      "loading": 0.9053690968666335,
+      "note": "From 24-item, 4-factor EFA used for item selection"
+    },
+    "final_model": {
+      "n_factors": 2,
+      "primary_factor": "F1",
+      "primary_loading": 0.8036388427436226,
+      "all_loadings": {
+        "F1": 0.8036388427436226,
+        "F2": 0.025534746991289752
+      },
+      "note": "From 12-item, 2-factor EFA (parallel analysis)"
+    }
   },
   "VO": {
     "selected_item": "VO1",
-    "primary_factor": "F1",
-    "loading": 0.7205313164579705
+    "preliminary_selection": {
+      "factor": "F1",
+      "loading": 0.8058813244610806,
+      "note": "From 24-item, 4-factor EFA used for item selection"
+    },
+    "final_model": {
+      "n_factors": 2,
+      "primary_factor": "F1",
+      "primary_loading": 0.8339364418674541,
+      "all_loadings": {
+        "F1": 0.8339364418674541,
+        "F2": -0.0587797600879367
+      },
+      "note": "From 12-item, 2-factor EFA (parallel analysis)"
+    }
   },
   "TR": {
-    "selected_item": "TR1",
-    "primary_factor": "F1",
-    "loading": 0.7777419166067777
+    "selected_item": "TR2",
+    "preliminary_selection": {
+      "factor": "F1",
+      "loading": 0.6839711973619733,
+      "note": "From 24-item, 4-factor EFA used for item selection"
+    },
+    "final_model": {
+      "n_factors": 2,
+      "primary_factor": "F1",
+      "primary_loading": 0.798735949565594,
+      "all_loadings": {
+        "F1": 0.798735949565594,
+        "F2": -0.010780195550580438
+      },
+      "note": "From 12-item, 2-factor EFA (parallel analysis)"
+    }
   },
   "EX": {
     "selected_item": "EX1",
-    "primary_factor": "F2",
-    "loading": 0.5355481600913872
+    "preliminary_selection": {
+      "factor": "F3",
+      "loading": 0.46020131236514744,
+      "note": "From 24-item, 4-factor EFA used for item selection"
+    },
+    "final_model": {
+      "n_factors": 2,
+      "primary_factor": "F1",
+      "primary_loading": 0.5685857153786379,
+      "all_loadings": {
+        "F1": 0.5685857153786379,
+        "F2": 0.04497565069714219
+      },
+      "note": "From 12-item, 2-factor EFA (parallel analysis)"
+    }
   },
   "ER": {
     "selected_item": "ER1",
-    "primary_factor": "F3",
-    "loading": 0.7108930760646868
+    "preliminary_selection": {
+      "factor": "F2",
+      "loading": 0.7383364237969773,
+      "note": "From 24-item, 4-factor EFA used for item selection"
+    },
+    "final_model": {
+      "n_factors": 2,
+      "primary_factor": "F2",
+      "primary_loading": 1.0076390270800282,
+      "all_loadings": {
+        "F1": -0.14705161850909124,
+        "F2": 1.0076390270800282
+      },
+      "note": "From 12-item, 2-factor EFA (parallel analysis)"
+    }
   },
   "AX": {
     "selected_item": "AX2",
-    "primary_factor": "F3",
-    "loading": 0.6513080320382901
+    "preliminary_selection": {
+      "factor": "F2",
+      "loading": 0.689899958606962,
+      "note": "From 24-item, 4-factor EFA used for item selection"
+    },
+    "final_model": {
+      "n_factors": 2,
+      "primary_factor": "F2",
+      "primary_loading": 0.4955505394705793,
+      "all_loadings": {
+        "F1": 0.07717076038174585,
+        "F2": 0.4955505394705793
+      },
+      "note": "From 12-item, 2-factor EFA (parallel analysis)"
+    }
   }
 }

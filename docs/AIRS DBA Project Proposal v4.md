@@ -70,7 +70,7 @@ Let BI denote behavioral intention or readiness to adopt AI at work.
 4.	Facilitating conditions → BI is positive and operates partly through reduced perceived ethical risk.
 5.	Hedonic motivation, price value, habit, and voluntariness of use → BI are positive, with habit increasing as exposure rises and voluntariness reflecting perceived autonomy in adoption decisions.
 
-Note: Voluntariness of use serves a dual function in this framework. It acts as a direct predictor of behavioral intention (consistent with UTAUT2) and also moderates the strength of social influence and facilitating conditions effects, with these relationships expected to be stronger in mandated versus discretionary adoption contexts (Venkatesh et al., 2012).
+Note: Voluntariness of use serves a dual function in this framework. It acts as a direct predictor of behavioral intention and also moderates the strength of social influence and facilitating conditions effects, with these relationships expected to be stronger in mandated versus discretionary adoption contexts. This reintroduction is justified because: (1) in the original UTAUT (2003), VO was a moderator of social influence effects; (2) UTAUT2 (2012) removed VO for consumer contexts where use is typically voluntary; (3) enterprise AI adoption often involves mandatory tools or strong managerial expectations, making VO theoretically relevant again as both predictor and moderator (Venkatesh et al., 2003; Venkatesh et al., 2012).
 6.	Perceived explainability → Trust in AI is positive and sizable.
 7.	Trust in AI → BI is positive and mediates part of the performance expectancy effect.
 8.	Perceived ethical risk → BI is negative and weakens the effects of performance expectancy and social influence.
