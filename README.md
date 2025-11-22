@@ -51,9 +51,9 @@ I am pleased to report progress on **Phase 1 & 2: Scale Development and CFA Vali
 
 **For Dr. Venkatesh (Mentor)**:
 
-- 🙏 **UTAUT2 Foundation**: Study builds directly on your seminal 2012 framework
+- 🙏 **UTAUT2 Foundation**: Study builds directly on your seminal 2012 framework (7 core predictors: PE, EE, SI, FC, HM, PV, HB)
 - 🔄 **Voluntariness of Use**: Reintroduced from original UTAUT (2003) given enterprise AI context with mandatory tools and managerial expectations—aligns with organizational adoption literature
-- 🎯 **Theoretical Extension**: Tests whether AI-specific constructs add explanatory power beyond UTAUT2's eight core predictors
+- 🎯 **Theoretical Extension**: Tests whether AI-specific constructs add explanatory power beyond UTAUT2's seven predictors + VO
 - 📊 **Validation Complete**: CFA confirmed 2-factor structure (Mixed Readiness + Risk/Anxiety) on independent holdout sample
 - ✅ **Psychometric Quality**: Factor 1 excellent (α=0.924, CR=0.925), Factor 2 documented limitations (α=0.545)
 - 🔍 **Key Test Ahead**: Phase 4 nested model comparison will test incremental validity (H3: ΔR² ≥ 0.10)
@@ -107,7 +107,7 @@ Given AI's distinctive characteristics—algorithmic opacity, autonomous decisio
 3. **Ethical Risk (ER)**: Concerns about bias, privacy violations, and fairness (Hagendorff, 2020)
 4. **AI Anxiety (AX)**: Apprehension and fear toward AI capabilities (Johnson & Marakas, 2000)
 
-**Integrated Framework**: 12 constructs (8 UTAUT2 + 4 AI-specific) → Behavioral Intention → AI Adoption
+**Integrated Framework**: 12 constructs (7 UTAUT2 + VO + 4 AI-specific) → Behavioral Intention → AI Adoption
 
 ### Research Design & Methodology
 
@@ -288,7 +288,7 @@ graph LR
 
 **RQ2**: Do UTAUT2 constructs predict behavioral intention to adopt AI in the workplace?
 
-- **H1**: Eight UTAUT2 constructs significantly predict BI (Phase 4 structural modeling)
+- **H1**: Seven UTAUT2 constructs + VO (reintroduced) significantly predict BI (Phase 4 structural modeling)
 
 **RQ3**: Do AI-specific constructs add explanatory power beyond UTAUT2?
 
@@ -394,10 +394,11 @@ graph LR
 
 **Planned Analysis**:
 
-1. **Model 1 - UTAUT2 Baseline**: 8 UTAUT2 constructs → BI
+1. **Model 1 - UTAUT2 Baseline**: 7 UTAUT2 + VO → BI
+   - Extends Venkatesh et al. (2012) framework with VO reintroduced from UTAUT (2003)
+   - Test H1: Do all seven UTAUT2 predictors + VO significantly predict BI?
 
-   - Test H1: Do all eight UTAUT2 predictors significantly predict BI?
-2. **Model 2 - AIRS Extended**: 12 constructs (8 UTAUT2 + 4 AI-specific) → BI
+2. **Model 2 - AIRS Extended**: 12 constructs (7 UTAUT2 + VO + 4 AI-specific) → BI
 
    - Test H2: Do AI-specific constructs significantly predict BI beyond UTAUT2?
    - Test H3: Does AIRS explain ≥10% additional variance? (ΔR² ≥ 0.10)
@@ -641,7 +642,7 @@ Factor 2 - Barriers (5 items):
 
 ### Critical Insight: 2-Factor Structure
 
-**Theoretical Framework**: 12 distinct constructs (8 UTAUT2 + 4 AI-specific)
+**Theoretical Framework**: 12 distinct constructs (7 UTAUT2 + VO + 4 AI-specific)
 
 **Empirical Reality**: 2 higher-order dimensions
 
@@ -805,7 +806,7 @@ jupyter notebook notebooks/AIRS_Analysis_Python.ipynb
 
 - **Venkatesh, V., Thong, J. Y. L., & Xu, X. (2012)**. Consumer acceptance and use of information technology: Extending the unified theory of acceptance and use of technology. *MIS Quarterly, 36*(1), 157-178.
 
-  - Seminal framework establishing the eight UTAUT2 predictors
+  - Seminal framework establishing the seven UTAUT2 predictors (PE, EE, SI, FC, HM, PV, HB)
   - Over 18,000 citations validating theoretical robustness
 - **Venkatesh, V., Morris, M. G., Davis, G. B., & Davis, F. D. (2003)**. User acceptance of information technology: Toward a unified view. *MIS Quarterly, 27*(3), 425-478.
 
@@ -851,7 +852,7 @@ jupyter notebook notebooks/AIRS_Analysis_Python.ipynb
 | **Total Sample Size**      | N = 318                    | Exceeds SEM minimum (N > 200), enables robust split-sample validation |
 | **Development Sample**     | N = 159                    | EFA, item selection, preliminary validation                           |
 | **Holdout Sample**         | N = 159                    | Independent CFA validation, hypothesis testing                        |
-| **Theoretical Constructs** | 12 (8 UTAUT2 + 4 AI)       | Comprehensive coverage of adoption determinants                       |
+| **Theoretical Constructs** | 12 (7 UTAUT2 + VO + 4 AI)  | Comprehensive coverage of adoption determinants                       |
 | **Empirical Factors**      | 2 (Facilitators, Barriers) | Parsimonious structure for predictive modeling                        |
 | **Scale Length**           | 12 items (1 per construct) | Balanced coverage with minimal respondent burden                      |
 | **Internal Consistency**   | α = 0.897                 | Excellent reliability (exceeds α ≥ 0.70 threshold)                  |

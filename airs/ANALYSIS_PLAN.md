@@ -65,7 +65,7 @@
 **H1**: UTAUT2 constructs—Performance Expectancy (PE), Effort Expectancy (EE), Social Influence (SI), Facilitating Conditions (FC), Hedonic Motivation (HM), Price Value (PV), Habit (HB), and Voluntariness of Use (VO)—will significantly predict behavioral intention to adopt AI.
 
 **Status**: ⏳ Pending Phase 3
-**Test**: Structural model with 8 UTAUT2 constructs → BI
+**Test**: Structural model with 7 UTAUT2 + VO constructs → BI
 **Note**: VO reintroduced for enterprise AI context (see theoretical justification below)
 
 #### Clarification: Voluntariness of Use in UTAUT and UTAUT2
@@ -418,7 +418,7 @@ result = model.fit(df_holdout)
 
 **Model 1: UTAUT2 Baseline** (H1)
 ```
-Predictors: 8 UTAUT2 constructs (PE, EE, SI, FC, HM, PV, HB, VO)
+Predictors: 7 UTAUT2 constructs (PE, EE, SI, FC, HM, PV, HB) + VO (reintroduced)
 Outcome: BI (Behavioral Intention / AI Adoption Readiness)
 Note: VO (Voluntariness) included based on 12-item scale
 ```
@@ -462,7 +462,7 @@ Test ΔR² for incremental validity of barriers dimension
 - Color-coded by construct family (UTAUT2 core vs. AI-specific)
 
 **Acceptance Criteria**:
-- [ ] H1 tested: 8 UTAUT2 constructs (including VO) significantly predict BI
+- [ ] H1 tested: 7 UTAUT2 constructs + VO (reintroduced from UTAUT 2003) significantly predict BI
 - [ ] H2 tested: 4 AI-specific constructs significantly predict BI
 - [ ] H3 tested: AIRS R² > UTAUT2 R², difference is significant
 - [ ] Incremental validity documented with effect sizes
