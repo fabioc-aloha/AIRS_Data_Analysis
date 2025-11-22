@@ -875,9 +875,13 @@ jupyter notebook notebooks/AIRS_Analysis_Python.ipynb
 ## 📧 Contact Information
 
 **Student**: Fabio Correa
+
 **Institution**: Touro University Worldwide
+
 **Program**: Doctor of Business Administration (DBA)
+
 **Dissertation Chair**: Dr. Karina Kasztelnik
+
 **Repository**: [github.com/fabioc-aloha/AIRS_Data_Analysis](https://github.com/fabioc-aloha/AIRS_Data_Analysis)
 
 ---
@@ -895,6 +899,3 @@ jupyter notebook notebooks/AIRS_Analysis_Python.ipynb
 ---
 
 **Report Date**: November 22, 2025
-**Dissertation Timeline**: Week 24 of 32 (75% complete)
-**Current Phase**: Phase 1 Complete ✅ | Phase 2 Next ⏭️
-**Overall Status**: 🟢 On Schedule
