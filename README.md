@@ -875,13 +875,10 @@ jupyter notebook notebooks/AIRS_Analysis_Python.ipynb
 ## 📧 Contact Information
 
 **Student**: Fabio Correa
-
+**Email**: [fcorrea@student.touro.edu](mailto:fcorrea@student.touro.edu)
 **Institution**: Touro University Worldwide
-
 **Program**: Doctor of Business Administration (DBA)
-
 **Dissertation Chair**: Dr. Karina Kasztelnik
-
 **Repository**: [github.com/fabioc-aloha/AIRS_Data_Analysis](https://github.com/fabioc-aloha/AIRS_Data_Analysis)
 
 ---
@@ -889,11 +886,8 @@ jupyter notebook notebooks/AIRS_Analysis_Python.ipynb
 ## 🏆 Acknowledgments
 
 **Study Participants** (N=318): Faculty, students, and professionals who generously shared their AI adoption experiences
-
 **Dr. Venkatesh**: For developing the UTAUT2 framework that provides the theoretical foundation for this research
-
 **Dr. Karina Kasztelnik**: For dissertation guidance and oversight throughout this project
-
 **Open-Source Community**: Python developers of factor-analyzer, semopy, and pingouin packages enabling reproducible psychometric research
 
 ---
