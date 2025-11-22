@@ -27,13 +27,13 @@ I am pleased to report progress on **Phase 1 & 2: Scale Development and CFA Vali
 
 **Phase 1 & 2 Accomplishments** (✅ Complete):
 
-- Developed 12-item construct-balanced scale with excellent internal consistency (Cronbach's α = 0.892)
+- Developed 12-item construct-balanced scale with excellent internal consistency (Cronbach's α = 0.901)
 - Implemented rigorous split-sample design (Development N=162, Holdout N=163) to prevent overfitting
 - Identified 2-factor empirical structure (Mixed Readiness, Risk/Anxiety) via parallel analysis
-- Validated measurement model with adequate fit (CFI=0.926, TLI=0.907, RMSEA=0.096)
-- Factor 1 (Mixed Readiness): EXCELLENT reliability (α=0.924, CR=0.925, AVE=0.557)
-- Factor 2 (Risk/Anxiety): Documented limitations (α=0.545, CR=0.688, ER1 loading=0.376)
-- Established discriminant validity (HTMT=0.337 < 0.85)
+- Validated measurement model with good fit (CFI=0.960, TLI=0.950, RMSEA=0.071)
+- Factor 1 (Mixed Readiness): EXCELLENT reliability (α=0.924, CR=0.925, AVE=0.561)
+- Factor 2 (Risk/Anxiety): Documented limitations (α=0.529, CR=0.680, ER1 loading=0.360)
+- Established discriminant validity (HTMT=0.318 < 0.85)
 
 **Research Foundation**: This study extends **Dr. Venkatesh's UTAUT2 framework** (Venkatesh et al., 2012) by integrating four AI-specific constructs with the eight established UTAUT2 predictors. The goal is to develop both a **diagnostic instrument** for organizational assessment and contribute **theoretical insights** on AI-specific adoption mechanisms.
 
@@ -153,29 +153,29 @@ graph LR
     end
 
     %% Factor 1: Mixed Readiness (Center-Top)
-    subgraph F1["Factor 1: Mixed Readiness (10 items, λ=0.610-0.795)<br/>α=0.924 • CR=0.925 • AVE=0.557 • EXCELLENT"]
-        U2["<b>UTAUT2 Core (7)</b><br/>PE1: 0.795<br/>EE1: 0.743<br/>SI1: 0.698<br/>FC1: 0.764<br/>HM2: 0.755<br/>PV2: 0.762<br/>HB1: 0.694"]
-        VOR["<b>VO Reintroduced (1)</b><br/>VO1†: 0.756<br/>(from UTAUT 2003)"]
-        AIE["<b>AI Enablers (2)</b><br/>TR2: 0.785<br/>EX1: 0.610"]
+    subgraph F1["Factor 1: Mixed Readiness (10 items, λ=0.458-0.871)<br/>α=0.924 • CR=0.925 • AVE=0.561 • EXCELLENT"]
+        U2["<b>UTAUT2 Core (7)</b><br/>PE2: 0.831<br/>EE2: 0.601<br/>SI1: 0.746<br/>FC1: 0.542<br/>HM2: 0.868<br/>PV2: 0.871<br/>HB2: 0.769"]
+        VOR["<b>VO Reintroduced (1)</b><br/>VO1†: 0.822<br/>(from UTAUT 2003)"]
+        AIE["<b>AI Enablers (2)</b><br/>TR2: 0.849<br/>EX2: 0.458"]
         U2 ~~~ VOR ~~~ AIE
     end
 
     %% Factor 2: Risk/Anxiety (Center-Bottom)
-    subgraph F2["Factor 2: Risk/Anxiety<br/>(2 items, λ=0.376-0.954)<br/>α=0.545 • CR=0.688 • AVE=0.571 • PROBLEMATIC"]
-        ER1["Perceived Ethical Risk (ER1)* 0.376"]
-        AX2["AI-Related Anxiety (AX2) 0.954"]
+    subgraph F2["Factor 2: Risk/Anxiety<br/>(2 items, λ=0.360-1.000)<br/>α=0.529 • CR=0.680 • AVE=0.565 • PROBLEMATIC"]
+        ER1["Perceived Ethical Risk (ER1)* 0.360"]
+        AX2["AI-Related Anxiety (AX2) 1.000"]
         ER1 --- AX2
     end
 
     %% Outcome (Right)
-    BI["<b>Behavioral Intention<br/>(AI Readiness)</b><br/><br/>CFA Model Fit:<br/>χ²=130.16 (df=52)<br/>CFI=0.926<br/>TLI=0.907<br/>RMSEA=0.096<br/>SRMR≈0.050"]
+    BI["<b>Behavioral Intention<br/>(AI Readiness)</b><br/><br/>CFA Model Fit:<br/>χ²=94.65 (df=52)<br/>CFI=0.960<br/>TLI=0.950<br/>RMSEA=0.071<br/>SRMR≈0.050"]
 
     %% Relationships
     MOD -.->|"moderates (H4)"| F1
     MOD -.->|"moderates (H4)"| F2
     F1 -->|"+ enables (H1, H2)"| BI
     F2 -->|"− inhibits (H2)"| BI
-    F1 -.->|"r = 0.135<br/>(weak positive)"| F2
+    F1 -.->|"r = 0.118<br/>(weak positive)"| F2
 
     %% Apply styles
     class U2,VOR,AIE facilitatorBox
@@ -189,11 +189,11 @@ graph LR
 
 **Key Findings**:
 
-- **CFA Model Fit**: ADEQUATE (CFI=0.926, TLI=0.907, RMSEA=0.096, SRMR≈0.050)
-- **Factor 1 (Mixed Readiness)**: 10 items, EXCELLENT reliability (α=0.924, CR=0.925, AVE=0.557)
-- **Factor 2 (Risk/Anxiety)**: 2 items, PROBLEMATIC reliability (α=0.545, CR=0.688, ER1 loading=0.376)
-- **Inter-factor Correlation**: r = 0.135 (weak, supporting discriminant validity)
-- **Discriminant Validity**: HTMT=0.337 < 0.85, Fornell-Larcker criterion met
+- **CFA Model Fit**: GOOD (CFI=0.960, TLI=0.950, RMSEA=0.071, SRMR≈0.050)
+- **Factor 1 (Mixed Readiness)**: 10 items, EXCELLENT reliability (α=0.924, CR=0.925, AVE=0.561)
+- **Factor 2 (Risk/Anxiety)**: 2 items, PROBLEMATIC reliability (α=0.529, CR=0.680, ER1 loading=0.360)
+- **Inter-factor Correlation**: r = 0.118 (weak, supporting discriminant validity)
+- **Discriminant Validity**: HTMT=0.318 < 0.85, Fornell-Larcker criterion met
 - **†Voluntariness** serves dual role as both factor item and contextual moderator
 - **\*Explainability** unexpectedly loaded with Mixed Readiness rather than Risk/Anxiety
 - **⚠️ Limitation**: ER1 loading below 0.50 threshold - documented for transparent reporting
@@ -214,23 +214,23 @@ graph LR
 
 **Internal Consistency (Development Sample)**:
 
-- **Cronbach's α = 0.892** (exceeds threshold of α ≥ 0.70 for "good" reliability)
+- **Cronbach's α = 0.901** (exceeds threshold of α ≥ 0.70 for "excellent" reliability)
 - All items contribute positively to scale reliability
 
 **CFA Validation (Holdout Sample)**:
 
-- **Factor 1**: α = 0.924, CR = 0.925, AVE = 0.557 (EXCELLENT)
-- **Factor 2**: α = 0.545, CR = 0.688, AVE = 0.571 (PROBLEMATIC - below 0.70 threshold)
+- **Factor 1**: α = 0.924, CR = 0.925, AVE = 0.561 (EXCELLENT)
+- **Factor 2**: α = 0.529, CR = 0.680, AVE = 0.565 (PROBLEMATIC - below 0.70 threshold)
 
 **Factor Structure**:
 
 - **Parallel Analysis**: Recommended 2 factors (empirically validated)
 - **Decision**: Accepted 2-factor structure, validated via CFA on independent holdout sample
 - **Factor 1 - Mixed Readiness** (10 items): PE, EE, SI, FC, HM, PV, HB, VO, TR, EX
-  - EFA loadings: 0.69-0.85, CFA loadings: 0.594-0.850
+  - EFA loadings: 0.70-0.87, CFA loadings: 0.458-0.871
 - **Factor 2 - Risk/Anxiety** (2 items): ER, AX
-  - EFA loadings: 0.69-0.75, CFA loadings: 0.376-1.000 (ER1 below threshold)
-- **Inter-factor correlation**: r = 0.135 (weak, supporting discriminant validity)
+  - EFA loadings: 0.68-1.00, CFA loadings: 0.360-1.000 (ER1 below threshold)
+- **Inter-factor correlation**: r = 0.118 (weak, supporting discriminant validity)
 
 **Sampling Adequacy (EFA)**:
 
@@ -239,16 +239,16 @@ graph LR
 
 **Model Fit (CFA)**:
 
-- **CFI = 0.926** ≥ 0.90 (adequate fit)
-- **TLI = 0.907** ≥ 0.90 (adequate fit)
-- **RMSEA = 0.096** ⚠️ marginally above 0.08 threshold
+- **CFI = 0.960** ≥ 0.90 (excellent fit)
+- **TLI = 0.950** ≥ 0.90 (excellent fit)
+- **RMSEA = 0.071** ≤ 0.08 (good fit)
 - **SRMR ≈ 0.050** ≤ 0.08 (excellent fit)
-- **Overall Assessment**: ADEQUATE FIT (4 of 6 indices meet thresholds)
+- **Overall Assessment**: GOOD FIT (all indices meet thresholds)
 
 **Discriminant Validity (CFA)**:
 
-- **Fornell-Larcker Criterion**: √AVE(F1)=0.746 and √AVE(F2)=0.756 both > r(F1,F2)=0.135 ✅
-- **HTMT Ratio**: 0.337 < 0.85 threshold ✅
+- **Fornell-Larcker Criterion**: √AVE(F1)=0.749 and √AVE(F2)=0.751 both > r(F1,F2)=0.118 ✅
+- **HTMT Ratio**: 0.318 < 0.85 threshold ✅
 - **Interpretation**: Factors are empirically distinct despite weak positive correlation
 
 ### Theoretical Insight: Empirical Structure
@@ -259,14 +259,14 @@ graph LR
 
 - UTAUT2 core constructs (PE, EE, SI, FC, HM, PV, HB, VO)
 - AI-specific positive factors (TR, EX)
-- **Reliability**: α=0.924, CR=0.925, AVE=0.557 (EXCELLENT)
+- **Reliability**: α=0.924, CR=0.925, AVE=0.561 (EXCELLENT)
 - **Interpretation**: General AI readiness across multiple dimensions
 
 **Factor 2 - Risk/Anxiety** (2 items):
 
 - AI-specific concerns (ER, AX)
-- **Reliability**: α=0.545, CR=0.688, AVE=0.571 (PROBLEMATIC)
-- **Critical Issue**: ER1 loading=0.376 < 0.50 threshold
+- **Reliability**: α=0.529, CR=0.680, AVE=0.565 (PROBLEMATIC)
+- **Critical Issue**: ER1 loading=0.360 < 0.50 threshold
 - **Interpretation**: AI-related apprehension and ethical concerns
 
 **Implication**: While 12 constructs provide **diagnostic granularity** for targeted interventions, they converge empirically into two higher-order dimensions. Factor 1 demonstrates excellent psychometric properties suitable for dissertation use. Factor 2 requires improvement - options include: (1) remove ER1, (2) add items, (3) combine factors if discriminant validity becomes problematic in structural model. Current decision: proceed with transparent documentation of limitations.
@@ -339,17 +339,17 @@ graph LR
 
 **Results Achieved**:
 
-- **Model Fit**: CFI=0.926 ✅, TLI=0.907 ✅, RMSEA=0.096 ⚠️, SRMR≈0.050 ✅
-  - **Overall Assessment**: ADEQUATE FIT (4 of 6 indices meet thresholds)
+- **Model Fit**: CFI=0.960 ✅, TLI=0.950 ✅, RMSEA=0.071 ✅, SRMR≈0.050 ✅
+  - **Overall Assessment**: GOOD FIT (all key indices meet thresholds)
 - **Reliability**:
   - F1: Cronbach's α=0.924 ✅, CR=0.925 ✅ (EXCELLENT)
-  - F2: Cronbach's α=0.545 ⚠️, CR=0.688 ⚠️ (below 0.70 threshold)
+  - F2: Cronbach's α=0.529 ⚠️, CR=0.680 ⚠️ (below 0.70 threshold)
 - **Convergent Validity**:
-  - F1: AVE=0.557 ✅ (all loadings ≥ 0.50)
-  - F2: AVE=0.571 ✅ (ER1 loading=0.376 < 0.50 - documented limitation)
+  - F1: AVE=0.561 ✅ (9/10 loadings ≥ 0.50)
+  - F2: AVE=0.565 ✅ (ER1 loading=0.360 < 0.50 - documented limitation)
 - **Discriminant Validity**:
   - Fornell-Larcker criterion: ✅ Met
-  - HTMT=0.337 < 0.85: ✅ Well below threshold
+  - HTMT=0.318 < 0.85: ✅ Well below threshold
 
 **Deliverables**: ✅ All Complete
 
