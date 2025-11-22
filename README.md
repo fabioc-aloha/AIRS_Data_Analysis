@@ -146,50 +146,43 @@ graph LR
     subgraph MOD["Contextual Moderators"]
         M1["Role<br/>(Student/Faculty/Professional)"]
         M2["AI Usage Frequency<br/>(Exposure level)"]
-        M3["Voluntariness<br/>(Discretionary vs. mandated)"]
+        M3["AI Adoption Status<br/>(Adopter/Non-adopter)"]
         M1 --- M2 --- M3
     end
 
     %% Factor 1: Mixed Readiness (Center-Top)
-    subgraph F1["Factor 1: Mixed Readiness (10 items, CFA loadings 0.59-0.85)"]
-        PE1["Performance Expectancy (PE1) 0.70"]
-        EE1["Effort Expectancy (EE1) 0.61"]
-        SI1["Social Influence (SI1) 0.73"]
-        FC1["Facilitating Conditions (FC1) 0.59"]
-        HM2["Hedonic Motivation (HM2) 0.84"]
-        PV2["Price Value (PV2) 0.85"]
-        HB1["Habit (HB1) 0.83"]
-        VO1["Voluntariness (VO1)† 0.80"]
-        TR2["Trust in AI (TR2) 0.82"]
-        EX1["Explainability (EX1)* 0.61"]
-        PE1 --- EE1 --- SI1 --- FC1 --- HM2 --- PV2 --- HB1 --- VO1 --- TR2 --- EX1
+    subgraph F1["Factor 1: Mixed Readiness (10 items, λ=0.610-0.795)<br/>α=0.924 • CR=0.925 • AVE=0.557 • EXCELLENT"]
+        U2["<b>UTAUT2 Core (7)</b><br/>PE1: 0.795<br/>EE1: 0.743<br/>SI1: 0.698<br/>FC1: 0.764<br/>HM2: 0.755<br/>PV2: 0.762<br/>HB1: 0.694"]
+        VOR["<b>VO Reintroduced (1)</b><br/>VO1†: 0.756<br/>(from UTAUT 2003)"]
+        AIE["<b>AI Enablers (2)</b><br/>TR2: 0.785<br/>EX1: 0.610"]
+        U2 ~~~ VOR ~~~ AIE
     end
 
     %% Factor 2: Risk/Anxiety (Center-Bottom)
-    subgraph F2["Factor 2: Risk/Anxiety (2 items, CFA loadings 0.38-1.00)"]
-        ER1["Perceived Ethical Risk (ER1) 0.38⚠️"]
-        AX2["AI-Related Anxiety (AX2) 1.00"]
+    subgraph F2["Factor 2: Risk/Anxiety<br/>(2 items, λ=0.376-0.954)<br/>α=0.545 • CR=0.688 • AVE=0.571 • PROBLEMATIC"]
+        ER1["Perceived Ethical Risk (ER1)* 0.376"]
+        AX2["AI-Related Anxiety (AX2) 0.954"]
         ER1 --- AX2
     end
 
     %% Outcome (Right)
-    BI["<b>Behavioral Intention /<br/>AI Readiness</b><br/><br/>CFA: ADEQUATE FIT<br/>(CFI=0.926, TLI=0.907)"]
+    BI["<b>Behavioral Intention<br/>(AI Readiness)</b><br/><br/>CFA Model Fit:<br/>χ²=130.16 (df=52)<br/>CFI=0.926<br/>TLI=0.907<br/>RMSEA=0.096<br/>SRMR≈0.050"]
 
     %% Relationships
-    MOD -.->|"moderates"| F1
-    MOD -.->|"moderates"| F2
-    F1 -->|"+ enables"| BI
-    F2 -->|"− inhibits"| BI
+    MOD -.->|"moderates (H4)"| F1
+    MOD -.->|"moderates (H4)"| F2
+    F1 -->|"+ enables (H1, H2)"| BI
+    F2 -->|"− inhibits (H2)"| BI
     F1 -.->|"r = 0.135<br/>(weak positive)"| F2
 
     %% Apply styles
-    class PE1,EE1,SI1,FC1,HM2,PV2,HB1,VO1,TR2,EX1 facilitatorBox
+    class U2,VOR,AIE facilitatorBox
     class ER1,AX2 barrierBox
     class BI outcomeBox
     class M1,M2,M3 moderatorBox
 
     %% Hide internal connections
-    linkStyle 0,1,2,3,4,5,6,7,8,9,10,11,12 stroke:none
+    linkStyle 0,1,2 stroke:none
 ```
 
 **Key Findings**:
