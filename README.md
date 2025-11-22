@@ -6,12 +6,16 @@
 
 # **Dissertation Progress Report**
 
-**To**: Dr. Karina Kasztelnik (Dissertation Chair), Dr. Venkatesh (Research Mentor)<br>
-**CC**: Dr. Jerome Jones (Committee Member), Dr. Donna Day (Committee Member)<br>
-**From**: Fabio Correa<br>
-**Date**: November 22, 2025 (Week 24 of 32)<br>
-**Institution**: Touro University Worldwide<br>
-**Program**: Doctor of Business Administration (DBA)---
+**To**: Dr. Karina Kasztelnik (Dissertation Chair), Dr. Venkatesh (Research Mentor)`<br>`
+**CC**: Dr. Jerome Jones (Committee Member), Dr. Donna Day (Committee Member)`<br>`
+**From**: Fabio Correa`<br>`
+**Date**: November 22, 2025 (Week 24 of 32)`<br>`
+**Institution**: Touro University Worldwide`<br>`
+**Program**: Doctor of Business Administration (DBA)
+
+---
+
+
 
 ## 📋 Executive Summary
 
@@ -872,17 +876,17 @@ jupyter notebook notebooks/AIRS_Analysis_Python.ipynb
 
 ## 📧 Contact Information
 
-**Student**: Fabio Correa<br>
-**Email**: [fcorrea@student.touro.edu](mailto:fcorrea@student.touro.edu)<br>
-**Institution**: Touro University Worldwide<br>
-**Program**: Doctor of Business Administration (DBA)<br>
-**Dissertation Chair**: Dr. Karina Kasztelnik<br>
+**Student**: Fabio Correa`<br>`
+**Email**: [fcorrea@student.touro.edu](mailto:fcorrea@student.touro.edu)`<br>`
+**Institution**: Touro University Worldwide`<br>`
+**Program**: Doctor of Business Administration (DBA)`<br>`
+**Dissertation Chair**: Dr. Karina Kasztelnik`<br>`
 **Repository**: [github.com/fabioc-aloha/AIRS_Data_Analysis](https://github.com/fabioc-aloha/AIRS_Data_Analysis)---
 
 ## 🏆 Acknowledgments
 
-**Study Participants** (N=318): Faculty, students, and professionals who generously shared their AI adoption experiences<br>
-**Dr. Venkatesh**: For developing the UTAUT2 framework that provides the theoretical foundation for this research<br>
+**Study Participants** (N=318): Faculty, students, and professionals who generously shared their AI adoption experiences`<br>`
+**Dr. Venkatesh**: For developing the UTAUT2 framework that provides the theoretical foundation for this research`<br>`
 **Dr. Karina Kasztelnik**: For dissertation guidance and oversight throughout this project
 **Open-Source Community**: Python developers of factor-analyzer, semopy, and pingouin packages enabling reproducible psychometric research
 
