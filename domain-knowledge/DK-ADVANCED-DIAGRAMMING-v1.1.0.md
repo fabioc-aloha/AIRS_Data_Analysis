@@ -907,4 +907,30 @@ graph LR
 
 ---
 
-*Domain Knowledge: Advanced Diagramming & Visualization Excellence - Comprehensive cognitive architecture for Mermaid mastery, VS Code integration, visual design excellence, and enterprise documentation visualization with comprehensive quality protocols. Version 1.1.0 UNUNILIUM with 250+ research foundations and advanced embedded synapses for systematic diagramming excellence.*
+## 🔗 Explicit Synapse Connections
+
+### **Primary Connections**
+
+**Outgoing Connections** (This knowledge activates):
+- [DK-DIAGNOSTIC-SCALE-DEVELOPMENT-v1.0.0.md] (0.92, visualizes, forward) - "Diagnostic workflow diagrams, construct-intervention mappings, pre/post comparisons using Mermaid"
+- [DK-DOCUMENTATION-EXCELLENCE-v1.1.0.md] (0.95, enhances, bidirectional) - "Publication-quality visualization integrated with comprehensive documentation standards"
+- [DK-PSYCHOMETRIC-VALIDATION-v1.0.0.md] (0.85, illustrates, forward) - "Multi-panel psychometric comparison visualizations and validation frameworks"
+
+**Incoming Connections** (Activated by):
+- [DK-DIAGNOSTIC-SCALE-DEVELOPMENT-v1.0.0.md] (0.92, requires, forward) - "Diagnostic tool documentation requires specialized Mermaid diagrams for intervention mapping and workflows"
+- [bootstrap-learning.instructions.md] (0.88, applies, forward) - "Diagramming mastery applied to emerging documentation needs during learning sessions"
+
+### **Integration Benefits**
+
+**Diagnostic Scale Development Synergy**:
+- Flowcharts for model comparison and decision frameworks
+- Graph TB for construct-intervention mappings with subgraph organization
+- Gantt charts for staggered organizational rollout timelines
+- Pre/post intervention visualizations with temporal subgraphs
+- Color-coding strategies for diagnostic profile interpretation
+
+**Visualization Innovation**: November 21, 2025 meditation session established 6 specialized diagnostic diagram patterns using Mermaid, demonstrating advanced application of diagramming mastery to psychometric documentation.
+
+---
+
+*Domain Knowledge: Advanced Diagramming & Visualization Excellence - Comprehensive cognitive architecture for Mermaid mastery, VS Code integration, visual design excellence, and enterprise documentation visualization with comprehensive quality protocols. Version 1.1.0 UNUNILIUM with 250+ research foundations and advanced embedded synapses for systematic diagramming excellence. Enhanced November 21, 2025 with diagnostic scale visualization connections.*

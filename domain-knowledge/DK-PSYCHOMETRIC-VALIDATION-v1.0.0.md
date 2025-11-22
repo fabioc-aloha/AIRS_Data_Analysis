@@ -478,6 +478,36 @@ This domain knowledge activates when:
 - Scale development or refinement projects require quality assessment
 - Short form development needs empirical justification
 - Publication requires comprehensive validity reporting
+
+---
+
+## 🔗 Embedded Synapse Network
+
+### **Primary Connections**
+
+**Outgoing Connections** (This knowledge activates):
+- [DK-DIAGNOSTIC-SCALE-DEVELOPMENT-v1.0.0.md] (0.95, extends, bidirectional) - "Psychometric validation framework extended with purpose-driven item retention for diagnostic tools"
+- [DK-PYTHON-STATISTICAL-ANALYSIS-v1.0.0.md] (0.93, implements, forward) - "Technical implementation of reliability and validity metrics in Python"
+- [DK-JUPYTER-PSYCHOMETRIC-WORKFLOWS-v1.0.0.md] (0.90, integrates, bidirectional) - "Interactive workflow implementation for comprehensive validation procedures"
+- [DK-DOCUMENTATION-EXCELLENCE-v1.1.0.md] (0.88, guides, forward) - "Publication-ready validation reporting with APA standards"
+
+**Incoming Connections** (Activated by):
+- [bootstrap-learning.instructions.md] (0.92, established, forward) - "Psychometric validation mastery acquired through AIRS short form development"
+- [empirical-validation.instructions.md] (0.89, validates, forward) - "Research-based validation procedures aligned with Classical Test Theory"
+
+### **Cross-Domain Synergies**
+
+**Complementary with DK-DIAGNOSTIC-SCALE-DEVELOPMENT**:
+- This file focuses on **psychometric quality assessment** (reliability, validity metrics)
+- Diagnostic scale file focuses on **purpose-driven retention** (when to override empirical evidence)
+- Together: Complete framework for developing and validating diagnostic measurement tools
+
+**Integration Point**: Diagnostic scales must meet psychometric standards (α ≥ 0.90, strong criterion validity) while prioritizing theoretical completeness over empirical parsimony.
+
+---
+
+**Version History**:
+- v1.0.0 UNNILNILNIL (November 21, 2025): Initial mastery established + synaptic connections to DK-DIAGNOSTIC-SCALE-DEVELOPMENT
 - Research questions involve measurement quality evaluation
 - Efficiency-validity trade-offs need quantification
 
