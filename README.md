@@ -6,12 +6,14 @@
 
 # **Dissertation Progress Report**
 
-- **To**: Dr. Karina Kasztelnik (Dissertation Chair), Dr. Venkatesh (Research Mentor)
-- **CC**: Dr. Jerome Jones (Committee Member), Dr. Donna Day (Committee Member)
-- **From**: Fabio Correa
-- **Date**: November 22, 2025 (Week 24 of 32)
-- **Institution**: Touro University Worldwide
-- **Program**: Doctor of Business Administration (DBA)
+| | |
+|---|---|
+| **To** | Dr. Karina Kasztelnik (Dissertation Chair), Dr. Venkatesh (Research Mentor) |
+| **CC** | Dr. Jerome Jones (Committee Member), Dr. Donna Day (Committee Member) |
+| **From** | Fabio Correa |
+| **Date** | November 22, 2025 (Week 24 of 32) |
+| **Institution** | Touro University Worldwide |
+| **Program** | Doctor of Business Administration (DBA) |
 
 ---
 
