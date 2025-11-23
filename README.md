@@ -365,6 +365,57 @@ We tested how AI-specific constructs influence adoption through psychological me
 
 ---
 
+### **Visual Model: Dual-Pathway Suppression**
+
+```mermaid
+graph TB
+    %% Styling
+    classDef facilitatorBox fill:#d1fae5,stroke:#059669,stroke-width:3px,color:#065f46
+    classDef barrierBox fill:#fecaca,stroke:#dc2626,stroke-width:3px,color:#991b1b
+    classDef outcomeBox fill:#bfdbfe,stroke:#1e40af,stroke-width:4px,color:#1e3a8a
+    classDef mediatorBox fill:#fef3c7,stroke:#f59e0b,stroke-width:3px,color:#92400e
+    classDef dominantBox fill:#fee2e2,stroke:#991b1b,stroke-width:4px,color:#7f1d1d
+
+    %% Independent Variables (Left)
+    subgraph PREDICTORS["AI-Specific Predictors"]
+        EX["<b>Explainability (EX)</b><br/>Understanding AI outputs<br/><i>Transparency enabler</i>"]
+        ER["<b>Ethical Risk (ER)</b><br/>Privacy & moral concerns<br/><i>Phase 4: β=0.001 ns</i><br/><i>Phase 5: DUAL PATHWAY</i>"]
+    end
+
+    %% Mediators (Center)
+    subgraph MEDIATORS["Psychological Mediators"]
+        TR["<b>Trust in AI (TR)</b><br/><i>CENTRAL HUB</i><br/>Mediates both EX & ER<br/>Cognitive pathway"]
+        AX["<b>AI Anxiety (AX)</b><br/><i>DOMINANT MECHANISM</i><br/>Affective pathway<br/>1.51× stronger than trust"]
+    end
+
+    %% Outcome (Right)
+    BI["<b>Behavioral Intention (BI)</b><br/>AI Adoption Willingness<br/><br/><b>UTAUT2 Baseline:</b><br/>R²=0.8046 (80.46%)<br/><br/><b>AIRS Extended:</b><br/>R²=0.8191 (81.91%)<br/>ΔR²=1.46% (p<.001***)"]
+
+    %% H5a: Explainability → Trust → BI (PARTIAL MEDIATION)
+    EX -->|"<b>Path a</b><br/>β=0.455***<br/>t=10.832<br/>p<.0001"| TR
+    TR -->|"<b>Path b</b><br/>β=0.631***<br/>t=13.808<br/>p<.0001"| BI
+    EX -.->|"<b>Direct (c')</b><br/>β=0.232***<br/>p<.0001<br/><i>PARTIAL</i>"| BI
+
+    %% H5b: Ethical Risk → Trust → BI (COGNITIVE PATHWAY - 64% mediated)
+    ER -->|"<b>Path a</b><br/>β=-0.314***<br/>t=-6.822<br/>p<.0001<br/><i>Trust erosion</i>"| TR
+    
+    %% H5c: Ethical Risk → Anxiety → BI (AFFECTIVE PATHWAY - 96% mediated, DOMINANT)
+    ER ==>|"<b>Path a</b><br/>β=0.622***<br/>t=16.850<br/>p<.0001<br/><i>Anxiety amplification</i><br/><b>STRONGEST PATH</b>"| AX
+    AX ==>|"<b>Path b</b><br/>β=-0.536***<br/>t=-11.160<br/>p<.0001<br/><b>POWERFUL INHIBITOR</b>"| BI
+    ER -.->|"<b>Direct (c')</b><br/>β=-0.014 ns<br/>p=.821<br/><i>ELIMINATED</i>"| BI
+
+    %% Apply styles
+    class EX facilitatorBox
+    class ER barrierBox
+    class TR mediatorBox
+    class AX dominantBox
+    class BI outcomeBox
+```
+
+*Figure: Dual-pathway suppression model showing all three mediation pathways (H5a-c). Green = facilitator (Explainability), Red = barrier (Ethical Risk), Yellow = cognitive mediator (Trust as central hub), Dark Red = affective mediator (Anxiety as dominant mechanism), Blue = outcome (Behavioral Intention). Thick arrows (⇒) indicate the dominant anxiety pathway (96% mediation, 1.51× stronger than trust). Dashed arrows (⇢) show partial direct effects. The model reveals why Ethical Risk appeared non-significant in Phase 4 (β=0.001 ns)—it operates entirely through dual indirect pathways: cognitive (ER→Trust→BI, 64%) and affective (ER→Anxiety→BI, 96% DOMINANT).*
+
+---
+
 ### **The Results: 100% Hypothesis Support with a Stunning Discovery**
 
 #### **H5a: The Transparency-Trust Pathway** ✅ **SUPPORTED**
