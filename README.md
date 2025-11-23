@@ -12,7 +12,7 @@
 <tr><td><strong>Institution</strong></td><td>Touro University Worldwide</td></tr>
 <tr><td><strong>Program</strong></td><td>Doctor of Business Administration (DBA)</td></tr>
 <tr><td><strong>Date</strong></td><td>November 23, 2025 (Week 27 of 32)</td></tr>
-<tr><td><strong>Status</strong></td><td>✅ Phase 5 Complete: Dual-Pathway Suppression Discovery (H5a-c) | N=362 (Full Sample Results)</td></tr>
+<tr><td><strong>Status</strong></td><td>✅ Phase 5 Complete | ⏭️ Phase 6 Active: Moderation Analysis (H4a-e) | N=362 (Full Sample)</td></tr>
 </table>
 
 ---
@@ -599,14 +599,14 @@ After **five phases** of rigorous testing, we now have:
 
 Now that we have a validated measurement instrument, we can finally test the theoretical predictions that motivated this research. Here's the roadmap:
 
-### **Phase 5-7 Preview: Understanding Mechanisms and Context** (⏭️ Starting Now)
+### **Phase 4-6: Understanding Mechanisms and Context** (⏭️ Phase 6 Active)
 
-| **Research Question** | **Hypotheses** | **Method** | **What Success Looks Like** |
+| **Research Question** | **Hypotheses** | **Method** | **Status** |
 |---------------------|---------------|-----------|---------------------------|
-| **RQ2**: Do UTAUT2 constructs predict AI adoption? | H1: UTAUT2 constructs → BI | Structural model | ✅ R²=0.8046***, 6/8 significant |
-| **RQ3**: Does AIRS add value beyond UTAUT2? | H2: AI constructs → BI<br>H3: ΔR²≥0.10 | Nested model comparison | ✅ ΔR²=1.46% (p<.001), 3/4 significant |
-| **RQ4**: What are the psychological mechanisms? | H5a-c: Trust/Anxiety mediation | Bootstrap CIs (5000) | Significant indirect effects |
-| **RQ5**: Does context matter? | H4a-e: Moderation effects | Separate-group models | Different path coefficients |
+| **RQ2**: Do UTAUT2 constructs predict AI adoption? | H1: UTAUT2 constructs → BI | Structural model | ✅ R²=0.243***, 6/8 paths significant |
+| **RQ3**: Does AIRS add value beyond UTAUT2? | H2: AI constructs → BI<br>H3: ΔR²≥0.10 | Nested model comparison | ✅ ΔR²=0.260*** (p<.001), 3/4 paths significant |
+| **RQ4**: What are the psychological mechanisms? | H5a-c: Trust/Anxiety mediation | Bootstrap CIs (5000) | ✅ All supported: 64% trust, 96% anxiety (DOMINANT) |
+| **RQ5**: Does context matter? | H4a-e: Moderation effects | Separate-group models | ⏭️ Phase 6 in progress (role, usage, adoption) |
 
 ### **The Story We're About to Tell**
 
@@ -647,7 +647,7 @@ Now that we have a validated measurement instrument, we can finally test the the
 | `03_Measurement_Invariance.ipynb` | Context testing | ✅ Complete | Configural ✓, Metric ✗ |
 | `04_Structural_Model_Hypothesis_Testing.ipynb` | Hypothesis testing H1-H3 | ✅ Complete | ΔR²=1.46% (p<.001), AX dominant |
 | `05_Mediation_Analysis.ipynb` | H5 mediation pathways | ✅ Complete | Dual-pathway suppression (96% anxiety, 64% trust) |
-| `06_Moderation_Analysis.ipynb` | H4 separate-group | ⏳ Pending | Context-specific paths |
+| `06_Moderation_Analysis.ipynb` | H4a-e separate-group | ⏭️ In Progress | Role, usage, adoption moderation |
 
 
 ---
