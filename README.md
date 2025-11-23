@@ -303,15 +303,16 @@ UTAUT2 is a mature framework (18,000+ citations) that already explains massive v
 
 > *The semi-partial R² decomposition reveals that AI Anxiety contributes 0.525% unique variance—more than Trust (0.275%) and Explainability (0.290%) combined. This isn't just a statistical finding; it's an intervention priority signal: **Organizations should focus on anxiety reduction BEFORE transparency initiatives or trust-building efforts**. Emotional barriers outweigh cognitive/affective factors in AI adoption.*
 
-### **The Ethical Risk Mystery**
+### **The Ethical Risk Mystery → SOLVED ✅**
 
-Why is Ethical Risk (ER) non-significant (β = 0.001, p = .917) despite theoretical predictions?
+**Phase 4 Puzzle**: Ethical Risk (ER) showed β = 0.001 ns (p = .917) - seemingly irrelevant despite theoretical predictions.
 
-**Two Competing Hypotheses for Phase 5**:
-1. **Truly Irrelevant**: Ethical concerns don't influence adoption decisions
-2. **Indirect Effects**: ER operates through Trust erosion or Anxiety amplification
+**Phase 5 Resolution**: The "Indirect Effects" hypothesis was **CORRECT**. ER operates entirely through dual pathways:
 
-**Test**: Mediation analysis (H5b-c) will examine ER → Trust → BI and ER → Anxiety → BI pathways
+- **ER → Anxiety → BI**: ab = -0.333*** (96% mediation) - **DOMINANT affective route**
+- **ER → Trust → BI**: ab = -0.220*** (64% mediation) - Secondary cognitive route
+
+**Discovery**: The Phase 4 near-zero effect was **dual-pathway suppression** - both negative indirect effects masked the total effect until mediation analysis revealed them. Anxiety pathway is **1.51× stronger**, proving emotional > cognitive mechanisms for ethical concerns.
 
 ### **Methodological Rigor: The Fact-Check**
 
@@ -329,21 +330,23 @@ Every statistical claim was verified:
 
 ## 🔍 **Phase 5: The Suppression Discovery**
 
-### **The Ethical Risk Mystery Deepens**
+### **Resolving the Ethical Risk Mystery**
 
-Phase 4 left us with a puzzle: Ethical Risk (ER) showed virtually zero direct effect on adoption (β = 0.001, p = .917), yet participants clearly rated ethical concerns as real (not floor/ceiling effects). **Two competing explanations emerged**:
+Phase 4 presented a puzzle: Ethical Risk (ER) showed β = 0.001 ns (p = .917) despite theoretical predictions and clear participant concern ratings. **Two competing explanations**:
 
-1. **Null hypothesis**: Ethical concerns truly don't influence AI adoption decisions
-2. **Suppression hypothesis**: ER operates entirely through indirect pathways
+1. **Null hypothesis**: Ethical concerns truly irrelevant to AI adoption
+2. **Suppression hypothesis**: ER operates entirely through indirect pathways (dual-route model)
 
-### **Decision Point #6: Accept Irrelevance or Test Mechanisms?**
+### **Decision Point #6: Accept Null or Test Mechanisms?**
 
 | **Option** | **Risk** | **Potential Gain** | **Our Choice** |
 |-----------|---------|-------------------|---------------|
-| Accept null | Miss important mechanisms | Simplify model | ❌ |
-| **Test mediation pathways** | **Null finding still possible** | **Uncover suppression mechanisms** | **✅** |
+| Accept null | Miss suppression mechanisms | Simplify model | ❌ |
+| **Test mediation pathways** | **Null finding still possible** | **Discover dual-route suppression** | **✅** |
 
-**Rationale**: With validated measurement (Phases 1-3) and established direct effects (Phase 4), we had the foundation to test **three mediation hypotheses** using bootstrap procedures.
+**Rationale**: Validated measurement (Phases 1-3) + established effects (Phase 4) = Foundation to test **three mediation hypotheses** using bootstrap procedures (5000 iterations).
+
+**Result**: Suppression hypothesis **CONFIRMED** - ER operates through dual pathways with **96% anxiety mediation (dominant)** and **64% trust mediation (secondary)**. The Phase 4 near-zero effect was masking two strong negative indirect effects.
 
 ---
 
