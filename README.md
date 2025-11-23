@@ -6,7 +6,7 @@
 
 # **Dissertation Progress Report**
 
-<table>
+<table width="100%">
 <tr><td><strong>To</strong></td><td>Dr. Karina Kasztelnik (Dissertation Chair), Dr. Venkatesh (Research Mentor)</td></tr>
 <tr><td><strong>CC</strong></td><td>Dr. Jerome Jones (Committee Member), Dr. Donna Day (Committee Member)</td></tr>
 <tr><td><strong>From</strong></td><td>Fabio Correa</td></tr>
@@ -21,13 +21,13 @@
 
 ## 📋 Executive Summary
 
-**⚠️ Data Collection Status**: Currently at **N=325 of target N=500**. All results are preliminary pending final sample completion.
+**⚠️ Data Collection Status**: Currently at **N=362 of target N=500**. All results are preliminary pending final sample completion.
 
 **Progress Report** (Week 24 of 32):
 
 - ✅ **Phase 1 & 2 Complete**: 12-item scale developed and validated via split-sample CFA
-- ✅ **Measurement Model**: Good fit achieved, 2-factor structure confirmed
-- ✅ **Psychometric Quality**: Factor 1 excellent, Factor 2 limitations documented
+- ✅ **Measurement Model**: Good fit achieved (CFI=0.925, TLI=0.905), 2-factor structure confirmed
+- ✅ **Psychometric Quality**: F1 excellent (α=0.924), F2 acceptable (α=0.691)
 - ⏭️ **Next**: Phase 3 (Measurement Invariance) → Phase 4-6 (Hypothesis Testing)
 
 **Research Foundation**: This study extends **Dr. Venkatesh's UTAUT2 framework** (Venkatesh et al., 2012) by integrating four AI-specific constructs to develop a diagnostic instrument for organizational AI readiness assessment.
@@ -186,23 +186,50 @@ graph LR
 
 ---
 
-## ✅ Phase 1 & 2 Results: Scale Development and CFA Validation (Complete)
+## ✅ Phase 1, 2, & 3 Results: Scale Development, Validation, and Invariance Testing (Complete)
 
-**12-Item Scale**: PE2, EE2, SI1, FC1, HM2, PV2, HB2, VO1, TR2, EX2, ER1, AX2
+### Phase 1 & 2: Scale Development and CFA Validation
+
+**12-Item Scale**: PE2, EE1, SI1, FC1, HM2, PV2, HB2, VO1, TR2, EX1, ER2, AX1
 
 **Validation Summary**:
 - ✅ 2-factor structure confirmed via parallel analysis (EFA) and validated on independent holdout sample (CFA)
-- ✅ Good model fit achieved (CFI=0.960, TLI=0.950, RMSEA=0.071)
-- ✅ Factor 1 (Mixed Readiness): Excellent psychometric properties
-- ⚠️ Factor 2 (Risk/Anxiety): Documented limitations (2 items, low reliability)
+- ✅ Good model fit achieved (CFI=0.952, TLI=0.941, RMSEA=0.080)
+- ✅ Factor 1 (Mixed Readiness): Excellent psychometric properties (α=0.924, CR=0.923, AVE=0.554)
+- ✅ Factor 2 (Risk/Anxiety): Adequate reliability after item refinement (α=0.691, CR=0.765, AVE=0.640)
 
 **Interpretation**: The 12 theoretical constructs (7 UTAUT2 + VO + 4 AI-specific) converge empirically into 2 higher-order factors:
-- **Factor 1**: General AI readiness (enablers/facilitators)
-- **Factor 2**: AI-related concerns (barriers/risks)
+- **Factor 1**: General AI readiness (enablers/facilitators) - 10 items
+- **Factor 2**: AI-related concerns (barriers/risks) - 2 items (ER2, AX1)
 
 This dual-purpose design supports both **diagnostic assessment** (12-construct granularity) and **predictive modeling** (2-factor parsimony).
 
-**📊 Complete Statistics**: See `docs/AIRS_empirical_model_phase2_mermaid.md` for detailed psychometric results, fit indices, factor loadings, and reliability metrics.
+### Phase 3: Measurement Invariance Testing (November 23, 2025)
+
+**Groups Tested**: Role (Students vs. Professionals) | Usage (Low vs. High) | Adoption (Non-Adopters vs. Adopters)
+
+**Key Findings**:
+- ✅ **Configural Invariance SUPPORTED**: Same 2-factor structure across all groups (CFI=0.922-0.946)
+- ❌ **Metric Invariance NOT SUPPORTED**: Factor loadings differ significantly (max differences: 0.414-0.481)
+- ❌ **Scalar Invariance NOT SUPPORTED**: Item intercepts differ significantly (max differences: 0.487-0.639)
+
+**Problematic Items**:
+- **EX1** (Explainability): Students 0.349 vs. Professionals 0.830 (diff=0.481) - accountability matters more to professionals
+- **VO1** (Voluntariness): Low users 1.116 vs. High users 0.642 (diff=0.474) - autonomy matters more to novices
+- **SI1** (Social Influence): Students 0.705 vs. Professionals 0.983 (diff=0.278) - organizational norms stronger for professionals
+- **FC1** (Facilitating Conditions): Students 0.440 vs. Professionals 0.825 (diff=0.385) - infrastructure access more relevant to professionals
+
+**Interpretation**: Non-invariance reflects **theoretically meaningful contextual differences**, not measurement error. Constructs function differently depending on role, experience, and adoption status.
+
+**Implications for H4 Moderation**:
+- ✅ Use separate-group structural models (descriptive comparisons)
+- ❌ Cannot use formal multi-group SEM with equality constraints
+- ❌ Cannot compare mean scores directly across groups
+- ✅ Frame moderation analysis as exploratory with group-specific parameter estimates
+
+**Methodological Validation**: Thresholds and interpretations fact-checked against Chen (2007), Cheung & Rensvold (2002), Byrne et al. (1989), Vandenberg & Lance (2000). Non-invariance is common and acceptable when constructs genuinely differ across contexts.
+
+**📊 Complete Statistics**: See `docs/AIRS_empirical_model_phase2_mermaid.md` for detailed psychometric results, and `airs/03_Measurement_Invariance.ipynb` for full invariance testing methodology and scholarly validation.
 
 ---
 
@@ -225,11 +252,12 @@ This dual-purpose design supports both **diagnostic assessment** (12-construct g
 - **H5c**: AI Anxiety mediates the negative relationship between Ethical Risk and BI
 - **Phase 5**: Bootstrap mediation analysis (5000 iterations, 95% confidence intervals)
 
-**RQ5**: Are relationships moderated by individual and contextual factors?
+**RQ5**: Are relationships moderated by individual and contextual factors? (✅ Phase 3 Complete - Invariance Testing)
 
-- **H4a-H4e**: Role (student/professional/faculty), AI usage frequency, and adoption status moderate predictor-BI relationships
-- **Phase 3**: Measurement invariance testing (prerequisite)
-- **Phase 5**: Multi-group SEM with moderation analysis
+- **H4a-H4e**: Role (student/professional), AI usage frequency, and adoption status moderate predictor-BI relationships
+- **Phase 3 Finding**: ✅ Configural invariance supported; ❌ Metric/scalar invariance NOT supported
+- **Implication**: Constructs function differently across groups (theoretically meaningful contextual differences)
+- **Phase 5 Approach**: Separate-group structural models (exploratory moderation analysis)
 - **AX**: AI Anxiety - unease about AI autonomy and pace of change
 
 **Outcome Variable**:
