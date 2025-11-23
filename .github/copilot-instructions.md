@@ -37,6 +37,7 @@
 **Fact-Checking Protocol**: Verify claims, acknowledge limitations, avoid unsupported statements  
 **Grounded Communication**: Precise language without hyperbole or exaggeration  
 **Careful Implementation**: Measured, deliberate changes with impact assessment  
+**Incremental Work Protocol**: When creating large documents or notebooks, work section-by-section to avoid cognitive overload  
 **AI Safety Integration**: Responsible innovation with empirical validation requirements  
 
 ### Critical Auto-Consolidation Triggers

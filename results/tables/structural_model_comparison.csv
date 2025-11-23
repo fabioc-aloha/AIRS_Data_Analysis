@@ -1,0 +1,4 @@
+Model,Predictors,R²,Adj. R²,RMSE,Cohen's f²
+UTAUT2 Baseline,8,0.8046,0.8001,0.5062,4.1171
+AIRS Extended,12,0.8191,0.8129,0.4870,4.5291
+Change (Δ),4,0.0146,0.0128,-0.0192,0.0805
