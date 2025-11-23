@@ -608,55 +608,65 @@ With metric non-invariance established (Phase 3), we needed publication-ready vi
 
 #### **H4a: Role Moderates Explainability** ❌ **NOT SUPPORTED (REVERSED)**
 
-**Hypothesis**: Professionals would value explainability more (accountability pressures)
-**Result**: Students value it MORE (β=0.120*, p=.011 vs. professionals β≈0 ns)
-**Interpretation**: **Explainability Paradox** - students need transparency for learning integrity (academic honesty, understanding vs. automation), professionals prioritize utility
-**Visual Evidence**: Figure 21 Panel A shows clear red (student) vs. blue (professional) separation
-**Implication**: Educational AI ≠ Workplace AI design requirements
+<table>
+<tr><td><strong>Hypothesis</strong></td><td>Professionals would value explainability more (accountability pressures)</td></tr>
+<tr><td><strong>Result</strong></td><td>Students value it MORE (β=0.120*, p=.011 vs. professionals β≈0 ns)</td></tr>
+<tr><td><strong>Interpretation</strong></td><td><strong>Explainability Paradox</strong> - students need transparency for learning integrity (academic honesty, understanding vs. automation), professionals prioritize utility</td></tr>
+<tr><td><strong>Visual Evidence</strong></td><td>Figure 21 Panel A shows clear red (student) vs. blue (professional) separation</td></tr>
+<tr><td><strong>Implication</strong></td><td>Educational AI ≠ Workplace AI design requirements</td></tr>
+</table>
 
 ---
 
 #### **H4b: Role Moderates Social Influence** ❌ **NOT SUPPORTED (NULL)**
 
-**Hypothesis**: Students more susceptible to normative pressure
-**Result**: No role differences—SI non-significant for ALL groups
-**Interpretation**: Social influence operates uniformly (or not at all); AI adoption driven by individual evaluation
-**Visual Evidence**: Figure 21 Panel B shows flat bars across all roles with overlapping CIs
-**Implication**: Peer influence campaigns unlikely to differentially affect students vs. professionals
+<table>
+<tr><td><strong>Hypothesis</strong></td><td>Students more susceptible to normative pressure</td></tr>
+<tr><td><strong>Result</strong></td><td>No role differences—SI non-significant for ALL groups</td></tr>
+<tr><td><strong>Interpretation</strong></td><td>Social influence operates uniformly (or not at all); AI adoption driven by individual evaluation</td></tr>
+<tr><td><strong>Visual Evidence</strong></td><td>Figure 21 Panel B shows flat bars across all roles with overlapping CIs</td></tr>
+<tr><td><strong>Implication</strong></td><td>Peer influence campaigns unlikely to differentially affect students vs. professionals</td></tr>
+</table>
 
 ---
 
 #### **H4c: Usage Moderates Habit** ❌ **NOT SUPPORTED (OPPOSITE)**
 
-**Hypothesis**: High-frequency users show stronger habit effects
-**Result**: Low users marginally stronger (β=0.096 vs β=0.047), neither significant
-**Interpretation**: **Habit Paradox** - low users may build intentional routines while high users rely on competing motivators (PE, HM)
-**Visual Evidence**: Figure 22 Panel B shows HB slightly higher for low usage but wide overlapping CIs
-**Implication**: Contradicts automaticity theory, needs replication
+<table>
+<tr><td><strong>Hypothesis</strong></td><td>High-frequency users show stronger habit effects</td></tr>
+<tr><td><strong>Result</strong></td><td>Low users marginally stronger (β=0.096 vs β=0.047), neither significant</td></tr>
+<tr><td><strong>Interpretation</strong></td><td><strong>Habit Paradox</strong> - low users may build intentional routines while high users rely on competing motivators (PE, HM)</td></tr>
+<tr><td><strong>Visual Evidence</strong></td><td>Figure 22 Panel B shows HB slightly higher for low usage but wide overlapping CIs</td></tr>
+<tr><td><strong>Implication</strong></td><td>Contradicts automaticity theory, needs replication</td></tr>
+</table>
 
 ---
 
 #### **H4d: Usage Moderates Anxiety (Exposure Effect)** ✅ **FULLY SUPPORTED**
 
-**Hypothesis**: High-frequency users experience weaker anxiety effects
-**Result**: Low-usage anxiety **2.95× stronger** (β=-0.230*** vs β=-0.078*)
-**Effect Size**: 66% anxiety reduction for high users
-**Interpretation**: **Exposure desensitization empirically validated** - frequent use reduces anxiety through repeated positive experiences (Venkatesh, 2000; Compeau & Higgins, 1995)
-**Visual Evidence**: Figure 22 Panel A shows non-overlapping CIs with 2.95× annotation; Panel B shows anxiety as ONLY construct with clear moderation
-**Implication**: Target intensive anxiety interventions to NOVICE users, not experienced users
-**Confidence**: **Very High** (statistically significant both groups, visually striking, strong theoretical support)
+<table>
+<tr><td><strong>Hypothesis</strong></td><td>High-frequency users experience weaker anxiety effects</td></tr>
+<tr><td><strong>Result</strong></td><td>Low-usage anxiety <strong>2.95× stronger</strong> (β=-0.230*** vs β=-0.078*)</td></tr>
+<tr><td><strong>Effect Size</strong></td><td>66% anxiety reduction for high users</td></tr>
+<tr><td><strong>Interpretation</strong></td><td><strong>Exposure desensitization empirically validated</strong> - frequent use reduces anxiety through repeated positive experiences (Venkatesh, 2000; Compeau & Higgins, 1995)</td></tr>
+<tr><td><strong>Visual Evidence</strong></td><td>Figure 22 Panel A shows non-overlapping CIs with 2.95× annotation; Panel B shows anxiety as ONLY construct with clear moderation</td></tr>
+<tr><td><strong>Implication</strong></td><td>Target intensive anxiety interventions to NOVICE users, not experienced users</td></tr>
+<tr><td><strong>Confidence</strong></td><td><strong>Very High</strong> (statistically significant both groups, visually striking, strong theoretical support)</td></tr>
+</table>
 
 ---
 
 #### **H4e: Adoption Status Moderates Facilitators/Barriers** ⚠️ **PARTIALLY SUPPORTED**
 
-**Hypothesis**: Adopters driven by facilitators, non-adopters by barriers
-**Result (Adopters)**: **Value-driven model confirmed** - PV (β=.209***) leads 7 significant predictors, R²=.789
-**Result (Non-Adopters)**: No significant predictors (N=36 underpowered for 12 predictors)
-**Interpretation**: Economic accessibility (Price Value) dominates sustained adoption; non-adopter sample too small (9.9%) for reliable inference (minimum N≥100 needed)
-**Visual Evidence**: Figure 23 Panel A shows clear facilitator hierarchy (green bars), Panel B shows wide gray dashed CIs (power problem)
-**Implication**: Cost reduction interventions most impactful for sustaining adoption; need larger non-adopter sample for testing
-**Confidence**: High for adopters (N=326, clear effects), Low for non-adopters (N=36, visualization shows unreliability)
+<table>
+<tr><td><strong>Hypothesis</strong></td><td>Adopters driven by facilitators, non-adopters by barriers</td></tr>
+<tr><td><strong>Result (Adopters)</strong></td><td><strong>Value-driven model confirmed</strong> - PV (β=.209***) leads 7 significant predictors, R²=.789</td></tr>
+<tr><td><strong>Result (Non-Adopters)</strong></td><td>No significant predictors (N=36 underpowered for 12 predictors)</td></tr>
+<tr><td><strong>Interpretation</strong></td><td>Economic accessibility (Price Value) dominates sustained adoption; non-adopter sample too small (9.9%) for reliable inference (minimum N≥100 needed)</td></tr>
+<tr><td><strong>Visual Evidence</strong></td><td>Figure 23 Panel A shows clear facilitator hierarchy (green bars), Panel B shows wide gray dashed CIs (power problem)</td></tr>
+<tr><td><strong>Implication</strong></td><td>Cost reduction interventions most impactful for sustaining adoption; need larger non-adopter sample for testing</td></tr>
+<tr><td><strong>Confidence</strong></td><td>High for adopters (N=326, clear effects), Low for non-adopters (N=36, visualization shows unreliability)</td></tr>
+</table>
 
 ---
 
@@ -668,21 +678,45 @@ With metric non-invariance established (Phase 3), we needed publication-ready vi
 
 ### **Theoretical Breakthrough: Five Major Contributions**
 
-**1. Dual-Pathway Suppression (Phase 5)**: Ethical Risk operates via Trust (64%) + Anxiety (96%, dominant)
-**2. "Who vs What" Moderation (Phase 6)**: Context shapes vulnerable populations, not just effect magnitudes
-**3. Exposure Effect Quantification (Phase 6)**: First empirical evidence of 2.95× AI anxiety desensitization
-**4. Explainability Paradox (Phase 6)**: Students value transparency MORE than professionals (contradicts assumptions)
-**5. Ethical-Behavioral Disconnect Robustness (Cross-Phase)**: ER near-zero across ALL tested contexts (role/usage/adoption)
+1. **Dual-Pathway Suppression (Phase 5)**
+   - Ethical Risk operates entirely through indirect pathways
+   - Cognitive pathway: Trust erosion (64% mediation)
+   - Affective pathway: Anxiety amplification (96% mediation, **DOMINANT**)
+   - Anxiety pathway 1.51× stronger than trust pathway
+
+2. **"Who vs What" Moderation Pattern (Phase 6)**
+   - Context determines **vulnerable populations** more than influence mechanisms
+   - Novices experience 2.95× stronger anxiety (not just higher, but fundamentally different risk profile)
+   - Students require explainability (β=0.120*), professionals don't
+   - Population segmentation > universal interventions
+
+3. **Exposure Effect Quantification (Phase 6)**
+   - First empirical evidence of AI anxiety desensitization with effect size
+   - 2.95× difference: Low users β=-0.230*** vs. High users β=-0.078*
+   - 66% anxiety reduction achievable through increased usage
+   - Validates Venkatesh (2000) and Compeau & Higgins (1995) with quantification
+
+4. **Explainability Paradox (Phase 6)**
+   - Students value transparency MORE than professionals (contradicts accountability hypothesis)
+   - Educational context: Learning integrity concerns (academic honesty, understanding vs. automation)
+   - Workplace context: Utility prioritization over transparency
+   - Design implication: Educational AI ≠ Workplace AI requirements
+
+5. **Ethical-Behavioral Disconnect Robustness (Cross-Phase)**
+   - Phase 4: Direct effect β=0.001 ns
+   - Phase 5: Dual-pathway indirect -0.553*** (universal mediation)
+   - Phase 6: ER near-zero across ALL contexts (role, usage, adoption)
+   - Universal intervention strategy: Always trust-building + anxiety-reduction, never direct
 
 ---
 
 ### **Cross-Phase Validation: Ethical Risk Consistently Indirect**
 
-**Phase 4**: Direct effect β=0.001 ns (seemingly irrelevant)
-**Phase 5**: Dual-pathway indirect effects -0.553*** (massively influential via trust + anxiety)
-**Phase 6 Role**: ER near-zero for students, ICs, managers, executives (Figure 21 Panel D)
-**Phase 6 Usage**: ER near-zero for low AND high frequency users (Figure 22 Panel B)
-**Phase 6 Adoption**: ER non-significant for adopters β=-.030 ns (Figure 23 Panel A)
+- **Phase 4**: Direct effect β=0.001 ns (seemingly irrelevant)
+- **Phase 5**: Dual-pathway indirect effects -0.553*** (massively influential via trust + anxiety)
+- **Phase 6 Role**: ER near-zero for students, ICs, managers, executives (Figure 21 Panel D)
+- **Phase 6 Usage**: ER near-zero for low AND high frequency users (Figure 22 Panel B)
+- **Phase 6 Adoption**: ER non-significant for adopters β=-.030 ns (Figure 23 Panel A)
 
 **Conclusion**: Universal dual-pathway model confirmed—ethical interventions ALWAYS operate through trust-building + anxiety-reduction, never direct. Robust intervention strategy across all contexts.
 
