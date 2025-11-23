@@ -25,10 +25,11 @@
 
 **Progress Report** (Week 24 of 32):
 
-- ✅ **Phase 1 & 2 Complete**: 12-item scale developed and validated via split-sample CFA
-- ✅ **Measurement Model**: Good fit achieved (CFI=0.925, TLI=0.905), 2-factor structure confirmed
-- ✅ **Psychometric Quality**: F1 excellent (α=0.924), F2 acceptable (α=0.691)
-- ⏭️ **Next**: Phase 3 (Measurement Invariance) → Phase 4-6 (Hypothesis Testing)
+- ✅ **Phase 1, 2, & 3 Complete**: 12-item scale developed, validated via split-sample CFA, and invariance tested
+- ✅ **Measurement Model**: Good fit achieved (CFI=0.952, TLI=0.941, RMSEA=0.080), 2-factor structure confirmed
+- ✅ **Psychometric Quality**: F1 excellent (α=0.924, CR=0.923, AVE=0.554), F2 adequate (α=0.691, CR=0.765, AVE=0.640)
+- ✅ **Invariance Testing**: Configural invariance supported across all groups; metric/scalar invariance not supported
+- ⏭️ **Next**: Phase 4 (Structural Models H1-H3) → Phase 5 (Mediation H5) → Phase 6 (Multi-Group H4)
 
 **Research Foundation**: This study extends **Dr. Venkatesh's UTAUT2 framework** (Venkatesh et al., 2012) by integrating four AI-specific constructs to develop a diagnostic instrument for organizational AI readiness assessment.
 
@@ -37,9 +38,10 @@
 ### 🎯 Committee Highlights
 
 **For Dr. Kasztelnik (Chair)**:
-- ✅ On schedule (Week 24/32), Phase 1 & 2 complete with good fit
-- ⏭️ Next: Continue data collection, then measurement invariance testing
-- 📊 Detailed statistics: `docs/AIRS_empirical_model_phase2_mermaid.md`
+- ✅ On schedule (Week 24/32), Phases 1-3 complete with good fit and invariance testing complete
+- ✅ Phase 3 Finding: Configural invariance supported; constructs function differently across contexts (theoretically meaningful)
+- ⏭️ Next: Phase 4 structural modeling (H1-H3 hypothesis testing)
+- 📊 Detailed statistics: `docs/AIRS_empirical_model_phase2_mermaid.md` and `airs/03_Measurement_Invariance.ipynb`
 
 **For Dr. Venkatesh (Mentor)**:
 - 🙏 Study extends your UTAUT2 framework with AI-specific constructs

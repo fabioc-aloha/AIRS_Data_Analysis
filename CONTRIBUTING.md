@@ -34,12 +34,13 @@ Please report unacceptable behavior via GitHub issues or contact the repository 
 
 This repository contains a **doctoral research project** examining AI adoption readiness through psychometric validation and structural equation modeling. The study:
 
-- Validates the AIRS survey instrument (28 items, 13 constructs)
-- Extends UTAUT2 framework with AI-specific constructs
-- Analyzes N=201 survey responses
-- Compares competing theoretical models
+- Validates the AIRS survey instrument (12-item final scale, 10 constructs)
+- Extends UTAUT2 framework with AI-specific constructs (Trust, Explainability, Ethical Risk, AI Anxiety)
+- Analyzes N=362 survey responses (split-sample validation)
+- Tests measurement invariance across role, usage, and adoption groups
+- Compares competing theoretical models (UTAUT2 vs. AIRS Extended)
 
-**Status**: Analysis complete, dissertation in progress
+**Status**: Phases 1-3 complete (scale development, CFA validation, invariance testing), structural modeling in progress
 
 ---
 

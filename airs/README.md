@@ -52,15 +52,22 @@ This folder contains the primary analysis notebooks for the AI Readiness Scale (
 - HM: HM2, PV: PV2, HB: HB2, VO: VO1
 - TR: TR2, EX: EX1, ER: ER2, AX: AX1
 
+### Phase 3: Measurement Invariance
+**03_Measurement_Invariance.ipynb**
+- Tests invariance across Role (Student vs. Professional), Usage (Low vs. High), Adoption (Non-Adopter vs. Adopter)
+- Configural invariance: SUPPORTED (CFI 0.922-0.946)
+- Metric invariance: NOT SUPPORTED (max loading diffs 0.414-0.481)
+- Scalar invariance: NOT SUPPORTED (max mean diffs 0.487-0.639)
+- Implication: Use separate-group models for H4 moderation analysis
+- **Status**: ✅ Complete (November 23, 2025)
+
+**Output Files:**
+- `../results/tables/measurement_invariance_summary.csv` - Complete invariance test results
+
 ## Next Steps (Pending)
 
-### Phase 3: Measurement Invariance
-**03_Measurement_Invariance.ipynb** (to be created)
-- Test invariance across role (student vs. professional)
-- Test invariance across usage frequency (low vs. high)
-- Test invariance across business unit
+### Phase 4: Structural Models & Hypothesis Testing
 
-### Phase 5: Structural Models & Hypothesis Testing
 **04_Structural_Model_Hypothesis_Testing.ipynb** (to be created)
 - H1-H3: Test direct effects of constructs on BI
 - Compare UTAUT2 baseline vs. AIRS extended model

@@ -16,11 +16,21 @@ For reproducibility, researchers may request access to de-identified data by con
 
 ## Data Description
 
-- **Sample Size**: N = 362 valid responses
-- **Variables**: 51 columns (28 analysis items + demographics + usage)
+- **Sample Size**: N = 362 valid responses (181 dev, 181 holdout)
+- **Variables**: 51 columns (49 survey items + demographics + usage metadata)
+- **Final Scale**: 12 items across 10 constructs (PE2, EE1, SI1, FC1, HM2, PV2, HB2, VO1, TR2, EX1, ER2, AX1)
 - **Scale**: 5-point Likert (1=Strongly Disagree to 5=Strongly Agree)
 - **Format**: CSV with header rows
 - **Documentation**: See `../docs/DATA_DICTIONARY.md` for complete variable definitions
+
+## Available Data Files
+
+- `AIRS_clean.csv` - Full preprocessed dataset (N=362)
+- `AIRS_clean_dev.csv` - Development sample (N=181)
+- `AIRS_clean_dev_12item.csv` - 12-item development subset
+- `AIRS_clean_holdout.csv` - Holdout validation sample (N=181)
+- `airs_12item_selection.json` - Documentation of final item selection with rationale
+- `AIRS---AI-Readiness-Scale-labels.csv` - Variable label mapping
 
 ## Data Quality
 

@@ -44,19 +44,34 @@ Rscript -e "rmarkdown::render('AIRS_Analysis.Rmd')"
 
 ## Key Outputs
 
-### Measurement Model
-- **CFI**: 0.933 (excellent fit)
-- **TLI**: 0.923 (excellent fit)
-- **RMSEA**: 0.065 (acceptable fit)
-- **SRMR**: 0.057 (excellent fit)
+### Phase 1 & 2: Measurement Model (Complete)
+- **CFA Model Fit**: CFI=0.952, TLI=0.941, RMSEA=0.080, χ²/df=2.36 (good fit)
+- **Factor 1 (AI Readiness)**: α=0.924, CR=0.923, AVE=0.554 (10 items - excellent)
+- **Factor 2 (Risk/Anxiety)**: α=0.691, CR=0.765, AVE=0.640 (2 items - adequate)
+- **Discriminant Validity**: HTMT=0.527 (< 0.85), Fornell-Larcker criterion met
+- **12-Item Scale**: PE2, EE1, SI1, FC1, HM2, PV2, HB2, VO1, TR2, EX1, ER2, AX1
 
-### Reliability
-- All UTAUT2 constructs: α > 0.70, CR > 0.70, AVE > 0.50
-- Problematic constructs: VO, ER, AX (see documentation)
+### Phase 3: Measurement Invariance (Complete - November 23, 2025)
+- **Configural Invariance**: SUPPORTED across Role (CFI=0.945), Usage (CFI=0.922), Adoption (CFI=0.946)
+- **Metric Invariance**: NOT SUPPORTED (max loading differences: 0.414-0.481 exceed threshold)
+- **Scalar Invariance**: NOT SUPPORTED (max mean differences: 0.487-0.639 exceed threshold)
+- **Interpretation**: Constructs function differently across contexts (theoretically meaningful)
+- **H4 Implications**: Use separate-group structural models for moderation analysis
 
-### Model Comparison
-- Model 1 (UTAUT2): Superior fit
-- Model 2 (AIRS Extended): Degraded fit due to measurement issues
+### Available Output Files
+
+**Tables** (`tables/`):
+- `cfa_model_fit.csv` - CFA fit indices
+- `cfa_factor_loadings.csv` - Standardized loadings
+- `cfa_reliability_validity.csv` - Reliability and validity metrics
+- `measurement_invariance_summary.csv` - Complete invariance test results (NEW)
+- `descriptive_statistics.csv`, `construct_correlations.csv`, etc.
+
+**Plots** (`plots/`):
+- `cfa_figure1_loadings_reliability.png` - Factor loadings and reliability
+- `cfa_figure2_model_fit_validity.png` - Model fit and validity indices
+- `cfa_figure3_correlation_matrix.png` - Inter-construct correlations
+- EFA scree plots and factor loading visualizations
 
 ---
 

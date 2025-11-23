@@ -4,9 +4,14 @@
 - **Notebooks**: `archive/notebooks_exploratory/` (8 Jupyter notebooks)
 - **Documentation**: `archive/docs_exploratory/` (15 analysis reports)
 
-**Date Range**: Pre-October 2025 (exploratory) → November 2025 (dissertation Phase 1)
+**Date Range**: Pre-October 2025 (exploratory) → November 2025 (dissertation Phases 1-3)
 
 **Context**: Early exploratory work tested multiple approaches to scale development before settling on the construct-balanced methodology required for dissertation validity.
+
+**Current Status**: Dissertation Phases 1-3 complete (N=362):
+- ✅ Phase 1: 12-item scale development (Development N=181)
+- ✅ Phase 2: CFA validation (Holdout N=181)
+- ✅ Phase 3: Measurement invariance testing (Full N=362)
 
 ---
 
