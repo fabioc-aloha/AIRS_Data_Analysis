@@ -1313,6 +1313,264 @@ Based on Phase 4 structural modeling results (N=362), we've identified specific,
 
 ---
 
+## 📋 **Appendix: The AIRS Instrument**
+
+### **Recommended 12-Item AI Readiness Scale**
+
+Based on 7 phases of rigorous psychometric validation (N=362), the following instrument has demonstrated:
+- ✅ Strong reliability (Factor 1: α=0.924, Factor 2: α=0.691)
+- ✅ Independent replication (split-sample validation)
+- ✅ Predictive validity (R²=0.819, ΔR²=1.46%*** beyond UTAUT2)
+- ✅ Behavioral correspondence (Phase 7a: tool usage patterns validate construct relationships)
+
+---
+
+### **Survey Instructions**
+
+> **Purpose**: This brief assessment measures your readiness to adopt AI tools in your work or studies. Your honest responses will help identify specific areas where support may be needed.
+>
+> **Instructions**: Please rate your agreement with each statement using the scale below. There are no right or wrong answers—we're interested in your genuine perceptions and experiences.
+>
+> **Response Scale**:
+> - 1 = Strongly Disagree
+> - 2 = Disagree
+> - 3 = Neither Agree nor Disagree
+> - 4 = Agree
+> - 5 = Strongly Agree
+
+---
+
+### **Part 1: AI Readiness Facilitators** (10 items)
+
+#### **Performance Expectancy (PE)** - *Does AI improve your work?*
+**PE2**: Using AI improves the quality of my work or studies.
+
+#### **Effort Expectancy (EE)** - *Is AI easy to use?*
+**EE1**: Learning to use AI tools is easy for me.
+
+#### **Social Influence (SI)** - *Do others encourage AI use?*
+**SI1**: People whose opinions I value encourage me to use AI tools.
+
+#### **Facilitating Conditions (FC)** - *Do you have necessary support?*
+**FC1**: I have access to training or tutorials for the AI tools I use.
+
+#### **Hedonic Motivation (HM)** - *Is AI interesting/enjoyable?*
+**HM2**: AI tools make my work or studies more interesting.
+
+#### **Price Value (PV)** - *Is AI worth the effort?*
+**PV2**: Using AI tools is worth the learning curve.
+
+#### **Habit (HB)** - *Do you use AI automatically?*
+**HB2**: I tend to rely on AI tools by default when I need help with tasks.
+
+#### **Voluntariness of Use (VO)** - *Do you choose to use AI?* ⭐ **Strongest Predictor**
+**VO1**: I choose to use AI tools in my work because I find them helpful, not because I am required to.
+
+> **Phase 7a Discovery**: Voluntariness (VO) shows the LARGEST effect across all constructs (Δ=2.14, F=128.305***), exceeding even Behavioral Intention (Δ=1.80). **Autonomy drives adoption more than outcomes themselves.** Organizations should maximize perceived choice in AI programs.
+
+#### **Trust in AI (TR)** - *Do you trust AI outputs?*
+**TR2**: I trust the AI tools that are available to me.
+
+#### **Explainability (EX)** - *Do you understand how AI works?*
+**EX1**: I understand how the AI tools I use generate their outputs.
+
+---
+
+### **Part 2: AI Readiness Barriers** (2 items)
+
+#### **Ethical Risk (ER)** - *Are you concerned about AI ethics?*
+**ER2**: I am concerned about privacy risks when using AI tools.
+
+> **Phase 5 Discovery**: Ethical Risk operates entirely through **dual pathways**: (1) Trust erosion (64% mediated), (2) Anxiety amplification (96% mediated, DOMINANT). Frame ethics interventions as emotional safety programs, not just compliance.
+
+#### **AI Anxiety (AX)** - *Does AI make you uneasy?* ⚠️ **Primary Barrier**
+**AX1**: I feel uneasy about the increasing use of AI.
+
+> **Phase 4-5 Discovery**: AI Anxiety is the **strongest AI-specific barrier** (sr²=0.525%, 36% of total AI contribution). It mediates 96% of ethical risk effects. **Prioritize anxiety reduction in intervention programs.**
+
+---
+
+### **Outcome Measure: Behavioral Intention (BI)**
+
+**BI1**: I intend to use AI tools in my work or studies regularly in the future.
+
+> **Phase 7a Discovery**: Multi-tool users (58% of sample) show **99% higher BI** and **19% lower anxiety** than non-users. Tool diversity predicts adoption success.
+
+---
+
+### **Scoring & Interpretation**
+
+#### **Step 1: Calculate Factor Scores**
+
+**Factor 1: AI Readiness (Facilitators)**
+- Sum items: PE2 + EE1 + SI1 + FC1 + HM2 + PV2 + HB2 + VO1 + TR2 + EX1
+- Divide by 10 to get mean score (range: 1.0–5.0)
+- **Interpretation**:
+  - **4.0–5.0**: High Readiness — Deploy AI confidently, focus on sustaining positive perceptions
+  - **3.0–3.9**: Moderate Readiness — Address specific low-scoring items before widespread deployment
+  - **2.0–2.9**: Low Readiness — Intensive readiness-building interventions needed
+  - **1.0–1.9**: Very Low Readiness — Delay deployment, invest heavily in change management
+
+**Factor 2: Risk/Anxiety (Barriers)**
+- Sum items: ER2 + AX1
+- Divide by 2 to get mean score (range: 1.0–5.0)
+- **Interpretation** (reverse-scored for barriers):
+  - **1.0–2.0**: Low Barriers — Minimal concerns, proceed with confidence
+  - **2.1–3.0**: Moderate Barriers — Address through transparency and psychological safety
+  - **3.1–4.0**: High Barriers — **Priority intervention needed** (anxiety reduction, ethics as emotional safety)
+  - **4.1–5.0**: Very High Barriers — Intensive anxiety management required before deployment
+
+#### **Step 2: Create Readiness Profile**
+
+**Ideal Profile** (Low Risk):
+- Factor 1 (Facilitators): ≥4.0
+- Factor 2 (Barriers): ≤2.0
+- **Action**: Deploy AI broadly, monitor for emerging concerns
+
+**Mixed Profile** (Moderate Risk):
+- Factor 1 (Facilitators): 3.0–3.9
+- Factor 2 (Barriers): 2.1–3.0
+- **Action**: Phase deployment with early adopters, address specific barriers
+
+**Challenged Profile** (High Risk):
+- Factor 1 (Facilitators): <3.0
+- Factor 2 (Barriers): >3.0
+- **Action**: Delay deployment, intensive readiness interventions (see Priority Framework below)
+
+#### **Step 3: Identify Specific Intervention Needs**
+
+Review individual item scores to identify specific gaps:
+
+| **Low Score on...** | **Intervention Strategy** | **Evidence Base** |
+|-------------------|-------------------------|------------------|
+| **VO (Voluntariness)** | Maximize perceived choice, voluntary exploration programs | Phase 7a: VO Δ=2.14 (LARGEST effect), 115% increase for multi-tool users |
+| **AX (AI Anxiety)** | Gradual exposure, psychological safety, peer support networks | Phase 5: 96% mediation of ethics, Phase 6: 2.95× effect for novices |
+| **ER (Ethical Risk)** | Frame ethics as emotional safety + trust building (dual pathways) | Phase 5: Operates via trust (64%) + anxiety (96%, dominant) |
+| **TR (Trust)** | Reliability demonstrations, incremental rollout, recourse mechanisms | Phase 5: Central hub mediating EX (55%) and ER (64%) |
+| **EX (Explainability)** | XAI tools, decision documentation, uncertainty communication | Phase 5: Builds trust (EX→TR: β=0.455***), Phase 6: Critical for students |
+| **PE (Performance)** | Showcase productivity gains, benchmark AI vs. human performance | Phase 4: β=0.154***, Phase 7a: Multi-tool users M=3.77 (high PE) |
+| **PV (Price Value)** | Demonstrate ROI, reduce learning curve costs | Phase 6 H4e: #1 driver for adopters (β=.209***) |
+| **HM (Hedonic)** | Gamification, interesting use cases, intrinsic motivation | Phase 7a: Multi-tool users M=3.80 (high HM), 61% increase |
+
+---
+
+### **Evidence-Based Intervention Priority Framework**
+
+Based on Phases 4-7 empirical findings, allocate intervention resources as follows:
+
+| **Priority** | **Investment Area** | **Budget %** | **Rationale** | **Expected Outcome** |
+|-------------|-------------------|--------------|---------------|---------------------|
+| **P1** | **Voluntary Multi-Tool Exploration** | 20-25% | Phase 7a: VO Δ=2.14 > BI Δ=1.80, ChatGPT gateway (R²=34.9%), multi-tool +99% BI | Autonomy-driven adoption cascade, 115% VO increase, 99% BI gain |
+| **P2** | **AI Anxiety Reduction (Direct)** | 20-25% | Phase 4: Largest AI effect (sr²=0.525%), Phase 6: 2.95× for novices | 66% anxiety reduction through exposure, 19% decrease for multi-tool users |
+| **P3** | **Ethical Risk → Anxiety Management** | 15-20% | Phase 5: ER→AX pathway β=0.622***, 96% mediation (DOMINANT) | Address emotional safety first (51% stronger than cognitive trust pathway) |
+| **P4** | **Trust Building (Central Hub)** | 10-15% | Phase 5: Mediates EX (55%) + ER (64%), central psychological bridge | Accumulated confidence, hub function connecting understanding → action |
+| **P5** | **Explainability/Transparency** | 10-15% | Phase 4: sr²=0.290%, Phase 5: Builds trust (β=0.455***), Phase 6: Students > professionals | Cognitive understanding + affective trust dual benefits |
+| **P6** | **UTAUT2 Baseline Maintenance** | 5-10% | Phase 4: R²=0.8046 already effective, sustain baseline | Maintain facilitating conditions, performance expectancy, price value |
+
+**Total Autonomy + Anxiety Focus**: 55-70% of intervention budget (emotional safety + autonomous motivation)
+
+---
+
+### **Phase 7a: Two-Stage Gateway Model for Implementation**
+
+Based on behavioral validation findings (N=362), implement AI adoption using this evidence-based sequence:
+
+#### **Stage 1: Consumer Tool Gateway (Weeks 1-4)**
+**Tool**: ChatGPT (consumer-facing, low-stakes)
+**Evidence**: ChatGPT predicts 34.9% of BI variance (8.8pp above average), 64.4% active users
+**Objectives**:
+- Build foundational confidence (PE)
+- Reduce anxiety through familiar interface (AX)
+- Establish autonomous motivation (VO)
+- Low-stakes experimentation (brainstorming, summarization)
+
+**Expected Outcomes**: 34.9% of workplace adoption variance explained by consumer tool comfort
+
+#### **Stage 2: Voluntary Multi-Tool Exploration (Weeks 5-12)**
+**Tools**: MS Copilot (coding/technical), Gemini (research/information), specialized tools by role
+**Evidence**: Multi-tool users (58% majority) show BI +99%, AX -19% vs non-users
+**Objectives**:
+- Emphasize CHOICE (VO = largest effect driver)
+- Provide tool menu, not mandates
+- Support peer networks for strategy sharing
+- Enable self-directed exploration
+
+**Expected Outcomes**: 99% BI increase, 19% anxiety reduction vs baseline, 58% multi-tool adoption rate
+
+**AVOID**: Mandated single-tool training—suppresses autonomy-driven engagement cascade (VO → PE → HM → BI)
+
+---
+
+### **Context-Specific Guidance**
+
+#### **For Students** (Phase 6 H4a Finding)
+- **Explainability is CRITICAL**: Students show EX effect (β=0.120*, p=.011) while professionals show none
+- **Mechanism**: Learning integrity concerns—students need to understand to distinguish learning from automation
+- **Design Implication**: Educational AI must prioritize transparency ("show your work" features, step-by-step explanations)
+- **Tool Preference**: ChatGPT (M=3.34) for accessible consumer tools
+
+#### **For Professionals** (Phase 6 H4a Finding)
+- **Explainability is SECONDARY**: All professional roles show near-zero EX effects
+- **Mechanism**: Utility prioritization—outcomes matter more than process understanding
+- **Design Implication**: Workplace AI can deprioritize transparency for efficiency gains
+- **Tool Preference**: MS Copilot (Leaders M=3.65) for enterprise-integrated technical tools
+- **Exception**: Regulated industries require explainability for compliance regardless of psychology
+
+#### **For Novice Users** (Phase 6 H4d Finding)
+- **Anxiety 2.95× STRONGER**: β=-0.230*** vs β=-0.078* for experienced users
+- **Mechanism**: Lack of repeated positive experiences keeps anxiety high
+- **Intervention Priority**: Intensive anxiety management from day 1
+- **Expected Outcome**: 66% anxiety reduction achievable through increased usage frequency
+- **Strategy**: Gradual exposure protocol (low→medium→high stakes tasks over 8-12 weeks)
+
+#### **For Experienced Users** (Phase 6 H4d Finding)
+- **Anxiety naturally lower**: Exposure desensitization already occurred
+- **Focus Shift**: Address competing motivators (PE, HM dominate for experts)
+- **Intervention Priority**: Maintenance only, not intensive anxiety programs
+- **Strategy**: Sustain engagement through performance gains and hedonic value
+
+---
+
+### **Psychometric Properties Summary**
+
+| **Metric** | **Factor 1: AI Readiness** | **Factor 2: Risk/Anxiety** | **Threshold** | **Status** |
+|-----------|--------------------------|--------------------------|---------------|-----------|
+| **Cronbach's α** | 0.924 | 0.691 | ≥0.70 | F1: Excellent ✅<br>F2: Adequate ✅ |
+| **Composite Reliability (CR)** | 0.925 | 0.680 | ≥0.70 | F1: Excellent ✅<br>F2: Marginal ⚠️ |
+| **Average Variance Extracted (AVE)** | 0.561 | 0.565 | ≥0.50 | Both met ✅ |
+| **Discriminant Validity (HTMT)** | 0.318 | — | <0.85 | Excellent ✅ |
+| **Model Fit (CFI)** | 0.952 | — | ≥0.90 | Excellent ✅ |
+| **Model Fit (RMSEA)** | 0.080 | — | ≤0.08 | Acceptable ✅ |
+| **Predictive Validity (R² BI)** | 0.819 | — | — | Strong ✅ |
+| **Incremental Validity (ΔR²)** | 1.46%*** | — | ≥1.0% | Significant ✅ |
+| **Behavioral Validation** | Phase 7a | — | — | Confirmed ✅ |
+
+**Sample**: N=362 knowledge workers (Development N=181, Holdout N=181)
+**Context**: Configural invariance ✅ | Metric non-invariance ⚠️ (context-dependent weighting)
+**Validation**: Independent split-sample replication, dual-pathway mediation confirmed, moderation effects quantified (2.95×), behavioral correspondence validated
+
+---
+
+### **Theoretical Contributions Embedded in Instrument**
+
+1. **Dual-Pathway Suppression Model** (Phase 5): Ethical concerns operate through trust erosion (64%) + anxiety amplification (96%, dominant)
+2. **"Who vs What" Moderation Pattern** (Phase 6): Context determines vulnerable populations (novices 2.95× anxiety) more than influence mechanisms
+3. **Autonomy Primacy** (Phase 7a): VO effect (Δ=2.14) exceeds BI (Δ=1.80)—Self-Determination Theory foregrounding
+4. **Gateway Tool Hypothesis** (Phase 7a): Consumer tools (ChatGPT R²=34.9%) build confidence transferring to enterprise adoption
+5. **Exposure Effect Quantification** (Phase 6): 66% anxiety reduction for experienced users (2.95× difference empirically validated)
+6. **Explainability Paradox** (Phase 6): Students value transparency MORE than professionals (learning integrity > utility)
+7. **Ethical-Behavioral Disconnect Robustness** (Phases 4-6): ER shows universal indirect operation across ALL contexts tested
+
+---
+
+### **Citation**
+
+> Correa, F. (2025). *AI Readiness Scale (AIRS): A validated instrument for assessing organizational and individual readiness to adopt artificial intelligence.* Doctoral dissertation, Touro University Worldwide.
+
+**Instrument License**: Available for research and organizational use with attribution. Contact fcorrea@student.touro.edu for collaboration inquiries.
+
+---
+
 ## 🙏 **Acknowledgments**
 
 This research stands on the shoulders of giants:
