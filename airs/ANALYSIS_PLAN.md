@@ -169,8 +169,8 @@ This plan bridges the gap between current exploratory analysis and the dissertat
 **Empirical Results**:
 - **Sample**: Development N=162 (stratified by Work_Context × AI_Adoption)
 - **Factor Solution**: 2 factors (via parallel analysis)
-  - Factor 1: Mixed Readiness (PE, EE, SI, FC, HM, PV, HB, TR, VO, EX) - 10 items
-  - Factor 2: Risk/Anxiety (ER, AX) - 2 items
+  - Factor 1: AI Readiness (PE, EE, SI, FC, HM, PV, HB, TR, VO, EX) - 10 items
+  - Factor 2: Tech-Averse Barriers (ER, AX) - 2 items
   - Inter-factor correlation: r = 0.118 (weak, supporting discriminant validity)
 - **Psychometric Quality (Development Sample)**:
   - Internal consistency: Cronbach's α = 0.901 (Excellent)
@@ -198,7 +198,7 @@ This plan bridges the gap between current exploratory analysis and the dissertat
   - Parallel analysis for empirical factor determination (2 factors)
   - Reliability: Cronbach's α = 0.901
   - KMO: 0.909 (Excellent)
-  - Factor 1: Mixed Readiness (10 items: PE2, EE2, SI1, FC1, HM2, PV2, HB2, VO1, TR2, EX2)
+  - Factor 1: AI Readiness (10 items: PE2, EE2, SI1, FC1, HM2, PV2, HB2, VO1, TR2, EX2)
   - Factor 2: Risk/Anxiety (2 items: ER1, AX2)
 
 - **Confirmatory Factor Analysis** (`02_CFA_Measurement_Model.ipynb`)
@@ -283,7 +283,7 @@ data/AIRS_clean_dev_12item.csv       # 12-item development dataset
 
 **Model Specification**:
 ```python
-# Factor 1: Mixed Readiness (10 items)
+# Factor 1: AI Readiness (10 items)
 F1: PE1, EE1, SI1, FC1, HM2, PV2, HB1, VO1, TR2, EX1
 
 # Factor 2: Risk/Anxiety (2 items)
@@ -349,7 +349,7 @@ result = model.fit(df_holdout)
 
 **Actual Outcomes**:
 - ✅ 2-factor structure replicated on holdout sample (N=163)
-- ✅ Factor 1 (Mixed Readiness): **EXCELLENT** reliability (α=0.924, CR=0.925, AVE=0.561)
+- ✅ Factor 1 (AI Readiness): **EXCELLENT** reliability (α=0.924, CR=0.925, AVE=0.561)
   - 9 of 10 items load ≥ 0.50 (range: 0.458-0.871, mean=0.736)
 - ⚠️ Factor 2 (Risk/Anxiety): **PROBLEMATIC** reliability (α=0.529, CR=0.680, AVE=0.565)
   - ER1 loading=0.360 (below 0.50 threshold) - documented as limitation
@@ -836,12 +836,12 @@ This analysis plan succeeds when:
 - 2025-11-22 v1.3: Updated with seed 67 results - improved model fit
   - Random seed changed from 42 to 67 for improved results
   - CFA Status: ✅ Complete - GOOD fit (CFI=0.960, TLI=0.950, RMSEA=0.071, SRMR≈0.050)
-  - Factor 1 (Mixed Readiness): EXCELLENT reliability (α=0.924, CR=0.925, AVE=0.561)
+  - Factor 1 (AI Readiness): EXCELLENT reliability (α=0.924, CR=0.925, AVE=0.561)
   - Factor 2 (Risk/Anxiety): PROBLEMATIC reliability (α=0.529, CR=0.680), ER1 loading=0.360
   - Discriminant validity ESTABLISHED (HTMT=0.318, Fornell-Larcker met)
 - 2025-11-22 v1.2: Updated with CFA completion and actual results (seed 42)
   - CFA Status: ✅ Complete - ADEQUATE fit (CFI=0.926, TLI=0.907, RMSEA=0.096, SRMR≈0.050)
-  - Factor 1 (Mixed Readiness): EXCELLENT reliability (α=0.924, CR=0.925, AVE=0.557)
+  - Factor 1 (AI Readiness): EXCELLENT reliability (α=0.924, CR=0.925, AVE=0.557)
   - Factor 2 (Risk/Anxiety): PROBLEMATIC reliability (α=0.545, CR=0.688), ER1 loading=0.376
   - Discriminant validity ESTABLISHED (HTMT=0.337, Fornell-Larcker met)
   - Updated sample sizes: N=162 dev, N=163 holdout

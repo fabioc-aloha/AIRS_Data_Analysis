@@ -68,7 +68,7 @@ This was our first major decision. We could have:
 ![Figure 2: Factor Loadings Heatmap - Which Items Load Where](results/plots/efa_loadings_heatmap_12item.png)
 *Darker green = stronger loading. Blue borders = primary loadings ≥0.50. Notice how items cluster into two distinct patterns.*
 
-**Factor 1: Mixed Readiness (10 items)** - *The "Can I? Should I?" Factor*
+**Factor 1: AI Readiness (10 items)** - *The "Can I? Should I?" Factor*
 - Combines UTAUT2 facilitators (PE, EE, SI, FC, HM, PV, HB) with trust and explainability
 - Represents overall psychological readiness and organizational support
 - **α=0.924** (excellent reliability)
@@ -107,11 +107,13 @@ Finding a factor structure in one sample is easy. Proving it replicates in a *ne
 *All standardized loadings ≥0.519 (adequate) with most >0.80 (excellent). Reliability metrics exceed recommended thresholds.*
 
 ![Figure 5: Model Fit & Discriminant Validity](results/plots/cfa_figure2_model_fit_validity.png)
-*CFI=0.952 (excellent), RMSEA=0.080 (acceptable). HTMT ratios <0.85 confirm factors are distinct.*
+*CFI=0.952 (excellent), RMSEA=0.080 (acceptable). HTMT ratios <0.85 confirm factors are distinct.*<sup>†</sup>
+
+<sup>†</sup>*Model fit statistics reported from full sample (N=362); independent holdout validation (N=181) confirmed replication with CFI=0.925, RMSEA=0.101.*
 
 ### **Psychometric Quality Assessment**
 
-| **Metric** | **Factor 1: Readiness** | **Factor 2: Risk/Anxiety** | **Benchmark** | **Status** |
+| **Metric** | **Factor 1: AI Readiness** | **Factor 2: Risk/Anxiety** | **Benchmark** | **Status** |
 |-----------|------------------------|---------------------------|--------------|-----------|
 | **Cronbach's α** | 0.924 | 0.691 | ≥0.70 | ✅ F1 Excellent / ✅ F2 Adequate |
 | **Composite Reliability** | 0.923 | 0.765 | ≥0.70 | ✅ Both Exceed |

@@ -20,7 +20,7 @@ graph LR
         M1 --- M2 --- M3
     end
 
-    %% Factor 1: Mixed Readiness (Center-Top)
+    %% Factor 1: AI Readiness (Center-Top)
     subgraph F1["Factor 1: AI Readiness (10 items, λ=0.519-0.898)<br/>α=0.924 • CR=0.923 • AVE=0.554 • EXCELLENT"]
         U2["<b>UTAUT2 Core (7)</b><br/>PE2: 0.849<br/>EE1†: 0.519<br/>SI1‡: 0.828<br/>FC1‡: 0.605<br/>HM2: 0.898<br/>PV2: 0.879<br/>HB2: 0.827"]
         VOR["<b>VO Reintroduced (1)</b><br/>VO1*: 0.858<br/>(from UTAUT 2003)"]

@@ -41,7 +41,7 @@ This folder contains the sequential analysis notebooks documenting our analytica
 - **Sample**: N=362 (Development N=181 | Holdout N=181 | Full N=362)
 - **Theoretical Framework**: 12 constructs (7 UTAUT2 + VO + 4 AI-specific)
 - **Empirical Structure**: 2 factors discovered via parallel analysis
-  - **Factor 1: Mixed Readiness** (10 items: PE2, EE1, SI1, FC1, HM2, PV2, HB2, VO1, TR2, EX1)
+  - **Factor 1: AI Readiness** (10 items: PE2, EE1, SI1, FC1, HM2, PV2, HB2, VO1, TR2, EX1)
   - **Factor 2: Risk/Anxiety** (2 items: ER2, AX1)
 
 **Psychometric Quality (Holdout Sample N=181):**

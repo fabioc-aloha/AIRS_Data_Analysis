@@ -20,8 +20,8 @@ graph LR
         M1 --- M2 --- M3
     end
 
-    %% Factor 1: Mixed Readiness (Center-Top)
-    subgraph F1["Factor 1: Mixed Readiness (10 items, λ=0.458-0.871)<br/>α=0.924 • CR=0.925 • AVE=0.561 • EXCELLENT"]
+    %% Factor 1: AI Readiness (Center-Top)
+    subgraph F1["Factor 1: AI Readiness (10 items, λ=0.458-0.871)<br/>α=0.924 • CR=0.925 • AVE=0.561 • EXCELLENT"]
         U2["<b>UTAUT2 Core (7)</b><br/>PE2: 0.831<br/>EE2: 0.601<br/>SI1: 0.746<br/>FC1: 0.542<br/>HM2: 0.868<br/>PV2: 0.871<br/>HB2: 0.769"]
         VOR["<b>VO Reintroduced (1)</b><br/>VO1†: 0.822<br/>(from UTAUT 2003)"]
         AIE["<b>AI Enablers (2)</b><br/>TR2: 0.849<br/>EX2: 0.458"]
@@ -62,7 +62,7 @@ graph LR
 ### Measurement Model Structure
 **12 theoretical constructs (7 UTAUT2 + VO + 4 AI-specific) validated in 2-factor empirical structure:**
 
-- **Factor 1 (Mixed Readiness)**: 10 items representing general AI readiness
+- **Factor 1 (AI Readiness)**: 10 items representing general AI readiness
   - Includes 7 UTAUT2 constructs (PE, EE, SI, FC, HM, PV, HB)
   - Plus VO (reintroduced from UTAUT 2003 for enterprise context)
   - Plus AI enablers (Trust, Explainability)
