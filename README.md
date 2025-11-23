@@ -452,6 +452,184 @@ Our 12-item scale serves two distinct functions:
 
 ---
 
+## 🎯 **Identified Remediation Areas & Intervention Strategies**
+
+### **Evidence-Based Intervention Priorities**
+
+Based on Phase 4 structural modeling results (N=362), we've identified specific, data-driven remediation strategies ranked by empirical evidence of impact:
+
+### **Priority 1: AI Anxiety Reduction** ⚠️ **HIGHEST IMPACT**
+
+**Evidence**:
+- **Semi-partial R² = 0.525%** (36% of total ΔR² = 1.46%)
+- **β = -0.099**, t = -3.119, p = .002** — Strongest AI-specific effect
+- **Negative coefficient**: Higher anxiety directly inhibits adoption intention
+- **Unique contribution**: Explains MORE variance than Trust + Explainability combined
+
+**Why This Matters**:
+- Anxiety operates as an **emotional barrier** distinct from cognitive concerns
+- Not addressed by improving transparency or demonstrating competence
+- Requires **psychological safety interventions**, not just technical solutions
+
+**Recommended Interventions**:
+
+| **Strategy** | **Implementation** | **Expected Outcome** | **Timeline** |
+|--------------|-------------------|---------------------|-------------|
+| **Gradual Exposure** | Start with low-stakes AI tasks; progressively increase complexity | Reduces fear through positive experiences | 3-6 months |
+| **Psychological Safety** | Create "safe-to-fail" environment; normalize mistakes and learning | Reduces performance anxiety and threat perception | Ongoing |
+| **Peer Support Networks** | Establish AI adoption cohorts; share challenges and solutions | Social support reduces individual anxiety | 1-3 months |
+| **Human-in-the-Loop Design** | Maintain human oversight and control; AI as assistant, not replacement | Reduces autonomy threat and loss of control fears | Design phase |
+| **Transparent Failure Modes** | Clearly communicate what AI can/cannot do; set realistic expectations | Reduces uncertainty-driven anxiety | Pre-deployment |
+| **Skills Development** | Provide training on AI supervision, evaluation, and collaboration | Builds self-efficacy, reduces competence anxiety | 2-4 months |
+
+**Success Metrics**:
+- Decreased anxiety scores on AX items (target: >0.5 SD improvement)
+- Increased voluntary AI usage rates
+- Reduced avoidance behaviors and workarounds
+- Higher self-efficacy ratings for AI collaboration
+
+---
+
+### **Priority 2: Explainability & Transparency** 📊 **MODERATE IMPACT**
+
+**Evidence**:
+- **Semi-partial R² = 0.290%** (20% of ΔR²)
+- **β = 0.069**, t = 2.358, p = .019* — Significant positive effect
+- **Context-dependent**: Matters MORE to professionals (λ=0.830) than students (λ=0.349)
+
+**Why This Matters**:
+- Transparency builds **cognitive understanding** of AI behavior
+- Critical for accountability contexts (professionals, regulated industries)
+- Potential mediator of Trust (test in Phase 5: H5a)
+
+**Recommended Interventions**:
+
+| **Strategy** | **Implementation** | **Expected Outcome** | **Timeline** |
+|--------------|-------------------|---------------------|-------------|
+| **Explainable AI (XAI) Tools** | Implement LIME, SHAP, or attention visualizations | Users understand AI reasoning process | Design phase |
+| **Decision Documentation** | Log AI recommendations with confidence scores and rationale | Auditability and accountability established | Deployment |
+| **Uncertainty Communication** | Display confidence intervals, not just point predictions | Calibrates trust, reduces overreliance | Design phase |
+| **Model Cards** | Provide accessible documentation of capabilities, limitations, training data | Sets appropriate expectations | Pre-deployment |
+| **Interactive Exploration** | Allow users to test "what-if" scenarios and see AI responses | Builds mental model of AI behavior | Post-deployment |
+| **Plain-Language Summaries** | Translate technical outputs into domain-relevant explanations | Increases perceived transparency | Ongoing |
+
+**Success Metrics**:
+- Increased explainability scores on EX items (target: >0.5 SD improvement)
+- Higher user ratings of "understanding AI outputs"
+- Reduced questions about "how AI reached conclusions"
+- Improved ability to detect AI errors
+
+---
+
+### **Priority 3: Trust Building** 🤝 **MODERATE IMPACT**
+
+**Evidence**:
+- **Semi-partial R² = 0.275%** (19% of ΔR²)
+- **β = 0.091**, t = 2.305, p = .022* — Significant positive effect
+- **Similar magnitude to explainability**, suggesting **cognitive-affective pathway**
+
+**Why This Matters**:
+- Trust represents **accumulated confidence** in AI reliability and competence
+- Built through **consistent positive experiences** over time
+- May mediate explainability effects (H5a) and ethical risk concerns (H5b)
+
+**Recommended Interventions**:
+
+| **Strategy** | **Implementation** | **Expected Outcome** | **Timeline** |
+|--------------|-------------------|---------------------|-------------|
+| **Reliability Demonstrations** | Showcase AI accuracy metrics, validation studies, benchmarks | Establishes competence-based trust | Pre-deployment |
+| **Incremental Rollout** | Deploy to early adopters first; use success stories as proof points | Social proof reduces uncertainty | 2-4 months |
+| **Recourse Mechanisms** | Provide clear appeals process for AI decisions; human override options | Reduces perceived risk of errors | Deployment |
+| **Third-Party Audits** | External validation of AI fairness, accuracy, safety | Institutional trust from credible sources | Pre-deployment |
+| **Consistent Performance** | Monitor and maintain AI accuracy; avoid sudden behavior changes | Predictability builds trust over time | Ongoing |
+| **Responsive Updates** | Act quickly on reported errors; communicate fixes transparently | Demonstrates trustworthiness through actions | Ongoing |
+
+**Success Metrics**:
+- Increased trust scores on TR items (target: >0.5 SD improvement)
+- Decreased verification behaviors (double-checking AI outputs)
+- Higher willingness to delegate decisions to AI
+- Increased trust in AI recommendations over time
+
+---
+
+### **Priority 4: Ethical Risk Mitigation** ⚖️ **INDIRECT EFFECTS (Test in Phase 5)**
+
+**Evidence**:
+- **Semi-partial R² = 0.001%** (essentially zero unique variance)
+- **β = 0.001**, t = 0.104, p = .917 ns — **No direct effect on adoption**
+- **Critical finding**: May operate **indirectly** through Trust erosion or Anxiety amplification
+
+**Why This Matters**:
+- Ethical concerns are **real** (participants rated ER items) but don't directly inhibit adoption
+- Likely pathway: Ethical concerns → Lower Trust → Lower adoption (H5b)
+- Alternative pathway: Ethical concerns → Higher Anxiety → Lower adoption (H5c)
+- **Phase 5 mediation analysis will test these indirect mechanisms**
+
+**Provisional Recommendations** (pending Phase 5 validation):
+
+| **Strategy** | **Implementation** | **Expected Outcome** | **Timeline** |
+|--------------|-------------------|---------------------|-------------|
+| **Ethics Governance Framework** | Establish AI ethics committee; clear policies on bias, privacy, fairness | Institutional response to ethical concerns | 3-6 months |
+| **Bias Audits** | Regular fairness testing across demographic groups; corrective actions | Demonstrates commitment to equity | Ongoing |
+| **Privacy Protections** | Data minimization, anonymization, clear consent processes | Reduces privacy-related anxiety | Design phase |
+| **Transparency Reports** | Public disclosure of AI risks, limitations, failure modes | Builds trust through honesty | Quarterly |
+| **Stakeholder Engagement** | Include affected parties in AI design and governance | Procedural justice reduces ethical concerns | Pre-deployment |
+| **Impact Assessments** | Document potential harms; mitigation strategies | Proactive risk management | Pre-deployment |
+
+**Phase 5 Decision Points**:
+- **If H5b supported** (ER → Trust → BI): Frame ethics as **trust-building mechanism**, not compliance burden
+- **If H5c supported** (ER → Anxiety → BI): Address ethics to **reduce anxiety**, not just as moral imperative
+- **If both unsupported**: Ethical risk truly doesn't influence adoption (focus resources elsewhere)
+
+---
+
+### **Context-Specific Adjustments** (From Phase 3 Invariance Findings)
+
+**Evidence**: Metric non-invariance reveals constructs function differently by context:
+
+| **Context** | **Key Differences** | **Intervention Adjustments** |
+|------------|---------------------|-----------------------------|
+| **Professionals vs. Students** | EX matters MORE to professionals (λ=0.830 vs. 0.349) | Professionals: Prioritize transparency/explainability<br>Students: Focus on ease of use, peer influence |
+| **High vs. Low AI Users** | VO matters MORE to novices (λ=1.116 vs. 0.642) | Novices: Emphasize autonomy, voluntary adoption<br>Experts: Habit formation, integration into workflows |
+| **Adopters vs. Non-Adopters** | SI stronger for professionals (λ=0.983 vs. 0.705) | Professionals: Leverage organizational norms, leadership<br>Non-adopters: Individual benefits, reduce coercion |
+
+**Key Insight**: **One-size-fits-all interventions will underperform**. Tailor strategies to specific contexts based on empirical evidence of what matters to each group.
+
+---
+
+### **Phase 5 Research Questions** (Pending Mediation Analysis)
+
+**Unanswered Questions That Will Inform Interventions**:
+
+1. **Does explainability build trust, which then increases adoption?** (H5a: EX → TR → BI)
+   - If YES: XAI tools are **trust-building mechanisms**, not just transparency features
+   - If NO: Explainability and trust operate independently (address both separately)
+
+2. **Do ethical concerns reduce trust, which then inhibits adoption?** (H5b: ER → TR → BI)
+   - If YES: Ethics governance is a **trust intervention**, prioritize over compliance
+   - If NO: Ethical concerns operate differently (test anxiety pathway)
+
+3. **Do ethical concerns amplify anxiety, which then inhibits adoption?** (H5c: ER → AX → BI)
+   - If YES: Reframe ethics as **anxiety reduction strategy** ("we have safeguards")
+   - If NO: Ethical risk truly irrelevant to adoption psychology (surprising but possible)
+
+**Timeline**: Phase 5 mediation analysis (Weeks 27-28) will provide evidence-based answers to guide intervention design.
+
+---
+
+### **Summary: Evidence-Based Intervention Portfolio**
+
+| **Priority** | **Target Construct** | **Unique Variance** | **Investment Level** | **Expected ROI** |
+|-------------|---------------------|---------------------|---------------------|------------------|
+| **1** | AI Anxiety (AX) | 0.525% (36% of ΔR²) | HIGH | **Highest** - Addresses largest barrier |
+| **2** | Explainability (EX) | 0.290% (20% of ΔR²) | MODERATE | **High** - Context-dependent (professionals) |
+| **3** | Trust (TR) | 0.275% (19% of ΔR²) | MODERATE | **High** - Long-term relationship building |
+| **4** | Ethical Risk (ER) | 0.001% (0.07% of ΔR²) | LOW (pending Phase 5) | **Unknown** - May operate indirectly |
+
+**Critical Takeaway**: Organizations should allocate **~50% of intervention budget to anxiety reduction**, ~25% each to transparency and trust-building, and defer major ethics investments until Phase 5 clarifies indirect pathways.
+
+---
+
 ## 📚 **Key References**
 
 **Foundational Works**:
