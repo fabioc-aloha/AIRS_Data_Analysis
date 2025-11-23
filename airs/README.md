@@ -55,16 +55,17 @@ This folder contains the primary analysis notebooks for the AI Readiness Scale (
 ### Phase 3: Measurement Invariance
 **03_Measurement_Invariance.ipynb**
 - Tests invariance across Role (Student vs. Professional), Usage (Low vs. High), Adoption (Non-Adopter vs. Adopter)
-- Configural invariance: SUPPORTED (CFI 0.922-0.946)
-- Metric invariance: NOT SUPPORTED (max loading diffs 0.414-0.481)
-- Scalar invariance: NOT SUPPORTED (max mean diffs 0.487-0.639)
-- Implication: Use separate-group models for H4 moderation analysis
+- Configural invariance: SUPPORTED (CFI 0.922-0.946, all groups maintain 2-factor structure)
+- Metric invariance: NOT SUPPORTED (max loading diffs 0.414-0.481, ΔCFI 0.052-0.072)
+- Scalar invariance: NOT SUPPORTED (max mean diffs 0.487-0.639, ΔCFI 0.059-0.095)
+- Implication: Constructs function differently across contexts (theoretically meaningful); use separate-group models for H4
 - **Status**: ✅ Complete (November 23, 2025)
 
 **Output Files:**
 - `../results/tables/measurement_invariance_summary.csv` - Complete invariance test results
+- `../results/plots/` - 5 visualization figures with comprehensive interpretations
 
-## Next Steps (Pending)
+## Next Steps (Phase 4-6 Pending)
 
 ### Phase 4: Structural Models & Hypothesis Testing
 

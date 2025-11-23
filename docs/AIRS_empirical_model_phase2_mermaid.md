@@ -1,7 +1,8 @@
-# AIRS Empirical Model (Phase 2: CFA Validation) - Mermaid Diagram
+# AIRS Empirical Model (Phase 3: Post-Invariance Testing) - Mermaid Diagram
 
-## 2-Factor Structure - Confirmatory Factor Analysis
-**N=163 (Independent Holdout Sample) • Model Fit: GOOD • CFI=0.960, TLI=0.950, RMSEA=0.071**
+## 2-Factor Structure - Confirmatory Factor Analysis & Measurement Invariance
+**N=362 (Full Sample: Dev N=181 + Holdout N=181) • Model Fit: GOOD • CFI=0.952, TLI=0.941, RMSEA=0.080**
+**Invariance Status: Configural ✓ (CFI 0.922-0.946) | Metric ✗ | Scalar ✗**
 
 ```mermaid
 graph LR

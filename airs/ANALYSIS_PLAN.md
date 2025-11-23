@@ -3,11 +3,11 @@
 
 ## Quick Reference
 
-**Current Status**: Phase 2 Complete ✅ (CFA + Invariance) | Phase 1 Complete ✅
+**Current Status**: Phase 3 Complete ✅ (Measurement Invariance) | Phases 1-2 Complete ✅
 **Week**: 24 of 32 (November 23, 2025)
 **Scale**: 12-item construct-balanced (2 empirical factors: F1 with 10 items, F2 with 2 items)
 **Samples**: Development N=181 | Holdout N=181 | Total N=362
-**Next Action**: Proceed to Phase 3 - Structural modeling (`04_Structural_Model_Hypothesis_Testing.ipynb`)
+**Next Action**: Proceed to Phase 4 - Structural modeling (`04_Structural_Model_Hypothesis_Testing.ipynb`)
 
 ### Analysis Roadmap
 
@@ -16,11 +16,11 @@
 | **1. Measurement** | 00       | Data Splitting                        | ✅ Complete  | 23          |
 | **1. Measurement** | 01       | EFA - Scale Development               | ✅ Complete  | 24          |
 | **2. Validation**  | 02       | CFA - Measurement Model               | ✅ Complete  | 24          |
-| **2. Validation**  | 03       | Measurement Invariance                | ✅ Complete  | 24          |
-| **3. Hypothesis**  | 04       | Structural Models (H1-H3)             | ⏭️ Next      | 27          |
-| **3. Hypothesis**  | 05       | Mediation Analysis (H5)               | ⏳ Pending   | 28          |
-| **4. Moderation**  | 06       | Multi-group Analysis (H4)             | ⏳ Pending   | 29-30       |
-| **5. Integration** | 07       | Comprehensive Results Summary         | ⏳ Pending   | 31          |
+| **3. Invariance**  | 03       | Measurement Invariance Testing        | ✅ Complete  | 24          |
+| **4. Hypothesis**  | 04       | Structural Models (H1-H3)             | ⏭️ Next      | 27          |
+| **4. Hypothesis**  | 05       | Mediation Analysis (H5)               | ⏳ Pending   | 28          |
+| **5. Moderation**  | 06       | Multi-group Analysis (H4)             | ⏳ Pending   | 29-30       |
+| **6. Integration** | 07       | Comprehensive Results Summary         | ⏳ Pending   | 31          |
 
 ---
 
@@ -124,8 +124,9 @@
 - **H4d (Usage)**: Anxiety effect weaker for high-frequency users (exposure effect)
 - **H4e (Adoption)**: Facilitators (Factor 1) more salient for adopters; Barriers (Factor 2) more salient for non-adopters
 
-**Status**: ⏳ Pending Phase 4
-**Test**: Multi-group SEM with chi-square difference tests for path equality
+**Status**: ⏳ Pending Phase 5 (adjusted approach based on Phase 3 findings)
+**Test**: Separate-group structural models (exploratory moderation analysis)
+**Note**: Phase 3 found metric/scalar non-invariance, requiring separate-group models instead of formal multi-group SEM with equality constraints
 
 ---
 

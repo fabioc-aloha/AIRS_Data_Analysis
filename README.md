@@ -25,10 +25,10 @@
 
 **Progress Report** (Week 24 of 32):
 
-- ✅ **Phase 1, 2, & 3 Complete**: 12-item scale developed, validated via split-sample CFA, and invariance tested
+- ✅ **Phase 1-3 Complete**: 12-item scale developed, validated via split-sample CFA, and measurement invariance tested
 - ✅ **Measurement Model**: Good fit achieved (CFI=0.952, TLI=0.941, RMSEA=0.080), 2-factor structure confirmed
 - ✅ **Psychometric Quality**: F1 excellent (α=0.924, CR=0.923, AVE=0.554), F2 adequate (α=0.691, CR=0.765, AVE=0.640)
-- ✅ **Invariance Testing**: Configural invariance supported across all groups; metric/scalar invariance not supported
+- ✅ **Invariance Testing**: Configural invariance supported (CFI 0.922-0.946); metric/scalar not supported (requires separate-group models for H4)
 - ⏭️ **Next**: Phase 4 (Structural Models H1-H3) → Phase 5 (Mediation H5) → Phase 6 (Multi-Group H4)
 
 **Research Foundation**: This study extends **Dr. Venkatesh's UTAUT2 framework** (Venkatesh et al., 2012) by integrating four AI-specific constructs to develop a diagnostic instrument for organizational AI readiness assessment.
@@ -38,9 +38,9 @@
 ### 🎯 Committee Highlights
 
 **For Dr. Kasztelnik (Chair)**:
-- ✅ On schedule (Week 24/32), Phases 1-3 complete with good fit and invariance testing complete
-- ✅ Phase 3 Finding: Configural invariance supported; constructs function differently across contexts (theoretically meaningful)
-- ⏭️ Next: Phase 4 structural modeling (H1-H3 hypothesis testing)
+- ✅ On schedule (Week 24/32), Phases 1-3 complete with good measurement model fit and invariance testing
+- ✅ Phase 3 Finding: Configural invariance supported; metric/scalar not supported (constructs function differently across contexts - theoretically meaningful)
+- ⏭️ Next: Phase 4 structural modeling (H1-H3 hypothesis testing with nested model comparisons)
 - 📊 Detailed statistics: `docs/AIRS_empirical_model_phase2_mermaid.md` and `airs/03_Measurement_Invariance.ipynb`
 
 **For Dr. Venkatesh (Mentor)**:
@@ -191,7 +191,7 @@ graph LR
 
 ---
 
-## ✅ Phase 1, 2, & 3 Results: Scale Development, Validation, and Invariance Testing (Complete)
+## ✅ Phase 1-3 Results: Scale Development, Validation, and Invariance Testing (Complete)
 
 ### Phase 1 & 2: Scale Development and CFA Validation
 
@@ -321,7 +321,7 @@ This dual-purpose design supports both **diagnostic assessment** (12-construct g
 
 ---
 
-### Phase 5: Mediation & Moderation Analysis (Weeks 29-30)
+### Phase 5: Mediation Analysis (Week 28)
 
 **Mediation Analysis (H5a-H5c)**:
 
@@ -330,21 +330,31 @@ This dual-purpose design supports both **diagnostic assessment** (12-construct g
 - **H5c**: Does AI Anxiety mediate Ethical Risk → BI (negative pathway)?
 - **Method**: Bootstrap mediation with 5,000 iterations, 95% bias-corrected confidence intervals
 
-**Moderation Analysis (H4a-H4e)**:
-
-- **Moderators**: Role (student/professional/faculty), AI usage frequency, adoption status
-- **Method**: Multi-group SEM with chi-square difference tests
-- **Prerequisite**: Establish measurement invariance (configural, metric, scalar) across groups
-
 **Deliverables**:
 
 - `05_Mediation_Analysis.ipynb`: Mediation pathways with indirect effects and confidence intervals
-- `06_Moderation_Analysis.ipynb`: Multi-group results with invariance testing
-- Updated hypothesis outcomes (H4, H5) with effect sizes
+- Updated hypothesis outcomes (H5) with effect sizes
 
 ---
 
-### Phase 6: Comprehensive Results & Integration (Weeks 31-32)
+### Phase 6: Moderation Analysis (Weeks 29-30)
+
+**Moderation Analysis (H4a-H4e)**:
+
+- **Moderators**: Role (student/professional), AI usage frequency, adoption status
+- **Method**: Separate-group structural models (exploratory comparisons)
+- **Phase 3 Finding**: Metric/scalar non-invariance requires separate-group approach instead of formal multi-group SEM
+- **Approach**: Estimate path coefficients separately for each group and compare magnitudes descriptively
+
+**Deliverables**:
+
+- `06_Moderation_Analysis.ipynb`: Separate-group results with path coefficient comparisons
+- Updated hypothesis outcomes (H4) with group-specific estimates and effect sizes
+- Discussion of theoretically meaningful contextual differences
+
+---
+
+### Phase 7: Comprehensive Results & Integration (Weeks 31-32)
 
 **Objective**: Synthesize all findings into dissertation Chapter 4 (Results) and Chapter 5 (Discussion)
 
@@ -459,11 +469,46 @@ This dual-purpose design supports both **diagnostic assessment** (12-construct g
 
 ---
 
-### Phase 4-6: Hypothesis Testing (⏳ Pending N=500)
+### Phase 3: Measurement Invariance ✅ COMPLETE
+
+**Objectives**:
+- Test measurement equivalence across demographic groups
+- Determine appropriate approach for H4 moderation analysis
+- Validate construct functioning across contexts
+
+**Methods**:
+- **Groups**: Role (Student/Professional), Usage (Low/High), Adoption (Non-Adopter/Adopter)
+- **Tests**: Configural, metric, and scalar invariance
+- **Criteria**: ΔCFI ≤ 0.010 (Chen, 2007), loading differences ≤ 0.20 threshold
+
+**Results**:
+- **Configural Invariance**: ✅ SUPPORTED (CFI=0.922-0.946) - Same 2-factor structure across all groups
+- **Metric Invariance**: ❌ NOT SUPPORTED (ΔCFI=0.052-0.072, max loading diff=0.481)
+- **Scalar Invariance**: ❌ NOT SUPPORTED (ΔCFI=0.059-0.095, max mean diff=0.639)
+- **Key Finding**: Constructs function differently across contexts (theoretically meaningful, not measurement error)
+
+**Problematic Items**:
+- **EX1** (Explainability): Loading diff=0.481 (Students 0.349 vs. Professionals 0.830)
+- **VO1** (Voluntariness): Loading diff=0.474 (Low users 1.116 vs. High users 0.642)
+- **SI1** (Social Influence): Loading diff=0.278 (Students 0.705 vs. Professionals 0.983)
+- **FC1** (Facilitating Conditions): Loading diff=0.385 (Students 0.440 vs. Professionals 0.825)
+
+**Implications for Phase 5**:
+- ✅ Use separate-group structural models for H4 moderation analysis
+- ❌ Cannot use formal multi-group SEM with equality constraints
+- ❌ Cannot compare mean scores directly across groups
+- ✅ Frame moderation as exploratory with group-specific parameter estimates
+
+**Notebook**: `03_Measurement_Invariance.ipynb`
+
+---
+
+### Phase 4-6: Hypothesis Testing (⏳ Pending)
 
 **Phase 4**: Structural model comparison (UTAUT2 vs. AIRS) → Test H1-H3
-**Phase 5**: Mediation (trust, anxiety pathways) and moderation (role, usage, adoption status) → Test H4-H5
-**Phase 6**: Comprehensive results integration and dissertation Chapter 4 preparation
+**Phase 5**: Mediation (trust, anxiety pathways) → Test H5
+**Phase 6**: Multi-group moderation analysis (separate-group models) → Test H4
+**Phase 7**: Comprehensive results integration and dissertation Chapter 4 preparation
 
 **📋 Methodology**: See `airs/ANALYSIS_PLAN.md` for complete analytical approach
 
