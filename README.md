@@ -325,10 +325,24 @@ Our 12-item scale serves two distinct functions:
 
 ## 📚 **Documentation**
 
-**Analysis Files**: `airs/ANALYSIS_PLAN.md` | `airs/CONSISTENCY_CHECK.md`
-**Theory & Methods**: `docs/AIRS DBA Project Proposal v4.md` | `docs/DATA_DICTIONARY.md`
-**Notebooks**: `airs/00-03_*.ipynb` (Phases 1-3 complete)
-**Archive**: `archive/notebooks_exploratory/` (N=281 exploratory phase)
+<table>
+<tr>
+  <td><strong>Analysis Files</strong></td>
+  <td><code>airs/ANALYSIS_PLAN.md</code> | <code>airs/CONSISTENCY_CHECK.md</code></td>
+</tr>
+<tr>
+  <td><strong>Theory & Methods</strong></td>
+  <td><code>docs/AIRS DBA Project Proposal v4.md</code> | <code>docs/DATA_DICTIONARY.md</code></td>
+</tr>
+<tr>
+  <td><strong>Notebooks</strong></td>
+  <td><code>airs/00-03_*.ipynb</code> (Phases 1-3 complete)</td>
+</tr>
+<tr>
+  <td><strong>Archive</strong></td>
+  <td><code>archive/notebooks_exploratory/</code> (N=281 exploratory phase)</td>
+</tr>
+</table>
 
 ---
 
