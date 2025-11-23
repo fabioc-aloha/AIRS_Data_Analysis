@@ -119,10 +119,10 @@ Given AI's distinctive characteristics—algorithmic opacity, autonomous decisio
 
 ---
 
-## 📊 Empirical Model: 2-Factor Structure
+## 📊 Empirical Model: 2-Factor Structure (Phase 3: Post-Invariance Testing)
 
-**Phase 1 & 2: EFA and CFA Validation Results**
-*Development N=181 (EFA) • Holdout N=181 (CFA) • α = 0.845 (12-item) / 0.924 (CFA F1)*
+**Full Sample N=362 • Model Fit: GOOD • CFI=0.952, TLI=0.941, RMSEA=0.080**
+*Development N=181 (EFA) • Holdout N=181 (CFA) • Full N=362 (Invariance) • α = 0.845 (12-item) / 0.924 (F1)*
 
 ```mermaid
 graph LR
@@ -131,20 +131,21 @@ graph LR
     classDef barrierBox fill:#fecaca,stroke:#dc2626,stroke-width:3px,color:#991b1b
     classDef outcomeBox fill:#bfdbfe,stroke:#1e40af,stroke-width:4px,color:#1e3a8a
     classDef moderatorBox fill:#f1f5f9,stroke:#94a3b8,stroke-width:2px,color:#475569
+    classDef invarianceBox fill:#fef3c7,stroke:#f59e0b,stroke-width:3px,color:#92400e
 
-    %% Moderators (Left)
-    subgraph MOD["Contextual Moderators"]
-        M1["Role<br/>(Student/Faculty/Professional)"]
-        M2["AI Usage Frequency<br/>(Exposure level)"]
-        M3["AI Adoption Status<br/>(Adopter/Non-adopter)"]
+    %% Moderators (Left) - Updated with Invariance Status
+    subgraph MOD["Contextual Moderators<br/>(Configural ✓ | Metric ✗ | Scalar ✗)"]
+        M1["Role<br/>(Student/Professional)<br/>CFI=0.945"]
+        M2["AI Usage Frequency<br/>(Low/High)<br/>CFI=0.922"]
+        M3["AI Adoption Status<br/>(Non-Adopter/Adopter)<br/>CFI=0.946"]
         M1 --- M2 --- M3
     end
 
     %% Factor 1: Mixed Readiness (Center-Top)
-    subgraph F1["Factor 1: Mixed Readiness (10 items, λ=0.519-0.898)<br/>α=0.924 • CR=0.923 • AVE=0.554 • EXCELLENT"]
-        U2["<b>UTAUT2 Core (7)</b><br/>PE2: 0.849<br/>EE1: 0.519<br/>SI1: 0.828<br/>FC1: 0.605<br/>HM2: 0.898<br/>PV2: 0.879<br/>HB2: 0.827"]
-        VOR["<b>VO Reintroduced (1)</b><br/>VO1†: 0.858<br/>(from UTAUT 2003)"]
-        AIE["<b>AI Enablers (2)</b><br/>TR2: 0.852<br/>EX1: 0.559"]
+    subgraph F1["Factor 1: AI Readiness (10 items, λ=0.519-0.898)<br/>α=0.924 • CR=0.923 • AVE=0.554 • EXCELLENT"]
+        U2["<b>UTAUT2 Core (7)</b><br/>PE2: 0.849<br/>EE1†: 0.519<br/>SI1‡: 0.828<br/>FC1‡: 0.605<br/>HM2: 0.898<br/>PV2: 0.879<br/>HB2: 0.827"]
+        VOR["<b>VO Reintroduced (1)</b><br/>VO1*: 0.858<br/>(from UTAUT 2003)"]
+        AIE["<b>AI Enablers (2)</b><br/>TR2: 0.852<br/>EX1‡: 0.559"]
         U2 ~~~ VOR ~~~ AIE
     end
 
@@ -159,17 +160,17 @@ graph LR
     BI["<b>Behavioral Intention<br/>(AI Readiness)</b><br/><br/>CFA Model Fit:<br/>χ²=122.55 (df=52)<br/>CFI=0.952<br/>TLI=0.941<br/>RMSEA=0.080<br/>χ²/df=2.36"]
 
     %% Relationships
-    MOD -.->|"moderates (H4)"| F1
-    MOD -.->|"moderates (H4)"| F2
+    MOD -.->|"moderates (H4)<br/>separate-group models"| F1
+    MOD -.->|"moderates (H4)<br/>separate-group models"| F2
     F1 -->|"+ enables (H1, H2)"| BI
     F2 -->|"− inhibits (H2)"| BI
-    F1 -.->|"r = 0.118<br/>(weak positive)"| F2
+    F1 -.->|"r = 0.338<br/>(moderate positive)"| F2
 
     %% Apply styles
     class U2,VOR,AIE facilitatorBox
-    class ER1,AX2 barrierBox
+    class ER2,AX1 barrierBox
     class BI outcomeBox
-    class M1,M2,M3 moderatorBox
+    class M1,M2,M3 invarianceBox
 
     %% Hide internal connections
     linkStyle 0,1,2 stroke:none
@@ -178,11 +179,14 @@ graph LR
 **Key Findings**:
 
 - **CFA Model Fit**: GOOD (CFI=0.952, TLI=0.941, RMSEA=0.080, χ²/df=2.36)
-- **Factor 1 (Mixed Readiness)**: 10 items, EXCELLENT reliability (α=0.924, CR=0.923, AVE=0.554)
+- **Factor 1 (AI Readiness)**: 10 items, EXCELLENT reliability (α=0.924, CR=0.923, AVE=0.554)
 - **Factor 2 (Risk/Anxiety)**: 2 items, ADEQUATE reliability (α=0.691, CR=0.765, AVE=0.640)
 - **Inter-factor Correlation**: r = 0.338 (moderate, supporting discriminant validity)
 - **Discriminant Validity**: HTMT=0.527 < 0.85, Fornell-Larcker criterion met (√AVE F1=0.744, √AVE F2=0.800 > r=0.338)
-- **†Voluntariness** serves dual role as both factor item and contextual moderator
+- **Measurement Invariance**: Configural ✓ (CFI 0.922-0.946), Metric ✗ (ΔCFI 0.052-0.072), Scalar ✗ (ΔCFI 0.059-0.095)
+- **\*VO1** (Voluntariness): Highest loading difference across usage groups (Δ=0.474) - autonomy sensitivity
+- **†EE1**: Moderate differences across groups (0.10-0.20 range)
+- **‡Non-Invariant Items** (EX1, SI1, FC1): Loading differences 0.278-0.481 reflect theoretically meaningful contextual differences
 - **All loadings** ≥ 0.519, exceeding 0.50 threshold for adequate measurement
 
 ---
