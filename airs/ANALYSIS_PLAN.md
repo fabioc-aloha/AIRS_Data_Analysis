@@ -8,7 +8,7 @@
 **Key Discovery**: Dual-pathway suppression - Ethical Risk operates entirely through Trust (64% mediated) + Anxiety (96% mediated)
 **Scale**: 12-item construct-balanced diagnostic tool (2-factor structure validated)
 **Samples**: Development N=181 | Holdout N=181 | Full N=362
-**Next Action**: Phase 6 - Moderation analysis (H4a-e) to test context effects via separate-group models
+**Current Phase**: Phase 6 - Moderation analysis (H4a-e) via separate-group models [ACTIVE]
 **Critical Insight**: Anxiety pathway DOMINATES (51% stronger than trust) - emotional management > cognitive understanding for ER intervention
 
 ### Analysis Roadmap
@@ -21,7 +21,7 @@
 | **3. Context** | 03 | Measurement Invariance | Configural ✓, Metric ✗ (context matters) | ✅ Complete | 24 |
 | **4. Prediction** | 04 | Structural Models (H1-H3) | H1 ✓ (R²=0.8046), H2 ✓ (3/4), H3 ⚠️ (ΔR²=1.46% sig) | ✅ Complete | 25-26 |
 | **5. Mechanisms** | 05 | Mediation Analysis (H5a-c) | Dual-pathway suppression (96% anxiety, 64% trust) | ✅ Complete | 27 |
-| **6. Moderation** | 06 | Separate-Group Models (H4a-e) | Context-specific path coefficients | ⏳ Pending | 28-29 |
+| **6. Moderation** | 06 | Separate-Group Models (H4a-e) | Context-specific path coefficients | ⏭️ In Progress | 28-29 |
 | **7. Integration** | 07 | Comprehensive Results | Chapter 4 draft | ⏳ Pending | 30-32 |
 
 ---
