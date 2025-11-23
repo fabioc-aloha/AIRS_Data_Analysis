@@ -99,7 +99,53 @@ Given AI's distinctive characteristics—algorithmic opacity, autonomous decisio
 
 **Integrated Framework**: 12 constructs (7 UTAUT2 + VO + 4 AI-specific) → Behavioral Intention → AI Adoption
 
-### Research Design & Methodology
+---
+
+## 🔬 Research Questions & Hypotheses
+
+**RQ1**: What is the psychometric structure of AI readiness? (✅ Complete)
+- **Finding**: 2-factor structure (Mixed Readiness, Risk/Anxiety) validated via split-sample EFA/CFA
+
+**RQ2**: Do UTAUT2 constructs predict behavioral intention to adopt AI? (⏭️ Phase 4)
+- **H1**: 7 UTAUT2 + VO constructs significantly predict BI
+
+**RQ3**: Do AI-specific constructs add explanatory power beyond UTAUT2? (⏭️ Phase 4)
+- **H2**: 4 AI-specific constructs significantly predict BI beyond UTAUT2
+- **H3**: AIRS model explains ΔR² ≥ 0.10 additional variance vs. UTAUT2 baseline
+
+**RQ4**: What mediating mechanisms explain AI adoption relationships? (⏭️ Phase 5)
+
+- **H5a**: Trust mediates the positive relationship between Explainability and BI
+- **H5b**: Trust mediates the negative relationship between Ethical Risk and BI
+- **H5c**: AI Anxiety mediates the negative relationship between Ethical Risk and BI
+- **Phase 5**: Bootstrap mediation analysis (5000 iterations, 95% confidence intervals)
+
+**RQ5**: Are relationships moderated by individual and contextual factors? (✅ Phase 3 Complete - Invariance Testing)
+
+- **H4a-H4e**: Role (student/professional), AI usage frequency, and adoption status moderate predictor-BI relationships
+- **Phase 3 Finding**: ✅ Configural invariance supported; ❌ Metric/scalar invariance NOT supported
+- **Implication**: Constructs function differently across groups (theoretically meaningful contextual differences)
+- **Phase 6 Approach**: Separate-group structural models (exploratory moderation analysis)
+
+**Outcome Variable**: **BI** (Behavioral Intention) - readiness to adopt/increase AI use
+
+### Empirical Structure (2 Factors)
+
+**Factor 1: Mixed Readiness (10 items)**
+
+- General AI readiness across UTAUT2 dimensions plus trust and explainability
+- Items: PE2, EE1, SI1, FC1, HM2, PV2, HB2, VO1, TR2, EX1
+- Reliability: α=0.924, CR=0.923, AVE=0.554 (EXCELLENT)
+
+**Factor 2: Risk/Anxiety (2 items)**
+
+- AI-related concerns and apprehension
+- Items: ER2, AX1
+- Reliability: α=0.691, CR=0.765, AVE=0.640 (ADEQUATE)
+
+---
+
+## 📐 Research Design & Methodology
 
 **Sample**: N = 362 (current) of target N = 500 knowledge workers (faculty, students, professionals) recruited through academic networks and professional associations. Target sample size will exceed recommended requirements for structural equation modeling (N > 200) and enable robust split-sample validation. **Data collection ongoing**.
 
@@ -108,14 +154,15 @@ Given AI's distinctive characteristics—algorithmic opacity, autonomous decisio
 - **Development Sample (N=181)**: Scale development, exploratory factor analysis, item selection
 - **Holdout Sample (N=181)**: Independent CFA validation (complete), hypothesis testing (pending)
 
-**Analytical Approach**: Six-phase sequential validation following psychometric best practices (Hair et al., 2010; Hu & Bentler, 1999):
+**Analytical Approach**: Seven-phase sequential validation following psychometric best practices (Hair et al., 2010; Hu & Bentler, 1999):
 
 1. **Phase 1 (✅ Complete)**: Exploratory factor analysis, reliability assessment, item selection
 2. **Phase 2 (✅ Complete)**: Confirmatory factor analysis on independent holdout sample
 3. **Phase 3 (✅ Complete)**: Measurement invariance testing across groups
 4. **Phase 4 (⏭️ Next)**: Structural model comparison (UTAUT2 vs. AIRS)
-5. **Phase 5 (Pending)**: Mediation and moderation analysis
-6. **Phase 6 (Pending)**: Comprehensive results integration
+5. **Phase 5 (Pending)**: Mediation analysis
+6. **Phase 6 (Pending)**: Multi-group moderation analysis
+7. **Phase 7 (Pending)**: Comprehensive results integration
 
 ---
 
@@ -253,53 +300,6 @@ This dual-purpose design supports both **diagnostic assessment** (12-construct g
 *Four-panel comprehensive dashboard showing: (1) CFI comparison across invariance levels, (2) Maximum loading differences by item and group, (3) Sample distribution across demographic categories, and (4) Summary decision matrix. Dashboard provides complete invariance testing overview supporting separate-group moderation approach for Phase 6.*
 
 **📊 Complete Statistics**: See `docs/AIRS_empirical_model_phase2_mermaid.md` for detailed psychometric results, and `airs/03_Measurement_Invariance.ipynb` for full invariance testing methodology and scholarly validation.
-
----
-
-## 🔬 Research Questions & Hypotheses
-
-**RQ1**: What is the psychometric structure of AI readiness? (✅ Complete)
-- **Finding**: 2-factor structure (Mixed Readiness, Risk/Anxiety) validated via split-sample EFA/CFA
-
-**RQ2**: Do UTAUT2 constructs predict behavioral intention to adopt AI? (⏭️ Phase 4)
-- **H1**: 7 UTAUT2 + VO constructs significantly predict BI
-
-**RQ3**: Do AI-specific constructs add explanatory power beyond UTAUT2? (⏭️ Phase 4)
-- **H2**: 4 AI-specific constructs significantly predict BI beyond UTAUT2
-- **H3**: AIRS model explains ΔR² ≥ 0.10 additional variance vs. UTAUT2 baseline
-
-**RQ4**: What mediating mechanisms explain AI adoption relationships? (⏭️ Phase 5)
-
-- **H5a**: Trust mediates the positive relationship between Explainability and BI
-- **H5b**: Trust mediates the negative relationship between Ethical Risk and BI
-- **H5c**: AI Anxiety mediates the negative relationship between Ethical Risk and BI
-- **Phase 5**: Bootstrap mediation analysis (5000 iterations, 95% confidence intervals)
-
-**RQ5**: Are relationships moderated by individual and contextual factors? (✅ Phase 3 Complete - Invariance Testing)
-
-- **H4a-H4e**: Role (student/professional), AI usage frequency, and adoption status moderate predictor-BI relationships
-- **Phase 3 Finding**: ✅ Configural invariance supported; ❌ Metric/scalar invariance NOT supported
-- **Implication**: Constructs function differently across groups (theoretically meaningful contextual differences)
-- **Phase 5 Approach**: Separate-group structural models (exploratory moderation analysis)
-- **AX**: AI Anxiety - unease about AI autonomy and pace of change
-
-**Outcome Variable**:
-
-- **BI**: Behavioral Intention - readiness to adopt/increase AI use
-
-### Empirical Structure (2 Factors)
-
-**Factor 1: Mixed Readiness (10 items)**
-
-- General AI readiness across UTAUT2 dimensions plus trust and explainability
-- Items: PE2, EE1, SI1, FC1, HM2, PV2, HB2, VO1, TR2, EX1
-- Reliability: α=0.924, CR=0.923, AVE=0.554 (EXCELLENT)
-
-**Factor 2: Risk/Anxiety (2 items)**
-
-- AI-related concerns and apprehension
-- Items: ER2, AX1
-- Reliability: α=0.691, CR=0.765, AVE=0.640 (ADEQUATE)
 
 ---
 
