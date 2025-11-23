@@ -16,17 +16,18 @@ For reproducibility, researchers may request access to de-identified data by con
 
 ## Data Description
 
-- **Sample Size**: N = 201 valid responses
+- **Sample Size**: N = 362 valid responses
 - **Variables**: 51 columns (28 analysis items + demographics + usage)
 - **Scale**: 5-point Likert (1=Strongly Disagree to 5=Strongly Agree)
 - **Format**: CSV with header rows
-- **Documentation**: See `../DATA_DICTIONARY.md` for complete variable definitions
+- **Documentation**: See `../docs/DATA_DICTIONARY.md` for complete variable definitions
 
 ## Data Quality
 
-- Attention check pass rate: 96% (4 responses excluded)
+- Attention check pass rate: High (excluded cases removed)
 - Missing data: <1% on any item
 - Completion rate: 100% for valid responses
+- Sample split: 50/50 stratified (N=181 dev, N=181 holdout)
 
 ## Preprocessing Steps
 

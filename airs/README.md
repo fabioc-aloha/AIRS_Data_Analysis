@@ -6,7 +6,7 @@ This folder contains the primary analysis notebooks for the AI Readiness Scale (
 
 ### Phase 1: Data Preparation
 **00_Create_Split_Samples.ipynb**
-- Creates stratified 50/50 split (development N=159, holdout N=159)
+- Creates stratified 50/50 split (development N=181, holdout N=181)
 - Stratification by Work_Context × AI_Adoption
 - Validates balance across demographic and item-level distributions
 - **Status**: ✅ Complete
@@ -14,9 +14,17 @@ This folder contains the primary analysis notebooks for the AI Readiness Scale (
 ### Phase 2: Scale Development
 **01_EFA_Construct_Balanced_12_Item.ipynb**
 - Develops 12-item construct-balanced diagnostic scale
-- Selects best item per construct (1 × 12 constructs)
+- Manual refinement: ER1→ER2, AX2→AX1 for improved F2 reliability
 - Determines empirical factor structure (2 factors via parallel analysis)
-- Validates reliability (α = 0.897) and predictive validity (R² = 0.811)
+- Validates reliability (12-item α = 0.845) and factorability (KMO = 0.919)
+- **Status**: ✅ Complete
+
+**02_CFA_Measurement_Model.ipynb**
+- Validates 2-factor structure on holdout sample (N=181)
+- Model fit: CFI=0.925, TLI=0.905, RMSEA=0.101, χ²/df=2.85
+- F1 reliability: α=0.924, CR=0.923, AVE=0.554
+- F2 reliability: α=0.691, CR=0.765, AVE=0.640
+- Discriminant validity: HTMT=0.527, Fornell-Larcker criterion met
 - **Status**: ✅ Complete
 
 **Output Files:**
@@ -27,30 +35,26 @@ This folder contains the primary analysis notebooks for the AI Readiness Scale (
 
 **12-Item AIRS Scale:**
 - **Purpose**: Dual-purpose diagnostic and predictive tool
-- **Items**: 12 (1 per construct for comprehensive coverage)
+- **Sample**: N=362 (181 dev, 181 holdout)
+- **Items**: 12 items across 10 constructs
 - **Factors**: 2 empirically supported dimensions
-  - Factor 1: Positive attitudes/facilitators (PE, FC, HM, PV, HB, TR, VO)
-  - Factor 2: Concerns/barriers (AX, ER, EE, SI, EX)
-- **Reliability**: α = 0.897 (Good)
-- **Variance Explained**: 58.1%
-- **Predictive Validity**: R² = 0.811 (predicting BI/AI adoption)
-- **Efficiency**: 50% item reduction with 96.3% retained predictive power
+  - **F1: AI Readiness** (10 items: PE2, EE1, SI1, FC1, HM2, PV2, HB2, VO1, TR2, EX1)
+  - **F2: Tech-Averse Barriers** (2 items: ER2, AX1)
+- **Reliability**:
+  - Overall 12-item scale: α = 0.845 (Good)
+  - F1: α = 0.924, CR = 0.923, AVE = 0.554 (Excellent)
+  - F2: α = 0.691, CR = 0.765, AVE = 0.640 (Acceptable)
+- **Model Fit**: CFI = 0.925, TLI = 0.905, RMSEA = 0.101, χ²/df = 2.85
+- **Discriminant Validity**: HTMT = 0.527 (< 0.85), Fornell-Larcker criterion met
 
 **Selected Items:**
-- PE: PE1, EE: EE2, SI: SI2, FC: FC1
-- HM: HM1, PV: PV2, HB: HB2, VO: VO1
-- TR: TR1, EX: EX1, ER: ER1, AX: AX2
+- PE: PE2, EE: EE1, SI: SI1, FC: FC1
+- HM: HM2, PV: PV2, HB: HB2, VO: VO1
+- TR: TR2, EX: EX1, ER: ER2, AX: AX1
 
 ## Next Steps (Pending)
 
-### Phase 3: Confirmatory Validation
-**02_CFA_Measurement_Model.ipynb** (to be created)
-- Validate 2-factor structure on holdout sample (N=159)
-- Assess fit indices (CFI/TLI ≥ 0.90, RMSEA ≤ 0.08)
-- Calculate composite reliability (CR) and average variance extracted (AVE)
-- Test discriminant validity (Fornell-Larcker, HTMT)
-
-### Phase 4: Measurement Invariance
+### Phase 3: Measurement Invariance
 **03_Measurement_Invariance.ipynb** (to be created)
 - Test invariance across role (student vs. professional)
 - Test invariance across usage frequency (low vs. high)
@@ -85,9 +89,9 @@ See `../archive/` folder for outdated analysis versions:
 ## Data Files
 
 **Input:**
-- `../data/AIRS_clean.csv` - Full preprocessed dataset (N=318)
-- `../data/AIRS_clean_dev.csv` - Development sample (N=159)
-- `../data/AIRS_clean_holdout.csv` - Holdout sample (N=159)
+- `../data/AIRS_clean.csv` - Full preprocessed dataset (N=362)
+- `../data/AIRS_clean_dev.csv` - Development sample (N=181)
+- `../data/AIRS_clean_holdout.csv` - Holdout sample (N=181)
 
 **Output:**
 - `../data/airs_12item_selection.json` - Item selection record

@@ -4,7 +4,7 @@
 **Dataset**: AIRS---AI-Readiness-Scale.csv
 **Version**: 1.0
 **Date**: November 2025
-**Sample Size**: N = 201 responses (205 total, 4 excluded for attention check failure)
+**Sample Size**: N = 362 valid responses
 **Survey Platform**: Online survey collection
 
 ---
@@ -21,8 +21,9 @@ The AIRS (Artificial Intelligence Readiness Score) survey measures attitudes, pe
 ### Scale Development History
 - **Initial Item Pool**: 49 items (documented in AIRS Survey Instrument v5.md, Appendix C)
 - **Item 40 Removed**: "Organizations manage AI risks responsibly (R)" - This reverse-coded item from the Perceived Ethical Risk construct was removed during EFA/CFA validation
-- **Final Instrument**: 28 items across 13 constructs (documented in AIRS Survey Instrument v5.md, Appendix A)
-- **Reverse Coding**: NO reverse-coded items in final instrument - all items scored as presented
+- **Final 12-Item Scale**: 12 items across 10 constructs (PE2, EE1, SI1, FC1, HM2, PV2, HB2, VO1, TR2, EX1, ER2, AX1)
+- **Factor Structure**: 2 empirically-derived factors (F1: AI Readiness with 10 items, F2: Tech-Averse Barriers with 2 items)
+- **Reverse Coding**: NO reverse-coded items - all items scored as presented
 
 ---
 
