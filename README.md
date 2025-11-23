@@ -8,8 +8,9 @@
 ## *A Narrative of Discovery, Decisions, and Insights*
 
 <table width="100%">
-<tr><td><strong>To</strong></td><td>Dr. Karina Kasztelnik (Dissertation Chair), Dr. Venkatesh (Research Mentor)</td></tr>
-<tr><td><strong>From</strong></td><td>Fabio Correa</td></tr>
+<tr><td><strong>Researcher</strong></td><td>Fabio Correa</td></tr>
+<tr><td><strong>Institution</strong></td><td>Touro University Worldwide</td></tr>
+<tr><td><strong>Program</strong></td><td>Doctor of Business Administration (DBA)</td></tr>
 <tr><td><strong>Date</strong></td><td>November 23, 2025 (Week 24 of 32)</td></tr>
 <tr><td><strong>Status</strong></td><td>⚠️ N=362 of target N=500 (Preliminary Results)</td></tr>
 </table>
@@ -168,7 +169,7 @@ We needed to test whether our scale measures AI readiness consistently across di
 - Low vs. high AI usage
 - Non-adopters vs. adopters
 
-**Why This Matters for Your Research, Dr. Kasztelnik**: If the scale doesn't show measurement invariance, we can't meaningfully compare groups—our moderation hypotheses (H4a-H4e) would be testing artifacts, not real differences.
+**Why This Matters**: If the scale doesn't show measurement invariance, we can't meaningfully compare groups—our moderation hypotheses (H4a-H4e) would be testing artifacts, not real differences.
 
 ### **Decision Point #3: Three Levels of Invariance**
 
@@ -178,8 +179,8 @@ We needed to test whether our scale measures AI readiness consistently across di
 | **Metric** | Same factor loadings across groups | ❌ **NOT SUPPORTED** (ΔCFI > 0.01) | Items weighted differently by group |
 | **Scalar** | Same item intercepts across groups | ❌ **NOT SUPPORTED** (ΔCFI > 0.01) | Different baseline response patterns |
 
-![Figure 6: Invariance Testing Decision Matrix](results/plots/invariance_decision_matrix.png)
 *Configural invariance established, but metric/scalar invariance failed. This fundamentally changes our analytical approach.*
+
 
 ![Figure 7: Comprehensive Invariance Dashboard](results/plots/invariance_comprehensive_dashboard.png)
 *CFI comparison shows >0.01 drops when constraining loadings (metric) and intercepts (scalar), indicating non-invariance.*
@@ -190,6 +191,8 @@ This wasn't a failure—it was a **theoretically meaningful finding**. But which
 
 ![Figure 8: Item-Level Loading Differences Across Groups](results/plots/invariance_loading_differences.png)
 *Visual evidence of metric non-invariance: EX1 (Explainability), VO1 (Voluntariness), SI1 (Social Influence), and FC1 (Facilitating Conditions) show substantial loading differences (Δλ > 0.15) across Role, Usage, and Adoption groups. Color intensity indicates magnitude of difference—darker colors reveal items that function fundamentally differently by context.*
+
+**What This Means**:
 - A professional weighing "Explainability" (λ=0.830) far more heavily than a student (λ=0.349) isn't measurement error
 - It reflects **real contextual differences**: professionals face accountability pressures that students don't
 - High AI users perceive "Voluntariness" differently (λ=0.642) than novices (λ=1.116)—experience reduces perceived coercion
@@ -202,6 +205,15 @@ VO1 (Voluntariness):     High Usage 0.642 vs. Low Usage 1.116 (Δλ=0.474)
 SI1 (Social Influence):  Students 0.705 vs. Professionals 0.983 (Δλ=0.278)
 FC1 (Facilitating Cond): Students 0.440 vs. Professionals 0.825 (Δλ=0.385)
 ```
+
+**The Conclusion**: This metric non-invariance reveals that **context fundamentally shapes how AI readiness constructs operate**. It's not that students and professionals disagree on ratings—they're using different mental models entirely:
+
+- **Professionals** weigh explainability heavily (accountability, regulatory compliance, decision consequences)
+- **Students** focus more on voluntariness (autonomy, learning preferences, exploratory freedom)  
+- **High-usage experts** see AI adoption as normalized (habit, reduced anxiety from exposure)
+- **Novices** experience AI as imposing (perceived coercion, heightened anxiety)
+
+This isn't a psychometric limitation—it's evidence that our H4 moderation hypotheses (role, usage, adoption) operate at a deeper level than originally theorized. The constructs themselves are **contextually dependent**, not just their relationships to behavioral intention.
 
 ### **Key Insight #3: Context Shapes AI Readiness in Fundamental Ways**
 
