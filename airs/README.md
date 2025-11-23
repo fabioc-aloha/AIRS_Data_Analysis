@@ -51,6 +51,27 @@ This folder contains the sequential analysis notebooks documenting our analytica
 - `../results/plots/predicted_vs_actual.png` - Model comparison scatter plots (300 dpi)
 - `FACT_CHECK_NOTEBOOK_04.md` - Comprehensive statistical validation (66KB, 60+ checks)
 
+### Phase 5: Mediation Analysis (Week 27) ✅
+**05_Mediation_Analysis.ipynb** - *The Suppression Discovery*
+- H5a: EX → TR → BI, ab=0.287*** [0.214, 0.361], 55% mediated — SUPPORTED
+- H5b: ER → TR → BI, ab=-0.220*** [-0.312, -0.120], 64% mediated — SUPPORTED
+- H5c: ER → AX → BI, ab=-0.333*** [-0.414, -0.255], 96% mediated — STRONGLY SUPPORTED
+- **100% Hypothesis Support Rate**: All three mediation pathways significant
+- **Breakthrough Discovery**: Dual-pathway suppression explains Phase 4 ER non-significance
+- **Anxiety Dominance**: Affective pathway 1.51× stronger than cognitive (96% vs 64% mediation)
+- **Strategic Insight**: Address anxiety FIRST, trust SECOND—emotional > cognitive
+
+**Phase 5 Output Files:**
+- `../results/tables/mediation_summary.csv` - Hypothesis decisions with indirect effects
+- `../results/tables/mediation_detailed_results.csv` - Complete path coefficients
+- `../results/plots/mediation_h5a_path_diagram.png` - Transparency → Trust → Adoption (300 dpi)
+- `../results/plots/mediation_h5b_path_diagram.png` - Ethics → Trust erosion (300 dpi)
+- `../results/plots/mediation_h5c_path_diagram.png` - Ethics → Anxiety amplification (DOMINANT, 300 dpi)
+- `../results/plots/mediation_forest_plot.png` - All indirect effects comparison (300 dpi)
+- `../results/plots/mediation_bootstrap_distributions.png` - 5000 iterations stability (300 dpi)
+- `../results/plots/mediation_dual_pathway_comparison.png` - Cognitive vs affective (300 dpi)
+- `../results/plots/mediation_effect_decomposition.png` - Suppression mechanism (300 dpi)
+
 ## Validated Scale Characteristics
 
 **AIRS 12-Item Diagnostic Scale:**
@@ -91,27 +112,25 @@ This folder contains the sequential analysis notebooks documenting our analytica
 
 
 
-## Next Steps (Phase 5-7 Pending)
+## Next Steps (Phase 6-7 Pending)
 
-### Phase 5: Mediation Analysis (Weeks 27-28) ⏳ NEXT PRIORITY
+### Phase 6: Multi-Group Analysis (Weeks 28-29) ⏭️ NEXT PRIORITY
 
-**05_Mediation_Analysis.ipynb** (to be created)
-- **H5a**: Explainability → Trust → BI (does transparency build trust?)
-- **H5b**: Ethical Risk → Trust → BI (explains ER non-significance via trust erosion?)
-- **H5c**: Ethical Risk → Anxiety → BI (alternative pathway via anxiety amplification?)
-- Bootstrap confidence intervals (5000 iterations)
-- **Critical Question**: Why is Ethical Risk non-significant in direct test?
+**06_Multi_Group_Analysis.ipynb** (to be created)
+- **H4a-b**: Role moderation (Student vs. Professional)
+- **H4c-d**: Usage moderation (Low vs. High frequency)
+- **H4e**: Adoption moderation (Non-Adopter vs. Adopter)
+- **Approach**: Separate-group structural models (exploratory)
+- **Rationale**: Metric non-invariance (Phase 3) prevents constrained tests
+- Compare path coefficients descriptively across contexts
 
-**06_Moderation_Analysis.ipynb** (to be created)
-- H4: Test moderation by role, usage, business unit
-- Multi-group SEM comparisons
-
-### Phase 6: Integration & Reporting
-**07_Comprehensive_Results.ipynb** (to be created)
-- Integrate findings from all analyses
-- Generate APA-formatted tables
-- Create publication-quality figures
-- Produce diagnostic scoring protocols
+### Phase 7: Integration & Chapter 4 Draft (Weeks 30-32)
+**Deliverable**: Dissertation Chapter 4 (Results)
+- Integrate findings from Phases 1-6
+- Create comprehensive results narrative
+- Generate final publication-quality figures
+- Document decision points and rationale
+- Prepare implications for Chapter 5 (Discussion)
 
 ## Archived Files
 

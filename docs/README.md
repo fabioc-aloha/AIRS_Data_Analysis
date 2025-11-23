@@ -2,8 +2,8 @@
 
 This directory contains **active documentation** for the dissertation (N=362, Phases 1-4 complete).
 
-**Current Status**: Week 26 of 32 | Structural modeling complete (H1-H3 tested)
-**Key Finding**: AI Anxiety dominates with 0.525% unique variance (36% of ΔR²=1.46%)
+**Current Status**: Week 27 of 32 | Mediation analysis complete (H5a-c supported, 100% success)
+**Key Finding**: Dual-pathway suppression—Ethical Risk operates via Trust (64%) + Anxiety (96%, DOMINANT)
 **Archive Location**: See `../archive/docs_exploratory/` for 15 exploratory phase reports (N=281)
 
 ---
@@ -83,8 +83,13 @@ This directory contains **active documentation** for the dissertation (N=362, Ph
 
 ---
 
-**Last Updated**: November 23, 2025 (Week 26/32)
-**Status**: Phases 1-4 complete (Discovery → Validation → Invariance → Structural Modeling), Phase 5 (Mediation) next
+**Last Updated**: November 23, 2025 (Week 27/32)
+**Status**: Phases 1-5 complete (Discovery → Validation → Invariance → Structural → Mediation), Phase 6 (Moderation) next
 **Primary Analysis Location**: `../airs/` (dissertation notebooks)
-**Key Results**: H1 STRONGLY SUPPORTED (R²=0.8046), H2 PARTIALLY SUPPORTED (3/4), H3 PARTIALLY SUPPORTED (ΔR²=1.46% p<.001)
+**Key Results**:
+- H1 STRONGLY SUPPORTED (R²=0.8046, 80.46%)
+- H2 PARTIALLY SUPPORTED (3/4 AI constructs significant)
+- H3 PARTIALLY SUPPORTED (ΔR²=1.46%, p<.001***)
+- H5a-c ALL SUPPORTED (100% success: transparency→trust 55%, ethics→trust 64%, ethics→anxiety 96%)
+- **Breakthrough**: Dual-pathway suppression explains Phase 4 ER non-significance
 **Progress Report**: See `../README.md` for narrative journey and key insights
