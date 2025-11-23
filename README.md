@@ -194,73 +194,7 @@ After three phases of rigorous testing, we now have a **12-item, 2-factor AI Rea
 - ✅ Configural invariance across contexts (constructs exist universally)
 - ⚠️ Context-dependent weighting (metric non-invariance signals meaningful differences)
 
-### **The Complete Model We're Testing**
 
-```mermaid
-graph LR
-    %% Styling
-    classDef facilitatorBox fill:#d1fae5,stroke:#059669,stroke-width:3px,color:#065f46
-    classDef barrierBox fill:#fecaca,stroke:#dc2626,stroke-width:3px,color:#991b1b
-    classDef outcomeBox fill:#bfdbfe,stroke:#1e40af,stroke-width:4px,color:#1e3a8a
-    classDef moderatorBox fill:#f1f5f9,stroke:#94a3b8,stroke-width:2px,color:#475569
-
-    %% Moderators (Left)
-    subgraph MOD["Contextual Moderators<br/>(Separate-Group Models Required)"]
-        M1["Role<br/>(Student/Professional)"]
-        M2["AI Usage Frequency<br/>(Low/High)"]
-        M3["AI Adoption Status<br/>(Non-Adopter/Adopter)"]
-        M1 --- M2 --- M3
-    end
-
-    %% Factor 1: Mixed Readiness (Center-Top)
-    subgraph F1["Factor 1: AI Readiness (10 items)<br/>α=0.924 • CR=0.923 • AVE=0.554"]
-        U2["UTAUT2 Core (7)<br/>PE, EE, SI, FC, HM, PV, HB"]
-        VOR["Voluntariness (1)<br/>VO - Reintroduced"]
-        AIE["AI Enablers (2)<br/>TR, EX"]
-        U2 ~~~ VOR ~~~ AIE
-    end
-
-    %% Factor 2: Risk/Anxiety (Center-Bottom)
-    subgraph F2["Factor 2: Risk/Anxiety (2 items)<br/>α=0.691 • CR=0.765 • AVE=0.640"]
-        ER2["Perceived Ethical Risk (ER2) 0.699"]
-        AX1["AI-Related Anxiety (AX1) 0.943"]
-        ER2 --- AX1
-    end
-
-    %% Outcome (Right)
-    BI["<b>Behavioral Intention<br/>(AI Readiness)</b><br/><br/>CFA Model Fit:<br/>χ²=122.55 (df=52)<br/>CFI=0.952<br/>TLI=0.941<br/>RMSEA=0.080<br/>χ²/df=2.36"]
-
-    %% Relationships
-    MOD -.->|"moderates (H4)<br/>separate-group models"| F1
-    MOD -.->|"moderates (H4)<br/>separate-group models"| F2
-    F1 -->|"+ enables (H1, H2)"| BI
-    F2 -->|"− inhibits (H2)"| BI
-    F1 -.->|"r = 0.338<br/>(moderate positive)"| F2
-
-    %% Apply styles
-    class U2,VOR,AIE facilitatorBox
-    class ER2,AX1 barrierBox
-    class BI outcomeBox
-    class M1,M2,M3 invarianceBox
-
-    %% Hide internal connections
-    linkStyle 0,1,2 stroke:none
-```
-
-**Key Findings**:
-
-- **CFA Model Fit**: GOOD (CFI=0.952, TLI=0.941, RMSEA=0.080, χ²/df=2.36)
-- **Factor 1 (AI Readiness)**: 10 items, EXCELLENT reliability (α=0.924, CR=0.923, AVE=0.554)
-- **Factor 2 (Risk/Anxiety)**: 2 items, ADEQUATE reliability (α=0.691, CR=0.765, AVE=0.640)
-- **Inter-factor Correlation**: r = 0.338 (moderate, supporting discriminant validity)
-- **Discriminant Validity**: HTMT=0.527 < 0.85, Fornell-Larcker criterion met (√AVE F1=0.744, √AVE F2=0.800 > r=0.338)
-- **Measurement Invariance**: Configural ✓ (CFI 0.922-0.946), Metric ✗ (ΔCFI 0.052-0.072), Scalar ✗ (ΔCFI 0.059-0.095)
-- **\*VO1** (Voluntariness): Highest loading difference across usage groups (Δ=0.474) - autonomy sensitivity
-- **†EE1**: Moderate differences across groups (0.10-0.20 range)
-- **‡Non-Invariant Items** (EX1, SI1, FC1): Loading differences 0.278-0.481 reflect theoretically meaningful contextual differences
-- **All loadings** ≥ 0.519, exceeding 0.50 threshold for adequate measurement
-
----
 
 ---
 
@@ -272,69 +206,11 @@ graph LR
 | **Phase 2** | Strong psychometric properties in independent sample | Proceed with confidence to hypothesis testing | ✅ Measurement confirmed |
 | **Phase 3** | Metric non-invariance across contexts | Use separate-group models; frame H4 as exploratory | ✅ Approach revised |
 
-### **The Visual Evidence: Four Critical Figures**
 
-![Figure 4: CFA Factor Loadings & Reliability](results/plots/cfa_figure1_loadings_reliability.png)
-*Independent sample validation: All loadings adequate (≥0.519), most excellent (>0.80). Reliability exceeds benchmarks.*
-
-![Figure 6: Invariance Decision Matrix](results/plots/invariance_decision_matrix.png)
-*Same constructs exist across groups (configural ✓), but weighted differently (metric ✗). Theoretically meaningful.*
-
-![Figure 8: Item-Level Loading Differences](results/plots/invariance_loading_differences.png)
-*Visual proof: EX1, VO1, SI1, FC1 function differently by context (Δλ=0.278-0.481). Context fundamentally shapes readiness.*
-
-![Figure 3: Sample Split Stratification](results/plots/sample_split_stratification.png)
-*Rigorous methodology: Statistically balanced split-sample design ensures valid independent confirmation (χ² p>0.05).*
-
-*Four-panel comprehensive dashboard showing: (1) CFI comparison across invariance levels, (2) Maximum loading differences by item and group, (3) Sample distribution across demographic categories, and (4) Summary decision matrix. Dashboard provides complete invariance testing overview supporting separate-group moderation approach for Phase 6.*
-
-**📊 Complete Statistics**: See `docs/AIRS_empirical_model_phase2_mermaid.md` for detailed psychometric results, and `airs/03_Measurement_Invariance.ipynb` for full invariance testing methodology and scholarly validation.
 
 ---
 
-## 📅 Timeline & Next Steps (Weeks 24-32)
 
-### Phase 2: Confirmatory Factor Analysis (✅ Complete)
-
-**Validation**: 2-factor model confirmed on independent holdout sample (N=163)
-- ✅ Good model fit achieved (all indices meet thresholds)
-- ✅ Factor 1: Excellent psychometric properties
-- ⚠️ Factor 2: Documented limitations (low reliability, 2 items)
-
-**📊 Details**: See `docs/AIRS_empirical_model_phase2_mermaid.md` for complete results
-
----
-
-### Phase 4: Structural Model & Hypothesis Testing (⏭️ Next Priority - Weeks 25-26)
-
-**Objective**: Test competing theoretical models (UTAUT2 vs. AIRS) and evaluate hypotheses H1-H3
-
-**Planned Analysis**:
-
-1. **Model 1 - UTAUT2 Baseline**: 7 UTAUT2 + VO → BI
-   - Extends Venkatesh et al. (2012) framework with VO reintroduced from UTAUT (2003)
-   - Test H1: Do all seven UTAUT2 predictors + VO significantly predict BI?
-
-2. **Model 2 - AIRS Extended**: 12 constructs (7 UTAUT2 + VO + 4 AI-specific) → BI
-
-   - Test H2: Do AI-specific constructs significantly predict BI beyond UTAUT2?
-   - Test H3: Does AIRS explain ≥10% additional variance? (ΔR² ≥ 0.10)
-3. **Nested Model Comparison**: Chi-square difference test, AIC, BIC comparison
-
-**Deliverables**:
-
-- `04_Structural_Model_Hypothesis_Testing.ipynb`: Model comparison, path coefficients, R² values, hypothesis test outcomes
-- APA-formatted results tables for dissertation Chapter 4
-
----
-
-### Phase 5: Mediation Analysis (Week 28)
-
-**Mediation Analysis (H5a-H5c)**:
-
-- **H5a**: Does Trust mediate Explainability → BI?
-- **H5b**: Does Trust mediate Ethical Risk → BI (negative pathway)?
-- **H5c**: Does AI Anxiety mediate Ethical Risk → BI (negative pathway)?
 ---
 
 ## 🚀 **What's Next: The Hypothesis Testing Journey**
@@ -391,70 +267,7 @@ Now that we have a validated measurement instrument, we can finally test the the
 | `05_Mediation_Analysis.ipynb` | H5 mediation | ⏳ Pending | Indirect effects |
 | `06_Moderation_Analysis.ipynb` | H4 separate-group | ⏳ Pending | Context-specific paths |
 
-**Figure 8: EFA Factor Loadings Heatmap**
 
-![EFA Factor Loadings Heatmap](results/plots/efa_loadings_heatmap_12item.png)
-
-*Heatmap showing standardized factor loadings for 12-item AIRS scale with 2-factor Promax rotation solution. Blue borders highlight primary loadings (≥0.50). Factor 1 (Mixed Readiness) shows 10 items with strong loadings; Factor 2 (Risk/Anxiety) shows 2 items (ER2, AX1) with adequate loadings. Color gradient from red (negative) to green (positive) visualizes loading strength and polarity.*
-
-**Notebooks**: `00_Create_Split_Samples.ipynb`, `01_EFA_Construct_Balanced_12_Item.ipynb`
-
----
-
-### Phase 2: CFA Validation ✅ COMPLETE
-
-**Objectives**:
-
-- Validate 2-factor structure on independent holdout sample
-- Assess measurement model fit
-- Calculate reliability and validity metrics
-- Test discriminant validity between factors
-
-**Methods**:
-
-- **Sample**: Holdout N=181 (independent validation)
-- **Estimator**: MLR for ordinal data
-- **Model**: 2 correlated factors (F1: 10 items, F2: 2 items)
-
-**Results**:
-
-- **Fit Indices**: CFI=0.952, TLI=0.941, RMSEA=0.080, χ²/df=2.36 ✅ All thresholds met
-- **Loadings**: All λ ≥ 0.519 ✅ Exceeds 0.50 threshold
-- **F1 Reliability**: α=0.924, CR=0.923, AVE=0.554 ✅ Excellent
-- **F2 Reliability**: α=0.691, CR=0.765, AVE=0.640 ✅ Adequate
-- **Discriminant Validity**: HTMT=0.527 < 0.85 ✅ Fornell-Larcker criterion met
-
-**Notebook**: `02_CFA_Measurement_Model.ipynb`
-
----
-
-### Phase 3: Measurement Invariance ✅ COMPLETE
-
-**Objectives**:
-- Test measurement equivalence across demographic groups
-- Determine appropriate approach for H4 moderation analysis
-- Validate construct functioning across contexts
-
-**Methods**:
-- **Groups**: Role (Student/Professional), Usage (Low/High), Adoption (Non-Adopter/Adopter)
-- **Tests**: Configural, metric, and scalar invariance
-- **Criteria**: ΔCFI ≤ 0.010 (Chen, 2007), loading differences ≤ 0.20 threshold
-
-**Results**:
-- **Configural Invariance**: ✅ SUPPORTED (CFI=0.922-0.946) - Same 2-factor structure across all groups
-- **Metric Invariance**: ❌ NOT SUPPORTED (ΔCFI=0.052-0.072, max loading diff=0.481)
-- **Scalar Invariance**: ❌ NOT SUPPORTED (ΔCFI=0.059-0.095, max mean diff=0.639)
-- **Key Finding**: Constructs function differently across contexts (theoretically meaningful, not measurement error)
-
-**Problematic Items**:
-- **EX1** (Explainability): Loading diff=0.481 (Students 0.349 vs. Professionals 0.830)
-- **VO1** (Voluntariness): Loading diff=0.474 (Low users 1.116 vs. High users 0.642)
-- **SI1** (Social Influence): Loading diff=0.278 (Students 0.705 vs. Professionals 0.983)
-- **FC1** (Facilitating Conditions): Loading diff=0.385 (Students 0.440 vs. Professionals 0.825)
-
-**Implications for Phase 5**:
-- ✅ Use separate-group structural models for H4 moderation analysis
-- ❌ Cannot use formal multi-group SEM with equality constraints
 ---
 
 ## 💡 **Practical Implications: What Organizations Can Do With AIRS**
@@ -498,116 +311,27 @@ Our 12-item scale serves two distinct functions:
 
 ## 📚 **Key References**
 
-This research builds on foundational work in technology acceptance and AI adoption:
-
+**Foundational Works**:
 - **Venkatesh et al. (2012)**: UTAUT2 framework (18,000+ citations)
 - **Hu & Bentler (1999)**: Model fit criteria (CFI, RMSEA thresholds)
-- **Hair et al. (2010)**: SEM best practices, sample size requirements
-- **Chen (2007)**: Measurement invariance thresholds (ΔCFI≤0.01)
-- **Langer et al. (2023)**: Trust in AI five-stage model
-- **Shin (2021)**: Explainability effects on AI acceptance
+- **Hair et al. (2010)**: SEM best practices
+- **Chen (2007)**: Measurement invariance thresholds
+- **Langer et al. (2023)**: Trust in AI model
+- **Shin (2021)**: Explainability effects
 
-*Complete bibliography available in `docs/AIRS DBA Project Proposal v4.md`*
-
----
-
-## 📖 Documentation Files
-
-### Primary Documentation
-
-- **`airs/ANALYSIS_PLAN.md`**: Comprehensive dissertation roadmap (v1.1) with Phase 1 complete, RQ/H tracking
-- **`airs/CONSISTENCY_CHECK.md`**: Cross-document verification (proposal, analysis plan, code alignment)
-- **`docs/AIRS DBA Project Proposal v4.md`**: Theoretical framework, hypotheses (H1-H5), methodology
-- **`docs/DATA_DICTIONARY.md`**: Complete variable definitions, scales, measurement notes
-- **`docs/AIRS Survey Instrument v5.md`**: Research questions, hypotheses, complete survey with item provenance
-- **`EXPLORATORY_PHASE_LEARNINGS.md`**: Methodological insights from exploratory work (N=281) that informed Phase 1
-
-### Phase 1 Analysis (✅ Complete)
-
-- **`airs/01_EFA_Construct_Balanced_12_Item.ipynb`**: **Authoritative source** for 12-item scale development
-  - Split-sample methodology (Development N=162, Holdout N=163)
-  - 2-factor structure (Facilitators, Barriers)
-  - Item selection (1 per 12 constructs)
-  - Psychometric validation (α=0.901, R²=0.811)
-  - Complete reproducibility documentation
-
-### Archive - Exploratory Phase
-
-- **`archive/notebooks_exploratory/`**: Exploratory notebooks (N=281, pre-dissertation)
-  - Data-driven item selection and optimization
-  - Single-sample validation (no split-sample design)
-  - Informed dissertation methodology decisions
-  - See `EXPLORATORY_PHASE_LEARNINGS.md` for insights synthesis
+*Complete bibliography (40+ sources) in `docs/AIRS DBA Project Proposal v4.md`*
 
 ---
 
-## 📚 Key Methodological References
+## 📚 **Documentation**
 
-### UTAUT2 Foundation
-
-- **Venkatesh, V., Thong, J. Y. L., & Xu, X. (2012)**. Consumer acceptance and use of information technology: Extending the unified theory of acceptance and use of technology. *MIS Quarterly, 36*(1), 157-178.
-
-  - Seminal framework establishing the seven UTAUT2 predictors (PE, EE, SI, FC, HM, PV, HB)
-  - Over 18,000 citations validating theoretical robustness
-- **Venkatesh, V., Morris, M. G., Davis, G. B., & Davis, F. D. (2003)**. User acceptance of information technology: Toward a unified view. *MIS Quarterly, 27*(3), 425-478.
-
-  - Original UTAUT framework synthesizing eight prior models
-
-### Psychometric Validation Standards
-
-- **Hu, L. T., & Bentler, P. M. (1999)**. Cutoff criteria for fit indexes in covariance structure analysis: Conventional criteria versus new alternatives. *Psychological Methods, 4*(1), 1-24.
-
-  - Established fit index thresholds (CFI ≥ 0.90, RMSEA ≤ 0.08) used in Phase 2 CFA
-- **Fornell, C., & Larcker, D. F. (1981)**. Evaluating structural equation models with unobservable variables and measurement error. *Journal of Marketing Research, 18*(1), 39-50.
-
-  - Convergent/discriminant validity criteria (AVE ≥ 0.50, √AVE > correlations)
-- **Hair, J. F., Black, W. C., Babin, B. J., & Anderson, R. E. (2010)**. *Multivariate data analysis* (7th ed.). Pearson.
-
-  - Comprehensive guide for SEM, sample size requirements, interpretation standards
-
-### AI-Specific Constructs
-
-- **Langer, M., Landers, R. N., & König, C. J. (2023)**. Trust in artificial intelligence: A five-stage model for understanding drivers of trust and beliefs. *Academy of Management Annals, 17*(1), 47-81.
-
-  - Theoretical foundation for Trust in AI construct
-- **Shin, D. (2021)**. The effects of explainability and causability on perception, trust, and acceptance: Implications for explainable AI. *International Journal of Human-Computer Studies, 146*, 102551.
-
-  - Explainability effects on adoption outcomes
-- **Hagendorff, T. (2020)**. The ethics of AI ethics: An evaluation of guidelines. *Minds and Machines, 30*(1), 99-120.
-
-  - Ethical risk concerns in AI deployment
-
-### Statistical Methods
-
-- **Henseler, J., Ringle, C. M., & Sarstedt, M. (2015)**. A new criterion for assessing discriminant validity in variance-based structural equation modeling. *Journal of the Academy of Marketing Science, 43*(1), 115-135.
-  - HTMT criterion for discriminant validity assessment
-
-**Complete bibliography** with 40+ additional references available in `docs/AIRS DBA Project Proposal v4.md`
-
+**Analysis Files**: `airs/ANALYSIS_PLAN.md` | `airs/CONSISTENCY_CHECK.md`
+**Theory & Methods**: `docs/AIRS DBA Project Proposal v4.md` | `docs/DATA_DICTIONARY.md`
+**Notebooks**: `airs/00-03_*.ipynb` (Phases 1-3 complete)
+**Archive**: `archive/notebooks_exploratory/` (N=281 exploratory phase)
 ---
 
-## 🔬 Methodological Quality
-
-**Key Strengths**:
-- Split-sample validation prevents overfitting (Development N=162, Holdout N=163)
-- Data-driven factor determination via parallel analysis
-- Construct-balanced design maintains theoretical coverage
-- Full reproducibility (documented seeds, version control, complete notebooks)
-
----
-
-## 💼 Practical Applications
-
-### For Organizations
-
-1. **Readiness Assessment**: Administer 12-item AIRS to employees before AI deployment
-2. **Gap Identification**: Use construct-level scores to identify specific weaknesses (e.g., low Trust, high Anxiety)
-3. **Targeted Interventions**:
-   - **Low Facilitators**: Improve training (EE), demonstrate value (PE), build trust (TR)
-   - **High Barriers**: Address ethical concerns (ER), provide explanations (EX), reduce anxiety (AX)
----
-
-## 🔮 **Looking Forward: Future Research Directions**
+## 🔮 **Future Research Directions**
 
 ### **Immediate Next Steps** (Weeks 25-32)
 
