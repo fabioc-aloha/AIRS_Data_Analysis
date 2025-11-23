@@ -3,13 +3,14 @@
 
 ## Quick Reference
 
-**Current Status**: Phases 1-5 Complete ✅ (Scale Development → Validation → Invariance Testing → Structural Modeling → Mediation Analysis)
+**Current Status**: Phases 1-6 Complete ✅ (Scale Development → Validation → Invariance Testing → Structural Modeling → Mediation Analysis → Moderation Analysis)
 **Week**: 27 of 32 (November 23, 2025)
-**Key Discovery**: Dual-pathway suppression - Ethical Risk operates entirely through Trust (64% mediated) + Anxiety (96% mediated)
+**Key Discovery Phase 5**: Dual-pathway suppression - Ethical Risk operates entirely through Trust (64% mediated) + Anxiety (96% mediated)
+**Key Discovery Phase 6**: Usage frequency moderates anxiety (2.95× effect difference) - exposure effect confirmed; explainability paradox (students > professionals)
 **Scale**: 12-item construct-balanced diagnostic tool (2-factor structure validated)
 **Samples**: Development N=181 | Holdout N=181 | Full N=362
-**Current Phase**: Phase 6 - Moderation analysis (H4a-e) via separate-group models [ACTIVE]
-**Critical Insight**: Anxiety pathway DOMINATES (51% stronger than trust) - emotional management > cognitive understanding for ER intervention
+**Current Phase**: Phase 7 - Integration and Chapter 4 writing [ACTIVE]
+**Critical Insight**: Context influences who is vulnerable (novice anxiety) more than what influences them (social norms, transparency)
 
 ### Analysis Roadmap
 
@@ -21,8 +22,8 @@
 | **3. Context** | 03 | Measurement Invariance | Configural ✓, Metric ✗ (context matters) | ✅ Complete | 24 |
 | **4. Prediction** | 04 | Structural Models (H1-H3) | H1 ✓ (R²=0.8046), H2 ✓ (3/4), H3 ⚠️ (ΔR²=1.46% sig) | ✅ Complete | 25-26 |
 | **5. Mechanisms** | 05 | Mediation Analysis (H5a-c) | Dual-pathway suppression (96% anxiety, 64% trust) | ✅ Complete | 27 |
-| **6. Moderation** | 06 | Separate-Group Models (H4a-e) | Context-specific path coefficients | ⏭️ In Progress | 28-29 |
-| **7. Integration** | 07 | Comprehensive Results | Chapter 4 draft | ⏳ Pending | 30-32 |
+| **6. Moderation** | 06 | Separate-Group Models (H4a-e) | 2/5 hypotheses supported (H4d exposure effect) | ✅ Complete | 27 |
+| **7. Integration** | 07 | Comprehensive Results | Chapter 4 draft | ⏭️ In Progress | 28-32 |
 
 ---
 
@@ -124,16 +125,41 @@
 - **AI Usage Frequency** (Low vs. High)
 - **AI Adoption Status** (Adopter vs. Non-adopter)
 
-**Specific Predictions**:
-- **H4a (Role)**: Trust and Explainability effects stronger for professionals (discretionary context)
-- **H4b (Role)**: Social Influence effects stronger for students (normative pressure)
-- **H4c (Usage)**: Habit effect stronger for high-frequency users
-- **H4d (Usage)**: Anxiety effect weaker for high-frequency users (exposure effect)
-- **H4e (Adoption)**: Facilitators (Factor 1) more salient for adopters; Barriers (Factor 2) more salient for non-adopters
+**Specific Predictions & Results**:
 
-**Status**: ⏳ Pending Phase 6 (Weeks 28-29, adjusted approach based on Phase 3 findings)
-**Test**: Separate-group structural models (exploratory moderation analysis)
-**Note**: Phase 3 found metric/scalar non-invariance, requiring separate-group models instead of formal multi-group SEM with equality constraints
+- **H4a (Role)**: Trust and Explainability effects stronger for professionals (discretionary context)
+  - **Status**: ❌ NOT SUPPORTED (REVERSED)
+  - **Result**: EX significant ONLY for full-time students (β=0.120*, p=.011, CI [.041, .199]); TR non-significant all professional roles
+  - **Interpretation**: Explainability paradox - students value transparency MORE than professionals, likely due to learning integrity concerns
+
+- **H4b (Role)**: Social Influence effects stronger for students (normative pressure)
+  - **Status**: ❌ NOT SUPPORTED
+  - **Result**: SI non-significant for all role groups; no evidence of differential effects
+  - **Interpretation**: Social influence operates uniformly across roles; AI adoption driven by individual evaluation
+
+- **H4c (Usage)**: Habit effect stronger for high-frequency users
+  - **Status**: ❌ NOT SUPPORTED (OPPOSITE PATTERN)
+  - **Result**: HB marginally stronger for LOW users (β=0.096, p=.053) vs HIGH users (β=0.047, p=.204); neither significant via bootstrap CI
+  - **Interpretation**: Paradox suggests low users build intentional routines while high users rely on competing motivators (PE, HM)
+
+- **H4d (Usage)**: Anxiety effect weaker for high-frequency users (exposure effect)
+  - **Status**: ✅ FULLY SUPPORTED
+  - **Result**: Low-usage anxiety 2.95× stronger than high-usage (β=-0.230*** vs β=-0.078*, CI excludes zero for low)
+  - **Interpretation**: Exposure desensitization confirmed - frequent use reduces anxiety's barrier effect (Venkatesh, 2000; Compeau & Higgins, 1995)
+  - **Key Finding**: Most robust moderation effect; early adopters need anxiety mitigation interventions
+
+- **H4e (Adoption)**: Facilitators (Factor 1) more salient for adopters; Barriers (Factor 2) more salient for non-adopters
+  - **Status**: ⚠️ PARTIALLY SUPPORTED
+  - **Result (Adopters, N=326, R²=.789)**: Strong facilitators - PV (β=.209***), PE (β=.164***), SI (β=.151***), HM (β=.151***); Anxiety barrier (β=-.104**); Ethical Risk ineffective (β≈0)
+  - **Result (Non-Adopters, N=36, R²=.680)**: No significant predictors - underpowered for 12-predictor model
+  - **Interpretation**: Value-driven adoption model confirmed for adopters; non-adopter sample too small (9.9%) for reliable inference
+
+**Phase 6 Status**: ✅ COMPLETE (Week 27, November 23, 2025)
+**Test**: Separate-group structural models with bootstrap CIs (5000 iterations)
+**Addresses**: RQ5 (contextual boundary conditions)
+**Overall Result**: 2 of 5 hypotheses supported (40% support rate)
+**Key Discovery**: Usage frequency moderates anxiety (exposure effect); role/habit hypotheses not supported or reversed
+**Note**: Phase 3 metric/scalar non-invariance justified separate-group approach instead of formal multi-group SEM
 
 ---
 
@@ -602,16 +628,20 @@ This plan bridges the gap between current exploratory analysis and the dissertat
 | 7.7 | Mediation: Explainability → Trust → BI | ✅ Complete (H5a) | **P2** |
 | 7.7 | Mediation: Ethical Risk → Trust → BI | ✅ Complete (H5b) | **P2** |
 | 7.7 | Mediation: Ethical Risk → Anxiety → BI | ✅ Complete (H5c) | **P2** |
-| 7.7 | Moderation: Role, usage, adoption status | ⏳ Phase 6 (Week 28-29) | **P3** |
+| 7.7 | Moderation: Role, usage, adoption status | ✅ Complete (2/5 supported) | **P3** |
 | H1 | Test UTAUT2 constructs → BI | ✅ Complete (β=0.425***, R²=0.243) | **P2** |
 | H2 | Test AI-specific constructs → BI | ✅ Complete (3/4 paths sig) | **P2** |
 | H3 | Incremental validity (UTAUT2 vs. AIRS) | ✅ Complete (ΔR²=0.260***) | **P2** |
-| H4a-e | Contextual moderators (5 hypotheses) | ⏳ Phase 6 (Week 28-29) | **P3** |
-| H5a | EX → TR → BI mediation | ✅ Complete (64% mediated) | **P2** |
+| H4a | Role moderates TR/EX (professionals) | ❌ Not supported (reversed - students) | **P3** |
+| H4b | Role moderates SI (students) | ❌ Not supported (no differences) | **P3** |
+| H4c | Usage moderates HB (high users) | ❌ Not supported (opposite pattern) | **P3** |
+| H4d | Usage moderates AX (high users) | ✅ Complete (2.95× effect difference) | **P3** |
+| H4e | Adoption moderates facilitators/barriers | ⚠️ Partial (adopters only, N=36 too small) | **P3** |
+| H5a | EX → TR → BI mediation | ✅ Complete (55% mediated) | **P2** |
 | H5b | ER → TR → BI mediation | ✅ Complete (64% mediated) | **P2** |
 | H5c | ER → AX → BI mediation | ✅ Complete (96% mediated) | **P2** |
 
-**Overall Progress**: 17/20 requirements complete (85%) | Phase 6 will complete remaining 3 moderation requirements
+**Overall Progress**: 20/23 requirements complete (87%) | Phase 6 complete: 2/5 hypotheses supported, 3 null findings documented
 
 ---
 
