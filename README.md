@@ -209,6 +209,12 @@ graph LR
 
 This dual-purpose design supports both **diagnostic assessment** (12-construct granularity) and **predictive modeling** (2-factor parsimony).
 
+**Figure 1: CFA Comprehensive Validation Dashboard**
+
+![CFA Comprehensive Validation](results/plots/cfa_comprehensive_validation.png)
+
+*Four-panel validation dashboard showing: (1) Factor loadings and reliability metrics, (2) Model fit indices with thresholds, (3) Discriminant validity assessment (HTMT and Fornell-Larcker criteria), and (4) Inter-factor correlation. All panels confirm excellent measurement model quality on independent holdout sample (N=181).*
+
 ### Phase 3: Measurement Invariance Testing (November 23, 2025)
 
 **Groups Tested**: Role (Students vs. Professionals) | Usage (Low vs. High) | Adoption (Non-Adopters vs. Adopters)
@@ -233,6 +239,18 @@ This dual-purpose design supports both **diagnostic assessment** (12-construct g
 - ✅ Frame moderation analysis as exploratory with group-specific parameter estimates
 
 **Methodological Validation**: Thresholds and interpretations fact-checked against Chen (2007), Cheung & Rensvold (2002), Byrne et al. (1989), Vandenberg & Lance (2000). Non-invariance is common and acceptable when constructs genuinely differ across contexts.
+
+**Figure 2: Measurement Invariance Decision Matrix**
+
+![Measurement Invariance Decision Matrix](results/plots/invariance_decision_matrix.png)
+
+*Heatmap showing invariance test outcomes across three demographic groupings (Role, Usage, Adoption). Green (√) indicates support, red (×) indicates lack of support. Configural invariance is universally supported (same factor structure), but metric and scalar invariance fail across all groups due to theoretically meaningful contextual differences in construct functioning.*
+
+**Figure 3: Comprehensive Invariance Testing Dashboard**
+
+![Comprehensive Invariance Dashboard](results/plots/invariance_comprehensive_dashboard.png)
+
+*Four-panel comprehensive dashboard showing: (1) CFI comparison across invariance levels, (2) Maximum loading differences by item and group, (3) Sample distribution across demographic categories, and (4) Summary decision matrix. Dashboard provides complete invariance testing overview supporting separate-group moderation approach for Phase 6.*
 
 **📊 Complete Statistics**: See `docs/AIRS_empirical_model_phase2_mermaid.md` for detailed psychometric results, and `airs/03_Measurement_Invariance.ipynb` for full invariance testing methodology and scholarly validation.
 
@@ -437,6 +455,12 @@ This dual-purpose design supports both **diagnostic assessment** (12-construct g
 - **F2 Reliability**: α = 0.691 (2 items, Adequate after refinement)
 - **Loadings**: All items ≥ 0.41 (range: 0.41-0.96)
 - **Variance Explained**: 57.5% (2-factor model)
+
+**Figure 4: Factor Determination - Scree Plot with Parallel Analysis**
+
+![EFA Scree Plot 12-Item Justification](results/plots/efa_scree_plot_12_item_justification.png)
+
+*Scree plot showing eigenvalues for 12-item construct-balanced scale with parallel analysis comparison. Data eigenvalues (blue) exceed random eigenvalues (red) for first two factors only, supporting empirical 2-factor structure over theoretical 12-factor model. Kaiser criterion (eigenvalue > 1.0, dashed line) suggests 3 factors, but parallel analysis provides more conservative and psychometrically sound 2-factor solution.*
 
 **Notebooks**: `00_Create_Split_Samples.ipynb`, `01_EFA_Construct_Balanced_12_Item.ipynb`
 
