@@ -1,6 +1,7 @@
 {
   "PE": {
     "selected_item": "PE2",
+    "question_wording": "Using AI improves the quality of my work or studies",
     "preliminary_selection": {
       "factor": "F1",
       "loading": 0.7823363463129858,
@@ -19,6 +20,7 @@
   },
   "EE": {
     "selected_item": "EE1",
+    "question_wording": "Learning to use AI tools is easy for me",
     "preliminary_selection": {
       "factor": "F4",
       "loading": 0.52925477017476,
@@ -37,6 +39,7 @@
   },
   "SI": {
     "selected_item": "SI1",
+    "question_wording": "People whose opinions I value encourage me to use AI tools",
     "preliminary_selection": {
       "factor": "F1",
       "loading": 0.6561683530639444,
@@ -55,6 +58,7 @@
   },
   "FC": {
     "selected_item": "FC1",
+    "question_wording": "I have access to training or tutorials for the AI tools I use",
     "preliminary_selection": {
       "factor": "F3",
       "loading": 0.8835449491682689,
@@ -73,6 +77,7 @@
   },
   "HM": {
     "selected_item": "HM2",
+    "question_wording": "AI tools make my work or studies more interesting",
     "preliminary_selection": {
       "factor": "F1",
       "loading": 0.809515347127673,
@@ -91,6 +96,7 @@
   },
   "PV": {
     "selected_item": "PV2",
+    "question_wording": "Using AI tools is worth the learning curve",
     "preliminary_selection": {
       "factor": "F1",
       "loading": 0.9021131891332269,
@@ -109,6 +115,7 @@
   },
   "HB": {
     "selected_item": "HB2",
+    "question_wording": "I tend to rely on AI tools by default when I need help with tasks",
     "preliminary_selection": {
       "factor": "F1",
       "loading": 0.8665562980624306,
@@ -127,6 +134,7 @@
   },
   "VO": {
     "selected_item": "VO1",
+    "question_wording": "I choose to use AI tools in my work because I find them helpful, not because I am required to",
     "preliminary_selection": {
       "factor": "F1",
       "loading": 0.6603734432420915,
@@ -145,6 +153,7 @@
   },
   "TR": {
     "selected_item": "TR2",
+    "question_wording": "I trust the AI tools that are available to me",
     "preliminary_selection": {
       "factor": "F1",
       "loading": 0.8777474772245224,
@@ -163,6 +172,7 @@
   },
   "EX": {
     "selected_item": "EX1",
+    "question_wording": "I understand how the AI tools I use generate their outputs",
     "preliminary_selection": {
       "factor": "F3",
       "loading": 0.5045145166760099,
@@ -181,6 +191,7 @@
   },
   "ER": {
     "selected_item": "ER2",
+    "question_wording": "I am concerned about privacy risks when using AI tools",
     "preliminary_selection": {
       "factor": "F2",
       "loading": 0.699323824940229,
@@ -199,6 +210,7 @@
   },
   "AX": {
     "selected_item": "AX1",
+    "question_wording": "I feel uneasy about the increasing use of AI",
     "preliminary_selection": {
       "factor": "F2",
       "loading": 0.6273113113702266,

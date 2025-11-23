@@ -78,6 +78,38 @@ This was our first major decision. We could have:
 - Represents barriers that must be overcome
 - **α=0.691** (adequate reliability for 2-item scale)
 
+#### **Selected Scale Items**
+
+**Table 1: 12-Item AI Readiness Scale**
+
+| Construct | Item | Question Wording |
+|-----------|------|------------------|
+| PE | PE2 | Using AI improves the quality of my work or studies |
+| EE | EE1 | Learning to use AI tools is easy for me |
+| SI | SI1 | People whose opinions I value encourage me to use AI tools |
+| FC | FC1 | I have access to training or tutorials for the AI tools I use |
+| HM | HM2 | AI tools make my work or studies more interesting |
+| PV | PV2 | Using AI tools is worth the learning curve |
+| HB | HB2 | I tend to rely on AI tools by default when I need help with tasks |
+| VO | VO1 | I choose to use AI tools in my work because I find them helpful, not because I am required to |
+| TR | TR2 | I trust the AI tools that are available to me |
+| EX | EX1 | I understand how the AI tools I use generate their outputs |
+| ER | ER2 | I am concerned about privacy risks when using AI tools |
+| AX | AX1 | I feel uneasy about the increasing use of AI |
+
+*Note: Constructs are Performance Expectancy (PE), Effort Expectancy (EE), Social Influence (SI), Facilitating Conditions (FC), Hedonic Motivation (HM), Price Value (PV), Habit (HB), Voluntariness (VO), Trust (TR), Explainability (EX), Ethical Risk (ER), and AI Anxiety (AX). All items rated on 7-point Likert scale (1=Strongly Disagree, 7=Strongly Agree).*
+
+**Table 2: Behavioral Intention Outcome Variable (4 items)**
+
+| Item | Question Wording |
+|------|------------------|
+| BI1 | I am ready to use more AI tools in my work or studies |
+| BI2 | I would recommend AI tools to others |
+| BI3 | I see AI as an important part of my future |
+| BI4 | I plan to increase my use of AI tools in the next six months |
+
+*Note: Behavioral Intention (BI) serves as the dependent variable in predictive validity analyses.*
+
 ### **Key Insight #1: AI Readiness Is Two-Dimensional**
 
 > *People don't evaluate AI adoption on 12 separate dimensions. They ask two simpler questions: (1) "Am I ready and supported?" and (2) "What are the risks?" This has profound implications for intervention design.*
