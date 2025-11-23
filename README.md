@@ -398,7 +398,7 @@ graph TB
 
     %% H5b: Ethical Risk → Trust → BI (COGNITIVE PATHWAY - 64% mediated)
     ER -->|"<b>Path a</b><br/>β=-0.314***<br/>t=-6.822<br/>p<.0001<br/><i>Trust erosion</i>"| TR
-    
+
     %% H5c: Ethical Risk → Anxiety → BI (AFFECTIVE PATHWAY - 96% mediated, DOMINANT)
     ER ==>|"<b>Path a</b><br/>β=0.622***<br/>t=16.850<br/>p<.0001<br/><i>Anxiety amplification</i><br/><b>STRONGEST PATH</b>"| AX
     AX ==>|"<b>Path b</b><br/>β=-0.536***<br/>t=-11.160<br/>p<.0001<br/><b>POWERFUL INHIBITOR</b>"| BI
