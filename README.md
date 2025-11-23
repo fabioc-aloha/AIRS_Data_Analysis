@@ -329,6 +329,7 @@ Our 12-item scale serves two distinct functions:
 **Theory & Methods**: `docs/AIRS DBA Project Proposal v4.md` | `docs/DATA_DICTIONARY.md`
 **Notebooks**: `airs/00-03_*.ipynb` (Phases 1-3 complete)
 **Archive**: `archive/notebooks_exploratory/` (N=281 exploratory phase)
+
 ---
 
 ## 🔮 **Future Research Directions**
