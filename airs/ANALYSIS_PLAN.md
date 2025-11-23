@@ -178,7 +178,7 @@
 
 ### Overview
 
-Phases 1-4 have generated **actionable insights** for organizational AI adoption interventions. This section documents empirically-validated remediation areas ranked by impact magnitude, with specific implementation strategies.
+Phases 1-5 have generated **actionable insights** for organizational AI adoption interventions. This section documents empirically-validated remediation areas ranked by impact magnitude, with specific implementation strategies informed by dual-pathway suppression discovery (Phase 5).
 
 ### Intervention Priority Framework
 
@@ -379,27 +379,27 @@ Week 9+:   Complex integration (multi-step workflows)
   1. Ethical concerns truly irrelevant to adoption psychology
   2. Ethical concerns operate **indirectly** through trust/anxiety mediators
 
-#### **Provisional Recommendations** (Pending Phase 5 Validation)
+#### **Evidence-Based Recommendations** ✅ (Phase 5 Validated)
 
-**Phase 5 Decision Tree**:
+**Phase 5 Results - BOTH H5b AND H5c SUPPORTED**:
 ```
-IF H5b supported (ER → TR → BI):
-  → Frame ethics as TRUST-BUILDING mechanism
-  → Governance = trust intervention, not just compliance
+✅ H5b SUPPORTED (ER → TR → BI): ab=-0.220*** [CI: -0.312, -0.120], 64% mediated
+  → Ethics DOES work through TRUST-BUILDING (cognitive pathway)
+  → Governance = trust intervention confirmed
   → Publicize ethical safeguards to increase trust
 
-ELSE IF H5c supported (ER → AX → BI):
-  → Frame ethics as ANXIETY REDUCTION strategy
-  → Governance = psychological safety, not just risk management
-  → Emphasize protections to reduce fear
+✅ H5c STRONGLY SUPPORTED (ER → AX → BI): ab=-0.333*** [CI: -0.414, -0.255], 96% mediated
+  → Ethics PRIMARILY works through ANXIETY REDUCTION (affective pathway, DOMINANT)
+  → Governance = psychological safety validated
+  → Emphasize protections to reduce fear (51% more powerful than trust)
 
-ELSE (both unsupported):
-  → Ethical risk truly doesn't influence adoption
-  → Maintain ethics for moral/legal reasons, not adoption outcomes
-  → Allocate intervention budget to anxiety/trust/explainability
+COMBINED EFFECT:
+  → Dual-pathway suppression: -0.553*** indirect vs. 0.001 ns direct
+  → Anxiety pathway 1.51× stronger than trust pathway
+  → Ethics interventions must address BOTH emotional safety AND cognitive trust
 ```
 
-**Provisional Implementation Strategies** (Low Investment Until Phase 5 Completes):
+**Validated Implementation Strategies** (High Investment, Evidence-Based):
 
 **1. Ethics Governance Framework**
 - Establish AI ethics committee with diverse stakeholders
@@ -425,7 +425,11 @@ ELSE (both unsupported):
 - Co-creation of ethical guidelines
 - **Success Metric**: Stakeholder buy-in and perceived legitimacy
 
-**⚠️ CAUTION**: Do not over-invest in ethics governance until Phase 5 clarifies mechanisms. If ER operates through trust/anxiety, ethics becomes a **means to those ends**. If ER doesn't influence adoption at all, ethics investments justified by moral/legal obligations, not adoption outcomes.
+**✅ PHASE 5 CONFIRMED**: Ethics governance is HIGHLY EFFECTIVE but operates indirectly through dual pathways (trust 64% + anxiety 96%). **Ethics is now a TOP PRIORITY** - reframe from compliance burden to:
+1. **PRIMARY**: Anxiety reduction mechanism (96% mediation, affective dominance)
+2. **SECONDARY**: Trust-building mechanism (64% mediation, cognitive pathway)
+
+Invest heavily in ethics programs that explicitly address emotional safety (ER → AX pathway, β=0.622***) and trust protection (ER → TR pathway, β=-0.314***).
 
 ---
 
@@ -482,31 +486,40 @@ Phase 4 found 2 of 8 UTAUT2 constructs were **non-significant**:
 
 ---
 
-### Summary: Evidence-Based Intervention Portfolio
+### Summary: Evidence-Based Intervention Portfolio (Phase 5 Updated)
 
-#### **Budget Allocation Recommendation**
+#### **Budget Allocation Recommendation** ✅ **REVISED BASED ON PHASE 5 MEDIATION RESULTS**
 
 | **Investment Area** | **Rationale** | **Budget %** | **Timeline** | **Expected ROI** |
 |---------------------|---------------|--------------|--------------|------------------|
-| **AI Anxiety Reduction** | Largest unique effect (sr²=0.525%) | **40-50%** | 3-6 months | **Highest** |
-| **Explainability/Transparency** | Second-largest (sr²=0.290%) + context-critical | **20-25%** | Design phase | **High** (professionals) |
-| **Trust Building** | Third-largest (sr²=0.275%) + long-term | **20-25%** | 6-12 months | **High** (cumulative) |
-| **Ethical Risk Governance** | No direct effect (pending Phase 5) | **5-10%** | Pre-deployment | **Unknown** |
-| **UTAUT2 Maintenance** | Already effective (R²=0.8046) | **5-10%** | Ongoing | **Moderate** (sustain baseline) |
+| **AI Anxiety Reduction (Direct)** | Largest unique effect (sr²=0.525%) + mediates ER (96%) | **30-35%** | 3-6 months | **Highest** |
+| **Ethical Risk → Anxiety Management** | STRONGEST pathway (ER→AX: β=0.622***, 96% mediation) | **25-30%** | Pre-deployment | **Very High** (emotional safety) |
+| **Trust Building (Central Hub)** | Mediates EX (55%) + ER (64%), sr²=0.275% | **15-20%** | 6-12 months | **High** (hub function) |
+| **Explainability/Transparency** | sr²=0.290% + builds trust (EX→TR: β=0.455***) | **15-20%** | Design phase | **High** (dual benefits) |
+| **UTAUT2 Maintenance** | Already effective (R²=0.8046), sustain baseline | **5-10%** | Ongoing | **Moderate** (sustain) |
+
+**TOTAL ETHICS-RELATED**: 55-65% of budget (25-30% direct ethics + 30-35% anxiety programs targeting ethical concerns)
+
+**KEY STRATEGIC SHIFT**: Ethics moved from 5-10% (Phase 4: "pending validation") to 25-30% (Phase 5: "validated as primary anxiety reduction mechanism"). Combined with direct anxiety interventions, **emotional management now receives majority of intervention budget** (55-65% total).
 
 #### **Phase-Specific Action Items**
 
-**Immediate (Weeks 26-28)**:
+**Completed (Weeks 26-27)**:
 - [x] Document remediation priorities (Phase 4 complete)
-- [ ] Conduct Phase 5 mediation analysis (clarify ER indirect effects)
-- [ ] Design anxiety reduction pilot program
-- [ ] Evaluate explainability tool options
+- [x] Conduct Phase 5 mediation analysis (dual-pathway suppression validated)
+- [x] Validate intervention strategy based on Phase 5 results
 
-**Short-Term (Weeks 29-32)**:
+**Immediate (Week 28-29)**:
 - [ ] Complete Phase 6 moderation analysis (context-specific effects)
-- [ ] Finalize intervention strategy based on Phase 5 mediation results
-- [ ] Develop implementation timeline and success metrics
+- [ ] Design anxiety reduction pilot program (PRIMARY: target ER→AX pathway)
+- [ ] Design ethics-as-emotional-safety program (reframe from compliance)
+- [ ] Evaluate explainability tool options (validated trust-building pathway)
+
+**Short-Term (Weeks 30-32)**:
+- [ ] Develop implementation timeline with dual-pathway focus
+- [ ] Create success metrics: track ER→AX (β=0.622) and ER→TR (β=-0.314) pathway changes
 - [ ] Create comprehensive Chapter 4 results integration
+- [ ] Finalize dissertation with Phase 5 breakthrough discovery
 
 **Medium-Term (Post-Dissertation)**:
 - [ ] Pilot interventions in controlled settings

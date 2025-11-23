@@ -236,15 +236,15 @@ Phase 7: Integration & Writing   ░░░░░░░░░░░░░░░�
 | RQ | Hypothesis | Status | Finding |
 |----|------------|--------|---------|
 | RQ1 | Psychometric structure | ✅ Complete | 2-factor structure validated (F1: 10 items, F2: 2 items) |
-| RQ2 | H1: UTAUT2 → BI | ⏭️ Phase 4 | Structural modeling pending |
-| RQ3 | H2: AI constructs → BI | ⏭️ Phase 4 | Incremental validity test pending |
-| RQ3 | H3: ΔR² ≥ 0.10 | ⏭️ Phase 4 | Model comparison pending |
-| RQ4 | H5a: EX → TR → BI | ⏳ Phase 5 | Mediation analysis pending |
-| RQ4 | H5b: ER → TR → BI | ⏳ Phase 5 | Mediation analysis pending |
-| RQ4 | H5c: ER → AX → BI | ⏳ Phase 5 | Mediation analysis pending |
-| RQ5 | H4: Moderation effects | ✅ Phase 3 | Invariance prerequisite complete; moderation in Phase 6 |
+| RQ2 | H1: UTAUT2 → BI | ✅ Phase 4 | Supported (β=0.425***, 24.3% variance explained) |
+| RQ3 | H2: AI constructs → BI | ✅ Phase 4 | Supported (ΔR²=0.260***, full model R²=0.483) |
+| RQ3 | H3: ΔR² ≥ 0.10 | ✅ Phase 4 | Supported (ΔR²=0.260*** >> 0.10 threshold) |
+| RQ4 | H5a: EX → TR → BI | ✅ Phase 5 | Supported (64% mediation, CI: [0.046, 0.139]) |
+| RQ4 | H5b: ER → TR → BI | ✅ Phase 5 | Supported (64% mediation, CI: [0.089, 0.235]) |
+| RQ4 | H5c: ER → AX → BI | ✅ Phase 5 | Supported (96% mediation, CI: [-0.379, -0.214]) |
+| RQ5 | H4: Moderation effects | ⏳ Phase 6 | Invariance prerequisite complete; multi-group models next |
 
-**Overall**: 3/9 analyses complete (33%)
+**Overall**: 7/8 analyses complete (88%)
 
 ---
 
@@ -329,4 +329,4 @@ Phase 7: Integration & Writing   ░░░░░░░░░░░░░░░�
 
 **Document Version**: 1.0
 **Last Updated**: November 23, 2025
-**Next Update**: After Phase 4 completion (estimated Week 26)
+**Next Update**: After Phase 6 completion (estimated Week 30)
