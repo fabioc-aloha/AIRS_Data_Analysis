@@ -23,7 +23,9 @@
 | **4. Prediction** | 04 | Structural Models (H1-H3) | H1 ✓ (R²=0.8046), H2 ✓ (3/4), H3 ⚠️ (ΔR²=1.46% sig) | ✅ Complete | 25-26 |
 | **5. Mechanisms** | 05 | Mediation Analysis (H5a-c) | Dual-pathway suppression (96% anxiety, 64% trust) | ✅ Complete | 27 |
 | **6. Moderation** | 06 | Separate-Group Models (H4a-e) | 2/5 hypotheses supported (H4d exposure effect) | ✅ Complete | 27 |
-| **7. Integration** | 07 | Comprehensive Results | Chapter 4 draft | ⏭️ In Progress | 28-32 |
+| **7a. Tool Usage** | 04 | Tool-Specific Patterns (RQ6) | Descriptive analysis of tool preferences | ⏭️ In Progress | 28 |
+| **7b. Qualitative** | 05 | Feedback Themes (RQ10) | Thematic analysis + triangulation | ⏭️ In Progress | 28 |
+| **7c. Integration** | 07 | Comprehensive Results | Chapter 4 draft with Phase 7 findings | ⏭️ In Progress | 28-32 |
 
 ---
 
@@ -61,6 +63,18 @@
 - Addressed by: Separate-group structural models (Phase 6 ✅, H4a-e)
 - **Answer**: YES - Usage frequency moderates anxiety (2.95× stronger for low users, H4d SUPPORTED); Role reverses explainability effect (students > professionals, H4a REVERSED); Adoption status shows value-driven model for adopters (H4e PARTIALLY SUPPORTED). 2 of 5 hypotheses supported (40% support rate).
 - **Key Discovery**: Context determines **who** is vulnerable (novice users for anxiety) more than **what** influences them (universal constructs with context-varying magnitudes)
+
+**RQ6**: Do usage patterns differ significantly across AI tool types (enterprise-integrated vs. consumer-facing vs. specialized tools)?
+- Addressed by: Tool usage descriptive analysis (Phase 7a ⏭️, exploratory)
+- **Variables**: Individual tool frequencies (MS Copilot, ChatGPT, Gemini, Other)
+- **Methods**: Frequency distributions, role/education/industry comparisons, correlations with AIRS constructs, usage profile clustering
+- **Expected Findings**: ChatGPT dominance among students, MS Copilot preference among professionals, multi-tool users show higher adoption readiness
+
+**RQ10**: What themes emerge from open-text feedback that extend beyond quantitative constructs?
+- Addressed by: Qualitative thematic analysis (Phase 7b ⏭️, exploratory)
+- **Data**: Open-text feedback field (n=TBD respondents with feedback)
+- **Methods**: Braun & Clarke (2006) thematic coding, sentiment analysis, validation against AIRS patterns
+- **Expected Themes**: Job displacement fears, creativity concerns, accuracy verification burden, autonomy loss - emergent constructs not captured by 12-item scale
 
 ---
 
@@ -684,20 +698,24 @@ Phase 4 found 2 of 8 UTAUT2 constructs were **non-significant**:
 - [x] Conduct Phase 5 mediation analysis (dual-pathway suppression validated)
 - [x] Validate intervention strategy based on Phase 5 results
 
-**Immediate (Week 28-29)**: ✅ Phase 6 Complete
+**Immediate (Week 28)**: ⏭️ Phase 7 In Progress
 - [x] Complete Phase 6 moderation analysis (context-specific effects)
 - [x] Create comprehensive visualizations (3 figures: role, usage, adoption)
 - [x] Integrate Phase 6 findings into ANALYSIS_PLAN.md
+- [ ] **Phase 7a**: Run tool usage patterns analysis (RQ6) - descriptive statistics, role/industry comparisons, AIRS correlations
+- [ ] **Phase 7b**: Conduct qualitative feedback analysis (RQ10) - thematic coding, sentiment analysis, triangulation with quantitative patterns
+- [ ] Integrate Phase 7 findings into ANALYSIS_PLAN.md and README.md
 - [ ] Design anxiety reduction pilot program (PRIMARY: target novice users per H4d 2.95× finding)
 - [ ] Design ethics-as-emotional-safety program (reframe from compliance)
 - [ ] Evaluate explainability tool options (context-specific: educational vs workplace per H4a)
 
-**Short-Term (Weeks 30-32)**:
+**Short-Term (Weeks 29-32)**:
+- [ ] Document unexplored variables and emergent themes for future research section
 - [ ] Develop implementation timeline with dual-pathway focus
 - [ ] Create success metrics: track ER→AX (β=0.622) and ER→TR (β=-0.314) pathway changes
 - [ ] Integrate "Who vs What" theoretical contribution into dissertation framework
-- [ ] Create comprehensive Chapter 4 results integration with Phase 6 visualizations
-- [ ] Finalize dissertation with Phase 5+6 breakthrough discoveries
+- [ ] Create comprehensive Chapter 4 results integration with Phase 6+7 findings
+- [ ] Finalize dissertation with Phase 5+6 breakthrough discoveries + Phase 7 triangulation
 
 **Medium-Term (Post-Dissertation)**:
 - [ ] Pilot interventions in controlled settings
@@ -1478,6 +1496,127 @@ scipy>=1.7.0           # Statistical tests
 - Report both p-values and effect sizes (Cohen's d, f², R²)
 - Use α = 0.05 for hypothesis tests
 - Flag marginal results (0.05 < p < 0.10) for discussion
+
+---
+
+## Phase 7: Supplementary Exploratory Analyses
+
+### Overview
+**Purpose**: Extend core hypothesis testing (Phases 1-6) with exploratory analyses of unused survey variables
+**Status**: In Progress (Week 28)
+**Scope**: Tool usage patterns (RQ6) + Qualitative feedback themes (RQ10)
+**Classification**: Supplementary analyses to enrich dissertation findings and provide triangulation
+
+### RQ6: Tool-Specific Usage Patterns (Phase 7a)
+
+**Research Question**: Do usage patterns differ significantly across AI tool types (enterprise-integrated vs. consumer-facing vs. specialized tools)?
+
+**Notebook**: `04_Tool_Usage_Patterns.ipynb`
+
+**Variables**:
+- `Usage_MSCopilot`: Microsoft 365 Copilot / Microsoft Copilot (1-5 frequency scale)
+- `Usage_ChatGPT`: ChatGPT (OpenAI) (1-5 frequency scale)
+- `Usage_Gemini`: Google Gemini (1-5 frequency scale)
+- `Usage_Other`: Other AI tools (Claude, Perplexity, Grok, etc.) (1-5 frequency scale)
+- **Note**: Currently combined into single "usage frequency" dichotomization for H4d moderation; this phase explores tool-specific patterns
+
+**Methods**:
+1. **Descriptive Statistics**: Frequency distributions, means, standard deviations for each tool
+2. **Tool Preference Rankings**: Identify most/least adopted tools by sample
+3. **Usage Profiles**: Classify users as Non-Users (0 tools), Single-Tool (1 tool), Multi-Tool (2+ tools)
+4. **Context Comparisons**: Tool usage by role (student vs. professional), education level, industry
+5. **AIRS Correlations**: Relationships between tool usage and 12 AIRS constructs (PE, EE, SI, FC, HM, PV, HB, VO, TR, EX, ER, AX, BI)
+
+**Expected Findings**:
+- **ChatGPT dominance**: Likely highest usage due to accessibility and brand recognition
+- **MS Copilot in workplace**: Professionals may prefer enterprise-integrated tools (security, compliance)
+- **Multi-tool advantage**: Users with diverse tool experience likely show higher BI, lower AX
+- **Habit correlation**: Tool usage frequency should correlate strongly with HB (Habit) construct
+
+**Visualizations** (6 planned):
+1. Tool usage frequency distributions (stacked bar chart)
+2. Usage profiles pie chart (Non-User vs. Single-Tool vs. Multi-Tool)
+3. Tool usage by role comparison (grouped bar chart)
+4. AIRS correlations heatmap (4 tools × 13 constructs)
+5. Usage profile radar chart (AIRS constructs by user segment)
+6. Number of tools distribution
+
+**Contribution**:
+- **Practical**: Inform tool-specific training and intervention strategies
+- **Theoretical**: Test whether tool choice moderates adoption patterns (beyond aggregate usage frequency)
+- **Validation**: Cross-check H4d findings (usage frequency moderation) with tool-specific granularity
+
+---
+
+### RQ10: Qualitative Feedback Themes (Phase 7b)
+
+**Research Question**: What themes emerge from open-text feedback that extend beyond quantitative constructs?
+
+**Notebook**: `05_Qualitative_Feedback_Analysis.ipynb`
+
+**Data**:
+- `Feedback`: Open-text responses about AI experiences (n=TBD with responses out of N=362)
+- Currently unexplored qualitative data collected but not analyzed
+
+**Methods**:
+1. **Familiarization**: Read through all responses to identify initial patterns
+2. **Initial Coding**: Generate codes using keyword-based thematic identification
+3. **Theme Development**: Group codes into higher-order themes (Braun & Clarke, 2006)
+4. **Sentiment Analysis**: Classify responses as positive, negative, mixed, or neutral
+5. **Validation**: Compare qualitative themes with quantitative AIRS construct scores
+6. **Integration**: Identify emergent constructs not captured by 12-item Likert scale
+
+**Expected Themes** (Based on UNEXPLORED_VARIABLES.md):
+1. **Accuracy/Reliability Concerns**: Need to verify AI outputs, "trust but verify" patterns
+2. **Job Displacement Fears**: Career threat distinct from general AI anxiety (AX)
+3. **Creativity Impact**: Concerns about originality, authorship, artistic value
+4. **Control/Autonomy**: Fear of becoming dependent or losing human decision-making authority
+5. **Explainability Demands**: "Black box" concerns (overlap with EX construct - validation opportunity)
+6. **Ethical Bias**: Fairness, discrimination worries (overlap with ER construct - validation opportunity)
+7. **Productivity Gains**: Time savings, efficiency improvements (overlap with PE construct - validation opportunity)
+8. **Learning/Education**: AI as teaching tool or threat to learning integrity
+
+**Validation Strategy**:
+- **Convergent Validation**: Do respondents mentioning "trust" have higher TR2 scores?
+- **Divergent Insights**: Are "job displacement" mentions uncorrelated with ER2 (privacy focus)?
+- **Emergent Constructs**: Do creativity/autonomy themes represent gaps in AIRS coverage?
+
+**Visualizations** (4 planned):
+1. Word frequency bar chart (top 20-30 keywords)
+2. Theme prevalence bar chart (% of responses mentioning each theme)
+3. Sentiment distribution pie chart (positive/negative/mixed/neutral)
+4. Feedback response characteristics (length distribution, response rate by role)
+
+**Contribution**:
+- **Triangulation**: Validate quantitative AIRS constructs with unsolicited qualitative evidence
+- **Discovery**: Identify emergent themes for future AIRS scale expansion (e.g., Job Displacement as ER3)
+- **Richness**: Provide illustrative quotes for dissertation narrative and implications discussion
+
+---
+
+### Phase 7 Integration with Core Dissertation
+
+**Relationship to Phases 1-6**:
+- **Not hypothesis-driven**: RQ6 and RQ10 are exploratory, not confirmatory
+- **Supplementary scope**: Phase 7 enriches findings but is not required for dissertation completion
+- **Triangulation focus**: Qualitative + tool-specific data validate Phase 1-6 conclusions
+
+**Dissertation Integration Plan**:
+1. **Chapter 4 Results**: Add Phase 7 subsections after Phase 6 moderation analysis
+   - Section 4.7a: Tool-Specific Usage Patterns (descriptive, not inferential)
+   - Section 4.7b: Qualitative Themes and Validation
+2. **Chapter 5 Discussion**: Use Phase 7 findings to:
+   - Validate construct measurement (e.g., explainability mentions correlate with EX scores)
+   - Identify future research directions (e.g., job displacement as ER extension)
+   - Enrich practical implications (e.g., tool-specific anxiety interventions)
+3. **Appendices**: Full thematic coding scheme and representative quotes
+
+**Timeline** (Week 28):
+- **Monday-Tuesday**: Run 04_Tool_Usage_Patterns.ipynb, generate 6 visualizations
+- **Wednesday-Thursday**: Run 05_Qualitative_Feedback_Analysis.ipynb, identify themes, extract quotes
+- **Friday**: Integrate Phase 7 findings into ANALYSIS_PLAN.md and README.md, update status tables
+
+**Decision Point**: Phase 7 is **approved for inclusion** (Option A from UNEXPLORED_VARIABLES.md). If analysis becomes too time-consuming (>1 week), shift to Option B (reserve for post-dissertation publications).
 
 ---
 
