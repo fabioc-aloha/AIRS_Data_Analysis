@@ -1,7 +1,8 @@
 # Documentation - Active Dissertation Files
 
-This directory contains **active documentation** for the dissertation (N=318, Phase 1 complete).
+This directory contains **active documentation** for the dissertation (N=362, Phases 1-3 complete).
 
+**Current Status**: Week 24 of 32 | Scale validated through measurement invariance testing
 **Archive Location**: See `../archive/docs_exploratory/` for 15 exploratory phase reports (N=281)
 
 ---
@@ -12,7 +13,7 @@ This directory contains **active documentation** for the dissertation (N=318, Ph
 - **`AIRS DBA Project Proposal v4.md`** - Theoretical framework, hypotheses (H1-H5), methodology
   - Updated November 2025 with H5 (mediation), VO correction
   - 8 UTAUT2 + 4 AI-specific = 12 constructs
-  - Sample: N≈500 proposed → N=318 actual (159/159 split)
+  - Sample: N≈500 proposed → N=362 current (181/181 split, data collection ongoing)
 
 - **`AIRS Survey Instrument v5.md`** - Complete survey with item provenance
   - Research questions (RQ1-RQ5)
@@ -81,6 +82,7 @@ This directory contains **active documentation** for the dissertation (N=318, Ph
 
 ---
 
-**Last Updated**: November 22, 2025 (Week 24/32)
-**Status**: Phase 1 complete, Phase 2 (CFA) next
+**Last Updated**: November 23, 2025 (Week 24/32)
+**Status**: Phases 1-3 complete (Discovery → Validation → Invariance), Phase 4 (Hypothesis Testing) next
 **Primary Analysis Location**: `../airs/` (dissertation notebooks)
+**Progress Report**: See `../README.md` for narrative journey and key insights

@@ -1,51 +1,61 @@
 # AIRS Analysis Notebooks
+**The Journey from Theory to Validated Instrument**
 
-This folder contains the primary analysis notebooks for the AI Readiness Scale (AIRS) psychometric validation study.
+This folder contains the sequential analysis notebooks documenting our analytical journey from theoretical framework to validated measurement instrument.
 
-## Analysis Workflow
+## The Story in Notebooks
 
-### Phase 1: Data Preparation
-**00_Create_Split_Samples.ipynb**
-- Creates stratified 50/50 split (development N=181, holdout N=181)
-- Stratification by Work_Context × AI_Adoption
-- Validates balance across demographic and item-level distributions
-- **Status**: ✅ Complete
+### Phase 1: Discovery (Weeks 23-24) ✅
+**00_Create_Split_Samples.ipynb** - *Proving Methodological Rigor*
+- Stratified 50/50 split (Development N=181, Holdout N=181)
+- Statistical validation of balance (χ² tests, p>0.05)
+- **Key Insight**: Split-sample design prevents overfitting
 
-### Phase 2: Scale Development
-**01_EFA_Construct_Balanced_12_Item.ipynb**
-- Develops 12-item construct-balanced diagnostic scale
-- Manual refinement: ER1→ER2, AX2→AX1 for improved F2 reliability
-- Determines empirical factor structure (2 factors via parallel analysis)
-- Validates reliability (12-item α = 0.845) and factorability (KMO = 0.919)
-- **Status**: ✅ Complete
+**01_EFA_Construct_Balanced_12_Item.ipynb** - *The Factor Structure Surprise*
+- Expected: 12 factors (theory-driven)
+- Found: 2 factors (data-driven via parallel analysis)
+- **Key Insight**: AI readiness is two-dimensional ("Can I?" + "What risks?")
+- Reliability: 12-item α=0.845, F1 α=0.924, F2 α=0.691
 
-**02_CFA_Measurement_Model.ipynb**
-- Validates 2-factor structure on holdout sample (N=181)
-- Model fit: CFI=0.925, TLI=0.905, RMSEA=0.101, χ²/df=2.85
-- F1 reliability: α=0.924, CR=0.923, AVE=0.554
-- F2 reliability: α=0.691, CR=0.765, AVE=0.640
-- Discriminant validity: HTMT=0.527, Fornell-Larcker criterion met
-- **Status**: ✅ Complete
+### Phase 2: Validation (Week 24) ✅
+**02_CFA_Measurement_Model.ipynb** - *Independent Confirmation*
+- Independent holdout sample validation (N=181)
+- Model fit: CFI=0.952, TLI=0.941, RMSEA=0.080
+- **Key Insight**: 2-factor structure replicates in new sample
+- Psychometric quality: F1 excellent, F2 adequate
+
+### Phase 3: Context Discovery (Week 24) ✅
+**03_Measurement_Invariance.ipynb** - *Why Context Matters*
+- Multi-group CFA across Role, Usage, Adoption status
+- Configural ✓ (constructs exist), Metric ✗ (loadings differ)
+- **Key Insight**: Constructs function differently by context (EX1 Δλ=0.481, VO1 Δλ=0.474)
+- **Implication**: Use separate-group models for H4 moderation testing
 
 **Output Files:**
 - `../data/airs_12item_selection.json` - Item selection documentation
 - `../data/AIRS_clean_dev_12item.csv` - 12-item development dataset
 
-## Scale Characteristics
+## Validated Scale Characteristics
 
-**12-Item AIRS Scale:**
-- **Purpose**: Dual-purpose diagnostic and predictive tool
-- **Sample**: N=362 (181 dev, 181 holdout)
-- **Items**: 12 items across 10 constructs
-- **Factors**: 2 empirically supported dimensions
-  - **F1: AI Readiness** (10 items: PE2, EE1, SI1, FC1, HM2, PV2, HB2, VO1, TR2, EX1)
-  - **F2: Tech-Averse Barriers** (2 items: ER2, AX1)
-- **Reliability**:
-  - Overall 12-item scale: α = 0.845 (Good)
-  - F1: α = 0.924, CR = 0.923, AVE = 0.554 (Excellent)
-  - F2: α = 0.691, CR = 0.765, AVE = 0.640 (Acceptable)
-- **Model Fit**: CFI = 0.925, TLI = 0.905, RMSEA = 0.101, χ²/df = 2.85
-- **Discriminant Validity**: HTMT = 0.527 (< 0.85), Fornell-Larcker criterion met
+**AIRS 12-Item Diagnostic Scale:**
+- **Sample**: N=362 (Development N=181 | Holdout N=181 | Full N=362)
+- **Theoretical Framework**: 12 constructs (7 UTAUT2 + VO + 4 AI-specific)
+- **Empirical Structure**: 2 factors discovered via parallel analysis
+  - **Factor 1: Mixed Readiness** (10 items: PE2, EE1, SI1, FC1, HM2, PV2, HB2, VO1, TR2, EX1)
+  - **Factor 2: Risk/Anxiety** (2 items: ER2, AX1)
+
+**Psychometric Quality (Holdout Sample N=181):**
+- **Overall Scale**: α=0.845 (Good), Variance Explained=57.5%
+- **Factor 1**: α=0.924, CR=0.923, AVE=0.554 (Excellent)
+- **Factor 2**: α=0.691, CR=0.765, AVE=0.640 (Adequate)
+- **Model Fit**: CFI=0.952 (Excellent), TLI=0.941 (Good), RMSEA=0.080 (Acceptable)
+- **Discriminant Validity**: HTMT=0.527 (<0.85), √AVE > correlations ✓
+
+**Measurement Invariance (Full Sample N=362):**
+- **Configural**: ✅ Supported (CFI 0.922-0.946)
+- **Metric**: ❌ Not supported (ΔCFI>0.01) - context-dependent loadings
+- **Scalar**: ❌ Not supported (ΔCFI>0.01) - different response patterns
+- **Implication**: Separate-group models required for moderation analyses (H4)
 
 **Selected Items:**
 - PE: PE2, EE: EE1, SI: SI1, FC: FC1
