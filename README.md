@@ -98,12 +98,15 @@ Finding a factor structure in one sample is easy. Proving it replicates in a *ne
 
 **Why This Matters**: Most studies use the same data for discovery *and* validation, inflating fit statistics. Our approach provides true independent confirmation.
 
+![Figure 3: Sample Split Stratification Validation](results/plots/sample_split_stratification.png)
+*Four-panel validation proving our split-sample strategy: (1) Work Context balanced across samples, (2) AI Adoption balanced across samples, (3) Both samples exceed N≥150 threshold, (4) Chi-square tests confirm independence (p>0.05). This rigorous stratification ensures equivalent samples for discovery and validation.*
+
 ### **The CFA Results: Does the Model Hold?**
 
-![Figure 3: CFA Factor Loadings & Reliability](results/plots/cfa_figure1_loadings_reliability.png)
+![Figure 4: CFA Factor Loadings & Reliability](results/plots/cfa_figure1_loadings_reliability.png)
 *All standardized loadings ≥0.519 (adequate) with most >0.80 (excellent). Reliability metrics exceed recommended thresholds.*
 
-![Figure 4: Model Fit & Discriminant Validity](results/plots/cfa_figure2_model_fit_validity.png)
+![Figure 5: Model Fit & Discriminant Validity](results/plots/cfa_figure2_model_fit_validity.png)
 *CFI=0.952 (excellent), RMSEA=0.080 (acceptable). HTMT ratios <0.85 confirm factors are distinct.*
 
 ### **Psychometric Quality Assessment**
@@ -116,7 +119,7 @@ Finding a factor structure in one sample is easy. Proving it replicates in a *ne
 | **CFI** | 0.952 | — | ≥0.90 | ✅ Excellent |
 | **RMSEA** | 0.080 | — | ≤0.08 | ✅ Acceptable |
 
-### **Key Insight #2: Measurement Quality Confirmed**
+### **Key Insight #2: Strong Evidence from Independent Validation**
 
 > *The 2-factor structure isn't just a statistical artifact—it replicates in an independent sample with excellent psychometric properties. This gives us confidence to proceed to hypothesis testing.*
 
@@ -141,27 +144,29 @@ We needed to test whether our scale measures AI readiness consistently across di
 | **Metric** | Same factor loadings across groups | ❌ **NOT SUPPORTED** (ΔCFI > 0.01) | Items weighted differently by group |
 | **Scalar** | Same item intercepts across groups | ❌ **NOT SUPPORTED** (ΔCFI > 0.01) | Different baseline response patterns |
 
-![Figure 5: Invariance Testing Decision Matrix](results/plots/invariance_decision_matrix.png)
+![Figure 6: Invariance Testing Decision Matrix](results/plots/invariance_decision_matrix.png)
 *Configural invariance established, but metric/scalar invariance failed. This fundamentally changes our analytical approach.*
 
-![Figure 6: Comprehensive Invariance Dashboard](results/plots/invariance_comprehensive_dashboard.png)
+![Figure 7: Comprehensive Invariance Dashboard](results/plots/invariance_comprehensive_dashboard.png)
 *CFI comparison shows >0.01 drops when constraining loadings (metric) and intercepts (scalar), indicating non-invariance.*
 
 ### **The Surprise Discovery: Constructs Function Differently Across Contexts**
 
-This wasn't a failure—it was a **theoretically meaningful finding**:
+This wasn't a failure—it was a **theoretically meaningful finding**. But which items were driving the non-invariance?
 
-**What Metric Non-Invariance Means**:
-- A professional weighing "Performance Expectancy" differently than a student isn't measurement error
-- It reflects real contextual differences: professionals prioritize productivity gains, students prioritize learning
-- Items like SI1 (social influence), FC1 (facilitating conditions), EX1 (explainability), and VO1 (voluntariness) showed the largest differences
+![Figure 8: Item-Level Loading Differences Across Groups](results/plots/invariance_loading_differences.png)
+*Visual evidence of metric non-invariance: EX1 (Explainability), VO1 (Voluntariness), SI1 (Social Influence), and FC1 (Facilitating Conditions) show substantial loading differences (Δλ > 0.15) across Role, Usage, and Adoption groups. Color intensity indicates magnitude of difference—darker colors reveal items that function fundamentally differently by context.*
+- A professional weighing "Explainability" (λ=0.830) far more heavily than a student (λ=0.349) isn't measurement error
+- It reflects **real contextual differences**: professionals face accountability pressures that students don't
+- High AI users perceive "Voluntariness" differently (λ=0.642) than novices (λ=1.116)—experience reduces perceived coercion
+- Social influence operates differently in academic vs. professional settings
 
-**Problematic Items Across Groups**:
+**Key Loading Differences**:
 ```
-EX1 (Explainability):   Δλ = 0.15-0.22 (professionals weight transparency more heavily)
-VO1 (Voluntariness):    Δλ = 0.18-0.25 (students feel more coerced than professionals)
-SI1 (Social Influence): Δλ = 0.12-0.19 (peer pressure varies by context)
-FC1 (Facilitating Cond): Δλ = 0.14-0.21 (resource perceptions differ)
+EX1 (Explainability):    Students 0.349 vs. Professionals 0.830 (Δλ=0.481)
+VO1 (Voluntariness):     High Usage 0.642 vs. Low Usage 1.116 (Δλ=0.474)
+SI1 (Social Influence):  Students 0.705 vs. Professionals 0.983 (Δλ=0.278)
+FC1 (Facilitating Cond): Students 0.440 vs. Professionals 0.825 (Δλ=0.385)
 ```
 
 ### **Key Insight #3: Context Shapes AI Readiness in Fundamental Ways**
@@ -267,16 +272,19 @@ graph LR
 | **Phase 2** | Strong psychometric properties in independent sample | Proceed with confidence to hypothesis testing | ✅ Measurement confirmed |
 | **Phase 3** | Metric non-invariance across contexts | Use separate-group models; frame H4 as exploratory | ✅ Approach revised |
 
-### **The Three Figures That Tell Our Story**
+### **The Visual Evidence: Four Critical Figures**
 
-![Figure 1: CFA Factor Loadings & Reliability](results/plots/cfa_figure1_loadings_reliability.png)
+![Figure 4: CFA Factor Loadings & Reliability](results/plots/cfa_figure1_loadings_reliability.png)
 *Independent sample validation: All loadings adequate (≥0.519), most excellent (>0.80). Reliability exceeds benchmarks.*
 
-![Figure 2: Model Fit & Discriminant Validity](results/plots/cfa_figure2_model_fit_validity.png)
-*Good fit achieved (CFI=0.952, RMSEA=0.080). Factors are distinct but related (HTMT<0.85, r=-0.37).*
-
-![Figure 3: Invariance Decision Matrix](results/plots/invariance_decision_matrix.png)
+![Figure 6: Invariance Decision Matrix](results/plots/invariance_decision_matrix.png)
 *Same constructs exist across groups (configural ✓), but weighted differently (metric ✗). Theoretically meaningful.*
+
+![Figure 8: Item-Level Loading Differences](results/plots/invariance_loading_differences.png)
+*Visual proof: EX1, VO1, SI1, FC1 function differently by context (Δλ=0.278-0.481). Context fundamentally shapes readiness.*
+
+![Figure 3: Sample Split Stratification](results/plots/sample_split_stratification.png)
+*Rigorous methodology: Statistically balanced split-sample design ensures valid independent confirmation (χ² p>0.05).*
 
 *Four-panel comprehensive dashboard showing: (1) CFI comparison across invariance levels, (2) Maximum loading differences by item and group, (3) Sample distribution across demographic categories, and (4) Summary decision matrix. Dashboard provides complete invariance testing overview supporting separate-group moderation approach for Phase 6.*
 
