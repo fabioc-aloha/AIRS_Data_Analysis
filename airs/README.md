@@ -31,9 +31,25 @@ This folder contains the sequential analysis notebooks documenting our analytica
 - **Key Insight**: Constructs function differently by context (EX1 Δλ=0.481, VO1 Δλ=0.474)
 - **Implication**: Use separate-group models for H4 moderation testing
 
-**Output Files:**
-- `../data/airs_12item_selection.json` - Item selection documentation
-- `../data/AIRS_clean_dev_12item.csv` - 12-item development dataset
+### Phase 4: Hypothesis Testing (Weeks 25-26) ✅
+**04_Structural_Model_Hypothesis_Testing.ipynb** - *The Anxiety Discovery*
+- H1: UTAUT2 R²=0.8046 (80.46%), 6/8 constructs significant — STRONGLY SUPPORTED
+- H2: 3/4 AI constructs significant (TR*, EX*, AX**; ER ns) — PARTIALLY SUPPORTED
+- H3: ΔR²=0.0146 (1.46%), F(4,349)=7.025, p<.001*** — PARTIALLY SUPPORTED
+- **Key Discovery**: AI Anxiety dominates with sr²=0.525% (36% of total ΔR²)
+- **Critical Finding**: Anxiety explains MORE than Trust+Explainability combined
+- **Intervention Priority**: Anxiety reduction > Transparency > Trust-building
+
+**Phase 4 Output Files:**
+- `../results/tables/structural_model_comparison.csv` - Model fit metrics
+- `../results/tables/structural_coefficients_utaut2.csv` - UTAUT2 baseline coefficients
+- `../results/tables/structural_coefficients_airs.csv` - AIRS extended coefficients
+- `../results/plots/correlation_vif_heatmap.png` - Multicollinearity network (300 dpi)
+- `../results/plots/residual_diagnostics.png` - 4-panel assumption validation (300 dpi)
+- `../results/plots/effect_sizes_with_ci.png` - Standardized coefficients with 95% CIs (300 dpi)
+- `../results/plots/incremental_contributions.png` - Variance decomposition + semi-partial R² (300 dpi)
+- `../results/plots/predicted_vs_actual.png` - Model comparison scatter plots (300 dpi)
+- `FACT_CHECK_NOTEBOOK_04.md` - Comprehensive statistical validation (66KB, 60+ checks)
 
 ## Validated Scale Characteristics
 
@@ -57,35 +73,34 @@ This folder contains the sequential analysis notebooks documenting our analytica
 - **Scalar**: ❌ Not supported (ΔCFI>0.01) - different response patterns
 - **Implication**: Separate-group models required for moderation analyses (H4)
 
+**Structural Model Results (Full Sample N=362):**
+- **UTAUT2 Baseline**: R²=0.8046 (Adj R²=0.8001), 6/8 constructs significant
+  - Significant: PE***, SI***, HM***, PV***, HB**, VO*
+  - Non-significant: EE (p=.113), FC (p=.179)
+- **AIRS Extended**: R²=0.8191 (Adj R²=0.8129), 3/4 AI constructs significant
+  - Significant: TR* (β=0.091, p=.022), EX* (β=0.069, p=.019), AX** (β=-0.099, p=.002)
+  - Non-significant: ER (β=0.001, p=.917)
+- **Incremental Validity**: ΔR²=0.0146 (1.46%), F(4,349)=7.025, p<.001***, Cohen's f²=0.0805
+- **Semi-partial R² Hierarchy**: AX (0.525%**) > EX (0.290%*) > TR (0.275%*) > ER (0.001% ns)
+- **Key Finding**: AI Anxiety dominates — explains 36% of total AI contribution (ΔR²)
+
 **Selected Items:**
 - PE: PE2, EE: EE1, SI: SI1, FC: FC1
 - HM: HM2, PV: PV2, HB: HB2, VO: VO1
 - TR: TR2, EX: EX1, ER: ER2, AX: AX1
 
-### Phase 3: Measurement Invariance
-**03_Measurement_Invariance.ipynb**
-- Tests invariance across Role (Student vs. Professional), Usage (Low vs. High), Adoption (Non-Adopter vs. Adopter)
-- Configural invariance: SUPPORTED (CFI 0.922-0.946, all groups maintain 2-factor structure)
-- Metric invariance: NOT SUPPORTED (max loading diffs 0.414-0.481, ΔCFI 0.052-0.072)
-- Scalar invariance: NOT SUPPORTED (max mean diffs 0.487-0.639, ΔCFI 0.059-0.095)
-- Implication: Constructs function differently across contexts (theoretically meaningful); use separate-group models for H4
-- **Status**: ✅ Complete (November 23, 2025)
 
-**Output Files:**
-- `../results/tables/measurement_invariance_summary.csv` - Complete invariance test results
-- `../results/plots/` - 5 visualization figures with comprehensive interpretations
 
-## Next Steps (Phase 4-6 Pending)
+## Next Steps (Phase 5-7 Pending)
 
-### Phase 4: Structural Models & Hypothesis Testing
-
-**04_Structural_Model_Hypothesis_Testing.ipynb** (to be created)
-- H1-H3: Test direct effects of constructs on BI
-- Compare UTAUT2 baseline vs. AIRS extended model
-- Calculate incremental variance explained (ΔR²)
+### Phase 5: Mediation Analysis (Weeks 27-28) ⏳ NEXT PRIORITY
 
 **05_Mediation_Analysis.ipynb** (to be created)
-- Test mediation paths (e.g., EX → TR → BI)
+- **H5a**: Explainability → Trust → BI (does transparency build trust?)
+- **H5b**: Ethical Risk → Trust → BI (explains ER non-significance via trust erosion?)
+- **H5c**: Ethical Risk → Anxiety → BI (alternative pathway via anxiety amplification?)
+- Bootstrap confidence intervals (5000 iterations)
+- **Critical Question**: Why is Ethical Risk non-significant in direct test?
 
 **06_Moderation_Analysis.ipynb** (to be created)
 - H4: Test moderation by role, usage, business unit
@@ -119,5 +134,7 @@ See `../archive/` folder for outdated analysis versions:
 
 **Project**: DBA Dissertation - AI Readiness Scale Validation
 **Institution**: Touro University Worldwide
-**Timeline**: Weeks 23-32
-**Last Updated**: November 22, 2025
+**Timeline**: Weeks 23-32 (Currently Week 26)
+**Phases Complete**: 1-4 (Discovery, Validation, Invariance, Structural Modeling) ✅
+**Next Phase**: 5 (Mediation Analysis) ⏳
+**Last Updated**: November 23, 2025
