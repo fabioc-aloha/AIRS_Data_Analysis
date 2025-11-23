@@ -379,14 +379,36 @@ Our 12-item scale serves two distinct functions:
 
 ## 📬 **Contact & Collaboration**
 
-**Student**: Fabio Correa
-**Email**: fcorrea@student.touro.edu
-**Institution**: Touro University Worldwide
-**Program**: Doctor of Business Administration (DBA)
-**Chair**: Dr. Karina Kasztelnik
-**Mentor**: Dr. Venkatesh
-
-**Repository**: [github.com/fabioc-aloha/AIRS_Data_Analysis](https://github.com/fabioc-aloha/AIRS_Data_Analysis)
+<table>
+<tr>
+  <td><strong>Student</strong></td>
+  <td>Fabio Correa</td>
+</tr>
+<tr>
+  <td><strong>Email</strong></td>
+  <td><a href="mailto:fcorrea@student.touro.edu">fcorrea@student.touro.edu</a></td>
+</tr>
+<tr>
+  <td><strong>Institution</strong></td>
+  <td>Touro University Worldwide</td>
+</tr>
+<tr>
+  <td><strong>Program</strong></td>
+  <td>Doctor of Business Administration (DBA)</td>
+</tr>
+<tr>
+  <td><strong>Chair</strong></td>
+  <td>Dr. Karina Kasztelnik</td>
+</tr>
+<tr>
+  <td><strong>Mentor</strong></td>
+  <td>Dr. Venkatesh</td>
+</tr>
+<tr>
+  <td><strong>Repository</strong></td>
+  <td><a href="https://github.com/fabioc-aloha/AIRS_Data_Analysis">github.com/fabioc-aloha/AIRS_Data_Analysis</a></td>
+</tr>
+</table>
 
 ---
 
