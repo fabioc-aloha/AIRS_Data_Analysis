@@ -1326,6 +1326,14 @@ Based on Phase 4 structural modeling results (N=362), we've identified specific,
 - Validate gateway tool hypothesis in other cross-context adoption sequences
 - Explore Self-Determination Theory foregrounding in technology acceptance models
 
+**Detailed Research Questions** (see Appendix for full specifications)
+- **RQ6-RQ7**: Tool-specific and industry-specific adoption patterns (high priority, feasible with current data)
+- **RQ8**: Experience and expertise moderation effects (expertise reversal hypothesis)
+- **RQ9-RQ10**: Accessibility, inclusive design, and emergent qualitative themes
+- **Additional directions**: Organizational climate effects, governance practices, cross-cultural validation, physiological measurement innovations
+
+*For complete methodological specifications, hypotheses, sample size requirements, and prioritization framework, see the Appendix: Extended Future Research Questions at the end of this document.*
+
 ---
 
 ## 📬 **Contact & Collaboration**
@@ -1630,6 +1638,302 @@ This research stands on the shoulders of giants:
 - **Dr. Karina Kasztelnik**: For guidance navigating the dissertation journey
 - **Committee Members**: Dr. Jerome Jones, Dr. Donna Day for their oversight
 - **Open-Source Community**: Python developers enabling reproducible science
+
+---
+
+## 📎 **Appendix: Extended Future Research Questions**
+
+This appendix provides detailed specifications for future research directions that extend beyond the primary AIRS validation study. Questions are organized by priority, feasibility, and theoretical contribution.
+
+### **A.1. Tool-Specific Adoption Patterns (RQ6)** 🔥 *High Priority*
+
+**Research Question**: Do usage patterns differ significantly across AI tool types (enterprise-integrated vs. consumer-facing vs. specialized tools)?
+
+**Why This Matters**: Current AIRS analyses aggregate across tool types, yet enterprise tools (MS Copilot) may activate different adoption mechanisms than consumer tools (ChatGPT). Understanding tool-specific patterns enables targeted deployment strategies.
+
+**Variables**: Usage_MSCopilot, Usage_ChatGPT, Usage_Gemini, Usage_Other
+
+**Proposed Methods**:
+- **Cluster analysis**: Identify user segments (single-tool, multi-tool, power users, non-users)
+- **ANOVA/regression**: Tool usage predicting BI, controlling for UTAUT2/AIRS constructs
+- **Cross-tabulation**: Tool preferences by Role, Industry, Experience
+
+**Expected Findings**:
+- ChatGPT dominance among students (accessibility, zero cost)
+- MS Copilot dominance among professionals (enterprise integration, IT support)
+- Multi-tool users show higher readiness (exploration mindset)
+
+**Sample Requirements**: ✅ Feasible with N=362 (minimum 50 users per tool type expected)
+
+---
+
+### **A.2. Industry-Specific Adoption Barriers (RQ7)** 🔥 *High Priority*
+
+**Research Question**: Do industry contexts moderate the relationships between AI constructs and adoption intention?
+
+**Why This Matters**: Regulated industries (Healthcare, Finance, Government) face stricter compliance requirements that may amplify risk perceptions. Technology workers may exhibit higher trust due to domain familiarity.
+
+**Variables**: Industry (9 categories: Technology, Healthcare, Education, Finance, Government, Manufacturing, Professional Services, Retail, Other)
+
+**Hypotheses**:
+- **H6a**: Regulated industries show stronger Ethical Risk → BI effects (compliance concerns amplify risk salience)
+- **H6b**: Technology industry workers show weaker AI Anxiety effects (familiarity reduces barriers)
+- **H6c**: Education sector shows stronger Explainability → Trust effects (pedagogical integrity demands transparency)
+
+**Proposed Methods**:
+- Multi-group SEM (separate models by industry)
+- Path coefficient comparison across industries
+- Sensitivity analysis: collapse low-frequency industries into "Other" category
+
+**Expected Contributions**:
+- Industry-specific intervention priorities (e.g., governance for Healthcare, explainability for Education)
+- Empirical validation of regulatory pressure as contextual moderator
+
+**Sample Requirements**: ⚠️ Feasible with N=362 if collapsed to 4-5 groups; full 9-category analysis requires N>500
+
+---
+
+### **A.3. Experience and Expertise Moderation (RQ8)** 🔶 *Medium Priority*
+
+**Research Question**: Does work/study experience moderate the strength of UTAUT2 and AI-specific construct effects?
+
+**The Expertise Reversal Hypothesis**: Classic TAM research suggests experience reduces ease-of-use effects. For AI, we propose a reversal: **experts may demand MORE explainability** to evaluate AI competence, while novices rely on social influence and facilitating conditions.
+
+**Variables**: Experience (5 levels: <1 year, 1-3 years, 4-6 years, 7-9 years, 10+ years)
+
+**Hypotheses**:
+- **H7a**: Novices (<1 year) show stronger Social Influence effects (seek peer guidance)
+- **H7b**: Experts (10+ years) show stronger Performance Expectancy effects (outcome-focused)
+- **H7c**: Domain expertise strengthens Explainability → Trust effects (experts require transparency to assess AI quality)
+
+**Proposed Methods**:
+- Separate-group structural models: Novice vs. Mid-career vs. Expert
+- Interaction terms: Experience × AI Constructs
+- Path coefficient comparison across experience groups
+
+**Expected Contributions**:
+- Empirical test of expertise reversal hypothesis
+- Experience-tailored training: novices need social proof; experts need detailed explainability
+
+**Sample Requirements**: ✅ Feasible with N=362 if collapsed to 3 groups (minimum 100 per group)
+
+---
+
+### **A.4. Longitudinal Readiness Trajectories** 🌟 *Low Priority, High Impact*
+
+**Research Question**: How do individual readiness trajectories evolve over time with increasing AI exposure and organizational support?
+
+**Study Design**: Longitudinal panel study with 3-4 measurement waves over 12-18 months
+
+**Why This Matters**: Current AIRS study is cross-sectional. Longitudinal data enables causal inference, identifies temporal dynamics (e.g., anxiety reduction with exposure), and tests reciprocal relationships.
+
+**Hypotheses**:
+- **H8a**: AI Anxiety decreases with moderate, supported usage (inverted U-curve: very low and very high exposure increase anxiety)
+- **H8b**: Trust mediates Explainability → sustained usage (indirect effect strengthens over time)
+- **H8c**: Performance Expectancy dominates as familiarity increases (effort/risk concerns diminish)
+
+**Proposed Methods**:
+- **Growth curve modeling**: Individual trajectories for Trust, Anxiety, BI
+- **Cross-lagged panel models**: Test bidirectional relationships (Trust_T1 → Usage_T2 → Trust_T3)
+- **Event history analysis**: Time-to-adoption, dropout patterns
+
+**Expected Contributions**:
+- Causal validation of AIRS constructs (addresses cross-sectional limitation)
+- Identification of critical intervention windows (e.g., trust-building in first 3 months)
+
+**Sample Requirements**: ❌ Requires new data collection (minimum N=300 baseline with 70% retention = N=210 complete cases)
+
+---
+
+### **A.5. Accessibility and Inclusive AI Design (RQ9)** 🔶 *Low Priority, Exploratory*
+
+**Research Question**: Do users with disabilities perceive AI adoption factors differently than non-disabled users?
+
+**Why This Matters**: AI systems can amplify or reduce accessibility barriers depending on design. Users with disabilities may prioritize Facilitating Conditions and Explainability more heavily.
+
+**Variables**: Disability (Yes/No/Prefer not to answer)
+
+**Ethical Considerations**:
+- Small subsample risk (N<30 expected): **qualitative analysis preferred** to avoid deductive disclosure
+- Focus on system design insights, not deficit framing
+- Ensure anonymity and voluntary participation
+
+**Proposed Methods**:
+- **If N>50**: Exploratory t-tests, descriptive comparisons
+- **If N<50**: Thematic analysis of open-text feedback from users with disabilities
+- Focus on Facilitating Conditions and Explainability construct salience
+
+**Expected Contributions**:
+- Inclusive design principles for AI deployment
+- Identification of construct salience differences (e.g., Explainability MORE critical for screen reader users)
+
+**Sample Requirements**: ❌ Current sample (N=362) likely yields N<30; requires dedicated accessibility study (N>500) or targeted oversample
+
+---
+
+### **A.6. Emergent Themes from Qualitative Feedback (RQ10)** 🔶 *Medium Priority*
+
+**Research Question**: What themes emerge from open-text feedback that extend beyond quantitative constructs?
+
+**Why This Matters**: Quantitative scales may miss unanticipated concerns or emergent constructs. Qualitative analysis provides construct validation and hypothesis generation for AIRS 2.0.
+
+**Variables**: Open-text feedback fields (collected but partially analyzed in Phase 7b)
+
+**Proposed Methods**:
+- **Thematic analysis** (Braun & Clarke, 2006): Inductive coding of open-text responses
+- **Sentiment analysis**: Classify comments as positive, negative, or ambivalent
+- **Triangulation**: Compare qualitative themes to quantitative construct scores
+
+**Expected Themes**:
+- **Accuracy concerns**: "AI gets things wrong, need to verify outputs"
+- **Job displacement fears**: "Will this replace my role?" (AIRS 2.0 candidate: Perceived Job Threat)
+- **Productivity enthusiasm**: "AI makes me more efficient, saves time"
+- **Ethical concerns**: "Bias in outputs, privacy risks, accountability gaps"
+- **Learning curve**: "Takes time to learn, needs better training"
+
+**Expected Contributions**:
+- Construct validation: Do quantitative scales capture lived experience?
+- AIRS 2.0 construct candidates: Job Security, Algorithmic Fairness Perceptions
+- Rich quotations for dissertation discussion and practitioner reports
+
+**Sample Requirements**: ✅ Feasible with current N=362 (Phase 7b analyzed N=148, 69.1% response rate)
+
+---
+
+### **A.7. Cross-Cultural Validation** 🌟 *Low Priority, High Impact*
+
+**Research Question**: Does the AIRS framework generalize across cultural contexts, or do cultural values moderate construct relationships?
+
+**Study Design**: Multi-country validation study with samples from individualist (U.S., U.K.) and collectivist (China, India) cultures
+
+**Why This Matters**: UTAUT2 has been validated across cultures, but AI-specific constructs (Trust, Explainability, Ethical Risk, Anxiety) may exhibit cultural variation.
+
+**Hypotheses**:
+- **H9a**: Social Influence effects stronger in collectivist cultures (group norms dominate)
+- **H9b**: Explainability effects stronger in individualist cultures (emphasis on personal control)
+- **H9c**: Ethical Risk perceptions higher in cultures with stronger data privacy norms (e.g., GDPR regions)
+
+**Proposed Methods**:
+- Multi-group SEM: Separate models by country/culture cluster
+- Measurement invariance testing: Configural, metric, scalar invariance
+- Moderation analysis: Hofstede cultural dimensions (Individualism, Power Distance, Uncertainty Avoidance)
+
+**Expected Contributions**:
+- Global validation of AIRS framework (or identification of culture-specific adaptations)
+- Guidance for multinational organizations deploying AI across diverse contexts
+
+**Sample Requirements**: ❌ Requires dedicated multi-site data collection (minimum N=300 per country; N=900 for 3-country study)
+
+---
+
+### **A.8. Organizational Climate and Leadership Effects** 🔶 *Medium Priority*
+
+**Research Question**: Do organizational climate (innovation culture, psychological safety) and leadership support moderate individual readiness?
+
+**Why This Matters**: Current AIRS focuses on individual-level constructs, yet organizational context likely shapes adoption. Psychological safety may reduce AI Anxiety; leadership support may moderate Facilitating Conditions effects.
+
+**Variables**: Organizational climate scales, leadership support measures (would require additional survey items)
+
+**Hypotheses**:
+- **H10a**: Psychological safety moderates AI Anxiety → BI relationship (anxiety has weaker effects in safe climates)
+- **H10b**: Innovation climate strengthens Performance Expectancy → BI effects (alignment with organizational values)
+- **H10c**: Leadership support strengthens Facilitating Conditions → Use Behavior effects (resource provision and role modeling)
+
+**Proposed Methods**:
+- Hierarchical regression: Organizational climate variables entered as moderators
+- Multi-level modeling: If organizational units are identifiable (requires nested data structure)
+- Interaction terms: Climate × AIRS Constructs
+
+**Expected Contributions**:
+- Contextual validation of AIRS: Organizational factors as boundary conditions
+- Actionable guidance for change management: Culture and leadership as readiness levers
+
+**Sample Requirements**: ⚠️ Hierarchical regression feasible with N=362; multi-level modeling requires clustered sample (minimum 30 organizations with 10+ respondents each)
+
+---
+
+### **A.9. AI Governance Practices and Transparency Interventions** 🔥 *High Priority, Applied*
+
+**Research Question**: Do organizations with formal AI governance practices (ethics boards, explainability standards, audit trails) demonstrate higher employee readiness?
+
+**Study Design**: Comparative case study or quasi-experimental design with matched organizations
+
+**Why This Matters**: Current study measures *perceived* explainability and ethical risk, but does not evaluate organizational interventions. Testing whether governance practices causally improve readiness provides evidence-based implementation guidance.
+
+**Hypotheses**:
+- **H11a**: Employees in organizations with AI ethics boards report lower Ethical Risk perceptions
+- **H11b**: Explainability standards (e.g., mandatory model documentation) increase Perceived Explainability and Trust
+- **H11c**: Audit trail transparency reduces AI Anxiety and increases BI
+
+**Proposed Methods**:
+- **Pre-post design**: Measure readiness before and after governance policy implementation
+- **Matched comparison**: Organizations with vs. without formal AI governance (control for industry, size, AI maturity)
+- **Intervention experiment**: Randomly assign explainability training or governance communications to employee groups
+
+**Expected Contributions**:
+- Causal evidence for governance effectiveness (addresses "what works?" question)
+- Cost-benefit analysis: Which governance practices yield largest readiness gains?
+- Policy recommendations for responsible AI deployment
+
+**Sample Requirements**: ❌ Requires new data collection (minimum N=100 per condition; N=200 for two-group comparison)
+
+---
+
+### **A.10. Methodological Extensions**
+
+**Objective Behavioral Measures**: Current study relies on self-reported BI and Use Behavior. Future research should integrate **objective usage logs** (frequency, duration, feature adoption) to validate self-report measures and test intention-behavior gaps.
+
+**Physiological Measures**: AI Anxiety may be better captured through **physiological indicators** (heart rate variability, skin conductance) during AI interaction tasks. Lab-based studies with biosensors could validate self-report anxiety scales and identify autonomic response patterns.
+
+**Mixed-Methods Integration**: Combine AIRS quantitative surveys with **ethnographic observation, interview studies, and experience sampling methods (ESM)** to capture real-time adoption dynamics and contextual factors not accessible through retrospective self-report.
+
+**Computational Social Science**: Apply **natural language processing** to analyze organizational communication (Slack messages, email, meeting transcripts) to identify adoption catalysts and barriers *in situ*, complementing survey-based measurement.
+
+---
+
+### **A.11. Prioritization Framework**
+
+#### **Immediate Extensions** (Feasible with Current Dataset, N=362)
+1. ✅ **Tool-Specific Usage Patterns (A.1)** – Descriptive + exploratory, no additional data collection
+2. ✅ **Emergent Qualitative Themes (A.6)** – Analyze existing open-text feedback (Phase 7b extended)
+3. ⚠️ **Industry Moderation (A.2)** – Multi-group SEM with category collapsing
+
+#### **Near-Term Studies** (Require Targeted Data Collection, N=300-500)
+4. 🔄 **Experience Moderation (A.3)** – New survey wave with stratified sampling by experience level
+5. 🔄 **Organizational Climate Effects (A.8)** – Add climate scales to existing AIRS instrument
+6. 🔄 **Governance Practices Comparison (A.9)** – Recruit organizations with known governance policies
+
+#### **Long-Term Programs** (Require Substantial Resources, N>500 or Multi-Wave)
+7. 🎯 **Longitudinal Trajectories (A.4)** – 12-18 month panel study with 3-4 waves
+8. 🎯 **Cross-Cultural Validation (A.7)** – Multi-country data collection (N=300 per country)
+9. 🎯 **Accessibility Study (A.5)** – Dedicated oversampling of users with disabilities (N>200)
+
+#### **Methodological Innovations** (Require Specialized Expertise/Equipment)
+10. 🔬 **Objective Behavioral Logs (A.10)** – Partnership with enterprise IT for usage data access
+11. 🔬 **Physiological Anxiety Measurement (A.10)** – Lab-based study with biosensors
+12. 🔬 **Computational Analysis (A.10)** – NLP pipeline for organizational communication data
+
+---
+
+### **A.12. Sample Size Guidance and References**
+
+**SEM Requirements**: Hair et al. (2010) recommend minimum N=200 for complex structural models; N=50 per group for multi-group comparisons
+
+**Longitudinal Designs**: Maxwell (2004) provides power analysis for growth curve models; expect 20-30% attrition per wave
+
+**Ethical Approval**: All human subjects research requires IRB approval, particularly studies involving organizational data access, physiological measurement, or vulnerable populations
+
+**Key Methodological References**:
+- Braun & Clarke (2006) – Thematic analysis procedures
+- Hair et al. (2010) – Multivariate data analysis and SEM guidelines
+- Maxwell (2004) – Longitudinal study design and power analysis
+- Edmondson (1999) – Psychological safety measurement
+- Anderson & West (1998) – Innovation climate scales
+- Hofstede (2011) – Cultural dimensions for cross-cultural research
+
+---
+
+**Note**: This appendix provides a comprehensive roadmap for extending AIRS research. Investigators should prioritize questions based on available resources, sample access, and theoretical contribution. For collaboration inquiries, contact fcorrea@student.touro.edu.
 
 ---
 
