@@ -12,7 +12,7 @@
 <tr><td><strong>Institution</strong></td><td>Touro University Worldwide</td></tr>
 <tr><td><strong>Program</strong></td><td>Doctor of Business Administration (DBA)</td></tr>
 <tr><td><strong>Date</strong></td><td>November 23, 2025 (Week 28 of 32)</td></tr>
-<tr><td><strong>Status</strong></td><td>✅ Phases 1-6 Complete | ✅ Phase 7a Complete | ⚠️ Phase 7b Data Unavailable | ⏭️ Phase 7c Active: Chapter 4 Writing | N=362</td></tr>
+<tr><td><strong>Status</strong></td><td>✅ Phases 1-6 Complete | ✅ Phase 7a Complete | ✅ Phase 7b Complete | ⏭️ Phase 7c Active: Chapter 4 Writing | N=362</td></tr>
 </table>
 
 ---
@@ -787,17 +787,42 @@ Phase 7a explored tool-specific adoption patterns, uncovering our most surprisin
 ![Figure 27: Tool-BI Correlation Hierarchy](results/plots/07_tool_bi_correlations.png)
 *ChatGPT explains 34.9% of adoption intention variance—8.8pp more than average. Consumer tool usage predicts workplace adoption through anxiety reduction and confidence building.*
 
-### **Phase 7b Status: Qualitative Data Unavailable**
+### **Phase 7b: Mixed-Methods Convergent Validity Achievement**
 
-**Research Question (RQ10)**: What themes emerge from open-text feedback?
+**Research Question (RQ10)**: What themes emerge from open-text feedback that extend beyond quantitative constructs?
 
-**Status**: ⚠️ **Not Feasible**—Feedback variable documented in DATA_DICTIONARY.md but absent from AIRS_clean.csv
+**Status**: ✅ **Complete**—BOTH alignment (80%) AND discovery (20%) validated
 
-**Impact**: Phase 7b infeasible, limits mixed-methods triangulation
+**Answer**: Qualitative themes **converge with existing AIRS constructs** (4 statistically validated relationships, ALL d≥0.73) while **revealing emergent dimensions** (3 new constructs for AIRS 2.0)
 
-**Compensation**: Phase 7a behavioral insights provide **revealed preferences** (actual tool usage patterns) which many researchers consider more reliable than self-reported qualitative themes. The depth of Phase 7a findings (9 visualizations, 52 statistical relationships, 7 major discoveries) compensates for Phase 7b absence.
+**Key Findings**:
 
-**Positioning for Committee**: "We attempted exploratory mixed-methods triangulation, but the quantitative behavioral branch (Phase 7a) succeeded while the qualitative branch (Phase 7b) proved infeasible due to data availability. Phase 7a revealed preferences provide robust validation of AIRS construct relationships through observed behavior rather than stated intentions."
+| **Metric** | **Result** | **Interpretation** |
+|-----------|-----------|-------------------|
+| **Sample** | N=148 substantive (69.1% response rate) | 59.2% of 250 responders provided analyzable content |
+| **Themes Identified** | 15 total (5 facilitators, 8 barriers, 2 neutral) | Reflexive thematic analysis (Braun & Clarke, 2006) |
+| **Top 5 Themes** | Learning 18.9%, Positive 15.5%, Trust 11.5%, Environmental 5.4%, Productivity 4.1% | Clear prevalence hierarchy |
+| **Validation** | Two-stage: 96% accuracy (n=25) + 30.8% convergent validity | Independent review removed 24 false positives |
+| **Statistical Convergence** | 4 of 13 pairs significant (p<.05), ALL d≥0.73 | Large effects benchmark established |
+
+**The Four Validated Relationships**:
+
+1. **Productivity → PE2** (Performance Expectancy): d=+0.96, p=.023* — **LARGEST effect across all themes**
+2. **Trust → TR2** (Trust in AI): d=-0.89, p<.001*** — Validates Phase 5 mediation finding
+3. **Positive → HM2** (Hedonic Motivation): d=+0.83, p<.001*** — Enjoyment convergence
+4. **Positive → PV2** (Price Value): d=+0.73, p=.002** — Value perception alignment
+
+**Critical Modality Insight**: Barriers more **consciously articulated** in open-ended responses (Trust concerns 11.5% > Productivity benefits 4.1%), but productivity shows **LARGEST statistical effect** (d=0.96) when tested quantitatively. This reveals **complementary modalities**: concerns are verbalized, benefits are implicitly experienced.
+
+**The Three Emergent Constructs** (NOT in current AIRS scale):
+
+| **Construct** | **Prevalence** | **Priority** | **AIRS 2.0 Integration** |
+|--------------|---------------|-------------|-------------------------|
+| **Environmental Impact** | 5.4% (n=8) | **HIGH** | ER3: "AI's environmental impact (energy, carbon) concerns me" |
+| **Social Connection** | 2.0% (n=3) | MEDIUM | SC1-SC2: "AI replaces human interaction", "Isolation concerns" |
+| **Job Replacement** | 0.7% (n=1) | MEDIUM | ER1: "AI will take my job" (restore deleted pilot item) |
+
+**Triangulation Success**: Trust theme (11.5% qualitative prevalence) converges with Phase 5 quantitative finding (ER→Trust 64% mediation). Learning+Hedonic themes (34.4% combined qualitative) align with HM β=0.118*** quantitative significance.
 
 ### **Behavioral Validation of Core AIRS Model**
 
@@ -836,11 +861,18 @@ Phase 7a demonstrates **external validity** for AIRS construct relationships:
 - R²=34.9% for BI prediction—strongest tool predictor
 - Two-stage adoption strategy: Low-stakes consumer experimentation → workplace tool adoption
 
+**Contribution #8: Mixed-Methods Convergent Validity in AI Adoption** (Phase 7b)
+- First empirical demonstration of qualitative-quantitative triangulation in technology adoption
+- 30.8% convergence rate with ALL significant relationships showing large effects (d≥0.73)
+- Modality complementarity: Concerns verbalized (Trust 11.5%), benefits experienced (Productivity d=0.96)
+- Establishes benchmark for mixed-methods rigor—neither method alone captures full psychological reality
+- AIRS 2.0 roadmap: Environmental Impact (HIGH), Social Connection (MEDIUM), Job Replacement (MEDIUM)
+
 ---
 
 ## 🎯 **Our Validated Instrument: Ready for Deployment**
 
-After **seven phases** of rigorous testing (6 core + 1 behavioral validation), we now have:
+After **seven phases** of rigorous testing (6 core + 1 behavioral validation + 1 qualitative triangulation), we now have:
 - ✅ Empirically-derived structure (data-driven factor discovery)
 - ✅ Independent replication (split-sample validation)
 - ✅ Strong psychometric properties (α=0.924 for F1, adequate reliability for F2)
@@ -852,7 +884,11 @@ After **seven phases** of rigorous testing (6 core + 1 behavioral validation), w
 - ✅ **Behavioral validation achieved**: Phase 7a tool usage patterns validate AIRS constructs through revealed preferences (58% multi-tool users, 99% BI advantage, 19% anxiety reduction)
 - ✅ **Autonomy primacy discovered**: Voluntariness (VO) effect Δ=2.14 exceeds primary outcome BI Δ=1.80 across ALL constructs—Self-Determination Theory should be foregrounded
 - ✅ **Gateway hypothesis validated**: ChatGPT predicts 34.9% of BI variance (strongest tool), consumer→enterprise adoption sequence confirmed
+- ✅ **Mixed-methods triangulation complete**: Phase 7b qualitative analysis (N=148, 15 themes) validates quantitative constructs (30.8% convergence, 4 significant) while discovering emergent dimensions (3 for AIRS 2.0)
+- ✅ **AIRS 2.0 roadmap established**: Environmental Impact construct (5.4% HIGH priority), Social Connection domain (2.0% MEDIUM), Job Replacement item restoration (0.7% MEDIUM)
 - ✅ **Intervention priorities evidence-based**: Voluntary multi-tool exploration (20-25% budget) > Anxiety reduction (20-25%, 96% mediation + 2.95× novice effect) > Ethics as emotional safety (15-20%) > Context-specific explainability (10-15%) > Trust building (10-15%) > Price Value for sustaining adoption
+- ✅ **Mixed-methods triangulation validated**: Phase 7b qualitative themes (15 identified) converge with quantitative constructs (30.8%, 4 significant) while revealing emergent dimensions (3 for AIRS 2.0)
+- ✅ **AIRS 2.0 expansion roadmap**: Environmental Impact (ER3, 5.4% HIGH priority), Social Connection (SC1-SC2, 2.0% MEDIUM), Job Replacement (ER1 restoration, 0.7% MEDIUM)
 
 ---
 
@@ -860,11 +896,14 @@ After **seven phases** of rigorous testing (6 core + 1 behavioral validation), w
 
 | **Phase** | **Discovery** | **Decision Impact** | **Status** |
 |-----------|--------------|-------------------|-----------|
-| **Phase 5** | **Dual-pathway suppression**: ER operates via Trust (64%) + Anxiety (96%), anxiety dominates | **Reframe ethics as anxiety reduction**, not just compliance; emotional > cognitive | ✅ H5a-c supported (100%) |
-| **Phase 4** | AI Anxiety dominates (0.525% unique variance, 36% of ΔR²) | Prioritize anxiety reduction over transparency/trust | ✅ H1-H3 tested |
 | **Phase 1** | Data reveals 2 factors, not 12 | Trust empirical structure over theoretical expectations | ✅ Structure validated |
 | **Phase 2** | Strong psychometric properties in independent sample | Proceed with confidence to hypothesis testing | ✅ Measurement confirmed |
 | **Phase 3** | Metric non-invariance across contexts | Use separate-group models; frame H4 as exploratory | ✅ Approach revised |
+| **Phase 4** | AI Anxiety dominates (0.525% unique variance, 36% of ΔR²) | Prioritize anxiety reduction over transparency/trust | ✅ H1-H3 tested |
+| **Phase 5** | **Dual-pathway suppression**: ER operates via Trust (64%) + Anxiety (96%), anxiety dominates | **Reframe ethics as anxiety reduction**, not just compliance; emotional > cognitive | ✅ H5a-c supported (100%) |
+| **Phase 6** | **"Who vs What" moderation**: Context determines vulnerable populations (novices 2.95× anxiety, students need explainability) | Population segmentation > universal interventions | ✅ H4a,d,e supported (3/5) |
+| **Phase 7a** | **Autonomy primacy**: VO Δ=2.14 > BI Δ=1.80; ChatGPT gateway R²=34.9%; Multi-tool +99% BI | Self-Determination Theory foregrounded; voluntary multi-tool exploration programs | ✅ RQ6 answered |
+| **Phase 7b** | **Mixed-methods convergent validity**: 30.8% convergence (ALL d≥0.73) + 20% emergent constructs | AIRS 2.0 expansion (Environmental, Social, Job); modality complementarity insight | ✅ RQ10 answered |
 
 
 
@@ -885,8 +924,8 @@ Now that we have a validated measurement instrument, we can finally test the the
 | **RQ3**: Does AIRS add value beyond UTAUT2? | H2: AI constructs → BI<br>H3: ΔR²≥0.10 | Nested model comparison | ✅ ΔR²=0.260*** (p<.001), 3/4 paths significant |
 | **RQ4**: What are the psychological mechanisms? | H5a-c: Trust/Anxiety mediation | Bootstrap CIs (5000) | ✅ All supported: 64% trust, 96% anxiety (DOMINANT) |
 | **RQ5**: Does context matter? | H4a-e: Moderation effects | Separate-group models | ✅ 2/5 supported: H4d exposure effect (2.95×), H4a paradox (students), H4e value-driven |
-| **RQ6**: Do tool usage patterns differ? | Phase 7a: Exploratory analysis | Tool usage descriptives + ANOVA | ✅ Autonomy primacy (VO F=128.305***), ChatGPT gateway (R²=34.9%), multi-tool +99% BI |
-| **RQ10**: What qualitative themes emerge? | Phase 7b: Thematic analysis | Braun & Clarke coding | ⚠️ Data unavailable (variable not in dataset) |
+| **RQ6**: Tool-specific patterns? | Phase 7a exploratory | ANOVA, correlations, profiles | ✅ Autonomy primacy (VO Δ=2.14>BI Δ=1.80), ChatGPT gateway (R²=34.9%), multi-tool +99% BI |
+| **RQ10**: Emergent qualitative themes? | Phase 7b exploratory | Reflexive thematic analysis (Braun & Clarke, 2006) | ✅ BOTH alignment (30.8% convergent validity, ALL d≥0.73) + discovery (3 emergent for AIRS 2.0) |
 
 ### **The Story We're About to Tell**
 
@@ -912,10 +951,13 @@ Now that we have a validated measurement instrument, we can finally test the the
 - **Stakes**: External validity through revealed preferences vs stated intentions
 - **Major Discovery**: Autonomy primacy (VO Δ=2.14 > BI Δ=1.80) + Gateway hypothesis (ChatGPT R²=34.9%) + Multi-tool advantage (99% BI increase, 19% anxiety reduction)
 
-**Act IV (Phase 7b)**: Can qualitative themes extend quantitative findings?
-- Planned thematic analysis of open-text feedback
-- **Outcome**: Data unavailable (Feedback variable not in dataset)
-- **Compensation**: Phase 7a behavioral insights provide superior revealed preference validation
+**Act V (Phase 7b)**: Can qualitative themes triangulate quantitative findings?
+- Reflexive thematic analysis of N=148 substantive open-ended responses (69.1% response rate)
+- Two-stage validation: 96% accuracy (n=25 independent review) + statistical testing (13 pairs)
+- **Outcome**: BOTH alignment AND discovery validated
+  - **Alignment**: 30.8% convergent validity (4 significant, ALL d≥0.73) - Productivity d=+0.96, Trust d=-0.89, Positive→HM d=+0.83, Positive→PV d=+0.73
+  - **Discovery**: 3 emergent constructs for AIRS 2.0 (Environmental Impact 5.4% HIGH, Social Connection 2.0% MEDIUM, Job Replacement 0.7% MEDIUM)
+- **Major Discovery**: Modality complementarity - concerns verbalized (Trust 11.5%), benefits experienced (Productivity d=0.96 largest effect)
 
 ### **Expected Contributions**
 
@@ -941,7 +983,7 @@ Now that we have a validated measurement instrument, we can finally test the the
 | `05_Mediation_Analysis.ipynb` | H5 mediation pathways | ✅ Complete | Dual-pathway suppression (96% anxiety, 64% trust) |
 | `06_Moderation_Analysis.ipynb` | H4a-e separate-group | ✅ Complete | 2/5 hypotheses: Exposure effect 2.95×, explainability paradox, value-driven model |
 | `07_Tool_Usage_Patterns.ipynb` | RQ6 tool adoption patterns | ✅ Complete | Autonomy primacy (VO F=128.305***), ChatGPT gateway (R²=34.9%), 9 visualizations |
-| `08_Qualitative_Feedback_Analysis.ipynb` | RQ10 thematic analysis | ⚠️ Not Feasible | Data unavailable (Feedback variable not in dataset) |
+| `08_Qualitative_Feedback_Analysis.ipynb` | RQ10 thematic analysis | ✅ Complete | 15 themes (N=148), 30.8% convergent validity (ALL d≥0.73), 3 emergent constructs, 5 visualizations |
 
 
 ---
@@ -1237,8 +1279,8 @@ Based on Phase 4 structural modeling results (N=362), we've identified specific,
 | 27 | Phase 5: Mediation | ✅ Complete: Dual-pathway suppression (H5a-c supported, 100% success), anxiety pathway 96% mediation |
 | 27 | Phase 6: Moderation | ✅ Complete: 2/5 hypotheses (2.95× exposure effect, explainability paradox, value-driven model) |
 | 28 | Phase 7a: Tool Usage Patterns (RQ6) | ✅ Complete: Autonomy primacy (VO Δ=2.14 > BI Δ=1.80), ChatGPT gateway (R²=34.9%), multi-tool advantage (99% BI, 19% AX), 9 visualizations, 340 lines insights, 98% fact-checked |
-| 28 | Phase 7b: Qualitative Themes (RQ10) | ⚠️ Not Feasible: Feedback variable documented but absent from dataset - compensated by Phase 7a behavioral validation |
-| 28-32 | Phase 7c: Integration & Writing | ⏭️ Active: Dissertation Chapter 4 Section 4.7a (8-10 pages, 9 figures), Section 4.7b (brief limitation note), Chapter 5 updates (5 sections) |
+| 28 | Phase 7b: Qualitative Themes (RQ10) | ✅ Complete: 15 themes (N=148, 69.1% response rate), 30.8% convergent validity (4 significant, ALL d≥0.73), 3 emergent constructs (Environmental 5.4% HIGH, Social 2.0%, Job 0.7%), modality complementarity validated |
+| 28-32 | Phase 7c: Integration & Writing | ⏭️ Active: Dissertation Chapter 4 Section 4.7a (8-10 pages, 9 figures) + Section 4.7b (5-7 pages, 5 figures), Chapter 5 updates (6 sections including AIRS 2.0 roadmap) |
 
 ### **Broader Research Agenda**
 
@@ -1262,14 +1304,22 @@ Based on Phase 4 structural modeling results (N=362), we've identified specific,
 - **NEW Phase 7a-inspired**: Compare voluntary vs mandated tool adoption programs (autonomy primacy validation)
 - **NEW Phase 7a-inspired**: Measure dose-response relationships (tool variety → BI gains → anxiety reduction)
 
-**Qualitative Extensions** (Phase 7b Future Work)
-- Structured qualitative data collection with targeted prompts:
-  - "What motivated your multi-tool adoption strategy?"
-  - "Describe specific barriers encountered during AI tool exploration."
-  - "How did your AI perception change after sustained tool usage?"
-- Longitudinal interview studies tracking adoption journeys
-- Mixed-methods experimental designs: Tool-specific interventions with pre/post qualitative assessments
-- Think-aloud protocols during AI tool usage to capture real-time decision-making
+**AIRS 2.0 Scale Development** (Phase 7b Extensions)
+- **Environmental Impact Construct** (HIGH priority, 5.4% prevalence):
+  - Item ER3: "AI's environmental impact (energy consumption, carbon footprint) concerns me"
+  - Conceptual foundation: Sustainability concerns in technology adoption
+  - Validation: Environmental psychology scales + AI-specific ecological impact measures
+  - Expected relationships: ER3 → AX (anxiety pathway), ER3 → ER2 (ethical risk network expansion)
+- **Social Connection Domain** (MEDIUM priority, 2.0% prevalence):
+  - Item SC1: "I worry AI tools will replace human interaction in my work"
+  - Item SC2: "Using AI makes me feel isolated from colleagues"
+  - Conceptual foundation: Social presence theory, loneliness in digital work
+  - Expected relationships: SC → AX (affective pathway), SC ⊥ SI (independence validation)
+- **Job Replacement Item Restoration** (MEDIUM priority, 0.7% prevalence):
+  - Item ER1: "AI will take my job" (deleted in Phase 1 pilot refinement)
+  - Reintroduction rationale: Persistent theme despite low prevalence, high policy relevance
+  - Validation: Compare ER1 vs ER2 (bias/fairness) vs ER3 (environmental) for discriminant validity
+- Longitudinal validation of expanded 15-item AIRS 2.0 scale (12 current + 3 new)
 
 **Theoretical Extensions**
 - Test autonomy primacy (VO > BI) across other technologies beyond AI

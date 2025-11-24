@@ -4,11 +4,11 @@
 **Project**: AI Readiness Scale (AIRS) Psychometric Validation
 **Researcher**: Fabio Correa
 **Institution**: Touro University Worldwide - DBA Program
-**Timeline**: Week 27 of 32
+**Timeline**: Week 28 of 32
 
 ---
 
-## 📊 Overall Progress: 71% Complete
+## 📊 Overall Progress: 88% Complete
 
 ```
 Phase 1: Scale Development        ████████████████████ 100% ✅
@@ -16,8 +16,10 @@ Phase 2: CFA Validation          ███████████████�
 Phase 3: Invariance Testing      ████████████████████ 100% ✅
 Phase 4: Structural Models       ████████████████████ 100% ✅
 Phase 5: Mediation Analysis      ████████████████████ 100% ✅
-Phase 6: Multi-Group Analysis    ░░░░░░░░░░░░░░░░░░░░   0% ⏭️
-Phase 7: Integration & Writing   ░░░░░░░░░░░░░░░░░░░░   0% ⏳
+Phase 6: Moderation Analysis     ████████████████████ 100% ✅
+Phase 7a: Tool Usage Patterns    ████████████████████ 100% ✅
+Phase 7b: Qualitative Analysis   ████████████████████ 100% ✅
+Phase 7c: Dissertation Writing   ░░░░░░░░░░░░░░░░░░░░   0% ⏭️
 ```
 
 ---
@@ -157,46 +159,93 @@ Phase 7: Integration & Writing   ░░░░░░░░░░░░░░░�
 
 ---
 
-## ⏳ Pending Phases (6-7)
-
-### Phase 6: Multi-Group Analysis (H4)
-**Target**: Week 28-29
-**Notebook**: `airs/06_Multi_Group_Analysis.ipynb` (to be created)
-
 ---
 
-### Phase 6: Multi-Group Analysis (H4)
-**Target**: Week 29-30
-**Notebook**: `airs/06_Multi_Group_Analysis.ipynb` (to be created)
+### Phase 6: Moderation Analysis (H4) - Complete ✅
+**Completed**: Week 27
+**Notebook**: `airs/06_Moderation_Analysis.ipynb`
 
 **Approach** (Modified based on Phase 3 findings):
 - **Original Plan**: Constrained multi-group SEM with equality constraints
-- **Updated Plan**: Separate-group structural models (exploratory moderation)
+- **Executed**: Separate-group structural models (exploratory moderation)
 - **Rationale**: Metric invariance not supported; cannot constrain loadings equal
 
-**Moderators**:
-- H4a-b: Role (Student vs. Professional)
-- H4c-d: Usage Frequency (Low vs. High)
-- H4e: Adoption Status (Non-Adopter vs. Adopter)
+**Key Findings**:
+- **H4d SUPPORTED** ✅: Usage frequency moderates anxiety (2.95× stronger for novices)
+  - Low-frequency: β=-0.230*** vs High-frequency: β=-0.078*
+  - 66% anxiety reduction for experienced users
+- **H4a REVERSED** ❌: Explainability matters MORE to students (β=0.120*), not professionals
+  - "Explainability Paradox" - learning integrity > accountability
+- **H4e PARTIALLY SUPPORTED** ⚠️: Adopters show value-driven model (PV β=.209***)
+  - Non-adopters underpowered (N=36)
+- **H4b, H4c NOT SUPPORTED**: Social influence, habit show no moderation
 
-**Analysis**:
-1. Fit structural model independently for each group
-2. Compare β coefficients descriptively (not inferentially)
-3. Report group-specific parameter estimates
-4. Frame as exploratory (no formal equality tests)
+**Deliverables**:
+- ✅ 3 publication-quality visualizations (role, usage, adoption at 300 dpi)
+- ✅ Comprehensive group comparisons with bootstrap CIs
+- ✅ "Who vs What" theoretical contribution documented
 
 ---
 
-### Phase 7: Integration & Chapter 4 Draft
-**Target**: Week 30-32
+### Phase 7a: Tool Usage Patterns (RQ6) - Complete ✅
+**Completed**: Week 28
+**Notebook**: `airs/07_Tool_Usage_Patterns.ipynb`
+
+**Key Discoveries**:
+- **Autonomy Primacy**: VO effect (Δ=2.14) > BI effect (Δ=1.80) across ALL 13 AIRS constructs
+  - Self-Determination Theory should be FOREGROUNDED, not relegated to moderator
+- **ChatGPT Gateway Hypothesis**: R²=34.9% for BI prediction (8.8pp above average)
+  - Consumer tools build confidence that transfers to workplace adoption
+- **Multi-Tool Advantage**: 58% use 2+ tools, showing 99% higher BI, 19% lower anxiety
+- **Universal Effects**: ALL 13 AIRS constructs differ by usage profile (12/13 p<.001)
+
+**Deliverables**:
+- ✅ 9 publication-quality visualizations (tool popularity, effect sizes, correlations)
+- ✅ 340 lines of enhanced insights + executive summary
+- ✅ Comprehensive fact-check report (98% accuracy: 49/50 verified)
+
+---
+
+### Phase 7b: Qualitative Feedback Analysis (RQ10) - Complete ✅
+**Completed**: Week 28
+**Notebook**: `airs/08_Qualitative_Feedback_Analysis.ipynb`
+
+**Key Findings**:
+- **BOTH Alignment AND Discovery**: 30.8% convergent validity + 20% emergent constructs
+- **Sample**: N=148 substantive responses (69.1% response rate from 362 total)
+- **Validation**: Two-stage (96% accuracy on n=25 independent review + statistical testing)
+- **Convergent Validity**: 4 of 13 pairs significant (ALL d≥0.73)
+  - Productivity→PE2: d=+0.96 (LARGEST effect)
+  - Trust→TR2: d=-0.89 (validates Phase 5 mediation)
+  - Positive→HM2: d=+0.83
+  - Positive→PV2: d=+0.73
+- **Emergent Constructs for AIRS 2.0**:
+  - Environmental Impact: 5.4% (HIGH priority)
+  - Social Connection: 2.0% (MEDIUM priority)
+  - Job Replacement: 0.7% (MEDIUM priority)
+- **Modality Complementarity**: Concerns verbalized (Trust 11.5%) > Benefits experienced (Productivity d=0.96)
+
+**Deliverables**:
+- ✅ 15 themes identified (5 facilitators, 8 barriers, 2 neutral)
+- ✅ 5 publication-quality visualizations (prevalence, convergence, validation)
+- ✅ Mixed-methods theoretical contribution (#8) documented
+- ✅ AIRS 2.0 expansion roadmap established
+
+---
+
+## ⏳ Active Phase
+
+### Phase 7c: Integration & Chapter 4 Draft
+**Target**: Week 28-32
 **Deliverable**: Dissertation Chapter 4 (Results)
 
 **Objectives**:
-- Synthesize findings from Phases 1-6
-- Create comprehensive results narrative
-- Generate final publication-quality figures
+- Synthesize findings from Phases 1-7b
+- Write Section 4.7a (Tool Usage Patterns, 8-10 pages, 9 figures)
+- Write Section 4.7b (Qualitative Feedback Analysis, 5-7 pages, 5 figures)
+- Update Chapter 5 with Phase 6-7b integration (6 sections)
 - Document decision points and rationale
-- Prepare implications for Chapter 5 (Discussion)
+- Prepare AIRS 2.0 roadmap for Future Research section
 
 ---
 
@@ -209,7 +258,9 @@ Phase 7: Integration & Writing   ░░░░░░░░░░░░░░░�
 - ✅ `03_Measurement_Invariance.ipynb` - Invariance testing
 - ✅ `04_Structural_Model_Hypothesis_Testing.ipynb` - H1-H3 testing
 - ✅ `05_Mediation_Analysis.ipynb` - H5 mediation (dual-pathway suppression)
-- ⏭️ `06_Multi_Group_Analysis.ipynb` - H4 moderation (separate-group models)
+- ✅ `06_Moderation_Analysis.ipynb` - H4 moderation (2/5 hypotheses supported)
+- ✅ `07_Tool_Usage_Patterns.ipynb` - RQ6 behavioral validation (autonomy primacy)
+- ✅ `08_Qualitative_Feedback_Analysis.ipynb` - RQ10 mixed-methods (30.8% convergent validity)
 
 ### Documentation (`docs/`)
 - `AIRS DBA Project Proposal v4.md` - Complete proposal with all hypotheses
@@ -236,15 +287,17 @@ Phase 7: Integration & Writing   ░░░░░░░░░░░░░░░�
 | RQ | Hypothesis | Status | Finding |
 |----|------------|--------|---------|
 | RQ1 | Psychometric structure | ✅ Complete | 2-factor structure validated (F1: 10 items, F2: 2 items) |
-| RQ2 | H1: UTAUT2 → BI | ✅ Phase 4 | Supported (β=0.425***, 24.3% variance explained) |
-| RQ3 | H2: AI constructs → BI | ✅ Phase 4 | Supported (ΔR²=0.260***, full model R²=0.483) |
-| RQ3 | H3: ΔR² ≥ 0.10 | ✅ Phase 4 | Supported (ΔR²=0.260*** >> 0.10 threshold) |
-| RQ4 | H5a: EX → TR → BI | ✅ Phase 5 | Supported (64% mediation, CI: [0.046, 0.139]) |
-| RQ4 | H5b: ER → TR → BI | ✅ Phase 5 | Supported (64% mediation, CI: [0.089, 0.235]) |
-| RQ4 | H5c: ER → AX → BI | ✅ Phase 5 | Supported (96% mediation, CI: [-0.379, -0.214]) |
-| RQ5 | H4: Moderation effects | ⏳ Phase 6 | Invariance prerequisite complete; multi-group models next |
+| RQ2 | H1: UTAUT2 → BI | ✅ Phase 4 | Supported (R²=0.8046***, 6/8 paths significant) |
+| RQ3 | H2: AI constructs → BI | ✅ Phase 4 | Partially supported (3/4 significant, AX dominant) |
+| RQ3 | H3: ΔR² ≥ 0.10 | ✅ Phase 4 | Partially supported (ΔR²=0.0146***, significant but <0.10) |
+| RQ4 | H5a: EX → TR → BI | ✅ Phase 5 | Supported (55% mediation, CI: [0.214, 0.361]) |
+| RQ4 | H5b: ER → TR → BI | ✅ Phase 5 | Supported (64% mediation, CI: [-0.312, -0.120]) |
+| RQ4 | H5c: ER → AX → BI | ✅ Phase 5 | Strongly supported (96% mediation, CI: [-0.414, -0.255]) |
+| RQ5 | H4a-e: Moderation | ✅ Phase 6 | 2/5 supported (H4d exposure 2.95×, H4a explainability paradox) |
+| RQ6 | Tool usage patterns | ✅ Phase 7a | Autonomy primacy (VO Δ=2.14>BI), ChatGPT gateway (R²=34.9%) |
+| RQ10 | Qualitative themes | ✅ Phase 7b | BOTH alignment (30.8% convergent) + discovery (3 emergent) |
 
-**Overall**: 7/8 analyses complete (88%)
+**Overall**: 10/10 analyses complete (100%)
 
 ---
 
