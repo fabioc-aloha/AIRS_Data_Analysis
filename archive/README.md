@@ -6,7 +6,18 @@ This folder contains historical analysis files that have been superseded by newe
 
 ## 📂 Archive Contents
 
-### 1. notebooks_exploratory/ (8 Jupyter notebooks)
+### 1. 02a_Full_Sample_CFA_Revalidation.ipynb
+**Archived**: November 25, 2025
+**Status**: Diagnostic notebook for full sample (N=472)
+**Purpose**: Investigated model fit deterioration in full combined sample
+**Reason**: Superseded by professionals-focused analysis (Notebook 02 + subsample filter)
+**Value**: Led to discovery of demographic heterogeneity (Role Δ CFI=0.117)
+**Key Finding**: Professionals (CFI=0.910) vs Students (CFI=0.794) showed largest heterogeneity
+**Outcome**: Informed decision to analyze professionals subsample separately
+
+---
+
+### 2. notebooks_exploratory/ (8 Jupyter notebooks)
 **Archived**: November 22, 2025
 **Status**: Exploratory phase (N=281, pre-dissertation)
 **Contents**: 8 Jupyter notebooks using data-driven optimization, single-sample validation

@@ -1,4 +1,0 @@
-Hypothesis,Pathway,Description,Path a,Path a p,Path b,Path b p,Indirect Effect (ab),95% CI,Significant,Decision
-H5a,EX → TR → BI,Explainability builds trust,0.4548,0.0000,0.6310,0.0000,0.2870,"[0.2136, 0.3609]",[+] YES,SUPPORTED
-H5b,ER → TR → BI,Ethics erodes trust,-0.3142,0.0000,0.7013,0.0000,-0.2203,"[-0.3115, -0.1196]",[+] YES,SUPPORTED
-H5c,ER → AX → BI,Ethics amplifies anxiety,0.6217,0.0000,-0.5362,0.0000,-0.3334,"[-0.4140, -0.2548]",[+] YES,SUPPORTED

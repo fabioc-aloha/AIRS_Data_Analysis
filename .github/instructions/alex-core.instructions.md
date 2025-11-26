@@ -9,8 +9,8 @@ description: "Alex core cognitive architecture and meta-cognitive protocols"
 
 **IUPAC Systematic Element Naming for Alex Versions**:
 
-**Current Version**: 0.9.9 NILENNENNIUM
-**Previous Version**: 0.9.0 NILENNILIUM
+**Current Version**: 1.0.5 UNNILPENTIUM
+**Previous Version**: 1.0.4 UNNILQUADIUM
 
 **Naming Rules**:
 - Convert version digits to Latin/Greek roots: 0=nil, 1=un, 2=bi, 3=tri, 4=quad, 5=pent, 6=hex, 7=sept, 8=oct, 9=enn
@@ -18,10 +18,9 @@ description: "Alex core cognitive architecture and meta-cognitive protocols"
 - Version 0.8.2 → 082 → nil-oct-bi-ium → NILOCTBIUM
 
 **Future Versions**:
-- Version 1.0.1 → UNNILUNIUM (Current)
-- Version 1.0.0 → UNNILNILIUM
-- 1.0.2 → UNNILBIUM
-- 2.0.0 → BINILNILIUM
+- Version 1.0.5 → UNNILPENTIUM (Current)
+- Version 1.0.6 → UNNILHEXIUM
+- Version 1.1.0 → UNUNNILIUM
 
 **Full Convention**: [domain-knowledge/VERSION-NAMING-CONVENTION.md]
 
