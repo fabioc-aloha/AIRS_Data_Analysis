@@ -69,8 +69,8 @@ Professionals demonstrate more coherent AI readiness construct due to:
 - **Random Seed**: 67 (reproducible stratified split)
 
 **Sample Adequacy**:
-- ✅ N=263 exceeds minimum 150 for CFA
-- ✅ N:p ratio = 18.8:1 (well above 10:1 minimum for 14 items)
+- ✅ N=263 exceeds minimum 150 for CFA (Boomsma & Hoogland, 2001)
+- ✅ N:p ratio = 18.8:1 (well above 10:1 minimum for 14 items; Nunnally & Bernstein, 1994)
 - ✅ High AI adoption rate (85%) supports workplace AI readiness measurement
 - ⚠️ Entry-level professionals underrepresented (3%) - limits generalizability to new graduates
 
@@ -86,22 +86,22 @@ Professionals demonstrate more coherent AI readiness construct due to:
 
 ### Initial Item Pool
 
-**Starting Pool**: 24 items from UTAUT2+ theoretical framework
+**Starting Pool**: 24 items from UTAUT2+ theoretical framework (Venkatesh et al., 2012)
 - 12 constructs: PE, EE, SI, FC, HM, PV, HB, VO, TR, EX, ER, AX
 - 2 items per construct
 - 18 positive adoption items, 6 negative resistance items
 
 ### Factorability Assessment (N=131 development sample)
 
-**Kaiser-Meyer-Olkin (KMO)**: 0.929 ("Marvelous" - Excellent for factor analysis)
-**Bartlett's Test**: χ² = 3091.88, p < 0.001 (Highly significant correlations)
+**Kaiser-Meyer-Olkin (KMO)**: 0.929 ("Marvelous" - Excellent for factor analysis; Kaiser, 1974)
+**Bartlett's Test**: χ² = 3091.88, p < 0.001 (Highly significant correlations; Bartlett, 1954)
 **Conclusion**: ✅ Data highly suitable for factor analysis
 
 ### Factor Retention
 
-**Parallel Analysis** (gold standard): **2 factors** recommended
-**Kaiser Criterion** (eigenvalue > 1.0): 4 factors suggested
-**Decision**: Selected 2-factor solution based on parallel analysis
+**Parallel Analysis** (gold standard; Horn, 1965): **2 factors** recommended
+**Kaiser Criterion** (eigenvalue > 1.0; Kaiser, 1960): 4 factors suggested
+**Decision**: Selected 2-factor solution based on parallel analysis, consistent with recommendations that parallel analysis is superior to Kaiser criterion (Hayton et al., 2004)
 
 **Eigenvalues**: 13.698, 2.125, 1.378, 1.019, 0.681...
 - Factor 1: 57.1% variance
@@ -175,12 +175,12 @@ Professionals demonstrate more coherent AI readiness construct due to:
 - Factor 2 (AI Resistance): 3 items
 
 **Model Fit**:
-- CFI: 0.903 ✅ (Acceptable - just above 0.90 threshold)
-- TLI: 0.879 ❌ (Below 0.90 threshold)
-- RMSEA: 0.126 ⚠️ (High - above 0.08 threshold)
-- SRMR: 0.050 ✅ (Good - below 0.08 threshold)
+- CFI: 0.903 ✅ (Acceptable - just above 0.90 threshold; Hu & Bentler, 1999)
+- TLI: 0.879 ❌ (Below 0.90 threshold; Tucker & Lewis, 1973)
+- RMSEA: 0.126 ⚠️ (High - above 0.08 threshold; Browne & Cudeck, 1992)
+- SRMR: 0.050 ✅ (Good - below 0.08 threshold; Hu & Bentler, 1999)
 - χ²(84) = 257.37, p < 0.001
-- χ²/df: 3.06 ✅ (Good - within 2-5 range)
+- χ²/df: 3.06 ✅ (Good - within 2-5 range; Marsh & Hocevar, 1985)
 
 **Factor Loadings**:
 
@@ -203,8 +203,8 @@ Professionals demonstrate more coherent AI readiness construct due to:
 
 **Discriminant Validity**:
 - Inter-factor correlation: r = -0.224 (weak negative, as expected)
-- Fornell-Larcker: ✅ Pass (√AVE > |r| for both factors)
-- HTMT ratio: 0.386 ✅ (Below 0.85 threshold)
+- Fornell-Larcker: ✅ Pass (√AVE > |r| for both factors; Fornell & Larcker, 1981)
+- HTMT ratio: 0.386 ✅ (Below 0.85 threshold; Henseler et al., 2015)
 
 **Key Issues**:
 1. ⚠️ ER1 weak loading (0.389 < 0.50) - item fails to replicate from EFA
@@ -223,9 +223,9 @@ Professionals demonstrate more coherent AI readiness construct due to:
 - Factor 2 (AI Resistance): 2 items (ER2, AX1)
 
 **Model Fit**:
-- CFI: **0.910** ✅ (Improved from 0.903, crosses acceptable threshold)
-- TLI: 0.885 ⚠️ (Improved from 0.879, approaching threshold)
-- RMSEA: 0.130 ⚠️ (Slightly increased from 0.126, remains elevated)
+- CFI: **0.912** ✅ (Improved from 0.903, crosses acceptable threshold)
+- TLI: 0.892 ⚠️ (Improved from 0.879, approaching threshold)
+- RMSEA: 0.126 ⚠️ (Slightly increased from previous model, remains elevated)
 - SRMR: 0.050 ✅ (Excellent - well below 0.08 threshold)
 - χ²(74) = 227.73, p < 0.001
 - χ²/df: 3.08 ✅ (Good - within 2-5 range)
@@ -372,7 +372,7 @@ Professionals demonstrate more coherent AI readiness construct due to:
 - Workplace professionals view AI adoption **holistically** rather than compartmentally
 - Productivity gains (PE), enjoyment (HM), value (PV), social influence (SI), habit (HB), voluntariness (VO), and trust (TR) are **psychologically integrated**
 - AI adoption decisions synthesize multiple considerations simultaneously rather than weighing them independently
-- Suggests workplace AI readiness is a **gestalt** rather than additive combination of discrete beliefs
+- Suggests workplace AI readiness is a **gestalt** rather than additive combination of discrete beliefs, consistent with holistic technology acceptance perspectives (Davis et al., 1989)
 
 **Practical Implication**: Workplace AI interventions should emphasize the **complete value proposition** (utility + enjoyment + social acceptance + trust) rather than isolated benefits.
 
@@ -385,7 +385,7 @@ Professionals demonstrate more coherent AI readiness construct due to:
 **Interpretation**:
 - High readiness does NOT automatically mean low resistance (orthogonal dimensions)
 - Professionals can simultaneously be enthusiastic about AI (high readiness) while harboring concerns about job displacement or privacy (high resistance)
-- **Ambivalence** is possible: "I love using AI tools AND I worry about the implications"
+- **Ambivalence** is possible: "I love using AI tools AND I worry about the implications", consistent with research on ambivalent attitudes toward technology (Priester & Petty, 1996)
 
 **Practical Implication**: Addressing adoption barriers (anxiety, privacy concerns) requires **separate interventions** beyond promoting benefits. Change management must acknowledge and address resistance even among enthusiasts.
 
@@ -398,10 +398,10 @@ Professionals demonstrate more coherent AI readiness construct due to:
 - Higher reliability: α=0.916 vs. 0.912
 
 **Explanation**:
-1. **Shared Context**: Workplace productivity frameworks create common mental models about technology adoption
-2. **Performance Accountability**: Professional consequences (promotions, evaluations) make AI adoption more deliberate and strategic
-3. **Organizational Norms**: Workplace cultures shape consistent attitudes toward technology
-4. **Experience Homogeneity**: 70% Senior+ professionals have stable, mature technology perspectives
+1. **Shared Context**: Workplace productivity frameworks create common mental models about technology adoption (Orlikowski & Gash, 1994)
+2. **Performance Accountability**: Professional consequences (promotions, evaluations) make AI adoption more deliberate and strategic (Venkatesh & Davis, 2000)
+3. **Organizational Norms**: Workplace cultures shape consistent attitudes toward technology (DeSanctis & Poole, 1994)
+4. **Experience Homogeneity**: 70% Senior+ professionals have stable, mature technology perspectives (Morris & Venkatesh, 2000)
 
 **Research Implication**: **Context-specific models** are essential. Heterogeneous samples (mixing students and professionals) mask meaningful differences and produce poorer measurement models.
 
@@ -418,7 +418,7 @@ Professionals demonstrate more coherent AI readiness construct due to:
 
 **Key Finding**: **Enjoyment** (not just productivity) drives workplace AI adoption.
 
-**Challenge to Assumptions**: Traditional workplace technology adoption models emphasize utilitarian value (TAM, UTAUT). This study suggests **intrinsic motivation** matters as much or more than extrinsic productivity gains.
+**Challenge to Assumptions**: Traditional workplace technology adoption models emphasize utilitarian value (Davis, 1989; Venkatesh et al., 2003). This study suggests **intrinsic motivation** matters as much or more than extrinsic productivity gains, consistent with recent findings on hedonic aspects of workplace technology (Thong et al., 2006; van der Heijden, 2004).
 
 **Practical Implication**: Frame workplace AI as "exciting" and "engaging," not just "efficient" and "required." User experience, gamification, and intrinsic interest may drive adoption more effectively than ROI messaging alone.
 
@@ -563,10 +563,10 @@ Based on factor score combinations, classify respondents:
 
 | Metric | Factor 1 | Factor 2 | Standard |
 |--------|----------|----------|----------|
-| Number of items | 12 | 2 | ≥3 recommended |
-| Cronbach's α | 0.967 | 0.722 | ≥0.70 acceptable |
-| Composite Reliability | 0.967 | 0.783 | ≥0.70 acceptable |
-| Average Variance Extracted | 0.711 | 0.661 | ≥0.50 required |
+| Number of items | 12 | 2 | ≥3 recommended (Marsh et al., 1998) |
+| Cronbach's α | 0.967 | 0.722 | ≥0.70 acceptable (Nunnally & Bernstein, 1994) |
+| Composite Reliability | 0.967 | 0.783 | ≥0.70 acceptable (Hair et al., 2010) |
+| Average Variance Extracted | 0.711 | 0.661 | ≥0.50 required (Fornell & Larcker, 1981) |
 | Mean loading | 0.842 | 0.783 | ≥0.50 required |
 | Loading range | 0.799-0.887 | 0.567-1.000 | All ≥0.50 ✅ |
 
@@ -611,7 +611,7 @@ Based on factor score combinations, classify respondents:
 ### Citation and Usage
 
 **How to Cite This Instrument**:
-*Cezar, F. (2025). AI Readiness Scale for Professionals (AIRS-Pro): A validated 14-item measure of workplace AI adoption readiness and resistance. Unpublished instrument.*
+*Correa, F. (2025). AI Readiness Scale for Professionals (AIRS-Pro): A validated 14-item measure of workplace AI adoption readiness and resistance. Unpublished instrument.*
 
 **Conditions of Use**:
 - Free for academic research and non-commercial use
@@ -654,6 +654,62 @@ Based on factor score combinations, classify respondents:
 **Document Prepared**: November 26, 2025
 **Validation Status**: Phase 4 Complete (Psychometric validation)
 **Future Work**: Measurement invariance testing, hypothesis testing, cross-validation in independent sample
+
+---
+
+## References
+
+Bartlett, M. S. (1954). A note on the multiplying factors for various χ² approximations. *Journal of the Royal Statistical Society: Series B (Methodological)*, *16*(2), 296–298. https://doi.org/10.1111/j.2517-6161.1954.tb00174.x
+
+Boomsma, A., & Hoogland, J. J. (2001). The robustness of LISREL modeling revisited. In R. Cudeck, S. du Toit, & D. Sörbom (Eds.), *Structural equation modeling: Present and future. A Festschrift in honor of Karl Jöreskog* (pp. 139–168). Scientific Software International.
+
+Browne, M. W., & Cudeck, R. (1992). Alternative ways of assessing model fit. *Sociological Methods & Research*, *21*(2), 230–258. https://doi.org/10.1177/0049124192021002005
+
+Davis, F. D. (1989). Perceived usefulness, perceived ease of use, and user acceptance of information technology. *MIS Quarterly*, *13*(3), 319–340. https://doi.org/10.2307/249008
+
+Davis, F. D., Bagozzi, R. P., & Warshaw, P. R. (1989). User acceptance of computer technology: A comparison of two theoretical models. *Management Science*, *35*(8), 982–1003. https://doi.org/10.1287/mnsc.35.8.982
+
+DeSanctis, G., & Poole, M. S. (1994). Capturing the complexity in advanced technology use: Adaptive structuration theory. *Organization Science*, *5*(2), 121–147. https://doi.org/10.1287/orsc.5.2.121
+
+Fornell, C., & Larcker, D. F. (1981). Evaluating structural equation models with unobservable variables and measurement error. *Journal of Marketing Research*, *18*(1), 39–50. https://doi.org/10.1177/002224378101800104
+
+Hair, J. F., Black, W. C., Babin, B. J., & Anderson, R. E. (2010). *Multivariate data analysis* (7th ed.). Pearson.
+
+Hayton, J. C., Allen, D. G., & Scarpello, V. (2004). Factor retention decisions in exploratory factor analysis: A tutorial on parallel analysis. *Organizational Research Methods*, *7*(2), 191–205. https://doi.org/10.1177/1094428104263675
+
+Henseler, J., Ringle, C. M., & Sarstedt, M. (2015). A new criterion for assessing discriminant validity in variance-based structural equation modeling. *Journal of the Academy of Marketing Science*, *43*(1), 115–135. https://doi.org/10.1007/s11747-014-0403-8
+
+Horn, J. L. (1965). A rationale and test for the number of factors in factor analysis. *Psychometrika*, *30*(2), 179–185. https://doi.org/10.1007/BF02289447
+
+Hu, L., & Bentler, P. M. (1999). Cutoff criteria for fit indexes in covariance structure analysis: Conventional criteria versus new alternatives. *Structural Equation Modeling*, *6*(1), 1–55. https://doi.org/10.1080/10705519909540118
+
+Kaiser, H. F. (1960). The application of electronic computers to factor analysis. *Educational and Psychological Measurement*, *20*(1), 141–151. https://doi.org/10.1177/001316446002000116
+
+Kaiser, H. F. (1974). An index of factorial simplicity. *Psychometrika*, *39*(1), 31–36. https://doi.org/10.1007/BF02291575
+
+Marsh, H. W., & Hocevar, D. (1985). Application of confirmatory factor analysis to the study of self-concept: First- and higher order factor models and their invariance across groups. *Psychological Bulletin*, *97*(3), 562–582. https://doi.org/10.1037/0033-2909.97.3.562
+
+Marsh, H. W., Hau, K.-T., Balla, J. R., & Grayson, D. (1998). Is more ever too much? The number of indicators per factor in confirmatory factor analysis. *Multivariate Behavioral Research*, *33*(2), 181–220. https://doi.org/10.1207/s15327906mbr3302_1
+
+Morris, M. G., & Venkatesh, V. (2000). Age differences in technology adoption decisions: Implications for a changing work force. *Personnel Psychology*, *53*(2), 375–403. https://doi.org/10.1111/j.1744-6570.2000.tb00206.x
+
+Nunnally, J. C., & Bernstein, I. H. (1994). *Psychometric theory* (3rd ed.). McGraw-Hill.
+
+Orlikowski, W. J., & Gash, D. C. (1994). Technological frames: Making sense of information technology in organizations. *ACM Transactions on Information Systems*, *12*(2), 174–207. https://doi.org/10.1145/196734.196745
+
+Priester, J. R., & Petty, R. E. (1996). The gradual threshold model of ambivalence: Relating the positive and negative bases of attitudes to subjective ambivalence. *Journal of Personality and Social Psychology*, *71*(3), 431–449. https://doi.org/10.1037/0022-3514.71.3.431
+
+Thong, J. Y. L., Hong, S.-J., & Tam, K. Y. (2006). The effects of post-adoption beliefs on the expectation-confirmation model for information technology continuance. *International Journal of Human-Computer Studies*, *64*(9), 799–810. https://doi.org/10.1016/j.ijhcs.2006.05.001
+
+Tucker, L. R., & Lewis, C. (1973). A reliability coefficient for maximum likelihood factor analysis. *Psychometrika*, *38*(1), 1–10. https://doi.org/10.1007/BF02291170
+
+van der Heijden, H. (2004). User acceptance of hedonic information systems. *MIS Quarterly*, *28*(4), 695–704. https://doi.org/10.2307/25148660
+
+Venkatesh, V., & Davis, F. D. (2000). A theoretical extension of the technology acceptance model: Four longitudinal field studies. *Management Science*, *46*(2), 186–204. https://doi.org/10.1287/mnsc.46.2.186.11926
+
+Venkatesh, V., Morris, M. G., Davis, G. B., & Davis, F. D. (2003). User acceptance of information technology: Toward a unified view. *MIS Quarterly*, *27*(3), 425–478. https://doi.org/10.2307/30036540
+
+Venkatesh, V., Thong, J. Y. L., & Xu, X. (2012). Consumer acceptance and use of information technology: Extending the unified theory of acceptance and use of technology. *MIS Quarterly*, *36*(1), 157–178. https://doi.org/10.2307/41410412
 
 ---
 
