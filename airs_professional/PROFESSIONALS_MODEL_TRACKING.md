@@ -8,6 +8,148 @@
 
 ---
 
+## Introduction
+
+This document presents the complete psychometric validation of the **AI Readiness Scale for Professionals (AIRS-Pro)**, a 14-item measure designed to assess workplace professionals' readiness and resistance toward artificial intelligence adoption. The scale emerged from systematic factor analysis of a larger 24-item UTAUT2-based instrument, refined specifically for professionals through rigorous split-sample validation (N=263).
+
+### Research Context
+
+The rise of generative AI tools (ChatGPT, Claude, Copilot, Gemini) has created urgent demand for validated measures of organizational AI readiness. Existing technology acceptance models (TAM, UTAUT, UTAUT2) were developed for traditional enterprise software and may not adequately capture the unique psychological dynamics of AI adoption—particularly the tension between enthusiasm for AI's capabilities and concerns about its risks.
+
+### Key Contributions
+
+This validation study makes three primary contributions:
+
+1. **Context-Specific Measurement**: Demonstrates that professionals require distinct measurement models from students/academics, with professionals showing superior psychometric properties (KMO=0.931, 71.2% variance explained) compared to heterogeneous samples.
+
+2. **Two-Factor Structure**: Establishes that AI readiness and resistance are **separate, weakly correlated dimensions** (r=-0.224) rather than opposite poles of a single continuum—enabling identification of "ambivalent" professionals who are simultaneously enthusiastic and concerned.
+
+3. **Holistic Adoption Psychology**: Reveals that traditional UTAUT2 constructs (Performance Expectancy, Hedonic Motivation, Price Value, Social Influence, Habit, Trust) collapse into a single unified "AI Readiness" factor among professionals, suggesting workplace AI adoption is psychologically integrated rather than a sum of discrete beliefs.
+
+### Document Structure
+
+This document follows a complete validation workflow:
+- **Part I-II**: Study rationale, sample characteristics, and design
+- **Part III**: Exploratory Factor Analysis (EFA) with iterative refinement
+- **Part IV**: Confirmatory Factor Analysis (CFA) with model comparison
+- **Part V**: Comprehensive psychometric evaluation
+- **Part VI**: Theoretical interpretation and practical implications
+- **Part VII**: Final validated 14-item instrument with scoring guidelines
+
+### Validation Workflow Overview
+
+```mermaid
+flowchart TD
+    START(["24-Item UTAUT2+ Pool<br/>N=263 Professionals"])
+    SPLIT["Split-Sample Design<br/>Stratified by Work Context × AI Adoption"]
+    DEV["Development Sample<br/>N=131 (49.8%)<br/>Exploratory Factor Analysis"]
+    HOLD["Holdout Sample<br/>N=132 (50.2%)<br/>Confirmatory Factor Analysis"]
+
+    KMO["Factorability Assessment<br/>KMO=0.929 ✓<br/>Bartlett's p<0.001 ✓"]
+    PA["Parallel Analysis<br/>Recommended: 2 factors<br/>Variance: 65.9%"]
+
+    ITER["Iterative Item Reduction<br/>9 items removed<br/>Criterion: λ ≥ 0.50"]
+
+    EFA_OUT["EFA Final Model<br/>15 items, 2 factors<br/>F1: 12 items, F2: 3 items"]
+
+    CFA_M1["CFA Model PRO-M1<br/>15-item baseline<br/>CFI=0.903, AVE₂=0.491 ❌"]
+
+    CFA_M2["CFA Model PRO-M2<br/>14-item refined<br/>CFI=0.912 ✓, AVE₂=0.661 ✓"]
+
+    VALID["Psychometric Validation<br/>✓ Convergent validity<br/>✓ Discriminant validity<br/>✓ Reliability established"]
+
+    FINAL(["AIRS-Pro Final Instrument<br/>14 items, 2 factors<br/>Publication-Ready"])
+
+    START --> SPLIT
+    SPLIT --> DEV & HOLD
+    DEV --> KMO
+    KMO --> PA
+    PA --> ITER
+    ITER --> EFA_OUT
+    EFA_OUT --> CFA_M1
+    HOLD --> CFA_M1
+    CFA_M1 -->|"Remove ER1<br/>weak loading λ=0.389"| CFA_M2
+    CFA_M2 --> VALID
+    VALID --> FINAL
+
+    style START fill:#e3f2fd,stroke:#1976d2,stroke-width:3px
+    style FINAL fill:#e8f5e9,stroke:#388e3c,stroke-width:3px
+    style CFA_M2 fill:#c8e6c9,stroke:#2e7d32,stroke-width:2px
+    style VALID fill:#fff9c4,stroke:#f57c00,stroke-width:2px
+    style CFA_M1 fill:#ffebee,stroke:#c62828,stroke-width:2px
+```
+
+**Figure: AIRS-Pro Validation Workflow** — Complete methodology from 24-item UTAUT2+ pool to final 14-item validated instrument. The split-sample design ensures independent cross-validation, with EFA (N=131) identifying factor structure and CFA (N=132) confirming psychometric properties. Model refinement (PRO-M1 → PRO-M2) established convergent validity by removing weak item ER1.
+
+### AIRS-Pro Model Visualization
+
+```mermaid
+graph LR
+    %% Latent Factors
+    F1["<b>AI Readiness</b><br/>Factor 1<br/><br/>α = 0.967<br/>CR = 0.967<br/>AVE = 0.711<br/><br/>12 items"]
+    F2["<b>AI Resistance</b><br/>Factor 2<br/><br/>α = 0.722<br/>CR = 0.783<br/>AVE = 0.661<br/><br/>2 items"]
+
+    %% Factor Correlation
+    F1 <-."r = -0.224<br/>weak negative".-> F2
+
+    %% Factor 1 Items - Grouped by construct
+    subgraph PE[" Performance Expectancy "]
+        PE1["PE1: Tasks more quickly<br/>λ = 0.835"]
+        PE2["PE2: Improves quality<br/>λ = 0.873"]
+    end
+
+    subgraph HM[" Hedonic Motivation "]
+        HM1["HM1: Stimulating & engaging<br/>λ = 0.880 ⭐"]
+        HM2["HM2: Makes work interesting<br/>λ = 0.887 ⭐"]
+    end
+
+    subgraph PV[" Price Value "]
+        PV1["PV1: Value > Effort<br/>λ = 0.885 ⭐"]
+        PV2["PV2: Worth learning curve<br/>λ = 0.876"]
+    end
+
+    subgraph HB[" Habit "]
+        HB1["HB1: Habitual use<br/>λ = 0.822"]
+        HB2["HB2: Rely by default<br/>λ = 0.799"]
+    end
+
+    subgraph TR[" Trust "]
+        TR1["TR1: Trust reliability<br/>λ = 0.799"]
+        TR2["TR2: Trust tools<br/>λ = 0.815"]
+    end
+
+    SI1["SI1: Social influence<br/>λ = 0.819"]
+    VO1["VO1: Voluntary choice<br/>λ = 0.820"]
+
+    %% Factor 2 Items
+    ER2["ER2: Privacy concerns<br/>λ = 0.567"]
+    AX1["AX1: Unease about AI<br/>λ = 1.000"]
+
+    %% Connections
+    F1 --> PE1 & PE2 & HM1 & HM2 & PV1 & PV2 & HB1 & HB2 & TR1 & TR2 & SI1 & VO1
+    F2 --> ER2 & AX1
+
+    %% Model Fit Box
+    FIT["<b>Model Fit</b><br/>N = 132<br/><br/>CFI = 0.912 ✓<br/>TLI = 0.892<br/>RMSEA = 0.126<br/>SRMR = 0.050 ✓"]
+
+    %% Styling
+    style F1 fill:#e1f5e1,stroke:#4caf50,stroke-width:4px,color:#000
+    style F2 fill:#ffe1e1,stroke:#f44336,stroke-width:4px,color:#000
+    style HM2 fill:#a5d6a7,stroke:#2e7d32,stroke-width:3px,color:#000
+    style PV1 fill:#a5d6a7,stroke:#2e7d32,stroke-width:3px,color:#000
+    style HM1 fill:#a5d6a7,stroke:#2e7d32,stroke-width:3px,color:#000
+    style FIT fill:#fff3e0,stroke:#ff9800,stroke-width:3px,color:#000
+    style PE fill:#f1f8f4,stroke:#66bb6a,stroke-width:2px
+    style HM fill:#f1f8f4,stroke:#66bb6a,stroke-width:2px
+    style PV fill:#f1f8f4,stroke:#66bb6a,stroke-width:2px
+    style HB fill:#f1f8f4,stroke:#66bb6a,stroke-width:2px
+    style TR fill:#f1f8f4,stroke:#66bb6a,stroke-width:2px
+```
+
+**Figure: AIRS-Pro Final Model (PRO-M2)** — Two-factor structure with standardized factor loadings. The weak negative correlation (r=-0.224) between factors indicates that AI Readiness and AI Resistance are largely independent dimensions, supporting the possibility of ambivalent attitudes (high readiness + high resistance). Highlighted items (HM2, PV1, HM1) show strongest loadings, indicating hedonic motivation and price value as primary drivers of workplace AI adoption.
+
+---
+
 ## Part I: Study Background and Rationale
 
 ### Why a Professionals-Specific Model?
@@ -551,7 +693,44 @@ Based on factor score combinations, classify respondents:
 | **Resistors** | Low | High | Negative attitudes with strong barriers | Comprehensive change management needed |
 | **Disengaged** | Low | Low | Low awareness or irrelevance perception | Education about relevance and benefits |
 
-#### Interpretation Notes
+```mermaid
+%%{init: {'theme':'base', 'themeVariables': { 'fontSize':'14px'}}}%%
+graph LR
+    subgraph TOP[" "]
+        direction LR
+        Q2["<b>RESISTORS</b><br/><br/>• Negative attitudes<br/>• Strong barriers<br/>• Low engagement<br/><br/><i>Strategy:</i> Comprehensive<br/>change management"]
+        Q1["<b>AMBIVALENT</b><br/><br/>• High enthusiasm<br/>• But concerned<br/>• Mixed feelings<br/><br/><i>Strategy:</i> Address<br/>specific concerns"]
+    end
+
+    subgraph BOTTOM[" "]
+        direction LR
+        Q3["<b>DISENGAGED</b><br/><br/>• Low awareness<br/>• Not interested<br/>• Irrelevant perception<br/><br/><i>Strategy:</i> Education<br/>on relevance"]
+        Q4["<b>ENTHUSIASTS</b><br/><br/>• Early adopters<br/>• Positive attitudes<br/>• Minimal concerns<br/><br/><i>Strategy:</i> Champions<br/>for pilots"]
+    end
+
+    YLABEL["<b>HIGH AI RESISTANCE</b><br/>↑<br/><br/><br/><br/><br/><br/><br/>↓<br/><b>LOW AI RESISTANCE</b>"]
+    XLABEL_TOP["<b>LOW</b><br/><b>AI READINESS</b>"]
+    XLABEL_BOTTOM["<b>HIGH</b><br/><b>AI READINESS</b>"]
+
+    INFO["<b>Key Finding</b><br/>r = -0.224<br/><br/>Weak correlation enables<br/>ambivalent profiles:<br/>High readiness AND<br/>high resistance possible"]
+
+    YLABEL -.-> TOP & BOTTOM
+    XLABEL_TOP -.-> Q2 & Q3
+    XLABEL_BOTTOM -.-> Q1 & Q4
+
+    style Q1 fill:#fff9c4,stroke:#f57c00,stroke-width:4px,color:#000
+    style Q2 fill:#ffcdd2,stroke:#c62828,stroke-width:4px,color:#000
+    style Q3 fill:#bbdefb,stroke:#1976d2,stroke-width:4px,color:#000
+    style Q4 fill:#c8e6c9,stroke:#2e7d32,stroke-width:4px,color:#000
+    style INFO fill:#f3e5f5,stroke:#7b1fa2,stroke-width:3px,color:#000
+    style YLABEL fill:#fafafa,stroke:#616161,stroke-width:2px,color:#000
+    style XLABEL_TOP fill:#fafafa,stroke:#616161,stroke-width:2px,color:#000
+    style XLABEL_BOTTOM fill:#fafafa,stroke:#616161,stroke-width:2px,color:#000
+    style TOP fill:#fff,stroke:#424242,stroke-width:2px
+    style BOTTOM fill:#fff,stroke:#424242,stroke-width:2px
+```
+
+**Figure: Four-Quadrant Profile Classification** — Visual representation of AI adoption profiles based on orthogonal Readiness (x-axis) and Resistance (y-axis) dimensions. The weak correlation (r=-0.224) enables identification of "Ambivalent" professionals who simultaneously exhibit high readiness and high resistance, requiring differentiated interventions that address concerns while leveraging enthusiasm. Each quadrant prescribes targeted change management strategies.#### Interpretation Notes
 
 1. **Independence of Factors**: AI Readiness and Resistance are weakly correlated (r=-0.224), meaning professionals can simultaneously hold positive attitudes AND concerns
 2. **Clinical Cutoffs**: Not yet established - use sample-relative scoring (e.g., median splits, quartiles) until normative data available
