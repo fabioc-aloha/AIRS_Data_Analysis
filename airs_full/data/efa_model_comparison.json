@@ -1,0 +1,137 @@
+{
+  "1_factor": {
+    "n_factors": 1,
+    "variance_explained": 0.4875779985987463,
+    "strong_loadings": 11,
+    "interpretation": "General AI Readiness dimension",
+    "support": "Parallel analysis (gold standard)",
+    "strength": "Simplest model, no under-identification",
+    "concern": "Lower variance explained (48.8%)",
+    "loadings": {
+      "F1": {
+        "PE2": 0.8448822322192165,
+        "EE1": 0.6350757939879146,
+        "SI1": 0.781351379906747,
+        "FC1": 0.5233692412300294,
+        "HM2": 0.8368445322340055,
+        "PV1": 0.8345798560830177,
+        "HB2": 0.7503119989992236,
+        "VO1": 0.7568080506977194,
+        "TR1": 0.784478576894002,
+        "EX1": 0.5830020907747343,
+        "ER2": -0.3041627482653511,
+        "AX1": -0.5186439140390051
+      }
+    }
+  },
+  "2_factor": {
+    "n_factors": 2,
+    "variance_explained": 0.5355850511643176,
+    "strong_loadings": 12,
+    "interpretation": "Enablers (F1: 10 items) vs. Barriers (F2: 2 items)",
+    "support": "Kaiser criterion, theoretical rationale",
+    "strength": "Better variance explained, theoretically coherent",
+    "concern": "Factor 2 under-identified (only 2 items)",
+    "loadings": {
+      "F1": {
+        "PE2": 0.7753847076862413,
+        "EE1": 0.7200930933412537,
+        "SI1": 0.751417876753732,
+        "FC1": 0.6564108125471669,
+        "HM2": 0.7574181500167323,
+        "PV1": 0.7892642834019257,
+        "HB2": 0.6992518073082848,
+        "VO1": 0.7175771150516029,
+        "TR1": 0.7141971890209851,
+        "EX1": 0.6258995254824262,
+        "ER2": 0.14612901342366688,
+        "AX1": -0.14471484875920648
+      },
+      "F2": {
+        "PE2": -0.12215587522136796,
+        "EE1": 0.12334615411507949,
+        "SI1": -0.05841262690434873,
+        "FC1": 0.20060865915922046,
+        "HM2": -0.1381891539369435,
+        "PV1": -0.08336862245812429,
+        "HB2": -0.09096414633641327,
+        "VO1": -0.07237515310459858,
+        "TR1": -0.12312727709644276,
+        "EX1": 0.05930647440908293,
+        "ER2": 0.7757092749263036,
+        "AX1": 0.6583258823482013
+      }
+    },
+    "factor_correlations": {
+      "F1": {
+        "F1": 0.9999999999999997,
+        "F2": -0.492825343534476
+      },
+      "F2": {
+        "F1": -0.492825343534476,
+        "F2": 0.9999999999999998
+      }
+    }
+  },
+  "3_factor": {
+    "n_factors": 3,
+    "variance_explained": 0.6206843232711755,
+    "strong_loadings": 10,
+    "interpretation": "F1: 7 items, F2: 2 items, F3: 1 item",
+    "support": "Exploratory only - NOT RECOMMENDED",
+    "strength": "Highest variance explained (62.1%)",
+    "concern": "SEVERE under-identification: F3 has only 1 item (FC1), F2 still has 2 items",
+    "verdict": "REJECTED - Psychometrically unacceptable",
+    "loadings": {
+      "F1": {
+        "PE2": 0.865798138307291,
+        "EE1": 0.4849778058311914,
+        "SI1": 0.6011228380477632,
+        "FC1": -0.12800340163893503,
+        "HM2": 0.8508821004601065,
+        "PV1": 0.8416821667165296,
+        "HB2": 0.8617409083880058,
+        "VO1": 0.8359860737723777,
+        "TR1": 0.7011905468615611,
+        "EX1": 0.2588593334935123,
+        "ER2": -0.0844700922105465,
+        "AX1": 0.13501703572780843
+      },
+      "F2": {
+        "PE2": -0.018837528677298866,
+        "EE1": 0.08714054487560767,
+        "SI1": -0.066635213503631,
+        "FC1": 0.018958844136552803,
+        "HM2": -0.035277214055493285,
+        "PV1": -0.000510184588440033,
+        "HB2": 0.04442622790680889,
+        "VO1": 0.02272730432217663,
+        "TR1": -0.06513962854595387,
+        "EX1": -0.043858440055851704,
+        "ER2": 0.5167614972116411,
+        "AX1": 1.023998408090576
+      },
+      "F3": {
+        "PE2": -0.03414930344231362,
+        "EE1": 0.28590277596174,
+        "SI1": 0.1962996117458996,
+        "FC1": 0.9673085126132346,
+        "HM2": -0.038502035094910424,
+        "PV1": -0.0020184426224320227,
+        "HB2": -0.10319973870063931,
+        "VO1": -0.07835097524477139,
+        "TR1": 0.06536467557248762,
+        "EX1": 0.4185631849167381,
+        "ER2": 0.10060521740537182,
+        "AX1": -0.15643718814242058
+      }
+    }
+  },
+  "recommendation": {
+    "efa_decision": "2-factor chosen as primary (best balance of variance and identification)",
+    "cfa_testing": "Test 1-factor and 2-factor models only",
+    "skip_3_factor": "Yes - severe under-identification makes it psychometrically unviable",
+    "decision_criteria": "Compare CFI, TLI, RMSEA, SRMR fit indices in CFA",
+    "rationale": "3-factor rejected due to F3 having only 1 item. Test 1-factor (parallel analysis) vs 2-factor (Kaiser + theory)."
+  }
+}

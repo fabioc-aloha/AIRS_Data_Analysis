@@ -22,7 +22,7 @@ This validation study makes three primary contributions:
 
 1. **Context-Specific Measurement**: Demonstrates that professionals require distinct measurement models from students/academics, with professionals showing superior psychometric properties (KMO=0.931, 71.2% variance explained) compared to heterogeneous samples.
 
-2. **Two-Factor Structure**: Establishes that AI readiness and resistance are **separate, weakly correlated dimensions** (r=-0.224) rather than opposite poles of a single continuum—enabling identification of "ambivalent" professionals who are simultaneously enthusiastic and concerned.
+2. **Two-Factor Structure**: Establishes that AI readiness and resistance are **separate, weakly correlated dimensions** (r=-0.296) rather than opposite poles of a single continuum—enabling identification of "ambivalent" professionals who are simultaneously enthusiastic and concerned.
 
 3. **Holistic Adoption Psychology**: Reveals that traditional UTAUT2 constructs (Performance Expectancy, Hedonic Motivation, Price Value, Social Influence, Habit, Trust) collapse into a single unified "AI Readiness" factor among professionals, suggesting workplace AI adoption is psychologically integrated rather than a sum of discrete beliefs.
 
@@ -90,7 +90,7 @@ graph LR
     F2["<b>AI Resistance</b><br/>Factor 2<br/><br/>α = 0.722<br/>CR = 0.783<br/>AVE = 0.661<br/><br/>2 items"]
 
     %% Factor Correlation
-    F1 <-."r = -0.224<br/>weak negative".-> F2
+    F1 <-."r = -0.296<br/>weak negative".-> F2
 
     %% Factor 1 Items - Grouped by construct
     subgraph PE[" Performance Expectancy "]
@@ -146,7 +146,7 @@ graph LR
     style TR fill:#f1f8f4,stroke:#66bb6a,stroke-width:2px
 ```
 
-**Figure: AIRS-Pro Final Model (PRO-M2)** — Two-factor structure with standardized factor loadings. The weak negative correlation (r=-0.224) between factors indicates that AI Readiness and AI Resistance are largely independent dimensions, supporting the possibility of ambivalent attitudes (high readiness + high resistance). Highlighted items (HM2, PV1, HM1) show strongest loadings, indicating hedonic motivation and price value as primary drivers of workplace AI adoption.
+**Figure: AIRS-Pro Final Model (PRO-M2)** — Two-factor structure with standardized factor loadings. The weak negative correlation (r=-0.296) between factors indicates that AI Readiness and AI Resistance are largely independent dimensions, supporting the possibility of ambivalent attitudes (high readiness + high resistance). Highlighted items (HM2, PV1, HM1) show strongest loadings, indicating hedonic motivation and price value as primary drivers of workplace AI adoption.
 
 ---
 
@@ -344,9 +344,9 @@ Professionals demonstrate more coherent AI readiness construct due to:
 | F2 (Resistance) | 3 | 0.714 | 0.715 | **0.491** | ❌ **Below 0.50** |
 
 **Discriminant Validity**:
-- Inter-factor correlation: r = -0.224 (weak negative, as expected)
+- Inter-factor correlation: r = -0.296 (weak negative, as expected)
 - Fornell-Larcker: ✅ Pass (√AVE > |r| for both factors; Fornell & Larcker, 1981)
-- HTMT ratio: 0.386 ✅ (Below 0.85 threshold; Henseler et al., 2015)
+- HTMT ratio: 0.485 ✅ (Below 0.85 threshold; Henseler et al., 2015)
 
 **Key Issues**:
 1. ⚠️ ER1 weak loading (0.389 < 0.50) - item fails to replicate from EFA
@@ -367,7 +367,7 @@ Professionals demonstrate more coherent AI readiness construct due to:
 **Model Fit**:
 - CFI: **0.912** ✅ (Improved from 0.903, crosses acceptable threshold)
 - TLI: 0.892 ⚠️ (Improved from 0.879, approaching threshold)
-- RMSEA: 0.126 ⚠️ (Slightly increased from previous model, remains elevated)
+- RMSEA: 0.126 ⚠️ (Remains elevated but acceptable for small sample)
 - SRMR: 0.050 ✅ (Excellent - well below 0.08 threshold)
 - χ²(74) = 227.73, p < 0.001
 - χ²/df: 3.08 ✅ (Good - within 2-5 range)
@@ -389,9 +389,9 @@ Professionals demonstrate more coherent AI readiness construct due to:
 | F2 (Resistance) | 2 | 0.722 | 0.783 | **0.661** | ✅ **Established** (improved from 0.491) |
 
 **Discriminant Validity**:
-- Inter-factor correlation: r = -0.224 (unchanged, weak negative)
+- Inter-factor correlation: r = -0.296 (weak negative, as expected)
 - Fornell-Larcker: ✅ Pass (√AVE > |r| for both factors)
-- HTMT ratio: 0.386 ✅ (Below 0.85 threshold)
+- HTMT ratio: 0.485 ✅ (Below 0.85 threshold)
 
 ![Factor Loadings](plots/cfa_figure1_loadings_reliability.png)
 *Figure 6: PRO-M2 standardized loadings showing strong factor structure with excellent reliability*
@@ -407,23 +407,23 @@ Professionals demonstrate more coherent AI readiness construct due to:
 | Model | Items | CFI | TLI | RMSEA | F1 AVE | F2 AVE | Key Change |
 |-------|-------|-----|-----|-------|--------|--------|------------|
 | PRO-M1 | 15 | 0.903 | 0.879 | 0.126 | 0.711 | 0.491 ❌ | Baseline from EFA |
-| **PRO-M2** | **14** | **0.910** ✅ | **0.885** | 0.130 | **0.711** | **0.661** ✅ | **Removed ER1** |
+| **PRO-M2** | **14** | **0.912** ✅ | **0.892** | 0.126 | **0.711** | **0.661** ✅ | **Removed ER1** |
 
 **Improvements from PRO-M1 to PRO-M2**:
 1. ✅ **Convergent validity established**: F2 AVE 0.491 → 0.661 (now ≥ 0.50)
-2. ✅ **CFI improved**: 0.903 → 0.910 (crosses acceptable threshold)
-3. ✅ **TLI improved**: 0.879 → 0.885 (incremental improvement)
+2. ✅ **CFI improved**: 0.903 → 0.912 (crosses acceptable threshold)
+3. ✅ **TLI improved**: 0.879 → 0.892 (approaching threshold)
 4. ✅ **All items meet threshold**: Removed weak item, all loadings ≥ 0.50
-5. ⚠️ **RMSEA trade-off**: Slight increase 0.126 → 0.130 (acceptable given validity gains)
+5. ✅ **RMSEA maintained**: Remains at 0.126 (acceptable for N=132)
 
 **Model Selection Decision**: PRO-M2 selected as final model
 
 **Justification**:
 1. **Validity Priority**: Establishes convergent validity (AVE ≥ 0.50 for both factors)
-2. **Acceptable Fit**: CFI=0.910 meets 0.90 threshold
+2. **Acceptable Fit**: CFI=0.912 meets 0.90 threshold, TLI=0.892 approaches threshold
 3. **Parsimony**: Cleaner model with all items meeting loading threshold
 4. **Reliability**: Maintains excellent reliability for F1, acceptable for F2
-5. **Pragmatic Trade-off**: RMSEA remains elevated (0.130) but acceptable given N=132 and validity gains
+5. **Sample Consideration**: RMSEA=0.126 acceptable given N=132 holdout sample
 
 ---
 
@@ -435,9 +435,9 @@ Professionals demonstrate more coherent AI readiness construct due to:
 
 | Index | Value | Threshold | Status |
 |-------|-------|-----------|--------|
-| CFI | 0.910 | ≥ 0.90 acceptable | ✅ Pass |
-| TLI | 0.885 | ≥ 0.90 acceptable | ⚠️ Close (0.015 below) |
-| RMSEA | 0.130 | ≤ 0.08 excellent, ≤ 0.10 acceptable | ⚠️ Elevated |
+| CFI | 0.912 | ≥ 0.90 acceptable | ✅ Pass |
+| TLI | 0.892 | ≥ 0.90 acceptable | ⚠️ Close (0.008 below) |
+| RMSEA | 0.126 | ≤ 0.08 excellent, ≤ 0.10 acceptable | ⚠️ Elevated |
 | SRMR | 0.050 | ≤ 0.08 | ✅ Excellent |
 | χ²/df | 3.08 | 2-5 acceptable | ✅ Good |
 
@@ -468,10 +468,10 @@ Professionals demonstrate more coherent AI readiness construct due to:
 - High factor loadings indicate items measure intended construct
 
 **Discriminant Validity**: ✅ Established
-- Inter-factor correlation: r = -0.224 (weak, as expected for orthogonal dimensions)
-- Fornell-Larcker criterion: √AVE_F1 (0.843) > |r| (0.224) ✅
-- Fornell-Larcker criterion: √AVE_F2 (0.813) > |r| (0.224) ✅
-- HTMT ratio: 0.386 < 0.85 threshold ✅
+- Inter-factor correlation: r = -0.296 (weak, as expected for orthogonal dimensions)
+- Fornell-Larcker criterion: √AVE_F1 (0.843) > |r| (0.296) ✅
+- Fornell-Larcker criterion: √AVE_F2 (0.813) > |r| (0.296) ✅
+- HTMT ratio: 0.485 < 0.85 threshold ✅
 - Assessment: Factors are empirically distinct constructs
 
 **Structural Validity**: ✅ Supported
@@ -522,7 +522,7 @@ Professionals demonstrate more coherent AI readiness construct due to:
 
 **Composition**: 2 items from 2 theoretical constructs (ER, AX)
 
-**Key Insight**: Resistance forms a **separate, weakly negative dimension** (r=-0.224) rather than opposite pole of readiness continuum.
+**Key Insight**: Resistance forms a **separate, weakly negative dimension** (r=-0.296) rather than opposite pole of readiness continuum.
 
 **Interpretation**:
 - High readiness does NOT automatically mean low resistance (orthogonal dimensions)
@@ -569,8 +569,8 @@ Professionals demonstrate more coherent AI readiness construct due to:
 **Current Study Limitations**:
 1. **Sample Size**: N=132 holdout adequate but limits fit index optimization
 2. **Factor 2 Underdeveloped**: Only 2 items on AI Resistance (ER2, AX1)
-3. **RMSEA Elevated**: 0.130 suggests potential model misspecification or sample size effect
-4. **TLI Below Threshold**: 0.885 indicates incremental fit could improve
+3. **RMSEA Elevated**: 0.126 suggests potential model misspecification or sample size effect
+4. **TLI Below Threshold**: 0.892 indicates incremental fit could improve
 5. **Generalizability**: Entry-level professionals underrepresented (3%)
 
 **Recommended Future Work**:
@@ -712,7 +712,7 @@ graph LR
     XLABEL_TOP["<b>LOW</b><br/><b>AI READINESS</b>"]
     XLABEL_BOTTOM["<b>HIGH</b><br/><b>AI READINESS</b>"]
 
-    INFO["<b>Key Finding</b><br/>r = -0.224<br/><br/>Weak correlation enables<br/>ambivalent profiles:<br/>High readiness AND<br/>high resistance possible"]
+    INFO["<b>Key Finding</b><br/>r = -0.296<br/><br/>Weak correlation enables<br/>ambivalent profiles:<br/>High readiness AND<br/>high resistance possible"]
 
     YLABEL -.-> TOP & BOTTOM
     XLABEL_TOP -.-> Q2 & Q3
@@ -730,9 +730,11 @@ graph LR
     style BOTTOM fill:#fff,stroke:#424242,stroke-width:2px
 ```
 
-**Figure: Four-Quadrant Profile Classification** — Visual representation of AI adoption profiles based on orthogonal Readiness (x-axis) and Resistance (y-axis) dimensions. The weak correlation (r=-0.224) enables identification of "Ambivalent" professionals who simultaneously exhibit high readiness and high resistance, requiring differentiated interventions that address concerns while leveraging enthusiasm. Each quadrant prescribes targeted change management strategies.#### Interpretation Notes
+**Figure: Four-Quadrant Profile Classification** — Visual representation of AI adoption profiles based on orthogonal Readiness (x-axis) and Resistance (y-axis) dimensions. The weak correlation (r=-0.296) enables identification of "Ambivalent" professionals who simultaneously exhibit high readiness and high resistance, requiring differentiated interventions that address concerns while leveraging enthusiasm. Each quadrant prescribes targeted change management strategies.
 
-1. **Independence of Factors**: AI Readiness and Resistance are weakly correlated (r=-0.224), meaning professionals can simultaneously hold positive attitudes AND concerns
+#### Interpretation Notes
+
+1. **Independence of Factors**: AI Readiness and Resistance are weakly correlated (r=-0.296), meaning professionals can simultaneously hold positive attitudes AND concerns
 2. **Clinical Cutoffs**: Not yet established - use sample-relative scoring (e.g., median splits, quartiles) until normative data available
 3. **Change Sensitivity**: Test-retest reliability and sensitivity to interventions not yet assessed
 
@@ -750,14 +752,14 @@ graph LR
 | Loading range | 0.799-0.887 | 0.567-1.000 | All ≥0.50 ✅ |
 
 **Model Fit** (N=132):
-- CFI = 0.910 (acceptable)
-- TLI = 0.885 (approaching threshold)
-- RMSEA = 0.130 (elevated but acceptable for small sample)
+- CFI = 0.912 (acceptable)
+- TLI = 0.892 (approaching threshold)
+- RMSEA = 0.126 (elevated but acceptable for small sample)
 - SRMR = 0.050 (excellent)
 
 **Validity**:
 - ✅ Convergent validity: Both factors AVE ≥ 0.50
-- ✅ Discriminant validity: HTMT = 0.386 < 0.85
+- ✅ Discriminant validity: HTMT = 0.485 < 0.85
 - ✅ Structural validity: 2-factor structure replicates from EFA to CFA
 
 ---
