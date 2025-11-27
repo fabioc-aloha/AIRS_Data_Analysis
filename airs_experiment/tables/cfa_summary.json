@@ -1,0 +1,42 @@
+{
+  "population": "experiment",
+  "n_observations": 511,
+  "n_factors": 2,
+  "n_items": 7,
+  "factor_structure": {
+    "PositiveAI": [
+      "PE2",
+      "HM1",
+      "PV1",
+      "PV2",
+      "TR2"
+    ],
+    "Enablers": [
+      "EE1",
+      "EE2"
+    ]
+  },
+  "fit_indices": {
+    "chi2": 25.564533249933408,
+    "df": 13,
+    "CFI": 0.994675531147064,
+    "TLI": 0.9913989349298727,
+    "RMSEA": 0.04353278137551744,
+    "AIC": 29.899943118395562,
+    "BIC": 93.44548697145113
+  },
+  "reliability": [
+    {
+      "Factor": "PositiveAI",
+      "Alpha": 0.9170464450983719,
+      "CR": 0.917396625590227,
+      "AVE": 0.6898397161690262
+    },
+    {
+      "Factor": "Enablers",
+      "Alpha": 0.8380942234169415,
+      "CR": 0.8394465806298437,
+      "AVE": 0.7235931250657764
+    }
+  ]
+}

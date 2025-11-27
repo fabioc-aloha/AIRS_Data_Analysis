@@ -1,0 +1,21 @@
+{
+  "selected_roles": [
+    "Leader"
+  ],
+  "roles_included": [
+    "Manager",
+    "Executive"
+  ],
+  "n_observations": 130,
+  "n_predictor_items": 24,
+  "n_outcome_items": 4,
+  "random_seed": 67,
+  "source": "../data/AIRS_clean.csv",
+  "population_breakdown": {
+    "Leader": 130
+  },
+  "role_breakdown": {
+    "Manager": 74,
+    "Executive": 56
+  }
+}
