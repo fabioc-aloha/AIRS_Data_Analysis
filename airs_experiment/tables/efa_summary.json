@@ -1,0 +1,67 @@
+{
+  "population": "full",
+  "n_observations": 511,
+  "n_items_selected": 24,
+  "n_factors_selected": 6,
+  "selected_items": {
+    "PE": [
+      "PE1",
+      "PE2"
+    ],
+    "EE": [
+      "EE1",
+      "EE2"
+    ],
+    "SI": [
+      "SI1",
+      "SI2"
+    ],
+    "FC": [
+      "FC1",
+      "FC2"
+    ],
+    "HM": [
+      "HM1",
+      "HM2"
+    ],
+    "PV": [
+      "PV1",
+      "PV2"
+    ],
+    "HB": [
+      "HB1",
+      "HB2"
+    ],
+    "VO": [
+      "VO1",
+      "VO2"
+    ],
+    "TR": [
+      "TR1",
+      "TR2"
+    ],
+    "EX": [
+      "EX1",
+      "EX2"
+    ],
+    "ER": [
+      "ER1",
+      "ER2"
+    ],
+    "AX": [
+      "AX1",
+      "AX2"
+    ]
+  },
+  "selected_factors": [
+    "F1",
+    "F2",
+    "F3",
+    "F4",
+    "F5",
+    "F6"
+  ],
+  "kmo": 0.9482117648965954,
+  "bartlett_chi2": 8589.472678478462,
+  "variance_explained": 0.5273010448709095
+}

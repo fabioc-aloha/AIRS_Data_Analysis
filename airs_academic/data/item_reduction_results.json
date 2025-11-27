@@ -1,0 +1,70 @@
+{
+  "population": "academic",
+  "sample_size": 137,
+  "total_items_analyzed": 24,
+  "items_flagged": 21,
+  "items_retained": 3,
+  "flagged_items": [
+    "AX2",
+    "PV2",
+    "PE1",
+    "EX2",
+    "FC1",
+    "SI1",
+    "VO1",
+    "HB1",
+    "PV1",
+    "AX1",
+    "HB2",
+    "SI2",
+    "ER1",
+    "TR2",
+    "TR1",
+    "VO2",
+    "EX1",
+    "ER2",
+    "EE2",
+    "PE2",
+    "EE1"
+  ],
+  "retained_items": [
+    "FC2",
+    "HM1",
+    "HM2"
+  ],
+  "criteria": {
+    "low_communality": [
+      "EE1",
+      "EE2",
+      "SI1",
+      "SI2",
+      "FC1",
+      "HB1",
+      "HB2",
+      "VO2",
+      "EX1",
+      "EX2",
+      "ER1",
+      "AX2"
+    ],
+    "cross_loading": [
+      "PV1",
+      "HB1",
+      "VO1"
+    ],
+    "wrong_factor": [
+      "PE1",
+      "PE2",
+      "EE1",
+      "PV1",
+      "PV2",
+      "HB2",
+      "VO2",
+      "TR1",
+      "TR2",
+      "EX2",
+      "ER2",
+      "AX1"
+    ]
+  }
+}

@@ -1,25 +1,25 @@
 {
-  "created": "2025-11-26",
-  "source": "00_Create_Split_Samples.ipynb",
+  "created": "2025-11-27",
+  "source": "data/00_Create_Split_Samples.ipynb",
   "description": "Complete AIRS item metadata including 24 predictors + 4 BI outcome items",
   "n_predictor_items": 24,
   "n_outcome_items": 4,
   "n_total_items": 28,
   "populations": {
-    "full": {
-      "n_total": 509,
-      "n_dev": 254,
-      "n_holdout": 255
+    "leader": {
+      "n_total": 130,
+      "n_dev": 91,
+      "n_holdout": 39
     },
     "academic": {
-      "n_total": 194,
-      "n_dev": 135,
+      "n_total": 196,
+      "n_dev": 137,
       "n_holdout": 59
     },
     "professional": {
-      "n_total": 291,
-      "n_dev": 145,
-      "n_holdout": 146
+      "n_total": 161,
+      "n_dev": 112,
+      "n_holdout": 49
     }
   },
   "items": [

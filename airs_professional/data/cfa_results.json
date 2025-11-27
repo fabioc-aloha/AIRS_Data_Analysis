@@ -1,0 +1,137 @@
+{
+  "population": "professional",
+  "n_holdout": 146,
+  "models_tested": [
+    "2F",
+    "3F",
+    "4F",
+    "5F",
+    "6F"
+  ],
+  "best_model": "6F",
+  "model_comparison": [
+    {
+      "model": "6F",
+      "CFI": 0.8894006499120727,
+      "RMSEA": 0.0956302786209295,
+      "AIC": 118.44831388700011,
+      "acceptable": "False"
+    },
+    {
+      "model": "5F",
+      "CFI": 0.8877800957262083,
+      "RMSEA": 0.09532801954988818,
+      "AIC": 108.31674020940201,
+      "acceptable": "False"
+    },
+    {
+      "model": "4F",
+      "CFI": 0.8833045624553347,
+      "RMSEA": 0.0964167951069513,
+      "AIC": 100.08773429906739,
+      "acceptable": "False"
+    },
+    {
+      "model": "3F",
+      "CFI": 0.8767466567560476,
+      "RMSEA": 0.09849019272136524,
+      "AIC": 93.79137008713643,
+      "acceptable": "False"
+    },
+    {
+      "model": "2F",
+      "CFI": 0.8663322703643043,
+      "RMSEA": 0.10215737659003275,
+      "AIC": 89.35858991106817,
+      "acceptable": "False"
+    }
+  ],
+  "best_model_details": {
+    "n_factors": 6,
+    "fit_indices": {
+      "chi2": 551.2730862489922,
+      "df": "237",
+      "CFI": 0.8894006499120727,
+      "TLI": 0.8712007568596289,
+      "RMSEA": 0.0956302786209295,
+      "AIC": 118.44831388700011,
+      "BIC": 306.41553105462526
+    },
+    "items_per_factor": {
+      "F1": [
+        "PE1",
+        "PE2",
+        "SI1",
+        "HM1",
+        "HM2",
+        "PV1",
+        "PV2",
+        "HB1",
+        "HB2",
+        "VO1",
+        "TR2",
+        "EX2"
+      ],
+      "F2": [
+        "EE1",
+        "EE2",
+        "EX1"
+      ],
+      "F4": [
+        "SI2",
+        "FC1",
+        "FC2"
+      ],
+      "F6": [
+        "VO2"
+      ],
+      "F5": [
+        "TR1"
+      ],
+      "F3": [
+        "ER1",
+        "ER2",
+        "AX1",
+        "AX2"
+      ]
+    },
+    "reliability": [
+      {
+        "Factor": "F1",
+        "N_Items": 12,
+        "Cronbach_Alpha": 0.9601021251358384,
+        "CR": 0.9609980955649549,
+        "AVE": 0.6759614953705121,
+        "CR_Status": "\u2713",
+        "AVE_Status": "\u2713"
+      },
+      {
+        "Factor": "F2",
+        "N_Items": 3,
+        "Cronbach_Alpha": 0.8346782819519384,
+        "CR": 0.8438309101448951,
+        "AVE": 0.6445398857023986,
+        "CR_Status": "\u2713",
+        "AVE_Status": "\u2713"
+      },
+      {
+        "Factor": "F4",
+        "N_Items": 3,
+        "Cronbach_Alpha": 0.8314123830675757,
+        "CR": 0.8360671864236012,
+        "AVE": 0.6297422835144881,
+        "CR_Status": "\u2713",
+        "AVE_Status": "\u2713"
+      },
+      {
+        "Factor": "F3",
+        "N_Items": 4,
+        "Cronbach_Alpha": 0.66590676701812,
+        "CR": 0.6612085572367697,
+        "AVE": 0.3824262399788755,
+        "CR_Status": "\u26a0\ufe0f",
+        "AVE_Status": "\u26a0\ufe0f"
+      }
+    ]
+  }
+}

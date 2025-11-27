@@ -1,60 +1,60 @@
-Progress,PE1,PE2,EE1,EE2,SI1,SI2,FC1,FC2,HM1,HM2,PV1,PV2,HB1,HB2,VO1,VO2,TR1,TR2,EX1,EX2,ER1,ER2,AX1,AX2,BI1,BI2,BI3,BI4,Usage_MSCopilot,Usage_ChatGPT,Usage_Gemini,Usage_Other,Role,Education,Industry,Experience,Disability,Duration_minutes,AI_Adoption,Total_Usage_Score,Usage_Intensity,Population,Disability_Binary
-100,4,3,3,3,2,2,3,3,3,4,4,3,2,2,3,3,3,4,3,4,5,5,4,4,3,2,3,3,1,4,1,1,Full time student,High school or less,Education,11 or more years,No,3.9,1,7,Low,Academic,0
-100,4,3,5,3,3,3,3,3,3,4,3,3,3,2,4,2,3,4,5,3,3,5,4,3,3,3,1,3,3,2,2,3,Full time student,Some college or vocational training,Healthcare,1 to 3 years,No,2.033333333333333,1,10,Medium,Academic,0
-100,2,1,4,5,1,4,2,1,1,2,1,1,1,1,1,2,1,1,5,4,4,5,4,4,2,1,2,1,1,3,1,1,Full time student,Some college or vocational training,Other,Less than 1 year,No,3.966666666666667,1,6,Low,Academic,0
-100,4,4,4,4,3,2,2,4,4,4,4,4,4,4,4,4,3,3,4,4,4,4,4,4,3,3,3,3,3,3,1,1,Full time student,Some college or vocational training,Technology or IT,Less than 1 year,No,2.6333333333333333,1,8,Low,Academic,0
-100,3,4,4,4,4,4,4,4,3,4,4,4,4,4,4,3,4,4,2,4,4,4,4,4,4,4,4,4,4,5,1,3,Part time student,Bachelor’s degree,Education,4 to 6 years,No,3.0,1,13,High,Academic,0
-100,3,3,4,4,3,2,4,4,4,3,4,2,2,2,3,3,4,5,3,5,2,3,4,4,3,3,3,4,1,3,2,2,Part time student,Some college or vocational training,Finance or Banking,Less than 1 year,No,3.216666666666667,1,8,Low,Academic,0
-100,4,4,5,3,3,3,2,4,4,4,5,3,4,4,5,5,3,4,4,5,2,3,4,2,5,4,3,4,2,1,1,4,Full time student,Some college or vocational training,Healthcare,Less than 1 year,No,3.4166666666666665,1,8,Low,Academic,0
-100,3,2,5,3,1,2,5,4,2,1,3,4,1,1,1,5,2,4,4,5,5,4,5,5,4,3,5,4,2,5,1,1,Full time student,Some college or vocational training,Technology or IT,Less than 1 year,No,3.3833333333333333,1,9,Medium,Academic,0
-100,4,3,2,4,1,4,2,4,3,3,3,1,4,4,3,3,3,3,4,5,4,5,5,4,1,2,3,3,5,5,2,1,Full time student,Some college or vocational training,Nonprofit,1 to 3 years,Yes,10.916666666666666,1,13,High,Academic,1
-100,3,1,5,4,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,2,1,1,2,1,1,Full time student,High school or less,Other,Less than 1 year,No,2.5166666666666666,1,5,Low,Academic,0
-100,5,3,4,4,4,3,4,4,4,4,4,4,4,4,4,4,4,5,4,4,4,3,2,4,4,4,4,4,1,5,1,1,Full time student,Some college or vocational training,Nonprofit,Less than 1 year,No,1.5333333333333334,1,8,Low,Academic,0
-100,3,3,5,5,3,3,4,4,3,3,3,2,3,3,4,4,3,3,2,4,4,5,5,2,2,3,2,2,3,4,3,1,Full time student,High school or less,Retail or Hospitality,4 to 6 years,No,4.183333333333334,1,11,Medium,Academic,0
-100,4,4,4,4,4,4,4,4,4,4,4,3,3,4,3,4,4,4,2,3,4,4,4,3,4,4,4,3,4,3,4,3,Full time student,Master’s degree,Manufacturing,4 to 6 years,No,1.2,1,14,High,Academic,0
-100,5,5,4,4,5,3,4,3,4,5,4,5,5,5,5,4,5,4,3,4,3,3,2,2,4,4,4,4,2,2,3,4,Full time student,Some college or vocational training,Retail or Hospitality,Less than 1 year,No,3.0,1,11,Medium,Academic,0
-100,4,4,4,4,3,3,3,3,4,4,4,4,4,4,3,3,3,3,4,3,3,3,4,3,4,4,4,3,2,5,1,2,Full time student,Bachelor’s degree,Finance or Banking,1 to 3 years,No,57.38333333333333,1,10,Medium,Academic,0
-100,1,1,1,1,1,4,3,3,1,1,1,1,1,1,1,5,1,1,4,1,5,5,5,1,1,1,1,1,1,1,1,1,Full time student,Some college or vocational training,Technology or IT,1 to 3 years,Yes,2.9833333333333334,0,4,Non-User,Academic,1
-100,2,2,2,3,2,3,3,2,3,4,3,3,3,3,2,5,3,3,2,3,1,5,5,1,1,2,4,1,3,2,1,1,Full time student,Some college or vocational training,Healthcare,1 to 3 years,No,4.05,1,7,Low,Academic,0
-100,1,5,5,5,5,4,5,4,4,5,5,3,5,5,4,5,4,4,4,4,2,4,2,4,2,4,4,4,4,3,4,4,Full time student,Bachelor’s degree,Finance or Banking,Less than 1 year,No,8.566666666666666,1,15,High,Academic,0
-100,5,4,4,4,2,2,2,2,4,4,5,4,4,3,5,4,4,3,2,4,5,4,4,4,4,4,4,3,3,5,1,1,Full time student,Bachelor’s degree,Manufacturing,Less than 1 year,No,3.75,1,10,Medium,Academic,0
-100,1,1,3,3,1,3,1,1,1,1,1,1,3,1,1,5,1,1,3,3,5,4,5,3,1,1,1,1,1,1,3,1,Full time student,High school or less,Other,Less than 1 year,No,6.983333333333333,1,6,Low,Academic,0
-100,5,5,5,5,3,1,2,3,2,3,5,5,5,5,5,5,3,3,2,4,5,5,5,5,3,3,3,3,1,4,4,2,Full time student,Some college or vocational training,Other,11 or more years,Yes,2.5,1,11,Medium,Academic,1
-100,4,4,4,3,4,4,5,4,2,2,3,4,4,4,4,4,3,4,4,5,2,5,5,4,4,5,4,3,3,4,4,1,Full time student,High school or less,Education,1 to 3 years,No,2.816666666666667,1,12,Medium,Academic,0
-100,4,3,4,5,3,2,4,3,3,4,3,4,4,4,3,3,4,5,3,4,3,4,3,2,4,3,2,3,4,4,4,3,Full time student,High school or less,Other,4 to 6 years,No,6.833333333333333,1,15,High,Academic,0
-100,2,1,5,4,3,1,4,3,4,3,3,2,3,1,1,5,1,2,5,5,5,5,4,3,2,3,3,3,2,3,1,3,Full time student,Some college or vocational training,Other,Less than 1 year,Prefer not to answer,5.316666666666666,1,9,Medium,Academic,0
-100,2,2,3,4,4,3,4,4,3,3,3,4,1,1,3,5,4,4,4,3,2,2,2,2,2,3,2,2,1,1,1,1,Full time student,Some college or vocational training,Other,Less than 1 year,No,2.6666666666666665,0,4,Non-User,Academic,0
-100,4,1,5,4,4,4,4,4,2,1,4,2,2,1,4,5,3,2,5,4,2,5,5,1,2,1,4,1,1,3,1,1,Full time student,Some college or vocational training,Other,1 to 3 years,Prefer not to answer,5.933333333333334,1,6,Low,Academic,0
-100,5,1,5,5,2,2,3,5,5,3,5,5,4,4,5,5,5,4,5,2,2,1,2,4,5,4,4,3,1,4,3,1,Full time student,Some college or vocational training,Other,1 to 3 years,Yes,2.4833333333333334,1,9,Medium,Academic,1
-100,5,5,1,1,3,3,5,5,4,4,4,4,4,4,4,1,4,4,4,4,5,4,5,5,3,4,2,3,5,1,5,1,Part time student,Bachelor’s degree,Retail or Hospitality,11 or more years,Yes,9.116666666666667,1,12,Medium,Academic,1
-100,3,2,2,3,1,4,4,3,1,2,2,1,1,1,1,5,3,4,4,3,2,4,5,1,1,1,1,1,1,2,2,1,Part time student,Some college or vocational training,Retail or Hospitality,11 or more years,No,2.6166666666666667,1,6,Low,Academic,0
-100,5,4,4,4,3,4,2,4,2,4,4,5,4,4,5,4,4,5,4,4,2,4,2,4,4,4,3,4,3,5,3,2,Full time student,Bachelor’s degree,Retail or Hospitality,1 to 3 years,No,4.2,1,13,High,Academic,0
-100,1,1,3,3,4,3,3,3,3,1,1,3,1,1,5,4,1,3,3,4,5,4,4,4,4,2,4,4,3,4,2,1,Full time student,Some college or vocational training,Other,Less than 1 year,Yes,6.3,1,10,Medium,Academic,1
-100,4,3,5,4,3,1,4,4,4,5,5,4,4,4,5,5,3,3,5,5,3,4,5,5,4,4,4,4,5,3,1,1,Full time student,Some college or vocational training,Healthcare,Less than 1 year,No,8.083333333333334,1,10,Medium,Academic,0
-100,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,2,1,1,Full time student,Bachelor’s degree,Other,4 to 6 years,No,2.0833333333333335,1,7,Low,Academic,0
-100,2,2,2,2,2,2,1,3,3,4,1,2,2,3,2,4,2,5,1,2,2,3,2,2,1,2,3,3,3,4,1,1,Full time student,High school or less,Technology or IT,Less than 1 year,No,1.4,1,9,Medium,Academic,0
-100,4,4,5,4,4,5,5,4,4,4,5,5,5,3,4,4,4,5,5,4,5,4,5,4,5,5,3,4,4,4,4,4,Full time student,Master’s degree,Technology or IT,7 to 10 years,No,5.45,1,16,High,Academic,0
-100,3,2,4,4,2,2,2,3,3,2,2,1,3,2,2,4,4,3,3,4,4,5,5,5,3,3,5,3,3,3,4,1,Full time student,High school or less,Other,11 or more years,No,5.983333333333333,1,11,Medium,Academic,0
-100,3,4,4,4,2,2,3,4,3,4,2,3,4,2,4,4,3,3,4,5,4,3,4,4,4,3,3,3,3,3,3,2,Full time student,High school or less,Other,Less than 1 year,No,3.4,1,11,Medium,Academic,0
-100,4,1,5,3,1,3,4,3,1,1,1,1,3,4,3,3,1,1,2,3,5,5,5,2,1,1,1,1,1,3,3,1,Full time student,Some college or vocational training,Other,1 to 3 years,No,44.733333333333334,1,8,Low,Academic,0
-100,4,1,5,4,4,2,1,4,1,1,1,1,1,1,1,5,1,1,1,4,4,5,5,5,1,1,1,1,1,2,1,1,Full time student,Bachelor’s degree,Education,1 to 3 years,Yes,10.15,1,5,Low,Academic,1
-100,3,1,3,3,1,5,3,3,1,1,1,1,1,1,1,5,1,1,3,3,5,5,5,2,1,1,1,1,2,1,1,1,Full time student,Some college or vocational training,Government or Public sector,4 to 6 years,Yes,5.1,1,5,Low,Academic,1
-100,4,4,4,4,3,3,4,4,4,4,4,4,4,3,4,4,3,4,3,3,4,3,3,3,4,4,3,3,4,4,3,2,Full time student,High school or less,Other,Less than 1 year,No,2.6,1,13,High,Academic,0
-100,3,3,2,4,3,3,3,4,2,2,3,3,2,1,2,5,3,3,2,3,4,4,5,4,2,2,2,1,1,1,1,1,Full time student,Bachelor’s degree,Healthcare,1 to 3 years,Prefer not to answer,4.65,0,4,Non-User,Academic,0
-100,1,3,1,1,1,4,1,2,2,3,2,2,2,2,3,5,3,3,1,3,5,5,5,1,2,2,1,1,1,2,1,1,Full time student,High school or less,Retail or Hospitality,1 to 3 years,No,8.216666666666667,1,5,Low,Academic,0
-100,4,4,4,3,2,2,2,3,3,3,3,4,4,3,4,4,4,4,4,5,5,3,4,2,3,3,3,3,4,4,2,2,Full time student,Some college or vocational training,Healthcare,Less than 1 year,Yes,4.15,1,12,Medium,Academic,1
-100,4,4,4,4,4,3,4,4,2,3,5,4,4,4,4,5,4,3,2,3,2,5,2,3,4,4,5,3,1,4,1,4,Full time student,Some college or vocational training,Other,Less than 1 year,No,3.65,1,10,Medium,Academic,0
-100,2,2,4,4,1,2,2,4,1,1,1,2,1,1,1,5,2,3,4,4,1,4,5,1,1,2,2,2,2,1,3,1,Full time student,Some college or vocational training,Other,Less than 1 year,No,2.9,1,7,Low,Academic,0
-100,4,4,3,3,3,3,4,3,3,3,4,4,3,4,4,4,4,4,3,4,4,4,3,3,3,4,3,3,2,1,1,1,Full time student,High school or less,Healthcare,Less than 1 year,No,6.3,1,5,Low,Academic,0
-100,4,3,4,4,3,3,2,3,3,4,4,4,4,2,5,5,3,3,4,5,3,3,4,3,4,3,3,3,1,3,3,3,Full time student,High school or less,Healthcare,1 to 3 years,Yes,5.583333333333333,1,10,Medium,Academic,1
-100,2,1,4,4,2,3,3,3,1,2,2,1,2,2,2,4,1,2,2,2,4,4,5,2,2,1,1,1,2,3,1,1,Full time student,Some college or vocational training,Education,4 to 6 years,Yes,3.7,1,7,Low,Academic,1
-100,4,4,4,4,3,4,4,4,3,4,4,4,4,2,4,4,4,4,4,4,4,4,3,2,4,4,4,3,2,4,3,4,Full time student,Some college or vocational training,Other,1 to 3 years,No,4.516666666666667,1,13,High,Academic,0
-100,4,2,4,3,4,3,2,4,2,3,5,2,2,2,2,5,2,1,4,5,1,5,5,1,1,1,1,1,1,3,3,1,Full time student,Some college or vocational training,Education,Less than 1 year,Yes,3.7333333333333334,1,8,Low,Academic,1
-100,4,4,3,1,5,3,3,4,1,4,3,5,2,4,5,2,1,4,2,5,5,1,3,4,3,1,4,3,3,5,2,4,Part time student,High school or less,Retail or Hospitality,4 to 6 years,No,1.5666666666666667,1,14,High,Academic,0
-100,4,4,4,2,3,4,2,3,2,2,2,4,2,1,4,4,2,3,4,4,5,5,4,2,4,3,3,3,1,4,2,1,Full time student,High school or less,Other,Less than 1 year,No,4.516666666666667,1,8,Low,Academic,0
-100,4,4,3,2,1,2,2,3,1,1,3,3,1,1,4,5,1,1,1,5,5,5,5,2,2,1,1,1,1,3,1,1,Full time student,Bachelor’s degree,Education,4 to 6 years,No,2.9166666666666665,1,6,Low,Academic,0
-100,3,3,1,1,3,2,3,2,2,3,3,3,1,1,3,3,2,2,1,3,3,5,5,4,3,2,3,3,3,1,1,1,Full time student,Some college or vocational training,Government or Public sector,7 to 10 years,No,2.716666666666667,1,6,Low,Academic,0
-100,5,4,3,3,3,2,2,2,3,4,4,2,3,4,4,5,2,3,2,3,5,5,5,5,2,2,3,2,1,4,2,2,Full time student,Some college or vocational training,Healthcare,1 to 3 years,Yes,2.95,1,9,Medium,Academic,1
-100,4,2,4,4,2,4,3,4,2,3,4,4,4,2,4,5,2,3,1,5,3,4,5,4,2,3,2,2,2,1,3,4,Full time student,Some college or vocational training,Other,Less than 1 year,No,3.4166666666666665,1,10,Medium,Academic,0
-100,5,4,5,4,4,4,4,3,3,3,4,4,5,5,5,5,4,4,4,4,3,3,4,2,3,3,2,2,1,4,3,2,Full time student,Some college or vocational training,Healthcare,1 to 3 years,No,3.4,1,10,Medium,Academic,0
-100,2,2,3,3,1,1,3,3,2,1,1,1,1,1,1,1,2,1,4,5,3,5,5,1,1,1,1,1,3,1,2,1,Part time student,Bachelor’s degree,Healthcare,Less than 1 year,No,2.716666666666667,1,7,Low,Academic,0
+Progress,PE1,PE2,EE1,EE2,SI1,SI2,FC1,FC2,HM1,HM2,PV1,PV2,HB1,HB2,VO1,VO2,TR1,TR2,EX1,EX2,ER1,ER2,AX1,AX2,BI1,BI2,BI3,BI4,Usage_MSCopilot,Usage_ChatGPT,Usage_Gemini,Usage_Other,Role,Education,Industry,Experience,Disability,Duration_minutes,AI_Adoption,Total_Usage_Score,Usage_Intensity,Population,Role_Category,Disability_Binary
+100,5,4,4,4,3,4,2,4,2,4,4,5,4,4,5,4,4,5,4,4,2,4,2,4,4,4,3,4,3,5,3,2,Full time student,Bachelor’s degree,Retail or Hospitality,1 to 3 years,No,4.2,1,13,High,Academic,FT_Student,0
+100,3,1,3,3,1,5,3,3,1,1,1,1,1,1,1,5,1,1,3,3,5,5,5,2,1,1,1,1,2,1,1,1,Full time student,Some college or vocational training,Government or Public sector,4 to 6 years,Yes,5.1,1,5,Low,Academic,FT_Student,1
+100,2,2,2,2,2,2,1,3,3,4,1,2,2,3,2,4,2,5,1,2,2,3,2,2,1,2,3,3,3,4,1,1,Full time student,High school or less,Technology or IT,Less than 1 year,No,1.4,1,9,Medium,Academic,FT_Student,0
+100,4,4,3,3,3,3,4,3,3,3,4,4,3,4,4,4,4,4,3,4,4,4,3,3,3,4,3,3,2,1,1,1,Full time student,High school or less,Healthcare,Less than 1 year,No,6.3,1,5,Low,Academic,FT_Student,0
+100,4,4,5,5,5,5,4,5,5,5,5,5,4,4,4,4,5,3,4,4,3,3,3,4,4,4,4,4,5,5,4,3,Full time student,Bachelor’s degree,Other,7 to 10 years,No,7.55,1,17,High,Academic,FT_Student,0
+100,5,5,5,5,3,1,2,3,2,3,5,5,5,5,5,5,3,3,2,4,5,5,5,5,3,3,3,3,1,4,4,2,Full time student,Some college or vocational training,Other,11 or more years,Yes,2.5,1,11,Medium,Academic,FT_Student,1
+100,4,4,4,4,4,4,4,4,4,4,4,3,2,2,3,3,4,4,4,4,3,4,2,4,3,4,4,4,3,2,5,1,Full time student,Bachelor’s degree,Technology or IT,11 or more years,No,1.9833333333333334,1,11,Medium,Academic,FT_Student,0
+100,4,1,5,3,1,3,4,3,1,1,1,1,3,4,3,3,1,1,2,3,5,5,5,2,1,1,1,1,1,3,3,1,Full time student,Some college or vocational training,Other,1 to 3 years,No,44.733333333333334,1,8,Low,Academic,FT_Student,0
+100,4,4,4,4,3,3,4,4,4,4,4,4,4,3,4,4,3,4,3,3,4,3,3,3,4,4,3,3,4,4,3,2,Full time student,High school or less,Other,Less than 1 year,No,2.6,1,13,High,Academic,FT_Student,0
+100,2,1,5,4,3,1,4,3,4,3,3,2,3,1,1,5,1,2,5,5,5,5,4,3,2,3,3,3,2,3,1,3,Full time student,Some college or vocational training,Other,Less than 1 year,Prefer not to answer,5.316666666666666,1,9,Medium,Academic,FT_Student,0
+100,3,1,5,4,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,2,1,1,2,1,1,Full time student,High school or less,Other,Less than 1 year,No,2.5166666666666666,1,5,Low,Academic,FT_Student,0
+100,4,1,5,4,4,4,4,4,2,1,4,2,2,1,4,5,3,2,5,4,2,5,5,1,2,1,4,1,1,3,1,1,Full time student,Some college or vocational training,Other,1 to 3 years,Prefer not to answer,5.933333333333334,1,6,Low,Academic,FT_Student,0
+100,3,4,4,4,4,4,4,4,3,4,4,4,4,4,4,3,4,4,2,4,4,4,4,4,4,4,4,4,4,5,1,3,Part time student,Bachelor’s degree,Education,4 to 6 years,No,3.0,1,13,High,Academic,PT_Student,0
+100,2,1,4,5,1,4,2,1,1,2,1,1,1,1,1,2,1,1,5,4,4,5,4,4,2,1,2,1,1,3,1,1,Full time student,Some college or vocational training,Other,Less than 1 year,No,3.966666666666667,1,6,Low,Academic,FT_Student,0
+100,5,3,4,4,4,3,4,4,4,4,4,4,4,4,4,4,4,5,4,4,4,3,2,4,4,4,4,4,1,5,1,1,Full time student,Some college or vocational training,Nonprofit,Less than 1 year,No,1.5333333333333334,1,8,Low,Academic,FT_Student,0
+100,1,1,1,1,1,4,3,3,1,1,1,1,1,1,1,5,1,1,4,1,5,5,5,1,1,1,1,1,1,1,1,1,Full time student,Some college or vocational training,Technology or IT,1 to 3 years,Yes,2.9833333333333334,0,4,Non-User,Academic,FT_Student,1
+100,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,2,1,1,Full time student,Bachelor’s degree,Other,4 to 6 years,No,2.0833333333333335,1,7,Low,Academic,FT_Student,0
+100,4,4,4,4,3,2,2,4,4,4,4,4,4,4,4,4,3,3,4,4,4,4,4,4,3,3,3,3,3,3,1,1,Full time student,Some college or vocational training,Technology or IT,Less than 1 year,No,2.6333333333333333,1,8,Low,Academic,FT_Student,0
+100,4,4,4,4,3,4,4,4,3,4,4,4,4,2,4,4,4,4,4,4,4,4,3,2,4,4,4,3,2,4,3,4,Full time student,Some college or vocational training,Other,1 to 3 years,No,4.516666666666667,1,13,High,Academic,FT_Student,0
+100,5,5,1,1,3,3,5,5,4,4,4,4,4,4,4,1,4,4,4,4,5,4,5,5,3,4,2,3,5,1,5,1,Part time student,Bachelor’s degree,Retail or Hospitality,11 or more years,Yes,9.116666666666667,1,12,Medium,Academic,PT_Student,1
+100,3,4,4,4,2,2,3,4,3,4,2,3,4,2,4,4,3,3,4,5,4,3,4,4,4,3,3,3,3,3,3,2,Full time student,High school or less,Other,Less than 1 year,No,3.4,1,11,Medium,Academic,FT_Student,0
+100,4,3,2,4,1,4,2,4,3,3,3,1,4,4,3,3,3,3,4,5,4,5,5,4,1,2,3,3,5,5,2,1,Full time student,Some college or vocational training,Nonprofit,1 to 3 years,Yes,10.916666666666666,1,13,High,Academic,FT_Student,1
+100,4,3,5,3,3,3,3,3,3,4,3,3,3,2,4,2,3,4,5,3,3,5,4,3,3,3,1,3,3,2,2,3,Full time student,Some college or vocational training,Healthcare,1 to 3 years,No,2.033333333333333,1,10,Medium,Academic,FT_Student,0
+100,5,4,3,3,3,2,2,2,3,4,4,2,3,4,4,5,2,3,2,3,5,5,5,5,2,2,3,2,1,4,2,2,Full time student,Some college or vocational training,Healthcare,1 to 3 years,Yes,2.95,1,9,Medium,Academic,FT_Student,1
+100,2,2,3,4,4,3,4,4,3,3,3,4,1,1,3,5,4,4,4,3,2,2,2,2,2,3,2,2,1,1,1,1,Full time student,Some college or vocational training,Other,Less than 1 year,No,2.6666666666666665,0,4,Non-User,Academic,FT_Student,0
+100,4,1,5,4,4,2,1,4,1,1,1,1,1,1,1,5,1,1,1,4,4,5,5,5,1,1,1,1,1,2,1,1,Full time student,Bachelor’s degree,Education,1 to 3 years,Yes,10.15,1,5,Low,Academic,FT_Student,1
+100,2,1,4,4,2,3,3,3,1,2,2,1,2,2,2,4,1,2,2,2,4,4,5,2,2,1,1,1,2,3,1,1,Full time student,Some college or vocational training,Education,4 to 6 years,Yes,3.7,1,7,Low,Academic,FT_Student,1
+100,3,2,4,4,2,2,2,3,3,2,2,1,3,2,2,4,4,3,3,4,4,5,5,5,3,3,5,3,3,3,4,1,Full time student,High school or less,Other,11 or more years,No,5.983333333333333,1,11,Medium,Academic,FT_Student,0
+100,5,4,4,4,2,2,2,2,4,4,5,4,4,3,5,4,4,3,2,4,5,4,4,4,4,4,4,3,3,5,1,1,Full time student,Bachelor’s degree,Manufacturing,Less than 1 year,No,3.75,1,10,Medium,Academic,FT_Student,0
+100,5,4,4,3,3,3,2,4,2,4,5,5,5,5,5,5,2,3,1,5,5,3,4,4,5,3,3,2,5,4,1,1,Full time student,Some college or vocational training,Finance or Banking,Less than 1 year,Yes,3.4166666666666665,1,11,Medium,Academic,FT_Student,1
+100,5,5,4,5,4,4,5,5,5,5,4,5,5,4,5,4,4,5,5,4,5,5,4,4,4,5,4,4,4,4,4,4,Full time student,Master’s degree,Finance or Banking,1 to 3 years,No,2.6666666666666665,1,16,High,Academic,FT_Student,0
+100,4,4,3,2,1,2,2,3,1,1,3,3,1,1,4,5,1,1,1,5,5,5,5,2,2,1,1,1,1,3,1,1,Full time student,Bachelor’s degree,Education,4 to 6 years,No,2.9166666666666665,1,6,Low,Academic,FT_Student,0
+100,4,3,3,3,2,2,3,3,3,4,4,3,2,2,3,3,3,4,3,4,5,5,4,4,3,2,3,3,1,4,1,1,Full time student,High school or less,Education,11 or more years,No,3.9,1,7,Low,Academic,FT_Student,0
+100,1,1,3,3,4,3,3,3,3,1,1,3,1,1,5,4,1,3,3,4,5,4,4,4,4,2,4,4,3,4,2,1,Full time student,Some college or vocational training,Other,Less than 1 year,Yes,6.3,1,10,Medium,Academic,FT_Student,1
+100,4,3,4,5,3,2,4,3,3,4,3,4,4,4,3,3,4,5,3,4,3,4,3,2,4,3,2,3,4,4,4,3,Full time student,High school or less,Other,4 to 6 years,No,6.833333333333333,1,15,High,Academic,FT_Student,0
+100,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,3,4,4,4,4,4,4,3,3,4,4,4,4,1,4,1,1,Full time student,Some college or vocational training,Other,Less than 1 year,No,2.183333333333333,1,7,Low,Academic,FT_Student,0
+100,1,5,5,5,5,4,5,4,4,5,5,3,5,5,4,5,4,4,4,4,2,4,2,4,2,4,4,4,4,3,4,4,Full time student,Bachelor’s degree,Finance or Banking,Less than 1 year,No,8.566666666666666,1,15,High,Academic,FT_Student,0
+100,3,2,5,3,1,2,5,4,2,1,3,4,1,1,1,5,2,4,4,5,5,4,5,5,4,3,5,4,2,5,1,1,Full time student,Some college or vocational training,Technology or IT,Less than 1 year,No,3.3833333333333333,1,9,Medium,Academic,FT_Student,0
+100,5,1,5,5,2,2,3,5,5,3,5,5,4,4,5,5,5,4,5,2,2,1,2,4,5,4,4,3,1,4,3,1,Full time student,Some college or vocational training,Other,1 to 3 years,Yes,2.4833333333333334,1,9,Medium,Academic,FT_Student,1
+100,4,3,4,4,3,3,2,3,3,4,4,4,4,2,5,5,3,3,4,5,3,3,4,3,4,3,3,3,1,3,3,3,Full time student,High school or less,Healthcare,1 to 3 years,Yes,5.583333333333333,1,10,Medium,Academic,FT_Student,1
+100,4,4,5,3,4,5,4,3,4,3,5,4,4,3,5,4,4,3,5,3,4,5,4,3,5,4,4,4,5,3,5,3,Full time student,High school or less,Technology or IT,1 to 3 years,Yes,1.8666666666666667,1,16,High,Academic,FT_Student,1
+100,3,3,2,4,3,3,3,4,2,2,3,3,2,1,2,5,3,3,2,3,4,4,5,4,2,2,2,1,1,1,1,1,Full time student,Bachelor’s degree,Healthcare,1 to 3 years,Prefer not to answer,4.65,0,4,Non-User,Academic,FT_Student,0
+100,4,4,5,3,3,3,2,4,4,4,5,3,4,4,5,5,3,4,4,5,2,3,4,2,5,4,3,4,2,1,1,4,Full time student,Some college or vocational training,Healthcare,Less than 1 year,No,3.4166666666666665,1,8,Low,Academic,FT_Student,0
+100,4,4,5,4,4,5,5,4,4,4,5,5,5,3,4,4,4,5,5,4,5,4,5,4,5,5,3,4,4,4,4,4,Full time student,Master’s degree,Technology or IT,7 to 10 years,No,5.45,1,16,High,Academic,FT_Student,0
+100,2,2,4,4,1,2,2,4,1,1,1,2,1,1,1,5,2,3,4,4,1,4,5,1,1,2,2,2,2,1,3,1,Full time student,Some college or vocational training,Other,Less than 1 year,No,2.9,1,7,Low,Academic,FT_Student,0
+100,1,3,1,1,1,4,1,2,2,3,2,2,2,2,3,5,3,3,1,3,5,5,5,1,2,2,1,1,1,2,1,1,Full time student,High school or less,Retail or Hospitality,1 to 3 years,No,8.216666666666667,1,5,Low,Academic,FT_Student,0
+100,5,5,4,4,5,3,4,3,4,5,4,5,5,5,5,4,5,4,3,4,3,3,2,2,4,4,4,4,2,2,3,4,Full time student,Some college or vocational training,Retail or Hospitality,Less than 1 year,No,3.0,1,11,Medium,Academic,FT_Student,0
+100,4,4,4,4,4,3,4,4,2,3,5,4,4,4,4,5,4,3,2,3,2,5,2,3,4,4,5,3,1,4,1,4,Full time student,Some college or vocational training,Other,Less than 1 year,No,3.65,1,10,Medium,Academic,FT_Student,0
+100,3,3,4,4,3,2,4,4,4,3,4,2,2,2,3,3,4,5,3,5,2,3,4,4,3,3,3,4,1,3,2,2,Part time student,Some college or vocational training,Finance or Banking,Less than 1 year,No,3.216666666666667,1,8,Low,Academic,PT_Student,0
+100,4,4,4,3,4,4,5,4,2,2,3,4,4,4,4,4,3,4,4,5,2,5,5,4,4,5,4,3,3,4,4,1,Full time student,High school or less,Education,1 to 3 years,No,2.816666666666667,1,12,Medium,Academic,FT_Student,0
+100,4,4,4,2,3,4,2,3,2,2,2,4,2,1,4,4,2,3,4,4,5,5,4,2,4,3,3,3,1,4,2,1,Full time student,High school or less,Other,Less than 1 year,No,4.516666666666667,1,8,Low,Academic,FT_Student,0
+100,4,4,4,4,3,3,3,3,4,4,4,4,4,4,3,3,3,3,4,3,3,3,4,3,4,4,4,3,2,5,1,2,Full time student,Bachelor’s degree,Finance or Banking,1 to 3 years,No,57.38333333333333,1,10,Medium,Academic,FT_Student,0
+100,4,2,4,3,4,3,2,4,2,3,5,2,2,2,2,5,2,1,4,5,1,5,5,1,1,1,1,1,1,3,3,1,Full time student,Some college or vocational training,Education,Less than 1 year,Yes,3.7333333333333334,1,8,Low,Academic,FT_Student,1
+100,2,2,2,3,2,3,3,2,3,4,3,3,3,3,2,5,3,3,2,3,1,5,5,1,1,2,4,1,3,2,1,1,Full time student,Some college or vocational training,Healthcare,1 to 3 years,No,4.05,1,7,Low,Academic,FT_Student,0
+100,5,4,5,4,4,4,4,3,3,3,4,4,5,5,5,5,4,4,4,4,3,3,4,2,3,3,2,2,1,4,3,2,Full time student,Some college or vocational training,Healthcare,1 to 3 years,No,3.4,1,10,Medium,Academic,FT_Student,0
+100,5,5,5,1,5,5,5,5,5,5,3,3,2,2,4,5,3,4,4,4,3,3,3,4,3,4,3,4,5,4,1,1,Full time student,Some college or vocational training,Education,Less than 1 year,No,3.8333333333333335,1,11,Medium,Academic,FT_Student,0
+100,1,1,3,3,1,3,1,1,1,1,1,1,3,1,1,5,1,1,3,3,5,4,5,3,1,1,1,1,1,1,3,1,Full time student,High school or less,Other,Less than 1 year,No,6.983333333333333,1,6,Low,Academic,FT_Student,0
+100,3,3,5,5,3,3,4,4,3,3,3,2,3,3,4,4,3,3,2,4,4,5,5,2,2,3,2,2,3,4,3,1,Full time student,High school or less,Retail or Hospitality,4 to 6 years,No,4.183333333333334,1,11,Medium,Academic,FT_Student,0
+100,4,2,4,4,2,4,3,4,2,3,4,4,4,2,4,5,2,3,1,5,3,4,5,4,2,3,2,2,2,1,3,4,Full time student,Some college or vocational training,Other,Less than 1 year,No,3.4166666666666665,1,10,Medium,Academic,FT_Student,0

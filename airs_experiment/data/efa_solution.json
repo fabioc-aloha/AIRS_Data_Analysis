@@ -1,0 +1,53 @@
+{
+  "population": "full",
+  "n_dev": 511,
+  "n_factors": 2,
+  "method": "minres",
+  "rotation": "promax",
+  "total_variance_explained": 0.529212366436832,
+  "kmo": 0.9478705575646832,
+  "bartlett_chi2": 7277.037153157774,
+  "bartlett_p": 0.0,
+  "factor_mapping": {
+    "F1": "PE",
+    "F2": "ER"
+  },
+  "items_per_factor": {
+    "F1": [
+      "PE1",
+      "PE2",
+      "EE1",
+      "SI1",
+      "SI2",
+      "FC1",
+      "FC2",
+      "HM1",
+      "HM2",
+      "PV1",
+      "PV2",
+      "HB1",
+      "HB2",
+      "VO1",
+      "TR1",
+      "EX1",
+      "EX2"
+    ],
+    "F2": [
+      "ER1",
+      "ER2",
+      "AX1",
+      "AX2"
+    ]
+  },
+  "reliability": {
+    "F1": 0.9540463993916304,
+    "F2": 0.6586387139616964
+  },
+  "problem_items": [
+    "SI2",
+    "EX1",
+    "EX2",
+    "ER1",
+    "AX2"
+  ]
+}

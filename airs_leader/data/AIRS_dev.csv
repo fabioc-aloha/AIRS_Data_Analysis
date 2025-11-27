@@ -1,0 +1,92 @@
+Progress,PE1,PE2,EE1,EE2,SI1,SI2,FC1,FC2,HM1,HM2,PV1,PV2,HB1,HB2,VO1,VO2,TR1,TR2,EX1,EX2,ER1,ER2,AX1,AX2,BI1,BI2,BI3,BI4,Usage_MSCopilot,Usage_ChatGPT,Usage_Gemini,Usage_Other,Role,Education,Industry,Experience,Disability,Duration_minutes,AI_Adoption,Total_Usage_Score,Usage_Intensity,Population,Role_Category,Disability_Binary
+100,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,4,5,5,4,Employed - executive or leader,Master’s degree,Technology or IT,4 to 6 years,Yes,1.4333333333333333,1,18,High,Leader,Executive,1
+100,4,4,4,4,4,4,4,4,4,4,4,4,2,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,3,1,2,3,Employed - manager,Bachelor’s degree,Retail or Hospitality,1 to 3 years,No,6.85,1,9,Medium,Leader,Manager,0
+100,2,2,3,5,1,3,2,2,1,2,2,2,2,2,2,5,3,4,4,3,5,5,5,4,2,2,1,1,1,3,3,2,Employed - manager,Bachelor’s degree,Education,1 to 3 years,No,2.8666666666666667,1,9,Medium,Leader,Manager,0
+100,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,3,4,4,4,4,4,4,2,2,4,4,4,4,3,4,3,4,Employed - executive or leader,Bachelor’s degree,Healthcare,4 to 6 years,No,3.0,1,14,High,Leader,Executive,0
+100,5,5,5,5,4,4,4,4,5,5,4,4,4,4,4,4,4,4,4,4,2,4,3,4,4,5,5,5,1,2,4,3,Employed - manager,Bachelor’s degree,Retail or Hospitality,11 or more years,Yes,9.0,1,10,Medium,Leader,Manager,1
+100,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,2,4,4,4,4,4,4,4,4,4,3,3,Employed - executive or leader,Doctoral or professional degree,Technology or IT,4 to 6 years,No,3.6,1,14,High,Leader,Executive,0
+100,5,5,5,5,5,5,5,4,5,5,5,5,5,5,5,5,5,5,4,5,2,4,1,1,5,5,5,5,4,4,4,3,Employed - manager,Master’s degree,Finance or Banking,7 to 10 years,Yes,3.4166666666666665,1,15,High,Leader,Manager,1
+100,5,4,4,4,4,4,2,3,5,4,4,5,4,4,5,5,4,4,2,4,2,4,2,5,4,4,4,4,4,4,3,2,Employed - executive or leader,Bachelor’s degree,Technology or IT,11 or more years,No,3.4833333333333334,1,13,High,Leader,Executive,0
+100,5,4,4,4,4,5,4,5,4,5,4,4,4,4,4,5,4,5,4,4,1,2,2,2,4,4,4,4,4,5,3,3,Employed - manager,Master’s degree,Finance or Banking,11 or more years,No,5.9,1,15,High,Leader,Manager,0
+100,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,2,2,Employed - executive or leader,Master’s degree,Government or Public sector,11 or more years,No,2.716666666666667,1,12,Medium,Leader,Executive,0
+100,4,3,5,4,2,4,4,3,4,4,5,4,1,1,4,3,3,4,4,5,5,5,5,4,4,3,4,3,1,3,2,3,Employed - manager,Some college or vocational training,Technology or IT,11 or more years,No,2.466666666666667,1,9,Medium,Leader,Manager,0
+100,3,3,4,4,3,3,3,3,3,3,3,3,3,2,3,3,4,4,3,3,2,3,3,2,3,3,3,3,3,3,1,1,Employed - manager,Some college or vocational training,Other,4 to 6 years,No,2.9166666666666665,1,8,Low,Leader,Manager,0
+100,5,4,5,4,4,4,5,4,5,4,5,4,4,4,4,4,3,4,4,3,3,4,3,4,5,4,4,3,5,4,4,5,Employed - executive or leader,Bachelor’s degree,Technology or IT,11 or more years,No,3.05,1,18,High,Leader,Executive,0
+100,5,4,4,3,4,2,3,3,4,4,4,4,2,3,4,4,4,4,4,4,4,4,4,4,3,4,4,4,1,3,1,1,Employed - executive or leader,Bachelor’s degree,Healthcare,7 to 10 years,No,2.2333333333333334,1,6,Low,Leader,Executive,0
+100,4,4,4,4,4,4,4,3,4,5,4,3,4,3,4,4,4,4,4,4,2,4,3,4,4,3,3,4,4,5,5,4,Employed - manager,Bachelor’s degree,Retail or Hospitality,11 or more years,No,4.416666666666667,1,18,High,Leader,Manager,0
+100,4,3,3,2,4,4,3,3,3,2,3,4,2,2,3,4,2,2,2,4,2,4,3,3,4,3,4,4,3,1,3,1,Employed - manager,Master’s degree,Government or Public sector,11 or more years,No,4.45,1,8,Low,Leader,Manager,0
+100,3,3,3,4,3,4,4,4,3,4,3,4,3,4,4,4,3,4,3,4,4,5,4,4,4,4,4,4,2,3,2,2,Employed - manager,Bachelor’s degree,Technology or IT,11 or more years,No,5.5,1,9,Medium,Leader,Manager,0
+100,4,4,3,3,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,3,4,3,2,Employed - manager,Master’s degree,Technology or IT,7 to 10 years,No,3.4166666666666665,1,12,Medium,Leader,Manager,0
+100,3,4,4,4,4,4,4,4,3,4,4,4,2,2,4,4,4,4,3,3,2,3,3,3,3,4,3,4,2,3,1,1,Employed - executive or leader,Some college or vocational training,Nonprofit,4 to 6 years,No,5.466666666666667,1,7,Low,Leader,Executive,0
+100,4,4,5,5,4,5,4,4,4,4,4,4,4,4,4,5,4,4,3,5,1,4,4,4,5,4,4,5,1,2,5,1,Employed - executive or leader,Bachelor’s degree,Retail or Hospitality,11 or more years,No,3.683333333333333,1,9,Medium,Leader,Executive,0
+100,5,5,4,4,3,4,5,4,3,3,4,4,4,4,4,4,4,4,3,5,4,4,2,5,4,4,4,4,5,1,3,1,Employed - manager,Bachelor’s degree,Finance or Banking,11 or more years,No,2.6666666666666665,1,10,Medium,Leader,Manager,0
+100,4,4,2,3,4,4,4,4,5,4,4,4,4,4,4,2,3,4,4,5,1,2,1,5,4,4,5,4,2,2,5,2,Employed - manager,Bachelor’s degree,Other,7 to 10 years,No,2.4833333333333334,1,11,Medium,Leader,Manager,0
+100,4,4,5,4,4,5,3,4,4,4,4,5,4,4,4,4,2,3,5,4,5,2,4,5,4,4,4,4,5,5,2,1,Employed - manager,Master’s degree,Other,11 or more years,No,2.85,1,13,High,Leader,Manager,0
+100,5,4,5,5,5,5,5,5,5,5,5,5,5,5,4,5,5,5,5,5,5,5,4,5,5,5,5,4,5,5,4,5,Employed - executive or leader,Bachelor’s degree,Manufacturing,7 to 10 years,No,1.7166666666666666,1,19,High,Leader,Executive,0
+100,4,4,4,4,3,4,3,3,3,4,3,3,4,2,4,4,2,2,3,4,2,2,3,3,4,2,4,2,4,4,3,5,Employed - executive or leader,Doctoral or professional degree,Government or Public sector,7 to 10 years,No,4.883333333333334,1,16,High,Leader,Executive,0
+100,5,4,5,5,4,5,5,4,5,5,5,4,4,4,5,4,5,5,5,4,5,4,5,4,5,5,4,4,5,5,5,4,Employed - manager,Master’s degree,Technology or IT,11 or more years,No,2.3833333333333333,1,19,High,Leader,Manager,0
+100,4,4,4,4,5,4,4,5,5,4,5,4,4,4,5,4,4,4,5,4,4,4,4,3,4,5,3,5,4,3,3,2,Employed - manager,Master’s degree,Technology or IT,4 to 6 years,No,3.033333333333333,1,12,Medium,Leader,Manager,0
+100,3,3,3,4,2,3,2,3,4,4,3,4,2,3,3,4,3,2,4,4,3,4,4,3,3,2,4,3,4,2,3,2,Employed - manager,Bachelor’s degree,Education,4 to 6 years,No,2.316666666666667,1,11,Medium,Leader,Manager,0
+100,1,5,5,5,4,4,5,4,4,5,5,5,5,4,5,5,5,5,5,4,5,4,3,5,5,5,5,4,4,5,4,4,Employed - executive or leader,Master’s degree,Education,4 to 6 years,No,4.316666666666666,1,17,High,Leader,Executive,0
+100,1,1,5,1,1,1,4,1,1,1,1,1,1,1,1,5,1,1,2,5,5,5,5,1,1,1,1,1,2,2,1,1,Employed - executive or leader,Doctoral or professional degree,Other,11 or more years,No,2.466666666666667,1,6,Low,Leader,Executive,0
+100,2,2,3,3,3,3,2,3,2,2,2,2,1,1,1,5,1,2,2,2,1,4,5,2,2,1,1,2,1,2,2,1,Employed - executive or leader,Master’s degree,Other,1 to 3 years,No,4.533333333333333,1,6,Low,Leader,Executive,0
+100,4,5,5,4,4,5,5,4,4,5,4,4,5,4,5,5,4,5,4,5,1,2,2,2,4,4,4,4,4,4,5,4,Employed - manager,Master’s degree,Finance or Banking,11 or more years,No,5.116666666666666,1,17,High,Leader,Manager,0
+100,4,3,3,3,3,3,2,4,3,3,4,4,4,4,4,4,3,3,4,4,3,5,3,3,4,3,4,3,4,4,3,3,Employed - executive or leader,Master’s degree,Other,11 or more years,No,5.75,1,14,High,Leader,Executive,0
+100,3,2,3,2,2,1,4,2,1,1,2,1,1,1,2,4,1,1,3,4,2,5,5,2,2,2,1,2,3,1,1,1,Employed - manager,Master’s degree,Manufacturing,11 or more years,No,4.166666666666667,1,6,Low,Leader,Manager,0
+100,4,4,4,4,2,2,4,4,4,3,3,4,3,3,4,4,3,3,4,3,4,4,3,4,4,3,4,4,2,2,4,3,Employed - executive or leader,Bachelor’s degree,Other,4 to 6 years,No,3.85,1,11,Medium,Leader,Executive,0
+100,4,4,2,2,4,5,4,4,4,4,4,4,2,4,4,4,4,4,3,4,4,5,4,5,4,4,5,5,4,4,3,3,Employed - executive or leader,Bachelor’s degree,Manufacturing,11 or more years,No,4.816666666666666,1,14,High,Leader,Executive,0
+100,5,4,4,4,4,4,4,4,4,4,4,4,4,4,5,4,5,5,4,5,2,3,2,4,5,5,4,4,2,4,5,3,Employed - manager,Bachelor’s degree,Manufacturing,11 or more years,Yes,3.5833333333333335,1,14,High,Leader,Manager,1
+100,4,4,4,4,5,5,4,4,4,5,4,5,3,3,5,3,4,4,3,4,3,3,2,2,4,5,4,5,4,1,3,1,Employed - executive or leader,Master’s degree,Retail or Hospitality,11 or more years,No,2.9166666666666665,1,9,Medium,Leader,Executive,0
+100,5,5,4,5,5,5,5,5,5,5,5,5,5,5,5,4,5,5,5,5,3,2,2,4,5,5,5,5,5,5,5,4,Employed - executive or leader,Master’s degree,Manufacturing,11 or more years,No,3.55,1,19,High,Leader,Executive,0
+100,4,4,4,4,2,3,4,3,4,4,4,4,2,2,4,4,3,3,4,4,2,4,4,2,2,3,2,2,1,1,3,3,Employed - manager,Bachelor’s degree,Retail or Hospitality,11 or more years,No,3.65,1,8,Low,Leader,Manager,0
+100,5,4,5,5,5,5,5,4,5,5,5,4,5,4,5,5,5,4,5,4,5,4,5,4,5,4,5,5,4,5,5,4,Employed - executive or leader,Bachelor’s degree,Technology or IT,7 to 10 years,No,2.3,1,18,High,Leader,Executive,0
+100,4,4,3,3,4,4,4,4,4,4,3,4,3,4,4,4,3,3,3,4,4,4,4,2,4,4,4,4,4,3,2,1,Employed - manager,Bachelor’s degree,Other,11 or more years,No,3.9833333333333334,1,10,Medium,Leader,Manager,0
+100,5,4,5,4,4,5,4,4,5,4,5,4,4,5,4,5,4,5,5,4,5,5,5,4,4,5,4,5,5,4,5,4,Employed - executive or leader,Doctoral or professional degree,Finance or Banking,4 to 6 years,No,2.933333333333333,1,18,High,Leader,Executive,0
+100,1,1,2,2,3,2,2,2,3,2,1,2,1,1,1,5,3,2,3,3,5,5,5,3,1,1,1,1,1,1,1,1,Employed - executive or leader,Some college or vocational training,Other,7 to 10 years,No,3.2,0,4,Non-User,Leader,Executive,0
+100,5,4,4,4,5,4,4,5,5,3,4,5,4,3,4,2,4,5,4,5,4,3,3,2,4,5,4,3,5,5,4,3,Employed - executive or leader,Bachelor’s degree,Technology or IT,1 to 3 years,No,6.083333333333333,1,17,High,Leader,Executive,0
+100,3,3,4,3,2,4,4,4,2,2,2,2,4,4,1,4,3,3,3,3,4,4,4,5,1,2,2,2,1,1,1,1,Employed - manager,Some college or vocational training,Other,7 to 10 years,Yes,3.066666666666667,0,4,Non-User,Leader,Manager,1
+100,5,5,5,5,4,5,5,4,4,5,5,5,5,5,4,5,5,4,5,5,5,4,4,5,5,4,5,5,5,5,5,4,Employed - manager,Master’s degree,Technology or IT,11 or more years,No,2.3833333333333333,1,19,High,Leader,Manager,0
+100,4,4,4,5,4,4,5,4,4,4,5,5,5,4,4,4,4,5,5,5,4,4,4,4,4,4,4,4,4,3,3,4,Employed - manager,Bachelor’s degree,Technology or IT,4 to 6 years,Yes,3.7333333333333334,1,14,High,Leader,Manager,1
+100,5,5,5,4,4,5,5,4,5,5,4,5,5,5,4,4,5,5,5,4,4,5,4,5,5,4,5,4,5,4,5,4,Employed - manager,Doctoral or professional degree,Technology or IT,7 to 10 years,No,10.516666666666667,1,18,High,Leader,Manager,0
+100,5,5,5,4,4,4,5,5,5,4,5,4,5,5,5,4,4,4,4,4,2,2,3,3,4,4,4,4,5,5,4,4,Employed - manager,Master’s degree,Technology or IT,7 to 10 years,No,4.783333333333333,1,18,High,Leader,Manager,0
+100,5,4,5,5,5,5,4,5,5,5,5,5,5,5,5,5,5,5,5,5,5,4,5,5,5,5,4,5,5,5,4,5,Employed - manager,Bachelor’s degree,Education,4 to 6 years,Yes,1.8166666666666667,1,19,High,Leader,Manager,1
+100,1,1,2,2,1,2,2,2,3,2,2,3,2,2,5,5,3,5,2,3,2,5,5,1,2,2,5,3,3,1,3,1,Employed - manager,Bachelor’s degree,Healthcare,11 or more years,No,7.433333333333334,1,8,Low,Leader,Manager,0
+100,4,4,3,4,3,4,4,4,4,4,4,4,4,4,4,4,3,3,4,4,3,3,3,4,4,4,4,4,3,4,3,4,Employed - manager,Some college or vocational training,Other,7 to 10 years,No,1.9333333333333333,1,14,High,Leader,Manager,0
+100,4,4,4,4,4,5,2,3,4,3,4,4,2,4,4,5,3,4,4,4,5,4,5,4,3,3,2,2,5,1,1,1,Employed - manager,Some college or vocational training,Retail or Hospitality,1 to 3 years,No,10.316666666666666,1,8,Low,Leader,Manager,0
+100,1,2,2,3,3,4,3,3,3,3,3,3,3,2,2,4,3,2,4,4,1,4,3,2,3,3,2,4,1,1,2,1,Employed - executive or leader,Master’s degree,Other,11 or more years,No,17.9,1,5,Low,Leader,Executive,0
+100,3,2,2,2,3,3,3,3,2,2,2,2,1,2,1,4,1,2,2,3,4,4,4,4,2,2,2,2,2,2,2,2,Employed - manager,High school or less,Retail or Hospitality,11 or more years,No,3.183333333333333,1,8,Low,Leader,Manager,0
+100,5,4,4,4,5,4,3,4,5,4,2,4,3,2,4,4,3,3,4,4,4,4,4,4,4,4,4,4,4,4,3,2,Employed - manager,Master’s degree,Other,4 to 6 years,No,10.35,1,13,High,Leader,Manager,0
+100,4,4,3,4,4,4,4,4,4,3,4,4,4,4,4,4,4,4,4,4,2,3,2,2,4,4,4,5,2,1,4,1,Employed - executive or leader,High school or less,Government or Public sector,11 or more years,No,5.4,1,8,Low,Leader,Executive,0
+100,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,4,4,5,5,5,4,4,4,5,5,5,5,5,4,5,5,3,Employed - manager,Doctoral or professional degree,Technology or IT,7 to 10 years,No,4.25,1,17,High,Leader,Manager,0
+100,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,4,4,4,2,4,5,5,5,5,3,5,4,2,Employed - executive or leader,Master’s degree,Other,11 or more years,Yes,2.466666666666667,1,14,High,Leader,Executive,1
+100,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,2,5,5,5,5,5,1,1,5,5,5,5,5,5,5,5,3,Employed - manager,Master’s degree,Technology or IT,11 or more years,No,6.0,1,18,High,Leader,Manager,0
+100,5,4,5,4,5,4,5,4,4,5,5,4,4,5,4,5,4,5,4,4,5,4,5,4,5,5,4,5,4,4,5,5,Employed - manager,Master’s degree,Technology or IT,7 to 10 years,No,2.4166666666666665,1,18,High,Leader,Manager,0
+100,3,4,2,3,3,4,2,4,4,4,2,3,2,2,4,4,4,4,2,4,2,5,4,3,2,3,4,2,3,3,1,1,Employed - manager,Some college or vocational training,Government or Public sector,11 or more years,No,3.966666666666667,1,8,Low,Leader,Manager,0
+100,4,4,4,4,4,4,4,4,4,4,4,4,4,3,4,2,4,4,4,4,3,3,3,3,4,4,4,3,4,4,4,1,Employed - manager,Bachelor’s degree,Retail or Hospitality,11 or more years,No,6.016666666666667,1,13,High,Leader,Manager,0
+100,4,4,3,3,5,5,2,4,5,5,4,5,4,4,5,4,4,4,4,5,4,2,2,4,4,5,5,4,5,4,1,1,Employed - manager,Doctoral or professional degree,Retail or Hospitality,11 or more years,No,3.0166666666666666,1,11,Medium,Leader,Manager,0
+100,4,5,5,4,4,4,4,5,5,5,5,4,5,4,4,3,5,5,5,4,4,5,5,4,4,4,5,4,5,4,5,5,Employed - executive or leader,Master’s degree,Finance or Banking,7 to 10 years,No,4.6,1,19,High,Leader,Executive,0
+100,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,4,4,5,3,Employed - executive or leader,Doctoral or professional degree,Healthcare,4 to 6 years,No,2.0833333333333335,1,16,High,Leader,Executive,0
+100,1,1,1,1,4,4,3,4,3,4,4,4,4,3,4,3,4,4,3,3,2,3,2,2,4,4,4,4,3,4,4,2,Employed - executive or leader,Master’s degree,Finance or Banking,11 or more years,No,12.133333333333333,1,13,High,Leader,Executive,0
+100,3,4,4,4,3,3,4,4,4,4,4,4,2,2,4,4,4,4,4,2,2,3,2,3,4,4,4,4,4,3,1,1,Employed - manager,Doctoral or professional degree,Other,11 or more years,No,4.9,1,9,Medium,Leader,Manager,0
+100,3,3,3,3,3,3,4,3,4,3,4,3,3,3,3,4,2,2,4,3,3,4,3,1,3,3,3,3,2,2,2,2,Employed - executive or leader,Master’s degree,Other,11 or more years,No,5.133333333333334,1,8,Low,Leader,Executive,0
+100,5,5,5,5,4,4,5,5,5,5,4,4,5,4,5,2,5,5,5,4,2,2,1,1,5,5,5,5,5,4,5,4,Employed - executive or leader,Bachelor’s degree,Finance or Banking,11 or more years,No,3.783333333333333,1,18,High,Leader,Executive,0
+100,5,4,4,4,3,4,4,1,4,4,5,5,4,2,5,5,2,4,4,5,4,5,3,4,5,5,5,4,3,4,5,3,Employed - executive or leader,Master’s degree,Government or Public sector,11 or more years,No,3.85,1,15,High,Leader,Executive,0
+100,3,4,4,4,4,3,3,4,4,4,3,4,3,2,3,2,4,4,4,4,2,3,4,2,4,4,4,3,3,4,3,3,Employed - manager,Master’s degree,Technology or IT,1 to 3 years,No,7.583333333333333,1,13,High,Leader,Manager,0
+100,5,5,5,5,5,5,5,5,5,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,3,3,3,Employed - manager,Bachelor’s degree,Other,4 to 6 years,No,3.683333333333333,1,13,High,Leader,Manager,0
+100,4,4,5,4,4,5,5,4,5,4,5,4,4,4,5,3,5,4,5,4,3,2,2,4,5,4,5,4,5,4,5,3,Employed - manager,Master’s degree,Other,4 to 6 years,No,4.9,1,17,High,Leader,Manager,0
+100,3,3,4,4,4,4,4,4,4,4,4,4,3,3,4,4,3,4,4,4,3,4,3,3,4,4,4,4,1,3,1,1,Employed - manager,Bachelor’s degree,Education,11 or more years,No,1.55,1,6,Low,Leader,Manager,0
+100,4,3,4,3,4,2,4,3,4,4,3,4,3,3,3,3,4,2,3,3,2,3,4,2,2,3,4,3,3,3,3,3,Employed - manager,Some college or vocational training,Finance or Banking,4 to 6 years,No,13.95,1,12,Medium,Leader,Manager,0
+100,4,3,4,4,3,3,2,3,4,4,4,4,2,2,4,3,3,3,4,4,2,4,2,2,3,3,4,3,4,2,3,4,Employed - executive or leader,Bachelor’s degree,Manufacturing,11 or more years,No,3.3666666666666667,1,13,High,Leader,Executive,0
+100,3,3,3,2,4,4,4,1,3,4,4,4,4,1,2,5,4,4,4,1,4,3,4,4,4,2,4,3,5,1,4,1,Employed - executive or leader,Doctoral or professional degree,Manufacturing,7 to 10 years,No,2.15,1,11,Medium,Leader,Executive,0
+100,4,4,5,4,3,4,5,4,5,4,4,5,3,4,5,4,4,5,4,4,3,4,2,1,4,5,4,4,4,4,5,3,Employed - executive or leader,Bachelor’s degree,Other,11 or more years,No,5.366666666666666,1,16,High,Leader,Executive,0
+100,3,2,3,3,2,2,3,2,2,2,3,2,1,1,1,4,1,2,3,4,2,5,5,3,1,1,1,1,1,1,1,1,Employed - executive or leader,Bachelor’s degree,Education,11 or more years,No,2.75,0,4,Non-User,Leader,Executive,0
+100,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,1,1,1,1,5,5,5,5,5,5,5,5,Employed - manager,Master’s degree,Technology or IT,4 to 6 years,No,9.3,1,20,High,Leader,Manager,0
+100,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,2,2,1,2,4,4,4,3,4,4,4,3,Employed - manager,Doctoral or professional degree,Manufacturing,11 or more years,No,2.4166666666666665,1,15,High,Leader,Manager,0
+100,4,4,3,3,1,2,2,4,2,2,3,3,1,1,2,4,2,2,3,4,2,4,4,2,2,2,2,2,3,3,3,1,Employed - executive or leader,Master’s degree,Manufacturing,11 or more years,No,5.25,1,10,Medium,Leader,Executive,0
+100,2,2,2,1,1,1,1,2,1,1,1,1,1,1,1,1,1,1,1,1,5,5,5,5,1,1,2,1,1,2,1,1,Employed - manager,Some college or vocational training,Other,1 to 3 years,No,137.66666666666666,1,5,Low,Leader,Manager,0
+100,4,5,5,5,4,4,4,4,5,5,5,5,3,3,4,3,4,4,4,4,2,5,3,3,4,5,5,4,3,4,3,3,Employed - manager,Master’s degree,Finance or Banking,4 to 6 years,No,5.5,1,13,High,Leader,Manager,0
+100,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,Employed - manager,Some college or vocational training,Other,1 to 3 years,No,3.9833333333333334,1,16,High,Leader,Manager,0
+100,4,5,5,4,5,4,5,5,5,4,5,4,5,4,5,4,5,4,5,4,5,4,5,4,5,4,4,4,4,5,4,3,Employed - manager,Master’s degree,Technology or IT,7 to 10 years,Yes,3.15,1,16,High,Leader,Manager,1
+100,5,5,4,4,5,5,5,4,5,4,3,4,4,5,5,4,4,5,5,5,4,4,5,5,4,5,4,4,5,5,4,4,Employed - manager,Master’s degree,Other,4 to 6 years,Yes,2.3833333333333333,1,18,High,Leader,Manager,1
+100,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,4,3,Employed - manager,Master’s degree,Technology or IT,7 to 10 years,No,2.1666666666666665,1,17,High,Leader,Manager,0
+100,5,5,4,5,5,5,4,4,5,5,4,5,4,4,5,5,5,5,5,5,3,3,1,4,5,5,5,5,4,2,5,1,Employed - executive or leader,Bachelor’s degree,Other,1 to 3 years,No,438.65,1,12,Medium,Leader,Executive,0
