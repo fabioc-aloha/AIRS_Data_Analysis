@@ -1,0 +1,61 @@
+{
+  "population": "professional",
+  "n_holdout": 146,
+  "n_factors": 2,
+  "factor_names": {
+    "F1": "Facilitators",
+    "F2": "Inhibitors"
+  },
+  "fit_indices": {
+    "chi2": 630.8229364920237,
+    "df": 251,
+    "CFI": 0.8663322703643044,
+    "TLI": 0.8530187514762869,
+    "RMSEA": 0.1021573765900327,
+    "SRMR": null,
+    "AIC": 89.35858991106817,
+    "BIC": 235.55531437477666
+  },
+  "reliability": {
+    "Facilitators": {
+      "alpha": 0.9645550265294529,
+      "CR": 0.9658269247265289,
+      "AVE": 0.5959125476608095
+    },
+    "Inhibitors": {
+      "alpha": 0.66590676701812,
+      "CR": 0.6616860578524848,
+      "AVE": 0.3847466407381843
+    }
+  },
+  "items_per_factor": {
+    "F1": [
+      "PE1",
+      "PE2",
+      "EE1",
+      "EE2",
+      "SI1",
+      "SI2",
+      "FC1",
+      "FC2",
+      "HM1",
+      "HM2",
+      "PV1",
+      "PV2",
+      "HB1",
+      "HB2",
+      "VO1",
+      "VO2",
+      "TR1",
+      "TR2",
+      "EX1",
+      "EX2"
+    ],
+    "F2": [
+      "ER1",
+      "ER2",
+      "AX1",
+      "AX2"
+    ]
+  }
+}

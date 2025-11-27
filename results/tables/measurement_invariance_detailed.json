@@ -1,0 +1,203 @@
+{
+  "methodology": {
+    "approach": "Descriptive separate-group CFA",
+    "software": "semopy (Python)",
+    "limitation": "Does not support native multi-group CFA with equality constraints",
+    "criteria": {
+      "configural": "CFI >= 0.90, RMSEA <= 0.08",
+      "metric": "\u0394CFI <= 0.010 AND max loading diff < 0.20",
+      "scalar": "Max mean diff < 0.50"
+    }
+  },
+  "results": {
+    "role": {
+      "group_var": "Role_Binary",
+      "n1": 0,
+      "n2": 278,
+      "group_name1": "Student",
+      "group_name2": "Professional",
+      "configural": {
+        "chi2": NaN,
+        "df": 78.0,
+        "CFI": NaN,
+        "RMSEA": NaN,
+        "holds": false
+      },
+      "metric": {
+        "max_diff": 0.0,
+        "mean_diff": NaN,
+        "delta_cfi": NaN,
+        "holds": false,
+        "non_invariant_items": []
+      },
+      "scalar": {
+        "max_diff": NaN,
+        "mean_diff": NaN,
+        "max_cohens_d": NaN,
+        "holds": false,
+        "item_diffs": {
+          "PE1": NaN,
+          "PE2": NaN,
+          "EE1": NaN,
+          "EE2": NaN,
+          "SI1": NaN,
+          "SI2": NaN,
+          "FC1": NaN,
+          "FC2": NaN,
+          "HM1": NaN,
+          "HM2": NaN,
+          "PV1": NaN,
+          "PV2": NaN
+        },
+        "cohens_d": {
+          "PE1": NaN,
+          "PE2": NaN,
+          "EE1": NaN,
+          "EE2": NaN,
+          "SI1": NaN,
+          "SI2": NaN,
+          "FC1": NaN,
+          "FC2": NaN,
+          "HM1": NaN,
+          "HM2": NaN,
+          "PV1": NaN,
+          "PV2": NaN
+        }
+      },
+      "overall": "none"
+    },
+    "usage": {
+      "group_var": "Usage_Binary",
+      "n1": 115,
+      "n2": 163,
+      "group_name1": "Low",
+      "group_name2": "High",
+      "configural": {
+        "chi2": 130.08506397866017,
+        "df": 78.0,
+        "CFI": 0.9747242413123678,
+        "RMSEA": 0.06835048463382837,
+        "holds": true
+      },
+      "metric": {
+        "max_diff": 0.5197559895547629,
+        "mean_diff": 0.12824098890860677,
+        "delta_cfi": 0.023016504144068306,
+        "holds": false,
+        "non_invariant_items": [
+          "EE",
+          "FC",
+          "PV"
+        ]
+      },
+      "scalar": {
+        "max_diff": 1.4117364630568154,
+        "mean_diff": 1.240477460656175,
+        "max_cohens_d": 1.502585417948139,
+        "holds": false,
+        "item_diffs": {
+          "PE1": 1.2904774606561746,
+          "PE2": 1.3882635369431848,
+          "EE1": 1.0516404374499868,
+          "EE2": 1.1202453987730063,
+          "SI1": 1.3331021605761535,
+          "SI2": 1.067057882101894,
+          "FC1": 1.138223526273673,
+          "FC2": 1.1330488130168046,
+          "HM1": 1.4117364630568154,
+          "HM2": 1.4,
+          "PV1": 1.303867698052814,
+          "PV2": 1.2480661509735933
+        },
+        "cohens_d": {
+          "PE1": -1.3313671332288741,
+          "PE2": -1.4503216916503916,
+          "EE1": -1.1428812609779213,
+          "EE2": -1.1857135973588488,
+          "SI1": -1.338027949050296,
+          "SI2": -1.078269386209327,
+          "FC1": -1.0894563934957755,
+          "FC2": -1.2379812197267972,
+          "HM1": -1.4866482419839224,
+          "HM2": -1.502585417948139,
+          "PV1": -1.333052157379614,
+          "PV2": -1.3779789257626807
+        }
+      },
+      "overall": "configural"
+    },
+    "adoption": {
+      "group_var": "Adoption_Binary",
+      "n1": 39,
+      "n2": 239,
+      "group_name1": "Non-Adopter",
+      "group_name2": "Adopter",
+      "configural": {
+        "chi2": 130.0250595197238,
+        "df": 78.0,
+        "CFI": 0.9795229578661544,
+        "RMSEA": 0.06889515377578602,
+        "holds": true
+      },
+      "metric": {
+        "max_diff": 0.494182737892098,
+        "mean_diff": 0.09639431173985631,
+        "delta_cfi": 0.021173021724566587,
+        "holds": false,
+        "non_invariant_items": [
+          "EE",
+          "SI",
+          "PV"
+        ]
+      },
+      "scalar": {
+        "max_diff": 1.7615062761506275,
+        "mean_diff": 1.484792404248471,
+        "max_cohens_d": 1.9406084235641314,
+        "holds": false,
+        "item_diffs": {
+          "PE1": 1.6918785538032401,
+          "PE2": 1.6537925115330971,
+          "EE1": 1.2141401137217036,
+          "EE2": 1.2173586525050961,
+          "SI1": 1.5842720738118228,
+          "SI2": 1.2215427529235061,
+          "FC1": 1.2760433429889497,
+          "FC2": 1.3246432786181743,
+          "HM1": 1.5919965668919644,
+          "HM2": 1.6825447913314022,
+          "PV1": 1.5977899367020707,
+          "PV2": 1.7615062761506275
+        },
+        "cohens_d": {
+          "PE1": -1.693036555336169,
+          "PE2": -1.610229056529376,
+          "EE1": -1.2537487155707514,
+          "EE2": -1.205849570333762,
+          "SI1": -1.4957203228937537,
+          "SI2": -1.177497427754365,
+          "FC1": -1.1599278361858696,
+          "FC2": -1.3676187376803268,
+          "HM1": -1.5313532174594577,
+          "HM2": -1.6799888073878884,
+          "PV1": -1.5505250982709449,
+          "PV2": -1.9406084235641314
+        }
+      },
+      "overall": "configural"
+    }
+  },
+  "baseline": {
+    "n_sample": 278,
+    "cfi": 0.9911505974863932,
+    "rmsea": 0.0507912275829961,
+    "model": "6-factor UTAUT2"
+  },
+  "references": [
+    "Chen, F. F. (2007). Structural Equation Modeling, 14(3), 464-504.",
+    "Cheung, G. W., & Rensvold, R. B. (2002). Structural Equation Modeling, 9(2), 233-255.",
+    "Putnick, D. L., & Bornstein, M. H. (2016). Developmental Review, 41, 71-90.",
+    "Vandenberg, R. J., & Lance, C. E. (2000). Organizational Research Methods, 3(1), 4-70.",
+    "Wolf, E. J., et al. (2013). Educational and Psychological Measurement, 73(6), 913-934."
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "population": "professional",
+  "n_dev": 145,
+  "n_factors": 2,
+  "method": "minres",
+  "rotation": "promax",
+  "total_variance_explained": 0.5956767418945287,
+  "kmo": 0.9284352022346511,
+  "bartlett_chi2": 3116.009130191548,
+  "bartlett_p": 0.0,
+  "factor_mapping": {
+    "F1": "PE",
+    "F2": "ER"
+  },
+  "items_per_factor": {
+    "F1": [
+      "PE1",
+      "PE2",
+      "EE1",
+      "EE2",
+      "SI1",
+      "SI2",
+      "FC1",
+      "FC2",
+      "HM1",
+      "HM2",
+      "PV1",
+      "PV2",
+      "HB1",
+      "HB2",
+      "VO1",
+      "VO2",
+      "TR1",
+      "TR2",
+      "EX1",
+      "EX2"
+    ],
+    "F2": [
+      "ER1",
+      "ER2",
+      "AX1",
+      "AX2"
+    ]
+  },
+  "reliability": {
+    "F1": 0.9676786364510926,
+    "F2": 0.743625023687311
+  },
+  "problem_items": [
+    "VO2"
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "population": "academic",
+  "n_dev": 135,
+  "n_factors": 2,
+  "method": "minres",
+  "rotation": "promax",
+  "total_variance_explained": 0.4500849765216059,
+  "kmo": 0.8896700694928382,
+  "bartlett_chi2": 1987.9630457606213,
+  "bartlett_p": 2.1104552878891266e-256,
+  "factor_mapping": {
+    "F1": "PE",
+    "F2": "ER"
+  },
+  "items_per_factor": {
+    "F1": [
+      "PE1",
+      "PE2",
+      "EE1",
+      "EE2",
+      "SI1",
+      "SI2",
+      "FC1",
+      "FC2",
+      "HM1",
+      "HM2",
+      "PV1",
+      "PV2",
+      "HB1",
+      "HB2",
+      "VO1",
+      "TR1",
+      "TR2",
+      "EX1",
+      "EX2",
+      "AX1"
+    ],
+    "F2": [
+      "VO2",
+      "ER1",
+      "ER2",
+      "AX2"
+    ]
+  },
+  "reliability": {
+    "F1": 0.9211461110752984,
+    "F2": 0.43590511724175496
+  },
+  "problem_items": [
+    "EE1",
+    "EE2",
+    "SI2",
+    "FC1",
+    "VO2",
+    "EX1",
+    "EX2",
+    "ER1",
+    "AX1",
+    "AX2"
+  ]
+}

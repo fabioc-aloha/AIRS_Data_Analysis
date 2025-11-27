@@ -1,0 +1,63 @@
+{
+  "population": "academic",
+  "n_holdout": 59,
+  "n_factors": 2,
+  "factor_names": {
+    "F1": "Facilitators",
+    "F2": "Inhibitors"
+  },
+  "small_sample_warning": true,
+  "bootstrap_iterations": 500,
+  "fit_indices": {
+    "chi2": 462.03825962630475,
+    "df": 251,
+    "CFI": 0.6971142115597431,
+    "TLI": 0.666946304344578,
+    "RMSEA": 0.12040090208944779,
+    "SRMR": null,
+    "AIC": 82.33768611436255,
+    "BIC": 184.1370208657428
+  },
+  "reliability": {
+    "Facilitators": {
+      "alpha": 0.8910422027387498,
+      "CR": 0.8968326580776697,
+      "AVE": 0.38355633599671696
+    },
+    "Inhibitors": {
+      "alpha": 0.11928055135316842,
+      "CR": 0.001471641353474849,
+      "AVE": 0.008589831345762597
+    }
+  },
+  "items_per_factor": {
+    "F1": [
+      "PE1",
+      "PE2",
+      "EE1",
+      "EE2",
+      "SI1",
+      "SI2",
+      "FC1",
+      "FC2",
+      "HM1",
+      "HM2",
+      "PV1",
+      "PV2",
+      "HB1",
+      "HB2",
+      "VO1",
+      "TR1",
+      "TR2",
+      "EX1",
+      "EX2",
+      "AX1"
+    ],
+    "F2": [
+      "VO2",
+      "ER1",
+      "ER2",
+      "AX2"
+    ]
+  }
+}
