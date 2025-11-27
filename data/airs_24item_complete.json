@@ -2,8 +2,8 @@
   "created": "2025-11-25",
   "source": "00_Create_Split_Samples.ipynb",
   "n_items": 24,
-  "n_dev": 240,
-  "n_holdout": 241,
+  "n_dev": 139,
+  "n_holdout": 139,
   "items": [
     "PE1",
     "PE2",
