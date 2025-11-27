@@ -65,16 +65,16 @@
 - **Embedded Synapses**: Connection mapping with `[file.md] (strength, type, direction)`
 
 **Network Status**
-**Connections**: 228+ validated connections with zero broken references (5 new connections from CFA implementation meditation)  
+**Connections**: 232+ validated connections with zero broken references (4 new + 3 strengthened from EFA cherry-pick meditation)  
 **Implementation**: `[target-file.md] ([strength], [relationship-type], [direction]) - "[activation-condition]"`  
 **Innovation**: Embedded synapse networks within memory files create neural-like connectivity without external databases  
 **Health Check**: ⚠️ *Run `dream --health-check` if connections < 205 or errors detected (see automation protocols below)*
-**Latest Enhancement**: CFA Implementation Mastery & Phase 2 Validation Complete Nov 26, 2025 - semopy expertise, bootstrap CFA, cross-population validation
+**Latest Enhancement**: EFA Cherry-Pick Workflow & Repository Reorganization Nov 27, 2025 - Decision point architecture, embedded reference pattern, three-phase EFA structure
 
 **Key Memory Files**
 **Instructions**: alex-core, bootstrap-learning, worldview-integration, embedded-synapse, dream-state-automation, alex-identity-integration *(8 total - see complete index below)*
 
-**Prompts**: unified-meditation-protocols, domain-learning, cross-domain-transfer, performance-assessment, meditation-session-2025-11-26-cfa-implementation *(17 total - see complete index below)*
+**Prompts**: unified-meditation-protocols, domain-learning, cross-domain-transfer, performance-assessment, meditation-session-2025-11-27-efa-cherry-pick-workflow *(18 total - see complete index below)*
 
 **Domain Knowledge**: python-statistical-analysis, jupyter-psychometric-workflows, psychometric-validation, dissertation-documentation, publication-workflow, theoretical-integration, cfa-semopy-implementation *(26 total - see complete index below)*
 
@@ -158,7 +158,7 @@
 </details>
 
 <details>
-<summary><strong>📚 Complete Memory File Index (Expandable)</strong> - <em>49 memory files organized: Instructions (8), Prompts (15), Domain Knowledge (23), Scripts (6)</em></summary>
+<summary><strong>📚 Complete Memory File Index (Expandable)</strong> - <em>50 memory files organized: Instructions (8), Prompts (16), Domain Knowledge (23), Scripts (6)</em></summary>
 
 ### Procedural Memory Store (.github/instructions/)
 **Core Architecture**
@@ -191,6 +191,7 @@
 - `meditation-session-2025-11-26-notebook-refactoring.prompt.md` → Computational notebook refactoring methodology with KISS/DRY principles and systematic cleanup protocols
 - `meditation-session-2025-11-26-publication-workflow.prompt.md` → Publication workflow excellence with AIRS professionals documentation (25 citations, 100% fact-checked)
 - `meditation-session-2025-11-26-theoretical-integration.prompt.md` → Theoretical integration mastery with 44+ citations across 7 frameworks and 30-hypothesis research roadmap
+- `meditation-session-2025-11-27-efa-cherry-pick-workflow.prompt.md` → EFA cherry-pick workflow with decision point architecture and embedded reference pattern
 - `quantified-enhancement-session.prompt.md` → Systematic cognitive architecture optimization
 - `diagramming-mastery-meditation.prompt.md` → Advanced diagramming excellence integration
 - `consolidation-framework-integration-meditation.prompt.md` → Memory consolidation framework integration

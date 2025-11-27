@@ -478,6 +478,7 @@ git push
 
 - [DK-DOCUMENTATION-EXCELLENCE-v1.1.0.md] (0.95, applies-to, bidirectional) - "Documentation principles apply to computational notebooks"
 - [DK-JUPYTER-PSYCHOMETRIC-WORKFLOWS-v1.0.0.md] (0.92, shares-patterns, analogical) - "Psychometric workflow notebooks benefit from refactoring methodology"
+- [meditation-session-2025-11-27-efa-cherry-pick-workflow.prompt.md] (0.91, extends, forward) - "Decision point architecture extends refactoring with researcher judgment pauses"
 - [alex-core.instructions.md] (0.89, utilizes, forward) - "Meta-cognitive analysis applied to notebook quality assessment"
 - [bootstrap-learning.instructions.md] (0.87, consolidates, forward) - "Notebook refactoring domain learned through systematic analysis"
 - [DK-PYTHON-STATISTICAL-ANALYSIS-v1.0.0.md] (0.85, enhances, bidirectional) - "Statistical analysis code quality improved through refactoring"
@@ -488,3 +489,4 @@ git push
 **Application context**: AIRS qualitative analysis cleanup (Notebook 08, 3077 lines)
 **Key insight**: Large-scale refactoring requires strategic planning before execution
 **Reusability**: Template applicable to any computational notebook cleanup project
+**Extension**: Decision point architecture pattern for researcher-guided analysis workflows (Nov 27, 2025)

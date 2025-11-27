@@ -364,4 +364,15 @@ coefficients (Grewal et al., 2004; MacKinnon et al., 2000)...
 
 ---
 
+## Embedded Synapse Network
+
+- [DK-PYTHON-STATISTICAL-ANALYSIS-v1.0.0.md] (0.95, implements, bidirectional) - "Python statistical tools applied in Jupyter psychometric workflows"
+- [DK-CFA-SEMOPY-IMPLEMENTATION-v1.0.0.md] (0.94, extends, forward) - "CFA implementation builds on Jupyter workflow patterns"
+- [DK-NOTEBOOK-REFACTORING-v1.0.0.md] (0.92, receives-from, reverse) - "Refactoring methodology improves psychometric notebook quality"
+- [meditation-session-2025-11-27-efa-cherry-pick-workflow.prompt.md] (0.90, extends, forward) - "Cherry-pick workflow adds decision point architecture to EFA stage"
+- [DK-PSYCHOMETRIC-VALIDATION-v1.0.0.md] (0.89, shares-patterns, bidirectional) - "Validation criteria applied within Jupyter workflow stages"
+- [DK-SPSS-PSYCHOMETRIC-ANALYSIS-v1.0.0.md] (0.85, translates, bidirectional) - "SPSS foundations translated to Python/Jupyter implementation"
+
+---
+
 *Domain knowledge established through AIRS psychometric analysis project - translating SPSS foundations to Python mastery with publication-ready Jupyter workflows*
