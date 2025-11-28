@@ -1,0 +1,316 @@
+{
+  "created": "2025-11-28",
+  "items": [
+    "PE1",
+    "PE2",
+    "EE1",
+    "EE2",
+    "SI1",
+    "SI2",
+    "FC1",
+    "FC2",
+    "HM1",
+    "HM2",
+    "PV1",
+    "PV2",
+    "HB1",
+    "HB2",
+    "VO1",
+    "VO2",
+    "TR1",
+    "TR2",
+    "EX1",
+    "EX2",
+    "ER1",
+    "ER2",
+    "AX1",
+    "AX2",
+    "BI1",
+    "BI2",
+    "BI3",
+    "BI4"
+  ],
+  "predictor_items": [
+    "PE1",
+    "PE2",
+    "EE1",
+    "EE2",
+    "SI1",
+    "SI2",
+    "FC1",
+    "FC2",
+    "HM1",
+    "HM2",
+    "PV1",
+    "PV2",
+    "HB1",
+    "HB2",
+    "VO1",
+    "VO2",
+    "TR1",
+    "TR2",
+    "EX1",
+    "EX2",
+    "ER1",
+    "ER2",
+    "AX1",
+    "AX2"
+  ],
+  "outcome_items": [
+    "BI1",
+    "BI2",
+    "BI3",
+    "BI4"
+  ],
+  "constructs": {
+    "PE": [
+      "PE1",
+      "PE2"
+    ],
+    "EE": [
+      "EE1",
+      "EE2"
+    ],
+    "SI": [
+      "SI1",
+      "SI2"
+    ],
+    "FC": [
+      "FC1",
+      "FC2"
+    ],
+    "HM": [
+      "HM1",
+      "HM2"
+    ],
+    "PV": [
+      "PV1",
+      "PV2"
+    ],
+    "HB": [
+      "HB1",
+      "HB2"
+    ],
+    "VO": [
+      "VO1",
+      "VO2"
+    ],
+    "TR": [
+      "TR1",
+      "TR2"
+    ],
+    "EX": [
+      "EX1",
+      "EX2"
+    ],
+    "ER": [
+      "ER1",
+      "ER2"
+    ],
+    "AX": [
+      "AX1",
+      "AX2"
+    ],
+    "BI": [
+      "BI1",
+      "BI2",
+      "BI3",
+      "BI4"
+    ]
+  },
+  "theoretical_domains": {
+    "UTAUT2_Core": [
+      "PE",
+      "EE",
+      "SI",
+      "FC",
+      "HM",
+      "PV",
+      "HB"
+    ],
+    "AI_Specific": [
+      "VO",
+      "TR",
+      "EX",
+      "ER",
+      "AX"
+    ],
+    "Outcome": [
+      "BI"
+    ]
+  },
+  "metadata": {
+    "PE1": {
+      "construct": "Performance Expectancy",
+      "construct_abbr": "PE",
+      "direction": "POSITIVE"
+    },
+    "PE2": {
+      "construct": "Performance Expectancy",
+      "construct_abbr": "PE",
+      "direction": "POSITIVE"
+    },
+    "EE1": {
+      "construct": "Effort Expectancy",
+      "construct_abbr": "EE",
+      "direction": "POSITIVE"
+    },
+    "EE2": {
+      "construct": "Effort Expectancy",
+      "construct_abbr": "EE",
+      "direction": "POSITIVE"
+    },
+    "SI1": {
+      "construct": "Social Influence",
+      "construct_abbr": "SI",
+      "direction": "POSITIVE"
+    },
+    "SI2": {
+      "construct": "Social Influence",
+      "construct_abbr": "SI",
+      "direction": "POSITIVE"
+    },
+    "FC1": {
+      "construct": "Facilitating Conditions",
+      "construct_abbr": "FC",
+      "direction": "POSITIVE"
+    },
+    "FC2": {
+      "construct": "Facilitating Conditions",
+      "construct_abbr": "FC",
+      "direction": "POSITIVE"
+    },
+    "HM1": {
+      "construct": "Hedonic Motivation",
+      "construct_abbr": "HM",
+      "direction": "POSITIVE"
+    },
+    "HM2": {
+      "construct": "Hedonic Motivation",
+      "construct_abbr": "HM",
+      "direction": "POSITIVE"
+    },
+    "PV1": {
+      "construct": "Price Value",
+      "construct_abbr": "PV",
+      "direction": "POSITIVE"
+    },
+    "PV2": {
+      "construct": "Price Value",
+      "construct_abbr": "PV",
+      "direction": "POSITIVE"
+    },
+    "HB1": {
+      "construct": "Habit",
+      "construct_abbr": "HB",
+      "direction": "POSITIVE"
+    },
+    "HB2": {
+      "construct": "Habit",
+      "construct_abbr": "HB",
+      "direction": "POSITIVE"
+    },
+    "VO1": {
+      "construct": "Voluntariness",
+      "construct_abbr": "VO",
+      "direction": "POSITIVE"
+    },
+    "VO2": {
+      "construct": "Voluntariness",
+      "construct_abbr": "VO",
+      "direction": "POSITIVE"
+    },
+    "TR1": {
+      "construct": "Trust in AI",
+      "construct_abbr": "TR",
+      "direction": "POSITIVE"
+    },
+    "TR2": {
+      "construct": "Trust in AI",
+      "construct_abbr": "TR",
+      "direction": "POSITIVE"
+    },
+    "EX1": {
+      "construct": "Explainability",
+      "construct_abbr": "EX",
+      "direction": "POSITIVE"
+    },
+    "EX2": {
+      "construct": "Explainability",
+      "construct_abbr": "EX",
+      "direction": "POSITIVE"
+    },
+    "ER1": {
+      "construct": "Perceived Ethical Risk",
+      "construct_abbr": "ER",
+      "direction": "NEGATIVE"
+    },
+    "ER2": {
+      "construct": "Perceived Ethical Risk",
+      "construct_abbr": "ER",
+      "direction": "NEGATIVE"
+    },
+    "AX1": {
+      "construct": "AI Anxiety",
+      "construct_abbr": "AX",
+      "direction": "NEGATIVE"
+    },
+    "AX2": {
+      "construct": "AI Anxiety",
+      "construct_abbr": "AX",
+      "direction": "NEGATIVE"
+    },
+    "BI1": {
+      "construct": "Behavioral Intention",
+      "construct_abbr": "BI",
+      "direction": "POSITIVE"
+    },
+    "BI2": {
+      "construct": "Behavioral Intention",
+      "construct_abbr": "BI",
+      "direction": "POSITIVE"
+    },
+    "BI3": {
+      "construct": "Behavioral Intention",
+      "construct_abbr": "BI",
+      "direction": "POSITIVE"
+    },
+    "BI4": {
+      "construct": "Behavioral Intention",
+      "construct_abbr": "BI",
+      "direction": "POSITIVE"
+    }
+  },
+  "positive_items": [
+    "PE1",
+    "PE2",
+    "EE1",
+    "EE2",
+    "SI1",
+    "SI2",
+    "FC1",
+    "FC2",
+    "HM1",
+    "HM2",
+    "PV1",
+    "PV2",
+    "HB1",
+    "HB2",
+    "VO1",
+    "VO2",
+    "TR1",
+    "TR2",
+    "EX1",
+    "EX2",
+    "BI1",
+    "BI2",
+    "BI3",
+    "BI4"
+  ],
+  "negative_items": [
+    "ER1",
+    "ER2",
+    "AX1",
+    "AX2"
+  ]
+}

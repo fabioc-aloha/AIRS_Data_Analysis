@@ -1,21 +1,23 @@
 {
+  "created": "2025-11-28",
   "selected_roles": [
-    "Leader"
+    "ALL"
   ],
   "roles_included": [
+    "IC",
     "Manager",
-    "Executive"
+    "PT_Student",
+    "Other",
+    "Freelancer",
+    "FT_Student",
+    "Executive",
+    "Unemployed"
   ],
-  "n_observations": 130,
-  "n_predictor_items": 24,
-  "n_outcome_items": 4,
-  "random_seed": 67,
-  "source": "../data/AIRS_clean.csv",
-  "population_breakdown": {
-    "Leader": 130
-  },
-  "role_breakdown": {
-    "Manager": 74,
-    "Executive": 56
-  }
+  "population": "ALL",
+  "population_description": "All respondents (students + professionals) per approved dissertation proposal",
+  "n_total": 513,
+  "n_efa": 256,
+  "n_cfa": 257,
+  "holdout_ratio": 0.5,
+  "random_seed": 67
 }

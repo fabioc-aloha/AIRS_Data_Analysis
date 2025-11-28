@@ -1,8 +1,17 @@
 Factor,Item,Construct,Loading,Status
-Enablers,EE1,EE,0.8183917770578587,★★★ Excellent
-Enablers,EE2,EE,0.8817148912066944,★★★ Excellent
-PositiveAI,PE2,PE,0.7980706732631715,★★★ Excellent
-PositiveAI,HM1,HM,0.8173575762833697,★★★ Excellent
-PositiveAI,PV1,PV,0.85837870122874,★★★ Excellent
-PositiveAI,PV2,PV,0.8729843186183495,★★★ Excellent
-PositiveAI,TR2,TR,0.8033011630378062,★★★ Excellent
+AITrust,TR1,TR,0.9162250455204615,★★★ Excellent
+AITrust,TR2,TR,0.9089574417540056,★★★ Excellent
+EffortExp,EE1,EE,0.8924636465013024,★★★ Excellent
+EffortExp,EE2,EE,0.8572908984083991,★★★ Excellent
+FacilCond,FC1,FC,0.7448566486844796,★★★ Excellent
+FacilCond,FC2,FC,0.8765914474632502,★★★ Excellent
+Habit,HB1,HB,0.9174141155258635,★★★ Excellent
+Habit,HB2,HB,0.8973311832379365,★★★ Excellent
+HedonicMot,HM1,HM,0.8798784281018053,★★★ Excellent
+HedonicMot,HM2,HM,0.9152760599906904,★★★ Excellent
+PerfExp,PE1,PE,0.8562662012093952,★★★ Excellent
+PerfExp,PE2,PE,0.8946652126702215,★★★ Excellent
+PriceValue,PV1,PV,0.8798671601582719,★★★ Excellent
+PriceValue,PV2,PV,0.8707396931530659,★★★ Excellent
+SocialInf,SI1,SI,0.897163375277092,★★★ Excellent
+SocialInf,SI2,SI,0.7176997734965449,★★★ Excellent
