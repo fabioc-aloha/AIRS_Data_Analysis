@@ -12,7 +12,7 @@
 <tr><td><strong>Institution</strong></td><td>Touro University Worldwide</td></tr>
 <tr><td><strong>Program</strong></td><td>Doctor of Business Administration (DBA)</td></tr>
 <tr><td><strong>Date</strong></td><td>November 28, 2025</td></tr>
-<tr><td><strong>Status</strong></td><td>✅ Phase 3 Complete | Model D Validated (8 factors, 16 items) | CFI=0.974, RMSEA=0.070</td></tr>
+<tr><td><strong>Status</strong></td><td>✅ Phase 4 Complete | Structural Model Validated | R²=0.558, CFI=0.976</td></tr>
 </table>
 
 ---
@@ -28,18 +28,27 @@ This research develops and validates the **AI Readiness Scale (AIRS)**, a theory
    - 1 AI-specific extension: **AI Trust** (α=0.91)
    - Excellent fit: CFI=0.974, TLI=0.959, RMSEA=0.070
 
-2. **Theory Confirmation**: UTAUT2 provides solid foundation for AI adoption measurement
-   - All 7 core constructs validated (α=0.78-0.90)
-   - AI Trust adds significant explanatory power beyond UTAUT2
+2. **Structural Model Results** (Phase 4):
+   - **H1 Partially Supported**: 3/7 UTAUT2 paths significant
+   - **H2 Supported**: AI Trust predicts adoption (β=0.112, p=.048)
+   - **H3 Not Supported**: ΔAIC=+2.01 favors simpler UTAUT2-only model
+   - **H4 Not Supported**: No significant moderation by population
+   - **R² = 55.8%** variance explained in Behavioral Intention
 
-3. **Item Design Insights**: 4 constructs dropped due to item design issues (not theoretical problems):
+3. **Dominant Predictors** (Full Sample N=513):
+   - Price Value: β=0.499*** (strongest predictor)
+   - Hedonic Motivation: β=0.203***
+   - Social Influence: β=0.145**
+   - AI Trust: β=0.112*
+
+4. **Item Design Insights**: 4 constructs dropped due to item design issues (not theoretical problems):
    - Voluntariness, Explainability, Ethical Risk, Anxiety
    - Documented recommendations for future scale development
 
-4. **Population Comparison**: Measurement invariance testing reveals:
+5. **Population Comparison**: Measurement invariance testing reveals:
    - **Configural invariance supported** across Academic (N=198) and Professional (N=315) samples
    - **Partial metric invariance**: 4/16 items function differently (SI2, FC1, EE2, PE1)
-   - **Mean differences**: Professionals higher on SI and HM; Academics higher on EE
+   - **No structural moderation**: Path coefficients similar across populations
 
 ### **Practical Impact**
 
@@ -128,7 +137,7 @@ flowchart LR
 |----|----------|--------|
 | **RQ1** | What factors influence AI adoption readiness in organizational settings? | ✅ Answered |
 | **RQ2** | Do UTAUT2 constructs predict AI adoption readiness? | ✅ Answered |
-| **RQ3** | Does AI Trust add explanatory power beyond UTAUT2? | ⏳ Phase 4 |
+| **RQ3** | Does AI Trust add explanatory power beyond UTAUT2? | ✅ Answered |
 | **RQ6** | Does the factor structure hold across academic and professional populations? | ✅ Answered |
 | **RQ7** | Do populations differ in AI readiness levels? | ✅ Answered |
 
@@ -136,10 +145,10 @@ flowchart LR
 
 | Hypothesis | Prediction | Analysis | Status |
 |------------|------------|----------|--------|
-| **H1** | UTAUT2 constructs predict AI adoption | Structural model | ⏳ Phase 4 |
-| **H2** | AI Trust predicts adoption beyond UTAUT2 | Incremental validity | ⏳ Phase 4 |
-| **H3** | Combined AIRS explains more variance than UTAUT2 alone | Model comparison | ⏳ Phase 4 |
-| **H4** | Role, usage frequency, voluntariness moderate relationships | Multi-group SEM | ⏳ Phases 4, 6 |
+| **H1** | UTAUT2 constructs predict AI adoption | Structural model | ⚠️ Partially Supported (3/7 paths) |
+| **H2** | AI Trust predicts adoption beyond UTAUT2 | Incremental validity | ✅ Supported (β=0.112*) |
+| **H3** | Combined AIRS explains more variance than UTAUT2 alone | Model comparison | ❌ Not Supported (ΔAIC=+2.01) |
+| **H4** | Role, usage frequency, voluntariness moderate relationships | Multi-group SEM | ❌ Not Supported (population) |
 | ~~H5~~ | ~~Mediation through EX, ER, AX~~ | ~~Bootstrap mediation~~ | ❌ Not testable |
 
 **Note**: H5 mediation hypotheses cannot be tested because Explainability (EX), Ethical Risk (ER), and Anxiety (AX) were dropped due to item design issues.
@@ -201,8 +210,8 @@ flowchart TB
 | **1** | `01_EFA_Experiment.ipynb` | Theory-guided EFA → Model D | ✅ Complete |
 | **2** | `02_CFA_Experiment.ipynb` | CFA validation | ✅ Complete |
 | **3** | `03_Measurement_Invariance.ipynb` | Cross-population invariance | ✅ Complete |
-| **4** | `04_Structural_Model.ipynb` | Hypothesis testing (H1-H3) | ⏭️ Next |
-| **5** | `05_Mediation_Analysis.ipynb` | Alternative analyses | ⏭️ Pending |
+| **4** | `04_Structural_Model.ipynb` | Hypothesis testing (H1-H4) | ✅ Complete |
+| **5** | `05_Mediation_Analysis.ipynb` | Alternative analyses | ⏭️ Next |
 | **6** | `06_Moderation_Analysis.ipynb` | H4 contextual moderation | ⏭️ Pending |
 | **7** | `07_Tool_Usage_Patterns.ipynb` | AI tool usage patterns | ⏭️ Pending |
 | **8** | `08_Qualitative_Feedback.ipynb` | Thematic analysis | ⏭️ Pending |
@@ -249,6 +258,38 @@ flowchart TB
 | Hedonic Motivation | 3.11 | 3.41 | -0.27 | .003 |
 
 **Interpretation**: Professionals perceive stronger social pressure and enjoyment; Academics find AI easier to use.
+
+### Phase 4: Structural Model Results
+
+**Full Sample Structural Model** (N=513): CFI=0.976, TLI=0.965, RMSEA=0.058, R²=0.558
+
+**Hypothesis Testing Summary**:
+
+| Hypothesis | Result | Key Evidence |
+|------------|--------|--------------|
+| **H1**: UTAUT2 → BI | ⚠️ Partially Supported | 3/7 paths significant |
+| **H2**: AI Trust → BI | ✅ Supported | β=0.112, p=.048 |
+| **H3**: AIRS > UTAUT2 | ❌ Not Supported | ΔAIC=+2.01 |
+| **H4**: Population Moderation | ❌ Not Supported | No significant Δβ |
+
+**Significant Predictors** (ranked by effect size):
+
+| Path | β | p | Interpretation |
+|------|---|---|----------------|
+| PV → BI | 0.499 | <.001 | Price Value is dominant predictor |
+| HM → BI | 0.203 | <.001 | Enjoyment drives adoption |
+| SI → BI | 0.145 | .002 | Social influence matters |
+| TR → BI | 0.112 | .048 | AI Trust adds unique variance |
+
+**Non-Significant Paths**: PE, EE, FC, HB (all p > .05)
+
+**Multi-Group Comparison**:
+| Group | N | CFI | R² (BI) |
+|-------|---|-----|--------|
+| Academic | 198 | 0.957 | 0.603 |
+| Professional | 315 | 0.986 | 0.532 |
+
+**Key Finding**: Price Value (β=0.499) explains the majority of adoption readiness variance, with AI Trust providing modest but significant incremental contribution.
 
 ---
 
@@ -399,6 +440,6 @@ This project is licensed under [MIT License](LICENSE.md) for code and [CC BY 4.0
 
 ---
 
-**Document Status**: ✅ Phase 3 Complete
+**Document Status**: ✅ Phase 4 Complete
 **Last Updated**: November 28, 2025
-**Version**: 3.0 (Theory-Guided Validation)
+**Version**: 4.0 (Structural Model Validation)

@@ -1,0 +1,33 @@
+{
+  "analysis_date": "2025-11-28T16:52:33.170347",
+  "full_sample_n": 513,
+  "full_sample_fit": {
+    "chi2": 362.89056902886864,
+    "df": 134.0,
+    "cfi": 0.9755154791719399,
+    "tli": 0.9652831421094671,
+    "rmsea": 0.057759918230455225,
+    "aic": 150.58522195310383,
+    "bic": 472.8461861860823
+  },
+  "hypothesis_results": {
+    "H1_supported_paths": 3,
+    "H1_total_paths": 7,
+    "H2_trust_significant": true,
+    "H2_trust_beta": 0.11217100834659995,
+    "H2_trust_p": 0.04802681745654813,
+    "H3_incremental_validity": false,
+    "H3_delta_aic": 2.0140616923763446,
+    "H4_moderation_effects": 0
+  },
+  "academic_sample": {
+    "n": 198,
+    "cfi": 0.9576980131327951,
+    "rmsea": 0.06706528049213155
+  },
+  "professional_sample": {
+    "n": 315,
+    "cfi": 0.9833710234091926,
+    "rmsea": 0.052267273225916865
+  }
+}

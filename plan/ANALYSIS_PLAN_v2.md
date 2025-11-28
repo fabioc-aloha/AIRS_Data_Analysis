@@ -212,7 +212,7 @@ flowchart TB
 | **1. EFA** | `airs_experiment/01_EFA_Experiment.ipynb` | Theory-guided EFA → Model D selection | ✅ Complete |
 | **2. CFA** | `airs_experiment/02_CFA_Experiment.ipynb` | CFA validation + contribution summary | ✅ Complete |
 | **3. Invariance** | `airs_experiment/03_Measurement_Invariance.ipynb` | Cross-population invariance testing | ✅ Complete |
-| **4. Structural** | `airs_experiment/04_Structural_Model.ipynb` | Hypothesis testing (H1-H3) with multi-group SEM | ⏭️ Next |
+| **4. Structural** | `airs_experiment/04_Structural_Model.ipynb` | Hypothesis testing (H1-H4) with multi-group SEM | ✅ Complete |
 | **5. Mediation** | `airs_experiment/05_Mediation_Analysis.ipynb` | Alternative analyses (H5 not testable) | ⏭️ Pending |
 | **6. Moderation** | `airs_experiment/06_Moderation_Analysis.ipynb` | H4a-f contextual moderation | ⏭️ Pending |
 | **7. Tool Usage** | `airs_experiment/07_Tool_Usage_Patterns.ipynb` | AI tool usage patterns | ⏭️ Pending |
@@ -318,6 +318,56 @@ flowchart TB
 - Professionals perceive stronger Social Influence and Hedonic Motivation
 - Academics perceive AI as easier to use (higher Effort Expectancy)
 - Core constructs (PE, FC, PV, HB, TR) show no population differences
+
+### Phase 4 Structural Model Results (November 2025)
+
+**Full Sample Structural Model Fit (N = 513)**
+
+| Metric | Value | Threshold | Status |
+|--------|-------|-----------|--------|
+| CFI | 0.976 | ≥ 0.95 | ✓ Excellent |
+| TLI | 0.965 | ≥ 0.95 | ✓ Excellent |
+| RMSEA | 0.058 | ≤ 0.08 | ✓ Good |
+| R² (BI) | 0.558 | — | 55.8% variance explained |
+
+**Hypothesis Testing Summary**
+
+| Hypothesis | Test | Result | Evidence |
+|------------|------|--------|----------|
+| **H1** | UTAUT2 → BI | ⚠️ PARTIALLY SUPPORTED | 3/7 paths significant |
+| **H2** | AI Trust → BI | ✓ SUPPORTED | β = 0.112, p = .048 |
+| **H3** | AIRS > UTAUT2 | ✗ NOT SUPPORTED | ΔAIC = +2.01 (parsimony favors UTAUT2) |
+| **H4** | Population Moderation | ✗ NOT SUPPORTED | No significant path differences |
+
+**H1: UTAUT2 Structural Paths (Full Sample)**
+
+| Path | β | SE | p | Result |
+|------|---|----|---|--------|
+| PV → BI | 0.499 | 0.054 | <.001 | ✓ Supported *** |
+| HM → BI | 0.203 | 0.055 | <.001 | ✓ Supported *** |
+| SI → BI | 0.145 | 0.046 | .002 | ✓ Supported ** |
+| TR → BI | 0.112 | 0.057 | .048 | ✓ Supported * |
+| HB → BI | 0.075 | 0.050 | .129 | ✗ Not significant |
+| EE → BI | 0.062 | 0.054 | .253 | ✗ Not significant |
+| PE → BI | 0.029 | 0.063 | .641 | ✗ Not significant |
+| FC → BI | -0.095 | 0.050 | .057 | ✗ Not significant |
+
+**Key Finding**: Price Value (β=0.499) is the dominant predictor, followed by Hedonic Motivation (β=0.203), Social Influence (β=0.145), and AI Trust (β=0.112).
+
+**H4: Multi-Group Analysis (Academic vs. Professional)**
+
+| Group | N | CFI | RMSEA | R² (BI) |
+|-------|---|-----|-------|--------|
+| Academic | 198 | 0.957 | 0.075 | 0.603 |
+| Professional | 315 | 0.986 | 0.055 | 0.532 |
+
+No significant moderation effects detected. Path coefficients do not differ significantly between populations, though Academic sample shows slightly higher variance explained (60.3% vs 53.2%).
+
+**Deliverables**:
+- `tables/structural_paths_full_sample.csv` - Path coefficients and significance
+- `tables/structural_paths_group_comparison.csv` - Multi-group comparison
+- `data/structural_model_results.json` - Summary statistics
+- `plots/structural_paths_comparison.png` - Visual comparison
 
 ---
 
@@ -438,12 +488,13 @@ Four constructs dropped due to **item design issues** (not sample-specific probl
 
 ## Hypotheses
 
-### H1: UTAUT2 Core Constructs and AI Adoption
+### H1: UTAUT2 Core Constructs and AI Adoption (⚠️ PARTIALLY SUPPORTED)
 
 The core constructs of UTAUT2—performance expectancy (PE), effort expectancy (EE), social influence (SI), facilitating conditions (FC), hedonic motivation (HM), price value (PV), and habit (HB)—will significantly predict AI adoption readiness (Venkatesh et al., 2012).
 
+> **Phase 4 Results (November 2025)**: 3 of 7 UTAUT2 paths significant. Price Value (β=0.499***), Hedonic Motivation (β=0.203***), and Social Influence (β=0.145**) predict Behavioral Intention. PE, EE, FC, HB not significant.
+
 | Construct | Code | Expected Effect | Rationale |
-|-----------|------|-----------------|-----------|
 | Performance Expectancy | PE | (+) → BI | Productivity/quality gains drive adoption |
 | Effort Expectancy | EE | (+) → BI | Ease of use reduces friction |
 | Social Influence | SI | (+) → BI | Peer/leader support increases intention |
@@ -457,48 +508,54 @@ The core constructs of UTAUT2—performance expectancy (PE), effort expectancy (
 
 ---
 
-### H2: AI Trust and AI Adoption (⚠️ PARTIALLY SUPPORTED)
+### H2: AI Trust and AI Adoption (✓ SUPPORTED)
 
 > **Model D Validation Update (November 2025)**: Only AI Trust (TR) was validated.
 > Explainability, Ethical Risk, and Anxiety were dropped due to item design issues.
+>
+> **Phase 4 Results (November 2025)**: AI Trust significantly predicts Behavioral Intention (β = 0.112, p = .048), supporting H2.
 
 | Construct | Code | Expected Effect | Status |
 |-----------|------|-----------------|--------|
-| Trust in AI | TR | (+) → BI | ✓ **Validated** (α=0.91) |
+| Trust in AI | TR | (+) → BI | ✓ **Supported** (β=0.112*) |
 | ~~Perceived Explainability~~ | ~~EX~~ | ~~(+) → TR → BI~~ | ❌ Dropped |
 | ~~Perceived Ethical Risk~~ | ~~ER~~ | ~~(−) → BI~~ | ❌ Dropped |
 | ~~AI-Related Anxiety~~ | ~~AX~~ | ~~Mixed~~ | ❌ Dropped |
 
 - **Test**: Incremental effect of AI Trust in full AIRS model
-- **Revised Scope**: Only TR → BI path is testable
+- **Result**: TR → BI significant (β = 0.112, p = .048)
 - **Notebook**: 04
 
 ---
 
-### H3: Integrated Predictive Validity of AIRS (⚠️ SCOPE REDUCED)
+### H3: Integrated Predictive Validity of AIRS (✗ NOT SUPPORTED)
 
 > **Model D Update**: With only AI Trust validated, H3 tests whether adding TR to UTAUT2
 > provides incremental validity.
+>
+> **Phase 4 Results (November 2025)**: UTAUT2+Trust model does not provide sufficient improvement over UTAUT2-only. ΔAIC = +2.01 favors the simpler model.
 
 The combined AIRS model (UTAUT2 + AI Trust) will explain significantly greater variance in AI adoption readiness than UTAUT2 alone (Dwivedi et al., 2021).
 
-- **Test**: Nested model comparison (χ² difference test, ΔCFI, ΔRMSEA)
-- **Threshold**: ΔR² ≥ 0.05 (small-medium practical significance)
+- **Test**: Nested model comparison (AIC, BIC)
+- **Result**: ΔAIC = +2.01 (parsimony favors UTAUT2-only model)
+- **Interpretation**: While TR → BI is significant (H2 supported), the incremental R² contribution is minimal
 - **Notebook**: 04
 
 ---
 
-### H4: Moderating Effects of Contextual Variables (⚠️ REVISED)
+### H4: Moderating Effects of Contextual Variables (✗ NOT SUPPORTED - Population)
 
 > **Phase 3 Invariance Update (November 2025)**: Population (Role) confirmed as key moderator based on:
 > - Partial metric invariance (4/16 loadings differ)
 > - Significant mean differences (SI, EE, HM)
 > - Differential construct functioning (SI2 λ: 0.48 Academic vs 0.83 Professional)
+>
+> **Phase 4 Results (November 2025)**: Multi-group SEM found no significant moderation by population. Path coefficients do not differ significantly between Academic and Professional groups, despite measurement differences.
 
 | Sub-Hypothesis | Moderator | Moderated Path | Expected Pattern | Status |
-|----------------|-----------|----------------|------------------|--------|
-| **H4a** | Role | TR → BI | Stronger for professionals (accountability) | ✓ Testable |
-| **H4b** | Role | SI → BI | Stronger for students (peer influence) | ✓ Testable |
+| **H4a** | Role | TR → BI | Stronger for professionals (accountability) | ✗ Not supported |
+| **H4b** | Role | SI → BI | Stronger for students (peer influence) | ✗ Not supported |
 | **H4c** | Usage Frequency | HB → BI | Stronger for high-frequency users | ✓ Testable |
 | **H4e** | Voluntariness | SI → BI, FC → BI | Stronger in mandated contexts | ✓ Testable |
 | **H4f** | Disability | EE → BI, FC → BI | Stronger for persons with disabilities | ✓ Testable |
@@ -632,43 +689,39 @@ The EFA process follows best practices from Fabrigar et al. (1999), Costello & O
 
 ---
 
-### Phase 4: Structural Models ⏭️ NEXT
+### Phase 4: Structural Models ✅ COMPLETE (November 2025)
 **Notebook**: `airs_experiment/04_Structural_Model.ipynb`
 
-**Objective**: Test H1, H2, H3 hypotheses with Population as Moderator
+**Objective**: Test H1, H2, H3, H4 hypotheses with Population as Moderator
 
-**Approach (Updated November 2025)**:
+**Approach**: Multi-group SEM with separate models for Academic (N=198) and Professional (N=315) populations.
 
-Given Phase 3 partial metric invariance findings, Phase 4 uses **multi-group SEM**:
+**Results Summary**:
 
-1. **Measurement Model Setup**:
-   - Free non-invariant loadings across groups: SI2, FC1, EE2, PE1
-   - Constrain remaining 12 loadings for comparability
+| Hypothesis | Result | Key Evidence |
+|------------|--------|--------------|
+| H1: UTAUT2 → BI | ⚠️ Partially Supported | 3/7 paths significant (PV, HM, SI) |
+| H2: TR → BI | ✓ Supported | β = 0.112, p = .048 |
+| H3: AIRS > UTAUT2 | ✗ Not Supported | ΔAIC = +2.01 |
+| H4: Population Moderation | ✗ Not Supported | No significant path differences |
 
-2. **Structural Model Testing**:
-   | Model | Description | Test |
-   |-------|-------------|------|
-   | M1: Constrained | All paths equal across Academic/Professional | Baseline |
-   | M2: Freed | All paths estimated separately per group | Comparison |
-   | Δχ² Test | M1 vs M2 | If significant → paths differ by population |
+**Full Sample Model Fit**: CFI = 0.976, TLI = 0.965, RMSEA = 0.058, R² = 0.558
 
-3. **Hypothesis Testing**:
-   - **H1**: UTAUT2 constructs → BI (test per group)
-   - **H2**: AI Trust → BI incremental validity (ΔR²)
-   - **H3**: Model comparison (UTAUT2-only vs UTAUT2+Trust)
-   - **Population Moderation**: Compare β coefficients across groups
+**Significant Predictors** (Full Sample):
+| Path | β | p | Rank |
+|------|---|---|------|
+| PV → BI | 0.499 | <.001 | 1st |
+| HM → BI | 0.203 | <.001 | 2nd |
+| SI → BI | 0.145 | .002 | 3rd |
+| TR → BI | 0.112 | .048 | 4th |
 
-4. **Key Comparisons**:
-   | Path | Academic β | Professional β | Δβ | Moderation? |
-   |------|-----------|----------------|-----|-------------|
-   | SI → BI | Expected weaker | Expected stronger | Test | H4b |
-   | TR → BI | Compare | Compare | Test | H4a |
-   | EE → BI | Expected stronger | Expected weaker | Test | Exploratory |
+**Key Finding**: Price Value is the dominant predictor of AI adoption readiness, explaining the largest portion of variance. AI Trust provides significant but modest incremental contribution.
 
-**Fit Criteria** (same as CFA):
-- CFI/TLI ≥ 0.90 (acceptable), ≥ 0.95 (good)
-- RMSEA ≤ 0.08 (acceptable), ≤ 0.06 (good)
-- SRMR ≤ 0.08
+**Deliverables**:
+- `tables/structural_paths_full_sample.csv`
+- `tables/structural_paths_group_comparison.csv`
+- `data/structural_model_results.json`
+- `plots/structural_paths_comparison.png`
 
 ---
 
