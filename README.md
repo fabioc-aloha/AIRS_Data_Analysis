@@ -12,7 +12,7 @@
 <tr><td><strong>Institution</strong></td><td>Touro University Worldwide</td></tr>
 <tr><td><strong>Program</strong></td><td>Doctor of Business Administration (DBA)</td></tr>
 <tr><td><strong>Date</strong></td><td>November 28, 2025</td></tr>
-<tr><td><strong>Status</strong></td><td>✅ All 10 Phases Complete | 5 Hypotheses Supported | 7 Novel Findings | R²=0.558</td></tr>
+<tr><td><strong>Status</strong></td><td>✅ All 10 Phases Complete | 4 Hypotheses Supported | 8 Novel Findings | R²=0.558</td></tr>
 </table>
 
 ---
@@ -232,7 +232,7 @@ flowchart TB
 - ✅ Typology × Theme cross-tabulation → **1 significant association (Positive Experience)**
 
 **Phase 10 Final Synthesis**:
-- Hypothesis summary: 5 supported, 9 not supported, 3 not testable
+- Hypothesis summary: 4 supported, 10 not supported, 3 not testable
 - 7 novel findings documented (including typology × theme cross-tabulation)
 - Chapter 4 integration complete
 
@@ -408,19 +408,20 @@ flowchart TB
 **Hypothesis Testing Summary**:
 
 | Status | Count | Hypotheses |
-|--------|-------|------------|
-| ✓ Supported | 5 | H1a (PE), H1c (SI), H1e (HM), H1g (HB), H2 (TR) |
-| ✗ Not Supported | 9 | H1b, H1d, H1f, H3, H4a-f |
+|--------|-------|-----------|
+| ✓ Supported | 4 | H1c (SI→BI, β=0.145), H1e (HM→BI, β=0.203), H1f (PV→BI, β=0.499), H2 (TR→BI, β=0.112) |
+| ✗ Not Supported | 10 | H1a (PE), H1b (EE), H1d (FC), H1g (HB), H3, H4a-f |
 | — Not Testable | 3 | H5a-c (dropped constructs) |
 
-**7 Novel Contributions**:
-1. **AI Trust as significant predictor** (β=0.112, p=.048) - validates AIRS theoretical extension
-2. **Experience moderation** - PE and HM effects stronger for veterans
-3. **User typology** - 4 distinct segments with different readiness profiles
-4. **Habit reversal** - negative effect for high-frequency users
-5. **Population mean differences** - validated via measurement invariance
-6. **Qualitative theme patterns** - population-specific concerns documented
-7. **Typology × Theme association** - AI Enthusiasts express more positive experiences (χ²=9.55, p=.023)
+**8 Novel Contributions**:
+1. **Price Value as strongest predictor** (β=0.499, p<.001) - challenges AI-specific narratives; cost-benefit still dominates
+2. **AI Trust as significant predictor** (β=0.112, p=.048) - validates AIRS theoretical extension as 4th-ranked factor
+3. **Experience moderation** - PE×Exp (p=.013), HM×Exp (p=.009) - career stage shapes AI adoption motivations
+4. **User typology** - 4 distinct segments with different readiness profiles
+5. **Habit reversal** - negative effect for high-frequency users (opposite UTAUT2 prediction)
+6. **Population mean differences** - validated via measurement invariance
+7. **Qualitative theme patterns** - population-specific concerns documented
+8. **Typology × Theme association** - AI Enthusiasts express more positive experiences (χ²=9.55, p=.023)
 
 ---
 
