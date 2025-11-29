@@ -1,0 +1,6 @@
+Hypothesis,Path,Moderator,Group 1,β₁,Group 2,β₂,Δβ,z,p,Supported,Reliable
+H4c,HB → BI,Usage Frequency,Low (N=101),0.103,High (N=300),-0.197,-0.300,-2.169,0.030,No*,Yes
+H4e,SI → BI,Voluntariness,Mandated (N=70),0.349,Voluntary (N=276),-0.362,0.711,0.505,0.614,No,Caution
+H4e,FC → BI,Voluntariness,Mandated (N=70),0.074,Voluntary (N=276),1.138,-1.064,-0.334,0.739,No,Caution
+H4f,EE → BI,Disability,No (N=434),-0.072,Yes (N=69),-0.200,-0.128,-0.026,0.979,No,Caution
+H4f,FC → BI,Disability,No (N=434),0.110,Yes (N=69),2.215,2.105,0.073,0.942,No,Caution

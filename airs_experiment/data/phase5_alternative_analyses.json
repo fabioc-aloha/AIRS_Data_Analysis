@@ -1,0 +1,52 @@
+{
+  "analysis_date": "2025-11-28T21:26:14.786500",
+  "sample_size": 513,
+  "model_comparison": {
+    "delta_chi2": 3.49,
+    "delta_chi2_p": 0.062,
+    "delta_aic": 2.01,
+    "delta_bic": 6.25,
+    "utaut2_cfi": 0.9786432788037163,
+    "trust_cfi": 0.9789719721616296
+  },
+  "mediation_test": {
+    "predictor": "EffortExp",
+    "indirect_effect": 0.232,
+    "indirect_ci_lower": -0.023,
+    "indirect_ci_upper": 0.474,
+    "mediation_detected": false
+  },
+  "alternative_models": [
+    {
+      "Model": "UTAUT Core (4 predictors)",
+      "AIC": 128.91335567818112,
+      "CFI": 0.9748574599779087,
+      "RMSEA": 0.06506188810776527
+    },
+    {
+      "Model": "Hedonic-Value (4 predictors)",
+      "AIC": 128.99332944823843,
+      "CFI": 0.977561655761014,
+      "RMSEA": 0.06146352878217955
+    },
+    {
+      "Model": "Parsimonious (4 sig predictors)",
+      "AIC": 129.04580883402014,
+      "CFI": 0.979336169249988,
+      "RMSEA": 0.058983087936333584
+    },
+    {
+      "Model": "UTAUT2-Only (7 predictors)",
+      "AIC": 135.03701322812555,
+      "CFI": 0.9786432788037163,
+      "RMSEA": 0.061012841243042626
+    },
+    {
+      "Model": "Full AIRS (8 predictors)",
+      "AIC": 137.0506326268664,
+      "CFI": 0.9789719721616296,
+      "RMSEA": 0.06090080763618491
+    }
+  ],
+  "best_model_aic": "UTAUT Core (4 predictors)"
+}

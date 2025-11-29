@@ -1,0 +1,99 @@
+{
+  "study_overview": {
+    "purpose": "Develop and validate AIRS instrument",
+    "theoretical_base": "UTAUT2 + AI Trust extension",
+    "sample_size": 513,
+    "populations": [
+      "Academic (n=198)",
+      "Professional (n=315)"
+    ],
+    "validated_model": "Model D: 8 factors, 16 items"
+  },
+  "hypothesis_summary": {
+    "supported": [
+      "H1c",
+      "H1e",
+      "H1f",
+      "H2"
+    ],
+    "not_supported": [
+      "H1a",
+      "H1b",
+      "H1d",
+      "H1g",
+      "H3",
+      "H4a",
+      "H4b",
+      "H4c*",
+      "H4e",
+      "H4f"
+    ],
+    "not_testable": [
+      "H5a",
+      "H5b",
+      "H5c"
+    ],
+    "note": "H4c* significant in opposite direction; SI, HM, PV, TR paths supported"
+  },
+  "novel_contributions": [
+    "AI Trust as significant predictor (β = .112, p = .048)",
+    "Price Value as strongest predictor (β = .499, p < .001)",
+    "Experience moderates PE → BI (β = .148, p = .013)",
+    "Experience moderates HM → BI (β = .136, p = .009)",
+    "High-frequency users show negative Habit effect (z=-2.17, p=.030)",
+    "Disability associated with AI Anxiety (d = .40)",
+    "4-segment user typology identified",
+    "Typology × Theme association (χ²=9.55, p=.023)"
+  ],
+  "model_fit": {
+    "cfa_holdout": {
+      "CFI": 0.956,
+      "TLI": 0.945,
+      "RMSEA": 0.053,
+      "SRMR": 0.046
+    },
+    "cfa_full": {
+      "CFI": 0.962,
+      "TLI": 0.953,
+      "RMSEA": 0.064,
+      "SRMR": 0.043
+    }
+  },
+  "dropped_constructs": {
+    "voluntariness": {
+      "alpha": 0.43,
+      "reason": "Conceptually distinct items"
+    },
+    "explainability": {
+      "alpha": 0.47,
+      "reason": "Process vs outcome facets"
+    },
+    "ethical_risk": {
+      "alpha": 0.31,
+      "reason": "Unrelated risk dimensions"
+    },
+    "ai_anxiety": {
+      "alpha": 0.58,
+      "reason": "General technology anxiety"
+    }
+  },
+  "practical_implications": [
+    "Trust-building interventions are priority",
+    "Segment-specific adoption strategies recommended",
+    "Experience-based messaging for PE and HM",
+    "Accessibility considerations for anxiety reduction"
+  ],
+  "crosstab_analysis": {
+    "n_themed_responses": 141,
+    "themes_analyzed": [
+      "Positive Experience",
+      "Concerns/Caution",
+      "Accuracy/Reliability",
+      "Learning/Education",
+      "Work/Productivity",
+      "Ethics/Privacy"
+    ],
+    "significant_associations": 1,
+    "interpretation": "Theme expression varies by user typology"
+  }
+}

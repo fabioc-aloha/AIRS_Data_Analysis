@@ -1,258 +1,258 @@
-PE1,PE2,EE1,EE2,SI1,SI2,FC1,FC2,HM1,HM2,PV1,PV2,HB1,HB2,VO1,VO2,TR1,TR2,EX1,EX2,ER1,ER2,AX1,AX2,BI1,BI2,BI3,BI4,Usage_MSCopilot,Usage_ChatGPT,Usage_Gemini,Usage_Other,Role,Education,Industry,Experience,Disability,AI_Adoption,Role_Category,Duration_minutes
-5,5,4,5,5,5,5,5,5,5,5,5,5,5,5,4,5,5,5,5,3,2,2,4,5,5,5,5,5,5,5,4,Employed - executive or leader,Master’s degree,Manufacturing,11 or more years,No,1,Executive,3.55
-3,4,3,3,3,4,3,2,3,4,3,3,4,3,3,2,3,3,3,4,3,3,3,4,3,2,3,4,3,2,3,3,Not currently employed,Bachelor’s degree,Other,1 to 3 years,No,1,Unemployed,1.25
-2,2,3,5,1,3,2,2,1,2,2,2,2,2,2,5,3,4,4,3,5,5,5,4,2,2,1,1,1,3,3,2,Employed - manager,Bachelor’s degree,Education,1 to 3 years,No,1,Manager,2.8666666666666667
-2,1,4,5,1,4,2,1,1,2,1,1,1,1,1,2,1,1,5,4,4,5,4,4,2,1,2,1,1,3,1,1,Full time student,Some college or vocational training,Other,Less than 1 year,No,1,FT_Student,3.966666666666667
-4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,3,5,5,5,5,2,3,1,2,4,4,4,4,2,5,2,2,Full time student,Some college or vocational training,Education,1 to 3 years,No,1,FT_Student,2.816666666666667
-4,5,5,4,5,5,5,4,5,4,5,4,5,4,5,4,5,4,5,4,5,4,5,4,5,4,5,4,5,4,4,4,Employed - executive or leader,Bachelor’s degree,Technology or IT,7 to 10 years,Yes,1,Executive,1.45
-1,1,3,3,1,1,3,3,1,1,1,1,1,1,1,1,1,1,3,4,5,5,5,4,1,1,1,1,1,1,1,1,Full time student,High school or less,Other,1 to 3 years,No,0,FT_Student,2.066666666666667
-3,4,4,4,2,2,3,4,3,4,2,3,4,2,4,4,3,3,4,5,4,3,4,4,4,3,3,3,3,3,3,2,Full time student,High school or less,Other,Less than 1 year,No,1,FT_Student,3.4
-3,2,3,2,3,2,4,3,2,2,2,2,2,2,2,2,2,2,3,3,5,5,5,2,2,2,3,2,3,2,1,1,Full time student,Some college or vocational training,Education,1 to 3 years,No,1,FT_Student,3.183333333333333
-2,2,3,2,1,3,3,4,1,1,1,1,1,1,1,4,1,1,2,4,4,5,5,4,2,1,1,1,1,1,1,1,Employed - individual contributor,Bachelor’s degree,Education,11 or more years,Yes,0,IC,4.05
-4,4,5,4,4,5,5,4,5,4,5,4,4,4,5,3,5,4,5,4,3,2,2,4,5,4,5,4,5,4,5,3,Employed - manager,Master’s degree,Other,4 to 6 years,No,1,Manager,4.9
-4,4,4,4,4,4,3,3,3,3,4,4,3,3,4,2,4,4,3,4,3,5,3,2,4,4,4,4,4,1,1,1,Employed - manager,Bachelor’s degree,Manufacturing,11 or more years,No,1,Manager,3.25
-5,4,5,5,5,4,4,5,5,5,5,4,5,5,5,4,5,4,4,4,5,4,5,5,5,5,4,4,4,4,5,5,Employed - manager,Master’s degree,Technology or IT,4 to 6 years,Yes,1,Manager,4.233333333333333
-2,2,4,4,1,1,5,4,1,1,1,1,2,1,2,5,2,1,2,5,5,5,5,5,1,1,2,1,1,3,1,1,Full time student,Some college or vocational training,Other,Less than 1 year,Prefer not to answer,1,FT_Student,2.65
-5,4,5,5,4,2,5,5,5,4,5,4,5,5,5,2,5,5,5,4,5,3,3,4,4,4,4,5,3,5,5,3,Full time student,Some college or vocational training,Other,1 to 3 years,No,1,FT_Student,2.933333333333333
-4,3,5,5,1,1,1,1,5,4,5,4,4,4,1,5,1,2,5,4,1,4,5,1,1,1,1,1,1,3,1,1,Employed - individual contributor,Bachelor’s degree,Education,Less than 1 year,No,1,IC,2.6333333333333333
-4,2,3,2,2,2,1,3,4,3,4,4,5,5,4,5,4,4,1,4,4,4,5,2,3,4,4,3,2,4,1,4,Full time student,Some college or vocational training,Other,Less than 1 year,No,1,FT_Student,4.25
-4,4,3,4,3,3,3,2,3,4,3,4,2,2,3,3,4,4,3,4,4,3,4,3,2,2,2,2,3,2,2,2,Freelancer or self employed,Master’s degree,Education,11 or more years,No,1,Freelancer,3.85
-4,3,4,4,4,4,2,3,3,4,4,4,1,1,4,4,2,3,2,4,2,3,4,2,3,3,2,2,2,3,2,1,Full time student,Some college or vocational training,Other,1 to 3 years,No,1,FT_Student,3.466666666666667
-4,2,4,4,1,1,5,3,1,1,1,4,1,1,4,5,1,1,1,5,5,5,5,2,1,1,1,2,1,3,2,1,Full time student,Bachelor’s degree,Education,Less than 1 year,Yes,1,FT_Student,3.3666666666666667
-1,1,3,2,2,1,1,1,1,1,1,1,1,1,1,5,1,1,2,4,2,4,5,4,1,1,1,1,1,1,2,1,Freelancer or self employed,Master’s degree,Other,11 or more years,No,1,Freelancer,3.566666666666667
-4,4,5,5,3,2,5,4,3,3,3,3,4,4,4,5,2,3,4,4,2,4,4,2,4,4,4,3,1,4,4,1,Full time student,High school or less,Healthcare,Less than 1 year,No,1,FT_Student,6.3
-3,2,4,4,2,2,2,3,3,2,2,1,3,2,2,4,4,3,3,4,4,5,5,5,3,3,5,3,3,3,4,1,Full time student,High school or less,Other,11 or more years,No,1,FT_Student,5.983333333333333
-4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,2,2,Employed - executive or leader,Master’s degree,Government or Public sector,11 or more years,No,1,Executive,2.716666666666667
-3,3,3,3,3,3,2,3,3,3,3,3,3,3,3,3,3,3,3,4,3,3,3,3,3,4,3,3,1,1,3,1,Employed - individual contributor,High school or less,Retail or Hospitality,11 or more years,Prefer not to answer,1,IC,6.0
-4,4,3,4,4,3,4,4,4,4,4,5,4,4,5,2,3,3,4,3,2,4,4,3,4,4,4,3,1,4,2,1,Freelancer or self employed,Master’s degree,Healthcare,11 or more years,No,1,Freelancer,2.783333333333333
-2,1,4,4,2,3,3,3,1,2,2,1,2,2,2,4,1,2,2,2,4,4,5,2,2,1,1,1,2,3,1,1,Full time student,Some college or vocational training,Education,4 to 6 years,Yes,1,FT_Student,3.7
-5,4,3,3,3,2,2,2,4,5,4,4,5,5,5,4,4,4,3,4,2,3,4,4,2,4,4,2,1,5,1,1,Full time student,Some college or vocational training,Healthcare,Less than 1 year,No,1,FT_Student,2.35
-4,4,4,4,5,5,4,4,4,5,4,5,3,3,5,3,4,4,3,4,3,3,2,2,4,5,4,5,4,1,3,1,Employed - executive or leader,Master’s degree,Retail or Hospitality,11 or more years,No,1,Executive,2.9166666666666665
-1,1,1,1,1,3,1,1,1,1,3,1,1,1,1,3,1,1,1,3,3,5,5,1,1,1,1,1,1,1,1,1,Employed - individual contributor,High school or less,Retail or Hospitality,11 or more years,No,0,IC,24.966666666666665
-4,4,4,4,2,2,3,4,4,4,4,4,3,1,4,4,1,2,5,5,1,5,5,5,3,3,3,2,1,2,3,4,Freelancer or self employed,Bachelor’s degree,Technology or IT,7 to 10 years,No,1,Freelancer,2.5833333333333335
-2,2,1,1,2,3,2,3,3,3,2,3,1,1,1,1,1,1,1,1,1,4,4,2,2,2,2,3,2,2,1,1,Employed - manager,Master’s degree,Government or Public sector,11 or more years,No,1,Manager,3.533333333333333
-2,2,3,3,1,3,4,3,4,2,2,2,1,1,1,1,3,4,3,4,5,5,1,4,2,3,3,3,1,1,1,1,Employed - individual contributor,Bachelor’s degree,Healthcare,7 to 10 years,No,0,IC,8.133333333333333
-3,1,3,3,1,5,3,3,1,1,1,1,1,1,1,5,1,1,3,3,5,5,5,2,1,1,1,1,2,1,1,1,Full time student,Some college or vocational training,Government or Public sector,4 to 6 years,Yes,1,FT_Student,5.1
-5,1,5,5,2,2,3,5,5,3,5,5,4,4,5,5,5,4,5,2,2,1,2,4,5,4,4,3,1,4,3,1,Full time student,Some college or vocational training,Other,1 to 3 years,Yes,1,FT_Student,2.4833333333333334
-5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,1,2,2,3,4,4,4,4,4,5,5,5,Other,Bachelor’s degree,Education,1 to 3 years,No,1,Other,5.5
-4,4,3,3,3,3,4,3,3,3,4,4,3,4,4,4,4,4,3,4,4,4,3,3,3,4,3,3,2,1,1,1,Full time student,High school or less,Healthcare,Less than 1 year,No,1,FT_Student,6.3
-3,2,3,3,2,2,3,2,2,2,3,2,1,1,1,4,1,2,3,4,2,5,5,3,1,1,1,1,1,1,1,1,Employed - executive or leader,Bachelor’s degree,Education,11 or more years,No,0,Executive,2.75
-4,2,4,4,2,4,3,4,4,4,4,4,2,2,5,5,2,3,4,5,4,4,3,1,3,3,3,4,1,3,2,2,Not currently employed,Bachelor’s degree,Education,7 to 10 years,No,1,Unemployed,2.5
-4,3,4,4,1,3,3,4,3,3,4,4,1,4,4,3,3,4,2,3,2,4,4,2,2,3,4,2,1,3,3,1,Employed - individual contributor,Bachelor’s degree,Other,4 to 6 years,No,1,IC,11.3
-5,4,5,4,5,4,5,4,4,5,5,4,4,5,4,5,4,5,4,4,5,4,5,4,5,5,4,5,4,4,5,5,Employed - manager,Master’s degree,Technology or IT,7 to 10 years,No,1,Manager,2.4166666666666665
-4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,3,3,4,4,4,4,3,3,3,3,Full time student,Bachelor’s degree,Healthcare,1 to 3 years,No,1,FT_Student,5.566666666666666
-3,3,3,4,2,3,2,3,4,4,3,4,2,3,3,4,3,2,4,4,3,4,4,3,3,2,4,3,4,2,3,2,Employed - manager,Bachelor’s degree,Education,4 to 6 years,No,1,Manager,2.316666666666667
-4,3,4,4,3,3,2,3,4,4,4,4,2,2,4,3,3,3,4,4,2,4,2,2,3,3,4,3,4,2,3,4,Employed - executive or leader,Bachelor’s degree,Manufacturing,11 or more years,No,1,Executive,3.3666666666666667
-5,4,5,5,5,5,5,5,5,5,5,5,5,5,4,5,5,5,5,5,5,5,4,5,5,5,5,4,5,5,4,5,Employed - executive or leader,Bachelor’s degree,Manufacturing,7 to 10 years,No,1,Executive,1.7166666666666666
-2,1,3,3,2,1,2,3,1,1,3,3,1,1,3,4,1,1,4,3,3,2,4,4,2,1,2,1,2,2,3,1,Full time student,High school or less,Other,Less than 1 year,No,1,FT_Student,20.316666666666666
-5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,1,1,1,1,5,5,5,5,5,5,5,5,Employed - manager,Master’s degree,Technology or IT,4 to 6 years,No,1,Manager,9.3
-4,4,4,4,4,4,4,4,4,4,3,4,4,4,4,4,4,4,4,4,4,4,5,4,4,4,4,3,5,5,4,4,Employed - manager,Master’s degree,Technology or IT,7 to 10 years,No,1,Manager,3.566666666666667
-3,3,4,4,3,2,4,4,5,4,2,4,2,3,4,4,4,2,3,4,2,2,4,2,3,3,4,4,2,2,2,1,Employed - individual contributor,Master’s degree,Finance or Banking,11 or more years,No,1,IC,2.95
-1,1,3,2,1,2,1,1,1,1,1,3,1,1,1,5,2,2,3,5,2,5,5,2,2,1,2,1,2,1,1,1,Employed - individual contributor,Doctoral or professional degree,Finance or Banking,11 or more years,No,1,IC,3.216666666666667
-1,1,3,3,1,1,2,3,1,1,1,1,1,1,1,3,1,1,1,3,3,4,5,3,3,1,2,1,1,1,1,1,Employed - individual contributor,Bachelor’s degree,Healthcare,1 to 3 years,No,0,IC,2.65
-4,3,4,4,2,2,2,3,4,2,4,4,2,3,1,4,3,3,4,4,1,4,2,2,2,4,3,3,1,3,1,1,Not currently employed,High school or less,Other,Less than 1 year,No,1,Unemployed,3.8666666666666667
-1,1,3,3,2,3,1,3,1,1,1,1,1,1,1,5,2,2,1,3,4,5,5,2,1,1,2,1,1,1,1,1,Freelancer or self employed,Bachelor’s degree,Other,11 or more years,No,0,Freelancer,3.1166666666666667
-3,2,2,2,2,2,2,3,2,2,2,3,3,2,2,4,2,2,2,2,5,4,4,3,2,2,2,1,1,1,1,2,Employed - individual contributor,Some college or vocational training,Other,11 or more years,No,1,IC,5.4
-4,3,5,4,3,4,2,5,3,4,4,3,2,3,4,3,4,3,4,5,3,4,3,1,4,3,3,4,3,1,2,1,Full time student,Some college or vocational training,Retail or Hospitality,1 to 3 years,No,1,FT_Student,3.65
-4,4,5,4,3,5,2,2,4,4,4,4,5,5,2,5,3,3,4,3,1,5,4,2,4,4,5,3,3,1,1,1,Employed - individual contributor,Some college or vocational training,Healthcare,11 or more years,No,1,IC,5.033333333333333
-1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,3,1,1,1,3,1,5,5,5,1,1,1,1,1,1,1,1,Employed - individual contributor,Bachelor’s degree,Education,11 or more years,No,0,IC,3.6166666666666667
-4,3,3,3,2,2,2,3,4,4,4,4,3,2,3,3,2,2,4,4,5,5,5,5,3,3,4,4,4,4,3,3,Part time student,Some college or vocational training,Healthcare,1 to 3 years,No,1,PT_Student,3.6
-4,3,2,3,4,3,4,3,3,4,5,3,3,3,4,5,4,3,5,3,4,5,3,5,4,3,4,5,4,5,3,2,Full time student,Bachelor’s degree,Technology or IT,4 to 6 years,No,1,FT_Student,4.466666666666667
-3,3,2,2,3,3,1,2,3,3,3,3,2,2,3,3,3,3,3,3,2,3,4,3,3,3,3,2,1,2,1,1,Employed - individual contributor,Master’s degree,Healthcare,11 or more years,No,1,IC,2.35
-4,4,4,5,4,4,4,5,4,4,4,5,4,4,3,5,3,4,3,4,3,4,3,4,3,4,5,4,5,4,4,3,Employed - executive or leader,Master’s degree,Healthcare,4 to 6 years,No,1,Executive,2.683333333333333
-4,4,4,5,4,5,5,4,4,4,4,4,4,4,4,4,4,4,4,4,2,3,2,3,4,5,5,4,2,3,4,2,Employed - individual contributor,Bachelor’s degree,Education,11 or more years,No,1,IC,2.5833333333333335
-4,4,4,4,4,4,4,4,4,4,4,4,2,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,3,1,2,3,Employed - manager,Bachelor’s degree,Retail or Hospitality,1 to 3 years,No,1,Manager,6.85
-3,3,4,4,3,2,4,4,4,3,4,2,2,2,3,3,4,5,3,5,2,3,4,4,3,3,3,4,1,3,2,2,Part time student,Some college or vocational training,Finance or Banking,Less than 1 year,No,1,PT_Student,3.216666666666667
-5,4,4,4,4,5,4,5,4,5,4,4,4,4,4,5,4,5,4,4,1,2,2,2,4,4,4,4,4,5,3,3,Employed - manager,Master’s degree,Finance or Banking,11 or more years,No,1,Manager,5.9
-4,3,4,4,3,4,4,4,3,4,3,4,4,4,3,3,4,4,4,4,2,4,3,3,4,3,4,4,1,2,4,1,Employed - individual contributor,Bachelor’s degree,Healthcare,1 to 3 years,Yes,1,IC,3.5
-3,2,3,3,2,3,4,3,2,3,3,3,1,4,4,5,1,2,2,4,3,5,4,3,3,3,2,3,1,2,2,1,Employed - individual contributor,Some college or vocational training,Healthcare,11 or more years,No,1,IC,10.05
-4,2,4,4,2,1,2,2,2,2,4,2,4,4,4,4,3,3,4,4,3,3,4,2,2,3,3,2,1,4,1,1,Full time student,High school or less,Other,Less than 1 year,No,1,FT_Student,7.85
-2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,4,2,2,2,4,4,4,4,4,2,2,2,2,1,1,1,1,Employed - individual contributor,Master’s degree,Education,11 or more years,No,0,IC,3.316666666666667
-5,5,5,5,3,1,2,3,2,3,5,5,5,5,5,5,3,3,2,4,5,5,5,5,3,3,3,3,1,4,4,2,Full time student,Some college or vocational training,Other,11 or more years,Yes,1,FT_Student,2.5
-4,2,4,3,2,2,2,3,3,3,2,2,4,4,4,4,2,3,2,4,2,4,4,2,3,3,2,2,1,2,3,4,Full time student,High school or less,Education,Less than 1 year,No,1,FT_Student,4.983333333333333
-3,2,1,1,2,2,2,2,2,2,2,2,2,2,2,4,2,2,1,3,4,4,4,4,1,1,1,1,1,1,1,1,Freelancer or self employed,Some college or vocational training,Other,11 or more years,No,0,Freelancer,2.55
-4,3,5,5,3,2,2,3,3,3,2,3,3,3,3,4,3,2,4,2,2,3,4,2,4,3,1,2,2,4,1,1,Full time student,High school or less,Manufacturing,Less than 1 year,No,1,FT_Student,4.033333333333333
-2,2,2,2,1,2,4,2,1,1,1,1,1,1,1,4,1,1,1,3,5,5,5,5,1,1,1,1,1,1,1,1,Other,Some college or vocational training,Other,11 or more years,No,0,Other,3.8833333333333333
-5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,4,2,1,1,5,5,5,5,2,5,4,1,Full time student,Some college or vocational training,Education,4 to 6 years,No,1,FT_Student,2.2
-4,4,3,4,3,4,3,4,4,4,3,4,3,3,4,5,4,4,4,4,3,3,3,3,3,4,3,3,3,3,3,3,Full time student,High school or less,Other,Less than 1 year,No,1,FT_Student,573.8
-4,4,4,5,4,4,5,4,4,4,5,5,5,4,4,4,4,5,5,5,4,4,4,4,4,4,4,4,4,3,3,4,Employed - manager,Bachelor’s degree,Technology or IT,4 to 6 years,Yes,1,Manager,3.7333333333333334
-5,4,5,4,4,5,4,5,5,4,5,4,4,5,4,5,4,5,4,5,4,5,4,5,4,5,4,3,5,5,4,3,Employed - individual contributor,Bachelor’s degree,Other,7 to 10 years,No,1,IC,2.8333333333333335
-4,4,4,4,3,4,3,4,4,4,4,4,4,4,4,4,4,4,3,4,4,2,3,4,4,4,4,4,4,5,4,1,Employed - individual contributor,Some college or vocational training,Other,11 or more years,No,1,IC,3.35
-4,3,4,4,2,2,3,4,2,4,1,2,2,1,4,5,1,2,4,3,2,5,5,2,2,3,3,1,3,1,3,1,Employed - executive or leader,Some college or vocational training,Other,Less than 1 year,Prefer not to answer,1,Executive,6.016666666666667
-3,3,3,4,2,2,2,3,4,3,3,3,1,1,3,3,2,2,3,3,5,5,5,5,3,3,3,3,4,2,3,1,Employed - manager,Some college or vocational training,Healthcare,4 to 6 years,No,1,Manager,2.183333333333333
-3,2,4,4,3,4,4,2,2,2,2,4,2,2,3,4,1,1,4,3,2,5,4,4,1,4,1,2,2,2,3,1,Employed - individual contributor,Bachelor’s degree,Manufacturing,4 to 6 years,No,1,IC,3.466666666666667
-1,1,1,1,1,4,3,3,1,1,1,1,1,1,1,5,1,1,4,1,5,5,5,1,1,1,1,1,1,1,1,1,Full time student,Some college or vocational training,Technology or IT,1 to 3 years,Yes,0,FT_Student,2.9833333333333334
-4,4,5,4,4,5,5,4,4,4,5,5,5,3,4,4,4,5,5,4,5,4,5,4,5,5,3,4,4,4,4,4,Full time student,Master’s degree,Technology or IT,7 to 10 years,No,1,FT_Student,5.45
-4,3,5,4,3,3,4,4,3,3,4,4,5,4,4,4,3,4,2,4,5,3,4,2,3,3,2,2,1,5,3,4,Full time student,Some college or vocational training,Other,Less than 1 year,No,1,FT_Student,6.45
-4,4,4,4,2,3,4,3,4,4,4,4,2,2,4,4,3,3,4,4,2,4,4,2,2,3,2,2,1,1,3,3,Employed - manager,Bachelor’s degree,Retail or Hospitality,11 or more years,No,1,Manager,3.65
-2,1,5,4,3,1,4,3,4,3,3,2,3,1,1,5,1,2,5,5,5,5,4,3,2,3,3,3,2,3,1,3,Full time student,Some college or vocational training,Other,Less than 1 year,Prefer not to answer,1,FT_Student,5.316666666666666
-4,3,5,3,3,3,3,3,3,4,3,3,3,2,4,2,3,4,5,3,3,5,4,3,3,3,1,3,3,2,2,3,Full time student,Some college or vocational training,Healthcare,1 to 3 years,No,1,FT_Student,2.033333333333333
-4,3,4,4,2,4,4,4,2,1,2,3,4,2,4,5,2,2,2,5,2,4,5,4,2,1,2,1,1,3,1,4,Full time student,Some college or vocational training,Other,1 to 3 years,No,1,FT_Student,7.616666666666666
-4,4,4,4,3,3,4,4,4,4,4,4,3,4,4,4,5,4,4,4,4,5,3,4,4,4,4,4,4,3,4,3,Full time student,Some college or vocational training,Other,Less than 1 year,Yes,1,FT_Student,2.5833333333333335
-3,2,3,2,1,3,1,2,2,2,3,2,2,2,2,4,3,3,2,4,1,4,5,2,3,3,2,3,1,1,1,1,Employed - individual contributor,High school or less,Retail or Hospitality,11 or more years,Yes,0,IC,4.2
-5,4,5,5,3,4,5,5,4,5,4,5,5,4,5,5,3,4,5,5,2,5,4,4,4,5,5,3,3,5,5,4,Full time student,Bachelor’s degree,Technology or IT,1 to 3 years,No,1,FT_Student,4.233333333333333
-4,4,4,5,3,3,4,4,3,4,4,3,3,3,4,4,3,3,4,4,4,5,3,2,4,3,3,2,2,4,2,3,Full time student,Bachelor’s degree,Other,Less than 1 year,No,1,FT_Student,2.533333333333333
-3,3,3,3,2,2,2,1,1,1,3,3,1,1,4,4,3,3,1,4,2,4,4,4,3,2,3,3,1,1,3,1,Other,Doctoral or professional degree,Other,11 or more years,No,1,Other,4.133333333333334
-4,4,4,4,3,2,2,3,4,4,4,3,4,3,4,2,3,3,2,4,3,3,4,2,3,4,3,3,2,4,1,1,Full time student,Master’s degree,Education,1 to 3 years,Yes,1,FT_Student,4.05
-4,4,4,4,3,4,4,4,3,4,4,4,4,2,4,4,4,4,4,4,4,4,3,2,4,4,4,3,2,4,3,4,Full time student,Some college or vocational training,Other,1 to 3 years,No,1,FT_Student,4.516666666666667
-4,4,5,5,4,5,4,4,4,4,4,4,4,4,4,5,4,4,3,5,1,4,4,4,5,4,4,5,1,2,5,1,Employed - executive or leader,Bachelor’s degree,Retail or Hospitality,11 or more years,No,1,Executive,3.683333333333333
-4,4,4,4,4,3,4,4,4,4,4,3,4,4,4,4,4,4,4,4,3,3,3,4,4,4,4,4,2,3,3,4,Freelancer or self employed,Bachelor’s degree,Other,11 or more years,No,1,Freelancer,3.85
-4,4,4,4,3,2,4,4,3,4,4,4,4,4,4,4,4,4,3,4,4,4,5,5,4,4,4,3,1,5,1,1,Full time student,High school or less,Finance or Banking,Less than 1 year,No,1,FT_Student,3.5833333333333335
-2,3,4,4,3,3,2,3,4,4,2,3,2,2,2,5,2,3,5,5,5,5,4,5,4,3,4,4,3,1,4,2,Employed - individual contributor,Bachelor’s degree,Other,7 to 10 years,No,1,IC,2.1
-3,4,3,4,2,4,2,4,4,4,5,4,3,4,4,5,3,5,5,5,1,3,4,2,4,3,4,3,1,3,5,2,Part time student,High school or less,Other,Less than 1 year,Yes,1,PT_Student,6.916666666666667
-4,3,5,4,3,4,5,4,3,3,4,4,2,2,4,3,4,4,4,4,2,3,2,2,4,4,2,3,1,4,3,2,Full time student,High school or less,Other,Less than 1 year,No,1,FT_Student,7.766666666666667
-3,3,3,3,2,2,4,4,4,3,3,3,5,4,4,4,3,3,3,4,5,5,5,5,3,2,3,2,3,4,4,3,Full time student,High school or less,Technology or IT,Less than 1 year,Yes,1,FT_Student,2.05
-3,2,3,3,3,3,2,4,4,4,4,4,3,4,3,4,5,4,4,5,3,3,4,2,3,2,2,3,4,4,3,3,Part time student,High school or less,Education,4 to 6 years,Yes,1,PT_Student,1.2166666666666666
-4,3,4,4,2,2,2,4,4,3,4,4,4,2,4,4,2,3,2,4,2,4,4,4,3,4,4,2,3,4,2,1,Full time student,Some college or vocational training,Other,Less than 1 year,No,1,FT_Student,2.0833333333333335
-4,3,4,4,2,3,3,4,3,3,3,3,2,2,4,3,3,3,4,4,3,5,4,2,3,3,4,4,3,3,2,1,Employed - individual contributor,Master’s degree,Education,11 or more years,No,1,IC,6.483333333333333
-4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,2,2,1,2,4,4,4,3,4,4,4,3,Employed - manager,Doctoral or professional degree,Manufacturing,11 or more years,No,1,Manager,2.4166666666666665
-3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,2,3,3,4,5,5,5,4,2,2,2,2,1,1,1,1,Employed - individual contributor,High school or less,Other,4 to 6 years,No,0,IC,2.933333333333333
-3,2,2,2,2,2,2,2,2,2,2,2,2,1,2,4,2,2,1,3,3,4,4,3,2,1,1,1,1,1,1,1,Other,High school or less,Other,Less than 1 year,No,0,Other,6.333333333333333
-3,3,3,2,4,4,4,1,3,4,4,4,4,1,2,5,4,4,4,1,4,3,4,4,4,2,4,3,5,1,4,1,Employed - executive or leader,Doctoral or professional degree,Manufacturing,7 to 10 years,No,1,Executive,2.15
-1,1,1,5,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,5,2,1,1,1,1,1,2,2,1,Part time student,High school or less,Retail or Hospitality,Less than 1 year,No,1,PT_Student,28.633333333333333
-4,3,3,4,3,2,4,4,3,4,3,4,2,2,4,5,4,3,2,4,1,4,3,1,2,2,2,1,1,1,1,3,Freelancer or self employed,Some college or vocational training,Other,11 or more years,No,1,Freelancer,3.2666666666666666
-4,4,4,4,4,4,4,4,4,4,4,4,4,3,4,2,4,4,4,4,3,3,3,3,4,4,4,3,4,4,4,1,Employed - manager,Bachelor’s degree,Retail or Hospitality,11 or more years,No,1,Manager,6.016666666666667
-3,4,4,4,4,3,4,4,4,3,4,4,2,4,1,3,3,4,3,4,3,4,2,4,3,4,3,5,3,1,1,1,Employed - individual contributor,Some college or vocational training,Healthcare,11 or more years,No,1,IC,7.833333333333333
-3,4,4,5,4,3,4,4,4,3,5,5,5,2,5,5,3,4,4,4,2,3,3,3,4,4,4,3,1,3,4,1,Full time student,Some college or vocational training,Finance or Banking,Less than 1 year,No,1,FT_Student,3.7333333333333334
-3,3,2,2,2,3,3,2,3,3,2,2,4,4,3,2,4,2,3,2,2,4,4,4,3,3,2,2,1,1,2,1,Part time student,Some college or vocational training,Retail or Hospitality,11 or more years,Yes,1,PT_Student,2.716666666666667
-4,4,4,4,4,5,4,4,3,4,4,4,4,4,4,2,3,3,4,4,4,5,3,4,4,4,4,5,3,4,3,5,Full time student,Some college or vocational training,Technology or IT,11 or more years,Yes,1,FT_Student,3.8
-4,2,4,5,2,4,4,5,2,1,4,4,2,1,2,5,2,5,4,4,4,5,5,4,2,1,3,2,1,3,2,1,Full time student,Bachelor’s degree,Other,Less than 1 year,No,1,FT_Student,2.966666666666667
-4,4,4,2,3,4,2,3,2,2,2,4,2,1,4,4,2,3,4,4,5,5,4,2,4,3,3,3,1,4,2,1,Full time student,High school or less,Other,Less than 1 year,No,1,FT_Student,4.516666666666667
-3,3,3,3,4,3,4,4,5,4,3,4,2,4,3,3,3,3,4,4,2,4,3,2,4,4,4,3,2,3,1,2,Full time student,Bachelor’s degree,Nonprofit,7 to 10 years,No,1,FT_Student,2.9833333333333334
-4,3,4,4,3,3,2,3,3,3,4,4,4,4,3,3,4,4,2,4,2,3,3,3,3,4,4,4,1,2,3,1,Employed - individual contributor,Master’s degree,Education,11 or more years,No,1,IC,3.3833333333333333
-2,2,2,2,2,2,2,2,1,1,2,1,1,1,2,1,1,1,1,1,2,4,4,3,2,1,2,2,3,2,1,1,Not currently employed,Bachelor’s degree,Education,11 or more years,No,1,Unemployed,2.3
-4,4,3,3,3,3,3,3,3,4,3,4,3,4,3,4,4,4,3,3,3,3,3,4,3,3,4,4,3,4,2,4,Full time student,Some college or vocational training,Manufacturing,1 to 3 years,No,1,FT_Student,3.1333333333333333
-5,3,3,3,5,4,5,4,5,5,5,5,5,5,5,4,3,4,4,5,5,4,5,5,5,5,4,5,2,5,1,2,Full time student,High school or less,Other,7 to 10 years,Yes,1,FT_Student,6.933333333333334
-3,1,2,2,3,3,2,1,3,2,2,2,1,1,1,4,3,1,3,4,2,5,4,4,1,3,1,1,1,1,2,1,Employed - individual contributor,Master’s degree,Education,11 or more years,No,1,IC,2.7333333333333334
-2,2,3,2,1,1,1,2,1,1,1,2,1,2,2,4,2,2,2,3,4,5,4,2,2,2,1,1,1,1,1,1,Employed - individual contributor,Bachelor’s degree,Manufacturing,11 or more years,Yes,0,IC,4.65
-3,4,4,4,2,3,3,3,3,3,2,3,2,2,2,3,3,3,2,4,2,4,4,3,2,3,3,2,5,1,1,1,Full time student,Some college or vocational training,Healthcare,1 to 3 years,No,1,FT_Student,6.15
-2,3,2,2,4,2,2,4,3,4,4,4,3,4,4,4,3,4,4,4,4,4,4,4,3,3,4,3,3,3,3,1,Other,Some college or vocational training,Retail or Hospitality,7 to 10 years,No,1,Other,5.15
-4,3,2,2,4,4,2,3,4,4,4,3,2,1,3,5,2,2,3,4,4,5,5,5,2,3,4,4,1,1,4,2,Employed - individual contributor,Some college or vocational training,Finance or Banking,1 to 3 years,No,1,IC,4.933333333333334
-4,4,4,4,2,4,4,4,4,4,4,3,4,3,4,4,4,4,4,4,2,4,4,4,3,4,4,3,1,3,5,1,Full time student,Bachelor’s degree,Healthcare,4 to 6 years,No,1,FT_Student,2.183333333333333
-4,3,4,4,3,4,4,4,3,4,3,4,4,4,4,4,3,4,4,4,4,5,4,4,4,3,4,3,2,4,2,1,Employed - individual contributor,Master’s degree,Education,11 or more years,No,1,IC,5.983333333333333
-3,3,2,2,1,4,3,3,2,2,1,1,1,1,1,1,1,1,3,3,4,4,4,3,3,3,3,2,1,1,1,1,Employed - individual contributor,Master’s degree,Technology or IT,11 or more years,No,0,IC,5.9
-4,4,3,4,1,5,4,3,3,4,3,3,4,4,4,4,3,3,1,3,5,2,5,3,3,3,2,3,2,4,1,1,Full time student,Some college or vocational training,Other,Less than 1 year,No,1,FT_Student,4.75
-2,2,2,1,1,1,1,2,1,1,1,1,1,1,1,1,1,1,1,1,5,5,5,5,1,1,2,1,1,2,1,1,Employed - manager,Some college or vocational training,Other,1 to 3 years,No,1,Manager,137.66666666666666
-3,3,3,3,3,3,4,4,3,3,3,3,3,3,3,3,4,4,3,3,3,3,3,3,3,3,3,3,3,3,3,1,Employed - executive or leader,High school or less,Healthcare,4 to 6 years,No,1,Executive,3.0166666666666666
-4,4,4,5,4,5,4,4,4,5,4,4,3,3,4,4,4,4,4,5,2,5,2,2,4,4,5,4,4,5,4,3,Employed - executive or leader,Bachelor’s degree,Technology or IT,4 to 6 years,No,1,Executive,4.35
-5,5,4,5,4,4,3,4,4,4,4,5,3,4,4,4,5,4,3,5,3,2,2,3,4,4,4,4,4,4,5,4,Employed - individual contributor,Some college or vocational training,Education,11 or more years,No,1,IC,9.166666666666666
-3,2,3,2,2,2,2,2,2,3,2,3,2,2,2,5,2,2,2,4,2,4,5,2,4,3,3,4,1,2,3,1,Other,Bachelor’s degree,Other,11 or more years,No,1,Other,5.6
-3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,1,1,1,Not currently employed,Bachelor’s degree,Retail or Hospitality,11 or more years,No,1,Unemployed,4.433333333333334
-5,5,4,4,3,4,5,4,3,3,4,4,4,4,4,4,4,4,3,5,4,4,2,5,4,4,4,4,5,1,3,1,Employed - manager,Bachelor’s degree,Finance or Banking,11 or more years,No,1,Manager,2.6666666666666665
-4,3,2,3,4,4,2,2,3,2,2,3,1,1,4,4,2,3,3,4,5,5,5,5,4,1,4,4,4,3,3,1,Not currently employed,Bachelor’s degree,Technology or IT,11 or more years,No,1,Unemployed,2.75
-5,5,4,5,5,5,4,4,5,5,4,5,4,4,5,5,5,5,5,5,3,3,1,4,5,5,5,5,4,2,5,1,Employed - executive or leader,Bachelor’s degree,Other,1 to 3 years,No,1,Executive,438.65
-4,3,4,4,3,3,4,4,4,4,4,4,3,2,3,2,3,3,4,4,2,4,3,4,3,3,2,3,1,3,1,1,Not currently employed,Bachelor’s degree,Retail or Hospitality,11 or more years,No,1,Unemployed,3.7333333333333334
-3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,1,1,3,3,4,4,4,4,3,2,3,2,1,1,1,1,Other,Bachelor’s degree,Other,11 or more years,No,0,Other,7.233333333333333
-3,4,2,3,3,4,2,4,4,4,2,3,2,2,4,4,4,4,2,4,2,5,4,3,2,3,4,2,3,3,1,1,Employed - manager,Some college or vocational training,Government or Public sector,11 or more years,No,1,Manager,3.966666666666667
-2,2,3,3,2,3,2,3,3,3,3,3,3,2,3,4,2,3,3,3,4,5,5,3,1,1,1,1,1,1,2,2,Freelancer or self employed,Bachelor’s degree,Other,11 or more years,Yes,1,Freelancer,5.433333333333334
-3,2,5,3,1,2,5,4,2,1,3,4,1,1,1,5,2,4,4,5,5,4,5,5,4,3,5,4,2,5,1,1,Full time student,Some college or vocational training,Technology or IT,Less than 1 year,No,1,FT_Student,3.3833333333333333
-4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,3,4,4,4,4,4,4,3,3,4,4,4,4,1,4,1,1,Full time student,Some college or vocational training,Other,Less than 1 year,No,1,FT_Student,2.183333333333333
-2,3,2,2,2,3,3,3,3,3,3,3,1,1,1,1,1,1,3,4,3,4,4,4,2,2,3,2,1,1,1,1,Freelancer or self employed,Some college or vocational training,Retail or Hospitality,11 or more years,No,0,Freelancer,5.05
-5,5,5,5,4,4,5,5,5,5,4,4,5,4,5,2,5,5,5,4,2,2,1,1,5,5,5,5,5,4,5,4,Employed - executive or leader,Bachelor’s degree,Finance or Banking,11 or more years,No,1,Executive,3.783333333333333
-4,4,2,2,2,3,2,4,4,2,2,4,2,2,2,4,4,4,2,4,4,3,4,4,2,3,4,3,3,3,2,1,Employed - individual contributor,Some college or vocational training,Other,1 to 3 years,No,1,IC,9.116666666666667
-3,3,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,3,4,4,4,2,2,4,4,4,4,3,3,3,3,Employed - individual contributor,Some college or vocational training,Manufacturing,11 or more years,No,1,IC,3.05
-4,4,4,4,3,3,2,4,4,4,3,4,4,4,4,4,4,4,2,4,3,4,3,4,4,4,4,4,4,4,1,1,Freelancer or self employed,Bachelor’s degree,Retail or Hospitality,11 or more years,Yes,1,Freelancer,4.316666666666666
-4,2,4,2,1,2,4,4,3,3,2,3,3,3,4,4,3,3,4,3,5,4,4,4,2,2,3,2,3,3,3,1,Full time student,Some college or vocational training,Technology or IT,4 to 6 years,No,1,FT_Student,5.616666666666666
-4,3,5,4,4,4,4,3,3,4,5,4,2,3,4,5,2,4,4,4,5,4,3,4,4,4,5,3,4,3,4,3,Part time student,Some college or vocational training,Education,1 to 3 years,No,1,PT_Student,3.1166666666666667
-4,4,4,4,3,2,2,3,4,3,4,4,4,3,4,5,3,3,2,5,2,4,4,2,4,4,4,3,1,4,1,1,Full time student,Some college or vocational training,Retail or Hospitality,4 to 6 years,No,1,FT_Student,2.7
-3,3,4,4,3,3,2,2,4,4,4,4,4,4,3,4,3,4,4,4,2,4,3,4,3,3,3,4,1,4,4,1,Employed - individual contributor,Master’s degree,Other,4 to 6 years,No,1,IC,5.366666666666666
-4,4,4,4,4,3,3,4,4,4,4,4,4,4,4,5,4,4,2,5,2,5,4,4,4,4,4,2,4,4,4,1,Employed - individual contributor,Bachelor’s degree,Other,7 to 10 years,No,1,IC,2.75
-5,4,5,2,5,5,3,4,5,4,4,4,3,4,5,4,5,4,4,3,5,4,3,1,4,5,4,2,5,3,4,5,Freelancer or self employed,Bachelor’s degree,Other,4 to 6 years,No,1,Freelancer,5.55
-2,2,3,2,4,4,5,3,1,1,1,1,1,1,1,5,1,1,2,4,5,5,5,3,1,2,1,2,1,1,1,2,Freelancer or self employed,Master’s degree,Education,11 or more years,Prefer not to answer,1,Freelancer,4.75
-3,3,4,4,4,4,4,3,3,3,2,2,2,2,2,4,3,2,3,4,5,4,4,4,2,3,4,2,5,2,1,3,Full time student,Bachelor’s degree,Other,1 to 3 years,No,1,FT_Student,4.833333333333333
-4,3,4,4,3,4,4,3,4,3,2,4,2,3,5,5,4,4,4,3,4,5,4,4,4,3,4,5,5,3,2,2,Employed - individual contributor,Some college or vocational training,Manufacturing,11 or more years,No,1,IC,4.183333333333334
-4,3,4,3,4,2,4,3,4,4,3,4,3,3,3,3,4,2,3,3,2,3,4,2,2,3,4,3,3,3,3,3,Employed - manager,Some college or vocational training,Finance or Banking,4 to 6 years,No,1,Manager,13.95
-4,4,5,4,4,4,4,5,4,4,5,4,2,1,5,5,3,3,4,4,2,4,5,2,3,4,4,4,4,5,3,2,Full time student,High school or less,Education,4 to 6 years,No,1,FT_Student,3.4166666666666665
-4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,5,4,4,3,4,3,4,4,3,4,4,1,1,4,1,Other,High school or less,Other,1 to 3 years,No,1,Other,2.2
-3,3,3,3,2,3,2,3,2,3,3,3,2,2,2,4,3,3,3,4,4,4,4,3,3,3,3,3,2,2,2,1,Employed - individual contributor,Bachelor’s degree,Education,11 or more years,No,1,IC,8.433333333333334
-4,4,4,3,3,4,5,4,2,5,4,4,5,5,2,5,3,3,5,5,4,4,5,4,2,3,3,2,1,4,1,1,Full time student,High school or less,Technology or IT,1 to 3 years,Yes,1,FT_Student,6.983333333333333
-1,1,3,1,1,1,3,1,1,1,1,3,1,1,1,5,1,3,4,4,1,5,5,1,1,3,1,1,2,1,1,1,Freelancer or self employed,Some college or vocational training,Other,11 or more years,No,1,Freelancer,2.6666666666666665
-3,3,3,4,3,4,4,4,3,4,3,4,3,4,4,4,3,4,3,4,4,5,4,4,4,4,4,4,2,3,2,2,Employed - manager,Bachelor’s degree,Technology or IT,11 or more years,No,1,Manager,5.5
-5,4,4,3,4,2,2,3,2,2,4,1,5,5,4,5,4,4,2,5,1,5,4,4,2,2,2,2,5,5,1,1,Full time student,Some college or vocational training,Healthcare,Less than 1 year,No,1,FT_Student,6.966666666666667
-1,1,1,1,4,4,3,4,3,4,4,4,4,3,4,3,4,4,3,3,2,3,2,2,4,4,4,4,3,4,4,2,Employed - executive or leader,Master’s degree,Finance or Banking,11 or more years,No,1,Executive,12.133333333333333
-4,4,4,4,2,4,4,4,3,3,3,4,3,2,4,4,3,3,3,3,3,4,4,3,3,3,4,3,2,4,3,2,Employed - individual contributor,Bachelor’s degree,Other,4 to 6 years,No,1,IC,4.066666666666666
-2,1,4,5,2,3,4,3,3,2,2,4,2,1,4,5,1,2,3,5,2,5,5,1,2,2,1,2,1,3,3,2,Freelancer or self employed,Bachelor’s degree,Other,11 or more years,No,1,Freelancer,3.283333333333333
-4,3,4,4,3,3,3,4,3,3,4,4,4,2,4,2,4,4,4,4,2,2,2,2,3,4,4,3,1,3,3,1,Full time student,Some college or vocational training,Healthcare,1 to 3 years,No,1,FT_Student,2.5
-4,3,5,4,2,4,4,3,4,4,5,4,1,1,4,3,3,4,4,5,5,5,5,4,4,3,4,3,1,3,2,3,Employed - manager,Some college or vocational training,Technology or IT,11 or more years,No,1,Manager,2.466666666666667
-4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,3,4,4,4,4,4,4,2,2,4,4,4,4,3,4,3,4,Employed - executive or leader,Bachelor’s degree,Healthcare,4 to 6 years,No,1,Executive,3.0
-2,1,3,4,1,4,2,2,1,1,4,1,1,1,4,5,1,1,4,4,4,5,5,2,1,1,1,1,1,1,3,4,Full time student,High school or less,Other,Less than 1 year,No,1,FT_Student,2.816666666666667
-5,5,4,5,4,4,5,5,5,5,4,5,5,4,5,4,4,5,5,4,5,5,4,4,4,5,4,4,4,4,4,4,Full time student,Master’s degree,Finance or Banking,1 to 3 years,No,1,FT_Student,2.6666666666666665
-4,4,4,4,3,2,4,4,3,4,4,4,4,4,2,4,4,4,4,4,4,4,5,5,5,4,5,5,4,5,1,1,Full time student,Some college or vocational training,Finance or Banking,Less than 1 year,No,1,FT_Student,7.266666666666667
-4,4,4,4,5,3,3,4,4,4,4,4,4,5,4,4,5,4,4,4,4,4,4,5,5,4,3,3,3,4,4,3,Employed - manager,Master’s degree,Government or Public sector,4 to 6 years,No,1,Manager,3.216666666666667
-5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,4,4,5,3,Employed - executive or leader,Doctoral or professional degree,Healthcare,4 to 6 years,No,1,Executive,2.0833333333333335
-5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,1,1,1,1,5,5,5,5,4,5,4,4,Employed - manager,Bachelor’s degree,Retail or Hospitality,11 or more years,No,1,Manager,2.45
-2,2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,1,1,4,3,2,1,4,2,2,2,2,2,1,1,1,1,Not currently employed,High school or less,Other,Less than 1 year,No,0,Unemployed,3.566666666666667
-4,1,5,4,4,4,4,4,2,1,4,2,2,1,4,5,3,2,5,4,2,5,5,1,2,1,4,1,1,3,1,1,Full time student,Some college or vocational training,Other,1 to 3 years,Prefer not to answer,1,FT_Student,5.933333333333334
-4,3,4,4,1,1,4,4,3,3,3,4,3,2,3,4,2,3,2,4,5,5,5,5,3,2,3,3,1,5,2,2,Full time student,Some college or vocational training,Healthcare,Less than 1 year,Yes,1,FT_Student,3.6
-3,3,4,3,2,3,4,3,3,3,3,4,2,2,4,3,2,3,3,3,4,4,4,3,3,3,3,3,3,3,3,2,Employed - individual contributor,Some college or vocational training,Other,1 to 3 years,No,1,IC,5.133333333333334
-4,3,3,2,4,3,4,4,4,4,3,3,3,4,2,4,4,4,4,2,2,3,3,2,2,4,2,3,3,4,1,1,Full time student,Some college or vocational training,Healthcare,Less than 1 year,No,1,FT_Student,10.65
-5,4,5,5,5,5,4,5,5,5,5,5,5,5,5,5,5,5,5,5,5,4,5,5,5,5,4,5,5,5,4,5,Employed - manager,Bachelor’s degree,Education,4 to 6 years,Yes,1,Manager,1.8166666666666667
-4,4,4,4,3,3,2,3,4,3,3,3,4,4,4,3,3,4,4,4,2,4,4,3,3,3,4,2,3,2,1,1,Full time student,Some college or vocational training,Healthcare,4 to 6 years,No,1,FT_Student,3.8
-5,5,5,4,4,4,5,5,5,4,5,4,5,5,5,4,4,4,4,4,2,2,3,3,4,4,4,4,5,5,4,4,Employed - manager,Master’s degree,Technology or IT,7 to 10 years,No,1,Manager,4.783333333333333
-1,5,5,5,5,4,5,4,4,5,5,3,5,5,4,5,4,4,4,4,2,4,2,4,2,4,4,4,4,3,4,4,Full time student,Bachelor’s degree,Finance or Banking,Less than 1 year,No,1,FT_Student,8.566666666666666
-2,2,2,2,2,2,2,2,2,1,2,2,2,2,2,2,1,1,1,3,4,4,4,2,2,2,2,2,1,1,2,1,Employed - individual contributor,Some college or vocational training,Manufacturing,11 or more years,No,1,IC,4.483333333333333
-3,3,3,3,3,3,2,1,3,1,1,1,1,1,1,1,3,1,1,1,5,5,5,3,3,1,2,1,1,1,1,1,Full time student,High school or less,Other,4 to 6 years,No,0,FT_Student,4.266666666666667
-5,4,4,4,3,4,4,1,4,4,5,5,4,2,5,5,2,4,4,5,4,5,3,4,5,5,5,4,3,4,5,3,Employed - executive or leader,Master’s degree,Government or Public sector,11 or more years,No,1,Executive,3.85
-3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,1,1,1,2,Employed - individual contributor,High school or less,Other,1 to 3 years,No,1,IC,3.933333333333333
-4,5,5,5,4,4,4,4,5,5,5,5,3,3,4,3,4,4,4,4,2,5,3,3,4,5,5,4,3,4,3,3,Employed - manager,Master’s degree,Finance or Banking,4 to 6 years,No,1,Manager,5.5
-4,4,4,4,3,3,3,3,4,4,4,4,4,3,3,3,3,3,3,3,4,4,4,4,4,4,4,4,5,2,5,2,Employed - individual contributor,Some college or vocational training,Other,11 or more years,No,1,IC,1.4833333333333334
-2,1,3,3,2,1,3,2,4,2,3,2,1,1,2,4,3,3,4,3,4,5,5,2,2,2,1,2,1,1,1,2,Part time student,Some college or vocational training,Other,Less than 1 year,No,1,PT_Student,5.8
-5,5,4,4,5,4,5,4,5,5,4,3,3,3,4,5,5,5,4,4,4,4,4,4,5,4,4,4,4,5,5,4,Employed - executive or leader,Bachelor’s degree,Other,11 or more years,No,1,Executive,1.9666666666666666
-3,2,2,3,1,4,4,3,1,2,2,1,1,1,1,5,3,4,4,3,2,4,5,1,1,1,1,1,1,2,2,1,Part time student,Some college or vocational training,Retail or Hospitality,11 or more years,No,1,PT_Student,2.6166666666666667
-4,4,5,4,3,4,5,4,5,4,4,5,3,4,5,4,4,5,4,4,3,4,2,1,4,5,4,4,4,4,5,3,Employed - executive or leader,Bachelor’s degree,Other,11 or more years,No,1,Executive,5.366666666666666
-5,5,3,3,3,3,3,4,4,4,4,4,4,4,3,3,2,3,3,4,3,4,3,3,3,3,3,3,4,4,4,4,Employed - individual contributor,High school or less,Other,11 or more years,No,1,IC,51.45
-4,4,3,1,5,3,3,4,1,4,3,5,2,4,5,2,1,4,2,5,5,1,3,4,3,1,4,3,3,5,2,4,Part time student,High school or less,Retail or Hospitality,4 to 6 years,No,1,PT_Student,1.5666666666666667
-3,3,1,1,3,2,3,2,2,3,3,3,1,1,3,3,2,2,1,3,3,5,5,4,3,2,3,3,3,1,1,1,Full time student,Some college or vocational training,Government or Public sector,7 to 10 years,No,1,FT_Student,2.716666666666667
-2,2,2,3,2,3,3,2,3,4,3,3,3,3,2,5,3,3,2,3,1,5,5,1,1,2,4,1,3,2,1,1,Full time student,Some college or vocational training,Healthcare,1 to 3 years,No,1,FT_Student,4.05
-4,4,4,5,4,5,4,4,4,4,5,4,4,4,4,5,5,4,4,5,3,5,4,5,4,5,4,4,4,4,3,4,Full time student,Some college or vocational training,Nonprofit,4 to 6 years,Yes,1,FT_Student,1.2666666666666666
-4,3,4,4,3,3,2,3,3,4,4,4,4,2,5,5,3,3,4,5,3,3,4,3,4,3,3,3,1,3,3,3,Full time student,High school or less,Healthcare,1 to 3 years,Yes,1,FT_Student,5.583333333333333
-1,1,1,1,1,2,1,1,3,2,2,3,1,1,1,5,1,1,1,1,3,5,5,4,2,2,2,2,1,1,1,1,Employed - individual contributor,High school or less,Healthcare,1 to 3 years,Yes,0,IC,4.233333333333333
-5,5,4,4,4,4,4,4,5,4,4,4,5,4,4,4,5,5,4,4,4,4,2,3,4,4,5,4,3,5,1,1,Freelancer or self employed,Bachelor’s degree,Other,4 to 6 years,No,1,Freelancer,3.95
-5,4,3,4,3,4,4,4,4,4,4,5,4,4,5,5,4,4,4,3,4,4,4,4,3,4,5,4,3,2,3,4,Employed - individual contributor,Bachelor’s degree,Finance or Banking,11 or more years,No,1,IC,6.1
-4,4,3,3,1,2,2,4,2,2,3,3,1,1,2,4,2,2,3,4,2,4,4,2,2,2,2,2,3,3,3,1,Employed - executive or leader,Master’s degree,Manufacturing,11 or more years,No,1,Executive,5.25
-4,4,3,3,4,4,3,4,3,4,3,4,4,4,4,4,4,3,2,3,3,4,4,4,4,4,4,4,3,3,4,1,Employed - individual contributor,Master’s degree,Other,11 or more years,No,1,IC,4.216666666666667
-4,1,5,3,1,3,4,3,1,1,1,1,3,4,3,3,1,1,2,3,5,5,5,2,1,1,1,1,1,3,3,1,Full time student,Some college or vocational training,Other,1 to 3 years,No,1,FT_Student,44.733333333333334
-5,4,4,3,3,3,2,4,2,4,5,5,5,5,5,5,2,3,1,5,5,3,4,4,5,3,3,2,5,4,1,1,Full time student,Some college or vocational training,Finance or Banking,Less than 1 year,Yes,1,FT_Student,3.4166666666666665
-4,2,4,3,4,4,4,4,2,2,3,3,2,2,2,4,2,2,2,4,4,5,4,3,2,2,2,2,1,2,1,2,Not currently employed,Bachelor’s degree,Education,1 to 3 years,No,1,Unemployed,3.5166666666666666
-5,4,4,4,4,4,4,4,4,4,4,4,4,4,5,4,5,5,4,5,2,3,2,4,5,5,4,4,2,4,5,3,Employed - manager,Bachelor’s degree,Manufacturing,11 or more years,Yes,1,Manager,3.5833333333333335
-5,4,4,4,4,4,2,3,5,4,4,5,4,4,5,5,4,4,2,4,2,4,2,5,4,4,4,4,4,4,3,2,Employed - executive or leader,Bachelor’s degree,Technology or IT,11 or more years,No,1,Executive,3.4833333333333334
-5,5,4,4,4,3,3,5,4,5,5,5,5,5,5,5,4,5,3,5,2,3,2,3,5,5,5,5,1,5,1,1,Full time student,High school or less,Education,1 to 3 years,No,1,FT_Student,3.0166666666666666
-4,4,3,3,5,5,2,4,5,5,4,5,4,4,5,4,4,4,4,5,4,2,2,4,4,5,5,4,5,4,1,1,Employed - manager,Doctoral or professional degree,Retail or Hospitality,11 or more years,No,1,Manager,3.0166666666666666
-4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,5,5,4,4,4,4,4,5,4,4,4,1,Employed - manager,Master’s degree,Other,11 or more years,No,1,Manager,3.95
-1,1,2,2,1,2,2,2,3,2,2,3,2,2,5,5,3,5,2,3,2,5,5,1,2,2,5,3,3,1,3,1,Employed - manager,Bachelor’s degree,Healthcare,11 or more years,No,1,Manager,7.433333333333334
-4,4,4,3,4,2,2,2,4,4,5,5,3,4,5,5,3,3,4,4,2,4,3,4,4,4,4,4,4,3,1,1,Employed - executive or leader,Bachelor’s degree,Healthcare,11 or more years,No,1,Executive,4.733333333333333
-2,2,3,3,1,1,3,3,2,1,1,1,1,1,1,1,2,1,4,5,3,5,5,1,1,1,1,1,3,1,2,1,Part time student,Bachelor’s degree,Healthcare,Less than 1 year,No,1,PT_Student,2.716666666666667
-5,5,4,4,2,2,4,4,3,5,3,3,4,4,5,5,4,4,3,3,5,5,5,1,3,2,1,1,1,3,1,3,Full time student,High school or less,Education,Less than 1 year,No,1,FT_Student,6.533333333333333
-4,4,4,4,3,3,2,3,4,3,4,3,3,2,3,4,3,3,4,3,4,5,4,4,3,3,3,3,4,1,4,2,Employed - individual contributor,Bachelor’s degree,Education,1 to 3 years,No,1,IC,13.116666666666667
-4,3,3,4,2,2,2,2,4,4,4,3,4,3,4,4,3,3,4,4,5,5,4,4,3,3,4,2,1,5,3,1,Freelancer or self employed,Bachelor’s degree,Other,7 to 10 years,Yes,1,Freelancer,4.15
-4,4,4,4,4,3,4,4,4,3,4,4,4,4,4,4,4,4,4,3,2,2,2,2,4,4,4,4,3,3,3,2,Employed - manager,Master’s degree,Healthcare,11 or more years,No,1,Manager,3.533333333333333
-4,4,5,5,4,4,2,4,2,4,4,4,4,2,5,2,3,2,2,5,2,5,4,2,4,4,4,2,3,3,1,1,Full time student,Some college or vocational training,Technology or IT,Less than 1 year,No,1,FT_Student,3.316666666666667
-5,4,4,4,5,4,4,5,5,3,4,5,4,3,4,2,4,5,4,5,4,3,3,2,4,5,4,3,5,5,4,3,Employed - executive or leader,Bachelor’s degree,Technology or IT,1 to 3 years,No,1,Executive,6.083333333333333
-5,5,4,4,4,4,4,4,4,5,4,4,4,4,4,4,5,5,4,4,5,5,4,4,5,5,5,5,5,5,4,4,Other,Bachelor’s degree,Finance or Banking,7 to 10 years,No,1,Other,3.9833333333333334
-3,3,4,3,2,3,2,4,2,3,3,3,2,4,4,5,3,3,2,4,2,4,3,1,2,3,1,1,2,1,1,1,Full time student,Some college or vocational training,Healthcare,Less than 1 year,Prefer not to answer,1,FT_Student,12.083333333333334
-4,5,4,4,4,4,4,4,4,4,3,4,4,3,4,4,4,4,3,4,4,4,4,3,4,4,4,5,3,5,5,4,Employed - individual contributor,Bachelor’s degree,Education,4 to 6 years,No,1,IC,3.25
-5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,2,5,5,5,5,5,1,1,5,5,5,5,5,5,5,5,3,Employed - manager,Master’s degree,Technology or IT,11 or more years,No,1,Manager,6.0
-4,5,5,4,4,4,4,5,5,5,5,4,5,4,4,3,5,5,5,4,4,5,5,4,4,4,5,4,5,4,5,5,Employed - executive or leader,Master’s degree,Finance or Banking,7 to 10 years,No,1,Executive,4.6
-3,3,3,3,2,2,2,2,1,1,2,2,1,1,2,4,1,1,4,1,2,4,4,3,3,2,2,2,1,1,1,1,Employed - individual contributor,Doctoral or professional degree,Education,11 or more years,No,0,IC,2.85
-5,5,4,5,5,4,5,5,4,4,5,5,5,4,5,5,4,4,4,5,2,4,2,4,5,4,5,5,4,5,5,4,Employed - executive or leader,Master’s degree,Other,11 or more years,No,1,Executive,7.166666666666667
-4,4,4,4,3,4,3,3,3,4,3,3,4,2,4,4,2,2,3,4,2,2,3,3,4,2,4,2,4,4,3,5,Employed - executive or leader,Doctoral or professional degree,Government or Public sector,7 to 10 years,No,1,Executive,4.883333333333334
-2,1,1,1,2,2,1,1,1,1,1,1,1,1,1,3,2,3,2,3,4,2,5,2,1,1,1,1,2,1,1,1,Other,High school or less,Other,11 or more years,Yes,1,Other,5.716666666666667
-4,3,4,4,3,3,2,4,3,3,2,2,4,4,4,5,4,3,4,4,4,4,4,4,3,4,4,2,3,3,1,3,Employed - individual contributor,Bachelor’s degree,Healthcare,7 to 10 years,No,1,IC,2.95
-5,4,5,4,5,5,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,5,5,4,Employed - executive or leader,Master’s degree,Other,4 to 6 years,No,1,Executive,2.8
-4,3,3,2,4,4,3,3,3,2,3,4,2,2,3,4,2,2,2,4,2,4,3,3,4,3,4,4,3,1,3,1,Employed - manager,Master’s degree,Government or Public sector,11 or more years,No,1,Manager,4.45
-5,4,4,3,4,2,3,3,4,4,4,4,2,3,4,4,4,4,4,4,4,4,4,4,3,4,4,4,1,3,1,1,Employed - executive or leader,Bachelor’s degree,Healthcare,7 to 10 years,No,1,Executive,2.2333333333333334
-4,2,3,2,2,3,2,2,2,3,2,2,1,2,2,5,2,3,2,5,4,5,5,5,2,2,2,2,1,2,1,2,Full time student,Some college or vocational training,Technology or IT,Less than 1 year,Yes,1,FT_Student,4.266666666666667
-3,2,3,2,2,2,2,1,2,2,4,2,1,1,1,1,1,1,1,1,4,4,4,4,1,1,4,2,1,1,1,1,Employed - individual contributor,High school or less,Retail or Hospitality,4 to 6 years,No,0,IC,2.4
-5,5,5,5,5,5,5,5,4,5,5,5,5,5,5,5,4,3,4,5,4,4,5,4,4,4,4,5,5,4,4,5,Not currently employed,Master’s degree,Technology or IT,11 or more years,No,1,Unemployed,2.2666666666666666
-4,4,4,4,4,4,3,4,4,4,4,4,2,2,4,4,4,4,2,4,2,4,2,2,4,4,4,3,1,3,2,1,Full time student,Some college or vocational training,Healthcare,4 to 6 years,No,1,FT_Student,4.883333333333334
-5,5,5,5,5,5,5,5,3,3,5,3,4,3,3,3,3,3,5,4,1,3,2,3,5,5,5,5,1,5,3,3,Part time student,Bachelor’s degree,Technology or IT,1 to 3 years,No,1,PT_Student,2.1333333333333333
-1,1,2,1,1,1,3,3,1,1,1,1,1,1,1,1,1,1,1,1,5,5,5,5,1,1,1,1,1,1,1,1,Employed - individual contributor,High school or less,Manufacturing,4 to 6 years,No,0,IC,3.5833333333333335
-4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,Employed - manager,Some college or vocational training,Other,1 to 3 years,No,1,Manager,3.9833333333333334
-2,1,4,4,1,1,4,4,1,1,1,1,1,1,1,5,1,1,2,4,3,5,5,1,1,1,1,1,1,1,1,1,Employed - individual contributor,Some college or vocational training,Manufacturing,11 or more years,No,0,IC,3.45
-3,2,4,4,2,3,2,2,2,3,2,2,2,2,2,2,3,3,4,4,4,5,4,2,2,2,2,3,3,1,1,1,Employed - individual contributor,Bachelor’s degree,Other,11 or more years,No,1,IC,5.966666666666667
-1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,5,5,5,1,1,1,1,1,1,1,1,1,Full time student,Some college or vocational training,Other,4 to 6 years,Yes,0,FT_Student,2.566666666666667
-4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,2,4,4,4,4,4,4,4,4,4,3,3,Employed - executive or leader,Doctoral or professional degree,Technology or IT,4 to 6 years,No,1,Executive,3.6
-3,2,3,2,2,1,4,2,1,1,2,1,1,1,2,4,1,1,3,4,2,5,5,2,2,2,1,2,3,1,1,1,Employed - manager,Master’s degree,Manufacturing,11 or more years,No,1,Manager,4.166666666666667
-5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,1,1,5,5,4,4,4,4,3,5,3,3,Full time student,Bachelor’s degree,Technology or IT,4 to 6 years,No,1,FT_Student,3.8666666666666667
-4,3,4,4,4,4,3,4,4,3,4,4,3,4,4,4,4,4,4,4,5,4,3,4,4,3,5,4,4,4,2,3,Employed - manager,Master’s degree,Other,11 or more years,Yes,1,Manager,4.55
-5,4,3,2,3,4,4,4,2,3,4,3,4,5,4,4,2,2,2,4,4,5,3,2,4,3,5,3,1,4,3,1,Full time student,High school or less,Finance or Banking,Less than 1 year,No,1,FT_Student,3.45
+PE1,PE2,EE1,EE2,SI1,SI2,FC1,FC2,HM1,HM2,PV1,PV2,HB1,HB2,VO1,VO2,TR1,TR2,EX1,EX2,ER1,ER2,AX1,AX2,BI1,BI2,BI3,BI4,Usage_MSCopilot,Usage_ChatGPT,Usage_Gemini,Usage_Other,Role,Education,Industry,Experience,Disability,Open_Feedback,AI_Adoption,Role_Category,Duration_minutes
+5,5,4,5,5,5,5,5,5,5,5,5,5,5,5,4,5,5,5,5,3,2,2,4,5,5,5,5,5,5,5,4,Employed - executive or leader,Master’s degree,Manufacturing,11 or more years,No,Very relevant survey,1,Executive,3.55
+3,4,3,3,3,4,3,2,3,4,3,3,4,3,3,2,3,3,3,4,3,3,3,4,3,2,3,4,3,2,3,3,Not currently employed,Bachelor’s degree,Other,1 to 3 years,No,I have none,1,Unemployed,1.25
+2,2,3,5,1,3,2,2,1,2,2,2,2,2,2,5,3,4,4,3,5,5,5,4,2,2,1,1,1,3,3,2,Employed - manager,Bachelor’s degree,Education,1 to 3 years,No,i do not use AI because it is not good for the environment.,1,Manager,2.8666666666666667
+2,1,4,5,1,4,2,1,1,2,1,1,1,1,1,2,1,1,5,4,4,5,4,4,2,1,2,1,1,3,1,1,Full time student,Some college or vocational training,Other,Less than 1 year,No,not at this time,1,FT_Student,3.966666666666667
+4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,3,5,5,5,5,2,3,1,2,4,4,4,4,2,5,2,2,Full time student,Some college or vocational training,Education,1 to 3 years,No,I use ai to help give me ideas but not to completely do my assignments,1,FT_Student,2.816666666666667
+4,5,5,4,5,5,5,4,5,4,5,4,5,4,5,4,5,4,5,4,5,4,5,4,5,4,5,4,5,4,4,4,Employed - executive or leader,Bachelor’s degree,Technology or IT,7 to 10 years,Yes,James,1,Executive,1.45
+1,1,3,3,1,1,3,3,1,1,1,1,1,1,1,1,1,1,3,4,5,5,5,4,1,1,1,1,1,1,1,1,Full time student,High school or less,Other,1 to 3 years,No,,0,FT_Student,2.066666666666667
+3,4,4,4,2,2,3,4,3,4,2,3,4,2,4,4,3,3,4,5,4,3,4,4,4,3,3,3,3,3,3,2,Full time student,High school or less,Other,Less than 1 year,No,no,1,FT_Student,3.4
+3,2,3,2,3,2,4,3,2,2,2,2,2,2,2,2,2,2,3,3,5,5,5,2,2,2,3,2,3,2,1,1,Full time student,Some college or vocational training,Education,1 to 3 years,No,No,1,FT_Student,3.183333333333333
+2,2,3,2,1,3,3,4,1,1,1,1,1,1,1,4,1,1,2,4,4,5,5,4,2,1,1,1,1,1,1,1,Employed - individual contributor,Bachelor’s degree,Education,11 or more years,Yes,I think AI will lead to plagiarism and students not being able to think or research for the themselves.,0,IC,4.05
+4,4,5,4,4,5,5,4,5,4,5,4,4,4,5,3,5,4,5,4,3,2,2,4,5,4,5,4,5,4,5,3,Employed - manager,Master’s degree,Other,4 to 6 years,No,Amazing,1,Manager,4.9
+4,4,4,4,4,4,3,3,3,3,4,4,3,3,4,2,4,4,3,4,3,5,3,2,4,4,4,4,4,1,1,1,Employed - manager,Bachelor’s degree,Manufacturing,11 or more years,No,I am expanding my use of AI to now being able to use generative AI to create and AI to do more searching for products that I want to purchase,1,Manager,3.25
+5,4,5,5,5,4,4,5,5,5,5,4,5,5,5,4,5,4,4,4,5,4,5,5,5,5,4,4,4,4,5,5,Employed - manager,Master’s degree,Technology or IT,4 to 6 years,Yes,Very good point about this being the most important part in a lot more,1,Manager,4.233333333333333
+2,2,4,4,1,1,5,4,1,1,1,1,2,1,2,5,2,1,2,5,5,5,5,5,1,1,2,1,1,3,1,1,Full time student,Some college or vocational training,Other,Less than 1 year,Prefer not to answer,,1,FT_Student,2.65
+5,4,5,5,4,2,5,5,5,4,5,4,5,5,5,2,5,5,5,4,5,3,3,4,4,4,4,5,3,5,5,3,Full time student,Some college or vocational training,Other,1 to 3 years,No,Makes things so much easier for life but that might also be a bad thing as it might turn into a Wall-E situation.,1,FT_Student,2.933333333333333
+4,3,5,5,1,1,1,1,5,4,5,4,4,4,1,5,1,2,5,4,1,4,5,1,1,1,1,1,1,3,1,1,Employed - individual contributor,Bachelor’s degree,Education,Less than 1 year,No,,1,IC,2.6333333333333333
+4,2,3,2,2,2,1,3,4,3,4,4,5,5,4,5,4,4,1,4,4,4,5,2,3,4,4,3,2,4,1,4,Full time student,Some college or vocational training,Other,Less than 1 year,No,no,1,FT_Student,4.25
+4,4,3,4,3,3,3,2,3,4,3,4,2,2,3,3,4,4,3,4,4,3,4,3,2,2,2,2,3,2,2,2,Freelancer or self employed,Master’s degree,Education,11 or more years,No,No,1,Freelancer,3.85
+4,3,4,4,4,4,2,3,3,4,4,4,1,1,4,4,2,3,2,4,2,3,4,2,3,3,2,2,2,3,2,1,Full time student,Some college or vocational training,Other,1 to 3 years,No,No,1,FT_Student,3.466666666666667
+4,2,4,4,1,1,5,3,1,1,1,4,1,1,4,5,1,1,1,5,5,5,5,2,1,1,1,2,1,3,2,1,Full time student,Bachelor’s degree,Education,Less than 1 year,Yes,"It needs to be more clear on where the information comes from and improve user safety features to prevent mental health crises. If that were to happen, id consider using it more.",1,FT_Student,3.3666666666666667
+1,1,3,2,2,1,1,1,1,1,1,1,1,1,1,5,1,1,2,4,2,4,5,4,1,1,1,1,1,1,2,1,Freelancer or self employed,Master’s degree,Other,11 or more years,No,,1,Freelancer,3.566666666666667
+4,4,5,5,3,2,5,4,3,3,3,3,4,4,4,5,2,3,4,4,2,4,4,2,4,4,4,3,1,4,4,1,Full time student,High school or less,Healthcare,Less than 1 year,No,no,1,FT_Student,6.3
+3,2,4,4,2,2,2,3,3,2,2,1,3,2,2,4,4,3,3,4,4,5,5,5,3,3,5,3,3,3,4,1,Full time student,High school or less,Other,11 or more years,No,Noo,1,FT_Student,5.983333333333333
+4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,2,2,Employed - executive or leader,Master’s degree,Government or Public sector,11 or more years,No,,1,Executive,2.716666666666667
+3,3,3,3,3,3,2,3,3,3,3,3,3,3,3,3,3,3,3,4,3,3,3,3,3,4,3,3,1,1,3,1,Employed - individual contributor,High school or less,Retail or Hospitality,11 or more years,Prefer not to answer,,1,IC,6.0
+4,4,3,4,4,3,4,4,4,4,4,5,4,4,5,2,3,3,4,3,2,4,4,3,4,4,4,3,1,4,2,1,Freelancer or self employed,Master’s degree,Healthcare,11 or more years,No,,1,Freelancer,2.783333333333333
+2,1,4,4,2,3,3,3,1,2,2,1,2,2,2,4,1,2,2,2,4,4,5,2,2,1,1,1,2,3,1,1,Full time student,Some college or vocational training,Education,4 to 6 years,Yes,"It is destroying the environment. After having used it sometimes, it is not worth the harm to me, others, and the world.",1,FT_Student,3.7
+5,4,3,3,3,2,2,2,4,5,4,4,5,5,5,4,4,4,3,4,2,3,4,4,2,4,4,2,1,5,1,1,Full time student,Some college or vocational training,Healthcare,Less than 1 year,No,,1,FT_Student,2.35
+4,4,4,4,5,5,4,4,4,5,4,5,3,3,5,3,4,4,3,4,3,3,2,2,4,5,4,5,4,1,3,1,Employed - executive or leader,Master’s degree,Retail or Hospitality,11 or more years,No,They are great as a means of improving productivity.,1,Executive,2.9166666666666665
+1,1,1,1,1,3,1,1,1,1,3,1,1,1,1,3,1,1,1,3,3,5,5,1,1,1,1,1,1,1,1,1,Employed - individual contributor,High school or less,Retail or Hospitality,11 or more years,No,,0,IC,24.966666666666665
+4,4,4,4,2,2,3,4,4,4,4,4,3,1,4,4,1,2,5,5,1,5,5,5,3,3,3,2,1,2,3,4,Freelancer or self employed,Bachelor’s degree,Technology or IT,7 to 10 years,No,No thanks,1,Freelancer,2.5833333333333335
+2,2,1,1,2,3,2,3,3,3,2,3,1,1,1,1,1,1,1,1,1,4,4,2,2,2,2,3,2,2,1,1,Employed - manager,Master’s degree,Government or Public sector,11 or more years,No,,1,Manager,3.533333333333333
+2,2,3,3,1,3,4,3,4,2,2,2,1,1,1,1,3,4,3,4,5,5,1,4,2,3,3,3,1,1,1,1,Employed - individual contributor,Bachelor’s degree,Healthcare,7 to 10 years,No,I will not be using AI,0,IC,8.133333333333333
+3,1,3,3,1,5,3,3,1,1,1,1,1,1,1,5,1,1,3,3,5,5,5,2,1,1,1,1,2,1,1,1,Full time student,Some college or vocational training,Government or Public sector,4 to 6 years,Yes,I do not believe we understand or have even began to parse the ethical implications of AI tools and generative AI. Our laws are not evolving with the use of AI and this is creating a problem wherein misinformation and biased results are the norm and privacy is nothing. There are serious implications to the use of AI and I do not believe we have done our due diligence to make sure it is a boon for humanity and not a complete disaster. AI also uses an immense amount of electricity and FRESH WATER which we are not in infinite supply of.,1,FT_Student,5.1
+5,1,5,5,2,2,3,5,5,3,5,5,4,4,5,5,5,4,5,2,2,1,2,4,5,4,4,3,1,4,3,1,Full time student,Some college or vocational training,Other,1 to 3 years,Yes,,1,FT_Student,2.4833333333333334
+5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,1,2,2,3,4,4,4,4,4,5,5,5,Other,Bachelor’s degree,Education,1 to 3 years,No,With the help of AI I tend to finish my work on time,1,Other,5.5
+4,4,3,3,3,3,4,3,3,3,4,4,3,4,4,4,4,4,3,4,4,4,3,3,3,4,3,3,2,1,1,1,Full time student,High school or less,Healthcare,Less than 1 year,No,no,1,FT_Student,6.3
+3,2,3,3,2,2,3,2,2,2,3,2,1,1,1,4,1,2,3,4,2,5,5,3,1,1,1,1,1,1,1,1,Employed - executive or leader,Bachelor’s degree,Education,11 or more years,No,,0,Executive,2.75
+4,2,4,4,2,4,3,4,4,4,4,4,2,2,5,5,2,3,4,5,4,4,3,1,3,3,3,4,1,3,2,2,Not currently employed,Bachelor’s degree,Education,7 to 10 years,No,,1,Unemployed,2.5
+4,3,4,4,1,3,3,4,3,3,4,4,1,4,4,3,3,4,2,3,2,4,4,2,2,3,4,2,1,3,3,1,Employed - individual contributor,Bachelor’s degree,Other,4 to 6 years,No,No,1,IC,11.3
+5,4,5,4,5,4,5,4,4,5,5,4,4,5,4,5,4,5,4,4,5,4,5,4,5,5,4,5,4,4,5,5,Employed - manager,Master’s degree,Technology or IT,7 to 10 years,No,Very good and greatly appreciate,1,Manager,2.4166666666666665
+4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,3,3,4,4,4,4,3,3,3,3,Full time student,Bachelor’s degree,Healthcare,1 to 3 years,No,,1,FT_Student,5.566666666666666
+3,3,3,4,2,3,2,3,4,4,3,4,2,3,3,4,3,2,4,4,3,4,4,3,3,2,4,3,4,2,3,2,Employed - manager,Bachelor’s degree,Education,4 to 6 years,No,,1,Manager,2.316666666666667
+4,3,4,4,3,3,2,3,4,4,4,4,2,2,4,3,3,3,4,4,2,4,2,2,3,3,4,3,4,2,3,4,Employed - executive or leader,Bachelor’s degree,Manufacturing,11 or more years,No,Nothing to note,1,Executive,3.3666666666666667
+5,4,5,5,5,5,5,5,5,5,5,5,5,5,4,5,5,5,5,5,5,5,4,5,5,5,5,4,5,5,4,5,Employed - executive or leader,Bachelor’s degree,Manufacturing,7 to 10 years,No,Thanks,1,Executive,1.7166666666666666
+2,1,3,3,2,1,2,3,1,1,3,3,1,1,3,4,1,1,4,3,3,2,4,4,2,1,2,1,2,2,3,1,Full time student,High school or less,Other,Less than 1 year,No,I do not use AI to help me with assignments because I feel like it negatively impacts my critical thinking skills.,1,FT_Student,20.316666666666666
+5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,1,1,1,1,5,5,5,5,5,5,5,5,Employed - manager,Master’s degree,Technology or IT,4 to 6 years,No,No,1,Manager,9.3
+4,4,4,4,4,4,4,4,4,4,3,4,4,4,4,4,4,4,4,4,4,4,5,4,4,4,4,3,5,5,4,4,Employed - manager,Master’s degree,Technology or IT,7 to 10 years,No,"AI tools save me time and make tasks easier. Sometimes they make mistakes, but overall they improve my work and help me learn faster.",1,Manager,3.566666666666667
+3,3,4,4,3,2,4,4,5,4,2,4,2,3,4,4,4,2,3,4,2,2,4,2,3,3,4,4,2,2,2,1,Employed - individual contributor,Master’s degree,Finance or Banking,11 or more years,No,not really. its all very new,1,IC,2.95
+1,1,3,2,1,2,1,1,1,1,1,3,1,1,1,5,2,2,3,5,2,5,5,2,2,1,2,1,2,1,1,1,Employed - individual contributor,Doctoral or professional degree,Finance or Banking,11 or more years,No,,1,IC,3.216666666666667
+1,1,3,3,1,1,2,3,1,1,1,1,1,1,1,3,1,1,1,3,3,4,5,3,3,1,2,1,1,1,1,1,Employed - individual contributor,Bachelor’s degree,Healthcare,1 to 3 years,No,,0,IC,2.65
+4,3,4,4,2,2,2,3,4,2,4,4,2,3,1,4,3,3,4,4,1,4,2,2,2,4,3,3,1,3,1,1,Not currently employed,High school or less,Other,Less than 1 year,No,No,1,Unemployed,3.8666666666666667
+1,1,3,3,2,3,1,3,1,1,1,1,1,1,1,5,2,2,1,3,4,5,5,2,1,1,2,1,1,1,1,1,Freelancer or self employed,Bachelor’s degree,Other,11 or more years,No,no,0,Freelancer,3.1166666666666667
+3,2,2,2,2,2,2,3,2,2,2,3,3,2,2,4,2,2,2,2,5,4,4,3,2,2,2,1,1,1,1,2,Employed - individual contributor,Some college or vocational training,Other,11 or more years,No,It’s scary to me but I am afraid it’s the new wave of the future,1,IC,5.4
+4,3,5,4,3,4,2,5,3,4,4,3,2,3,4,3,4,3,4,5,3,4,3,1,4,3,3,4,3,1,2,1,Full time student,Some college or vocational training,Retail or Hospitality,1 to 3 years,No,It's convenient to use since it's built into most browsers and applications we use daily,1,FT_Student,3.65
+4,4,5,4,3,5,2,2,4,4,4,4,5,5,2,5,3,3,4,3,1,5,4,2,4,4,5,3,3,1,1,1,Employed - individual contributor,Some college or vocational training,Healthcare,11 or more years,No,Spell check,1,IC,5.033333333333333
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,3,1,1,1,3,1,5,5,5,1,1,1,1,1,1,1,1,Employed - individual contributor,Bachelor’s degree,Education,11 or more years,No,no,0,IC,3.6166666666666667
+4,3,3,3,2,2,2,3,4,4,4,4,3,2,3,3,2,2,4,4,5,5,5,5,3,3,4,4,4,4,3,3,Part time student,Some college or vocational training,Healthcare,1 to 3 years,No,It can help find information easier.,1,PT_Student,3.6
+4,3,2,3,4,3,4,3,3,4,5,3,3,3,4,5,4,3,5,3,4,5,3,5,4,3,4,5,4,5,3,2,Full time student,Bachelor’s degree,Technology or IT,4 to 6 years,No,No because everything was perfect,1,FT_Student,4.466666666666667
+3,3,2,2,3,3,1,2,3,3,3,3,2,2,3,3,3,3,3,3,2,3,4,3,3,3,3,2,1,2,1,1,Employed - individual contributor,Master’s degree,Healthcare,11 or more years,No,No,1,IC,2.35
+4,4,4,5,4,4,4,5,4,4,4,5,4,4,3,5,3,4,3,4,3,4,3,4,3,4,5,4,5,4,4,3,Employed - executive or leader,Master’s degree,Healthcare,4 to 6 years,No,Good,1,Executive,2.683333333333333
+4,4,4,5,4,5,5,4,4,4,4,4,4,4,4,4,4,4,4,4,2,3,2,3,4,5,5,4,2,3,4,2,Employed - individual contributor,Bachelor’s degree,Education,11 or more years,No,,1,IC,2.5833333333333335
+4,4,4,4,4,4,4,4,4,4,4,4,2,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,3,1,2,3,Employed - manager,Bachelor’s degree,Retail or Hospitality,1 to 3 years,No,You have to use it to understand it! People whom fear it don't try using it!,1,Manager,6.85
+3,3,4,4,3,2,4,4,4,3,4,2,2,2,3,3,4,5,3,5,2,3,4,4,3,3,3,4,1,3,2,2,Part time student,Some college or vocational training,Finance or Banking,Less than 1 year,No,Not my thing,1,PT_Student,3.216666666666667
+5,4,4,4,4,5,4,5,4,5,4,4,4,4,4,5,4,5,4,4,1,2,2,2,4,4,4,4,4,5,3,3,Employed - manager,Master’s degree,Finance or Banking,11 or more years,No,Yes Ai is here to stay and had made my life easier and smoother!,1,Manager,5.9
+4,3,4,4,3,4,4,4,3,4,3,4,4,4,3,3,4,4,4,4,2,4,3,3,4,3,4,4,1,2,4,1,Employed - individual contributor,Bachelor’s degree,Healthcare,1 to 3 years,Yes,,1,IC,3.5
+3,2,3,3,2,3,4,3,2,3,3,3,1,4,4,5,1,2,2,4,3,5,4,3,3,3,2,3,1,2,2,1,Employed - individual contributor,Some college or vocational training,Healthcare,11 or more years,No,none,1,IC,10.05
+4,2,4,4,2,1,2,2,2,2,4,2,4,4,4,4,3,3,4,4,3,3,4,2,2,3,3,2,1,4,1,1,Full time student,High school or less,Other,Less than 1 year,No,No,1,FT_Student,7.85
+2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,4,2,2,2,4,4,4,4,4,2,2,2,2,1,1,1,1,Employed - individual contributor,Master’s degree,Education,11 or more years,No,"I find that it is more often wrong than right, and it creates more problems than it solves.",0,IC,3.316666666666667
+5,5,5,5,3,1,2,3,2,3,5,5,5,5,5,5,3,3,2,4,5,5,5,5,3,3,3,3,1,4,4,2,Full time student,Some college or vocational training,Other,11 or more years,Yes,No,1,FT_Student,2.5
+4,2,4,3,2,2,2,3,3,3,2,2,4,4,4,4,2,3,2,4,2,4,4,2,3,3,2,2,1,2,3,4,Full time student,High school or less,Education,Less than 1 year,No,,1,FT_Student,4.983333333333333
+3,2,1,1,2,2,2,2,2,2,2,2,2,2,2,4,2,2,1,3,4,4,4,4,1,1,1,1,1,1,1,1,Freelancer or self employed,Some college or vocational training,Other,11 or more years,No,,0,Freelancer,2.55
+4,3,5,5,3,2,2,3,3,3,2,3,3,3,3,4,3,2,4,2,2,3,4,2,4,3,1,2,2,4,1,1,Full time student,High school or less,Manufacturing,Less than 1 year,No,,1,FT_Student,4.033333333333333
+2,2,2,2,1,2,4,2,1,1,1,1,1,1,1,4,1,1,1,3,5,5,5,5,1,1,1,1,1,1,1,1,Other,Some college or vocational training,Other,11 or more years,No,Do not trust the technology,0,Other,3.8833333333333333
+5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,4,2,1,1,5,5,5,5,2,5,4,1,Full time student,Some college or vocational training,Education,4 to 6 years,No,no,1,FT_Student,2.2
+4,4,3,4,3,4,3,4,4,4,3,4,3,3,4,5,4,4,4,4,3,3,3,3,3,4,3,3,3,3,3,3,Full time student,High school or less,Other,Less than 1 year,No,It has helped me out plenty of times.,1,FT_Student,573.8
+4,4,4,5,4,4,5,4,4,4,5,5,5,4,4,4,4,5,5,5,4,4,4,4,4,4,4,4,4,3,3,4,Employed - manager,Bachelor’s degree,Technology or IT,4 to 6 years,Yes,Very good and nice,1,Manager,3.7333333333333334
+5,4,5,4,4,5,4,5,5,4,5,4,4,5,4,5,4,5,4,5,4,5,4,5,4,5,4,3,5,5,4,3,Employed - individual contributor,Bachelor’s degree,Other,7 to 10 years,No,Great experience,1,IC,2.8333333333333335
+4,4,4,4,3,4,3,4,4,4,4,4,4,4,4,4,4,4,3,4,4,2,3,4,4,4,4,4,4,5,4,1,Employed - individual contributor,Some college or vocational training,Other,11 or more years,No,No I do not,1,IC,3.35
+4,3,4,4,2,2,3,4,2,4,1,2,2,1,4,5,1,2,4,3,2,5,5,2,2,3,3,1,3,1,3,1,Employed - executive or leader,Some college or vocational training,Other,Less than 1 year,Prefer not to answer,"I used to like using AI when it was first introduced but I feel as though more time passes, people in my life rely on it too much. I also think its heavily affecting children's minds and they rely on it to finish their homework same as my classmates in college. People even use it to bring a photo to life and i think its just strange.",1,Executive,6.016666666666667
+3,3,3,4,2,2,2,3,4,3,3,3,1,1,3,3,2,2,3,3,5,5,5,5,3,3,3,3,4,2,3,1,Employed - manager,Some college or vocational training,Healthcare,4 to 6 years,No,No nothing else,1,Manager,2.183333333333333
+3,2,4,4,3,4,4,2,2,2,2,4,2,2,3,4,1,1,4,3,2,5,4,4,1,4,1,2,2,2,3,1,Employed - individual contributor,Bachelor’s degree,Manufacturing,4 to 6 years,No,,1,IC,3.466666666666667
+1,1,1,1,1,4,3,3,1,1,1,1,1,1,1,5,1,1,4,1,5,5,5,1,1,1,1,1,1,1,1,1,Full time student,Some college or vocational training,Technology or IT,1 to 3 years,Yes,Ai shouldn’t be available for the public.,0,FT_Student,2.9833333333333334
+4,4,5,4,4,5,5,4,4,4,5,5,5,3,4,4,4,5,5,4,5,4,5,4,5,5,3,4,4,4,4,4,Full time student,Master’s degree,Technology or IT,7 to 10 years,No,No thing,1,FT_Student,5.45
+4,3,5,4,3,3,4,4,3,3,4,4,5,4,4,4,3,4,2,4,5,3,4,2,3,3,2,2,1,5,3,4,Full time student,Some college or vocational training,Other,Less than 1 year,No,,1,FT_Student,6.45
+4,4,4,4,2,3,4,3,4,4,4,4,2,2,4,4,3,3,4,4,2,4,4,2,2,3,2,2,1,1,3,3,Employed - manager,Bachelor’s degree,Retail or Hospitality,11 or more years,No,I don’t,1,Manager,3.65
+2,1,5,4,3,1,4,3,4,3,3,2,3,1,1,5,1,2,5,5,5,5,4,3,2,3,3,3,2,3,1,3,Full time student,Some college or vocational training,Other,Less than 1 year,Prefer not to answer,"As an artist, AI tools that generate “art” are an affront to the craft that we, as humans, have worked so hard to perfect. Yes, it’s interesting, but it’s also unethical. The ChatGPT servers creating so much light pollution that it’s causing havoc in communities and costing us our environment.",1,FT_Student,5.316666666666666
+4,3,5,3,3,3,3,3,3,4,3,3,3,2,4,2,3,4,5,3,3,5,4,3,3,3,1,3,3,2,2,3,Full time student,Some college or vocational training,Healthcare,1 to 3 years,No,,1,FT_Student,2.033333333333333
+4,3,4,4,2,4,4,4,2,1,2,3,4,2,4,5,2,2,2,5,2,4,5,4,2,1,2,1,1,3,1,4,Full time student,Some college or vocational training,Other,1 to 3 years,No,,1,FT_Student,7.616666666666666
+4,4,4,4,3,3,4,4,4,4,4,4,3,4,4,4,5,4,4,4,4,5,3,4,4,4,4,4,4,3,4,3,Full time student,Some college or vocational training,Other,Less than 1 year,Yes,It is interesting and I am learning more about it,1,FT_Student,2.5833333333333335
+3,2,3,2,1,3,1,2,2,2,3,2,2,2,2,4,3,3,2,4,1,4,5,2,3,3,2,3,1,1,1,1,Employed - individual contributor,High school or less,Retail or Hospitality,11 or more years,Yes,I think there is to much misinformation when it comes to AI and would rather avoid it altogether,0,IC,4.2
+5,4,5,5,3,4,5,5,4,5,4,5,5,4,5,5,3,4,5,5,2,5,4,4,4,5,5,3,3,5,5,4,Full time student,Bachelor’s degree,Technology or IT,1 to 3 years,No,I use AI mainly to learn new things or simplify concepts or solve problems I'm having. It has actually made it easier to understand school stuff as it easily clarifies my doubts at any time i need.,1,FT_Student,4.233333333333333
+4,4,4,5,3,3,4,4,3,4,4,3,3,3,4,4,3,3,4,4,4,5,3,2,4,3,3,2,2,4,2,3,Full time student,Bachelor’s degree,Other,Less than 1 year,No,,1,FT_Student,2.533333333333333
+3,3,3,3,2,2,2,1,1,1,3,3,1,1,4,4,3,3,1,4,2,4,4,4,3,2,3,3,1,1,3,1,Other,Doctoral or professional degree,Other,11 or more years,No,I have limited AI tool experiences and would be open to more if there could be a simplistic tool that I could follow on the internet for AI learning.,1,Other,4.133333333333334
+4,4,4,4,3,2,2,3,4,4,4,3,4,3,4,2,3,3,2,4,3,3,4,2,3,4,3,3,2,4,1,1,Full time student,Master’s degree,Education,1 to 3 years,Yes,It helps me with my research for school & personal use,1,FT_Student,4.05
+4,4,4,4,3,4,4,4,3,4,4,4,4,2,4,4,4,4,4,4,4,4,3,2,4,4,4,3,2,4,3,4,Full time student,Some college or vocational training,Other,1 to 3 years,No,,1,FT_Student,4.516666666666667
+4,4,5,5,4,5,4,4,4,4,4,4,4,4,4,5,4,4,3,5,1,4,4,4,5,4,4,5,1,2,5,1,Employed - executive or leader,Bachelor’s degree,Retail or Hospitality,11 or more years,No,,1,Executive,3.683333333333333
+4,4,4,4,4,3,4,4,4,4,4,3,4,4,4,4,4,4,4,4,3,3,3,4,4,4,4,4,2,3,3,4,Freelancer or self employed,Bachelor’s degree,Other,11 or more years,No,No,1,Freelancer,3.85
+4,4,4,4,3,2,4,4,3,4,4,4,4,4,4,4,4,4,3,4,4,4,5,5,4,4,4,3,1,5,1,1,Full time student,High school or less,Finance or Banking,Less than 1 year,No,,1,FT_Student,3.5833333333333335
+2,3,4,4,3,3,2,3,4,4,2,3,2,2,2,5,2,3,5,5,5,5,4,5,4,3,4,4,3,1,4,2,Employed - individual contributor,Bachelor’s degree,Other,7 to 10 years,No,no,1,IC,2.1
+3,4,3,4,2,4,2,4,4,4,5,4,3,4,4,5,3,5,5,5,1,3,4,2,4,3,4,3,1,3,5,2,Part time student,High school or less,Other,Less than 1 year,Yes,It’s not very reliable when in a hurry but when you have time to spare than I’d say yeah,1,PT_Student,6.916666666666667
+4,3,5,4,3,4,5,4,3,3,4,4,2,2,4,3,4,4,4,4,2,3,2,2,4,4,2,3,1,4,3,2,Full time student,High school or less,Other,Less than 1 year,No,No,1,FT_Student,7.766666666666667
+3,3,3,3,2,2,4,4,4,3,3,3,5,4,4,4,3,3,3,4,5,5,5,5,3,2,3,2,3,4,4,3,Full time student,High school or less,Technology or IT,Less than 1 year,Yes,,1,FT_Student,2.05
+3,2,3,3,3,3,2,4,4,4,4,4,3,4,3,4,5,4,4,5,3,3,4,2,3,2,2,3,4,4,3,3,Part time student,High school or less,Education,4 to 6 years,Yes,,1,PT_Student,1.2166666666666666
+4,3,4,4,2,2,2,4,4,3,4,4,4,2,4,4,2,3,2,4,2,4,4,4,3,4,4,2,3,4,2,1,Full time student,Some college or vocational training,Other,Less than 1 year,No,,1,FT_Student,2.0833333333333335
+4,3,4,4,2,3,3,4,3,3,3,3,2,2,4,3,3,3,4,4,3,5,4,2,3,3,4,4,3,3,2,1,Employed - individual contributor,Master’s degree,Education,11 or more years,No,"As an educator, it has become somewhat of a requirement to learn these tools and how to use them since students frequently do. Both groups are engaged in a necessary, somewhat experimental learning curve regarding this technology.",1,IC,6.483333333333333
+4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,2,2,1,2,4,4,4,3,4,4,4,3,Employed - manager,Doctoral or professional degree,Manufacturing,11 or more years,No,,1,Manager,2.4166666666666665
+3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,2,3,3,4,5,5,5,4,2,2,2,2,1,1,1,1,Employed - individual contributor,High school or less,Other,4 to 6 years,No,No,0,IC,2.933333333333333
+3,2,2,2,2,2,2,2,2,2,2,2,2,1,2,4,2,2,1,3,3,4,4,3,2,1,1,1,1,1,1,1,Other,High school or less,Other,Less than 1 year,No,No,0,Other,6.333333333333333
+3,3,3,2,4,4,4,1,3,4,4,4,4,1,2,5,4,4,4,1,4,3,4,4,4,2,4,3,5,1,4,1,Employed - executive or leader,Doctoral or professional degree,Manufacturing,7 to 10 years,No,good to hear from you,1,Executive,2.15
+1,1,1,5,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,5,2,1,1,1,1,1,2,2,1,Part time student,High school or less,Retail or Hospitality,Less than 1 year,No,,1,PT_Student,28.633333333333333
+4,3,3,4,3,2,4,4,3,4,3,4,2,2,4,5,4,3,2,4,1,4,3,1,2,2,2,1,1,1,1,3,Freelancer or self employed,Some college or vocational training,Other,11 or more years,No,no,1,Freelancer,3.2666666666666666
+4,4,4,4,4,4,4,4,4,4,4,4,4,3,4,2,4,4,4,4,3,3,3,3,4,4,4,3,4,4,4,1,Employed - manager,Bachelor’s degree,Retail or Hospitality,11 or more years,No,I have no further feedback,1,Manager,6.016666666666667
+3,4,4,4,4,3,4,4,4,3,4,4,2,4,1,3,3,4,3,4,3,4,2,4,3,4,3,5,3,1,1,1,Employed - individual contributor,Some college or vocational training,Healthcare,11 or more years,No,I plan to take courses to keep up with AI,1,IC,7.833333333333333
+3,4,4,5,4,3,4,4,4,3,5,5,5,2,5,5,3,4,4,4,2,3,3,3,4,4,4,3,1,3,4,1,Full time student,Some college or vocational training,Finance or Banking,Less than 1 year,No,No,1,FT_Student,3.7333333333333334
+3,3,2,2,2,3,3,2,3,3,2,2,4,4,3,2,4,2,3,2,2,4,4,4,3,3,2,2,1,1,2,1,Part time student,Some college or vocational training,Retail or Hospitality,11 or more years,Yes,I have no feedback on this subject,1,PT_Student,2.716666666666667
+4,4,4,4,4,5,4,4,3,4,4,4,4,4,4,2,3,3,4,4,4,5,3,4,4,4,4,5,3,4,3,5,Full time student,Some college or vocational training,Technology or IT,11 or more years,Yes,Bias and hallucinations,1,FT_Student,3.8
+4,2,4,5,2,4,4,5,2,1,4,4,2,1,2,5,2,5,4,4,4,5,5,4,2,1,3,2,1,3,2,1,Full time student,Bachelor’s degree,Other,Less than 1 year,No,I have concerns about the environmental impacts of AI.,1,FT_Student,2.966666666666667
+4,4,4,2,3,4,2,3,2,2,2,4,2,1,4,4,2,3,4,4,5,5,4,2,4,3,3,3,1,4,2,1,Full time student,High school or less,Other,Less than 1 year,No,Very helpful when used effectively without being dependent,1,FT_Student,4.516666666666667
+3,3,3,3,4,3,4,4,5,4,3,4,2,4,3,3,3,3,4,4,2,4,3,2,4,4,4,3,2,3,1,2,Full time student,Bachelor’s degree,Nonprofit,7 to 10 years,No,Moved quickly,1,FT_Student,2.9833333333333334
+4,3,4,4,3,3,2,3,3,3,4,4,4,4,3,3,4,4,2,4,2,3,3,3,3,4,4,4,1,2,3,1,Employed - individual contributor,Master’s degree,Education,11 or more years,No,No,1,IC,3.3833333333333333
+2,2,2,2,2,2,2,2,1,1,2,1,1,1,2,1,1,1,1,1,2,4,4,3,2,1,2,2,3,2,1,1,Not currently employed,Bachelor’s degree,Education,11 or more years,No,,1,Unemployed,2.3
+4,4,3,3,3,3,3,3,3,4,3,4,3,4,3,4,4,4,3,3,3,3,3,4,3,3,4,4,3,4,2,4,Full time student,Some college or vocational training,Manufacturing,1 to 3 years,No,,1,FT_Student,3.1333333333333333
+5,3,3,3,5,4,5,4,5,5,5,5,5,5,5,4,3,4,4,5,5,4,5,5,5,5,4,5,2,5,1,2,Full time student,High school or less,Other,7 to 10 years,Yes,"No, but this is a good survey!",1,FT_Student,6.933333333333334
+3,1,2,2,3,3,2,1,3,2,2,2,1,1,1,4,3,1,3,4,2,5,4,4,1,3,1,1,1,1,2,1,Employed - individual contributor,Master’s degree,Education,11 or more years,No,none,1,IC,2.7333333333333334
+2,2,3,2,1,1,1,2,1,1,1,2,1,2,2,4,2,2,2,3,4,5,4,2,2,2,1,1,1,1,1,1,Employed - individual contributor,Bachelor’s degree,Manufacturing,11 or more years,Yes,AI is dangerous,0,IC,4.65
+3,4,4,4,2,3,3,3,3,3,2,3,2,2,2,3,3,3,2,4,2,4,4,3,2,3,3,2,5,1,1,1,Full time student,Some college or vocational training,Healthcare,1 to 3 years,No,No,1,FT_Student,6.15
+2,3,2,2,4,2,2,4,3,4,4,4,3,4,4,4,3,4,4,4,4,4,4,4,3,3,4,3,3,3,3,1,Other,Some college or vocational training,Retail or Hospitality,7 to 10 years,No,Nothing,1,Other,5.15
+4,3,2,2,4,4,2,3,4,4,4,3,2,1,3,5,2,2,3,4,4,5,5,5,2,3,4,4,1,1,4,2,Employed - individual contributor,Some college or vocational training,Finance or Banking,1 to 3 years,No,"I found that it's a interesting tool to use if I want to enhance an art project, and it makes things easier when it comes to searching for information on the topic, but otherwise it intimidates and scares me. I find it hard to understand how to work with it, and I worry about what its evolution could do to mankind.",1,IC,4.933333333333334
+4,4,4,4,2,4,4,4,4,4,4,3,4,3,4,4,4,4,4,4,2,4,4,4,3,4,4,3,1,3,5,1,Full time student,Bachelor’s degree,Healthcare,4 to 6 years,No,,1,FT_Student,2.183333333333333
+4,3,4,4,3,4,4,4,3,4,3,4,4,4,4,4,3,4,4,4,4,5,4,4,4,3,4,3,2,4,2,1,Employed - individual contributor,Master’s degree,Education,11 or more years,No,,1,IC,5.983333333333333
+3,3,2,2,1,4,3,3,2,2,1,1,1,1,1,1,1,1,3,3,4,4,4,3,3,3,3,2,1,1,1,1,Employed - individual contributor,Master’s degree,Technology or IT,11 or more years,No,,0,IC,5.9
+4,4,3,4,1,5,4,3,3,4,3,3,4,4,4,4,3,3,1,3,5,2,5,3,3,3,2,3,2,4,1,1,Full time student,Some college or vocational training,Other,Less than 1 year,No,I mainly use AI tools to help with my writing. I’m not very good with words so I find it helpful with that and I like to learn how to better write.,1,FT_Student,4.75
+2,2,2,1,1,1,1,2,1,1,1,1,1,1,1,1,1,1,1,1,5,5,5,5,1,1,2,1,1,2,1,1,Employed - manager,Some college or vocational training,Other,1 to 3 years,No,,1,Manager,137.66666666666666
+3,3,3,3,3,3,4,4,3,3,3,3,3,3,3,3,4,4,3,3,3,3,3,3,3,3,3,3,3,3,3,1,Employed - executive or leader,High school or less,Healthcare,4 to 6 years,No,Survey was great,1,Executive,3.0166666666666666
+4,4,4,5,4,5,4,4,4,5,4,4,3,3,4,4,4,4,4,5,2,5,2,2,4,4,5,4,4,5,4,3,Employed - executive or leader,Bachelor’s degree,Technology or IT,4 to 6 years,No,AI tool is 95% accurate,1,Executive,4.35
+5,5,4,5,4,4,3,4,4,4,4,5,3,4,4,4,5,4,3,5,3,2,2,3,4,4,4,4,4,4,5,4,Employed - individual contributor,Some college or vocational training,Education,11 or more years,No,It the future and it going to help alot,1,IC,9.166666666666666
+3,2,3,2,2,2,2,2,2,3,2,3,2,2,2,5,2,2,2,4,2,4,5,2,4,3,3,4,1,2,3,1,Other,Bachelor’s degree,Other,11 or more years,No,I distrust images and video I see on social media because it can be difficult to determine if they're authentic or AI-generated.,1,Other,5.6
+3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,1,1,1,Not currently employed,Bachelor’s degree,Retail or Hospitality,11 or more years,No,No,1,Unemployed,4.433333333333334
+5,5,4,4,3,4,5,4,3,3,4,4,4,4,4,4,4,4,3,5,4,4,2,5,4,4,4,4,5,1,3,1,Employed - manager,Bachelor’s degree,Finance or Banking,11 or more years,No,Nothing comes to mind.,1,Manager,2.6666666666666665
+4,3,2,3,4,4,2,2,3,2,2,3,1,1,4,4,2,3,3,4,5,5,5,5,4,1,4,4,4,3,3,1,Not currently employed,Bachelor’s degree,Technology or IT,11 or more years,No,"Interesting survey, and I wish we could complete more surveys reference the AI subject matter. My personal opinion is that AI is dangerous, and will not be beneficial to our economy in the long run.",1,Unemployed,2.75
+5,5,4,5,5,5,4,4,5,5,4,5,4,4,5,5,5,5,5,5,3,3,1,4,5,5,5,5,4,2,5,1,Employed - executive or leader,Bachelor’s degree,Other,1 to 3 years,No,Ai has been a very useful tool,1,Executive,438.65
+4,3,4,4,3,3,4,4,4,4,4,4,3,2,3,2,3,3,4,4,2,4,3,4,3,3,2,3,1,3,1,1,Not currently employed,Bachelor’s degree,Retail or Hospitality,11 or more years,No,,1,Unemployed,3.7333333333333334
+3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,1,1,3,3,4,4,4,4,3,2,3,2,1,1,1,1,Other,Bachelor’s degree,Other,11 or more years,No,NO,0,Other,7.233333333333333
+3,4,2,3,3,4,2,4,4,4,2,3,2,2,4,4,4,4,2,4,2,5,4,3,2,3,4,2,3,3,1,1,Employed - manager,Some college or vocational training,Government or Public sector,11 or more years,No,,1,Manager,3.966666666666667
+2,2,3,3,2,3,2,3,3,3,3,3,3,2,3,4,2,3,3,3,4,5,5,3,1,1,1,1,1,1,2,2,Freelancer or self employed,Bachelor’s degree,Other,11 or more years,Yes,I don't trust it.,1,Freelancer,5.433333333333334
+3,2,5,3,1,2,5,4,2,1,3,4,1,1,1,5,2,4,4,5,5,4,5,5,4,3,5,4,2,5,1,1,Full time student,Some college or vocational training,Technology or IT,Less than 1 year,No,A.I!!!!!!!!,1,FT_Student,3.3833333333333333
+4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,3,4,4,4,4,4,4,3,3,4,4,4,4,1,4,1,1,Full time student,Some college or vocational training,Other,Less than 1 year,No,noo,1,FT_Student,2.183333333333333
+2,3,2,2,2,3,3,3,3,3,3,3,1,1,1,1,1,1,3,4,3,4,4,4,2,2,3,2,1,1,1,1,Freelancer or self employed,Some college or vocational training,Retail or Hospitality,11 or more years,No,"In this day & age, we're the guinea pigs for most of it and still do not know the long term effects of this exposure. It definitely changes the brain for sure. And it really can't be too trusted fully.",0,Freelancer,5.05
+5,5,5,5,4,4,5,5,5,5,4,4,5,4,5,2,5,5,5,4,2,2,1,1,5,5,5,5,5,4,5,4,Employed - executive or leader,Bachelor’s degree,Finance or Banking,11 or more years,No,I use AI tools for the efficiency they bring me in performing tasks and freeing my time for other areas that I can be working on instead,1,Executive,3.783333333333333
+4,4,2,2,2,3,2,4,4,2,2,4,2,2,2,4,4,4,2,4,4,3,4,4,2,3,4,3,3,3,2,1,Employed - individual contributor,Some college or vocational training,Other,1 to 3 years,No,"I believe my frustration with AI is that I am far behind on learning technology. Everything moves so fast that if you didnt learn at the beginning it is very hard to understand now. I also believe that people are getting lazier by using AI. It dies all of the work for you. A person retains knowledge by reading,speaking, and writing it down. You dont have that with AI.",1,IC,9.116666666666667
+3,3,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,3,4,4,4,2,2,4,4,4,4,3,3,3,3,Employed - individual contributor,Some college or vocational training,Manufacturing,11 or more years,No,Tool is good to solve complex issues,1,IC,3.05
+4,4,4,4,3,3,2,4,4,4,3,4,4,4,4,4,4,4,2,4,3,4,3,4,4,4,4,4,4,4,1,1,Freelancer or self employed,Bachelor’s degree,Retail or Hospitality,11 or more years,Yes,No,1,Freelancer,4.316666666666666
+4,2,4,2,1,2,4,4,3,3,2,3,3,3,4,4,3,3,4,3,5,4,4,4,2,2,3,2,3,3,3,1,Full time student,Some college or vocational training,Technology or IT,4 to 6 years,No,No,1,FT_Student,5.616666666666666
+4,3,5,4,4,4,4,3,3,4,5,4,2,3,4,5,2,4,4,4,5,4,3,4,4,4,5,3,4,3,4,3,Part time student,Some college or vocational training,Education,1 to 3 years,No,"AI tools are helpful but they are ultimately just tools. They should not be used as crutches or be the sole creative voice behind the project. I use AI tools to supplement my work and make it faster, but I always have to check for and correct any mistakes made.",1,PT_Student,3.1166666666666667
+4,4,4,4,3,2,2,3,4,3,4,4,4,3,4,5,3,3,2,5,2,4,4,2,4,4,4,3,1,4,1,1,Full time student,Some college or vocational training,Retail or Hospitality,4 to 6 years,No,No,1,FT_Student,2.7
+3,3,4,4,3,3,2,2,4,4,4,4,4,4,3,4,3,4,4,4,2,4,3,4,3,3,3,4,1,4,4,1,Employed - individual contributor,Master’s degree,Other,4 to 6 years,No,,1,IC,5.366666666666666
+4,4,4,4,4,3,3,4,4,4,4,4,4,4,4,5,4,4,2,5,2,5,4,4,4,4,4,2,4,4,4,1,Employed - individual contributor,Bachelor’s degree,Other,7 to 10 years,No,"i do use AI and it is helpful, but i am concerned about the amount of energy it uses",1,IC,2.75
+5,4,5,2,5,5,3,4,5,4,4,4,3,4,5,4,5,4,4,3,5,4,3,1,4,5,4,2,5,3,4,5,Freelancer or self employed,Bachelor’s degree,Other,4 to 6 years,No,No,1,Freelancer,5.55
+2,2,3,2,4,4,5,3,1,1,1,1,1,1,1,5,1,1,2,4,5,5,5,3,1,2,1,2,1,1,1,2,Freelancer or self employed,Master’s degree,Education,11 or more years,Prefer not to answer,I feel that AI is being forced on us whether we want it or not and I object to that. I want an AI-optional world. In fact we'd probably be better off without it.,1,Freelancer,4.75
+3,3,4,4,4,4,4,3,3,3,2,2,2,2,2,4,3,2,3,4,5,4,4,4,2,3,4,2,5,2,1,3,Full time student,Bachelor’s degree,Other,1 to 3 years,No,"With some of the AI tools that I have used, I do find that some have a hard time trying to translate the documents that I ask it to interpret or if I ask it to make a podcast, there will be times where the sentences are jumbled or the podcast cuts off entirely.",1,FT_Student,4.833333333333333
+4,3,4,4,3,4,4,3,4,3,2,4,2,3,5,5,4,4,4,3,4,5,4,4,4,3,4,5,5,3,2,2,Employed - individual contributor,Some college or vocational training,Manufacturing,11 or more years,No,Nothing else to add.,1,IC,4.183333333333334
+4,3,4,3,4,2,4,3,4,4,3,4,3,3,3,3,4,2,3,3,2,3,4,2,2,3,4,3,3,3,3,3,Employed - manager,Some college or vocational training,Finance or Banking,4 to 6 years,No,,1,Manager,13.95
+4,4,5,4,4,4,4,5,4,4,5,4,2,1,5,5,3,3,4,4,2,4,5,2,3,4,4,4,4,5,3,2,Full time student,High school or less,Education,4 to 6 years,No,,1,FT_Student,3.4166666666666665
+4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,5,4,4,3,4,3,4,4,3,4,4,1,1,4,1,Other,High school or less,Other,1 to 3 years,No,Nothing,1,Other,2.2
+3,3,3,3,2,3,2,3,2,3,3,3,2,2,2,4,3,3,3,4,4,4,4,3,3,3,3,3,2,2,2,1,Employed - individual contributor,Bachelor’s degree,Education,11 or more years,No,,1,IC,8.433333333333334
+4,4,4,3,3,4,5,4,2,5,4,4,5,5,2,5,3,3,5,5,4,4,5,4,2,3,3,2,1,4,1,1,Full time student,High school or less,Technology or IT,1 to 3 years,Yes,"I use AI to study in my classes and help me to prepare for exams. I am very intentional about not using it for fast things that I can 100% do by myself so I don't become over reliant on it, but I do use it almost daily for school related help",1,FT_Student,6.983333333333333
+1,1,3,1,1,1,3,1,1,1,1,3,1,1,1,5,1,3,4,4,1,5,5,1,1,3,1,1,2,1,1,1,Freelancer or self employed,Some college or vocational training,Other,11 or more years,No,,1,Freelancer,2.6666666666666665
+3,3,3,4,3,4,4,4,3,4,3,4,3,4,4,4,3,4,3,4,4,5,4,4,4,4,4,4,2,3,2,2,Employed - manager,Bachelor’s degree,Technology or IT,11 or more years,No,survey was ok,1,Manager,5.5
+5,4,4,3,4,2,2,3,2,2,4,1,5,5,4,5,4,4,2,5,1,5,4,4,2,2,2,2,5,5,1,1,Full time student,Some college or vocational training,Healthcare,Less than 1 year,No,A reason for not using AI is because it takes away having to put the work in to get answers which decreases work ethic.,1,FT_Student,6.966666666666667
+1,1,1,1,4,4,3,4,3,4,4,4,4,3,4,3,4,4,3,3,2,3,2,2,4,4,4,4,3,4,4,2,Employed - executive or leader,Master’s degree,Finance or Banking,11 or more years,No,It will have a big impact in the future,1,Executive,12.133333333333333
+4,4,4,4,2,4,4,4,3,3,3,4,3,2,4,4,3,3,3,3,3,4,4,3,3,3,4,3,2,4,3,2,Employed - individual contributor,Bachelor’s degree,Other,4 to 6 years,No,no comments,1,IC,4.066666666666666
+2,1,4,5,2,3,4,3,3,2,2,4,2,1,4,5,1,2,3,5,2,5,5,1,2,2,1,2,1,3,3,2,Freelancer or self employed,Bachelor’s degree,Other,11 or more years,No,NO,1,Freelancer,3.283333333333333
+4,3,4,4,3,3,3,4,3,3,4,4,4,2,4,2,4,4,4,4,2,2,2,2,3,4,4,3,1,3,3,1,Full time student,Some college or vocational training,Healthcare,1 to 3 years,No,,1,FT_Student,2.5
+4,3,5,4,2,4,4,3,4,4,5,4,1,1,4,3,3,4,4,5,5,5,5,4,4,3,4,3,1,3,2,3,Employed - manager,Some college or vocational training,Technology or IT,11 or more years,No,,1,Manager,2.466666666666667
+4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,3,4,4,4,4,4,4,2,2,4,4,4,4,3,4,3,4,Employed - executive or leader,Bachelor’s degree,Healthcare,4 to 6 years,No,"I use AI tools regularly because they help me save time, automate repetitive tasks, and generate ideas I might not have thought of on my own.",1,Executive,3.0
+2,1,3,4,1,4,2,2,1,1,4,1,1,1,4,5,1,1,4,4,4,5,5,2,1,1,1,1,1,1,3,4,Full time student,High school or less,Other,Less than 1 year,No,I think it’s a cop out and bad for one’s ability to think for themselves,1,FT_Student,2.816666666666667
+5,5,4,5,4,4,5,5,5,5,4,5,5,4,5,4,4,5,5,4,5,5,4,4,4,5,4,4,4,4,4,4,Full time student,Master’s degree,Finance or Banking,1 to 3 years,No,,1,FT_Student,2.6666666666666665
+4,4,4,4,3,2,4,4,3,4,4,4,4,4,2,4,4,4,4,4,4,4,5,5,5,4,5,5,4,5,1,1,Full time student,Some college or vocational training,Finance or Banking,Less than 1 year,No,Nope.,1,FT_Student,7.266666666666667
+4,4,4,4,5,3,3,4,4,4,4,4,4,5,4,4,5,4,4,4,4,4,4,5,5,4,3,3,3,4,4,3,Employed - manager,Master’s degree,Government or Public sector,4 to 6 years,No,AI I think he is will be share us our lifes,1,Manager,3.216666666666667
+5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,4,4,5,3,Employed - executive or leader,Doctoral or professional degree,Healthcare,4 to 6 years,No,,1,Executive,2.0833333333333335
+5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,1,1,1,1,5,5,5,5,4,5,4,4,Employed - manager,Bachelor’s degree,Retail or Hospitality,11 or more years,No,nothing to add.,1,Manager,2.45
+2,2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,1,1,4,3,2,1,4,2,2,2,2,2,1,1,1,1,Not currently employed,High school or less,Other,Less than 1 year,No,No,0,Unemployed,3.566666666666667
+4,1,5,4,4,4,4,4,2,1,4,2,2,1,4,5,3,2,5,4,2,5,5,1,2,1,4,1,1,3,1,1,Full time student,Some college or vocational training,Other,1 to 3 years,Prefer not to answer,It's ultimately worsening the world in many ways. I believe the world is worse off with it.,1,FT_Student,5.933333333333334
+4,3,4,4,1,1,4,4,3,3,3,4,3,2,3,4,2,3,2,4,5,5,5,5,3,2,3,3,1,5,2,2,Full time student,Some college or vocational training,Healthcare,Less than 1 year,Yes,I use them but they will be harmful in the future,1,FT_Student,3.6
+3,3,4,3,2,3,4,3,3,3,3,4,2,2,4,3,2,3,3,3,4,4,4,3,3,3,3,3,3,3,3,2,Employed - individual contributor,Some college or vocational training,Other,1 to 3 years,No,,1,IC,5.133333333333334
+4,3,3,2,4,3,4,4,4,4,3,3,3,4,2,4,4,4,4,2,2,3,3,2,2,4,2,3,3,4,1,1,Full time student,Some college or vocational training,Healthcare,Less than 1 year,No,,1,FT_Student,10.65
+5,4,5,5,5,5,4,5,5,5,5,5,5,5,5,5,5,5,5,5,5,4,5,5,5,5,4,5,5,5,4,5,Employed - manager,Bachelor’s degree,Education,4 to 6 years,Yes,The call is on my desk so that you will,1,Manager,1.8166666666666667
+4,4,4,4,3,3,2,3,4,3,3,3,4,4,4,3,3,4,4,4,2,4,4,3,3,3,4,2,3,2,1,1,Full time student,Some college or vocational training,Healthcare,4 to 6 years,No,,1,FT_Student,3.8
+5,5,5,4,4,4,5,5,5,4,5,4,5,5,5,4,4,4,4,4,2,2,3,3,4,4,4,4,5,5,4,4,Employed - manager,Master’s degree,Technology or IT,7 to 10 years,No,No thank you.,1,Manager,4.783333333333333
+1,5,5,5,5,4,5,4,4,5,5,3,5,5,4,5,4,4,4,4,2,4,2,4,2,4,4,4,4,3,4,4,Full time student,Bachelor’s degree,Finance or Banking,Less than 1 year,No,Currently no,1,FT_Student,8.566666666666666
+2,2,2,2,2,2,2,2,2,1,2,2,2,2,2,2,1,1,1,3,4,4,4,2,2,2,2,2,1,1,2,1,Employed - individual contributor,Some college or vocational training,Manufacturing,11 or more years,No,No,1,IC,4.483333333333333
+3,3,3,3,3,3,2,1,3,1,1,1,1,1,1,1,3,1,1,1,5,5,5,3,3,1,2,1,1,1,1,1,Full time student,High school or less,Other,4 to 6 years,No,No,0,FT_Student,4.266666666666667
+5,4,4,4,3,4,4,1,4,4,5,5,4,2,5,5,2,4,4,5,4,5,3,4,5,5,5,4,3,4,5,3,Employed - executive or leader,Master’s degree,Government or Public sector,11 or more years,No,Worried about confidentiality,1,Executive,3.85
+3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,1,1,1,2,Employed - individual contributor,High school or less,Other,1 to 3 years,No,No feedback,1,IC,3.933333333333333
+4,5,5,5,4,4,4,4,5,5,5,5,3,3,4,3,4,4,4,4,2,5,3,3,4,5,5,4,3,4,3,3,Employed - manager,Master’s degree,Finance or Banking,4 to 6 years,No,"AI tools helps alot of individuals both in school, research and also offices",1,Manager,5.5
+4,4,4,4,3,3,3,3,4,4,4,4,4,3,3,3,3,3,3,3,4,4,4,4,4,4,4,4,5,2,5,2,Employed - individual contributor,Some college or vocational training,Other,11 or more years,No,,1,IC,1.4833333333333334
+2,1,3,3,2,1,3,2,4,2,3,2,1,1,2,4,3,3,4,3,4,5,5,2,2,2,1,2,1,1,1,2,Part time student,Some college or vocational training,Other,Less than 1 year,No,"I prefer to rely on myself or my teachers rather than AI as it feels like cheating, and I retain information better if I actively try to learn it or work it out myself.",1,PT_Student,5.8
+5,5,4,4,5,4,5,4,5,5,4,3,3,3,4,5,5,5,4,4,4,4,4,4,5,4,4,4,4,5,5,4,Employed - executive or leader,Bachelor’s degree,Other,11 or more years,No,Yes I enjoy it,1,Executive,1.9666666666666666
+3,2,2,3,1,4,4,3,1,2,2,1,1,1,1,5,3,4,4,3,2,4,5,1,1,1,1,1,1,2,2,1,Part time student,Some college or vocational training,Retail or Hospitality,11 or more years,No,none,1,PT_Student,2.6166666666666667
+4,4,5,4,3,4,5,4,5,4,4,5,3,4,5,4,4,5,4,4,3,4,2,1,4,5,4,4,4,4,5,3,Employed - executive or leader,Bachelor’s degree,Other,11 or more years,No,They are the wave of the present and the future.,1,Executive,5.366666666666666
+5,5,3,3,3,3,3,4,4,4,4,4,4,4,3,3,2,3,3,4,3,4,3,3,3,3,3,3,4,4,4,4,Employed - individual contributor,High school or less,Other,11 or more years,No,,1,IC,51.45
+4,4,3,1,5,3,3,4,1,4,3,5,2,4,5,2,1,4,2,5,5,1,3,4,3,1,4,3,3,5,2,4,Part time student,High school or less,Retail or Hospitality,4 to 6 years,No,To help me find information,1,PT_Student,1.5666666666666667
+3,3,1,1,3,2,3,2,2,3,3,3,1,1,3,3,2,2,1,3,3,5,5,4,3,2,3,3,3,1,1,1,Full time student,Some college or vocational training,Government or Public sector,7 to 10 years,No,,1,FT_Student,2.716666666666667
+2,2,2,3,2,3,3,2,3,4,3,3,3,3,2,5,3,3,2,3,1,5,5,1,1,2,4,1,3,2,1,1,Full time student,Some college or vocational training,Healthcare,1 to 3 years,No,No i dont,1,FT_Student,4.05
+4,4,4,5,4,5,4,4,4,4,5,4,4,4,4,5,5,4,4,5,3,5,4,5,4,5,4,4,4,4,3,4,Full time student,Some college or vocational training,Nonprofit,4 to 6 years,Yes,Good,1,FT_Student,1.2666666666666666
+4,3,4,4,3,3,2,3,3,4,4,4,4,2,5,5,3,3,4,5,3,3,4,3,4,3,3,3,1,3,3,3,Full time student,High school or less,Healthcare,1 to 3 years,Yes,"I use AI to make things more accessible and accommodating to me. I try not to use AI very often due to ethical and academic concerns, though if used properly, it has the effect of supplementing my educational experience and making learning far more effective.",1,FT_Student,5.583333333333333
+1,1,1,1,1,2,1,1,3,2,2,3,1,1,1,5,1,1,1,1,3,5,5,4,2,2,2,2,1,1,1,1,Employed - individual contributor,High school or less,Healthcare,1 to 3 years,Yes,,0,IC,4.233333333333333
+5,5,4,4,4,4,4,4,5,4,4,4,5,4,4,4,5,5,4,4,4,4,2,3,4,4,5,4,3,5,1,1,Freelancer or self employed,Bachelor’s degree,Other,4 to 6 years,No,AI helps for the future generations,1,Freelancer,3.95
+5,4,3,4,3,4,4,4,4,4,4,5,4,4,5,5,4,4,4,3,4,4,4,4,3,4,5,4,3,2,3,4,Employed - individual contributor,Bachelor’s degree,Finance or Banking,11 or more years,No,I started intimidated by AI but I gain comfort and knowledge as I grow with AI.,1,IC,6.1
+4,4,3,3,1,2,2,4,2,2,3,3,1,1,2,4,2,2,3,4,2,4,4,2,2,2,2,2,3,3,3,1,Employed - executive or leader,Master’s degree,Manufacturing,11 or more years,No,Don't trust it. It is; often bias,1,Executive,5.25
+4,4,3,3,4,4,3,4,3,4,3,4,4,4,4,4,4,3,2,3,3,4,4,4,4,4,4,4,3,3,4,1,Employed - individual contributor,Master’s degree,Other,11 or more years,No,Ai is not always accurate.,1,IC,4.216666666666667
+4,1,5,3,1,3,4,3,1,1,1,1,3,4,3,3,1,1,2,3,5,5,5,2,1,1,1,1,1,3,3,1,Full time student,Some college or vocational training,Other,1 to 3 years,No,"Terrible. It's killing our communitites and enviroment, and making society lazy afff",1,FT_Student,44.733333333333334
+5,4,4,3,3,3,2,4,2,4,5,5,5,5,5,5,2,3,1,5,5,3,4,4,5,3,3,2,5,4,1,1,Full time student,Some college or vocational training,Finance or Banking,Less than 1 year,Yes,,1,FT_Student,3.4166666666666665
+4,2,4,3,4,4,4,4,2,2,3,3,2,2,2,4,2,2,2,4,4,5,4,3,2,2,2,2,1,2,1,2,Not currently employed,Bachelor’s degree,Education,1 to 3 years,No,I think the advancement of our society requires us to continue using our own imagination.,1,Unemployed,3.5166666666666666
+5,4,4,4,4,4,4,4,4,4,4,4,4,4,5,4,5,5,4,5,2,3,2,4,5,5,4,4,2,4,5,3,Employed - manager,Bachelor’s degree,Manufacturing,11 or more years,Yes,No,1,Manager,3.5833333333333335
+5,4,4,4,4,4,2,3,5,4,4,5,4,4,5,5,4,4,2,4,2,4,2,5,4,4,4,4,4,4,3,2,Employed - executive or leader,Bachelor’s degree,Technology or IT,11 or more years,No,,1,Executive,3.4833333333333334
+5,5,4,4,4,3,3,5,4,5,5,5,5,5,5,5,4,5,3,5,2,3,2,3,5,5,5,5,1,5,1,1,Full time student,High school or less,Education,1 to 3 years,No,They are extremely helpful,1,FT_Student,3.0166666666666666
+4,4,3,3,5,5,2,4,5,5,4,5,4,4,5,4,4,4,4,5,4,2,2,4,4,5,5,4,5,4,1,1,Employed - manager,Doctoral or professional degree,Retail or Hospitality,11 or more years,No,no,1,Manager,3.0166666666666666
+4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,5,5,4,4,4,4,4,5,4,4,4,1,Employed - manager,Master’s degree,Other,11 or more years,No,No,1,Manager,3.95
+1,1,2,2,1,2,2,2,3,2,2,3,2,2,5,5,3,5,2,3,2,5,5,1,2,2,5,3,3,1,3,1,Employed - manager,Bachelor’s degree,Healthcare,11 or more years,No,No,1,Manager,7.433333333333334
+4,4,4,3,4,2,2,2,4,4,5,5,3,4,5,5,3,3,4,4,2,4,3,4,4,4,4,4,4,3,1,1,Employed - executive or leader,Bachelor’s degree,Healthcare,11 or more years,No,No,1,Executive,4.733333333333333
+2,2,3,3,1,1,3,3,2,1,1,1,1,1,1,1,2,1,4,5,3,5,5,1,1,1,1,1,3,1,2,1,Part time student,Bachelor’s degree,Healthcare,Less than 1 year,No,"AI is very negative, can’t learn anything from it",1,PT_Student,2.716666666666667
+5,5,4,4,2,2,4,4,3,5,3,3,4,4,5,5,4,4,3,3,5,5,5,1,3,2,1,1,1,3,1,3,Full time student,High school or less,Education,Less than 1 year,No,"You really don’t learn anything from using AI, it’s more better that us humans use our knowledge towards whatever we’re doing rather than taking the easy route",1,FT_Student,6.533333333333333
+4,4,4,4,3,3,2,3,4,3,4,3,3,2,3,4,3,3,4,3,4,5,4,4,3,3,3,3,4,1,4,2,Employed - individual contributor,Bachelor’s degree,Education,1 to 3 years,No,None at the moment,1,IC,13.116666666666667
+4,3,3,4,2,2,2,2,4,4,4,3,4,3,4,4,3,3,4,4,5,5,4,4,3,3,4,2,1,5,3,1,Freelancer or self employed,Bachelor’s degree,Other,7 to 10 years,Yes,,1,Freelancer,4.15
+4,4,4,4,4,3,4,4,4,3,4,4,4,4,4,4,4,4,4,3,2,2,2,2,4,4,4,4,3,3,3,2,Employed - manager,Master’s degree,Healthcare,11 or more years,No,No comment,1,Manager,3.533333333333333
+4,4,5,5,4,4,2,4,2,4,4,4,4,2,5,2,3,2,2,5,2,5,4,2,4,4,4,2,3,3,1,1,Full time student,Some college or vocational training,Technology or IT,Less than 1 year,No,No.,1,FT_Student,3.316666666666667
+5,4,4,4,5,4,4,5,5,3,4,5,4,3,4,2,4,5,4,5,4,3,3,2,4,5,4,3,5,5,4,3,Employed - executive or leader,Bachelor’s degree,Technology or IT,1 to 3 years,No,No comment,1,Executive,6.083333333333333
+5,5,4,4,4,4,4,4,4,5,4,4,4,4,4,4,5,5,4,4,5,5,4,4,5,5,5,5,5,5,4,4,Other,Bachelor’s degree,Finance or Banking,7 to 10 years,No,Good survey,1,Other,3.9833333333333334
+3,3,4,3,2,3,2,4,2,3,3,3,2,4,4,5,3,3,2,4,2,4,3,1,2,3,1,1,2,1,1,1,Full time student,Some college or vocational training,Healthcare,Less than 1 year,Prefer not to answer,,1,FT_Student,12.083333333333334
+4,5,4,4,4,4,4,4,4,4,3,4,4,3,4,4,4,4,3,4,4,4,4,3,4,4,4,5,3,5,5,4,Employed - individual contributor,Bachelor’s degree,Education,4 to 6 years,No,,1,IC,3.25
+5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,2,5,5,5,5,5,1,1,5,5,5,5,5,5,5,5,3,Employed - manager,Master’s degree,Technology or IT,11 or more years,No,"No, I love AI, it is the best thing that happened in our life.",1,Manager,6.0
+4,5,5,4,4,4,4,5,5,5,5,4,5,4,4,3,5,5,5,4,4,5,5,4,4,4,5,4,5,4,5,5,Employed - executive or leader,Master’s degree,Finance or Banking,7 to 10 years,No,The first time you have to go through the,1,Executive,4.6
+3,3,3,3,2,2,2,2,1,1,2,2,1,1,2,4,1,1,4,1,2,4,4,3,3,2,2,2,1,1,1,1,Employed - individual contributor,Doctoral or professional degree,Education,11 or more years,No,none,0,IC,2.85
+5,5,4,5,5,4,5,5,4,4,5,5,5,4,5,5,4,4,4,5,2,4,2,4,5,4,5,5,4,5,5,4,Employed - executive or leader,Master’s degree,Other,11 or more years,No,,1,Executive,7.166666666666667
+4,4,4,4,3,4,3,3,3,4,3,3,4,2,4,4,2,2,3,4,2,2,3,3,4,2,4,2,4,4,3,5,Employed - executive or leader,Doctoral or professional degree,Government or Public sector,7 to 10 years,No,I use AI while I am driving.,1,Executive,4.883333333333334
+2,1,1,1,2,2,1,1,1,1,1,1,1,1,1,3,2,3,2,3,4,2,5,2,1,1,1,1,2,1,1,1,Other,High school or less,Other,11 or more years,Yes,AI will destory America !!!!!,1,Other,5.716666666666667
+4,3,4,4,3,3,2,4,3,3,2,2,4,4,4,5,4,3,4,4,4,4,4,4,3,4,4,2,3,3,1,3,Employed - individual contributor,Bachelor’s degree,Healthcare,7 to 10 years,No,,1,IC,2.95
+5,4,5,4,5,5,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,5,5,4,Employed - executive or leader,Master’s degree,Other,4 to 6 years,No,It's great,1,Executive,2.8
+4,3,3,2,4,4,3,3,3,2,3,4,2,2,3,4,2,2,2,4,2,4,3,3,4,3,4,4,3,1,3,1,Employed - manager,Master’s degree,Government or Public sector,11 or more years,No,I would like to see a standard way that one can fact check AI results.,1,Manager,4.45
+5,4,4,3,4,2,3,3,4,4,4,4,2,3,4,4,4,4,4,4,4,4,4,4,3,4,4,4,1,3,1,1,Employed - executive or leader,Bachelor’s degree,Healthcare,7 to 10 years,No,,1,Executive,2.2333333333333334
+4,2,3,2,2,3,2,2,2,3,2,2,1,2,2,5,2,3,2,5,4,5,5,5,2,2,2,2,1,2,1,2,Full time student,Some college or vocational training,Technology or IT,Less than 1 year,Yes,,1,FT_Student,4.266666666666667
+3,2,3,2,2,2,2,1,2,2,4,2,1,1,1,1,1,1,1,1,4,4,4,4,1,1,4,2,1,1,1,1,Employed - individual contributor,High school or less,Retail or Hospitality,4 to 6 years,No,Not enough experience,0,IC,2.4
+5,5,5,5,5,5,5,5,4,5,5,5,5,5,5,5,4,3,4,5,4,4,5,4,4,4,4,5,5,4,4,5,Not currently employed,Master’s degree,Technology or IT,11 or more years,No,,1,Unemployed,2.2666666666666666
+4,4,4,4,4,4,3,4,4,4,4,4,2,2,4,4,4,4,2,4,2,4,2,2,4,4,4,3,1,3,2,1,Full time student,Some college or vocational training,Healthcare,4 to 6 years,No,I think AI is easy to use and understand their output.,1,FT_Student,4.883333333333334
+5,5,5,5,5,5,5,5,3,3,5,3,4,3,3,3,3,3,5,4,1,3,2,3,5,5,5,5,1,5,3,3,Part time student,Bachelor’s degree,Technology or IT,1 to 3 years,No,nope,1,PT_Student,2.1333333333333333
+1,1,2,1,1,1,3,3,1,1,1,1,1,1,1,1,1,1,1,1,5,5,5,5,1,1,1,1,1,1,1,1,Employed - individual contributor,High school or less,Manufacturing,4 to 6 years,No,No,0,IC,3.5833333333333335
+4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,Employed - manager,Some college or vocational training,Other,1 to 3 years,No,I think AI is going to revolutionize our existence in the near future.,1,Manager,3.9833333333333334
+2,1,4,4,1,1,4,4,1,1,1,1,1,1,1,5,1,1,2,4,3,5,5,1,1,1,1,1,1,1,1,1,Employed - individual contributor,Some college or vocational training,Manufacturing,11 or more years,No,I used it once. It was laughably wrong. I never used it again.,0,IC,3.45
+3,2,4,4,2,3,2,2,2,3,2,2,2,2,2,2,3,3,4,4,4,5,4,2,2,2,2,3,3,1,1,1,Employed - individual contributor,Bachelor’s degree,Other,11 or more years,No,,1,IC,5.966666666666667
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,5,5,5,1,1,1,1,1,1,1,1,1,Full time student,Some college or vocational training,Other,4 to 6 years,Yes,,0,FT_Student,2.566666666666667
+4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,2,4,4,4,4,4,4,4,4,4,3,3,Employed - executive or leader,Doctoral or professional degree,Technology or IT,4 to 6 years,No,It is very good and,1,Executive,3.6
+3,2,3,2,2,1,4,2,1,1,2,1,1,1,2,4,1,1,3,4,2,5,5,2,2,2,1,2,3,1,1,1,Employed - manager,Master’s degree,Manufacturing,11 or more years,No,,1,Manager,4.166666666666667
+5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,1,1,5,5,4,4,4,4,3,5,3,3,Full time student,Bachelor’s degree,Technology or IT,4 to 6 years,No,Ai has already helped me with my work and activities. I love AI,1,FT_Student,3.8666666666666667
+4,3,4,4,4,4,3,4,4,3,4,4,3,4,4,4,4,4,4,4,5,4,3,4,4,3,5,4,4,4,2,3,Employed - manager,Master’s degree,Other,11 or more years,Yes,No,1,Manager,4.55
+5,4,3,2,3,4,4,4,2,3,4,3,4,5,4,4,2,2,2,4,4,5,3,2,4,3,5,3,1,4,3,1,Full time student,High school or less,Finance or Banking,Less than 1 year,No,no,1,FT_Student,3.45

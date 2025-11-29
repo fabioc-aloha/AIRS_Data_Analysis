@@ -208,15 +208,21 @@ flowchart TB
 
 | Phase | Notebook | Description | Status |
 |-------|----------|-------------|--------|
-| **0. Preparation** | `airs_experiment/00a_Create_Split_Samples.ipynb`, `00b_Prepare_Experiment_Data.ipynb` | Combined sample split (N=513 → EFA/CFA) | ✅ Complete |
+| **0. Preparation** | `airs_experiment/00_Create_Split_Samples.ipynb` | Combined sample split (N=513 → EFA/CFA) | ✅ Complete |
 | **1. EFA** | `airs_experiment/01_EFA_Experiment.ipynb` | Theory-guided EFA → Model D selection | ✅ Complete |
 | **2. CFA** | `airs_experiment/02_CFA_Experiment.ipynb` | CFA validation + contribution summary | ✅ Complete |
 | **3. Invariance** | `airs_experiment/03_Measurement_Invariance.ipynb` | Cross-population invariance testing | ✅ Complete |
 | **4. Structural** | `airs_experiment/04_Structural_Model.ipynb` | Hypothesis testing (H1-H4) with multi-group SEM | ✅ Complete |
-| **5. Mediation** | `airs_experiment/05_Mediation_Analysis.ipynb` | Alternative analyses (H5 not testable) | ⏭️ Pending |
-| **6. Moderation** | `airs_experiment/06_Moderation_Analysis.ipynb` | H4a-f contextual moderation | ⏭️ Pending |
-| **7. Tool Usage** | `airs_experiment/07_Tool_Usage_Patterns.ipynb` | AI tool usage patterns | ⏭️ Pending |
-| **8. Qualitative** | `airs_experiment/08_Qualitative_Feedback.ipynb` | Thematic analysis | ⏭️ Pending |
+| **5. Mediation** | `airs_experiment/05_Mediation_Analysis.ipynb` | Alternative analyses (H5 not testable) | ✅ Complete |
+| **6. Moderation** | `airs_experiment/06_Moderation_Analysis.ipynb` | H4c-f + demographic moderators | ✅ Complete (Revisited Nov 28) |
+| **7. Tool Usage** | `airs_experiment/07_Tool_Usage_Patterns.ipynb` | AI tool usage patterns (RQ10) | ✅ Complete |
+| **8. Qualitative** | `airs_experiment/08_Qualitative_Feedback.ipynb` | Thematic analysis (RQ11-12) | ✅ Complete |
+| **9. Comprehensive Review** | `airs_experiment/09_Comprehensive_Review.ipynb` | Gap analysis: Education, Industry, Experience, Disability, Tool preferences, User typology | ✅ Complete |
+| **10. Final Synthesis** | `airs_experiment/10_Final_Synthesis.ipynb` | Chapter 4 integration, APA tables, narrative | ✅ Complete |
+
+**Phase 6 Revisit Key Finding**: Experience moderation yielded 2 significant effects:
+- **PE × Experience (p=.013)**: Performance Expectancy stronger for experienced professionals
+- **HM × Experience (p=.009)**: Hedonic Motivation stronger for experienced professionals
 
 ---
 
@@ -343,14 +349,14 @@ flowchart TB
 
 | Path | β | SE | p | Result |
 |------|---|----|---|--------|
-| PV → BI | 0.499 | 0.054 | <.001 | ✓ Supported *** |
-| HM → BI | 0.203 | 0.055 | <.001 | ✓ Supported *** |
-| SI → BI | 0.145 | 0.046 | .002 | ✓ Supported ** |
-| TR → BI | 0.112 | 0.057 | .048 | ✓ Supported * |
-| HB → BI | 0.075 | 0.050 | .129 | ✗ Not significant |
-| EE → BI | 0.062 | 0.054 | .253 | ✗ Not significant |
-| PE → BI | 0.029 | 0.063 | .641 | ✗ Not significant |
-| FC → BI | -0.095 | 0.050 | .057 | ✗ Not significant |
+| PV → BI | 0.499 | 0.132 | <.001 | ✓ Supported *** |
+| HM → BI | 0.203 | 0.106 | .049 | ✓ Supported * |
+| SI → BI | 0.145 | 0.066 | .024 | ✓ Supported * |
+| TR → BI | 0.112 | 0.055 | .048 | ✓ Supported * |
+| FC → BI | 0.057 | 0.080 | .375 | ✗ Not significant |
+| HB → BI | -0.010 | 0.044 | .837 | ✗ Not significant |
+| PE → BI | 0.010 | 0.115 | .924 | ✗ Not significant |
+| EE → BI | -0.009 | 0.063 | .858 | ✗ Not significant |
 
 **Key Finding**: Price Value (β=0.499) is the dominant predictor, followed by Hedonic Motivation (β=0.203), Social Influence (β=0.145), and AI Trust (β=0.112).
 
@@ -368,6 +374,92 @@ No significant moderation effects detected. Path coefficients do not differ sign
 - `tables/structural_paths_group_comparison.csv` - Multi-group comparison
 - `data/structural_model_results.json` - Summary statistics
 - `plots/structural_paths_comparison.png` - Visual comparison
+
+### Phase 5 Mediation Analysis Results (November 2025)
+
+**Model Comparison (Alternative Analyses)**
+
+| Model | AIC | CFI | RMSEA | Predictors |
+|-------|-----|-----|-------|------------|
+| UTAUT Core | 128.91 | 0.975 | 0.065 | PE, EE, SI, FC |
+| Parsimonious | 129.05 | 0.979 | 0.059 | PV, HM, SI, TR |
+| UTAUT2-Only | 135.04 | 0.979 | 0.061 | 7 UTAUT2 constructs |
+| Full AIRS | 137.05 | 0.979 | 0.061 | 8 constructs |
+
+**Key Finding**: Parsimonious model (4 significant predictors: PV, HM, SI, TR) achieves equivalent fit with fewer parameters. AI Trust contributes unique variance despite parsimony argument.
+
+**H5 Mediation**: Not testable (EX, ER, AX dropped due to item design issues)
+
+**Deliverables**:
+- `data/phase5_alternative_analyses.json` - Model comparison results
+- `tables/alternative_model_comparison.csv` - AIC/BIC comparison
+- `tables/mediation_exploration.csv` - Mediation test results
+
+### Phase 6 Moderation Analysis Results (November 2025)
+
+**Contextual Moderation Hypotheses (H4c-f)**
+
+Tested using multi-group SEM with z-tests for path coefficient differences:
+
+| Hypothesis | Path | Moderator | z | p | Supported | Reliable |
+|------------|------|-----------|---|---|-----------|----------|
+| **H4c** | HB → BI | Usage Frequency | -2.17 | .030 | **No*** | ✅ Yes |
+| **H4e** | SI → BI | Voluntariness | 0.51 | .614 | No | ⚠️ Caution |
+| **H4e** | FC → BI | Voluntariness | -0.33 | .739 | No | ⚠️ Caution |
+| **H4f** | EE → BI | Disability | -0.03 | .979 | No | ❌ Unreliable |
+| **H4f** | FC → BI | Disability | 0.07 | .942 | No | ❌ Unreliable |
+
+**Note**: *H4c significant in OPPOSITE direction (HB→BI weaker for high-frequency users)
+
+**Key Findings**:
+1. **H4c (Usage Frequency)**: RELIABLE but OPPOSITE effect
+   - Low usage (N=101): β=0.10, NS
+   - High usage (N=300): β=-0.20, p=.025
+   - High-frequency users may have moved beyond habit-driven adoption
+
+2. **H4e (Voluntariness)**: UNRELIABLE due to model instability
+   - Mandated group N=70 (below minimum)
+   - SE > 1.0 in voluntary group indicates non-convergence
+
+3. **H4f (Disability)**: UNRELIABLE due to severe non-convergence
+   - Disability group N=69 (below minimum)
+   - SE up to 28.96 indicates model failure
+
+**Methodological Note**: Multi-group SEM requires N≥100-200 per group for stable estimates (Kline, 2016). Only H4c had adequate sample sizes for reliable inference.
+
+#### Phase 6 Revisit: Demographic Moderation (November 28, 2025)
+
+Following Phase 9 gap analysis, tested demographic moderators using regression-based interaction approach (due to subgroup size constraints):
+
+| Moderator | Predictor | Main Effect | Interaction | p | Significant |
+|-----------|-----------|-------------|-------------|---|-------------|
+| **Industry** | PE → BI | 0.783 | -0.037 | .655 | No |
+| | EE → BI | 0.614 | 0.037 | .739 | No |
+| | TR → BI | 0.727 | 0.030 | .698 | No |
+| | HM → BI | 0.804 | -0.060 | .413 | No |
+| **Education** | PE → BI | 0.744 | 0.072 | .229 | No |
+| | EE → BI | 0.584 | 0.096 | .242 | No |
+| | TR → BI | 0.683 | 0.099 | .069 | Marginal† |
+| | HM → BI | 0.793 | 0.007 | .890 | No |
+| **Experience** | PE → BI | 0.706 | 0.148 | **.013** | **Yes*** |
+| | EE → BI | 0.573 | 0.173 | .053 | Marginal† |
+| | TR → BI | 0.699 | 0.078 | .173 | No |
+| | HM → BI | 0.725 | 0.136 | **.009** | **Yes*** |
+
+**Key Discovery - Experience Moderation**:
+- **PE × Experience (p=.013)**: Performance Expectancy has stronger effect on BI for experienced professionals (4+ years)
+- **HM × Experience (p=.009)**: Hedonic Motivation has stronger effect on BI for experienced professionals
+- **Interpretation**: "Usefulness" and "enjoyment" matter MORE to veterans who already understand AI capabilities
+
+**Sample Sizes**:
+- Industry: Tech/Finance (n=91) vs Other (n=422)
+- Education: Higher/Bachelor's+ (n=253) vs Lower (n=260)
+- Experience: Early Career/<4 years (n=192) vs Experienced/4+ years (n=321)
+
+**Deliverables**:
+- `data/moderation_analysis_results.json` - Full moderation results with reliability flags
+- `data/moderation_results_updated.json` - Updated with demographic moderation
+- `tables/moderation_summary.csv` - Summary table with z-tests
 
 ---
 
@@ -725,47 +817,220 @@ The EFA process follows best practices from Fabrigar et al. (1999), Costello & O
 
 ---
 
-### Phase 5: Alternative Analyses ⏭️ PENDING
+### Phase 5: Alternative Analyses ✅ COMPLETE (November 2025)
 **Notebook**: `airs_experiment/05_Mediation_Analysis.ipynb`
 
 **Note**: Original H5 mediation hypotheses are not testable (EX, ER, AX dropped). Notebook repurposed for:
 - Model comparison: UTAUT2-only vs UTAUT2+Trust (H3 replication)
-- Alternative moderated mediation analyses
-- Exploratory path configurations
+- Mediation exploration: EffortExp → AITrust → BI
+- Alternative model configurations
 
----
-
-### Phase 6: Moderation Analysis ⏭️ PENDING
-**Notebook**: `airs_experiment/06_Moderation_Analysis.ipynb`
-
-**Objective**: Test H4a-f contextual moderation hypotheses
-
-**Approach**:
-- Multi-group comparison across populations (H4a-b: Role) - extends Phase 4
-- Usage frequency moderation (H4c)
-- Voluntariness moderation (H4e) - uses VO items as moderator variable, not construct
-- Disability moderation (H4f: exploratory, smaller N)
-
----
-
-### Phase 7-8: Exploratory Analyses ⏭️ PENDING
-**Notebooks**: `airs_experiment/07_Tool_Usage_Patterns.ipynb`, `airs_experiment/08_Qualitative_Feedback.ipynb`
-
-**Objective**: Tool usage patterns (RQ10) and qualitative themes (RQ11-12)
-
-**Approach**:
-- Descriptive/inferential analyses per population
-- Mixed-methods triangulation
-
----
-
-### Phase 9: Integration
-**Objective**: Synthesize findings into Chapter 4 results
+**Results**:
+- **Model Comparison**: Δχ²(1) = 3.49, p = .062; ΔAIC = +2.01 (parsimony favors UTAUT2-only)
+- **Mediation Test**: EffortExp → AITrust → BI indirect effect CI [-0.02, 0.47] includes zero → No mediation
+- **Best Model (AIC)**: UTAUT Core (4 predictors) AIC = 128.9
 
 **Deliverables**:
-- Validated measurement model with population invariance evidence
-- Population-specific findings and implications
-- Publication-ready tables, APA-formatted results
+- `tables/alternative_model_comparison.csv`
+- `tables/utaut2_vs_trust_comparison.csv`
+- `tables/mediation_exploration.csv`
+- `data/phase5_alternative_analyses.json`
+- `plots/model_comparison_alternatives.png`
+
+---
+
+### Phase 6: Moderation Analysis ✅ COMPLETE
+**Notebook**: `airs_experiment/06_Moderation_Analysis.ipynb`
+
+**Objective**: Test H4c, H4e, H4f contextual moderation hypotheses
+
+**Note**: H4a-b (Population/Role moderation) were tested in Phase 4 and found NOT SUPPORTED.
+
+**Approach**:
+- Multi-group SEM with z-tests for path coefficient differences
+- Usage frequency moderation (H4c): Low vs High usage groups
+- Voluntariness moderation (H4e): Mandated vs Voluntary groups (using VO1/VO2 items)
+- Disability moderation (H4f): No Disability vs Disability groups
+
+**Key Results**:
+| Hypothesis | Path | Moderator | z | p | Supported | Reliable |
+|------------|------|-----------|---|---|-----------|----------|
+| H4c | HB → BI | Usage Frequency | -2.17 | .030 | **No*** | ✅ Yes |
+| H4e | SI → BI | Voluntariness | 0.51 | .614 | No | ⚠️ Caution |
+| H4e | FC → BI | Voluntariness | -0.33 | .739 | No | ⚠️ Caution |
+| H4f | EE → BI | Disability | -0.03 | .979 | No | ❌ Unreliable |
+| H4f | FC → BI | Disability | 0.07 | .942 | No | ❌ Unreliable |
+
+*H4c showed OPPOSITE effect: HB→BI is WEAKER (not stronger) for high-frequency users
+
+**APA Conclusions**:
+- **H4c (Usage Frequency)**: Contrary to hypothesis, HB→BI was significantly weaker for high-frequency users (β = -0.20, *p* = .025) compared to low-frequency users (β = 0.10, *p* = .336), *z* = -2.17, *p* = .030. This suggests frequent users may have moved beyond habit-driven use toward deliberate, utility-based adoption decisions.
+- **H4e (Voluntariness)**: No significant moderation detected for SI→BI (*z* = 0.51, *p* = .614) or FC→BI (*z* = -0.33, *p* = .739). Results unreliable due to model instability (SE > 1.0).
+- **H4f (Disability)**: No significant moderation detected. Results **unreliable and should not be used for inference** due to severe non-convergence (SE up to 28.96) from insufficient sample size (*n* = 69).
+
+**Methodological Notes**:
+- ⚠️ **H4e/H4f Model Convergence Issues**: Small subgroup sizes (Mandated N=70, Disability N=69) resulted in unstable SEM estimates with extremely large standard errors (up to SE=28.96 for disability group)
+- Multi-group SEM typically requires N≥100-200 per group for stable estimates (Kline, 2016)
+- **Only H4c results are reliable** for inference; H4e and H4f should be interpreted with extreme caution
+
+**Outputs**:
+- `data/moderation_analysis_results.json`
+- `tables/moderation_summary.csv`
+
+---
+
+### Phase 7: Tool Usage Patterns ✅ COMPLETE
+**Notebook**: `airs_experiment/07_Tool_Usage_Patterns.ipynb`
+
+**Objective**: Analyze AI tool usage patterns (RQ10a-d)
+
+**Results**:
+
+| RQ | Question | Key Finding |
+|----|----------|-------------|
+| RQ10a | Usage frequency distribution | ChatGPT dominates (64% active users, M=3.01) |
+| RQ10b | Population differences | Students prefer ChatGPT (d=0.40); Professionals use Copilot more |
+| RQ10c | Construct correlations | All ρ=0.45-0.70 (p<.01); Total usage predicts BI (ρ=0.70) |
+| RQ10d | Multi-tool vs single-tool | 54% multi-tool users; Large effects (η²=0.24-0.34) |
+
+**Criterion Validity Evidence**: Strong correlations between usage and AIRS constructs validate instrument's predictive power.
+
+**Outputs**:
+- `results/phase7_tool_usage_results.json`
+- `plots/07_usage_frequency_distribution.png`
+- `plots/07_population_comparison.png`
+- `plots/07_usage_construct_correlations.png`
+- `plots/07_user_type_analysis.png`
+
+---
+
+### Phase 8: Qualitative Analysis ✅ COMPLETE
+**Notebook**: `airs_experiment/08_Qualitative_Feedback.ipynb`
+
+**Objective**: Thematic analysis of open-ended feedback (RQ11-12)
+
+**Data**: Open_Feedback column - N=365 non-null responses
+
+**Approach**:
+- Thematic analysis of open-ended responses
+- Population comparison (Academic vs Professional)
+- Mixed-methods triangulation with quantitative findings
+
+---
+
+### Phase 9: Comprehensive Review ✅ COMPLETE
+**Objective**: Maximize data value by analyzing untapped demographic and contextual variables
+
+**Gap Analyses Completed**:
+1. Education-level differences (F=5.61, p=.004)
+2. Industry comparisons (F=6.12, p<.001)
+3. Experience effects (r=.12, p=.006, inverted-U pattern)
+4. Disability/accessibility (t=3.10, p=.002, d=0.40)
+5. Tool-specific predictors (ChatGPT vs MS Copilot)
+6. User typology via cluster analysis (4 segments)
+
+**Deliverables**:
+- 6 visualization figures
+- JSON results export
+- User segmentation framework
+
+---
+
+## Phase 9 Insights: Integration & Future Research
+
+### ✅ Completed Revisit Actions (November 28, 2025)
+
+| Insight | Target Notebook | Integration Action | Result |
+|---------|-----------------|-------------------|--------|
+| **Industry as moderator** | `06_Moderation_Analysis` | Add industry moderation tests (Tech/IT vs Other) | ✅ **No effect** (all p > .40) |
+| **Education effect** | `06_Moderation_Analysis` | Add education-level moderation | ✅ **No effect** (Trust marginal p=.069) |
+| **Experience as moderator** | `06_Moderation_Analysis` | Test experience group moderation | ✅ **SIGNIFICANT!** PE × Exp (p=.013), HM × Exp (p=.009) |
+
+### Novel Contribution: Experience Moderation
+
+The Phase 6 revisit yielded unexpected significant findings:
+
+| Interaction | β | p | Interpretation |
+|-------------|---|---|----------------|
+| **PE × Experience** | 0.148 | .013* | Performance expectancy → BI is stronger for experienced professionals |
+| **HM × Experience** | 0.136 | .009** | Hedonic motivation → BI is stronger for experienced professionals |
+| **EE × Experience** | 0.173 | .053† | Effort expectancy effect marginally stronger (approaching significance) |
+
+**Theoretical Implications**: Career stage shapes AI adoption motivations. As professionals gain experience:
+- Clearer mental models make performance benefits more salient
+- "Joy of use" becomes a differentiating factor after utility is established
+- This extends UTAUT2 literature with career development considerations
+
+### Insights for Practical Implications (Dissertation Chapter 5)
+
+| Finding | Practical Implication |
+|---------|----------------------|
+| **User Typology (4 segments)** | Tailored intervention strategies for AI adoption programs |
+| **ChatGPT vs Copilot differences** | Interface design affects adoption; consumer-style UX recommended |
+| **Industry variation** | Sector-specific AI readiness benchmarks needed |
+| **Experience moderation** | Target experienced professionals with performance/enjoyment messaging |
+| **Mid-career peak** | Target 4-10 year experience range for AI champions |
+
+### Insights for Future Research (Limitations & Directions)
+
+| Finding | Future Research Direction |
+|---------|--------------------------|
+| **Disability & AI Anxiety (d=0.40)** | Dedicated study on inclusive AI design and accessibility |
+| **Tool preference profiles** | Longitudinal study tracking tool switching behavior |
+| **User typology stability** | Cross-validation in independent samples |
+| **Education-readiness link** | Investigate mediators (digital literacy, exposure) |
+| **Experience moderation** | Replicate in other technology contexts beyond AI |
+| **Dropped constructs (VO, EX, ER, AX)** | Item redesign and revalidation studies |
+
+### Remediation Priorities
+
+**High Priority** (Should incorporate before dissertation submission):
+1. ✅ ~~Add industry moderation to Phase 6~~ - Complete (no effect found)
+2. ✅ ~~Add education moderation to Phase 6~~ - Complete (no effect found)
+3. ✅ ~~Add experience moderation to Phase 6~~ - Complete (**SIGNIFICANT findings!**)
+4. ✅ ~~Document user typology in Chapter 4 results~~ - Complete (Phase 10)
+5. ✅ ~~Document experience moderation novel contribution~~ - Complete (Phase 10)
+
+**Medium Priority** (Strengthen findings):
+6. ✅ ~~Cross-tabulate typology with qualitative themes~~ - Complete (1 significant association: Positive Experience)
+
+**Future Work** (Post-dissertation):
+7. ⬜ Disability-focused AI adoption study
+8. ⬜ Longitudinal tool preference tracking
+9. ⬜ Dropped construct item redesign
+
+---
+
+### Phase 10: Final Synthesis (✅ Complete - November 28, 2025)
+**Objective**: Integrate all findings into Chapter 4 results narrative
+
+**Summary**:
+- Loaded 9 phase result files for comprehensive synthesis
+- Generated hypothesis summary table (17 hypotheses evaluated)
+- Compiled 7 novel findings with unique contributions
+
+**Hypothesis Testing Summary**:
+| Status | Count | Hypotheses |
+|--------|-------|------------|
+| ✓ Supported | 4 | H1c (SI→BI, β=0.145, p=.024), H1e (HM→BI, β=0.203, p=.049), H1f (PV→BI, β=0.499, p<.001), H2 (TR→BI, β=0.112, p=.048) |
+| ✗ Not Supported | 10 | H1a (PE), H1b (EE), H1d (FC), H1g (HB), H3, H4a, H4b, H4c, H4d, H4e-f |
+| — Not Testable | 3 | H5a, H5b, H5c (dropped constructs) |
+
+**Key Novel Findings**:
+1. **Price Value as Strongest Predictor**: PV→BI (β=0.499, p<.001) strongest effect in full sample, followed by HM (β=0.203), SI (β=0.145), TR (β=0.112)
+2. **Experience Moderation**: PE×Exp (p=.013), HM×Exp (p=.009) - performance expectancy and hedonic motivation stronger for experienced professionals
+3. **User Typology Discovery**: 4 distinct AI user types via cluster analysis
+4. **Habit Effect Reversal**: HB→BI negative for high-frequency users (opposite to UTAUT2 prediction)
+5. **Population Mean Differences**: Professionals higher SI (+0.35), Academics higher EE (+0.27)
+6. **Qualitative Themes**: 6 themes identified with population differences (AI_quality, productivity significant)
+7. **Typology × Theme Association**: AI Enthusiasts express more Positive Experience themes (57% vs 40%, χ²=9.55, p=.023)
+
+**Deliverables**:
+- `data/final_synthesis.json` - Comprehensive synthesis with all findings
+- `plots/hypothesis_summary.png` - Hypothesis testing results visualization
+- `plots/structural_paths.png` - Structural path coefficients visualization
+- `plots/10_typology_theme_crosstab.png` - User typology × theme heatmap
+- `tables/10_typology_theme_crosstab.csv` - Cross-tabulation results
 
 ---
 

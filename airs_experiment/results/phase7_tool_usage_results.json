@@ -1,0 +1,116 @@
+{
+  "phase": 7,
+  "title": "AI Tool Usage Patterns",
+  "sample_size": 513,
+  "rq10a_usage_frequency": {
+    "description": "AI tool usage frequency distribution",
+    "tools": {
+      "ChatGPT": {
+        "mean": 3.01,
+        "active_pct": 63.7,
+        "heavy_pct": 43.5
+      },
+      "MSCopilot": {
+        "mean": 2.52,
+        "active_pct": 49.1,
+        "heavy_pct": 28.7
+      },
+      "Gemini": {
+        "mean": 2.49,
+        "active_pct": 48.0,
+        "heavy_pct": 26.5
+      },
+      "Other": {
+        "mean": 1.97,
+        "active_pct": 31.4,
+        "heavy_pct": 15.4
+      }
+    },
+    "finding": "ChatGPT is most widely adopted (63.7% active users, M=3.01)"
+  },
+  "rq10b_population_comparison": {
+    "description": "Academic vs Professional usage differences",
+    "academic_n": 198,
+    "professional_n": 315,
+    "significant_differences": {
+      "ChatGPT": {
+        "acad_mean": 3.36,
+        "prof_mean": 2.79,
+        "cohens_d": 0.4,
+        "p": "<.001",
+        "direction": "Academic > Professional"
+      },
+      "MSCopilot": {
+        "acad_mean": 2.31,
+        "prof_mean": 2.65,
+        "cohens_d": -0.24,
+        "p": ".008",
+        "direction": "Professional > Academic"
+      },
+      "Gemini": {
+        "acad_mean": 2.29,
+        "prof_mean": 2.62,
+        "cohens_d": -0.24,
+        "p": ".008",
+        "direction": "Professional > Academic"
+      }
+    },
+    "finding": "Students prefer ChatGPT; professionals use enterprise tools (Copilot) more"
+  },
+  "rq10c_construct_correlations": {
+    "description": "Correlations between usage and AIRS constructs",
+    "total_usage_correlations": {
+      "PerfExp": 0.67,
+      "EffortExp": 0.58,
+      "SocialInf": 0.61,
+      "FacCond": 0.59,
+      "HedMot": 0.67,
+      "PriceVal": 0.65,
+      "Habit": 0.67,
+      "Trust": 0.62,
+      "BehInt": 0.7
+    },
+    "all_significant": true,
+    "finding": "All correlations significant (p<.01); Total usage strongly predicts BI (\u03c1=0.70)"
+  },
+  "rq10d_user_types": {
+    "description": "Multi-tool vs single-tool user analysis",
+    "distribution": {
+      "Non-User": {
+        "n": 54,
+        "pct": 10.5
+      },
+      "Single-Tool": {
+        "n": 79,
+        "pct": 15.4
+      },
+      "Dual-Tool": {
+        "n": 101,
+        "pct": 19.7
+      },
+      "Multi-Tool": {
+        "n": 279,
+        "pct": 54.4
+      }
+    },
+    "effect_sizes": {
+      "BehInt": 0.337,
+      "HedMot": 0.312,
+      "PerfExp": 0.309,
+      "PriceVal": 0.307,
+      "Habit": 0.27,
+      "Trust": 0.266,
+      "FacCond": 0.256,
+      "SocialInf": 0.241,
+      "EffortExp": 0.239
+    },
+    "finding": "Large effects (\u03b7\u00b2>.24) for all constructs; multi-tool users score higher on all AIRS dimensions"
+  },
+  "criterion_validity_evidence": "Strong - current usage validates AIRS construct measures",
+  "plots_generated": [
+    "plots/07_usage_frequency_distribution.png",
+    "plots/07_population_comparison.png",
+    "plots/07_usage_construct_correlations.png",
+    "plots/07_user_type_analysis.png"
+  ]
+}
