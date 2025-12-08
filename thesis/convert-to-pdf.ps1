@@ -60,6 +60,7 @@ $StandaloneFiles = @(
     "PRACTITIONER_BRIEF.md"
     "THESIS_SUMMARY.md"
     "PRESENTATION_SLIDES.md"
+    "PRESENTATION_SLIDES_20.md"
 )
 
 function Convert-MarkdownToPdf {

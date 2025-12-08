@@ -27,7 +27,7 @@
 | Interaction | β | p | Result |
 |-------------|---|---|--------|
 | PE × Experience | 0.112 | .055 | ⚠️ Marginal |
-| HM × Experience | **0.136** | **.007** | ✅ Significant |
+| HM × Experience | **0.136** | **.009** | ✅ Significant |
 | EE × Experience | 0.122 | .161 | ❌ Not significant |
 | TR × Experience | 0.081 | .145 | ❌ Not significant |
 

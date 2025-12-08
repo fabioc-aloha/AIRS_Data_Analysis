@@ -138,7 +138,7 @@ These gaps represented misalignments between the approved DBA proposal and curre
 1. **Theoretical Extension**: UTAUT2 + AI Trust construct (marginally significant, p=.064)
 2. **Methodological Innovation**: Rigorous scale development (EFA → CFA → SEM)
 3. **Cross-Population Validation**: Student vs. Professional comparison (configural invariance)
-4. **Novel Moderator Discovery**: Experience effects on HM path (p=.007)
+4. **Novel Moderator Discovery**: Experience effects on HM path (p=.009)
 5. **Empirical Gap Closure**: Individual-level AI adoption psychology quantified
 6. **User Typology**: 4-segment framework (Enthusiasts, Cautious, Moderate, Anxious)
 
@@ -315,7 +315,7 @@ These gaps represented misalignments between the approved DBA proposal and curre
 
 1. **Price Value dominance (β=.505)** - Unexpected departure from traditional UTAUT where PE dominates
 2. **PE non-significant (β=-.028)** - Traditional utility may be baseline expectation for AI
-3. **Experience moderation** - HM×Exp p=.007 (only HM significantly moderated)
+3. **Experience moderation** - HM×Exp p=.009 (only HM significantly moderated)
 4. **Population moderation** - HM stronger for Students (Δβ=-0.750, p=.041)
 5. **4 constructs excluded** - Voluntariness, Explainability, Ethical Risk, Anxiety (α=.30-.58)
 

@@ -14,12 +14,15 @@
 | **SEM Grouping** | | |
 | Student | 216 | 41.3% |
 | Professional + Leader | 307 | 58.7% |
-| **Gender** | | |
-| Male | 231 | 44.2% |
-| Female | 278 | 53.2% |
-| Other/Prefer not to say | 14 | 2.7% |
+| **Education Level** | | |
+| Some college or vocational training | 184 | 35.2% |
+| Bachelor's degree | 142 | 27.2% |
+| High school or less | 99 | 18.9% |
+| Master's degree | 83 | 15.9% |
+| Doctoral or professional degree | 15 | 2.9% |
 | **Disability Status** | | |
-| Yes | 78 | 14.9% |
-| No | 445 | 85.1% |
+| Yes | 68 | 13.0% |
+| No | 444 | 84.9% |
+| Prefer not to answer | 11 | 2.1% |
 
 *Note: Sample randomly split using seed=67 for reproducibility.*

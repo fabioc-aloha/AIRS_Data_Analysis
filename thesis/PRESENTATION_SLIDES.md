@@ -1,4 +1,4 @@
-# AI Readiness Scale (AIRS): Dissertation Defense Presentation
+# Artificial Intelligence Readiness Scale (AIRS): Dissertation Defense
 
 **Artificial Intelligence Readiness Scale: Extending UTAUT2 for Enterprise AI Adoption**
 
@@ -19,9 +19,9 @@ Doctoral Candidate, Doctor of Business Administration
 Touro University Worldwide
 
 Dissertation Committee:
-- [Committee Chair Name]
-- [Committee Member 1]
-- [Committee Member 2]
+- Dr. Karina Kasztelnik (Chair)
+- Dr. Jerome Jones
+- Dr. Donna Day
 
 December 2025
 
@@ -70,17 +70,17 @@ The Unified Theory of Acceptance and Use of Technology (UTAUT/UTAUT2) synthesize
 
 **UTAUT2 Core Constructs:**
 
-| Construct | Definition | Meta-Analytic Effect (ρ) |
+| Construct | Definition | Meta-Analytic Effect (rc) |
 |-----------|------------|--------------------------|
-| Performance Expectancy (PE) | Belief technology improves performance | .60 (strongest) |
-| Effort Expectancy (EE) | Perceived ease of use | .45 |
-| Social Influence (SI) | Important others' opinions | .42 |
-| Facilitating Conditions (FC) | Organizational/technical support | .38 |
-| Hedonic Motivation (HM) | Enjoyment from use | .52 |
-| Price Value (PV) | Cost-benefit assessment | .47 |
-| Habit (HB) | Automaticity from repeated use | .50 |
+| Performance Expectancy (PE) | Belief technology improves performance | .64 (strongest) |
+| Effort Expectancy (EE) | Perceived ease of use | .51 |
+| Social Influence (SI) | Important others' opinions | .43 |
+| Facilitating Conditions (FC) | Organizational/technical support | .39 |
+| Hedonic Motivation (HM) | Enjoyment from use | .53 |
+| Price Value (PV) | Cost-benefit assessment | .52 |
+| Habit (HB) | Automaticity from repeated use | .66 |
 
-*Source: Blut et al. (2022) meta-analysis: 737,112 users, 1,935 samples*
+*Source: Blut et al. (2022) meta-analysis, Table 1: 737,112 users, 1,935 samples. rc = corrected correlation.*
 
 ---
 
@@ -146,7 +146,7 @@ The sample of 523 U.S. adults includes students, individual contributors, manage
 
 | Characteristic | Distribution |
 |---------------|--------------|
-| Gender | Male 44%, Female 53%, Other/Prefer not 3% |
+| Education | Some college 35%, Bachelor's 27%, HS/less 19%, Master's 16%, Doctoral 3% |
 | With Disability | 13% (n=68) |
 | AI Tool Users | 89% use at least one AI tool |
 
@@ -229,17 +229,17 @@ This is the most striking finding of the dissertation. In traditional UTAUT rese
 
 **Performance Expectancy and Effort Expectancy—typically the strongest predictors—are non-significant for AI.**
 
-This finding challenges fundamental assumptions about technology adoption. In Blut et al.'s (2022) meta-analysis of 737,112 users, PE had the strongest effect (ρ = .60). In our AI context, PE was essentially zero (β = -.028, p = .791).
+This finding challenges fundamental assumptions about technology adoption. In Blut et al.'s (2022) meta-analysis of 737,112 users, PE had the strongest effect (rc = .64). In our AI context, PE was essentially zero (β = -.028, p = .791).
 
 **Comparison Chart Data: Traditional UTAUT vs. AI Adoption**
 
-| Construct | Meta-Analytic ρ (Traditional) | AIRS β (AI) | Change |
+| Construct | Meta-Analytic rc (Traditional) | AIRS β (AI) | Change |
 |-----------|------------------------------|-------------|--------|
-| Performance Expectancy | .60 | -.028 | ⬇️ Collapsed |
-| Effort Expectancy | .45 | -.008 | ⬇️ Collapsed |
-| Price Value | .47 | **.505** | ⬆️ Dominant |
-| Hedonic Motivation | .52 | .217 | Similar |
-| Social Influence | .42 | .136 | ⬇️ Reduced |
+| Performance Expectancy | .64 | -.028 | ⬇️ Collapsed |
+| Effort Expectancy | .51 | -.008 | ⬇️ Collapsed |
+| Price Value | .52 | **.505** | ⬆️ Dominant |
+| Hedonic Motivation | .53 | .217 | Similar |
+| Social Influence | .43 | .136 | ⬇️ Reduced |
 
 **Interpretation**: For AI, utility is assumed or uncertain; users evaluate through a value lens ("Is it worth it?") rather than a utility lens ("Will it help me?").
 
@@ -280,7 +280,7 @@ The moderation analysis revealed a significant interaction between professional 
 
 | Interaction | β | p | Result |
 |-------------|------|------|--------|
-| HM × Experience | **.136** | **.007** | ✅ Significant |
+| HM × Experience | **.136** | **.009** | ✅ Significant |
 | PE × Experience | .112 | .055 | ⚠️ Marginal |
 | EE × Experience | .122 | .161 | ❌ Not significant |
 | TR × Experience | .081 | .145 | ❌ Not significant |
@@ -378,7 +378,7 @@ This dissertation advances scholarly understanding of technology acceptance in t
 - Challenges 25+ years of UTAUT findings where PE consistently dominates
 
 **Contribution 3: Career Development Integration**
-- Experience moderates HM effect (p = .007)
+- Experience moderates HM effect (p = .009)
 - Connects technology acceptance to vocational psychology
 
 **Contribution 4: User Typology Framework**
