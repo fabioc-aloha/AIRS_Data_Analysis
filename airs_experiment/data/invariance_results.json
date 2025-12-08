@@ -1,25 +1,25 @@
 {
-  "analysis_date": "2025-11-28T21:22:25.922823",
-  "n_academic": 198,
-  "n_professional": 315,
+  "analysis_date": "2025-12-07T20:49:21.505692",
+  "n_academic": 216,
+  "n_professional": 307,
   "academic_fit": {
-    "chi2": 160.7157040138691,
+    "chi2": 167.16084772140965,
     "df": 76.0,
-    "cfi": 0.9570086221259321,
-    "tli": 0.9321188770409454,
-    "rmsea": 0.07522151098983398
+    "cfi": 0.9584080809803686,
+    "tli": 0.9343285489163712,
+    "rmsea": 0.074692698763375
   },
   "professional_fit": {
-    "chi2": 149.3530306647438,
+    "chi2": 135.8766666457805,
     "df": 76.0,
-    "cfi": 0.9856495733291898,
-    "tli": 0.9773414315724049,
-    "rmsea": 0.055441811354124015
+    "cfi": 0.9881010700059786,
+    "tli": 0.9812122157989136,
+    "rmsea": 0.05074126593178391
   },
   "configural_invariance": true,
   "metric_invariance": false,
-  "mean_loading_diff": 0.0854866534582597,
-  "max_loading_diff": 0.3452696512904841,
+  "mean_loading_diff": 0.08192581435719527,
+  "max_loading_diff": 0.32562199805642067,
   "n_sig_mean_diffs": 3,
   "n_medium_large_effects": 0
 }

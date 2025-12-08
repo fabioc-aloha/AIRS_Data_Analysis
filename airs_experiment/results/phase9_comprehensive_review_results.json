@@ -1,0 +1,84 @@
+{
+  "metadata": {
+    "phase": 9,
+    "title": "Comprehensive Review - Maximizing Data Value",
+    "n_total": 523,
+    "gaps_analyzed": 6
+  },
+  "gap1_education": {
+    "finding": "Significant education effect on AI adoption readiness",
+    "statistic": "F = 9.15, p < .0001, \u03b7\u00b2 = .066",
+    "interpretation": "Higher education associated with greater AI readiness"
+  },
+  "gap2_industry": {
+    "finding": "Significant industry differences",
+    "statistic": "F = 5.91, p < .0001",
+    "top_industries": [
+      "Technology or IT (M=3.88)",
+      "Finance or Banking (M=3.80)"
+    ],
+    "lowest_industries": [
+      "Retail or Hospitality (M=2.90)",
+      "Other (M=2.98)"
+    ]
+  },
+  "gap3_experience": {
+    "finding": "Small but significant experience effect with inverted-U pattern",
+    "statistic": "r = .10, p = .022",
+    "peak": "7-10 years experience (M=3.58)",
+    "interpretation": "Mid-career professionals most ready to adopt AI"
+  },
+  "gap4_disability": {
+    "finding": "Respondents with disabilities report higher AI anxiety",
+    "statistic": "t = 2.77, p = .006, d = 0.36 (small-medium effect)",
+    "yes_anxiety": 3.68,
+    "no_anxiety": 3.35,
+    "implication": "Accessibility and inclusive design needed for AI deployment"
+  },
+  "gap5_tool_preferences": {
+    "finding": "ChatGPT users show higher scores vs MS Copilot users",
+    "significant_constructs": [
+      "Effort Expectancy",
+      "Performance Expectancy",
+      "Habit",
+      "Trust",
+      "AI Adoption",
+      "Facilitating Conditions",
+      "AI Experience"
+    ],
+    "interpretation": "Consumer-friendly ChatGPT interface may drive stronger perceptions"
+  },
+  "gap6_user_typology": {
+    "finding": "Four distinct user typologies identified",
+    "clusters": {
+      "AI Enthusiasts": {
+        "n": 84,
+        "pct": 16,
+        "profile": "High adoption, low anxiety"
+      },
+      "Cautious Adopters": {
+        "n": 157,
+        "pct": 30,
+        "profile": "High adoption, high anxiety"
+      },
+      "Moderate Users": {
+        "n": 191,
+        "pct": 37,
+        "profile": "Average across all constructs"
+      },
+      "Anxious Avoiders": {
+        "n": 91,
+        "pct": 17,
+        "profile": "Low adoption, high anxiety"
+      }
+    }
+  },
+  "files_generated": [
+    "plots/09_education_comparison.png",
+    "plots/09_industry_comparison.png",
+    "plots/09_experience_effect.png",
+    "plots/09_disability_comparison.png",
+    "plots/09_tool_profiles.png",
+    "plots/09_user_typology.png"
+  ]
+}

@@ -1,5 +1,5 @@
 {
-  "created": "2025-11-28",
+  "created": "2025-12-07",
   "selected_roles": [
     "ALL"
   ],
@@ -15,9 +15,9 @@
   ],
   "population": "ALL",
   "population_description": "All respondents (students + professionals) per approved dissertation proposal",
-  "n_total": 513,
-  "n_efa": 256,
-  "n_cfa": 257,
+  "n_total": 523,
+  "n_efa": 261,
+  "n_cfa": 262,
   "holdout_ratio": 0.5,
   "random_seed": 67
 }

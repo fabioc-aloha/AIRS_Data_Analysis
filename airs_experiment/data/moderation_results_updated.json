@@ -2,30 +2,30 @@
   "industry_moderation": [
     {
       "Predictor": "Perf. Expect.",
-      "Main_Effect": 0.7827413869510249,
-      "Interaction": -0.037251949869277316,
-      "p_interaction": 0.654984055163307,
+      "Main_Effect": 0.7724043528524526,
+      "Interaction": -0.04054118383160063,
+      "p_interaction": 0.6221767595027323,
       "significant": "False"
     },
     {
       "Predictor": "Effort Expect.",
-      "Main_Effect": 0.6138078509713195,
-      "Interaction": 0.036993296523782554,
-      "p_interaction": 0.7392641492417114,
+      "Main_Effect": 0.6120374401393129,
+      "Interaction": 0.04873592627921542,
+      "p_interaction": 0.65449472498205,
       "significant": "False"
     },
     {
       "Predictor": "AI Trust",
-      "Main_Effect": 0.7267110762800422,
-      "Interaction": 0.030034702168283942,
-      "p_interaction": 0.6977780731098797,
+      "Main_Effect": 0.7195971027428097,
+      "Interaction": 0.021762670628293592,
+      "p_interaction": 0.7753272787560099,
       "significant": "False"
     },
     {
       "Predictor": "Hedonic Mot.",
-      "Main_Effect": 0.8035297307714726,
-      "Interaction": -0.05986744014222804,
-      "p_interaction": 0.4126138385157626,
+      "Main_Effect": 0.7951743033053185,
+      "Interaction": -0.08728401814340402,
+      "p_interaction": 0.21875186834674096,
       "significant": "False"
     }
   ],
@@ -62,30 +62,30 @@
   "experience_moderation": [
     {
       "Predictor": "Perf. Expect.",
-      "Main_Effect": 0.7064577526620036,
-      "Interaction": 0.14784689723045452,
-      "p_value": 0.012931152049078186,
-      "Significant": "True"
+      "Main_Effect": 0.7219255663430426,
+      "Interaction": 0.11189972207768518,
+      "p_value": 0.05532602430042219,
+      "Significant": "False"
     },
     {
       "Predictor": "Effort Expect.",
-      "Main_Effect": 0.5729321587918978,
-      "Interaction": 0.17264595425823012,
-      "p_value": 0.052835140112521634,
+      "Main_Effect": 0.6144681411269097,
+      "Interaction": 0.12171334206056192,
+      "p_value": 0.16113562889016989,
       "Significant": "False"
     },
     {
       "Predictor": "AI Trust",
-      "Main_Effect": 0.6992110289843041,
-      "Interaction": 0.07792744822065743,
-      "p_value": 0.17266874395543136,
+      "Main_Effect": 0.6931249228405644,
+      "Interaction": 0.08099788417697926,
+      "p_value": 0.14484976923637607,
       "Significant": "False"
     },
     {
       "Predictor": "Hedonic Mot.",
-      "Main_Effect": 0.7246455864590932,
-      "Interaction": 0.13564331563626167,
-      "p_value": 0.00851169865082727,
+      "Main_Effect": 0.7166648964908968,
+      "Interaction": 0.13620790907256836,
+      "p_value": 0.0067486850616861205,
       "Significant": "True"
     }
   ],

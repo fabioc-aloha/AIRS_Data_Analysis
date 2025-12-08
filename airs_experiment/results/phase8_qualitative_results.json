@@ -1,0 +1,292 @@
+{
+  "phase": "Phase 8: Qualitative Feedback Analysis",
+  "research_questions": [
+    "RQ11",
+    "RQ12"
+  ],
+  "sample": {
+    "total_feedback_responses": 368,
+    "substantive_responses": 243,
+    "response_rate_percent": 46.5,
+    "academic_n": 94,
+    "professional_n": 83,
+    "leader_n": 66
+  },
+  "group_classification": {
+    "Academic": "FT_Student, PT_Student",
+    "Professional": "IC, Freelancer, Unemployed, Other",
+    "Leader": "Manager, Executive"
+  },
+  "rq11_themes": {
+    "n_themes": 10,
+    "theme_keywords": {
+      "Positive Experience": [
+        "enjoy",
+        "love",
+        "great",
+        "helpful",
+        "useful",
+        "good",
+        "like",
+        "amazing",
+        "excellent",
+        "wonderful",
+        "beneficial"
+      ],
+      "Concerns/Caution": [
+        "concern",
+        "worry",
+        "careful",
+        "caution",
+        "risk",
+        "afraid",
+        "fear",
+        "dangerous"
+      ],
+      "Accuracy/Reliability": [
+        "accurate",
+        "accuracy",
+        "reliable",
+        "reliability",
+        "trust",
+        "correct",
+        "wrong",
+        "error",
+        "mistake",
+        "inaccurate"
+      ],
+      "Learning/Education": [
+        "learn",
+        "study",
+        "school",
+        "education",
+        "research",
+        "student",
+        "homework",
+        "class"
+      ],
+      "Work/Productivity": [
+        "work",
+        "job",
+        "task",
+        "productivity",
+        "efficient",
+        "time",
+        "fast",
+        "quick"
+      ],
+      "Ethics/Privacy": [
+        "ethic",
+        "privacy",
+        "data",
+        "security",
+        "moral",
+        "honest",
+        "integrity"
+      ],
+      "Future/Potential": [
+        "future",
+        "potential",
+        "evolving",
+        "improve",
+        "develop",
+        "growing",
+        "progress"
+      ],
+      "Cost/Access": [
+        "cost",
+        "free",
+        "pay",
+        "expensive",
+        "access",
+        "available",
+        "subscription"
+      ],
+      "Job Replacement": [
+        "replace",
+        "job",
+        "employment",
+        "automate",
+        "obsolete",
+        "take over"
+      ],
+      "Human Element": [
+        "human",
+        "people",
+        "personal",
+        "creative",
+        "think",
+        "critical"
+      ]
+    },
+    "theme_frequencies": {
+      "Positive Experience": {
+        "count": 60,
+        "percent": 24.7
+      },
+      "Concerns/Caution": {
+        "count": 14,
+        "percent": 5.8
+      },
+      "Accuracy/Reliability": {
+        "count": 26,
+        "percent": 10.7
+      },
+      "Learning/Education": {
+        "count": 33,
+        "percent": 13.6
+      },
+      "Work/Productivity": {
+        "count": 47,
+        "percent": 19.3
+      },
+      "Ethics/Privacy": {
+        "count": 13,
+        "percent": 5.3
+      },
+      "Future/Potential": {
+        "count": 14,
+        "percent": 5.8
+      },
+      "Cost/Access": {
+        "count": 6,
+        "percent": 2.5
+      },
+      "Job Replacement": {
+        "count": 4,
+        "percent": 1.6
+      },
+      "Human Element": {
+        "count": 33,
+        "percent": 13.6
+      }
+    },
+    "no_theme_count": 85,
+    "no_theme_percent": 35.0
+  },
+  "rq12_3group_comparison": {
+    "groups": [
+      "Academic",
+      "Professional",
+      "Leader"
+    ],
+    "method": "Chi-square with Cram\u00e9r's V effect size",
+    "results": [
+      {
+        "theme": "Positive Experience",
+        "academic_pct": 29.8,
+        "professional_pct": 14.5,
+        "leader_pct": 30.3,
+        "chi2": 7.11,
+        "p": 0.029,
+        "cramers_v": 0.17,
+        "significant": true
+      },
+      {
+        "theme": "Concerns/Caution",
+        "academic_pct": 5.3,
+        "professional_pct": 7.2,
+        "leader_pct": 4.5,
+        "chi2": 0.54,
+        "p": 0.762,
+        "cramers_v": 0.05,
+        "significant": false
+      },
+      {
+        "theme": "Accuracy/Reliability",
+        "academic_pct": 8.5,
+        "professional_pct": 12.0,
+        "leader_pct": 12.1,
+        "chi2": 0.77,
+        "p": 0.681,
+        "cramers_v": 0.06,
+        "significant": false
+      },
+      {
+        "theme": "Learning/Education",
+        "academic_pct": 21.3,
+        "professional_pct": 10.8,
+        "leader_pct": 6.1,
+        "chi2": 8.45,
+        "p": 0.015,
+        "cramers_v": 0.19,
+        "significant": true
+      },
+      {
+        "theme": "Work/Productivity",
+        "academic_pct": 28.7,
+        "professional_pct": 13.3,
+        "leader_pct": 13.6,
+        "chi2": 8.65,
+        "p": 0.013,
+        "cramers_v": 0.19,
+        "significant": true
+      },
+      {
+        "theme": "Ethics/Privacy",
+        "academic_pct": 9.6,
+        "professional_pct": 3.6,
+        "leader_pct": 1.5,
+        "chi2": 5.72,
+        "p": 0.057,
+        "cramers_v": 0.15,
+        "significant": false
+      },
+      {
+        "theme": "Future/Potential",
+        "academic_pct": 4.3,
+        "professional_pct": 4.8,
+        "leader_pct": 9.1,
+        "chi2": 1.88,
+        "p": 0.391,
+        "cramers_v": 0.09,
+        "significant": false
+      },
+      {
+        "theme": "Cost/Access",
+        "academic_pct": 4.3,
+        "professional_pct": 1.2,
+        "leader_pct": 1.5,
+        "chi2": 2.05,
+        "p": 0.36,
+        "cramers_v": 0.09,
+        "significant": false
+      },
+      {
+        "theme": "Job Replacement",
+        "academic_pct": 1.1,
+        "professional_pct": 2.4,
+        "leader_pct": 1.5,
+        "chi2": 0.5,
+        "p": 0.778,
+        "cramers_v": 0.05,
+        "significant": false
+      },
+      {
+        "theme": "Human Element",
+        "academic_pct": 19.1,
+        "professional_pct": 9.6,
+        "leader_pct": 10.6,
+        "chi2": 4.08,
+        "p": 0.13,
+        "cramers_v": 0.13,
+        "significant": false
+      }
+    ],
+    "significant_themes": [
+      "Positive Experience",
+      "Learning/Education",
+      "Work/Productivity"
+    ]
+  },
+  "key_findings": {
+    "positive_experience": "Academic (30%) \u2248 Leader (30%) > Professional (14.5%), p=.029",
+    "learning_education": "Academic (21%) > Professional (11%) > Leader (6%), p=.015",
+    "work_productivity": "Academic (29%) > Professional (13%) \u2248 Leader (14%), p=.013",
+    "integration_with_nb07": "Leaders high positive sentiment aligns with d=0.64-0.82 higher AIRS scores vs Professionals"
+  },
+  "files_generated": [
+    "plots/08_theme_distribution.png",
+    "plots/08_role_type_theme_comparison.png"
+  ]
+}

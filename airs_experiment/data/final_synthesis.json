@@ -2,18 +2,28 @@
   "study_overview": {
     "purpose": "Develop and validate AIRS instrument",
     "theoretical_base": "UTAUT2 + AI Trust extension",
-    "sample_size": 513,
-    "populations": [
-      "Academic (n=198)",
-      "Professional (n=315)"
-    ],
+    "sample_size": 523,
+    "role_types": {
+      "three_group": [
+        "Academic (n=216)",
+        "Professional (n=184)",
+        "Leader (n=123)"
+      ],
+      "two_group_sem": [
+        "Academic (n=216)",
+        "Professional+Leader (n=307)"
+      ],
+      "note": "3-group for descriptive; 2-group for multi-group SEM (sample size)"
+    },
     "validated_model": "Model D: 8 factors, 16 items"
   },
   "hypothesis_summary": {
     "supported": [
       "H1c",
       "H1e",
-      "H1f",
+      "H1f"
+    ],
+    "marginal": [
       "H2"
     ],
     "not_supported": [
@@ -33,31 +43,24 @@
       "H5b",
       "H5c"
     ],
-    "note": "H4c* significant in opposite direction; SI, HM, PV, TR paths supported"
+    "note": "H4c* significant in opposite direction; H1f (PV) strongest predictor"
   },
   "novel_contributions": [
-    "AI Trust as significant predictor (β = .112, p = .048)",
-    "Price Value as strongest predictor (β = .499, p < .001)",
-    "Experience moderates PE → BI (β = .148, p = .013)",
-    "Experience moderates HM → BI (β = .136, p = .009)",
-    "High-frequency users show negative Habit effect (z=-2.17, p=.030)",
-    "Disability associated with AI Anxiety (d = .40)",
-    "4-segment user typology identified",
-    "Typology × Theme association (χ²=9.55, p=.023)"
+    "Price Value strongest predictor (\u03b2 = .505***)",
+    "AI Trust marginally significant (\u03b2 = .106, p = .064)",
+    "Experience moderates PE \u2192 BI (\u03b2 = .148, p = .013)",
+    "Experience moderates HM \u2192 BI (\u03b2 = .136, p = .009)",
+    "Disability associated with AI Anxiety (d = .36)",
+    "4-segment user typology identified"
   ],
   "model_fit": {
     "cfa_holdout": {
-      "CFI": 0.956,
-      "TLI": 0.945,
-      "RMSEA": 0.053,
+      "CFI": 0.975,
+      "TLI": 0.96,
+      "RMSEA": 0.065,
       "SRMR": 0.046
     },
-    "cfa_full": {
-      "CFI": 0.962,
-      "TLI": 0.953,
-      "RMSEA": 0.064,
-      "SRMR": 0.043
-    }
+    "cfa_full": "TBD"
   },
   "dropped_constructs": {
     "voluntariness": {
@@ -84,7 +87,7 @@
     "Accessibility considerations for anxiety reduction"
   ],
   "crosstab_analysis": {
-    "n_themed_responses": 141,
+    "n_themed_responses": 143,
     "themes_analyzed": [
       "Positive Experience",
       "Concerns/Caution",

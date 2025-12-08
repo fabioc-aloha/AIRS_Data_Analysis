@@ -1,27 +1,27 @@
 {
   "phase": 7,
   "title": "AI Tool Usage Patterns",
-  "sample_size": 513,
+  "sample_size": 523,
   "rq10a_usage_frequency": {
     "description": "AI tool usage frequency distribution",
     "tools": {
       "ChatGPT": {
-        "mean": 3.01,
+        "mean": 3.03,
         "active_pct": 63.7,
         "heavy_pct": 43.5
       },
       "MSCopilot": {
-        "mean": 2.52,
+        "mean": 2.49,
         "active_pct": 49.1,
         "heavy_pct": 28.7
       },
       "Gemini": {
-        "mean": 2.49,
+        "mean": 2.48,
         "active_pct": 48.0,
         "heavy_pct": 26.5
       },
       "Other": {
-        "mean": 1.97,
+        "mean": 1.93,
         "active_pct": 31.4,
         "heavy_pct": 15.4
       }
@@ -29,33 +29,29 @@
     "finding": "ChatGPT is most widely adopted (63.7% active users, M=3.01)"
   },
   "rq10b_population_comparison": {
-    "description": "Academic vs Professional usage differences",
-    "academic_n": 198,
-    "professional_n": 315,
-    "significant_differences": {
-      "ChatGPT": {
-        "acad_mean": 3.36,
-        "prof_mean": 2.79,
-        "cohens_d": 0.4,
-        "p": "<.001",
-        "direction": "Academic > Professional"
+    "description": "Role Type comparison (Academic vs Professional vs Leader)",
+    "groups": {
+      "Academic": {
+        "n": 216,
+        "description": "FT + PT Students"
       },
-      "MSCopilot": {
-        "acad_mean": 2.31,
-        "prof_mean": 2.65,
-        "cohens_d": -0.24,
-        "p": ".008",
-        "direction": "Professional > Academic"
+      "Professional": {
+        "n": 184,
+        "description": "ICs, Freelancers, Unemployed, Other"
       },
-      "Gemini": {
-        "acad_mean": 2.29,
-        "prof_mean": 2.62,
-        "cohens_d": -0.24,
-        "p": ".008",
-        "direction": "Professional > Academic"
+      "Leader": {
+        "n": 123,
+        "description": "Managers + Executives"
       }
     },
-    "finding": "Students prefer ChatGPT; professionals use enterprise tools (Copilot) more"
+    "analysis_method": "One-way ANOVA with Tukey HSD post-hoc",
+    "key_patterns": {
+      "ChatGPT": "Academic \u2248 Leader (M\u22483.4); both higher than Professional (M=2.39)",
+      "MSCopilot": "Leaders dominate (M=3.46) >> Academic (2.33) > Professional (2.04); \u03b7\u00b2=.159 LARGE effect",
+      "Gemini": "Leaders highest (M=3.28) >> Academic (2.32) \u2248 Professional (2.11)",
+      "Other": "Leaders highest (M=2.49) > Academic (1.89) > Professional (1.61)"
+    },
+    "finding": "Leaders dominate ALL tools with large effect sizes; Professionals show LOWEST usage"
   },
   "rq10c_construct_correlations": {
     "description": "Correlations between usage and AIRS constructs",
@@ -106,10 +102,18 @@
     },
     "finding": "Large effects (\u03b7\u00b2>.24) for all constructs; multi-tool users score higher on all AIRS dimensions"
   },
+  "leader_comparison": {
+    "description": "Leadership role deep-dive (KEY FINDING)",
+    "leader_n": 123,
+    "tool_usage_effects": "d=0.74-1.14 (Leaders >> Professionals on ALL tools)",
+    "construct_effects": "d=0.64-0.82 (Leaders higher on ALL AIRS constructs)",
+    "finding": "Leaders show DISTINCTLY HIGHER adoption readiness than Professionals - NOT similar patterns. Leadership is a meaningful moderator of AI adoption."
+  },
   "criterion_validity_evidence": "Strong - current usage validates AIRS construct measures",
   "plots_generated": [
     "plots/07_usage_frequency_distribution.png",
-    "plots/07_population_comparison.png",
+    "plots/07_role_type_comparison.png",
+    "plots/07_role_type_3group_comparison.png",
     "plots/07_usage_construct_correlations.png",
     "plots/07_user_type_analysis.png"
   ]

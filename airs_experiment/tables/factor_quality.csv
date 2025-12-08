@@ -1,13 +1,13 @@
 Factor,Eigenvalue,Strong_Items,Cross_Loadings,Constructs,Quality
-F1,3.9401206169430245,5,1,"['PE', 'PV', 'VO']",★★ RETAIN (minor cross-loading)
-F2,1.7497076799182307,2,0,['TR'],"★★★ RETAIN (clean, multi-item)"
-F3,1.6223567173306546,1,0,['EX'],"★ CONSIDER (single-item, clean)"
-F4,1.5578644051508006,3,0,"['AX', 'ER']","★★★ RETAIN (clean, multi-item)"
-F5,1.3975158884551173,2,0,['HB'],"★★★ RETAIN (clean, multi-item)"
-F6,1.142055337585851,1,0,['FC'],"★ CONSIDER (single-item, clean)"
-F7,1.050677448926527,2,0,['SI'],"★★★ RETAIN (clean, multi-item)"
-F8,1.0016204202565708,1,0,['HM'],"★ CONSIDER (single-item, clean)"
-F9,0.9306311367856723,2,0,['EE'],"★★★ RETAIN (clean, multi-item)"
-F10,0.7117867722651376,1,0,['VO'],"★ CONSIDER (single-item, clean)"
-F11,0.6310563085642967,1,0,['AX'],"★ CONSIDER (single-item, clean)"
-F12,0.6206331947465298,1,1,['EX'],✗ SKIP
+F1,3.1783981281417937,4,2,"['HM', 'PE', 'PV']",★★ RETAIN (minor cross-loading)
+F2,1.568215535291993,3,1,"['AX', 'ER']",★★ RETAIN (minor cross-loading)
+F3,1.4888873721461318,1,0,['FC'],"★ CONSIDER (single-item, clean)"
+F4,1.3225507901097426,1,0,['EE'],"★ CONSIDER (single-item, clean)"
+F5,1.1074918773976354,1,0,['EX'],"★ CONSIDER (single-item, clean)"
+F6,1.0725726939164009,2,2,['TR'],★★ RETAIN (minor cross-loading)
+F7,1.0700100743523384,2,0,['HB'],"★★★ RETAIN (clean, multi-item)"
+F8,1.0309454082586986,2,1,['SI'],★★ RETAIN (minor cross-loading)
+F9,0.9016473919587733,1,0,['VO'],"★ CONSIDER (single-item, clean)"
+F10,0.8316534554597873,1,0,['PE'],"★ CONSIDER (single-item, clean)"
+F11,0.7869419046761179,1,0,['VO'],"★ CONSIDER (single-item, clean)"
+F12,0.7639983641233631,1,0,['EE'],"★ CONSIDER (single-item, clean)"

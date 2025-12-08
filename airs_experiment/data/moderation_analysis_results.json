@@ -1,7 +1,7 @@
 {
   "analysis_type": "Moderation Analysis (Phase 6)",
   "methodology": "Multi-group SEM with z-tests for path coefficient differences",
-  "full_sample_n": 513,
+  "full_sample_n": 523,
   "hypotheses_tested": [
     {
       "id": "H4c",
@@ -11,19 +11,19 @@
       "groups": {
         "low": {
           "n": 101,
-          "beta": 0.10253402016225281,
-          "se": 0.10656035437642226
+          "beta": 0.11612292434691787,
+          "se": 0.1062496359712702
         },
         "high": {
-          "n": 300,
-          "beta": -0.19744116902735903,
-          "se": 0.088109719811971
+          "n": 306,
+          "beta": -0.13710107952806966,
+          "se": 0.08697572753648168
         }
       },
-      "delta_beta": -0.29997518918961186,
-      "z_statistic": -2.169497741030605,
-      "p_value": 0.03004491567706724,
-      "significant": true,
+      "delta_beta": -0.25322400387498756,
+      "z_statistic": -1.8441908266049325,
+      "p_value": 0.06515533478931967,
+      "significant": false,
       "supported": false,
       "reliable": true,
       "interpretation": "Opposite of expected: HB\u2192BI is WEAKER for high-frequency users"
@@ -35,19 +35,19 @@
       "moderator": "Voluntariness",
       "groups": {
         "mandated": {
-          "n": 70,
-          "beta": 0.3494941348642933,
-          "se": 0.4002291687243934
+          "n": 71,
+          "beta": 0.2550975537538833,
+          "se": 0.3385474928931732
         },
         "voluntary": {
-          "n": 276,
-          "beta": -0.361554703999513,
-          "se": 1.3510818749126243
+          "n": 283,
+          "beta": -0.372712648383671,
+          "se": 1.303488412818106
         }
       },
-      "delta_beta": 0.7110488388638063,
-      "z_statistic": 0.5046066096203861,
-      "p_value": 0.6138351665585065,
+      "delta_beta": 0.6278102021375543,
+      "z_statistic": 0.46617187448021447,
+      "p_value": 0.6410924795580293,
       "significant": false,
       "supported": false,
       "reliable": false,
@@ -61,19 +61,19 @@
       "moderator": "Voluntariness",
       "groups": {
         "mandated": {
-          "n": 70,
-          "beta": 0.07427180531381904,
-          "se": 0.15090544981911955
+          "n": 71,
+          "beta": 0.10138993296892311,
+          "se": 0.16017887205401093
         },
         "voluntary": {
-          "n": 276,
-          "beta": 1.1380765196984872,
-          "se": 3.1859224121552163
+          "n": 283,
+          "beta": 1.177694918354211,
+          "se": 3.1086860161146608
         }
       },
-      "delta_beta": -1.0638047143846683,
-      "z_statistic": -0.33353397273787877,
-      "p_value": 0.7387312495362521,
+      "delta_beta": -1.0763049853852877,
+      "z_statistic": -0.34576636213961903,
+      "p_value": 0.7295183067808948,
       "significant": false,
       "supported": false,
       "reliable": false,
@@ -87,19 +87,19 @@
       "moderator": "Disability Status",
       "groups": {
         "no_disability": {
-          "n": 434,
-          "beta": -0.072,
-          "se": 0.08
+          "n": 444,
+          "beta": -0.053,
+          "se": 0.073
         },
         "disability": {
-          "n": 69,
-          "beta": -0.2,
-          "se": 4.86
+          "n": 68,
+          "beta": -0.012,
+          "se": 0.48
         }
       },
-      "delta_beta": -0.128,
-      "z_statistic": -0.026,
-      "p_value": 0.979,
+      "delta_beta": 0.041,
+      "z_statistic": 0.084,
+      "p_value": 0.933,
       "significant": false,
       "supported": false,
       "reliable": false,
@@ -113,19 +113,19 @@
       "moderator": "Disability Status",
       "groups": {
         "no_disability": {
-          "n": 434,
-          "beta": 0.11,
-          "se": 0.092
+          "n": 444,
+          "beta": 0.084,
+          "se": 0.086
         },
         "disability": {
-          "n": 69,
-          "beta": 2.215,
-          "se": 28.955
+          "n": 68,
+          "beta": 0.407,
+          "se": 1.083
         }
       },
-      "delta_beta": 2.105,
-      "z_statistic": 0.073,
-      "p_value": 0.942,
+      "delta_beta": 0.323,
+      "z_statistic": 0.297,
+      "p_value": 0.766,
       "significant": false,
       "supported": false,
       "reliable": false,
