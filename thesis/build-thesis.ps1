@@ -11,11 +11,11 @@
 
 .EXAMPLE
     .\build-thesis.ps1
-    Builds "DRAFT 02.pdf" in the thesis directory.
+    Builds "DRAFT 03.pdf" in the thesis directory.
 
 .EXAMPLE
     .\build-thesis.ps1 -OpenAfterBuild
-    Builds "DRAFT 02.pdf" and opens it.
+    Builds "DRAFT 03.pdf" and opens it.
 #>
 
 param(
@@ -23,7 +23,7 @@ param(
 )
 
 # Hardcoded draft version to avoid mistakes
-$OutputName = "DRAFT 02"
+$OutputName = "DRAFT 03"
 
 # Configuration
 $ThesisDir = $PSScriptRoot
@@ -238,6 +238,7 @@ documentclass: article
 geometry: margin=1in
 fontsize: 12pt
 linestretch: 2
+indent: true
 link-citations: true
 nocite: '@*'
 header-includes:
@@ -247,6 +248,10 @@ header-includes:
   - \pagestyle{fancy}
   - \fancyhead[R]{\thepage}
   - \fancyhead[L]{$($Metadata.RunningHeader)}
+  - \fancyfoot{}
+  - \renewcommand{\headrulewidth}{0pt}
+  - \usepackage{indentfirst}
+  - \setlength{\parindent}{0.5in}
   - \usepackage{float}
   - \floatplacement{table}{H}
   - \floatplacement{figure}{H}
@@ -256,6 +261,13 @@ header-includes:
   - \AtBeginDocument{\thispagestyle{empty}}
   - \usepackage{fontspec}
   - \setmainfont{Times New Roman}
+  - \usepackage{titlesec}
+  - \titleformat{\section}{\normalfont\bfseries\centering}{}{0em}{}
+  - \titleformat{\subsection}{\normalfont\bfseries}{}{0em}{}
+  - \titleformat{\subsubsection}{\normalfont\bfseries\itshape}{}{0em}{}
+  - \titlespacing*{\section}{0pt}{12pt}{12pt}
+  - \titlespacing*{\subsection}{0pt}{12pt}{12pt}
+  - \titlespacing*{\subsubsection}{0pt}{12pt}{12pt}
 ---
 
 \begin{titlepage}
