@@ -13,7 +13,7 @@ thesis/
 │   ├── 04_results.md               # Chapter 4: Results
 │   ├── 05_analysis_discussion.md   # Chapter 5: Analysis & Discussion
 │   └── 06_conclusions.md           # Chapter 6: Conclusions & Recommendations
-├── appendices.md                   # Combined appendices (A-G)
+├── appendices.md                   # Combined appendices (A-H)
 ├── references/
 │   ├── bibliography.bib            # BibTeX references (92 sources)
 │   └── apa-7th-edition.csl         # APA 7 citation style
@@ -23,9 +23,10 @@ thesis/
 ├── EXECUTIVE_SUMMARY.md            # Executive summary (standalone)
 ├── PRACTITIONER_BRIEF.md           # Practitioner brief (standalone)
 ├── THESIS_SUMMARY.md               # 5-page thesis summary (standalone)
+├── PRESENTATION_SLIDES.md          # Committee presentation draft (standalone)
 ├── build-thesis.ps1                # Main thesis PDF builder
 ├── convert-to-pdf.ps1              # Standalone document converter
-└── DRAFT 05.pdf                    # Current compiled thesis
+└── DRAFT 06.pdf                    # Current compiled thesis
 ```
 
 ## Study Overview
@@ -80,7 +81,7 @@ thesis/
 | Chapter 4: Results | ✅ Complete |
 | Chapter 5: Analysis & Discussion | ✅ Complete |
 | Chapter 6: Conclusions | ✅ Complete |
-| Appendices A-G | ✅ Complete |
+| Appendices A-H | ✅ Complete (incl. Data Availability) |
 | Bibliography | ✅ 92 references verified |
 | Tables & Figures | ✅ Auto-numbered |
 | IRB Documentation | ✅ Embedded |

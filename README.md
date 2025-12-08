@@ -19,7 +19,7 @@ Extending Model for Enterprise AI Adoption
 </table>
 <!-- markdownlint-enable MD033 -->
 
-> 📝 **[View Current Thesis Draft (PDF)](thesis/DRAFT%2005.pdf)** | Latest compiled version of the dissertation (DRAFT 05 - All chapters complete, 92 references verified)
+> 📝 **[View Current Thesis Draft (PDF)](thesis/DRAFT%2006.pdf)** | Latest compiled version of the dissertation (DRAFT 06 - All chapters complete, 92 references, Appendix H data availability)
 
 ---
 
@@ -211,7 +211,8 @@ AIRS_Data_Analysis/
 │   ├── EXECUTIVE_SUMMARY.md  # Standalone executive summary
 │   ├── PRACTITIONER_BRIEF.md # Standalone practitioner brief
 │   ├── THESIS_SUMMARY.md     # 5-page thesis summary
-│   └── DRAFT 05.pdf          # Current compiled thesis
+│   ├── PRESENTATION_SLIDES.md # Committee presentation draft
+│   └── DRAFT 06.pdf          # Current compiled thesis
 ├── research/                 # Literature and industry sources
 │   ├── AIRS literatyre review.md        # Theoretical foundation
 │   ├── Bridging the AI Adoption Gap...  # Industry benchmarks (585 lines)
@@ -237,7 +238,7 @@ AIRS_Data_Analysis/
 | Chapter 4: Results | `thesis/chapters/04_results.md` | ~3,200 |
 | Chapter 5: Analysis & Discussion | `thesis/chapters/05_analysis_discussion.md` | ~4,100 |
 | Chapter 6: Conclusions | `thesis/chapters/06_conclusions.md` | ~2,500 |
-| Appendices A-G | `thesis/appendices.md` | Complete |
+| Appendices A-H | `thesis/appendices.md` | Complete |
 | Tables 4.1-4.9 | `thesis/tables/` | 9 tables |
 | Bibliography | `thesis/references/bibliography.bib` | 92 refs |
 
@@ -345,4 +346,4 @@ Documentation: [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)
 ---
 
 **Last Updated**: December 8, 2025
-**Version**: 6.4 (DRAFT 05 - All chapters complete, 92 references)
+**Version**: 6.5 (DRAFT 06 - All chapters complete, 92 references, Appendix H)

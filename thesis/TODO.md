@@ -262,9 +262,9 @@ These gaps represented misalignments between the approved DBA proposal and curre
 
 - [x] Executive summary (1 page) ✅ COMPLETED December 8, 2025 → EXECUTIVE_SUMMARY.md
 - [x] Practitioner brief (2 pages) ✅ COMPLETED December 8, 2025 → PRACTITIONER_BRIEF.md
-- [ ] Supplementary online materials
-- [ ] Data availability statement
-- [ ] Code availability statement
+- [x] Supplementary online materials ✅ COMPLETED December 8, 2025 → Appendix H
+- [x] Data availability statement ✅ COMPLETED December 8, 2025 → Appendix H
+- [x] Code availability statement ✅ COMPLETED December 8, 2025 → Appendix H
 
 ---
 

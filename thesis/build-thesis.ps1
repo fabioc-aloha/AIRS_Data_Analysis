@@ -32,7 +32,7 @@ param(
 )
 
 # Hardcoded draft version to avoid mistakes
-$OutputName = "DRAFT 05"
+$OutputName = "DRAFT 06"
 
 # Configuration
 $ThesisDir = $PSScriptRoot
