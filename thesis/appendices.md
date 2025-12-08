@@ -200,7 +200,7 @@ This research program addresses a critical gap in the technology adoption litera
 
 The AIRS instrument validated in this dissertation is made available for academic research purposes. Organizations interested in applying the AIRS framework for organizational assessment should contact the author to discuss appropriate use, validation requirements, and potential research collaboration opportunities.
 
-**Contact**: Dr. Fabio Correa | [Institution] | [Email]
+**Contact**: Fabio Correa, Doctoral Candidate | Touro University Worldwide
 
 \newpage
 

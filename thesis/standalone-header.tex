@@ -1,0 +1,13 @@
+% Standalone document formatting
+% 1.5 line spacing for body text, single spacing for tables
+
+\usepackage{setspace}
+\onehalfspacing
+
+% Reset tables to single spacing
+\AtBeginEnvironment{longtable}{\singlespacing}
+\AtBeginEnvironment{tabular}{\singlespacing}
+
+% Ensure table captions also use single spacing
+\usepackage{caption}
+\captionsetup[table]{font={singlespacing}}

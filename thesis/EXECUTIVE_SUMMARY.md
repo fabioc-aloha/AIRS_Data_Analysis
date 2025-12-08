@@ -63,7 +63,3 @@ The validated AIRS instrument provides a foundation for:
 - Intervention research testing strategies to increase adoption
 - Cross-cultural validation in diverse organizational contexts
 - Diagnostic applications linking readiness profiles to adoption outcomes
-
----
-
-*This executive summary accompanies the full dissertation: "Artificial Intelligence Readiness Scale: Extending UTAUT2 for Enterprise AI Adoption" by Fabio Correa, Touro University Worldwide, December 2025.*

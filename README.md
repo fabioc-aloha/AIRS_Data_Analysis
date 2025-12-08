@@ -204,11 +204,14 @@ AIRS_Data_Analysis/
 │   ├── results/              # JSON output files
 │   └── tables/               # CSV summary tables
 ├── thesis/                   # DBA thesis documentation
-│   ├── chapters/             # Chapter drafts (1-5)
+│   ├── chapters/             # Chapter files (1-6)
 │   ├── tables/               # Publication-ready tables (9)
 │   ├── figures/              # Exported figures
-│   ├── references/           # Bibliography (60+ refs)
-│   └── TODO.md               # Prioritized task list
+│   ├── references/           # Bibliography (92 refs)
+│   ├── EXECUTIVE_SUMMARY.md  # Standalone executive summary
+│   ├── PRACTITIONER_BRIEF.md # Standalone practitioner brief
+│   ├── THESIS_SUMMARY.md     # 5-page thesis summary
+│   └── DRAFT 05.pdf          # Current compiled thesis
 ├── research/                 # Literature and industry sources
 │   ├── AIRS literatyre review.md        # Theoretical foundation
 │   ├── Bridging the AI Adoption Gap...  # Industry benchmarks (585 lines)
@@ -228,11 +231,15 @@ AIRS_Data_Analysis/
 
 | Document | Location | Words |
 |----------|----------|-------|
+| Chapter 1: Introduction | `thesis/chapters/01_introduction.md` | ~2,800 |
 | Chapter 2: Literature Review | `thesis/chapters/02_literature_review.md` | ~5,200 |
 | Chapter 3: Methodology | `thesis/chapters/03_methodology.md` | ~3,800 |
 | Chapter 4: Results | `thesis/chapters/04_results.md` | ~3,200 |
+| Chapter 5: Analysis & Discussion | `thesis/chapters/05_analysis_discussion.md` | ~4,100 |
+| Chapter 6: Conclusions | `thesis/chapters/06_conclusions.md` | ~2,500 |
+| Appendices A-G | `thesis/appendices.md` | Complete |
 | Tables 4.1-4.9 | `thesis/tables/` | 9 tables |
-| Bibliography | `thesis/references/bibliography.bib` | 60+ refs |
+| Bibliography | `thesis/references/bibliography.bib` | 92 refs |
 
 ### Key Methodological Decisions Documented
 
@@ -241,13 +248,6 @@ AIRS_Data_Analysis/
 | 4 constructs dropped (VO, EX, ER, AX-orig) | Poor reliability (α = .301–.582) | Ch 3 §3.4.4, Ch 4 §4.2.1 |
 | AIRS vs UTAUT2 comparison | ΔR² = .016 (modest improvement) | Ch 4 §4.3.5 |
 | H5 mediation untestable | EX/ER excluded from model | Ch 5 §5.6.2, §5.7.1 |
-
-### In Progress
-
-| Document | Status |
-|----------|--------|
-| Chapter 1: Introduction | Outline complete |
-| Chapter 5: Discussion | Partial draft (limitations expanded) |
 
 See `thesis/TODO.md` for detailed task list.
 
@@ -337,4 +337,4 @@ Documentation: [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)
 ---
 
 **Last Updated**: December 8, 2025
-**Version**: 6.3 (DRAFT 02 - Fact-checked with 3-decimal precision)
+**Version**: 6.4 (DRAFT 05 - All chapters complete, 92 references)
