@@ -6,16 +6,20 @@
 
 ---
 
-# AI Readiness Scale (AIRS): Development and Validation in Higher Education
+# Artificial Intelligence Readiness Scale (AIRS)
 
-Extending UTAUT2 with AI-Specific Constructs for Technology Adoption Research
+Extending Model for Enterprise AI Adoption
 
-| | |
-|---|---|
-| **Researcher** | Fabio Correa |
-| **Institution** | Touro University Worldwide |
-| **Program** | Doctor of Business Administration (DBA) |
-| **Updated** | December 7, 2025 |
+<!-- markdownlint-disable MD033 -->
+<table>
+  <tr><td><strong>Researcher</strong></td><td>Fabio Correa</td></tr>
+  <tr><td><strong>Institution</strong></td><td>Touro University Worldwide</td></tr>
+  <tr><td><strong>Program</strong></td><td>Doctor of Business Administration (DBA)</td></tr>
+  <tr><td><strong>Updated</strong></td><td>December 8, 2025</td></tr>
+</table>
+<!-- markdownlint-enable MD033 -->
+
+> 📝 **[View Current Thesis Draft (PDF)](thesis/DRAFT%2000.pdf)** — Latest compiled version of the dissertation
 
 ---
 
@@ -58,10 +62,9 @@ This research develops and validates the **AI Readiness Scale (AIRS)**, a psycho
 | Finding | Evidence |
 |---------|----------|
 | **Validated 8-factor model** | 16 items, CFI=.975, TLI=.960, RMSEA=.065 |
-| **Performance Expectancy dominates** | β=.505 (p<.001), strongest predictor |
-| **Experience moderates adoption** | PE×Exp (p=.013), HM×Exp (p=.009) |
+| **Price Value dominates** | β=.505 (p<.001), strongest predictor |
+| **Experience moderates adoption** | HM×Exp (p=.007) significant |
 | **Four user typologies identified** | Enthusiasts 16%, Cautious 30%, Moderate 37%, Anxious 17% |
-| **Disability-anxiety link discovered** | d=0.36 (p=.006) |
 | **Leaders dominate tool usage** | d=0.74-1.14 across all AI tools |
 | **Model explains 85.7% variance** | R²=.857 in Behavioral Intention |
 
@@ -88,9 +91,9 @@ Organizations now have a **validated 16-item diagnostic instrument** for assessi
 
 | Role | n | % |
 |------|---|---|
-| Academic | 216 | 41.3% |
-| Professional Services | 184 | 35.2% |
-| Leadership/Management | 123 | 23.5% |
+| Student | 216 | 41.3% |
+| Professional | 184 | 35.2% |
+| Leader | 123 | 23.5% |
 
 ---
 
@@ -164,7 +167,7 @@ flowchart LR
 | H2 | Experience moderates | ⚠️ Partial | PE, HM only |
 | H3 | Role moderates paths | ❌ Not Supported | No Δβ significant |
 | H4 | BI predicts usage | ✅ Supported | ρ=.70, p<.001 |
-| H5 | Role differs in usage | ✅ Supported | L > P > A |
+| H5 | Role differs in usage | ✅ Supported | L > P > S |
 
 ---
 
@@ -310,7 +313,7 @@ Full bibliography: `thesis/references/bibliography.bib`
 ```bibtex
 @phdthesis{correa2025airs,
   author = {Correa, Fabio},
-  title = {AI Readiness Scale (AIRS): Development and Validation in Higher Education},
+  title = {Artificial Intelligence Readiness Scale: Extending Model for Enterprise AI Adoption},
   school = {Touro University Worldwide},
   year = {2025},
   type = {Doctoral dissertation}

@@ -1,5 +1,5 @@
 ---
-title: "Artificial Intelligence Readiness Score: Extending UTAUT2 for Enterprise AI Adoption"
+title: "Artificial Intelligence Readiness Scale: Extending Model for Enterprise AI Adoption"
 author: "Fabio Correa"
 institution: "Touro University Worldwide"
 program: "DBA712 - Doctoral Research Project"

@@ -7,7 +7,7 @@
 
 ## Professional Context
 - **Role**: Doctoral researcher conducting psychometric validation study
-- **Research Area**: AI Readiness Scale (AIRS) development and validation
+- **Research Area**: Artificial Intelligence Readiness Score (AIRS) - Enterprise AI Adoption
 - **Expertise**: Psychometrics, statistical analysis, Python/Jupyter workflows, SPSS
 
 ## Current Project: AIRS Validation Study

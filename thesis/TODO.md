@@ -1,6 +1,6 @@
 # Thesis TODO List
 
-AI Readiness Scale (AIRS): Development and Validation
+Artificial Intelligence Readiness Scale: Extending Model for Enterprise AI Adoption
 
 DBA Thesis - Bridging Academic Rigor with Business Impact
 

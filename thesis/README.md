@@ -1,4 +1,4 @@
-# DBA Thesis: AI Readiness Scale (AIRS) Development and Validation
+# DBA Thesis: Artificial Intelligence Readiness Scale (AIRS)
 
 **Bridging Academic Rigor with Business Impact**
 
@@ -39,7 +39,7 @@ thesis/
 
 | Element | Description |
 |---------|-------------|
-| **Title** | AI Readiness Scale (AIRS): Development and Validation in Higher Education |
+| **Title** | Artificial Intelligence Readiness Scale: Extending Model for Enterprise AI Adoption |
 | **Sample** | N = 523 (Student: 216, Professional: 184, Leader: 123) |
 | **Methodology** | Split-sample EFA (n=261) → CFA (n=262) → SEM + Mixed methods |
 | **Validated Model** | 8 factors, 16 items (Model D) |

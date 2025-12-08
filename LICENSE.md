@@ -1,7 +1,7 @@
 # Academic Research License
 
 ## AIRS Data Analysis Project
-**AI Readiness Score (AIRS) - Psychometric Validation and Structural Equation Modeling**
+**AI Readiness Scale (AIRS) - Psychometric Validation and Structural Equation Modeling**
 
 Copyright (c) 2025 Fabio Correa. All Rights Reserved.
 
@@ -29,7 +29,7 @@ This project is made available for **non-commercial academic and research purpos
 ### Recommended Citation
 
 ```
-Correa, F. (2025). AI Readiness Score (AIRS): Psychometric Validation
+Correa, F. (2025). AI Readiness Scale (AIRS): Psychometric Validation
 and Structural Equation Modeling [Doctoral dissertation data analysis].
 GitHub. https://github.com/fabioc-aloha/AIRS_Data_Analysis
 ```
