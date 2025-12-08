@@ -137,8 +137,6 @@ The structural model demonstrated acceptable fit:
 
 Table 4.1 presents the standardized path coefficients and hypothesis test results for the full sample and by role group.
 
-**Table 4.1: Hypothesis Testing Results**
-
 | Hypothesis | Path | Full Sample β | SE | p | Academic β | Prof+Leader β | Result |
 |------------|------|---------------|----|----|------------|---------------|--------|
 | H1a | PE → BI | **.505** | .062 | <.001 | .491 | .518 | ✅ Supported |
@@ -150,6 +148,7 @@ Table 4.1 presents the standardized path coefficients and hypothesis test result
 | H1g | AX → BI | **-.152** | .048 | .002 | -.145 | -.158 | ✅ Supported |
 
 **Key Findings:**
+
 - **Performance Expectancy** emerged as the strongest predictor (β = .505, p < .001), explaining the largest portion of variance in Behavioral Intention
 - **Hedonic Motivation** was the second strongest predictor (β = .217, p < .001)
 - **Anxiety** showed a significant negative effect (β = -.152, p = .002)
@@ -160,8 +159,6 @@ Table 4.1 presents the standardized path coefficients and hypothesis test result
 ### 4.3.3 Moderation Hypotheses (H2)
 
 Experience was tested as a moderator of UTAUT relationships using latent interaction modeling.
-
-**Table 4.2: Moderation Effects of AI Experience**
 
 | Interaction | β | SE | p | Result |
 |-------------|---|----|----|--------|
@@ -174,6 +171,7 @@ Experience was tested as a moderator of UTAUT relationships using latent interac
 | AX × Experience | -.074 | .049 | .131 | ❌ Not Supported |
 
 **Interpretation:**
+
 - The PE → BI relationship is significantly **stronger** for those with more AI experience (β = .148, p = .013)
 - The HM → BI relationship is significantly **stronger** for experienced users (β = .136, p = .009)
 - Experience moderates the importance of utility and enjoyment perceptions but not other UTAUT factors
@@ -181,8 +179,6 @@ Experience was tested as a moderator of UTAUT relationships using latent interac
 ### 4.3.4 Role Group Moderation (H3)
 
 Multi-group comparison tested whether path coefficients differed significantly between Academic and Professional+Leader groups.
-
-**Table 4.3: Multi-Group Path Comparison**
 
 | Path | Academic β | Prof+Leader β | Δβ | Δχ² | p | Significant? |
 |------|------------|---------------|----|-----|---|--------------|
@@ -194,9 +190,7 @@ Multi-group comparison tested whether path coefficients differed significantly b
 | TR → BI | .098 | .112 | -.014 | 0.20 | .655 | No |
 | AX → BI | -.145 | -.158 | .013 | 0.22 | .639 | No |
 
-**H3 Result: ❌ Not Supported**
-
-No significant differences in path coefficients were observed between role groups, suggesting the structural relationships operate consistently across Academic and Professional service roles.
+H3 was not supported. No significant differences in path coefficients were observed between role groups, suggesting the structural relationships operate consistently across Academic and Professional service roles.
 
 ### 4.3.5 Incremental Validity: AIRS vs. UTAUT2-Only Model
 
@@ -232,8 +226,6 @@ This exceptionally high R² indicates the UTAUT model, as adapted for AI adoptio
 ### 4.4.1 Indirect and Total Effects
 
 Mediation analysis examined potential indirect pathways through the model.
-
-**Table 4.4: Indirect Effects on Behavioral Intention**
 
 | Mediator Chain | β | 95% CI | p |
 |----------------|---|--------|---|
@@ -302,8 +294,6 @@ Industry experience showed weak, non-significant relationships with UTAUT constr
 
 K-means cluster analysis (k=4) identified distinct user profiles based on UTAUT construct scores.
 
-**Table 4.5: AI User Typology**
-
 | Cluster | n | % | PE | HM | AX | BI | Characterization |
 |---------|---|---|----|----|----|----|------------------|
 | Enthusiasts | 84 | 16% | High | High | Low | High | Early adopters, high engagement |
@@ -364,8 +354,6 @@ Participants with disabilities (n=78, 14.9%) were compared to those without:
 Open-ended responses (n=243, 46.5% response rate) were analyzed using thematic analysis.
 
 #### Theme Prevalence
-
-**Table 4.6: Qualitative Theme Distribution**
 
 | Theme | n | % of Responses | Example |
 |-------|---|----------------|---------|

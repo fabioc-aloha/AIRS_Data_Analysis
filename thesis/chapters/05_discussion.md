@@ -7,16 +7,20 @@ This chapter discusses the implications of the AIRS validation study findings, a
 ## 5.2 Summary of Key Findings
 
 ### 5.2.1 AIRS Instrument Validation
+
 The study successfully validated an 8-factor, 16-item AI Readiness Scale extending UTAUT2 with AI Trust.
 
 ### 5.2.2 Supported Relationships
+
 Four of seven hypothesized paths were significant:
+
 - **Performance Expectancy** (β = .505, p < .001): Perceived usefulness is the dominant driver
 - **Hedonic Motivation** (β = .217, p < .001): Enjoyment strongly predicts adoption
 - **AI Anxiety** (β = -.152, p = .002): Apprehension significantly inhibits adoption
 - **Social Influence** (β = .136, p = .013): Peer influence matters for AI adoption
 
 ### 5.2.3 AI Trust Extension
+
 AI Trust approached but did not reach significance (β = .106, p = .064), providing tentative support for the theoretical extension. The significant Anxiety path (β = -.152) demonstrates that AI-specific affective factors do predict adoption beyond core UTAUT2 constructs.
 
 ## 5.3 Discussion of Findings
@@ -55,6 +59,7 @@ AI Trust approached but did not reach significance (β = .106, p = .064), provid
 **Finding**: Four distinct user segments identified.
 
 **Implications for Practice**:
+
 - AI Enthusiasts (16%): Leverage as champions
 - Cautious Adopters (30%): Address concerns while maintaining engagement
 - Moderate Users (37%): Benefit-focused messaging
@@ -77,15 +82,19 @@ AI Trust approached but did not reach significance (β = .106, p = .064), provid
 ## 5.5 Practical Implications
 
 ### 5.5.1 For Organizations
+
 [To be written]
 
 ### 5.5.2 For AI Tool Designers
+
 [To be written]
 
 ### 5.5.3 For Trainers and Educators
+
 [To be written]
 
 ### 5.5.4 For Policy Makers
+
 [To be written]
 
 ## 5.6 Limitations
@@ -100,7 +109,7 @@ AI Trust approached but did not reach significance (β = .106, p = .064), provid
 
 ### 5.6.2 Measurement Limitations
 
-4. **Dropped constructs**: Four proposed AI-specific constructs (Voluntariness, Explainability, Ethical Risk, original Anxiety items) demonstrated inadequate reliability (α = .30–.58) and were excluded. This finding reveals that **two-item scales proved insufficient for these multi-dimensional constructs**:
+1. **Dropped constructs**: Four proposed AI-specific constructs (Voluntariness, Explainability, Ethical Risk, original Anxiety items) demonstrated inadequate reliability (α = .30–.58) and were excluded. This finding reveals that **two-item scales proved insufficient for these multi-dimensional constructs**:
    - **Voluntariness** (α = .41): Choice vs. freedom dimensions
    - **Explainability** (α = .58): Understanding vs. preference dimensions
    - **Ethical Risk** (α = .55): Job displacement vs. privacy concern dimensions
@@ -110,9 +119,9 @@ AI Trust approached but did not reach significance (β = .106, p = .064), provid
 
    **Note**: This represents an empirical finding, not a design failure. The proposal committed to testing these constructs; the data revealed measurement limitations. Transparent reporting of psychometric issues aligns with best practices in scale development.
 
-5. **Marginal AI Trust**: Trust approached but did not reach significance (p = .064). This may reflect inadequate statistical power (β = .106 requires n > 600 for 80% power at α = .05) or genuine marginality of trust in AI adoption decisions.
+2. **Marginal AI Trust**: Trust approached but did not reach significance (p = .064). This may reflect inadequate statistical power (β = .106 requires n > 600 for 80% power at α = .05) or genuine marginality of trust in AI adoption decisions.
 
-6. **Western sample**: Cultural generalizability is unknown. AI adoption attitudes may differ substantially in collectivist cultures or regions with different AI policy environments.
+3. **Western sample**: Cultural generalizability is unknown. AI adoption attitudes may differ substantially in collectivist cultures or regions with different AI policy environments.
 
 ## 5.7 Future Research Directions
 
@@ -134,6 +143,7 @@ AI Trust approached but did not reach significance (β = .106, p = .064), provid
 4. **Longitudinal intention-behavior study**: Track actual AI adoption behavior over 6-12 months following intention measurement to validate the BI → Behavior pathway.
 
 ### 5.7.2 Extended Research Agenda
+
 1. Cross-cultural validation
 2. Industry-specific applications
 3. Intervention studies based on user typology
@@ -145,4 +155,4 @@ AI Trust approached but did not reach significance (β = .106, p = .064), provid
 
 ---
 
-*Chapter 5 Draft Status: 🔲 Outline Complete*
+<!-- Chapter 5 Draft Status: Outline Complete -->
