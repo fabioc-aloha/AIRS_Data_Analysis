@@ -1,10 +1,23 @@
 # Thesis TODO List
 
-AI Readiness Scale (AIRS): Development and Validation in Higher Education
+AI Readiness Scale (AIRS): Development and Validation
 
 DBA Thesis - Bridging Academic Rigor with Business Impact
 
-Last Updated: December 7, 2025
+Last Updated: December 8, 2025
+
+---
+
+## ✅ Recent Cleanup (December 8, 2025)
+
+| Task | Status |
+|------|--------|
+| **Target Population Correction** | ✅ Fixed - now correctly states "students + employed professionals" (not "academic staff") |
+| **Role Terminology** | ✅ Fixed - "Academic" → "Student" throughout thesis for clarity |
+| **Bibliography Corrections** | ✅ Fixed - byrne2008→byrne1989, alqahtani2023→alqaysi2020, entry types corrected |
+| **Remove results/ folder** | ✅ Removed - generated artifacts, added to .gitignore |
+| **Remove archive/ folder** | ✅ Removed - superseded backup files, added to .gitignore |
+| **Build script cleanup** | ✅ Updated - now removes _combined_thesis.md after PDF generation |
 
 ---
 
@@ -257,6 +270,7 @@ These gaps represented misalignments between the approved DBA proposal and curre
 - Full Sample: N=523
 - EFA/CFA Split: 261/262 (seed=67)
 - Role Groups: Student (216), Professional (184), Leader (123)
+- Population Groups (SEM): Student (216) vs Professional+Leader (307)
 - Validated Model: 8 factors, 16 items
 - Model Fit: CFI=.975, TLI=.960, RMSEA=.065
 - Strongest Predictor: **Price Value β=.505** (NOT Performance Expectancy)
@@ -267,7 +281,7 @@ These gaps represented misalignments between the approved DBA proposal and curre
 1. **Price Value dominance (β=.505)** - Unexpected departure from traditional UTAUT where PE dominates
 2. **PE non-significant (β=-.028)** - Traditional utility may be baseline expectation for AI
 3. **Experience moderation** - HM×Exp p=.007 (only HM significantly moderated)
-4. **Population moderation** - HM stronger for Academics (Δβ=-0.750, p=.041)
+4. **Population moderation** - HM stronger for Students (Δβ=-0.750, p=.041)
 5. **4 constructs excluded** - Voluntariness, Explainability, Ethical Risk, Anxiety (α=.30-.58)
 
 ### Key Research Sources (research/ folder)
@@ -296,7 +310,7 @@ These gaps represented misalignments between the approved DBA proposal and curre
 | **Price Value β=.505** | → | Lead with cost-benefit and ROI messaging |
 | PE non-significant | → | Utility assumed; focus on value proposition instead |
 | Experience moderates HM | → | Experienced users weight enjoyment more |
-| Population moderates HM | → | Academics need fun; Professionals need value |
+| Population moderates HM | → | Students need fun; Professionals need value |
 | Trust marginal (p=.064) | → | Trust-building may yield marginal gains |
 | 3/7 UTAUT paths supported | → | AI may be distinct technology category |
 
