@@ -272,7 +272,6 @@ AIRS_Analysis_files/
 
 # Exclude personal notes not for publication
 **/PERSONAL_NOTES.md
-**/TODO.md
 drafts/
 
 # ============================================================================
@@ -298,3 +297,4 @@ secrets.json
 
 results/
 archive/
+thesis/_combined_thesis.md

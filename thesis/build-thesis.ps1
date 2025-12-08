@@ -468,13 +468,12 @@ if (Test-Path $OutputPdf) {
     exit 1
 }
 
-# Cleanup (disabled for troubleshooting)
-Write-Host "[6/6] Keeping temp file for troubleshooting..." -ForegroundColor Yellow
-# if (Test-Path $TempMarkdown) {
-#     Remove-Item $TempMarkdown -Force
-#     Write-Host "  - Removed temporary file" -ForegroundColor Gray
-# }
-Write-Host "  - Temp file kept: $TempMarkdown" -ForegroundColor Gray
+# Cleanup
+Write-Host "[6/6] Cleaning up..." -ForegroundColor Yellow
+if (Test-Path $TempMarkdown) {
+    Remove-Item $TempMarkdown -Force
+    Write-Host "  - Removed temporary file: _combined_thesis.md" -ForegroundColor Gray
+}
 
 Write-Host ""
 Write-Host "========================================" -ForegroundColor Green
