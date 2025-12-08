@@ -131,6 +131,8 @@ Items were adapted from established scales to ensure content validity:
 | ER | Gursoy et al. (2019) | Ethical risk perception |
 | BI | Venkatesh et al. (2003) | Standard UTAUT items |
 
+: Table 3.1: Survey Instrument Item Sources
+
 ### 3.4.3 Content Validity
 
 Content validity was established through:
@@ -150,6 +152,8 @@ Of the 12 constructs proposed, **four AI-specific constructs were excluded** dur
 | Ethical Risk (ER) | ER1, ER2 | .55 | Multi-dimensional | Dropped |
 | AI Anxiety (AX) | AX1, AX2 | .30 | Item heterogeneity | Dropped |
 
+: Table 3.2: Excluded Constructs and Psychometric Issues
+
 **Interpretation**: These constructs demonstrated poor inter-item correlations, suggesting the two-item scales measured different facets of multi-dimensional phenomena rather than unitary constructs. For example:
 
 - **Voluntariness**: VO1 assessed choice to use AI, while VO2 assessed freedom not to use—conceptually distinct aspects of voluntary adoption
@@ -166,7 +170,7 @@ Of the 12 constructs proposed, **four AI-specific constructs were excluded** dur
 Following psychometric validation (see Chapter 4), the final AIRS instrument comprises **16 items across 8 factors** (7 UTAUT2 predictors + AI Trust extension):
 
 | Factor | Items | Example Item |
-|--------|-------|--------------|
+|--------|-------|--------------||
 | Performance Expectancy | PE1, PE2 | "Using AI tools increases my productivity" |
 | Effort Expectancy | EE1, EE2 | "Learning to use AI tools is easy for me" |
 | Social Influence | SI1, SI2 | "People important to me think I should use AI tools" |
@@ -175,6 +179,10 @@ Following psychometric validation (see Chapter 4), the final AIRS instrument com
 | Price Value | PV1, PV2 | "AI tools are good value for the money" |
 | Habit | HB1, HB2 | "Using AI tools has become a habit for me" |
 | AI Trust | TR1, TR2 | "I trust AI tools to provide accurate information" |
+
+: Table 3.3: Final AIRS Instrument Structure
+
+*Note: Behavioral Intention
 
 *Note: Behavioral Intention (BI) serves as the outcome variable in the structural model.*
 
@@ -396,6 +404,8 @@ flowchart TD
 | TLI | ≥ .90 | ≥ .95 | ≥ .97 |
 | RMSEA | ≤ .10 | ≤ .08 | ≤ .05 |
 | SRMR | ≤ .10 | ≤ .08 | ≤ .05 |
+
+: Table 3.4: Model Fit Index Thresholds
 
 Thresholds based on Hu & Bentler (1999) and Hair et al. (2019).
 

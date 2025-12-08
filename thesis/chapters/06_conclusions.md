@@ -40,9 +40,9 @@ The study produced several significant findings that advance both theory and pra
 
 **AI Trust Extension**: AI Trust approached but did not reach conventional significance (β = .106, p = .064), providing tentative support for the theoretical extension while highlighting the need for larger samples in future research.
 
-**Moderator Effects**: Professional experience strengthened the Hedonic Motivation → Behavioral Intention path (β = .136, p = .007), suggesting that experienced professionals prioritize enjoyment in AI tool evaluation.
+**Moderator Effects**: Professional experience strengthened the Hedonic Motivation → Behavioral Intention path (β = .136, p = .009), suggesting that experienced professionals prioritize enjoyment in AI tool evaluation.
 
-**User Typology**: Four distinct adoption segments were identified—AI Enthusiasts (16%), Cautious Adopters (30%), Moderate Users (37%), and Anxious Avoiders (17%)—suggesting heterogeneous adoption readiness patterns that future research can leverage for intervention design.
+**User Typology**: Four distinct adoption segments were identified (see §4.6), suggesting heterogeneous adoption readiness patterns that future research can leverage for intervention design.
 
 
 
@@ -52,15 +52,15 @@ This dissertation makes four primary contributions to technology acceptance theo
 
 ### 6.3.1 UTAUT2 Extension for AI Contexts
 
-The study extends UTAUT2 with AI-specific constructs, demonstrating that traditional technology acceptance frameworks require modification for AI adoption contexts. While AI Trust did not reach conventional significance, the near-significant effect (p = .064) and the dramatic shift in predictor importance (Price Value dominance over Performance Expectancy) suggest that AI represents a theoretically distinct technology category requiring dedicated research attention.
+The study extends UTAUT2 with AI-specific constructs, demonstrating that traditional technology acceptance frameworks require modification for AI adoption contexts. The near-significant AI Trust effect and the shift from Performance Expectancy to Price Value dominance (detailed in §4.5) suggest that AI represents a theoretically distinct technology category.
 
 ### 6.3.2 Context-Specific Adoption Drivers
 
-The finding that Price Value, rather than Performance Expectancy, drives AI adoption represents a significant departure from decades of technology acceptance research. This suggests that users evaluate AI tools through a value lens rather than a utility lens—they ask "Is it worth it?" rather than "Will it help me?" This reframing has important implications for how AI adoption should be theorized and measured.
+As discussed in §5.3.1, Price Value rather than Performance Expectancy drives AI adoption—a significant departure from prior research. Users evaluate AI tools through a value lens ("Is it worth it?") rather than a utility lens ("Will it help me?"), with implications for both theory and organizational practice.
 
 ### 6.3.3 Career Development Integration
 
-The significant moderation effect of professional experience on the Hedonic Motivation → Behavioral Intention path introduces career development as a relevant theoretical domain for technology acceptance research. As professionals advance in their careers, intrinsic satisfaction becomes more important relative to instrumental benefits, suggesting that adoption models should incorporate career-stage considerations.
+The experience moderation effect (§4.5.4) introduces career development as a relevant theoretical domain for technology acceptance research. As professionals advance, intrinsic satisfaction becomes more important, suggesting adoption models should incorporate career-stage considerations.
 
 ### 6.3.4 User Typology Framework
 
@@ -74,12 +74,7 @@ The empirically-derived four-segment typology provides insights into adoption he
 
 **Value Demonstration Over Capability Showcasing**: The dominance of Price Value suggests that organizations may benefit from demonstrating clear return on investment rather than simply highlighting AI capabilities. The findings indicate that employees' cost-benefit mental models may be more influential than capability-focused messaging—a hypothesis warranting experimental validation in organizational contexts.
 
-**Segment-Specific Intervention Hypotheses**: The four-segment user typology provides a framework for tailored change management research. Based on the empirical profiles, the following segment-specific approaches are hypothesized (pending experimental validation):
-
-- **AI Enthusiasts (16%)**: May serve effectively as champions and early adopters who influence peers
-- **Cautious Adopters (30%)**: May respond to evidence-based reassurance and hands-on training
-- **Moderate Users (37%)**: May respond to messaging focused on specific, relevant benefits
-- **Anxious Avoiders (17%)**: May require anxiety-reduction approaches before capability training
+**Segment-Specific Intervention Hypotheses**: The four-segment typology (§4.6) provides a framework for tailored change management research. Preliminary hypotheses suggest that each segment may respond to different intervention approaches—from champion programs for Enthusiasts to anxiety-reduction for Avoiders—pending experimental validation.
 
 **Social Influence Leverage**: The significant Social Influence effect (β = .136) suggests that peer influence matters for AI adoption. The findings indicate that visible AI champions and communities of practice may facilitate adoption—approaches that warrant experimental testing.
 
@@ -232,10 +227,10 @@ This roadmap positions the current validated scale as the essential foundation f
 
 ## 6.8 Closing Remarks
 
-This dissertation addresses a timely and consequential challenge: understanding why individuals adopt or resist AI tools in professional contexts. At a time when organizational AI adoption has reached approximately 76% while only 1% of organizations consider themselves "AI mature," the gap between technology availability and effective utilization demands scholarly attention.
+This dissertation addresses a timely challenge: understanding why individuals adopt or resist AI tools in professional contexts. As documented throughout this study, the gap between AI adoption rates and value realization demands scholarly attention.
 
-The findings reveal that AI adoption is not simply an extension of previous technology acceptance patterns. The dominance of Price Value over Performance Expectancy, the significant role of Hedonic Motivation, and the emergence of experience as a moderator suggest that AI represents a distinct technology category requiring dedicated theoretical and practical attention. Users evaluate AI tools through a value-and-enjoyment lens rather than a pure utility lens—a finding with profound implications for how organizations message, train, and support AI adoption.
+The findings reveal that AI adoption operates through different mechanisms than previous technology adoption. The dominance of Price Value, the significant role of Hedonic Motivation, and experience as a moderator suggest that AI represents a distinct technology category. Users evaluate AI tools through a value-and-enjoyment lens rather than a pure utility lens—a finding with implications for organizational practice.
 
-The validated AIRS instrument provides researchers with a psychometrically sound foundation for investigating AI adoption patterns. The four-segment user typology offers preliminary evidence of adoption heterogeneity that warrants future experimental investigation. And the theoretical extensions contribute to the ongoing scholarly conversation about how technology acceptance models must evolve to address emerging technologies.
+The validated AIRS instrument provides researchers with a psychometrically sound foundation for investigating AI adoption. The four-segment typology offers preliminary evidence of adoption heterogeneity warranting experimental investigation. The theoretical extensions contribute to scholarly conversations about how technology acceptance models must evolve.
 
-As AI continues to transform professional work, understanding the psychological drivers of adoption becomes increasingly critical. This dissertation offers a validated theoretical foundation and measurement instrument that can enable future diagnostic tools, intervention protocols, and organizational assessment systems. The author's research roadmap includes developing an AIRS Score algorithm for individual and organizational benchmarking, designing and testing segment-specific interventions, and validating the instrument across diverse cultural and industry contexts. The path forward requires continued research, experimental intervention studies, and commitment to inclusive adoption that benefits all members of the workforce.
+As AI transforms professional work, understanding adoption psychology becomes critical. This dissertation establishes a validated foundation that can enable future diagnostic tools, intervention protocols, and assessment systems. The path forward requires continued research, experimental studies, and commitment to inclusive adoption benefiting all members of the workforce.

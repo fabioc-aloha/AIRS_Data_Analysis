@@ -11,11 +11,11 @@
 
 .EXAMPLE
     .\build-thesis.ps1
-    Builds "DRAFT 03.pdf" in the thesis directory.
+    Builds "DRAFT 05.pdf" in the thesis directory.
 
 .EXAMPLE
     .\build-thesis.ps1 -OpenAfterBuild
-    Builds "DRAFT 03.pdf" and opens it.
+    Builds "DRAFT 05.pdf" and opens it.
 #>
 
 param(
@@ -23,7 +23,7 @@ param(
 )
 
 # Hardcoded draft version to avoid mistakes
-$OutputName = "DRAFT 03"
+$OutputName = "DRAFT 05"
 
 # Configuration
 $ThesisDir = $PSScriptRoot
@@ -235,7 +235,7 @@ Write-Host "  - Author: $($Metadata.Author)" -ForegroundColor Gray
 $YamlFrontMatter = @"
 ---
 documentclass: article
-geometry: margin=1in
+geometry: "margin=1in, letterpaper, portrait"
 fontsize: 12pt
 linestretch: 2
 indent: true
@@ -261,6 +261,11 @@ header-includes:
   - \AtBeginDocument{\thispagestyle{empty}}
   - \usepackage{fontspec}
   - \setmainfont{Times New Roman}
+  - \usepackage{pdfpages}
+  - \usepackage{booktabs}
+  - \usepackage{tabularx}
+  - \usepackage{array}
+  - \renewcommand{\arraystretch}{1.2}
   - \usepackage{titlesec}
   - \titleformat{\section}{\normalfont\bfseries\centering}{}{0em}{}
   - \titleformat{\subsection}{\normalfont\bfseries}{}{0em}{}
@@ -327,6 +332,14 @@ $abstractContent
 
 \newpage
 
+\listoftables
+
+\newpage
+
+\listoffigures
+
+\newpage
+
 "@
 
 # Combine chapters
@@ -348,15 +361,30 @@ foreach ($chapter in $ChapterFiles) {
         
         # Replace mermaid code blocks with image references
         if ($hasMermaid) {
-            $mermaidRegex = [regex]::new('(?s)```mermaid\r?\n.+?```')
-            $mermaidMatches = $mermaidRegex.Matches($chapterContent)
-            # Process matches in reverse order to preserve indices
-            for ($i = $mermaidMatches.Count - 1; $i -ge 0; $i--) {
-                $match = $mermaidMatches[$i]
+            # Pattern to capture comment caption and mermaid block together
+            $mermaidWithCaptionRegex = [regex]::new('(?s)<!-- (Figure \d+\.\d+: [^>]+) -->\s*\r?\n\s*```mermaid\r?\n.+?```')
+            $mermaidNoCaptionRegex = [regex]::new('(?s)```mermaid\r?\n.+?```')
+            
+            # First, replace mermaid blocks that have caption comments
+            $captionMatches = $mermaidWithCaptionRegex.Matches($chapterContent)
+            for ($i = $captionMatches.Count - 1; $i -ge 0; $i--) {
+                $match = $captionMatches[$i]
+                $caption = $match.Groups[1].Value
                 $figureIndex = $i + 1
                 $figureFileName = "${chapterName}_fig${figureIndex}"
                 $pngPath = "figures/${figureFileName}.png"
-                $imgRef = "![]($pngPath)"
+                $imgRef = "![$caption]($pngPath){width=90%}"
+                $chapterContent = $chapterContent.Remove($match.Index, $match.Length).Insert($match.Index, $imgRef)
+            }
+            
+            # Then handle any remaining mermaid blocks without captions
+            $remainingMatches = $mermaidNoCaptionRegex.Matches($chapterContent)
+            for ($i = $remainingMatches.Count - 1; $i -ge 0; $i--) {
+                $match = $remainingMatches[$i]
+                $figureIndex = $captionMatches.Count + $i + 1
+                $figureFileName = "${chapterName}_fig${figureIndex}"
+                $pngPath = "figures/${figureFileName}.png"
+                $imgRef = "![]($pngPath){width=90%}"
                 $chapterContent = $chapterContent.Remove($match.Index, $match.Length).Insert($match.Index, $imgRef)
             }
         }

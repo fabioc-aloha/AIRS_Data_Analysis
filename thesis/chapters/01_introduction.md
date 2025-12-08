@@ -130,7 +130,7 @@ This dissertation deliberately limits its scope to **scale validation** rather t
 
 **Foundational Requirements**: Psychometric validation must precede diagnostic application. Before the AIRS can serve as an organizational diagnostic tool, the instrument must demonstrate adequate reliability (α > .70), structural validity (CFA fit indices), discriminant validity (HTMT < .85), and measurement invariance across target populations. This dissertation addresses these foundational requirements.
 
-**Validation Sequence**: Applied psychometrics follows a validation sequence: scale development → reliability testing → structural validation → invariance testing → normative data collection → diagnostic application [@devellis2022scale]. This study completes the first four stages. Diagnostic application requires additional stages—particularly normative data collection across organizational contexts—that exceed doctoral scope.
+**Validation Sequence**: Applied psychometrics follows a validation sequence: scale development → reliability testing → structural validation → invariance testing → normative data collection → diagnostic application [@devellis2021]. This study completes the first four stages. Diagnostic application requires additional stages—particularly normative data collection across organizational contexts—that exceed doctoral scope.
 
 **Statistical Limitations**: Certain claims require stronger evidence than cross-sectional self-report data can provide. For example:
 
@@ -140,7 +140,7 @@ This dissertation deliberately limits its scope to **scale validation** rather t
 
 **Future Research Foundation**: By completing rigorous psychometric validation within appropriate scope, this dissertation provides a credible foundation for future research. The AIRS instrument can support subsequent studies examining diagnostic protocols, intervention effectiveness, and organizational applications—research that builds upon rather than overextends the current findings.
 
-Appendix Z outlines a research roadmap for extending this foundational work through scoring algorithms, diagnostic protocols, and intervention frameworks in future investigations.
+Appendix E outlines a research roadmap for extending this foundational work through scoring algorithms, diagnostic protocols, and intervention frameworks in future investigations.
 
 ## 1.7 Definition of Key Terms
 

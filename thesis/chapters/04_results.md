@@ -17,6 +17,8 @@ The sample comprises N=523 United States adults with representation from both ac
 | Students | 216 | 41.3% | Full-time (n=196), Part-time (n=20) |
 | Professionals | 307 | 58.7% | Individual contributors (n=112), Managers (n=71), Executives (n=52), Freelancers (n=32), Other (n=23), Unemployed (n=17) |
 
+: Sample Composition by Population Type
+
 ### 4.2.2 Sample Split for Validation
 
 For psychometric validation, the sample was randomly split (seed=67) into development (n=261, 50%) and holdout (n=262, 50%) subsamples. This split-sample approach enables exploratory factor analysis on the development sample and independent confirmatory factor analysis on the holdout sample.
@@ -58,6 +60,8 @@ Multiple factor solutions were examined using principal axis factoring with obli
 | C | 8 | 18 | .964 | .953 | .066 | .048 | Good |
 | D | 8 | 16 | .975 | .960 | .065 | .046 | **Selected** |
 
+: Exploratory Factor Analysis Model Comparison
+
 **Model D** was selected as the final measurement model based on optimal balance of parsimony and fit, with all items demonstrating factor loadings ≥ .50 and no substantive cross-loadings (< .32). Figure 4.1 presents the scree plot supporting this factor structure.
 
 ![Figure 4.1: Scree Plot with Parallel Analysis](figures/fig_efa_scree.png){width=80%}
@@ -74,6 +78,8 @@ Four proposed constructs were excluded during EFA due to poor inter-item reliabi
 | Explainability (EX) | .582 | Dropped | Items measured understanding vs. preference—distinct facets |
 | Ethical Risk (ER) | .546 | Dropped | Items measured job displacement vs. privacy—distinct risk types |
 | AI Anxiety (AX) | .301 | Dropped | Items measured avoidance vs. approach anxiety—distinct motivations |
+
+: Construct Exclusion Analysis
 
 **Interpretation**: The proposed two-item scales for these AI-specific constructs proved insufficient to capture multi-faceted phenomena. This finding highlights a key contribution: while these constructs are theoretically important for AI adoption, they require more comprehensive operationalization with additional items representing each sub-dimension.
 
@@ -98,6 +104,8 @@ The final measurement model comprises 7 UTAUT2 constructs plus the AI Trust exte
 | Habit (HB) | HB1, HB2 | Automaticity of use | .909 | .909 | .833 |
 | AI Trust (TR) | TR1, TR2 | Trust in AI systems | .891 | .891 | .804 |
 
+: Final Factor Structure with Reliability and Validity Indices
+
 *Note: BI (Behavioral Intention) serves as the outcome variable and is modeled separately in the structural model.*
 
 ### 4.4.2 Confirmatory Factor Analysis (Holdout Sample)
@@ -115,6 +123,8 @@ The 8-factor model was cross-validated on the independent holdout sample (n=262)
 | TLI | .960 | ≥ .95 | Excellent |
 | RMSEA | .065 | ≤ .08 | Good |
 | SRMR | .046 | ≤ .08 | Excellent |
+
+: Confirmatory Factor Analysis Model Fit Indices
 
 The model demonstrated excellent fit across all indices, confirming the factor structure derived from the development sample. Figure 4.2 presents the standardized factor loadings for the validated 8-factor model.
 
@@ -147,6 +157,8 @@ All predictor factors demonstrated acceptable internal consistency:
 | HB | .909 | .909 | .833 |
 | TR | .891 | .891 | .804 |
 
+: Composite Reliability and Validity Indices
+
 Figure 4.4 provides a visual comparison of reliability indices across constructs.
 
 ![Figure 4.4: Reliability Comparison](figures/fig_reliability.png){width=80%}
@@ -169,6 +181,8 @@ Measurement invariance was tested across role groups (Academic n=216 vs. Profess
 |-------|----|----|-----|-----|-------|----------------|
 | Academic | 167.16 | 76 | .958 | .934 | .075 | Good fit |
 | Professional | 135.88 | 76 | .988 | .981 | .051 | Excellent fit |
+
+: Measurement Invariance Testing Across Groups
 
 **Configural invariance** was supported: the same factor structure held across both groups. **Metric invariance** was not fully achieved (mean loading difference = .082, max = .326), indicating some factor loadings differ across groups. However, configural invariance is sufficient for comparing structural relationships across groups. The maximum factor loading difference (Δλ = .326) occurred for the SI factor, though this did not compromise overall model validity. Figure 4.5 illustrates the loading differences across groups.
 
@@ -193,6 +207,8 @@ The structural model demonstrated acceptable fit:
 | RMSEA | .072 | .068 | ≤ .08 |
 | SRMR | .054 | .051 | ≤ .08 |
 
+: Structural Model Fit by Group
+
 ### 4.5.2 Primary Hypotheses (H1a–H1g)
 
 Table 4.2 presents the standardized path coefficients and hypothesis test results for the full sample and by role group.
@@ -206,6 +222,8 @@ Table 4.2 presents the standardized path coefficients and hypothesis test result
 | H1e | HM → BI | **.217** | .014 | ✅ Supported |
 | H1f | PV → BI | **.505** | <.001 | ✅ Supported (Strongest) |
 | H1g | HB → BI | .023 | .631 | ❌ Not Supported |
+
+: Structural Model Path Coefficients
 | H2 | TR → BI | .106 | .064 | ❌ Marginal |
 
 **Key Findings:**
@@ -239,13 +257,15 @@ Usage frequency was tested as a moderator of UTAUT relationships through multi-g
 | Moderator | Path | Interaction β | p | Status |
 |-----------|------|---------------|---|--------|
 | Experience | PE×Exp | 0.112 | .055 | ⚠️ Marginal |
-| **Experience** | **HM×Exp** | **0.136** | **.007** | **✅ Significant** |
+| **Experience** | **HM×Exp** | **0.136** | **.009** | **✅ Significant** |
 | Experience | EE×Exp | 0.122 | .161 | ❌ Not significant |
 | Experience | TR×Exp | 0.081 | .145 | ❌ Not significant |
 
+: Moderation Analysis Results
+
 **Interpretation:**
 
-- **Experience moderates HM → BI** (β = .136, p = .007): Experienced professionals (4+ years) weight hedonic motivation more heavily
+- **Experience moderates HM → BI** (β = .136, p = .009): Experienced professionals (4+ years) weight hedonic motivation more heavily
 - Usage-dependent mechanisms: Performance Expectancy matters for new users; Price Value for heavy users
 - Habit is marginally moderated by usage frequency (p = .065)
 
@@ -269,6 +289,8 @@ Multi-group comparison tested whether structural path coefficients differed sign
 | PV → BI | 0.638 | 0.808 | 0.170 | No |
 | HB → BI | 0.075 | -0.064 | -0.140 | No |
 | TR → BI | -0.011 | 0.153 | 0.164 | No |
+
+: Population Moderation of Structural Paths
 
 Population moderation was partially supported. **Hedonic Motivation** showed a significant population difference (Δβ = -0.750, p = .041), with HM → BI stronger for Students (β = 0.449) than for Professionals (β = -0.301). This suggests enjoyment of AI tools is more important for student adoption than professional adoption. All other paths showed no significant population differences. Figure 4.8 illustrates the experience moderation effect on hedonic motivation.
 
@@ -449,7 +471,7 @@ Academics and Leaders reported more positive experiences, while Academics focuse
 | H1f | PV → BI (+) | ✅ Supported (β = .505) |
 | H1g | HB → BI (+) | ❌ Not Supported (β = .023) |
 | H2 | TR → BI (+) | ❌ Marginal (p = .064) |
-| H3 | Experience moderates paths | ⚠️ Partial (HM×Exp significant, p = .007) |
+| H3 | Experience moderates paths | ⚠️ Partial (HM×Exp significant, p = .009) |
 | H4 | Role group moderates paths | ⚠️ Partial (HM only, p = .041) |
 | H5 | BI → Tool Usage | ✅ Supported (ρ = .69) |
 | H6 | Role usage differences | ✅ Supported (F = 22.15, p < .001) |

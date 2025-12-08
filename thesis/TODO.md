@@ -22,7 +22,7 @@ Last Updated: December 8, 2025
 | **AI High Performers** | ✅ Updated to "6%" per McKinsey 2025 terminology |
 | **Leadership Attribution** | ✅ Fixed "3x more likely" (not 3.5x) per McKinsey Exhibit 13 |
 | **Scope Refinement** | ✅ Reframed from "diagnostic tool" to "validated scale foundation" |
-| **Appendix Z Created** | ✅ Public research roadmap (medium-high value) |
+| **Appendix E Created** | ✅ Public research roadmap (medium-high value) |
 | **Confidential Roadmap** | ✅ `plan/CONFIDENTIAL_RESEARCH_ROADMAP.md` with proprietary IP |
 | **Git Commit** | ✅ Committed and pushed (de858d8) |
 
@@ -104,7 +104,7 @@ These gaps represented misalignments between the approved DBA proposal and curre
 | ✅ ~~A~~ | ~~Resolve Proposal Gaps~~ | ✅ COMPLETED December 7, 2025 | - |
 | ✅ ~~B~~ | ~~Write Chapter 1: Introduction~~ | ✅ COMPLETED December 8, 2025 (1,862 words) | - |
 | ✅ ~~A~~ | ~~Expand Chapter 5: Discussion~~ | ✅ COMPLETED December 8, 2025 (1,662→2,388 words, +44%) | - |
-| ✅ ~~A~~ | ~~Scope Refinement~~ | ✅ COMPLETED December 8, 2025 (Appendix Z + Confidential Roadmap) | - |
+| ✅ ~~A~~ | ~~Scope Refinement~~ | ✅ COMPLETED December 8, 2025 (Appendix E + Confidential Roadmap) | - |
 | ✅ ~~A~~ | ~~Scope Alignment Audit~~ | ✅ COMPLETED December 8, 2025 (prescriptive claims → hypotheses) | - |
 | ✅ ~~A~~ | ~~Verify Secondary Statistics~~ | ✅ COMPLETED December 8, 2025 (hedged unverifiable claims) | - |
 | ✅ ~~B~~ | ~~Export Figures~~ | ✅ COMPLETED December 8, 2025 (12 figures added to Ch 4, 5, App D) | - |
@@ -225,7 +225,7 @@ These gaps represented misalignments between the approved DBA proposal and curre
 - [x] **Appendix B**: Survey Materials (placeholder) ✅
 - [x] **Appendix C**: Supplementary Statistical Tables (placeholder) ✅
 - [x] **Appendix D**: Supplementary Figures (3 figures) ✅ NEW
-- [x] **Appendix Z**: Research Roadmap ✅ (streamlined public version)
+- [x] **Appendix E**: Research Roadmap ✅ (streamlined public version)
 
 ---
 

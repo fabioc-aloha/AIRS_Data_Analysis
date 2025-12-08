@@ -34,7 +34,7 @@ The AI Trust extension approached but did not reach significance (β = .106, p =
 
 **Comparison with Prior Research**: This finding represents a significant departure from traditional UTAUT research where Performance Expectancy typically dominates. Blut et al.'s (2022) meta-analysis of 737,112 users found Performance Expectancy to be the strongest predictor (ρ = .60) across technology contexts. The reversal observed in this study suggests fundamental differences in how users evaluate AI tools compared to conventional technologies.
 
-**Industry Context**: This Price Value dominance gains practical significance when contextualized against the enterprise AI adoption landscape. Despite 88% of organizations now using AI in at least one business function [@mckinseyStateAI2025], only 6% qualify as "AI high performers"—those achieving measurable returns across multiple use cases [@mckinseyStateAI2025]. The Boston Consulting Group reports that 74% of companies struggle to scale AI beyond pilot projects and only 5% achieve measurable ROI [@bcgAIAdoption2024]. This "adoption-value gap" suggests that organizations are deploying AI without effectively communicating or demonstrating value to end users—precisely the construct captured by Price Value.
+**Industry Context**: This finding gains significance against the adoption-value gap documented in §2.3: despite high adoption rates, few organizations achieve measurable returns. The gap suggests organizations deploy AI without effectively communicating value to end users—precisely the construct captured by Price Value.
 
 **Interpretation**: In the AI context, users appear primarily motivated by **perceived value relative to cost** rather than raw productivity benefits (PE, ns), ease of use (EE, ns), organizational support (FC, ns), or habit (HB, ns). This suggests a hypothesis for future research: AI adoption interventions may be more effective when they prioritize demonstrating clear return on investment rather than focusing solely on capability demonstrations.
 
@@ -64,7 +64,7 @@ Similarly, the non-significance of Effort Expectancy (β = -.008, p = .875) and 
 
 ### 5.3.4 Experience as Moderator
 
-**Finding**: Professional experience strengthens HM → BI (β = .136, p = .007).
+**Finding**: Professional experience strengthens HM → BI (β = .136, p = .009).
 
 **Comparison with Prior Research**: While UTAUT specifies experience as a moderator, it conceptualizes experience as technology familiarity rather than career development. The present finding integrates career development theory (Super, 1980) with technology acceptance, suggesting that vocational maturity influences technology evaluation processes.
 
@@ -105,7 +105,7 @@ This segmentation approach moves beyond mean-level analysis to acknowledge indiv
 
 ## 5.5 Implications for Practice
 
-The findings from this study offer insights for organizations navigating AI adoption challenges. With 88% of enterprises now deploying AI but only 6% achieving "high performer" status with measurable returns [@mckinseyStateAI2025], the gap between adoption and value realization represents a critical business challenge. While this study validates a measurement instrument rather than testing interventions, the empirical findings suggest several evidence-informed directions for practitioners.
+The findings offer insights for organizations navigating AI adoption challenges. As documented in §2.3, the gap between adoption and value realization represents a critical business challenge. While this study validates a measurement instrument rather than testing interventions, the empirical findings suggest several evidence-informed directions.
 
 **Important Scope Note**: The AIRS instrument validated in this study provides a psychometrically sound measure of AI adoption readiness constructs. The practical applications suggested below are hypotheses derived from the empirical findings—future experimental research is needed to validate intervention effectiveness. The author's research roadmap includes developing formal AIRS Score algorithms, diagnostic protocols, and intervention frameworks as subsequent research phases.
 
@@ -113,12 +113,7 @@ The findings from this study offer insights for organizations navigating AI adop
 
 **Lead with Value, Not Capabilities**: The dominance of Price Value (β = .505) over Performance Expectancy (ns) suggests a potential shift in how organizations might approach AI implementation communications. Rather than emphasizing AI capabilities and productivity promises, the findings suggest that demonstrating return on investment and cost-effectiveness may be more influential. Capgemini's research supports this direction, finding that organizations redesigning workflows around AI—rather than simply adding AI to existing processes—achieve substantially higher returns [@capgemini2025].
 
-**Consider Adoption Heterogeneity**: The four-segment typology suggests that user populations vary systematically in their AI readiness profiles:
-
-- **AI Enthusiasts (16%)**: May serve as early adopters and potential peer champions
-- **Cautious Adopters (30%)**: May respond to evidence-based value demonstrations
-- **Moderate Users (37%)**: May focus on specific, high-value use cases
-- **Anxious Avoiders (17%)**: May require attention to emotional barriers before technical training
+**Consider Adoption Heterogeneity**: The four-segment typology (§4.6) suggests that user populations vary systematically in their AI readiness profiles, with each segment potentially responding to different intervention approaches.
 
 **Leadership Engagement**: Leaders in this study demonstrated the highest AI tool usage (d = 0.74–1.14). McKinsey's research confirms that organizations where senior leadership takes ownership of AI initiatives are three times more likely to achieve value from their investments [@mckinseyStateAI2025]. Visible leadership engagement may amplify adoption efforts.
 
@@ -136,15 +131,15 @@ The validated AIRS instrument provides a foundation for future organizational AI
 
 ### 5.5.5 Understanding the Adoption-Value Gap
 
-This study's findings offer insights into mechanisms that may contribute to the widely-documented gap between AI adoption rates and value realization. MIT Media Lab's estimate that 90–95% of generative AI pilots fail to scale [@mitMediaLab2025] reflects challenges that this research begins to illuminate:
+The findings illuminate mechanisms that may contribute to the adoption-value gap documented in §2.3:
 
-1. **Value Communication Misalignment**: Organizations may lead with capability demonstrations (Performance Expectancy) when users actually evaluate cost-benefit ratios (Price Value). Future research should test whether value-focused messaging improves adoption outcomes.
+1. **Value Communication Misalignment**: Organizations may lead with capability demonstrations when users actually evaluate cost-benefit ratios. Future research should test whether value-focused messaging improves outcomes.
 
-2. **Heterogeneous Adoption Readiness**: One-size-fits-all implementation approaches may fail because user populations vary systematically. The four-segment typology provides a framework for future intervention research.
+2. **Heterogeneous Readiness**: One-size-fits-all approaches may fail because user populations vary systematically. The four-segment typology provides a framework for intervention research.
 
-3. **Neglected Affective Barriers**: The 17% Anxious Avoider segment and marginal Trust effect suggest that psychological barriers may be underaddressed in current practice.
+3. **Neglected Affective Barriers**: The Anxious Avoider segment and marginal Trust effect suggest psychological barriers may be underaddressed.
 
-4. **Context-Inappropriate Frameworks**: Applying generic technology acceptance models to AI contexts may lead to misallocated resources. The dramatic shift from Performance Expectancy dominance to Price Value dominance demonstrates why context-specific measurement instruments are valuable.
+4. **Context-Inappropriate Frameworks**: The shift from Performance Expectancy to Price Value dominance demonstrates why context-specific instruments are valuable.
 
 
 
