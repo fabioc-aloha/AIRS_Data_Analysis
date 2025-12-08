@@ -9,17 +9,26 @@
 .PARAMETER OpenAfterBuild
     If specified, opens the PDF after successful generation.
 
+.PARAMETER Cleanup
+    If specified, removes the temporary combined markdown file after processing.
+    Default is to retain the file for inspection.
+
 .EXAMPLE
     .\build-thesis.ps1
-    Builds "DRAFT 05.pdf" in the thesis directory.
+    Builds "DRAFT 05.pdf" in the thesis directory (retains temp file).
 
 .EXAMPLE
     .\build-thesis.ps1 -OpenAfterBuild
     Builds "DRAFT 05.pdf" and opens it.
+
+.EXAMPLE
+    .\build-thesis.ps1 -Cleanup
+    Builds "DRAFT 05.pdf" and removes the temporary markdown file.
 #>
 
 param(
-    [switch]$OpenAfterBuild
+    [switch]$OpenAfterBuild,
+    [switch]$Cleanup
 )
 
 # Hardcoded draft version to avoid mistakes
@@ -510,9 +519,13 @@ if (Test-Path $OutputPdf) {
 
 # Cleanup
 Write-Host "[6/6] Cleaning up..." -ForegroundColor Yellow
-if (Test-Path $TempMarkdown) {
-    Remove-Item $TempMarkdown -Force
-    Write-Host "  - Removed temporary file: _combined_thesis.md" -ForegroundColor Gray
+if ($Cleanup) {
+    if (Test-Path $TempMarkdown) {
+        Remove-Item $TempMarkdown -Force
+        Write-Host "  - Removed temporary file: _combined_thesis.md" -ForegroundColor Gray
+    }
+} else {
+    Write-Host "  - Retained temporary file: _combined_thesis.md (use -Cleanup to remove)" -ForegroundColor Gray
 }
 
 Write-Host ""

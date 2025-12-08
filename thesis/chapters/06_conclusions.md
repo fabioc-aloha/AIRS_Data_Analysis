@@ -10,7 +10,7 @@ This concluding chapter synthesizes the contributions of this dissertation study
 
 ### 6.2.1 Research Purpose
 
-This study addressed a critical gap in technology acceptance research: the inadequacy of existing frameworks to explain AI-specific adoption patterns. While traditional models like UTAUT2 have demonstrated robust explanatory power for conventional technologies, the unique characteristics of AI systems—including opacity, probabilistic reasoning, and ethical implications—necessitate theoretical extension. The research purpose was twofold: (1) to develop and validate a psychometrically sound AI Readiness Scale (AIRS) extending UTAUT2 with AI-specific constructs, and (2) to identify the key drivers of AI adoption intention in professional and academic contexts.
+This study addressed a critical gap in technology acceptance research: the inadequacy of existing frameworks to explain AI-specific adoption patterns. While traditional models like UTAUT2 have demonstrated robust explanatory power for conventional technologies, the unique characteristics of AI systems (including opacity, probabilistic reasoning, and ethical implications) necessitate theoretical extension. The research purpose was twofold: (1) to develop and validate a psychometrically sound AI Readiness Scale (AIRS) extending UTAUT2 with AI-specific constructs, and (2) to identify the key drivers of AI adoption intention in professional and academic contexts.
 
 ### 6.2.2 Methodology Summary
 
@@ -56,7 +56,7 @@ The study extends UTAUT2 with AI-specific constructs, demonstrating that traditi
 
 ### 6.3.2 Context-Specific Adoption Drivers
 
-As discussed in §5.3.1, Price Value rather than Performance Expectancy drives AI adoption—a significant departure from prior research. Users evaluate AI tools through a value lens ("Is it worth it?") rather than a utility lens ("Will it help me?"), with implications for both theory and organizational practice.
+As discussed in §5.3.1, Price Value rather than Performance Expectancy drives AI adoption, a significant departure from prior research. Users evaluate AI tools through a value lens ("Is it worth it?") rather than a utility lens ("Will it help me?"), with implications for both theory and organizational practice.
 
 ### 6.3.3 Career Development Integration
 
@@ -64,7 +64,7 @@ The experience moderation effect (§4.5.4) introduces career development as a re
 
 ### 6.3.4 User Typology Framework
 
-The empirically-derived four-segment typology provides insights into adoption heterogeneity that can inform future intervention research. Rather than treating users as a homogeneous population, this segmentation reveals that different psychological profiles may respond to different adoption strategies—a hypothesis warranting future experimental validation.
+The empirically-derived four-segment typology provides insights into adoption heterogeneity that can inform future intervention research. Rather than treating users as a homogeneous population, this segmentation reveals that different psychological profiles may respond to different adoption strategies, a hypothesis warranting future experimental validation.
 
 
 
@@ -72,33 +72,33 @@ The empirically-derived four-segment typology provides insights into adoption he
 
 ### 6.4.1 For Organizations Implementing AI
 
-**Value Demonstration Over Capability Showcasing**: The dominance of Price Value suggests that organizations may benefit from demonstrating clear return on investment rather than simply highlighting AI capabilities. The findings indicate that employees' cost-benefit mental models may be more influential than capability-focused messaging—a hypothesis warranting experimental validation in organizational contexts.
+**Value Demonstration Over Capability Showcasing**: The dominance of Price Value suggests that organizations may benefit from demonstrating clear return on investment rather than simply highlighting AI capabilities. The findings indicate that employees' cost-benefit mental models may be more influential than capability-focused messaging, a hypothesis warranting experimental validation in organizational contexts.
 
-**Segment-Specific Intervention Hypotheses**: The four-segment typology (§4.6) provides a framework for tailored change management research. Preliminary hypotheses suggest that each segment may respond to different intervention approaches—from champion programs for Enthusiasts to anxiety-reduction for Avoiders—pending experimental validation.
+**Segment-Specific Intervention Hypotheses**: The four-segment typology (§4.6) provides a framework for tailored change management research. Preliminary hypotheses suggest that each segment may respond to different intervention approaches, from champion programs for Enthusiasts to anxiety-reduction for Avoiders, pending experimental validation.
 
-**Social Influence Leverage**: The significant Social Influence effect (β = .136) suggests that peer influence matters for AI adoption. The findings indicate that visible AI champions and communities of practice may facilitate adoption—approaches that warrant experimental testing.
+**Social Influence Leverage**: The significant Social Influence effect (β = .136) suggests that peer influence matters for AI adoption. The findings indicate that visible AI champions and communities of practice may facilitate adoption, approaches that warrant experimental testing.
 
-**Experience-Sensitive Approaches**: The moderation finding suggests that experienced professionals may respond differently to AI adoption messaging than newer employees. The findings indicate that senior staff may respond more to intrinsic satisfaction and intellectual engagement aspects of AI tools, while junior staff may respond more to value propositions and career development benefits—hypotheses requiring experimental validation.
+**Experience-Sensitive Approaches**: The moderation finding suggests that experienced professionals may respond differently to AI adoption messaging than newer employees. The findings indicate that senior staff may respond more to intrinsic satisfaction and intellectual engagement aspects of AI tools, while junior staff may respond more to value propositions and career development benefits, hypotheses requiring experimental validation.
 
 ### 6.4.2 For AI Tool Designers and Vendors
 
 **Pricing Model Innovation**: The Price Value dominance suggests that pricing strategy significantly influences adoption. Freemium models, transparent pricing, and clear ROI documentation may be more important than feature development for driving adoption.
 
-**Trust-Building Features**: While AI Trust was marginally significant, its near-significance (p = .064) suggests that trust considerations are emerging concerns. The findings indicate that explainability features, reliability demonstrations, and transparency mechanisms may address trust-related hesitation—a hypothesis for design research.
+**Trust-Building Features**: While AI Trust was marginally significant, its near-significance (p = .064) suggests that trust considerations are emerging concerns. The findings indicate that explainability features, reliability demonstrations, and transparency mechanisms may address trust-related hesitation, a hypothesis for design research.
 
-**Enjoyment-Focused Design**: The Hedonic Motivation effect indicates that users value enjoyable experiences. The findings suggest that designing AI tools for engagement—not just utility—may enhance adoption, though experimental validation is needed.
+**Enjoyment-Focused Design**: The Hedonic Motivation effect indicates that users value enjoyable experiences. The findings suggest that designing AI tools for engagement, not just utility, may enhance adoption, though experimental validation is needed.
 
 ### 6.4.3 For Trainers and Educators
 
-**Anxiety-Informed Pedagogy**: The identification of an "Anxious Avoider" segment (17%) with elevated AI anxiety suggests that training programs may benefit from addressing emotional barriers before technical skills. Anxiety-reduction approaches—such as gradual exposure, peer support, and psychological safety—may be more effective when preceding capability training, though this hypothesis requires experimental validation.
+**Anxiety-Informed Pedagogy**: The identification of an "Anxious Avoider" segment (17%) with elevated AI anxiety suggests that training programs may benefit from addressing emotional barriers before technical skills. Anxiety-reduction approaches (such as gradual exposure, peer support, and psychological safety) may be more effective when preceding capability training, though this hypothesis requires experimental validation.
 
-**Accessibility Considerations**: The finding that disability status is associated with higher AI anxiety (d = .36) highlights the importance of inclusive AI training design. The findings suggest that materials and interfaces accommodating diverse abilities may better support anxious learners—considerations that warrant attention in training program development.
+**Accessibility Considerations**: The finding that disability status is associated with higher AI anxiety (d = .36) highlights the importance of inclusive AI training design. The findings suggest that materials and interfaces accommodating diverse abilities may better support anxious learners, considerations that warrant attention in training program development.
 
 ### 6.4.4 For Policy Makers and Organizational Leaders
 
 **Workforce Readiness Research**: The validated AIRS instrument provides a foundation for future organizational AI readiness assessment research. Policy makers may benefit from population-level assessments, though such applications require additional validation beyond the scope of this scale development study.
 
-**Equity Considerations**: The differential anxiety findings suggest that AI adoption may create or exacerbate workforce inequities. The findings highlight the importance of ensuring that all employees—regardless of experience level, disability status, or initial anxiety—have equitable access to AI benefits.
+**Equity Considerations**: The differential anxiety findings suggest that AI adoption may create or exacerbate workforce inequities. The findings highlight the importance of ensuring that all employees, regardless of experience level, disability status, or initial anxiety, have equitable access to AI benefits.
 
 
 
@@ -229,7 +229,7 @@ This roadmap positions the current validated scale as the essential foundation f
 
 This dissertation addresses a timely challenge: understanding why individuals adopt or resist AI tools in professional contexts. As documented throughout this study, the gap between AI adoption rates and value realization demands scholarly attention.
 
-The findings reveal that AI adoption operates through different mechanisms than previous technology adoption. The dominance of Price Value, the significant role of Hedonic Motivation, and experience as a moderator suggest that AI represents a distinct technology category. Users evaluate AI tools through a value-and-enjoyment lens rather than a pure utility lens—a finding with implications for organizational practice.
+The findings reveal that AI adoption operates through different mechanisms than previous technology adoption. The dominance of Price Value, the significant role of Hedonic Motivation, and experience as a moderator suggest that AI represents a distinct technology category. Users evaluate AI tools through a value-and-enjoyment lens rather than a pure utility lens, a finding with implications for organizational practice.
 
 The validated AIRS instrument provides researchers with a psychometrically sound foundation for investigating AI adoption. The four-segment typology offers preliminary evidence of adoption heterogeneity warranting experimental investigation. The theoretical extensions contribute to scholarly conversations about how technology acceptance models must evolve.
 

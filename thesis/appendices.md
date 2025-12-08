@@ -226,7 +226,7 @@ The signed IRB approval letter follows on the next page.
 
 ### F.2 Research Purpose and Methodology
 
-As stated in the IRB application, the purpose of this research was to examine the psychological, motivational, and contextual factors that influence enterprise employees' readiness to adopt artificial intelligence (AI) tools. The study extended the UTAUT2 framework by adding four AI-specific constructs—trust in AI, explainability, perceived ethical risk, and AI-related anxiety—to develop and validate the Artificial Intelligence Readiness Scale (AIRS).
+As stated in the IRB application, the purpose of this research was to examine the psychological, motivational, and contextual factors that influence enterprise employees' readiness to adopt artificial intelligence (AI) tools. The study extended the UTAUT2 framework by adding four AI-specific constructs (trust in AI, explainability, perceived ethical risk, and AI-related anxiety) to develop and validate the Artificial Intelligence Readiness Scale (AIRS).
 
 **Research Questions**:
 
@@ -415,9 +415,9 @@ The survey takes approximately 10-15 minutes to complete. Please answer all ques
 34. **What is your current status?**
     - Full-time student
     - Part-time student
-    - Employed — individual contributor
-    - Employed — manager
-    - Employed — executive or leader
+    - Employed - individual contributor
+    - Employed - manager
+    - Employed - executive or leader
     - Freelancer or self-employed
     - Not currently employed
     - Other

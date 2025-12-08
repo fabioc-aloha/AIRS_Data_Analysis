@@ -86,7 +86,7 @@ All Rights Reserved
 
 This dissertation develops and validates the AI Readiness Scale (AIRS), an instrument measuring artificial intelligence adoption readiness among students and professionals. Extending UTAUT2 with AI-specific constructs, the study examines factors influencing behavioral intention to adopt AI tools.
 
-Using a sample of 523 United States participants, exploratory and confirmatory factor analyses validated an 8-factor, 16-item model with excellent fit (CFI = .975, TLI = .960, RMSEA = .065). The structural model revealed Price Value (β = .505, p < .001), Hedonic Motivation (β = .217, p = .014), and Social Influence (β = .136, p = .024) as significant predictors, explaining 85.7% of variance in behavioral intention. Traditional UTAUT predictors (Performance Expectancy, Effort Expectancy, Facilitating Conditions, Habit) did not significantly predict AI adoption, suggesting AI represents a distinct technology category where cost-benefit perceptions outweigh conventional utility considerations.
+Using a sample of 523 United States participants, exploratory and confirmatory factor analyses validated an 8-factor, 16-item model with excellent fit (CFI = .975, TLI = .960, RMSEA = .065). The structural model revealed Price Value (β = .505, p < .001), Hedonic Motivation (β = .217, p = .014), and Social Influence (β = .136, p = .024) as significant predictors, explaining 86.1% of variance in behavioral intention. Traditional UTAUT predictors (Performance Expectancy, Effort Expectancy, Facilitating Conditions, Habit) did not significantly predict AI adoption, suggesting AI represents a distinct technology category where cost-benefit perceptions outweigh conventional utility considerations.
 
 Four proposed constructs (Voluntariness, Explainability, Ethical Risk, AI Anxiety) were excluded due to inadequate reliability (α = .30–.58). Measurement invariance testing across student (n = 216) and professional (n = 307) populations demonstrated configural invariance. Cluster analysis identified four user segments: AI Enthusiasts (16%), Cautious Adopters (30%), Moderate Users (37%), and Anxious Avoiders (17%).
 
@@ -108,7 +108,7 @@ To my family, thank you for your understanding during the countless hours devote
 
 To my professional colleagues and the participants who generously shared their experiences with AI tools, thank you for making this research possible. Your insights illuminate the path forward for organizations navigating the AI transformation.
 
-Finally, I acknowledge the broader academic community whose foundational work—particularly Venkatesh and colleagues' development of UTAUT—provided the theoretical architecture upon which this research builds. Scholarship advances through cumulative contribution, and I am honored to add to this conversation.
+Finally, I acknowledge the broader academic community whose foundational work (particularly Venkatesh and colleagues' development of UTAUT) provided the theoretical architecture upon which this research builds. Scholarship advances through cumulative contribution, and I am honored to add to this conversation.
 
 \newpage
 

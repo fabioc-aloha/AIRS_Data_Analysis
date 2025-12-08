@@ -8,8 +8,10 @@ This folder contains research planning and design documents for the AIRS (AI Rea
 |-----------|--------|------|
 | Data Collection | ✅ Complete | N=523 |
 | Analysis Pipeline | ✅ Complete | 11/11 notebooks |
-| Thesis Chapters 3-4 | ✅ Complete | Dec 2025 |
-| Thesis Chapters 1,2,5 | 🔶 In Progress | - |
+| Thesis Chapters 1-6 | ✅ Complete | Dec 2025 |
+| DRAFT 05 | ✅ Complete | Dec 8, 2025 |
+| Citation Cross-Check | ✅ Complete | 88 refs verified |
+| Table Formatting | ✅ Complete | LaTeX auto-numbering |
 
 ## Contents
 

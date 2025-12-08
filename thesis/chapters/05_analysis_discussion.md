@@ -12,7 +12,7 @@ This chapter interprets the empirical findings presented in Chapter 4, connectin
 
 The study successfully validated an 8-factor, 16-item AI Readiness Scale extending UTAUT2 with AI Trust. The instrument demonstrated excellent psychometric properties across both development (n = 261) and holdout (n = 262) samples, with fit indices exceeding conventional thresholds (CFI = .975, TLI = .960, RMSEA = .065, SRMR = .048).
 
-The cross-validation design—rarely employed in scale development research—provides strong evidence for the generalizability of the factor structure. The successful demonstration of configural invariance across student and professional populations further supports the instrument's utility for diverse workplace contexts, though metric invariance was not fully achieved (mean Δλ = .082, max Δλ = .326).
+The cross-validation design (rarely employed in scale development research) provides strong evidence for the generalizability of the factor structure. The successful demonstration of configural invariance across student and professional populations further supports the instrument's utility for diverse workplace contexts, though metric invariance was not fully achieved (mean Δλ = .082, max Δλ = .326).
 
 ### 5.2.2 Structural Model Results
 
@@ -34,11 +34,11 @@ The AI Trust extension approached but did not reach significance (β = .106, p =
 
 **Comparison with Prior Research**: This finding represents a significant departure from traditional UTAUT research where Performance Expectancy typically dominates. Blut et al.'s (2022) meta-analysis of 737,112 users found Performance Expectancy to be the strongest predictor (ρ = .60) across technology contexts. The reversal observed in this study suggests fundamental differences in how users evaluate AI tools compared to conventional technologies.
 
-**Industry Context**: This finding gains significance against the adoption-value gap documented in §2.3: despite high adoption rates, few organizations achieve measurable returns. The gap suggests organizations deploy AI without effectively communicating value to end users—precisely the construct captured by Price Value.
+**Industry Context**: This finding gains significance against the adoption-value gap documented in §2.3: despite high adoption rates, few organizations achieve measurable returns. The gap suggests organizations deploy AI without effectively communicating value to end users, precisely the construct captured by Price Value.
 
 **Interpretation**: In the AI context, users appear primarily motivated by **perceived value relative to cost** rather than raw productivity benefits (PE, ns), ease of use (EE, ns), organizational support (FC, ns), or habit (HB, ns). This suggests a hypothesis for future research: AI adoption interventions may be more effective when they prioritize demonstrating clear return on investment rather than focusing solely on capability demonstrations.
 
-**Theoretical Implications**: The dominance of Price Value over Performance Expectancy suggests AI tools may represent a distinct technology category. Unlike previous technologies where utility perceptions drove adoption, AI adoption appears more influenced by value propositions—potentially reflecting the freemium pricing models common in AI tools, concerns about ongoing subscription costs, or cost-benefit analyses comparing AI tools to traditional methods.
+**Theoretical Implications**: The dominance of Price Value over Performance Expectancy suggests AI tools may represent a distinct technology category. Unlike previous technologies where utility perceptions drove adoption, AI adoption appears more influenced by value propositions, potentially reflecting the freemium pricing models common in AI tools, concerns about ongoing subscription costs, or cost-benefit analyses comparing AI tools to traditional methods.
 
 ### 5.3.2 Non-Significant UTAUT2 Paths
 
@@ -46,7 +46,7 @@ The AI Trust extension approached but did not reach significance (β = .106, p =
 
 **Comparison with Prior Research**: The non-significance of Performance Expectancy (β = -.028, p = .791) is particularly noteworthy given its historical dominance in technology acceptance research. Davis's (1989) TAM established perceived usefulness as the primary adoption driver, and this finding has been replicated across thousands of studies. The present results challenge this assumption for AI contexts.
 
-**Industry Context**: The non-significance of Effort Expectancy and Facilitating Conditions aligns with industry observations about modern AI implementation. Deloitte's State of Generative AI research identifies skill gaps as a persistent barrier to AI integration [@deloitte2024genai]—yet users in this study did not cite ease-of-use or organizational support as adoption drivers. This disconnect suggests a maturation in AI tool interfaces: contemporary consumer-facing AI (e.g., ChatGPT, GitHub Copilot) has achieved such usability that effort perceptions no longer differentiate adoption decisions. The barrier has shifted from "Can I use this?" to "Is it worth my investment?"
+**Industry Context**: The non-significance of Effort Expectancy and Facilitating Conditions aligns with industry observations about modern AI implementation. Deloitte's State of Generative AI research identifies skill gaps as a persistent barrier to AI integration [@deloitte2024genai], yet users in this study did not cite ease-of-use or organizational support as adoption drivers. This disconnect suggests a maturation in AI tool interfaces: contemporary consumer-facing AI (e.g., ChatGPT, GitHub Copilot) has achieved such usability that effort perceptions no longer differentiate adoption decisions. The barrier has shifted from "Can I use this?" to "Is it worth my investment?"
 
 **Interpretation**: In the AI context, perceived usefulness may be a baseline expectation rather than a differentiating factor. Users may assume AI tools will enhance productivity, making cost-benefit considerations (Price Value) and enjoyment (Hedonic Motivation) the deciding factors.
 
@@ -58,7 +58,7 @@ Similarly, the non-significance of Effort Expectancy (β = -.008, p = .875) and 
 
 **Comparison with Prior Research**: Emerging AI adoption research has increasingly emphasized trust as a critical determinant (Glikson & Woolley, 2020; Siau & Wang, 2018). The marginal effect observed here partially supports this theoretical direction while highlighting the need for more sensitive measurement or larger samples.
 
-**Industry Context**: The marginal significance of AI Trust resonates with industry findings on governance and accountability barriers. Gartner identifies governance maturity as a key differentiator, with substantial proportions of AI projects experiencing delays due to governance, compliance, or accountability issues [@gartner2025]. The Georgian AI Benchmark found that only 32% of organizations have achieved cross-functional AI deployment, with trust and governance cited as key inhibitors [@georgian2025]. These industry challenges suggest that trust—while marginally significant at the individual level—may become increasingly central as AI applications mature and governance requirements intensify.
+**Industry Context**: The marginal significance of AI Trust resonates with industry findings on governance and accountability barriers. Gartner identifies governance maturity as a key differentiator, with substantial proportions of AI projects experiencing delays due to governance, compliance, or accountability issues [@gartner2025]. The Georgian AI Benchmark found that only 32% of organizations have achieved cross-functional AI deployment, with trust and governance cited as key inhibitors [@georgian2025]. These industry challenges suggest that trust, while marginally significant at the individual level, may become increasingly central as AI applications mature and governance requirements intensify.
 
 **Interpretation**: The marginal significance of AI Trust suggests it may become a more important predictor as AI technologies mature and trust concerns become more salient. The current sample may have insufficient power to detect the effect (β = .106 requires n > 600 for 80% power at α = .05), or trust considerations may be less central for the relatively straightforward AI tools currently in use. Future research should examine whether AI Trust becomes more predictive for high-stakes AI applications (e.g., AI-assisted decision-making, autonomous systems).
 
@@ -76,7 +76,7 @@ Similarly, the non-significance of Effort Expectancy (β = -.008, p = .875) and 
 
 ### 5.4.1 UTAUT2 Extension
 
-The study extends UTAUT2 with AI-specific constructs, demonstrating that traditional technology acceptance frameworks require context-sensitive modification. The dramatic shift in predictor importance—from Performance Expectancy dominance to Price Value dominance—suggests that AI represents a theoretically distinct technology category.
+The study extends UTAUT2 with AI-specific constructs, demonstrating that traditional technology acceptance frameworks require context-sensitive modification. The dramatic shift in predictor importance, from Performance Expectancy dominance to Price Value dominance, suggests that AI represents a theoretically distinct technology category.
 
 ### 5.4.2 Context-Specific Model
 
@@ -95,7 +95,7 @@ The empirically-derived four-segment typology provides a framework for understan
 - **Moderate Users (37%)**: Pragmatic orientation focused on specific benefits
 - **Anxious Avoiders (17%)**: Elevated anxiety and resistance patterns
 
-This segmentation approach moves beyond mean-level analysis to acknowledge individual differences in adoption psychology. The typology provides testable hypotheses for future intervention research—whether these segments respond differentially to targeted interventions requires experimental validation. Figure 5.1 illustrates the distribution and characteristics of the four user segments.
+This segmentation approach moves beyond mean-level analysis to acknowledge individual differences in adoption psychology. The typology provides testable hypotheses for future intervention research. Whether these segments respond differentially to targeted interventions requires experimental validation. Figure 5.1 illustrates the distribution and characteristics of the four user segments.
 
 ![Figure 5.1: User Typology Framework](figures/fig_user_typology.png){width=85%}
 
@@ -107,11 +107,11 @@ This segmentation approach moves beyond mean-level analysis to acknowledge indiv
 
 The findings offer insights for organizations navigating AI adoption challenges. As documented in §2.3, the gap between adoption and value realization represents a critical business challenge. While this study validates a measurement instrument rather than testing interventions, the empirical findings suggest several evidence-informed directions.
 
-**Important Scope Note**: The AIRS instrument validated in this study provides a psychometrically sound measure of AI adoption readiness constructs. The practical applications suggested below are hypotheses derived from the empirical findings—future experimental research is needed to validate intervention effectiveness. The author's research roadmap includes developing formal AIRS Score algorithms, diagnostic protocols, and intervention frameworks as subsequent research phases.
+**Important Scope Note**: The AIRS instrument validated in this study provides a psychometrically sound measure of AI adoption readiness constructs. The practical applications suggested below are hypotheses derived from the empirical findings. Future experimental research is needed to validate intervention effectiveness. The author's research roadmap includes developing formal AIRS Score algorithms, diagnostic protocols, and intervention frameworks as subsequent research phases.
 
 ### 5.5.1 For Organizations
 
-**Lead with Value, Not Capabilities**: The dominance of Price Value (β = .505) over Performance Expectancy (ns) suggests a potential shift in how organizations might approach AI implementation communications. Rather than emphasizing AI capabilities and productivity promises, the findings suggest that demonstrating return on investment and cost-effectiveness may be more influential. Capgemini's research supports this direction, finding that organizations redesigning workflows around AI—rather than simply adding AI to existing processes—achieve substantially higher returns [@capgemini2025].
+**Lead with Value, Not Capabilities**: The dominance of Price Value (β = .505) over Performance Expectancy (ns) suggests a potential shift in how organizations might approach AI implementation communications. Rather than emphasizing AI capabilities and productivity promises, the findings suggest that demonstrating return on investment and cost-effectiveness may be more influential. Capgemini's research supports this direction, finding that organizations redesigning workflows around AI, rather than simply adding AI to existing processes, achieve substantially higher returns [@capgemini2025].
 
 **Consider Adoption Heterogeneity**: The four-segment typology (§4.6) suggests that user populations vary systematically in their AI readiness profiles, with each segment potentially responding to different intervention approaches.
 
@@ -119,7 +119,7 @@ The findings offer insights for organizations navigating AI adoption challenges.
 
 ### 5.5.2 For AI Tool Designers
 
-Pricing strategy may significantly influence adoption—potentially more so than feature development. The dominance of Price Value suggests that pricing models (freemium tiers, transparent costs, usage-based billing) warrant careful attention. The significant Hedonic Motivation effect (β = .217) also suggests value in investing in enjoyable user experiences.
+Pricing strategy may significantly influence adoption, potentially more so than feature development. The dominance of Price Value suggests that pricing models (freemium tiers, transparent costs, usage-based billing) warrant careful attention. The significant Hedonic Motivation effect (β = .217) also suggests value in investing in enjoyable user experiences.
 
 ### 5.5.3 For Trainers and Educators
 

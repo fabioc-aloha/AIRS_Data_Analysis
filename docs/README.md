@@ -3,7 +3,7 @@
 This directory contains **active documentation** for the dissertation (N=362, Phases 1-5 complete).
 
 **Current Status**: Week 27 of 32 | Mediation analysis complete (H5a-c supported, 100% success)
-**Key Finding**: Dual-pathway suppression—Ethical Risk operates via Trust (64%) + Anxiety (96%, DOMINANT)
+**Key Finding**: Dual-pathway suppression: Ethical Risk operates via Trust (64%) + Anxiety (96%, DOMINANT)
 **Archive Location**: See `../archive/docs_exploratory/` for 15 exploratory phase reports (N=281)
 
 ---

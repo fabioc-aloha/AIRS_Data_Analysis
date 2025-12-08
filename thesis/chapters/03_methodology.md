@@ -156,10 +156,10 @@ Of the 12 constructs proposed, **four AI-specific constructs were excluded** dur
 
 **Interpretation**: These constructs demonstrated poor inter-item correlations, suggesting the two-item scales measured different facets of multi-dimensional phenomena rather than unitary constructs. For example:
 
-- **Voluntariness**: VO1 assessed choice to use AI, while VO2 assessed freedom not to use—conceptually distinct aspects of voluntary adoption
-- **Explainability**: EX1 assessed understanding AI outputs, while EX2 assessed preference for explanations—comprehension vs. preference dimensions
-- **Ethical Risk**: ER1 assessed job displacement concerns, while ER2 assessed privacy concerns—distinct risk categories
-- **AI Anxiety**: AX1 captured technology avoidance, while AX2 captured fear of obsolescence—avoidance vs. approach motivations
+- **Voluntariness**: VO1 assessed choice to use AI, while VO2 assessed freedom not to use, representing conceptually distinct aspects of voluntary adoption
+- **Explainability**: EX1 assessed understanding AI outputs, while EX2 assessed preference for explanations, reflecting comprehension vs. preference dimensions
+- **Ethical Risk**: ER1 assessed job displacement concerns, while ER2 assessed privacy concerns, representing distinct risk categories
+- **AI Anxiety**: AX1 captured technology avoidance, while AX2 captured fear of obsolescence, reflecting avoidance vs. approach motivations
 
 **Resolution**: All four AI-specific constructs were excluded from the final measurement model due to inadequate reliability. These constructs remain theoretically important for AI adoption research and require more comprehensive operationalization with 3-4 items per sub-dimension in future studies.
 
@@ -170,7 +170,7 @@ Of the 12 constructs proposed, **four AI-specific constructs were excluded** dur
 Following psychometric validation (see Chapter 4), the final AIRS instrument comprises **16 items across 8 factors** (7 UTAUT2 predictors + AI Trust extension):
 
 | Factor | Items | Example Item |
-|--------|-------|--------------||
+|--------|-------|--------------|
 | Performance Expectancy | PE1, PE2 | "Using AI tools increases my productivity" |
 | Effort Expectancy | EE1, EE2 | "Learning to use AI tools is easy for me" |
 | Social Influence | SI1, SI2 | "People important to me think I should use AI tools" |
@@ -181,8 +181,6 @@ Following psychometric validation (see Chapter 4), the final AIRS instrument com
 | AI Trust | TR1, TR2 | "I trust AI tools to provide accurate information" |
 
 : Table 3.3: Final AIRS Instrument Structure
-
-*Note: Behavioral Intention
 
 *Note: Behavioral Intention (BI) serves as the outcome variable in the structural model.*
 

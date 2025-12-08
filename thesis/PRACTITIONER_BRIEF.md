@@ -12,7 +12,7 @@ Artificial intelligence tools are rapidly entering workplaces, yet many organiza
 
 ## What We Studied
 
-We surveyed 523 professionals and students in the United States to understand what factors predict intention to adopt AI tools. The research validated a new measurement instrument—the **AI Readiness Scale (AIRS)**—and tested which factors most strongly predict adoption intention.
+We surveyed 523 professionals and students in the United States to understand what factors predict intention to adopt AI tools. The research validated a new measurement instrument, the **AI Readiness Scale (AIRS)**, and tested which factors most strongly predict adoption intention.
 
 ---
 
@@ -20,7 +20,7 @@ We surveyed 523 professionals and students in the United States to understand wh
 
 ### 1. Cost-Benefit Perception Matters Most
 
-**Price Value emerged as the strongest predictor of AI adoption intention** (β = .505, p < .001). This construct measures whether individuals perceive AI tools as providing good value relative to their cost—including time, effort, and financial investment.
+**Price Value emerged as the strongest predictor of AI adoption intention** (β = .505, p < .001). This construct measures whether individuals perceive AI tools as providing good value relative to their cost, including time, effort, and financial investment.
 
 *Research implication*: Future studies should investigate whether emphasizing concrete benefits and reducing perceived costs increases adoption intention.
 
@@ -38,7 +38,7 @@ We surveyed 523 professionals and students in the United States to understand wh
 
 ### 4. Traditional Drivers Don't Predict AI Adoption
 
-Surprisingly, factors that typically drive technology adoption—Performance Expectancy, Effort Expectancy, Facilitating Conditions, and Habit—did **not** significantly predict AI adoption. This suggests AI may represent a psychologically distinct technology category.
+Surprisingly, factors that typically drive technology adoption (Performance Expectancy, Effort Expectancy, Facilitating Conditions, and Habit) did **not** significantly predict AI adoption. This suggests AI may represent a psychologically distinct technology category.
 
 *Research implication*: AI adoption may require different frameworks than general technology adoption, meriting further theoretical development.
 
@@ -55,7 +55,7 @@ Our research identified four distinct adoption profiles:
 | **Moderate Users** | 37% | Balanced profiles, pragmatic adoption approach |
 | **Anxious Avoiders** | 17% | Elevated anxiety, low trust, resistance to adoption |
 
-*Research implication*: These segments provide testable hypotheses for future intervention research—whether different user types respond to different adoption strategies requires experimental validation.
+*Research implication*: These segments provide testable hypotheses for future intervention research. Whether different user types respond to different adoption strategies requires experimental validation.
 
 ---
 
@@ -63,7 +63,7 @@ Our research identified four distinct adoption profiles:
 
 1. **A validated measurement instrument** (AIRS) that researchers can use to assess AI adoption readiness across diverse populations
 
-2. **Evidence that AI adoption psychology differs from general technology adoption**—suggesting the need for AI-specific research frameworks
+2. **Evidence that AI adoption psychology differs from general technology adoption**, suggesting the need for AI-specific research frameworks
 
 3. **A foundation for future research** investigating how to support AI adoption in organizational contexts
 

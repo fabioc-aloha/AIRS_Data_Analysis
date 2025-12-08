@@ -74,10 +74,10 @@ Four proposed constructs were excluded during EFA due to poor inter-item reliabi
 
 | Construct | Cronbach's α | Decision | Rationale |
 |-----------|--------------|----------|----------|
-| Voluntariness (VO) | .406 | Dropped | Items measured choice vs. freedom—distinct dimensions |
-| Explainability (EX) | .582 | Dropped | Items measured understanding vs. preference—distinct facets |
-| Ethical Risk (ER) | .546 | Dropped | Items measured job displacement vs. privacy—distinct risk types |
-| AI Anxiety (AX) | .301 | Dropped | Items measured avoidance vs. approach anxiety—distinct motivations |
+| Voluntariness (VO) | .406 | Dropped | Items measured choice vs. freedom, distinct dimensions |
+| Explainability (EX) | .582 | Dropped | Items measured understanding vs. preference, distinct facets |
+| Ethical Risk (ER) | .546 | Dropped | Items measured job displacement vs. privacy, distinct risk types |
+| AI Anxiety (AX) | .301 | Dropped | Items measured avoidance vs. approach anxiety, distinct motivations |
 
 : Construct Exclusion Analysis
 
@@ -222,9 +222,9 @@ Table 4.2 presents the standardized path coefficients and hypothesis test result
 | H1e | HM → BI | **.217** | .014 | ✅ Supported |
 | H1f | PV → BI | **.505** | <.001 | ✅ Supported (Strongest) |
 | H1g | HB → BI | .023 | .631 | ❌ Not Supported |
-
-: Structural Model Path Coefficients
 | H2 | TR → BI | .106 | .064 | ❌ Marginal |
+
+: Structural Model Path Coefficients (Primary Hypotheses)
 
 **Key Findings:**
 
@@ -305,23 +305,22 @@ To assess whether the AI-specific extension (AI Trust) provides incremental pred
 | Model | Constructs | AIC | BIC | Result |
 |-------|------------|-----|-----|--------|
 | UTAUT2-Only | PE, EE, SI, FC, HM, PV, HB | 148.58 | 192.34 | Preferred |
-| AIRS (Extended) | PE, EE, SI, FC, HM, PV, HB, TR | 150.59 | 201.87 | — |
+| AIRS (Extended) | PE, EE, SI, FC, HM, PV, HB, TR | 150.59 | 201.87 | Not preferred |
 
 **Result**: Although AI Trust showed a marginal effect (β = .106, p = .064), the AIRS model has *higher* AIC (150.59) than UTAUT2-only (148.58), meaning the simpler model is preferred (ΔAIC = +2.01). Lower AIC indicates better parsimony.
 
-**Interpretation**: This incremental validity test evaluates **predictive parsimony** only—AI Trust may still have **diagnostic value** for identifying trust-related barriers to AI adoption, even if it doesn't improve overall model fit. The marginal significance of AI Trust (p = .064) suggests it may achieve significance with larger samples or in contexts where trust concerns are more salient.
+**Interpretation**: This incremental validity test evaluates **predictive parsimony** only. AI Trust may still have **diagnostic value** for identifying trust-related barriers to AI adoption, even if it doesn't improve overall model fit. The marginal significance of AI Trust (p = .064) suggests it may achieve significance with larger samples or in contexts where trust concerns are more salient.
 
 ### 4.5.6 Variance Explained
 
-The structural model explained substantial variance in Behavioral Intention:
+The structural models explained substantial variance in Behavioral Intention:
 
-| Group | R² | Interpretation |
+| Model | R² | Interpretation |
 |-------|----|--------------|
-| Student | .861 | 86.1% variance explained |
-| Professional+Leader | .852 | 85.2% variance explained |
-| **Full Sample** | **.857** | **85.7% variance explained** |
+| UTAUT2-Only (7 predictors) | .861 | 86.1% variance explained |
+| UTAUT2 + AI Trust (8 predictors) | .852 | 85.2% variance explained |
 
-This exceptionally high R² indicates the UTAUT model, as adapted for AI adoption, captures the vast majority of systematic variance in intention to use AI tools.
+Both models demonstrate exceptionally high R² values, indicating that the UTAUT2 framework captures the vast majority of systematic variance in intention to use AI tools. The slightly higher R² for the UTAUT2-only model reflects the penalty for additional parameters when AI Trust does not contribute significant unique variance beyond the parsimony threshold.
 
 
 

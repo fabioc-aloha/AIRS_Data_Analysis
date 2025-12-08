@@ -8,7 +8,7 @@ Organizations worldwide are investing heavily in artificial intelligence, yet re
 
 ### Research Purpose
 
-This dissertation developed and validated the **AI Readiness Scale (AIRS)**—a psychometric instrument measuring AI adoption readiness among students and employed professionals. The study extended the established UTAUT2 framework with AI-specific constructs to identify factors predicting behavioral intention to adopt AI tools.
+This dissertation developed and validated the **AI Readiness Scale (AIRS)**: a psychometric instrument measuring AI adoption readiness among students and employed professionals. The study extended the established UTAUT2 framework with AI-specific constructs to identify factors predicting behavioral intention to adopt AI tools.
 
 ### Key Findings
 
@@ -21,7 +21,7 @@ This dissertation developed and validated the **AI Readiness Scale (AIRS)**—a 
 | **Social Influence** | β = .136 | p = .024 (Modest but significant) |
 | AI Trust | β = .106 | p = .064 (Marginal) |
 
-The model explained **85.7% of variance** in behavioral intention—exceptionally high for technology adoption research.
+The model explained **86.1% of variance** in behavioral intention, exceptionally high for technology adoption research.
 
 **Surprising Non-Findings**
 
@@ -46,7 +46,7 @@ Traditional UTAUT predictors that typically drive technology adoption (Performan
 
 1. **Validated 8-factor, 16-item AIRS instrument** with excellent psychometric properties (CFI = .975, TLI = .960, RMSEA = .065)
 
-2. **Evidence that AI adoption psychology differs from general technology adoption**—challenging assumptions that established frameworks apply directly to AI contexts
+2. **Evidence that AI adoption psychology differs from general technology adoption**, challenging assumptions that established frameworks apply directly to AI contexts
 
 3. **Foundation for future research** on AI adoption interventions, diagnostic applications, and cross-cultural validation
 

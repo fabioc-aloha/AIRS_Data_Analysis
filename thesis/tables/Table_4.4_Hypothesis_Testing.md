@@ -20,7 +20,7 @@
 | UTAUT2-Only (7 factors) | 148.58 | Preferred |
 | AIRS + Trust (8 factors) | 150.59 | Higher AIC (ΔAIC = +2.01) |
 
-**H3 Result:** ❌ Not Supported — Adding AI Trust does not improve model parsimony
+**H3 Result:** ❌ Not Supported. Adding AI Trust does not improve model parsimony
 
 ## Exploratory Experience Moderation
 
@@ -44,6 +44,6 @@
 | HB → BI | 0.075 | -0.064 | -0.140 | No |
 | TR → BI | -0.011 | 0.153 | 0.164 | No |
 
-**Population Moderation Result:** Partially Supported — Hedonic Motivation significantly moderated by population
+**Population Moderation Result:** Partially Supported. Hedonic Motivation significantly moderated by population
 
 *Note: β = standardized path coefficient. Significance at α = .05. Bold indicates significant effects.*

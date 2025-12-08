@@ -19,7 +19,7 @@ Extending Model for Enterprise AI Adoption
 </table>
 <!-- markdownlint-enable MD033 -->
 
-> 📝 **[View Current Thesis Draft (PDF)](thesis/DRAFT%2002.pdf)** — Latest compiled version of the dissertation (DRAFT 02 - Fact-checked)
+> 📝 **[View Current Thesis Draft (PDF)](thesis/DRAFT%2005.pdf)** | Latest compiled version of the dissertation (DRAFT 05 - All chapters complete, 92 references verified)
 
 ---
 
@@ -28,14 +28,15 @@ Extending Model for Enterprise AI Adoption
 | Component | Status | Progress |
 |-----------|--------|----------|
 | **Analysis Pipeline** | ✅ Complete | 11/11 notebooks verified |
+| **Thesis Chapter 1** | ✅ Complete | Introduction (~2,800 words) |
 | **Thesis Chapter 2** | ✅ Complete | Literature Review (~5,200 words) |
 | **Thesis Chapter 3** | ✅ Complete | Methodology (~3,800 words) |
 | **Thesis Chapter 4** | ✅ Complete | Results (~3,200 words) |
-| **Summary Tables** | ✅ Complete | 9 publication-ready tables |
-| **Bibliography** | ✅ Complete | 60+ references |
-| **Research Sources** | ✅ Complete | 8 documents (industry + academic) |
-| **Proposal Alignment** | ✅ Complete | All gaps documented |
-| **Thesis Chapters 1, 5** | 🔶 In Progress | Outlines complete |
+| **Thesis Chapter 5** | ✅ Complete | Analysis & Discussion (~4,100 words) |
+| **Thesis Chapter 6** | ✅ Complete | Conclusions (~2,500 words) |
+| **Bibliography** | ✅ Complete | 92 references verified |
+| **Tables & Figures** | ✅ Complete | LaTeX auto-numbered |
+| **IRB Approval** | ✅ Complete | Letter embedded |
 
 ---
 
@@ -66,7 +67,7 @@ This research develops and validates the **AI Readiness Scale (AIRS)**, a psycho
 | **Experience moderates adoption** | HM×Exp (p=.007) significant |
 | **Four user typologies identified** | Enthusiasts 16%, Cautious 30%, Moderate 37%, Anxious 17% |
 | **Leaders dominate tool usage** | d=0.74-1.14 across all AI tools |
-| **Model explains 85.7% variance** | R²=.857 in Behavioral Intention |
+| **Model explains 86.1% variance** | R²=.861 in Behavioral Intention |
 
 ### Practical Impact
 

@@ -4,11 +4,11 @@
 
 Artificial intelligence (AI) has evolved from a specialist capability to a foundational driver of enterprise transformation. Between 2023 and 2025, organizations accelerated AI integration across functions and geographies, fueled by advances in large language models, cloud-based ecosystems, and rapid democratization through enterprise platforms such as Microsoft 365 Copilot and ChatGPT Enterprise.
 
-According to McKinsey's *State of AI* series, AI adoption has accelerated dramatically: after hovering around 50 percent for years, adoption jumped to 72 percent in 2024 and reached 88 percent by late 2025 [@mckinseyStateAI2024; @mckinseyStateAI2025]. This growth represents a fundamental shift in how organizations approach technology—AI is no longer an experimental capability but an expected component of modern work.
+According to McKinsey's *State of AI* series, AI adoption has accelerated dramatically: after hovering around 50 percent for years, adoption jumped to 72 percent in 2024 and reached 88 percent by late 2025 [@mckinseyStateAI2024; @mckinseyStateAI2025]. This growth represents a fundamental shift in how organizations approach technology. AI is no longer an experimental capability but an expected component of modern work.
 
-Yet this growth in adoption has not translated proportionally into business impact. Boston Consulting Group reported that only 5 percent of companies achieve measurable business value from AI initiatives, while roughly 74 percent struggle to scale beyond proofs of concept [@bcgAIAdoption2024; @bcgAIAdoption2025]. McKinsey found that only about 6 percent of organizations qualify as "AI high performers"—those attributing meaningful EBIT impact to AI and reporting significant value—while most organizations remain in piloting rather than scaling phases [@mckinseyStateAI2025]. IBM's Global AI Adoption Index found that 37 percent of enterprises cite data complexity and quality as their top barrier to AI success [@ibm2023], while Capgemini research suggests that organizations embedding AI into redesigned workflows achieve substantially higher returns than those merely layering AI atop legacy processes [@capgemini2025].
+Yet this growth in adoption has not translated proportionally into business impact. Boston Consulting Group reported that only 5 percent of companies achieve measurable business value from AI initiatives, while roughly 74 percent struggle to scale beyond proofs of concept [@bcgAIAdoption2024; @bcgAIAdoption2025]. McKinsey found that only about 6 percent of organizations qualify as "AI high performers," that is, those attributing meaningful EBIT impact to AI and reporting significant value, while most organizations remain in piloting rather than scaling phases [@mckinseyStateAI2025]. IBM's Global AI Adoption Index found that 37 percent of enterprises cite data complexity and quality as their top barrier to AI success [@ibm2023], while Capgemini research suggests that organizations embedding AI into redesigned workflows achieve substantially higher returns than those merely layering AI atop legacy processes [@capgemini2025].
 
-These figures reveal a paradox: AI is nearly ubiquitous, yet most enterprises fail to realize sustained economic or operational returns. MIT Media Lab's NANDA initiative estimates that 90 to 95 percent of generative-AI pilots fail to scale or yield measurable profit-and-loss improvements [@mitMediaLab2025]. This persistent gap between adoption rates and value realization—termed the "adoption-value gap"—represents both a significant business challenge and a research opportunity.
+These figures reveal a paradox: AI is nearly ubiquitous, yet most enterprises fail to realize sustained economic or operational returns. MIT Media Lab's NANDA initiative estimates that 90 to 95 percent of generative-AI pilots fail to scale or yield measurable profit-and-loss improvements [@mitMediaLab2025]. This persistent gap between adoption rates and value realization (termed the "adoption-value gap") represents both a significant business challenge and a research opportunity.
 
 Understanding why individuals adopt or resist AI tools is essential for closing this gap. While organizational-level barriers such as data infrastructure, governance frameworks, and change management have received considerable attention in practitioner literature, individual-level adoption psychology remains underexplored in empirical research. Technology acceptance research offers theoretical frameworks for understanding these individual differences, yet existing instruments were developed for earlier technology generations and may not capture the unique characteristics of AI tools.
 
@@ -16,7 +16,7 @@ Understanding why individuals adopt or resist AI tools is essential for closing 
 
 Despite decades of technology acceptance research, organizations lack validated instruments for assessing individual-level AI adoption readiness. This gap creates three interconnected problems:
 
-**Theoretical Gap**: The dominant technology acceptance framework—the Unified Theory of Acceptance and Use of Technology 2 (UTAUT2)—was developed and validated primarily on mobile and consumer technologies [@venkatesh2012consumer]. While UTAUT2 explains significant variance in technology adoption generally, AI tools present unique characteristics that may require theoretical extension. These include concerns about job displacement, questions of algorithmic transparency, and trust in autonomous decision-making systems. Venkatesh [-@venkatesh2021adoption] identified nine unique research challenges for AI adoption that existing frameworks do not fully address, calling for empirical investigation of AI-specific adoption factors.
+**Theoretical Gap**: The dominant technology acceptance framework, the Unified Theory of Acceptance and Use of Technology 2 (UTAUT2), was developed and validated primarily on mobile and consumer technologies [@venkatesh2012consumer]. While UTAUT2 explains significant variance in technology adoption generally, AI tools present unique characteristics that may require theoretical extension. These include concerns about job displacement, questions of algorithmic transparency, and trust in autonomous decision-making systems. Venkatesh [-@venkatesh2021adoption] identified nine unique research challenges for AI adoption that existing frameworks do not fully address, calling for empirical investigation of AI-specific adoption factors.
 
 **Measurement Gap**: Current AI adoption assessments in organizational practice rely largely on ad hoc surveys or general technology readiness measures. No psychometrically validated instrument exists specifically for measuring AI adoption readiness in professional and academic contexts. This measurement gap limits both research comparability and practical diagnostic utility.
 
@@ -24,7 +24,7 @@ Despite decades of technology acceptance research, organizations lack validated 
 
 ## 1.3 Purpose of the Study
 
-The purpose of this study is to develop and validate the **AI Readiness Scale (AIRS)**—a psychometrically sound instrument extending UTAUT2 for enterprise AI tool adoption. Specifically, this research aims to:
+The purpose of this study is to develop and validate the **AI Readiness Scale (AIRS)**: a psychometrically sound instrument extending UTAUT2 for enterprise AI tool adoption. Specifically, this research aims to:
 
 1. **Develop** a theoretically grounded measurement instrument incorporating both established UTAUT2 constructs and AI-specific factors, particularly AI Trust.
 
@@ -34,7 +34,7 @@ The purpose of this study is to develop and validate the **AI Readiness Scale (A
 
 4. **Examine** measurement invariance across student and professional populations to establish the instrument's applicability across diverse workforce contexts.
 
-5. **Identify** moderating factors—including professional experience and AI usage frequency—that influence adoption pathways.
+5. **Identify** moderating factors (including professional experience and AI usage frequency) that influence adoption pathways.
 
 6. **Establish** a validated psychometric foundation for future research and organizational applications.
 
@@ -80,7 +80,7 @@ This study makes several contributions to technology acceptance scholarship:
 
 **Framework Extension**: By empirically testing AI-specific constructs alongside established UTAUT2 predictors, this research extends technology acceptance theory to the AI domain. The theoretical extension responds to Venkatesh's [-@venkatesh2021adoption] call for AI-specific adoption research and addresses the unique characteristics of AI technologies that distinguish them from previous technology generations.
 
-**Construct Validation**: The development of reliable measures for AI Trust provides validated operationalizations for future research. The psychometric validation process—including convergent validity, discriminant validity, and composite reliability assessment—ensures that these constructs meet scholarly standards for measurement quality.
+**Construct Validation**: The development of reliable measures for AI Trust provides validated operationalizations for future research. The psychometric validation process (including convergent validity, discriminant validity, and composite reliability assessment) ensures that these constructs meet scholarly standards for measurement quality.
 
 **Cross-Population Invariance**: Testing measurement invariance across student and professional populations advances understanding of how adoption factors function across diverse workforce contexts. Configural invariance findings support the instrument's utility for comparative research across population segments.
 
@@ -92,11 +92,11 @@ Beyond theoretical contributions, this research establishes foundations for futu
 
 **Validated Measurement Instrument**: The validated 16-item AIRS provides researchers and organizations with a psychometrically sound tool for measuring AI adoption readiness constructs. The instrument's brevity (approximately 5 minutes to complete) enables deployment at scale while maintaining measurement rigor.
 
-**User Typology Discovery**: The four-segment user typology identified through cluster analysis—AI Enthusiasts (16%), Cautious Adopters (30%), Moderate Users (37%), and Anxious Avoiders (17%)—provides a framework for future intervention research. The typology offers testable hypotheses about differential treatment effects that warrant experimental validation.
+**User Typology Discovery**: The four-segment user typology identified through cluster analysis (AI Enthusiasts [16%], Cautious Adopters [30%], Moderate Users [37%], and Anxious Avoiders [17%]) provides a framework for future intervention research. The typology offers testable hypotheses about differential treatment effects that warrant experimental validation.
 
-**Adoption Driver Insights**: The finding that Price Value (β = .505) dominates adoption intention—rather than traditional performance messaging—suggests hypotheses for organizational AI communication strategies that warrant future experimental testing.
+**Adoption Driver Insights**: The finding that Price Value (β = .505) dominates adoption intention, rather than traditional performance messaging, suggests hypotheses for organizational AI communication strategies that warrant future experimental testing.
 
-**Moderation Discovery**: The moderating effect of professional experience on hedonic motivation pathways indicates that adoption mechanisms may differ by experience level—a finding that suggests hypotheses for experience-tailored training approaches.
+**Moderation Discovery**: The moderating effect of professional experience on hedonic motivation pathways indicates that adoption mechanisms may differ by experience level, a finding that suggests hypotheses for experience-tailored training approaches.
 
 ## 1.6 Scope and Delimitations
 
@@ -122,7 +122,7 @@ The following boundaries define what this study does not address:
 
 **Cultural Context**: Data collection occurred in a single national context (primarily United States respondents). Cross-cultural generalizability requires future investigation.
 
-**Dropped Constructs**: Four initially proposed AI-specific constructs—Voluntariness (α = .406), Explainability (α = .582), Ethical Risk (α = .546), and AI Anxiety (α = .301)—demonstrated inadequate reliability and were excluded from the validated model. These constructs remain theoretically important but require revised operationalization in future research.
+**Dropped Constructs**: Four initially proposed AI-specific constructs (Voluntariness, α = .406; Explainability, α = .582; Ethical Risk, α = .546; and AI Anxiety, α = .301) demonstrated inadequate reliability and were excluded from the validated model. These constructs remain theoretically important but require revised operationalization in future research.
 
 ### 1.6.3 Scope Limitation Rationale
 
@@ -130,7 +130,7 @@ This dissertation deliberately limits its scope to **scale validation** rather t
 
 **Foundational Requirements**: Psychometric validation must precede diagnostic application. Before the AIRS can serve as an organizational diagnostic tool, the instrument must demonstrate adequate reliability (α > .70), structural validity (CFA fit indices), discriminant validity (HTMT < .85), and measurement invariance across target populations. This dissertation addresses these foundational requirements.
 
-**Validation Sequence**: Applied psychometrics follows a validation sequence: scale development → reliability testing → structural validation → invariance testing → normative data collection → diagnostic application [@devellis2021]. This study completes the first four stages. Diagnostic application requires additional stages—particularly normative data collection across organizational contexts—that exceed doctoral scope.
+**Validation Sequence**: Applied psychometrics follows a validation sequence: scale development → reliability testing → structural validation → invariance testing → normative data collection → diagnostic application [@devellis2021]. This study completes the first four stages. Diagnostic application requires additional stages (particularly normative data collection across organizational contexts) that exceed doctoral scope.
 
 **Statistical Limitations**: Certain claims require stronger evidence than cross-sectional self-report data can provide. For example:
 
@@ -138,7 +138,7 @@ This dissertation deliberately limits its scope to **scale validation** rather t
 - **Adoption-value linkage**: The relationship between individual adoption readiness and organizational AI outcomes requires longitudinal data linking AIRS scores to measurable business metrics.
 - **Cut-score development**: Establishing diagnostic thresholds (e.g., "low readiness" vs. "high readiness") requires validation studies demonstrating predictive validity against criterion outcomes.
 
-**Future Research Foundation**: By completing rigorous psychometric validation within appropriate scope, this dissertation provides a credible foundation for future research. The AIRS instrument can support subsequent studies examining diagnostic protocols, intervention effectiveness, and organizational applications—research that builds upon rather than overextends the current findings.
+**Future Research Foundation**: By completing rigorous psychometric validation within appropriate scope, this dissertation provides a credible foundation for future research. The AIRS instrument can support subsequent studies examining diagnostic protocols, intervention effectiveness, and organizational applications, research that builds upon rather than overextends the current findings.
 
 Appendix E outlines a research roadmap for extending this foundational work through scoring algorithms, diagnostic protocols, and intervention frameworks in future investigations.
 
@@ -147,7 +147,7 @@ Appendix E outlines a research roadmap for extending this foundational work thro
 | Term | Definition |
 |------|------------|
 | **UTAUT2** | Unified Theory of Acceptance and Use of Technology 2 (Venkatesh et al., 2012) |
-| **AIRS** | AI Readiness Scale—the 16-item psychometric instrument developed and validated in this study |
+| **AIRS** | AI Readiness Scale: the 16-item psychometric instrument developed and validated in this study |
 | **AI Trust** | Confidence in AI systems' reliability, accuracy, and benevolence; a novel construct extending UTAUT2 for AI-specific adoption contexts |
 | **Behavioral Intention** | An individual's stated intention to use AI tools in their professional or academic work |
 | **Performance Expectancy** | The degree to which using AI tools is expected to enhance job performance |
