@@ -76,3 +76,98 @@ The final validated 16-item AIRS instrument consists of eight constructs measure
 ### C.3 Cross-Validation Results
 
 *To be added.*
+
+\newpage
+
+## Appendix D: Supplementary Figures
+
+This appendix presents additional visualizations from the empirical analysis that support the findings reported in Chapters 4 and 5.
+
+### D.1 Sample Preparation
+
+![Figure D.1: Sample Preparation Overview](figures/fig_sample_overview.png){width=90%}
+
+*Figure D.1. Overview of sample preparation process, including data cleaning, split-sample design, and final sample composition across student and professional populations.*
+
+### D.2 AI Tool Usage Patterns
+
+![Figure D.2: AI Tool Usage Distribution](figures/fig_usage_distribution.png){width=85%}
+
+*Figure D.2. Distribution of AI tool usage frequency across the sample. ChatGPT demonstrates the highest adoption rates, followed by Microsoft Copilot and Google Gemini.*
+
+### D.3 Disability and AI Anxiety
+
+![Figure D.3: Disability Status and AI Anxiety](figures/fig_disability_anxiety.png){width=80%}
+
+*Figure D.3. Comparison of AI anxiety levels between participants with and without disclosed disabilities. Effect size d = .36 indicates moderate elevation of anxiety for participants with disabilities.*
+
+\newpage
+
+## Appendix Z: AIRS Research Roadmap and Future Applications
+
+This appendix outlines the research program envisioned to extend the validated AIRS instrument into practical organizational applications. The roadmap represents a multi-phase research agenda that builds systematically on the foundation established in this dissertation.
+
+### Z.1 Research Program Overview
+
+The AI Readiness Scale (AIRS) validated in this dissertation represents Phase 0 of a comprehensive research program aimed at bridging the gap between AI adoption measurement and organizational AI maturity. The roadmap below outlines subsequent research phases, each requiring independent empirical validation.
+
+| Phase | Focus | Key Deliverables |
+|-------|-------|------------------|
+| **Phase 0** | Scale Validation | ✅ This Dissertation: 8-factor, 16-item AIRS, structural model, user typology |
+| **Phase 1** | Scoring System | AIRS Score algorithm, normative benchmarks, readiness classifications |
+| **Phase 2** | Organizational Diagnostics | Team/org-level assessment, gap analysis, benchmarking protocols |
+| **Phase 3** | Intervention Research | Segment-specific interventions, randomized trials, effectiveness validation |
+| **Phase 4** | AI Readiness Ecosystem | Longitudinal tracking, industry adaptations, practitioner certification |
+
+### Z.2 Phase 1: AIRS Score Development
+
+**Research Objective**: Develop a scoring methodology that transforms raw AIRS responses into interpretable individual readiness scores with established normative benchmarks.
+
+**Key Research Questions**:
+
+- How should construct scores be weighted to optimize predictive validity?
+- What normative distributions exist across student, professional, and leadership populations?
+- What classification system best communicates readiness levels to practitioners?
+
+### Z.3 Phase 2: Organizational Diagnostics
+
+**Research Objective**: Develop validated protocols for assessing AI readiness at team and organizational levels.
+
+**Key Research Questions**:
+
+- What aggregation methods preserve construct validity at organizational levels?
+- Do organizational readiness profiles predict AI implementation success?
+- What reporting formats maximize practitioner utility?
+
+### Z.4 Phase 3: Intervention Research
+
+**Research Objective**: Design and empirically test segment-specific interventions based on the user typology framework.
+
+The four-segment typology identified in this dissertation (AI Enthusiasts, Cautious Adopters, Moderate Users, Anxious Avoiders) suggests that different user populations may respond to different intervention approaches. Future research should employ randomized controlled trials to test whether segment-matched interventions outperform generic approaches.
+
+**Key Research Questions**:
+
+- Do segment-specific interventions outperform one-size-fits-all approaches?
+- What intervention components drive segment-specific effectiveness?
+- Do intervention effects persist over 6-12 month follow-up periods?
+
+### Z.5 Phase 4: Comprehensive AI Readiness Ecosystem
+
+**Research Objective**: Develop an integrated system combining validated assessment, diagnostics, and intervention protocols.
+
+**Long-Term Vision**:
+
+- **Longitudinal Tracking**: Systems for monitoring organizational AI readiness progression
+- **Industry Adaptations**: Validated modifications for healthcare, finance, education, and manufacturing contexts
+- **Cross-Cultural Validation**: Replication across collectivist cultures, developing economies, and varying policy environments
+- **Practitioner Resources**: Administration guides, interpretation frameworks, and training pathways
+
+### Z.6 Contribution to the Field
+
+This research program addresses a critical gap in the technology adoption literature: while validated measurement instruments exist, the translation of assessment into organizational action remains underdeveloped. By systematically building from validated measurement through scoring, diagnostics, intervention, and ecosystem development, this roadmap offers a research-to-practice pipeline that can ultimately deliver the evidence-based tools organizations need to close the AI adoption-value gap.
+
+### Z.7 Collaboration and Licensing
+
+The AIRS instrument validated in this dissertation is made available for academic research purposes. Organizations interested in applying the AIRS framework for organizational assessment should contact the author to discuss appropriate use, validation requirements, and potential research collaboration opportunities.
+
+**Contact**: Dr. Fabio Correa | [Institution] | [Email]

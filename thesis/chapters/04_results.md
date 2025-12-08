@@ -58,7 +58,11 @@ Multiple factor solutions were examined using principal axis factoring with obli
 | C | 8 | 18 | .964 | .953 | .066 | .048 | Good |
 | D | 8 | 16 | .975 | .960 | .065 | .046 | **Selected** |
 
-**Model D** was selected as the final measurement model based on optimal balance of parsimony and fit, with all items demonstrating factor loadings ≥ .50 and no substantive cross-loadings (< .32).
+**Model D** was selected as the final measurement model based on optimal balance of parsimony and fit, with all items demonstrating factor loadings ≥ .50 and no substantive cross-loadings (< .32). Figure 4.1 presents the scree plot supporting this factor structure.
+
+![Figure 4.1: Scree Plot with Parallel Analysis](figures/fig_efa_scree.png){width=80%}
+
+*Figure 4.1. Scree plot showing eigenvalue decline across factors. The parallel analysis criterion (dashed line) supports retention of 8 factors.*
 
 #### Construct Exclusion Analysis
 
@@ -112,11 +116,19 @@ The 8-factor model was cross-validated on the independent holdout sample (n=262)
 | RMSEA | .065 | ≤ .08 | Good |
 | SRMR | .046 | ≤ .08 | Excellent |
 
-The model demonstrated excellent fit across all indices, confirming the factor structure derived from the development sample.
+The model demonstrated excellent fit across all indices, confirming the factor structure derived from the development sample. Figure 4.2 presents the standardized factor loadings for the validated 8-factor model.
+
+![Figure 4.2: CFA Factor Loadings](figures/fig_cfa_loadings.png){width=85%}
+
+*Figure 4.2. Standardized factor loadings for the 8-factor AIRS measurement model. All loadings exceed .70, supporting convergent validity.*
 
 #### Factor Correlations
 
-Inter-factor correlations ranged from r = .25 (Social Influence × Price Value) to r = .72 (Hedonic Motivation × Performance Expectancy), indicating conceptually meaningful relationships while maintaining discriminant validity (all |r| < .85).
+Inter-factor correlations ranged from r = .25 (Social Influence × Price Value) to r = .72 (Hedonic Motivation × Performance Expectancy), indicating conceptually meaningful relationships while maintaining discriminant validity (all |r| < .85). Figure 4.3 presents the factor correlation matrix.
+
+![Figure 4.3: Factor Correlation Matrix](figures/fig_cfa_correlations.png){width=80%}
+
+*Figure 4.3. Inter-factor correlations for the 8-factor AIRS model. All correlations fall below the .85 threshold for discriminant validity.*
 
 ### 4.4.3 Reliability and Validity
 
@@ -135,6 +147,12 @@ All predictor factors demonstrated acceptable internal consistency:
 | HB | .909 | .909 | .833 |
 | TR | .891 | .891 | .804 |
 
+Figure 4.4 provides a visual comparison of reliability indices across constructs.
+
+![Figure 4.4: Reliability Comparison](figures/fig_reliability.png){width=80%}
+
+*Figure 4.4. Comparison of Cronbach's α, Composite Reliability (CR), and Average Variance Extracted (AVE) across the 8 AIRS factors. All factors exceed minimum thresholds (α > .70, CR > .70, AVE > .50).*
+
 #### Convergent Validity
 
 All standardized factor loadings exceeded .70, and all AVE values exceeded .50, supporting convergent validity (Fornell & Larcker, 1981).
@@ -152,7 +170,11 @@ Measurement invariance was tested across role groups (Academic n=216 vs. Profess
 | Academic | 167.16 | 76 | .958 | .934 | .075 | Good fit |
 | Professional | 135.88 | 76 | .988 | .981 | .051 | Excellent fit |
 
-**Configural invariance** was supported: the same factor structure held across both groups. **Metric invariance** was not fully achieved (mean loading difference = .082, max = .326), indicating some factor loadings differ across groups. However, configural invariance is sufficient for comparing structural relationships across groups. The maximum factor loading difference (Δλ = .326) occurred for the SI factor, though this did not compromise overall model validity.
+**Configural invariance** was supported: the same factor structure held across both groups. **Metric invariance** was not fully achieved (mean loading difference = .082, max = .326), indicating some factor loadings differ across groups. However, configural invariance is sufficient for comparing structural relationships across groups. The maximum factor loading difference (Δλ = .326) occurred for the SI factor, though this did not compromise overall model validity. Figure 4.5 illustrates the loading differences across groups.
+
+![Figure 4.5: Measurement Invariance Loadings](figures/fig_invariance_loadings.png){width=85%}
+
+*Figure 4.5. Factor loading comparison across Student and Professional groups. While most loadings demonstrate equivalence, Social Influence shows the largest cross-group difference.*
 
 
 
@@ -195,6 +217,12 @@ Table 4.2 presents the standardized path coefficients and hypothesis test result
 - **Performance Expectancy**, **Effort Expectancy**, **Facilitating Conditions**, and **Habit** were not significant predictors
 - Traditional UTAUT predictors showed unexpectedly weak effects, suggesting AI may represent a distinct technology category
 
+Figure 4.6 summarizes the hypothesis test results for the structural model.
+
+![Figure 4.6: Hypothesis Summary](figures/fig_hypothesis_summary.png){width=90%}
+
+*Figure 4.6. Summary of hypothesis test results. Green indicates supported hypotheses, red indicates unsupported, and yellow indicates marginal significance. Price Value emerged as the dominant predictor.*
+
 ### 4.5.3 Moderation Hypotheses
 
 Usage frequency was tested as a moderator of UTAUT relationships through multi-group SEM comparison.
@@ -221,6 +249,12 @@ Usage frequency was tested as a moderator of UTAUT relationships through multi-g
 - Usage-dependent mechanisms: Performance Expectancy matters for new users; Price Value for heavy users
 - Habit is marginally moderated by usage frequency (p = .065)
 
+Figure 4.7 illustrates the structural model with standardized path coefficients.
+
+![Figure 4.7: Structural Paths](figures/fig_structural_paths.png){width=90%}
+
+*Figure 4.7. Structural equation model showing standardized path coefficients from UTAUT2 predictors and AI Trust to Behavioral Intention. Solid lines indicate significant paths; dashed lines indicate non-significant paths.*
+
 ### 4.5.4 Population Moderation
 
 Multi-group comparison tested whether structural path coefficients differed significantly between Student and Professional populations.
@@ -236,7 +270,11 @@ Multi-group comparison tested whether structural path coefficients differed sign
 | HB → BI | 0.075 | -0.064 | -0.140 | No |
 | TR → BI | -0.011 | 0.153 | 0.164 | No |
 
-Population moderation was partially supported. **Hedonic Motivation** showed a significant population difference (Δβ = -0.750, p = .041), with HM → BI stronger for Students (β = 0.449) than for Professionals (β = -0.301). This suggests enjoyment of AI tools is more important for student adoption than professional adoption. All other paths showed no significant population differences.
+Population moderation was partially supported. **Hedonic Motivation** showed a significant population difference (Δβ = -0.750, p = .041), with HM → BI stronger for Students (β = 0.449) than for Professionals (β = -0.301). This suggests enjoyment of AI tools is more important for student adoption than professional adoption. All other paths showed no significant population differences. Figure 4.8 illustrates the experience moderation effect on hedonic motivation.
+
+![Figure 4.8: Experience Moderation Effect](figures/fig_experience_moderation.png){width=80%}
+
+*Figure 4.8. Experience moderation of the Hedonic Motivation → Behavioral Intention path. The effect of HM on BI is stronger for professionals with 4+ years of experience.*
 
 ### 4.5.5 Incremental Validity: AIRS vs. UTAUT2-Only Model
 
