@@ -66,14 +66,14 @@ Four proposed constructs were excluded during EFA due to poor inter-item reliabi
 
 | Construct | Cronbach's α | Decision | Rationale |
 |-----------|--------------|----------|----------|
-| Voluntariness (VO) | .41 | Dropped | Items measured choice vs. freedom—distinct dimensions |
-| Explainability (EX) | .58 | Dropped | Items measured understanding vs. preference—distinct facets |
-| Ethical Risk (ER) | .55 | Dropped | Items measured job displacement vs. privacy—distinct risk types |
-| AI Anxiety (AX) | .30 (original) | Reconstructed | Items measured avoidance vs. approach anxiety |
+| Voluntariness (VO) | .406 | Dropped | Items measured choice vs. freedom—distinct dimensions |
+| Explainability (EX) | .582 | Dropped | Items measured understanding vs. preference—distinct facets |
+| Ethical Risk (ER) | .546 | Dropped | Items measured job displacement vs. privacy—distinct risk types |
+| AI Anxiety (AX) | .301 | Dropped | Items measured avoidance vs. approach anxiety—distinct motivations |
 
 **Interpretation**: The proposed two-item scales for these AI-specific constructs proved insufficient to capture multi-faceted phenomena. This finding highlights a key contribution: while these constructs are theoretically important for AI adoption, they require more comprehensive operationalization with additional items representing each sub-dimension.
 
-**Anxiety Reconstruction**: The Anxiety construct was successfully retained after item revision, achieving acceptable reliability (α = .86) in the final model. The reconstructed AX items focus on apprehension and concern about AI technology, avoiding the original conflation of avoidance and approach motivations.
+**Future Development**: All four dropped constructs require item redesign for future validation studies. For AI Anxiety specifically, future scales should distinguish between technology avoidance anxiety and fear-of-missing-out (FOMO) or obsolescence anxiety, as these represent conceptually distinct motivational orientations.
 
 #### Final Factor Structure
 
@@ -81,22 +81,20 @@ The validated measurement model comprises 8 predictor factors (16 items) plus Be
 
 **Predictor Factors (8 factors, 16 items)**:
 
-| Factor | Items | Description | Sample Loading |
-|--------|-------|-------------|----------------|
-| Performance Expectancy (PE) | 2 | Perceived usefulness | .82 |
-| Effort Expectancy (EE) | 2 | Perceived ease of use | .87 |
-| Social Influence (SI) | 2 | Social normative pressure | .78 |
-| Facilitating Conditions (FC) | 2 | Organizational support | .77 |
-| Hedonic Motivation (HM) | 2 | Enjoyment and curiosity | .87 |
-| Price Value (PV) | 2 | Cost-benefit assessment | .89 |
-| Habit (HB) | 2 | Automaticity of use | .91 |
-| AI Trust (TR) | 2 | Trust in AI systems | .90 |
+The final measurement model comprises 7 UTAUT2 constructs plus the AI Trust extension:
 
-**Outcome Variable**:
+| Factor | Items | Description | α | CR | AVE |
+|--------|-------|-------------|-----|-----|-----|
+| Performance Expectancy (PE) | PE1, PE2 | Perceived usefulness | .803 | .804 | .673 |
+| Effort Expectancy (EE) | EE1, EE2 | Perceived ease of use | .859 | .861 | .756 |
+| Social Influence (SI) | SI1, SI2 | Social normative pressure | .752 | .763 | .621 |
+| Facilitating Conditions (FC) | FC1, FC2 | Organizational support | .743 | .750 | .601 |
+| Hedonic Motivation (HM) | HM1, HM2 | Enjoyment and curiosity | .864 | .865 | .763 |
+| Price Value (PV) | PV1, PV2 | Cost-benefit assessment | .883 | .883 | .790 |
+| Habit (HB) | HB1, HB2 | Automaticity of use | .909 | .909 | .833 |
+| AI Trust (TR) | TR1, TR2 | Trust in AI systems | .891 | .891 | .804 |
 
-| Factor | Items | Description | Sample Loading |
-|--------|-------|-------------|----------------|
-| Behavioral Intention (BI) | 4 | Intent to adopt AI tools | .89 |
+*Note: BI (Behavioral Intention) serves as the outcome variable and is modeled separately in the structural model.*
 
 ### 4.4.2 Confirmatory Factor Analysis (Holdout Sample)
 
@@ -128,14 +126,14 @@ All predictor factors demonstrated acceptable internal consistency:
 
 | Factor | Cronbach's α | Composite Reliability (CR) | AVE |
 |--------|--------------|---------------------------|-----|
-| PE | .80 | .80 | .67 |
-| EE | .86 | .86 | .76 |
-| SI | .75 | .76 | .62 |
-| FC | .74 | .75 | .60 |
-| HM | .86 | .87 | .76 |
-| PV | .88 | .88 | .79 |
-| HB | .91 | .91 | .83 |
-| TR | .89 | .89 | .80 |
+| PE | .803 | .804 | .673 |
+| EE | .859 | .861 | .756 |
+| SI | .752 | .763 | .621 |
+| FC | .743 | .750 | .601 |
+| HM | .864 | .865 | .763 |
+| PV | .883 | .883 | .790 |
+| HB | .909 | .909 | .833 |
+| TR | .891 | .891 | .804 |
 
 #### Convergent Validity
 
@@ -147,15 +145,14 @@ Discriminant validity was assessed using the Fornell-Larcker criterion. For each
 
 ### 4.4.4 Measurement Invariance (Multi-Group CFA)
 
-Measurement invariance was tested across role groups (Student vs. Professional+Leader) to establish comparability of latent constructs.
+Measurement invariance was tested across role groups (Academic n=216 vs. Professional n=307) to establish comparability of latent constructs.
 
-| Level | χ² | df | Δχ² | Δdf | p | ΔCFI | Decision |
-|-------|----|----|-----|-----|---|------|----------|
-| Configural | 284.21 | 152 | — | — | — | — | Baseline |
-| Metric | 292.45 | 160 | 8.24 | 8 | .411 | -.002 | Supported |
-| Scalar | 308.67 | 168 | 16.22 | 8 | .039 | -.006 | Partial |
+| Group | χ² | df | CFI | TLI | RMSEA | Interpretation |
+|-------|----|----|-----|-----|-------|----------------|
+| Academic | 167.16 | 76 | .958 | .934 | .075 | Good fit |
+| Professional | 135.88 | 76 | .988 | .981 | .051 | Excellent fit |
 
-Full configural and metric invariance were supported. Partial scalar invariance was achieved after releasing constraints on two intercepts (SI2, AX1). The maximum factor loading difference across groups (Δλ = .33) occurred for the SI factor, though this did not compromise invariance conclusions using established criteria (ΔCFI < .01; Chen, 2007).
+**Configural invariance** was supported: the same factor structure held across both groups. **Metric invariance** was not fully achieved (mean loading difference = .082, max = .326), indicating some factor loadings differ across groups. However, configural invariance is sufficient for comparing structural relationships across groups. The maximum factor loading difference (Δλ = .326) occurred for the SI factor, though this did not compromise overall model validity.
 
 
 
@@ -250,9 +247,9 @@ To assess whether the AI-specific extension (AI Trust) provides incremental pred
 | UTAUT2-Only | PE, EE, SI, FC, HM, PV, HB | 148.58 | 192.34 | Preferred |
 | AIRS (Extended) | PE, EE, SI, FC, HM, PV, HB, TR | 150.59 | 201.87 | — |
 
-**Result**: H3 was not supported. Although AI Trust showed a marginal effect (β = .106, p = .064), the AIRS model has *higher* AIC (150.59) than UTAUT2-only (148.58), meaning the simpler model is preferred (ΔAIC = +2.01). Lower AIC indicates better parsimony.
+**Result**: Although AI Trust showed a marginal effect (β = .106, p = .064), the AIRS model has *higher* AIC (150.59) than UTAUT2-only (148.58), meaning the simpler model is preferred (ΔAIC = +2.01). Lower AIC indicates better parsimony.
 
-**Interpretation**: H3 evaluates **predictive parsimony** only—AI Trust may still have **diagnostic value** for identifying trust-related barriers to AI adoption, even if it doesn't improve overall model fit. The marginal significance of AI Trust (p = .064) suggests it may achieve significance with larger samples or in contexts where trust concerns are more salient.
+**Interpretation**: This incremental validity test evaluates **predictive parsimony** only—AI Trust may still have **diagnostic value** for identifying trust-related barriers to AI adoption, even if it doesn't improve overall model fit. The marginal significance of AI Trust (p = .064) suggests it may achieve significance with larger samples or in contexts where trust concerns are more salient.
 
 ### 4.5.6 Variance Explained
 
@@ -272,17 +269,17 @@ This exceptionally high R² indicates the UTAUT model, as adapted for AI adoptio
 
 #### Mediation Hypotheses
 
-**Design Note**: The originally hypothesized mediation paths (EX → TR → BI, ER → TR → BI) were **not testable** because Explainability (EX), Ethical Risk (ER), and Anxiety (AX) were excluded from the final model due to inadequate item reliability identified in Phase 1 (α = .30–.58).
+**Design Note**: The originally hypothesized mediation paths (EX → TR → BI, ER → TR → BI) were **not testable** because Explainability (EX), Ethical Risk (ER), and Anxiety (AX) were excluded from the final model due to inadequate item reliability identified in Phase 1 (α = .301–.582).
 
 **Exploratory Mediation Analysis**: Bootstrap mediation testing explored whether AI Trust mediates the effect of Effort Expectancy on Behavioral Intention:
 
 | Mediation Path | Indirect Effect | 95% CI | p | Result |
 |----------------|-----------------|--------|---|--------|
-| EE → TR → BI | 0.204 | [-.039, .430] | > .05 | ❌ Not Significant |
+| EE → TR → BI | 0.232 | [-.023, .474] | > .05 | ❌ Not Significant |
 
 The confidence interval includes zero, indicating no significant mediation. While the theoretical pathway remains conceptually relevant, adding AI Trust as a mediator does not significantly improve the model.
 
-#### AI Tool Usage Patterns (H4, H5)
+#### AI Tool Usage Patterns (H5, H6)
 
 Analysis of actual tool usage behaviors provides behavioral validation of intention constructs.
 
@@ -299,7 +296,7 @@ Analysis of actual tool usage behaviors provides behavioral validation of intent
 
 **Leadership Dominance:** Leaders demonstrated significantly higher usage across ALL tool categories (d = 0.74–1.14), with the largest effect for Microsoft Copilot.
 
-#### Tool Usage and Behavioral Intention (H4)
+#### Tool Usage and Behavioral Intention (H5)
 
 The relationship between tool usage frequency and Behavioral Intention was examined using Spearman correlation due to ordinal tool usage distributions.
 
@@ -310,9 +307,9 @@ The relationship between tool usage frequency and Behavioral Intention was exami
 | MS Copilot Usage × BI | .54 | <.001 | Moderate positive |
 | Gemini Usage × BI | .52 | <.001 | Moderate positive |
 
-**H4 Result: ✅ Supported** – Higher behavioral intention is strongly associated with more frequent AI tool usage.
+**H5 Result: ✅ Supported** – Higher behavioral intention is strongly associated with more frequent AI tool usage.
 
-#### Role Differences in Tool Usage (H5)
+#### Role Differences in Tool Usage (H6)
 
 One-way ANOVA with Tukey post-hoc tests examined role differences in tool usage patterns.
 
@@ -322,7 +319,7 @@ One-way ANOVA with Tukey post-hoc tests examined role differences in tool usage 
 | Usage Frequency | 22.15 | <.001 | .078 | L > P > A |
 | Usage Intensity | 15.87 | <.001 | .058 | L > P > A |
 
-**H5 Result: ✅ Supported** – Leaders demonstrate significantly higher tool usage than Professionals, who in turn exceed Academics.
+**H6 Result: ✅ Supported** – Leaders demonstrate significantly higher tool usage than Professionals, who in turn exceed Academics.
 
 #### Industry Experience Effect
 
@@ -414,8 +411,10 @@ Academics and Leaders reported more positive experiences, while Academics focuse
 | H1f | PV → BI (+) | ✅ Supported (β = .505) |
 | H1g | HB → BI (+) | ❌ Not Supported (β = .023) |
 | H2 | TR → BI (+) | ❌ Marginal (p = .064) |
-| H3 | AIRS > UTAUT2 (parsimony) | ❌ Not Supported (ΔAIC = +2.01) |
-| H4 | Population moderates paths | ⚠️ Partial (HM only, p = .041) |
+| H3 | Experience moderates paths | ⚠️ Partial (HM×Exp significant, p = .007) |
+| H4 | Role group moderates paths | ⚠️ Partial (HM only, p = .041) |
+| H5 | BI → Tool Usage | ✅ Supported (ρ = .69) |
+| H6 | Role usage differences | ✅ Supported (F = 22.15, p < .001) |
 
 ### 4.6.2 Key Contributions
 
@@ -437,7 +436,7 @@ Academics and Leaders reported more positive experiences, while Academics focuse
 
 ## 4.7 Chapter Conclusion
 
-This chapter presented comprehensive empirical validation of the AIRS instrument and structural model examining AI adoption in higher education. The 8-factor, 16-item measurement model demonstrated excellent psychometric properties (CFI = .975, α range .76–.91) with partial scalar invariance across role groups.
+This chapter presented comprehensive empirical validation of the AIRS instrument and structural model examining AI adoption in higher education. The 8-factor, 16-item measurement model demonstrated excellent psychometric properties (CFI = .975, α range .74–.91) with configural invariance across role groups.
 
 Structural equation modeling revealed Price Value as the dominant predictor of Behavioral Intention (β = .505), followed by Hedonic Motivation (β = .217, p = .014) and Social Influence (β = .136, p = .024). AI Trust approached but did not reach significance (β = .106, p = .064). Notably, traditional UTAUT predictors including Performance Expectancy, Effort Expectancy, Facilitating Conditions, and Habit were not significant, suggesting AI tools may represent a distinct technology category. Experience moderated the HM pathway, while population moderated HM effects with academics weighting enjoyment more heavily than professionals.
 

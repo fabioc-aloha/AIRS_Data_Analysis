@@ -12,7 +12,7 @@ This chapter interprets the empirical findings presented in Chapter 4, connectin
 
 The study successfully validated an 8-factor, 16-item AI Readiness Scale extending UTAUT2 with AI Trust. The instrument demonstrated excellent psychometric properties across both development (n = 261) and holdout (n = 262) samples, with fit indices exceeding conventional thresholds (CFI = .975, TLI = .960, RMSEA = .065, SRMR = .048).
 
-The cross-validation design—rarely employed in scale development research—provides strong evidence for the generalizability of the factor structure. The successful demonstration of scalar invariance across student and professional populations further supports the instrument's utility for diverse workplace contexts.
+The cross-validation design—rarely employed in scale development research—provides strong evidence for the generalizability of the factor structure. The successful demonstration of configural invariance across student and professional populations further supports the instrument's utility for diverse workplace contexts, though metric invariance was not fully achieved (mean Δλ = .082, max Δλ = .326).
 
 ### 5.2.2 Structural Model Results
 
@@ -125,16 +125,16 @@ Four proposed AI-specific constructs demonstrated inadequate reliability and wer
 
 | Construct | Cronbach's α | Issue Identified |
 |-----------|--------------|------------------|
-| Voluntariness | .41 | Choice vs. freedom dimensions conflated |
-| Explainability | .58 | Understanding vs. preference dimensions conflated |
-| Ethical Risk | .55 | Job displacement vs. privacy dimensions conflated |
-| Original Anxiety | .30 | Avoidance vs. approach motivations conflated |
+| Voluntariness | .406 | Choice vs. freedom dimensions conflated |
+| Explainability | .582 | Understanding vs. preference dimensions conflated |
+| Ethical Risk | .546 | Job displacement vs. privacy dimensions conflated |
+| AI Anxiety | .301 | Avoidance vs. approach motivations conflated |
 
 **Interpretation**: Two-item scales proved insufficient for these multi-dimensional constructs. This represents an empirical finding about measurement complexity rather than theoretical invalidity. These constructs remain important for AI adoption theory but require more comprehensive operationalization with 3-4 items per sub-dimension.
 
 ### 5.6.3 Disability and Accessibility
 
-**Finding**: Disability associated with higher AI anxiety (d = .36).
+**Finding**: Disability associated with higher AI-related anxiety responses (d = .36), based on exploratory analysis of original AX items prior to exclusion.
 
 **Interpretation**: This unexpected finding highlights accessibility considerations in AI adoption. Users with disabilities may experience heightened anxiety about AI technologies, potentially due to concerns about accessibility, job displacement, or past negative experiences with technology. Inclusive AI design and training approaches are warranted.
 
@@ -148,13 +148,13 @@ Several limitations should be considered when interpreting these findings:
 
 1. **Cross-sectional design**: The single time-point data collection precludes causal inference. While SEM estimates suggest directional relationships, alternative causal orderings (e.g., behavior → intention) cannot be ruled out.
 
-2. **Self-reported intention**: Behavioral Intention may not perfectly predict actual behavior. However, the strong BI-Usage correlation (ρ = .70) provides behavioral validation.
+2. **Self-reported intention**: Behavioral Intention may not perfectly predict actual behavior. However, the strong BI-Usage correlation (ρ = .69) provides behavioral validation.
 
 3. **Convenience sampling**: The United States sample limits generalizability to other countries, cultures, and organizational contexts.
 
 ### 5.7.2 Measurement Limitations
 
-1. **Dropped constructs**: The exclusion of four proposed constructs limits the comprehensiveness of the theoretical extension. The original proposal's mediation hypotheses (H5a-c) involving Explainability and Ethical Risk could not be tested.
+1. **Dropped constructs**: The exclusion of four proposed constructs limits the comprehensiveness of the theoretical extension. The originally proposed mediation hypotheses involving Explainability and Ethical Risk could not be tested because these constructs were excluded during EFA due to inadequate reliability.
 
 2. **Marginal AI Trust**: Trust approached but did not reach significance (p = .064). This may reflect inadequate statistical power (β = .106 requires n > 600 for 80% power at α = .05) or genuine marginality of trust in current AI adoption decisions.
 

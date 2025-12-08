@@ -14,15 +14,19 @@ This study addressed a critical gap in technology acceptance research: the inade
 
 ### 6.2.2 Methodology Summary
 
-The study employed a rigorous seven-phase psychometric validation approach:
+The study employed a rigorous ten-phase psychometric validation approach:
 
+0. **Sample Splitting**: Created stratified EFA/CFA subsamples (n = 261/262) with random seed = 67 for reproducibility
 1. **Exploratory Factor Analysis** (n = 261): Identified the underlying factor structure through split-sample design
 2. **Confirmatory Factor Analysis** (n = 262): Cross-validated the measurement model on an independent holdout sample
-3. **Measurement Invariance Testing**: Established scalar invariance across student and professional populations
+3. **Measurement Invariance Testing**: Established configural invariance across student and professional populations (metric invariance not fully achieved)
 4. **Structural Equation Modeling**: Tested hypothesized relationships among latent constructs
 5. **Mediation Analysis**: Examined indirect effects within the structural model
 6. **Moderation Analysis**: Investigated experience and usage frequency as boundary conditions
 7. **Behavioral Validation**: Correlated intentions with actual AI tool usage patterns
+8. **Qualitative Analysis**: Thematic analysis of open-ended responses
+9. **Comprehensive Review**: Gap analysis and cross-validation of findings
+10. **Final Synthesis**: Integration of quantitative and qualitative insights
 
 This multi-phase approach exceeds typical scale development standards and provides robust evidence for the AIRS instrument's validity.
 
@@ -30,7 +34,7 @@ This multi-phase approach exceeds typical scale development standards and provid
 
 The study produced several significant findings that advance both theory and practice:
 
-**Instrument Validation**: The 8-factor, 16-item AIRS demonstrated excellent psychometric properties (CFI = .975, RMSEA = .065, all α > .80) and measurement invariance across populations, supporting its use as a diagnostic tool for organizational AI readiness assessment.
+**Instrument Validation**: The 8-factor, 16-item AIRS demonstrated excellent psychometric properties (CFI = .975, RMSEA = .065, α range .743–.909, all CR > .750, all AVE > .601) and configural invariance across populations, supporting its use as a diagnostic tool for organizational AI readiness assessment.
 
 **Adoption Drivers**: Contrary to expectations from traditional UTAUT research, Price Value emerged as the dominant predictor (β = .505, p < .001), followed by Hedonic Motivation (β = .217, p = .014) and Social Influence (β = .136, p = .024). Traditional predictors including Performance Expectancy, Effort Expectancy, and Facilitating Conditions were not significant.
 
@@ -152,13 +156,13 @@ While this study employed rigorous methodology and produced robust findings, sev
 
 **Cross-Sectional Design**: The single time-point data collection precludes causal inference. While structural equation modeling suggests directional relationships, alternative causal orderings cannot be ruled out. Longitudinal research is needed to establish temporal precedence.
 
-**Self-Reported Intention**: Behavioral Intention may not perfectly predict actual behavior. However, the strong correlation between intention and self-reported usage (ρ = .70) provides behavioral validation.
+**Self-Reported Intention**: Behavioral Intention may not perfectly predict actual behavior. However, the strong correlation between intention and self-reported usage (ρ = .69) provides behavioral validation.
 
 **Convenience Sampling**: The United States sample limits generalizability to other countries, cultures, and organizational contexts. Replication in diverse settings is recommended.
 
 ### 6.6.2 Measurement Limitations
 
-**Dropped Constructs**: Four proposed AI-specific constructs (Voluntariness, Explainability, Ethical Risk, and original Anxiety items) demonstrated inadequate reliability and were excluded. This represents an empirical finding about measurement challenges rather than a design failure, but it limits the comprehensiveness of the theoretical extension.
+**Dropped Constructs**: Four proposed AI-specific constructs (Voluntariness, Explainability, Ethical Risk, and AI Anxiety) demonstrated inadequate reliability (α = .301–.582) and were excluded from the validated model. This represents an empirical finding about measurement challenges rather than a design failure, but it limits the comprehensiveness of the theoretical extension.
 
 **Marginal AI Trust Effect**: The Trust effect (β = .106, p = .064) did not reach conventional significance, possibly due to inadequate statistical power. Larger samples may be required to detect this effect reliably.
 
@@ -170,7 +174,7 @@ While this study employed rigorous methodology and produced robust findings, sev
 
 ### 6.7.1 Immediate Research Priorities
 
-1. **Larger Sample Replication**: Achieve n > 600 to provide adequate power (80%) for detecting small effects like the Trust coefficient (β ≈ .10).
+1. **Larger Sample Replication**: Achieve n > 600 to provide adequate power (80%) for detecting small effects like the Trust coefficient (β ≈ .106).
 
 2. **Dropped Construct Development**: Redesign measures for Voluntariness, Explainability, Ethical Risk, and Anxiety sub-dimensions using 3-4 items per dimension and cognitive interviewing procedures.
 

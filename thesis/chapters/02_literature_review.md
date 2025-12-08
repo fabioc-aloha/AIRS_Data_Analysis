@@ -184,40 +184,40 @@ Given the empirical evidence for trust's central role in AI adoption, the presen
 
 ```mermaid
 flowchart TB
-    subgraph UTAUT2["UTAUT2 Core Constructs"]
+    subgraph UTAUT2["UTAUT2 Core Constructs (H1a-H1g)"]
         PE["Performance<br/>Expectancy"]
         EE["Effort<br/>Expectancy"]
         SI["Social<br/>Influence"]
         FC["Facilitating<br/>Conditions"]
         HM["Hedonic<br/>Motivation"]
+        PV["Price<br/>Value"]
         HT["Habit"]
     end
 
-    subgraph AIExt["AI-Specific Extensions"]
-        TR["AI Trust<br/>(Enabler)"]
-        ANX["AI Anxiety<br/>(Inhibitor)"]
+    subgraph AIExt["AI-Specific Extension"]
+        TR["AI Trust<br/>(H2)"]
     end
 
     BI["Behavioral<br/>Intention"]
-    EXP["Experience<br/>(Moderator)"]
+    EXP["Experience<br/>(H3: Moderator)"]
 
-    PE -->|H1: +| BI
-    EE -->|H2: +| BI
-    SI -->|H3: +| BI
-    FC -->|H4: +| BI
-    HM -->|H5: +| BI
-    HT -->|H6: +| BI
-    TR -->|H7: +| BI
-    ANX -->|H8: −| BI
+    PE -->|H1a: +| BI
+    EE -->|H1b: +| BI
+    SI -->|H1c: +| BI
+    FC -->|H1d: +| BI
+    HM -->|H1e: +| BI
+    PV -->|H1f: +| BI
+    HT -->|H1g: +| BI
+    TR -->|H2: +| BI
 
-    EXP -.->|H9: moderates| PE
-    EXP -.->|H9: moderates| HM
-    EXP -.->|H9: moderates| ANX
+    EXP -.->|H3: moderates| PE
+    EXP -.->|H3: moderates| HM
 
     style TR fill:#c8e6c9,stroke:#388e3c,stroke-width:2px
-    style ANX fill:#ffcdd2,stroke:#d32f2f,stroke-width:2px
     style BI fill:#e1f5fe,stroke:#0288d1,stroke-width:3px
 ```
+
+*Note: AI Anxiety was initially proposed as an inhibitor construct (H8) but was excluded from the final model due to inadequate reliability (α = .30). See Chapter 4 for details.*
 
 
 
@@ -273,49 +273,66 @@ The present research proposes an extended UTAUT2 model for AI adoption that reta
 
 Based on the meta-analytic evidence reviewed above, the following hypotheses reflect established UTAUT2 relationships:
 
-**H1 (Performance Expectancy)**: Performance Expectancy positively predicts Behavioral Intention to use AI tools.
+**H1a (Performance Expectancy)**: Performance Expectancy positively predicts Behavioral Intention to use AI tools.
 
 *Rationale*: Blut et al.'s (2022) meta-analysis confirms performance expectancy as the consistently strongest predictor (ρ = .60). Users who believe AI will enhance their job performance should demonstrate greater adoption intention.
 
-**H2 (Effort Expectancy)**: Effort Expectancy positively predicts Behavioral Intention to use AI tools.
+**H1b (Effort Expectancy)**: Effort Expectancy positively predicts Behavioral Intention to use AI tools.
 
 *Rationale*: While meta-analytic effects are moderate and context-dependent, perceived ease of use remains a relevant consideration, particularly for users with limited AI experience.
 
-**H3 (Social Influence)**: Social Influence positively predicts Behavioral Intention to use AI tools.
+**H1c (Social Influence)**: Social Influence positively predicts Behavioral Intention to use AI tools.
 
 *Rationale*: Perceptions that important others endorse AI use should increase adoption intention, particularly in organizational contexts where peer and supervisor expectations are salient.
 
-**H4 (Facilitating Conditions)**: Facilitating Conditions positively predicts Behavioral Intention to use AI tools.
+**H1d (Facilitating Conditions)**: Facilitating Conditions positively predicts Behavioral Intention to use AI tools.
 
 *Rationale*: Organizational infrastructure, training, and support should enable adoption by reducing barriers and signaling organizational commitment.
 
-**H5 (Hedonic Motivation)**: Hedonic Motivation positively predicts Behavioral Intention to use AI tools.
+**H1e (Hedonic Motivation)**: Hedonic Motivation positively predicts Behavioral Intention to use AI tools.
 
 *Rationale*: Users who experience pleasure and enjoyment from AI interaction should demonstrate greater adoption intention, consistent with UTAUT2 findings in consumer contexts.
 
-**H6 (Habit)**: Habit positively predicts Behavioral Intention to use AI tools.
+**H1f (Price Value)**: Price Value positively predicts Behavioral Intention to use AI tools.
+
+*Rationale*: Users who perceive favorable cost-benefit tradeoffs for AI tools should demonstrate greater adoption intention, particularly where personal or organizational investment is visible.
+
+**H1g (Habit)**: Habit positively predicts Behavioral Intention to use AI tools.
 
 *Rationale*: Established patterns of AI use should predict continued intention through automaticity and reinforcement mechanisms.
 
 ### 2.8.3 AI-Specific Extension Hypotheses
 
-**H7 (AI Trust)**: AI Trust positively predicts Behavioral Intention to use AI tools.
+**H2 (AI Trust)**: AI Trust positively predicts Behavioral Intention to use AI tools beyond UTAUT2 core constructs.
 
 *Rationale*: Building on Langer et al.'s (2023) review and Stevens and Stetson's (2023) validation work, trust serves as a gateway condition for AI adoption. Users who trust AI systems to be reliable, competent, and aligned with their interests should demonstrate greater adoption intention.
 
-**H8 (AI Anxiety)**: AI Anxiety negatively predicts Behavioral Intention to use AI tools.
+**Proposed Inhibitor (AI Anxiety)**: AI Anxiety was hypothesized to negatively predict Behavioral Intention to use AI tools. However, empirical analysis revealed inadequate reliability for the AI Anxiety scale (α = .30), preventing formal hypothesis testing. This measurement challenge with anxiety constructs is discussed in Chapter 4 and Chapter 5.
 
-*Rationale*: Drawing on Tao et al. (2020), Kim et al. (2025), and Frenkenberg and Hochman (2025), anxiety about AI autonomy, opacity, and consequences should inhibit adoption intention even when other perceptions are favorable.
+*Theoretical Rationale*: Drawing on Tao et al. (2020), Kim et al. (2025), and Frenkenberg and Hochman (2025), anxiety about AI autonomy, opacity, and consequences should inhibit adoption intention even when other perceptions are favorable. Future research with improved anxiety measurement is recommended.
 
 ### 2.8.4 Moderation Hypotheses
 
-**H9 (Experience Moderation)**: Experience moderates the relationships between predictors and Behavioral Intention, such that:
+**H3 (Experience Moderation)**: Experience moderates the relationships between predictors and Behavioral Intention, such that:
 
 - (a) The effect of Performance Expectancy on Intention strengthens with greater AI experience
 - (b) The effect of Hedonic Motivation on Intention strengthens with greater AI experience
-- (c) The negative effect of AI Anxiety on Intention weakens with greater AI experience
 
-*Rationale*: Experienced users can more accurately assess AI performance, may derive greater enjoyment from sophisticated use, and should have resolved initial anxieties through exposure and coping development.
+*Rationale*: Experienced users can more accurately assess AI performance and may derive greater enjoyment from sophisticated use.
+
+**H4 (Role Group Moderation)**: Role group (Academic vs. Professional+Leader) moderates UTAUT2 path coefficients.
+
+*Rationale*: Students and working professionals operate in different organizational contexts with distinct resource availability, social pressure patterns, and technology access, which may differentially affect adoption determinants.
+
+### 2.8.5 Behavioral Validation Hypotheses
+
+**H5 (Behavioral Intention → Usage)**: Behavioral Intention positively relates to actual AI tool usage breadth.
+
+*Rationale*: Consistent with UTAUT theory, intention should translate to behavior. Higher adoption intention should correspond to greater engagement with AI tools.
+
+**H6 (Role Group Usage Differences)**: Role groups differ significantly in AI tool usage patterns.
+
+*Rationale*: Professionals with greater workplace technology demands and resources may exhibit different AI tool usage patterns than students.
 
 <!-- Figure 2.3: Research Hypotheses Summary -->
 
@@ -335,18 +352,20 @@ flowchart LR
         H2["H2: TR → BI"]
     end
 
-    subgraph ModelComparison["Model Comparison"]
-        H3["H3: AIRS > UTAUT2"]
+    subgraph Moderation["Moderation Hypotheses"]
+        H3["H3: Experience moderates paths"]
+        H4["H4: Role group moderates paths"]
     end
 
-    subgraph Moderation["Moderation Hypotheses"]
-        H4["H4: Population moderates paths"]
+    subgraph Validation["Behavioral Validation"]
+        H5["H5: BI → Tool Usage"]
+        H6["H6: Role Usage Differences"]
     end
 
     style UTAUT2 fill:#e3f2fd,stroke:#1976d2
     style AIExtension fill:#f3e5f5,stroke:#7b1fa2
-    style ModelComparison fill:#fff3e0,stroke:#f57c00
     style Moderation fill:#e8f5e9,stroke:#388e3c
+    style Validation fill:#fff3e0,stroke:#f57c00
 ```
 
 

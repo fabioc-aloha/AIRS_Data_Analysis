@@ -81,18 +81,24 @@ Based on UTAUT theory and emerging AI adoption literature, the following hypothe
 - H1c: Social Influence positively predicts Behavioral Intention
 - H1d: Facilitating Conditions positively predicts Behavioral Intention
 - H1e: Hedonic Motivation positively predicts Behavioral Intention
-- H1f: Trust in AI positively predicts Behavioral Intention
-- H1g: AI Anxiety negatively predicts Behavioral Intention
+- H1f: Price Value positively predicts Behavioral Intention
+- H1g: Habit positively predicts Behavioral Intention
+
+**AI-Specific Extension Hypothesis:**
+
+- H2: AI Trust positively predicts Behavioral Intention beyond UTAUT2 core constructs
+
+*Note: AI Anxiety (AX) was initially proposed as an inhibitor construct but was excluded from hypothesis testing due to inadequate reliability (α = .30) identified during exploratory factor analysis. See Section 4.2 for construct development outcomes.*
 
 **Moderation Hypotheses:**
 
-- H2: AI Experience moderates UTAUT relationships (strengthening effects for experienced users)
-- H3: Role group (Student vs. Professional+Leader) moderates UTAUT path coefficients
+- H3: AI Experience moderates UTAUT relationships (strengthening effects for experienced users)
+- H4: Role group (Student vs. Professional+Leader) moderates UTAUT path coefficients
 
 **Behavioral Validation:**
 
-- H4: Behavioral Intention positively relates to actual AI tool usage breadth
-- H5: Role groups differ significantly in AI tool usage patterns
+- H5: Behavioral Intention positively relates to actual AI tool usage breadth
+- H6: Role groups differ significantly in AI tool usage patterns
 
 
 
@@ -107,6 +113,8 @@ The initial AIRS instrument comprised **28 items across 12 constructs**:
 - 1 outcome construct (4 items): BI
 
 Items were measured on 5-point Likert scales (1 = Strongly Disagree to 5 = Strongly Agree), with negatively-worded items (AX, ER) reverse-scored prior to analysis.
+
+*Note: The final validated instrument comprises **16 items across 8 constructs** (PE, EE, SI, FC, HM, PV, HB, TR) plus the BI outcome. Four constructs (Voluntariness, Explainability, Ethical Risk, AI Anxiety) were excluded during EFA due to inadequate reliability (α = .30–.58). See Chapter 4, Section 4.2 for detailed item disposition.*
 
 ### 3.4.2 Item Sources
 
@@ -140,22 +148,22 @@ Of the 12 constructs proposed, **four AI-specific constructs were excluded** dur
 | Voluntariness (VO) | VO1, VO2 | .41 | Multi-dimensional | Dropped |
 | Explainability (EX) | EX1, EX2 | .58 | Multi-dimensional | Dropped |
 | Ethical Risk (ER) | ER1, ER2 | .55 | Multi-dimensional | Dropped |
-| AI Anxiety (AX) | AX1, AX2 (original) | .30 | Item heterogeneity | Reconstructed |
+| AI Anxiety (AX) | AX1, AX2 | .30 | Item heterogeneity | Dropped |
 
 **Interpretation**: These constructs demonstrated poor inter-item correlations, suggesting the two-item scales measured different facets of multi-dimensional phenomena rather than unitary constructs. For example:
 
 - **Voluntariness**: VO1 assessed choice to use AI, while VO2 assessed freedom not to use—conceptually distinct aspects of voluntary adoption
 - **Explainability**: EX1 assessed understanding AI outputs, while EX2 assessed preference for explanations—comprehension vs. preference dimensions
 - **Ethical Risk**: ER1 assessed job displacement concerns, while ER2 assessed privacy concerns—distinct risk categories
-- **Anxiety**: Original items captured tech-aversion (AX1) and FOMO/obsolescence anxiety (AX2)—avoidance vs. approach motivations
+- **AI Anxiety**: AX1 captured technology avoidance, while AX2 captured fear of obsolescence—avoidance vs. approach motivations
 
-**Resolution**: The Anxiety construct was successfully reconstructed with revised items demonstrating adequate reliability (α = .86). The remaining three constructs (VO, EX, ER) were excluded from the final model, with recommendations for future item development (see Section 5.7).
+**Resolution**: All four AI-specific constructs were excluded from the final measurement model due to inadequate reliability. These constructs remain theoretically important for AI adoption research and require more comprehensive operationalization with 3-4 items per sub-dimension in future studies.
 
 **Note**: This represents an empirical finding, not a design limitation. The proposal committed to testing these constructs; the data revealed inadequate measurement properties. This transparent reporting aligns with best practices in scale development (DeVellis & Thorpe, 2021).
 
 ### 3.4.5 Final Instrument Structure
 
-Following psychometric validation (see Chapter 4), the final AIRS instrument comprises **16 items across 8 factors**:
+Following psychometric validation (see Chapter 4), the final AIRS instrument comprises **16 items across 8 factors** (7 UTAUT2 predictors + AI Trust extension):
 
 | Factor | Items | Example Item |
 |--------|-------|--------------|
@@ -164,9 +172,11 @@ Following psychometric validation (see Chapter 4), the final AIRS instrument com
 | Social Influence | SI1, SI2 | "People important to me think I should use AI tools" |
 | Facilitating Conditions | FC1, FC2 | "I have the resources necessary to use AI tools" |
 | Hedonic Motivation | HM1, HM2 | "Using AI tools is fun" |
-| Trust in AI | TR1, TR2 | "I trust AI tools to provide accurate information" |
-| AI Anxiety | AX1, AX2 | "I feel apprehensive about using AI tools" |
-| Behavioral Intention | BI1, BI2 | "I intend to use AI tools in the next 6 months" |
+| Price Value | PV1, PV2 | "AI tools are good value for the money" |
+| Habit | HB1, HB2 | "Using AI tools has become a habit for me" |
+| AI Trust | TR1, TR2 | "I trust AI tools to provide accurate information" |
+
+*Note: Behavioral Intention (BI) serves as the outcome variable in the structural model.*
 
 
 
@@ -419,15 +429,16 @@ Thresholds based on Hu & Bentler (1999) and Hair et al. (2019).
 
 ```mermaid
 flowchart TD
-    subgraph predictors["UTAUT2 + AI Extensions"]
+    subgraph predictors["UTAUT2 Core + AI Trust Extension"]
         direction TB
         PE["Performance Expectancy"]
         EE["Effort Expectancy"]
         SI["Social Influence"]
         FC["Facilitating Conditions"]
         HM["Hedonic Motivation"]
+        PV["Price Value"]
+        HB["Habit"]
         TR["Trust in AI"]
-        AX["AI Anxiety"]
     end
 
     BI["<b>Behavioral Intention</b>"]
@@ -437,20 +448,23 @@ flowchart TD
     SI -->|+| BI
     FC -->|+| BI
     HM -->|+| BI
+    PV -->|+| BI
+    HB -->|+| BI
     TR -->|+| BI
-    AX -->|−| BI
 
     style BI fill:#c8e6c9,stroke:#2e7d32,stroke-width:3px
-    style AX fill:#ffcdd2,stroke:#c62828
     style PE fill:#e3f2fd,stroke:#1565c0
     style EE fill:#e3f2fd,stroke:#1565c0
     style SI fill:#e3f2fd,stroke:#1565c0
     style FC fill:#e3f2fd,stroke:#1565c0
     style HM fill:#e3f2fd,stroke:#1565c0
+    style PV fill:#e3f2fd,stroke:#1565c0
+    style HB fill:#e3f2fd,stroke:#1565c0
     style TR fill:#fff8e1,stroke:#f57f17
 ```
 
-<!-- Figure 2: Structural Model: Seven Predictors of Behavioral Intention -->
+<!-- Figure 2: Structural Model: Eight Predictors of Behavioral Intention -->
+*Note: AI Anxiety was initially proposed but excluded due to inadequate reliability (α = .30).*
 
 **Estimation**: Maximum Likelihood with robust standard errors
 
@@ -474,7 +488,7 @@ flowchart TD
 
 **Purpose**: Examine indirect pathways through the model
 
-**Method**: Bootstrap estimation (5,000 resamples) for indirect effect confidence intervals
+**Method**: Bootstrap estimation (1,000 resamples) for indirect effect confidence intervals
 
 **Significance**: 95% CI excluding zero
 
@@ -571,7 +585,7 @@ All analyses conducted using Python 3.11 with the following packages:
 
 ### 3.7.4 Criterion Validity
 
-**Predictive Validity**: AIRS constructs predict actual tool usage behavior (ρ = .70 for BI × tool breadth)
+**Predictive Validity**: AIRS constructs predict actual tool usage behavior (ρ = .69 for BI × tool breadth)
 
 **Known-Groups Validity**: Constructs differentiate between theoretically-distinct groups (e.g., Leaders vs. Academics)
 

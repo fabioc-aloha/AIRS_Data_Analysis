@@ -78,7 +78,7 @@ The dissertation is organized into six chapters:
 
 **Chapter 2: Literature Review** examines the evolution of technology acceptance models from TAM through UTAUT2, synthesizes AI-specific adoption research, and develops the conceptual framework for the study.
 
-**Chapter 3: Research Methodology** describes the research design, sampling procedures, instrument development, and analytical strategy employed in the seven-phase validation approach.
+**Chapter 3: Research Methodology** describes the research design, sampling procedures, instrument development, and analytical strategy employed in the ten-phase validation approach.
 
 **Chapter 4: Findings** presents the empirical results from exploratory factor analysis, confirmatory factor analysis, measurement invariance testing, structural equation modeling, and behavioral validation.
 
