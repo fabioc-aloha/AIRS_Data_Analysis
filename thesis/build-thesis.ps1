@@ -6,25 +6,24 @@
     This script combines the title page, abstract, and all chapter markdown files
     into a single document and converts it to a properly formatted APA-style PDF.
 
-.PARAMETER OutputName
-    The name of the output PDF file (without extension). Default: "DRAFT 00"
-
 .PARAMETER OpenAfterBuild
     If specified, opens the PDF after successful generation.
 
 .EXAMPLE
     .\build-thesis.ps1
-    Builds "DRAFT 00.pdf" in the thesis directory.
+    Builds "DRAFT 01.pdf" in the thesis directory.
 
 .EXAMPLE
-    .\build-thesis.ps1 -OutputName "DRAFT 01" -OpenAfterBuild
+    .\build-thesis.ps1 -OpenAfterBuild
     Builds "DRAFT 01.pdf" and opens it.
 #>
 
 param(
-    [string]$OutputName = "DRAFT 00",
     [switch]$OpenAfterBuild
 )
+
+# Hardcoded draft version to avoid mistakes
+$OutputName = "DRAFT 01"
 
 # Configuration
 $ThesisDir = $PSScriptRoot
@@ -43,7 +42,8 @@ $ChapterFiles = @(
     "02_literature_review.md",
     "03_methodology.md",
     "04_results.md",
-    "05_discussion.md"
+    "05_analysis_discussion.md",
+    "06_conclusions.md"
 )
 
 Write-Host "========================================" -ForegroundColor Cyan

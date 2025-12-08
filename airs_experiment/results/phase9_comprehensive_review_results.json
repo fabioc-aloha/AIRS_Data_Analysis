@@ -7,7 +7,7 @@
   },
   "gap1_education": {
     "finding": "Significant education effect on AI adoption readiness",
-    "statistic": "F = 9.15, p < .0001, \u03b7\u00b2 = .066",
+    "statistic": "F = 9.15, p < .0001, \u03b7\u00b2 = 0.066",
     "interpretation": "Higher education associated with greater AI readiness"
   },
   "gap2_industry": {
@@ -15,22 +15,22 @@
     "statistic": "F = 5.91, p < .0001",
     "top_industries": [
       "Technology or IT (M=3.88)",
-      "Finance or Banking (M=3.80)"
+      "Finance or Banking (M=3.8)"
     ],
     "lowest_industries": [
-      "Retail or Hospitality (M=2.90)",
-      "Other (M=2.98)"
+      "Other (M=2.98)",
+      "Retail or Hospitality (M=2.9)"
     ]
   },
   "gap3_experience": {
     "finding": "Small but significant experience effect with inverted-U pattern",
-    "statistic": "r = .10, p = .022",
-    "peak": "7-10 years experience (M=3.58)",
+    "statistic": "r = 0.10, p = 0.022",
+    "peak": "7 to 10 years (M=3.58)",
     "interpretation": "Mid-career professionals most ready to adopt AI"
   },
   "gap4_disability": {
     "finding": "Respondents with disabilities report higher AI anxiety",
-    "statistic": "t = 2.77, p = .006, d = 0.36 (small-medium effect)",
+    "statistic": "t = 2.77, p = 0.006, d = 0.36 (small-medium effect)",
     "yes_anxiety": 3.68,
     "no_anxiety": 3.35,
     "implication": "Accessibility and inclusive design needed for AI deployment"
@@ -51,10 +51,10 @@
   "gap6_user_typology": {
     "finding": "Four distinct user typologies identified",
     "clusters": {
-      "AI Enthusiasts": {
-        "n": 84,
-        "pct": 16,
-        "profile": "High adoption, low anxiety"
+      "Anxious Avoiders": {
+        "n": 91,
+        "pct": 17,
+        "profile": "Low adoption, high anxiety"
       },
       "Cautious Adopters": {
         "n": 157,
@@ -66,10 +66,10 @@
         "pct": 37,
         "profile": "Average across all constructs"
       },
-      "Anxious Avoiders": {
-        "n": 91,
-        "pct": 17,
-        "profile": "Low adoption, high anxiety"
+      "AI Enthusiasts": {
+        "n": 84,
+        "pct": 16,
+        "profile": "High adoption, low anxiety"
       }
     }
   },

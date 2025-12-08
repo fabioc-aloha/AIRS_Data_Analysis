@@ -103,12 +103,14 @@ These gaps represented misalignments between the approved DBA proposal and curre
 | Category | Complete | Remaining | Progress |
 |----------|----------|-----------|----------|
 | Analysis Pipeline | 11/11 | 0 | ✅ 100% |
-| Chapters | 3/5 | 2 | 🔶 60% |
+| Chapters | 4/6 | 2 | 🔶 67% |
 | Tables | 9/9 | 0 | ✅ 100% |
 | Bibliography | 60+ refs | 0 | ✅ 100% |
 | Figures | 0 | ~15 | 🔲 0% |
 | Appendices | 0 | ~5 | 🔲 0% |
 | **Proposal Gaps** | 6/6 | 0 | ✅ 100% |
+
+**Note**: Dissertation restructured to 6-chapter format (December 8, 2025) per DBA best practices (Creswell & Creswell, 2018).
 
 ---
 
@@ -150,7 +152,22 @@ These gaps represented misalignments between the approved DBA proposal and curre
   - [ ] 2.8 Conceptual Framework
   - [ ] 2.9 Chapter Summary
 
-- [ ] **Chapter 5: Discussion** (~3,000 words)
+- [x] **Chapter 5: Analysis and Discussion** (~3,000 words) ✅ RESTRUCTURED
+  - Interpretation of findings with literature comparison
+  - Theory and practice implications
+  - Unexpected findings and limitations
+  - *Conclusions moved to new Chapter 6*
+
+- [ ] **Chapter 6: Conclusions, Implications, and Recommendations** (~2,500 words)
+  - [x] 6.2 Summary of Purpose, Methods, Key Findings ✅ DRAFTED
+  - [x] 6.3 Theoretical Contributions ✅ DRAFTED
+  - [x] 6.4 Practical and Managerial Implications ✅ DRAFTED
+  - [x] 6.5 Recommendations for Organizations ✅ DRAFTED
+  - [x] 6.6 Limitations ✅ DRAFTED
+  - [x] 6.7 Future Research Directions ✅ DRAFTED
+  - [x] 6.8 Closing Remarks ✅ DRAFTED
+
+### Chapter 5 Tasks (Refinement)
   - [ ] 5.3.1 Performance Expectancy as Strongest Predictor
     - *Academic*: Aligns with UTAUT meta-analysis (PE consistently strongest)
     - *Business*: Focus AI messaging on productivity/performance outcomes

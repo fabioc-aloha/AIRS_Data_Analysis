@@ -7,26 +7,30 @@
     "tools": {
       "ChatGPT": {
         "mean": 3.03,
-        "active_pct": 63.7,
-        "heavy_pct": 43.5
+        "never_pct": 23.9,
+        "active_pct": 64.2,
+        "heavy_pct": 44.2
       },
       "MSCopilot": {
         "mean": 2.49,
-        "active_pct": 49.1,
-        "heavy_pct": 28.7
+        "never_pct": 36.1,
+        "active_pct": 48.4,
+        "heavy_pct": 27.7
       },
       "Gemini": {
         "mean": 2.48,
-        "active_pct": 48.0,
-        "heavy_pct": 26.5
+        "never_pct": 36.5,
+        "active_pct": 47.6,
+        "heavy_pct": 26.0
       },
       "Other": {
         "mean": 1.93,
-        "active_pct": 31.4,
-        "heavy_pct": 15.4
+        "never_pct": 53.3,
+        "active_pct": 30.0,
+        "heavy_pct": 14.0
       }
     },
-    "finding": "ChatGPT is most widely adopted (63.7% active users, M=3.01)"
+    "finding": "ChatGPT is most widely adopted (64.2% active users, M=3.03)"
   },
   "rq10b_population_comparison": {
     "description": "Role Type comparison (Academic vs Professional vs Leader)",
@@ -56,18 +60,18 @@
   "rq10c_construct_correlations": {
     "description": "Correlations between usage and AIRS constructs",
     "total_usage_correlations": {
-      "PerfExp": 0.67,
-      "EffortExp": 0.58,
-      "SocialInf": 0.61,
-      "FacCond": 0.59,
-      "HedMot": 0.67,
-      "PriceVal": 0.65,
-      "Habit": 0.67,
-      "Trust": 0.62,
-      "BehInt": 0.7
+      "PerfExp": 0.66,
+      "EffortExp": 0.56,
+      "SocialInf": 0.59,
+      "FacCond": 0.57,
+      "HedMot": 0.66,
+      "PriceVal": 0.63,
+      "Habit": 0.66,
+      "Trust": 0.6,
+      "BehInt": 0.69
     },
     "all_significant": true,
-    "finding": "All correlations significant (p<.01); Total usage strongly predicts BI (\u03c1=0.70)"
+    "finding": "All correlations significant (p<.01); Total usage strongly predicts BI (\u03c1=0.69)"
   },
   "rq10d_user_types": {
     "description": "Multi-tool vs single-tool user analysis",
