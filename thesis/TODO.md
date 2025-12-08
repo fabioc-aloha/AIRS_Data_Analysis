@@ -8,6 +8,25 @@ Last Updated: December 8, 2025
 
 ---
 
+## ✅ DRAFT 02 Fact-Check Complete (December 8, 2025)
+
+| Task | Status |
+|------|--------|
+| **3-Decimal Standardization** | ✅ All statistics standardized to 3dp to match JSON source data |
+| **Invariance Claims** | ✅ Fixed - "scalar invariance" → "configural invariance" (metric not achieved) |
+| **Bootstrap Iterations** | ✅ Fixed - 5,000 → 1,000 (actual analysis value) |
+| **Mediation Values** | ✅ Fixed - indirect effect 0.204 → 0.232, CI [-.039,.430] → [-.023,.474] |
+| **BI-Usage Correlation** | ✅ Fixed - ρ = .70 → .69 (actual value) |
+| **Phase Count Harmonization** | ✅ Fixed - "7-phase" → "10-phase" throughout |
+| **Reliability Tables** | ✅ Updated - exact CFA values (α .743–.909, CR, AVE) |
+| **Dropped Constructs** | ✅ Updated - α range .301–.582 |
+| **Invariance Diffs** | ✅ Updated - mean Δλ = .082, max Δλ = .326 |
+| **Git Tag** | ✅ Tagged as DRAFT02 and pushed |
+
+**Conclusions Impact**: None - all corrections maintain same interpretive categories.
+
+---
+
 ## ✅ Recent Cleanup (December 8, 2025)
 
 | Task | Status |

@@ -19,7 +19,7 @@ Extending Model for Enterprise AI Adoption
 </table>
 <!-- markdownlint-enable MD033 -->
 
-> 📝 **[View Current Thesis Draft (PDF)](thesis/DRAFT%2000.pdf)** — Latest compiled version of the dissertation
+> 📝 **[View Current Thesis Draft (PDF)](thesis/DRAFT%2002.pdf)** — Latest compiled version of the dissertation (DRAFT 02 - Fact-checked)
 
 ---
 
@@ -99,7 +99,7 @@ Organizations now have a **validated 16-item diagnostic instrument** for assessi
 
 ## Validated Measurement Model
 
-### Model D: 8 Factors, 16 Items
+### Model: 8 Factors, 16 Items
 
 ```mermaid
 flowchart LR
@@ -109,24 +109,26 @@ flowchart LR
         SI[Social Influence]
         FC[Facilitating Conditions]
         HM[Hedonic Motivation]
+        PV[Price Value]
+        HB[Habit]
     end
 
-    subgraph Extensions["AI Extensions"]
-        TR[Trust]
-        AX[Anxiety]
+    subgraph Extensions["AI Extension"]
+        TR[AI Trust]
     end
 
     subgraph Outcome["Outcome"]
         BI[Behavioral Intention]
     end
 
-    PE -->|β=.505***| BI
-    EE -->|β=.089| BI
+    PE -->|β=-.028| BI
+    EE -->|β=-.008| BI
     SI -->|β=.136*| BI
-    FC -->|β=.074| BI
-    HM -->|β=.217***| BI
+    FC -->|β=.059| BI
+    HM -->|β=.217*| BI
+    PV -->|β=.505***| BI
+    HB -->|β=.023| BI
     TR -->|β=.106†| BI
-    AX -->|β=-.152**| BI
 ```
 
 ### Model Fit (CFA Holdout, n=262)
@@ -141,15 +143,15 @@ flowchart LR
 ### Reliability
 
 | Factor | α | CR | AVE |
-|--------|---|-----|-----|
-| Performance Expectancy | .85 | .86 | .76 |
-| Effort Expectancy | .81 | .82 | .70 |
-| Social Influence | .79 | .80 | .67 |
-| Facilitating Conditions | .76 | .77 | .63 |
-| Hedonic Motivation | .84 | .85 | .74 |
-| Trust | .80 | .81 | .68 |
-| Anxiety | .86 | .87 | .77 |
-| Behavioral Intention | .91 | .92 | .85 |
+|--------|-----|-----|-----|
+| Performance Expectancy | .803 | .804 | .673 |
+| Effort Expectancy | .859 | .861 | .756 |
+| Social Influence | .752 | .763 | .621 |
+| Facilitating Conditions | .743 | .750 | .601 |
+| Hedonic Motivation | .864 | .865 | .763 |
+| Price Value | .883 | .883 | .790 |
+| Habit | .909 | .909 | .833 |
+| AI Trust | .891 | .891 | .804 |
 
 ---
 
@@ -157,17 +159,17 @@ flowchart LR
 
 | ID | Hypothesis | Result | Evidence |
 |----|------------|--------|----------|
-| H1a | PE → BI (+) | ✅ Supported | β=.505, p<.001 |
-| H1b | EE → BI (+) | ❌ Not Supported | β=.089, p=.126 |
-| H1c | SI → BI (+) | ✅ Supported | β=.136, p=.013 |
-| H1d | FC → BI (+) | ❌ Not Supported | β=.074, p=.170 |
-| H1e | HM → BI (+) | ✅ Supported | β=.217, p<.001 |
-| H1f | TR → BI (+) | ❌ Marginal | β=.106, p=.064 |
-| H1g | AX → BI (−) | ✅ Supported | β=-.152, p=.002 |
-| H2 | Experience moderates | ⚠️ Partial | PE, HM only |
-| H3 | Role moderates paths | ❌ Not Supported | No Δβ significant |
-| H4 | BI predicts usage | ✅ Supported | ρ=.70, p<.001 |
-| H5 | Role differs in usage | ✅ Supported | L > P > S |
+| H1a | PE → BI (+) | ❌ Not Supported | β=-.028, p=.791 |
+| H1b | EE → BI (+) | ❌ Not Supported | β=-.008, p=.875 |
+| H1c | SI → BI (+) | ✅ Supported | β=.136, p=.024 |
+| H1d | FC → BI (+) | ❌ Not Supported | β=.059, p=.338 |
+| H1e | HM → BI (+) | ✅ Supported | β=.217, p=.014 |
+| H1f | PV → BI (+) | ✅ Supported (Strongest) | β=.505, p<.001 |
+| H1g | HB → BI (+) | ❌ Not Supported | β=.023, p=.631 |
+| H2 | TR → BI (+) | ❌ Marginal | β=.106, p=.064 |
+| H3 | Experience moderates | ⚠️ Partial | HM×Exp p=.007 |
+| H4 | BI predicts usage | ✅ Supported | ρ=.69, p<.001 |
+| H5 | Role differs in usage | ✅ Supported | Leaders > Others |
 
 ---
 
@@ -235,7 +237,7 @@ AIRS_Data_Analysis/
 
 | Decision | Rationale | Location |
 |----------|-----------|----------|
-| 4 constructs dropped (VO, EX, ER, AX-orig) | Poor reliability (α = .30–.58) | Ch 3 §3.4.4, Ch 4 §4.2.1 |
+| 4 constructs dropped (VO, EX, ER, AX-orig) | Poor reliability (α = .301–.582) | Ch 3 §3.4.4, Ch 4 §4.2.1 |
 | AIRS vs UTAUT2 comparison | ΔR² = .016 (modest improvement) | Ch 4 §4.3.5 |
 | H5 mediation untestable | EX/ER excluded from model | Ch 5 §5.6.2, §5.7.1 |
 
@@ -272,18 +274,22 @@ cd airs_experiment
 
 ### Use the AIRS-16 Scale
 
-The validated 16-item scale measures 8 constructs:
+The validated 16-item scale measures 8 predictor constructs plus Behavioral Intention:
 
 ```python
 # Calculate construct scores (mean of 2 items each)
+# 8 Predictor Constructs (16 items)
 PE = mean(PE1, PE2)  # Performance Expectancy
 EE = mean(EE1, EE2)  # Effort Expectancy
 SI = mean(SI1, SI2)  # Social Influence
 FC = mean(FC1, FC2)  # Facilitating Conditions
 HM = mean(HM1, HM2)  # Hedonic Motivation
-TR = mean(TR1, TR2)  # Trust
-AX = mean(AX1, AX2)  # Anxiety (reverse-scored)
-BI = mean(BI1, BI2)  # Behavioral Intention
+PV = mean(PV1, PV2)  # Price Value (STRONGEST predictor β=.505)
+HB = mean(HB1, HB2)  # Habit
+TR = mean(TR1, TR2)  # AI Trust
+
+# Outcome Variable (4 items)
+BI = mean(BI1, BI2, BI3, BI4)  # Behavioral Intention
 ```
 
 ---
@@ -330,4 +336,4 @@ Documentation: [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)
 ---
 
 **Last Updated**: December 8, 2025
-**Version**: 6.2 (Terminology & Title Corrections)
+**Version**: 6.3 (DRAFT 02 - Fact-checked with 3-decimal precision)

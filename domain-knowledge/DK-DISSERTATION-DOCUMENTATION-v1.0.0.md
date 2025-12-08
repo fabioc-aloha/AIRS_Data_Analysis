@@ -177,18 +177,25 @@ for i, q in enumerate(q_numbers):
 ### Core Architecture Connections
 - [DK-PSYCHOMETRIC-VALIDATION-v1.0.0.md] (0.95, validates, bidirectional) - "Statistical rigor documented through transparent reporting"
 - [DK-DOCUMENTATION-EXCELLENCE-v1.1.0.md] (0.98, enhances, bidirectional) - "Documentation quality standards applied to dissertation research"
-- [DK-PYTHON-STATISTICAL-ANALYSIS-v1.0.0.md] (0.89, extracts, forward) - "Notebook outputs provide ground truth for documentation verification"
+- [DK-PYTHON-STATISTICAL-ANALYSIS-v1.0.0.md] (0.92, extracts, forward) - "Notebook outputs provide ground truth for documentation verification; 3-decimal precision standard"
 
 ### Methodological Integration
 - [empirical-validation.instructions.md] (0.92, grounds, bidirectional) - "Research transparency requires empirical verification of documented claims"
 - [worldview-integration.instructions.md] (0.88, guides, forward) - "Ethical research communication demands measurement transparency"
+- [meditation-session-2025-12-08-rounding-precision.prompt.md] (0.90, reinforces, inbound) - "Rounding discipline and verification cascade pattern"
 
 ### Workflow Patterns
 - [bootstrap-learning.instructions.md] (0.85, structures, forward) - "Documentation mastery acquired through systematic dissertation workflow"
 - [alex-core.instructions.md] (0.90, optimizes, bidirectional) - "Meta-cognitive awareness enhances documentation quality through verification protocols"
 
+### Precision Standards (Added Dec 8, 2025)
+- **3-Decimal Rule**: JSON (15dp) → Thesis (3dp) with no intermediate rounding
+- **Invariance Terminology Hierarchy**: Configural → Metric → Scalar → Strict (cannot skip levels)
+- **Verification Cascade**: Sample → Measurement → Structural → Invariance → Moderation → Behavioral
+
 ---
 
 **Mastery Achievement**: Comprehensive dissertation documentation quality assurance and transparency protocols
 **Research Impact**: Enhanced credibility through systematic verification and transparent reporting
+**Latest Enhancement**: Rounding precision standardization (Dec 8, 2025) - 3-decimal standard, invariance hierarchy
 **Next Evolution**: Apply patterns to Phase 3+ documentation as analysis progresses to full sample
