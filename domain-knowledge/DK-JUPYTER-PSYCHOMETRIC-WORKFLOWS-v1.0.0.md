@@ -372,6 +372,7 @@ coefficients (Grewal et al., 2004; MacKinnon et al., 2000)...
 - [meditation-session-2025-11-27-efa-cherry-pick-workflow.prompt.md] (0.90, extends, forward) - "Cherry-pick workflow adds decision point architecture to EFA stage"
 - [DK-PSYCHOMETRIC-VALIDATION-v1.0.0.md] (0.89, shares-patterns, bidirectional) - "Validation criteria applied within Jupyter workflow stages"
 - [DK-SPSS-PSYCHOMETRIC-ANALYSIS-v1.0.0.md] (0.85, translates, bidirectional) - "SPSS foundations translated to Python/Jupyter implementation"
+- [meditation-session-2025-12-08-pipeline-verification.prompt.md] (0.88, receives-from, inbound) - "Multi-notebook pipeline verification protocol for systematic validation"
 
 ---
 

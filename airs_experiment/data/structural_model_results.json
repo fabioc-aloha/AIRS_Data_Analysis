@@ -1,5 +1,5 @@
 {
-  "analysis_date": "2025-12-08T06:58:27.461703",
+  "analysis_date": "2025-12-08T09:08:31.798975",
   "full_sample_n": 523,
   "full_sample_fit": {
     "chi2": 368.71646797106274,
@@ -10,6 +10,64 @@
     "aic": 150.58999438634393,
     "bic": 474.31818565527806
   },
+  "path_coefficients": [
+    {
+      "predictor": "PerfExp",
+      "beta_std": -0.027941738359124182,
+      "p": 0.7909465554143464,
+      "hypothesis": "H1",
+      "support": "\u2717 Not supported"
+    },
+    {
+      "predictor": "EffortExp",
+      "beta_std": -0.007742571436835228,
+      "p": 0.8745583439913642,
+      "hypothesis": "H1",
+      "support": "\u2717 Not supported"
+    },
+    {
+      "predictor": "SocialInf",
+      "beta_std": 0.13557641399805948,
+      "p": 0.024103805196256767,
+      "hypothesis": "H1",
+      "support": "\u2713 Supported"
+    },
+    {
+      "predictor": "FacilCond",
+      "beta_std": 0.05868029585599315,
+      "p": 0.33819156741946443,
+      "hypothesis": "H1",
+      "support": "\u2717 Not supported"
+    },
+    {
+      "predictor": "HedonicMot",
+      "beta_std": 0.21666972320555336,
+      "p": 0.013768443971274191,
+      "hypothesis": "H1",
+      "support": "\u2713 Supported"
+    },
+    {
+      "predictor": "PriceValue",
+      "beta_std": 0.5046687874624703,
+      "p": 0.00010060981477577613,
+      "hypothesis": "H1",
+      "support": "\u2713 Supported"
+    },
+    {
+      "predictor": "Habit",
+      "beta_std": 0.02316672525692826,
+      "p": 0.6311711470778445,
+      "hypothesis": "H1",
+      "support": "\u2717 Not supported"
+    },
+    {
+      "predictor": "AITrust",
+      "beta_std": 0.10626458137689142,
+      "p": 0.06362767042444095,
+      "hypothesis": "H2",
+      "support": "\u2717 Not supported"
+    }
+  ],
   "hypothesis_results": {
     "H1_supported_paths": 3,
     "H1_total_paths": 7,

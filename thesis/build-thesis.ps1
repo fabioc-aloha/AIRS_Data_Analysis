@@ -11,11 +11,11 @@
 
 .EXAMPLE
     .\build-thesis.ps1
-    Builds "DRAFT 01.pdf" in the thesis directory.
+    Builds "DRAFT 02.pdf" in the thesis directory.
 
 .EXAMPLE
     .\build-thesis.ps1 -OpenAfterBuild
-    Builds "DRAFT 01.pdf" and opens it.
+    Builds "DRAFT 02.pdf" and opens it.
 #>
 
 param(
@@ -23,7 +23,7 @@ param(
 )
 
 # Hardcoded draft version to avoid mistakes
-$OutputName = "DRAFT 01"
+$OutputName = "DRAFT 02"
 
 # Configuration
 $ThesisDir = $PSScriptRoot

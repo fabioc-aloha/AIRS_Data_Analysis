@@ -2,90 +2,461 @@
   "study_overview": {
     "purpose": "Develop and validate AIRS instrument",
     "theoretical_base": "UTAUT2 + AI Trust extension",
-    "sample_size": 523,
-    "role_types": {
-      "three_group": [
-        "Academic (n=216)",
-        "Professional (n=184)",
-        "Leader (n=123)"
-      ],
-      "two_group_sem": [
-        "Academic (n=216)",
-        "Professional+Leader (n=307)"
-      ],
-      "note": "3-group for descriptive; 2-group for multi-group SEM (sample size)"
-    },
+    "sample_size": 262,
     "validated_model": "Model D: 8 factors, 16 items"
   },
-  "hypothesis_summary": {
-    "supported": [
-      "H1c",
-      "H1e",
-      "H1f"
-    ],
-    "marginal": [
-      "H2"
-    ],
-    "not_supported": [
-      "H1a",
-      "H1b",
-      "H1d",
-      "H1g",
-      "H3",
-      "H4a",
-      "H4b",
-      "H4c*",
-      "H4e",
-      "H4f"
-    ],
-    "not_testable": [
-      "H5a",
-      "H5b",
-      "H5c"
-    ],
-    "note": "H4c* significant in opposite direction; H1f (PV) strongest predictor"
-  },
-  "novel_contributions": [
-    "Price Value strongest predictor (\u03b2 = .505***)",
-    "AI Trust marginally significant (\u03b2 = .106, p = .064)",
-    "Experience moderates PE \u2192 BI (\u03b2 = .148, p = .013)",
-    "Experience moderates HM \u2192 BI (\u03b2 = .136, p = .009)",
-    "Disability associated with AI Anxiety (d = .36)",
-    "4-segment user typology identified"
-  ],
-  "model_fit": {
-    "cfa_holdout": {
-      "CFI": 0.975,
-      "TLI": 0.96,
-      "RMSEA": 0.065,
-      "SRMR": 0.046
+  "phase_results": {
+    "cfa": {
+      "fit_indices": {
+        "chi2": 159.37934775145305,
+        "df": 76,
+        "CFI": 0.9746158619248737,
+        "TLI": 0.9599197819866427,
+        "RMSEA": 0.064833907480251,
+        "AIC": 118.7833637576225,
+        "BIC": 332.8840339832883
+      },
+      "n_observations": 262,
+      "reliability": [
+        {
+          "Factor": "PerfExp",
+          "Alpha": 0.8029567113666294,
+          "CR": 0.8044763553672948,
+          "AVE": 0.6730640379371884
+        },
+        {
+          "Factor": "EffortExp",
+          "Alpha": 0.858774861248105,
+          "CR": 0.8606213627719015,
+          "AVE": 0.7556866714158316
+        },
+        {
+          "Factor": "SocialInf",
+          "Alpha": 0.7517293889672745,
+          "CR": 0.763328186337546,
+          "AVE": 0.6206087856540579
+        },
+        {
+          "Factor": "FacilCond",
+          "Alpha": 0.7430775976860298,
+          "CR": 0.7499336650010092,
+          "AVE": 0.6011586626414117
+        },
+        {
+          "Factor": "HedonicMot",
+          "Alpha": 0.8636032443291701,
+          "CR": 0.8651041248613651,
+          "AVE": 0.7625509679061948
+        },
+        {
+          "Factor": "PriceValue",
+          "Alpha": 0.8826641165006224,
+          "CR": 0.8827370241309336,
+          "AVE": 0.7900889199458001
+        },
+        {
+          "Factor": "Habit",
+          "Alpha": 0.9087274409995378,
+          "CR": 0.9088721462111432,
+          "AVE": 0.8329755103827157
+        },
+        {
+          "Factor": "AITrust",
+          "Alpha": 0.8906149320224743,
+          "CR": 0.8910530341467787,
+          "AVE": 0.803598799274763
+        }
+      ]
     },
-    "cfa_full": "TBD"
-  },
-  "dropped_constructs": {
-    "voluntariness": {
-      "alpha": 0.43,
-      "reason": "Conceptually distinct items"
+    "structural": {
+      "full_sample_n": 523,
+      "full_sample_fit": {
+        "chi2": 368.71646797106274,
+        "df": 134.0,
+        "cfi": 0.975263195310235,
+        "tli": 0.9649254261861541,
+        "rmsea": 0.057927412508772036,
+        "aic": 150.58999438634393,
+        "bic": 474.31818565527806
+      },
+      "hypothesis_results": {
+        "H1_supported_paths": 3,
+        "H1_total_paths": 7,
+        "H2_trust_significant": false,
+        "H2_trust_beta": 0.10626458137689142,
+        "H2_trust_p": 0.06362767042444095,
+        "H3_incremental_validity": false,
+        "H3_delta_aic": 2.0119431000575787,
+        "H4_moderation_effects": 1
+      }
     },
-    "explainability": {
-      "alpha": 0.47,
-      "reason": "Process vs outcome facets"
+    "invariance": {
+      "analysis_date": "2025-12-08T08:54:45.507115",
+      "n_academic": 216,
+      "n_professional": 307,
+      "academic_fit": {
+        "chi2": 167.16084772140965,
+        "df": 76.0,
+        "cfi": 0.9584080809803686,
+        "tli": 0.9343285489163712,
+        "rmsea": 0.074692698763375
+      },
+      "professional_fit": {
+        "chi2": 135.8766666457805,
+        "df": 76.0,
+        "cfi": 0.9881010700059786,
+        "tli": 0.9812122157989136,
+        "rmsea": 0.05074126593178391
+      },
+      "configural_invariance": true,
+      "metric_invariance": false,
+      "mean_loading_diff": 0.08192581435719527,
+      "max_loading_diff": 0.32562199805642067,
+      "n_sig_mean_diffs": 3,
+      "n_medium_large_effects": 0
     },
-    "ethical_risk": {
-      "alpha": 0.31,
-      "reason": "Unrelated risk dimensions"
+    "moderation": {
+      "demographic_moderation_summary": {
+        "industry": {
+          "groups": {
+            "Tech_Finance": 91,
+            "Other": 422
+          },
+          "significant_effects": 0,
+          "conclusion": "No significant moderation - mechanisms equivalent across sectors"
+        },
+        "education": {
+          "groups": {
+            "Higher_Education": 253,
+            "Lower_Education": 260
+          },
+          "significant_effects": 0,
+          "marginal_effects": [
+            "AI Trust (p=.069)"
+          ],
+          "conclusion": "No significant moderation - education affects levels not mechanisms"
+        },
+        "experience": {
+          "groups": {
+            "Early_Career": 192,
+            "Experienced": 321
+          },
+          "significant_effects": 2,
+          "findings": [
+            {
+              "path": "PE \u00d7 Experience",
+              "beta": 0.148,
+              "p": 0.013
+            },
+            {
+              "path": "HM \u00d7 Experience",
+              "beta": 0.136,
+              "p": 0.009
+            }
+          ],
+          "conclusion": "SIGNIFICANT - Career stage moderates adoption mechanisms"
+        }
+      },
+      "experience_moderation": [
+        {
+          "Predictor": "Perf. Expect.",
+          "Main_Effect": 0.7219255663430426,
+          "Interaction": 0.11189972207768518,
+          "p_value": 0.05532602430042219,
+          "Significant": "False"
+        },
+        {
+          "Predictor": "Effort Expect.",
+          "Main_Effect": 0.6144681411269097,
+          "Interaction": 0.12171334206056192,
+          "p_value": 0.16113562889016989,
+          "Significant": "False"
+        },
+        {
+          "Predictor": "AI Trust",
+          "Main_Effect": 0.6931249228405644,
+          "Interaction": 0.08099788417697926,
+          "p_value": 0.14484976923637607,
+          "Significant": "False"
+        },
+        {
+          "Predictor": "Hedonic Mot.",
+          "Main_Effect": 0.7166648964908968,
+          "Interaction": 0.13620790907256836,
+          "p_value": 0.0067486850616861205,
+          "Significant": "True"
+        }
+      ]
     },
-    "ai_anxiety": {
-      "alpha": 0.58,
-      "reason": "General technology anxiety"
+    "tool_usage": {
+      "sample_size": 523,
+      "leader_comparison": {
+        "description": "Leadership role deep-dive (KEY FINDING)",
+        "leader_n": 123,
+        "tool_usage_effects": "d=0.74-1.14 (Leaders >> Professionals on ALL tools)",
+        "construct_effects": "d=0.64-0.82 (Leaders higher on ALL AIRS constructs)",
+        "finding": "Leaders show DISTINCTLY HIGHER adoption readiness than Professionals - NOT similar patterns. Leadership is a meaningful moderator of AI adoption."
+      },
+      "criterion_validity": "Strong - current usage validates AIRS construct measures"
+    },
+    "qualitative": {
+      "sample": {
+        "total_feedback_responses": 368,
+        "substantive_responses": 243,
+        "response_rate_percent": 46.5,
+        "academic_n": 94,
+        "professional_n": 83,
+        "leader_n": 66
+      },
+      "key_findings": {
+        "positive_experience": "Academic (30%) \u2248 Leader (30%) > Professional (14.5%), p=.029",
+        "learning_education": "Academic (21%) > Professional (11%) > Leader (6%), p=.015",
+        "work_productivity": "Academic (29%) > Professional (13%) \u2248 Leader (14%), p=.013",
+        "integration_with_nb07": "Leaders high positive sentiment aligns with d=0.64-0.82 higher AIRS scores vs Professionals"
+      },
+      "rq11_themes": {
+        "n_themes": 10,
+        "theme_keywords": {
+          "Positive Experience": [
+            "enjoy",
+            "love",
+            "great",
+            "helpful",
+            "useful",
+            "good",
+            "like",
+            "amazing",
+            "excellent",
+            "wonderful",
+            "beneficial"
+          ],
+          "Concerns/Caution": [
+            "concern",
+            "worry",
+            "careful",
+            "caution",
+            "risk",
+            "afraid",
+            "fear",
+            "dangerous"
+          ],
+          "Accuracy/Reliability": [
+            "accurate",
+            "accuracy",
+            "reliable",
+            "reliability",
+            "trust",
+            "correct",
+            "wrong",
+            "error",
+            "mistake",
+            "inaccurate"
+          ],
+          "Learning/Education": [
+            "learn",
+            "study",
+            "school",
+            "education",
+            "research",
+            "student",
+            "homework",
+            "class"
+          ],
+          "Work/Productivity": [
+            "work",
+            "job",
+            "task",
+            "productivity",
+            "efficient",
+            "time",
+            "fast",
+            "quick"
+          ],
+          "Ethics/Privacy": [
+            "ethic",
+            "privacy",
+            "data",
+            "security",
+            "moral",
+            "honest",
+            "integrity"
+          ],
+          "Future/Potential": [
+            "future",
+            "potential",
+            "evolving",
+            "improve",
+            "develop",
+            "growing",
+            "progress"
+          ],
+          "Cost/Access": [
+            "cost",
+            "free",
+            "pay",
+            "expensive",
+            "access",
+            "available",
+            "subscription"
+          ],
+          "Job Replacement": [
+            "replace",
+            "job",
+            "employment",
+            "automate",
+            "obsolete",
+            "take over"
+          ],
+          "Human Element": [
+            "human",
+            "people",
+            "personal",
+            "creative",
+            "think",
+            "critical"
+          ]
+        },
+        "theme_frequencies": {
+          "Positive Experience": {
+            "count": 60,
+            "percent": 24.7
+          },
+          "Concerns/Caution": {
+            "count": 14,
+            "percent": 5.8
+          },
+          "Accuracy/Reliability": {
+            "count": 26,
+            "percent": 10.7
+          },
+          "Learning/Education": {
+            "count": 33,
+            "percent": 13.6
+          },
+          "Work/Productivity": {
+            "count": 47,
+            "percent": 19.3
+          },
+          "Ethics/Privacy": {
+            "count": 13,
+            "percent": 5.3
+          },
+          "Future/Potential": {
+            "count": 14,
+            "percent": 5.8
+          },
+          "Cost/Access": {
+            "count": 6,
+            "percent": 2.5
+          },
+          "Job Replacement": {
+            "count": 4,
+            "percent": 1.6
+          },
+          "Human Element": {
+            "count": 33,
+            "percent": 13.6
+          }
+        },
+        "no_theme_count": 85,
+        "no_theme_percent": 35.0
+      }
+    },
+    "comprehensive": {
+      "metadata": {
+        "phase": 9,
+        "title": "Comprehensive Review - Maximizing Data Value",
+        "n_total": 523,
+        "gaps_analyzed": 6
+      },
+      "gap1_education": {
+        "finding": "Significant education effect on AI adoption readiness",
+        "statistic": "F = 9.15, p < .0001, \u03b7\u00b2 = 0.066",
+        "interpretation": "Higher education associated with greater AI readiness"
+      },
+      "gap2_industry": {
+        "finding": "Significant industry differences",
+        "statistic": "F = 5.91, p < .0001",
+        "top_industries": [
+          "Technology or IT (M=3.88)",
+          "Finance or Banking (M=3.8)"
+        ],
+        "lowest_industries": [
+          "Other (M=2.98)",
+          "Retail or Hospitality (M=2.9)"
+        ]
+      },
+      "gap3_experience": {
+        "finding": "Small but significant experience effect with inverted-U pattern",
+        "statistic": "r = 0.10, p = 0.022",
+        "peak": "7 to 10 years (M=3.58)",
+        "interpretation": "Mid-career professionals most ready to adopt AI"
+      },
+      "gap4_disability": {
+        "finding": "Respondents with disabilities report higher AI anxiety",
+        "statistic": "t = 2.77, p = 0.006, d = 0.36 (small-medium effect)",
+        "yes_anxiety": 3.68,
+        "no_anxiety": 3.35,
+        "implication": "Accessibility and inclusive design needed for AI deployment"
+      },
+      "gap5_tool_preferences": {
+        "finding": "ChatGPT users show higher scores vs MS Copilot users",
+        "significant_constructs": [
+          "Effort Expectancy",
+          "Performance Expectancy",
+          "Habit",
+          "Trust",
+          "AI Adoption",
+          "Facilitating Conditions",
+          "AI Experience"
+        ],
+        "interpretation": "Consumer-friendly ChatGPT interface may drive stronger perceptions"
+      },
+      "gap6_user_typology": {
+        "finding": "Four distinct user typologies identified",
+        "clusters": {
+          "Anxious Avoiders": {
+            "n": 91,
+            "pct": 17,
+            "profile": "Low adoption, high anxiety"
+          },
+          "Cautious Adopters": {
+            "n": 157,
+            "pct": 30,
+            "profile": "High adoption, high anxiety"
+          },
+          "Moderate Users": {
+            "n": 191,
+            "pct": 37,
+            "profile": "Average across all constructs"
+          },
+          "AI Enthusiasts": {
+            "n": 84,
+            "pct": 16,
+            "profile": "High adoption, low anxiety"
+          }
+        }
+      },
+      "files_generated": [
+        "plots/09_education_comparison.png",
+        "plots/09_industry_comparison.png",
+        "plots/09_experience_effect.png",
+        "plots/09_disability_comparison.png",
+        "plots/09_tool_profiles.png",
+        "plots/09_user_typology.png"
+      ]
     }
   },
-  "practical_implications": [
-    "Trust-building interventions are priority",
-    "Segment-specific adoption strategies recommended",
-    "Experience-based messaging for PE and HM",
-    "Accessibility considerations for anxiety reduction"
-  ],
+  "hypothesis_summary": {
+    "H1_supported": 3,
+    "H1_total": 7,
+    "H2_trust_beta": 0.10626458137689142,
+    "H2_trust_p": 0.06362767042444095,
+    "H2_marginal": true,
+    "H3_incremental_validity": false,
+    "H4_moderation_effects": 1,
+    "note": "Built dynamically from structural model JSON"
+  },
   "crosstab_analysis": {
     "n_themed_responses": 143,
     "themes_analyzed": [

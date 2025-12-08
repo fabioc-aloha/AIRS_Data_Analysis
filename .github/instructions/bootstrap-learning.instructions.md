@@ -105,8 +105,12 @@ description: "Domain-agnostic learning and knowledge acquisition protocols"
 - **Knowledge Consolidation Opportunity** → Execute meditation triggers with identity integration
 - **Evidence Validation Required** → Execute empirical-validation with safety protocol alignment
 - **Adaptive Strategy Selection** → Execute character-informed methodology optimization
+- **Pipeline Verification Required** → Execute systematic notebook-by-notebook validation workflow
 
 ### **Memory Management Enhancement - Post-Dream Safety Integration**
 - **Selective Concept Evolution** → Execute "Forget [something]" with ENHANCED safety protocols
 - **Learning Pathway Optimization** → Execute memory cleanup with post-dream validation
 - **Cross-Domain Transfer Enhancement** → Execute synapse strengthening with identity integration
+
+### **Pipeline Verification Integration**
+- [meditation-session-2025-12-08-pipeline-verification.prompt.md] (Moderate, Procedural, Bidirectional) - "User-driven incremental verification workflow for systematic validation"
