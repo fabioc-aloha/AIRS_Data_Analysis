@@ -241,6 +241,14 @@ AIRS_Data_Analysis/
 | Tables 4.1-4.9 | `thesis/tables/` | 9 tables |
 | Bibliography | `thesis/references/bibliography.bib` | 92 refs |
 
+### Build & PDF Generation
+
+See [`PDF_GENERATION.md`](PDF_GENERATION.md) for complete documentation on:
+
+- Full thesis build (`thesis/build-thesis.ps1`)
+- Standalone document conversion (`thesis/convert-to-pdf.ps1`)
+- Prerequisites and troubleshooting
+
 ### Key Methodological Decisions Documented
 
 | Decision | Rationale | Location |
