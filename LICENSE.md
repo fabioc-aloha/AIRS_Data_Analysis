@@ -1,7 +1,8 @@
 # Academic Research License
 
 ## AIRS Data Analysis Project
-**AI Readiness Scale (AIRS) - Psychometric Validation and Structural Equation Modeling**
+
+AI Readiness Scale (AIRS) - Psychometric Validation and Structural Equation Modeling
 
 Copyright (c) 2025 Fabio Correa. All Rights Reserved.
 
@@ -13,14 +14,16 @@ Copyright (c) 2025 Fabio Correa. All Rights Reserved.
 
 This project is made available for **non-commercial academic and research purposes** under the following conditions:
 
-#### ✅ Permitted Uses:
+#### ✅ Permitted Uses
+
 - **Academic Research**: Use for doctoral dissertation research and related academic publications
 - **Educational Purposes**: Use in academic coursework and teaching
 - **Replication Studies**: Validation and replication of research findings
 - **Methodology Reference**: Citation and reference in academic literature
 - **Collaborative Research**: Academic collaboration and knowledge advancement
 
-#### 📋 Requirements:
+#### 📋 Requirements
+
 1. **Attribution**: Proper citation of this work in all publications and presentations
 2. **Data Privacy**: Compliance with data protection and research ethics protocols
 3. **Non-Commercial**: Use limited to academic and research purposes only
@@ -28,9 +31,9 @@ This project is made available for **non-commercial academic and research purpos
 
 ### Recommended Citation
 
-```
-Correa, F. (2025). AI Readiness Scale (AIRS): Psychometric Validation
-and Structural Equation Modeling [Doctoral dissertation data analysis].
+```text
+Correa, F. (2025). Artificial Intelligence Readiness Scale: Extending Model
+for Enterprise AI Adoption [Doctoral dissertation data analysis].
 GitHub. https://github.com/fabioc-aloha/AIRS_Data_Analysis
 ```
 
@@ -45,6 +48,7 @@ Commercial use, redistribution for profit, or incorporation into commercial prod
 ### Restrictions
 
 ❌ **Prohibited Activities**:
+
 - Commercial use or sale of this work
 - Redistribution of raw survey data without authorization
 - Misrepresentation of research findings
@@ -63,21 +67,22 @@ THE SOFTWARE AND MATERIALS ARE PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, E
 
 For licensing inquiries, collaboration requests, or data access:
 
-- **Academic Email**: fcorrea@student.touro.edu
-- **GitHub**: https://github.com/fabioc-aloha
-- **Repository**: https://github.com/fabioc-aloha/AIRS_Data_Analysis
+- **Academic Email**: <fcorrea@student.touro.edu>
+- **GitHub**: <https://github.com/fabioc-aloha>
+- **Repository**: <https://github.com/fabioc-aloha/AIRS_Data_Analysis>
 
 ---
 
 ## Acknowledgments
 
 This research project was conducted as part of doctoral studies and benefited from:
+
 - Touro University Graduate School of Education and Psychology
-- Survey participants (N=201)
+- Survey participants (N=523)
 - Open-source statistical computing communities (Python, R)
 - Alex Cognitive Architecture for AI-assisted analysis
 
 ---
 
 **Version**: 1.0
-**Last Updated**: November 2025
+**Last Updated**: December 2025

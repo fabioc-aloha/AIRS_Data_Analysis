@@ -303,7 +303,7 @@ flowchart TB
     style P10 fill:#f8bbd9,stroke:#e91e63
 ```
 
-*Figure 3. Ten-Phase Analysis Pipeline*
+<!-- Figure 3: Ten-Phase Analysis Pipeline -->
 
 ### 3.6.2 Sample Splitting Strategy
 
@@ -325,7 +325,7 @@ flowchart TD
     style F fill:#f3e5f5,stroke:#7b1fa2
 ```
 
-*Figure 1. Split-Sample Cross-Validation Strategy*
+<!-- Figure 1: Split-Sample Cross-Validation Strategy -->
 
 **Stratification**: Split stratified by AI adoption status to ensure comparable samples
 
@@ -450,7 +450,7 @@ flowchart TD
     style TR fill:#fff8e1,stroke:#f57f17
 ```
 
-*Figure 2. Structural Model: Seven Predictors of Behavioral Intention*
+<!-- Figure 2: Structural Model: Seven Predictors of Behavioral Intention -->
 
 **Estimation**: Maximum Likelihood with robust standard errors
 

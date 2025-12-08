@@ -1,3 +1,4 @@
+<!-- markdownlint-disable MD029 MD041 -->
 # Appendices
 
 ## Appendix A: AI Readiness Scale (AIRS) Final 16-Item Instrument

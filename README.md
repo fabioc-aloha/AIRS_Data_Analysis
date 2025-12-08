@@ -55,7 +55,7 @@ This research bridges **academic rigor** with **business impact**:
 
 ## Executive Summary
 
-This research develops and validates the **AI Readiness Scale (AIRS)**, a psychometrically sound instrument extending UTAUT2 for AI tool adoption in higher education. Through rigorous split-sample validation (N=523), we demonstrate:
+This research develops and validates the **AI Readiness Scale (AIRS)**, a psychometrically sound instrument extending UTAUT2 for enterprise AI tool adoption. Through rigorous split-sample validation (N=523), we demonstrate:
 
 ### Key Findings
 
@@ -73,7 +73,7 @@ This research develops and validates the **AI Readiness Scale (AIRS)**, a psycho
 Organizations now have a **validated 16-item diagnostic instrument** for assessing AI adoption readiness with:
 
 - Theoretical grounding in UTAUT2 framework
-- Empirical validation across academic and professional populations
+- Empirical validation across student and professional populations
 - Four distinct user segments for targeted intervention design
 
 ---
@@ -329,5 +329,5 @@ Documentation: [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)
 
 ---
 
-**Last Updated**: December 7, 2025
-**Version**: 6.1 (Proposal Alignment Complete)
+**Last Updated**: December 8, 2025
+**Version**: 6.2 (Terminology & Title Corrections)

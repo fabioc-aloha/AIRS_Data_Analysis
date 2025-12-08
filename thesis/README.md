@@ -1,10 +1,10 @@
 # DBA Thesis: Artificial Intelligence Readiness Scale (AIRS)
 
-**Bridging Academic Rigor with Business Impact**
+Bridging Academic Rigor with Business Impact
 
 ## Thesis Structure
 
-```
+```text
 thesis/
 ├── chapters/
 │   ├── 01_introduction.md          # Chapter 1: Introduction
@@ -118,4 +118,4 @@ Supporting research documents in `research/` folder:
 
 ---
 
-*Last updated: December 7, 2025*
+Last updated: December 8, 2025

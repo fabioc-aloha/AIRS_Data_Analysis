@@ -60,7 +60,7 @@ Venkatesh et al. (2012) extended UTAUT for consumer contexts through UTAUT2, add
 
 UTAUT2 explained 74% of variance in behavioral intention, demonstrating the value of context-appropriate extensions. For the present research, UTAUT2 provides the baseline framework, with modifications appropriate to workplace AI contexts where hedonic motivation and habit remain relevant while price value may be less salient (organizational rather than personal expenditure).
 
-**Figure 2.1: Evolution of Technology Acceptance Models**
+<!-- Figure 2.1: Evolution of Technology Acceptance Models -->
 
 ```mermaid
 flowchart LR
@@ -180,7 +180,7 @@ Governance practices also shape trust. When organizations establish bias audits,
 
 Given the empirical evidence for trust's central role in AI adoption, the present research incorporates **AI Trust** as a core construct extending UTAUT2. AI Trust is operationalized as confidence that the AI system is reliable, competent, and aligned with user and organizational values. This construct is expected to positively predict behavioral intention directly and to mediate effects of explainability and governance perceptions on intention.
 
-**Figure 2.2: AIRS Conceptual Model - Extended UTAUT2 for AI Adoption**
+<!-- Figure 2.2: AIRS Conceptual Model - Extended UTAUT2 for AI Adoption -->
 
 ```mermaid
 flowchart TB
@@ -317,7 +317,7 @@ Based on the meta-analytic evidence reviewed above, the following hypotheses ref
 
 *Rationale*: Experienced users can more accurately assess AI performance, may derive greater enjoyment from sophisticated use, and should have resolved initial anxieties through exposure and coping development.
 
-**Figure 2.3: Research Hypotheses Summary**
+<!-- Figure 2.3: Research Hypotheses Summary -->
 
 ```mermaid
 flowchart LR

@@ -14,6 +14,7 @@
 How can UTAUT2 be extended with AI-specific constructs to better predict behavioral intention to adopt AI tools in professional and academic contexts?
 
 **Secondary Research Questions:**
+
 1. What is the factor structure of an AI-specific adoption readiness instrument?
 2. Does the instrument demonstrate measurement invariance across student and professional populations?
 3. Which factors most strongly predict behavioral intention to adopt AI tools?
