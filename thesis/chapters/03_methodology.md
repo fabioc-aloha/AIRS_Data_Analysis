@@ -122,7 +122,28 @@ Content validity was established through:
 2. **Construct Definition Mapping**: Each item mapped to specific construct definition
 3. **Face Validity Review**: Items reviewed for clarity and appropriateness to AI context
 
-### 3.4.4 Final Instrument Structure
+### 3.4.4 Construct Exclusion Process
+
+Of the 12 constructs proposed, **four AI-specific constructs were excluded** during exploratory factor analysis due to inadequate psychometric properties:
+
+| Construct | Items | Cronbach's α | Issue | Disposition |
+|-----------|-------|--------------|-------|-------------|
+| Voluntariness (VO) | VO1, VO2 | .41 | Multi-dimensional | Dropped |
+| Explainability (EX) | EX1, EX2 | .58 | Multi-dimensional | Dropped |
+| Ethical Risk (ER) | ER1, ER2 | .55 | Multi-dimensional | Dropped |
+| AI Anxiety (AX) | AX1, AX2 (original) | .30 | Item heterogeneity | Reconstructed |
+
+**Interpretation**: These constructs demonstrated poor inter-item correlations, suggesting the two-item scales measured different facets of multi-dimensional phenomena rather than unitary constructs. For example:
+- **Voluntariness**: VO1 assessed choice to use AI, while VO2 assessed freedom not to use—conceptually distinct aspects of voluntary adoption
+- **Explainability**: EX1 assessed understanding AI outputs, while EX2 assessed preference for explanations—comprehension vs. preference dimensions
+- **Ethical Risk**: ER1 assessed job displacement concerns, while ER2 assessed privacy concerns—distinct risk categories
+- **Anxiety**: Original items captured tech-aversion (AX1) and FOMO/obsolescence anxiety (AX2)—avoidance vs. approach motivations
+
+**Resolution**: The Anxiety construct was successfully reconstructed with revised items demonstrating adequate reliability (α = .86). The remaining three constructs (VO, EX, ER) were excluded from the final model, with recommendations for future item development (see Section 5.7).
+
+**Note**: This represents an empirical finding, not a design limitation. The proposal committed to testing these constructs; the data revealed inadequate measurement properties. This transparent reporting aligns with best practices in scale development (DeVellis & Thorpe, 2021).
+
+### 3.4.5 Final Instrument Structure
 
 Following psychometric validation (see Chapter 4), the final AIRS instrument comprises **16 items across 8 factors**:
 

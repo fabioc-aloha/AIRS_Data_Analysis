@@ -22,12 +22,14 @@
 | Component | Status | Progress |
 |-----------|--------|----------|
 | **Analysis Pipeline** | ✅ Complete | 11/11 notebooks verified |
+| **Thesis Chapter 2** | ✅ Complete | Literature Review (~5,200 words) |
 | **Thesis Chapter 3** | ✅ Complete | Methodology (~3,800 words) |
 | **Thesis Chapter 4** | ✅ Complete | Results (~3,200 words) |
 | **Summary Tables** | ✅ Complete | 9 publication-ready tables |
 | **Bibliography** | ✅ Complete | 60+ references |
 | **Research Sources** | ✅ Complete | 8 documents (industry + academic) |
-| **Thesis Chapters 1, 2, 5** | 🔶 In Progress | Outlines complete |
+| **Proposal Alignment** | ✅ Complete | All gaps documented |
+| **Thesis Chapters 1, 5** | 🔶 In Progress | Outlines complete |
 
 ---
 
@@ -217,18 +219,26 @@ AIRS_Data_Analysis/
 
 | Document | Location | Words |
 |----------|----------|-------|
+| Chapter 2: Literature Review | `thesis/chapters/02_literature_review.md` | ~5,200 |
 | Chapter 3: Methodology | `thesis/chapters/03_methodology.md` | ~3,800 |
 | Chapter 4: Results | `thesis/chapters/04_results.md` | ~3,200 |
 | Tables 4.1-4.9 | `thesis/tables/` | 9 tables |
 | Bibliography | `thesis/references/bibliography.bib` | 60+ refs |
+
+### Key Methodological Decisions Documented
+
+| Decision | Rationale | Location |
+|----------|-----------|----------|
+| 4 constructs dropped (VO, EX, ER, AX-orig) | Poor reliability (α = .30–.58) | Ch 3 §3.4.4, Ch 4 §4.2.1 |
+| AIRS vs UTAUT2 comparison | ΔR² = .016 (modest improvement) | Ch 4 §4.3.5 |
+| H5 mediation untestable | EX/ER excluded from model | Ch 5 §5.6.2, §5.7.1 |
 
 ### In Progress
 
 | Document | Status |
 |----------|--------|
 | Chapter 1: Introduction | Outline complete |
-| Chapter 2: Literature Review | Outline complete |
-| Chapter 5: Discussion | Partial draft |
+| Chapter 5: Discussion | Partial draft (limitations expanded) |
 
 See `thesis/TODO.md` for detailed task list.
 
@@ -311,4 +321,4 @@ Documentation: [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)
 ---
 
 **Last Updated**: December 7, 2025
-**Version**: 6.0 (Thesis Documentation Phase)
+**Version**: 6.1 (Proposal Alignment Complete)

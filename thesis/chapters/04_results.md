@@ -27,6 +27,21 @@ Multiple factor solutions were examined using principal axis factoring with obli
 
 **Model D** was selected as the final measurement model based on optimal balance of parsimony and fit, with all items demonstrating factor loadings ≥ .50 and no substantive cross-loadings (< .32).
 
+#### Construct Exclusion Analysis
+
+Four proposed constructs were excluded during EFA due to poor inter-item reliability:
+
+| Construct | Cronbach's α | Decision | Rationale |
+|-----------|--------------|----------|----------|
+| Voluntariness (VO) | .41 | Dropped | Items measured choice vs. freedom—distinct dimensions |
+| Explainability (EX) | .58 | Dropped | Items measured understanding vs. preference—distinct facets |
+| Ethical Risk (ER) | .55 | Dropped | Items measured job displacement vs. privacy—distinct risk types |
+| AI Anxiety (AX) | .30 (original) | Reconstructed | Items measured avoidance vs. approach anxiety |
+
+**Interpretation**: The proposed two-item scales for these AI-specific constructs proved insufficient to capture multi-faceted phenomena. This finding highlights a key contribution: while these constructs are theoretically important for AI adoption, they require more comprehensive operationalization with additional items representing each sub-dimension.
+
+**Anxiety Reconstruction**: The Anxiety construct was successfully retained after item revision, achieving acceptable reliability (α = .86) in the final model. The reconstructed AX items focus on apprehension and concern about AI technology, avoiding the original conflation of avoidance and approach motivations.
+
 #### Final Factor Structure
 
 The validated 8-factor, 16-item structure comprises:
@@ -183,7 +198,22 @@ Multi-group comparison tested whether path coefficients differed significantly b
 
 No significant differences in path coefficients were observed between role groups, suggesting the structural relationships operate consistently across Academic and Professional service roles.
 
-### 4.3.5 Variance Explained
+### 4.3.5 Incremental Validity: AIRS vs. UTAUT2-Only Model
+
+To assess whether the AI-specific extensions (Trust, Anxiety) provide incremental predictive validity beyond core UTAUT2 constructs, nested model comparison was conducted:
+
+| Model | Constructs | AIC | BIC | R² | ΔAIC |
+|-------|------------|-----|-----|----|----- |
+| UTAUT2-Only | PE, EE, SI, FC, HM | 148.58 | 192.34 | .841 | — |
+| AIRS (Extended) | PE, EE, SI, FC, HM, TR, AX | 150.59 | 201.87 | .857 | +2.01 |
+
+**Result**: The AIRS model shows improved R² (.857 vs .841, Δ = .016), indicating the AI-specific extensions (Trust and Anxiety) explain an additional 1.6% of variance in Behavioral Intention. However, the AIC difference (+2.01) suggests the improvement is modest and does not substantially outweigh model complexity.
+
+**Interpretation**: While Trust (p = .064) and Anxiety (p = .002) provide theoretical enrichment to the AI adoption model, the incremental validity evidence is mixed. Anxiety demonstrates clear predictive value (β = -.152, p = .002), while Trust's contribution remains marginal. Future research with larger samples may clarify the incremental value of Trust.
+
+**Practical Significance**: Despite modest incremental validity, the inclusion of Anxiety is justified on both statistical (significant path) and practical grounds (actionable intervention target for reducing adoption barriers).
+
+### 4.3.6 Variance Explained
 
 The structural model explained substantial variance in Behavioral Intention:
 

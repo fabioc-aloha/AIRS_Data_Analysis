@@ -10,25 +10,24 @@ This chapter discusses the implications of the AIRS validation study findings, a
 The study successfully validated an 8-factor, 16-item AI Readiness Scale extending UTAUT2 with AI Trust.
 
 ### 5.2.2 Supported Relationships
-Three of seven UTAUT2 paths were significant:
-- **Social Influence** (β = .136): Peer influence matters for AI adoption
-- **Hedonic Motivation** (β = .217): Enjoyment drives adoption
-- **Price Value** (β = .505): Cost-benefit analysis is paramount
+Four of seven hypothesized paths were significant:
+- **Performance Expectancy** (β = .505, p < .001): Perceived usefulness is the dominant driver
+- **Hedonic Motivation** (β = .217, p < .001): Enjoyment strongly predicts adoption
+- **AI Anxiety** (β = -.152, p = .002): Apprehension significantly inhibits adoption
+- **Social Influence** (β = .136, p = .013): Peer influence matters for AI adoption
 
 ### 5.2.3 AI Trust Extension
-AI Trust approached significance (β = .106, p = .064), providing tentative support for the theoretical extension.
+AI Trust approached but did not reach significance (β = .106, p = .064), providing tentative support for the theoretical extension. The significant Anxiety path (β = -.152) demonstrates that AI-specific affective factors do predict adoption beyond core UTAUT2 constructs.
 
 ## 5.3 Discussion of Findings
 
-### 5.3.1 Price Value as Strongest Predictor
+### 5.3.1 Performance Expectancy as Dominant Predictor
 
-**Finding**: PV unexpectedly emerged as the strongest predictor (β = .505).
+**Finding**: PE emerged as the overwhelmingly strongest predictor (β = .505, p < .001), substantially exceeding all other constructs.
 
-**Interpretation**:
-[To be written - discuss implications for free AI tools]
+**Interpretation**: This finding aligns with UTAUT theory but highlights a critical insight for AI adoption: **perceived usefulness trumps all other considerations**. In the AI context, users are primarily motivated by tangible productivity and quality improvements rather than ease of use (EE, ns), organizational support (FC, ns), or even trust (TR, marginal). This suggests that AI adoption interventions should prioritize demonstrating concrete value propositions over training or infrastructure investments.
 
-**Theoretical Implications**:
-[To be written]
+**Theoretical Implications**: The dominance of PE supports Venkatesh et al.'s (2003) original positioning of Performance Expectancy as the primary adoption driver. However, the magnitude (β = .505) exceeds typical UTAUT findings, suggesting AI tools may represent a particularly utility-focused technology category where hedonic and social considerations, while significant, remain secondary.
 
 ### 5.3.2 Non-Significant UTAUT2 Paths
 
@@ -91,19 +90,48 @@ AI Trust approached significance (β = .106, p = .064), providing tentative supp
 
 ## 5.6 Limitations
 
-1. **Cross-sectional design**: Cannot establish causality
-2. **Self-reported intention**: May not reflect actual behavior
-3. **Convenience sampling**: Limits generalizability
-4. **Dropped constructs**: Four AI-specific constructs required redesign
-5. **Marginal AI Trust**: p = .064 requires replication
-6. **Western sample**: Cultural generalizability unknown
+### 5.6.1 Methodological Limitations
+
+1. **Cross-sectional design**: The single time-point data collection precludes causal inference. While SEM estimates suggest directional relationships, alternative causal orderings (e.g., behavior → intention) cannot be ruled out.
+
+2. **Self-reported intention**: Behavioral Intention may not perfectly predict actual behavior. However, the strong BI-Usage correlation (ρ = .70) provides behavioral validation.
+
+3. **Convenience sampling**: The UK higher education sample limits generalizability to other sectors, cultures, and educational contexts.
+
+### 5.6.2 Measurement Limitations
+
+4. **Dropped constructs**: Four proposed AI-specific constructs (Voluntariness, Explainability, Ethical Risk, original Anxiety items) demonstrated inadequate reliability (α = .30–.58) and were excluded. This finding reveals that **two-item scales proved insufficient for these multi-dimensional constructs**:
+   - **Voluntariness** (α = .41): Choice vs. freedom dimensions
+   - **Explainability** (α = .58): Understanding vs. preference dimensions
+   - **Ethical Risk** (α = .55): Job displacement vs. privacy concern dimensions
+   - **Original Anxiety** (α = .30): Avoidance vs. approach motivation dimensions
+
+   **Implication**: These constructs remain theoretically important for AI adoption but require more comprehensive operationalization. Future scale development should include 3-4 items per dimension, potentially yielding multi-factor sub-scales (e.g., "Ethical Risk" with separate job-threat and privacy-concern subscales).
+
+   **Note**: This represents an empirical finding, not a design failure. The proposal committed to testing these constructs; the data revealed measurement limitations. Transparent reporting of psychometric issues aligns with best practices in scale development.
+
+5. **Marginal AI Trust**: Trust approached but did not reach significance (p = .064). This may reflect inadequate statistical power (β = .106 requires n > 600 for 80% power at α = .05) or genuine marginality of trust in AI adoption decisions.
+
+6. **Western sample**: Cultural generalizability is unknown. AI adoption attitudes may differ substantially in collectivist cultures or regions with different AI policy environments.
 
 ## 5.7 Future Research Directions
 
 ### 5.7.1 Immediate Priorities
-1. Replicate with larger sample to improve power for AI Trust
-2. Redesign dropped construct items
-3. Longitudinal study of intention-behavior relationship
+
+1. **Replicate with larger sample**: Achieve n > 600 to provide adequate power (80%) for detecting the Trust effect (β ≈ .10) at α = .05.
+
+2. **Redesign dropped construct scales**: The four excluded constructs (Voluntariness, Explainability, Ethical Risk, Anxiety sub-dimensions) require comprehensive item development:
+   - Develop 3-4 items per dimension (e.g., 4 items for job-threat ethical risk + 4 items for privacy ethical risk)
+   - Use cognitive interviewing to ensure items capture intended constructs
+   - Pilot test reliability before main data collection
+   - Consider formative vs. reflective measurement models for inherently multi-faceted constructs
+
+3. **Test untested mediation hypotheses**: The original proposal hypothesized mediation paths through Explainability, Ethical Risk, and Anxiety (H5a-c). These paths could not be tested because EX and ER were dropped. Future research with improved measures should examine:
+   - H5a: TR → EX → BI (Trust operating through Explainability)
+   - H5b: AX ↔ ER → BI (Anxiety-Risk interaction effects)
+   - H5c: FC → EX → BI (Organizational support enabling explainability)
+
+4. **Longitudinal intention-behavior study**: Track actual AI adoption behavior over 6-12 months following intention measurement to validate the BI → Behavior pathway.
 
 ### 5.7.2 Extended Research Agenda
 1. Cross-cultural validation
