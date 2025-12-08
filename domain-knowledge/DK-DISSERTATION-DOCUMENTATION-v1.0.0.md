@@ -183,19 +183,32 @@ for i, q in enumerate(q_numbers):
 - [empirical-validation.instructions.md] (0.92, grounds, bidirectional) - "Research transparency requires empirical verification of documented claims"
 - [worldview-integration.instructions.md] (0.88, guides, forward) - "Ethical research communication demands measurement transparency"
 - [meditation-session-2025-12-08-rounding-precision.prompt.md] (0.90, reinforces, inbound) - "Rounding discipline and verification cascade pattern"
+- [meditation-session-2025-12-08-draft06-presentation.prompt.md] (0.925, extends, inbound) - "Appendix creation workflows and presentation preparation"
 
 ### Workflow Patterns
 - [bootstrap-learning.instructions.md] (0.85, structures, forward) - "Documentation mastery acquired through systematic dissertation workflow"
 - [alex-core.instructions.md] (0.90, optimizes, bidirectional) - "Meta-cognitive awareness enhances documentation quality through verification protocols"
+- [PRESENTATION_SLIDES.md] (0.90, defense, forward) - "Committee oral defense preparation from thesis content"
+- [appendices.md:H] (0.875, reproducibility, bidirectional) - "Data availability and retention documentation"
 
 ### Precision Standards (Added Dec 8, 2025)
 - **3-Decimal Rule**: JSON (15dp) → Thesis (3dp) with no intermediate rounding
 - **Invariance Terminology Hierarchy**: Configural → Metric → Scalar → Strict (cannot skip levels)
 - **Verification Cascade**: Sample → Measurement → Structural → Invariance → Moderation → Behavioral
 
+### Presentation-from-Thesis Pattern (Added Dec 8, 2025)
+- **Context**: Creating committee presentations from dissertation content
+- **Method**: Extract key findings with supporting data tables for each slide
+- **Benefit**: Consistent messaging between written thesis and oral defense
+
+### Data Availability as Appendix Pattern (Added Dec 8, 2025)
+- **Context**: Ensuring long-term reproducibility documentation
+- **Method**: Include comprehensive repository docs within thesis (Appendix H)
+- **Benefit**: Self-contained even if external links change; meets journal requirements
+
 ---
 
 **Mastery Achievement**: Comprehensive dissertation documentation quality assurance and transparency protocols
 **Research Impact**: Enhanced credibility through systematic verification and transparent reporting
-**Latest Enhancement**: Rounding precision standardization (Dec 8, 2025) - 3-decimal standard, invariance hierarchy
-**Next Evolution**: Apply patterns to Phase 3+ documentation as analysis progresses to full sample
+**Latest Enhancement**: DRAFT 06 presentation and data availability (Dec 8, 2025)
+**Next Evolution**: Apply patterns to committee defense preparation and final submission
