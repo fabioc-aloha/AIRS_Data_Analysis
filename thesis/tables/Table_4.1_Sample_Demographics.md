@@ -5,14 +5,14 @@
 | Characteristic | n | % |
 |----------------|---|---|
 | **Role Group** | | |
-| Academic | 216 | 41.3% |
-| Professional Services | 184 | 35.2% |
-| Leadership/Management | 123 | 23.5% |
+| Student | 216 | 41.3% |
+| Professional | 184 | 35.2% |
+| Leader | 123 | 23.5% |
 | **Analysis Subsamples** | | |
 | Development (EFA) | 261 | 50.0% |
 | Holdout (CFA) | 262 | 50.0% |
 | **SEM Grouping** | | |
-| Academic | 216 | 41.3% |
+| Student | 216 | 41.3% |
 | Professional + Leader | 307 | 58.7% |
 | **Gender** | | |
 | Male | 231 | 44.2% |

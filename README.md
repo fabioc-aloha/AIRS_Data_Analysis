@@ -1,12 +1,14 @@
+<!-- markdownlint-disable MD033 MD041 -->
 <div align="center">
   <img src="assets/banner.svg" alt="AIRS Data Analysis Project" width="100%">
 </div>
+<!-- markdownlint-enable MD033 MD041 -->
 
 ---
 
 # AI Readiness Scale (AIRS): Development and Validation in Higher Education
 
-**Extending UTAUT2 with AI-Specific Constructs for Technology Adoption Research**
+Extending UTAUT2 with AI-Specific Constructs for Technology Adoption Research
 
 | | |
 |---|---|
@@ -66,6 +68,7 @@ This research develops and validates the **AI Readiness Scale (AIRS)**, a psycho
 ### Practical Impact
 
 Organizations now have a **validated 16-item diagnostic instrument** for assessing AI adoption readiness with:
+
 - Theoretical grounding in UTAUT2 framework
 - Empirical validation across academic and professional populations
 - Four distinct user segments for targeted intervention design
@@ -187,7 +190,7 @@ All notebooks in `airs_experiment/` are complete and verified:
 
 ## Repository Structure
 
-```
+```text
 AIRS_Data_Analysis/
 ├── airs_experiment/          # Analysis notebooks and outputs
 │   ├── data/                 # Processed datasets
@@ -284,15 +287,18 @@ BI = mean(BI1, BI2)  # Behavioral Intention
 
 ## Key References
 
-**Technology Acceptance**
+### Technology Acceptance
+
 - Venkatesh, V., et al. (2003). User acceptance of information technology. *MIS Quarterly, 27*(3), 425-478.
 - Venkatesh, V., et al. (2012). Consumer acceptance and use of information technology: Extending UTAUT. *MIS Quarterly, 36*(1), 157-178.
 
-**Scale Development**
+### Scale Development
+
 - DeVellis, R. F., & Thorpe, C. T. (2021). *Scale development: Theory and applications* (5th ed.). Sage.
 - Hair, J. F., et al. (2019). *Multivariate data analysis* (8th ed.). Cengage.
 
-**AI Adoption**
+### AI Adoption
+
 - Shin, D. (2021). The effects of explainability and causability on perception, trust, and acceptance. *IJHCS, 146*, 102551.
 
 Full bibliography: `thesis/references/bibliography.bib`

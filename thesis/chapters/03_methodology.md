@@ -6,7 +6,7 @@ This chapter describes the research methodology employed to develop and validate
 
 The chapter is organized as follows: Section 3.2 describes the research philosophy and design; Section 3.3 details the theoretical framework and hypotheses; Section 3.4 covers instrument development; Section 3.5 addresses sampling and data collection; Section 3.6 presents the analytical strategy; Section 3.7 discusses reliability and validity; Section 3.8 covers ethical considerations; and Section 3.9 acknowledges methodological limitations.
 
----
+
 
 ## 3.2 Research Design
 
@@ -15,6 +15,7 @@ The chapter is organized as follows: Section 3.2 describes the research philosop
 This study adopts a **post-positivist** philosophical stance, recognizing that while objective reality exists, our understanding of it is necessarily imperfect and probabilistic (Creswell & Creswell, 2018). This orientation is appropriate for scale development research, which seeks to measure latent psychological constructs through observable indicators while acknowledging measurement error and the provisional nature of theoretical models.
 
 The post-positivist approach manifests in several methodological choices:
+
 - Emphasis on **replication and cross-validation** through split-sample design
 - Use of **probabilistic inference** (confidence intervals, effect sizes) rather than binary significance testing
 - Recognition of **measurement error** through latent variable modeling
@@ -36,15 +37,15 @@ The study employs a **cross-sectional design** with data collected during Novemb
 
 ### 3.2.4 Research Context
 
-The study was conducted within a **UK higher education institution**, encompassing:
-- Academic staff (lecturers, researchers, professors)
-- Professional services staff (administrators, technical support, student services)
-- Leadership and management (department heads, directors, senior managers)
-- Full-time students (undergraduate and postgraduate)
+The study was conducted with **United States professionals and students**, encompassing:
 
-This context was selected for theoretical and practical relevance: higher education represents a knowledge-intensive sector where AI tools have significant potential impact on teaching, research, and administrative functions, yet adoption patterns remain poorly understood.
+- Full-time and part-time students (undergraduate and postgraduate)
+- Employed professionals (individual contributors, managers, executives)
+- Freelancers and self-employed individuals
 
----
+Students are included because they are transitioning into an AI-infused job market and will soon make adoption decisions inside organizations; their readiness is therefore directly relevant to near-term enterprise contexts (proposal §7.2). This context was selected for theoretical and practical relevance: knowledge-intensive work settings where AI tools have significant potential impact on productivity, yet adoption patterns remain poorly understood.
+
+
 
 ## 3.3 Theoretical Framework and Hypotheses
 
@@ -53,6 +54,7 @@ This context was selected for theoretical and practical relevance: higher educat
 The study extends Venkatesh et al.'s (2012) Unified Theory of Acceptance and Use of Technology 2 (UTAUT2) with AI-specific constructs. The theoretical model comprises eight latent factors predicting Behavioral Intention to adopt AI tools:
 
 **Core UTAUT2 Constructs:**
+
 - **Performance Expectancy (PE)**: The degree to which using AI tools will provide benefits in performing activities
 - **Effort Expectancy (EE)**: The degree of ease associated with using AI tools
 - **Social Influence (SI)**: The degree to which important others believe one should use AI tools
@@ -60,10 +62,12 @@ The study extends Venkatesh et al.'s (2012) Unified Theory of Acceptance and Use
 - **Hedonic Motivation (HM)**: The fun or pleasure derived from using AI tools
 
 **AI-Specific Extensions:**
+
 - **Trust in AI (TR)**: Confidence in AI systems' reliability, accuracy, and benevolence
 - **AI Anxiety (AX)**: Apprehension or fear associated with AI technology
 
 **Outcome:**
+
 - **Behavioral Intention (BI)**: Intent to adopt and use AI tools in professional/academic activities
 
 ### 3.3.2 Research Hypotheses
@@ -71,6 +75,7 @@ The study extends Venkatesh et al.'s (2012) Unified Theory of Acceptance and Use
 Based on UTAUT theory and emerging AI adoption literature, the following hypotheses were tested:
 
 **Primary Hypotheses (Direct Effects):**
+
 - H1a: Performance Expectancy positively predicts Behavioral Intention
 - H1b: Effort Expectancy positively predicts Behavioral Intention
 - H1c: Social Influence positively predicts Behavioral Intention
@@ -80,20 +85,23 @@ Based on UTAUT theory and emerging AI adoption literature, the following hypothe
 - H1g: AI Anxiety negatively predicts Behavioral Intention
 
 **Moderation Hypotheses:**
+
 - H2: AI Experience moderates UTAUT relationships (strengthening effects for experienced users)
-- H3: Role group (Academic vs. Professional+Leader) moderates UTAUT path coefficients
+- H3: Role group (Student vs. Professional+Leader) moderates UTAUT path coefficients
 
 **Behavioral Validation:**
+
 - H4: Behavioral Intention positively relates to actual AI tool usage breadth
 - H5: Role groups differ significantly in AI tool usage patterns
 
----
+
 
 ## 3.4 Instrument Development
 
 ### 3.4.1 Initial Item Pool
 
 The initial AIRS instrument comprised **28 items across 12 constructs**:
+
 - 7 core UTAUT2 constructs (14 items): PE, EE, SI, FC, HM, PV, HB
 - 5 AI-specific extensions (10 items): TR, AX, VO, EX, ER
 - 1 outcome construct (4 items): BI
@@ -118,6 +126,7 @@ Items were adapted from established scales to ensure content validity:
 ### 3.4.3 Content Validity
 
 Content validity was established through:
+
 1. **Literature Review**: Items grounded in established UTAUT and technology acceptance literature
 2. **Construct Definition Mapping**: Each item mapped to specific construct definition
 3. **Face Validity Review**: Items reviewed for clarity and appropriateness to AI context
@@ -134,6 +143,7 @@ Of the 12 constructs proposed, **four AI-specific constructs were excluded** dur
 | AI Anxiety (AX) | AX1, AX2 (original) | .30 | Item heterogeneity | Reconstructed |
 
 **Interpretation**: These constructs demonstrated poor inter-item correlations, suggesting the two-item scales measured different facets of multi-dimensional phenomena rather than unitary constructs. For example:
+
 - **Voluntariness**: VO1 assessed choice to use AI, while VO2 assessed freedom not to use—conceptually distinct aspects of voluntary adoption
 - **Explainability**: EX1 assessed understanding AI outputs, while EX2 assessed preference for explanations—comprehension vs. preference dimensions
 - **Ethical Risk**: ER1 assessed job displacement concerns, while ER2 assessed privacy concerns—distinct risk categories
@@ -158,21 +168,23 @@ Following psychometric validation (see Chapter 4), the final AIRS instrument com
 | AI Anxiety | AX1, AX2 | "I feel apprehensive about using AI tools" |
 | Behavioral Intention | BI1, BI2 | "I intend to use AI tools in the next 6 months" |
 
----
+
 
 ## 3.5 Sampling and Data Collection
 
 ### 3.5.1 Target Population
 
-The target population comprises adults in higher education contexts who have used or are considering using AI tools for professional, academic, or personal activities. This includes:
-- Academic staff engaged in teaching and research
-- Professional services staff in administrative and support roles
-- Leaders and managers with supervisory responsibilities
-- Full-time students at undergraduate and postgraduate levels
+The target population comprises adults in the United States who are either students or employed professionals (proposal §7.2). This includes:
+
+- Full-time and part-time students at undergraduate and postgraduate levels
+- Employed professionals in individual contributor roles
+- Employed professionals in managerial and leadership roles
+- Freelancers and self-employed individuals
 
 ### 3.5.2 Sampling Strategy
 
 **Convenience sampling** was employed via:
+
 - Institutional email distribution to staff and students
 - Academic and professional network sharing
 - Social media outreach (LinkedIn, Twitter/X)
@@ -182,6 +194,7 @@ While convenience sampling limits generalizability, it is appropriate for initia
 ### 3.5.3 Sample Size Determination
 
 Target sample size was determined based on:
+
 1. **SEM requirements**: Minimum N = 200 for stable Maximum Likelihood estimation (Kline, 2016)
 2. **Factor analysis**: Minimum 10:1 subject-to-item ratio (Costello & Osborne, 2005)
 3. **Multi-group analysis**: Minimum n = 100 per group (Hair et al., 2019)
@@ -195,11 +208,11 @@ Respondents were classified into three role groups based on self-reported primar
 
 | Category | Operational Definition | n | % |
 |----------|----------------------|---|---|
-| Academic | Students (full-time), educators, researchers | 216 | 41.3% |
-| Professional | Professional services staff (non-supervisory) | 184 | 35.2% |
-| Leader | Supervisors, managers, directors, executives | 123 | 23.5% |
+| Student | Full-time students (n=196), part-time students (n=20) | 216 | 41.3% |
+| Professional | Individual contributors (n=112), freelancers (n=32), other (n=23), unemployed (n=17) | 184 | 35.2% |
+| Leader | Managers (n=71), executives (n=52) | 123 | 23.5% |
 
-**Note**: For multi-group SEM requiring larger group sizes, Professional and Leader categories were combined (n = 307) to contrast with Academic (n = 216). This grouping reflects meaningful theoretical distinctions between teaching/research-focused and operationally-focused roles.
+**Note**: For multi-group SEM requiring larger group sizes, Professional and Leader categories were combined (n = 307) to contrast with Student (n = 216). This grouping reflects meaningful theoretical distinctions between student-focused and employment-focused roles.
 
 ### 3.5.5 Data Collection Procedures
 
@@ -208,6 +221,7 @@ Respondents were classified into three role groups based on self-reported primar
 **Collection Period**: November 2024 (3-week window)
 
 **Procedures**:
+
 1. Participants accessed survey via distributed link
 2. Informed consent obtained before data collection
 3. Survey completion time: approximately 10-15 minutes
@@ -227,7 +241,7 @@ Multiple quality checks were implemented:
 
 **Final valid sample**: N = 523 after quality screening
 
----
+
 
 ## 3.6 Analytical Strategy
 
@@ -236,7 +250,7 @@ Multiple quality checks were implemented:
 The analysis followed a systematic 10-phase pipeline ensuring replicability and transparency:
 
 | Phase | Notebook | Purpose |
-|-------|----------|---------|
+|-------|----------|----------|
 | 0 | Sample Splitting | Create EFA/CFA subsamples |
 | 1 | EFA | Explore factor structure |
 | 2 | CFA | Validate factor structure |
@@ -249,16 +263,69 @@ The analysis followed a systematic 10-phase pipeline ensuring replicability and 
 | 9 | Comprehensive Review | Gap analysis |
 | 10 | Final Synthesis | Integration |
 
+```mermaid
+flowchart TB
+    subgraph stage1["<b>Data Preparation</b>"]
+        P0["<b>0</b><br/>Sample Splitting"]
+    end
+
+    subgraph stage2["<b>Measurement Model</b>"]
+        direction LR
+        P1["<b>1</b><br/>EFA"] --> P2["<b>2</b><br/>CFA"] --> P3["<b>3</b><br/>Invariance"]
+    end
+
+    subgraph stage3["<b>Structural Analysis</b>"]
+        direction LR
+        P4["<b>4</b><br/>Structural Model"] --> P5["<b>5</b><br/>Mediation"] --> P6["<b>6</b><br/>Moderation"]
+    end
+
+    subgraph stage4["<b>Validation & Synthesis</b>"]
+        direction LR
+        P7["<b>7</b><br/>Tool Usage"] --> P8["<b>8</b><br/>Qualitative"] --> P9["<b>9</b><br/>Review"] --> P10["<b>10</b><br/>Synthesis"]
+    end
+
+    stage1 --> stage2 --> stage3 --> stage4
+
+    style stage1 fill:#e8eaf6,stroke:#3f51b5,stroke-width:2px
+    style stage2 fill:#fff3e0,stroke:#ff9800,stroke-width:2px
+    style stage3 fill:#e8f5e9,stroke:#4caf50,stroke-width:2px
+    style stage4 fill:#fce4ec,stroke:#e91e63,stroke-width:2px
+    style P0 fill:#c5cae9,stroke:#3f51b5
+    style P1 fill:#ffe0b2,stroke:#ff9800
+    style P2 fill:#ffe0b2,stroke:#ff9800
+    style P3 fill:#ffe0b2,stroke:#ff9800
+    style P4 fill:#c8e6c9,stroke:#4caf50
+    style P5 fill:#c8e6c9,stroke:#4caf50
+    style P6 fill:#c8e6c9,stroke:#4caf50
+    style P7 fill:#f8bbd9,stroke:#e91e63
+    style P8 fill:#f8bbd9,stroke:#e91e63
+    style P9 fill:#f8bbd9,stroke:#e91e63
+    style P10 fill:#f8bbd9,stroke:#e91e63
+```
+
+*Figure 3. Ten-Phase Analysis Pipeline*
+
 ### 3.6.2 Sample Splitting Strategy
 
 To ensure independent validation, the sample was randomly split:
 
+```mermaid
+flowchart TD
+    A["<b>Full Sample</b><br/>N = 523"] -->|Random Split<br/>seed = 67| B["<b>Development Sample</b><br/>n = 261 (50%)"]
+    A -->|Random Split<br/>seed = 67| C["<b>Holdout Sample</b><br/>n = 262 (50%)"]
+    B --> D["Exploratory Factor Analysis<br/>(EFA)"]
+    C --> E["Confirmatory Factor Analysis<br/>(CFA)"]
+    C --> F["Structural Equation Modeling<br/>(SEM)"]
+
+    style A fill:#e1f5fe,stroke:#01579b
+    style B fill:#fff3e0,stroke:#e65100
+    style C fill:#f3e5f5,stroke:#7b1fa2
+    style D fill:#fff3e0,stroke:#e65100
+    style E fill:#f3e5f5,stroke:#7b1fa2
+    style F fill:#f3e5f5,stroke:#7b1fa2
 ```
-Full Sample (N = 523)
-    ↓ Random split (seed = 67)
-    ├── Development Sample (n = 261, 50%)  → EFA
-    └── Holdout Sample (n = 262, 50%)      → CFA, SEM
-```
+
+*Figure 1. Split-Sample Cross-Validation Strategy*
 
 **Stratification**: Split stratified by AI adoption status to ensure comparable samples
 
@@ -271,20 +338,24 @@ Full Sample (N = 523)
 **Sample**: Development subsample (n = 261)
 
 **Extraction Method**: Principal Axis Factoring (PAF)
+
 - Selected for robustness to non-normality
 - Accounts for measurement error
 
 **Rotation**: Promax (oblique)
+
 - Allows correlated factors (theoretically appropriate)
 - Pattern matrix used for interpretation
 
 **Factor Retention Criteria**:
+
 1. Kaiser criterion (eigenvalue > 1.0)
 2. Parallel analysis (Horn, 1965)
 3. Scree plot visual inspection
 4. Theoretical interpretability
 
 **Item Retention Criteria**:
+
 | Criterion | Threshold | Rationale |
 |-----------|-----------|-----------|
 | Primary loading | λ ≥ .50 | Strong factor association |
@@ -300,12 +371,14 @@ Full Sample (N = 523)
 **Sample**: Holdout subsample (n = 262)
 
 **Estimation Method**: Maximum Likelihood (ML)
+
 - Standard for continuous indicators
 - Provides χ² test and fit indices
 
 **Model Specification**: 8-factor correlated model with 16 observed indicators (2 per factor)
 
 **Fit Index Thresholds**:
+
 | Index | Acceptable | Good | Excellent |
 |-------|------------|------|-----------|
 | χ²/df | < 5.0 | < 3.0 | < 2.0 |
@@ -314,7 +387,7 @@ Full Sample (N = 523)
 | RMSEA | ≤ .10 | ≤ .08 | ≤ .05 |
 | SRMR | ≤ .10 | ≤ .08 | ≤ .05 |
 
-*Thresholds based on Hu & Bentler (1999) and Hair et al. (2019)*
+Thresholds based on Hu & Bentler (1999) and Hair et al. (2019).
 
 **Software**: Python `semopy` package (v2.3.10)
 
@@ -323,6 +396,7 @@ Full Sample (N = 523)
 **Purpose**: Establish construct comparability across role groups for valid multi-group comparison
 
 **Levels Tested**:
+
 | Level | Constraint | Interpretation |
 |-------|------------|----------------|
 | Configural | Same factor structure | Qualitative equivalence |
@@ -330,36 +404,65 @@ Full Sample (N = 523)
 | Scalar | Equal intercepts | Mean comparability |
 
 **Criteria for Invariance** (Chen, 2007):
+
 - ΔCFI < .010
 - ΔRMSEA < .015
 - Δχ² non-significant (supplementary)
 
-**Groups**: Academic (n = 216) vs. Professional+Leader (n = 307)
+**Groups**: Student (n = 216) vs. Professional+Leader (n = 307)
 
 ### 3.6.6 Structural Equation Modeling (SEM)
 
 **Purpose**: Test hypothesized relationships between latent constructs
 
 **Model**:
+
+```mermaid
+flowchart TD
+    subgraph predictors["UTAUT2 + AI Extensions"]
+        direction TB
+        PE["Performance Expectancy"]
+        EE["Effort Expectancy"]
+        SI["Social Influence"]
+        FC["Facilitating Conditions"]
+        HM["Hedonic Motivation"]
+        TR["Trust in AI"]
+        AX["AI Anxiety"]
+    end
+
+    BI["<b>Behavioral Intention</b>"]
+
+    PE -->|+| BI
+    EE -->|+| BI
+    SI -->|+| BI
+    FC -->|+| BI
+    HM -->|+| BI
+    TR -->|+| BI
+    AX -->|−| BI
+
+    style BI fill:#c8e6c9,stroke:#2e7d32,stroke-width:3px
+    style AX fill:#ffcdd2,stroke:#c62828
+    style PE fill:#e3f2fd,stroke:#1565c0
+    style EE fill:#e3f2fd,stroke:#1565c0
+    style SI fill:#e3f2fd,stroke:#1565c0
+    style FC fill:#e3f2fd,stroke:#1565c0
+    style HM fill:#e3f2fd,stroke:#1565c0
+    style TR fill:#fff8e1,stroke:#f57f17
 ```
-PE  ─┐
-EE  ─┤
-SI  ─┤
-FC  ─┼──→ Behavioral Intention
-HM  ─┤
-TR  ─┤
-AX  ─┘ (negative)
-```
+
+*Figure 2. Structural Model: Seven Predictors of Behavioral Intention*
 
 **Estimation**: Maximum Likelihood with robust standard errors
 
-**Multi-Group Analysis**: Separate models for Academic and Professional+Leader groups
+**Multi-Group Analysis**: Separate models for Student and Professional+Leader groups
 
 **Moderation Testing**:
+
 - Experience × UTAUT interactions via latent interaction terms
 - Role moderation via multi-group path comparison (Δχ² tests)
 
 **Effect Size Interpretation** (Cohen, 1988):
+
 | β | Interpretation |
 |---|----------------|
 | < .10 | Negligible |
@@ -384,6 +487,7 @@ AX  ─┘ (negative)
 **Variables**: Standardized scores on 8 AIRS constructs
 
 **Cluster Selection**:
+
 - Elbow method
 - Silhouette analysis
 - Theoretical interpretability
@@ -397,6 +501,7 @@ AX  ─┘ (negative)
 **Data**: Open-ended survey responses (n = 243 substantive responses, 46.5% response rate)
 
 **Method**: Thematic analysis (Braun & Clarke, 2006)
+
 1. Familiarization with data
 2. Initial coding using keyword matching
 3. Theme development and refinement
@@ -425,17 +530,19 @@ All analyses conducted using Python 3.11 with the following packages:
 
 **Reproducibility**: All random operations use documented seeds; complete analysis pipeline available in GitHub repository
 
----
+
 
 ## 3.7 Reliability and Validity Assessment
 
 ### 3.7.1 Internal Consistency Reliability
 
 **Measures**:
+
 - **Cronbach's Alpha (α)**: Classical reliability coefficient
 - **Composite Reliability (CR)**: SEM-based reliability accounting for differential loadings
 
 **Thresholds**:
+
 | Measure | Minimum | Preferred |
 |---------|---------|-----------|
 | Cronbach's α | .70 | .80 |
@@ -446,6 +553,7 @@ All analyses conducted using Python 3.11 with the following packages:
 **Definition**: Extent to which indicators of a construct share variance
 
 **Assessment**:
+
 1. **Factor loadings**: All standardized loadings ≥ .70
 2. **Average Variance Extracted (AVE)**: Proportion of variance captured by construct
 
@@ -456,6 +564,7 @@ All analyses conducted using Python 3.11 with the following packages:
 **Definition**: Extent to which constructs are distinct from one another
 
 **Assessment Methods**:
+
 1. **Fornell-Larcker Criterion**: √AVE > inter-construct correlations
 2. **Heterotrait-Monotrait Ratio (HTMT)**: HTMT < .85 (Henseler et al., 2015)
 3. **Maximum correlation**: |r| < .85 between any construct pair
@@ -466,13 +575,14 @@ All analyses conducted using Python 3.11 with the following packages:
 
 **Known-Groups Validity**: Constructs differentiate between theoretically-distinct groups (e.g., Leaders vs. Academics)
 
----
+
 
 ## 3.8 Ethical Considerations
 
 ### 3.8.1 Institutional Approval
 
 The study received ethical approval from the institution's Research Ethics Committee prior to data collection. The research was classified as minimal risk given:
+
 - Anonymous data collection
 - Voluntary participation
 - Non-sensitive topic
@@ -481,6 +591,7 @@ The study received ethical approval from the institution's Research Ethics Commi
 ### 3.8.2 Informed Consent
 
 Participants were provided with:
+
 - Study purpose and objectives
 - Data handling and storage procedures
 - Right to withdraw without penalty
@@ -491,11 +602,13 @@ Consent was obtained electronically before survey access. Participants could not
 ### 3.8.3 Anonymity and Confidentiality
 
 **Anonymity**: No personally identifiable information collected
+
 - No names, emails, or employee IDs
 - IP addresses not recorded
 - Demographic data collected at categorical level only
 
 **Confidentiality**:
+
 - Data stored on encrypted, password-protected systems
 - Access limited to research team
 - Data retained according to institutional policy (minimum 5 years)
@@ -503,15 +616,16 @@ Consent was obtained electronically before survey access. Participants could not
 ### 3.8.4 Data Protection
 
 The study complies with:
-- UK General Data Protection Regulation (UK GDPR)
-- Data Protection Act 2018
+
+- IRB approval requirements
 - Institutional data governance policies
+- Research ethics standards for human subjects research
 
 ### 3.8.5 Participant Welfare
 
 The survey addressed non-sensitive topics related to technology use attitudes. No anticipated risks to participant welfare. Contact information provided for questions or concerns.
 
----
+
 
 ## 3.9 Methodological Limitations
 
@@ -525,7 +639,7 @@ The survey addressed non-sensitive topics related to technology use attitudes. N
 
 ### 3.9.2 Sampling Limitations
 
-1. **Convenience sampling**: Non-probability sampling limits generalizability to broader populations. Results may not generalize beyond similar higher education contexts.
+1. **Convenience sampling**: Non-probability sampling limits generalizability to broader populations. Results may not generalize beyond similar United States professional and student contexts.
 
 2. **Single institution**: While diverse roles represented, institutional culture may influence responses.
 
@@ -547,28 +661,32 @@ The survey addressed non-sensitive topics related to technology use attitudes. N
 
 3. **Model complexity**: Eight-factor model with limited items requires careful balance between fit and parsimony.
 
----
+
 
 ## 3.10 Chapter Summary
 
-This chapter has described the research methodology for developing and validating the AI Readiness Scale (AIRS) and testing the extended UTAUT model for AI tool adoption in higher education. Key methodological features include:
+This chapter has described the research methodology for developing and validating the AI Readiness Scale (AIRS) and testing the extended UTAUT model for AI tool adoption. Key methodological features include:
 
 **Research Design**:
+
 - Post-positivist philosophy with mixed methods approach
 - Cross-sectional survey with qualitative supplementation
-- UK higher education context
+- United States professionals and students context
 
 **Instrument**:
+
 - 28 initial items across 12 constructs
 - Final validated instrument: 16 items across 8 factors
 - 5-point Likert scale measurement
 
 **Sample**:
-- N = 523 valid responses
-- Three role groups: Academic (216), Professional (184), Leader (123)
+
+- N = 523 United States adults
+- Two population groups: Students (216), Professionals (307)
 - 50/50 split for cross-validation (EFA n = 261, CFA n = 262)
 
 **Analysis**:
+
 - 10-phase systematic pipeline
 - EFA for structure exploration, CFA for validation
 - Multi-group SEM for hypothesis testing
@@ -576,13 +694,9 @@ This chapter has described the research methodology for developing and validatin
 - Thematic analysis for qualitative insights
 
 **Validity**:
+
 - Comprehensive reliability and validity assessment
 - Measurement invariance across role groups
 - Criterion validity through behavioral correlates
 
 The methodology provides a rigorous foundation for the empirical findings presented in Chapter 4, while acknowledging limitations inherent in cross-sectional survey research.
-
----
-
-*Word Count: ~3,800*
-*Last Updated: December 2025*

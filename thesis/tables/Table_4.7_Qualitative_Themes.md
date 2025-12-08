@@ -19,7 +19,7 @@
 
 ## Role Differences in Qualitative Themes
 
-| Theme | Academic % | Professional % | Leader % | χ² | df | p | Significant |
+| Theme | Student % | Professional % | Leader % | χ² | df | p | Significant |
 |-------|------------|----------------|----------|----|----|---|-------------|
 | Positive Experience | 22.4% | 28.1% | 38.5% | 7.11 | 2 | .029 | ✅ Yes |
 | Learning/Education | 28.3% | 12.4% | 14.2% | 8.45 | 2 | .015 | ✅ Yes |

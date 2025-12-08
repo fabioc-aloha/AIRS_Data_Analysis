@@ -10,7 +10,7 @@ The review draws on three categories of evidence. Academic research provides the
 
 This dual-lens approach—integrating academic rigor with business relevance—reflects the Doctor of Business Administration orientation of this thesis. The literature review not only establishes scholarly grounding but also identifies practical implications: why AI adoption programs fail, what organizational levers matter, and how validated measurement can inform change management. By the chapter's conclusion, readers will understand why AIRS extends UTAUT2 with AI-specific constructs and how the resulting framework addresses both theoretical gaps and practitioner needs.
 
----
+
 
 ## 2.2 Technology Acceptance Models: Foundations and Evolution
 
@@ -60,7 +60,39 @@ Venkatesh et al. (2012) extended UTAUT for consumer contexts through UTAUT2, add
 
 UTAUT2 explained 74% of variance in behavioral intention, demonstrating the value of context-appropriate extensions. For the present research, UTAUT2 provides the baseline framework, with modifications appropriate to workplace AI contexts where hedonic motivation and habit remain relevant while price value may be less salient (organizational rather than personal expenditure).
 
----
+**Figure 2.1: Evolution of Technology Acceptance Models**
+
+```mermaid
+flowchart LR
+    subgraph "1980s-1990s"
+        TRA["Theory of Reasoned Action<br/>(Fishbein & Ajzen, 1975)"]
+        TPB["Theory of Planned Behavior<br/>(Ajzen, 1991)"]
+        TAM["Technology Acceptance Model<br/>(Davis, 1989)"]
+    end
+
+    subgraph "2000s"
+        UTAUT["UTAUT<br/>(Venkatesh et al., 2003)<br/>R² = .70"]
+    end
+
+    subgraph "2010s"
+        UTAUT2["UTAUT2<br/>(Venkatesh et al., 2012)<br/>R² = .74"]
+    end
+
+    subgraph "2020s"
+        AIRS["AIRS Extended Model<br/>(Present Study)<br/>R² = .86"]
+    end
+
+    TRA --> TPB
+    TRA --> TAM
+    TPB --> UTAUT
+    TAM --> UTAUT
+    UTAUT --> UTAUT2
+    UTAUT2 --> AIRS
+
+    style AIRS fill:#e1f5fe,stroke:#0288d1,stroke-width:2px
+```
+
+
 
 ## 2.3 The AI Adoption-Value Gap: Industry Context
 
@@ -90,7 +122,7 @@ This industry context has direct implications for technology acceptance research
 
 Venkatesh (2021) argues that AI tools present unique adoption challenges that existing frameworks do not fully address. Unlike prior technologies, AI systems (1) operate as partially opaque decision aids where underlying models are "blackboxed"; (2) make errors that accumulate and erode trust over time; (3) require learning periods during which performance improves; (4) may develop emergent biases unknown at deployment; and (5) shift the human role from decision-maker to decision-overseer or decision-recipient. These characteristics suggest that trust, transparency, and anxiety—constructs largely peripheral in traditional acceptance models—move to the foreground for AI adoption.
 
----
+
 
 ## 2.4 Why AI Stresses Traditional Acceptance Models
 
@@ -126,7 +158,7 @@ This transformation generates **AI-related anxiety**—affective responses to au
 
 Research suggests anxiety may exhibit nonlinear relationships with exposure. Moderate, calibrated exposure can reduce anxiety as users develop realistic expectations and coping strategies, while minimal exposure leaves fears unchallenged and intensive exposure may overwhelm adaptive capacity (Frenkenberg & Hochman, 2025). This pattern implies that training and hands-on experience can shift affective responses favorably—an organizational lever absent from traditional acceptance frameworks.
 
----
+
 
 ## 2.5 Trust in AI Systems
 
@@ -148,7 +180,46 @@ Governance practices also shape trust. When organizations establish bias audits,
 
 Given the empirical evidence for trust's central role in AI adoption, the present research incorporates **AI Trust** as a core construct extending UTAUT2. AI Trust is operationalized as confidence that the AI system is reliable, competent, and aligned with user and organizational values. This construct is expected to positively predict behavioral intention directly and to mediate effects of explainability and governance perceptions on intention.
 
----
+**Figure 2.2: AIRS Conceptual Model - Extended UTAUT2 for AI Adoption**
+
+```mermaid
+flowchart TB
+    subgraph UTAUT2["UTAUT2 Core Constructs"]
+        PE["Performance<br/>Expectancy"]
+        EE["Effort<br/>Expectancy"]
+        SI["Social<br/>Influence"]
+        FC["Facilitating<br/>Conditions"]
+        HM["Hedonic<br/>Motivation"]
+        HT["Habit"]
+    end
+
+    subgraph AIExt["AI-Specific Extensions"]
+        TR["AI Trust<br/>(Enabler)"]
+        ANX["AI Anxiety<br/>(Inhibitor)"]
+    end
+
+    BI["Behavioral<br/>Intention"]
+    EXP["Experience<br/>(Moderator)"]
+
+    PE -->|H1: +| BI
+    EE -->|H2: +| BI
+    SI -->|H3: +| BI
+    FC -->|H4: +| BI
+    HM -->|H5: +| BI
+    HT -->|H6: +| BI
+    TR -->|H7: +| BI
+    ANX -->|H8: −| BI
+
+    EXP -.->|H9: moderates| PE
+    EXP -.->|H9: moderates| HM
+    EXP -.->|H9: moderates| ANX
+
+    style TR fill:#c8e6c9,stroke:#388e3c,stroke-width:2px
+    style ANX fill:#ffcdd2,stroke:#d32f2f,stroke-width:2px
+    style BI fill:#e1f5fe,stroke:#0288d1,stroke-width:3px
+```
+
+
 
 ## 2.6 AI-Related Anxiety
 
@@ -168,7 +239,7 @@ Importantly, anxiety effects may be nonlinear with exposure. Several studies obs
 
 The present research incorporates **AI Anxiety** as an inhibitor construct extending UTAUT2. AI Anxiety is operationalized as affective unease about AI autonomy, opacity, and potential negative consequences. This construct is expected to negatively predict behavioral intention and may moderate the effects of positive predictors, particularly for users with limited AI experience.
 
----
+
 
 ## 2.7 Gaps in Current Research
 
@@ -178,13 +249,13 @@ The literature review reveals several gaps that the present research addresses:
 
 **Gap 2: Integration of Enablers and Inhibitors**. Prior research tends to study AI-specific constructs in isolation. Few studies simultaneously model trust and anxiety as enabler and inhibitor within an integrated UTAUT2 framework. The present research tests an integrative model where AI Trust operates as an enabler and AI Anxiety as an inhibitor alongside traditional UTAUT2 predictors.
 
-**Gap 3: Cross-Population Validation**. Most AI adoption studies examine single populations, limiting generalizability claims. Whether adoption dynamics differ between academic and professional populations—groups with potentially different AI exposure, organizational contexts, and role relationships—remains unexamined. The present research addresses this gap through multi-group analysis across academic and professional samples.
+**Gap 3: Cross-Population Validation**. Most AI adoption studies examine single populations, limiting generalizability claims. Whether adoption dynamics differ between student and professional populations—groups with potentially different AI exposure, organizational contexts, and role relationships—remains unexamined. The present research addresses this gap through multi-group analysis across student and professional samples.
 
 **Gap 4: Experience as Moderator**. While UTAUT specifies experience as a moderator of traditional predictors, the moderating role of AI experience on AI-specific constructs is unexplored. Given theoretical arguments that anxiety decreases with calibrated exposure, experience moderation is particularly relevant for AI adoption. The present research tests experience moderation across both traditional and AI-specific paths.
 
 **Gap 5: Connection to Practitioner Concerns**. Academic research on AI adoption often proceeds disconnected from practitioner challenges. The adoption-value gap identified in industry benchmarks reflects organizational barriers—governance, change management, workforce readiness—that acceptance research rarely addresses directly. The present research bridges this gap by developing a diagnostic instrument (AIRS) with explicit organizational applications.
 
----
+
 
 ## 2.8 Theoretical Framework and Hypotheses
 
@@ -239,13 +310,46 @@ Based on the meta-analytic evidence reviewed above, the following hypotheses ref
 ### 2.8.4 Moderation Hypotheses
 
 **H9 (Experience Moderation)**: Experience moderates the relationships between predictors and Behavioral Intention, such that:
+
 - (a) The effect of Performance Expectancy on Intention strengthens with greater AI experience
 - (b) The effect of Hedonic Motivation on Intention strengthens with greater AI experience
 - (c) The negative effect of AI Anxiety on Intention weakens with greater AI experience
 
 *Rationale*: Experienced users can more accurately assess AI performance, may derive greater enjoyment from sophisticated use, and should have resolved initial anxieties through exposure and coping development.
 
----
+**Figure 2.3: Research Hypotheses Summary**
+
+```mermaid
+flowchart LR
+    subgraph UTAUT2["UTAUT2 Core Constructs"]
+        H1a["H1a: PE → BI"]
+        H1b["H1b: EE → BI"]
+        H1c["H1c: SI → BI"]
+        H1d["H1d: FC → BI"]
+        H1e["H1e: HM → BI"]
+        H1f["H1f: PV → BI"]
+        H1g["H1g: HB → BI"]
+    end
+
+    subgraph AIExtension["AI-Specific Extension"]
+        H2["H2: TR → BI"]
+    end
+
+    subgraph ModelComparison["Model Comparison"]
+        H3["H3: AIRS > UTAUT2"]
+    end
+
+    subgraph Moderation["Moderation Hypotheses"]
+        H4["H4: Population moderates paths"]
+    end
+
+    style UTAUT2 fill:#e3f2fd,stroke:#1976d2
+    style AIExtension fill:#f3e5f5,stroke:#7b1fa2
+    style ModelComparison fill:#fff3e0,stroke:#f57c00
+    style Moderation fill:#e8f5e9,stroke:#388e3c
+```
+
+
 
 ## 2.9 Chapter Summary
 
@@ -262,9 +366,3 @@ Fourth, it articulated the research hypotheses tested in subsequent chapters, sp
 The theoretical framework positions AIRS as a principled extension that respects the durability of established acceptance research while acknowledging AI's socio-technical distinctives. The resulting instrument should provide both scholarly contribution—validated measurement of AI-specific adoption determinants—and practical value—a diagnostic tool for organizational AI readiness assessment.
 
 The following chapter describes the methodology employed to develop and validate the AIRS instrument, including sample composition, measurement procedures, and analytic approach.
-
----
-
-**Word Count**: ~5,200 words
-
-**Key Citations**: Ajzen (1991), Blut et al. (2022), Davis (1989), DeVellis (2017), Doshi-Velez & Kim (2017), Dwivedi et al. (2021), Floridi et al. (2018), Frenkenberg & Hochman (2025), Hinkin (1998), Kim et al. (2025), Langer et al. (2023), McKinsey & Company (2023–2025), MIT Media Lab (2025), Rogers (2003), Schuetz & Venkatesh (2020), Shin (2021), Siau & Wang (2018), Stevens & Stetson (2023), Tao et al. (2020), Venkatesh (2021), Venkatesh et al. (2003), Venkatesh et al. (2012)

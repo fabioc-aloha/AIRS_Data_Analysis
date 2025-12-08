@@ -1,39 +1,32 @@
-# Table 4.5: AI Tool Adoption Patterns
+# Table 4.5: AI Tool Usage Patterns
 
-## Tool Awareness and Usage Rates (N = 523)
+## Tool Usage Frequency (N = 523)
 
-| AI Tool | Awareness | Ever Tried | Active Use | Active Use Definition |
-|---------|-----------|------------|------------|-----------------------|
-| ChatGPT | 98.3% | 89.2% | 63.7% | Weekly or more |
-| Microsoft Copilot | 92.1% | 71.4% | 49.1% | Weekly or more |
-| Google Bard/Gemini | 87.5% | 52.8% | 31.2% | Weekly or more |
-| Specialized AI Tools | 64.2% | 38.9% | 22.4% | Weekly or more |
+| AI Tool | Mean Usage | Never Used (%) | Active Use (%) | Cohen's d (Leaders vs Prof) |
+|---------|------------|----------------|----------------|----------------------------|
+| ChatGPT | 3.03 | 23.9 | 64.2 | 0.74 |
+| Microsoft Copilot | 2.49 | 36.1 | 48.4 | 1.14 |
+| Google Bard/Gemini | 2.48 | 36.5 | 47.6 | 0.90 |
+| Other AI Tools | 1.93 | 53.3 | 30.0 | 0.78 |
+
+*Note: Usage measured on 5-point scale (1=Never to 5=Very Often). Active Use = "Sometimes" or more frequent (≥3). Cohen's d compares Leaders (Managers/Executives) vs Professionals.*
 
 ## Role Differences in Tool Usage
 
-| Measure | Academic | Professional | Leader | F(2,520) | p | η² | Post-hoc |
-|---------|----------|--------------|--------|----------|---|----|---------|
-| Tool Breadth | 2.14 | 2.58 | 3.21 | 18.42 | <.001 | .066 | L > P > A |
-| Usage Frequency | 2.89 | 3.42 | 4.15 | 22.15 | <.001 | .078 | L > P > A |
-| Usage Intensity | 1.95 | 2.38 | 2.87 | 15.87 | <.001 | .058 | L > P > A |
+| Measure | F(2,520) | p | η² | Post-hoc |
+|---------|----------|---|----|---------|
+| Tool Usage (ANOVA) | 18.42 | <.001 | .066 | L > P > S |
 
-## Leader Dominance Effect (Cohen's d)
+*Note: L = Leader, P = Professional, S = Student. Post-hoc comparisons use Tukey HSD.*
 
-| Tool Category | Leader vs. Professional | Leader vs. Academic | Interpretation |
-|---------------|------------------------|---------------------|----------------|
-| ChatGPT | d = 0.52 | d = 0.74 | Medium-Large |
-| Microsoft Copilot | d = 0.61 | d = 0.89 | Large |
-| Google Bard/Gemini | d = 0.68 | d = 0.95 | Large |
-| Specialized AI | d = 0.82 | d = 1.14 | Very Large |
+## Tool Usage × AIRS Construct Correlations (Spearman ρ)
 
-## Tool Usage and Behavioral Intention Correlations
+| Usage Variable | PerfExp | EffortExp | SocialInf | FacCond | HedMot | PriceVal | Habit | Trust | BehInt |
+|----------------|---------|-----------|-----------|---------|--------|----------|-------|-------|--------|
+| MS Copilot | .48** | .35** | .51** | .41** | .52** | .42** | .44** | .44** | .54** |
+| ChatGPT | .58** | .56** | .45** | .51** | .52** | .57** | .62** | .53** | .57** |
+| Gemini | .48** | .42** | .45** | .42** | .50** | .47** | .46** | .46** | .52** |
+| Other | .43** | .37** | .42** | .40** | .46** | .44** | .42** | .39** | .44** |
+| Total Usage | .66** | .56** | .59** | .57** | .66** | .63** | .66** | .60** | .69** |
 
-| Relationship | ρ | p | Interpretation |
-|-------------|---|---|----------------|
-| Tool Breadth × BI | .70 | <.001 | Strong positive |
-| Usage Frequency × BI | .65 | <.001 | Strong positive |
-| Usage Breadth × PE | .58 | <.001 | Moderate positive |
-| Usage Breadth × HM | .52 | <.001 | Moderate positive |
-| Usage Breadth × AX | -.41 | <.001 | Moderate negative |
-
-*Note: ρ = Spearman correlation; L = Leader, P = Professional, A = Academic. Post-hoc comparisons use Tukey HSD.*
+*Note: * p < .05, ** p < .01. All correlations are significant.*

@@ -12,47 +12,45 @@ The study successfully validated an 8-factor, 16-item AI Readiness Scale extendi
 
 ### 5.2.2 Supported Relationships
 
-Four of seven hypothesized paths were significant:
+Three of seven hypothesized UTAUT2 paths were significant:
 
-- **Performance Expectancy** (β = .505, p < .001): Perceived usefulness is the dominant driver
-- **Hedonic Motivation** (β = .217, p < .001): Enjoyment strongly predicts adoption
-- **AI Anxiety** (β = -.152, p = .002): Apprehension significantly inhibits adoption
-- **Social Influence** (β = .136, p = .013): Peer influence matters for AI adoption
+- **Price Value** (β = .505, p < .001): Cost-benefit perception is the dominant driver
+- **Hedonic Motivation** (β = .217, p = .014): Enjoyment significantly predicts adoption
+- **Social Influence** (β = .136, p = .024): Peer influence matters for AI adoption
 
 ### 5.2.3 AI Trust Extension
 
-AI Trust approached but did not reach significance (β = .106, p = .064), providing tentative support for the theoretical extension. The significant Anxiety path (β = -.152) demonstrates that AI-specific affective factors do predict adoption beyond core UTAUT2 constructs.
+AI Trust approached but did not reach significance (β = .106, p = .064), providing tentative support for the theoretical extension. Notably, traditional UTAUT predictors including Performance Expectancy, Effort Expectancy, Facilitating Conditions, and Habit were not significant predictors.
 
 ## 5.3 Discussion of Findings
 
-### 5.3.1 Performance Expectancy as Dominant Predictor
+### 5.3.1 Price Value as Dominant Predictor
 
-**Finding**: PE emerged as the overwhelmingly strongest predictor (β = .505, p < .001), substantially exceeding all other constructs.
+**Finding**: Price Value emerged as the overwhelmingly strongest predictor (β = .505, p < .001), substantially exceeding all other constructs.
 
-**Interpretation**: This finding aligns with UTAUT theory but highlights a critical insight for AI adoption: **perceived usefulness trumps all other considerations**. In the AI context, users are primarily motivated by tangible productivity and quality improvements rather than ease of use (EE, ns), organizational support (FC, ns), or even trust (TR, marginal). This suggests that AI adoption interventions should prioritize demonstrating concrete value propositions over training or infrastructure investments.
+**Interpretation**: This finding represents a significant departure from traditional UTAUT research where Performance Expectancy typically dominates. In the AI context, users appear primarily motivated by **perceived value relative to cost** rather than raw productivity benefits (PE, ns), ease of use (EE, ns), organizational support (FC, ns), or habit (HB, ns). This suggests that AI adoption interventions should prioritize demonstrating clear return on investment and cost-effectiveness rather than focusing solely on capability demonstrations.
 
-**Theoretical Implications**: The dominance of PE supports Venkatesh et al.'s (2003) original positioning of Performance Expectancy as the primary adoption driver. However, the magnitude (β = .505) exceeds typical UTAUT findings, suggesting AI tools may represent a particularly utility-focused technology category where hedonic and social considerations, while significant, remain secondary.
+**Theoretical Implications**: The dominance of Price Value over Performance Expectancy suggests AI tools may represent a distinct technology category. Unlike previous technologies where utility perceptions drove adoption, AI adoption appears more influenced by value propositions—potentially reflecting the freemium pricing models common in AI tools, concerns about ongoing subscription costs, or cost-benefit analyses comparing AI tools to traditional methods.
 
 ### 5.3.2 Non-Significant UTAUT2 Paths
 
 **Finding**: PE, EE, FC, and HB were not significant predictors.
 
-**Interpretation**:
-[To be written - discuss AI tool landscape where ease of use is assumed]
+**Interpretation**: The non-significance of Performance Expectancy (β = -.028, p = .791) is particularly noteworthy, as PE typically dominates technology acceptance research. This suggests that in the AI context, perceived usefulness may be a baseline expectation rather than a differentiating factor. Users may assume AI tools will enhance productivity, making cost-benefit considerations (Price Value) and enjoyment (Hedonic Motivation) the deciding factors.
+
+Similarly, the non-significance of Effort Expectancy (β = -.008, p = .875) and Facilitating Conditions (β = .059, p = .338) may reflect the increasingly user-friendly nature of modern AI tools and widespread organizational technology infrastructure.
 
 ### 5.3.3 AI Trust Marginality
 
-**Finding**: TR approached but did not reach significance (p = .064).
+**Finding**: TR approached but did not reach significance (β = .106, p = .064).
 
-**Interpretation**:
-[To be written - discuss power considerations, trust as emerging construct]
+**Interpretation**: The marginal significance of AI Trust suggests it may become a more important predictor as AI technologies mature and trust concerns become more salient. The current sample may have insufficient power to detect the effect, or trust considerations may be less central for the relatively straightforward AI tools currently in use. Future research should examine whether AI Trust becomes more predictive for high-stakes AI applications (e.g., AI-assisted decision-making, autonomous systems).
 
-### 5.3.4 Experience as Novel Moderator
+### 5.3.4 Experience as Moderator
 
-**Finding**: Professional experience strengthens PE→BI and HM→BI.
+**Finding**: Professional experience strengthens HM → BI (β = .136, p = .007).
 
-**Interpretation**:
-[To be written - career development literature integration]
+**Interpretation**: The significant moderation effect suggests that experienced professionals place greater weight on enjoyment when evaluating AI tools. This may reflect that experienced users, having satisfied basic competency needs, prioritize intrinsic satisfaction. Additionally, usage frequency moderates the importance of Performance Expectancy (for new users) versus Price Value (for heavy users).
 
 ### 5.3.5 User Typology Segments
 
@@ -105,7 +103,7 @@ AI Trust approached but did not reach significance (β = .106, p = .064), provid
 
 2. **Self-reported intention**: Behavioral Intention may not perfectly predict actual behavior. However, the strong BI-Usage correlation (ρ = .70) provides behavioral validation.
 
-3. **Convenience sampling**: The UK higher education sample limits generalizability to other sectors, cultures, and educational contexts.
+3. **Convenience sampling**: The United States sample limits generalizability to other countries, cultures, and organizational contexts.
 
 ### 5.6.2 Measurement Limitations
 
@@ -152,7 +150,3 @@ AI Trust approached but did not reach significance (β = .106, p = .064), provid
 ## 5.8 Conclusions
 
 [To be written - synthesize contributions and call to action]
-
----
-
-<!-- Chapter 5 Draft Status: Outline Complete -->

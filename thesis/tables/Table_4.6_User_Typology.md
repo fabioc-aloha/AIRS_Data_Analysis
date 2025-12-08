@@ -6,37 +6,25 @@
 |---------|---|---|----|----|----|----|------------------|
 | Enthusiasts | 84 | 16% | High | High | Low | High | Early adopters, high engagement |
 | Cautious Adopters | 157 | 30% | Moderate | Moderate | Moderate | Moderate | Pragmatic, wait-and-see |
-| Moderate Users | 193 | 37% | Moderate | Low | Moderate | Low-Mod | Limited engagement, neutral |
-| Anxious Avoiders | 89 | 17% | Low | Low | High | Low | Resistant, anxiety-driven |
+| Moderate Users | 191 | 37% | Moderate | Low | Moderate | Low-Mod | Limited engagement, neutral |
+| Anxious Avoiders | 91 | 17% | Low | Low | High | Low | Resistant, anxiety-driven |
 
 ## Cluster Centroids (Standardized)
 
-| Cluster | PE (z) | EE (z) | SI (z) | FC (z) | HM (z) | TR (z) | AX (z) | BI (z) |
-|---------|--------|--------|--------|--------|--------|--------|--------|--------|
-| Enthusiasts | +1.24 | +0.89 | +0.76 | +0.82 | +1.31 | +1.05 | -1.18 | +1.42 |
-| Cautious Adopters | +0.32 | +0.28 | +0.21 | +0.18 | +0.15 | +0.24 | +0.08 | +0.29 |
-| Moderate Users | -0.28 | -0.15 | -0.22 | -0.18 | -0.45 | -0.21 | +0.12 | -0.38 |
-| Anxious Avoiders | -0.95 | -0.78 | -0.54 | -0.62 | -0.82 | -0.89 | +1.42 | -1.15 |
+| Cluster | PE (z) | EE (z) | TR (z) | HB (z) | AX (z) | BI (z) | Usage (z) |
+|---------|--------|--------|--------|--------|--------|--------|-----------|
+| Anxious Avoiders | -1.16 | -0.48 | -1.49 | -1.69 | +0.76 | -1.53 | -0.63 |
+| Cautious Adopters | +1.16 | +1.14 | +0.86 | +1.01 | +0.84 | +0.88 | +0.07 |
+| Moderate Users | +0.26 | +0.42 | +0.01 | -0.42 | +0.42 | -0.07 | -0.32 |
+| AI Enthusiasts | +1.42 | +1.45 | +1.37 | +1.03 | -0.86 | +1.32 | +0.26 |
 
-## Typology Distribution by Role
+*Note: Cluster centroids based on k-means clustering (k=4) using standardized construct scores. Source: Notebook 09.*
 
-| Cluster | Academic | Professional | Leader | Total |
-|---------|----------|--------------|--------|-------|
-| Enthusiasts | 28 (13%) | 22 (12%) | 34 (28%) | 84 (16%) |
-| Cautious Adopters | 58 (27%) | 62 (34%) | 37 (30%) | 157 (30%) |
-| Moderate Users | 82 (38%) | 72 (39%) | 39 (32%) | 193 (37%) |
-| Anxious Avoiders | 48 (22%) | 28 (15%) | 13 (11%) | 89 (17%) |
-| **Total** | **216** | **184** | **123** | **523** |
+## Cluster Interpretation
 
-**Chi-square:** χ²(6) = 24.31, p < .001, Cramér's V = .15
-
-## Key Typology Patterns
-
-| Finding | Statistic | Interpretation |
-|---------|-----------|----------------|
-| Leaders × Enthusiasts | 28% vs. 16% overall | Overrepresented |
-| Academics × Anxious Avoiders | 22% vs. 17% overall | Overrepresented |
-| Typology × Theme (Qualitative) | χ²(27) = 42.31, p = .031 | Significant association |
-| Anxious Avoiders × Ethics Concerns | 3.2× more likely | Relative risk |
-
-*Note: Percentages in parentheses are within-role percentages. Cluster solution validated using silhouette analysis (mean = .42).*
+| Cluster | Behavioral Profile | Organizational Implication |
+|---------|-------------------|----------------------------|
+| AI Enthusiasts (16%) | High adoption, low anxiety, high engagement | Champions for AI initiatives |
+| Cautious Adopters (30%) | High adoption but also high anxiety | Need reassurance and support |
+| Moderate Users (37%) | Neutral stance, average engagement | Largest group, can be swayed |
+| Anxious Avoiders (17%) | Low adoption, high anxiety, resistant | Need targeted anxiety interventions |

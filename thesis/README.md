@@ -40,11 +40,10 @@ thesis/
 | Element | Description |
 |---------|-------------|
 | **Title** | AI Readiness Scale (AIRS): Development and Validation in Higher Education |
-| **Sample** | N = 523 (Academic: 216, Professional: 184, Leader: 123) |
+| **Sample** | N = 523 (Student: 216, Professional: 184, Leader: 123) |
 | **Methodology** | Split-sample EFA (n=261) → CFA (n=262) → SEM + Mixed methods |
 | **Validated Model** | 8 factors, 16 items (Model D) |
 | **Model Fit** | CFI=.975, TLI=.960, RMSEA=.065 |
-| **Variance Explained** | R² = .857 (85.7% in Behavioral Intention) |
 
 ## Key Findings Summary
 
@@ -52,33 +51,31 @@ thesis/
 
 | ID | Hypothesis | Evidence |
 |----|------------|----------|
-| H1a | Performance Expectancy → BI | β=.505, p<.001 ⭐ **Strongest** |
-| H1c | Social Influence → BI | β=.136, p=.013 |
-| H1e | Hedonic Motivation → BI | β=.217, p<.001 |
-| H1g | Anxiety → BI (negative) | β=-.152, p=.002 |
-| H2 | Experience moderates paths | PE×Exp p=.013, HM×Exp p=.009 |
-| H4 | BI predicts usage | ρ=.70, p<.001 |
-| H5 | Role differs in usage | Leaders > Prof > Academic |
+| H1c | Social Influence → BI | β=.136, p=.024 |
+| H1e | Hedonic Motivation → BI | β=.217, p=.014 |
+| H1f | Price Value → BI | β=.505, p<.001 ⭐ **Strongest** |
+| H4 | Population moderates HM | Δβ=-0.750, p=.041 |
 
 ### Marginal Support
 
-- **H1f**: Trust → BI (β=.106, p=.064)
+- **H2**: AI Trust → BI (β=.106, p=.064)
 
 ### Not Supported
 
-- **H1b**: Effort Expectancy → BI (β=.089, p=.126)
-- **H1d**: Facilitating Conditions → BI (β=.074, p=.170)
-- **H3**: Role moderates paths (no significant Δβ)
+- **H1a**: Performance Expectancy → BI (β=-.028, p=.791)
+- **H1b**: Effort Expectancy → BI (β=-.008, p=.875)
+- **H1d**: Facilitating Conditions → BI (β=.059, p=.338)
+- **H1g**: Habit → BI (β=.023, p=.631)
+- **H3**: AIRS > UTAUT2 (ΔAIC=+2.01, not supported)
 
 ### Novel Contributions
 
 | Contribution | Academic Value | Business Value |
 |--------------|----------------|----------------|
-| PE dominance (β=.505) | Extends UTAUT2 in AI context | Lead with productivity messaging |
-| Experience moderation | Novel moderator discovery | Tailor training by experience |
-| 4-segment user typology | Cluster analysis contribution | Segment-specific change management |
-| Disability→Anxiety (d=.36) | Accessibility research link | Inclusive AI design |
-| Leader usage patterns | Cross-population validation | Leaders as AI champions |
+| PV dominance (β=.505) | Unexpected departure from PE-dominant UTAUT | Lead with cost-benefit messaging |
+| PE non-significant | Novel finding for AI context | Utility may be baseline expectation |
+| Population moderation | Academics vs Professional differences | Tailored messaging by role |
+| Experience moderation | HM×Exp discovery | Experienced users weight enjoyment more |
 
 ## Document Status
 
