@@ -217,7 +217,7 @@ flowchart TB
     style BI fill:#e1f5fe,stroke:#0288d1,stroke-width:3px
 ```
 
-*Note: AI Anxiety was initially proposed as an inhibitor construct (H8) but was excluded from the final model due to inadequate reliability (α = .30). See Chapter 4 for details.*
+*Note: AI Anxiety was initially proposed as an inhibitor construct (H8) but was excluded from the final model due to inadequate reliability (α = .301). See Chapter 4 for details.*
 
 
 
@@ -307,7 +307,7 @@ Based on the meta-analytic evidence reviewed above, the following hypotheses ref
 
 *Rationale*: Building on Langer et al.'s (2023) review and Stevens and Stetson's (2023) validation work, trust serves as a gateway condition for AI adoption. Users who trust AI systems to be reliable, competent, and aligned with their interests should demonstrate greater adoption intention.
 
-**Proposed Inhibitor (AI Anxiety)**: AI Anxiety was hypothesized to negatively predict Behavioral Intention to use AI tools. However, empirical analysis revealed inadequate reliability for the AI Anxiety scale (α = .30), preventing formal hypothesis testing. This measurement challenge with anxiety constructs is discussed in Chapter 4 and Chapter 5.
+**Proposed Inhibitor (AI Anxiety)**: AI Anxiety was hypothesized to negatively predict Behavioral Intention to use AI tools. However, empirical analysis revealed inadequate reliability for the AI Anxiety scale (α = .301), preventing formal hypothesis testing. This measurement challenge with anxiety constructs is discussed in Chapter 4 and Chapter 5.
 
 *Theoretical Rationale*: Drawing on Tao et al. (2020), Kim et al. (2025), and Frenkenberg and Hochman (2025), anxiety about AI autonomy, opacity, and consequences should inhibit adoption intention even when other perceptions are favorable. Future research with improved anxiety measurement is recommended.
 
@@ -326,7 +326,7 @@ Based on the meta-analytic evidence reviewed above, the following hypotheses ref
 
 ### 2.8.5 Behavioral Validation Hypotheses
 
-**H5 (Behavioral Intention → Usage)**: Behavioral Intention positively relates to actual AI tool usage breadth.
+**H5 (Behavioral Intention -> Usage)**: Behavioral Intention positively relates to actual AI tool usage breadth.
 
 *Rationale*: Consistent with UTAUT theory, intention should translate to behavior. Higher adoption intention should correspond to greater engagement with AI tools.
 
@@ -339,17 +339,17 @@ Based on the meta-analytic evidence reviewed above, the following hypotheses ref
 ```mermaid
 flowchart LR
     subgraph UTAUT2["UTAUT2 Core Constructs"]
-        H1a["H1a: PE → BI"]
-        H1b["H1b: EE → BI"]
-        H1c["H1c: SI → BI"]
-        H1d["H1d: FC → BI"]
-        H1e["H1e: HM → BI"]
-        H1f["H1f: PV → BI"]
-        H1g["H1g: HB → BI"]
+        H1a["H1a: PE -> BI"]
+        H1b["H1b: EE -> BI"]
+        H1c["H1c: SI -> BI"]
+        H1d["H1d: FC -> BI"]
+        H1e["H1e: HM -> BI"]
+        H1f["H1f: PV -> BI"]
+        H1g["H1g: HB -> BI"]
     end
 
     subgraph AIExtension["AI-Specific Extension"]
-        H2["H2: TR → BI"]
+        H2["H2: TR -> BI"]
     end
 
     subgraph Moderation["Moderation Hypotheses"]
@@ -358,7 +358,7 @@ flowchart LR
     end
 
     subgraph Validation["Behavioral Validation"]
-        H5["H5: BI → Tool Usage"]
+        H5["H5: BI -> Tool Usage"]
         H6["H6: Role Usage Differences"]
     end
 

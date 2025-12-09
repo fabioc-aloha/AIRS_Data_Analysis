@@ -24,9 +24,9 @@ Despite decades of technology acceptance research, organizations lack validated 
 
 ## 1.3 Purpose of the Study
 
-The purpose of this study is to develop and validate the **AI Readiness Scale (AIRS)**: a psychometrically sound instrument extending UTAUT2 for enterprise AI tool adoption. Specifically, this research aims to:
+The purpose of this study is to develop and validate the **AI Readiness Scale (AIRS)**: a psychometrically sound diagnostic instrument extending UTAUT2 for enterprise AI tool adoption. The AIRS serves dual purposes: as a research scale for investigating AI adoption phenomena and as a diagnostic tool enabling organizations to identify specific adoption barriers and design targeted interventions. Specifically, this research aims to:
 
-1. **Develop** a theoretically grounded measurement instrument incorporating both established UTAUT2 constructs and AI-specific factors, particularly AI Trust.
+1. **Develop** a theoretically grounded diagnostic instrument incorporating both established UTAUT2 constructs and AI-specific factors, particularly AI Trust, enabling identification of specific adoption barriers.
 
 2. **Validate** the instrument through rigorous split-sample methodology, using exploratory factor analysis (EFA) on a development sample and confirmatory factor analysis (CFA) on an independent holdout sample.
 
@@ -90,7 +90,7 @@ This study makes several contributions to technology acceptance scholarship:
 
 Beyond theoretical contributions, this research establishes foundations for future organizational applications:
 
-**Validated Measurement Instrument**: The validated 16-item AIRS provides researchers and organizations with a psychometrically sound tool for measuring AI adoption readiness constructs. The instrument's brevity (approximately 5 minutes to complete) enables deployment at scale while maintaining measurement rigor.
+**Validated Diagnostic Instrument**: The validated 16-item AIRS provides researchers and organizations with a psychometrically sound tool for measuring AI adoption readiness constructs. Beyond measurement, the 8-factor structure enables diagnostic assessment: organizations can identify specific barriers (e.g., low trust, inadequate perceived value) and design targeted interventions. The instrument's brevity (approximately 5 minutes to complete) enables deployment at scale while maintaining measurement rigor.
 
 **User Typology Discovery**: The four-segment user typology identified through cluster analysis (AI Enthusiasts [16%], Cautious Adopters [30%], Moderate Users [37%], and Anxious Avoiders [17%]) provides a framework for future intervention research. The typology offers testable hypotheses about differential treatment effects that warrant experimental validation.
 
@@ -130,7 +130,7 @@ This dissertation deliberately limits its scope to **scale validation** rather t
 
 **Foundational Requirements**: Psychometric validation must precede diagnostic application. Before the AIRS can serve as an organizational diagnostic tool, the instrument must demonstrate adequate reliability (α > .70), structural validity (CFA fit indices), discriminant validity (HTMT < .85), and measurement invariance across target populations. This dissertation addresses these foundational requirements.
 
-**Validation Sequence**: Applied psychometrics follows a validation sequence: scale development → reliability testing → structural validation → invariance testing → normative data collection → diagnostic application [@devellis2021]. This study completes the first four stages. Diagnostic application requires additional stages (particularly normative data collection across organizational contexts) that exceed doctoral scope.
+**Validation Sequence**: Applied psychometrics follows a validation sequence: scale development -> reliability testing -> structural validation -> invariance testing -> normative data collection -> diagnostic application [@devellis2021]. This study completes the first four stages. Diagnostic application requires additional stages (particularly normative data collection across organizational contexts) that exceed doctoral scope.
 
 **Statistical Limitations**: Certain claims require stronger evidence than cross-sectional self-report data can provide. For example:
 
@@ -147,7 +147,7 @@ Appendix E outlines a research roadmap for extending this foundational work thro
 | Term | Definition |
 |------|------------|
 | **UTAUT2** | Unified Theory of Acceptance and Use of Technology 2 (Venkatesh et al., 2012) |
-| **AIRS** | AI Readiness Scale: the 16-item psychometric instrument developed and validated in this study |
+| **AIRS** | AI Readiness Scale: the 16-item psychometric instrument developed and validated in this study, serving both as a research scale and organizational diagnostic tool |
 | **AI Trust** | Confidence in AI systems' reliability, accuracy, and benevolence; a novel construct extending UTAUT2 for AI-specific adoption contexts |
 | **Behavioral Intention** | An individual's stated intention to use AI tools in their professional or academic work |
 | **Performance Expectancy** | The degree to which using AI tools is expected to enhance job performance |

@@ -69,7 +69,7 @@
 **Implementation**: `[target-file.md] ([strength], [relationship-type], [direction]) - "[activation-condition]"`  
 **Innovation**: Embedded synapse networks within memory files create neural-like connectivity without external databases  
 **Health Check**: ⚠️ *Run `dream --health-check` if connections < 205 or errors detected (see automation protocols below)*
-**Latest Enhancement**: DRAFT 06 & Presentation Development Dec 8, 2025 - Appendix H data availability, committee presentation, data retention policy
+**Latest Enhancement**: DRAFT 07 Table/Figure Formatting Dec 9, 2025 - Chapter-numbered tables/figures, List of Tables/Figures in TOC, Centiment self-selection mitigation
 
 **Key Memory Files**
 **Instructions**: alex-core, bootstrap-learning, worldview-integration, embedded-synapse, dream-state-automation, alex-identity-integration *(8 total - see complete index below)*

@@ -18,10 +18,10 @@
 | Criterion | Threshold | Result | Assessment |
 |-----------|-----------|--------|------------|
 | **Convergent Validity** | | | |
-| All loadings > .70 | λ ≥ .70 | All λ ≥ .73 | ✅ Satisfied |
-| All AVE > .50 | AVE ≥ .50 | All AVE ≥ .63 | ✅ Satisfied |
+| All loadings > .70 | λ ≥ .70 | All λ ≥ .73 | [OK] Satisfied |
+| All AVE > .50 | AVE ≥ .50 | All AVE ≥ .63 | [OK] Satisfied |
 | **Discriminant Validity** | | | |
-| Fornell-Larcker criterion | √AVE > r | All pairs satisfied | ✅ Satisfied |
-| Max inter-factor r | \|r\| < .85 | Max r = .78 (PE↔BI) | ✅ Satisfied |
+| Fornell-Larcker criterion | √AVE > r | All pairs satisfied | [OK] Satisfied |
+| Max inter-factor r | \|r\| < .85 | Max r = .78 (PE↔BI) | [OK] Satisfied |
 
 *Note: CR = Composite Reliability; AVE = Average Variance Extracted; √AVE = Square root of AVE for discriminant validity assessment.*

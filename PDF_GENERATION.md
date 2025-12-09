@@ -38,7 +38,7 @@ cd thesis
 
 ```
 thesis/
-└── DRAFT 05.pdf    # Complete dissertation (~100 pages)
+└── DRAFT 07.pdf    # Complete dissertation (~100 pages)
 ```
 
 ## convert-to-pdf.ps1
@@ -145,7 +145,7 @@ thesis/
 ├── PRACTITIONER_BRIEF.pdf  # Output
 ├── THESIS_SUMMARY.md       # Source
 ├── THESIS_SUMMARY.pdf      # Output
-└── DRAFT 05.pdf            # Complete thesis
+└── DRAFT 07.pdf            # Complete thesis
 ```
 
 ## Quick Reference

@@ -21,13 +21,13 @@
 
 | Theme | Student % | Professional % | Leader % | χ² | df | p | Significant |
 |-------|------------|----------------|----------|----|----|---|-------------|
-| Positive Experience | 22.4% | 28.1% | 38.5% | 7.11 | 2 | .029 | ✅ Yes |
-| Learning/Education | 28.3% | 12.4% | 14.2% | 8.45 | 2 | .015 | ✅ Yes |
-| Work/Productivity | 14.2% | 24.8% | 21.3% | 8.65 | 2 | .013 | ✅ Yes |
-| Quality/Accuracy Concerns | 23.1% | 20.8% | 18.4% | 1.24 | 2 | .538 | ❌ No |
-| Ethical/Policy Concerns | 16.8% | 14.2% | 15.1% | 0.52 | 2 | .772 | ❌ No |
-| Need for Training | 15.2% | 13.8% | 13.5% | 0.31 | 2 | .856 | ❌ No |
-| Academic Integrity | 18.4% | 8.2% | 11.5% | 6.89 | 2 | .032 | ✅ Yes |
+| Positive Experience | 22.4% | 28.1% | 38.5% | 7.11 | 2 | .029 | [OK] Yes |
+| Learning/Education | 28.3% | 12.4% | 14.2% | 8.45 | 2 | .015 | [OK] Yes |
+| Work/Productivity | 14.2% | 24.8% | 21.3% | 8.65 | 2 | .013 | [OK] Yes |
+| Quality/Accuracy Concerns | 23.1% | 20.8% | 18.4% | 1.24 | 2 | .538 | [X] No |
+| Ethical/Policy Concerns | 16.8% | 14.2% | 15.1% | 0.52 | 2 | .772 | [X] No |
+| Need for Training | 15.2% | 13.8% | 13.5% | 0.31 | 2 | .856 | [X] No |
+| Academic Integrity | 18.4% | 8.2% | 11.5% | 6.89 | 2 | .032 | [OK] Yes |
 
 ## Theme Co-occurrence Patterns
 

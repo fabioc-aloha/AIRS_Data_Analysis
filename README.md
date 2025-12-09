@@ -15,11 +15,11 @@ Extending Model for Enterprise AI Adoption
   <tr><td><strong>Researcher</strong></td><td>Fabio Correa</td></tr>
   <tr><td><strong>Institution</strong></td><td>Touro University Worldwide</td></tr>
   <tr><td><strong>Program</strong></td><td>Doctor of Business Administration (DBA)</td></tr>
-  <tr><td><strong>Updated</strong></td><td>December 8, 2025</td></tr>
+  <tr><td><strong>Updated</strong></td><td>December 9, 2025</td></tr>
 </table>
 <!-- markdownlint-enable MD033 -->
 
-> 📝 **[View Current Thesis Draft (PDF)](thesis/DRAFT%2006.pdf)** | Latest compiled version of the dissertation (DRAFT 06 - All chapters complete, 92 references, Appendix H data availability)
+> 📝 **[View Current Thesis Draft (PDF)](thesis/DRAFT%2007.pdf)** | DRAFT 07 submitted to chair for initial reaction
 
 ---
 
@@ -34,9 +34,10 @@ Extending Model for Enterprise AI Adoption
 | **Thesis Chapter 4** | ✅ Complete | Results (~3,200 words) |
 | **Thesis Chapter 5** | ✅ Complete | Analysis & Discussion (~4,100 words) |
 | **Thesis Chapter 6** | ✅ Complete | Conclusions (~2,500 words) |
-| **Bibliography** | ✅ Complete | 92 references verified |
-| **Tables & Figures** | ✅ Complete | LaTeX auto-numbered |
+| **Bibliography** | ✅ Complete | 93 references verified |
+| **Tables & Figures** | ✅ Complete | Chapter-numbered with TOC |
 | **IRB Approval** | ✅ Complete | Letter embedded |
+| **Chair Review** | 🔄 In Progress | DRAFT 07 submitted for initial reaction |
 
 ---
 
@@ -67,7 +68,7 @@ This research develops and validates the **AI Readiness Scale (AIRS)**, a psycho
 | **Experience moderates adoption** | HM×Exp (p=.007) significant |
 | **Four user typologies identified** | Enthusiasts 16%, Cautious 30%, Moderate 37%, Anxious 17% |
 | **Leaders dominate tool usage** | d=0.74-1.14 across all AI tools |
-| **Model explains 86.1% variance** | R²=.861 in Behavioral Intention |
+| **Model explains 85.2% variance** | R²=.852 in Behavioral Intention (8-factor diagnostic model) |
 
 ### Practical Impact
 
@@ -207,12 +208,12 @@ AIRS_Data_Analysis/
 │   ├── chapters/             # Chapter files (1-6)
 │   ├── tables/               # Publication-ready tables (9)
 │   ├── figures/              # Exported figures
-│   ├── references/           # Bibliography (92 refs)
+│   ├── references/           # Bibliography (93 refs)
 │   ├── EXECUTIVE_SUMMARY.md  # Standalone executive summary
 │   ├── PRACTITIONER_BRIEF.md # Standalone practitioner brief
 │   ├── THESIS_SUMMARY.md     # 5-page thesis summary
 │   ├── PRESENTATION_SLIDES.md # Committee presentation draft
-│   └── DRAFT 06.pdf          # Current compiled thesis
+│   └── DRAFT 07.pdf          # Current compiled thesis
 ├── research/                 # Literature and industry sources
 │   ├── AIRS literatyre review.md        # Theoretical foundation
 │   ├── Bridging the AI Adoption Gap...  # Industry benchmarks (585 lines)
@@ -345,5 +346,5 @@ Documentation: [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)
 
 ---
 
-**Last Updated**: December 8, 2025
-**Version**: 6.5 (DRAFT 06 - All chapters complete, 92 references, Appendix H)
+**Last Updated**: December 9, 2025
+**Version**: 7.0 (DRAFT 07 - Table/figure numbering, List of Tables/Figures)

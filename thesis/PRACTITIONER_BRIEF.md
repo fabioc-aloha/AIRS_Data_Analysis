@@ -10,7 +10,7 @@ Artificial intelligence tools are rapidly entering workplaces, yet many organiza
 
 ## What We Studied
 
-We surveyed 523 professionals and students in the United States to understand what factors predict intention to adopt AI tools. The research validated a new measurement instrument, the **AI Readiness Scale (AIRS)**, and tested which factors most strongly predict adoption intention.
+We surveyed 523 professionals and students in the United States to understand what factors predict intention to adopt AI tools. The research validated a new diagnostic instrument, the **AI Readiness Scale (AIRS)**, and tested which factors most strongly predict adoption intention. The 8-factor structure enables identification of specific adoption barriers that can inform targeted intervention design.
 
 ## Key Insights
 
@@ -53,36 +53,37 @@ Our research identified four distinct adoption profiles:
 
 ## What This Research Contributes
 
-1. **A validated measurement instrument** (AIRS) that researchers can use to assess AI adoption readiness across diverse populations
+1. **A validated diagnostic instrument** (AIRS) that researchers can use to assess AI adoption readiness and identify specific barriers across diverse populations
 
 2. **Evidence that AI adoption psychology differs from general technology adoption**, suggesting the need for AI-specific research frameworks
 
-3. **A foundation for future research** investigating how to support AI adoption in organizational contexts
+3. **A foundation for future research** investigating how to support AI adoption in organizational contexts through targeted interventions
 
 ## Important Limitations
 
 This research provides a **foundation for understanding** AI adoption factors, not a prescriptive implementation guide:
 
 - **Cross-sectional design**: We measured associations, not causal effects
-- **Convenience sample**: Results may not generalize to all organizational contexts
+- **Panel sample**: While topic-blinded recruitment mitigates self-selection, results may not generalize to all organizational contexts
 - **No intervention testing**: The effectiveness of strategies based on these findings requires experimental validation
 
 ## Future Research Directions
 
-The validated AIRS instrument enables future studies to:
+The validated AIRS diagnostic instrument enables future studies to:
 
 - **Test interventions** that target Price Value, Hedonic Motivation, and Social Influence
 - **Track adoption longitudinally** to understand how readiness evolves over time
 - **Validate across contexts** including different industries, organizational sizes, and cultures
-- **Develop diagnostic applications** linking readiness profiles to adoption outcomes
+- **Develop formalized diagnostic protocols** for organizational assessment and barrier identification
 
 ## Using AIRS in Research
 
-The 16-item AIRS instrument is available for research purposes. Researchers may use the validated instrument for:
+The 16-item AIRS diagnostic instrument is available for research purposes. Researchers may use the validated instrument for:
 
-- Organizational AI readiness assessment studies
+- Organizational AI readiness diagnostic assessment studies
 - Pre/post intervention research designs
 - Cross-cultural validation studies
 - Longitudinal adoption tracking research
+- Barrier identification and intervention targeting
 
-*Note: Organizational implementation guidance and intervention protocols are beyond the scope of this foundational validation research. Future studies should test whether AIRS scores predict actual adoption behavior and whether targeted interventions improve adoption outcomes.*
+*Note: Organizational implementation guidance and formalized diagnostic protocols are beyond the scope of this foundational validation research. Future studies should test whether AIRS scores predict actual adoption behavior and whether targeted interventions improve adoption outcomes.*

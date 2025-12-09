@@ -72,7 +72,7 @@ December 2025
 
 | Phase | Analysis | Sample |
 |-------|----------|--------|
-| 1 | Sample Split | N=523 → 261/262 |
+| 1 | Sample Split | N=523 -> 261/262 |
 | 2 | Exploratory Factor Analysis (EFA) | Development (n=261) |
 | 3 | Confirmatory Factor Analysis (CFA) | Holdout (n=262) |
 | 4 | Measurement Invariance | Student vs Professional |
@@ -99,11 +99,11 @@ December 2025
 
 | Index | Value | Threshold | Result |
 |-------|-------|-----------|--------|
-| CFI | .975 | ≥ .95 | ✅ Excellent |
-| TLI | .960 | ≥ .95 | ✅ Excellent |
-| RMSEA | .065 | ≤ .08 | ✅ Good |
-| SRMR | .046 | ≤ .08 | ✅ Excellent |
-| χ²/df | 2.10 | < 3.0 | ✅ Excellent |
+| CFI | .975 | ≥ .95 | [OK] Excellent |
+| TLI | .960 | ≥ .95 | [OK] Excellent |
+| RMSEA | .065 | ≤ .08 | [OK] Good |
+| SRMR | .046 | ≤ .08 | [OK] Excellent |
+| χ²/df | 2.10 | < 3.0 | [OK] Excellent |
 
 **Reliability (Cronbach's α):**
 
@@ -137,16 +137,16 @@ December 2025
 
 | Hypothesis | Path | β | p | Result |
 |------------|------|-----|------|--------|
-| H1f | PV → BI | **.505** | <.001 | ✅ **STRONGEST** |
-| H1e | HM → BI | **.217** | .014 | ✅ Supported |
-| H1c | SI → BI | **.136** | .024 | ✅ Supported |
-| H2 | TR → BI | .106 | .064 | ⚠️ Marginal |
-| H1d | FC → BI | .059 | .338 | ❌ Not Supported |
-| H1g | HB → BI | .023 | .631 | ❌ Not Supported |
-| H1b | EE → BI | -.008 | .875 | ❌ Not Supported |
-| H1a | PE → BI | -.028 | .791 | ❌ Not Supported |
+| H1f | PV -> BI | **.505** | <.001 | [OK] **STRONGEST** |
+| H1e | HM -> BI | **.217** | .014 | [OK] Supported |
+| H1c | SI -> BI | **.136** | .024 | [OK] Supported |
+| H2 | TR -> BI | .106 | .064 | [!] Marginal |
+| H1d | FC -> BI | .059 | .338 | [X] Not Supported |
+| H1g | HB -> BI | .023 | .631 | [X] Not Supported |
+| H1b | EE -> BI | -.008 | .875 | [X] Not Supported |
+| H1a | PE -> BI | -.028 | .791 | [X] Not Supported |
 
-**Model R² = .861** (86.1% of variance explained)
+**Model R² = .852** (85.2% of variance explained, 8-factor diagnostic model)
 
 ---
 
@@ -156,11 +156,11 @@ December 2025
 
 | Construct | Meta-Analytic rc (Traditional) | AIRS β (AI) | Change |
 |-----------|------------------------------|-------------|--------|
-| Performance Expectancy | .64 | -.028 | ⬇️ Collapsed |
-| Effort Expectancy | .51 | -.008 | ⬇️ Collapsed |
-| Price Value | .52 | **.505** | ⬆️ Dominant |
+| Performance Expectancy | .64 | -.028 | [DOWN] Collapsed |
+| Effort Expectancy | .51 | -.008 | [DOWN] Collapsed |
+| Price Value | .52 | **.505** | [UP] Dominant |
 | Hedonic Motivation | .53 | .217 | Similar |
-| Social Influence | .43 | .136 | ⬇️ Reduced |
+| Social Influence | .43 | .136 | [DOWN] Reduced |
 
 **Interpretation**: For AI, utility is assumed or uncertain; users evaluate through a value lens ("Is it worth it?") rather than a utility lens ("Will it help me?").
 
@@ -195,15 +195,15 @@ December 2025
 
 | Interaction | β | p | Result |
 |-------------|------|------|--------|
-| HM × Experience | **.136** | **.009** | ✅ Significant |
-| PE × Experience | .112 | .055 | ⚠️ Marginal |
+| HM × Experience | **.136** | **.009** | [OK] Significant |
+| PE × Experience | .112 | .055 | [!] Marginal |
 
 **Population Moderation (Student vs Professional):**
 
 | Path | Student β | Professional β | Δβ | p |
 |------|-----------|----------------|-----|------|
-| HM → BI | **+0.449** | -0.301 | -0.750 | **.041** |
-| PV → BI | +0.638 | +0.808 | +0.170 | ns |
+| HM -> BI | **+0.449** | -0.301 | -0.750 | **.041** |
+| PV -> BI | +0.638 | +0.808 | +0.170 | ns |
 
 **Key Insight**:
 - **Students**: "Make it fun and I'll use it"
@@ -311,7 +311,7 @@ December 2025
 
 3. **Sample Characteristics**
    - U.S. adults only; cultural generalization requires replication
-   - Convenience sampling through audience panel
+   - Panel sampling via Centiment (topic-blinded recruitment mitigates self-selection)
 
 4. **Excluded Constructs**
    - Voluntariness, Explainability, Ethical Risk, AI Anxiety require revised operationalization
@@ -368,7 +368,7 @@ December 2025
 I welcome your questions and feedback.
 
 **Contact Information:**
-- Email: fabio.correa@tuw.edu
+- Email: fabio@correax.com
 
 **Resources:**
 - GitHub Repository: https://github.com/fabioc-aloha/AIRS_Data_Analysis
@@ -394,17 +394,17 @@ I welcome your questions and feedback.
 
 | Hypothesis | Path/Effect | Result |
 |------------|-------------|--------|
-| H1a | PE → BI | ❌ Not Supported (β = -.028, p = .791) |
-| H1b | EE → BI | ❌ Not Supported (β = -.008, p = .875) |
-| H1c | SI → BI | ✅ Supported (β = .136, p = .024) |
-| H1d | FC → BI | ❌ Not Supported (β = .059, p = .338) |
-| H1e | HM → BI | ✅ Supported (β = .217, p = .014) |
-| H1f | PV → BI | ✅ Supported (β = .505, p < .001) |
-| H1g | HB → BI | ❌ Not Supported (β = .023, p = .631) |
-| H2 | TR → BI | ⚠️ Marginal (β = .106, p = .064) |
-| H3 | Experience Moderation | ⚠️ Partial (HM×Exp p = .009) |
-| H4 | Population Moderation | ⚠️ Partial (HM only, p = .041) |
-| H5 | BI → Tool Usage | ✅ Supported (ρ = .69) |
+| H1a | PE -> BI | [X] Not Supported (β = -.028, p = .791) |
+| H1b | EE -> BI | [X] Not Supported (β = -.008, p = .875) |
+| H1c | SI -> BI | [OK] Supported (β = .136, p = .024) |
+| H1d | FC -> BI | [X] Not Supported (β = .059, p = .338) |
+| H1e | HM -> BI | [OK] Supported (β = .217, p = .014) |
+| H1f | PV -> BI | [OK] Supported (β = .505, p < .001) |
+| H1g | HB -> BI | [X] Not Supported (β = .023, p = .631) |
+| H2 | TR -> BI | [!] Marginal (β = .106, p = .064) |
+| H3 | Experience Moderation | [!] Partial (HM×Exp p = .009) |
+| H4 | Population Moderation | [!] Partial (HM only, p = .041) |
+| H5 | BI -> Tool Usage | [OK] Supported (ρ = .69) |
 
 **Summary: 3/7 UTAUT paths supported, Trust marginal, Behavioral validation confirmed**
 

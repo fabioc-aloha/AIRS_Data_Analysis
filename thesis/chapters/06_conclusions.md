@@ -10,7 +10,7 @@ This concluding chapter synthesizes the contributions of this dissertation study
 
 ### 6.2.1 Research Purpose
 
-This study addressed a critical gap in technology acceptance research: the inadequacy of existing frameworks to explain AI-specific adoption patterns. While traditional models like UTAUT2 have demonstrated robust explanatory power for conventional technologies, the unique characteristics of AI systems (including opacity, probabilistic reasoning, and ethical implications) necessitate theoretical extension. The research purpose was twofold: (1) to develop and validate a psychometrically sound AI Readiness Scale (AIRS) extending UTAUT2 with AI-specific constructs, and (2) to identify the key drivers of AI adoption intention in professional and academic contexts.
+This study addressed a critical gap in technology acceptance research: the inadequacy of existing frameworks to explain AI-specific adoption patterns. While traditional models like UTAUT2 have demonstrated robust explanatory power for conventional technologies, the unique characteristics of AI systems (including opacity, probabilistic reasoning, and ethical implications) necessitate theoretical extension. The research purpose was twofold: (1) to develop and validate a psychometrically sound AI Readiness Scale (AIRS) extending UTAUT2 with AI-specific constructs, creating both a research scale and organizational diagnostic instrument, and (2) to identify the key drivers of AI adoption intention in professional and academic contexts.
 
 ### 6.2.2 Methodology Summary
 
@@ -34,13 +34,13 @@ This multi-phase approach exceeds typical scale development standards and provid
 
 The study produced several significant findings that advance both theory and practice:
 
-**Instrument Validation**: The 8-factor, 16-item AIRS demonstrated excellent psychometric properties (CFI = .975, RMSEA = .065, α range .743–.909, all CR > .750, all AVE > .601) and configural invariance across populations, establishing a validated foundation for future AI readiness assessment applications.
+**Diagnostic Instrument Validation**: The 8-factor, 16-item AIRS demonstrated excellent psychometric properties (CFI = .975, RMSEA = .065, α range .743-.909, all CR > .750, all AVE > .601) and configural invariance across populations. The 8-factor structure was selected over a more parsimonious 7-factor alternative because AI Trust provides essential diagnostic capability: practitioners can identify trust deficits and design targeted confidence-building interventions, a feature critical for translating research into organizational practice.
 
 **Adoption Drivers**: Contrary to expectations from traditional UTAUT research, Price Value emerged as the dominant predictor (β = .505, p < .001), followed by Hedonic Motivation (β = .217, p = .014) and Social Influence (β = .136, p = .024). Traditional predictors including Performance Expectancy, Effort Expectancy, and Facilitating Conditions were not significant.
 
 **AI Trust Extension**: AI Trust approached but did not reach conventional significance (β = .106, p = .064), providing tentative support for the theoretical extension while highlighting the need for larger samples in future research.
 
-**Moderator Effects**: Professional experience strengthened the Hedonic Motivation → Behavioral Intention path (β = .136, p = .009), suggesting that experienced professionals prioritize enjoyment in AI tool evaluation.
+**Moderator Effects**: Professional experience strengthened the Hedonic Motivation -> Behavioral Intention path (β = .136, p = .009), suggesting that experienced professionals prioritize enjoyment in AI tool evaluation.
 
 **User Typology**: Four distinct adoption segments were identified (see §4.6), suggesting heterogeneous adoption readiness patterns that future research can leverage for intervention design.
 
@@ -154,7 +154,7 @@ While this study employed rigorous methodology and produced robust findings, sev
 
 **Self-Reported Intention**: Behavioral Intention may not perfectly predict actual behavior. However, the strong correlation between intention and self-reported usage (ρ = .69) provides behavioral validation.
 
-**Convenience Sampling**: The United States sample limits generalizability to other countries, cultures, and organizational contexts. Replication in diverse settings is recommended.
+**Panel Sampling**: While Centiment's topic-blinded recruitment mitigates self-selection bias, the United States panel sample limits generalizability to other countries, cultures, and organizational contexts. Replication in diverse settings is recommended.
 
 ### 6.6.2 Measurement Limitations
 
@@ -192,7 +192,7 @@ While this study employed rigorous methodology and produced robust findings, sev
 
 ### 6.7.3 Research Roadmap: From Validated Scale to Organizational Applications
 
-This dissertation establishes the AIRS as a validated measurement instrument. The following roadmap outlines the research program required to develop practical organizational applications:
+This dissertation establishes the AIRS as a validated diagnostic instrument. The 8-factor structure already enables identification of specific adoption barriers; the following roadmap outlines the research program required to develop formalized protocols for organizational applications:
 
 **Phase 1: AIRS Score Development** (Near-term)
 - Develop a scoring algorithm that transforms raw item responses into interpretable individual and organizational readiness scores
@@ -231,6 +231,6 @@ This dissertation addresses a timely challenge: understanding why individuals ad
 
 The findings reveal that AI adoption operates through different mechanisms than previous technology adoption. The dominance of Price Value, the significant role of Hedonic Motivation, and experience as a moderator suggest that AI represents a distinct technology category. Users evaluate AI tools through a value-and-enjoyment lens rather than a pure utility lens, a finding with implications for organizational practice.
 
-The validated AIRS instrument provides researchers with a psychometrically sound foundation for investigating AI adoption. The four-segment typology offers preliminary evidence of adoption heterogeneity warranting experimental investigation. The theoretical extensions contribute to scholarly conversations about how technology acceptance models must evolve.
+The validated AIRS diagnostic instrument provides researchers with a psychometrically sound foundation for investigating AI adoption. The 8-factor structure enables organizations to identify specific adoption barriers, whether trust deficits, inadequate perceived value, or social influence gaps, and design targeted interventions. The four-segment typology offers preliminary evidence of adoption heterogeneity warranting experimental investigation. The theoretical extensions contribute to scholarly conversations about how technology acceptance models must evolve.
 
 As AI transforms professional work, understanding adoption psychology becomes critical. This dissertation establishes a validated foundation that can enable future diagnostic tools, intervention protocols, and assessment systems. The path forward requires continued research, experimental studies, and commitment to inclusive adoption benefiting all members of the workforce.

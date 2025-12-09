@@ -1,9 +1,9 @@
 <!-- markdownlint-disable MD029 MD041 -->
 # Appendices
 
-## Appendix A: AI Readiness Scale (AIRS) Final 16-Item Instrument
+## Appendix A: AI Readiness Scale (AIRS) Final 16-Item Diagnostic Instrument
 
-The final validated 16-item AIRS instrument consists of eight constructs measured using a 5-point Likert scale (1 = Strongly Disagree to 5 = Strongly Agree).
+The final validated 16-item AIRS diagnostic instrument consists of eight constructs measured using a 5-point Likert scale (1 = Strongly Disagree to 5 = Strongly Agree). The 8-factor structure enables both research applications and organizational diagnostic use: practitioners can identify specific adoption barriers (e.g., trust deficits, inadequate perceived value, low social influence) and design targeted interventions.
 
 ### Performance Expectancy (PE)
 
@@ -51,7 +51,7 @@ The final validated 16-item AIRS instrument consists of eight constructs measure
 
 ### B.1 Participant Information Sheet
 
-The online survey was administered via Qualtrics following institutional ethics approval. Participants received information about the study purpose, voluntary participation, data confidentiality, and right to withdraw at any time without penalty. The study was described as research investigating individuals' perceptions and use of artificial intelligence tools in academic and professional contexts.
+The online survey was administered via Centiment following institutional ethics approval. Self-selection bias was mitigated through Centiment's platform-level recruitment design: survey invitations to panel members display only the estimated completion time and reward amount, with the survey topic deliberately concealed \"in order to avoid selection bias\" (Centiment, 2024). After accessing the survey link, participants received full disclosure about the AI focus through the informed consent form, which described the study purpose, voluntary participation, data confidentiality, and right to withdraw at any time without penalty. This two-stage approach (blinded recruitment followed by informed consent) ensured ethical transparency while reducing systematic bias in participant self-selection.
 
 ### B.2 Informed Consent Form
 
@@ -135,15 +135,15 @@ This appendix presents additional visualizations from the empirical analysis tha
 
 ## Appendix E: AIRS Research Roadmap and Future Applications
 
-This appendix outlines the research program envisioned to extend the validated AIRS instrument into practical organizational applications. The roadmap represents a multi-phase research agenda that builds systematically on the foundation established in this dissertation.
+This appendix outlines the research program envisioned to extend the validated AIRS diagnostic instrument into practical organizational applications. The 8-factor structure already enables identification of specific adoption barriers; this roadmap represents a multi-phase research agenda to develop formalized protocols that build systematically on the foundation established in this dissertation.
 
 ### E.1 Research Program Overview
 
-The AI Readiness Scale (AIRS) validated in this dissertation represents Phase 0 of a comprehensive research program aimed at bridging the gap between AI adoption measurement and organizational AI maturity. The roadmap below outlines subsequent research phases, each requiring independent empirical validation.
+The AI Readiness Scale (AIRS) validated in this dissertation represents Phase 0 of a comprehensive research program aimed at bridging the gap between AI adoption measurement and organizational AI maturity. The 8-factor diagnostic structure was selected over a more parsimonious 7-factor model because AI Trust provides essential diagnostic capability: organizations can identify trust deficits and design targeted interventions. The roadmap below outlines subsequent research phases, each requiring independent empirical validation.
 
 | Phase | Focus | Key Deliverables |
 |-------|-------|------------------|
-| **Phase 0** | Scale Validation | ✅ This Dissertation: 8-factor, 16-item AIRS, structural model, user typology |
+| **Phase 0** | Scale Validation | [OK] This Dissertation: 8-factor, 16-item AIRS diagnostic instrument, structural model, user typology |
 | **Phase 1** | Scoring System | AIRS Score algorithm, normative benchmarks, readiness classifications |
 | **Phase 2** | Organizational Diagnostics | Team/org-level assessment, gap analysis, benchmarking protocols |
 | **Phase 3** | Intervention Research | Segment-specific interventions, randomized trials, effectiveness validation |
@@ -194,11 +194,11 @@ The four-segment typology identified in this dissertation (AI Enthusiasts, Cauti
 
 ### E.6 Contribution to the Field
 
-This research program addresses a critical gap in the technology adoption literature: while validated measurement instruments exist, the translation of assessment into organizational action remains underdeveloped. By systematically building from validated measurement through scoring, diagnostics, intervention, and ecosystem development, this roadmap offers a research-to-practice pipeline that can ultimately deliver the evidence-based tools organizations need to close the AI adoption-value gap.
+This research program addresses a critical gap in the technology adoption literature: while validated measurement instruments exist, the translation of assessment into organizational action remains underdeveloped. The AIRS diagnostic structure provides the foundation for this translation by enabling identification of specific adoption barriers. By systematically building from validated diagnostic measurement through scoring, formalized protocols, intervention research, and ecosystem development, this roadmap offers a research-to-practice pipeline that can ultimately deliver the evidence-based tools organizations need to close the AI adoption-value gap.
 
 ### E.7 Collaboration and Licensing
 
-The AIRS instrument validated in this dissertation is made available for academic research purposes. Organizations interested in applying the AIRS framework for organizational assessment should contact the author to discuss appropriate use, validation requirements, and potential research collaboration opportunities.
+The AIRS diagnostic instrument validated in this dissertation is made available for academic research purposes. Organizations interested in applying the AIRS framework for organizational diagnostic assessment should contact the author to discuss appropriate use, validation requirements, and potential research collaboration opportunities.
 
 **Contact**: Fabio Correa, Doctoral Candidate | Touro University Worldwide
 
@@ -233,7 +233,7 @@ As stated in the IRB application, the purpose of this research was to examine th
 1. What psychological, motivational, and contextual factors influence individual readiness to adopt AI technologies within large enterprises?
 2. To what extent do UTAUT2 constructs predict AI adoption readiness?
 
-**Participant Recruitment**: Participants were recruited externally through Centiment, a professional survey research platform maintaining verified panels of adult participants across diverse industries, roles, and geographic regions. Target sample size was n ≈ 500 respondents.
+**Participant Recruitment**: Participants were recruited externally through Centiment, a professional survey research platform maintaining verified panels of adult participants across diverse industries, roles, and geographic regions. Centiment recruits panelists through social media platforms (Facebook, LinkedIn) and other outlets to achieve broad demographic representation. Critically, Centiment's recruitment methodology includes built-in self-selection bias mitigation: survey notifications to panel members display only the estimated completion time and reward amount, deliberately concealing the survey topic and subject matter "in order to avoid selection bias" (Centiment, 2024). This platform-level blinding ensured participants could not self-select based on AI interest. Target sample size was n ≈ 500 respondents.
 
 **Risk Classification**: Exempt (minimal risk limited to potential discomfort reflecting on AI-related attitudes or privacy concerns).
 
@@ -265,8 +265,8 @@ Your participation will involve completing an online survey that takes approxima
 
 **Consent**: By clicking "Yes, I agree" below and completing the online survey, you confirm that you have read this consent form, are at least 18 years of age, and voluntarily agree to participate in this research study.
 
-☐ Yes, I agree to participate
-☐ No, I do not wish to participate
+[ ] Yes, I agree to participate
+[ ] No, I do not wish to participate
 
 ---
 
@@ -483,7 +483,7 @@ The complete research materials are publicly available under dual licensing:
 To access the repository:
 
 1. Visit the URL above in any web browser
-2. Click "Code" → "Download ZIP" for a complete download, or
+2. Click "Code" -> "Download ZIP" for a complete download, or
 3. Clone using Git: `git clone https://github.com/fabioc-aloha/AIRS_Data_Analysis.git`
 
 ### H.2 Repository Structure
@@ -492,14 +492,14 @@ The repository contains the following key directories:
 
 | Directory | Contents |
 |-----------|----------|
-| `thesis/` | Complete dissertation chapters, tables, figures, and bibliography |
-| `airs_experiment/` | Jupyter notebooks for the 10-phase analysis pipeline |
-| `data/` | Cleaned survey data and variable documentation |
-| `docs/` | Data dictionary and methodology documentation |
+| thesis/ | Complete dissertation chapters, tables, figures, and bibliography |
+| airs_experiment/ | Jupyter notebooks for the 10-phase analysis pipeline |
+| data/ | Cleaned survey data and variable documentation |
+| docs/ | Data dictionary and methodology documentation |
 
 ### H.3 Data Files
 
-**Primary Data File**: `data/AIRS_clean.csv`
+**Primary Data File**: data/AIRS_clean.csv
 
 This file contains the anonymized survey responses (N=523) with the following characteristics:
 
@@ -511,8 +511,10 @@ This file contains the anonymized survey responses (N=523) with the following ch
 
 | File | Description |
 |------|-------------|
-| `data/airs_28item_complete.json` | Full 28-item instrument with metadata |
-| `data/AIRS---AI-Readiness-Scale-labels.csv` | Variable labels and response options |
+| airs_28item_complete.json | Full 28-item instrument with metadata |
+| AIRS-AI-Readiness-Scale-labels.csv | Variable labels and response options |
+
+*Note: All data files are located in the data/ directory.*
 
 ### H.4 Analysis Notebooks
 
@@ -522,17 +524,19 @@ The analysis was conducted using Jupyter notebooks executed sequentially. Each n
 
 | Notebook | Purpose | Key Outputs |
 |----------|---------|-------------|
-| `00_Create_Split_Samples.ipynb` | Create development/holdout split | Sample files |
-| `01_EFA_Experiment.ipynb` | Exploratory Factor Analysis | Factor structure |
-| `02_CFA_Experiment.ipynb` | Confirmatory Factor Analysis | Model fit indices |
-| `03_Measurement_Invariance.ipynb` | Cross-group validation | Invariance tests |
-| `04_Structural_Model.ipynb` | Hypothesis testing (SEM) | Path coefficients |
-| `05_Mediation_Analysis.ipynb` | Indirect effects | Bootstrap results |
-| `06_Moderation_Analysis.ipynb` | Experience/population effects | Interaction terms |
-| `07_Tool_Usage_Patterns.ipynb` | Behavioral validation | Usage correlations |
-| `08_Qualitative_Feedback.ipynb` | Open-ended analysis | Theme frequencies |
-| `09_Comprehensive_Review.ipynb` | Cluster analysis | User typology |
-| `10_Final_Synthesis.ipynb` | Integration | Summary statistics |
+| 00_Create_Split_Samples | Create development/holdout split | Sample files |
+| 01_EFA_Experiment | Exploratory Factor Analysis | Factor structure |
+| 02_CFA_Experiment | Confirmatory Factor Analysis | Model fit indices |
+| 03_Measurement_Invariance | Cross-group validation | Invariance tests |
+| 04_Structural_Model | Hypothesis testing (SEM) | Path coefficients |
+| 05_Mediation_Analysis | Indirect effects | Bootstrap results |
+| 06_Moderation_Analysis | Experience/population effects | Interaction terms |
+| 07_Tool_Usage_Patterns | Behavioral validation | Usage correlations |
+| 08_Qualitative_Feedback | Open-ended analysis | Theme frequencies |
+| 09_Comprehensive_Review | Cluster analysis | User typology |
+| 10_Final_Synthesis | Integration | Summary statistics |
+
+*Note: All notebooks have `.ipynb` extension.*
 
 ### H.5 Quick Start Guide
 
@@ -568,7 +572,7 @@ cd airs_experiment
 jupyter notebook
 ```
 
-Open notebooks in numerical order (00 → 01 → 02 → ... → 10) to reproduce the complete analysis pipeline.
+Open notebooks in numerical order (00 -> 01 -> 02 -> ... -> 10) to reproduce the complete analysis pipeline.
 
 ### H.6 Key Dependencies
 
@@ -639,3 +643,143 @@ For questions about the data, methodology, or reproducing the analysis:
 - **Research Inquiries**: Contact the author through the repository
 
 All materials are provided as-is for research and educational purposes.
+
+\newpage
+
+## Appendix I: Research Questions and Hypotheses Summary
+
+This appendix provides a comprehensive summary of all research questions and hypotheses examined in this dissertation, along with their empirical outcomes and supporting evidence.
+
+### I.1 Research Questions Summary
+
+#### Primary Research Question
+
+**RQ: How can UTAUT2 be extended with AI-specific constructs to better predict behavioral intention to adopt AI tools in professional and academic contexts?**
+
+| Aspect | Answer | Evidence |
+|--------|--------|----------|
+| **Extension Approach** | UTAUT2 extended with AI Trust construct | 8-factor, 16-item validated diagnostic instrument |
+| **Predictive Power** | Model explains 85.2% variance in BI | R² = .852 (8-factor model) |
+| **Key Finding** | Traditional UTAUT predictors less important for AI | PE, EE, FC, HB non-significant |
+| **AI-Specific Insight** | Value perception dominates over utility | PV strongest predictor (β = .505) |
+
+#### Secondary Research Questions
+
+| RQ# | Question | Answer | Supporting Evidence |
+|-----|----------|--------|---------------------|
+| **RQ1** | What is the factor structure of an AI-specific adoption readiness instrument? | 8-factor structure with 16 items | CFI = .975, TLI = .960, RMSEA = .065; all α > .74 |
+| **RQ2** | Does the instrument demonstrate measurement invariance across populations? | Configural invariance achieved; metric invariance partial | ΔCFI = .003, ΔRMSEA = .004; mean Δλ = .082 |
+| **RQ3** | Which factors most strongly predict behavioral intention? | Price Value (β = .505), Hedonic Motivation (β = .217), Social Influence (β = .136) | All p < .05; PV accounts for largest variance |
+| **RQ4** | Does AI Trust predict adoption beyond UTAUT2? | Marginal effect, not statistically significant | β = .106, p = .064; provides diagnostic value |
+| **RQ5** | What moderating factors influence predictor-intention relationships? | Experience moderates HM->BI; Population moderates HM->BI | HM×Exp p = .009; Academic vs Professional Δβ = .750 |
+
+### I.2 Core UTAUT2 Hypotheses (H1a–H1g)
+
+| Hypothesis | Path | Prediction | β | p | 95% CI | Result |
+|------------|------|------------|---|---|--------|--------|
+| **H1a** | PE -> BI | Positive | -.028 | .791 | [-.234, .178] | **[X] Not Supported** |
+| **H1b** | EE -> BI | Positive | -.008 | .875 | [-.108, .092] | **[X] Not Supported** |
+| **H1c** | SI -> BI | Positive | **.136** | **.024** | [.018, .254] | **[OK] Supported** |
+| **H1d** | FC -> BI | Positive | .059 | .338 | [-.062, .180] | **[X] Not Supported** |
+| **H1e** | HM -> BI | Positive | **.217** | **.014** | [.044, .390] | **[OK] Supported** |
+| **H1f** | PV -> BI | Positive | **.505** | **<.001** | [.352, .658] | **[OK] Supported (Strongest)** |
+| **H1g** | HB -> BI | Positive | .023 | .631 | [-.071, .117] | **[X] Not Supported** |
+
+**Summary**: 3 of 7 UTAUT2 hypotheses supported. Price Value emerged as dominant predictor, departing from traditional UTAUT findings where Performance Expectancy typically dominates.
+
+### I.3 AI Extension Hypothesis (H2)
+
+| Hypothesis | Path | Prediction | β | p | 95% CI | Result |
+|------------|------|------------|---|---|--------|--------|
+| **H2** | TR -> BI | Positive | .106 | .064 | [-.006, .218] | **[X] Marginal (Not Significant)** |
+
+**Interpretation**: AI Trust approached but did not reach conventional significance (p = .064). However, the 8-factor model including AI Trust was retained as the recommended diagnostic instrument because:
+
+1. Trust provides essential diagnostic capability for organizational assessment
+2. Organizations can identify trust deficits and design targeted interventions
+3. The marginal effect suggests theoretical relevance warranting further investigation with larger samples
+
+### I.4 Moderation Hypotheses (H3–H4)
+
+#### H3: Experience Moderation
+
+| Interaction | Path Moderated | Interaction β | p | Result |
+|-------------|----------------|---------------|---|--------|
+| PE × Experience | PE -> BI | 0.112 | .055 | [!] Marginal |
+| **HM × Experience** | **HM -> BI** | **0.136** | **.009** | **[OK] Significant** |
+| EE × Experience | EE -> BI | 0.122 | .161 | [X] Not Significant |
+| TR × Experience | TR -> BI | 0.081 | .145 | [X] Not Significant |
+
+**H3 Result: [!] Partially Supported** – Experience significantly moderates the HM -> BI path (p = .009). Professionals with 4+ years of experience weight hedonic motivation more heavily in AI adoption decisions.
+
+#### H4: Population Moderation
+
+| Path | Academic β | Professional β | Δβ | p | Result |
+|------|------------|----------------|-----|---|--------|
+| PE -> BI | -0.184 | 0.084 | 0.268 | .312 | No moderation |
+| EE -> BI | 0.073 | -0.055 | -0.128 | .567 | No moderation |
+| SI -> BI | 0.007 | 0.239 | 0.232 | .284 | No moderation |
+| FC -> BI | -0.016 | 0.141 | 0.156 | .423 | No moderation |
+| **HM -> BI** | **0.449** | **-0.301** | **-0.750** | **.041** | **[OK] Significant** |
+| PV -> BI | 0.638 | 0.808 | 0.170 | .489 | No moderation |
+| HB -> BI | 0.075 | -0.064 | -0.140 | .512 | No moderation |
+| TR -> BI | -0.011 | 0.153 | 0.164 | .398 | No moderation |
+
+**H4 Result: [!] Partially Supported** – Population significantly moderates HM -> BI (p = .041). Hedonic Motivation is substantially stronger for Academics (β = 0.449) than Professionals (β = -0.301), indicating that enjoyment of AI tools is more important for student adoption than professional adoption.
+
+### I.5 Behavioral Validation Hypotheses (H5–H6)
+
+| Hypothesis | Test | Statistic | p | Effect Size | Result |
+|------------|------|-----------|---|-------------|--------|
+| **H5** | BI × Tool Usage | ρ = .69 | <.001 | Large | **[OK] Supported** |
+| **H6** | Role Usage Differences | F(2,520) = 22.15 | <.001 | η² = .078 | **[OK] Supported** |
+
+**H5 Detail**: Behavioral Intention strongly correlates with actual AI tool usage:
+
+| Tool | ρ with BI | p | Interpretation |
+|------|-----------|---|----------------|
+| Total Usage Index | .69 | <.001 | Strong positive |
+| ChatGPT | .57 | <.001 | Strong positive |
+| Microsoft Copilot | .54 | <.001 | Moderate positive |
+| Google Gemini | .52 | <.001 | Moderate positive |
+
+**H6 Detail**: Significant role differences in tool usage (Leaders > Professionals > Academics):
+
+| Measure | F | p | Post-hoc Pattern |
+|---------|---|---|------------------|
+| Tool Breadth | 18.42 | <.001 | L > P > A |
+| Usage Frequency | 22.15 | <.001 | L > P > A |
+| Usage Intensity | 15.87 | <.001 | L > P > A |
+
+### I.6 Comprehensive Hypothesis Outcome Summary
+
+| Category | Hypotheses | Supported | Partial | Not Supported |
+|----------|------------|-----------|---------|---------------|
+| **UTAUT2 Core (H1a-g)** | 7 | 3 (43%) | 0 | 4 (57%) |
+| **AI Extension (H2)** | 1 | 0 | 1 (marginal) | 0 |
+| **Moderation (H3-H4)** | 2 | 0 | 2 (100%) | 0 |
+| **Behavioral (H5-H6)** | 2 | 2 (100%) | 0 | 0 |
+| **TOTAL** | **12** | **5 (42%)** | **3 (25%)** | **4 (33%)** |
+
+### I.7 Constructs Not Testable
+
+Four initially proposed AI-specific constructs demonstrated inadequate reliability during psychometric validation and could not be formally tested:
+
+| Construct | Cronbach's α | Status | Recommendation |
+|-----------|--------------|--------|----------------|
+| Voluntariness (VO) | .406 | Excluded | Revise operationalization |
+| Explainability (EX) | .582 | Excluded | Develop AI-specific items |
+| Ethical Risk (ER) | .546 | Excluded | Context-specific measurement |
+| AI Anxiety (AX) | .301 | Excluded | Validated anxiety scale adaptation |
+
+These constructs remain theoretically important for AI adoption and warrant revised measurement approaches in future research.
+
+### I.8 Key Theoretical Implications
+
+1. **Price Value Dominance**: The finding that PV (β = .505) rather than PE drives AI adoption represents a significant theoretical departure from traditional UTAUT research, suggesting AI tools are evaluated through a value lens ("Is it worth it?") rather than a utility lens ("Will it help me?").
+
+2. **Non-Significance of Traditional Predictors**: PE, EE, FC, and HB were not significant, suggesting AI may represent a distinct technology category requiring tailored theoretical frameworks.
+
+3. **Experience-Dependent Mechanisms**: The experience moderation of HM suggests that adoption mechanisms differ by user characteristics in ways not previously documented in technology acceptance research.
+
+4. **Population-Specific Pathways**: Differential HM effects across populations indicate that adoption interventions may need to be tailored to specific user groups.

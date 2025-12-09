@@ -2,7 +2,7 @@
 
 ## 3.1 Introduction
 
-This chapter describes the research methodology employed to develop and validate the AI Readiness Scale (AIRS) and test the extended UTAUT model for AI tool adoption in higher education. The study follows established scale development procedures (DeVellis & Thorpe, 2021; Hinkin, 1998) combined with structural equation modeling to examine relationships between latent constructs. The research design prioritizes psychometric rigor through split-sample cross-validation, comprehensive validity assessment, and multi-group invariance testing.
+This chapter describes the research methodology employed to develop and validate the AI Readiness Scale (AIRS), a diagnostic instrument for assessing AI adoption readiness, and test the extended UTAUT model for AI tool adoption in higher education. The study follows established scale development procedures (DeVellis & Thorpe, 2021; Hinkin, 1998) combined with structural equation modeling to examine relationships between latent constructs. The research design prioritizes psychometric rigor through split-sample cross-validation, comprehensive validity assessment, and multi-group invariance testing. The resulting 8-factor structure enables both research applications and organizational diagnostic use, allowing practitioners to identify specific adoption barriers and design targeted interventions.
 
 The chapter is organized as follows: Section 3.2 describes the research philosophy and design; Section 3.3 details the theoretical framework and hypotheses; Section 3.4 covers instrument development; Section 3.5 addresses sampling and data collection; Section 3.6 presents the analytical strategy; Section 3.7 discusses reliability and validity; Section 3.8 covers ethical considerations; and Section 3.9 acknowledges methodological limitations.
 
@@ -88,7 +88,7 @@ Based on UTAUT theory and emerging AI adoption literature, the following hypothe
 
 - H2: AI Trust positively predicts Behavioral Intention beyond UTAUT2 core constructs
 
-*Note: AI Anxiety (AX) was initially proposed as an inhibitor construct but was excluded from hypothesis testing due to inadequate reliability (α = .30) identified during exploratory factor analysis. See Section 4.2 for construct development outcomes.*
+*Note: AI Anxiety (AX) was initially proposed as an inhibitor construct but was excluded from hypothesis testing due to inadequate reliability (α = .301) identified during exploratory factor analysis. See Section 4.2 for construct development outcomes.*
 
 **Moderation Hypotheses:**
 
@@ -114,7 +114,7 @@ The initial AIRS instrument comprised **28 items across 12 constructs**:
 
 Items were measured on 5-point Likert scales (1 = Strongly Disagree to 5 = Strongly Agree), with negatively-worded items (AX, ER) reverse-scored prior to analysis.
 
-*Note: The final validated instrument comprises **16 items across 8 constructs** (PE, EE, SI, FC, HM, PV, HB, TR) plus the BI outcome. Four constructs (Voluntariness, Explainability, Ethical Risk, AI Anxiety) were excluded during EFA due to inadequate reliability (α = .30–.58). See Chapter 4, Section 4.2 for detailed item disposition.*
+*Note: The final validated instrument comprises **16 items across 8 constructs** (PE, EE, SI, FC, HM, PV, HB, TR) plus the BI outcome. Four constructs (Voluntariness, Explainability, Ethical Risk, AI Anxiety) were excluded during EFA due to inadequate reliability (α = .301–.582). See Chapter 4, Section 4.2 for detailed item disposition.*
 
 ### 3.4.2 Item Sources
 
@@ -125,7 +125,7 @@ Items were adapted from established scales to ensure content validity:
 | PE, EE, SI, FC, HM | Venkatesh et al. (2012) UTAUT2 | Context adapted for AI tools |
 | PV, HB | Venkatesh et al. (2012) UTAUT2 | Context adapted for AI tools |
 | TR | McKnight et al. (2002); Siau & Wang (2018) | Adapted for AI systems |
-| AX | Venkatesh (2000); Meuter et al. (2003) | Technology anxiety → AI anxiety |
+| AX | Venkatesh (2000); Meuter et al. (2003) | Technology anxiety -> AI anxiety |
 | VO | Moore & Benbasat (1991) | Voluntariness of use |
 | EX | Shin (2021) | Explainability in AI |
 | ER | Gursoy et al. (2019) | Ethical risk perception |
@@ -199,13 +199,9 @@ The target population comprises adults in the United States who are either stude
 
 ### 3.5.2 Sampling Strategy
 
-**Convenience sampling** was employed via:
+**Panel sampling** was employed through Centiment, a professional survey research platform maintaining verified respondent panels recruited via social media (Facebook, LinkedIn) and other outlets to achieve broad demographic representation.
 
-- Institutional email distribution to staff and students
-- Academic and professional network sharing
-- Social media outreach (LinkedIn, Twitter/X)
-
-While convenience sampling limits generalizability, it is appropriate for initial scale validation studies where the primary goal is psychometric evaluation rather than population inference (DeVellis & Thorpe, 2021).
+While panel sampling has limitations similar to convenience sampling regarding generalizability, it is appropriate for initial scale validation studies where the primary goal is psychometric evaluation rather than population inference (DeVellis & Thorpe, 2021). Additionally, Centiment's topic-blinded recruitment protocol, where survey invitations display only completion time and compensation without revealing subject matter, mitigates self-selection bias common in technology-focused research.
 
 ### 3.5.3 Sample Size Determination
 
@@ -232,14 +228,16 @@ Respondents were classified into three role groups based on self-reported primar
 
 ### 3.5.5 Data Collection Procedures
 
-**Platform**: Qualtrics online survey platform
+**Platform**: Centiment online survey platform
 
 **Collection Period**: November 2024 (3-week window)
 
+**Self-Selection Mitigation Strategy**: Self-selection bias was mitigated through Centiment's platform-level recruitment design. According to Centiment's documented methodology, survey notifications to panel members display only the estimated completion time and compensation amount; the survey topic and subject matter are deliberately concealed "in order to avoid selection bias" (Centiment, 2024). This platform-level blinding ensured that participants could not self-select based on AI interest when deciding whether to participate. Only after accessing the survey link did the informed consent form disclose the specific focus on AI tools, ensuring ethical transparency while maintaining recruitment neutrality. This two-stage approach (blinded recruitment followed by informed consent) attracts a broader cross-section of respondents rather than selectively recruiting those with pre-existing interest in AI topics.
+
 **Procedures**:
 
-1. Participants accessed survey via distributed link
-2. Informed consent obtained before data collection
+1. Participants received blinded survey invitation (topic not disclosed per Centiment protocol)
+2. Informed consent obtained disclosing AI focus before data collection
 3. Survey completion time: approximately 10-15 minutes
 4. All responses anonymous; no personally identifiable information collected
 
@@ -472,7 +470,7 @@ flowchart TD
 ```
 
 <!-- Figure 2: Structural Model: Eight Predictors of Behavioral Intention -->
-*Note: AI Anxiety was initially proposed but excluded due to inadequate reliability (α = .30).*
+*Note: AI Anxiety was initially proposed but excluded due to inadequate reliability (α = .301).*
 
 **Estimation**: Maximum Likelihood with robust standard errors
 
@@ -661,11 +659,11 @@ The survey addressed non-sensitive topics related to technology use attitudes. N
 
 ### 3.9.2 Sampling Limitations
 
-1. **Convenience sampling**: Non-probability sampling limits generalizability to broader populations. Results may not generalize beyond similar United States professional and student contexts.
+1. **Panel sampling**: While Centiment's verified respondent panels provide quality controls and topic-blinded recruitment, panel sampling remains non-probability sampling that limits generalizability to broader populations. Results may not generalize beyond similar United States professional and student contexts.
 
-2. **Single institution**: While diverse roles represented, institutional culture may influence responses.
+2. **Single country**: While diverse roles represented, findings are limited to U.S. respondents and may not transfer to other cultural contexts.
 
-3. **Self-selection bias**: Participants interested in AI may be overrepresented.
+3. **Self-selection bias**: Self-selection was substantially mitigated through Centiment's platform-level recruitment design, which conceals survey topics from participants until after they access the survey link (see Section 3.5.5). However, some residual self-selection may occur as participants could withdraw after the informed consent disclosure revealed the AI focus, though withdrawal rates were minimal.
 
 ### 3.9.3 Measurement Limitations
 

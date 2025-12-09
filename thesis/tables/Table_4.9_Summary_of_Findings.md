@@ -4,16 +4,16 @@
 
 | ID | Hypothesis | Path/Relationship | Result | Key Statistic |
 |----|------------|-------------------|--------|---------------|
-| H1a | Performance Expectancy predicts BI (+) | PE → BI | ❌ Not Supported | β = -.028, p = .791 |
-| H1b | Effort Expectancy predicts BI (+) | EE → BI | ❌ Not Supported | β = -.008, p = .875 |
-| H1c | Social Influence predicts BI (+) | SI → BI | ✅ **Supported** | β = .136, p = .024 |
-| H1d | Facilitating Conditions predicts BI (+) | FC → BI | ❌ Not Supported | β = .059, p = .338 |
-| H1e | Hedonic Motivation predicts BI (+) | HM → BI | ✅ **Supported** | β = .217, p = .014 |
-| H1f | Price Value predicts BI (+) | PV → BI | ✅ **Supported** | β = .505, p < .001 |
-| H1g | Habit predicts BI (+) | HB → BI | ❌ Not Supported | β = .023, p = .631 |
-| H2 | AI Trust predicts BI (+) | TR → BI | ❌ Marginal | β = .106, p = .064 |
-| H3 | AIRS > UTAUT2 (model comparison) | AIC comparison | ❌ Not Supported | ΔAIC = +2.01 |
-| H4 | Population moderates paths | Multi-group comparison | ⚠️ **Partial** | HM moderated (p = .041) |
+| H1a | Performance Expectancy predicts BI (+) | PE -> BI | [X] Not Supported | β = -.028, p = .791 |
+| H1b | Effort Expectancy predicts BI (+) | EE -> BI | [X] Not Supported | β = -.008, p = .875 |
+| H1c | Social Influence predicts BI (+) | SI -> BI | [OK] **Supported** | β = .136, p = .024 |
+| H1d | Facilitating Conditions predicts BI (+) | FC -> BI | [X] Not Supported | β = .059, p = .338 |
+| H1e | Hedonic Motivation predicts BI (+) | HM -> BI | [OK] **Supported** | β = .217, p = .014 |
+| H1f | Price Value predicts BI (+) | PV -> BI | [OK] **Supported** | β = .505, p < .001 |
+| H1g | Habit predicts BI (+) | HB -> BI | [X] Not Supported | β = .023, p = .631 |
+| H2 | AI Trust predicts BI (+) | TR -> BI | [X] Marginal | β = .106, p = .064 |
+| H3 | AIRS > UTAUT2 (model comparison) | AIC comparison | [X] Not Supported | ΔAIC = +2.01 |
+| H4 | Population moderates paths | Multi-group comparison | [!] **Partial** | HM moderated (p = .041) |
 
 ## Summary Statistics
 

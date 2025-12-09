@@ -26,7 +26,7 @@ thesis/
 ├── PRESENTATION_SLIDES.md          # Committee presentation draft (standalone)
 ├── build-thesis.ps1                # Main thesis PDF builder
 ├── convert-to-pdf.ps1              # Standalone document converter
-└── DRAFT 06.pdf                    # Current compiled thesis
+└── DRAFT 07.pdf                    # Current compiled thesis
 ```
 
 ## Study Overview
@@ -37,10 +37,10 @@ thesis/
 | **Author** | Fabio Correa, Doctoral Candidate |
 | **Institution** | Touro University Worldwide |
 | **Sample** | N = 523 (Student: 216, Professional: 184, Leader: 123) |
-| **Methodology** | Split-sample EFA (n=261) → CFA (n=262) → SEM + Mixed methods |
-| **Validated Model** | 8 factors, 16 items |
+| **Methodology** | Split-sample EFA (n=261) -> CFA (n=262) -> SEM + Mixed methods |
+| **Validated Model** | 8-factor, 16-item diagnostic instrument |
 | **Model Fit** | CFI=.975, TLI=.960, RMSEA=.065, SRMR=.048 |
-| **Variance Explained** | R² = .861 (86.1%) |
+| **Variance Explained** | R² = .852 (85.2%) |
 
 ## Key Findings Summary
 
@@ -75,16 +75,16 @@ thesis/
 
 | Component | Status |
 |-----------|--------|
-| Chapter 1: Introduction | ✅ Complete |
-| Chapter 2: Literature Review | ✅ Complete |
-| Chapter 3: Methodology | ✅ Complete |
-| Chapter 4: Results | ✅ Complete |
-| Chapter 5: Analysis & Discussion | ✅ Complete |
-| Chapter 6: Conclusions | ✅ Complete |
-| Appendices A-H | ✅ Complete (incl. Data Availability) |
-| Bibliography | ✅ 92 references verified |
-| Tables & Figures | ✅ Auto-numbered |
-| IRB Documentation | ✅ Embedded |
+| Chapter 1: Introduction | [OK] Complete |
+| Chapter 2: Literature Review | [OK] Complete |
+| Chapter 3: Methodology | [OK] Complete |
+| Chapter 4: Results | [OK] Complete |
+| Chapter 5: Analysis & Discussion | [OK] Complete |
+| Chapter 6: Conclusions | [OK] Complete |
+| Appendices A-I | [OK] Complete (incl. Data Availability, RQ/Hypotheses Summary) |
+| Bibliography | [OK] 92 references verified |
+| Tables & Figures | [OK] Auto-numbered |
+| IRB Documentation | [OK] Embedded |
 
 ## Build Scripts
 
@@ -112,18 +112,18 @@ All notebooks in `airs_experiment/` are complete:
 
 | Notebook | Phase | Status |
 |----------|-------|--------|
-| NB00 | Sample Splitting (N=523 → 261/262) | ✅ |
-| NB01 | Exploratory Factor Analysis | ✅ |
-| NB02 | Confirmatory Factor Analysis | ✅ |
-| NB03 | Measurement Invariance | ✅ |
-| NB04 | Structural Model | ✅ |
-| NB05 | Mediation Analysis | ✅ |
-| NB06 | Moderation Analysis | ✅ |
-| NB07 | Tool Usage Patterns | ✅ |
-| NB08 | Qualitative Feedback | ✅ |
-| NB09 | Comprehensive Review | ✅ |
-| NB10 | Final Synthesis | ✅ |
+| NB00 | Sample Splitting (N=523 -> 261/262) | [OK] |
+| NB01 | Exploratory Factor Analysis | [OK] |
+| NB02 | Confirmatory Factor Analysis | [OK] |
+| NB03 | Measurement Invariance | [OK] |
+| NB04 | Structural Model | [OK] |
+| NB05 | Mediation Analysis | [OK] |
+| NB06 | Moderation Analysis | [OK] |
+| NB07 | Tool Usage Patterns | [OK] |
+| NB08 | Qualitative Feedback | [OK] |
+| NB09 | Comprehensive Review | [OK] |
+| NB10 | Final Synthesis | [OK] |
 
 ---
 
-Last updated: December 8, 2025
+Last updated: December 9, 2025

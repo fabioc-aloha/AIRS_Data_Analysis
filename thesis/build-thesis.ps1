@@ -15,15 +15,15 @@
 
 .EXAMPLE
     .\build-thesis.ps1
-    Builds "DRAFT 05.pdf" in the thesis directory (retains temp file).
+    Builds "DRAFT 07.pdf" in the thesis directory (retains temp file).
 
 .EXAMPLE
     .\build-thesis.ps1 -OpenAfterBuild
-    Builds "DRAFT 05.pdf" and opens it.
+    Builds "DRAFT 07.pdf" and opens it.
 
 .EXAMPLE
     .\build-thesis.ps1 -Cleanup
-    Builds "DRAFT 05.pdf" and removes the temporary markdown file.
+    Builds "DRAFT 07.pdf" and removes the temporary markdown file.
 #>
 
 param(
@@ -32,7 +32,7 @@ param(
 )
 
 # Hardcoded draft version to avoid mistakes
-$OutputName = "DRAFT 06"
+$OutputName = "DRAFT 07"
 
 # Configuration
 $ThesisDir = $PSScriptRoot
@@ -264,9 +264,14 @@ header-includes:
   - \usepackage{float}
   - \floatplacement{table}{H}
   - \floatplacement{figure}{H}
+  - \usepackage{caption}
+  - \captionsetup[figure]{labelformat=empty}
+  - \captionsetup[table]{labelformat=empty}
   - \usepackage{etoolbox}
-  - \AtBeginEnvironment{longtable}{\singlespacing}
-  - \AtBeginEnvironment{tabular}{\singlespacing}
+  - \AtBeginEnvironment{longtable}{\singlespacing\fontsize{10}{12}\selectfont}
+  - \AtBeginEnvironment{tabular}{\singlespacing\fontsize{10}{12}\selectfont}
+  - \setlength{\LTleft}{0pt}
+  - \setlength{\LTright}{0pt}
   - \AtBeginDocument{\thispagestyle{empty}}
   - \usepackage{fontspec}
   - \setmainfont{Times New Roman}
@@ -274,6 +279,7 @@ header-includes:
   - \usepackage{booktabs}
   - \usepackage{tabularx}
   - \usepackage{array}
+  - \usepackage{adjustbox}
   - \renewcommand{\arraystretch}{1.2}
   - \usepackage{titlesec}
   - \titleformat{\section}{\normalfont\bfseries\centering}{}{0em}{}

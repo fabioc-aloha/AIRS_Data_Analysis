@@ -8,9 +8,9 @@ This chapter interprets the empirical findings presented in Chapter 4, connectin
 
 ## 5.2 Interpretation of Findings
 
-### 5.2.1 AIRS Instrument Validation
+### 5.2.1 AIRS Diagnostic Instrument Validation
 
-The study successfully validated an 8-factor, 16-item AI Readiness Scale extending UTAUT2 with AI Trust. The instrument demonstrated excellent psychometric properties across both development (n = 261) and holdout (n = 262) samples, with fit indices exceeding conventional thresholds (CFI = .975, TLI = .960, RMSEA = .065, SRMR = .048).
+The study successfully validated an 8-factor, 16-item AI Readiness Scale extending UTAUT2 with AI Trust. The instrument demonstrated excellent psychometric properties across both development (n = 261) and holdout (n = 262) samples, with fit indices exceeding conventional thresholds (CFI = .975, TLI = .960, RMSEA = .065, SRMR = .048). The 8-factor structure was selected over a more parsimonious 7-factor model because AI Trust enables diagnostic assessment: organizations can identify trust deficits and design targeted confidence-building interventions.
 
 The cross-validation design (rarely employed in scale development research) provides strong evidence for the generalizability of the factor structure. The successful demonstration of configural invariance across student and professional populations further supports the instrument's utility for diverse workplace contexts, though metric invariance was not fully achieved (mean Δλ = .082, max Δλ = .326).
 
@@ -64,7 +64,7 @@ Similarly, the non-significance of Effort Expectancy (β = -.008, p = .875) and 
 
 ### 5.3.4 Experience as Moderator
 
-**Finding**: Professional experience strengthens HM → BI (β = .136, p = .009).
+**Finding**: Professional experience strengthens HM -> BI (β = .136, p = .009).
 
 **Comparison with Prior Research**: While UTAUT specifies experience as a moderator, it conceptualizes experience as technology familiarity rather than career development. The present finding integrates career development theory (Super, 1980) with technology acceptance, suggesting that vocational maturity influences technology evaluation processes.
 
@@ -107,7 +107,7 @@ This segmentation approach moves beyond mean-level analysis to acknowledge indiv
 
 The findings offer insights for organizations navigating AI adoption challenges. As documented in §2.3, the gap between adoption and value realization represents a critical business challenge. While this study validates a measurement instrument rather than testing interventions, the empirical findings suggest several evidence-informed directions.
 
-**Important Scope Note**: The AIRS instrument validated in this study provides a psychometrically sound measure of AI adoption readiness constructs. The practical applications suggested below are hypotheses derived from the empirical findings. Future experimental research is needed to validate intervention effectiveness. The author's research roadmap includes developing formal AIRS Score algorithms, diagnostic protocols, and intervention frameworks as subsequent research phases.
+**Important Scope Note**: The AIRS diagnostic instrument validated in this study provides a psychometrically sound measure of AI adoption readiness constructs. The 8-factor structure enables identification of specific adoption barriers (e.g., trust deficits, inadequate perceived value, low social influence) that can inform intervention design. The practical applications suggested below are hypotheses derived from the empirical findings. Future experimental research is needed to validate intervention effectiveness. The author's research roadmap includes developing formal AIRS Score algorithms, diagnostic protocols, and intervention frameworks as subsequent research phases.
 
 ### 5.5.1 For Organizations
 
@@ -127,7 +127,7 @@ The identification of an "Anxious Avoider" segment (17%) suggests that training 
 
 ### 5.5.4 For Policy Makers
 
-The validated AIRS instrument provides a foundation for future organizational AI readiness assessment research. The differential anxiety findings (disability association d = .36) highlight equity considerations in AI adoption policy that warrant further investigation.
+The validated AIRS diagnostic instrument provides a foundation for future organizational AI readiness assessment research. The 8-factor structure enables identification of population-level adoption barriers that can inform workforce development policy. The differential anxiety findings (disability association d = .36) highlight equity considerations in AI adoption policy that warrant further investigation.
 
 ### 5.5.5 Understanding the Adoption-Value Gap
 
@@ -176,11 +176,11 @@ Several limitations should be considered when interpreting these findings:
 
 ### 5.7.1 Methodological Limitations
 
-1. **Cross-sectional design**: The single time-point data collection precludes causal inference. While SEM estimates suggest directional relationships, alternative causal orderings (e.g., behavior → intention) cannot be ruled out.
+1. **Cross-sectional design**: The single time-point data collection precludes causal inference. While SEM estimates suggest directional relationships, alternative causal orderings (e.g., behavior -> intention) cannot be ruled out.
 
 2. **Self-reported intention**: Behavioral Intention may not perfectly predict actual behavior. However, the strong BI-Usage correlation (ρ = .69) provides behavioral validation.
 
-3. **Convenience sampling**: The United States sample limits generalizability to other countries, cultures, and organizational contexts.
+3. **Panel sampling**: While Centiment's topic-blinded recruitment mitigates self-selection bias, the United States panel sample limits generalizability to other countries, cultures, and organizational contexts.
 
 ### 5.7.2 Measurement Limitations
 

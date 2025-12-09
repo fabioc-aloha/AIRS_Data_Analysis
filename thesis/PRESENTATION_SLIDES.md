@@ -114,7 +114,7 @@ This study employed a split-sample cross-validation design rarely used in scale 
 
 | Phase | Analysis | Sample |
 |-------|----------|--------|
-| 1 | Sample Split | N=523 → 261/262 |
+| 1 | Sample Split | N=523 -> 261/262 |
 | 2 | Exploratory Factor Analysis (EFA) | Development (n=261) |
 | 3 | Confirmatory Factor Analysis (CFA) | Holdout (n=262) |
 | 4 | Measurement Invariance | Student vs Professional |
@@ -162,11 +162,11 @@ The 8-factor, 16-item AIRS instrument demonstrated exceptional model fit on the 
 
 | Index | Value | Threshold | Result |
 |-------|-------|-----------|--------|
-| CFI | .975 | ≥ .95 | ✅ Excellent |
-| TLI | .960 | ≥ .95 | ✅ Excellent |
-| RMSEA | .065 | ≤ .08 | ✅ Good |
-| SRMR | .046 | ≤ .08 | ✅ Excellent |
-| χ²/df | 2.10 | < 3.0 | ✅ Excellent |
+| CFI | .975 | ≥ .95 | [OK] Excellent |
+| TLI | .960 | ≥ .95 | [OK] Excellent |
+| RMSEA | .065 | ≤ .08 | [OK] Good |
+| SRMR | .046 | ≤ .08 | [OK] Excellent |
+| χ²/df | 2.10 | < 3.0 | [OK] Excellent |
 
 **Reliability Chart Data:**
 
@@ -212,16 +212,16 @@ This is the most striking finding of the dissertation. In traditional UTAUT rese
 
 | Hypothesis | Path | β | p | Result |
 |------------|------|-----|------|--------|
-| H1f | PV → BI | **.505** | <.001 | ✅ **STRONGEST** |
-| H1e | HM → BI | **.217** | .014 | ✅ Supported |
-| H1c | SI → BI | **.136** | .024 | ✅ Supported |
-| H2 | TR → BI | .106 | .064 | ⚠️ Marginal |
-| H1d | FC → BI | .059 | .338 | ❌ Not Supported |
-| H1g | HB → BI | .023 | .631 | ❌ Not Supported |
-| H1b | EE → BI | -.008 | .875 | ❌ Not Supported |
-| H1a | PE → BI | -.028 | .791 | ❌ Not Supported |
+| H1f | PV -> BI | **.505** | <.001 | [OK] **STRONGEST** |
+| H1e | HM -> BI | **.217** | .014 | [OK] Supported |
+| H1c | SI -> BI | **.136** | .024 | [OK] Supported |
+| H2 | TR -> BI | .106 | .064 | [!] Marginal |
+| H1d | FC -> BI | .059 | .338 | [X] Not Supported |
+| H1g | HB -> BI | .023 | .631 | [X] Not Supported |
+| H1b | EE -> BI | -.008 | .875 | [X] Not Supported |
+| H1a | PE -> BI | -.028 | .791 | [X] Not Supported |
 
-**Model R² = .861** (86.1% of variance explained)
+**Model R² = .852** (85.2% of variance explained, 8-factor diagnostic model)
 
 ---
 
@@ -235,11 +235,11 @@ This finding challenges fundamental assumptions about technology adoption. In Bl
 
 | Construct | Meta-Analytic rc (Traditional) | AIRS β (AI) | Change |
 |-----------|------------------------------|-------------|--------|
-| Performance Expectancy | .64 | -.028 | ⬇️ Collapsed |
-| Effort Expectancy | .51 | -.008 | ⬇️ Collapsed |
-| Price Value | .52 | **.505** | ⬆️ Dominant |
+| Performance Expectancy | .64 | -.028 | [DOWN] Collapsed |
+| Effort Expectancy | .51 | -.008 | [DOWN] Collapsed |
+| Price Value | .52 | **.505** | [UP] Dominant |
 | Hedonic Motivation | .53 | .217 | Similar |
-| Social Influence | .43 | .136 | ⬇️ Reduced |
+| Social Influence | .43 | .136 | [DOWN] Reduced |
 
 **Interpretation**: For AI, utility is assumed or uncertain; users evaluate through a value lens ("Is it worth it?") rather than a utility lens ("Will it help me?").
 
@@ -280,10 +280,10 @@ The moderation analysis revealed a significant interaction between professional 
 
 | Interaction | β | p | Result |
 |-------------|------|------|--------|
-| HM × Experience | **.136** | **.009** | ✅ Significant |
-| PE × Experience | .112 | .055 | ⚠️ Marginal |
-| EE × Experience | .122 | .161 | ❌ Not significant |
-| TR × Experience | .081 | .145 | ❌ Not significant |
+| HM × Experience | **.136** | **.009** | [OK] Significant |
+| PE × Experience | .112 | .055 | [!] Marginal |
+| EE × Experience | .122 | .161 | [X] Not significant |
+| TR × Experience | .081 | .145 | [X] Not significant |
 
 **Interpretation**: Early-career professionals may prioritize proving productivity; experienced professionals can afford to value enjoyment. This connects technology acceptance to career development theory in novel ways.
 
@@ -299,10 +299,10 @@ Multi-group analysis revealed significant population moderation for the Hedonic 
 
 | Path | Student β | Professional β | Δβ | p |
 |------|-----------|----------------|-----|------|
-| HM → BI | **+0.449** | -0.301 | -0.750 | **.041** |
-| PV → BI | +0.638 | +0.808 | +0.170 | ns |
-| SI → BI | +0.007 | +0.239 | +0.232 | ns |
-| TR → BI | -0.011 | +0.153 | +0.164 | ns |
+| HM -> BI | **+0.449** | -0.301 | -0.750 | **.041** |
+| PV -> BI | +0.638 | +0.808 | +0.170 | ns |
+| SI -> BI | +0.007 | +0.239 | +0.232 | ns |
+| TR -> BI | -0.011 | +0.153 | +0.164 | ns |
 
 **Key Insight**:
 - **Students**: "Make it fun and I'll use it"
@@ -423,7 +423,7 @@ As with all empirical research, these findings should be interpreted within the 
 | Limitation | Impact | Mitigation |
 |------------|--------|------------|
 | Cross-sectional design | Cannot establish causation | Longitudinal replication needed |
-| Convenience sample | Limits generalizability | Cross-cultural validation needed |
+| Panel sampling | Limits generalizability | Topic-blinded recruitment via Centiment mitigates self-selection |
 | Self-report measures | Common method variance | Behavioral validation included |
 | U.S. only | Cultural specificity | International replication needed |
 
@@ -447,7 +447,7 @@ This dissertation establishes the validated AIRS instrument as a foundation for 
 
 | Phase | Focus | Status |
 |-------|-------|--------|
-| Phase 0 | AIRS Scale Validation | ✅ THIS DISSERTATION |
+| Phase 0 | AIRS Scale Validation | [OK] THIS DISSERTATION |
 | Phase 1 | AIRS Score Algorithm Development | Future Research |
 | Phase 2 | Diagnostic Protocol Development | Future Research |
 | Phase 3 | Intervention Framework Testing | Future Research |
@@ -456,7 +456,7 @@ This dissertation establishes the validated AIRS instrument as a foundation for 
 **Immediate Research Priorities:**
 
 1. Replication with larger samples (n > 600) for small effect detection
-2. Longitudinal design tracking intention → behavior over 6-12 months
+2. Longitudinal design tracking intention -> behavior over 6-12 months
 3. Redesign measures for excluded constructs (EX, ER, AX, VO)
 4. Cross-cultural validation in collectivist cultures
 5. Industry-specific adaptation studies
@@ -529,7 +529,7 @@ Doctoral Candidate, Doctor of Business Administration
 Touro University Worldwide
 
 **Contact Information:**
-- Email: [your email]
+- Email: fabio@correax.com
 - LinkedIn: [your profile]
 - GitHub: github.com/fabioc-aloha/AIRS_Data_Analysis
 
@@ -572,16 +572,16 @@ This research was conducted with full IRB approval, ensuring ethical treatment o
 
 | # | Hypothesis | β | p | Result |
 |---|------------|---|---|--------|
-| H1a | PE → BI | -.028 | .791 | ❌ Not Supported |
-| H1b | EE → BI | -.008 | .875 | ❌ Not Supported |
-| H1c | SI → BI | .136 | .024 | ✅ Supported |
-| H1d | FC → BI | .059 | .338 | ❌ Not Supported |
-| H1e | HM → BI | .217 | .014 | ✅ Supported |
-| H1f | PV → BI | .505 | <.001 | ✅ Supported (Strongest) |
-| H1g | HB → BI | .023 | .631 | ❌ Not Supported |
-| H2 | TR → BI | .106 | .064 | ⚠️ Marginal |
-| H3 | AIRS > UTAUT2 | ΔAIC +2.01 | — | ❌ Not Supported |
-| H4 | BI ↔ Usage | ρ = .69 | <.001 | ✅ Supported |
+| H1a | PE -> BI | -.028 | .791 | [X] Not Supported |
+| H1b | EE -> BI | -.008 | .875 | [X] Not Supported |
+| H1c | SI -> BI | .136 | .024 | [OK] Supported |
+| H1d | FC -> BI | .059 | .338 | [X] Not Supported |
+| H1e | HM -> BI | .217 | .014 | [OK] Supported |
+| H1f | PV -> BI | .505 | <.001 | [OK] Supported (Strongest) |
+| H1g | HB -> BI | .023 | .631 | [X] Not Supported |
+| H2 | TR -> BI | .106 | .064 | [!] Marginal |
+| H3 | AIRS > UTAUT2 | ΔAIC +2.01 | — | [X] Not Supported |
+| H4 | BI ↔ Usage | ρ = .69 | <.001 | [OK] Supported |
 
 **Summary: 3/7 UTAUT paths supported, Trust marginal, Behavioral validation confirmed**
 
