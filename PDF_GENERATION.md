@@ -1,6 +1,6 @@
-# PDF Generation Tools
+# PDF Conversion Scripts
 
-This project includes two PowerShell scripts for generating PDF documents from Markdown source files.
+PowerShell scripts for generating PDF documents from Markdown source files.
 
 ## Scripts Overview
 
@@ -24,7 +24,16 @@ Builds the complete dissertation PDF by combining all chapters, processing Merma
 ```powershell
 cd thesis
 .\build-thesis.ps1
+.\build-thesis.ps1 -OpenAfterBuild    # Opens PDF after generation
+.\build-thesis.ps1 -Cleanup           # Removes temp files after build
 ```
+
+### Parameters
+
+| Parameter | Type | Default | Description |
+|-----------|------|---------|-------------|
+| `-OpenAfterBuild` | switch | false | Opens the PDF after successful generation |
+| `-Cleanup` | switch | false | Removes temporary combined markdown file after processing |
 
 ### Features
 
@@ -32,11 +41,13 @@ cd thesis
 - Processes Mermaid diagrams to high-resolution PNG
 - Applies APA 7th edition citation style
 - Generates table of contents, list of tables, and list of figures
-- Outputs to `DRAFT XX.pdf`
+- Chapter-based table and figure numbering (Table 3.1, Figure 4.1, etc.)
+- 10pt font size for tables
+- Outputs to `DRAFT 07.pdf`
 
 ### Output
 
-```
+```text
 thesis/
 └── DRAFT 07.pdf    # Complete dissertation (~100 pages)
 ```
@@ -45,7 +56,7 @@ thesis/
 
 Converts standalone Markdown documents to PDF with APA 7 formatting.
 
-### Usage
+### Basic Usage
 
 ```powershell
 cd thesis
@@ -60,7 +71,7 @@ cd thesis
 .\convert-to-pdf.ps1 -File "MyDocument.md" -LineSpacing 2.0
 ```
 
-### Parameters
+### Converter Parameters
 
 | Parameter | Type | Default | Description |
 |-----------|------|---------|-------------|
@@ -89,7 +100,7 @@ By default, converts these files:
 To add a new standalone document to the conversion pipeline:
 
 1. Create the Markdown file in `thesis/`
-2. Edit `convert-to-pdf.ps1` and add to the `$StandaloneFiles` array:
+1. Edit `convert-to-pdf.ps1` and add to the `$StandaloneFiles` array:
 
 ```powershell
 $StandaloneFiles = @(
@@ -100,7 +111,7 @@ $StandaloneFiles = @(
 )
 ```
 
-3. Run `.\convert-to-pdf.ps1`
+1. Run `.\convert-to-pdf.ps1`
 
 ## Troubleshooting
 
@@ -111,6 +122,7 @@ Install Pandoc from [pandoc.org](https://pandoc.org/installing.html) and ensure 
 ### "XeLaTeX not found"
 
 Install MiKTeX (Windows) or TeX Live (Linux/Mac):
+
 - Windows: [miktex.org](https://miktex.org/download)
 - Mac: `brew install --cask mactex`
 - Linux: `sudo apt install texlive-xetex`
@@ -118,6 +130,7 @@ Install MiKTeX (Windows) or TeX Live (Linux/Mac):
 ### "Times New Roman not found"
 
 Ensure the font is installed on your system. On Linux, install:
+
 ```bash
 sudo apt install ttf-mscorefonts-installer
 ```
@@ -125,13 +138,14 @@ sudo apt install ttf-mscorefonts-installer
 ### MiKTeX Update Warnings
 
 The warnings about MiKTeX updates are informational and don't affect PDF generation. To suppress:
+
 ```powershell
 miktex-console --admin --update
 ```
 
 ## File Structure
 
-```
+```text
 thesis/
 ├── build-thesis.ps1        # Main thesis builder
 ├── convert-to-pdf.ps1      # Standalone document converter
@@ -154,6 +168,9 @@ thesis/
 # Build complete thesis
 cd thesis
 .\build-thesis.ps1
+
+# Build and open
+.\build-thesis.ps1 -OpenAfterBuild
 
 # Convert all standalone documents
 .\convert-to-pdf.ps1

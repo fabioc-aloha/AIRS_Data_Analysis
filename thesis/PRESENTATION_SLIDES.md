@@ -1,6 +1,6 @@
 # Artificial Intelligence Readiness Scale (AIRS): Dissertation Defense
 
-**Artificial Intelligence Readiness Scale: Extending UTAUT2 for Enterprise AI Adoption**
+## Artificial Intelligence Readiness Scale: Extending UTAUT2 for Enterprise AI Adoption
 
 Fabio Correa
 Doctoral Candidate, Doctor of Business Administration
@@ -11,14 +11,16 @@ December 2025
 
 ## Slide 1: Title Slide
 
-**Artificial Intelligence Readiness Scale**
-*Extending UTAUT2 for Enterprise AI Adoption*
+### Artificial Intelligence Readiness Scale
+
+Extending UTAUT2 for Enterprise AI Adoption
 
 Fabio Correa
 Doctoral Candidate, Doctor of Business Administration
 Touro University Worldwide
 
 Dissertation Committee:
+
 - Dr. Karina Kasztelnik (Chair)
 - Dr. Jerome Jones
 - Dr. Donna Day
@@ -29,11 +31,11 @@ December 2025
 
 ## Slide 2: The AI Adoption Paradox
 
-**Organizations are adopting AI at unprecedented rates—but struggling to capture value.**
+Organizations are adopting AI at unprecedented rates, but struggling to capture value.
 
 The gap between AI adoption and value realization represents one of the most pressing challenges facing organizations today. Despite massive investment and enthusiasm, most AI initiatives fail to deliver measurable returns.
 
-**Chart Data: AI Adoption vs. Value Capture**
+### Chart Data: AI Adoption vs. Value Capture
 
 | Metric | Value | Source |
 |--------|-------|--------|
@@ -227,11 +229,11 @@ This is the most striking finding of the dissertation. In traditional UTAUT rese
 
 ## Slide 11: Traditional Predictors Don't Work for AI
 
-**Performance Expectancy and Effort Expectancy—typically the strongest predictors—are non-significant for AI.**
+**Performance Expectancy and Effort Expectancy, typically the strongest predictors, are non-significant for AI.**
 
 This finding challenges fundamental assumptions about technology adoption. In Blut et al.'s (2022) meta-analysis of 737,112 users, PE had the strongest effect (rc = .64). In our AI context, PE was essentially zero (β = -.028, p = .791).
 
-**Comparison Chart Data: Traditional UTAUT vs. AI Adoption**
+### Comparison Chart Data: Traditional UTAUT vs. AI Adoption
 
 | Construct | Meta-Analytic rc (Traditional) | AIRS β (AI) | Change |
 |-----------|------------------------------|-------------|--------|
@@ -266,7 +268,8 @@ The structural model reveals that AI adoption is driven primarily by cost-benefi
    - AI champions and visible leadership matter
 
 **Near-Significant:**
-- AI Trust (β = .106, p = .064): Approaching significance—larger samples may confirm
+
+- AI Trust (β = .106, p = .064): Approaching significance, larger samples may confirm
 
 ---
 
@@ -305,6 +308,7 @@ Multi-group analysis revealed significant population moderation for the Hedonic 
 | TR -> BI | -0.011 | +0.153 | +0.164 | ns |
 
 **Key Insight**:
+
 - **Students**: "Make it fun and I'll use it"
 - **Professionals**: "Show me the value and I'll use it"
 
@@ -369,19 +373,23 @@ To validate the AIRS instrument against real behavior, we correlated Behavioral 
 
 This dissertation advances scholarly understanding of technology acceptance in the AI era, providing both theoretical extension and empirical evidence for context-specific modifications.
 
-**Contribution 1: UTAUT2 Extension for AI**
+### Contribution 1: UTAUT2 Extension for AI
+
 - Demonstrated that traditional frameworks require modification for AI contexts
 - AI Trust approaches significance, warranting further investigation
 
-**Contribution 2: Price Value Dominance**
+### Contribution 2: Price Value Dominance
+
 - First empirical evidence that PV > PE for AI adoption
 - Challenges 25+ years of UTAUT findings where PE consistently dominates
 
-**Contribution 3: Career Development Integration**
+### Contribution 3: Career Development Integration
+
 - Experience moderates HM effect (p = .009)
 - Connects technology acceptance to vocational psychology
 
-**Contribution 4: User Typology Framework**
+### Contribution 4: User Typology Framework
+
 - Four-segment model for adoption heterogeneity
 - Foundation for future intervention research
 
@@ -529,11 +537,13 @@ Doctoral Candidate, Doctor of Business Administration
 Touro University Worldwide
 
 **Contact Information:**
-- Email: fabio@correax.com
+
+- Email: <fabio@correax.com>
 - LinkedIn: [your profile]
 - GitHub: github.com/fabioc-aloha/AIRS_Data_Analysis
 
 **Resources:**
+
 - Full dissertation available upon request
 - AIRS instrument available for research use (CC BY 4.0)
 - Analysis notebooks: Open source (MIT License)
@@ -544,7 +554,7 @@ Touro University Worldwide
 
 ### Appendix A: Data Retention & Ethics
 
-**IRB Approval and Data Protection**
+#### IRB Approval and Data Protection
 
 This research was conducted with full IRB approval, ensuring ethical treatment of participants and proper data handling throughout the study.
 
@@ -583,7 +593,7 @@ This research was conducted with full IRB approval, ensuring ethical treatment o
 | H3 | AIRS > UTAUT2 | ΔAIC +2.01 | — | [X] Not Supported |
 | H4 | BI ↔ Usage | ρ = .69 | <.001 | [OK] Supported |
 
-**Summary: 3/7 UTAUT paths supported, Trust marginal, Behavioral validation confirmed**
+Summary: 3/7 UTAUT paths supported, Trust marginal, Behavioral validation confirmed
 
 ### Appendix C: Model Fit Comparison
 
@@ -609,4 +619,4 @@ This research was conducted with full IRB approval, ensuring ethical treatment o
 
 ---
 
-*End of Presentation*
+<!-- End of Presentation -->

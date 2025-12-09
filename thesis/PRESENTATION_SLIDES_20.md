@@ -1,6 +1,6 @@
 # Artificial Intelligence Readiness Scale (AIRS): Dissertation Defense
 
-**Artificial Intelligence Readiness Scale: Extending UTAUT2 for Enterprise AI Adoption**
+## Artificial Intelligence Readiness Scale: Extending UTAUT2 for Enterprise AI Adoption
 
 Fabio Correa
 Doctoral Candidate, Doctor of Business Administration
@@ -11,14 +11,16 @@ December 2025
 
 ## Slide 1: Title Slide
 
-**Artificial Intelligence Readiness Scale**
-*Extending UTAUT2 for Enterprise AI Adoption*
+### Artificial Intelligence Readiness Scale
+
+Extending UTAUT2 for Enterprise AI Adoption
 
 Fabio Correa
 Doctoral Candidate, Doctor of Business Administration
 Touro University Worldwide
 
 Dissertation Committee:
+
 - Dr. Karina Kasztelnik (Chair)
 - Dr. Jerome Jones
 - Dr. Donna Day
@@ -29,7 +31,7 @@ December 2025
 
 ## Slide 2: The AI Adoption Paradox
 
-**Organizations are adopting AI at unprecedented rates—but struggling to capture value.**
+Organizations are adopting AI at unprecedented rates, but struggling to capture value.
 
 | Metric | Value | Source |
 |--------|-------|--------|
@@ -39,6 +41,7 @@ December 2025
 | GenAI pilots that fail to scale | 90-95% | MIT Media Lab |
 
 **Research Questions:**
+
 1. Can we develop a psychometrically valid AI Readiness Scale extending UTAUT2?
 2. What factors most strongly predict AI adoption intention?
 3. Do traditional UTAUT predictors behave differently for AI?
@@ -183,7 +186,8 @@ December 2025
    - AI champions and visible leadership matter
 
 **Near-Significant:**
-- AI Trust (β = .106, p = .064): Approaching significance—larger samples may confirm
+
+- AI Trust (β = .106, p = .064): Approaching significance, larger samples may confirm
 
 ---
 
@@ -206,6 +210,7 @@ December 2025
 | PV -> BI | +0.638 | +0.808 | +0.170 | ns |
 
 **Key Insight**:
+
 - **Students**: "Make it fun and I'll use it"
 - **Professionals**: "Show me the value and I'll use it"
 
@@ -256,19 +261,23 @@ December 2025
 
 **Four primary contributions to technology acceptance theory.**
 
-**Contribution 1: UTAUT2 Extension for AI**
+### Contribution 1: UTAUT2 Extension for AI
+
 - Demonstrated that traditional frameworks require modification for AI contexts
 - AI Trust approaches significance, warranting further investigation
 
-**Contribution 2: Price Value Dominance**
+### Contribution 2: Price Value Dominance
+
 - First empirical evidence that PV > PE for AI adoption
 - Challenges 25+ years of UTAUT findings where PE consistently dominates
 
-**Contribution 3: Career Development Integration**
+### Contribution 3: Career Development Integration
+
 - Experience moderates HM effect (p = .009)
 - Connects technology acceptance to vocational psychology
 
-**Contribution 4: User Typology Framework**
+### Contribution 4: User Typology Framework
+
 - Four-segment model for adoption heterogeneity
 - Foundation for future intervention research
 
@@ -343,7 +352,7 @@ December 2025
 
 ## Slide 17: Conclusion
 
-**Key Takeaways**
+### Key Takeaways
 
 1. **The AIRS instrument is psychometrically sound** (CFI = .975, α = .74-.91)
 
@@ -357,7 +366,7 @@ December 2025
 
 6. **Experience moderates adoption pathways** (HM×Exp p = .009)
 
-**Bottom Line**: AI adoption requires a fundamentally different approach than traditional technology—lead with value and engagement, not utility.
+**Bottom Line**: AI adoption requires a fundamentally different approach than traditional technology: lead with value and engagement, not utility.
 
 ---
 
@@ -368,17 +377,19 @@ December 2025
 I welcome your questions and feedback.
 
 **Contact Information:**
-- Email: fabio@correax.com
+
+- Email: <fabio@correax.com>
 
 **Resources:**
-- GitHub Repository: https://github.com/fabioc-aloha/AIRS_Data_Analysis
+
+- GitHub Repository: <https://github.com/fabioc-aloha/AIRS_Data_Analysis>
 - Full dissertation available upon request
 
 ---
 
 ## Slide 19: Appendix A - Ethics & Data Retention
 
-**IRB Approval and Data Protection**
+### IRB Approval and Data Protection
 
 | Item | Detail |
 |------|--------|
@@ -406,8 +417,8 @@ I welcome your questions and feedback.
 | H4 | Population Moderation | [!] Partial (HM only, p = .041) |
 | H5 | BI -> Tool Usage | [OK] Supported (ρ = .69) |
 
-**Summary: 3/7 UTAUT paths supported, Trust marginal, Behavioral validation confirmed**
+Summary: 3/7 UTAUT paths supported, Trust marginal, Behavioral validation confirmed
 
 ---
 
-*End of Presentation*
+<!-- End of Presentation -->

@@ -195,18 +195,21 @@ While this study employed rigorous methodology and produced robust findings, sev
 This dissertation establishes the AIRS as a validated diagnostic instrument. The 8-factor structure already enables identification of specific adoption barriers; the following roadmap outlines the research program required to develop formalized protocols for organizational applications:
 
 **Phase 1: AIRS Score Development** (Near-term)
+
 - Develop a scoring algorithm that transforms raw item responses into interpretable individual and organizational readiness scores
 - Establish normative benchmarks across populations (students, professionals, leaders)
 - Create percentile rankings and readiness classifications (e.g., "emerging," "developing," "proficient," "advanced")
 - Validate score interpretations through criterion-related validity studies linking scores to actual adoption outcomes
 
 **Phase 2: Diagnostic Protocol Development** (Medium-term)
+
 - Design administration protocols for organizational AI readiness assessment
 - Develop reporting frameworks that translate AIRS results into actionable organizational insights
 - Pilot diagnostic protocols with partner organizations
 - Establish reliability of organizational-level aggregated scores
 
 **Phase 3: Intervention Framework Development** (Medium-term)
+
 - Design experimental studies testing segment-specific interventions:
   - Enthusiasts: Champion program effectiveness
   - Cautious Adopters: Evidence-based reassurance interventions
@@ -216,6 +219,7 @@ This dissertation establishes the AIRS as a validated diagnostic instrument. The
 - Develop practitioner guides for evidence-based intervention selection
 
 **Phase 4: Comprehensive AI Readiness System** (Long-term)
+
 - Integrate validated AIRS Score, diagnostic protocols, and intervention frameworks into a comprehensive organizational AI readiness system
 - Develop longitudinal tracking capabilities for monitoring readiness progression
 - Create industry-specific adaptation guidelines

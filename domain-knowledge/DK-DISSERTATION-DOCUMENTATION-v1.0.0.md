@@ -202,13 +202,29 @@ for i, q in enumerate(q_numbers):
 - **Benefit**: Consistent messaging between written thesis and oral defense
 
 ### Data Availability as Appendix Pattern (Added Dec 8, 2025)
+
 - **Context**: Ensuring long-term reproducibility documentation
 - **Method**: Include comprehensive repository docs within thesis (Appendix H)
 - **Benefit**: Self-contained even if external links change; meets journal requirements
+
+### Table/Figure Chapter Numbering Pattern (Added Dec 9, 2025)
+
+- **Context**: Academic dissertations require chapter-based table/figure numbering (Table 3.1, not Table 1)
+- **Problem**: Pandoc auto-generates "Table N:" prefix, creating duplicates like "Table 1: Table 3.1:"
+- **Solution**: LaTeX `\captionsetup[table]{labelformat=empty}` suppresses auto-prefix
+- **Implementation**: Explicit chapter numbers in Pandoc caption text (`: Table 3.1: Caption`)
+- **Benefit**: Proper academic numbering while maintaining List of Tables/Figures functionality
+
+### Markdown Lint Patterns (Added Dec 9, 2025)
+
+- **MD032**: Lists require blank lines before AND after
+- **MD036**: Bold text as headings → convert to proper `###` headings
+- **MD034**: Bare URLs → wrap in `<url>` or `[text](url)`
+- **MD024**: Duplicate headings → differentiate (Usage → Basic Usage)
 
 ---
 
 **Mastery Achievement**: Comprehensive dissertation documentation quality assurance and transparency protocols
 **Research Impact**: Enhanced credibility through systematic verification and transparent reporting
-**Latest Enhancement**: DRAFT 06 presentation and data availability (Dec 8, 2025)
-**Next Evolution**: Apply patterns to committee defense preparation and final submission
+**Latest Enhancement**: DRAFT 07 table/figure chapter numbering and lint cleanup (Dec 9, 2025)
+**Next Evolution**: Committee defense preparation and final submission

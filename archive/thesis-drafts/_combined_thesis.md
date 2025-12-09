@@ -196,20 +196,16 @@ How can UTAUT2 be extended with AI-specific constructs to better predict behavio
 Based on UTAUT2 theory and AI-specific considerations, this study tests the following hypotheses:
 
 **Core UTAUT2 Hypotheses (H1a–H1g)**:
-
 - H1a–H1g: The seven UTAUT2 constructs (Performance Expectancy, Effort Expectancy, Social Influence, Facilitating Conditions, Hedonic Motivation, Price Value, and Habit) positively predict Behavioral Intention to adopt AI tools.
 
 **AI Extension Hypothesis (H2)**:
-
 - H2: AI Trust positively predicts Behavioral Intention beyond UTAUT2 constructs.
 
 **Moderation Hypotheses (H3–H4)**:
-
 - H3: Professional experience moderates the relationships between predictors and Behavioral Intention.
 - H4: Population (Student vs. Professional) moderates the relationships between predictors and Behavioral Intention.
 
 **Behavioral Validation Hypothesis (H5)**:
-
 - H5: Behavioral Intention positively correlates with actual AI tool usage behavior.
 
 Full hypothesis specifications with theoretical rationales are presented in Chapter 3 §3.3.2.
