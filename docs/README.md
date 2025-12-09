@@ -1,95 +1,42 @@
-# Documentation - Active Dissertation Files
+# Documentation
 
-This directory contains **active documentation** for the dissertation (N=362, Phases 1-5 complete).
+Core documentation for the AIRS dissertation project.
 
-**Current Status**: Week 27 of 32 | Mediation analysis complete (H5a-c supported, 100% success)
-**Key Finding**: Dual-pathway suppression: Ethical Risk operates via Trust (64%) + Anxiety (96%, DOMINANT)
-**Archive Location**: See `../archive/docs_exploratory/` for 15 exploratory phase reports (N=281)
+## Current Files
 
----
+| File | Description |
+|------|-------------|
+| `DATA_DICTIONARY.md` | Complete variable definitions, scales, and coding |
+| `AIRS Model.png` | Conceptual framework diagram |
 
-## 📚 Active Documentation
+## Related Documentation
 
-### Core Dissertation Documents
-- **`AIRS DBA Project Proposal v4.md`** - Theoretical framework, hypotheses (H1-H5), methodology
-  - Updated November 2025 with H5 (mediation), VO correction
-  - 8 UTAUT2 + 4 AI-specific = 12 constructs
-  - Sample: N≈500 proposed → N=362 current (181/181 split, data collection ongoing)
+### Primary Documents (in other folders)
 
-- **`AIRS Survey Instrument v5.md`** - Complete survey with item provenance
-  - Research questions (RQ1-RQ5)
-  - Hypotheses (H1-H5)
-  - 24-item instrument (2 items per 12 constructs)
-  - Response scales and administration guidance
+| Location | Content |
+|----------|---------|
+| `thesis/` | Complete dissertation chapters and appendices |
+| `plan/` | Research proposal, analysis plan, survey instrument |
+| `airs_experiment/` | Analysis notebooks with inline documentation |
 
-- **`DATA_DICTIONARY.md`** - Variable definitions, scales, measurement notes
-  - Complete variable specifications
-  - Construct definitions
-  - Measurement issues documentation
+### Quick Reference
 
-### Validation & Quality Assurance
-- **`FACT_CHECK_REPORT.md`** - Dissertation fact-checking session documentation
-  - November 20, 2025 validation session
-  - 85K token extended analysis
-  - Authoritative source identification
-  - 14 sections corrected
+| Topic | Location |
+|-------|----------|
+| Thesis chapters | `thesis/chapters/` |
+| Survey instrument | `plan/AIRS Survey Instrument v5.md` |
+| Analysis methodology | `plan/ANALYSIS_PLAN_v2.md` |
+| Variable specifications | `docs/DATA_DICTIONARY.md` |
+| Hypotheses | `thesis/chapters/01_introduction.md` (§1.4) |
 
-### Visual Assets
-- **`AIRS Model.png`** - Conceptual framework diagram
-  - UTAUT2 core + AI-specific constructs
-  - Path model with directional relationships
+## Archived Documentation
+
+Superseded and historical documentation has been moved to `archive/docs-outdated/`:
+
+- Phase development diagrams
+- Completed fact-check reports
+- Early analysis summaries
 
 ---
 
-## 📖 Quick Reference
-
-### For Theoretical Framework
-→ See `AIRS DBA Project Proposal v4.md` (Section 5: Theoretical Orientation)
-
-### For Survey Items & Wording
-→ See `AIRS Survey Instrument v5.md` (Appendix A: Complete Survey)
-
-### For Variable Specifications
-→ See `DATA_DICTIONARY.md` (All 24 items + demographics)
-
-### For Hypotheses
-→ See `AIRS DBA Project Proposal v4.md` (Section 6: Hypotheses H1-H5)
-
-### For Data Validation
-→ See `FACT_CHECK_REPORT.md` (Quality assurance documentation)
-
----
-
-## 🔗 Related Documentation
-
-- **Analysis Plan**: `../airs/ANALYSIS_PLAN.md` (Phase-by-phase roadmap, v1.1)
-- **Consistency Check**: `../airs/CONSISTENCY_CHECK.md` (Proposal/plan/code alignment)
-- **Exploratory Learnings**: `../EXPLORATORY_PHASE_LEARNINGS.md` (Methodological insights)
-- **Main README**: `../README.md` (Project overview)
-- **Archive**: `../archive/docs_exploratory/` (15 exploratory reports)
-
----
-
-## 🗂️ Archive Status
-
-**Moved to `../archive/docs_exploratory/` (November 22, 2025)**:
-- Exploratory analysis reports (N=281 phase)
-- Item-level optimization studies
-- Outcome variable comparisons
-- Modularization experiments
-- Notebook fact-checking records
-
-**Reason for Archive**: Exploratory documents used mixed samples (N=201-309), multiple outcomes (adoption/BI/usage), and data-driven selection. Dissertation requires fixed framework (12 constructs), standardized outcome (BI), and construct-balanced approach.
-
----
-
-**Last Updated**: November 23, 2025 (Week 27/32)
-**Status**: Phases 1-5 complete (Discovery → Validation → Invariance → Structural → Mediation), Phase 6 (Moderation) next
-**Primary Analysis Location**: `../airs/` (dissertation notebooks)
-**Key Results**:
-- H1 STRONGLY SUPPORTED (R²=0.8046, 80.46%)
-- H2 PARTIALLY SUPPORTED (3/4 AI constructs significant)
-- H3 PARTIALLY SUPPORTED (ΔR²=1.46%, p<.001***)
-- H5a-c ALL SUPPORTED (100% success: transparency→trust 55%, ethics→trust 64%, ethics→anxiety 96%)
-- **Breakthrough**: Dual-pathway suppression explains Phase 4 ER non-significance
-**Progress Report**: See `../README.md` for narrative journey and key insights
+**Note**: For the complete dissertation, see `thesis/DRAFT 07.pdf`.

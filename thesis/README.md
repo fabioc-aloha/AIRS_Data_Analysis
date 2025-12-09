@@ -82,8 +82,8 @@ thesis/
 | Chapter 5: Analysis & Discussion | [OK] Complete |
 | Chapter 6: Conclusions | [OK] Complete |
 | Appendices A-I | [OK] Complete (incl. Data Availability, RQ/Hypotheses Summary) |
-| Bibliography | [OK] 92 references verified |
-| Tables & Figures | [OK] Auto-numbered |
+| Bibliography | [OK] 93 references verified |
+| Tables & Figures | [OK] Chapter-numbered with TOC |
 | IRB Documentation | [OK] Embedded |
 
 ## Build Scripts

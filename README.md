@@ -241,7 +241,7 @@ AIRS_Data_Analysis/
 | Chapter 6: Conclusions | `thesis/chapters/06_conclusions.md` | ~2,500 |
 | Appendices A-H | `thesis/appendices.md` | Complete |
 | Tables 4.1-4.9 | `thesis/tables/` | 9 tables |
-| Bibliography | `thesis/references/bibliography.bib` | 92 refs |
+| Bibliography | `thesis/references/bibliography.bib` | 93 refs |
 
 ### Build & PDF Generation
 
@@ -258,8 +258,6 @@ See [`PDF_GENERATION.md`](PDF_GENERATION.md) for complete documentation on:
 | 4 constructs dropped (VO, EX, ER, AX-orig) | Poor reliability (α = .301–.582) | Ch 3 §3.4.4, Ch 4 §4.2.1 |
 | AIRS vs UTAUT2 comparison | ΔR² = .016 (modest improvement) | Ch 4 §4.3.5 |
 | H5 mediation untestable | EX/ER excluded from model | Ch 5 §5.6.2, §5.7.1 |
-
-See `thesis/TODO.md` for detailed task list.
 
 ---
 
