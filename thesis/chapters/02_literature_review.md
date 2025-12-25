@@ -60,8 +60,6 @@ Venkatesh et al. (2012) extended UTAUT for consumer contexts through UTAUT2, add
 
 UTAUT2 explained 74% of variance in behavioral intention [@venkatesh2012consumer], demonstrating the value of context-appropriate extensions. For the present research, UTAUT2 provides the baseline framework, with modifications appropriate to workplace AI contexts where hedonic motivation and habit remain relevant while price value may be less salient (organizational rather than personal expenditure).
 
-<!-- Figure 2.1: Evolution of Technology Acceptance Models -->
-
 ```mermaid
 flowchart LR
     subgraph "1980s-1990s"
@@ -92,6 +90,7 @@ flowchart LR
     style AIRS fill:#e1f5fe,stroke:#0288d1,stroke-width:2px
 ```
 
+*Figure 2.1. Evolution of Technology Acceptance Models from TRA (1975) through UTAUT2 (2012) to the AIRS extension (this study). Source: Compiled by Author*
 
 
 ## 2.3 The AI Adoption-Value Gap: Industry Context
@@ -180,8 +179,6 @@ Governance practices also shape trust. When organizations establish bias audits,
 
 Given the empirical evidence for trust's central role in AI adoption, the present research incorporates **AI Trust** as a core construct extending UTAUT2. AI Trust is operationalized as confidence that the AI system is reliable, competent, and aligned with user and organizational values. This construct is expected to positively predict behavioral intention directly and to mediate effects of explainability and governance perceptions on intention.
 
-<!-- Figure 2.2: AIRS Conceptual Model - Extended UTAUT2 for AI Adoption -->
-
 ```mermaid
 flowchart TB
     subgraph UTAUT2["UTAUT2 Core Constructs (H1a-H1g)"]
@@ -216,6 +213,8 @@ flowchart TB
     style TR fill:#c8e6c9,stroke:#388e3c,stroke-width:2px
     style BI fill:#e1f5fe,stroke:#0288d1,stroke-width:3px
 ```
+
+*Figure 2.2. AIRS Conceptual Model showing Extended UTAUT2 framework for AI Adoption with AI Trust extension. Source: Compiled by Author*
 
 *Note: AI Anxiety was initially proposed as an inhibitor construct (H8) but was excluded from the final model due to inadequate reliability (α = .301). See Chapter 4 for details.*
 
@@ -334,8 +333,6 @@ Based on the meta-analytic evidence reviewed above, the following hypotheses ref
 
 *Rationale*: Professionals with greater workplace technology demands and resources may exhibit different AI tool usage patterns than students.
 
-<!-- Figure 2.3: Research Hypotheses Summary -->
-
 ```mermaid
 flowchart LR
     subgraph UTAUT2["UTAUT2 Core Constructs"]
@@ -368,6 +365,7 @@ flowchart LR
     style Validation fill:#fff3e0,stroke:#f57c00
 ```
 
+*Figure 2.3. Research Hypotheses Summary showing UTAUT2 core constructs, AI-specific extension, moderation hypotheses, and behavioral validation. Source: Compiled by Author*
 
 
 ## 2.9 Chapter Summary

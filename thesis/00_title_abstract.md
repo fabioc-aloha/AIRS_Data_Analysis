@@ -111,3 +111,17 @@ To my professional colleagues and the participants who generously shared their e
 Finally, I acknowledge the broader academic community whose foundational work (particularly Venkatesh and colleagues' development of UTAUT) provided the theoretical architecture upon which this research builds. Scholarship advances through cumulative contribution, and I am honored to add to this conversation.
 
 \newpage
+
+\vspace*{3in}
+
+\begin{center}
+\begin{itshape}
+``The question isn't whether AI will transform work—it's whether we'll be ready.''
+\end{itshape}
+
+\vspace{0.3in}
+
+— Dario Amodei, 2024
+\end{center}
+
+\newpage

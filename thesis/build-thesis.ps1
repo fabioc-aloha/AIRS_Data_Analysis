@@ -32,7 +32,7 @@ param(
 )
 
 # Hardcoded draft version to avoid mistakes
-$OutputName = "DRAFT 07"
+$OutputName = "FINAL 01"
 
 # Configuration
 $ThesisDir = $PSScriptRoot
@@ -265,13 +265,14 @@ header-includes:
   - \floatplacement{table}{H}
   - \floatplacement{figure}{H}
   - \usepackage{caption}
-  - \captionsetup[figure]{labelformat=empty}
+  - \captionsetup[figure]{labelformat=empty,font={footnotesize},justification=centering}
   - \captionsetup[table]{labelformat=empty}
   - \usepackage{etoolbox}
-  - \AtBeginEnvironment{longtable}{\singlespacing\fontsize{10}{12}\selectfont}
+  - \AtBeginEnvironment{longtable}{\singlespacing\fontsize{10}{12}\selectfont\centering}
   - \AtBeginEnvironment{tabular}{\singlespacing\fontsize{10}{12}\selectfont}
-  - \setlength{\LTleft}{0pt}
-  - \setlength{\LTright}{0pt}
+  - \setlength{\LTleft}{0pt plus 1fill}
+  - \setlength{\LTright}{0pt plus 1fill}
+  - \AtBeginEnvironment{table}{\centering}
   - \AtBeginDocument{\thispagestyle{empty}}
   - \usepackage{fontspec}
   - \setmainfont{Times New Roman}
@@ -376,18 +377,21 @@ foreach ($chapter in $ChapterFiles) {
         
         # Replace mermaid code blocks with image references
         if ($hasMermaid) {
-            # Pattern to capture comment caption and mermaid block together
-            $mermaidWithCaptionRegex = [regex]::new('(?s)<!-- (Figure \d+\.\d+: [^>]+) -->\s*\r?\n\s*```mermaid\r?\n.+?```')
+            # Pattern to capture mermaid block followed by italic caption line
+            # Matches: ```mermaid ... ``` followed by *Figure X.Y. Caption text*
+            $mermaidWithItalicCaptionRegex = [regex]::new('(?s)```mermaid\r?\n.+?```\s*\r?\n\r?\n\*([^*]+)\*')
             $mermaidNoCaptionRegex = [regex]::new('(?s)```mermaid\r?\n.+?```')
             
-            # First, replace mermaid blocks that have caption comments
-            $captionMatches = $mermaidWithCaptionRegex.Matches($chapterContent)
+            # First, replace mermaid blocks that have italic caption lines after them
+            $captionMatches = $mermaidWithItalicCaptionRegex.Matches($chapterContent)
             for ($i = $captionMatches.Count - 1; $i -ge 0; $i--) {
                 $match = $captionMatches[$i]
-                $caption = $match.Groups[1].Value
+                $caption = $match.Groups[1].Value.Trim()
+                # Keep the full caption including "Figure X.Y." since labelformat=empty
                 $figureIndex = $i + 1
                 $figureFileName = "${chapterName}_fig${figureIndex}"
                 $pngPath = "figures/${figureFileName}.png"
+                # Put caption in alt text for pandoc to capture in List of Figures
                 $imgRef = "![$caption]($pngPath){width=90%}"
                 $chapterContent = $chapterContent.Remove($match.Index, $match.Length).Insert($match.Index, $imgRef)
             }
@@ -402,6 +406,21 @@ foreach ($chapter in $ChapterFiles) {
                 $imgRef = "![]($pngPath){width=90%}"
                 $chapterContent = $chapterContent.Remove($match.Index, $match.Length).Insert($match.Index, $imgRef)
             }
+        }
+        
+        # Process regular PNG images: merge italic caption lines into alt text
+        # Pattern: ![](path.png){width=X%} followed by *Figure caption text*
+        $imgWithCaptionRegex = [regex]::new('!\[\]\(([^)]+\.png)\)\{([^}]+)\}\s*\r?\n\r?\n\*([^*]+)\*')
+        $imgMatches = $imgWithCaptionRegex.Matches($chapterContent)
+        for ($i = $imgMatches.Count - 1; $i -ge 0; $i--) {
+            $match = $imgMatches[$i]
+            $imgPath = $match.Groups[1].Value
+            $imgAttrs = $match.Groups[2].Value
+            $caption = $match.Groups[3].Value.Trim()
+            # Keep the full caption including "Figure X.Y." since labelformat=empty
+            # Put caption in alt text for pandoc to capture in List of Figures
+            $imgRef = "![$caption]($imgPath){$imgAttrs}"
+            $chapterContent = $chapterContent.Remove($match.Index, $match.Length).Insert($match.Index, $imgRef)
         }
         
         # Trim trailing whitespace
@@ -446,6 +465,22 @@ if (Test-Path $AppendicesFile) {
     if ($appendicesContent -match "^---[\s\S]*?---\s*") {
         $appendicesContent = $appendicesContent -replace "^---[\s\S]*?---\s*", ""
     }
+    
+    # Process PNG images in appendices: merge italic caption lines into alt text
+    # Pattern: ![](path.png){width=X%} followed by *Figure caption text*
+    $imgWithCaptionRegex = [regex]::new('!\[\]\(([^)]+\.png)\)\{([^}]+)\}\s*\r?\n\r?\n\*([^*]+)\*')
+    $imgMatches = $imgWithCaptionRegex.Matches($appendicesContent)
+    for ($i = $imgMatches.Count - 1; $i -ge 0; $i--) {
+        $match = $imgMatches[$i]
+        $imgPath = $match.Groups[1].Value
+        $imgAttrs = $match.Groups[2].Value
+        $caption = $match.Groups[3].Value.Trim()
+        # Keep the full caption including "Figure D.X." since labelformat=empty
+        # Put caption in alt text for pandoc to capture in List of Figures
+        $imgRef = "![$caption]($imgPath){$imgAttrs}"
+        $appendicesContent = $appendicesContent.Remove($match.Index, $match.Length).Insert($match.Index, $imgRef)
+    }
+    
     $appendicesContent = $appendicesContent.TrimEnd()
     # Note: Unicode characters are preserved - XeLaTeX handles them natively
     $CombinedContent += $appendicesContent

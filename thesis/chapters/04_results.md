@@ -6,30 +6,61 @@ This chapter presents the empirical findings from the AI Readiness Survey (AIRS)
 
 The presentation separates findings from interpretation, following established methodological practice (Yin, 2018). Theoretical and practical implications are addressed in Chapter 5.
 
-## 4.2 Description of the Sample
+## 4.2 Research Questions and Hypotheses Overview
 
-The sample comprises N=523 United States adults with representation from both academic and professional contexts. Table 4.1 presents the demographic composition.
+This section provides a summary of all research questions examined in this dissertation. Detailed hypothesis testing results are presented in §4.5.
 
-### 4.2.1 Population Composition
+### 4.2.1 Primary Research Question
+
+**RQ: How can UTAUT2 be extended with AI-specific constructs to better predict behavioral intention to adopt AI tools in professional and academic contexts?**
+
+| Aspect | Answer | Evidence |
+|--------|--------|----------|
+| **Extension Approach** | UTAUT2 extended with AI Trust construct | 8-factor, 16-item validated diagnostic instrument |
+| **Predictive Power** | Model explains 85.2% variance in BI | R² = .852 (8-factor model) |
+| **Key Finding** | Traditional UTAUT predictors less important for AI | PE, EE, FC, HB non-significant |
+| **AI-Specific Insight** | Value perception dominates over utility | PV strongest predictor (β = .505) |
+
+### 4.2.2 Secondary Research Questions
+
+| RQ# | Question | Answer | Supporting Evidence |
+|-----|----------|--------|---------------------|
+| **RQ1** | What is the factor structure of an AI-specific adoption readiness instrument? | 8-factor structure with 16 items | CFI = .975, TLI = .960, RMSEA = .065; all α > .74 |
+| **RQ2** | Does the instrument demonstrate measurement invariance across populations? | Configural invariance achieved; metric invariance partial | ΔCFI = .003, ΔRMSEA = .004; mean Δλ = .082 |
+| **RQ3** | Which factors most strongly predict behavioral intention? | Price Value (β = .505), Hedonic Motivation (β = .217), Social Influence (β = .136) | All p < .05; PV accounts for largest variance |
+| **RQ4** | Does AI Trust predict adoption beyond UTAUT2? | Marginal effect, not statistically significant | β = .106, p = .064; provides diagnostic value |
+| **RQ5** | What moderating factors influence predictor-intention relationships? | Experience moderates HM→BI; Population moderates HM→BI | HM×Exp p = .009; Academic vs Professional Δβ = .750 |
+
+: Table 4.1: Research Questions Summary
+
+*Source: Compiled by Author*
+
+## 4.3 Description of the Sample
+
+The sample comprises N=523 United States adults with representation from both academic and professional contexts. Table 4.2 presents the demographic composition.
+
+### 4.3.1 Population Composition
 
 | Population | n | % | Subgroups |
 |------------|---|---|----------|
 | Students | 216 | 41.3% | Full-time (n=196), Part-time (n=20) |
 | Professionals | 307 | 58.7% | Individual contributors (n=112), Managers (n=71), Executives (n=52), Freelancers (n=32), Other (n=23), Unemployed (n=17) |
 
-: Table 4.1: Sample Composition by Population Type
+: Table 4.2: Sample Composition by Population Type
 
-### 4.2.2 Sample Split for Validation
+*Source: Compiled by Author*
+
+### 4.3.2 Sample Split for Validation
 
 For psychometric validation, the sample was randomly split (seed=67) into development (n=261, 50%) and holdout (n=262, 50%) subsamples. This split-sample approach enables exploratory factor analysis on the development sample and independent confirmatory factor analysis on the holdout sample.
 
-### 4.2.3 Disability Status
+### 4.3.3 Disability Status
 
 Participants with disabilities comprised 13.0% of the sample (n=68), with 11 participants selecting "Prefer not to answer." This representation enables examination of accessibility considerations in AI adoption.
 
-## 4.3 Data Screening and Preparation
+## 4.4 Data Screening and Preparation
 
-### 4.3.1 Data Quality Assessment
+### 4.4.1 Data Quality Assessment
 
 Data screening confirmed the suitability of the dataset for factor analytic procedures:
 
@@ -37,15 +68,15 @@ Data screening confirmed the suitability of the dataset for factor analytic proc
 - **Outliers**: Mahalanobis distance identified 0 multivariate outliers at p < .001
 - **Normality**: Mardia's test indicated multivariate non-normality; robust estimation (MLM) was employed
 
-### 4.3.2 Factorability Assessment
+### 4.4.2 Factorability Assessment
 
 The Kaiser-Meyer-Olkin measure of sampling adequacy (KMO = .937) and Bartlett's test of sphericity (χ² = 4,668.45, p < .001) confirmed the suitability of the correlation matrix for factor analysis.
 
-## 4.4 Quantitative Findings
+## 4.5 Quantitative Findings
 
 This section presents the psychometric validation results, including exploratory and confirmatory factor analyses, reliability assessment, and measurement invariance testing.
 
-### 4.4.1 Exploratory Factor Analysis (Development Sample)
+### 4.5.1 Exploratory Factor Analysis (Development Sample)
 
 Exploratory factor analysis was conducted on the development subsample (n=261) to evaluate the underlying factor structure of the AIRS instrument.
 
@@ -60,13 +91,15 @@ Multiple factor solutions were examined using principal axis factoring with obli
 | C | 8 | 18 | .964 | .953 | .066 | .048 | Good |
 | D | 8 | 16 | .975 | .960 | .065 | .046 | **Selected** |
 
-: Table 4.2: Exploratory Factor Analysis Model Comparison
+: Table 4.3: Exploratory Factor Analysis Model Comparison
+
+*Source: Compiled by Author*
 
 **Model D** was selected as the final measurement model based on optimal balance of parsimony and fit, with all items demonstrating factor loadings ≥ .50 and no substantive cross-loadings (< .32). Figure 4.1 presents the scree plot supporting this factor structure.
 
-![Figure 4.1: Scree Plot with Parallel Analysis](figures/fig_efa_scree.png){width=80%}
+![](figures/fig_efa_scree.png){width=80%}
 
-*Figure 4.1. Scree plot showing eigenvalue decline across factors. The parallel analysis criterion (dashed line) supports retention of 8 factors.*
+*Figure 4.1. Scree plot showing eigenvalue decline across factors. The parallel analysis criterion (dashed line) supports retention of 8 factors. Source: Compiled by Author*
 
 #### Construct Exclusion Analysis
 
@@ -79,7 +112,9 @@ Four proposed constructs were excluded during EFA due to poor inter-item reliabi
 | Ethical Risk (ER) | .546 | Dropped | Items measured job displacement vs. privacy, distinct risk types |
 | AI Anxiety (AX) | .301 | Dropped | Items measured avoidance vs. approach anxiety, distinct motivations |
 
-: Table 4.3: Construct Exclusion Analysis
+: Table 4.4: Construct Exclusion Analysis
+
+*Source: Compiled by Author*
 
 **Interpretation**: The proposed two-item scales for these AI-specific constructs proved insufficient to capture multi-faceted phenomena. This finding highlights a key contribution: while these constructs are theoretically important for AI adoption, they require more comprehensive operationalization with additional items representing each sub-dimension.
 
@@ -104,11 +139,13 @@ The final measurement model comprises 7 UTAUT2 constructs plus the AI Trust exte
 | Habit (HB) | HB1, HB2 | Automaticity of use | .909 | .909 | .833 |
 | AI Trust (TR) | TR1, TR2 | Trust in AI systems | .891 | .891 | .804 |
 
-: Table 4.4: Final Factor Structure with Reliability and Validity Indices
+: Table 4.5: Final Factor Structure with Reliability and Validity Indices
+
+*Source: Compiled by Author*
 
 *Note: BI (Behavioral Intention) serves as the outcome variable and is modeled separately in the structural model.*
 
-### 4.4.2 Confirmatory Factor Analysis (Holdout Sample)
+### 4.5.2 Confirmatory Factor Analysis (Holdout Sample)
 
 The 8-factor model was cross-validated on the independent holdout sample (n=262) using confirmatory factor analysis in semopy.
 
@@ -124,23 +161,25 @@ The 8-factor model was cross-validated on the independent holdout sample (n=262)
 | RMSEA | .065 | ≤ .08 | Good |
 | SRMR | .046 | ≤ .08 | Excellent |
 
-: Table 4.5: Confirmatory Factor Analysis Model Fit Indices
+: Table 4.6: Confirmatory Factor Analysis Model Fit Indices
+
+*Source: Compiled by Author*
 
 The model demonstrated excellent fit across all indices, confirming the factor structure derived from the development sample. Figure 4.2 presents the standardized factor loadings for the validated 8-factor model.
 
-![Figure 4.2: CFA Factor Loadings](figures/fig_cfa_loadings.png){width=85%}
+![](figures/fig_cfa_loadings.png){width=85%}
 
-*Figure 4.2. Standardized factor loadings for the 8-factor AIRS measurement model. All loadings exceed .70, supporting convergent validity.*
+*Figure 4.2. Standardized factor loadings for the 8-factor AIRS measurement model. All loadings exceed .70, supporting convergent validity. Source: Compiled by Author*
 
 #### Factor Correlations
 
 Inter-factor correlations ranged from r = .25 (Social Influence × Price Value) to r = .72 (Hedonic Motivation × Performance Expectancy), indicating conceptually meaningful relationships while maintaining discriminant validity (all |r| < .85). Figure 4.3 presents the factor correlation matrix.
 
-![Figure 4.3: Factor Correlation Matrix](figures/fig_cfa_correlations.png){width=80%}
+![](figures/fig_cfa_correlations.png){width=80%}
 
-*Figure 4.3. Inter-factor correlations for the 8-factor AIRS model. All correlations fall below the .85 threshold for discriminant validity.*
+*Figure 4.3. Inter-factor correlations for the 8-factor AIRS model. All correlations fall below the .85 threshold for discriminant validity. Source: Compiled by Author*
 
-### 4.4.3 Reliability and Validity
+### 4.5.3 Reliability and Validity
 
 #### Composite Reliability
 
@@ -157,13 +196,15 @@ All predictor factors demonstrated acceptable internal consistency:
 | HB | .909 | .909 | .833 |
 | TR | .891 | .891 | .804 |
 
-: Table 4.6: Composite Reliability and Validity Indices
+: Table 4.7: Composite Reliability and Validity Indices
+
+*Source: Compiled by Author*
 
 Figure 4.4 provides a visual comparison of reliability indices across constructs.
 
-![Figure 4.4: Reliability Comparison](figures/fig_reliability.png){width=80%}
+![](figures/fig_reliability.png){width=80%}
 
-*Figure 4.4. Comparison of Cronbach's α, Composite Reliability (CR), and Average Variance Extracted (AVE) across the 8 AIRS factors. All factors exceed minimum thresholds (α > .70, CR > .70, AVE > .50).*
+*Figure 4.4. Comparison of Cronbach's α, Composite Reliability (CR), and Average Variance Extracted (AVE) across the 8 AIRS factors. All factors exceed minimum thresholds (α > .70, CR > .70, AVE > .50). Source: Compiled by Author*
 
 #### Convergent Validity
 
@@ -173,7 +214,7 @@ All standardized factor loadings exceeded .70, and all AVE values exceeded .50, 
 
 Discriminant validity was assessed using the Fornell-Larcker criterion. For each factor pair, the square root of AVE exceeded the inter-factor correlation, confirming discriminant validity.
 
-### 4.4.4 Measurement Invariance (Multi-Group CFA)
+### 4.5.4 Measurement Invariance (Multi-Group CFA)
 
 Measurement invariance was tested across role groups (Academic n=216 vs. Professional n=307) to establish comparability of latent constructs.
 
@@ -182,21 +223,23 @@ Measurement invariance was tested across role groups (Academic n=216 vs. Profess
 | Academic | 167.16 | 76 | .958 | .934 | .075 | Good fit |
 | Professional | 135.88 | 76 | .988 | .981 | .051 | Excellent fit |
 
-: Table 4.7: Measurement Invariance Testing Across Groups
+: Table 4.8: Measurement Invariance Testing Across Groups
+
+*Source: Compiled by Author*
 
 **Configural invariance** was supported: the same factor structure held across both groups. **Metric invariance** was not fully achieved (mean loading difference = .082, max = .326), indicating some factor loadings differ across groups. However, configural invariance is sufficient for comparing structural relationships across groups. The maximum factor loading difference (Δλ = .326) occurred for the SI factor, though this did not compromise overall model validity. Figure 4.5 illustrates the loading differences across groups.
 
-![Figure 4.5: Measurement Invariance Loadings](figures/fig_invariance_loadings.png){width=85%}
+![](figures/fig_invariance_loadings.png){width=85%}
 
-*Figure 4.5. Factor loading comparison across Student and Professional groups. While most loadings demonstrate equivalence, Social Influence shows the largest cross-group difference.*
+*Figure 4.5. Factor loading comparison across Student and Professional groups. While most loadings demonstrate equivalence, Social Influence shows the largest cross-group difference. Source: Compiled by Author*
 
 
 
-## 4.5 Findings by Research Question
+## 4.6 Findings by Research Question
 
 This section presents hypothesis testing results organized by research question. The structural model was estimated using multi-group SEM to test hypothesized relationships between UTAUT constructs and Behavioral Intention to adopt AI tools. The model was estimated separately for Student (n=216) and Professional+Leader (n=307) groups.
 
-### 4.5.1 Structural Model Fit
+### 4.6.1 Structural Model Fit
 
 The structural model demonstrated acceptable fit:
 
@@ -207,24 +250,41 @@ The structural model demonstrated acceptable fit:
 | RMSEA | .072 | .068 | ≤ .08 |
 | SRMR | .054 | .051 | ≤ .08 |
 
-: Table 4.8: Structural Model Fit by Group
+: Table 4.9: Structural Model Fit by Group
 
-### 4.5.2 Primary Hypotheses (H1a–H1g)
+### 4.6.2 Primary Hypotheses (H1a–H1g)
 
-Table 4.9 presents the standardized path coefficients and hypothesis test results for the full sample and by role group.
+Table 4.10 presents the standardized path coefficients, 95% confidence intervals, and hypothesis test results for the full sample.
 
-| Hypothesis | Path | β | p | Result |
-|------------|------|---|---|--------|
-| H1a | PE -> BI | -.028 | .791 | [X] Not Supported |
-| H1b | EE -> BI | -.008 | .875 | [X] Not Supported |
-| H1c | SI -> BI | **.136** | .024 | [OK] Supported |
-| H1d | FC -> BI | .059 | .338 | [X] Not Supported |
-| H1e | HM -> BI | **.217** | .014 | [OK] Supported |
-| H1f | PV -> BI | **.505** | <.001 | [OK] Supported (Strongest) |
-| H1g | HB -> BI | .023 | .631 | [X] Not Supported |
-| H2 | TR -> BI | .106 | .064 | [X] Marginal |
+#### Core UTAUT2 Hypotheses
 
-: Table 4.9: Structural Model Path Coefficients (Primary Hypotheses)
+| Hypothesis | Path | Prediction | β | p | 95% CI | Result |
+|------------|------|------------|---|---|--------|--------|
+| H1a | PE -> BI | Positive | -.028 | .791 | [-.234, .178] | **[X] Not Supported** |
+| H1b | EE -> BI | Positive | -.008 | .875 | [-.108, .092] | **[X] Not Supported** |
+| H1c | SI -> BI | Positive | **.136** | **.024** | [.018, .254] | **[OK] Supported** |
+| H1d | FC -> BI | Positive | .059 | .338 | [-.062, .180] | **[X] Not Supported** |
+| H1e | HM -> BI | Positive | **.217** | **.014** | [.044, .390] | **[OK] Supported** |
+| H1f | PV -> BI | Positive | **.505** | **<.001** | [.352, .658] | **[OK] Supported (Strongest)** |
+| H1g | HB -> BI | Positive | .023 | .631 | [-.071, .117] | **[X] Not Supported** |
+
+: Table 4.10: UTAUT2 Core Hypotheses with Confidence Intervals
+
+*Source: Compiled by Author*
+
+#### AI Extension Hypothesis
+
+| Hypothesis | Path | Prediction | β | p | 95% CI | Result |
+|------------|------|------------|---|---|--------|--------|
+| H2 | TR -> BI | Positive | .106 | .064 | [-.006, .218] | **[X] Marginal (Not Significant)** |
+
+: Table 4.11: AI Trust Extension Hypothesis
+
+*Source: Compiled by Author*
+
+**UTAUT2 Summary**: 3 of 7 UTAUT2 hypotheses supported. Price Value emerged as dominant predictor, departing from traditional UTAUT findings where Performance Expectancy typically dominates.
+
+**AI Trust Interpretation**: AI Trust approached but did not reach conventional significance (p = .064). However, the 8-factor model including AI Trust was retained as the recommended diagnostic instrument because: (1) Trust provides essential diagnostic capability for organizational assessment, (2) Organizations can identify trust deficits and design targeted interventions, and (3) The marginal effect suggests theoretical relevance warranting further investigation with larger samples.
 
 **Key Findings:**
 
@@ -237,11 +297,11 @@ Table 4.9 presents the standardized path coefficients and hypothesis test result
 
 Figure 4.6 summarizes the hypothesis test results for the structural model.
 
-![Figure 4.6: Hypothesis Summary](figures/fig_hypothesis_summary.png){width=90%}
+![](figures/fig_hypothesis_summary.png){width=90%}
 
-*Figure 4.6. Summary of hypothesis test results. Green indicates supported hypotheses, red indicates unsupported, and yellow indicates marginal significance. Price Value emerged as the dominant predictor.*
+*Figure 4.6. Summary of hypothesis test results. Green indicates supported hypotheses, red indicates unsupported, and yellow indicates marginal significance. Price Value emerged as the dominant predictor. Source: Compiled by Author*
 
-### 4.5.3 Moderation Hypotheses
+### 4.6.3 Moderation Hypotheses (H3–H4)
 
 Usage frequency was tested as a moderator of UTAUT relationships through multi-group SEM comparison.
 
@@ -261,7 +321,9 @@ Usage frequency was tested as a moderator of UTAUT relationships through multi-g
 | Experience | EE×Exp | 0.122 | .161 | [X] Not significant |
 | Experience | TR×Exp | 0.081 | .145 | [X] Not significant |
 
-: Table 4.10: Moderation Analysis Results
+: Table 4.12: Experience Moderation Analysis Results
+
+*Source: Compiled by Author*
 
 **Interpretation:**
 
@@ -271,11 +333,11 @@ Usage frequency was tested as a moderator of UTAUT relationships through multi-g
 
 Figure 4.7 illustrates the structural model with standardized path coefficients.
 
-![Figure 4.7: Structural Paths](figures/fig_structural_paths.png){width=90%}
+![](figures/fig_structural_paths.png){width=90%}
 
-*Figure 4.7. Structural equation model showing standardized path coefficients from UTAUT2 predictors and AI Trust to Behavioral Intention. Solid lines indicate significant paths; dashed lines indicate non-significant paths.*
+*Figure 4.7. Structural equation model showing standardized path coefficients from UTAUT2 predictors and AI Trust to Behavioral Intention. Solid lines indicate significant paths; dashed lines indicate non-significant paths. Source: Compiled by Author*
 
-### 4.5.4 Population Moderation
+#### Population Moderation (H4)
 
 Multi-group comparison tested whether structural path coefficients differed significantly between Student and Professional populations.
 
@@ -290,15 +352,19 @@ Multi-group comparison tested whether structural path coefficients differed sign
 | HB -> BI | 0.075 | -0.064 | -0.140 | No |
 | TR -> BI | -0.011 | 0.153 | 0.164 | No |
 
-: Table 4.11: Population Moderation of Structural Paths
+: Table 4.13: Population Moderation of Structural Paths
 
-Population moderation was partially supported. **Hedonic Motivation** showed a significant population difference (Δβ = -0.750, p = .041), with HM -> BI stronger for Students (β = 0.449) than for Professionals (β = -0.301). This suggests enjoyment of AI tools is more important for student adoption than professional adoption. All other paths showed no significant population differences. Figure 4.8 illustrates the experience moderation effect on hedonic motivation.
+*Source: Compiled by Author*
 
-![Figure 4.8: Experience Moderation Effect](figures/fig_experience_moderation.png){width=80%}
+**H3 Result: [!] Partially Supported** – Experience significantly moderates the HM -> BI path (p = .009). Professionals with 4+ years of experience weight hedonic motivation more heavily in AI adoption decisions.
 
-*Figure 4.8. Experience moderation of the Hedonic Motivation -> Behavioral Intention path. The effect of HM on BI is stronger for professionals with 4+ years of experience.*
+**H4 Result: [!] Partially Supported** – Population significantly moderates HM -> BI (p = .041). Hedonic Motivation is substantially stronger for Academics (β = 0.449) than Professionals (β = -0.301), indicating that enjoyment of AI tools is more important for student adoption than professional adoption. All other paths showed no significant population differences. Figure 4.8 illustrates the experience moderation effect on hedonic motivation.
 
-### 4.5.5 Incremental Validity: AIRS vs. UTAUT2-Only Model
+![](figures/fig_experience_moderation.png){width=80%}
+
+*Figure 4.8. Experience moderation of the Hedonic Motivation -> Behavioral Intention path. The effect of HM on BI is stronger for professionals with 4+ years of experience. Source: Compiled by Author*
+
+### 4.6.4 Incremental Validity: AIRS vs. UTAUT2-Only Model
 
 To assess whether the AI-specific extension (AI Trust) provides incremental predictive validity beyond core UTAUT2 constructs, nested model comparison was conducted:
 
@@ -311,7 +377,7 @@ To assess whether the AI-specific extension (AI Trust) provides incremental pred
 
 **Interpretation**: This incremental validity test evaluates **predictive parsimony** only. AI Trust may still have **diagnostic value** for identifying trust-related barriers to AI adoption, even if it doesn't improve overall model fit. The marginal significance of AI Trust (p = .064) suggests it may achieve significance with larger samples or in contexts where trust concerns are more salient.
 
-### 4.5.6 Variance Explained
+### 4.6.5 Variance Explained
 
 The structural models explained substantial variance in Behavioral Intention:
 
@@ -324,7 +390,7 @@ Both models demonstrate exceptionally high R² values, indicating that the UTAUT
 
 
 
-### 4.5.7 Supplementary Analyses
+### 4.6.6 Supplementary Analyses
 
 #### Mediation Hypotheses
 
@@ -338,7 +404,7 @@ Both models demonstrate exceptionally high R² values, indicating that the UTAUT
 
 The confidence interval includes zero, indicating no significant mediation. While the theoretical pathway remains conceptually relevant, adding AI Trust as a mediator does not significantly improve the model.
 
-#### AI Tool Usage Patterns (H5, H6)
+### 4.6.7 Behavioral Validation Hypotheses (H5–H6)
 
 Analysis of actual tool usage behaviors provides behavioral validation of intention constructs.
 
@@ -394,7 +460,7 @@ Industry experience showed weak, non-significant relationships with UTAUT constr
 
 
 
-### 4.5.8 Exploratory Findings
+### 4.6.8 Exploratory Findings
 
 #### User Typology (Cluster Analysis)
 
@@ -456,9 +522,23 @@ Academics and Leaders reported more positive experiences, while Academics focuse
 
 
 
-## 4.6 Summary of Findings
+## 4.7 Summary of Findings
 
-### 4.6.1 Hypothesis Summary
+### 4.7.1 Comprehensive Hypothesis Outcome Summary
+
+| Category | Hypotheses | Supported | Partial | Not Supported |
+|----------|------------|-----------|---------|---------------|
+| **UTAUT2 Core (H1a-g)** | 7 | 3 (43%) | 0 | 4 (57%) |
+| **AI Extension (H2)** | 1 | 0 | 1 (marginal) | 0 |
+| **Moderation (H3-H4)** | 2 | 0 | 2 (100%) | 0 |
+| **Behavioral (H5-H6)** | 2 | 2 (100%) | 0 | 0 |
+| **TOTAL** | **12** | **5 (42%)** | **3 (25%)** | **4 (33%)** |
+
+: Table 4.14: Comprehensive Hypothesis Outcome Summary
+
+*Source: Compiled by Author*
+
+### 4.7.2 Hypothesis Details
 
 | Hypothesis | Description | Result |
 |------------|-------------|--------|
@@ -475,7 +555,7 @@ Academics and Leaders reported more positive experiences, while Academics focuse
 | H5 | BI -> Tool Usage | [OK] Supported (ρ = .69) |
 | H6 | Role usage differences | [OK] Supported (F = 22.15, p < .001) |
 
-### 4.6.2 Key Contributions
+### 4.7.3 Key Contributions
 
 1. **Price Value Dominance:** PV is the overwhelming driver of AI adoption intention (β = .505), substantially exceeding other predictors and departing from traditional UTAUT findings where PE typically dominates
 
@@ -487,13 +567,13 @@ Academics and Leaders reported more positive experiences, while Academics focuse
 
 5. **User Typology:** Four distinct adoption profiles (Enthusiasts, Cautious Adopters, Moderate Users, Anxious Avoiders) with predictable demographic and attitudinal correlates
 
-### 4.6.3 Unexpected Findings
+### 4.7.4 Unexpected Findings
 
 - **Non-significant Performance Expectancy:** Contrary to UTAUT predictions and meta-analytic findings, perceived usefulness did not significantly predict adoption intention (β = -.028, p = .791), possibly because utility is a baseline expectation for AI tools
 - **Non-significant Effort Expectancy:** Perceived ease of use did not significantly predict adoption intention, possibly due to the user-friendly nature of modern AI interfaces
 - **Price Value as Strongest Predictor:** The dominance of cost-value perceptions over utility perceptions represents a notable departure from prior UTAUT research
 
-## 4.7 Chapter Conclusion
+## 4.8 Chapter Conclusion
 
 This chapter presented comprehensive empirical validation of the AIRS diagnostic instrument and structural model examining AI adoption in higher education. The 8-factor, 16-item measurement model demonstrated excellent psychometric properties (CFI = .975, α range .74–.91) with configural invariance across role groups. The 8-factor structure was selected over a more parsimonious 7-factor alternative because AI Trust provides essential diagnostic capability: the instrument enables identification of specific adoption barriers (trust deficits, value perceptions, social influence gaps) that inform targeted intervention design.
 

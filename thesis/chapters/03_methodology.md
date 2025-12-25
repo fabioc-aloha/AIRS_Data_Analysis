@@ -133,6 +133,8 @@ Items were adapted from established scales to ensure content validity:
 
 : Table 3.1: Survey Instrument Item Sources
 
+*Source: Compiled by Author*
+
 ### 3.4.3 Content Validity
 
 Content validity was established through:
@@ -153,6 +155,8 @@ Of the 12 constructs proposed, **four AI-specific constructs were excluded** dur
 | AI Anxiety (AX) | AX1, AX2 | .30 | Item heterogeneity | Dropped |
 
 : Table 3.2: Excluded Constructs and Psychometric Issues
+
+*Source: Compiled by Author*
 
 **Interpretation**: These constructs demonstrated poor inter-item correlations, suggesting the two-item scales measured different facets of multi-dimensional phenomena rather than unitary constructs. For example:
 
@@ -181,6 +185,8 @@ Following psychometric validation (see Chapter 4), the final AIRS instrument com
 | AI Trust | TR1, TR2 | "I trust AI tools to provide accurate information" |
 
 : Table 3.3: Final AIRS Instrument Structure
+
+*Source: Compiled by Author*
 
 *Note: Behavioral Intention (BI) serves as the outcome variable in the structural model.*
 
@@ -317,7 +323,7 @@ flowchart TB
     style P10 fill:#f8bbd9,stroke:#e91e63
 ```
 
-<!-- Figure 3: Ten-Phase Analysis Pipeline -->
+*Figure 3.1. Ten-Phase Analysis Pipeline showing data preparation, measurement model validation, structural analysis, and synthesis stages. Source: Compiled by Author*
 
 ### 3.6.2 Sample Splitting Strategy
 
@@ -339,7 +345,7 @@ flowchart TD
     style F fill:#f3e5f5,stroke:#7b1fa2
 ```
 
-<!-- Figure 1: Split-Sample Cross-Validation Strategy -->
+*Figure 3.2. Split-Sample Cross-Validation Strategy showing random split of N=523 into development (n=261) and holdout (n=262) samples. Source: Compiled by Author*
 
 **Stratification**: Split stratified by AI adoption status to ensure comparable samples
 
@@ -403,7 +409,7 @@ flowchart TD
 
 : Table 3.4: Model Fit Index Thresholds
 
-Thresholds based on Hu & Bentler (1999) and Hair et al. (2019).
+*Source: Compiled by Author based on Hu & Bentler (1999) and Hair et al. (2019)*
 
 **Software**: Python `semopy` package (v2.3.10)
 
@@ -469,7 +475,8 @@ flowchart TD
     style TR fill:#fff8e1,stroke:#f57f17
 ```
 
-<!-- Figure 2: Structural Model: Eight Predictors of Behavioral Intention -->
+*Figure 3.3. Structural Model showing Eight Predictors of Behavioral Intention (UTAUT2 Core + AI Trust Extension). Source: Compiled by Author*
+
 *Note: AI Anxiety was initially proposed but excluded due to inadequate reliability (α = .301).*
 
 **Estimation**: Maximum Likelihood with robust standard errors

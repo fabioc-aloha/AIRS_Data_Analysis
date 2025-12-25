@@ -82,11 +82,31 @@ The study extends UTAUT2 with AI-specific constructs, demonstrating that traditi
 
 The findings support calls for domain-specific UTAUT extensions (Blut et al., 2022). Rather than applying generic technology acceptance models, researchers should develop and validate context-appropriate extensions that capture the unique psychological processes relevant to each technology category.
 
-### 5.4.3 Career Development Integration
+### 5.4.3 Price Value Dominance
+
+The finding that Price Value (β = .505) rather than Performance Expectancy drives AI adoption represents a significant theoretical departure from traditional UTAUT research. This suggests AI tools are evaluated through a value lens ("Is it worth it?") rather than a utility lens ("Will it help me?"). Users may assume AI will be useful but evaluate whether the investment—in time, effort, or cost—is justified.
+
+### 5.4.4 Non-Significance of Traditional Predictors
+
+The non-significance of PE, EE, FC, and HB suggests AI may represent a distinct technology category requiring tailored theoretical frameworks. Unlike previous technologies where utility perceptions drove adoption, AI adoption appears more influenced by value propositions, potentially reflecting:
+
+- **Freemium pricing models** common in AI tools create cost-benefit salience
+- **Maturation of AI interfaces** has created ceiling effects for ease-of-use perceptions
+- **Widespread organizational technology infrastructure** makes facilitating conditions a baseline expectation
+
+### 5.4.5 Experience-Dependent Mechanisms
+
+The experience moderation of HM (p = .009) suggests that adoption mechanisms differ by user characteristics in ways not previously documented in technology acceptance research. Experienced professionals place greater weight on enjoyment when evaluating AI tools, possibly reflecting that users who have satisfied basic competency needs prioritize intrinsic satisfaction.
+
+### 5.4.6 Population-Specific Pathways
+
+Differential HM effects across populations (Academic β = 0.449 vs. Professional β = -0.301, p = .041) indicate that adoption interventions may need to be tailored to specific user groups. Students weight enjoyment heavily; professionals may prioritize other factors.
+
+### 5.4.7 Career Development Integration
 
 The significant experience moderation effect introduces career development as a relevant theoretical domain for technology acceptance research. Future models should consider how career stage and professional identity influence technology evaluation and adoption decisions.
 
-### 5.4.4 User Typology Framework
+### 5.4.8 User Typology Framework
 
 The empirically-derived four-segment typology provides a framework for understanding adoption heterogeneity:
 
@@ -97,9 +117,9 @@ The empirically-derived four-segment typology provides a framework for understan
 
 This segmentation approach moves beyond mean-level analysis to acknowledge individual differences in adoption psychology. The typology provides testable hypotheses for future intervention research. Whether these segments respond differentially to targeted interventions requires experimental validation. Figure 5.1 illustrates the distribution and characteristics of the four user segments.
 
-![Figure 5.1: User Typology Framework](figures/fig_user_typology.png){width=85%}
+![](figures/fig_user_typology.png){width=85%}
 
-*Figure 5.1. Four-segment user typology derived from cluster analysis. Segment sizes represent proportions of the sample, with distinct profiles across adoption readiness constructs.*
+*Figure 5.1. Four-segment user typology derived from cluster analysis. Segment sizes represent proportions of the sample, with distinct profiles across adoption readiness constructs. Source: Compiled by Author*
 
 
 
@@ -151,16 +171,25 @@ The non-significance of Performance Expectancy was unexpected given its historic
 
 ### 5.6.2 Dropped Constructs
 
-Four proposed AI-specific constructs demonstrated inadequate reliability and were excluded:
+Four proposed AI-specific constructs demonstrated inadequate reliability and were excluded from formal hypothesis testing:
 
-| Construct | Cronbach's α | Issue Identified |
-|-----------|--------------|------------------|
-| Voluntariness | .406 | Choice vs. freedom dimensions conflated |
-| Explainability | .582 | Understanding vs. preference dimensions conflated |
-| Ethical Risk | .546 | Job displacement vs. privacy dimensions conflated |
-| AI Anxiety | .301 | Avoidance vs. approach motivations conflated |
+| Construct | Cronbach's α | Issue Identified | Future Recommendation |
+|-----------|--------------|------------------|----------------------|
+| Voluntariness (VO) | .406 | Choice vs. freedom dimensions conflated | Revise operationalization |
+| Explainability (EX) | .582 | Understanding vs. preference dimensions conflated | Develop AI-specific items |
+| Ethical Risk (ER) | .546 | Job displacement vs. privacy dimensions conflated | Context-specific measurement |
+| AI Anxiety (AX) | .301 | Avoidance vs. approach motivations conflated | Validated anxiety scale adaptation |
 
-**Interpretation**: Two-item scales proved insufficient for these multi-dimensional constructs. This represents an empirical finding about measurement complexity rather than theoretical invalidity. These constructs remain important for AI adoption theory but require more comprehensive operationalization with 3-4 items per sub-dimension.
+: Table 5.1: Constructs Excluded During Validation
+
+*Source: Compiled by Author*
+
+**Interpretation**: Two-item scales proved insufficient for these multi-dimensional constructs. This represents an empirical finding about measurement complexity rather than theoretical invalidity. These constructs remain theoretically important for AI adoption and warrant revised measurement approaches in future research.
+
+**Future Development Recommendations**:
+- For AI Anxiety specifically, future scales should distinguish between technology avoidance anxiety and fear-of-missing-out (FOMO) or obsolescence anxiety, as these represent conceptually distinct motivational orientations
+- Each excluded construct requires 3-4 items per sub-dimension to adequately capture its multi-faceted nature
+- Context-specific item development may be necessary for constructs like Ethical Risk, which may manifest differently across professional domains
 
 ### 5.6.3 Disability and Accessibility
 

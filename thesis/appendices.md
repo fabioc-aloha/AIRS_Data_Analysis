@@ -85,7 +85,7 @@ Demographic items collected included:
 | Habit | HB | .909 | .909 | .833 | HB1, HB2 |
 | Trust in AI | TR | .891 | .891 | .804 | TR1, TR2 |
 
-*Note*. α = Cronbach's alpha; CR = Composite Reliability; AVE = Average Variance Extracted. All retained constructs exceed minimum thresholds (α ≥ .70, CR ≥ .70, AVE ≥ .50). Behavioral Intention (BI) serves as the outcome variable and is modeled separately in the structural model.
+*Note*. α = Cronbach's alpha; CR = Composite Reliability; AVE = Average Variance Extracted. All retained constructs exceed minimum thresholds (α ≥ .70, CR ≥ .70, AVE ≥ .50). Behavioral Intention (BI) serves as the outcome variable and is modeled separately in the structural model. Source: Compiled by Author
 
 ### C.2 Model Fit Indices Summary
 
@@ -94,7 +94,7 @@ Demographic items collected included:
 | CFA (8-factor) | 191.25 | 98 | <.001 | .975 | .960 | .065 | [.051, .079] |
 | Structural Model | 354.32 | 169 | <.001 | .967 | .953 | .070 | [.059, .081] |
 
-*Note*. CFI = Comparative Fit Index; TLI = Tucker-Lewis Index; RMSEA = Root Mean Square Error of Approximation.
+*Note*. CFI = Comparative Fit Index; TLI = Tucker-Lewis Index; RMSEA = Root Mean Square Error of Approximation. Source: Compiled by Author
 
 ### C.3 Constructs Removed During Validation
 
@@ -105,7 +105,7 @@ Demographic items collected included:
 | Perceived Ethical Risk | ER | .546 | Poor reliability |
 | AI Anxiety | AX | .301 | Unacceptable reliability |
 
-*Note*. Constructs were removed during EFA due to α < .70 threshold.
+*Note*. Constructs were removed during EFA due to α < .70 threshold. Source: Compiled by Author
 
 \newpage
 
@@ -115,21 +115,21 @@ This appendix presents additional visualizations from the empirical analysis tha
 
 ### D.1 Sample Preparation
 
-![Figure D.1: Sample Preparation Overview](figures/fig_sample_overview.png){width=90%}
+![](figures/fig_sample_overview.png){width=90%}
 
-*Figure D.1. Overview of sample preparation process, including data cleaning, split-sample design, and final sample composition across student and professional populations.*
+*Figure D.1. Overview of sample preparation process, including data cleaning, split-sample design, and final sample composition across student and professional populations. Source: Compiled by Author*
 
 ### D.2 AI Tool Usage Patterns
 
-![Figure D.2: AI Tool Usage Distribution](figures/fig_usage_distribution.png){width=85%}
+![](figures/fig_usage_distribution.png){width=85%}
 
-*Figure D.2. Distribution of AI tool usage frequency across the sample. ChatGPT demonstrates the highest adoption rates, followed by Microsoft Copilot and Google Gemini.*
+*Figure D.2. Distribution of AI tool usage frequency across the sample. ChatGPT demonstrates the highest adoption rates, followed by Microsoft Copilot and Google Gemini. Source: Compiled by Author*
 
 ### D.3 Disability and AI Anxiety
 
-![Figure D.3: Disability Status and AI Anxiety](figures/fig_disability_anxiety.png){width=80%}
+![](figures/fig_disability_anxiety.png){width=80%}
 
-*Figure D.3. Comparison of AI anxiety levels between participants with and without disclosed disabilities. Effect size d = .36 indicates moderate elevation of anxiety for participants with disabilities.*
+*Figure D.3. Comparison of AI anxiety levels between participants with and without disclosed disabilities. Effect size d = .36 indicates moderate elevation of anxiety for participants with disabilities. Source: Compiled by Author*
 
 \newpage
 
@@ -148,6 +148,8 @@ The AI Readiness Scale (AIRS) validated in this dissertation represents Phase 0 
 | **Phase 2** | Organizational Diagnostics | Team/org-level assessment, gap analysis, benchmarking protocols |
 | **Phase 3** | Intervention Research | Segment-specific interventions, randomized trials, effectiveness validation |
 | **Phase 4** | AI Readiness Ecosystem | Longitudinal tracking, industry adaptations, practitioner certification |
+
+*Source: Compiled by Author*
 
 ### E.2 Phase 1: AIRS Score Development
 
@@ -514,7 +516,7 @@ This file contains the anonymized survey responses (N=523) with the following ch
 | airs_28item_complete.json | Full 28-item instrument with metadata |
 | AIRS-AI-Readiness-Scale-labels.csv | Variable labels and response options |
 
-*Note: All data files are located in the data/ directory.*
+*Note: All data files are located in the data/ directory. Source: Compiled by Author*
 
 ### H.4 Analysis Notebooks
 
@@ -536,7 +538,7 @@ The analysis was conducted using Jupyter notebooks executed sequentially. Each n
 | 09_Comprehensive_Review | Cluster analysis | User typology |
 | 10_Final_Synthesis | Integration | Summary statistics |
 
-*Note: All notebooks have `.ipynb` extension.*
+*Note: All notebooks have `.ipynb` extension. Source: Compiled by Author*
 
 ### H.5 Quick Start Guide
 
@@ -586,6 +588,8 @@ Open notebooks in numerical order (00 -> 01 -> 02 -> ... -> 10) to reproduce the
 | pingouin | ≥0.5.0 | Statistical testing |
 | matplotlib | ≥3.6.0 | Visualization |
 | seaborn | ≥0.12.0 | Statistical graphics |
+
+*Source: Compiled by Author*
 
 ### H.7 Thesis PDF Generation
 
@@ -648,7 +652,9 @@ All materials are provided as-is for research and educational purposes.
 
 ## Appendix I: Research Questions and Hypotheses Summary
 
-This appendix provides a comprehensive summary of all research questions and hypotheses examined in this dissertation, along with their empirical outcomes and supporting evidence.
+**Note**: The content from this appendix has been incorporated into the main body of the dissertation. See Chapter 4 (§4.2 Research Questions and Hypotheses Overview, §4.6 Findings by Research Question, §4.7 Summary of Findings) and Chapter 5 (§5.4 Implications for Theory, §5.6 Unexpected Findings) for the integrated presentation of research questions, hypotheses, and their outcomes.
+
+The following summary is retained for quick reference.
 
 ### I.1 Research Questions Summary
 
