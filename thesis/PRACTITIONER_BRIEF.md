@@ -1,10 +1,31 @@
-# AIRS Practitioner Brief
+\begin{titlepage}
+\centering
+\vspace*{2cm}
 
-## Understanding AI Adoption Readiness in Your Organization
+{\Large\textbf{AIRS Practitioner Brief}}
 
-*A research summary for organizational leaders and HR professionals*
+\vspace{1cm}
 
-## Why This Research Matters
+{\large Understanding AI Adoption Readiness in Your Organization}
+
+\vspace{0.5cm}
+
+{\normalsize\textit{A research summary for organizational leaders and HR professionals}}
+
+\vspace{2cm}
+
+{\large\textbf{Fabio Correa}}
+
+\vspace{0.5cm}
+
+{\normalsize Doctor of Business Administration\\Touro University Worldwide\\December 2025}
+
+\vfill
+\end{titlepage}
+
+\newpage
+
+# Why This Research Matters
 
 Artificial intelligence tools are rapidly entering workplaces, yet many organizations struggle to achieve expected value from AI investments. Understanding the psychological factors that influence AI adoption can help inform evidence-based approaches to technology implementation.
 
@@ -42,16 +63,21 @@ Surprisingly, factors that typically drive technology adoption (Performance Expe
 
 Our research identified four distinct adoption profiles:
 
-| Segment | % of Sample | Characteristics |
-| --- | --- | --- |
-| **AI Enthusiasts** | 16% | High trust, low anxiety, strong adoption intention |
-| **Cautious Adopters** | 30% | Moderate trust, evaluative stance, open to evidence |
-| **Moderate Users** | 37% | Balanced profiles, pragmatic adoption approach |
-| **Anxious Avoiders** | 17% | Elevated anxiety, low trust, resistance to adoption |
-
-: Table P.1: User Segment Profiles {#tbl:practitioner-segments}
-
-*Source: Compiled by Author*
+\begin{table}[H]
+\centering
+\begin{tabular}{>{\raggedright\arraybackslash}p{0.30\textwidth}>{\centering\arraybackslash}p{0.18\textwidth}>{\raggedright\arraybackslash}p{0.42\textwidth}}
+\toprule
+\textbf{Segment} & \textbf{\% of Sample} & \textbf{Characteristics} \\
+\midrule
+\textbf{AI Enthusiasts} & 16\% & High trust, low anxiety, strong adoption intention \\
+\textbf{Cautious Adopters} & 30\% & Moderate trust, evaluative stance, open to evidence \\
+\textbf{Moderate Users} & 37\% & Balanced profiles, pragmatic adoption approach \\
+\textbf{Anxious Avoiders} & 17\% & Elevated anxiety, low trust, resistance to adoption \\
+\bottomrule
+\end{tabular}
+\caption{User Segment Profiles. \textit{Source: Compiled by Author}}
+\label{tbl:practitioner-segments}
+\end{table}
 
 *Research implication*: These segments provide testable hypotheses for future intervention research. Whether different user types respond to different adoption strategies requires experimental validation.
 

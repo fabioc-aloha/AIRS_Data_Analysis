@@ -1,15 +1,27 @@
-# Artificial Intelligence Readiness Scale (AIRS): Dissertation Defense
+\begin{titlepage}
+\centering
+\vspace*{2cm}
 
-## Artificial Intelligence Readiness Scale: Extending UTAUT2 for Enterprise AI Adoption
+{\Large\textbf{Artificial Intelligence Readiness Scale (AIRS):\\Dissertation Defense (20-Minute Version)}}
 
-Fabio Correa
-Doctoral Candidate, Doctor of Business Administration
-Touro University Worldwide
-December 2025
+\vspace{1cm}
 
----
+{\large Extending UTAUT2 for Enterprise AI Adoption}
 
-## Slide 1: Title Slide
+\vspace{2cm}
+
+{\large\textbf{Fabio Correa}}
+
+\vspace{0.5cm}
+
+{\normalsize Doctoral Candidate, Doctor of Business Administration\\Touro University Worldwide\\December 2025}
+
+\vfill
+\end{titlepage}
+
+\newpage
+
+# Slide 1: Title Slide
 
 ### Artificial Intelligence Readiness Scale
 

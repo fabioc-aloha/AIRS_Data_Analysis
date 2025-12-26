@@ -1,13 +1,30 @@
-# Artificial Intelligence Readiness Scale: Extending UTAUT2 for Enterprise AI Adoption
+\begin{titlepage}
+\centering
+\vspace*{2cm}
 
-## A Dissertation Summary
+{\Large\textbf{Artificial Intelligence Readiness Scale:\\
+Extending UTAUT2 for Enterprise AI Adoption}}
 
-**Fabio Correa**
-Doctoral Candidate, Doctor of Business Administration
-Touro University Worldwide
-December 2025
+\vspace{1cm}
 
-## Introduction and Research Problem
+{\large A Dissertation Summary}
+
+\vspace{2cm}
+
+{\large\textbf{Fabio Correa}}
+
+\vspace{0.5cm}
+
+{\normalsize Doctoral Candidate, Doctor of Business Administration\\
+Touro University Worldwide\\
+December 2025}
+
+\vfill
+\end{titlepage}
+
+\newpage
+
+# Introduction and Research Problem
 
 The rapid proliferation of artificial intelligence in organizational settings has created an urgent need to understand the psychological factors that drive or inhibit AI adoption. While organizations worldwide have embraced AI at unprecedented rates (rising from approximately 50% adoption historically to 72% in 2024 and 88% by late 2025) this adoption has not translated into proportional value capture. Industry research reveals a troubling pattern: Boston Consulting Group reports that only 5% of companies achieve measurable business value from AI initiatives, while MIT Media Lab's NANDA Initiative found that 90-95% of generative AI pilots fail to scale or deliver measurable improvements.
 

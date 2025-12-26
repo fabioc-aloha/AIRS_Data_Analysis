@@ -56,6 +56,7 @@ if ((Test-Path $BibFile) -and (Test-Path $CslFile)) {
 
 # Standalone documents to convert (if no specific file provided)
 $StandaloneFiles = @(
+    "DEFENSE_QUESTIONS.md"
     "EXECUTIVE_SUMMARY.md"
     "PRACTITIONER_BRIEF.md"
     "THESIS_SUMMARY.md"
@@ -77,14 +78,21 @@ function Convert-MarkdownToPdf {
     $OutputFile = [System.IO.Path]::ChangeExtension($InputFile, ".pdf")
     $FileName = Split-Path -Leaf $InputFile
     
+    # Delete existing PDF to ensure clean conversion
+    if (Test-Path $OutputFile) {
+        Remove-Item $OutputFile -Force
+    }
+    
     Write-Host "  Converting: $FileName" -ForegroundColor Cyan
     
     try {
         # Build pandoc command directly
         $HeaderFile = Join-Path $ScriptDir "standalone-header.tex"
-        $cmd = "pandoc `"$InputFile`" -o `"$OutputFile`" --pdf-engine=xelatex"
+        $cmd = "pandoc `"$InputFile`" -o `"$OutputFile`" --pdf-engine=xelatex --standalone"
         $cmd += " -V geometry:margin=1in -V fontsize=12pt"
         $cmd += " -V `"mainfont=Times New Roman`""
+        $cmd += " -V documentclass=article"
+        $cmd += " --number-sections"
         
         # Add header for table spacing if it exists
         if (Test-Path $HeaderFile) {

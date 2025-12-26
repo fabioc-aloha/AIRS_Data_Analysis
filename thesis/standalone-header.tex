@@ -4,6 +4,27 @@
 \usepackage{setspace}
 \onehalfspacing
 
+% Array package for column formatting
+\usepackage{array}
+
+% Float package for table placement
+\usepackage{float}
+
+% Booktabs for professional tables
+\usepackage{booktabs}
+
+% Use Times New Roman for code/verbatim instead of monospace
+\usepackage{fontspec}
+\setmonofont{Times New Roman}
+
+% Improve line breaking for long text
+\usepackage{ragged2e}
+\setlength{\RaggedRightParindent}{0pt}
+
+% Allow line breaks in URLs and paths
+\usepackage{url}
+\usepackage[hyphens]{url}
+
 % Reset tables to single spacing
 \AtBeginEnvironment{longtable}{\singlespacing}
 \AtBeginEnvironment{tabular}{\singlespacing}
