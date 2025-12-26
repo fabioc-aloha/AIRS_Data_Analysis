@@ -4,17 +4,17 @@ Core documentation for the AIRS dissertation project.
 
 ## Current Files
 
-| File | Description |
-|------|-------------|
+| File                 | Description                                       |
+| -------------------- | ------------------------------------------------- |
 | `DATA_DICTIONARY.md` | Complete variable definitions, scales, and coding |
-| `AIRS Model.png` | Conceptual framework diagram |
+| `AIRS Model.png`     | Conceptual framework diagram                      |
 
 ## Related Documentation
 
 ### Primary Documents (in other folders)
 
 | Location | Content |
-|----------|---------|
+| -------- | ------- |
 | `thesis/` | Complete dissertation chapters and appendices |
 | `plan/` | Research proposal, analysis plan, survey instrument |
 | `airs_experiment/` | Analysis notebooks with inline documentation |
@@ -22,7 +22,7 @@ Core documentation for the AIRS dissertation project.
 ### Quick Reference
 
 | Topic | Location |
-|-------|----------|
+| ----- | -------- |
 | Thesis chapters | `thesis/chapters/` |
 | Survey instrument | `plan/AIRS Survey Instrument v5.md` |
 | Analysis methodology | `plan/ANALYSIS_PLAN_v2.md` |

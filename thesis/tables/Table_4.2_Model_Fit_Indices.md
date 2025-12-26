@@ -22,4 +22,6 @@
 | C | 8 | 18 | .964 | .953 | .066 | .048 | Good |
 | **D** | **8** | **16** | **.975** | **.960** | **.065** | **.048** | **Selected** |
 
-*Note: Model D selected based on optimal balance of parsimony and fit. All factor loadings ≥ .50, no cross-loadings > .32.*
+: Table 4.2: Measurement Model Fit Indices {#tbl:appendix-model-fit}
+
+*Note: Model D selected based on optimal balance of parsimony and fit. All factor loadings ≥ .50, no cross-loadings > .32. Source: Compiled by Author*

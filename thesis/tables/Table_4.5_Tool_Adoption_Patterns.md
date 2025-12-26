@@ -29,4 +29,6 @@
 | Other | .43** | .37** | .42** | .40** | .46** | .44** | .42** | .39** | .44** |
 | Total Usage | .66** | .56** | .59** | .57** | .66** | .63** | .66** | .60** | .69** |
 
-*Note: * p < .05, ** p < .01. All correlations are significant.*
+: Table 4.5: AI Tool Usage Patterns {#tbl:appendix-tool-usage}
+
+*Note: * p < .05, ** p < .01. All correlations are significant. Source: Compiled by Author*

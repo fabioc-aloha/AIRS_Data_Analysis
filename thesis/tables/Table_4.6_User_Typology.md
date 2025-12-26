@@ -28,3 +28,7 @@
 | Cautious Adopters (30%) | High adoption but also high anxiety | Need reassurance and support |
 | Moderate Users (37%) | Neutral stance, average engagement | Largest group, can be swayed |
 | Anxious Avoiders (17%) | Low adoption, high anxiety, resistant | Need targeted anxiety interventions |
+
+: Table 4.6: User Typology (Cluster Analysis) {#tbl:appendix-typology}
+
+*Source: Compiled by Author*

@@ -100,7 +100,7 @@ The experience moderation of HM (p = .009) suggests that adoption mechanisms dif
 
 ### 5.4.6 Population-Specific Pathways
 
-Differential HM effects across populations (Academic β = 0.449 vs. Professional β = -0.301, p = .041) indicate that adoption interventions may need to be tailored to specific user groups. Students weight enjoyment heavily; professionals may prioritize other factors.
+Differential HM effects across populations (Student β = 0.449 vs. Professional β = -0.301, p = .041) indicate that adoption interventions may need to be tailored to specific user groups. Students weight enjoyment heavily; professionals may prioritize other factors.
 
 ### 5.4.7 Career Development Integration
 
@@ -117,9 +117,9 @@ The empirically-derived four-segment typology provides a framework for understan
 
 This segmentation approach moves beyond mean-level analysis to acknowledge individual differences in adoption psychology. The typology provides testable hypotheses for future intervention research. Whether these segments respond differentially to targeted interventions requires experimental validation. Figure 5.1 illustrates the distribution and characteristics of the four user segments.
 
-![](figures/fig_user_typology.png){width=85%}
+![Figure 5.1: Four-segment user typology derived from cluster analysis. Segment sizes represent proportions of the sample, with distinct profiles across adoption readiness constructs. *Source: Compiled by Author*](figures/fig_user_typology.png){#fig:user-typology}
 
-*Figure 5.1. Four-segment user typology derived from cluster analysis. Segment sizes represent proportions of the sample, with distinct profiles across adoption readiness constructs. Source: Compiled by Author*
+Source: Compiled by Author
 
 
 
@@ -173,16 +173,25 @@ The non-significance of Performance Expectancy was unexpected given its historic
 
 Four proposed AI-specific constructs demonstrated inadequate reliability and were excluded from formal hypothesis testing:
 
-| Construct | Cronbach's α | Issue Identified | Future Recommendation |
-|-----------|--------------|------------------|----------------------|
-| Voluntariness (VO) | .406 | Choice vs. freedom dimensions conflated | Revise operationalization |
-| Explainability (EX) | .582 | Understanding vs. preference dimensions conflated | Develop AI-specific items |
-| Ethical Risk (ER) | .546 | Job displacement vs. privacy dimensions conflated | Context-specific measurement |
-| AI Anxiety (AX) | .301 | Avoidance vs. approach motivations conflated | Validated anxiety scale adaptation |
+```{=latex}
+\begin{table}[H]
+\centering
+\caption{Table 5.1: Constructs Excluded During Validation}
+\begin{tabular}{@{}lc>{\raggedright\arraybackslash}p{0.30\textwidth}>{\raggedright\arraybackslash}p{0.28\textwidth}@{}}
+\toprule
+\textbf{Construct} & \textbf{Cronbach's $\alpha$} & \textbf{Issue Identified} & \textbf{Future Recommendation} \\
+\midrule
+Voluntariness (VO) & .406 & Choice vs. freedom dimensions conflated & Revise operationalization \\
+Explainability (EX) & .582 & Understanding vs. preference dimensions conflated & Develop AI-specific items \\
+Ethical Risk (ER) & .546 & Job displacement vs. privacy dimensions conflated & Context-specific measurement \\
+AI Anxiety (AX) & .301 & Avoidance vs. approach motivations conflated & Validated anxiety scale adaptation \\
+\bottomrule
+\end{tabular}
 
-: Table 5.1: Constructs Excluded During Validation
-
-*Source: Compiled by Author*
+\vspace{0.5em}
+\footnotesize Source: Compiled by Author
+\end{table}
+```
 
 **Interpretation**: Two-item scales proved insufficient for these multi-dimensional constructs. This represents an empirical finding about measurement complexity rather than theoretical invalidity. These constructs remain theoretically important for AI adoption and warrant revised measurement approaches in future research.
 

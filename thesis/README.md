@@ -32,7 +32,7 @@ thesis/
 ## Study Overview
 
 | Element | Description |
-|---------|-------------|
+| ------- | ----------- |
 | **Title** | Artificial Intelligence Readiness Scale: Extending UTAUT2 for Enterprise AI Adoption |
 | **Author** | Fabio Correa, Doctoral Candidate |
 | **Institution** | Touro University Worldwide |
@@ -47,7 +47,7 @@ thesis/
 ### Significant Predictors of AI Adoption Intention
 
 | Predictor | Effect | Significance |
-|-----------|--------|--------------|
+| --------- | ------ | ------------ |
 | **Price Value** | β = .505 | p < .001 (Strongest) |
 | **Hedonic Motivation** | β = .217 | p = .014 |
 | **Social Influence** | β = .136 | p = .024 |
@@ -56,7 +56,7 @@ thesis/
 ### Non-Significant Predictors
 
 | Predictor | Effect | Note |
-|-----------|--------|------|
+| --------- | ------ | ---- |
 | Performance Expectancy | β = -.028 | Departure from traditional UTAUT |
 | Effort Expectancy | β = -.008 | AI usability may be baseline |
 | Facilitating Conditions | β = .059 | Organizational support not differentiating |
@@ -65,7 +65,7 @@ thesis/
 ### Four User Segments Identified
 
 | Segment | % | Characteristics |
-|---------|---|-----------------|
+| ------- | - | --------------- |
 | AI Enthusiasts | 16% | High trust, low anxiety, strong intention |
 | Cautious Adopters | 30% | Moderate trust, evaluative stance |
 | Moderate Users | 37% | Balanced profiles, pragmatic approach |
@@ -74,7 +74,7 @@ thesis/
 ## Document Status
 
 | Component | Status |
-|-----------|--------|
+| --------- | ------ |
 | Chapter 1: Introduction | [OK] Complete |
 | Chapter 2: Literature Review | [OK] Complete |
 | Chapter 3: Methodology | [OK] Complete |
@@ -88,10 +88,10 @@ thesis/
 
 ## Build Scripts
 
-| Script | Purpose |
-|--------|---------|
-| `build-thesis.ps1` | Build complete thesis PDF with Mermaid diagrams |
-| `convert-to-pdf.ps1` | Convert standalone documents to PDF (APA 7 format) |
+| Script               | Purpose                                                 |
+| -------------------- | ------------------------------------------------------- |
+| `build-thesis.ps1`   | Build complete thesis PDF with Mermaid diagrams         |
+| `convert-to-pdf.ps1` | Convert standalone documents to PDF (APA 7 format)      |
 
 ### Usage
 
@@ -111,7 +111,7 @@ thesis/
 All notebooks in `airs_experiment/` are complete:
 
 | Notebook | Phase | Status |
-|----------|-------|--------|
+| -------- | ----- | ------ |
 | NB00 | Sample Splitting (N=523 -> 261/262) | [OK] |
 | NB01 | Exploratory Factor Analysis | [OK] |
 | NB02 | Confirmatory Factor Analysis | [OK] |
@@ -126,4 +126,4 @@ All notebooks in `airs_experiment/` are complete:
 
 ---
 
-Last updated: December 9, 2025
+Last updated: December 26, 2025

@@ -90,7 +90,7 @@ flowchart LR
     style AIRS fill:#e1f5fe,stroke:#0288d1,stroke-width:2px
 ```
 
-*Figure 2.1. Evolution of Technology Acceptance Models from TRA (1975) through UTAUT2 (2012) to the AIRS extension (this study). Source: Compiled by Author*
+: Figure 2.1: Evolution of Technology Acceptance Models from TRA (1975) through UTAUT2 (2012) to the AIRS extension (this study). *Source: Compiled by Author* {#fig:tam-evolution}
 
 
 ## 2.3 The AI Adoption-Value Gap: Industry Context
@@ -214,7 +214,7 @@ flowchart TB
     style BI fill:#e1f5fe,stroke:#0288d1,stroke-width:3px
 ```
 
-*Figure 2.2. AIRS Conceptual Model showing Extended UTAUT2 framework for AI Adoption with AI Trust extension. Source: Compiled by Author*
+: Figure 2.2: AIRS Conceptual Model showing Extended UTAUT2 framework for AI Adoption with AI Trust extension. *Source: Compiled by Author* {#fig:airs-conceptual-model}
 
 *Note: AI Anxiety was initially proposed as an inhibitor construct (H8) but was excluded from the final model due to inadequate reliability (α = .301). See Chapter 4 for details.*
 
@@ -262,7 +262,7 @@ The literature review reveals several gaps that the present research addresses:
 
 The present research proposes an extended UTAUT2 model for AI adoption that retains the validated core while adding AI-specific enabler and inhibitor constructs. The model specifies:
 
-**UTAUT2 Core Predictors**: Performance Expectancy, Effort Expectancy, Social Influence, Facilitating Conditions, Hedonic Motivation, and Habit as direct predictors of Behavioral Intention. Price Value is omitted given the organizational (rather than personal purchase) context.
+**UTAUT2 Core Predictors**: Performance Expectancy, Effort Expectancy, Social Influence, Facilitating Conditions, Hedonic Motivation, Price Value, and Habit as direct predictors of Behavioral Intention.
 
 **AI-Specific Extension**: AI Trust as an enabler positively predicting Behavioral Intention, and AI Anxiety as an inhibitor negatively predicting Behavioral Intention.
 
@@ -365,7 +365,7 @@ flowchart LR
     style Validation fill:#fff3e0,stroke:#f57c00
 ```
 
-*Figure 2.3. Research Hypotheses Summary showing UTAUT2 core constructs, AI-specific extension, moderation hypotheses, and behavioral validation. Source: Compiled by Author*
+: Figure 2.3: Research Hypotheses Summary showing UTAUT2 core constructs, AI-specific extension, moderation hypotheses, and behavioral validation. *Source: Compiled by Author* {#fig:hypotheses-summary}
 
 
 ## 2.9 Chapter Summary

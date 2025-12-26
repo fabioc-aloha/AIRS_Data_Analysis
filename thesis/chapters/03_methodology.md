@@ -120,20 +120,29 @@ Items were measured on 5-point Likert scales (1 = Strongly Disagree to 5 = Stron
 
 Items were adapted from established scales to ensure content validity:
 
-| Construct | Source | Adaptation |
-|-----------|--------|------------|
-| PE, EE, SI, FC, HM | Venkatesh et al. (2012) UTAUT2 | Context adapted for AI tools |
-| PV, HB | Venkatesh et al. (2012) UTAUT2 | Context adapted for AI tools |
-| TR | McKnight et al. (2002); Siau & Wang (2018) | Adapted for AI systems |
-| AX | Venkatesh (2000); Meuter et al. (2003) | Technology anxiety -> AI anxiety |
-| VO | Moore & Benbasat (1991) | Voluntariness of use |
-| EX | Shin (2021) | Explainability in AI |
-| ER | Gursoy et al. (2019) | Ethical risk perception |
-| BI | Venkatesh et al. (2003) | Standard UTAUT items |
+```{=latex}
+\begin{table}[H]
+\centering
+\caption{Table 3.1: Survey Instrument Item Sources}
+\begin{tabular}{@{}lll@{}}
+\toprule
+\textbf{Construct} & \textbf{Source} & \textbf{Adaptation} \\
+\midrule
+PE, EE, SI, FC, HM & Venkatesh et al. (2012) UTAUT2 & Context adapted for AI tools \\
+PV, HB & Venkatesh et al. (2012) UTAUT2 & Context adapted for AI tools \\
+TR & McKnight et al. (2002); Siau \& Wang (2018) & Adapted for AI systems \\
+AX & Venkatesh (2000); Meuter et al. (2003) & Technology anxiety -> AI anxiety \\
+VO & Moore \& Benbasat (1991) & Voluntariness of use \\
+EX & Shin (2021) & Explainability in AI \\
+ER & Gursoy et al. (2019) & Ethical risk perception \\
+BI & Venkatesh et al. (2003) & Standard UTAUT items \\
+\bottomrule
+\end{tabular}
 
-: Table 3.1: Survey Instrument Item Sources
-
-*Source: Compiled by Author*
+\vspace{0.5em}
+\footnotesize Source: Compiled by Author
+\end{table}
+```
 
 ### 3.4.3 Content Validity
 
@@ -147,16 +156,25 @@ Content validity was established through:
 
 Of the 12 constructs proposed, **four AI-specific constructs were excluded** during exploratory factor analysis due to inadequate psychometric properties:
 
-| Construct | Items | Cronbach's α | Issue | Disposition |
-|-----------|-------|--------------|-------|-------------|
-| Voluntariness (VO) | VO1, VO2 | .41 | Multi-dimensional | Dropped |
-| Explainability (EX) | EX1, EX2 | .58 | Multi-dimensional | Dropped |
-| Ethical Risk (ER) | ER1, ER2 | .55 | Multi-dimensional | Dropped |
-| AI Anxiety (AX) | AX1, AX2 | .30 | Item heterogeneity | Dropped |
+```{=latex}
+\begin{table}[H]
+\centering
+\caption{Table 3.2: Excluded Constructs and Psychometric Issues}
+\begin{tabular}{@{}llcll@{}}
+\toprule
+\textbf{Construct} & \textbf{Items} & \textbf{Cronbach's α} & \textbf{Issue} & \textbf{Disposition} \\
+\midrule
+Voluntariness (VO) & VO1, VO2 & .41 & Multi-dimensional & Dropped \\
+Explainability (EX) & EX1, EX2 & .58 & Multi-dimensional & Dropped \\
+Ethical Risk (ER) & ER1, ER2 & .55 & Multi-dimensional & Dropped \\
+AI Anxiety (AX) & AX1, AX2 & .30 & Item heterogeneity & Dropped \\
+\bottomrule
+\end{tabular}
 
-: Table 3.2: Excluded Constructs and Psychometric Issues
-
-*Source: Compiled by Author*
+\vspace{0.5em}
+\footnotesize Source: Compiled by Author
+\end{table}
+```
 
 **Interpretation**: These constructs demonstrated poor inter-item correlations, suggesting the two-item scales measured different facets of multi-dimensional phenomena rather than unitary constructs. For example:
 
@@ -173,20 +191,29 @@ Of the 12 constructs proposed, **four AI-specific constructs were excluded** dur
 
 Following psychometric validation (see Chapter 4), the final AIRS instrument comprises **16 items across 8 factors** (7 UTAUT2 predictors + AI Trust extension):
 
-| Factor | Items | Example Item |
-|--------|-------|--------------|
-| Performance Expectancy | PE1, PE2 | "Using AI tools increases my productivity" |
-| Effort Expectancy | EE1, EE2 | "Learning to use AI tools is easy for me" |
-| Social Influence | SI1, SI2 | "People important to me think I should use AI tools" |
-| Facilitating Conditions | FC1, FC2 | "I have the resources necessary to use AI tools" |
-| Hedonic Motivation | HM1, HM2 | "Using AI tools is fun" |
-| Price Value | PV1, PV2 | "AI tools are good value for the money" |
-| Habit | HB1, HB2 | "Using AI tools has become a habit for me" |
-| AI Trust | TR1, TR2 | "I trust AI tools to provide accurate information" |
+```{=latex}
+\begin{table}[H]
+\centering
+\caption{Table 3.3: Final AIRS Instrument Structure}
+\begin{tabular}{@{}ll>{\raggedright\arraybackslash}p{0.45\textwidth}@{}}
+\toprule
+\textbf{Factor} & \textbf{Items} & \textbf{Example Item} \\
+\midrule
+Performance Expectancy & PE1, PE2 & ``Using AI tools increases my productivity'' \\
+Effort Expectancy & EE1, EE2 & ``Learning to use AI tools is easy for me'' \\
+Social Influence & SI1, SI2 & ``People important to me think I should use AI tools'' \\
+Facilitating Conditions & FC1, FC2 & ``I have the resources necessary to use AI tools'' \\
+Hedonic Motivation & HM1, HM2 & ``Using AI tools is fun'' \\
+Price Value & PV1, PV2 & ``AI tools are good value for the money'' \\
+Habit & HB1, HB2 & ``Using AI tools has become a habit for me'' \\
+AI Trust & TR1, TR2 & ``I trust AI tools to provide accurate information'' \\
+\bottomrule
+\end{tabular}
 
-: Table 3.3: Final AIRS Instrument Structure
-
-*Source: Compiled by Author*
+\vspace{0.5em}
+\footnotesize Source: Compiled by Author
+\end{table}
+```
 
 *Note: Behavioral Intention (BI) serves as the outcome variable in the structural model.*
 
@@ -224,11 +251,24 @@ Target sample size was determined based on:
 
 Respondents were classified into three role groups based on self-reported primary role:
 
-| Category | Operational Definition | n | % |
-|----------|----------------------|---|---|
-| Student | Full-time students (n=196), part-time students (n=20) | 216 | 41.3% |
-| Professional | Individual contributors (n=112), freelancers (n=32), other (n=23), unemployed (n=17) | 184 | 35.2% |
-| Leader | Managers (n=71), executives (n=52) | 123 | 23.5% |
+```{=latex}
+\begin{table}[H]
+\centering
+\caption{Table 3.4: Role Classification Scheme}
+\begin{tabular}{@{}l>{\raggedright\arraybackslash}p{0.45\textwidth}rr@{}}
+\toprule
+\textbf{Category} & \textbf{Operational Definition} & \textbf{n} & \textbf{\%} \\
+\midrule
+Student & Full-time students (n=196), part-time students (n=20) & 216 & 41.3\% \\
+Professional & Individual contributors (n=112), freelancers (n=32), other (n=23), unemployed (n=17) & 184 & 35.2\% \\
+Leader & Managers (n=71), executives (n=52) & 123 & 23.5\% \\
+\bottomrule
+\end{tabular}
+
+\vspace{0.5em}
+\footnotesize Source: Compiled by Author
+\end{table}
+```
 
 **Note**: For multi-group SEM requiring larger group sizes, Professional and Leader categories were combined (n = 307) to contrast with Student (n = 216). This grouping reflects meaningful theoretical distinctions between student-focused and employment-focused roles.
 
@@ -251,13 +291,26 @@ Respondents were classified into three role groups based on self-reported primar
 
 Multiple quality checks were implemented:
 
-| Check | Criterion | Action |
-|-------|-----------|--------|
-| Completion status | Finished = True | Exclude incomplete responses |
-| Response time | > 3 minutes | Exclude speeders |
-| Attention checks | Correct response | Exclude inattentive responses |
-| Pattern responding | Variance > 0 | Exclude straight-line responses |
-| Duplicate detection | Unique IP/device | Retain first response only |
+```{=latex}
+\begin{table}[H]
+\centering
+\caption{Table 3.5: Data Quality Assurance Checks}
+\begin{tabular}{@{}llp{0.40\textwidth}@{}}
+\toprule
+\textbf{Check} & \textbf{Criterion} & \textbf{Action} \\
+\midrule
+Completion status & Finished = True & Exclude incomplete responses \\
+Response time & > 3 minutes & Exclude speeders \\
+Attention checks & Correct response & Exclude inattentive responses \\
+Pattern responding & Variance > 0 & Exclude straight-line responses \\
+Duplicate detection & Unique IP/device & Retain first response only \\
+\bottomrule
+\end{tabular}
+
+\vspace{0.5em}
+\footnotesize Source: Compiled by Author
+\end{table}
+```
 
 **Final valid sample**: N = 523 after quality screening
 
@@ -269,19 +322,34 @@ Multiple quality checks were implemented:
 
 The analysis followed a systematic 10-phase pipeline ensuring replicability and transparency:
 
-| Phase | Notebook | Purpose |
-|-------|----------|----------|
-| 0 | Sample Splitting | Create EFA/CFA subsamples |
-| 1 | EFA | Explore factor structure |
-| 2 | CFA | Validate factor structure |
-| 3 | Invariance | Test measurement invariance |
-| 4 | Structural Model | Test hypotheses |
-| 5 | Mediation | Examine indirect effects |
-| 6 | Moderation | Test moderating effects |
-| 7 | Tool Usage | Behavioral validation |
-| 8 | Qualitative | Thematic analysis |
-| 9 | Comprehensive Review | Gap analysis |
-| 10 | Final Synthesis | Integration |
+```{=latex}
+\begin{table}[H]
+\centering
+\caption{Table 3.6: Ten-Phase Analysis Pipeline}
+\begin{tabular}{@{}clp{0.50\textwidth}@{}}
+\toprule
+\textbf{Phase} & \textbf{Notebook} & \textbf{Purpose} \\
+\midrule
+0 & Sample Splitting & Create EFA/CFA subsamples \\
+1 & EFA & Explore factor structure \\
+2 & CFA & Validate factor structure \\
+3 & Invariance & Test measurement invariance \\
+4 & Structural Model & Test hypotheses \\
+5 & Mediation & Examine indirect effects \\
+6 & Moderation & Test moderating effects \\
+7 & Tool Usage & Behavioral validation \\
+8 & Qualitative & Thematic analysis \\
+9 & Comprehensive Review & Gap analysis \\
+10 & Final Synthesis & Integration \\
+\bottomrule
+\end{tabular}
+
+\vspace{0.5em}
+\footnotesize Source: Compiled by Author
+\end{table}
+```
+
+Source: Compiled by Author
 
 ```mermaid
 flowchart TB
@@ -323,7 +391,7 @@ flowchart TB
     style P10 fill:#f8bbd9,stroke:#e91e63
 ```
 
-*Figure 3.1. Ten-Phase Analysis Pipeline showing data preparation, measurement model validation, structural analysis, and synthesis stages. Source: Compiled by Author*
+: Figure 3.1: Ten-Phase Analysis Pipeline showing data preparation, measurement model validation, structural analysis, and synthesis stages. *Source: Compiled by Author* {#fig:analysis-pipeline}
 
 ### 3.6.2 Sample Splitting Strategy
 
@@ -345,7 +413,7 @@ flowchart TD
     style F fill:#f3e5f5,stroke:#7b1fa2
 ```
 
-*Figure 3.2. Split-Sample Cross-Validation Strategy showing random split of N=523 into development (n=261) and holdout (n=262) samples. Source: Compiled by Author*
+: Figure 3.2: Split-Sample Cross-Validation Strategy showing random split of N=523 into development (n=261) and holdout (n=262) samples. *Source: Compiled by Author* {#fig:split-sample}
 
 **Stratification**: Split stratified by AI adoption status to ensure comparable samples
 
@@ -377,10 +445,29 @@ flowchart TD
 **Item Retention Criteria**:
 
 | Criterion | Threshold | Rationale |
-|-----------|-----------|-----------|
+| --- | --- | --- |
 | Primary loading | λ ≥ .50 | Strong factor association |
 | Cross-loading | Δλ ≥ .20 | Simple structure |
 | Communality | h² ≥ .30 | Adequate shared variance |
+
+```{=latex}
+\begin{table}[H]
+\centering
+\caption{Table 3.7: EFA Item Retention Criteria}
+\begin{tabular}{@{}llp{0.45\textwidth}@{}}
+\toprule
+\textbf{Criterion} & \textbf{Threshold} & \textbf{Rationale} \\
+\midrule
+Primary loading & $\lambda \geq .50$ & Strong factor association \\
+Cross-loading & $\Delta\lambda \geq .20$ & Simple structure \\
+Communality & $h^2 \geq .30$ & Adequate shared variance \\
+\bottomrule
+\end{tabular}
+
+\vspace{0.5em}
+\footnotesize Source: Compiled by Author
+\end{table}
+```
 
 **Software**: Python `factor_analyzer` package (v0.5.1)
 
@@ -399,17 +486,26 @@ flowchart TD
 
 **Fit Index Thresholds**:
 
-| Index | Acceptable | Good | Excellent |
-|-------|------------|------|-----------|
-| χ²/df | < 5.0 | < 3.0 | < 2.0 |
-| CFI | ≥ .90 | ≥ .95 | ≥ .97 |
-| TLI | ≥ .90 | ≥ .95 | ≥ .97 |
-| RMSEA | ≤ .10 | ≤ .08 | ≤ .05 |
-| SRMR | ≤ .10 | ≤ .08 | ≤ .05 |
+```{=latex}
+\begin{table}[H]
+\centering
+\caption{Table 3.8: Model Fit Index Thresholds}
+\begin{tabular}{@{}lcccc@{}}
+\toprule
+\textbf{Index} & \textbf{Acceptable} & \textbf{Good} & \textbf{Excellent} \\
+\midrule
+$\chi^2$/df & < 5.0 & < 3.0 & < 2.0 \\
+CFI & $\geq$ .90 & $\geq$ .95 & $\geq$ .97 \\
+TLI & $\geq$ .90 & $\geq$ .95 & $\geq$ .97 \\
+RMSEA & $\leq$ .10 & $\leq$ .08 & $\leq$ .05 \\
+SRMR & $\leq$ .10 & $\leq$ .08 & $\leq$ .05 \\
+\bottomrule
+\end{tabular}
 
-: Table 3.4: Model Fit Index Thresholds
-
-*Source: Compiled by Author based on Hu & Bentler (1999) and Hair et al. (2019)*
+\vspace{0.5em}
+\footnotesize Source: Compiled by Author based on Hu \& Bentler (1999) and Hair et al. (2019)
+\end{table}
+```
 
 **Software**: Python `semopy` package (v2.3.10)
 
@@ -419,11 +515,24 @@ flowchart TD
 
 **Levels Tested**:
 
-| Level | Constraint | Interpretation |
-|-------|------------|----------------|
-| Configural | Same factor structure | Qualitative equivalence |
-| Metric | Equal factor loadings | Quantitative equivalence |
-| Scalar | Equal intercepts | Mean comparability |
+```{=latex}
+\begin{table}[H]
+\centering
+\caption{Table 3.9: Measurement Invariance Testing Levels}
+\begin{tabular}{@{}llp{0.40\textwidth}@{}}
+\toprule
+\textbf{Level} & \textbf{Constraint} & \textbf{Interpretation} \\
+\midrule
+Configural & Same factor structure & Qualitative equivalence \\
+Metric & Equal factor loadings & Quantitative equivalence \\
+Scalar & Equal intercepts & Mean comparability \\
+\bottomrule
+\end{tabular}
+
+\vspace{0.5em}
+\footnotesize Source: Compiled by Author
+\end{table}
+```
 
 **Criteria for Invariance** (Chen, 2007):
 
@@ -475,7 +584,7 @@ flowchart TD
     style TR fill:#fff8e1,stroke:#f57f17
 ```
 
-*Figure 3.3. Structural Model showing Eight Predictors of Behavioral Intention (UTAUT2 Core + AI Trust Extension). Source: Compiled by Author*
+: Figure 3.3: Structural Model showing Eight Predictors of Behavioral Intention (UTAUT2 Core + AI Trust Extension). *Source: Compiled by Author* {#fig:structural-model}
 
 *Note: AI Anxiety was initially proposed but excluded due to inadequate reliability (α = .301).*
 
@@ -490,12 +599,25 @@ flowchart TD
 
 **Effect Size Interpretation** (Cohen, 1988):
 
-| β | Interpretation |
-|---|----------------|
-| < .10 | Negligible |
-| .10–.29 | Small |
-| .30–.49 | Medium |
-| ≥ .50 | Large |
+```{=latex}
+\begin{table}[H]
+\centering
+\caption{Table 3.10: Effect Size Interpretation Guidelines}
+\begin{tabular}{@{}cl@{}}
+\toprule
+\textbf{$\beta$} & \textbf{Interpretation} \\
+\midrule
+< .10 & Negligible \\
+.10--.29 & Small \\
+.30--.49 & Medium \\
+$\geq$ .50 & Large \\
+\bottomrule
+\end{tabular}
+
+\vspace{0.5em}
+\footnotesize Source: Compiled by Author based on Cohen (1988)
+\end{table}
+```
 
 ### 3.6.7 Mediation Analysis
 
@@ -541,17 +663,30 @@ flowchart TD
 
 All analyses conducted using Python 3.11 with the following packages:
 
-| Package | Version | Purpose |
-|---------|---------|---------|
-| pandas | 2.1.0 | Data manipulation |
-| numpy | 1.26.0 | Numerical computing |
-| scipy | 1.11.0 | Statistical tests |
-| factor_analyzer | 0.5.1 | Exploratory factor analysis |
-| semopy | 2.3.10 | Confirmatory factor analysis, SEM |
-| pingouin | 0.5.3 | Effect sizes, reliability |
-| scikit-learn | 1.3.0 | Cluster analysis |
-| matplotlib | 3.8.0 | Visualization |
-| seaborn | 0.13.0 | Statistical graphics |
+```{=latex}
+\begin{table}[H]
+\centering
+\caption{Table 3.11: Statistical Software Packages}
+\begin{tabular}{@{}llp{0.45\textwidth}@{}}
+\toprule
+\textbf{Package} & \textbf{Version} & \textbf{Purpose} \\
+\midrule
+pandas & 2.1.0 & Data manipulation \\
+numpy & 1.26.0 & Numerical computing \\
+scipy & 1.11.0 & Statistical tests \\
+factor\_analyzer & 0.5.1 & Exploratory factor analysis \\
+semopy & 2.3.10 & Confirmatory factor analysis, SEM \\
+pingouin & 0.5.3 & Effect sizes, reliability \\
+scikit-learn & 1.3.0 & Cluster analysis \\
+matplotlib & 3.8.0 & Visualization \\
+seaborn & 0.13.0 & Statistical graphics \\
+\bottomrule
+\end{tabular}
+
+\vspace{0.5em}
+\footnotesize Source: Compiled by Author
+\end{table}
+```
 
 **Environment**: Jupyter notebooks executed in VS Code with Python virtual environment
 
@@ -570,10 +705,23 @@ All analyses conducted using Python 3.11 with the following packages:
 
 **Thresholds**:
 
-| Measure | Minimum | Preferred |
-|---------|---------|-----------|
-| Cronbach's α | .70 | .80 |
-| Composite Reliability | .70 | .80 |
+```{=latex}
+\begin{table}[H]
+\centering
+\caption{Table 3.12: Internal Consistency Reliability Thresholds}
+\begin{tabular}{@{}lcc@{}}
+\toprule
+\textbf{Measure} & \textbf{Minimum} & \textbf{Preferred} \\
+\midrule
+Cronbach's $\alpha$ & .70 & .80 \\
+Composite Reliability & .70 & .80 \\
+\bottomrule
+\end{tabular}
+
+\vspace{0.5em}
+\footnotesize Source: Compiled by Author
+\end{table}
+```
 
 ### 3.7.2 Convergent Validity
 
@@ -600,7 +748,7 @@ All analyses conducted using Python 3.11 with the following packages:
 
 **Predictive Validity**: AIRS constructs predict actual tool usage behavior (ρ = .69 for BI × tool breadth)
 
-**Known-Groups Validity**: Constructs differentiate between theoretically-distinct groups (e.g., Leaders vs. Academics)
+**Known-Groups Validity**: Constructs differentiate between theoretically-distinct groups (e.g., Leaders vs. Students)
 
 
 

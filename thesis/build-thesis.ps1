@@ -32,7 +32,7 @@ param(
 )
 
 # Hardcoded draft version to avoid mistakes
-$OutputName = "FINAL 01"
+$OutputName = "FINAL 03"
 
 # Configuration
 $ThesisDir = $PSScriptRoot
@@ -377,22 +377,35 @@ foreach ($chapter in $ChapterFiles) {
         
         # Replace mermaid code blocks with image references
         if ($hasMermaid) {
-            # Pattern to capture mermaid block followed by italic caption line
-            # Matches: ```mermaid ... ``` followed by *Figure X.Y. Caption text*
+            # Pattern to capture mermaid block followed by pandoc table caption
+            # Matches: ```mermaid ... ``` followed by : Figure X.Y: Caption text {#fig:label}
+            $mermaidWithPandocCaptionRegex = [regex]::new('(?s)```mermaid\r?\n.+?```\s*\r?\n\r?\n: (Figure \d+\.\d+: [^{]+)\{#fig:[^}]+\}')
+            # Also match italic caption format for backward compatibility
             $mermaidWithItalicCaptionRegex = [regex]::new('(?s)```mermaid\r?\n.+?```\s*\r?\n\r?\n\*([^*]+)\*')
             $mermaidNoCaptionRegex = [regex]::new('(?s)```mermaid\r?\n.+?```')
             
-            # First, replace mermaid blocks that have italic caption lines after them
-            $captionMatches = $mermaidWithItalicCaptionRegex.Matches($chapterContent)
-            for ($i = $captionMatches.Count - 1; $i -ge 0; $i--) {
-                $match = $captionMatches[$i]
+            # First, replace mermaid blocks with pandoc table captions
+            $pandocCaptionMatches = $mermaidWithPandocCaptionRegex.Matches($chapterContent)
+            for ($i = $pandocCaptionMatches.Count - 1; $i -ge 0; $i--) {
+                $match = $pandocCaptionMatches[$i]
                 $caption = $match.Groups[1].Value.Trim()
-                # Keep the full caption including "Figure X.Y." since labelformat=empty
                 $figureIndex = $i + 1
                 $figureFileName = "${chapterName}_fig${figureIndex}"
                 $pngPath = "figures/${figureFileName}.png"
                 # Put caption in alt text for pandoc to capture in List of Figures
-                $imgRef = "![$caption]($pngPath){width=90%}"
+                $imgRef = "![$caption]($pngPath)"
+                $chapterContent = $chapterContent.Remove($match.Index, $match.Length).Insert($match.Index, $imgRef)
+            }
+            
+            # Then try italic caption format
+            $captionMatches = $mermaidWithItalicCaptionRegex.Matches($chapterContent)
+            for ($i = $captionMatches.Count - 1; $i -ge 0; $i--) {
+                $match = $captionMatches[$i]
+                $caption = $match.Groups[1].Value.Trim()
+                $figureIndex = $pandocCaptionMatches.Count + $i + 1
+                $figureFileName = "${chapterName}_fig${figureIndex}"
+                $pngPath = "figures/${figureFileName}.png"
+                $imgRef = "![$caption]($pngPath)"
                 $chapterContent = $chapterContent.Remove($match.Index, $match.Length).Insert($match.Index, $imgRef)
             }
             
@@ -400,10 +413,10 @@ foreach ($chapter in $ChapterFiles) {
             $remainingMatches = $mermaidNoCaptionRegex.Matches($chapterContent)
             for ($i = $remainingMatches.Count - 1; $i -ge 0; $i--) {
                 $match = $remainingMatches[$i]
-                $figureIndex = $captionMatches.Count + $i + 1
+                $figureIndex = $pandocCaptionMatches.Count + $captionMatches.Count + $i + 1
                 $figureFileName = "${chapterName}_fig${figureIndex}"
                 $pngPath = "figures/${figureFileName}.png"
-                $imgRef = "![]($pngPath){width=90%}"
+                $imgRef = "![]($pngPath)"
                 $chapterContent = $chapterContent.Remove($match.Index, $match.Length).Insert($match.Index, $imgRef)
             }
         }
@@ -514,7 +527,7 @@ $pandocArgs = @(
     $TempMarkdown,
     "-o", $OutputPdf,
     "--pdf-engine=$pdfEngine",
-    "-f", "markdown+raw_tex"
+    "-f", "markdown+raw_tex+table_captions+implicit_figures"
 )
 
 # Add bibliography support if available

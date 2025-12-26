@@ -46,4 +46,6 @@
 
 **Population Moderation Result:** Partially Supported. Hedonic Motivation significantly moderated by population
 
-*Note: β = standardized path coefficient. Significance at α = .05. Bold indicates significant effects.*
+: Table 4.4: Hypothesis Testing Results {#tbl:appendix-hypothesis}
+
+*Note: β = standardized path coefficient. Significance at α = .05. Bold indicates significant effects. Source: Compiled by Author*

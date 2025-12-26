@@ -17,11 +17,15 @@ The **AI Readiness Scale (AIRS)** is a validated 16-item diagnostic tool that id
 ### The #1 Driver: Demonstrate Total Value (Not Just Price)
 
 | Adoption Driver | Impact | Strategic Implication |
-|-----------------|--------|----------------------|
+| --- | --- | --- |
 | **Price Value** | β = .505 | Strongest predictor: perceived value drives adoption more than any other factor |
 | **Hedonic Motivation** | β = .217 | Enjoyable, engaging AI experiences drive adoption; UX matters |
 | **Social Influence** | β = .136 | Peer recommendations and organizational endorsement accelerate decisions |
 | **AI Trust** | β = .106 | Trust is a prerequisite; customers with trust deficits need reassurance before features |
+
+: Table E.1: Key AI Adoption Drivers {#tbl:exec-drivers}
+
+*Source: Compiled by Author*
 
 **What is Price Value?** This construct measures *perceived worth relative to total investment*, not just licensing costs. It includes:
 
@@ -37,13 +41,17 @@ Customers evaluate whether the *total value delivered* justifies the *total inve
 ### Key Metrics at a Glance
 
 | Metric | Value | What It Means |
-|--------|-------|---------------|
+| --- | --- | --- |
 | **Predictive Accuracy** | 85.2% | Model captures what actually drives AI adoption decisions |
 | **Intent → Action Correlation** | ρ = .69 | What customers say predicts what they do (validated) |
 | **Value vs. Enjoyment** | 2.3x | Price Value is 2.3x more influential than Hedonic Motivation |
 | **Leaders vs. ICs** | +74–114% | Leaders use AI tools at nearly double the rate of individual contributors |
 | **Trust Barrier Segment** | 17% | Nearly 1 in 5 customers have trust issues blocking adoption |
 | **Proof-Seekers Segment** | 30% | 30% are evaluating; they need case studies and ROI evidence |
+
+: Table E.2: Key Metrics Summary {#tbl:exec-metrics}
+
+*Source: Compiled by Author*
 
 ---
 
@@ -67,11 +75,15 @@ K-means cluster analysis identified four statistically distinct customer segment
 ### AI Enthusiasts (n = 84, 16%)
 
 | Dimension | Score | Interpretation |
-|-----------|-------|----------------|
+| --- | --- | --- |
 | Performance Expectancy | High (+1.42σ) | Strong belief AI improves productivity |
 | Trust in AI | High (+1.37σ) | Confident in AI reliability |
 | Anxiety | Low (-0.86σ) | Comfortable with AI uncertainty |
 | Behavioral Intention | High (+1.32σ) | Strong adoption intent |
+
+: Table E.3: AI Enthusiasts Profile {#tbl:exec-enthusiasts}
+
+*Source: Compiled by Author*
 
 **Profile**: Early adopters who actively seek AI tools. High engagement, low barriers.
 
@@ -82,11 +94,15 @@ K-means cluster analysis identified four statistically distinct customer segment
 ### Cautious Adopters (n = 157, 30%)
 
 | Dimension | Score | Interpretation |
-|-----------|-------|----------------|
+| --- | --- | --- |
 | Performance Expectancy | High (+1.16σ) | Believe AI could help, but... |
 | Trust in AI | Moderate (+0.86σ) | Uncertain about reliability |
 | Anxiety | Elevated (+0.84σ) | Some concerns about AI risks |
 | Behavioral Intention | Moderate (+0.88σ) | Will adopt if reassured |
+
+: Table E.4: Cautious Adopters Profile {#tbl:exec-cautious}
+
+*Source: Compiled by Author*
 
 **Profile**: See potential but need evidence. High interest + high anxiety = waiting for proof.
 
@@ -97,11 +113,15 @@ K-means cluster analysis identified four statistically distinct customer segment
 ### Moderate Users (n = 191, 37%)
 
 | Dimension | Score | Interpretation |
-|-----------|-------|----------------|
+| --- | --- | --- |
 | Performance Expectancy | Average (+0.26σ) | Neutral on AI productivity |
 | Trust in AI | Average (+0.01σ) | Neither trusting nor distrusting |
 | Anxiety | Moderate (+0.42σ) | Some mild concerns |
 | Behavioral Intention | Neutral (-0.07σ) | Could go either way |
+
+: Table E.5: Moderate Users Profile {#tbl:exec-moderate}
+
+*Source: Compiled by Author*
 
 **Profile**: Largest segment. Pragmatic fence-sitters who will follow the crowd.
 
@@ -112,11 +132,15 @@ K-means cluster analysis identified four statistically distinct customer segment
 ### Anxious Avoiders (n = 91, 17%)
 
 | Dimension | Score | Interpretation |
-|-----------|-------|----------------|
+| --- | --- | --- |
 | Performance Expectancy | Low (-1.16σ) | Skeptical AI will help |
 | Trust in AI | Low (-1.49σ) | Significant distrust |
 | Anxiety | High (+0.76σ) | Strong concerns about AI |
 | Behavioral Intention | Low (-1.53σ) | Resistant to adoption |
+
+: Table E.6: Anxious Avoiders Profile {#tbl:exec-avoiders}
+
+*Source: Compiled by Author*
 
 **Profile**: Trust barriers block adoption. Will not adopt without significant intervention.
 
@@ -127,11 +151,15 @@ K-means cluster analysis identified four statistically distinct customer segment
 ### Segment Summary
 
 | Segment | n | Share | Key Driver | Primary Barrier | Effort Required |
-|---------|---|-------|------------|-----------------|-----------------|
+| --- | --- | --- | --- | --- | --- |
 | **Enthusiasts** | 84 | 16% | Already sold | None | Low (maintain) |
 | **Cautious** | 157 | 30% | Proof of value | Anxiety + uncertainty | Medium |
 | **Moderate** | 191 | 37% | Social proof | Inertia | Medium |
 | **Anxious** | 91 | 17% | Nothing yet | Deep distrust | High |
+
+: Table E.7: Customer Segment Summary {#tbl:exec-segments}
+
+*Source: Compiled by Author*
 
 **Resource Allocation Insight**: The **Cautious Adopters (30%)** and **Moderate Users (37%)** represent 67% of the market and are most movable. Enthusiasts require minimal investment; Anxious Avoiders require high investment with uncertain returns.
 

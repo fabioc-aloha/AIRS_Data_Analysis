@@ -25,4 +25,6 @@
 | No | 444 | 84.9% |
 | Prefer not to answer | 11 | 2.1% |
 
-*Note: Sample randomly split using seed=67 for reproducibility.*
+: Table 4.1: Sample Demographics {#tbl:appendix-demographics}
+
+*Note: Sample randomly split using seed=67 for reproducibility. Source: Compiled by Author*

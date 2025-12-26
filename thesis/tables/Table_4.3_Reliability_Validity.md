@@ -24,4 +24,6 @@
 | Fornell-Larcker criterion | √AVE > r | All pairs satisfied | [OK] Satisfied |
 | Max inter-factor r | \|r\| < .85 | Max r = .78 (PE↔BI) | [OK] Satisfied |
 
-*Note: CR = Composite Reliability; AVE = Average Variance Extracted; √AVE = Square root of AVE for discriminant validity assessment.*
+: Table 4.3: Factor Reliability and Validity {#tbl:appendix-reliability}
+
+*Note: CR = Composite Reliability; AVE = Average Variance Extracted; √AVE = Square root of AVE for discriminant validity assessment. Source: Compiled by Author*

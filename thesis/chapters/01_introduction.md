@@ -148,20 +148,33 @@ Appendix E outlines a research roadmap for extending this foundational work thro
 
 ## 1.7 Definition of Key Terms
 
-| Term | Definition |
-|------|------------|
-| **UTAUT2** | Unified Theory of Acceptance and Use of Technology 2 (Venkatesh et al., 2012) |
-| **AIRS** | AI Readiness Scale: the 16-item psychometric instrument developed and validated in this study, serving both as a research scale and organizational diagnostic tool |
-| **AI Trust** | Confidence in AI systems' reliability, accuracy, and benevolence; a novel construct extending UTAUT2 for AI-specific adoption contexts |
-| **Behavioral Intention** | An individual's stated intention to use AI tools in their professional or academic work |
-| **Performance Expectancy** | The degree to which using AI tools is expected to enhance job performance |
-| **Effort Expectancy** | The perceived ease of use associated with AI tools |
-| **Social Influence** | The degree to which important others believe one should use AI tools |
-| **Facilitating Conditions** | Perceptions of organizational and technical infrastructure supporting AI use |
-| **Hedonic Motivation** | The fun or pleasure derived from using AI tools |
-| **Price Value** | The cognitive trade-off between perceived benefits of AI tools and their monetary cost |
-| **AI Anxiety** | Apprehension or fear associated with AI technology |
-| **Measurement Invariance** | The extent to which a measurement instrument functions equivalently across different groups |
+```{=latex}
+\begin{table}[H]
+\centering
+\caption{Table 1.1: Key Terms and Definitions}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.25\textwidth}>{\raggedright\arraybackslash}p{0.70\textwidth}@{}}
+\toprule
+\textbf{Term} & \textbf{Definition} \\
+\midrule
+\textbf{UTAUT2} & Unified Theory of Acceptance and Use of Technology 2 (Venkatesh et al., 2012) \\
+\textbf{AIRS} & AI Readiness Scale: the 16-item psychometric instrument developed and validated in this study, serving both as a research scale and organizational diagnostic tool \\
+\textbf{AI Trust} & Confidence in AI systems' reliability, accuracy, and benevolence; a novel construct extending UTAUT2 for AI-specific adoption contexts \\
+\textbf{Behavioral Intention} & An individual's stated intention to use AI tools in their professional or academic work \\
+\textbf{Performance Expectancy} & The degree to which using AI tools is expected to enhance job performance \\
+\textbf{Effort Expectancy} & The perceived ease of use associated with AI tools \\
+\textbf{Social Influence} & The degree to which important others believe one should use AI tools \\
+\textbf{Facilitating Conditions} & Perceptions of organizational and technical infrastructure supporting AI use \\
+\textbf{Hedonic Motivation} & The fun or pleasure derived from using AI tools \\
+\textbf{Price Value} & The cognitive trade-off between perceived benefits of AI tools and their monetary cost \\
+\textbf{AI Anxiety} & Apprehension or fear associated with AI technology \\
+\textbf{Measurement Invariance} & The extent to which a measurement instrument functions equivalently across different groups \\
+\bottomrule
+\end{tabular}
+
+\vspace{0.5em}
+\footnotesize\textit{Source: Compiled by Author}
+\end{table}
+```
 
 ## 1.8 Summary and Dissertation Structure
 

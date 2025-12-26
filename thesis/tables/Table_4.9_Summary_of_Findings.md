@@ -48,4 +48,6 @@
 | Population moderation | HM Δβ = -0.750, p = .041 | Academics value enjoyment more than professionals |
 | Usage-dependent mechanisms | PE for new users; PV for heavy users | Tailored messaging by usage level |
 
-*Note: β = standardized path coefficient. Significance at α = .05.*
+: Table 4.9: Summary of Findings {#tbl:appendix-summary}
+
+*Note: β = standardized path coefficient. Significance at α = .05. Source: Compiled by Author*

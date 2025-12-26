@@ -39,4 +39,6 @@
 | Resistance + Quality Concerns | 28.4% | .24 | Weak positive |
 | Positive Experience + Resistance | 4.2% | -.42 | Moderate negative |
 
-*Note: φ = phi coefficient for binary association. Percentages indicate proportion of theme A responses that also include theme B.*
+: Table 4.7: Qualitative Theme Analysis {#tbl:appendix-qualitative}
+
+*Note: φ = phi coefficient for binary association. Percentages indicate proportion of theme A responses that also include theme B. Source: Compiled by Author*

@@ -43,11 +43,15 @@ Surprisingly, factors that typically drive technology adoption (Performance Expe
 Our research identified four distinct adoption profiles:
 
 | Segment | % of Sample | Characteristics |
-|---------|-------------|-----------------|
+| --- | --- | --- |
 | **AI Enthusiasts** | 16% | High trust, low anxiety, strong adoption intention |
 | **Cautious Adopters** | 30% | Moderate trust, evaluative stance, open to evidence |
 | **Moderate Users** | 37% | Balanced profiles, pragmatic adoption approach |
 | **Anxious Avoiders** | 17% | Elevated anxiety, low trust, resistance to adoption |
+
+: Table P.1: User Segment Profiles {#tbl:practitioner-segments}
+
+*Source: Compiled by Author*
 
 *Research implication*: These segments provide testable hypotheses for future intervention research. Whether different user types respond to different adoption strategies requires experimental validation.
 

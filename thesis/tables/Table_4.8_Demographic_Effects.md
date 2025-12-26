@@ -39,4 +39,6 @@
 | **Anxiety** | **2.89 (1.08)** | **2.48 (0.96)** | **2.76** | **521** | **.006** | **0.36** |
 | Behavioral Intention | 3.41 (1.02) | 3.64 (0.97) | -1.64 | 521 | .102 | 0.21 |
 
-*Note: Bold indicates significant effects at α = .05. All scales measured on 5-point Likert scale (1-5).*
+: Table 4.8: Demographic Effects on UTAUT Constructs {#tbl:appendix-demographics-effects}
+
+*Note: Bold indicates significant effects at α = .05. All scales measured on 5-point Likert scale (1-5). Source: Compiled by Author*
