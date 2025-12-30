@@ -30,13 +30,9 @@ Doctor of Business Administration
 
 Touro University Worldwide | December 2025
 
-### 🎤 Talk Track
 
-> "Good morning/afternoon Dr. Kasztelnik, Dr. Jones, and Dr. Day. Thank you for the opportunity to present my dissertation research.
->
-> My name is Fabio Correa, and today I'll be presenting my work on the Artificial Intelligence Readiness Scale—a diagnostic instrument I developed to help organizations understand why people adopt or resist AI tools.
->
-> Over the next 20-25 minutes, I'll walk you through the problem that motivated this research, my theoretical framework, methodology, key findings, and contributions to both theory and practice. I'll save time at the end for your questions."
+
+This presentation introduces the Artificial Intelligence Readiness Scale (AIRS)—a diagnostic instrument developed to help organizations understand why individuals adopt or resist AI tools. The presentation covers the problem motivation, theoretical framework, methodology, key findings, and contributions to both theory and practice. Estimated duration: 20–25 minutes plus Q&A.
 
 ---
 
@@ -46,23 +42,15 @@ Touro University Worldwide | December 2025
 
 | Metric | Finding |
 | ------ | ------- |
-| **88%** | Organizations report AI adoption (McKinsey, 2025) |
-| **6%** | Achieve meaningful business value |
-| **90–95%** | AI pilots fail to scale (MIT Media Lab) |
+| **88%** | Organizations report AI adoption in at least one function (McKinsey, 2025) |
+| **~6%** | Qualify as "AI high performers" with meaningful EBIT impact (McKinsey, 2025) |
+| **90–95%** | Generative AI pilots fail to scale (MIT Media Lab NANDA Initiative, 2025) |
 
 **The Gap**: Organizations invest heavily in AI but lack tools to understand *why* individuals adopt or resist.
 
-### 🎤 Talk Track
 
-> "Let me start with the problem. We're living through what I call the AI Adoption Paradox.
->
-> According to McKinsey's 2025 State of AI report, 88% of organizations report using AI in some capacity. That sounds like success—until you dig deeper.
->
-> Only 6% of those organizations achieve meaningful business value from their AI investments. And MIT Media Lab estimates that 90 to 95 percent of generative AI pilots fail to scale beyond initial experiments.
->
-> So we have massive investment, widespread adoption claims, but a dramatic failure to deliver value. Why? Organizations are great at deploying AI technology, but they don't understand the human side—why individuals actually adopt or resist these tools.
->
-> That's the gap this research addresses."
+
+The AI Adoption Paradox: McKinsey's 2025 State of AI Global Survey reports 88% of organizations using AI in at least one business function, yet only ~6% qualify as "AI high performers" (attributing ≥5% of EBIT to AI with significant value). MIT Media Lab's NANDA Initiative estimates 90–95% of generative AI pilots fail to scale. This disconnect between widespread adoption and value realization indicates organizations excel at deploying AI technology but lack understanding of the human factors—why individuals adopt or resist AI tools. This research addresses that gap.
 
 ---
 
@@ -71,8 +59,8 @@ Touro University Worldwide | December 2025
 ### Why This Research Matters
 
 1. **Theoretical Gap**
-   - UTAUT2 validated on mobile/consumer tech, not AI
-   - Venkatesh (2021): 9 unique AI challenges unaddressed
+   - UTAUT2 validated on mobile apps, internet banking, consumer tech—not AI (Venkatesh et al., 2012)
+   - Venkatesh (2021): Nine unique AI research challenges unaddressed in existing frameworks
 
 2. **Measurement Gap**
    - No psychometrically validated AI adoption instrument
@@ -82,17 +70,13 @@ Touro University Worldwide | December 2025
    - No diagnostic tools to identify adoption barriers
    - Contributing to 90–95% pilot failure rate
 
-### 🎤 Talk Track
 
-> "This problem manifests as three interconnected gaps in the literature.
->
-> First, a **theoretical gap**. The dominant framework for understanding technology adoption—UTAUT2—was validated on mobile apps, internet banking, and consumer technologies. But AI is fundamentally different. Venkatesh himself, in 2021, identified nine unique research challenges for AI adoption that existing frameworks don't address—things like trust in opaque systems, ethical concerns, and algorithmic decision-making.
->
-> Second, a **measurement gap**. When I searched for validated instruments to measure AI adoption readiness, I couldn't find one. Organizations are using ad hoc surveys, general technology readiness scales, or nothing at all. There was no psychometrically validated instrument designed specifically for AI.
->
-> Third, a **practice gap**. Without valid measurement, organizations can't diagnose why their AI initiatives fail. They can't identify which employees will adopt, which will resist, and why. This contributes directly to that 90-95% pilot failure rate.
->
-> My research addresses all three gaps."
+
+**Theoretical Gap**: UTAUT2 was validated on mobile apps, internet banking, and consumer technologies—not AI. Venkatesh (2021) identified nine unique AI research challenges unaddressed by existing frameworks, including trust in opaque systems, ethical concerns, and algorithmic decision-making.
+
+**Measurement Gap**: No psychometrically validated AI adoption instrument exists. Organizations rely on ad hoc surveys or general technology readiness scales not designed for AI-specific characteristics.
+
+**Practice Gap**: Without valid measurement, organizations cannot diagnose why AI initiatives fail or identify which employees will adopt versus resist. This contributes directly to the 90–95% pilot failure rate. This research addresses all three gaps.
 
 ---
 
@@ -112,19 +96,15 @@ Touro University Worldwide | December 2025
 | **RQ4** | AI Trust extension | Marginal effect (p = .064) |
 | **RQ5** | Moderators | Experience & population moderate HM |
 
-### 🎤 Talk Track
 
-> "This led to my primary research question: How can UTAUT2 be extended with AI-specific constructs to better predict behavioral intention to adopt AI tools?
->
-> I broke this down into five secondary questions that build on each other:
->
-> - RQ1 asked about factor structure—what constructs exist and how should we measure them? Answer: 8 factors with 16 items.
-> - RQ2 tested measurement invariance—does the instrument work across different populations? Answer: Yes, we achieved configural invariance between students and professionals.
-> - RQ3 identified the strongest predictors—which factors actually drive adoption? This is where it gets interesting: Price Value dominates, followed by Hedonic Motivation and Social Influence.
-> - RQ4 tested my theoretical extension—does AI Trust predict adoption beyond UTAUT2? Answer: Marginal effect, p = .064.
-> - And RQ5 examined boundary conditions—what moderates these relationships? Experience and population both moderate hedonic motivation.
->
-> I'll detail these findings shortly."
+
+The primary research question examines how UTAUT2 can be extended with AI-specific constructs to better predict behavioral intention to adopt AI tools. Five secondary questions operationalize this investigation:
+
+- **RQ1 (Factor structure)**: Identified 8 factors with 16 items
+- **RQ2 (Measurement invariance)**: Achieved configural invariance between students and professionals
+- **RQ3 (Strongest predictors)**: Price Value dominates, followed by Hedonic Motivation and Social Influence
+- **RQ4 (AI Trust extension)**: Marginal effect (p = .064)
+- **RQ5 (Moderators)**: Experience and population both moderate hedonic motivation
 
 ---
 
@@ -132,37 +112,32 @@ Touro University Worldwide | December 2025
 
 ### UTAUT2 + AI Trust Extension
 
-**Why UTAUT2?**
-- Explains up to 74% variance (vs. TAM's ~40%)
-- Synthesizes 8 prior models (TRA, TPB, TAM, MM, etc.)
-- Includes consumer-relevant constructs (HM, PV, Habit)
-- Current "gold standard" for technology acceptance
+**Why UTAUT2?** (Venkatesh et al., 2012)
+- Explains up to 74% variance in behavioral intention (vs. TAM's ~40%; Davis, 1989)
+- Synthesizes 8 prior models (TRA, TPB, TAM, Motivational Model, etc.; Venkatesh et al., 2003)
+- Includes consumer-relevant constructs (Hedonic Motivation, Price Value, Habit)
+- Current "gold standard" for technology acceptance research
 
 **AI-Specific Extension: Trust**
-- AI opacity, probabilistic reasoning, autonomy
-- Trust differs fundamentally from general technology trust (Glikson & Woolley, 2020)
+- AI characterized by opacity, probabilistic reasoning, autonomy
+- Trust in AI differs fundamentally from trust in traditional technology (Glikson & Woolley, 2020, *Academy of Management Annals*)
 
-### 🎤 Talk Track
 
-> "My theoretical foundation is UTAUT2—the Unified Theory of Acceptance and Use of Technology, version 2.
->
-> Why UTAUT2? Four reasons:
->
-> First, explanatory power. UTAUT2 explains up to 74% of variance in behavioral intention, compared to about 40% for the original Technology Acceptance Model. That's nearly double.
->
-> Second, theoretical integration. UTAUT2 isn't just another model—it synthesizes eight prior models: Theory of Reasoned Action, Theory of Planned Behavior, TAM, Motivational Model, and others. It represents 30 years of accumulated research.
->
-> Third, it includes consumer-relevant constructs that earlier models missed—Hedonic Motivation, Price Value, and Habit. These turned out to be critical for AI adoption.
->
-> Fourth, it's the current gold standard. If I want my research to contribute to the field, I need to build on the strongest foundation.
->
-> My extension adds AI Trust as an AI-specific construct. Glikson and Woolley's 2020 research established that trust in AI differs fundamentally from trust in traditional technology—because of AI's opacity, probabilistic reasoning, and autonomous decision-making. You can't trust an AI system the same way you trust a spreadsheet."
+
+**UTAUT2 Selection Rationale**:
+1. **Explanatory power**: UTAUT2 explains up to 74% of variance in behavioral intention versus ~40% for TAM—nearly double
+2. **Theoretical integration**: Synthesizes eight prior models (TRA, TPB, TAM, Motivational Model, etc.), representing 30 years of accumulated research
+3. **Consumer-relevant constructs**: Includes Hedonic Motivation, Price Value, and Habit—critical for AI adoption
+4. **Current gold standard**: Building on the strongest established foundation ensures contribution to the field
+
+**AI Trust Extension**: Glikson and Woolley (2020) established that trust in AI differs fundamentally from trust in traditional technology due to AI's opacity, probabilistic reasoning, and autonomous decision-making. AI systems cannot be trusted the same way as deterministic tools like spreadsheets.
 
 ---
 
 ## Slide 6: Core Hypotheses
 
-### UTAUT2 Hypotheses (H1a–H1g)
+### UTAUT2 Core Hypotheses (H1a–H1g)
+*Based on Venkatesh et al. (2012)*
 
 | Hypothesis | Path | Prediction |
 | ---------- | ---- | ---------- |
@@ -174,18 +149,17 @@ Touro University Worldwide | December 2025
 | H1f | PV → BI | Positive |
 | H1g | HB → BI | Positive |
 
-### 🎤 Talk Track
 
-> "Based on this framework, I tested ten hypotheses.
->
-> The first seven—H1a through H1g—test the core UTAUT2 relationships. Each predicts that a construct positively influences Behavioral Intention:
-> - Performance Expectancy—will AI make me more productive?
-> - Effort Expectancy—is it easy to use?
-> - Social Influence—do important people think I should use it?
-> - Facilitating Conditions—do I have the support I need?
-> - Hedonic Motivation—is it enjoyable?
-> - Price Value—is it worth the cost?
-> - And Habit—is AI use automatic for me?"
+
+Ten hypotheses were tested. H1a–H1g test core UTAUT2 relationships, each predicting positive influence on Behavioral Intention:
+
+- **PE**: Performance Expectancy—productivity enhancement beliefs
+- **EE**: Effort Expectancy—perceived ease of use
+- **SI**: Social Influence—perceived expectations of important others
+- **FC**: Facilitating Conditions—organizational/technical support availability
+- **HM**: Hedonic Motivation—enjoyment derived from use
+- **PV**: Price Value—perceived worth relative to cost
+- **HB**: Habit—automaticity of AI use behavior
 
 ---
 
@@ -193,21 +167,19 @@ Touro University Worldwide | December 2025
 
 ### Novel Hypotheses (H2–H4)
 
-| Hypothesis | Test |
-| ---------- | ---- |
-| H2 | AI Trust → BI (positive) |
-| H3 | Experience moderates paths |
-| H4 | Population moderates paths |
+| Hypothesis | Test | Theoretical Basis |
+| ---------- | ---- | ----------------- |
+| H2 | AI Trust → BI (positive) | Glikson & Woolley (2020) |
+| H3 | Experience moderates paths | Venkatesh et al. (2003) |
+| H4 | Population moderates paths | Novel extension |
 
-### 🎤 Talk Track
 
-> "Beyond the core UTAUT2 hypotheses, I added three novel hypotheses.
->
-> H2 tests my theoretical extension: Does AI Trust predict adoption beyond what UTAUT2 already explains?
->
-> H3 and H4 test moderation: Does experience level or population type—students versus professionals—change these relationships?
->
-> I'll show you the results in a few slides."
+
+Three novel hypotheses extend UTAUT2:
+
+- **H2**: Tests whether AI Trust predicts adoption beyond UTAUT2's established constructs
+- **H3**: Tests whether experience level moderates predictor-intention relationships
+- **H4**: Tests whether population type (students vs. professionals) moderates predictor-intention relationships
 
 ---
 
@@ -222,13 +194,14 @@ Touro University Worldwide | December 2025
 | **Instrument** | 28 items → 16 items (validated) |
 | **Analysis** | EFA → CFA → SEM |
 
-### 🎤 Talk Track
 
-> "Let me walk you through the methodology.
->
-> This was a cross-sectional, quantitative study with 523 participants—a mix of students and working professionals. My initial instrument had 28 items across 12 constructs; through rigorous psychometric analysis, I refined it to 16 items across 8 factors.
->
-> The analysis followed best practices for instrument development: Exploratory Factor Analysis to discover the structure, Confirmatory Factor Analysis to validate it, and Structural Equation Modeling to test the hypotheses."
+
+Cross-sectional, quantitative design with N = 523 participants (students and working professionals). Initial instrument: 28 items across 12 constructs; refined through psychometric analysis to 16 items across 8 factors.
+
+**Analysis pipeline** follows instrument development best practices:
+1. **EFA** (Exploratory Factor Analysis): Structure discovery
+2. **CFA** (Confirmatory Factor Analysis): Structure validation
+3. **SEM** (Structural Equation Modeling): Hypothesis testing
 
 ---
 
@@ -236,22 +209,22 @@ Touro University Worldwide | December 2025
 
 ### Model Fit Results
 
-| Metric | Result | Threshold |
-| ------ | ------ | --------- |
-| CFI | .975 | > .95 |
-| TLI | .960 | > .95 |
-| RMSEA | .065 | < .08 |
-| All α | > .74 | > .70 |
+| Metric | Result | Threshold | Reference |
+| ------ | ------ | --------- | --------- |
+| CFI | .975 | > .95 | Hu & Bentler (1999) |
+| TLI | .960 | > .95 | Hu & Bentler (1999) |
+| RMSEA | .065 | < .08 | Browne & Cudeck (1993) |
+| All α | > .74 | > .70 | Nunnally (1978) |
 
-### 🎤 Talk Track
 
-> "The psychometric results are strong.
->
-> CFI of .975 exceeds the .95 threshold for excellent fit. TLI of .960, same story. RMSEA of .065 is below the .08 cutoff.
->
-> And all reliability coefficients—Cronbach's alpha—exceed .74, above the .70 threshold.
->
-> In short, this instrument is psychometrically sound."
+
+Psychometric results demonstrate strong model fit:
+- **CFI = .975**: Exceeds .95 excellent threshold (Hu & Bentler, 1999)
+- **TLI = .960**: Exceeds .95 excellent threshold
+- **RMSEA = .065**: Below .08 acceptable cutoff (Browne & Cudeck, 1993)
+- **All α > .74**: All reliability coefficients exceed .70 threshold (Nunnally, 1978)
+
+The instrument meets publication-quality psychometric standards.
 
 ---
 
@@ -267,25 +240,24 @@ Touro University Worldwide | December 2025
 | **Leadership** | 24% supervisory roles (managers + executives) |
 | **Disability** | 13% identify as having a disability |
 
-**Recruitment**: Centiment professional panel with blinded recruitment (topic not disclosed until consent) and multiple attention checks.
+**Recruitment**: Centiment professional research panel with blinded recruitment (topic not disclosed until informed consent) and multiple attention checks to ensure data quality (Meade & Craig, 2012).
 
-### 🎤 Talk Track
 
-> "The sample was diverse and carefully screened.
->
-> 41% were in academic contexts—students—while 59% were working professionals. This split enables testing whether the instrument works across populations.
->
-> Educational backgrounds ranged from high school to doctoral degrees, with the largest group having some college. Work experience varied widely, with 37% having 11 or more years, balanced by 19% with less than a year.
->
-> 24% held supervisory or leadership roles—managers and executives—which became relevant in the moderator analysis. And 13% identified as having a disability, enabling accessibility analysis.
->
-> I used Centiment, a professional research panel, with blinded recruitment—participants didn't know the survey was about AI until they accessed the consent form. This reduces self-selection bias. Multiple attention checks were embedded, and responses failing quality controls were excluded."
+
+Diverse sample with rigorous quality controls:
+- **Population split**: 41% academic / 59% professional—enables cross-population invariance testing
+- **Education range**: High school to doctoral degrees, largest group with some college
+- **Experience variation**: 37% with 11+ years / 19% with <1 year—enables experience moderation testing
+- **Leadership representation**: 24% supervisory/executive roles
+- **Disability representation**: 13%—enables accessibility analysis
+
+**Recruitment protocol**: Centiment professional research panel with blinded recruitment (topic undisclosed until consent form), multiple embedded attention checks, and exclusion of responses failing quality controls—reduces self-selection bias and ensures data quality.
 
 ---
 
-## Slide 11: Key Finding #1 – The Value Paradigm Shift
+## Slide 11: Key Finding #1 – What Drives AI Adoption
 
-### What Drives AI Adoption?
+### Structural Model Results (N = 523)
 
 | Predictor | β | p | Result |
 | --------- | - | - | ------ |
@@ -300,41 +272,51 @@ Touro University Worldwide | December 2025
 
 **Model R² = .852** (85.2% variance explained)
 
-### 🎤 Talk Track
 
-> "Now for the findings. This is the most important slide in my presentation.
->
-> Look at what actually predicts AI adoption intention.
->
-> **Price Value dominates** with a beta of .505, highly significant at p < .001. This is the strongest predictor by far—more than twice as strong as the second-place factor.
->
-> **Hedonic Motivation** comes second at .217. People adopt AI when it's enjoyable and engaging.
->
-> **Social Influence** is third at .136. Peer recommendations and organizational endorsement matter.
->
-> **AI Trust** shows a marginal effect at .106, p = .064. It just missed conventional significance, but I'll argue it still has diagnostic value.
->
-> Now look at what **doesn't** predict AI adoption:
-> - Performance Expectancy: not significant
-> - Effort Expectancy: not significant
-> - Facilitating Conditions: not significant
-> - Habit: not significant
->
-> The model explains 85.2% of variance—that's exceptional. But the pattern of what works and what doesn't represents a fundamental paradigm shift from 30 years of technology acceptance research."
+
+Structural model results showing path coefficients for all predictors of Behavioral Intention. Model explains 85.2% of variance—exceptional predictive accuracy.
 
 ---
 
-## Slide 12: Key Finding #2 – What Doesn't Work
+## Slide 12: Key Finding #1 – The Value Paradigm Shift
 
-### Traditional Tech Drivers Fail for AI
+### Significant vs. Non-Significant Predictors
 
-**NOT Significant:**
+**What Works (Significant)**:
+- **Price Value** (β = .505): Strongest—cost-benefit evaluation dominates
+- **Hedonic Motivation** (β = .217): Second—enjoyment drives adoption
+- **Social Influence** (β = .136): Third—peer influence matters
+- **AI Trust** (β = .106): Marginal but diagnostic value retained
+
+**What Fails (Not Significant)**:
+- Performance Expectancy, Effort Expectancy, Facilitating Conditions, Habit
+
+
+
+This pattern represents a fundamental departure from 30 years of technology acceptance research. Traditional UTAUT2 workhorses fail for AI adoption while value-focused and enjoyment-focused factors dominate.
+
+---
+
+## Slide 13: Key Finding #2 – Traditional Drivers Fail
+
+### Why 30 Years of Research Doesn't Apply
+*Contrasts with Blut et al. (2022) meta-analysis of 737,112 users where PE was strongest predictor (ρ = .60)*
+
+**NOT Significant in AI Context:**
 - Performance Expectancy (productivity gains)
 - Effort Expectancy (ease of use)
 - Facilitating Conditions (support/training)
 - Habit (prior experience)
 
-### The Paradigm Shift
+
+
+Performance Expectancy ("Will this make me productive?") has been the dominant predictor for 30 years across PCs, email, smartphones, and enterprise software. For AI: not significant. Same pattern for Effort Expectancy, Facilitating Conditions, and Habit.
+
+---
+
+## Slide 14: Key Finding #2 – The Paradigm Shift
+
+### Traditional Tech vs. AI Adoption
 
 | Traditional Tech | AI Adoption |
 | ---------------- | ----------- |
@@ -342,58 +324,50 @@ Touro University Worldwide | December 2025
 | Feature-focused | Value-focused |
 | Training solves adoption | Trust enables adoption |
 
-### 🎤 Talk Track
 
-> "Let me emphasize what this means.
->
-> For 30 years, technology acceptance research has told us that Performance Expectancy—'Will this make me more productive?'—is the strongest or one of the strongest predictors of adoption. That's been true for PCs, email, smartphones, enterprise software.
->
-> **For AI, it's not significant.** Not even close.
->
-> Same with Effort Expectancy—ease of use. Same with Facilitating Conditions—training and support. Same with Habit.
->
-> These are the pillars of technology adoption research, and they all fail for AI.
->
-> What does this mean practically?
->
-> Traditional technology adoption: Users ask 'Will this make me productive?' → Organizations respond with feature lists and productivity claims → Training solves adoption problems.
->
-> AI adoption: Users ask 'Is this worth my total investment—time, effort, risk, learning curve?' → Organizations need to demonstrate value, not capabilities → Trust must be established before features matter.
->
-> This is a paradigm shift. Organizations approaching AI adoption with traditional playbooks will fail."
+
+Organizations approaching AI adoption with traditional playbooks will fail. AI requires fundamentally different change management strategies—demonstrating value rather than capabilities, and building trust before exposing features.
 
 ---
 
-## Slide 13: Key Finding #3 – User Segmentation
+## Slide 15: Key Finding #3 – User Segmentation
 
 ### Four Distinct AI Adoption Profiles
+*K-means cluster analysis (k = 4, silhouette = .31)*
 
-| Segment | % | Trust | Anxiety | Intent | Strategy |
-| ------- | - | ----- | ------- | ------ | -------- |
-| **AI Enthusiasts** | 16% | +1.37σ | −0.86σ | +1.32σ | Champions |
-| **Cautious Adopters** | 30% | +0.86σ | +0.84σ | +0.88σ | Proof points |
-| **Moderate Users** | 37% | +0.01σ | +0.42σ | −0.07σ | Reduce friction |
-| **Anxious Avoiders** | 17% | −1.49σ | +0.76σ | −1.53σ | Trust-first |
+| Segment | % | Trust | Anxiety | Intent |
+| ------- | - | ----- | ------- | ------ |
+| **AI Enthusiasts** | 16% | +1.37σ | −0.86σ | +1.32σ |
+| **Cautious Adopters** | 30% | +0.86σ | +0.84σ | +0.88σ |
+| **Moderate Users** | 37% | +0.01σ | +0.42σ | −0.07σ |
+| **Anxious Avoiders** | 17% | −1.49σ | +0.76σ | −1.53σ |
 
-**Cluster analysis** based on standardized UTAUT construct scores.
+**Cluster analysis** based on standardized UTAUT construct scores (Rogers, 2003 innovation adoption categories adapted).
 
-### 🎤 Talk Track
 
-> "Beyond the structural model, I discovered four distinct user segments through cluster analysis.
->
-> **AI Enthusiasts**—16% of the sample. High trust, low anxiety, strong adoption intent. These are your champions. Give them early access and let them evangelize.
->
-> **Cautious Adopters**—30%. They see AI's potential but need evidence. High interest combined with elevated anxiety. They're waiting for proof. Give them case studies, ROI calculators, pilot programs with low commitment.
->
-> **Moderate Users**—37%, the largest segment. They're on the fence. Neutral on most dimensions. They'll follow the crowd. Reduce friction, show them that peers are adopting, leverage social influence.
->
-> **Anxious Avoiders**—17%. Low trust, high anxiety, strong resistance. Nearly 1 in 5 people. They won't adopt without significant trust-building intervention. Don't push features; address the underlying anxiety first.
->
-> The practical value: using AIRS-16 scores, organizations can identify which segment individuals fall into and design targeted interventions instead of one-size-fits-all training."
+
+Four distinct user segments identified via cluster analysis on standardized UTAUT construct scores. Each segment has unique characteristics requiring different intervention strategies.
 
 ---
 
-## Slide 14: Moderator #1 – Experience
+## Slide 16: Key Finding #3 – Segment Strategies
+
+### Targeted Interventions by Segment
+
+| Segment | Strategy | Action |
+| ------- | -------- | ------ |
+| **AI Enthusiasts** (16%) | Champions | Give early access, enable evangelization |
+| **Cautious Adopters** (30%) | Proof points | Provide case studies, ROI calculators, low-commitment pilots |
+| **Moderate Users** (37%) | Reduce friction | Demonstrate peer adoption, leverage social influence |
+| **Anxious Avoiders** (17%) | Trust-first | Address anxiety before features; trust-building required |
+
+
+
+AIRS-16 scores enable segment identification for targeted interventions instead of one-size-fits-all training programs. Each segment requires fundamentally different approaches.
+
+---
+
+## Slide 17: Moderator #1 – Experience
 
 ### Experience Moderates Hedonic Motivation
 
@@ -404,17 +378,15 @@ Touro University Worldwide | December 2025
 
 **Interpretation**: Experienced professionals (4+ years) weight enjoyment more heavily.
 
-### 🎤 Talk Track
 
-> "The moderator analysis revealed important boundary conditions.
->
-> First, experience moderates the Hedonic Motivation path. The interaction is significant at p = .009. What does this mean? Experienced professionals—those with 4+ years—actually weight enjoyment *more* heavily in their adoption decisions, not less.
->
-> This was counterintuitive. I expected experienced users to be more pragmatic, but they've perhaps learned that if a tool isn't enjoyable, they won't sustain use."
+
+**Experience moderation finding**: The HM × Experience interaction is significant (p = .009). Experienced professionals (4+ years) weight enjoyment *more* heavily in adoption decisions, not less.
+
+**Interpretation**: Counterintuitive finding—expected experienced users to be more pragmatic. Possible explanation: experienced professionals have learned that if a tool isn't enjoyable, sustained use is unlikely. Enjoyment predicts long-term adoption commitment.
 
 ---
 
-## Slide 15: Moderator #2 – Population
+## Slide 18: Moderator #2 – Population
 
 ### Population Differences
 
@@ -424,19 +396,19 @@ Touro University Worldwide | December 2025
 
 **Interpretation**: Academics value enjoyment; professionals may see it as unprofessional.
 
-### 🎤 Talk Track
 
-> "Second, population type matters dramatically.
->
-> Look at Hedonic Motivation: for academics, beta is .449—highly positive. For professionals, it's -.301—actually negative. The difference of .750 is significant at p = .041.
->
-> What's happening? In academic contexts, enjoying your tools is acceptable, even valued. In professional contexts, there may be a cultural norm that work tools shouldn't be 'fun'—if you're enjoying it, maybe you're not being serious.
->
-> This has direct implications for how organizations should message AI tools to different audiences."
+
+**Population moderation finding**: Dramatic difference in Hedonic Motivation path across populations.
+
+- **Academics**: β = .449 (highly positive—enjoyment drives adoption)
+- **Professionals**: β = -.301 (negative—enjoyment may signal unseriousness)
+- **Difference**: Δβ = -.750, p = .041 (significant)
+
+**Interpretation**: Academic contexts value tool enjoyment; professional contexts may have cultural norms that work tools shouldn't be "fun." This finding has direct implications for audience-specific AI messaging strategies.
 
 ---
 
-## Slide 16: The AIRS-16 Instrument
+## Slide 19: The AIRS-16 Instrument
 
 ### Validated 8-Factor, 16-Item Diagnostic Tool
 
@@ -453,26 +425,28 @@ Touro University Worldwide | December 2025
 
 **Administration**: ~3 minutes | Diagnostic output identifies specific barriers
 
-### 🎤 Talk Track
 
-> "The tangible output of this research is AIRS-16—a validated diagnostic instrument.
->
-> Eight factors, two items each, 16 items total. Administration takes about 3 minutes.
->
-> All reliability coefficients are strong—ranging from .74 for Facilitating Conditions to .91 for Habit.
->
-> The practical value: an organization can administer this assessment, score it, and identify specific barriers for each individual or team. Is the problem low Price Value perception? Address value demonstration. Low Social Influence? Recruit champions. Low Trust? Trust-building intervention first.
->
-> This moves organizations from guessing about adoption barriers to diagnosing them with validated measurement."
+
+**AIRS-16 specification**:
+- 8 factors, 2 items each, 16 items total
+- Administration time: ~3 minutes
+- Reliability range: α = .74 (Facilitating Conditions) to α = .91 (Habit)
+
+**Diagnostic application**: Organizations can administer the assessment, score it, and identify specific barriers:
+- Low Price Value → Value demonstration intervention
+- Low Social Influence → Champion recruitment
+- Low Trust → Trust-building intervention first
+
+AIRS-16 moves organizations from guessing about adoption barriers to diagnosing them with validated measurement.
 
 ---
 
-## Slide 17: Theoretical Contributions
+## Slide 20: Theoretical Contributions
 
 ### Advancing Technology Acceptance Theory
 
 1. **Value-Dominant Model**
-   - PV (β = .505) dominates PE—reverses 30 years of TAM/UTAUT findings
+   - PV (β = .505) dominates PE—challenges established TAM/UTAUT findings (Davis, 1989; Venkatesh et al., 2003, 2012)
    - AI evaluated through cost-benefit lens, not productivity lens
 
 2. **Established Constructs Fail**
@@ -487,21 +461,21 @@ Touro University Worldwide | December 2025
    - First psychometrically validated AI adoption instrument
    - Configural invariance across populations
 
-### 🎤 Talk Track
 
-> "Let me summarize the theoretical contributions.
->
-> First, a **value-dominant model**. Price Value at beta .505 dominating Performance Expectancy reverses 30 years of technology acceptance findings. This suggests AI is evaluated through a fundamentally different lens than previous technologies.
->
-> Second, **established constructs fail**. Performance Expectancy, Effort Expectancy, Facilitating Conditions, and Habit—these aren't just weaker for AI, they're not significant at all. This challenges core assumptions about what drives technology adoption and suggests we may need AI-specific theoretical frameworks.
->
-> Third, **AI Trust as a diagnostic factor**. While the predictive effect was marginal at p = .064, I retained Trust in the instrument because it provides essential diagnostic value. An organization can identify trust deficits and design targeted interventions—that's practically useful even if the path coefficient isn't statistically significant.
->
-> Fourth, **measurement advancement**. This is the first psychometrically validated instrument for measuring AI adoption readiness, with demonstrated invariance across populations."
+
+**Theoretical contributions summary**:
+
+1. **Value-dominant model**: Price Value (β = .505) dominating Performance Expectancy reverses 30 years of technology acceptance findings—suggests AI is evaluated through fundamentally different lens than previous technologies
+
+2. **Established constructs fail**: Performance Expectancy, Effort Expectancy, Facilitating Conditions, and Habit not just weaker for AI but not significant at all—challenges core assumptions about technology adoption drivers; may require AI-specific theoretical frameworks
+
+3. **AI Trust as diagnostic factor**: Marginal predictive effect (p = .064) retained in instrument for diagnostic value—enables identification of trust deficits and targeted interventions
+
+4. **Measurement advancement**: First psychometrically validated AI adoption readiness instrument with demonstrated cross-population invariance
 
 ---
 
-## Slide 18: Practical Contributions
+## Slide 21: Practical Contributions
 
 ### Actionable Insights for Organizations
 
@@ -521,21 +495,21 @@ Touro University Worldwide | December 2025
    - 17% have trust barriers blocking adoption
    - Trust-building must precede feature exposure
 
-### 🎤 Talk Track
 
-> "For practitioners, four key takeaways:
->
-> First, **lead with value, not capabilities**. Stop showing feature lists. Start demonstrating ROI. Address the total cost—not just price, but time investment, workflow disruption, learning curve, opportunity cost. Users are asking 'Is this worth it?' Answer that question.
->
-> Second, **segment-specific strategies**. Your workforce isn't homogeneous. 16% are enthusiasts—leverage them. 30% need proof—give them evidence. 37% will follow the crowd—show them peers adopting. 17% have trust barriers—address those before anything else. One-size-fits-all training fails because these groups need different interventions.
->
-> Third, **diagnostic assessment**. AIRS-16 takes 3 minutes and identifies specific barriers. This enables targeted resource allocation instead of blanket programs.
->
-> Fourth, **trust as prerequisite**. Nearly 1 in 5 people have trust issues blocking adoption. For them, feature demonstrations are useless until trust is established. Organizations need to diagnose who these people are and address trust first."
+
+**Practitioner takeaways**:
+
+1. **Lead with value, not capabilities**: Replace feature lists with ROI demonstration; address total cost including time investment, workflow disruption, learning curve, and opportunity cost. Users are asking "Is this worth it?"
+
+2. **Segment-specific strategies**: Workforce is heterogeneous—16% enthusiasts (leverage as champions), 30% need proof (provide evidence), 37% follow crowd (show peer adoption), 17% have trust barriers (address before features). One-size-fits-all training fails because groups need different interventions.
+
+3. **Diagnostic assessment**: AIRS-16 takes 3 minutes and identifies specific barriers—enables targeted resource allocation instead of blanket programs
+
+4. **Trust as prerequisite**: 17% (nearly 1 in 5) have trust issues blocking adoption; feature demonstrations are useless until trust is established. Diagnose trust barriers and address first.
 
 ---
 
-## Slide 19: Study Limitations
+## Slide 22: Study Limitations
 
 ### Study Boundaries
 
@@ -547,21 +521,21 @@ Touro University Worldwide | December 2025
 | **US-based** | Cross-cultural replication recommended |
 | **Dropped constructs** | 4 constructs failed (α < .60); redesign needed |
 
-### 🎤 Talk Track
 
-> "I want to be transparent about limitations.
->
-> **Cross-sectional design** means I can show correlation but not causation. I can't prove that Price Value *causes* adoption intention—only that they're strongly related. Longitudinal research is needed.
->
-> **Self-reported measures** are standard in adoption research, but they're not behavior. However, I did validate behavioral intention against actual AI usage, achieving a correlation of .69—strong evidence that what people say predicts what they do.
->
-> **Convenience sampling** through Centiment, though the demographics are diverse and quality controls were rigorous.
->
-> **US-based only**. Cultural factors might change these relationships. A German professional might respond differently than an American one. Cross-cultural replication is needed."
+
+**Study limitations acknowledged**:
+
+- **Cross-sectional design**: Shows correlation, not causation—cannot prove Price Value causes adoption intention. Longitudinal research needed to establish causal relationships.
+
+- **Self-reported measures**: Standard in adoption research but not behavioral; however, behavioral intention validated against actual AI usage (ρ = .69)—strong evidence that stated intentions predict actual behavior.
+
+- **Convenience sampling**: Through Centiment professional panel; demographics diverse and quality controls rigorous.
+
+- **US-based only**: Cultural factors might change relationships; German professionals may respond differently than American counterparts. Cross-cultural replication recommended.
 
 ---
 
-## Slide 20: Constructs That Failed
+## Slide 23: Constructs That Failed
 
 ### AI-Specific Measurement Challenges
 
@@ -572,17 +546,23 @@ Touro University Worldwide | December 2025
 | Ethical Risk | .582 | Near threshold |
 | AI Anxiety | .423 | Poor discriminant validity |
 
-### 🎤 Talk Track
 
-> "Critically, **four AI-specific constructs failed** psychometrically.
->
-> Voluntariness, Explainability, Ethical Risk, and AI Anxiety all had reliability below acceptable thresholds. I couldn't test hypotheses about these constructs.
->
-> These aren't theoretical failures—they're measurement challenges. The constructs matter; we just need better items. They need to be redesigned and retested—that's future research."
+
+**Four AI-specific constructs failed psychometrically** (all reliability below acceptable thresholds):
+
+- **Voluntariness (α = .301)**: Items conceptually conflicted—"My organization requires AI use" and "I choose to use AI voluntarily" interpreted inconsistently. Future: reframe as "perceived pressure."
+
+- **Explainability (α = .503)**: AI explanation is multi-dimensional (how model works, why decision made, audit capability); broad items failed to capture distinct facets. Future: decompose into transparency, interpretability, auditability.
+
+- **Ethical Risk (α = .582)**: Near threshold; items conflated personal and societal concerns. Future: separate individual ethical concerns from societal.
+
+- **AI Anxiety (α = .423)**: Overlapped with general technology anxiety. Future: distinguish AI-specific anxiety from general tech discomfort.
+
+These are measurement challenges, not theoretical failures—the constructs matter and require better operationalization.
 
 ---
 
-## Slide 21: Future Research – Validation
+## Slide 24: Future Research – Validation
 
 ### Recommended Next Steps (Part 1)
 
@@ -591,26 +571,26 @@ Touro University Worldwide | December 2025
    - Test intention-behavior relationship
 
 2. **AI-Specific Construct Development**
-   - Redesign failed constructs (Explainability, Ethical Risk)
-   - Address Venkatesh's (2021) remaining 5 challenges
+   - Redesign failed constructs (Explainability, Ethical Risk, AI Anxiety, Voluntariness)
+   - Address Venkatesh's (2021) remaining research challenges
 
 3. **Intervention Testing**
    - Experimental validation of segment-specific strategies
    - ROI of targeted vs. generic adoption programs
 
-### 🎤 Talk Track
 
-> "Where should research go from here?
->
-> First, **longitudinal validation**. Follow people over time. Do high behavioral intention scores actually predict adoption 6 months later? Does the model hold?
->
-> Second, **AI-specific construct development**. The four constructs that failed—Explainability, Ethical Risk, Voluntariness, AI Anxiety—these are theoretically important. They need better measurement, not abandonment. And Venkatesh's 2021 paper identified nine challenges; I addressed four. Five remain.
->
-> Third, **intervention testing**. I've identified four segments and proposed strategies. Do those strategies actually work? That requires experimental research—randomize organizations to targeted vs. generic interventions and measure outcomes."
+
+**Future research agenda (validation)**:
+
+1. **Longitudinal validation**: Track participants over time to test intention-behavior relationship. Do high behavioral intention scores predict actual adoption at 6 months?
+
+2. **AI-specific construct development**: Redesign failed constructs (Explainability, Ethical Risk, Voluntariness, AI Anxiety) with better measurement. Venkatesh (2021) identified nine AI challenges; four addressed here, five remain.
+
+3. **Intervention testing**: Experimental validation of segment-specific strategies. Randomize organizations to targeted vs. generic interventions and measure adoption outcomes.
 
 ---
 
-## Slide 22: Future Research – Expansion
+## Slide 25: Future Research – Expansion
 
 ### Recommended Next Steps (Part 2)
 
@@ -622,15 +602,17 @@ Touro University Worldwide | December 2025
    - Healthcare, finance, education contexts
    - Regulated vs. unregulated AI applications
 
-### 🎤 Talk Track
 
-> "Fourth, **cross-cultural replication**. Does Price Value dominate in collectivist cultures? Does Social Influence work differently? We need to test this globally.
->
-> Fifth, **domain-specific adaptation**. AI in healthcare has different considerations than AI in marketing. The instrument may need domain-specific modules."
+
+**Future research agenda (expansion)**:
+
+1. **Cross-cultural replication**: Test measurement invariance across cultures. Does Price Value dominate in collectivist cultures? Does Social Influence operate differently? Global validation needed.
+
+2. **Domain-specific adaptation**: AI in healthcare has different considerations than AI in marketing. The instrument may require domain-specific modules for regulated vs. unregulated AI applications.
 
 ---
 
-## Slide 23: Conclusion
+## Slide 26: Conclusion
 
 ### Summary of Contributions
 
@@ -649,21 +631,21 @@ Touro University Worldwide | December 2025
 - Diagnostic tool for organizational assessment
 - Evidence-based recommendations for AI implementation
 
-### 🎤 Talk Track
 
-> "To conclude, let me summarize the three types of contributions.
->
-> **Theoretically**, this research demonstrates a value-dominant model that challenges 30 years of technology acceptance findings. It extends UTAUT2 with AI Trust and provides evidence that traditional adoption drivers simply don't work for AI.
->
-> **Methodologically**, I developed and validated AIRS-16—the first psychometrically sound AI adoption readiness instrument. Eight factors, strong fit indices, 85% predictive accuracy.
->
-> **Practically**, organizations now have a diagnostic tool. They can identify four distinct user types, understand specific adoption barriers, and design targeted interventions instead of hoping one-size-fits-all training works.
->
-> The bottom line: organizations don't have an AI technology problem—they have an AI adoption problem. This research provides the diagnostic tools to understand and address it."
+
+**Three categories of contributions**:
+
+- **Theoretical**: Value-dominant model challenges 30 years of technology acceptance findings; UTAUT2 extended with AI Trust; empirical evidence that traditional drivers (PE, EE, FC, Habit) fail for AI adoption.
+
+- **Methodological**: AIRS-16 represents the first psychometrically sound AI adoption readiness instrument—8 factors, strong fit indices (CFI = .975), 85.2% predictive accuracy.
+
+- **Practical**: Organizations now have a diagnostic tool enabling identification of four distinct user types, understanding of specific adoption barriers, and design of targeted interventions rather than one-size-fits-all training.
+
+**Core insight**: Organizations don't have an AI technology problem—they have an AI adoption problem. This research provides diagnostic tools to understand and address it.
 
 ---
 
-## Slide 24: Key Numbers to Remember
+## Slide 27: Key Numbers to Remember
 
 | Metric | Value | Meaning |
 | ------ | ----- | ------- |
@@ -675,23 +657,20 @@ Touro University Worldwide | December 2025
 | **Items** | 16 | Final instrument |
 | **Factors** | 8 | Validated constructs |
 
-### 🎤 Talk Track
 
-> "If you remember nothing else, remember these numbers:
->
-> - 523 participants
-> - Price Value at .505—the dominant predictor
-> - 85.2% variance explained
-> - CFI of .975—excellent model fit
-> - 4 distinct user segments
-> - 16 items in the final instrument
-> - 8 validated factors
->
-> These numbers tell the story of a rigorous study with strong findings and practical utility."
+
+**Key metrics summary**:
+- **N = 523**: Sample size
+- **β (PV) = .505**: Strongest predictor (Price Value)
+- **R² = .852**: 85.2% variance explained
+- **CFI = .975**: Excellent model fit
+- **4 segments**: Distinct user typologies
+- **16 items**: Final instrument length
+- **8 factors**: Validated constructs
 
 ---
 
-## Slide 25: Thank You
+## Slide 28: Thank You
 
 ### Questions?
 
@@ -701,13 +680,11 @@ Touro University Worldwide
 
 *"Organizations don't have an AI technology problem—they have an AI adoption problem."*
 
-### 🎤 Talk Track
 
-> "Thank you for your attention and for the opportunity to present this research.
->
-> I'd be happy to take your questions. And I want to leave you with the central insight: Organizations don't have an AI technology problem—they have an AI adoption problem. Understanding and diagnosing that adoption problem is the first step to solving it.
->
-> What questions do you have?"
+
+Conclusion of presentation. Invitation for committee questions.
+
+**Central insight**: Organizations don't have an AI technology problem—they have an AI adoption problem. Understanding and diagnosing that adoption problem is the first step to solving it.
 
 ---
 
@@ -728,24 +705,24 @@ Touro University Worldwide
 | H3 | Experience mod | .136 | .009 | — | ✓ Partial (HM) |
 | H4 | Population mod | −.750 | .041 | — | ✓ Partial (HM) |
 
-### 🎤 Talk Track (if asked for details)
+ (if asked)
 
-> "Here's the complete hypothesis table with confidence intervals. Notice that the three supported UTAUT2 hypotheses—Social Influence, Hedonic Motivation, and Price Value—all have confidence intervals that don't cross zero. The non-significant paths all have wide intervals crossing zero, confirming lack of effect."
+Complete hypothesis results with confidence intervals. The three supported UTAUT2 hypotheses (Social Influence, Hedonic Motivation, Price Value) all have confidence intervals that do not cross zero. Non-significant paths all have wide intervals crossing zero, confirming lack of effect.
 
 ---
 
 ### B2: Model Fit Indices Comparison
 
-| Index | Obtained | Excellent | Acceptable |
-| ----- | -------- | --------- | ---------- |
-| CFI | .975 | ≥ .95 | ≥ .90 |
-| TLI | .960 | ≥ .95 | ≥ .90 |
-| RMSEA | .065 | ≤ .06 | ≤ .08 |
-| SRMR | .044 | ≤ .08 | ≤ .10 |
+| Index | Obtained | Excellent | Acceptable | Source |
+| ----- | -------- | --------- | ---------- | ------ |
+| CFI | .975 | ≥ .95 | ≥ .90 | Hu & Bentler (1999) |
+| TLI | .960 | ≥ .95 | ≥ .90 | Hu & Bentler (1999) |
+| RMSEA | .065 | ≤ .06 | ≤ .08 | Browne & Cudeck (1993) |
+| SRMR | .044 | ≤ .08 | ≤ .10 | Hu & Bentler (1999) |
 
-### 🎤 Talk Track (if asked about model fit)
+ (if asked)
 
-> "The model fit indices all exceed excellent thresholds for CFI and TLI. RMSEA at .065 is in the acceptable range, just above the .06 excellent threshold—this is typical for models with our sample size and complexity. SRMR at .044 is excellent. Overall, the measurement model fits the data very well."
+Model fit indices comparison: CFI and TLI exceed excellent thresholds. RMSEA at .065 is in acceptable range, just above .06 excellent threshold—typical for models of this sample size and complexity. SRMR at .044 is excellent. Overall, the measurement model demonstrates very good fit to the data.
 
 ---
 
@@ -760,17 +737,16 @@ Touro University Worldwide
 
 *Users ask: "Is the total value worth my total investment?"*
 
-### 🎤 Talk Track (if asked to clarify Price Value)
+ (if asked)
 
-> "Price Value is often misunderstood as just monetary cost. It's actually about perceived worth relative to total investment.
->
-> Total investment includes direct costs like licensing, yes. But also indirect costs—how much time will I spend learning this? How much will it disrupt my workflow?
->
-> Hidden costs matter too—what are the privacy risks? Am I locking myself into a vendor?
->
-> And opportunity costs—time spent learning AI is time not spent on current productive work.
->
-> When someone evaluates Price Value, they're asking: 'Is the total value I'll receive worth the total investment I have to make?' That's a much richer question than 'Is this software expensive?'"
+**Price Value clarification**: Often misunderstood as just monetary cost. Actually measures perceived worth relative to total investment:
+
+- **Direct costs**: Licensing, subscriptions, infrastructure
+- **Indirect costs**: Learning curve time, workflow disruption
+- **Hidden costs**: Data privacy risks, vendor lock-in
+- **Opportunity costs**: Time spent learning vs. productive work
+
+Price Value evaluation asks: "Is the total value I'll receive worth the total investment I have to make?"—a richer question than "Is this software expensive?"
 
 ---
 
@@ -783,16 +759,42 @@ Touro University Worldwide
 | **Ethical Risk** | .582 | Near threshold; items conflated personal vs. societal ethics | Separate individual ethical concerns from societal |
 | **AI Anxiety** | .423 | Overlapped with general technology anxiety | Distinguish AI-specific anxiety from general tech anxiety |
 
-### 🎤 Talk Track (if asked about failed constructs)
+ (if asked)
 
-> "Four constructs failed to achieve acceptable reliability. Here's what happened:
->
-> **Voluntariness** at .301—the items conceptually conflicted. 'My organization requires AI use' and 'I choose to use AI voluntarily' were supposed to be opposite ends of a scale, but people interpreted them inconsistently. Future research should reframe this as 'perceived pressure.'
->
-> **Explainability** at .503—AI explanation is actually multi-dimensional. How a model works, why it made a decision, and whether decisions can be audited are different things. I tried to capture them with broad items; they need to be decomposed.
->
-> **Ethical Risk** at .582—just below threshold. Items conflated personal ethical concerns with societal ones. 'AI could make biased decisions about me' is different from 'AI could harm society.'
->
-> **AI Anxiety** at .423—it overlapped too much with general technology anxiety. We need measures that distinguish AI-specific anxiety from 'I'm uncomfortable with all new technology.'
->
-> These aren't theoretical failures—they're measurement challenges. The constructs matter; we just need better items."
+**Failed constructs explanation**:
+
+- **Voluntariness (α = .301)**: Items conceptually conflicted; "My organization requires AI use" and "I choose to use AI voluntarily" supposed to be opposite ends but interpreted inconsistently. Future: reframe as "perceived pressure."
+
+- **Explainability (α = .503)**: AI explanation is multi-dimensional—how model works, why decision made, audit capability are distinct facets. Broad items failed to capture. Future: decompose into transparency, interpretability, auditability.
+
+- **Ethical Risk (α = .582)**: Just below threshold; items conflated personal and societal concerns ("AI could make biased decisions about me" vs. "AI could harm society"). Future: separate individual from societal ethics.
+
+- **AI Anxiety (α = .423)**: Overlapped too much with general technology anxiety. Future: measures distinguishing AI-specific anxiety from general tech discomfort.
+
+These are measurement challenges requiring better operationalization, not theoretical failures.
+
+---
+
+## Key References Cited in Presentation
+
+**Technology Acceptance Models**
+- Davis, F. D. (1989). Perceived usefulness, perceived ease of use, and user acceptance of information technology. *MIS Quarterly, 13*(3), 319–340.
+- Venkatesh, V., Morris, M. G., Davis, G. B., & Davis, F. D. (2003). User acceptance of information technology: Toward a unified view. *MIS Quarterly, 27*(3), 425–478.
+- Venkatesh, V., Thong, J. Y. L., & Xu, X. (2012). Consumer acceptance and use of information technology: Extending the unified theory of acceptance and use of technology. *MIS Quarterly, 36*(1), 157–178.
+- Venkatesh, V. (2021). Adoption and use of AI tools: A research agenda grounded in UTAUT. *Annals of Operations Research*, 1–12.
+- Blut, M., Chong, A., Tsigna, Z., & Venkatesh, V. (2022). Meta-analysis of the unified theory of acceptance and use of technology (UTAUT): Challenging its validity and charting a research agenda in the red ocean. *Journal of the Association for Information Systems, 23*(1), 13–95.
+
+**AI Trust and Adoption**
+- Glikson, E., & Woolley, A. W. (2020). Human trust in artificial intelligence: Review of empirical research. *Academy of Management Annals, 14*(2), 627–660.
+- Rogers, E. M. (2003). *Diffusion of innovations* (5th ed.). Free Press.
+
+**Industry Benchmarks**
+- McKinsey & Company. (2025). *The state of AI in 2025: Agents, innovation, and transformation*. McKinsey Global Survey.
+- MIT Media Lab. (2025). *The GenAI divide: State of enterprise AI in 2025*. NANDA Initiative.
+- Boston Consulting Group. (2024–2025). *AI adoption and AI at work* research series.
+
+**Psychometric Methods**
+- Hu, L., & Bentler, P. M. (1999). Cutoff criteria for fit indexes in covariance structure analysis: Conventional criteria versus new alternatives. *Structural Equation Modeling, 6*(1), 1–55.
+- Browne, M. W., & Cudeck, R. (1993). Alternative ways of assessing model fit. In K. A. Bollen & J. S. Long (Eds.), *Testing structural equation models* (pp. 136–162). Sage.
+- Nunnally, J. C. (1978). *Psychometric theory* (2nd ed.). McGraw-Hill.
+- Meade, A. W., & Craig, S. B. (2012). Identifying careless responses in survey data. *Psychological Methods, 17*(3), 437–455.
