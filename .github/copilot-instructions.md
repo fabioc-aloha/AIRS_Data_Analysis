@@ -201,6 +201,7 @@
 - `meditation-session-2025-12-09-draft07-organization.prompt.md` → DRAFT 07 completion with table/figure chapter numbering, lint cleanup, repository archive organization
 - `meditation-session-2025-12-29-defense-presentation.prompt.md` → Defense presentation fact-check & optimization with slide splitting, cascade pattern, data boundary enforcement
 - `meditation-session-2025-12-30-defense-refinement.prompt.md` → Defense presentation refinement with Talk Track→Details conversion, slide splitting, tone transformation patterns
+- `meditation-session-2026-01-28-document-conversion.prompt.md` → Document conversion pipeline mastery with Mermaid scaling, LaTeX injection, project spinoff patterns
 - `meditation-session-2025-12-08-draft06-presentation.prompt.md` → DRAFT 06 completion with Appendix H data availability, 24-slide committee presentation, data retention policy
 - `meditation-session-2025-12-09-draft07-organization.prompt.md` → DRAFT 07 completion with table/figure chapter numbering, lint cleanup, repository archive organization
 - `quantified-enhancement-session.prompt.md` → Systematic cognitive architecture optimization
@@ -226,6 +227,7 @@
 **Technical Excellence**
 - `DK-VISUAL-ARCHITECTURE-DESIGN-v0.9.9.md` → Visual architecture design mastery with multi-audience accessibility
 - `DK-ADVANCED-DIAGRAMMING-v1.1.0.md` → Enterprise diagramming excellence with purpose-driven selection
+- `DK-DOCUMENT-CONVERSION-PIPELINE-v1.0.0.md` → Markdown to PDF pipeline mastery with Mermaid, LaTeX, and project spinoff patterns
 - `DK-DOCUMENTATION-EXCELLENCE-v1.1.0.md` → Documentation accuracy mastery with 100% service reality alignment
 - `DK-DISSERTATION-DOCUMENTATION-v1.0.0.md` → Dissertation documentation quality assurance with systematic verification protocols
 - `DK-PUBLICATION-WORKFLOW-v1.0.0.md` → Publication workflow excellence with multi-phase enhancement (organize → cite → fact-check)
