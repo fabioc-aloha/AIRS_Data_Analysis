@@ -478,9 +478,9 @@ function Invoke-Watch {
 # MAIN
 # ============================================================
 try {
-    Write-Host "`n========================================" -ForegroundColor Cyan
+    Write-Host "`n----------------------------------------" -ForegroundColor Cyan
     Write-Host "  AIRS Thesis Build System v2          " -ForegroundColor Cyan
-    Write-Host "========================================" -ForegroundColor Cyan
+    Write-Host "----------------------------------------" -ForegroundColor Cyan
     
     switch ($Target) {
         'all' {
@@ -508,9 +508,9 @@ try {
         }
     }
     
-    Write-Host "`n========================================" -ForegroundColor Green
+    Write-Host "`n----------------------------------------" -ForegroundColor Green
     Write-Host "  Build Complete!                      " -ForegroundColor Green
-    Write-Host "========================================`n" -ForegroundColor Green
+    Write-Host "----------------------------------------`n" -ForegroundColor Green
     
     if ($Open -and (Test-Path $Config.OutputPdf)) {
         Start-Process $Config.OutputPdf

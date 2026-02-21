@@ -352,6 +352,7 @@ The analysis followed a systematic 10-phase pipeline ensuring replicability and 
 Source: Compiled by Author
 
 ```mermaid
+%%{init: {'theme': 'base', 'themeVariables': {'primaryColor': '#1e3a8a', 'lineColor': '#3b82f6'}}}%%
 flowchart TB
     subgraph stage1["<b>Data Preparation</b>"]
         P0["<b>0</b><br/>Sample Splitting"]
@@ -374,21 +375,21 @@ flowchart TB
 
     stage1 --> stage2 --> stage3 --> stage4
 
-    style stage1 fill:#e8eaf6,stroke:#3f51b5,stroke-width:2px
-    style stage2 fill:#fff3e0,stroke:#ff9800,stroke-width:2px
-    style stage3 fill:#e8f5e9,stroke:#4caf50,stroke-width:2px
-    style stage4 fill:#fce4ec,stroke:#e91e63,stroke-width:2px
-    style P0 fill:#c5cae9,stroke:#3f51b5
-    style P1 fill:#ffe0b2,stroke:#ff9800
-    style P2 fill:#ffe0b2,stroke:#ff9800
-    style P3 fill:#ffe0b2,stroke:#ff9800
-    style P4 fill:#c8e6c9,stroke:#4caf50
-    style P5 fill:#c8e6c9,stroke:#4caf50
-    style P6 fill:#c8e6c9,stroke:#4caf50
-    style P7 fill:#f8bbd9,stroke:#e91e63
-    style P8 fill:#f8bbd9,stroke:#e91e63
-    style P9 fill:#f8bbd9,stroke:#e91e63
-    style P10 fill:#f8bbd9,stroke:#e91e63
+    style stage1 fill:#dbeafe,stroke:#1e3a8a,stroke-width:2px
+    style stage2 fill:#cffafe,stroke:#06b6d4,stroke-width:2px
+    style stage3 fill:#dbeafe,stroke:#3b82f6,stroke-width:2px
+    style stage4 fill:#fef3c7,stroke:#f59e0b,stroke-width:2px
+    style P0 fill:#dbeafe,stroke:#1e3a8a
+    style P1 fill:#cffafe,stroke:#06b6d4
+    style P2 fill:#cffafe,stroke:#06b6d4
+    style P3 fill:#cffafe,stroke:#06b6d4
+    style P4 fill:#dbeafe,stroke:#3b82f6
+    style P5 fill:#dbeafe,stroke:#3b82f6
+    style P6 fill:#dbeafe,stroke:#3b82f6
+    style P7 fill:#fef3c7,stroke:#f59e0b
+    style P8 fill:#fef3c7,stroke:#f59e0b
+    style P9 fill:#fef3c7,stroke:#f59e0b
+    style P10 fill:#fef3c7,stroke:#f59e0b
 ```
 
 : Figure 3.1: Ten-Phase Analysis Pipeline showing data preparation, measurement model validation, structural analysis, and synthesis stages. *Source: Compiled by Author* {#fig:analysis-pipeline}
@@ -398,6 +399,7 @@ flowchart TB
 To ensure independent validation, the sample was randomly split:
 
 ```mermaid
+%%{init: {'theme': 'base', 'themeVariables': {'primaryColor': '#1e3a8a', 'lineColor': '#3b82f6'}}}%%
 flowchart TD
     A["<b>Full Sample</b><br/>N = 523"] -->|Random Split<br/>seed = 67| B["<b>Development Sample</b><br/>n = 261 (50%)"]
     A -->|Random Split<br/>seed = 67| C["<b>Holdout Sample</b><br/>n = 262 (50%)"]
@@ -405,12 +407,12 @@ flowchart TD
     C --> E["Confirmatory Factor Analysis<br/>(CFA)"]
     C --> F["Structural Equation Modeling<br/>(SEM)"]
 
-    style A fill:#e1f5fe,stroke:#01579b
-    style B fill:#fff3e0,stroke:#e65100
-    style C fill:#f3e5f5,stroke:#7b1fa2
-    style D fill:#fff3e0,stroke:#e65100
-    style E fill:#f3e5f5,stroke:#7b1fa2
-    style F fill:#f3e5f5,stroke:#7b1fa2
+    style A fill:#dbeafe,stroke:#1e3a8a
+    style B fill:#cffafe,stroke:#06b6d4
+    style C fill:#dbeafe,stroke:#3b82f6
+    style D fill:#cffafe,stroke:#06b6d4
+    style E fill:#dbeafe,stroke:#3b82f6
+    style F fill:#dbeafe,stroke:#3b82f6
 ```
 
 : Figure 3.2: Split-Sample Cross-Validation Strategy showing random split of N=523 into development (n=261) and holdout (n=262) samples. *Source: Compiled by Author* {#fig:split-sample}
@@ -549,6 +551,7 @@ Scalar & Equal intercepts & Mean comparability \\
 **Model**:
 
 ```mermaid
+%%{init: {'theme': 'base', 'themeVariables': {'primaryColor': '#1e3a8a', 'lineColor': '#3b82f6'}}}%%
 flowchart TD
     subgraph predictors["UTAUT2 Core + AI Trust Extension"]
         direction TB
@@ -573,15 +576,15 @@ flowchart TD
     HB -->|+| BI
     TR -->|+| BI
 
-    style BI fill:#c8e6c9,stroke:#2e7d32,stroke-width:3px
-    style PE fill:#e3f2fd,stroke:#1565c0
-    style EE fill:#e3f2fd,stroke:#1565c0
-    style SI fill:#e3f2fd,stroke:#1565c0
-    style FC fill:#e3f2fd,stroke:#1565c0
-    style HM fill:#e3f2fd,stroke:#1565c0
-    style PV fill:#e3f2fd,stroke:#1565c0
-    style HB fill:#e3f2fd,stroke:#1565c0
-    style TR fill:#fff8e1,stroke:#f57f17
+    style BI fill:#fef3c7,stroke:#f59e0b,stroke-width:3px
+    style PE fill:#dbeafe,stroke:#1e3a8a
+    style EE fill:#dbeafe,stroke:#1e3a8a
+    style SI fill:#dbeafe,stroke:#1e3a8a
+    style FC fill:#dbeafe,stroke:#1e3a8a
+    style HM fill:#dbeafe,stroke:#1e3a8a
+    style PV fill:#dbeafe,stroke:#1e3a8a
+    style HB fill:#dbeafe,stroke:#1e3a8a
+    style TR fill:#cffafe,stroke:#06b6d4
 ```
 
 : Figure 3.3: Structural Model showing Eight Predictors of Behavioral Intention (UTAUT2 Core + AI Trust Extension). *Source: Compiled by Author* {#fig:structural-model}

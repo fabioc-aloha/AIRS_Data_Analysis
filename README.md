@@ -19,7 +19,7 @@ Extending Model for Enterprise AI Adoption
 </table>
 <!-- markdownlint-enable MD033 -->
 
-> 📝 **[View Current Thesis Draft (PDF)](thesis/FINAL%2003.pdf)** | **[Defense Presentation](thesis/DEFENSE_PRESENTATION.md)** | Chair approved - Defense scheduled
+> 📝 **[View Current Thesis (PDF)](thesis-v2/output/AIRS_Dissertation.pdf)** | **[Build System](thesis-v2/README.md)** | Chair approved - Defense scheduled
 
 ---
 
@@ -204,16 +204,16 @@ AIRS_Data_Analysis/
 │   ├── plots/                # Generated visualizations
 │   ├── results/              # JSON output files
 │   └── tables/               # CSV summary tables
-├── thesis/                   # DBA thesis documentation
-│   ├── chapters/             # Chapter files (1-6)
-│   ├── tables/               # Publication-ready tables (9)
-│   ├── figures/              # Exported figures
-│   ├── references/           # Bibliography (93 refs)
-│   ├── EXECUTIVE_SUMMARY.md  # Standalone executive summary
-│   ├── PRACTITIONER_BRIEF.md # Standalone practitioner brief
-│   ├── THESIS_SUMMARY.md     # 5-page thesis summary
-│   ├── DEFENSE_PRESENTATION.md # Committee defense (28 slides + backup)
-│   └── DRAFT 07.pdf          # Current compiled thesis
+├── thesis-v2/                # DBA thesis (APA 7 build system)
+│   ├── manuscript/
+│   │   ├── front-matter/     # Title, abstract, acknowledgments
+│   │   ├── chapters/         # Chapter files (1-6)
+│   │   └── back-matter/      # References, appendices
+│   ├── figures/              # PNG figures from notebooks
+│   ├── references/           # Bibliography (93 refs) + CSL
+│   ├── output/               # Generated PDF + Mermaid diagrams
+│   └── build.ps1             # PowerShell build script
+├── thesis/                   # Legacy thesis folder (archived)
 ├── defense/                  # Defense presentations (PowerPoint, PDF)
 ├── research/                 # Literature, IRB, and industry sources
 │   ├── AIRS literatyre review.md        # Theoretical foundation
@@ -234,27 +234,29 @@ AIRS_Data_Analysis/
 
 ## Thesis Documentation
 
-### Completed
+### Current Version (thesis-v2)
 
 | Document | Location | Words |
 | -------- | -------- | ----- |
-| Chapter 1: Introduction | `thesis/chapters/01_introduction.md` | ~2,800 |
-| Chapter 2: Literature Review | `thesis/chapters/02_literature_review.md` | ~5,200 |
-| Chapter 3: Methodology | `thesis/chapters/03_methodology.md` | ~3,800 |
-| Chapter 4: Results | `thesis/chapters/04_results.md` | ~3,200 |
-| Chapter 5: Analysis & Discussion | `thesis/chapters/05_analysis_discussion.md` | ~4,100 |
-| Chapter 6: Conclusions | `thesis/chapters/06_conclusions.md` | ~2,500 |
-| Appendices A-H | `thesis/appendices.md` | Complete |
-| Tables 4.1-4.9 | `thesis/tables/` | 9 tables |
-| Bibliography | `thesis/references/bibliography.bib` | 93 refs |
+| Chapter 1: Introduction | `thesis-v2/manuscript/chapters/01_introduction.md` | ~2,800 |
+| Chapter 2: Literature Review | `thesis-v2/manuscript/chapters/02_literature_review.md` | ~5,200 |
+| Chapter 3: Methodology | `thesis-v2/manuscript/chapters/03_methodology.md` | ~3,800 |
+| Chapter 4: Results | `thesis-v2/manuscript/chapters/04_results.md` | ~3,200 |
+| Chapter 5: Analysis & Discussion | `thesis-v2/manuscript/chapters/05_analysis_discussion.md` | ~4,100 |
+| Chapter 6: Conclusions | `thesis-v2/manuscript/chapters/06_conclusions.md` | ~2,500 |
+| Appendices A-I | `thesis-v2/manuscript/back-matter/appendices.md` | Complete |
+| Bibliography | `thesis-v2/references/bibliography.bib` | 93 refs |
 
-### Build & PDF Generation
+### Build Commands
 
-See [`PDF_GENERATION.md`](PDF_GENERATION.md) for complete documentation on:
+```powershell
+cd thesis-v2
+.\build.ps1           # Build PDF
+.\build.ps1 -Open     # Build and open
+.\build.ps1 -Target watch  # Auto-rebuild on changes
+```
 
-- Full thesis build (`thesis/build-thesis.ps1`)
-- Standalone document conversion (`thesis/convert-to-pdf.ps1`)
-- Prerequisites and troubleshooting
+See [`thesis-v2/README.md`](thesis-v2/README.md) for full documentation.
 
 ### Key Methodological Decisions Documented
 
@@ -324,7 +326,7 @@ BI = mean(BI1, BI2, BI3, BI4)  # Behavioral Intention
 
 - Shin, D. (2021). The effects of explainability and causability on perception, trust, and acceptance. *IJHCS, 146*, 102551.
 
-Full bibliography: `thesis/references/bibliography.bib`
+Full bibliography: `thesis-v2/references/bibliography.bib`
 
 ---
 
