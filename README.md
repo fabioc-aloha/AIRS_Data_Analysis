@@ -104,6 +104,7 @@ Organizations now have a **validated 16-item diagnostic instrument** for assessi
 ### Model: 8 Factors, 16 Items
 
 ```mermaid
+%%{init: {'theme': 'base', 'themeVariables': {'edgeLabelBackground': '#ffffff'}}}%%
 flowchart LR
     subgraph UTAUT2["UTAUT2 Core"]
         PE[Performance Expectancy]

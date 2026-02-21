@@ -334,6 +334,7 @@ Based on the meta-analytic evidence reviewed above, the following hypotheses ref
 *Rationale*: Professionals with greater workplace technology demands and resources may exhibit different AI tool usage patterns than students.
 
 ```mermaid
+%%{init: {'theme': 'base', 'themeVariables': {'edgeLabelBackground': '#ffffff'}}}%%
 flowchart LR
     subgraph UTAUT2["UTAUT2 Core Constructs"]
         H1a["H1a: PE -> BI"]

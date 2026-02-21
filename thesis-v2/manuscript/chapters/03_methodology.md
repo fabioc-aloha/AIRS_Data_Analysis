@@ -352,6 +352,7 @@ The analysis followed a systematic 10-phase pipeline ensuring replicability and 
 Source: Compiled by Author
 
 ```mermaid
+%%{init: {'theme': 'base', 'themeVariables': {'edgeLabelBackground': '#ffffff'}}}%%
 flowchart TB
     subgraph stage1["<b>Data Preparation</b>"]
         P0["<b>0</b><br/>Sample Splitting"]
@@ -398,6 +399,7 @@ flowchart TB
 To ensure independent validation, the sample was randomly split:
 
 ```mermaid
+%%{init: {'theme': 'base', 'themeVariables': {'edgeLabelBackground': '#ffffff'}}}%%
 flowchart TD
     A["<b>Full Sample</b><br/>N = 523"] -->|Random Split<br/>seed = 67| B["<b>Development Sample</b><br/>n = 261 (50%)"]
     A -->|Random Split<br/>seed = 67| C["<b>Holdout Sample</b><br/>n = 262 (50%)"]
@@ -549,6 +551,7 @@ Scalar & Equal intercepts & Mean comparability \\
 **Model**:
 
 ```mermaid
+%%{init: {'theme': 'base', 'themeVariables': {'edgeLabelBackground': '#ffffff'}}}%%
 flowchart LR
     subgraph predictors["UTAUT2 Core + AI Trust Extension"]
         direction TB
