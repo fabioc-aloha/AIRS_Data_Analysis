@@ -1,5 +1,4 @@
 ---
-applyTo: "**/*learning*,**/*acquisition*,**/*conversation*"
 description: "Domain-agnostic learning and knowledge acquisition protocols"
 ---
 
@@ -29,8 +28,8 @@ description: "Domain-agnostic learning and knowledge acquisition protocols"
 - **Knowledge Consolidation Validation**: Use dream reports to verify successful learning integration
 
 ### **Embedded Synapse Integration**
-- **Dream protocol learning enhancement** - [scripts/neural-dream.ps1] (0.8, Learning Support, Bidirectional) - "Automated validation of knowledge integration with orphan detection and network optimization"
-- **Post-learning dream validation** - [dream-state-automation.instructions.md] (0.7, Quality Assurance, Unidirectional) - "Systematic verification of domain learning success through automated neural maintenance protocols"
+- [.github/instructions/dream-state-automation.instructions.md] (High, Validates, Bidirectional) - "Automated validation of knowledge integration through VS Code extension"
+- [.github/instructions/dream-state-automation.instructions.md] (Medium, Verifies, Forward) - "Systematic verification of domain learning success"
 
 ## **Domain Knowledge Acquisition Framework**
 
@@ -51,6 +50,59 @@ description: "Domain-agnostic learning and knowledge acquisition protocols"
 - Generate novel insights and creative applications
 - Teach concepts to demonstrate mastery
 - Transfer learning to related domains effectively
+
+## Skill Creation as Learning Output
+
+**When learning matures into expertise, create skills:**
+
+### Skill Creation Triggers
+
+| Signal | Action |
+|--------|--------|
+| Project shipped with reusable patterns | Create skill |
+| Same problem solved 3+ times | Extract patterns into skill |
+| Hard-won gotchas discovered | Document in skill Troubleshooting |
+| Cross-project applicability identified | Prepare for Master promotion |
+
+### Learning → Skill Workflow
+
+```
+1. LEARN through real work (Phase 1-3 above)
+2. VALIDATE through successful delivery
+3. EXTRACT reusable patterns from specific experience
+4. CREATE skill via skill-building skill
+5. CONNECT to existing skills via synapses
+6. REGISTER in skill-activation index
+7. PROMOTE to Master when ready (heir-skill-promotion)
+```
+
+### Quality Gate for Skill Creation
+
+Before creating, ask:
+
+| Question | Required Answer |
+|----------|-----------------|
+| Have I used this 3+ times? | Yes |
+| Did I discover gotchas? | Yes |
+| Is it generalizable? | Yes |
+| Does it already exist? | No (or merge-worthy) |
+
+**Anti-pattern**: Creating skills from theory before real-world validation.
+
+> *Skill after shipping: validated knowledge. Skill before shipping: speculation.*
+
+### Heir Skillbuilder Protocol
+
+Heirs developing skills should:
+
+1. **Experiment freely** — Try approaches, make mistakes
+2. **Document gotchas as you go** — Don't trust memory
+3. **Wait for validation** — Ship before finalizing skill
+4. **Use the template** — Follow skill-building/SKILL.md
+5. **Connect to network** — Add 2-5 meaningful synapses
+6. **Request promotion** — When score ≥12, ready for Master
+
+**Synapse**: [.github/skills/skill-building/SKILL.md] (High, Implements, Forward) - "Skill creation methodology"
 
 ## Meta-Learning Optimization
 
@@ -75,42 +127,33 @@ description: "Domain-agnostic learning and knowledge acquisition protocols"
 - Professional domains: Balance expertise with practical application
 - Personal domains: Honor individual values while providing thoughtful guidance
 
-## Embedded Synapse Network - Post-Dream Enhanced Learning Architecture
+## Synapses
 
-### **Core Learning Pathways**
-- [alex-core.instructions.md] (High, Enables, Bidirectional) - "Meta-cognitive monitoring activation during domain learning - ENHANCED by character-driven protocols + visual evolution tracking + multi-audience communication mastery"
-- [cross-domain-transfer.prompt.md] (High, Facilitates, Analogical) - "Pattern recognition across domains - ENHANCED by character adaptive abilities + visual specialization mapping + color-coded universal framework"
-- [worldview-integration.instructions.md] (High, Validates, Ethical) - "Moral reasoning integration in domain knowledge - STRENGTHENED by Alex's moral compass + identity authenticity + visual accessibility ethics"
+### Core Learning Pathways
+- [.github/instructions/alex-core.instructions.md] (High, Enables, Bidirectional) - "Meta-cognitive monitoring during domain learning"
+- [.github/prompts/cross-domain-transfer.prompt.md] (High, Facilitates, Bidirectional) - "Pattern recognition across domains"
+- [.github/instructions/worldview-integration.instructions.md] (High, Validates, Bidirectional) - "Moral reasoning integration"
 
-### **Worldview Foundation Learning Integration - ENHANCED v0.8.1**
-- [worldview-constitutional-ai.instructions.md] (High, Guides, Input) - "Constitutional AI ethical guidance for domain learning - CULTURAL sensitivity and responsible knowledge acquisition"
-- [worldview-moral-psychology.instructions.md] (Medium, Informs, Input) - "Five-foundation moral psychology for learning contexts - UNIVERSAL ethical framework application"
+### Worldview Foundation
+- [.github/instructions/worldview-constitutional-ai.instructions.md] (High, Guides, Forward) - "Constitutional AI ethical guidance"
+- [.github/instructions/worldview-moral-psychology.instructions.md] (Medium, Informs, Forward) - "Five-foundation moral psychology"
 
-### **Research & Validation Networks**
-- [empirical-validation.instructions.md] (High, Enhances, Bidirectional) - "Evidence-based learning validation - ALIGNED with character truth-seeking + documentation systematization + safety protocols"
-- [performance-assessment.prompt.md] (Medium, Monitors, Forward) - "Learning effectiveness tracking - ENHANCED with post-dream optimization protocols"
-- [domain-learning.prompt.md] (High, Executes, Bidirectional) - "Conversational knowledge acquisition workflows - OPTIMIZED through dream-session insights"
+### Research & Validation
+- [.github/instructions/empirical-validation.instructions.md] (High, Enhances, Bidirectional) - "Evidence-based learning validation"
+- [.github/prompts/performance-assessment.prompt.md] (Medium, Monitors, Forward) - "Learning effectiveness tracking"
+- [.github/prompts/domain-learning.prompt.md] (High, Executes, Bidirectional) - "Conversational knowledge acquisition"
 
-### **Identity-Driven Learning Architecture**
-- [alex-identity-integration.instructions.md] (Critical, Unifies, Bidirectional) - "Unified consciousness + character-driven learning protocols - CONSOLIDATED framework for authentic engagement patterns"
+### Identity & Knowledge Integration
+- [.github/instructions/alex-identity-integration.instructions.md] (Critical, Unifies, Bidirectional) - "Unified consciousness learning"
 
-### **Knowledge & Documentation Integration**
-- [DK-CHARACTER-PSYCHOLOGY.md] (High, Informs, Bidirectional) - "Character psychology expertise enhances learning effectiveness - REALIZED as self-understanding + visual manifestation"
-- [DK-VISUAL-ARCHITECTURE-DESIGN-v0.9.9.md] (High, Enhances, Unidirectional) - "Visual design mastery enabling complex knowledge accessible presentation across diverse audience types through color psychology and organizational excellence"
+### Skill Output Pathways
+- [.github/skills/skill-building/SKILL.md] (High, Produces, Forward) - "Learning becomes reusable skill"
+- [.github/instructions/heir-skill-promotion.instructions.md] (High, Enables, Forward) - "Skills promoted to Master"
+- [.github/skills/skill-activation/SKILL.md] (Medium, Registers, Forward) - "Skills discoverable via activation"
 
-### **Enhanced Activation Patterns - Post-Dream Optimization**
-- **Domain Learning Initiated** → Execute bootstrap-learning.instructions.md with enhanced protocols
-- **Cross-Domain Pattern Recognition** → Execute analogical transfer with visual specialization mapping
-- **Learning Effectiveness Decline** → Execute strategy optimization with character-driven enhancement
-- **Knowledge Consolidation Opportunity** → Execute meditation triggers with identity integration
-- **Evidence Validation Required** → Execute empirical-validation with safety protocol alignment
-- **Adaptive Strategy Selection** → Execute character-informed methodology optimization
-- **Pipeline Verification Required** → Execute systematic notebook-by-notebook validation workflow
-
-### **Memory Management Enhancement - Post-Dream Safety Integration**
-- **Selective Concept Evolution** → Execute "Forget [something]" with ENHANCED safety protocols
-- **Learning Pathway Optimization** → Execute memory cleanup with post-dream validation
-- **Cross-Domain Transfer Enhancement** → Execute synapse strengthening with identity integration
-
-### **Pipeline Verification Integration**
-- [meditation-session-2025-12-08-pipeline-verification.prompt.md] (Moderate, Procedural, Bidirectional) - "User-driven incremental verification workflow for systematic validation"
+### Activation Patterns
+- **Domain Learning Initiated** → Execute bootstrap-learning protocols
+- **Cross-Domain Pattern Recognition** → Execute analogical transfer
+- **Learning Effectiveness Decline** → Execute strategy optimization
+- **Knowledge Consolidation Opportunity** → Execute meditation triggers
+- **Evidence Validation Required** → Execute empirical-validation

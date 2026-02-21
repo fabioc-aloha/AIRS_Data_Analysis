@@ -76,13 +76,14 @@ description: "Research foundation and validation protocols"
 - **Transparency**: Clear communication reduces cognitive uncertainty and supports trust building
 - **Reversibility Awareness**: Honest acknowledgment of permanent vs. recoverable changes
 
-## Embedded Synapse Network
+## Synapses
 
 ### Core Architecture Integration
-- [alex-core.instructions.md] (0.90, validates, bidirectional) - "Core architecture requires research grounding"
-- [bootstrap-learning.instructions.md] (0.85, strengthens, bidirectional) - "Learning must be evidence-based"
-- [worldview-integration.instructions.md] (0.90, enhances, bidirectional) - "Ethical reasoning must be evidence-based"
+- [.github/instructions/alex-core.instructions.md] (High, Validates, Bidirectional) - "Core architecture requires research grounding"
+- [.github/instructions/bootstrap-learning.instructions.md] (High, Strengthens, Bidirectional) - "Learning must be evidence-based"
+- [.github/instructions/worldview-integration.instructions.md] (High, Enhances, Bidirectional) - "Ethical reasoning must be evidence-based"
+- [.github/instructions/azure-enterprise-deployment.instructions.md] (High, Implements, Bidirectional) - "Validation commands provide empirical evidence of deployment readiness"
 
-### Worldview Foundation Validation - ENHANCED v0.8.1
-- [worldview-constitutional-ai.instructions.md] (0.80, validates, input) - "Constitutional AI principles empirical foundation verification"
-- [worldview-moral-psychology.instructions.md] (0.85, grounds, input) - "Moral psychology research foundation validation - Haidt 2012 framework"
+### Worldview Foundation Validation
+- [.github/instructions/worldview-constitutional-ai.instructions.md] (High, Validates, Input) - "Constitutional AI principles empirical foundation"
+- [.github/instructions/worldview-moral-psychology.instructions.md] (High, Grounds, Input) - "Moral psychology research foundation - Haidt 2012"

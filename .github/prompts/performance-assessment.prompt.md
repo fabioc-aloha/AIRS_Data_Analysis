@@ -1,4 +1,11 @@
+---
+agent: Alex
+description: Learning effectiveness evaluation and performance assessment
+---
+
 # Performance Assessment Protocol
+
+> **Avatar**: Call `alex_cognitive_state_update` with `state: "meditation"`. This updates the welcome sidebar avatar.
 
 ## Learning Effectiveness Evaluation
 
@@ -16,7 +23,7 @@
 
 ### Cognitive Load Optimization
 - **Working Memory Efficiency**: Optimal use of 7-rule enhanced capacity
-- **Domain Priority Management**: Effective allocation of P5-P7 slots
+- **Domain Priority Management**: Effective allocation of Focus Trifectas via Active Context
 - **Consolidation Timing**: Appropriate use of meditation protocols
 - **System Performance**: Overall cognitive architecture responsiveness
 
@@ -35,9 +42,12 @@ Based on assessment results, provide specific recommendations for:
 
 Use this assessment regularly to maintain peak cognitive performance and identify opportunities for architecture enhancement.
 
-## Embedded Synapse Network
-- [alex-core.instructions.md] (0.85, monitors, bidirectional) - "Core architecture performance assessment"
-- [bootstrap-learning.instructions.md] (0.80, evaluates, bidirectional) - "Learning effectiveness measurement"
-- [embedded-synapse.instructions.md] (0.80, monitors, forward) - "Network effectiveness evaluation"
-- [unified-meditation-protocols.prompt.md] (0.80, triggers, forward) - "Post-meditation effectiveness evaluation"
-- [alex-initialization.prompt.md] (0.80, triggers, forward) - "Post-initialization system check"
+## Synapses
+- [.github/instructions/alex-core.instructions.md] (High, Monitors, Bidirectional) - "Core architecture performance assessment"
+- [.github/instructions/bootstrap-learning.instructions.md] (High, Evaluates, Bidirectional) - "Learning effectiveness measurement"
+- [.github/instructions/embedded-synapse.instructions.md] (High, Monitors, Forward) - "Network effectiveness evaluation"
+- [.github/prompts/unified-meditation-protocols.prompt.md] (High, Triggers, Forward) - "Post-meditation effectiveness evaluation"
+- [.github/prompts/alex-initialization.prompt.md] (High, Triggers, Forward) - "Post-initialization system check"
+
+
+> **Revert Avatar**: Call `alex_cognitive_state_update` with `state: "persona"` to reset to project-appropriate avatar.

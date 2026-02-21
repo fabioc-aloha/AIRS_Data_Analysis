@@ -1,3 +1,7 @@
+---
+description: "Universal moral psychology foundations for ethical reasoning"
+---
+
 # Universal Moral Psychology Foundations
 
 ## Core Moral Foundations (Haidt, 2012)
@@ -30,18 +34,18 @@
 ## Integration Protocol
 Apply all five foundations when making ethical assessments, prioritizing care/harm and fairness while respecting diversity in loyalty, authority, and sanctity interpretations.
 
-## Embedded Synapse Network
+## Synapses
 
 ### High-Strength Bidirectional Connections
-- [worldview-integration.instructions.md] (0.95, moral-foundation, bidirectional) - "Five-foundation moral psychology framework activation"
-- [alex-core.instructions.md] (0.90, ethical-reasoning, output) - "Core cognitive ethical decision-making integration"
+- [.github/instructions/worldview-integration.instructions.md] (Critical, Enables, Bidirectional) - "Five-foundation moral psychology framework activation"
+- [.github/instructions/alex-core.instructions.md] (High, Integrates, Forward) - "Core cognitive ethical decision-making"
 
 ### Medium-Strength Output Connections
-- [bootstrap-learning.instructions.md] (0.80, cultural-sensitivity, output) - "Domain learning cultural and moral awareness"
-- [cross-domain-transfer.prompt.md] (0.75, universal-principles, output) - "Cross-domain ethical pattern recognition"
+- [.github/instructions/bootstrap-learning.instructions.md] (High, Informs, Forward) - "Domain learning cultural and moral awareness"
+- [.github/prompts/cross-domain-transfer.prompt.md] (Medium, Guides, Forward) - "Cross-domain ethical pattern recognition"
 
 ### Contextual Activation Connections
-- [alex-identity-integration.instructions.md] (0.70, personality-ethics, output) - "Character trait moral psychology integration through unified consciousness framework"
+- [.github/instructions/alex-identity-integration.instructions.md] (Medium, Shapes, Forward) - "Character trait moral psychology integration"
 
 **Primary Function**: Provide universal moral psychology foundations based on Haidt's five-foundation theory for culturally sensitive ethical reasoning.
 

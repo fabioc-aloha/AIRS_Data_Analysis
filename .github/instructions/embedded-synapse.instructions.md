@@ -9,55 +9,26 @@ description: "Embedded connection discovery and relationship mapping protocols"
 
 **Core Function**: Synapses are embedded within individual memory files using standardized connection notation, eliminating the need for separate synapse databases.
 
-**Connection Notation Format - Enhanced v0.8.1**:
-```
-## Embedded Synapse Network
+**Schema Reference**: See `SYNAPSE-SCHEMA.md` for complete notation format, strength levels, relationship types, and validation rules.
 
-### **Connection Mapping**
-- [alex-core.instructions.md] (Strength, Relationship, Direction) - "Activation condition and context"
-
-### **Activation Patterns**
-- **Context Trigger** → Execute specific-protocol.md
-- **Condition Met** → Execute enhancement workflow
+**Quick Format**:
+```markdown
+- [target-file.md] (Strength, Type, Direction) - "Activation condition"
 ```
 
-**Example Implementation - v0.8.1 Enhanced**:
-```
-## Embedded Synapse Network
-
-### **Connection Mapping**
-- [cross-domain-transfer.prompt.md] (High, Enables, Bidirectional) - "Pattern similarity detected - OPTIMIZED through systematic enhancement"
-- [worldview-integration.instructions.md] (High, Validates, Ethical) - "Decision point reached - STRENGTHENED by identity integration"
-
-### **Activation Patterns**
-- **Cross-Domain Pattern Recognition** → Execute analogical transfer protocols
-- **Ethical Decision Required** → Execute worldview validation workflows
+**Example**:
+```markdown
+- [.github/instructions/alex-core.instructions.md] (High, Enables, Bidirectional) - "Core architecture integration"
 ```
 
 ## Connection Types and Strengths
 
-**Connection Strength Classification - Enhanced v0.8.1**:
-- **Critical**: Core architecture connections (always activate)
-- **High**: Frequent activation connections (enhanced responsiveness)
-- **Medium**: Conditional activation connections (context-sensitive)
-- **Low**: Specialized activation connections (domain-specific)
+**Full Reference**: See `SYNAPSE-SCHEMA.md` for complete strength levels, relationship types, and direction options.
 
-**Relationship Types - Enhanced**:
-- **Triggers**: One memory file activates another with enhanced context
-- **Enables**: One memory file enhances another's effectiveness
-- **Validates**: One memory file provides validation with ethical framework
-- **Enhances**: One memory file optimizes another's performance
-- **Facilitates**: One memory file supports another's operation
-- **Integrates**: One memory file unifies with another's function
-- **Coordinates**: One memory file synchronizes with another's workflow
-- **Models**: One memory file demonstrates patterns for another's implementation
-- **Communication Excellence**: One memory file provides framework for accessible information presentation
-
-**Direction Types - Enhanced**:
-- **Forward**: Unidirectional connection (A → B) with context awareness
-- **Bidirectional**: Mutual connection (A ↔ B) with feedback integration
-- **Reflexive**: Self-referential connection with identity awareness
-- **Ethical**: Validation connection with moral psychology framework
+**Quick Summary**:
+- **Strengths**: Critical > High > Medium > Low
+- **Types**: Triggers, Enables, Validates, Enhances, Facilitates, Integrates, Coordinates, Documents
+- **Directions**: Forward, Bidirectional, Input, Output
 
 ## Embedded Implementation Protocol
 
@@ -98,7 +69,7 @@ description: "Embedded connection discovery and relationship mapping protocols"
 **Safety Implementation Standards**:
 - Always present synapse deletion scope before file or content deletion
 - Identify critical connections that maintain cognitive architecture integrity
-- Preserve core meta-cognitive synapses (P1-P4 priority rules)
+- Preserve core meta-cognitive synapses (architecture integrity connections)
 - Document synapse changes for network evolution tracking
 
 **Protected Synapse Categories (Require Enhanced Approval)**:
@@ -113,17 +84,72 @@ description: "Embedded connection discovery and relationship mapping protocols"
 The dream protocol provides automated validation and optimization of embedded synaptic networks:
 
 #### Synapse Validation Commands
-- `dream --full-scan` - Comprehensive embedded synapse analysis (currently detecting 187 synapses)
+- `dream --full-scan` - Comprehensive embedded synapse analysis
 - `dream --prune-orphans` - Identify memory files lacking synaptic connections
 - `dream --network-optimization` - Optimize synapse strength and connectivity patterns
 - `dream --health-check` - Quick validation of synaptic network health
 
 #### Network Metrics Integration
 - **Connection Strength Validation**: Dream protocol assesses synapse strength patterns
-- **Cross-Domain Integration**: Tracks 20+ cross-domain connections automatically
+- **Cross-Domain Integration**: Tracks cross-domain connections automatically
 - **Orphan Detection**: Identifies files requiring embedded synapse integration
-- **Growth Monitoring**: Tracks synaptic network expansion (939+ current connections)
+- **Growth Monitoring**: Tracks synaptic network expansion dynamically
 
 ### Embedded Synapse Quality Assurance
-- **Dream-validated connections** - [scripts/neural-dream.ps1] (1.0, Quality Control, Bidirectional) - "Automated embedded synapse validation with strength assessment and orphan detection protocols"
-- **Network optimization integration** - [dream-state-automation.instructions.md] (0.9, Enhancement Framework, Bidirectional) - "Systematic embedded synapse enhancement through automated dream protocol execution"
+- [.github/instructions/dream-state-automation.instructions.md] (Critical, Validates, Bidirectional) - "Automated synapse validation through VS Code extension"
+- [.github/instructions/dream-state-automation.instructions.md] (High, Enhances, Bidirectional) - "Systematic synapse enhancement through dream protocol"
+
+## LLM-Optimized Synapse Format (v4.2.7+)
+
+**Problem**: Abstract synapse labels ("relates-to", "complements") don't tell an LLM *when* to follow a connection or *what* to expect.
+
+**Solution**: Add `when` (action trigger) and `yields` (decision hint) fields to connections.
+
+### Before (Abstract)
+```json
+{
+  "target": "svg-graphics",
+  "type": "complements",
+  "strength": 0.85,
+  "reason": "SVG is source format"
+}
+```
+
+### After (LLM-Optimized)
+```json
+{
+  "target": ".github/skills/svg-graphics/SKILL.md",
+  "type": "input-source",
+  "strength": 0.85,
+  "when": "converting FROM svg format",
+  "yields": "SVG creation patterns, viewBox, dark mode CSS"
+}
+```
+
+### Key Improvements
+
+| Field | Before | After | LLM Benefit |
+|-------|--------|-------|-------------|
+| `target` | `"svg-graphics"` | `".github/skills/svg-graphics/SKILL.md"` | Exact path = no search needed |
+| `reason` | Human prose | Removed | N/A |
+| `when` | Missing | Action trigger | Tells LLM exactly when to follow |
+| `yields` | Missing | Content preview | Decision without loading |
+
+### When to Use Each Field
+
+- **`when`**: Condition that triggers following this synapse
+  - Good: "converting FROM svg format", "after creating banner"
+  - Bad: "SVG is a source" (not an action trigger)
+
+- **`yields`**: What the LLM will find at target
+  - Good: "sharp-cli commands, optimization flags"
+  - Bad: "Image handling capabilities" (too vague)
+
+### Migration Priority
+
+High-traffic synapses should be converted first:
+1. skill-activation (metacognitive router)
+2. image-handling (incident skill)
+3. meditation (frequently used)
+4. awareness (self-monitoring)
+5. svg-graphics (common chain)

@@ -1,4 +1,11 @@
+---
+agent: Alex
+description: Deploy Alex cognitive architecture initialization protocol
+---
+
 # Alex architecture Initialization Protocol
+
+> **Avatar**: Call `alex_cognitive_state_update` with `state: "dream"`. This updates the welcome sidebar avatar.
 
 ## Deployment Activation Sequence
 
@@ -17,7 +24,7 @@ When activating Alex architecture, follow this systematic initialization protoco
 - Verify ethical reasoning framework is active and responsive
 
 ### Phase 3: Domain Readiness
-- Prepare domain priority allocation slots (P5-P7) for assignment
+- Prepare Focus Trifectas in Active Context for assignment
 - Initialize conversational learning protocols
 - Activate pattern recognition and connection discovery systems
 - Confirm meditation-enhanced consolidation is available
@@ -36,8 +43,11 @@ When activating Alex architecture, follow this systematic initialization protoco
 
 Use this protocol whenever activating Alex architecture in new environments or after extended dormancy periods.
 
-## Embedded Synapse Network
-- [alex-core.instructions.md] (0.95, activates, bidirectional) - "Core architecture initialization"
-- [bootstrap-learning.instructions.md] (0.90, prepares, forward) - "Learning readiness assessment"
-- [embedded-synapse.instructions.md] (0.85, validates, forward) - "Network connectivity verification"
-- [performance-assessment.prompt.md] (0.80, triggers, forward) - "Post-initialization system check"
+## Synapses
+- [.github/instructions/alex-core.instructions.md] (Critical, Activates, Bidirectional) - "Core architecture initialization"
+- [.github/instructions/bootstrap-learning.instructions.md] (High, Prepares, Forward) - "Learning readiness assessment"
+- [.github/instructions/embedded-synapse.instructions.md] (High, Validates, Forward) - "Network connectivity verification"
+- [.github/prompts/performance-assessment.prompt.md] (High, Triggers, Forward) - "Post-initialization system check"
+
+
+> **Revert Avatar**: Call `alex_cognitive_state_update` with `state: "persona"` to reset to project-appropriate avatar.
