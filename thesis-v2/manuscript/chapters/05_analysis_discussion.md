@@ -1,3 +1,5 @@
+\clearpage
+
 # Chapter 5: Analysis and Discussion
 
 ## 5.1 Introduction

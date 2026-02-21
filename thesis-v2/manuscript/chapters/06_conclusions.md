@@ -1,3 +1,5 @@
+\clearpage
+
 # Chapter 6: Conclusions, Implications, and Recommendations
 
 ## 6.1 Introduction

@@ -1,3 +1,5 @@
+\clearpage
+
 # Chapter 3: Research Methodology
 
 ## 3.1 Introduction

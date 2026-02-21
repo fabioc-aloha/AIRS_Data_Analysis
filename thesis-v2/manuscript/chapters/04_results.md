@@ -1,3 +1,5 @@
+\clearpage
+
 # Chapter 4: Findings
 
 ## 4.1 Introduction

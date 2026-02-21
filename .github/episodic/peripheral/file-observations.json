@@ -4,8 +4,16 @@
   ],
   "stalledFiles": [
     "github/episodic/peripheral/file-observations.json",
-    "thesis-v2/manuscript/chapters/02_literature_review.md"
+    "thesis-v2/manuscript/chapters/02_literature_review.md",
+    "thesis-v2/manuscript/chapters/03_methodology.md",
+    "thesis-v2/manuscript/chapters/04_results.md",
+    "thesis-v2/manuscript/chapters/05_analysis_discussion.md",
+    "thesis-v2/manuscript/chapters/06_conclusions.md",
+    "thesis-v2/output/AIRS_Dissertation.pdf",
+    "thesis-v2/output/mermaid/02_literature_review_diagram_1.mmd",
+    "thesis-v2/output/mermaid/02_literature_review_diagram_1.png",
+    "thesis-v2/output/mermaid/02_literature_review_diagram_2.mmd"
   ],
   "todoHotspots": [],
-  "lastUpdated": 1771713041077
+  "lastUpdated": 1771713319287
 }
