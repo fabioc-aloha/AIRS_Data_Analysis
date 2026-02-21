@@ -1,9 +1,13 @@
 {
-  "hotFiles": [],
-  "stalledFiles": [
-    "github/episodic/peripheral/file-observations.json",
+  "hotFiles": [
     "README.md"
   ],
+  "stalledFiles": [
+    "github/episodic/peripheral/file-observations.json",
+    "README.md",
+    "thesis-v2/manuscript/chapters/02_literature_review.md",
+    "thesis-v2/manuscript/chapters/03_methodology.md"
+  ],
   "todoHotspots": [],
-  "lastUpdated": 1771712650079
+  "lastUpdated": 1771712872523
 }

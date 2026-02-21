@@ -334,7 +334,6 @@ Based on the meta-analytic evidence reviewed above, the following hypotheses ref
 *Rationale*: Professionals with greater workplace technology demands and resources may exhibit different AI tool usage patterns than students.
 
 ```mermaid
-%%{init: {'theme': 'base', 'themeVariables': {'primaryColor': '#1e3a8a', 'lineColor': '#3b82f6'}}}%%
 flowchart LR
     subgraph UTAUT2["UTAUT2 Core Constructs"]
         H1a["H1a: PE -> BI"]
@@ -360,10 +359,10 @@ flowchart LR
         H6["H6: Role Usage Differences"]
     end
 
-    style UTAUT2 fill:#dbeafe,stroke:#1e3a8a
-    style AIExtension fill:#cffafe,stroke:#06b6d4
-    style Moderation fill:#dbeafe,stroke:#3b82f6
-    style Validation fill:#fef3c7,stroke:#f59e0b
+    style UTAUT2 fill:#a5d8ff,stroke:#339af0
+    style AIExtension fill:#b2f2bb,stroke:#40c057
+    style Moderation fill:#d0bfff,stroke:#7950f2
+    style Validation fill:#ffec99,stroke:#fab005
 ```
 
 : Figure 2.3: Research Hypotheses Summary showing UTAUT2 core constructs, AI-specific extension, moderation hypotheses, and behavioral validation. *Source: Compiled by Author* {#fig:hypotheses-summary}
