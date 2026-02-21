@@ -1,0 +1,29 @@
+flowchart LR
+    subgraph UTAUT2["UTAUT2 Core Constructs"]
+        H1a["H1a: PE -> BI"]
+        H1b["H1b: EE -> BI"]
+        H1c["H1c: SI -> BI"]
+        H1d["H1d: FC -> BI"]
+        H1e["H1e: HM -> BI"]
+        H1f["H1f: PV -> BI"]
+        H1g["H1g: HB -> BI"]
+    end
+
+    subgraph AIExtension["AI-Specific Extension"]
+        H2["H2: TR -> BI"]
+    end
+
+    subgraph Moderation["Moderation Hypotheses"]
+        H3["H3: Experience moderates paths"]
+        H4["H4: Role group moderates paths"]
+    end
+
+    subgraph Validation["Behavioral Validation"]
+        H5["H5: BI -> Tool Usage"]
+        H6["H6: Role Usage Differences"]
+    end
+
+    style UTAUT2 fill:#e3f2fd,stroke:#1976d2
+    style AIExtension fill:#f3e5f5,stroke:#7b1fa2
+    style Moderation fill:#e8f5e9,stroke:#388e3c
+    style Validation fill:#fff3e0,stroke:#f57c00

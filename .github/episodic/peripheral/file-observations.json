@@ -1,0 +1,23 @@
+{
+  "hotFiles": [],
+  "stalledFiles": [
+    "ost-thesis/AIRS-Practical-Typology.md",
+    "post-thesis/images/11_01b_ari_bi_correlation.png",
+    "post-thesis/images/12_00_ari_bi_correlation.png",
+    "post-thesis/images/12_01_cutpoint_classification.png",
+    "post-thesis/images/12_01b_cutpoint_with_bi.png",
+    "thesis-v2/Makefile",
+    "thesis-v2/README.md",
+    "thesis-v2/build.ps1",
+    "thesis-v2/manuscript/chapters/01_introduction.md",
+    "thesis-v2/manuscript/front-matter/00_title_abstract.md"
+  ],
+  "todoHotspots": [
+    {
+      "file": "thesis-v2/output/AIRS_Dissertation.pdf",
+      "todoCount": 37,
+      "scannedAt": 1771710819309
+    }
+  ],
+  "lastUpdated": 1771710819309
+}

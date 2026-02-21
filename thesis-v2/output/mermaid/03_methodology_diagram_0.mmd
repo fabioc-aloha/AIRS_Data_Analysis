@@ -1,0 +1,37 @@
+flowchart TB
+    subgraph stage1["<b>Data Preparation</b>"]
+        P0["<b>0</b><br/>Sample Splitting"]
+    end
+
+    subgraph stage2["<b>Measurement Model</b>"]
+        direction LR
+        P1["<b>1</b><br/>EFA"] --> P2["<b>2</b><br/>CFA"] --> P3["<b>3</b><br/>Invariance"]
+    end
+
+    subgraph stage3["<b>Structural Analysis</b>"]
+        direction LR
+        P4["<b>4</b><br/>Structural Model"] --> P5["<b>5</b><br/>Mediation"] --> P6["<b>6</b><br/>Moderation"]
+    end
+
+    subgraph stage4["<b>Validation & Synthesis</b>"]
+        direction LR
+        P7["<b>7</b><br/>Tool Usage"] --> P8["<b>8</b><br/>Qualitative"] --> P9["<b>9</b><br/>Review"] --> P10["<b>10</b><br/>Synthesis"]
+    end
+
+    stage1 --> stage2 --> stage3 --> stage4
+
+    style stage1 fill:#e8eaf6,stroke:#3f51b5,stroke-width:2px
+    style stage2 fill:#fff3e0,stroke:#ff9800,stroke-width:2px
+    style stage3 fill:#e8f5e9,stroke:#4caf50,stroke-width:2px
+    style stage4 fill:#fce4ec,stroke:#e91e63,stroke-width:2px
+    style P0 fill:#c5cae9,stroke:#3f51b5
+    style P1 fill:#ffe0b2,stroke:#ff9800
+    style P2 fill:#ffe0b2,stroke:#ff9800
+    style P3 fill:#ffe0b2,stroke:#ff9800
+    style P4 fill:#c8e6c9,stroke:#4caf50
+    style P5 fill:#c8e6c9,stroke:#4caf50
+    style P6 fill:#c8e6c9,stroke:#4caf50
+    style P7 fill:#f8bbd9,stroke:#e91e63
+    style P8 fill:#f8bbd9,stroke:#e91e63
+    style P9 fill:#f8bbd9,stroke:#e91e63
+    style P10 fill:#f8bbd9,stroke:#e91e63

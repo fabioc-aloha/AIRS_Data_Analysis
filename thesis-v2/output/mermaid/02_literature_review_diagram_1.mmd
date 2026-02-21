@@ -1,0 +1,32 @@
+flowchart TB
+    subgraph UTAUT2["UTAUT2 Core Constructs (H1a-H1g)"]
+        PE["Performance<br/>Expectancy"]
+        EE["Effort<br/>Expectancy"]
+        SI["Social<br/>Influence"]
+        FC["Facilitating<br/>Conditions"]
+        HM["Hedonic<br/>Motivation"]
+        PV["Price<br/>Value"]
+        HT["Habit"]
+    end
+
+    subgraph AIExt["AI-Specific Extension"]
+        TR["AI Trust<br/>(H2)"]
+    end
+
+    BI["Behavioral<br/>Intention"]
+    EXP["Experience<br/>(H3: Moderator)"]
+
+    PE -->|H1a: +| BI
+    EE -->|H1b: +| BI
+    SI -->|H1c: +| BI
+    FC -->|H1d: +| BI
+    HM -->|H1e: +| BI
+    PV -->|H1f: +| BI
+    HT -->|H1g: +| BI
+    TR -->|H2: +| BI
+
+    EXP -.->|H3: moderates| PE
+    EXP -.->|H3: moderates| HM
+
+    style TR fill:#c8e6c9,stroke:#388e3c,stroke-width:2px
+    style BI fill:#e1f5fe,stroke:#0288d1,stroke-width:3px

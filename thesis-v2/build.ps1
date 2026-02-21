@@ -4,13 +4,16 @@
 
 .DESCRIPTION
     Modern, modular thesis build system. Combines chapters, processes
-    diagrams, and generates APA-style PDF using pandoc.
+    Mermaid diagrams, and generates APA-style PDF using pandoc.
 
 .PARAMETER Target
-    Build target: 'all' (default), 'draft', 'figures', 'validate', 'clean'
+    Build target: 'all' (default), 'draft', 'figures', 'validate', 'clean', 'watch'
 
 .PARAMETER Open
     Open the PDF after successful build.
+
+.PARAMETER Clean
+    Shortcut for -Target clean
 
 .EXAMPLE
     .\build.ps1
@@ -19,13 +22,25 @@
 .EXAMPLE
     .\build.ps1 -Target draft -Open
     Build draft version and open it.
+
+.EXAMPLE
+    .\build.ps1 -Clean
+    Remove all generated files.
+
+.EXAMPLE
+    .\build.ps1 -Target watch
+    Watch for changes and auto-rebuild.
 #>
 
 param(
-    [ValidateSet('all', 'draft', 'figures', 'validate', 'clean')]
+    [ValidateSet('all', 'draft', 'figures', 'validate', 'clean', 'watch')]
     [string]$Target = 'all',
-    [switch]$Open
+    [switch]$Open,
+    [switch]$Clean
 )
+
+# Handle -Clean shortcut
+if ($Clean) { $Target = 'clean' }
 
 # ============================================================
 # CONFIGURATION
@@ -36,7 +51,7 @@ $RootDir = $PSScriptRoot
 $Config = @{
     # Directories
     Manuscript   = Join-Path $RootDir 'manuscript'
-    Chapters     = Join-Path $RootDir 'manuscript/chapters'
+    ChaptersDir  = Join-Path $RootDir 'manuscript/chapters'
     FrontMatter  = Join-Path $RootDir 'manuscript/front-matter'
     BackMatter   = Join-Path $RootDir 'manuscript/back-matter'
     Assets       = Join-Path $RootDir 'assets'
@@ -54,7 +69,7 @@ $Config = @{
     OutputPdf    = Join-Path $RootDir 'output/AIRS_Dissertation.pdf'
     
     # Chapter order
-    Chapters     = @(
+    ChapterFiles = @(
         '01_introduction.md',
         '02_literature_review.md',
         '03_methodology.md',
@@ -119,18 +134,64 @@ function Build-MermaidDiagrams {
         return
     }
     
-    $mmdFiles = Get-ChildItem -Path $Config.Figures -Filter '*.mmd' -ErrorAction SilentlyContinue
-    if (-not $mmdFiles) {
-        Write-Info "No .mmd files found"
-        return
+    # Create build directory for processed files
+    $script:BuildDir = Join-Path $Config.Output 'build'
+    $mermaidDir = Join-Path $Config.Output 'mermaid'
+    
+    # Clean and recreate build directory
+    if (Test-Path $script:BuildDir) { Remove-Item $script:BuildDir -Recurse -Force }
+    Copy-Item $Config.Manuscript $script:BuildDir -Recurse
+    
+    if (-not (Test-Path $mermaidDir)) {
+        New-Item -ItemType Directory -Path $mermaidDir -Force | Out-Null
     }
     
-    foreach ($mmd in $mmdFiles) {
-        $pngFile = $mmd.FullName -replace '\.mmd$', '.png'
-        & mmdc -i $mmd.FullName -o $pngFile -b white -s 5
-        if (Test-Path $pngFile) {
-            Write-Success "Generated: $($mmd.BaseName).png"
+    # Find all markdown files with mermaid blocks in build copy
+    $mdFiles = Get-ChildItem -Path $script:BuildDir -Filter '*.md' -Recurse
+    $diagramCount = 0
+    
+    foreach ($mdFile in $mdFiles) {
+        $content = Get-Content $mdFile.FullName -Raw -Encoding UTF8
+        
+        # Match mermaid code blocks
+        $pattern = '(?s)```mermaid\r?\n(.*?)```'
+        $regexMatches = [regex]::Matches($content, $pattern)
+        
+        if ($regexMatches.Count -eq 0) { continue }
+        
+        $fileIndex = 0
+        foreach ($match in $regexMatches) {
+            $mermaidCode = $match.Groups[1].Value
+            $diagramName = "$($mdFile.BaseName)_diagram_$fileIndex"
+            $mmdFile = Join-Path $mermaidDir "$diagramName.mmd"
+            $pngFile = Join-Path $mermaidDir "$diagramName.png"
+            
+            # Write mermaid code to temp file
+            Set-Content $mmdFile -Value $mermaidCode -NoNewline -Encoding UTF8
+            
+            # Render to PNG
+            & mmdc -i $mmdFile -o $pngFile -b white -s 3 -w 800 2>$null
+            
+            if (Test-Path $pngFile) {
+                # Replace mermaid block with image reference in build copy
+                $imageRef = "![$diagramName]($pngFile)"
+                $content = $content.Replace($match.Value, $imageRef)
+                Write-Success "Rendered: $diagramName.png"
+                $diagramCount++
+            }
+            $fileIndex++
         }
+        
+        # Write modified content to build copy only
+        Set-Content $mdFile.FullName -Value $content -NoNewline -Encoding UTF8
+    }
+    
+    if ($diagramCount -eq 0) {
+        Write-Info "No mermaid blocks found"
+        $script:BuildDir = $null  # Use original sources
+    }
+    else {
+        Write-Info "Rendered $diagramCount diagrams"
     }
 }
 
@@ -144,19 +205,28 @@ function Build-Pdf {
         New-Item -ItemType Directory -Path $Config.Output -Force | Out-Null
     }
     
+    # Use build directory if mermaid processing created one, otherwise use originals
+    $chaptersDir = if ($script:BuildDir) { Join-Path $script:BuildDir 'chapters' } else { $Config.ChaptersDir }
+    $backMatterDir = if ($script:BuildDir) { Join-Path $script:BuildDir 'back-matter' } else { $Config.BackMatter }
+    $frontMatterDir = if ($script:BuildDir) { Join-Path $script:BuildDir 'front-matter' } else { $Config.FrontMatter }
+    
     # Collect source files in order
     $sources = @()
     
-    # Front matter
-    $frontMatter = Join-Path $Config.FrontMatter '00_title_abstract.md'
-    if (Test-Path $frontMatter) {
-        $sources += $frontMatter
-        Write-Info "Front matter: 00_title_abstract.md"
-    }
+    # Front matter files - will be added via --include-before-body to appear BEFORE TOC
+    $frontMatterFiles = @(
+        '00_title.md',
+        '01_approval.md',
+        '02_copyright.md',
+        '03_abstract.md',
+        '04_acknowledgments.md',
+        '05_dedication.md',
+        '06_toc_setup.md'
+    )
     
     # Chapters
-    foreach ($chapter in $Config.Chapters) {
-        $chapterPath = Join-Path $Config.Chapters $chapter
+    foreach ($chapter in $Config.ChapterFiles) {
+        $chapterPath = Join-Path $chaptersDir $chapter
         if (Test-Path $chapterPath) {
             $sources += $chapterPath
             Write-Info "Chapter: $chapter"
@@ -165,7 +235,7 @@ function Build-Pdf {
     
     # Back matter
     foreach ($backFile in @('references.md', 'appendices.md')) {
-        $backPath = Join-Path $Config.BackMatter $backFile
+        $backPath = Join-Path $backMatterDir $backFile
         if (Test-Path $backPath) {
             $sources += $backPath
             Write-Info "Back matter: $backFile"
@@ -173,14 +243,106 @@ function Build-Pdf {
     }
     
     # Build pandoc arguments
+    $headerIncludes = @(
+        # === Core packages ===
+        '\usepackage{float}',
+        '\usepackage{booktabs}',
+        '\usepackage{longtable}',
+        '\usepackage{pdfpages}',
+        '\usepackage{etoolbox}',
+        '\usepackage{needspace}',
+        '\usepackage{placeins}',
+        '\usepackage{fancyhdr}',
+        '\usepackage{setspace}',
+        '\usepackage{tocloft}',
+        '\usepackage[font=normalsize,labelfont=bf,justification=raggedright,singlelinecheck=false]{caption}',
+        
+        # === APA 7 Double Spacing ===
+        '\doublespacing',
+        
+        # === TOC spacing: 1.25 line spacing ===
+        '\setlength{\cftbeforesecskip}{0.5em}',
+        '\setlength{\cftbeforesubsecskip}{0.3em}',
+        '\setlength{\cftbeforesubsubsecskip}{0.2em}',
+        '\renewcommand{\cftsecafterpnum}{\vskip 3pt}',
+        '\renewcommand{\cftsubsecafterpnum}{\vskip 2pt}',
+        '\AtBeginDocument{\addtocontents{toc}{\protect\setstretch{1.25}}}',
+        
+        # === Front matter uses roman numerals ===
+        '\pagenumbering{roman}',
+        
+        # === Plain style for TOC: roman numerals, bottom center ===
+        '\fancypagestyle{plain}{\fancyhf{}\fancyfoot[C]{\thepage}\renewcommand{\headrulewidth}{0pt}}',
+        
+        # === Fancy style for body: running header + page number (set at Chapter 1) ===
+        '\fancypagestyle{fancy}{\fancyhf{}\fancyhead[L]{\small\MakeUppercase{AI Readiness Scale}}\fancyhead[R]{\thepage}\renewcommand{\headrulewidth}{0pt}}',
+        '\setlength{\headheight}{14pt}',
+        
+        # === APA 7 Figure Captions (below figure) ===
+        # Format: "Figure X." bold, title italic
+        '\captionsetup[figure]{labelsep=period,position=below,skip=10pt,font={normalsize},labelfont={bf},textfont={it}}',
+        
+        # === APA 7 Table Captions (above table) ===
+        # Format: "Table X." bold, title italic
+        '\captionsetup[table]{labelsep=period,position=above,skip=10pt,font={normalsize},labelfont={bf},textfont={it}}',
+        
+        # === APA 7 Heading Styles ===
+        '\usepackage{titlesec}',
+        # Level 1: Centered, Bold (Chapter)
+        '\titleformat{\section}{\normalfont\Large\bfseries\centering}{Chapter \thesection:}{0.5em}{}',
+        # Level 2: Left-aligned, Bold
+        '\titleformat{\subsection}{\normalfont\large\bfseries}{\thesubsection}{1em}{}',
+        # Level 3: Left-aligned, Bold, Italic
+        '\titleformat{\subsubsection}{\normalfont\normalsize\bfseries\itshape}{\thesubsubsection}{1em}{}',
+        
+        # === Table formatting ===
+        '\AtBeginEnvironment{longtable}{\footnotesize\singlespacing}',
+        '\AtBeginEnvironment{tabular}{\footnotesize\singlespacing}',
+        
+        # === Prevent widows and orphans ===
+        '\widowpenalty=10000',
+        '\clubpenalty=10000',
+        '\displaywidowpenalty=10000',
+        
+        # === Page break controls ===
+        '\raggedbottom',
+        '\AtBeginEnvironment{longtable}{\FloatBarrier}',
+        '\AtEndEnvironment{longtable}{\FloatBarrier}',
+        '\pretocmd{\section}{\needspace{5\baselineskip}}{}{}',
+        '\pretocmd{\subsection}{\needspace{4\baselineskip}}{}{}',
+        '\pretocmd{\subsubsection}{\needspace{3\baselineskip}}{}{}',
+        
+        # === Keep lists with preceding paragraph (for inline bold headings) ===
+        '\AtBeginEnvironment{itemize}{\needspace{4\baselineskip}}',
+        '\AtBeginEnvironment{enumerate}{\needspace{4\baselineskip}}',
+        
+        # === Prevent breaks right after paragraph start ===
+        '\interlinepenalty=150'
+    ) -join ''
+    
     $pandocArgs = @(
         '--from=markdown+raw_tex+table_captions+implicit_figures+yaml_metadata_block'
         "--pdf-engine=$script:PdfEngine"
         "--metadata-file=$($Config.MetaFile)"
         '--toc'
         '--toc-depth=3'
+        '-V', 'toc-own-page=true'
+        '-V', 'geometry:margin=1in'
+        '-V', 'fontsize=12pt'
+        '-V', 'mainfont=Times New Roman'
+        '-V', 'linestretch=2'
+        '-V', "header-includes=$headerIncludes"
         '-o', $Config.OutputPdf
     )
+    
+    # Add front matter files BEFORE TOC (in order)
+    foreach ($fmFile in $frontMatterFiles) {
+        $fmPath = Join-Path $frontMatterDir $fmFile
+        if (Test-Path $fmPath) {
+            $pandocArgs += @('--include-before-body', $fmPath)
+            Write-Info "Front matter: $fmFile"
+        }
+    }
     
     # Add bibliography if exists
     if (Test-Path $Config.BibFile) {
@@ -217,7 +379,8 @@ function Build-Pdf {
     if (Test-Path $Config.OutputPdf) {
         $pdf = Get-Item $Config.OutputPdf
         Write-Success "Generated: $($pdf.Name) ($([math]::Round($pdf.Length/1KB)) KB)"
-    } else {
+    }
+    else {
         throw "PDF was not created"
     }
 }
@@ -228,16 +391,18 @@ function Invoke-Validate {
     # Check meta.yaml
     if (Test-Path $Config.MetaFile) {
         Write-Success "meta.yaml exists"
-    } else {
+    }
+    else {
         throw "meta.yaml not found"
     }
     
     # Check chapters
-    foreach ($chapter in $Config.Chapters) {
-        $path = Join-Path $Config.Chapters $chapter
+    foreach ($chapter in $Config.ChapterFiles) {
+        $path = Join-Path $Config.ChaptersDir $chapter
         if (Test-Path $path) {
             Write-Success $chapter
-        } else {
+        }
+        else {
             Write-Host "  ⚠ Missing: $chapter" -ForegroundColor Yellow
         }
     }
@@ -255,8 +420,57 @@ function Invoke-Clean {
     if (Test-Path $Config.Output) {
         Remove-Item -Path $Config.Output -Recurse -Force
         Write-Success "Removed output directory"
-    } else {
+    }
+    else {
         Write-Info "Nothing to clean"
+    }
+}
+
+function Invoke-Watch {
+    Write-Step "Watching for changes (Ctrl+C to stop)..."
+    
+    $watcher = New-Object System.IO.FileSystemWatcher
+    $watcher.Path = $Config.Manuscript
+    $watcher.Filter = "*.md"
+    $watcher.IncludeSubdirectories = $true
+    $watcher.EnableRaisingEvents = $true
+    
+    $action = {
+        $path = $Event.SourceEventArgs.FullPath
+        $name = $Event.SourceEventArgs.Name
+        Write-Host "`n  Changed: $name" -ForegroundColor Yellow
+        
+        # Small delay to let file system settle
+        Start-Sleep -Milliseconds 500
+        
+        # Rebuild
+        try {
+            Build-MermaidDiagrams
+            Build-Pdf
+        }
+        catch {
+            Write-Host "  Build error: $_" -ForegroundColor Red
+        }
+    }
+    
+    Register-ObjectEvent $watcher "Changed" -Action $action | Out-Null
+    Register-ObjectEvent $watcher "Created" -Action $action | Out-Null
+    
+    Write-Info "Watching $($Config.Manuscript) for .md changes..."
+    Write-Info "Press Ctrl+C to stop"
+    
+    # Initial build
+    Test-Dependencies
+    Build-MermaidDiagrams
+    Build-Pdf
+    
+    # Keep running
+    try {
+        while ($true) { Start-Sleep -Seconds 1 }
+    }
+    finally {
+        Get-EventSubscriber | Unregister-Event
+        $watcher.Dispose()
     }
 }
 
@@ -289,6 +503,9 @@ try {
         'clean' {
             Invoke-Clean
         }
+        'watch' {
+            Invoke-Watch
+        }
     }
     
     Write-Host "`n========================================" -ForegroundColor Green
@@ -299,7 +516,8 @@ try {
         Start-Process $Config.OutputPdf
     }
     
-} catch {
+}
+catch {
     Write-Host "`n✗ Build failed: $_" -ForegroundColor Red
     exit 1
 }

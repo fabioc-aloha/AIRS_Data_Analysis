@@ -92,5 +92,5 @@ Place in `assets/figures/`. For Mermaid diagrams, create `.mmd` files and run `b
 
 ---
 
-**Version**: 2.0  
+**Version**: 2.0
 **Last Updated**: February 2026
