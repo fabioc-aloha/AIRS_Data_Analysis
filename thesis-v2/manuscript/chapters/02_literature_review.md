@@ -180,6 +180,7 @@ Governance practices also shape trust. When organizations establish bias audits,
 Given the empirical evidence for trust's central role in AI adoption, the present research incorporates **AI Trust** as a core construct extending UTAUT2. AI Trust is operationalized as confidence that the AI system is reliable, competent, and aligned with user and organizational values. This construct is expected to positively predict behavioral intention directly and to mediate effects of explainability and governance perceptions on intention.
 
 ```mermaid
+%%{init: {'theme': 'base', 'themeVariables': {'edgeLabelBackground': '#ffffff'}}}%%
 flowchart TB
     subgraph UTAUT2["UTAUT2 Core Constructs (H1a-H1g)"]
         PE["Performance<br/>Expectancy"]
@@ -210,8 +211,11 @@ flowchart TB
     EXP -.->|H3: moderates| PE
     EXP -.->|H3: moderates| HM
 
-    style TR fill:#c8e6c9,stroke:#388e3c,stroke-width:2px
-    style BI fill:#e1f5fe,stroke:#0288d1,stroke-width:3px
+    style UTAUT2 fill:#a5d8ff,stroke:#339af0,stroke-width:2px
+    style AIExt fill:#b2f2bb,stroke:#40c057,stroke-width:2px
+    style TR fill:#b2f2bb,stroke:#40c057,stroke-width:2px
+    style BI fill:#ffec99,stroke:#fab005,stroke-width:3px
+    style EXP fill:#d0bfff,stroke:#7950f2,stroke-width:2px
 ```
 
 : Figure 2.2: AIRS Conceptual Model showing Extended UTAUT2 framework for AI Adoption with AI Trust extension. *Source: Compiled by Author* {#fig:airs-conceptual-model}
