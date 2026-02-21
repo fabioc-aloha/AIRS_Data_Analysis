@@ -1,0 +1,171 @@
+% APA 7th Edition Thesis Template
+% For use with pandoc: pandoc --template=apa7-thesis.tex
+%
+% Variables expected from meta.yaml or command line:
+%   $title$, $author$, $institution$, $program$, $chair$, 
+%   $committee1$, $committee2$, $date$, $running-header$
+
+\documentclass[12pt,letterpaper]{article}
+
+% ============================================================
+% PACKAGES
+% ============================================================
+\usepackage[margin=1in]{geometry}
+\usepackage{setspace}
+\usepackage{fancyhdr}
+\usepackage{indentfirst}
+\usepackage{float}
+\usepackage{caption}
+\usepackage{longtable}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{adjustbox}
+\usepackage{titlesec}
+\usepackage{tocloft}
+\usepackage{pdfpages}
+\usepackage{etoolbox}
+\usepackage{hyperref}
+\usepackage{graphicx}
+
+% Font configuration (XeLaTeX)
+$if(fontspec)$
+\usepackage{fontspec}
+\setmainfont{$mainfont$}
+$else$
+\usepackage{mathptmx}  % Times-like font for pdflatex
+$endif$
+
+% ============================================================
+% FORMATTING
+% ============================================================
+
+% Double spacing
+\doublespacing
+
+% Paragraph indentation
+\setlength{\parindent}{0.5in}
+
+% Header/footer configuration
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[R]{\thepage}
+\fancyhead[L]{$running-header$}
+\renewcommand{\headrulewidth}{0pt}
+
+% Float placement
+\floatplacement{table}{H}
+\floatplacement{figure}{H}
+
+% Caption formatting (APA style)
+\captionsetup[figure]{labelformat=empty,font={footnotesize},justification=centering}
+\captionsetup[table]{labelformat=empty}
+
+% Table formatting
+\renewcommand{\arraystretch}{1.2}
+\AtBeginEnvironment{longtable}{\singlespacing\fontsize{10}{12}\selectfont\centering}
+\AtBeginEnvironment{tabular}{\singlespacing\fontsize{10}{12}\selectfont}
+\setlength{\LTleft}{0pt plus 1fill}
+\setlength{\LTright}{0pt plus 1fill}
+\AtBeginEnvironment{table}{\centering}
+
+% Section heading formatting (APA style)
+\titleformat{\section}{\normalfont\bfseries\centering}{}{0em}{}
+\titleformat{\subsection}{\normalfont\bfseries}{}{0em}{}
+\titleformat{\subsubsection}{\normalfont\bfseries\itshape}{}{0em}{}
+\titlespacing*{\section}{0pt}{12pt}{12pt}
+\titlespacing*{\subsection}{0pt}{12pt}{12pt}
+\titlespacing*{\subsubsection}{0pt}{12pt}{12pt}
+
+% Hyperlink styling
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    citecolor=black,
+    urlcolor=blue
+}
+
+% ============================================================
+% DOCUMENT
+% ============================================================
+\begin{document}
+
+% ------------------------------------------------------------
+% TITLE PAGE
+% ------------------------------------------------------------
+\begin{titlepage}
+\thispagestyle{empty}
+\singlespacing
+\centering
+\vspace*{1cm}
+
+{\LARGE\bfseries $title$\par}
+
+\vspace{1.5cm}
+
+A $document-type$ Submitted in Partial Fulfillment of the\\
+Requirements for the Degree of\\[0.3cm]
+{\large $degree$\par}
+
+\vspace{1cm}
+
+{\large $institution$\par}
+{\normalsize $program$\par}
+
+\vspace{1.5cm}
+
+{\large By\par}
+\vspace{0.3cm}
+{\Large\bfseries $author$\par}
+
+\vspace{1.5cm}
+
+{\large Dissertation Committee:\par}
+\vspace{0.3cm}
+Chair: $chair$\\
+Faculty Member: $committee1$\\
+Faculty Member: $committee2$
+
+\vfill
+
+{\large $date$\par}
+\end{titlepage}
+
+% ------------------------------------------------------------
+% ABSTRACT
+% ------------------------------------------------------------
+$if(abstract)$
+\newpage
+\thispagestyle{empty}
+
+\begin{center}
+{\Large\bfseries Abstract}
+\end{center}
+
+\vspace{1cm}
+\doublespacing
+
+$abstract$
+
+$endif$
+
+% ------------------------------------------------------------
+% TABLE OF CONTENTS
+% ------------------------------------------------------------
+\newpage
+\tableofcontents
+
+\newpage
+\listoftables
+
+\newpage
+\listoffigures
+
+\newpage
+
+% ------------------------------------------------------------
+% BODY
+% ------------------------------------------------------------
+$body$
+
+\end{document}

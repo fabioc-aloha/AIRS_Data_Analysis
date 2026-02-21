@@ -1,0 +1,21 @@
+# Generated output
+output/
+
+# Temporary files
+*.aux
+*.log
+*.out
+*.toc
+*.lof
+*.lot
+*.bbl
+*.blg
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+_combined*.md
+
+# Editor files
+*.swp
+*~
+.DS_Store

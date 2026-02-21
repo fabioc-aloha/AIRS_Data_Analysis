@@ -1,0 +1,127 @@
+---
+title: "Artificial Intelligence Readiness Scale: Extending UTAUT2 for Enterprise AI Adoption"
+author: "Fabio Correa"
+institution: "Touro University Worldwide"
+program: "DBA712 - Doctoral Research Project"
+chair: "Dr. Karina Kasztelnik"
+committee1: "Dr. Jerome Jones"
+committee2: "Dr. Donna Day"
+date: "December 2025"
+running-header: "AI READINESS SCALE"
+---
+
+\begin{center}
+
+\vspace*{1in}
+
+{\LARGE \textbf{Artificial Intelligence Readiness Scale:}}
+
+{\LARGE \textbf{Extending UTAUT2 for Enterprise AI Adoption}}
+
+\vspace{1.5in}
+
+A Dissertation
+
+Presented to the Faculty of
+
+Touro University Worldwide
+
+\vspace{0.5in}
+
+In Partial Fulfillment
+
+of the Requirements for the Degree
+
+Doctor of Business Administration
+
+\vspace{1in}
+
+by
+
+Fabio Correa
+
+December 2025
+
+\end{center}
+
+\newpage
+
+## Dissertation Approval
+
+This dissertation, written by Fabio Correa under the guidance of the Dissertation Committee and approved by all its members, has been accepted in partial fulfillment of the requirements for the degree of Doctor of Business Administration.
+
+\vspace{0.5in}
+
+**Dissertation Committee:**
+
+\vspace{0.3in}
+
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+Dr. Karina Kasztelnik, Committee Chair \hfill Date
+
+\vspace{0.3in}
+
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+Dr. Jerome Jones, Committee Member \hfill Date
+
+\vspace{0.3in}
+
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+Dr. Donna Day, Committee Member \hfill Date
+
+\newpage
+
+## Copyright Notice
+
+© 2025 Fabio Correa
+
+All Rights Reserved
+
+\newpage
+
+## Abstract
+
+This dissertation develops and validates the AI Readiness Scale (AIRS), an instrument measuring artificial intelligence adoption readiness among students and professionals. Extending UTAUT2 with AI-specific constructs, the study examines factors influencing behavioral intention to adopt AI tools.
+
+Using a sample of 523 United States participants, exploratory and confirmatory factor analyses validated an 8-factor, 16-item model with excellent fit (CFI = .975, TLI = .960, RMSEA = .065). The structural model revealed Price Value (β = .505, p < .001), Hedonic Motivation (β = .217, p = .014), and Social Influence (β = .136, p = .024) as significant predictors, explaining 85.2% of variance in behavioral intention. The 8-factor model incorporating AI Trust was selected over a more parsimonious 7-factor alternative (R² = .861) because the trust construct provides essential diagnostic value: organizations can assess trust deficits and design targeted interventions to build confidence in AI systems, a capability absent from pure UTAUT2 implementations. Traditional UTAUT predictors (Performance Expectancy, Effort Expectancy, Facilitating Conditions, Habit) did not significantly predict AI adoption, suggesting AI represents a distinct technology category where cost-benefit perceptions outweigh conventional utility considerations.
+
+Four proposed constructs (Voluntariness, Explainability, Ethical Risk, AI Anxiety) were excluded due to inadequate reliability (α = .30–.58). Measurement invariance testing across student (n = 216) and professional (n = 307) populations demonstrated configural invariance. Cluster analysis identified four user segments: AI Enthusiasts (16%), Cautious Adopters (30%), Moderate Users (37%), and Anxious Avoiders (17%).
+
+The study contributes a validated diagnostic instrument for AI adoption research that enables identification of specific adoption barriers and targeted intervention design, establishing a foundation for future organizational applications.
+
+**Keywords:** artificial intelligence, technology adoption, UTAUT2, scale development, psychometric validation, structural equation modeling
+
+\newpage
+
+## Acknowledgments
+
+I extend my deepest gratitude to the individuals who made this dissertation possible.
+
+To my dissertation chair, Dr. Karina Kasztelnik, thank you for your guidance, patience, and scholarly wisdom throughout this journey. Your expertise in research methodology and commitment to academic excellence shaped both this work and my development as a researcher.
+
+To my committee members, Dr. Jerome Jones and Dr. Donna Day, thank you for your thoughtful feedback, challenging questions, and unwavering support. Your diverse perspectives strengthened this research in countless ways.
+
+To my family, thank you for your understanding during the countless hours devoted to this project. Your encouragement sustained me through the challenges of doctoral study.
+
+To my professional colleagues and the participants who generously shared their experiences with AI tools, thank you for making this research possible. Your insights illuminate the path forward for organizations navigating the AI transformation.
+
+Finally, I acknowledge the broader academic community whose foundational work (particularly Venkatesh and colleagues' development of UTAUT) provided the theoretical architecture upon which this research builds. Scholarship advances through cumulative contribution, and I am honored to add to this conversation.
+
+\newpage
+
+\vspace*{3in}
+
+\begin{center}
+\begin{itshape}
+``The question isn't whether AI will transform work—it's whether we'll be ready.''
+\end{itshape}
+
+\vspace{0.3in}
+
+— Dario Amodei, 2024
+\end{center}
+
+\newpage

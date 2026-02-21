@@ -1,0 +1,68 @@
+# Thesis Metadata Configuration
+# This file contains all configurable thesis parameters
+
+thesis:
+  title: "Artificial Intelligence Readiness Scale: Extending UTAUT2 for Enterprise AI Adoption"
+  short_title: "AI READINESS SCALE" # Running header
+  degree: "Doctor of Business Administration"
+  document_type: "Dissertation"
+
+author:
+  name: "Fabio Correa"
+  email: ""
+
+institution:
+  name: "Touro University Worldwide"
+  program: "DBA712 - Doctoral Research Project"
+  department: ""
+
+committee:
+  chair:
+    name: "Dr. Karina Kasztelnik"
+    title: "Committee Chair"
+  members:
+    - name: "Dr. Jerome Jones"
+      title: "Committee Member"
+    - name: "Dr. Donna Day"
+      title: "Committee Member"
+
+dates:
+  submission: "December 2025"
+  defense: "February 2026"
+  copyright_year: 2025
+
+output:
+  filename: "AIRS_Dissertation"
+  format: "pdf"
+  draft_watermark: false
+
+formatting:
+  paper_size: "letterpaper"
+  font_size: "12pt"
+  line_spacing: 2 # double spacing
+  margins: "1in"
+  font_family: "Times New Roman"
+  citation_style: "apa-7th-edition"
+
+chapters:
+  - 01_introduction.md
+  - 02_literature_review.md
+  - 03_methodology.md
+  - 04_results.md
+  - 05_analysis_discussion.md
+  - 06_conclusions.md
+
+front_matter:
+  - title_page: true
+  - approval_page: true
+  - copyright_page: true
+  - abstract: true
+  - dedication: false
+  - acknowledgments: false
+  - table_of_contents: true
+  - list_of_tables: true
+  - list_of_figures: true
+
+back_matter:
+  - references: true
+  - appendices: true
