@@ -104,6 +104,7 @@ Organizations now have a **validated 16-item diagnostic instrument** for assessi
 ### Model: 8 Factors, 16 Items
 
 ```mermaid
+%%{init: {'theme': 'base', 'themeVariables': {'primaryColor': '#1e3a8a', 'lineColor': '#3b82f6'}}}%%
 flowchart LR
     subgraph UTAUT2["UTAUT2 Core"]
         PE[Performance Expectancy]
@@ -131,6 +132,10 @@ flowchart LR
     PV -->|β=.505***| BI
     HB -->|β=.023| BI
     TR -->|β=.106†| BI
+
+    style UTAUT2 fill:#dbeafe,stroke:#1e3a8a,stroke-width:2px
+    style Extensions fill:#cffafe,stroke:#06b6d4,stroke-width:2px
+    style Outcome fill:#fef3c7,stroke:#f59e0b,stroke-width:2px
 ```
 
 ### Model Fit (CFA Holdout, n=262)
