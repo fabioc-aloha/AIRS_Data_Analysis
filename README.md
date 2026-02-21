@@ -15,7 +15,7 @@ Extending Model for Enterprise AI Adoption
   <tr><td><strong>Researcher</strong></td><td>Fabio Correa</td></tr>
   <tr><td><strong>Institution</strong></td><td>Touro University Worldwide</td></tr>
   <tr><td><strong>Program</strong></td><td>Doctor of Business Administration (DBA)</td></tr>
-  <tr><td><strong>Updated</strong></td><td>December 30, 2025</td></tr>
+  <tr><td><strong>Updated</strong></td><td>February 21, 2026</td></tr>
 </table>
 <!-- markdownlint-enable MD033 -->
 
@@ -213,16 +213,20 @@ AIRS_Data_Analysis/
 │   ├── PRACTITIONER_BRIEF.md # Standalone practitioner brief
 │   ├── THESIS_SUMMARY.md     # 5-page thesis summary
 │   ├── DEFENSE_PRESENTATION.md # Committee defense (28 slides + backup)
-│   ├── PRESENTATION_SLIDES.md # Committee presentation draft
 │   └── DRAFT 07.pdf          # Current compiled thesis
-├── research/                 # Literature and industry sources
+├── defense/                  # Defense presentations (PowerPoint, PDF)
+├── research/                 # Literature, IRB, and industry sources
 │   ├── AIRS literatyre review.md        # Theoretical foundation
-│   ├── Bridging the AI Adoption Gap...  # Industry benchmarks (585 lines)
-│   ├── Meta-Analysis of UTAUT...        # Blut et al. 2022 (84 pages)
+│   ├── Bridging the AI Adoption Gap...  # Industry benchmarks
+│   ├── Meta-Analysis of UTAUT...        # Blut et al. 2022
 │   └── Venkatesh_AOR_2021.md            # AI-UTAUT research agenda
-├── plan/                     # Analysis planning documents
+├── docs/                     # Documentation
+│   ├── planning/             # Analysis planning documents
+│   └── field-deployment/     # AIRS field deployment materials
+├── domain-knowledge/         # Research methodology knowledge base
 ├── data/                     # Raw data files
-├── docs/                     # Additional documentation
+├── post-thesis/              # Post-defense extensions
+├── archive/                  # Historical versions and drafts
 └── scripts/                  # Utility scripts
 ```
 
@@ -345,5 +349,5 @@ Documentation: [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)
 
 ---
 
-**Last Updated**: December 30, 2025
-**Version**: 7.1 (Defense presentation prepared)
+**Last Updated**: February 21, 2026
+**Version**: 7.2 (Project reorganized for defense)
