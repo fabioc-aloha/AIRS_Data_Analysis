@@ -4,7 +4,7 @@
 
 ## 3.1 Introduction
 
-This chapter describes the research methodology employed to develop and validate the AI Readiness Scale (AIRS), a diagnostic instrument for assessing AI adoption readiness, and test the extended UTAUT model for AI tool adoption in higher education. The study follows established scale development procedures (DeVellis & Thorpe, 2021; Hinkin, 1998) combined with structural equation modeling to examine relationships between latent constructs. The research design prioritizes psychometric rigor through split-sample cross-validation, comprehensive validity assessment, and multi-group invariance testing. The resulting 8-factor structure enables both research applications and organizational diagnostic use, allowing practitioners to identify specific adoption barriers and design targeted interventions.
+This chapter describes the research methodology employed to develop and validate the AI Readiness Scale (AIRS), a diagnostic instrument for assessing AI adoption readiness, and test the extended UTAUT model for AI tool adoption in higher education. The study follows established scale development procedures [@devellis2021; @hinkin1998] combined with structural equation modeling to examine relationships between latent constructs. The research design prioritizes psychometric rigor through split-sample cross-validation, comprehensive validity assessment, and multi-group invariance testing. The resulting 8-factor structure enables both research applications and organizational diagnostic use, allowing practitioners to identify specific adoption barriers and design targeted interventions.
 
 The chapter is organized as follows: Section 3.2 describes the research philosophy and design; Section 3.3 details the theoretical framework and hypotheses; Section 3.4 covers instrument development; Section 3.5 addresses sampling and data collection; Section 3.6 presents the analytical strategy; Section 3.7 discusses reliability and validity; Section 3.8 covers ethical considerations; and Section 3.9 acknowledges methodological limitations.
 
@@ -14,7 +14,7 @@ The chapter is organized as follows: Section 3.2 describes the research philosop
 
 ### 3.2.1 Research Philosophy
 
-This study adopts a **post-positivist** philosophical stance, recognizing that while objective reality exists, our understanding of it is necessarily imperfect and probabilistic (Creswell & Creswell, 2018). This orientation is appropriate for scale development research, which seeks to measure latent psychological constructs through observable indicators while acknowledging measurement error and the provisional nature of theoretical models.
+This study adopts a **post-positivist** philosophical stance, recognizing that while objective reality exists, our understanding of it is necessarily imperfect and probabilistic [@creswell2018]. This orientation is appropriate for scale development research, which seeks to measure latent psychological constructs through observable indicators while acknowledging measurement error and the provisional nature of theoretical models.
 
 The post-positivist approach manifests in several methodological choices:
 
@@ -25,7 +25,7 @@ The post-positivist approach manifests in several methodological choices:
 
 ### 3.2.2 Research Approach
 
-The study employs a **sequential mixed methods design** (Creswell & Clark, 2017) with quantitative primacy:
+The study employs a **sequential mixed methods design** [@creswell2017] with quantitative primacy:
 
 1. **Primary Quantitative Component**: Structured survey measuring UTAUT constructs on Likert scales, analyzed through factor analysis and structural equation modeling
 
@@ -35,7 +35,7 @@ This design allows triangulation of findings, with qualitative data enriching in
 
 ### 3.2.3 Time Horizon
 
-The study employs a **cross-sectional design** with data collected during November 2024. While cross-sectional designs preclude causal inference, they are standard for initial scale validation studies (DeVellis & Thorpe, 2021). The design captures a snapshot of AI adoption readiness during a period of rapid AI tool proliferation in higher education, providing a baseline for future longitudinal research.
+The study employs a **cross-sectional design** with data collected during October–November 2025. While cross-sectional designs preclude causal inference, they are standard for initial scale validation studies [@devellis2021]. The design captures a snapshot of AI adoption readiness during a period of rapid AI tool proliferation in higher education, providing a baseline for future longitudinal research.
 
 ### 3.2.4 Research Context
 
@@ -53,7 +53,7 @@ Students are included because they are transitioning into an AI-infused job mark
 
 ### 3.3.1 Extended UTAUT Model
 
-The study extends Venkatesh et al.'s (2012) Unified Theory of Acceptance and Use of Technology 2 (UTAUT2) with AI-specific constructs. The theoretical model comprises eight latent factors predicting Behavioral Intention to adopt AI tools:
+The study extends @venkatesh2012consumer's Unified Theory of Acceptance and Use of Technology 2 (UTAUT2) with AI-specific constructs. The theoretical model comprises eight latent factors predicting Behavioral Intention to adopt AI tools:
 
 **Core UTAUT2 Constructs:**
 
@@ -95,7 +95,7 @@ Based on UTAUT theory and emerging AI adoption literature, the following hypothe
 **Moderation Hypotheses:**
 
 - H3: AI Experience moderates UTAUT relationships (strengthening effects for experienced users)
-- H4: Role group (Student vs. Professional+Leader) moderates UTAUT path coefficients
+- H4: Role group (Academic vs. Professional) moderates UTAUT path coefficients
 
 **Behavioral Validation:**
 
@@ -187,7 +187,7 @@ AI Anxiety (AX) & AX1, AX2 & .30 & Item heterogeneity & Dropped \\
 
 **Resolution**: All four AI-specific constructs were excluded from the final measurement model due to inadequate reliability. These constructs remain theoretically important for AI adoption research and require more comprehensive operationalization with 3-4 items per sub-dimension in future studies.
 
-**Note**: This represents an empirical finding, not a design limitation. The proposal committed to testing these constructs; the data revealed inadequate measurement properties. This transparent reporting aligns with best practices in scale development (DeVellis & Thorpe, 2021).
+**Note**: This represents an empirical finding, not a design limitation. The proposal committed to testing these constructs; the data revealed inadequate measurement properties. This transparent reporting aligns with best practices in scale development [@devellis2021].
 
 ### 3.4.5 Final Instrument Structure
 
@@ -236,15 +236,15 @@ The target population comprises adults in the United States who are either stude
 
 **Panel sampling** was employed through Centiment, a professional survey research platform maintaining verified respondent panels recruited via social media (Facebook, LinkedIn) and other outlets to achieve broad demographic representation.
 
-While panel sampling has limitations similar to convenience sampling regarding generalizability, it is appropriate for initial scale validation studies where the primary goal is psychometric evaluation rather than population inference (DeVellis & Thorpe, 2021). Additionally, Centiment's topic-blinded recruitment protocol, where survey invitations display only completion time and compensation without revealing subject matter, mitigates self-selection bias common in technology-focused research.
+While panel sampling has limitations similar to convenience sampling regarding generalizability, it is appropriate for initial scale validation studies where the primary goal is psychometric evaluation rather than population inference [@devellis2021]. Additionally, Centiment's topic-blinded recruitment protocol, where survey invitations display only completion time and compensation without revealing subject matter, mitigates self-selection bias common in technology-focused research.
 
 ### 3.5.3 Sample Size Determination
 
 Target sample size was determined based on:
 
-1. **SEM requirements**: Minimum N = 200 for stable Maximum Likelihood estimation (Kline, 2016)
-2. **Factor analysis**: Minimum 10:1 subject-to-item ratio (Costello & Osborne, 2005)
-3. **Multi-group analysis**: Minimum n = 100 per group (Hair et al., 2019)
+1. **SEM requirements**: Minimum N = 200 for stable Maximum Likelihood estimation [@kline2016]
+2. **Factor analysis**: Minimum 10:1 subject-to-item ratio [@costello2005]
+3. **Multi-group analysis**: Minimum n = 100 per group [@hair2019]
 4. **Split-sample cross-validation**: N > 500 to enable 50/50 split with adequate subsamples
 
 **Achieved sample**: N = 523 (exceeds all requirements)
@@ -278,9 +278,9 @@ Leader & Managers (n=71), executives (n=52) & 123 & 23.5\% \\
 
 **Platform**: Centiment online survey platform
 
-**Collection Period**: November 2024 (3-week window)
+**Collection Period**: October–November 2025 (3-week window)
 
-**Self-Selection Mitigation Strategy**: Self-selection bias was mitigated through Centiment's platform-level recruitment design. According to Centiment's documented methodology, survey notifications to panel members display only the estimated completion time and compensation amount; the survey topic and subject matter are deliberately concealed "in order to avoid selection bias" (Centiment, 2024). This platform-level blinding ensured that participants could not self-select based on AI interest when deciding whether to participate. Only after accessing the survey link did the informed consent form disclose the specific focus on AI tools, ensuring ethical transparency while maintaining recruitment neutrality. This two-stage approach (blinded recruitment followed by informed consent) attracts a broader cross-section of respondents rather than selectively recruiting those with pre-existing interest in AI topics.
+**Self-Selection Mitigation Strategy**: Self-selection bias was mitigated through Centiment's platform-level recruitment design. According to Centiment's documented methodology, survey notifications to panel members display only the estimated completion time and compensation amount; the survey topic and subject matter are deliberately concealed "in order to avoid selection bias" [@centiment2024]. This platform-level blinding ensured that participants could not self-select based on AI interest when deciding whether to participate. Only after accessing the survey link did the informed consent form disclose the specific focus on AI tools, ensuring ethical transparency while maintaining recruitment neutrality. This two-stage approach (blinded recruitment followed by informed consent) attracts a broader cross-section of respondents rather than selectively recruiting those with pre-existing interest in AI topics.
 
 **Procedures**:
 
@@ -288,6 +288,8 @@ Leader & Managers (n=71), executives (n=52) & 123 & 23.5\% \\
 2. Informed consent obtained disclosing AI focus before data collection
 3. Survey completion time: approximately 10-15 minutes
 4. All responses anonymous; no personally identifiable information collected
+
+**Temporal Note**: The literature review (Chapter 2) incorporates industry reports published throughout 2025 to contextualize findings within the current AI adoption landscape. Some cited sources appeared during or shortly after the data collection window; the theoretical framework and hypotheses were specified before fieldwork began.
 
 ### 3.5.6 Data Quality Assurance
 
@@ -442,7 +444,7 @@ flowchart TD
 **Factor Retention Criteria**:
 
 1. Kaiser criterion (eigenvalue > 1.0)
-2. Parallel analysis (Horn, 1965)
+2. Parallel analysis [@horn1965]
 3. Scree plot visual inspection
 4. Theoretical interpretability
 
@@ -538,7 +540,7 @@ Scalar & Equal intercepts & Mean comparability \\
 \end{table}
 ```
 
-**Criteria for Invariance** (Chen, 2007):
+**Criteria for Invariance** [@chen2007]:
 
 - ΔCFI < .010
 - ΔRMSEA < .015
@@ -602,7 +604,7 @@ flowchart LR
 - Experience × UTAUT interactions via latent interaction terms
 - Role moderation via multi-group path comparison (Δχ² tests)
 
-**Effect Size Interpretation** (Cohen, 1988):
+**Effect Size Interpretation** [@cohen1988]:
 
 ```{=latex}
 \begin{table}[H]
@@ -654,7 +656,7 @@ $\geq$ .50 & Large \\
 
 **Data**: Open-ended survey responses (n = 243 substantive responses, 46.5% response rate)
 
-**Method**: Thematic analysis (Braun & Clarke, 2006)
+**Method**: Thematic analysis [@braun2006]
 
 1. Familiarization with data
 2. Initial coding using keyword matching
@@ -737,7 +739,7 @@ Composite Reliability & .70 & .80 \\
 1. **Factor loadings**: All standardized loadings ≥ .70
 2. **Average Variance Extracted (AVE)**: Proportion of variance captured by construct
 
-**Threshold**: AVE ≥ .50 (Fornell & Larcker, 1981)
+**Threshold**: AVE ≥ .50 [@fornell1981]
 
 ### 3.7.3 Discriminant Validity
 
@@ -746,7 +748,7 @@ Composite Reliability & .70 & .80 \\
 **Assessment Methods**:
 
 1. **Fornell-Larcker Criterion**: √AVE > inter-construct correlations
-2. **Heterotrait-Monotrait Ratio (HTMT)**: HTMT < .85 (Henseler et al., 2015)
+2. **Heterotrait-Monotrait Ratio (HTMT)**: HTMT < .85 [@henseler2015]
 3. **Maximum correlation**: |r| < .85 between any construct pair
 
 ### 3.7.4 Criterion Validity
@@ -815,7 +817,7 @@ The survey addressed non-sensitive topics related to technology use attitudes. N
 
 2. **Self-reported measures**: Behavioral Intention is a proxy for actual behavior. While BI strongly predicts behavior in UTAUT studies, some intention-behavior gap is expected.
 
-3. **Single time point**: Attitudes and technology contexts change rapidly; findings reflect November 2024 snapshot.
+3. **Single time point**: Attitudes and technology contexts change rapidly; findings reflect an October–November 2025 snapshot.
 
 ### 3.9.2 Sampling Limitations
 

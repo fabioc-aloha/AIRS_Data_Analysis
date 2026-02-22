@@ -73,7 +73,7 @@ Based on UTAUT2 theory and AI-specific considerations, this study tests the foll
 **Moderation Hypotheses (H3–H4)**:
 
 - H3: Professional experience moderates the relationships between predictors and Behavioral Intention.
-- H4: Population (Student vs. Professional) moderates the relationships between predictors and Behavioral Intention.
+- H4: Population (Academic vs. Professional) moderates the relationships between predictors and Behavioral Intention.
 
 **Behavioral Validation Hypothesis (H5)**:
 

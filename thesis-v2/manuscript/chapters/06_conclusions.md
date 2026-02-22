@@ -192,6 +192,8 @@ While this study employed rigorous methodology and produced robust findings, sev
 
 5. **High-Stakes AI Contexts**: Examine whether Trust becomes more predictive for consequential AI applications such as autonomous decision-making systems.
 
+6. **Longitudinal Acceptance Tracking**: Recent evidence reveals that public sentiment toward AI has shifted post-ChatGPT, with "not acceptable" responses increasing from 23% to 30% in one year [@baumann2025reduced]. This suggests the need for longitudinal AIRS studies tracking how individual adoption factors change as AI technologies mature and social discourse evolves.
+
 ### 6.7.3 Research Roadmap: From Validated Scale to Organizational Applications
 
 This dissertation establishes the AIRS as a validated diagnostic instrument. The 8-factor structure already enables identification of specific adoption barriers; the following roadmap outlines the research program required to develop formalized protocols for organizational applications:
@@ -208,6 +210,18 @@ This dissertation establishes the AIRS as a validated diagnostic instrument. The
 - Design administration protocols for organizational AI readiness assessment
 - Develop reporting frameworks that translate AIRS results into actionable organizational insights
 - Pilot diagnostic protocols with partner organizations
+
+### 6.7.4 Appropriate Reliance Research
+
+Critically, adoption readiness represents only the first step in effective AI integration. Microsoft's AETHER group synthesizes appropriate reliance research around two core constructs [@passi2024appropriate]: **Capability-Appropriate Reliance on AI** (CAIR)—matching human reliance to actual AI capability—and **Context-Sensitive Reliance** (CSR)—adapting behavior based on situational factors like stakes and uncertainty. The *New Future of Work Report* further cautions that interventions designed to improve AI acceptance may inadvertently increase over-reliance [@butler2025new], creating a paradox: successfully deploying AI through AIRS-identified pathway optimizations may set the stage for over-reliance problems.
+
+Future research should therefore extend beyond the adoption decision to investigate:
+
+1. **AIRS-to-Reliance Calibration**: Do individuals with higher Price Value scores rely more appropriately on AI outputs? Does the marginal Trust effect (β = .106) predict reliance calibration quality?
+
+2. **Segment-Specific Reliance Patterns**: Do the four user segments (Enthusiastic Adopters, Pragmatic Evaluators, Cautious Traditionalists, Anxious Avoiders) exhibit different over-reliance or under-reliance tendencies?
+
+3. **Intervention Sequencing**: Determine whether appropriate reliance training should precede, accompany, or follow adoption interventions to optimize both willingness and calibration.
 - Establish reliability of organizational-level aggregated scores
 
 **Phase 3: Intervention Framework Development** (Medium-term)

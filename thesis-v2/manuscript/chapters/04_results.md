@@ -4,9 +4,9 @@
 
 ## 4.1 Introduction
 
-This chapter presents the empirical findings from the AI Readiness Survey (AIRS) study examining factors influencing AI tool adoption in higher education. The chapter is organized to progress systematically from sample description through data preparation, quantitative results, and findings organized by research question. All analyses were conducted using Python (factor_analyzer, semopy, scipy, pandas) with a significance level of α = .05 unless otherwise specified.
+This chapter presents the empirical findings from the AI Readiness Scale (AIRS) study examining factors influencing AI tool adoption in higher education. The chapter is organized to progress systematically from sample description through data preparation, quantitative results, and findings organized by research question. All analyses were conducted using Python (factor_analyzer, semopy, scipy, pandas) with a significance level of α = .05 unless otherwise specified.
 
-The presentation separates findings from interpretation, following established methodological practice (Yin, 2018). Theoretical and practical implications are addressed in Chapter 5.
+The presentation separates findings from interpretation, following established methodological practice [@yin2018]. Theoretical and practical implications are addressed in Chapter 5.
 
 ## 4.2 Research Questions and Hypotheses Overview
 
@@ -125,7 +125,7 @@ Multiple factor solutions were examined using principal axis factoring with obli
 A & 7 & 21 & .938 & .923 & .078 & .058 & Poor fit \\
 B & 8 & 20 & .952 & .940 & .070 & .052 & Adequate \\
 C & 8 & 18 & .964 & .953 & .066 & .048 & Good \\
-D & 8 & 16 & .975 & .960 & .065 & .046 & \textbf{Selected} \\
+D & 8 & 16 & .975 & .960 & .065 & .048 & \textbf{Selected} \\
 \bottomrule
 \end{tabular}
 
@@ -221,7 +221,7 @@ $\chi^2$/df & 2.10 & < 3.0 & Excellent \\
 CFI & .975 & $\geq$ .95 & Excellent \\
 TLI & .960 & $\geq$ .95 & Excellent \\
 RMSEA & .065 & $\leq$ .08 & Good \\
-SRMR & .046 & $\leq$ .08 & Excellent \\
+SRMR & .048 & $\leq$ .08 & Excellent \\
 \bottomrule
 \end{tabular}
 
@@ -276,7 +276,7 @@ Figure 4.4 provides a visual comparison of reliability indices across constructs
 
 #### Convergent Validity
 
-All standardized factor loadings exceeded .70, and all AVE values exceeded .50, supporting convergent validity (Fornell & Larcker, 1981).
+All standardized factor loadings exceeded .70, and all AVE values exceeded .50, supporting convergent validity [@fornell1981].
 
 #### Discriminant Validity
 

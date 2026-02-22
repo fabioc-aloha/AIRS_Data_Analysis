@@ -136,7 +136,7 @@ function Build-MermaidDiagrams {
     
     # Create build directory for processed files
     $script:BuildDir = Join-Path $Config.Output 'build'
-    $mermaidDir = Join-Path $Config.Output 'mermaid'
+    $mermaidDir = Join-Path $script:BuildDir 'mermaid'
     
     # Clean and recreate build directory
     if (Test-Path $script:BuildDir) { Remove-Item $script:BuildDir -Recurse -Force }
@@ -170,11 +170,21 @@ function Build-MermaidDiagrams {
             Set-Content $mmdFile -Value $mermaidCode -NoNewline -Encoding UTF8
             
             # Render to PNG
-            & mmdc -i $mmdFile -o $pngFile -b white -s 3 -w 800 2>$null
+            & mmdc -i $mmdFile -o $pngFile -b white -s 3 -w 1200 2>$null
             
             if (Test-Path $pngFile) {
-                # Replace mermaid block with image reference in build copy
-                $imageRef = "![$diagramName]($pngFile)"
+                # Use absolute path with forward slashes for LaTeX compatibility
+                $absolutePath = (Resolve-Path $pngFile).Path -replace '\\', '/'
+                # Replace mermaid block with LaTeX figure that constrains size
+                # maxwidth=\textwidth, maxheight=0.45\textheight (45% of page height)
+                $imageRef = @"
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth,height=0.45\textheight,keepaspectratio]{$absolutePath}
+\end{figure}
+
+"@
                 $content = $content.Replace($match.Value, $imageRef)
                 Write-Success "Rendered: $diagramName.png"
                 $diagramCount++
@@ -257,6 +267,12 @@ function Build-Pdf {
         '\usepackage{tocloft}',
         '\usepackage[font=normalsize,labelfont=bf,justification=raggedright,singlelinecheck=false]{caption}',
         
+        # === Code block formatting ===
+        '\usepackage{fancyvrb}',
+        '\usepackage{framed}',
+        '\definecolor{shadecolor}{RGB}{245,245,245}',
+        '\renewenvironment{Shaded}{\begin{snugshade}\small\singlespacing}{\end{snugshade}}',
+        
         # === APA 7 Double Spacing ===
         '\doublespacing',
         
@@ -308,13 +324,25 @@ function Build-Pdf {
         '\raggedbottom',
         '\AtBeginEnvironment{longtable}{\FloatBarrier}',
         '\AtEndEnvironment{longtable}{\FloatBarrier}',
-        '\pretocmd{\section}{\needspace{5\baselineskip}}{}{}',
-        '\pretocmd{\subsection}{\needspace{4\baselineskip}}{}{}',
+        
+        # === Smart pagination: keep headings with following content ===
+        # Use titlesec for proper heading pagination control
+        '\usepackage{titlesec}',
+        '\titlespacing*{\section}{0pt}{12pt plus 4pt minus 2pt}{6pt plus 2pt minus 2pt}',
+        '\titlespacing*{\subsection}{0pt}{10pt plus 4pt minus 2pt}{4pt plus 2pt minus 2pt}',
+        '\titlespacing*{\subsubsection}{0pt}{8pt plus 4pt minus 2pt}{4pt plus 2pt minus 2pt}',
+        # Set penalties to strongly discourage breaks after headings
+        '\makeatletter',
+        '\renewcommand{\@afterheading}{\@nobreaktrue\everypar{\@nobreakfalse\everypar{}}}',
+        '\makeatother',
+        # Require minimum space for heading + at least 2 lines of content
+        '\pretocmd{\section}{\needspace{4\baselineskip}}{}{}',
+        '\pretocmd{\subsection}{\needspace{3\baselineskip}}{}{}',
         '\pretocmd{\subsubsection}{\needspace{3\baselineskip}}{}{}',
         
         # === Keep lists with preceding paragraph (for inline bold headings) ===
-        '\AtBeginEnvironment{itemize}{\needspace{4\baselineskip}}',
-        '\AtBeginEnvironment{enumerate}{\needspace{4\baselineskip}}',
+        '\AtBeginEnvironment{itemize}{\needspace{2\baselineskip}}',
+        '\AtBeginEnvironment{enumerate}{\needspace{2\baselineskip}}',
         
         # === Prevent breaks right after paragraph start ===
         '\interlinepenalty=150'

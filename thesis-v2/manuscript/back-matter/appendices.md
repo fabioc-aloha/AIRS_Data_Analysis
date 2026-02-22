@@ -351,7 +351,7 @@ The researcher certified compliance with the Touro University Worldwide Ethical 
 
 ## Appendix G: Complete Survey Instrument as Administered
 
-This appendix reproduces the complete AI Readiness Scale (AIRS) survey instrument exactly as administered to participants via the Centiment online panel in November 2024.
+This appendix reproduces the complete AI Readiness Scale (AIRS) survey instrument exactly as administered to participants via the Centiment online panel in October–November 2025.
 
 ---
 

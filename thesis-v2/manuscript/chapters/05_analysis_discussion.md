@@ -34,9 +34,9 @@ The AI Trust extension approached but did not reach significance (β = .106, p =
 
 **Finding**: Price Value emerged as the overwhelmingly strongest predictor (β = .505, p < .001), substantially exceeding all other constructs.
 
-**Comparison with Prior Research**: This finding represents a significant departure from traditional UTAUT research where Performance Expectancy typically dominates. Blut et al.'s (2022) meta-analysis of 737,112 users found Performance Expectancy to be the strongest predictor (ρ = .60) across technology contexts. The reversal observed in this study suggests fundamental differences in how users evaluate AI tools compared to conventional technologies.
+**Comparison with Prior Research**: This finding represents a significant departure from traditional UTAUT research where Performance Expectancy typically dominates. @blut2022's meta-analysis of 737,112 users found Performance Expectancy to be the strongest predictor (ρ = .60) across technology contexts. The reversal observed in this study suggests fundamental differences in how users evaluate AI tools compared to conventional technologies.
 
-**Industry Context**: This finding gains significance against the adoption-value gap documented in §2.3: despite high adoption rates, few organizations achieve measurable returns. The gap suggests organizations deploy AI without effectively communicating value to end users, precisely the construct captured by Price Value.
+**Industry Context**: This finding gains significance against the adoption-value gap documented in §2.3: despite high adoption rates, few organizations achieve measurable returns. McKinsey's 2025 global survey reinforces this pattern: while 88% of organizations have adopted AI, only 33% are "scaling" AI beyond isolated pilots, with larger companies (48%) significantly outpacing SMBs (29%) in achieving systematic deployment [@mckinseyStateAI2025]. The gap suggests organizations deploy AI without effectively communicating value to end users, precisely the construct captured by Price Value.
 
 **Interpretation**: In the AI context, users appear primarily motivated by **perceived value relative to cost** rather than raw productivity benefits (PE, ns), ease of use (EE, ns), organizational support (FC, ns), or habit (HB, ns). This suggests a hypothesis for future research: AI adoption interventions may be more effective when they prioritize demonstrating clear return on investment rather than focusing solely on capability demonstrations.
 
@@ -46,7 +46,7 @@ The AI Trust extension approached but did not reach significance (β = .106, p =
 
 **Finding**: PE, EE, FC, and HB were not significant predictors.
 
-**Comparison with Prior Research**: The non-significance of Performance Expectancy (β = -.028, p = .791) is particularly noteworthy given its historical dominance in technology acceptance research. Davis's (1989) TAM established perceived usefulness as the primary adoption driver, and this finding has been replicated across thousands of studies. The present results challenge this assumption for AI contexts.
+**Comparison with Prior Research**: The non-significance of Performance Expectancy (β = -.028, p = .791) is particularly noteworthy given its historical dominance in technology acceptance research. @davis1989's TAM established perceived usefulness as the primary adoption driver, and this finding has been replicated across thousands of studies. The present results challenge this assumption for AI contexts.
 
 **Industry Context**: The non-significance of Effort Expectancy and Facilitating Conditions aligns with industry observations about modern AI implementation. Deloitte's State of Generative AI research identifies skill gaps as a persistent barrier to AI integration [@deloitte2024genai], yet users in this study did not cite ease-of-use or organizational support as adoption drivers. This disconnect suggests a maturation in AI tool interfaces: contemporary consumer-facing AI (e.g., ChatGPT, GitHub Copilot) has achieved such usability that effort perceptions no longer differentiate adoption decisions. The barrier has shifted from "Can I use this?" to "Is it worth my investment?"
 
@@ -58,7 +58,7 @@ Similarly, the non-significance of Effort Expectancy (β = -.008, p = .875) and 
 
 **Finding**: TR approached but did not reach significance (β = .106, p = .064).
 
-**Comparison with Prior Research**: Emerging AI adoption research has increasingly emphasized trust as a critical determinant (Glikson & Woolley, 2020; Siau & Wang, 2018). The marginal effect observed here partially supports this theoretical direction while highlighting the need for more sensitive measurement or larger samples.
+**Comparison with Prior Research**: Emerging AI adoption research has increasingly emphasized trust as a critical determinant [@glikson2020; @siau2018]. The marginal effect observed here partially supports this theoretical direction while highlighting the need for more sensitive measurement or larger samples.
 
 **Industry Context**: The marginal significance of AI Trust resonates with industry findings on governance and accountability barriers. Gartner identifies governance maturity as a key differentiator, with substantial proportions of AI projects experiencing delays due to governance, compliance, or accountability issues [@gartner2025]. The Georgian AI Benchmark found that only 32% of organizations have achieved cross-functional AI deployment, with trust and governance cited as key inhibitors [@georgian2025]. These industry challenges suggest that trust, while marginally significant at the individual level, may become increasingly central as AI applications mature and governance requirements intensify.
 
@@ -68,9 +68,32 @@ Similarly, the non-significance of Effort Expectancy (β = -.008, p = .875) and 
 
 **Finding**: Professional experience strengthens HM -> BI (β = .136, p = .009).
 
-**Comparison with Prior Research**: While UTAUT specifies experience as a moderator, it conceptualizes experience as technology familiarity rather than career development. The present finding integrates career development theory (Super, 1980) with technology acceptance, suggesting that vocational maturity influences technology evaluation processes.
+**Comparison with Prior Research**: While UTAUT specifies experience as a moderator, it conceptualizes experience as technology familiarity rather than career development. The present finding integrates career development theory [@super1980] with technology acceptance, suggesting that vocational maturity influences technology evaluation processes.
 
 **Interpretation**: The significant moderation effect suggests that experienced professionals place greater weight on enjoyment when evaluating AI tools. This may reflect that experienced users, having satisfied basic competency needs, prioritize intrinsic satisfaction. Additionally, usage frequency moderates the importance of Performance Expectancy (for new users) versus Price Value (for heavy users).
+
+### 5.3.5 Converging Literature Validation
+
+An important methodological note is warranted regarding the alignment between this study's theoretical framework and the broader 2025 literature. The theoretical framework — including the decision to extend UTAUT2 with AI-specific constructs such as Trust and Anxiety — was specified before fieldwork began in October 2025. During the research design, data collection, and writing phases, a rapidly expanding body of industry research and academic work independently corroborated the study's theoretical positioning and empirical findings.
+
+**Industry Validation of the Adoption-Value Gap**. When the research framework was designed, the adoption-value gap was an emerging pattern supported primarily by McKinsey's 2023–2024 State of AI reports and early BCG findings. Throughout 2025, this pattern was confirmed by at least eight additional sources:
+
+- McKinsey's 2025 report documented adoption reaching 88% while only 6% of organizations achieved meaningful EBIT impact [@mckinseyStateAI2025]
+- BCG quantified that just 5% of companies realize measurable AI returns, with 74% stuck at proof-of-concept [@bcgAIAdoption2025]
+- The MIT Media Lab NANDA Initiative estimated 90–95% failure rates for generative AI pilots at scale [@mitMediaLab2025]
+- Georgian's AI Benchmark found only 32% cross-functional deployment [@georgian2025]
+- ISG, Gartner, Deloitte, Lucidworks, and Capgemini each identified governance deficits, skill gaps, and scaling failures as systemic barriers [@isg2025; @gartner2025; @deloitte2024genai; @lucidworks2025; @capgemini2025]
+
+This converging evidence demonstrates that the adoption-value gap is robust, widespread, and not an artifact of any single report's methodology. The present study's finding that traditional UTAUT2 predictors (Performance Expectancy, Effort Expectancy) fail to reach significance while value-oriented constructs dominate aligns with this industry consensus: organizations have moved past questions of *whether AI works* to questions of *whether AI is worth it*.
+
+**Academic Validation of AI-Specific Constructs**. The decision to include AI Anxiety as a proposed inhibitor construct was informed by @tao2020's early dimensional work. Two recent publications further strengthened this theoretical basis:
+
+- @kim2025 identified "annihilation anxiety" (existential concerns about human relevance) as a distinct dimension particularly salient among knowledge workers — precisely the population this study sampled
+- @frenkenberg2025 distinguished anticipatory anxiety (about future AI capabilities) from present-state anxiety, providing a theoretical explanation for why the two-item AX scale in this study (which conflated avoidance and approach motivations) demonstrated inadequate reliability (α = .301)
+
+These findings validate both the theoretical importance of anxiety as an AI adoption construct and this study's empirical conclusion that more sophisticated, multi-dimensional measurement is required (see §5.6.2).
+
+**Significance**. The convergence between this study's a priori theoretical choices and the 2025 evidence base provides a form of concurrent validation. The framework was not retrofitted to accommodate new findings; rather, the constructs selected for investigation (trust, anxiety, value perception, governance) are precisely those the field has independently identified as central to explaining the adoption-value gap.
 
 
 
@@ -82,7 +105,7 @@ The study extends UTAUT2 with AI-specific constructs, demonstrating that traditi
 
 ### 5.4.2 Context-Specific Model
 
-The findings support calls for domain-specific UTAUT extensions (Blut et al., 2022). Rather than applying generic technology acceptance models, researchers should develop and validate context-appropriate extensions that capture the unique psychological processes relevant to each technology category.
+The findings support calls for domain-specific UTAUT extensions [@blut2022]. Rather than applying generic technology acceptance models, researchers should develop and validate context-appropriate extensions that capture the unique psychological processes relevant to each technology category.
 
 ### 5.4.3 Price Value Dominance
 
