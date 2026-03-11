@@ -1,8 +1,7 @@
 {
   "$schema": "../SYNAPSE-SCHEMA.json",
   "skillId": "refactoring-patterns",
-  "lastUpdated": "2026-02-21",
-  "inheritance": "inheritable",
+  "lastUpdated": "2026-03-11",
   "connections": [
     {
       "target": ".github/skills/testing-strategies/SKILL.md",
@@ -21,8 +20,20 @@
       "type": "supports",
       "strength": 0.7,
       "reason": "Refactoring suggestions common in reviews"
+    },
+    {
+      "target": ".github/skills/vscode-extension-patterns/SKILL.md",
+      "type": "complements",
+      "strength": 0.8,
+      "reason": "Webview decomposition patterns (tab extraction, CSS extraction, client JS extraction) proven in Command Center optimization"
+    },
+    {
+      "target": ".github/skills/localization/SKILL.md",
+      "type": "related",
+      "strength": 0.75
     }
   ],
+  "schemaVersion": "2.0.0",
   "triggers": [
     "refactor",
     "extract",
@@ -31,6 +42,5 @@
     "move",
     "code smell",
     "clean up"
-  ],
-  "schemaVersion": "2.0.0"
+  ]
 }

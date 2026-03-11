@@ -1,8 +1,7 @@
 {
   "$schema": "../SYNAPSE-SCHEMA.json",
   "skillId": "bootstrap-learning",
-  "lastUpdated": "2026-02-21",
-  "inheritance": "inheritable",
+  "lastUpdated": "2026-03-11",
   "connections": [
     {
       "target": ".github/skills/learning-psychology/SKILL.md",
@@ -35,6 +34,7 @@
       "reason": "Learning identifies repetitive patterns that become automation"
     }
   ],
+  "schemaVersion": "2.0.0",
   "triggers": [
     "teach me",
     "learn about",
@@ -81,6 +81,5 @@
     "knowledge acquisition",
     "domain learning",
     "skill learning"
-  ],
-  "schemaVersion": "2.0.0"
+  ]
 }

@@ -1,8 +1,7 @@
 {
   "$schema": "../SYNAPSE-SCHEMA.json",
   "skillId": "chat-participant-patterns",
-  "lastUpdated": "2026-02-21",
-  "inheritance": "heir:vscode",
+  "lastUpdated": "2026-03-11",
   "connections": [
     {
       "target": ".github/skills/vscode-extension-patterns/SKILL.md",
@@ -23,6 +22,7 @@
       "reason": "Chat responses should manage load"
     }
   ],
+  "schemaVersion": "2.0.0",
   "triggers": [
     "chat participant",
     "copilot extension",
@@ -63,6 +63,5 @@
     "copilot API",
     "GitHub Copilot extension",
     "chat extension"
-  ],
-  "schemaVersion": "2.0.0"
+  ]
 }

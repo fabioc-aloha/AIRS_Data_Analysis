@@ -19,19 +19,19 @@ Step-by-step process for creating, assessing, and completing skills.
 
 Before proceeding, assess the SKILL.md against the depth rubric:
 
-| Check | Pass Criteria |
-|-------|--------------|
-| Opening line | NOT "Expert in..." or "Capabilities:" — should state a specific insight |
-| Tables | Contain real data (thresholds, trade-offs), not just category labels |
-| Sections | Domain-specific knowledge modules, not "When to Use" / "Input/Output" |
-| Examples | Concrete and specific, not abstract descriptions |
-| Litmus test | Would an LLM produce equally useful content without this skill? Must be **no** |
+| Check        | Pass Criteria                                                                  |
+| ------------ | ------------------------------------------------------------------------------ |
+| Opening line | NOT "Expert in..." or "Capabilities:" — should state a specific insight        |
+| Tables       | Contain real data (thresholds, trade-offs), not just category labels           |
+| Sections     | Domain-specific knowledge modules, not "When to Use" / "Input/Output"          |
+| Examples     | Concrete and specific, not abstract descriptions                               |
+| Litmus test  | Would an LLM produce equally useful content without this skill? Must be **no** |
 
 If any check fails, rewrite the section before continuing.
 
 ## Phase 2: Register the Skill
 
-5. **Add to skill-activation index**: `.github/skills/skill-activation/SKILL.md` — add action keywords
+5. **Add to memory-activation index**: `.github/skills/memory-activation/SKILL.md` — add action keywords
 6. **Update synapses.json** in connected skills (bidirectional links)
 
 ## Phase 3: Assess Trifecta Need
@@ -46,15 +46,23 @@ If any check fails, rewrite the section before continuing.
 
 ### Decision Matrix
 
-| Skill Type | Needs .instructions.md? | Needs .prompt.md? |
-|-----------|:-:|:-:|
-| Reference knowledge (tables, patterns) | No | No |
-| Multi-step process (build, deploy, review) | **Yes** | Maybe |
-| Interactive workflow (learning, meditation) | Maybe | **Yes** |
-| Automated by extension code | No | No |
-| Internal metacognitive (auto-trigger) | No | No |
+| Skill Type                                  | Needs .instructions.md? | Needs .prompt.md? |
+| ------------------------------------------- | :---------------------: | :---------------: |
+| Reference knowledge (tables, patterns)      |           No            |        No         |
+| Multi-step process (build, deploy, review)  |         **Yes**         |       Maybe       |
+| Interactive workflow (learning, meditation) |          Maybe          |      **Yes**      |
+| Automated by extension code                 |           No            |        No         |
+| Internal metacognitive (auto-trigger)       |           No            |        No         |
 
 ## Phase 4: Build Trifecta Components
+
+> ⚠️ **CRITICAL — Never Wrap File Content in Code Fences**
+>
+> When creating SKILL.md, `.instructions.md`, `.prompt.md`, or `synapses.json`:
+>
+> - ❌ `NEVER` start the file with ` ```skill `, ` ```instructions `, ` ```prompt `, or any fence
+> - ✅ The file MUST start directly with `---` (YAML frontmatter) or `{` (JSON)
+> - The `create_file` tool writes raw bytes — wrapping content in a fence IS the bug
 
 ### If creating .instructions.md:
 
@@ -68,7 +76,7 @@ If any check fails, rewrite the section before continuing.
 13. **Create file**: `.github/prompts/{name}.prompt.md`
 14. **Write guided conversation flow** with user interaction points
 15. **Register as slash command** if user-invocable
-16. **Add to prompt-activation index** in `.github/skills/prompt-activation/SKILL.md`
+16. **Add to memory-activation prompt index** in `.github/skills/memory-activation/SKILL.md`
 
 ## Phase 5: Assess Muscle Need
 
@@ -78,12 +86,12 @@ If any check fails, rewrite the section before continuing.
 
 ### Muscle Decision Signals
 
-| Signal | Create Muscle | Example |
-|--------|:-:|---------|
-| Same commands run repeatedly | **Yes** | Validation scripts |
-| File transformation pattern | **Yes** | Sync/transform scripts |
-| Requires human judgment | **No** | Code review |
-| One-time operation | **No** | Not worth automating |
+| Signal                       | Create Muscle | Example                |
+| ---------------------------- | :-----------: | ---------------------- |
+| Same commands run repeatedly |    **Yes**    | Validation scripts     |
+| File transformation pattern  |    **Yes**    | Sync/transform scripts |
+| Requires human judgment      |    **No**     | Code review            |
+| One-time operation           |    **No**     | Not worth automating   |
 
 ## Phase 6: Build Muscle (if needed)
 
@@ -99,9 +107,9 @@ If any check fails, rewrite the section before continuing.
 
 ## Quick Reference: What You Need
 
-| Scenario | Create |
-|----------|--------|
-| New domain expertise | SKILL.md only |
-| New repeatable process | SKILL.md + .instructions.md |
-| New interactive workflow | SKILL.md + .instructions.md + .prompt.md |
-| New automated check | SKILL.md + .instructions.md + muscle script |
+| Scenario                 | Create                                      |
+| ------------------------ | ------------------------------------------- |
+| New domain expertise     | SKILL.md only                               |
+| New repeatable process   | SKILL.md + .instructions.md                 |
+| New interactive workflow | SKILL.md + .instructions.md + .prompt.md    |
+| New automated check      | SKILL.md + .instructions.md + muscle script |

@@ -3,7 +3,6 @@
   "skillId": "documentation-quality-assurance",
   "version": "1.2.0",
   "lastUpdated": "2026-02-20T07:45:33.299Z",
-  "inheritance": "inheritable",
   "connections": [
     {
       "target": ".github/skills/release-process/SKILL.md",

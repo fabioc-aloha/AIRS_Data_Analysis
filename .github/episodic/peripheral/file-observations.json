@@ -1,26 +1,17 @@
 {
-  "hotFiles": [
-    "thesis-v2/manuscript/chapters/02_literature_review.md",
-    "README.md"
-  ],
+  "hotFiles": [],
   "stalledFiles": [
-    "github/episodic/peripheral/file-observations.json",
-    "thesis-v2/build.ps1",
-    "thesis-v2/manuscript/back-matter/appendices.md",
-    "thesis-v2/manuscript/chapters/01_introduction.md",
-    "thesis-v2/manuscript/chapters/02_literature_review.md",
-    "thesis-v2/manuscript/chapters/03_methodology.md",
-    "thesis-v2/manuscript/chapters/04_results.md",
-    "thesis-v2/manuscript/chapters/05_analysis_discussion.md",
-    "thesis-v2/manuscript/chapters/06_conclusions.md",
-    "thesis-v2/output/AIRS_Dissertation.pdf"
+    "github/agents/alex-azure.agent.md",
+    "PDF_GENERATION.md",
+    "README.md",
+    "\"archive/data-old/AIRS---AI-Readiness-Scale-labels old.csv\"",
+    "\"archive/thesis-drafts/DRAFT 00.pdf\"",
+    "\"archive/thesis-drafts/DRAFT 01.pdf\"",
+    "\"archive/thesis-drafts/DRAFT 02.pdf\"",
+    "\"archive/thesis-drafts/DRAFT 03.pdf\"",
+    "\"archive/thesis-drafts/DRAFT 05.pdf\"",
+    "\"archive/thesis-drafts/DRAFT 06.pdf\""
   ],
-  "todoHotspots": [
-    {
-      "file": "thesis-v2/references/apa-7th-edition.csl",
-      "todoCount": 8,
-      "scannedAt": 1771722646989
-    }
-  ],
-  "lastUpdated": 1771722646989
+  "todoHotspots": [],
+  "lastUpdated": 1773243376306
 }

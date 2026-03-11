@@ -1,12 +1,10 @@
 ---
 description: "Run Master Alex audit — 22 automated sections + semantic/logic/code/architectural review"
-mode: agent
 agent: Alex
 ---
 
 # /masteraudit - Master Alex Project Audit
 
-> **Avatar**: Call `alex_cognitive_state_update` with `state: "reviewing"`. This updates the welcome sidebar avatar.
 
 Run a comprehensive Master Alex audit: automated 22-section checks + semantic consistency review.
 
@@ -27,7 +25,7 @@ After the script passes, review the four dimensions:
 3. **Code**: Do package.json commands map to real handlers? Do documented tools match MCP identifiers?
 4. **Architectural**: Is the memory model (trifecta, working memory, neuroanatomical mapping) consistent across all files?
 
-Use the checklist in the master-alex-audit skill (Semantic Review Checklist section).
+Use the checklist in the architecture-audit skill (Semantic Review Checklist section).
 
 ### Step 3: Report
 Present findings as a structured table with severity ratings (CRITICAL/WARNING/INFO).
@@ -43,4 +41,3 @@ Present findings as a structured table with severity ratings (CRITICAL/WARNING/I
 I'll run a comprehensive Master Alex audit. Which mode would you like?
 
 
-> **Revert Avatar**: Call `alex_cognitive_state_update` with `state: "persona"` to reset to project-appropriate avatar.

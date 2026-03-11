@@ -3,8 +3,43 @@
   "skillId": "dissertation-defense",
   "version": "1.1.0",
   "lastUpdated": "2026-02-10",
-  "inheritance": "inheritable",
-  "connections": [],
+  "connections": [
+    {
+      "target": ".github/skills/book-publishing/SKILL.md",
+      "type": "depends-on",
+      "strength": 0.85,
+      "when": "building thesis PDF or troubleshooting Pandoc/LaTeX pipeline",
+      "yields": "Pandoc + LaTeX build patterns, PDF generation expertise"
+    },
+    {
+      "target": ".github/skills/citation-management/SKILL.md",
+      "type": "depends-on",
+      "strength": 0.9,
+      "when": "managing bibliography, fixing citation warnings, APA 7 formatting",
+      "yields": "citeproc rules, @key syntax, bibliography.bib management"
+    },
+    {
+      "target": ".github/skills/academic-research/SKILL.md",
+      "type": "depends-on",
+      "strength": 0.8,
+      "when": "reviewing methodology, strengthening theoretical framework",
+      "yields": "Research design patterns, validity frameworks, statistical methods"
+    },
+    {
+      "target": ".github/skills/practitioner-research/SKILL.md",
+      "type": "depends-on",
+      "strength": 0.85,
+      "when": "framing DBA practitioner contribution, business impact questions",
+      "yields": "DBA defense framing, practitioner vs PhD distinctions"
+    },
+    {
+      "target": ".github/skills/gamma-presentations/SKILL.md",
+      "type": "related",
+      "strength": 0.7,
+      "when": "creating or refining defense slide deck",
+      "yields": "Duarte methodology, AI slide generation via Gamma API"
+    }
+  ],
   "activationContexts": [
     "defense",
     "dissertation",
@@ -13,24 +48,13 @@
     "doctoral",
     "committee",
     "defend",
-    "examination"
+    "examination",
+    "build thesis",
+    "build.ps1",
+    "apa7"
   ],
   "schemaVersion": "2.1.0",
   "synapses": [
-    {
-      "target": ".github/skills/defense-qa-practice/SKILL.md",
-      "type": "procedural",
-      "strength": "critical",
-      "direction": "bidirectional",
-      "context": "Q&A practice is core to defense preparation"
-    },
-    {
-      "target": ".github/skills/defense-presentation/SKILL.md",
-      "type": "procedural",
-      "strength": "critical",
-      "direction": "bidirectional",
-      "context": "Presentation design and delivery for defense"
-    },
     {
       "target": ".github/skills/gamma-presentations/SKILL.md",
       "type": "procedural",
@@ -58,13 +82,6 @@
       "strength": "moderate",
       "direction": "incoming",
       "context": "Question handling and response techniques"
-    },
-    {
-      "target": ".github/skills/writing-publication/SKILL.md",
-      "type": "conceptual",
-      "strength": "moderate",
-      "direction": "incoming",
-      "context": "Academic writing patterns for dissertation"
     },
     {
       "target": ".github/skills/work-life-balance/SKILL.md",

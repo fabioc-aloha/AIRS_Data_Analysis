@@ -1,9 +1,20 @@
 {
   "$schema": "../SYNAPSE-SCHEMA.json",
   "skillId": "code-review",
-  "lastUpdated": "2026-02-21",
-  "inheritance": "inheritable",
+  "lastUpdated": "2026-03-11",
   "connections": [
+    {
+      "target": ".github/instructions/code-review-guidelines.instructions.md",
+      "type": "implements",
+      "strength": 0.95,
+      "reason": "Trifecta sibling: procedural guidelines for code review"
+    },
+    {
+      "target": ".github/prompts/review.prompt.md",
+      "type": "activates",
+      "strength": 0.95,
+      "reason": "Trifecta sibling: /review interactive workflow"
+    },
     {
       "target": ".github/skills/testing-strategies/SKILL.md",
       "type": "validates",
@@ -38,10 +49,15 @@
       "target": ".github/skills/ui-ux-design/SKILL.md",
       "type": "integrates",
       "strength": 0.85,
-      "reason": "Accessibility audits are part of code review quality gates",
-      "bidirectional": true
+      "reason": "Accessibility audits are part of code review quality gates"
+    },
+    {
+      "target": ".github/skills/api-documentation/SKILL.md",
+      "type": "complements",
+      "strength": 0.8
     }
   ],
+  "schemaVersion": "2.0.0",
   "triggers": [
     "review",
     "PR",
@@ -88,6 +104,5 @@
     "approve PR",
     "request changes",
     "LGTM"
-  ],
-  "schemaVersion": "2.0.0"
+  ]
 }

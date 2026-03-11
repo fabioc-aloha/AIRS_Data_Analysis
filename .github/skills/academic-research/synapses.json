@@ -1,16 +1,8 @@
 {
   "$schema": "../SYNAPSE-SCHEMA.json",
   "skillId": "academic-research",
-  "lastUpdated": "2026-02-21",
-  "inheritance": "inheritable",
+  "lastUpdated": "2026-03-11",
   "connections": [
-    {
-      "bidirectional": true,
-      "reason": "Academic writing standards and publication workflows",
-      "type": "complements",
-      "strength": 0.85,
-      "target": ".github/skills/writing-publication/SKILL.md"
-    },
     {
       "reason": "Knowledge acquisition methodology for literature reviews",
       "type": "uses",
@@ -28,8 +20,24 @@
       "type": "considers",
       "strength": 0.4,
       "target": ".github/skills/cognitive-load/SKILL.md"
+    },
+    {
+      "target": ".github/skills/creative-writing/SKILL.md",
+      "type": "extended-by",
+      "strength": 0.85
+    },
+    {
+      "target": ".github/skills/localization/SKILL.md",
+      "type": "complements",
+      "strength": 0.7
+    },
+    {
+      "target": ".github/skills/practitioner-research/SKILL.md",
+      "type": "extended-by",
+      "strength": 0.9
     }
   ],
+  "schemaVersion": "2.0.0",
   "triggers": [
     "academic",
     "research",
@@ -40,6 +48,5 @@
     "thesis",
     "dissertation",
     "scholarly"
-  ],
-  "schemaVersion": "2.0.0"
+  ]
 }

@@ -2,8 +2,7 @@
   "$schema": "../SYNAPSE-SCHEMA.json",
   "skillId": "mcp-development",
   "version": "1.2.0",
-  "lastUpdated": "2026-02-21",
-  "inheritance": "inheritable",
+  "lastUpdated": "2026-03-11",
   "connections": [
     {
       "target": ".github/skills/ai-agent-design/SKILL.md",
@@ -53,6 +52,13 @@
       "type": "INFORMS",
       "when": "Tool descriptions are prompts for AI understanding",
       "yields": "See target skill"
+    },
+    {
+      "target": ".github/skills/foundry-agent-platform/SKILL.md",
+      "type": "complements",
+      "strength": 0.85,
+      "when": "Connecting MCP servers as Foundry agent tools",
+      "yields": "MCP protocol details, server implementation, tool registration"
     }
   ],
   "activationContexts": [
@@ -67,6 +73,7 @@
     "@modelcontextprotocol",
     "stdio transport"
   ],
+  "schemaVersion": "2.0.0",
   "activationBoost": [
     "MCP",
     "Model Context Protocol",
@@ -106,7 +113,10 @@
     "AI-callable tools",
     "JSON-RPC",
     "tool schema",
-    "tool definition"
+    "tool definition",
+    "replicate mcp",
+    "replicate server",
+    "pre-built mcp"
   ],
   "metadata": {
     "category": "ai-infrastructure",
@@ -114,6 +124,5 @@
     "prerequisites": [
       "api-design"
     ]
-  },
-  "schemaVersion": "2.0.0"
+  }
 }

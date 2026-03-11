@@ -1,8 +1,7 @@
 {
   "$schema": "../SYNAPSE-SCHEMA.json",
   "skillId": "cognitive-load",
-  "lastUpdated": "2026-02-21",
-  "inheritance": "inheritable",
+  "lastUpdated": "2026-03-11",
   "connections": [
     {
       "target": ".github/skills/learning-psychology/SKILL.md",
@@ -23,6 +22,7 @@
       "reason": "Scaffolding is bootstrap learning"
     }
   ],
+  "schemaVersion": "2.0.0",
   "triggers": [
     "overwhelmed",
     "confused",
@@ -30,6 +30,5 @@
     "slow down",
     "explain simply",
     "break it down"
-  ],
-  "schemaVersion": "2.0.0"
+  ]
 }

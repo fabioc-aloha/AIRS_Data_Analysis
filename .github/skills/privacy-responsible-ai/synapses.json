@@ -1,8 +1,7 @@
 {
   "$schema": "../SYNAPSE-SCHEMA.json",
   "skillId": "privacy-responsible-ai",
-  "lastUpdated": "2026-02-21",
-  "inheritance": "inheritable",
+  "lastUpdated": "2026-03-11",
   "connections": [
     {
       "target": ".github/skills/security-review/SKILL.md",
@@ -26,17 +25,16 @@
       "target": ".github/skills/pii-privacy-regulations/SKILL.md",
       "type": "extends",
       "strength": 0.9,
-      "bidirectional": true,
       "reason": "Detailed regulatory compliance for PII"
     },
     {
       "target": ".github/skills/appropriate-reliance/SKILL.md",
       "type": "complements",
       "strength": 0.75,
-      "bidirectional": true,
       "reason": "Human-AI trust calibration is core to responsible AI"
     }
   ],
+  "schemaVersion": "2.0.0",
   "triggers": [
     "privacy",
     "PII",
@@ -53,6 +51,5 @@
     "model card",
     "HAX",
     "human oversight"
-  ],
-  "schemaVersion": "2.0.0"
+  ]
 }

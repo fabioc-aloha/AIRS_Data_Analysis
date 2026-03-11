@@ -1,14 +1,12 @@
 {
   "$schema": "../SYNAPSE-SCHEMA.json",
   "skillId": "lint-clean-markdown",
-  "lastUpdated": "2026-02-21",
-  "inheritance": "inheritable",
+  "lastUpdated": "2026-03-11",
   "connections": [
     {
       "target": ".github/skills/markdown-mermaid/SKILL.md",
       "type": "complements",
       "strength": 0.9,
-      "bidirectional": true,
       "when": "Mermaid diagrams must also follow lint rules",
       "yields": "See target skill"
     },
@@ -20,7 +18,7 @@
       "yields": "See target skill"
     },
     {
-      "target": ".github/skills/writing-publication/SKILL.md",
+      "target": ".github/skills/academic-research/SKILL.md",
       "type": "supports",
       "strength": 0.7,
       "when": "Lint-clean is baseline for documentation excellence",
@@ -28,6 +26,7 @@
     }
   ],
   "notes": "Write markdown that passes linting on first attempt",
+  "schemaVersion": "2.0.0",
   "triggers": [
     "creating markdown file",
     "editing documentation",
@@ -41,6 +40,5 @@
     "MD004": "Use dash for unordered lists",
     "MD009": "No trailing whitespace",
     "MD047": "Single newline at file end"
-  },
-  "schemaVersion": "2.0.0"
+  }
 }

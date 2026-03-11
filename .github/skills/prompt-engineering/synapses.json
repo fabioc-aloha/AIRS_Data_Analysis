@@ -1,14 +1,12 @@
 {
   "$schema": "../SYNAPSE-SCHEMA.json",
   "skillId": "prompt-engineering",
-  "lastUpdated": "2026-02-21",
-  "inheritance": "inheritable",
+  "lastUpdated": "2026-03-11",
   "connections": [
     {
       "target": ".github/skills/rag-architecture/SKILL.md",
       "type": "complements",
-      "strength": 0.9,
-      "bidirectional": true
+      "strength": 0.9
     },
     {
       "target": ".github/skills/llm-model-selection/SKILL.md",
@@ -38,6 +36,7 @@
       "note": "Prompt testing and evaluation"
     }
   ],
+  "schemaVersion": "2.0.0",
   "activationBoost": [
     "prompt",
     "prompting",
@@ -57,6 +56,5 @@
     "chat completion",
     "AI agent",
     "copilot"
-  ],
-  "schemaVersion": "2.0.0"
+  ]
 }

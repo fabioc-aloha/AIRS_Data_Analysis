@@ -2,8 +2,7 @@
   "$schema": "../SYNAPSE-SCHEMA.json",
   "skillId": "deep-work-optimization",
   "version": "1.1.0",
-  "lastUpdated": "2026-02-21",
-  "inheritance": "inheritable",
+  "lastUpdated": "2026-03-11",
   "connections": [],
   "activationContexts": [
     {
@@ -33,7 +32,7 @@
     {
       "id": "DEEP-001",
       "source": "deep-work-optimization",
-      "target": ".github/skills/cognitive-load-management/SKILL.md",
+      "target": ".github/skills/cognitive-load/SKILL.md",
       "type": "complements",
       "strength": 0.9,
       "description": "Deep work requires cognitive load awareness; overload prevents flow",
@@ -60,16 +59,16 @@
     {
       "id": "DEEP-004",
       "source": "deep-work-optimization",
-      "target": ".github/skills/meeting-efficiency/SKILL.md",
+      "target": ".github/skills/work-life-balance/SKILL.md",
       "type": "protects",
-      "strength": 0.8,
-      "description": "Efficient meetings protect deep work time",
+      "strength": 0.7,
+      "description": "Work-life balance protects deep work time from overcommitment",
       "bidirectional": false
     },
     {
       "id": "DEEP-005",
       "source": "deep-work-optimization",
-      "target": ".github/skills/academic-paper-drafting/SKILL.md",
+      "target": ".github/skills/academic-research/SKILL.md",
       "type": "enables",
       "strength": 0.85,
       "description": "Academic writing requires sustained deep work sessions",
@@ -78,7 +77,7 @@
     {
       "id": "DEEP-006",
       "source": "deep-work-optimization",
-      "target": ".github/skills/airs-integration.session-calibration/SKILL.md",
+      "target": ".github/skills/airs-appropriate-reliance/SKILL.md",
       "type": "informs",
       "strength": 0.6,
       "description": "Deep work sessions benefit from appropriate reliance calibration",

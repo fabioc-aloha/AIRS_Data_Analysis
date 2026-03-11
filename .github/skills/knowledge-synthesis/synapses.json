@@ -1,11 +1,10 @@
 {
   "$schema": "../SYNAPSE-SCHEMA.json",
   "skillId": "knowledge-synthesis",
-  "lastUpdated": "2026-02-21",
-  "inheritance": "inheritable",
+  "lastUpdated": "2026-03-11",
   "connections": [
     {
-      "target": ".github/skills/meditation-facilitation/SKILL.md",
+      "target": ".github/skills/meditation/SKILL.md",
       "type": "follows",
       "strength": 0.7,
       "reason": "Synthesis often happens during meditation"
@@ -29,6 +28,7 @@
       "reason": "Research generates pre-project knowledge that synthesis organizes"
     }
   ],
+  "schemaVersion": "2.0.0",
   "triggers": [
     "promote knowledge",
     "save insight",
@@ -69,6 +69,5 @@
     "knowledge encoding",
     "encode insight",
     "formalize learning"
-  ],
-  "schemaVersion": "2.0.0"
+  ]
 }

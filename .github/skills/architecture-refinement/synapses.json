@@ -1,8 +1,7 @@
 {
   "$schema": "../SYNAPSE-SCHEMA.json",
   "skillId": "architecture-refinement",
-  "lastUpdated": "2026-02-21",
-  "inheritance": "inheritable",
+  "lastUpdated": "2026-03-11",
   "connections": [
     {
       "target": ".github/instructions/bootstrap-learning.instructions.md",
@@ -12,7 +11,7 @@
       "yields": "See target skill"
     },
     {
-      "target": ".github/prompts/unified-meditation-protocols.prompt.md",
+      "target": ".github/prompts/meditate.prompt.md",
       "type": "feeds",
       "strength": 0.7,
       "when": "Documented patterns become consolidation fodder during meditation",
@@ -31,14 +30,19 @@
       "strength": 0.9,
       "when": "All documentation must be lint-clean",
       "yields": "See target skill"
+    },
+    {
+      "target": ".github/skills/localization/SKILL.md",
+      "type": "related",
+      "strength": 0.85
     }
   ],
   "notes": "Meta-skill for maintaining and evolving Alex's cognitive architecture",
+  "schemaVersion": "2.0.0",
   "triggers": [
     "session produced architecture-worthy insight",
     "file migration or consolidation completed",
     "human feedback corrected AI judgment",
     "new workflow pattern emerged"
-  ],
-  "schemaVersion": "2.0.0"
+  ]
 }

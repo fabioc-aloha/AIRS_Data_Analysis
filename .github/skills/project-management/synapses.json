@@ -1,11 +1,9 @@
 {
   "$schema": "../SYNAPSE-SCHEMA.json",
   "skillId": "project-management",
-  "lastUpdated": "2026-02-21",
-  "inheritance": "inheritable",
+  "lastUpdated": "2026-03-11",
   "connections": [
     {
-      "bidirectional": true,
       "reason": "Projects drive organizational change",
       "type": "complements",
       "strength": 0.85,
@@ -40,8 +38,14 @@
       "type": "escalates",
       "strength": 0.4,
       "target": ".github/skills/incident-response/SKILL.md"
+    },
+    {
+      "target": ".github/skills/cross-cultural-collaboration/SKILL.md",
+      "type": "related",
+      "strength": 0.85
     }
   ],
+  "schemaVersion": "2.0.0",
   "triggers": [
     "project",
     "timeline",
@@ -52,6 +56,5 @@
     "sprint",
     "backlog",
     "estimation"
-  ],
-  "schemaVersion": "2.0.0"
+  ]
 }

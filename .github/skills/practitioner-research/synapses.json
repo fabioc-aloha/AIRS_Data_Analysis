@@ -1,21 +1,13 @@
 {
   "$schema": "../SYNAPSE-SCHEMA.json",
   "skillId": "practitioner-research",
-  "lastUpdated": "2026-02-21",
-  "inheritance": "inheritable",
+  "lastUpdated": "2026-03-11",
   "connections": [
     {
       "target": ".github/skills/academic-research/SKILL.md",
       "type": "extends",
       "strength": 0.9,
-      "reason": "Practitioner-specific extension of academic research methods",
-      "bidirectional": true
-    },
-    {
-      "target": ".github/skills/writing-publication/SKILL.md",
-      "type": "enables",
-      "strength": 0.85,
-      "reason": "Research methodology produces publication-ready documents"
+      "reason": "Practitioner-specific extension of academic research methods"
     },
     {
       "target": ".github/skills/bootstrap-learning/SKILL.md",
@@ -54,6 +46,7 @@
       "reason": "Global insights become research evidence"
     }
   ],
+  "schemaVersion": "2.0.0",
   "triggers": [
     "research",
     "methodology",
@@ -68,6 +61,5 @@
     "structured abstract",
     "practitioner research",
     "ship document promote"
-  ],
-  "schemaVersion": "2.0.0"
+  ]
 }

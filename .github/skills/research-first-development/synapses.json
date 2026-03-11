@@ -1,8 +1,7 @@
 {
   "$schema": "../SYNAPSE-SCHEMA.json",
   "skillId": "research-first-development",
-  "lastUpdated": "2026-02-21",
-  "inheritance": "inheritable",
+  "lastUpdated": "2026-03-11",
   "connections": [
     {
       "target": ".github/skills/bootstrap-learning/SKILL.md",
@@ -51,8 +50,15 @@
       "type": "extends",
       "strength": 0.75,
       "reason": "Research-first patterns flow through heir promotion pipeline"
+    },
+    {
+      "target": ".github/skills/north-star/SKILL.md",
+      "type": "aligns",
+      "strength": 0.85,
+      "reason": "Research-first planning validates features against North Star before building — proven in v6.0.0 4-phase roadmap mapping"
     }
   ],
+  "schemaVersion": "2.0.0",
   "triggers": [
     "new project",
     "gap analysis",
@@ -99,6 +105,5 @@
     "pre-project research",
     "preparation",
     "groundwork"
-  ],
-  "schemaVersion": "2.0.0"
+  ]
 }

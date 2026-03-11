@@ -4,12 +4,16 @@
  * Copies inheritable cognitive architecture files from Master Alex (root .github/)
  * to the VS Code extension heir (platforms/vscode-extension/.github/).
  * 
- * Respects inheritance rules:
- * - inheritable: Copy to heir
- * - universal: Copy to heir
- * - master-only: Skip (stays in master only)
- * - heir:vscode: Already in heir, don't overwrite
- * - heir:m365: Skip (wrong heir)
+ * EXCLUSION-BASED approach:
+ * - Skills: ALL sync by default. Only skills listed in SKILL_EXCLUSIONS are skipped.
+ * - Root files: ALL .md files sync by default. Only files in EXCLUDED_ROOT_FILES are skipped.
+ * - Folders: Explicit list (ARCHITECTURE_FOLDERS) with per-folder exclusions.
+ * - chatSkills: Auto-generated from heir disk after sync — no manual updates needed.
+ * 
+ * Exclusion categories:
+ * - master-only: Stays in master only
+ * - heir:m365: Wrong heir (targets M365 Copilot)
+ * - heir:vscode: Heir maintains its own version, don't overwrite
  * 
  * HEIR DECONTAMINATION:
  * After copying, applies heir-specific transformations to remove master-only
@@ -44,16 +48,35 @@ const ARCHITECTURE_FOLDERS = ['instructions', 'prompts', 'config', 'agents', 'as
 // Folders to create empty in heir (populated at runtime)
 const EMPTY_HEIR_FOLDERS = ['episodic'];
 
-// Files to sync from root .github
-const ARCHITECTURE_FILES = [
-    'copilot-instructions.md',
-    'README.md',
-    'alex-cognitive-architecture.md',
-    'ALEX-INTEGRATION.md',
-    'ASSISTANT-COMPATIBILITY.md',
-    'PROJECT-TYPE-TEMPLATES.md',
-    'VALIDATION-SUITE.md',
+// Root .github files that must NOT be synced to heir
+// Everything else (*.md) in .github root IS synced automatically.
+const EXCLUDED_ROOT_FILES = [
+    'pull_request_template.md', // GitHub repo template — not relevant to packaged extension
 ];
+
+// ============================================================
+// SKILL EXCLUSIONS: Central map of skills that deviate from default sync
+// ============================================================
+// Default behavior: ALL skills sync from master → heir.
+// Only skills listed here are excluded or handled specially.
+// This replaces per-skill synapses.json 'inheritance' field.
+const SKILL_EXCLUSIONS = {
+    // master-only: skill only makes sense in master Alex, never synced
+    'heir-sync-management': 'master-only',
+
+    // heir:m365: skill targets the M365 Copilot heir, not VS Code extension
+    'm365-agent-debugging': 'heir:m365',
+    'teams-app-patterns':   'heir:m365',
+
+    // heir:vscode: heir maintains its own version, don't overwrite from master
+    'azure-architecture-patterns':    'heir:vscode',
+    'azure-devops-automation':        'heir:vscode',
+    'chat-participant-patterns':      'heir:vscode',
+    'enterprise-integration':         'heir:vscode',
+    'persona-detection':              'heir:vscode',
+    'vscode-configuration-validation':'heir:vscode',
+    'vscode-extension-patterns':      'heir:vscode',
+};
 
 // ============================================================
 // HEIR PROTECTION: Files that must NEVER be copied to heir
@@ -65,6 +88,53 @@ const EXCLUDED_CONFIG_FILES = [
     'MASTER-ALEX-PROTECTED.json',  // Master kill-switch marker — must not exist in heir
     'cognitive-config.json',       // Master-specific cognitive state
 ];
+
+// Skill sub-paths that contain PII and must NEVER be copied to heirs.
+// After a skill is copied, these files are replaced with a clean empty template.
+// Format: { [skillName]: Array<{ subPath: string, template: string }> }
+const SKILL_PII_SUBPATHS = {
+    'visual-memory': [
+        {
+            // visual-memory.json may contain base64-encoded reference photos (PII).
+            // Heirs receive an empty template — they populate their own.
+            subPath: 'visual-memory/visual-memory.json',
+            template: JSON.stringify({
+                schema: 'visual-memory-v1',
+                _comment: 'Populate this file with your project\'s reference subjects. Photos should be resized to 512px @ 85% JPEG quality before base64-encoding. See SKILL.md for preparation instructions.',
+                generated: '',
+                subjects: {
+                    _template_subject: {
+                        _comment: 'Rename this key to your subject\'s name (e.g., \'alex\', \'fabio\'). Remove _template_ prefix.',
+                        description: 'Brief visual description of the subject',
+                        ageInfo: { referenceAge: 0, birthYear: 0, photoDate: 'YYYY-MM' },
+                        images: [
+                            { filename: 'subject-1.jpg', dataUri: 'data:image/jpeg;base64,<encode your 512px photo here>', notes: 'Front-facing, natural lighting' },
+                            { filename: 'subject-2.jpg', dataUri: 'data:image/jpeg;base64,<encode your 512px photo here>', notes: '3/4 profile, varied lighting' }
+                        ]
+                    }
+                },
+                voices: {
+                    _comment: 'Optional: add voice samples for TTS cloning',
+                    _template_voice: {
+                        description: 'Natural speaking voice',
+                        audioFile: 'visual-memory/voices/sample.wav',
+                        duration: '10s',
+                        model: 'chatterbox-turbo'
+                    }
+                },
+                videoStyles: {
+                    _comment: 'Optional: store consistent motion prompt templates',
+                    _template_style: {
+                        description: 'Portrait animation style',
+                        promptTemplate: 'Head turns slowly, subtle smile, natural breathing, soft lighting',
+                        model: 'veo-3',
+                        defaultDuration: 6
+                    }
+                }
+            }, null, 2) + '\n'
+        }
+    ]
+};
 
 // Get excluded muscles from inheritance.json (master-only scripts)
 function getExcludedMuscles() {
@@ -103,18 +173,10 @@ const HEIR_SYNAPSE_REMOVALS = [
     },
 ];
 
-function getInheritance(skillPath) {
-    const synapsePath = path.join(skillPath, 'synapses.json');
-    if (!fs.existsSync(synapsePath)) {
-        return 'inheritable'; // Default if no synapse file
-    }
-    try {
-        const synapse = JSON.parse(fs.readFileSync(synapsePath, 'utf8'));
-        return synapse.inheritance || 'inheritable';
-    } catch (e) {
-        console.warn(`  ⚠️ Could not read ${synapsePath}: ${e.message}`);
-        return 'inheritable';
-    }
+function getInheritance(skillName) {
+    // Central exclusion map is the single source of truth.
+    // Skills not in the map default to 'inheritable' (sync to all heirs).
+    return SKILL_EXCLUSIONS[skillName] || 'inheritable';
 }
 
 function copyDirRecursive(src, dest, excludeFiles = []) {
@@ -159,7 +221,7 @@ function syncSkills() {
     for (const skillName of masterSkillDirs) {
         const masterSkillPath = path.join(MASTER_SKILLS, skillName);
         const heirSkillPath = path.join(HEIR_SKILLS, skillName);
-        const inheritance = getInheritance(masterSkillPath);
+        const inheritance = getInheritance(skillName);
         
         switch (inheritance) {
             case 'master-only':
@@ -174,14 +236,26 @@ function syncSkills() {
                 break;
             case 'inheritable':
             case 'universal':
-            default:
+            default: {
                 // Copy to heir
                 if (fs.existsSync(heirSkillPath)) {
                     fs.rmSync(heirSkillPath, { recursive: true });
                 }
                 copyDirRecursive(masterSkillPath, heirSkillPath);
+
+                // Replace PII sub-paths with clean templates
+                const piiEntries = SKILL_PII_SUBPATHS[skillName] || [];
+                for (const { subPath, template } of piiEntries) {
+                    const heirSubPath = path.join(heirSkillPath, ...subPath.split('/'));
+                    if (fs.existsSync(heirSubPath)) {
+                        fs.writeFileSync(heirSubPath, template, 'utf8');
+                        console.log(`   🔒 PII scrubbed: ${skillName}/${subPath}`);
+                    }
+                }
+
                 stats.copied.push(skillName);
                 break;
+            }
         }
     }
     
@@ -341,22 +415,41 @@ function syncArchitectureFolders() {
 function syncArchitectureFiles() {
     console.log('\n📄 Syncing architecture files...\n');
     
-    for (const file of ARCHITECTURE_FILES) {
+    // Exclusion-based: sync ALL .md files from master .github root except those in EXCLUDED_ROOT_FILES
+    const rootFiles = fs.readdirSync(MASTER_GITHUB)
+        .filter(f => f.endsWith('.md') && fs.statSync(path.join(MASTER_GITHUB, f)).isFile());
+    
+    for (const file of rootFiles) {
+        if (EXCLUDED_ROOT_FILES.includes(file)) {
+            console.log(`⏭️  ${file} (excluded)`);
+            continue;
+        }
         const masterPath = path.join(MASTER_GITHUB, file);
         const heirPath = path.join(HEIR_GITHUB, file);
-        
+        fs.copyFileSync(masterPath, heirPath);
+        console.log(`✅ ${file}`);
+    }
+
+    // Sync non-md root files that are part of the architecture
+    const rootJsonFiles = ['hooks.json'];
+    for (const file of rootJsonFiles) {
+        const masterPath = path.join(MASTER_GITHUB, file);
+        const heirPath = path.join(HEIR_GITHUB, file);
         if (fs.existsSync(masterPath)) {
             fs.copyFileSync(masterPath, heirPath);
             console.log(`✅ ${file}`);
-        } else {
-            console.log(`⚠️  ${file} not found in master`);
         }
     }
 
     // Sync walkthrough media files (referenced by package.json walkthroughs)
+    // NOTE: alex_docs/README.md is NOT synced — the heir maintains its own
+    // self-contained mono document (all content inline with anchor navigation)
+    // because the master's README.md links to 25+ docs not packaged in the VSIX.
     const walkthroughFiles = [
-        { src: path.join(MASTER_ROOT, 'alex_docs', 'README.md'), dest: path.join(HEIR_ROOT, 'alex_docs', 'README.md') },
-        { src: path.join(MASTER_ROOT, 'alex_docs', 'WORKING-WITH-ALEX.md'), dest: path.join(HEIR_ROOT, 'alex_docs', 'WORKING-WITH-ALEX.md') }
+        { src: path.join(MASTER_ROOT, 'alex_docs', 'WORKING-WITH-ALEX.md'), dest: path.join(HEIR_ROOT, 'alex_docs', 'WORKING-WITH-ALEX.md') },
+        { src: path.join(MASTER_ROOT, 'alex_docs', 'architecture', 'VSCODE-BRAIN-INTEGRATION.md'), dest: path.join(HEIR_ROOT, 'alex_docs', 'architecture', 'VSCODE-BRAIN-INTEGRATION.md') },
+        { src: path.join(MASTER_ROOT, 'alex_docs', 'guides', 'AGENT-VS-CHAT-COMPARISON.md'), dest: path.join(HEIR_ROOT, 'alex_docs', 'guides', 'AGENT-VS-CHAT-COMPARISON.md') },
+        { src: path.join(MASTER_ROOT, 'alex_docs', 'guides', 'SKILL-DISCIPLINE-MAP.md'), dest: path.join(HEIR_ROOT, 'alex_docs', 'guides', 'SKILL-DISCIPLINE-MAP.md') }
     ];
     for (const { src, dest } of walkthroughFiles) {
         if (fs.existsSync(src)) {
@@ -366,6 +459,20 @@ function syncArchitectureFiles() {
             const fileName = path.relative(HEIR_ROOT, dest).replace(/\\/g, '/');
             console.log(`✅ ${fileName} (walkthrough media)`);
         }
+    }
+
+    // Sync .claude/ bridge (Claude Code compatibility — CLAUDE.md + settings.json)
+    const masterClaude = path.join(MASTER_ROOT, '.claude');
+    const heirClaude = path.join(HEIR_ROOT, '.claude');
+    if (fs.existsSync(masterClaude)) {
+        if (!fs.existsSync(heirClaude)) fs.mkdirSync(heirClaude, { recursive: true });
+        const claudeFiles = fs.readdirSync(masterClaude).filter(f => fs.statSync(path.join(masterClaude, f)).isFile());
+        let claudeCount = 0;
+        for (const f of claudeFiles) {
+            fs.copyFileSync(path.join(masterClaude, f), path.join(heirClaude, f));
+            claudeCount++;
+        }
+        console.log(`✅ .claude/ (${claudeCount} files)`);
     }
 }
 
@@ -387,7 +494,7 @@ function verifyCounts() {
         .map(d => d.name);
     
     for (const skillName of masterSkillDirs) {
-        const inheritance = getInheritance(path.join(MASTER_SKILLS, skillName));
+        const inheritance = getInheritance(skillName);
         if (inheritance === 'inheritable' || inheritance === 'universal') {
             expectedHeirCount++;
         }
@@ -801,19 +908,19 @@ function validateSynapseTargets() {
 // ============================================================
 
 function validateSkillActivationIndex() {
-    console.log('\n📇 Validating skill-activation skill...\n');
+    console.log('\n📇 Validating memory-activation skill...\n');
     
     const errors = [];
     const warnings = [];
     
-    // Check that skill-activation skill exists
-    const skillPath = path.join(HEIR_GITHUB, 'skills', 'skill-activation', 'SKILL.md');
+    // Check that memory-activation skill exists
+    const skillPath = path.join(HEIR_GITHUB, 'skills', 'memory-activation', 'SKILL.md');
     if (!fs.existsSync(skillPath)) {
-        errors.push('skill-activation/SKILL.md does not exist (core metacognitive skill)');
+        errors.push('memory-activation/SKILL.md does not exist (core metacognitive skill)');
         return { errors, warnings };
     }
     
-    console.log('✅ skill-activation skill exists\n');
+    console.log('✅ memory-activation skill exists\n');
     
     // Note: The skill activation index is embedded within SKILL.md itself,
     // not a separate file. Manual review is needed to ensure all skills are discoverable.
@@ -896,8 +1003,8 @@ function auditFileCounts() {
     if (fs.existsSync(MASTER_SKILLS)) {
         for (const d of fs.readdirSync(MASTER_SKILLS, { withFileTypes: true })) {
             if (!d.isDirectory()) continue;
-            const inh = getInheritance(path.join(MASTER_SKILLS, d.name));
-            if (inh === 'master-only' || inh === 'heir:m365') nonHeirSkills++;
+            const inh = getInheritance(d.name);
+    if (inh === 'master-only' || inh === 'heir:m365') nonHeirSkills++;
         }
     }
 
@@ -934,7 +1041,7 @@ function auditFileCounts() {
     }
 
     // Root .md files (pull_request_template.md is GitHub-only, not synced)
-    const GITHUB_ONLY_ROOT_FILES = ['pull_request_template.md'];
+    const GITHUB_ONLY_ROOT_FILES = EXCLUDED_ROOT_FILES;
     const masterRootMd = fs.readdirSync(MASTER_GITHUB).filter(f => f.endsWith('.md')).length;
     const heirRootMd = fs.readdirSync(HEIR_GITHUB).filter(f => f.endsWith('.md')).length;
     const expectedRootDiff = GITHUB_ONLY_ROOT_FILES.length;
@@ -973,6 +1080,46 @@ function auditFileCounts() {
     }
 }
 
+// ============================================================
+// AUTO-GENERATE chatSkills in package.json (prevents drift)
+// ============================================================
+
+function updatePackageJsonChatSkills() {
+    console.log('\n📦 Updating package.json chatSkills...\n');
+    
+    const packagePath = path.join(HEIR_ROOT, 'package.json');
+    if (!fs.existsSync(packagePath)) {
+        console.log('⚠️  package.json not found — skipping chatSkills update');
+        return;
+    }
+    
+    const pkg = JSON.parse(fs.readFileSync(packagePath, 'utf8'));
+    if (!pkg.contributes) {
+        console.log('⚠️  No contributes section — skipping chatSkills update');
+        return;
+    }
+    
+    // Read actual skill directories from heir
+    const heirSkillDirs = fs.readdirSync(HEIR_SKILLS, { withFileTypes: true })
+        .filter(d => d.isDirectory())
+        .map(d => d.name)
+        .sort();
+    
+    const oldCount = (pkg.contributes.chatSkills || []).length;
+    pkg.contributes.chatSkills = heirSkillDirs.map(name => ({
+        path: `./.github/skills/${name}/SKILL.md`
+    }));
+    const newCount = pkg.contributes.chatSkills.length;
+    
+    fs.writeFileSync(packagePath, JSON.stringify(pkg, null, 2) + '\n', 'utf8');
+    
+    if (oldCount !== newCount) {
+        console.log(`✅ chatSkills updated: ${oldCount} → ${newCount} entries`);
+    } else {
+        console.log(`✅ chatSkills verified: ${newCount} entries (no change)`);
+    }
+}
+
 // Main
 console.log('═══════════════════════════════════════════');
 console.log('  Alex Architecture Sync (Master → Heir)');
@@ -986,6 +1133,7 @@ syncArchitectureFiles();
 const skillStats = syncSkills();
 cleanBrokenSynapseReferences(skillStats.skippedMasterOnly);
 applyHeirTransformations();
+updatePackageJsonChatSkills();
 verifyCounts();
 
 // Run validation checks

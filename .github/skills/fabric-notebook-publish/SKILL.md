@@ -1,6 +1,7 @@
 ---
 name: "Fabric Notebook Publish"
 description: "Seamless notebook publishing from VS Code to Microsoft Fabric via Azure DevOps Git integration"
+user-invokable: false
 ---
 
 # Fabric Notebook Publish Skill
@@ -29,7 +30,7 @@ This skill enables seamless notebook publishing from VS Code to Microsoft Fabric
 ## Architecture
 
 ```mermaid
-%%{init: {'theme': 'base', 'themeVariables': { 'primaryColor': '#cce5ff', 'primaryTextColor': '#333', 'lineColor': '#666', 'edgeLabelBackground': '#fff'}}}%%
+%%{init: {'theme': 'base', 'themeVariables': { 'primaryColor': '#cce5ff', 'primaryTextColor': '#333', 'lineColor': '#666', 'edgeLabelBackground': '#ffffff'}}}%%
 flowchart LR
     subgraph LOCAL["VS Code"]
         NB[Notebooks]

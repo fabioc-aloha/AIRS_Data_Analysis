@@ -1,8 +1,7 @@
 {
   "$schema": "../SYNAPSE-SCHEMA.json",
   "skillId": "git-workflow",
-  "lastUpdated": "2026-02-21",
-  "inheritance": "inheritable",
+  "lastUpdated": "2026-03-11",
   "connections": [
     {
       "target": ".github/skills/release-preflight/SKILL.md",
@@ -15,6 +14,7 @@
       "strength": 0.85
     }
   ],
+  "schemaVersion": "2.0.0",
   "activationBoost": [
     "commit",
     "git",
@@ -34,6 +34,5 @@
     "PR",
     "cherry-pick",
     "conflict"
-  ],
-  "schemaVersion": "2.0.0"
+  ]
 }

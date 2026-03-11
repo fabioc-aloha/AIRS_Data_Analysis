@@ -2,8 +2,7 @@
   "$schema": "../SYNAPSE-SCHEMA.json",
   "skillId": "azure-devops-automation",
   "version": "1.1.0",
-  "lastUpdated": "2026-02-21",
-  "inheritance": "heir:vscode",
+  "lastUpdated": "2026-03-11",
   "connections": [],
   "activationContexts": [
     {
@@ -47,7 +46,7 @@
     {
       "id": "DEVOPS-003",
       "source": "azure-devops-automation",
-      "target": ".github/skills/airs-integration/SKILL.md",
+      "target": ".github/skills/airs-appropriate-reliance/SKILL.md",
       "type": "deploys",
       "strength": 0.6,
       "description": "AIRS platform (airs.correax.com) deployed via DevOps pipelines",

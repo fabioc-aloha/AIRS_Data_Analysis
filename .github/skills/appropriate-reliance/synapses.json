@@ -1,8 +1,7 @@
 {
   "$schema": "../SYNAPSE-SCHEMA.json",
   "skillId": "appropriate-reliance",
-  "lastUpdated": "2026-02-21",
-  "inheritance": "inheritable",
+  "lastUpdated": "2026-03-11",
   "connections": [
     {
       "target": ".github/instructions/bootstrap-learning.instructions.md",
@@ -36,12 +35,12 @@
       "target": ".github/skills/privacy-responsible-ai/SKILL.md",
       "type": "complements",
       "strength": 0.75,
-      "bidirectional": true,
       "when": "Trust calibration is core to responsible AI deployment",
       "yields": "See target skill"
     }
   ],
   "notes": "Calibrated human-AI collaboration patterns",
+  "schemaVersion": "2.0.0",
   "triggers": [
     "collaboration feels one-sided",
     "user accepts without reviewing",
@@ -53,6 +52,5 @@
     "over-reliance",
     "under-reliance",
     "appropriate reliance"
-  ],
-  "schemaVersion": "2.0.0"
+  ]
 }

@@ -1,6 +1,9 @@
+---
+description: Systematic WCAG AA accessibility and UI/UX audit covering typography, keyboard navigation, screen reader support, and design tokens
+---
+
 # UI/UX Accessibility Audit
 
-> **Avatar**: Call `alex_cognitive_state_update` with `state: "reviewing"`. This updates the welcome sidebar avatar.
 
 **Purpose**: Systematic accessibility and design system audit for user interfaces  
 **WCAG Level**: AA minimum (Level AAA aspirational)  
@@ -679,4 +682,3 @@ For rapid accessibility check:
 **Validated Against**: Alex v5.8.0 welcomeView.ts accessibility audit (real-world production deployment)
 
 
-> **Revert Avatar**: Call `alex_cognitive_state_update` with `state: "persona"` to reset to project-appropriate avatar.

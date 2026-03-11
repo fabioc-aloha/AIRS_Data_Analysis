@@ -2,8 +2,7 @@
   "$schema": "../SYNAPSE-SCHEMA.json",
   "skillId": "ai-generated-readme-banners",
   "version": "1.1.0",
-  "lastUpdated": "2026-02-21",
-  "inheritance": "inheritable",
+  "lastUpdated": "2026-03-11",
   "connections": [
     {
       "target": ".github/skills/ai-character-reference-generation/SKILL.md",
@@ -11,6 +10,20 @@
       "strength": 0.85,
       "when": "using Replicate API for image generation with Flux/Ideogram",
       "yields": "Shared prompt engineering patterns, retry logic, safety filter handling"
+    },
+    {
+      "target": ".github/skills/flux-brand-finetune/SKILL.md",
+      "type": "extends",
+      "strength": 0.8,
+      "when": "user has trained a custom LoRA and wants to generate brand-consistent banners",
+      "yields": "Fine-tuned model inference with trigger words for on-brand banner generation"
+    },
+    {
+      "target": ".github/skills/image-handling/SKILL.md",
+      "type": "requires",
+      "strength": 0.9,
+      "when": "selecting banner format (SVG default vs raster fallback) and model routing",
+      "yields": "Correct format selection, model priority, and size optimization for banners"
     },
     {
       "target": ".github/skills/prompt-engineering/SKILL.md",
@@ -58,6 +71,10 @@
     "banner generation",
     "replicate api",
     "replicate",
+    "recraft",
+    "recraft svg",
+    "svg banner",
+    "vector banner",
     "3:1 aspect ratio",
     "layout variations",
     "audience targeting",

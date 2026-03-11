@@ -1,8 +1,8 @@
 {
   "$schema": "../SYNAPSE-SCHEMA.json",
   "skillId": "architecture-health",
-  "lastUpdated": "2026-02-21",
-  "inheritance": "inheritable",
+  "version": "1.1.0",
+  "lastUpdated": "2026-03-11",
   "connections": [
     {
       "target": ".github/skills/self-actualization/SKILL.md",
@@ -15,44 +15,30 @@
       "type": "informs",
       "strength": 0.65,
       "reason": "Health status during meditation sessions"
+    },
+    {
+      "target": ".github/instructions/cognitive-health-validation.instructions.md",
+      "type": "sibling",
+      "strength": 0.85,
+      "reason": "Instruction enforces; skill interprets results"
+    },
+    {
+      "target": ".github/skills/brain-qa/SKILL.md",
+      "type": "complements",
+      "strength": 0.8,
+      "reason": "Architecture health assesses runtime dimensions; brain-qa audits trifecta completeness"
     }
   ],
-  "triggers": [
-    "synapse health",
-    "architecture check",
-    "validation",
-    "broken connections",
-    "dream"
+  "schemaVersion": "2.0.0",
+  "when": [
+    "User asks about synapse health or architecture status",
+    "Dream report contains warnings",
+    "Pre-meditation health assessment needed",
+    "User wants to validate architecture integrity"
   ],
-  "activationBoost": [
-    "synapse health",
-    "architecture check",
-    "validation",
-    "broken connections",
-    "dream",
-    "health check",
-    "architecture health",
-    "cognitive health",
-    "brain health",
-    "synapse validation",
-    "connection validation",
-    "link validation",
-    "orphan files",
-    "dead links",
-    "broken synapses",
-    "network health",
-    "skill health",
-    "memory health",
-    "diagnostic",
-    "health report",
-    "status check",
-    "is my architecture healthy",
-    "check health",
-    "validate architecture",
-    "architecture audit",
-    "fix broken",
-    "repair connections",
-    "integrity check"
-  ],
-  "schemaVersion": "2.0.0"
+  "yields": [
+    "Architecture health report with scored dimensions",
+    "Actionable fix recommendations for broken synapses",
+    "Memory balance assessment"
+  ]
 }

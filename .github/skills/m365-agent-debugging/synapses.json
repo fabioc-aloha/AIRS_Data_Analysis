@@ -1,8 +1,7 @@
 {
   "$schema": "../SYNAPSE-SCHEMA.json",
   "skillId": "m365-agent-debugging",
-  "lastUpdated": "2026-02-21",
-  "inheritance": "heir:m365",
+  "lastUpdated": "2026-03-11",
   "connections": [
     {
       "target": ".github/skills/teams-app-patterns/SKILL.md",

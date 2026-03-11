@@ -1,8 +1,7 @@
 {
   "$schema": "../SYNAPSE-SCHEMA.json",
   "skillId": "dream-state",
-  "lastUpdated": "2026-02-21",
-  "inheritance": "inheritable",
+  "lastUpdated": "2026-03-11",
   "connections": [
     {
       "target": ".github/skills/meditation/SKILL.md",
@@ -12,21 +11,14 @@
       "yields": "Clean architecture before conscious consolidation"
     },
     {
-      "target": ".github/skills/architecture-health/SKILL.md",
+      "target": ".github/skills/brain-qa/SKILL.md",
       "type": "implements",
       "strength": 0.9,
       "when": "health check or synapse validation requested",
       "yields": "Network health metrics, broken connection detection"
     },
     {
-      "target": ".github/skills/brain-qa/SKILL.md",
-      "type": "extends",
-      "strength": 0.85,
-      "when": "comprehensive 6-phase cognitive QA needed",
-      "yields": "Deep architecture validation, Master-Heir sync"
-    },
-    {
-      "target": ".github/skills/global-knowledge-sync/SKILL.md",
+      "target": ".github/skills/global-knowledge/SKILL.md",
       "type": "triggers",
       "strength": 0.7,
       "when": "Phase 4 GK synchronization during dream",

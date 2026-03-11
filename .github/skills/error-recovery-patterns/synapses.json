@@ -1,8 +1,7 @@
 {
   "$schema": "../SYNAPSE-SCHEMA.json",
   "skillId": "error-recovery-patterns",
-  "lastUpdated": "2026-02-21",
-  "inheritance": "inheritable",
+  "lastUpdated": "2026-03-11",
   "connections": [
     {
       "target": ".github/skills/debugging-patterns/SKILL.md",
@@ -23,6 +22,7 @@
       "reason": "Recovery paths need testing"
     }
   ],
+  "schemaVersion": "2.0.0",
   "triggers": [
     "retry",
     "fallback",
@@ -30,6 +30,5 @@
     "circuit breaker",
     "graceful degradation",
     "error handling"
-  ],
-  "schemaVersion": "2.0.0"
+  ]
 }

@@ -2,20 +2,13 @@
   "$schema": "../SYNAPSE-SCHEMA.json",
   "skillId": "grant-writing",
   "version": "1.2.0",
-  "lastUpdated": "2026-02-21",
-  "inheritance": "inheritable",
+  "lastUpdated": "2026-03-11",
   "connections": [
     {
       "target": ".github/skills/academic-research/SKILL.md",
       "type": "Requires",
       "strength": 0.9,
       "description": "Grant writing requires research expertise"
-    },
-    {
-      "target": ".github/skills/writing-publication/SKILL.md",
-      "type": "Relates",
-      "strength": 0.9,
-      "description": "Both require clear academic writing"
     },
     {
       "target": ".github/skills/project-management/SKILL.md",

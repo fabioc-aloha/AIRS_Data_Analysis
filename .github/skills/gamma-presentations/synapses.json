@@ -2,8 +2,7 @@
   "$schema": "../SYNAPSE-SCHEMA.json",
   "skillId": "gamma-presentations",
   "version": "1.1.0",
-  "lastUpdated": "2026-02-21",
-  "inheritance": "inheritable",
+  "lastUpdated": "2026-03-11",
   "connections": [
     {
       "target": ".github/skills/prompt-engineering/SKILL.md",
@@ -15,7 +14,6 @@
       "target": ".github/skills/markdown-mermaid/SKILL.md",
       "type": "complements",
       "strength": 0.7,
-      "bidirectional": true,
       "note": "Diagrams can enhance presentations"
     },
     {
@@ -31,7 +29,7 @@
       "note": "REST API integration patterns"
     },
     {
-      "target": ".github/skills/writing-publication/SKILL.md",
+      "target": ".github/skills/academic-research/SKILL.md",
       "type": "enhances",
       "strength": 0.7,
       "note": "Creating documentation presentations"
@@ -43,6 +41,7 @@
       "note": "Tool selection decision matrix routes AI presentation requests here"
     }
   ],
+  "schemaVersion": "2.0.0",
   "activationBoost": [
     "presentation",
     "slide",
@@ -72,6 +71,5 @@
     "envVariable": "GAMMA_API_KEY",
     "mcpAvailable": true,
     "mcpConnector": "Gamma"
-  },
-  "schemaVersion": "2.0.0"
+  }
 }

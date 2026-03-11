@@ -1,7 +1,6 @@
 ---
 name: "architecture-health"
 description: "Diagnose cognitive architecture health — synapse integrity, memory balance, connection density, and drift detection"
-applyTo: "**/*synapse*,**/*health*,**/*connection*,**/*architecture*"
 ---
 
 # Architecture Health Skill
@@ -38,7 +37,7 @@ hub    = skill with 8+ connections (potential bottleneck)
 leaf   = skill with 1 connection (normal for specialized skills)
 ```
 
-**Healthy network**: Most skills are leaves (1-3) with a few hubs (meditation, architecture-health, skill-activation). Orphans indicate missing integration.
+**Healthy network**: Most skills are leaves (1-3) with a few hubs (meditation, self-actualization, memory-activation). Orphans indicate missing integration.
 
 ### Memory Balance Assessment
 

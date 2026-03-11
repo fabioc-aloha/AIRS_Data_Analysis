@@ -2,8 +2,7 @@
   "$schema": "../SYNAPSE-SCHEMA.json",
   "skillId": "anti-hallucination",
   "version": "1.2.0",
-  "lastUpdated": "2026-02-21",
-  "inheritance": "inheritable",
+  "lastUpdated": "2026-03-11",
   "connections": [
     {
       "id": "confidence-calibration",
@@ -14,7 +13,7 @@
     },
     {
       "id": "honest-uncertainty",
-      "target": ".github/skills/../instructions/alex-core.instructions.md",
+      "target": ".github/instructions/alex-core.instructions.md",
       "strength": 0.9,
       "description": "Core identity principle: empirical honesty",
       "type": "IMPLEMENTS"
@@ -35,10 +34,17 @@
     },
     {
       "id": "grounded-factual",
-      "target": ".github/skills/../instructions/empirical-validation.instructions.md",
+      "target": ".github/instructions/empirical-validation.instructions.md",
       "strength": 0.9,
       "description": "Empirical validation prevents fabricated claims",
       "type": "IMPLEMENTS"
+    },
+    {
+      "target": ".github/skills/awareness/SKILL.md",
+      "type": "complements",
+      "strength": 1,
+      "when": "Detecting or preventing hallucinations",
+      "yields": "Detection heuristics, prevention strategies"
     }
   ],
   "activationContexts": [

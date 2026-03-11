@@ -57,63 +57,15 @@ applyTo: "**/*.{ts,js,tsx,jsx,py,ps1,cs,java,go,rs,rb}"
 
 ### Review Checklist
 
-#### Correctness
-- [ ] Does the code do what the PR claims?
-- [ ] Are edge cases handled?
-- [ ] Are error cases handled gracefully?
-- [ ] Does it work with existing functionality?
-
-#### Security
-- [ ] Is user input validated/sanitized?
-- [ ] Are secrets properly handled (not hardcoded)?
-- [ ] Are permissions checked appropriately?
-- [ ] Is sensitive data logged or exposed?
-
-#### Architecture
-- [ ] Does it follow existing patterns in codebase?
-- [ ] Is the right level of abstraction used?
-- [ ] Are dependencies appropriate?
-- [ ] Will this be easy to modify later?
-
-#### Performance
-- [ ] Any obvious performance issues?
-- [ ] Are there unnecessary loops or queries?
-- [ ] Is caching used appropriately?
-- [ ] Any blocking operations that should be async?
-
-#### Maintainability
-- [ ] Is the code self-documenting?
-- [ ] Are complex parts commented?
-- [ ] Are names descriptive and consistent?
-- [ ] Is there duplicated code that should be extracted?
-
-#### Testing
-- [ ] Are there tests for new functionality?
-- [ ] Do tests cover edge cases?
-- [ ] Are tests readable and maintainable?
-- [ ] Do existing tests still pass?
-
-#### Documentation
-- [ ] Is README updated if needed?
-- [ ] Are public APIs documented?
-- [ ] Is CHANGELOG updated for user-facing changes?
-- [ ] Does complex logic have explanatory comments?
+Use the comprehensive checklist from the [code-review SKILL.md](.github/skills/code-review/SKILL.md#review-checklist) covering Security, Logic, Quality, and Architecture dimensions. The skill also defines the 3-Pass Review methodology (Orientation → Logic → Polish).
 
 ---
 
 ## How to Give Feedback
 
-### Comment Types
+### Comment Prefixes
 
-Use prefixes to clarify intent:
-
-| Prefix | Meaning | Blocking? |
-|--------|---------|-----------|
-| `[blocking]` | Must fix before approval | Yes |
-| `[suggestion]` | Consider this improvement | No |
-| `[question]` | I don't understand, please explain | Maybe |
-| `[nit]` | Trivial style issue | No |
-| `[praise]` | This is great! | No |
+Use the comment prefix system defined in the [code-review SKILL.md](.github/skills/code-review/SKILL.md#comment-prefixes): `[blocking]`, `[suggestion]`, `[question]`, `[nit]`, `[praise]`.
 
 ### Examples
 
@@ -258,6 +210,27 @@ Escalate to senior reviewer if:
 - PII handling
 - Payment processing
 - External API credentials
+
+### Reviewing Mission-Critical Code (NASA Standards)
+
+For safety-critical, mission-critical, or high-reliability projects, apply NASA/JPL Power of 10 rules during review:
+
+| Rule | Check For | Blocking? |
+|------|-----------|----------|
+| **R1** Bounded Recursion | Recursive functions without `maxDepth` | 🔴 Yes |
+| **R2** Fixed Loop Bounds | `while` loops without `MAX_ITERATIONS` counter | 🔴 Yes |
+| **R3** Bounded Collections | Arrays/maps without size limits | 🔴 Yes |
+| **R4** Function Size | Functions > 60 lines | 🟠 High |
+| **R5** Assertions | Critical paths without `assert()` calls | 🟠 High |
+| **R6** Minimal Scope | Variables declared far from use | 🟡 Medium |
+| **R7** Return Handling | Unchecked return values | 🟡 Medium |
+| **R8** Nesting Depth | > 4 levels of nesting | 🟠 High |
+| **R9** Defensive Access | `obj.prop.prop` without optional chaining | 🟡 Medium |
+| **R10** Strict Compilation | Compiler warnings present | 🟡 Medium |
+
+**Reference**: `.github/instructions/nasa-code-standards.instructions.md`
+
+**Detection**: User mentions "mission-critical", "safety-critical", "NASA standards", or "high reliability"
 
 ---
 

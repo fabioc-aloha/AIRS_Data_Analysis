@@ -2,8 +2,7 @@
   "$schema": "../SYNAPSE-SCHEMA.json",
   "skillId": "md-to-word",
   "version": "2.2.0",
-  "lastUpdated": "2026-02-21",
-  "inheritance": "inheritable",
+  "lastUpdated": "2026-03-11",
   "connections": [
     {
       "target": ".github/skills/markdown-mermaid/SKILL.md",
@@ -36,7 +35,7 @@
       "reason": "Enables professional document distribution to stakeholders"
     },
     {
-      "target": ".github/skills/writing-publication/SKILL.md",
+      "target": ".github/skills/academic-research/SKILL.md",
       "type": "depends-on",
       "strength": 0.85,
       "reason": "Research documents must follow Word-Compatible Research Writing Style before conversion"

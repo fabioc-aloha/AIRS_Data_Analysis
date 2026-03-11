@@ -1,8 +1,7 @@
 {
   "$schema": "../SYNAPSE-SCHEMA.json",
   "skillId": "vscode-environment",
-  "lastUpdated": "2026-02-21",
-  "inheritance": "inheritable",
+  "lastUpdated": "2026-03-11",
   "connections": [
     {
       "target": ".github/skills/project-scaffolding/SKILL.md",
@@ -29,6 +28,7 @@
       "reason": "launch.json enables debugging"
     }
   ],
+  "schemaVersion": "2.0.0",
   "triggers": [
     "VS Code setup",
     "workspace settings",
@@ -36,6 +36,5 @@
     "launch.json",
     "tasks.json",
     "dev environment"
-  ],
-  "schemaVersion": "2.0.0"
+  ]
 }

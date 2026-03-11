@@ -2,8 +2,7 @@
   "$schema": "../SYNAPSE-SCHEMA.json",
   "skillId": "book-publishing",
   "version": "1.1.0",
-  "lastUpdated": "2026-02-21",
-  "inheritance": "inheritable",
+  "lastUpdated": "2026-03-11",
   "connections": [
     {
       "target": ".github/skills/md-to-word/SKILL.md",
@@ -22,6 +21,20 @@
       "type": "related",
       "strength": 0.5,
       "reason": "Cover art and visual assets for book publishing"
+    },
+    {
+      "target": ".github/skills/dissertation-defense/SKILL.md",
+      "type": "related",
+      "strength": 0.75,
+      "when": "building thesis PDF via Pandoc + XeLaTeX (not LuaLaTeX)",
+      "yields": "APA 7 thesis template, committee metadata, chapter structure"
+    },
+    {
+      "target": ".github/skills/citation-management/SKILL.md",
+      "type": "depends-on",
+      "strength": 0.8,
+      "when": "processing bibliography via citeproc",
+      "yields": "APA 7 citation format, @key syntax rules, bibliography management"
     }
   ],
   "schemaVersion": "2.1.0",

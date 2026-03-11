@@ -1,8 +1,7 @@
 {
   "$schema": "../SYNAPSE-SCHEMA.json",
   "skillId": "learning-psychology",
-  "lastUpdated": "2026-02-21",
-  "inheritance": "inheritable",
+  "lastUpdated": "2026-03-11",
   "connections": [
     {
       "target": ".github/instructions/bootstrap-learning.instructions.md",
@@ -20,6 +19,7 @@
       "strength": 0.8
     }
   ],
+  "schemaVersion": "2.0.0",
   "activationBoost": [
     "teach",
     "learn",
@@ -36,6 +36,5 @@
     "retrieval practice",
     "scaffolding",
     "zone of proximal"
-  ],
-  "schemaVersion": "2.0.0"
+  ]
 }

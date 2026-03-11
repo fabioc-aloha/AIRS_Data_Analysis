@@ -2,8 +2,7 @@
   "$schema": "../SYNAPSE-SCHEMA.json",
   "skillId": "infrastructure-as-code",
   "version": "1.2.0",
-  "lastUpdated": "2026-02-21",
-  "inheritance": "inheritable",
+  "lastUpdated": "2026-03-11",
   "connections": [
     {
       "target": ".github/skills/security-review/SKILL.md",
@@ -55,12 +54,12 @@
     "GitOps",
     "provision infrastructure"
   ],
+  "schemaVersion": "2.0.0",
   "metadata": {
     "category": "devops",
     "complexity": "intermediate",
     "prerequisites": [
       "git-workflow"
     ]
-  },
-  "schemaVersion": "2.0.0"
+  }
 }

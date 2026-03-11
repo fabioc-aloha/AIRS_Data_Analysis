@@ -3,7 +3,6 @@
   "skillId": "frustration-recognition",
   "version": "1.1.0",
   "lastUpdated": "2026-02-10",
-  "inheritance": "inheritable",
   "connections": [],
   "activationContexts": [
     "frustrated",

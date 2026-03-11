@@ -2,8 +2,7 @@
   "$schema": "../SYNAPSE-SCHEMA.json",
   "skillId": "architecture-audit",
   "version": "1.1.0",
-  "lastUpdated": "2026-02-21",
-  "inheritance": "inheritable",
+  "lastUpdated": "2026-03-11",
   "connections": [
     {
       "target": ".github/skills/release-preflight/SKILL.md",
@@ -12,7 +11,7 @@
       "description": "Pre-release audit trigger"
     },
     {
-      "target": ".github/skills/architecture-health/SKILL.md",
+      "target": ".github/skills/brain-qa/SKILL.md",
       "strength": 0.8,
       "type": "complements",
       "description": "Health + consistency validation",
@@ -52,6 +51,7 @@
     }
   ],
   "notes": "Comprehensive project consistency review across code, documentation, diagrams, and configuration",
+  "schemaVersion": "2.0.0",
   "triggers": [
     "audit",
     "comprehensive review",
@@ -60,6 +60,5 @@
     "project health",
     "pre-release audit",
     "documentation review"
-  ],
-  "schemaVersion": "2.0.0"
+  ]
 }

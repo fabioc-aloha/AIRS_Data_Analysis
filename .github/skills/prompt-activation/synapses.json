@@ -1,9 +1,8 @@
 {
   "$schema": "../SYNAPSE-SCHEMA.json",
   "skillId": "prompt-activation",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "lastUpdated": "2026-02-21",
-  "inheritance": "inheritable",
   "connections": [
     {
       "target": ".github/skills/skill-activation/SKILL.md",
@@ -24,7 +23,7 @@
       "note": "Opportunity detection section identifies muscle candidates"
     },
     {
-      "target": ".github/prompts/unified-meditation-protocols.prompt.md",
+      "target": ".github/prompts/meditate.prompt.md",
       "type": "surfaces",
       "strength": 0.9,
       "note": "End-of-session signals trigger meditation workflow recall"

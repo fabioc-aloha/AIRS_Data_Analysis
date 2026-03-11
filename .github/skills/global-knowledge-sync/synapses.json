@@ -1,20 +1,14 @@
 {
   "$schema": "../SYNAPSE-SCHEMA.json",
   "skillId": "global-knowledge-sync",
-  "lastUpdated": "2026-02-21",
-  "inheritance": "universal",
+  "version": "1.1.0",
+  "lastUpdated": "2026-03-11",
   "connections": [
     {
       "target": ".github/skills/global-knowledge/SKILL.md",
       "type": "extends",
       "strength": 0.95,
       "reason": "Sync operations extend core GK search capability"
-    },
-    {
-      "target": ".github/skills/meditation-facilitation/SKILL.md",
-      "type": "triggers",
-      "strength": 0.8,
-      "reason": "Meditation creates insights that sync promotes"
     },
     {
       "target": ".github/skills/meditation/SKILL.md",
@@ -35,12 +29,6 @@
       "reason": "Adds GK sync to dream checklist"
     },
     {
-      "target": ".github/skills/rubber-duck-debugging/SKILL.md",
-      "type": "accelerates",
-      "strength": 0.7,
-      "reason": "Problem Solving starter pattern includes rubber duck method"
-    },
-    {
       "target": ".github/skills/skill-development/SKILL.md",
       "type": "enables",
       "strength": 0.85,
@@ -48,17 +36,15 @@
     }
   ],
   "schemaVersion": "2.0.0",
-  "externalRepository": "fabioc-aloha/Alex-Global-Knowledge",
-  "triggers": [
-    "saveinsight",
-    "save insight",
-    "promote to global",
-    "sync knowledge",
-    "global knowledge sync",
-    "gk sync",
-    "checkskills",
-    "check skills",
-    "pullskill",
-    "pull skill"
+  "when": [
+    "User wants to save an insight to global knowledge",
+    "User searches for cross-project patterns",
+    "Dream protocol reaches GK sync step",
+    "User wants to promote a local skill to GK"
+  ],
+  "yields": [
+    "Insights saved to global knowledge",
+    "Cross-project pattern matches",
+    "Skill sync status reports"
   ]
 }

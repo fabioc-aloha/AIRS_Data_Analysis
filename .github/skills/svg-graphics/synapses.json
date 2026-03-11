@@ -1,8 +1,7 @@
 {
   "$schema": "../SYNAPSE-SCHEMA.json",
   "skillId": "svg-graphics",
-  "lastUpdated": "2026-02-21",
-  "inheritance": "inheritable",
+  "lastUpdated": "2026-03-11",
   "connections": [
     {
       "target": ".github/skills/project-scaffolding/SKILL.md",
@@ -40,6 +39,7 @@
       "yields": "Proportions, natural color palettes, anatomy references"
     }
   ],
+  "schemaVersion": "2.0.0",
   "triggers": [
     "SVG",
     "banner",
@@ -103,6 +103,5 @@
     "optimize SVG",
     "minify SVG",
     "svgo"
-  ],
-  "schemaVersion": "2.0.0"
+  ]
 }

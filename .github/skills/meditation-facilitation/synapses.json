@@ -2,10 +2,9 @@
   "$schema": "../SYNAPSE-SCHEMA.json",
   "skillId": "meditation-facilitation",
   "lastUpdated": "2026-02-21",
-  "inheritance": "inheritable",
   "connections": [
     {
-      "target": ".github/prompts/unified-meditation-protocols.prompt.md",
+      "target": ".github/prompts/meditate.prompt.md",
       "type": "implements",
       "strength": 0.9,
       "reason": "This skill guides meditation prompts"

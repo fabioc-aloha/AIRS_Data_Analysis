@@ -1,8 +1,7 @@
 {
   "$schema": "../SYNAPSE-SCHEMA.json",
   "skillId": "project-deployment",
-  "lastUpdated": "2026-02-21",
-  "inheritance": "inheritable",
+  "lastUpdated": "2026-03-11",
   "connections": [
     {
       "target": ".github/skills/git-workflow/SKILL.md",
@@ -25,6 +24,7 @@
       "strength": 0.85
     }
   ],
+  "schemaVersion": "2.0.0",
   "activationBoost": [
     "deploy",
     "release",
@@ -36,6 +36,5 @@
     "pip install",
     "cargo publish",
     "dotnet publish"
-  ],
-  "schemaVersion": "2.0.0"
+  ]
 }

@@ -1,9 +1,8 @@
 {
   "$schema": "../SYNAPSE-SCHEMA.json",
   "skillId": "vscode-extension-patterns",
-  "version": "1.5.0",
-  "lastUpdated": "2026-02-21",
-  "inheritance": "heir:vscode",
+  "version": "1.6.0",
+  "lastUpdated": "2026-03-11",
   "connections": [
     {
       "target": ".github/instructions/release-management.instructions.md",
@@ -39,7 +38,6 @@
       "target": ".github/skills/ui-ux-design/SKILL.md",
       "type": "implements",
       "strength": 0.75,
-      "bidirectional": true,
       "reason": "Webview UI patterns must follow accessibility standards"
     },
     {
@@ -53,6 +51,17 @@
       "type": "coordinates-with",
       "strength": 0.7,
       "reason": "SecretStorage API, VSCE secret scanner avoidance during packaging"
+    },
+    {
+      "target": ".github/skills/refactoring-patterns/SKILL.md",
+      "type": "uses",
+      "strength": 0.8,
+      "reason": "Webview decomposition (tab extraction, CSS extraction, client JS extraction) proven in Command Center optimization"
+    },
+    {
+      "target": ".github/skills/localization/SKILL.md",
+      "type": "applied-by",
+      "strength": 0.7
     }
   ],
   "activationContexts": [
@@ -68,7 +77,14 @@
     "CSP Content-Security-Policy",
     "telemetry opt-out compliance",
     "onDidChangeConfiguration listener",
-    "VS Code 1.109+ chat settings",
+    "VS Code 1.110+ chat settings",
+    "VS Code 1.111 agent-scoped hooks",
+    "autopilot permissions",
+    "debug events snapshot",
+    "chat.useCustomAgentHooks",
+    "chat.autopilot.enabled",
+    "thinking phrases configuration",
+    "setupEnvironment setting tiers",
     "initialize/upgrade automation",
     "temporal dead zone TDZ debugging",
     "production build errors",
@@ -81,7 +97,7 @@
     "cognitive state switching"
   ],
   "schemaVersion": "1.0",
-  "lastValidated": "2026-02-15",
+  "lastValidated": "2026-03-09",
   "triggers": [
     "extension",
     "VS Code API",
@@ -141,6 +157,11 @@
     "extension manifest",
     "package.json contributes",
     "VS Code 1.109",
+    "VS Code 1.111",
+    "agent-scoped hooks",
+    "autopilot",
+    "task_complete",
+    "debugEventsSnapshot",
     "chat settings",
     "Copilot extension",
     "rebuild extension",

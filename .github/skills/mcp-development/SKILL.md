@@ -1,16 +1,17 @@
 ---
 name: "MCP Development Skill"
 description: "**Domain**: AI Infrastructure"
+user-invokable: false
 ---
 
 # MCP Development Skill
 
 > **Domain**: AI Infrastructure
 > **Inheritance**: inheritable
-> **Version**: 1.1.0
-> **Last Updated**: 2026-02-19
+> **Version**: 1.2.0
+> **Last Updated**: 2026-03-10
 
-> ⚠️ **Staleness Watch**: MCP spec is actively versioned. Streamable HTTP replaced HTTP+SSE for remote servers (spec 2025-03-26). Check [MCP Changelog](https://modelcontextprotocol.io/changelog) when advising on transport selection.
+> ⚠️ **Staleness Watch**: MCP spec and SDK are actively versioned. **SDK moved from 1.0.0 → 1.27.1** with 3 security fixes: cross-client data leak in shared instances (GHSA-345p-7cg4-v4c7), ReDoS (v1.25.2), command injection prevention (v1.27.1). New SDK features: task types, elicitation streaming, OAuth discovery/caching, fetch transport, conformance testing, framework-agnostic server refactoring. Streamable HTTP replaced HTTP+SSE for remote servers (spec 2025-03-26). Check [MCP Changelog](https://modelcontextprotocol.io/changelog) and [SDK Releases](https://github.com/modelcontextprotocol/typescript-sdk/releases) when advising on transport or SDK usage.
 
 ---
 

@@ -1,18 +1,15 @@
 {
   "$schema": "../SYNAPSE-SCHEMA.json",
   "skillId": "api-documentation",
-  "lastUpdated": "2026-02-21",
-  "inheritance": "inheritable",
+  "lastUpdated": "2026-03-11",
   "connections": [
     {
-      "bidirectional": true,
       "reason": "Documentation project structure and templates",
       "type": "extends",
       "strength": 0.85,
       "target": ".github/skills/project-scaffolding/SKILL.md"
     },
     {
-      "bidirectional": true,
       "reason": "Documented code is quality code",
       "type": "complements",
       "strength": 0.8,
@@ -37,6 +34,7 @@
       "target": ".github/skills/lint-clean-markdown/SKILL.md"
     }
   ],
+  "schemaVersion": "2.0.0",
   "triggers": [
     "documentation",
     "docs",
@@ -48,6 +46,5 @@
     "technical writing",
     "openapi",
     "swagger"
-  ],
-  "schemaVersion": "2.0.0"
+  ]
 }

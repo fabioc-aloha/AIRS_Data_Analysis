@@ -1,11 +1,10 @@
 {
   "$schema": "../SYNAPSE-SCHEMA.json",
   "skillId": "markdown-mermaid",
-  "lastUpdated": "2026-02-21",
-  "inheritance": "inheritable",
+  "lastUpdated": "2026-03-11",
   "connections": [
     {
-      "target": ".github/skills/writing-publication/SKILL.md",
+      "target": ".github/skills/academic-research/SKILL.md",
       "type": "supports",
       "strength": 0.85,
       "reason": "Diagrams enhance publications"
@@ -33,8 +32,19 @@
       "type": "validates",
       "strength": 0.6,
       "reason": "RCA methodology systematically identifies parser-specific pitfalls across diagram types"
+    },
+    {
+      "target": ".github/skills/ascii-art-alignment/SKILL.md",
+      "type": "complements",
+      "strength": 0.9
+    },
+    {
+      "target": ".github/skills/gamma-presentations/SKILL.md",
+      "type": "complements",
+      "strength": 0.7
     }
   ],
+  "schemaVersion": "2.0.0",
   "activationBoost": [
     "broken emoji",
     "unicode escape",
@@ -116,6 +126,5 @@
     "git graph",
     "pie chart",
     "block diagram"
-  ],
-  "schemaVersion": "2.0.0"
+  ]
 }

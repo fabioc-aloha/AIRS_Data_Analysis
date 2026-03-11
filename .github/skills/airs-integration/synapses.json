@@ -1,9 +1,8 @@
 {
   "$schema": "../SYNAPSE-SCHEMA.json",
   "skillId": "airs-integration",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "lastUpdated": "2026-02-21",
-  "inheritance": "inheritable",
   "connections": [],
   "activationContexts": [
     {
@@ -47,7 +46,7 @@
     {
       "id": "AIRS-INT-002",
       "source": "airs-integration",
-      "target": ".github/skills/cognitive-load-management/SKILL.md",
+      "target": ".github/skills/cognitive-load/SKILL.md",
       "type": "informs",
       "strength": 0.7,
       "description": "Reliance calibration overlaps with cognitive load - over-reliance may indicate overload",
@@ -92,7 +91,7 @@
     {
       "id": "AIRS-INT-007",
       "source": "airs-integration.module-b",
-      "target": ".github/skills/meta-cognitive-awareness/SKILL.md",
+      "target": ".github/skills/awareness/SKILL.md",
       "type": "implements",
       "strength": 0.9,
       "description": "Session calibration is meta-cognitive self-monitoring in action",

@@ -1,8 +1,7 @@
 {
   "$schema": "../SYNAPSE-SCHEMA.json",
   "skillId": "business-analysis",
-  "lastUpdated": "2026-02-21",
-  "inheritance": "inheritable",
+  "lastUpdated": "2026-03-11",
   "connections": [
     {
       "reason": "Requirements feed project scope and planning",
@@ -38,9 +37,10 @@
       "reason": "Clear documentation and requirements writing",
       "type": "uses",
       "strength": 0.4,
-      "target": ".github/skills/writing-publication/SKILL.md"
+      "target": ".github/skills/academic-research/SKILL.md"
     }
   ],
+  "schemaVersion": "2.0.0",
   "triggers": [
     "requirements",
     "stakeholder",
@@ -50,6 +50,5 @@
     "process mapping",
     "gap analysis",
     "scope"
-  ],
-  "schemaVersion": "2.0.0"
+  ]
 }

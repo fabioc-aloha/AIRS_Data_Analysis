@@ -2,8 +2,7 @@
   "$schema": "../SYNAPSE-SCHEMA.json",
   "skillId": "ai-character-reference-generation",
   "version": "1.2.0",
-  "lastUpdated": "2026-02-21",
-  "inheritance": "inheritable",
+  "lastUpdated": "2026-03-11",
   "connections": [
     {
       "target": ".github/skills/ai-generated-readme-banners/SKILL.md",
@@ -16,6 +15,18 @@
       "type": "requires",
       "strength": 0.9,
       "note": "Character consistency requires detailed prompt engineering"
+    },
+    {
+      "target": ".github/skills/visual-memory/SKILL.md",
+      "type": "consumes",
+      "strength": 0.9,
+      "note": "Face reference photos stored in visual-memory.json for cross-session character consistency"
+    },
+    {
+      "target": ".github/skills/image-handling/SKILL.md",
+      "type": "uses",
+      "strength": 0.85,
+      "note": "Model selection guide, face reference API patterns (image_input, input_images), video animation"
     }
   ],
   "schemaVersion": "2.1.0",

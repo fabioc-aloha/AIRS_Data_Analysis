@@ -1,9 +1,14 @@
 {
   "$schema": "../SYNAPSE-SCHEMA.json",
   "skillId": "ui-ux-design",
-  "lastUpdated": "2026-02-21",
-  "inheritance": "inheritable",
+  "lastUpdated": "2026-03-11",
   "connections": [
+    {
+      "target": ".github/skills/correax-brand/SKILL.md",
+      "type": "coordinates-with",
+      "strength": 0.8,
+      "reason": "CorreaX design tokens provide the color system, typography, and component patterns for all UI decisions"
+    },
     {
       "target": ".github/skills/code-review/SKILL.md",
       "type": "integrates",
@@ -33,8 +38,15 @@
       "type": "validates",
       "strength": 0.5,
       "reason": "Diagram accessibility (alt text, semantic structure)"
+    },
+    {
+      "target": ".github/instructions/ui-ux-design.instructions.md",
+      "type": "implements",
+      "strength": 0.95,
+      "reason": "Instruction file contains proven UI Audit Procedure (three-pass: compliance + content + cross-tab consistency) and design system enforcement rules"
     }
   ],
+  "schemaVersion": "2.0.0",
   "triggers": [
     "accessibility",
     "WCAG",
@@ -104,6 +116,5 @@
     "light mode",
     "theme",
     "color scheme"
-  ],
-  "schemaVersion": "2.0.0"
+  ]
 }

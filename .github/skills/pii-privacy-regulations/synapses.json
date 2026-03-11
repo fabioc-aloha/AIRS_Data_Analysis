@@ -1,21 +1,18 @@
 {
   "$schema": "../SYNAPSE-SCHEMA.json",
   "skillId": "pii-privacy-regulations",
-  "lastUpdated": "2026-02-21",
-  "inheritance": "inheritable",
+  "lastUpdated": "2026-03-11",
   "connections": [
     {
       "target": ".github/skills/privacy-responsible-ai/SKILL.md",
       "type": "extends",
       "strength": 0.9,
-      "bidirectional": true,
       "reason": "Deep dive into regulatory compliance aspects"
     },
     {
       "target": ".github/skills/security-review/SKILL.md",
       "type": "complements",
       "strength": 0.75,
-      "bidirectional": true,
       "reason": "Security enables privacy compliance"
     },
     {
@@ -43,6 +40,7 @@
       "reason": "Privacy by design architectural patterns"
     }
   ],
+  "schemaVersion": "2.0.0",
   "triggers": [
     "PII",
     "personal data",
@@ -65,6 +63,5 @@
     "retention policy",
     "DPO",
     "DPIA"
-  ],
-  "schemaVersion": "2.0.0"
+  ]
 }

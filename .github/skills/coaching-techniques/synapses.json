@@ -1,17 +1,16 @@
 {
   "$schema": "../SYNAPSE-SCHEMA.json",
   "skillId": "coaching-techniques",
-  "lastUpdated": "2026-02-21",
-  "inheritance": "inheritable",
+  "lastUpdated": "2026-03-11",
   "connections": [],
   "schemaVersion": "2.1.0",
   "synapses": [
     {
       "id": "coaching-stakeholder-001",
       "type": "complements",
-      "target": ".github/skills/stakeholder-management/SKILL.md",
-      "strength": 0.85,
-      "description": "Coaching skills enhance stakeholder relationship building and influence"
+      "target": ".github/skills/change-management/SKILL.md",
+      "strength": 0.8,
+      "description": "Coaching skills enhance change management and influence"
     },
     {
       "id": "coaching-frustration-002",
@@ -30,9 +29,9 @@
     {
       "id": "coaching-meeting-004",
       "type": "complements",
-      "target": ".github/skills/meeting-efficiency/SKILL.md",
-      "strength": 0.7,
-      "description": "Coaching skills improve 1:1 meeting effectiveness"
+      "target": ".github/skills/deep-work-optimization/SKILL.md",
+      "strength": 0.65,
+      "description": "Coaching skills improve 1:1 session effectiveness"
     }
   ],
   "lastValidated": "2026-02-10",

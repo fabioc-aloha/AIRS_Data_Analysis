@@ -218,21 +218,13 @@ AIRS_Data_Analysis/
 │   ├── references/           # Bibliography (93 refs) + CSL
 │   ├── output/               # Generated PDF + Mermaid diagrams
 │   └── build.ps1             # PowerShell build script
-├── thesis/                   # Legacy thesis folder (archived)
-├── defense/                  # Defense presentations (PowerPoint, PDF)
+├── defense/                  # Final defense presentations (PPTX, PDF)
 ├── research/                 # Literature, IRB, and industry sources
-│   ├── AIRS literatyre review.md        # Theoretical foundation
-│   ├── Bridging the AI Adoption Gap...  # Industry benchmarks
-│   ├── Meta-Analysis of UTAUT...        # Blut et al. 2022
-│   └── Venkatesh_AOR_2021.md            # AI-UTAUT research agenda
-├── docs/                     # Documentation
-│   ├── planning/             # Analysis planning documents
-│   └── field-deployment/     # AIRS field deployment materials
-├── domain-knowledge/         # Research methodology knowledge base
-├── data/                     # Raw data files
-├── post-thesis/              # Post-defense extensions
-├── archive/                  # Historical versions and drafts
-└── scripts/                  # Utility scripts
+├── docs/                     # Documentation, planning, field deployment
+├── domain-knowledge/         # Legacy research methodology knowledge base
+├── data/                     # Raw source data (Qualtrics export, instrument metadata)
+├── assets/                   # SVG graphics (banner, infographic)
+└── airs_archive/             # Consolidated archive (legacy thesis, old scripts, outdated data)
 ```
 
 ---

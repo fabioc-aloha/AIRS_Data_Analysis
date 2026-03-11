@@ -1,8 +1,7 @@
 {
   "$schema": "../SYNAPSE-SCHEMA.json",
   "skillId": "llm-model-selection",
-  "lastUpdated": "2026-02-21",
-  "inheritance": "inheritable",
+  "lastUpdated": "2026-03-11",
   "connections": [
     {
       "target": ".github/skills/appropriate-reliance/SKILL.md",
@@ -28,6 +27,7 @@
       "note": "Deep meditation requires frontier model cognition"
     }
   ],
+  "schemaVersion": "2.0.0",
   "activationBoost": [
     "model",
     "llm",
@@ -52,6 +52,5 @@
     "prompt engineering",
     "wrong model",
     "model warning"
-  ],
-  "schemaVersion": "2.0.0"
+  ]
 }

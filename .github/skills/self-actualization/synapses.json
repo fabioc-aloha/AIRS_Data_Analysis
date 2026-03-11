@@ -1,17 +1,28 @@
 {
   "$schema": "../SYNAPSE-SCHEMA.json",
   "skillId": "self-actualization",
-  "lastUpdated": "2026-02-21",
-  "inheritance": "inheritable",
+  "lastUpdated": "2026-03-11",
   "connections": [
     {
-      "target": ".github/skills/architecture-health/SKILL.md",
+      "target": ".github/instructions/self-actualization.instructions.md",
+      "type": "implements",
+      "strength": 0.95,
+      "reason": "Trifecta sibling: procedural self-actualization protocol"
+    },
+    {
+      "target": ".github/prompts/selfactualize.prompt.md",
+      "type": "activates",
+      "strength": 0.95,
+      "reason": "Trifecta sibling: /selfactualize interactive workflow"
+    },
+    {
+      "target": ".github/skills/brain-qa/SKILL.md",
       "type": "requires",
       "strength": 0.9,
       "reason": "Health check first"
     },
     {
-      "target": ".github/skills/meditation-facilitation/SKILL.md",
+      "target": ".github/skills/meditation/SKILL.md",
       "type": "extends",
       "strength": 0.8,
       "reason": "Deeper than meditation"
@@ -29,6 +40,7 @@
       "reason": "Deep insights synthesized"
     }
   ],
+  "schemaVersion": "2.0.0",
   "triggers": [
     "self-actualize",
     "deep meditation",
@@ -70,6 +82,5 @@
     "growth metrics",
     "learning progress",
     "capability growth"
-  ],
-  "schemaVersion": "2.0.0"
+  ]
 }

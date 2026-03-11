@@ -1,8 +1,7 @@
 {
   "$schema": "../SYNAPSE-SCHEMA.json",
   "skillId": "work-life-balance",
-  "lastUpdated": "2026-02-21",
-  "inheritance": "inheritable",
+  "lastUpdated": "2026-03-11",
   "connections": [
     {
       "target": ".github/skills/cognitive-load/SKILL.md",
@@ -27,8 +26,14 @@
       "type": "applies",
       "strength": 0.7,
       "reason": "Sustainable learning requires rest"
+    },
+    {
+      "target": ".github/skills/cross-cultural-collaboration/SKILL.md",
+      "type": "applied-by",
+      "strength": 0.8
     }
   ],
+  "schemaVersion": "2.0.0",
   "triggers": [
     "tired",
     "exhausted",
@@ -44,6 +49,5 @@
     "focus session",
     "streak",
     "goal"
-  ],
-  "schemaVersion": "2.0.0"
+  ]
 }

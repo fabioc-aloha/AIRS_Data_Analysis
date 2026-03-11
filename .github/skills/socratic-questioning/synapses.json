@@ -2,8 +2,7 @@
   "$schema": "../SYNAPSE-SCHEMA.json",
   "skillId": "socratic-questioning",
   "version": "1.2.0",
-  "lastUpdated": "2026-02-21",
-  "inheritance": "inheritable",
+  "lastUpdated": "2026-03-11",
   "connections": [
     {
       "target": ".github/skills/learning-psychology/SKILL.md",
@@ -30,7 +29,7 @@
       "description": "Must balance questioning with cognitive load"
     },
     {
-      "target": ".github/skills/meditation-facilitation/SKILL.md",
+      "target": ".github/skills/meditation/SKILL.md",
       "type": "Relates",
       "strength": 0.7,
       "description": "Both guide self-discovery"

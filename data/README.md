@@ -1,15 +1,24 @@
 # Data Directory
 
-Survey data for the AIRS (AI Readiness Scale) dissertation research.
+Raw source data for the AIRS (AI Readiness Scale) dissertation research.
+
+> **Source of truth** for cleaned analysis data is `airs_experiment/data/AIRS_clean.csv` (N=523, 41 columns). Files here are raw inputs consumed by `airs_experiment/00_Create_Split_Samples.ipynb`.
 
 ## Current Files
 
 | File | Description |
 |------|-------------|
-| `AIRS_clean.csv` | Cleaned survey data (N=523) |
-| `airs_28item_complete.json` | Original 28-item instrument with metadata |
-| `AIRS---AI-Readiness-Scale-labels.csv` | Variable labels and response options |
-| `CentimentTables.md` | Centiment platform data documentation |
+| `AIRS---AI-Readiness-Scale-labels.csv` | Raw Qualtrics export with variable labels (read by NB00) |
+| `airs_28item_complete.json` | Original 28-item instrument metadata (read by NB01, NB02) |
+
+## Archived Files
+
+Outdated files moved to `airs_archive/` on 2026-03-11:
+
+| File | Reason |
+|------|--------|
+| `AIRS_clean.csv` | Superseded — earlier processing pass (511 rows, 45 cols) vs canonical (523 rows, 41 cols) |
+| `CentimentTables.md` | Early Centiment platform export from N=218 pilot collection |
 
 ## Sample Overview
 

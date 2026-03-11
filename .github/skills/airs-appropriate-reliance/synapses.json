@@ -1,8 +1,7 @@
 {
   "$schema": "../SYNAPSE-SCHEMA.json",
   "skillId": "airs-appropriate-reliance",
-  "lastUpdated": "2026-02-21",
-  "inheritance": "inheritable",
+  "lastUpdated": "2026-03-11",
   "connections": [
     {
       "target": ".github/skills/appropriate-reliance/SKILL.md",
@@ -31,6 +30,7 @@
       "note": "Hypothesis testing via behavioral measurement"
     }
   ],
+  "schemaVersion": "2.0.0",
   "activationBoost": [
     "AIRS",
     "AIRS-16",
@@ -48,6 +48,5 @@
     "over-reliance",
     "under-reliance",
     "behavioral intention"
-  ],
-  "schemaVersion": "2.0.0"
+  ]
 }

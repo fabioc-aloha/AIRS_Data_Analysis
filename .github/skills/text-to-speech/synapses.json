@@ -4,7 +4,6 @@
   "skillId": "text-to-speech",
   "version": "2.5.0",
   "lastUpdated": "2026-02-09",
-  "inheritance": "inheritable",
   "promotionReady": true,
   "promotionNotes": "v2.5.0: speakPrompt command, voice mode summarization, keyboard shortcuts, CSP-compliant webview, 35 unit tests",
   "connections": [
@@ -28,13 +27,6 @@
       "strength": 0.9,
       "when": "Audio reading research papers",
       "yields": "Summarization option for long documents"
-    },
-    {
-      "target": ".github/skills/writing-publication/SKILL.md",
-      "type": "complements",
-      "strength": 0.7,
-      "when": "Proofreading written content",
-      "yields": "Listening catches errors eyes miss"
     },
     {
       "target": ".github/skills/meditation/SKILL.md",
@@ -77,6 +69,13 @@
       "strength": 0.3,
       "when": "TTS hotfix release",
       "yields": "PAT-based publishing protocol"
+    },
+    {
+      "target": ".github/skills/image-handling/SKILL.md",
+      "type": "complements",
+      "strength": 0.7,
+      "when": "Cloud TTS via Replicate for video narration, audiobooks, or content creation",
+      "yields": "Replicate TTS model catalog (speech-turbo, chatterbox-turbo, qwen-tts), voice cloning patterns"
     }
   ],
   "activationContexts": [
@@ -133,7 +132,17 @@
     "read prompt",
     "speak prompt response",
     "proofread by ear",
-    "audio proofreading"
+    "audio proofreading",
+    "voice cloning",
+    "clone voice",
+    "chatterbox",
+    "chatterbox turbo",
+    "qwen tts",
+    "speech turbo",
+    "replicate tts",
+    "cloud tts",
+    "voice design",
+    "emotion control"
   ],
   "metadata": {
     "created": "2026-02-05",

@@ -2,8 +2,7 @@
   "$schema": "../SYNAPSE-SCHEMA.json",
   "skillId": "multi-agent-orchestration",
   "version": "1.1.0",
-  "lastUpdated": "2026-02-21",
-  "inheritance": "inheritable",
+  "lastUpdated": "2026-03-11",
   "connections": [
     {
       "target": ".github/skills/appropriate-reliance/SKILL.md",
@@ -18,7 +17,7 @@
       "note": "Effective delegation requires well-crafted prompts"
     },
     {
-      "target": ".github/skills/skill-activation/SKILL.md",
+      "target": ".github/skills/memory-activation/SKILL.md",
       "type": "supports",
       "strength": 0.8,
       "note": "SSO is a form of self-orchestration"
@@ -45,8 +44,7 @@
       "target": ".github/skills/foundry-agent-platform/SKILL.md",
       "type": "implements",
       "strength": 0.9,
-      "note": "Foundry provides cloud-native multi-agent orchestration with A2A and Agent Service",
-      "bidirectional": true
+      "note": "Foundry provides cloud-native multi-agent orchestration with A2A and Agent Service"
     }
   ],
   "schemaVersion": "2.1.0",

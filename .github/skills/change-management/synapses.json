@@ -1,11 +1,9 @@
 {
   "$schema": "../SYNAPSE-SCHEMA.json",
   "skillId": "change-management",
-  "lastUpdated": "2026-02-21",
-  "inheritance": "inheritable",
+  "lastUpdated": "2026-03-11",
   "connections": [
     {
-      "bidirectional": true,
       "reason": "Change management within project delivery",
       "type": "complements",
       "strength": 0.85,
@@ -36,6 +34,7 @@
       "target": ".github/skills/cognitive-load/SKILL.md"
     }
   ],
+  "schemaVersion": "2.0.0",
   "triggers": [
     "change",
     "adoption",
@@ -45,6 +44,5 @@
     "training",
     "transition",
     "rollout"
-  ],
-  "schemaVersion": "2.0.0"
+  ]
 }
