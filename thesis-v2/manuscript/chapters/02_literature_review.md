@@ -79,7 +79,7 @@ flowchart TD
     end
 
     subgraph "2020s"
-        AIRS["AIRS Extended Model<br/>(Present Study)<br/>R² = .85"]
+        AIRS["AIRS Extended Model<br/>(Present Study)<br/>R² = .90"]
     end
 
     TRA --> TPB
@@ -92,7 +92,7 @@ flowchart TD
     style AIRS fill:#e1f5fe,stroke:#0288d1,stroke-width:2px
 ```
 
-: Figure 2.1: Evolution of Technology Acceptance Models from TRA (1975) through UTAUT2 (2012) to the AIRS extension (this study). *Source: Compiled by Author* {#fig:tam-evolution}
+: Evolution of Technology Acceptance Models from TRA (1975) through UTAUT2 (2012) to the AIRS extension (this study). *Source: Compiled by Author* {#fig:tam-evolution}
 
 
 ## 2.3 The AI Adoption-Value Gap: Industry Context
@@ -220,7 +220,7 @@ flowchart LR
     style EXP fill:#d0bfff,stroke:#7950f2,stroke-width:2px
 ```
 
-: Figure 2.2: AIRS Conceptual Model showing Extended UTAUT2 framework for AI Adoption with AI Trust extension. *Source: Compiled by Author* {#fig:airs-conceptual-model}
+: AIRS Conceptual Model showing Extended UTAUT2 framework for AI Adoption with AI Trust extension. *Source: Compiled by Author* {#fig:airs-conceptual-model}
 
 *Note: AI Anxiety was initially proposed as an inhibitor construct (H8) but was excluded from the final model due to inadequate reliability (α = .301). See Chapter 4 for details.*
 
@@ -242,7 +242,7 @@ Importantly, anxiety effects may be nonlinear with exposure. Several studies obs
 
 ### 2.6.3 Anxiety in the Present Research
 
-The present research incorporates **AI Anxiety** as an inhibitor construct extending UTAUT2. AI Anxiety is operationalized as affective unease about AI autonomy, opacity, and potential negative consequences. This construct is expected to negatively predict behavioral intention and may moderate the effects of positive predictors, particularly for users with limited AI experience.
+The present research initially proposed **AI Anxiety** as an inhibitor construct extending UTAUT2, operationalized as affective unease about AI autonomy, opacity, and potential negative consequences. This construct was expected to negatively predict behavioral intention and may moderate the effects of positive predictors, particularly for users with limited AI experience. However, empirical analysis revealed inadequate reliability for the two-item AI Anxiety scale (α = .301), preventing formal hypothesis testing. The measurement challenge and its implications for future research are discussed in Chapter 4 (§4.2) and Chapter 5 (§5.6.2).
 
 
 
@@ -254,7 +254,7 @@ The literature review reveals several gaps that the present research addresses:
 
 **Gap 2: Integration of Enablers and Inhibitors**. Prior research tends to study AI-specific constructs in isolation. Few studies simultaneously model trust and anxiety as enabler and inhibitor within an integrated UTAUT2 framework. The present research tests an integrative model where AI Trust operates as an enabler and AI Anxiety as an inhibitor alongside traditional UTAUT2 predictors.
 
-**Gap 3: Cross-Population Validation**. Most AI adoption studies examine single populations, limiting generalizability claims. Whether adoption dynamics differ between student and professional populations, groups with potentially different AI exposure, organizational contexts, and role relationships, remains unexamined. The present research addresses this gap through multi-group analysis across student and professional samples.
+**Gap 3: Cross-Population Validation**. Most AI adoption studies examine single populations, limiting generalizability claims. Whether adoption dynamics differ between academic and professional populations, groups with potentially different AI exposure, organizational contexts, and role relationships, remains unexamined. The present research addresses this gap through multi-group analysis across academic and professional samples.
 
 **Gap 4: Experience as Moderator**. While UTAUT specifies experience as a moderator of traditional predictors, the moderating role of AI experience on AI-specific constructs is unexplored. Given theoretical arguments that anxiety decreases with calibrated exposure, experience moderation is particularly relevant for AI adoption. The present research tests experience moderation across both traditional and AI-specific paths.
 
@@ -327,7 +327,7 @@ Based on the meta-analytic evidence reviewed above, the following hypotheses ref
 
 **H4 (Role Group Moderation)**: Role group (Academic vs. Professional+Leader) moderates UTAUT2 path coefficients.
 
-*Rationale*: Students and working professionals operate in different organizational contexts with distinct resource availability, social pressure patterns, and technology access, which may differentially affect adoption determinants.
+*Rationale*: Academic and professional participants operate in different organizational contexts with distinct resource availability, social pressure patterns, and technology access, which may differentially affect adoption determinants.
 
 ### 2.8.5 Behavioral Validation Hypotheses
 
@@ -337,7 +337,7 @@ Based on the meta-analytic evidence reviewed above, the following hypotheses ref
 
 **H6 (Role Group Usage Differences)**: Role groups differ significantly in AI tool usage patterns.
 
-*Rationale*: Professionals with greater workplace technology demands and resources may exhibit different AI tool usage patterns than students.
+*Rationale*: Professionals with greater workplace technology demands and resources may exhibit different AI tool usage patterns than academic participants.
 
 ```mermaid
 %%{init: {'theme': 'base', 'themeVariables': {'edgeLabelBackground': '#ffffff'}}}%%
@@ -372,7 +372,7 @@ flowchart LR
     style Validation fill:#ffec99,stroke:#fab005
 ```
 
-: Figure 2.3: Research Hypotheses Summary showing UTAUT2 core constructs, AI-specific extension, moderation hypotheses, and behavioral validation. *Source: Compiled by Author* {#fig:hypotheses-summary}
+: Research Hypotheses Summary showing UTAUT2 core constructs, AI-specific extension, moderation hypotheses, and behavioral validation. *Source: Compiled by Author* {#fig:hypotheses-summary}
 
 
 ## 2.9 Chapter Summary
@@ -383,7 +383,7 @@ First, it traced the evolution of technology acceptance research from foundation
 
 Second, it contextualized the theoretical discussion within the contemporary AI adoption-value gap, using industry benchmarks to demonstrate that traditional acceptance frameworks incompletely explain why 88% organizational adoption yields only 5–6% value realization at enterprise scale. This gap motivates investigation of factors beyond traditional constructs.
 
-Third, it examined AI's distinctive characteristics (opacity, probabilistic behavior, ethical exposure, and human role transformation) that stress traditional acceptance models. These characteristics justify the incorporation of AI Trust as an enabler and AI Anxiety as an inhibitor within an extended UTAUT2 framework.
+Third, it examined AI's distinctive characteristics (opacity, probabilistic behavior, ethical exposure, and human role transformation) that stress traditional acceptance models. These characteristics justify the incorporation of AI Trust as an enabler within an extended UTAUT2 framework. AI Anxiety was proposed as an inhibitor but was excluded from the final model due to inadequate reliability (α = .301); its theoretical importance and measurement challenges are discussed in Chapters 4 and 5.
 
 Fourth, it articulated the research hypotheses tested in subsequent chapters, specifying both traditional UTAUT2 relationships and AI-specific extensions with experience moderation.
 

@@ -192,6 +192,17 @@ function Build-MermaidDiagrams {
             $fileIndex++
         }
         
+        # Integrate orphaned Pandoc captions (: text {#fig:label}) into LaTeX figure environments
+        $captionFixPattern = '(\\begin\{figure\}\[H\]\s*\\centering\s*\\includegraphics\[[^\]]*\]\{[^}]*\})\s*\\end\{figure\}\s*\r?\n+\s*:\s*(.+?)\s*\{#fig:([\w-]+)\}'
+        $content = [regex]::Replace($content, $captionFixPattern, {
+                param($m)
+                $figBody = $m.Groups[1].Value
+                $capText = $m.Groups[2].Value.Trim()
+                $capText = [regex]::Replace($capText, '\*([^*]+)\*', '\textit{$1}')
+                $figLabel = $m.Groups[3].Value
+                "$figBody`n\caption{$capText}`n\label{fig:$figLabel}`n\end{figure}`n"
+            })
+        
         # Write modified content to build copy only
         Set-Content $mdFile.FullName -Value $content -NoNewline -Encoding UTF8
     }
@@ -284,6 +295,12 @@ function Build-Pdf {
         '\renewcommand{\cftsubsecafterpnum}{\vskip 2pt}',
         '\AtBeginDocument{\addtocontents{toc}{\protect\setstretch{1.25}}}',
         
+        # === Suppress auto-generated section numbers in TOC (markdown has manual numbers) ===
+        '\setlength{\cftsecnumwidth}{0pt}',
+        '\setlength{\cftsubsecnumwidth}{0pt}',
+        '\setlength{\cftsubsubsecnumwidth}{0pt}',
+        '\AtBeginDocument{\addtocontents{toc}{\protect\renewcommand{\protect\numberline}[1]{}}}',
+        
         # === Front matter uses roman numerals ===
         '\pagenumbering{roman}',
         
@@ -302,14 +319,17 @@ function Build-Pdf {
         # Format: "Table X." bold, title italic
         '\captionsetup[table]{labelsep=period,position=above,skip=10pt,font={normalsize},labelfont={bf},textfont={it}}',
         
-        # === APA 7 Heading Styles ===
+        # === Chapter-relative numbering for tables and figures ===
+        '\counterwithin{table}{section}',
+        '\counterwithin{figure}{section}',
+        
+        # === Enable section counter (needed for \counterwithin table/figure numbering) ===
+        # Pandoc default secnumdepth=-maxdimen prevents counter increment with titlesec
+        # Markdown headings already have manual numbers, so titleformat labels are empty
+        '\setcounter{secnumdepth}{3}',
+        
+        # === APA 7 Heading Styles (titleformat defined below with pagination controls) ===
         '\usepackage{titlesec}',
-        # Level 1: Centered, Bold (Chapter)
-        '\titleformat{\section}{\normalfont\Large\bfseries\centering}{Chapter \thesection:}{0.5em}{}',
-        # Level 2: Left-aligned, Bold
-        '\titleformat{\subsection}{\normalfont\large\bfseries}{\thesubsection}{1em}{}',
-        # Level 3: Left-aligned, Bold, Italic
-        '\titleformat{\subsubsection}{\normalfont\normalsize\bfseries\itshape}{\thesubsubsection}{1em}{}',
         
         # === Table formatting ===
         '\AtBeginEnvironment{longtable}{\footnotesize\singlespacing}',
@@ -325,20 +345,18 @@ function Build-Pdf {
         '\AtBeginEnvironment{longtable}{\FloatBarrier}',
         '\AtEndEnvironment{longtable}{\FloatBarrier}',
         
-        # === Smart pagination: keep headings with following content ===
-        # Use titlesec for proper heading pagination control
-        '\usepackage{titlesec}',
+        # === APA heading spacing ===
         '\titlespacing*{\section}{0pt}{12pt plus 4pt minus 2pt}{6pt plus 2pt minus 2pt}',
         '\titlespacing*{\subsection}{0pt}{10pt plus 4pt minus 2pt}{4pt plus 2pt minus 2pt}',
         '\titlespacing*{\subsubsection}{0pt}{8pt plus 4pt minus 2pt}{4pt plus 2pt minus 2pt}',
-        # Set penalties to strongly discourage breaks after headings
+        # Ensure @afterheading prevents page breaks before first paragraph after heading
         '\makeatletter',
         '\renewcommand{\@afterheading}{\@nobreaktrue\everypar{\@nobreakfalse\everypar{}}}',
         '\makeatother',
-        # Require minimum space for heading + at least 2 lines of content
-        '\pretocmd{\section}{\needspace{4\baselineskip}}{}{}',
-        '\pretocmd{\subsection}{\needspace{3\baselineskip}}{}{}',
-        '\pretocmd{\subsubsection}{\needspace{3\baselineskip}}{}{}',
+        # APA heading formats (visual only — pagination handled by Lua filter keep-headings.lua)
+        '\titleformat{\section}[block]{\normalfont\Large\bfseries\centering}{}{0em}{}',
+        '\titleformat{\subsection}[block]{\normalfont\large\bfseries}{}{0em}{}',
+        '\titleformat{\subsubsection}[block]{\normalfont\normalsize\bfseries\itshape}{}{0em}{}',
         
         # === Keep lists with preceding paragraph (for inline bold headings) ===
         '\AtBeginEnvironment{itemize}{\needspace{2\baselineskip}}',
@@ -352,6 +370,7 @@ function Build-Pdf {
         '--from=markdown+raw_tex+table_captions+implicit_figures+yaml_metadata_block'
         "--pdf-engine=$script:PdfEngine"
         "--metadata-file=$($Config.MetaFile)"
+        '--lua-filter', (Join-Path $PSScriptRoot 'filters' 'keep-headings.lua')
         '--toc'
         '--toc-depth=3'
         '-V', 'toc-own-page=true'

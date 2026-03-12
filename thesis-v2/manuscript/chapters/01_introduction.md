@@ -37,7 +37,7 @@ The purpose of this study is to develop and validate the **AI Readiness Scale (A
 
 3. **Test** structural relationships between adoption predictors and behavioral intention through structural equation modeling (SEM).
 
-4. **Examine** measurement invariance across student and professional populations to establish the instrument's applicability across diverse workforce contexts.
+4. **Examine** measurement invariance across academic and professional populations to establish the instrument's applicability across diverse workforce contexts.
 
 5. **Identify** moderating factors (including professional experience and AI usage frequency) that influence adoption pathways.
 
@@ -53,7 +53,7 @@ How can UTAUT2 be extended with AI-specific constructs to better predict behavio
 **Secondary Research Questions:**
 
 1. What is the factor structure of an AI-specific adoption readiness instrument?
-2. Does the instrument demonstrate measurement invariance across student and professional populations?
+2. Does the instrument demonstrate measurement invariance across academic and professional populations?
 3. Which factors most strongly predict behavioral intention to adopt AI tools?
 4. Does AI Trust significantly predict adoption intention beyond UTAUT2 constructs?
 5. What moderating factors influence the relationships between predictors and adoption intention?
@@ -91,7 +91,7 @@ This study makes several contributions to technology acceptance scholarship:
 
 **Construct Validation**: The development of reliable measures for AI Trust provides validated operationalizations for future research. The psychometric validation process (including convergent validity, discriminant validity, and composite reliability assessment) ensures that these constructs meet scholarly standards for measurement quality.
 
-**Cross-Population Invariance**: Testing measurement invariance across student and professional populations advances understanding of how adoption factors function across diverse workforce contexts. Configural invariance findings support the instrument's utility for comparative research across population segments.
+**Cross-Population Invariance**: Testing measurement invariance across academic and professional populations advances understanding of how adoption factors function across diverse workforce contexts. Configural invariance findings support the instrument's utility for comparative research across population segments.
 
 **Moderation Discovery**: Identification of experience as a moderating factor on hedonic motivation pathways contributes novel insights to the technology acceptance literature, suggesting that adoption mechanisms may differ based on user characteristics in ways not previously documented.
 
@@ -101,7 +101,7 @@ Beyond theoretical contributions, this research establishes foundations for futu
 
 **Validated Diagnostic Instrument**: The validated 16-item AIRS provides researchers and organizations with a psychometrically sound tool for measuring AI adoption readiness constructs. Beyond measurement, the 8-factor structure enables diagnostic assessment: organizations can identify specific barriers (e.g., low trust, inadequate perceived value) and design targeted interventions. The instrument's brevity (approximately 5 minutes to complete) enables deployment at scale while maintaining measurement rigor.
 
-**User Typology Discovery**: The four-segment user typology identified through cluster analysis (AI Enthusiasts [16%], Cautious Adopters [30%], Moderate Users [37%], and Anxious Avoiders [17%]) provides a framework for future intervention research. The typology offers testable hypotheses about differential treatment effects that warrant experimental validation.
+**User Typology Discovery**: The three-segment user typology identified through cluster analysis (AI Enthusiasts [31%, n=162], Moderate Users [47%, n=246], and AI Skeptics [22%, n=115]; k=3, silhouette=0.271) provides a framework for future intervention research. The typology captures a meaningful readiness gradient — from high-engagement Enthusiasts through pragmatic Moderate Users to resistant Skeptics — offering testable hypotheses about differential treatment effects that warrant experimental validation.
 
 **Adoption Driver Insights**: The finding that Price Value (β = .505) dominates adoption intention, rather than traditional performance messaging, suggests hypotheses for organizational AI communication strategies that warrant future experimental testing.
 
@@ -114,7 +114,7 @@ Beyond theoretical contributions, this research establishes foundations for futu
 This study focuses on individual-level adoption of AI tools in professional and academic contexts. The research:
 
 - **Examines** behavioral intention to adopt AI tools as the primary outcome variable, with actual tool usage as a behavioral validation criterion.
-- **Encompasses** both students and employed professionals across multiple industries, providing cross-population generalizability testing.
+- **Encompasses** both academic and professional participants across multiple industries, providing cross-population generalizability testing.
 - **Includes** common AI tools such as ChatGPT, Microsoft Copilot, and Google Gemini as the technology context.
 - **Applies** established psychometric validation methodology including split-sample EFA/CFA, structural equation modeling, and measurement invariance testing.
 - **Addresses** adoption predictors at the individual psychological level rather than organizational or technological levels.
@@ -143,7 +143,7 @@ This dissertation deliberately limits its scope to **scale validation** rather t
 
 **Statistical Limitations**: Certain claims require stronger evidence than cross-sectional self-report data can provide. For example:
 
-- **User typology actionability**: While cluster analysis identified four distinct user segments, intervention effectiveness cannot be established without experimental designs testing differential treatment effects.
+- **User typology actionability**: While cluster analysis identified three distinct user segments, intervention effectiveness cannot be established without experimental designs testing differential treatment effects.
 - **Adoption-value linkage**: The relationship between individual adoption readiness and organizational AI outcomes requires longitudinal data linking AIRS scores to measurable business metrics.
 - **Cut-score development**: Establishing diagnostic thresholds (e.g., "low readiness" vs. "high readiness") requires validation studies demonstrating predictive validity against criterion outcomes.
 
@@ -156,7 +156,7 @@ Appendix E outlines a research roadmap for extending this foundational work thro
 ```{=latex}
 \begin{table}[H]
 \centering
-\caption{Table 1.1: Key Terms and Definitions}
+\caption{Key Terms and Definitions}
 \begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.25\textwidth}>{\raggedright\arraybackslash}p{0.70\textwidth}@{}}
 \toprule
 \textbf{Term} & \textbf{Definition} \\

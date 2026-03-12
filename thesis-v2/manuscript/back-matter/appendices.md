@@ -77,7 +77,7 @@ Demographic items collected included:
 ```{=latex}
 \begin{table}[H]
 \centering
-\caption{Table C.1: Construct Reliability Summary}
+\caption{Construct Reliability Summary}
 \begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.28\textwidth}lccc>{\raggedright\arraybackslash}p{0.15\textwidth}@{}}
 \toprule
 \textbf{Construct} & \textbf{Abbrev.} & \textbf{Cronbach's $\alpha$} & \textbf{CR} & \textbf{AVE} & \textbf{Items} \\
@@ -106,18 +106,18 @@ Trust in AI & TR & .891 & .891 & .804 & TR1, TR2 \\
 ```{=latex}
 \begin{table}[H]
 \centering
-\caption{Table C.2: Model Fit Indices Summary}
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.25\textwidth}ccccccc@{}}
+\caption{Model Fit Indices Summary}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.22\textwidth}cccccccc@{}}
 \toprule
-\textbf{Model} & \textbf{$\chi^2$} & \textbf{df} & \textbf{p} & \textbf{CFI} & \textbf{TLI} & \textbf{RMSEA} & \textbf{90\% CI} \\
+\textbf{Model} & \textbf{$\chi^2$} & \textbf{df} & \textbf{p} & \textbf{CFI} & \textbf{TLI} & \textbf{RMSEA} & \textbf{90\% CI} & \textbf{SRMR} \\
 \midrule
-CFA (8-factor) & 191.25 & 98 & <.001 & .975 & .960 & .065 & [.051, .079] \\
-Structural Model & 354.32 & 169 & <.001 & .967 & .953 & .070 & [.059, .081] \\
+CFA (8-factor) & 191.25 & 98 & <.001 & .975 & .960 & .065 & [.051, .079] & .026 \\
+Structural Model & 354.32 & 169 & <.001 & .967 & .953 & .070 & [.059, .081] & .024 \\
 \bottomrule
 \end{tabular}
 
 \vspace{0.5em}
-\footnotesize Note: CFI = Comparative Fit Index; TLI = Tucker-Lewis Index; RMSEA = Root Mean Square Error of Approximation.
+\footnotesize Note: CFI = Comparative Fit Index; TLI = Tucker-Lewis Index; RMSEA = Root Mean Square Error of Approximation; SRMR = Standardized Root Mean Square Residual. CFA values based on holdout sample (n = 262).
 
 \vspace{0.5em}
 \footnotesize Source: Compiled by Author
@@ -129,7 +129,7 @@ Structural Model & 354.32 & 169 & <.001 & .967 & .953 & .070 & [.059, .081] \\
 ```{=latex}
 \begin{table}[H]
 \centering
-\caption{Table C.3: Constructs Removed During Validation}
+\caption{Constructs Removed During Validation}
 \begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.30\textwidth}ccp{0.32\textwidth}@{}}
 \toprule
 \textbf{Construct} & \textbf{Abbreviation} & \textbf{Cronbach's $\alpha$} & \textbf{Reason for Removal} \\
@@ -157,7 +157,7 @@ This appendix presents additional visualizations from the empirical analysis tha
 
 ### D.1 Sample Preparation
 
-![Figure D.1: Overview of sample preparation process, including data cleaning, split-sample design, and final sample composition across student and professional populations.](figures/fig_sample_overview.png){#fig:sample-overview}
+![Figure D.1: Overview of sample preparation process, including data cleaning, split-sample design, and final sample composition across academic and professional populations.](figures/fig_sample_overview.png){#fig:sample-overview}
 
 *Source: Compiled by Author*
 
@@ -186,7 +186,7 @@ The AI Readiness Scale (AIRS) validated in this dissertation represents Phase 0 
 ```{=latex}
 \begin{table}[H]
 \centering
-\caption{Table E.1: AIRS Research Program Phases}
+\caption{AIRS Research Program Phases}
 \small
 \begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.14\textwidth}>{\raggedright\arraybackslash}p{0.24\textwidth}>{\raggedright\arraybackslash}p{0.52\textwidth}@{}}
 \toprule
@@ -229,7 +229,7 @@ The AI Readiness Scale (AIRS) validated in this dissertation represents Phase 0 
 
 **Research Objective**: Design and empirically test segment-specific interventions based on the user typology framework.
 
-The four-segment typology identified in this dissertation (AI Enthusiasts, Cautious Adopters, Moderate Users, Anxious Avoiders) suggests that different user populations may respond to different intervention approaches. Future research should employ randomized controlled trials to test whether segment-matched interventions outperform generic approaches.
+The three-segment typology identified in this dissertation (AI Enthusiasts 31%, Moderate Users 47%, AI Skeptics 22%) suggests that different user populations may respond to different intervention approaches. Future research should employ randomized controlled trials to test whether segment-matched interventions outperform generic approaches.
 
 **Key Research Questions**:
 
@@ -549,13 +549,13 @@ The repository contains the following key directories:
 ```{=latex}
 \begin{table}[H]
 \centering
-\caption{Table H.1: Repository Directory Structure}
+\caption{Repository Directory Structure}
 \begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.22\textwidth}>{\raggedright\arraybackslash}p{0.68\textwidth}@{}}
 \toprule
 \textbf{Directory} & \textbf{Contents} \\
 \midrule
-thesis/ & Complete dissertation chapters, tables, figures, and bibliography \\
-airs\_experiment/ & Jupyter notebooks for the 10-phase analysis pipeline \\
+thesis-v2/ & Complete dissertation chapters, tables, figures, and bibliography \\
+airs\_experiment/ & Python scripts, R scripts, and analysis data for the validation pipeline \\
 data/ & Cleaned survey data and variable documentation \\
 docs/ & Data dictionary and methodology documentation \\
 \bottomrule
@@ -581,7 +581,7 @@ This file contains the anonymized survey responses (N=523) with the following ch
 ```{=latex}
 \begin{table}[H]
 \centering
-\caption{Table H.2: Supporting Data Files}
+\caption{Supporting Data Files}
 \begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.40\textwidth}>{\raggedright\arraybackslash}p{0.50\textwidth}@{}}
 \toprule
 \textbf{File} & \textbf{Description} \\
@@ -599,37 +599,38 @@ AIRS-AI-Readiness-Scale-labels.csv & Variable labels and response options \\
 \end{table}
 ```
 
-### H.4 Analysis Notebooks
+### H.4 Analysis Scripts
 
-The analysis was conducted using Jupyter notebooks executed sequentially. Each notebook is self-contained with documentation.
+The analysis was conducted using standalone Python and R scripts executed sequentially. Each script is self-contained with documentation.
 
-**Notebook Execution Order**:
+**Script Execution Order**:
 
 ```{=latex}
 \begin{table}[H]
 \centering
-\caption{Table H.3: Analysis Notebook Execution Order}
+\caption{Analysis Script Execution Order}
 \small
 \begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.28\textwidth}>{\raggedright\arraybackslash}p{0.30\textwidth}>{\raggedright\arraybackslash}p{0.32\textwidth}@{}}
 \toprule
-\textbf{Notebook} & \textbf{Purpose} & \textbf{Key Outputs} \\
+\textbf{Script} & \textbf{Purpose} & \textbf{Key Outputs} \\
 \midrule
-00\_Create\_Split\_Samples & Create development/holdout split & Sample files \\
-01\_EFA\_Experiment & Exploratory Factor Analysis & Factor structure \\
-02\_CFA\_Experiment & Confirmatory Factor Analysis & Model fit indices \\
-03\_Measurement\_Invariance & Cross-group validation & Invariance tests \\
-04\_Structural\_Model & Hypothesis testing (SEM) & Path coefficients \\
-05\_Mediation\_Analysis & Indirect effects & Bootstrap results \\
-06\_Moderation\_Analysis & Experience/population effects & Interaction terms \\
-07\_Tool\_Usage\_Patterns & Behavioral validation & Usage correlations \\
-08\_Qualitative\_Feedback & Open-ended analysis & Theme frequencies \\
-09\_Comprehensive\_Review & Cluster analysis & User typology \\
-10\_Final\_Synthesis & Integration & Summary statistics \\
+run\_00\_split\_samples.py & Create development/holdout split & Sample files \\
+run\_01\_efa.py & Exploratory Factor Analysis & Factor structure \\
+run\_02\_cfa.py & Confirmatory Factor Analysis & Model fit indices \\
+run\_03\_measurement\_invariance.py & Cross-group validation & Invariance tests \\
+run\_04\_structural.py & Hypothesis testing (SEM) & Path coefficients \\
+run\_05\_mediation.py & Indirect effects & Bootstrap results \\
+run\_06\_moderation.py & Experience/population effects & Interaction terms \\
+run\_07\_tool\_usage.py & Behavioral validation & Usage correlations \\
+run\_08\_qualitative.py & Open-ended analysis & Theme frequencies \\
+run\_09\_comprehensive.py & Cluster analysis & User typology \\
+run\_10\_synthesis.py & Integration & Summary statistics \\
+run\_r\_validation.R & R/lavaan cross-validation & Authoritative fit indices \\
 \bottomrule
 \end{tabular}
 
 \vspace{0.5em}
-\footnotesize Note: All notebooks have \texttt{.ipynb} extension.
+\footnotesize Note: Python scripts are in \texttt{airs\_experiment/python/}; R scripts are in \texttt{airs\_experiment/R/}.
 
 \vspace{0.5em}
 \footnotesize Source: Compiled by Author
@@ -641,8 +642,8 @@ The analysis was conducted using Jupyter notebooks executed sequentially. Each n
 **Prerequisites**:
 
 - Python 3.9 or higher
-- Jupyter Notebook or JupyterLab
-- Required packages listed in `requirements.txt`
+- R 4.5 or higher (with lavaan, semTools, psych packages)
+- Required Python packages listed in `requirements.txt`
 
 **Installation**:
 
@@ -664,32 +665,39 @@ pip install -r requirements.txt
 
 ```bash
 # Navigate to experiment folder
-cd airs_experiment
+cd airs_experiment/python
 
-# Launch Jupyter
-jupyter notebook
+# Run scripts in order
+python run_00_split_samples.py
+python run_01_efa.py
+# ... continue through run_10_synthesis.py
+
+# Run R cross-validation (requires R 4.5+ with lavaan)
+cd ../R
+Rscript run_r_validation.R
 ```
 
-Open notebooks in numerical order (00 -> 01 -> 02 -> ... -> 10) to reproduce the complete analysis pipeline.
+Run Python scripts in numerical order (00 through 10), then the R validation script to reproduce the complete analysis pipeline.
 
 ### H.6 Key Dependencies
 
 \begin{table}[H]
 \centering
-\caption{Table H.4: Key Python Dependencies}
+\caption{Key Dependencies}
 \label{tbl:dependencies}
-\begin{tabular}{@{}lll@{}}
+\begin{tabular}{@{}llll@{}}
 \toprule
-\textbf{Package} & \textbf{Version} & \textbf{Purpose} \\
+\textbf{Package} & \textbf{Version} & \textbf{Language} & \textbf{Purpose} \\
 \midrule
-pandas & $\geq$1.5.0 & Data manipulation \\
-numpy & $\geq$1.23.0 & Numerical computing \\
-scipy & $\geq$1.9.0 & Statistical functions \\
-factor\_analyzer & $\geq$0.4.0 & EFA/CFA implementation \\
-semopy & $\geq$2.3.0 & Structural Equation Modeling \\
-pingouin & $\geq$0.5.0 & Statistical testing \\
-matplotlib & $\geq$3.6.0 & Visualization \\
-seaborn & $\geq$0.12.0 & Statistical graphics \\
+pandas & $\geq$1.5.0 & Python & Data manipulation \\
+numpy & $\geq$1.23.0 & Python & Numerical computing \\
+scipy & $\geq$1.9.0 & Python & Statistical functions \\
+factor\_analyzer & $\geq$0.4.0 & Python & EFA/CFA implementation \\
+semopy & $\geq$2.3.0 & Python & Structural Equation Modeling \\
+matplotlib & $\geq$3.6.0 & Python & Visualization \\
+lavaan & $\geq$0.6.20 & R & CFA/SEM (authoritative) \\
+semTools & $\geq$0.5.8 & R & HTMT, reliability \\
+psych & $\geq$2.5.0 & R & Psychometric analysis \\
 \bottomrule
 \end{tabular}
 
@@ -702,8 +710,8 @@ seaborn & $\geq$0.12.0 & Statistical graphics \\
 The dissertation PDF can be regenerated from source files:
 
 ```bash
-cd thesis
-.\build-thesis.ps1  # Windows PowerShell
+cd thesis-v2
+.\build.ps1  # Windows PowerShell
 ```
 
 Requirements: Pandoc, XeLaTeX (via MiKTeX or TeX Live), Mermaid CLI (optional for diagrams)
@@ -713,12 +721,12 @@ Requirements: Pandoc, XeLaTeX (via MiKTeX or TeX Live), Mermaid CLI (optional fo
 When using this data or code in academic work, please cite:
 
 ```bibtex
-@phdthesis{correa2025airs,
+@phdthesis{correa2026airs,
   author = {Correa, Fabio},
   title = {Artificial Intelligence Readiness Scale: Extending UTAUT2
            for Enterprise AI Adoption},
   school = {Touro University Worldwide},
-  year = {2025},
+  year = {2026},
   type = {Doctoral dissertation},
   url = {https://github.com/fabioc-aloha/AIRS_Data_Analysis}
 }
@@ -730,7 +738,7 @@ In accordance with federal regulations (45 CFR 46) and institutional policy:
 
 \begin{table}[H]
 \centering
-\caption{Table H.5: Data Retention Policy}
+\caption{Data Retention Policy}
 \label{tbl:data-retention}
 \begin{tabular}{@{}>{\raggedright\arraybackslash}p{3.5cm}>{\raggedright\arraybackslash}p{9cm}@{}}
 \toprule
@@ -782,7 +790,7 @@ The following summary is retained for quick reference.
 
 \begin{table}[H]
 \centering
-\caption{Table I.1: Primary Research Question Summary}
+\caption{Primary Research Question Summary}
 \label{tbl:rq-primary}
 \small
 \begin{tabular}{@{}>{\raggedright\arraybackslash}p{3.5cm}>{\raggedright\arraybackslash}p{4.5cm}>{\raggedright\arraybackslash}p{4.5cm}@{}}
@@ -790,7 +798,7 @@ The following summary is retained for quick reference.
 \textbf{Aspect} & \textbf{Answer} & \textbf{Evidence} \\
 \midrule
 \textbf{Extension Approach} & UTAUT2 extended with AI Trust construct & 8-factor, 16-item validated diagnostic instrument \\
-\textbf{Predictive Power} & Model explains 85.2\% variance in BI & $R^2$ = .852 (8-factor model) \\
+\textbf{Predictive Power} & Model explains 89.7\% variance in BI & $R^2$ = .897 (8-factor model) \\
 \textbf{Key Finding} & Traditional UTAUT predictors less important for AI & PE, EE, FC, HB non-significant \\
 \textbf{AI-Specific Insight} & Value perception dominates over utility & PV strongest predictor ($\beta$ = .505) \\
 \bottomrule
@@ -804,7 +812,7 @@ The following summary is retained for quick reference.
 
 \begin{table}[H]
 \centering
-\caption{Table I.2: Secondary Research Questions Summary}
+\caption{Secondary Research Questions Summary}
 \label{tbl:rq-secondary}
 \footnotesize
 \begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.8cm}>{\raggedright\arraybackslash}p{4cm}>{\raggedright\arraybackslash}p{3cm}>{\raggedright\arraybackslash}p{4.5cm}@{}}
@@ -815,7 +823,7 @@ The following summary is retained for quick reference.
 \textbf{RQ2} & Does the instrument demonstrate measurement invariance across populations? & Configural invariance achieved; metric invariance partial & $\Delta$CFI = .003, $\Delta$RMSEA = .004; mean $\Delta\lambda$ = .082 \\
 \textbf{RQ3} & Which factors most strongly predict behavioral intention? & Price Value ($\beta$ = .505), Hedonic Motivation ($\beta$ = .217), Social Influence ($\beta$ = .136) & All p $<$ .05; PV accounts for largest variance \\
 \textbf{RQ4} & Does AI Trust predict adoption beyond UTAUT2? & Marginal effect, not statistically significant & $\beta$ = .106, p = .064; provides diagnostic value \\
-\textbf{RQ5} & What moderating factors influence predictor-intention relationships? & Experience moderates HM$\rightarrow$BI; Population moderates HM$\rightarrow$BI & HM$\times$Exp p = .009; Academic vs Professional $\Delta\beta$ = .750 \\
+\textbf{RQ5} & What moderating factors influence predictor-intention relationships? & Experience moderates HM$\rightarrow$BI; Population moderates HM$\rightarrow$BI & HM$\times$Exp p = .007; Academic vs Professional $\Delta\beta$ = .750 \\
 \bottomrule
 \end{tabular}
 
@@ -827,7 +835,7 @@ The following summary is retained for quick reference.
 
 \begin{table}[H]
 \centering
-\caption{Table I.3: Core UTAUT2 Hypotheses Results (H1a--H1g)}
+\caption{Core UTAUT2 Hypotheses Results (H1a--H1g)}
 \label{tbl:utaut2-results}
 \footnotesize
 \begin{tabular}{@{}lllllll@{}}
@@ -852,7 +860,7 @@ The following summary is retained for quick reference.
 
 \begin{table}[H]
 \centering
-\caption{Table I.4: AI Trust Extension Hypothesis (H2)}
+\caption{AI Trust Extension Hypothesis (H2)}
 \label{tbl:trust-result}
 \begin{tabular}{@{}lllllll@{}}
 \toprule
@@ -878,7 +886,7 @@ The following summary is retained for quick reference.
 
 \begin{table}[H]
 \centering
-\caption{Table I.5: Experience Moderation Analysis (H3)}
+\caption{Experience Moderation Analysis (H3)}
 \label{tbl:experience-moderation}
 \begin{tabular}{@{}lllll@{}}
 \toprule
@@ -895,13 +903,13 @@ TR $\times$ Experience & TR $\rightarrow$ BI & 0.081 & .145 & [X] Not Significan
 \footnotesize Source: Compiled by Author
 \end{table}
 
-**H3 Result: [!] Partially Supported** – Experience significantly moderates the HM -> BI path (p = .009). Professionals with 4+ years of experience weight hedonic motivation more heavily in AI adoption decisions.
+**H3 Result: [!] Partially Supported** – Experience significantly moderates the HM -> BI path (p = .007). Professionals with 4+ years of experience weight hedonic motivation more heavily in AI adoption decisions.
 
 #### H4: Population Moderation
 
 \begin{table}[H]
 \centering
-\caption{Table I.6: Population Moderation Analysis (H4)}
+\caption{Population Moderation Analysis (H4)}
 \label{tbl:population-mod}
 \footnotesize
 \begin{tabular}{@{}llllll@{}}
@@ -923,13 +931,13 @@ TR $\rightarrow$ BI & -0.011 & 0.153 & 0.164 & .398 & No moderation \\
 \footnotesize Source: Compiled by Author
 \end{table}
 
-**H4 Result: [!] Partially Supported** – Population significantly moderates HM -> BI (p = .041). Hedonic Motivation is substantially stronger for Students (β = 0.449) than Professionals (β = -0.301), indicating that enjoyment of AI tools is more important for student adoption than professional adoption.
+**H4 Result: [!] Partially Supported** – Population significantly moderates HM -> BI (p = .041). Hedonic Motivation is substantially stronger for Academics (β = 0.449) than Professionals (β = -0.301), indicating that enjoyment of AI tools is more important for academic adoption than professional adoption.
 
 ### I.5 Behavioral Validation Hypotheses (H5–H6)
 
 \begin{table}[H]
 \centering
-\caption{Table I.7: Behavioral Validation Hypotheses (H5--H6)}
+\caption{Behavioral Validation Hypotheses (H5--H6)}
 \label{tbl:behavioral-validation}
 \begin{tabular}{@{}llllll@{}}
 \toprule
@@ -948,7 +956,7 @@ TR $\rightarrow$ BI & -0.011 & 0.153 & 0.164 & .398 & No moderation \\
 
 \begin{table}[H]
 \centering
-\caption{Table I.8: Tool Usage Correlations with Behavioral Intention}
+\caption{Tool Usage Correlations with Behavioral Intention}
 \label{tbl:tool-correlations}
 \begin{tabular}{@{}llll@{}}
 \toprule
@@ -965,19 +973,19 @@ Google Gemini & .52 & $<$.001 & Moderate positive \\
 \footnotesize Source: Compiled by Author
 \end{table}
 
-**H6 Detail**: Significant role differences in tool usage (Leaders > Professionals > Students):
+**H6 Detail**: Significant role differences in tool usage (Leaders > Professionals > Academics):
 
 \begin{table}[H]
 \centering
-\caption{Table I.9: Role Differences in Tool Usage}
+\caption{Role Differences in Tool Usage}
 \label{tbl:role-usage}
 \begin{tabular}{@{}llll@{}}
 \toprule
 \textbf{Measure} & \textbf{F} & \textbf{p} & \textbf{Post-hoc Pattern} \\
 \midrule
-Tool Breadth & 18.42 & $<$.001 & L $>$ P $>$ S \\
-Usage Frequency & 22.15 & $<$.001 & L $>$ P $>$ S \\
-Usage Intensity & 15.87 & $<$.001 & L $>$ P $>$ S \\
+Tool Breadth & 18.42 & $<$.001 & L $>$ P $>$ A \\
+Usage Frequency & 22.15 & $<$.001 & L $>$ P $>$ A \\
+Usage Intensity & 15.87 & $<$.001 & L $>$ P $>$ A \\
 \bottomrule
 \end{tabular}
 
@@ -989,7 +997,7 @@ Usage Intensity & 15.87 & $<$.001 & L $>$ P $>$ S \\
 
 \begin{table}[H]
 \centering
-\caption{Table I.10: Comprehensive Hypothesis Outcome Summary}
+\caption{Comprehensive Hypothesis Outcome Summary}
 \label{tbl:hypothesis-outcome}
 \begin{tabular}{@{}lllll@{}}
 \toprule
@@ -1013,7 +1021,7 @@ Four initially proposed AI-specific constructs demonstrated inadequate reliabili
 
 \begin{table}[H]
 \centering
-\caption{Table I.11: Constructs Not Testable Due to Reliability Issues}
+\caption{Constructs Not Testable Due to Reliability Issues}
 \label{tbl:constructs-excluded}
 \begin{tabular}{@{}>{\raggedright\arraybackslash}p{3cm}>{\raggedright\arraybackslash}p{2.5cm}lp{5cm}@{}}
 \toprule

@@ -49,10 +49,10 @@
   "gap3_experience": {
     "title": "Professional Experience \u00d7 BI",
     "method": "Spearman correlation",
-    "rho": NaN,
-    "p": NaN,
+    "rho": 0.09986037430025989,
+    "p": 0.02237308766080912,
     "peak_experience": "7 to 10 years",
-    "finding": "\u03c1=nan, p=nan"
+    "finding": "\u03c1=0.100, p=0.0224"
   },
   "gap4_disability": {
     "title": "Disability \u00d7 Constructs",

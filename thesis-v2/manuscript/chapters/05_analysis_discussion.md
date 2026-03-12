@@ -12,9 +12,9 @@ This chapter interprets the empirical findings presented in Chapter 4, connectin
 
 ### 5.2.1 AIRS Diagnostic Instrument Validation
 
-The study successfully validated an 8-factor, 16-item AI Readiness Scale extending UTAUT2 with AI Trust. The instrument demonstrated excellent psychometric properties across both development (n = 261) and holdout (n = 262) samples, with fit indices exceeding conventional thresholds (CFI = .975, TLI = .960, RMSEA = .065, SRMR = .048). The 8-factor structure was selected over a more parsimonious 7-factor model because AI Trust enables diagnostic assessment: organizations can identify trust deficits and design targeted confidence-building interventions.
+The study successfully validated an 8-factor, 16-item AI Readiness Scale extending UTAUT2 with AI Trust. The instrument demonstrated excellent psychometric properties across both development (n = 261) and holdout (n = 262) samples, with fit indices exceeding conventional thresholds (CFI = .975, TLI = .960, RMSEA = .065, SRMR = .026). The 8-factor structure was selected over a more parsimonious 7-factor model because AI Trust enables diagnostic assessment: organizations can identify trust deficits and design targeted confidence-building interventions.
 
-The cross-validation design (rarely employed in scale development research) provides strong evidence for the generalizability of the factor structure. The successful demonstration of configural invariance across student and professional populations further supports the instrument's utility for diverse workplace contexts, though metric invariance was not fully achieved (mean Δλ = .082, max Δλ = .326).
+The cross-validation design (rarely employed in scale development research) provides strong evidence for the generalizability of the factor structure. The successful demonstration of configural invariance across academic and professional populations further supports the instrument's utility for diverse workplace contexts, though metric invariance was not fully achieved (mean Δλ = .082, max Δλ = .326).
 
 ### 5.2.2 Structural Model Results
 
@@ -24,7 +24,19 @@ Three of seven hypothesized UTAUT2 paths were significant:
 - **Hedonic Motivation** (β = .217, p = .014): Enjoyment significantly predicts adoption
 - **Social Influence** (β = .136, p = .024): Peer influence matters for AI adoption
 
-The AI Trust extension approached but did not reach significance (β = .106, p = .064), providing tentative support for the theoretical extension. Notably, traditional UTAUT predictors including Performance Expectancy, Effort Expectancy, Facilitating Conditions, and Habit were not significant predictors.
+The AI Trust extension approached but did not reach significance (β = .106, p = .064). While this falls short of conventional significance, the effect is retained as a diagnostic inclusion rather than a structural claim: detecting β = .106 at 80% power requires n > 600, making the present sample (N = 523, ~68% power) underpowered for this effect size. AI Trust provides essential diagnostic capability that cannot be captured by the other seven constructs, enabling organizations to identify trust-specific barriers and design targeted confidence-building interventions. Notably, traditional UTAUT predictors including Performance Expectancy, Effort Expectancy, Facilitating Conditions, and Habit were not significant predictors.
+
+### 5.2.3 Diagnostic Purpose Framing
+
+The 8-factor AIRS structure was retained in its entirety, including the marginally significant AI Trust construct (β = .106, p = .064), because the instrument serves a diagnostic rather than purely predictive purpose. While a more parsimonious model (e.g., excluding non-significant paths) would marginally improve statistical fit, it would sacrifice the diagnostic breadth required for organizational assessment. Practitioners administering AIRS need to identify *which specific readiness dimensions* are deficient in their workforce — trust deficits require different interventions than value perception gaps or social influence deficits. This diagnostic orientation aligns with established psychometric practice in clinical and organizational assessment, where construct coverage reflects theoretical breadth rather than empirical parsimony alone [@clarkwatson1995; @messick1995].
+
+Bootstrap validation (1,000 resamples, R/lavaan) confirmed that only Price Value demonstrates robust significance across both z-test and bootstrap methods. Hedonic Motivation and Social Influence are z-test significant but bootstrap-unstable (CIs including zero), suggesting their structural effects may be sensitive to sample composition. These constructs nonetheless retain diagnostic value: HM demonstrates reversed population effects (Academic β = 0.449 vs. Professional β = −0.301), and SI captures peer influence dynamics relevant to intervention design.
+
+### 5.2.4 Discriminant Validity Considerations
+
+The high inter-factor correlations among PE, HM, and PV (r = .898–.911) represent a measurement challenge characteristic of 2-item-per-factor scales measuring conceptually adjacent constructs [@marsh1998]. Five Fornell-Larcker violations and four HTMT ratios exceeding .85 (PE×PV = .902, PE×HM = .900, HM×PV = .904, HM×TR = .850) indicate that the current 16-item scale does not fully achieve discriminant separation for the PE/HM/PV triad.
+
+Three findings support retaining separate factors despite this limitation: (a) the constructs serve distinct diagnostic functions enabling targeted intervention design — low PV requires value messaging while low HM requires engagement redesign; (b) they demonstrate differential population sensitivity, with HM showing reversed effects across academic and professional samples (β = 0.449 vs. −0.301, p = .041); and (c) theoretical continuity with UTAUT2 enables cumulative science and meta-analytic integration. The AIRS-28 development roadmap (§6.7.3) addresses this limitation through item pool expansion, which is expected to improve discriminant separation [@dewinter2009].
 
 
 
@@ -66,7 +78,7 @@ Similarly, the non-significance of Effort Expectancy (β = -.008, p = .875) and 
 
 ### 5.3.4 Experience as Moderator
 
-**Finding**: Professional experience strengthens HM -> BI (β = .136, p = .009).
+**Finding**: Professional experience strengthens HM -> BI (β = .136, p = .007).
 
 **Comparison with Prior Research**: While UTAUT specifies experience as a moderator, it conceptualizes experience as technology familiarity rather than career development. The present finding integrates career development theory [@super1980] with technology acceptance, suggesting that vocational maturity influences technology evaluation processes.
 
@@ -121,11 +133,11 @@ The non-significance of PE, EE, FC, and HB suggests AI may represent a distinct 
 
 ### 5.4.5 Experience-Dependent Mechanisms
 
-The experience moderation of HM (p = .009) suggests that adoption mechanisms differ by user characteristics in ways not previously documented in technology acceptance research. Experienced professionals place greater weight on enjoyment when evaluating AI tools, possibly reflecting that users who have satisfied basic competency needs prioritize intrinsic satisfaction.
+The experience moderation of HM (p = .007) suggests that adoption mechanisms differ by user characteristics in ways not previously documented in technology acceptance research. Experienced professionals place greater weight on enjoyment when evaluating AI tools, possibly reflecting that users who have satisfied basic competency needs prioritize intrinsic satisfaction.
 
 ### 5.4.6 Population-Specific Pathways
 
-Differential HM effects across populations (Student β = 0.449 vs. Professional β = -0.301, p = .041) indicate that adoption interventions may need to be tailored to specific user groups. Students weight enjoyment heavily; professionals may prioritize other factors.
+Differential HM effects across populations (Academic β = 0.449 vs. Professional β = -0.301, p = .041) indicate that adoption interventions may need to be tailored to specific user groups. Academics weight enjoyment heavily; professionals may prioritize other factors.
 
 ### 5.4.7 Career Development Integration
 
@@ -133,16 +145,15 @@ The significant experience moderation effect introduces career development as a 
 
 ### 5.4.8 User Typology Framework
 
-The empirically-derived four-segment typology provides a framework for understanding adoption heterogeneity:
+The empirically-derived three-segment typology (k=3, silhouette=0.271) provides a framework for understanding adoption heterogeneity:
 
-- **AI Enthusiasts (16%)**: High adoption readiness, positive affect toward AI
-- **Cautious Adopters (30%)**: Moderate interest with reservations
-- **Moderate Users (37%)**: Pragmatic orientation focused on specific benefits
-- **Anxious Avoiders (17%)**: Elevated anxiety and resistance patterns
+- **AI Enthusiasts (31%, n=162)**: High adoption readiness across all constructs (~0.9 SD above mean), high Behavioral Intention (mean BI=4.23)
+- **Moderate Users (47%, n=246)**: Near-population-mean scores across all constructs, pragmatic orientation
+- **AI Skeptics (22%, n=115)**: Below-average scores across all constructs (~1.2 SD below mean), low Behavioral Intention (mean BI=1.71)
 
-This segmentation approach moves beyond mean-level analysis to acknowledge individual differences in adoption psychology. The typology provides testable hypotheses for future intervention research. Whether these segments respond differentially to targeted interventions requires experimental validation. Figure 5.1 illustrates the distribution and characteristics of the four user segments.
+This segmentation approach moves beyond mean-level analysis to acknowledge individual differences in adoption psychology. The three-segment solution captures a clear readiness gradient that explains 65.9% of BI variance (F=503.47, p<.001), confirming the typology identifies adoption-relevant heterogeneity. Whether these segments respond differentially to targeted interventions requires experimental validation. Figure 5.1 illustrates the distribution and characteristics of the three user segments.
 
-![Figure 5.1: Four-segment user typology derived from cluster analysis. Segment sizes represent proportions of the sample, with distinct profiles across adoption readiness constructs. *Source: Compiled by Author*](figures/fig_user_typology.png){#fig:user-typology}
+![Three-segment user typology derived from cluster analysis. Segment sizes represent proportions of the sample, with distinct profiles across adoption readiness constructs. *Source: Compiled by Author*](figures/fig_user_typology.png){#fig:user-typology}
 
 Source: Compiled by Author
 
@@ -158,7 +169,7 @@ The findings offer insights for organizations navigating AI adoption challenges.
 
 **Lead with Value, Not Capabilities**: The dominance of Price Value (β = .505) over Performance Expectancy (ns) suggests a potential shift in how organizations might approach AI implementation communications. Rather than emphasizing AI capabilities and productivity promises, the findings suggest that demonstrating return on investment and cost-effectiveness may be more influential. Capgemini's research supports this direction, finding that organizations redesigning workflows around AI, rather than simply adding AI to existing processes, achieve substantially higher returns [@capgemini2025].
 
-**Consider Adoption Heterogeneity**: The four-segment typology (§4.6) suggests that user populations vary systematically in their AI readiness profiles, with each segment potentially responding to different intervention approaches.
+**Consider Adoption Heterogeneity**: The three-segment typology (§4.6) suggests that user populations vary systematically in their AI readiness profiles, with each segment potentially responding to different intervention approaches.
 
 **Leadership Engagement**: Leaders in this study demonstrated the highest AI tool usage (d = 0.74–1.14). McKinsey's research confirms that organizations where senior leadership takes ownership of AI initiatives are three times more likely to achieve value from their investments [@mckinseyStateAI2025]. Visible leadership engagement may amplify adoption efforts.
 
@@ -168,7 +179,7 @@ Pricing strategy may significantly influence adoption, potentially more so than 
 
 ### 5.5.3 For Trainers and Educators
 
-The identification of an "Anxious Avoider" segment (17%) suggests that training programs may benefit from addressing emotional barriers alongside technical skills. The disability-anxiety association (d = .36) highlights the importance of accessibility-centered training design. These findings warrant experimental validation of anxiety-reduction approaches in AI training contexts.
+The AI Skeptics segment (22%) — characterized by below-average scores across all adoption readiness constructs — suggests that training programs may benefit from addressing resistance barriers alongside technical skills. The disability-anxiety association (d = .36) highlights the importance of accessibility-centered training design. These findings warrant experimental validation of targeted approaches in AI training contexts.
 
 ### 5.5.4 For Policy Makers
 
@@ -180,9 +191,9 @@ The findings illuminate mechanisms that may contribute to the adoption-value gap
 
 1. **Value Communication Misalignment**: Organizations may lead with capability demonstrations when users actually evaluate cost-benefit ratios. Future research should test whether value-focused messaging improves outcomes.
 
-2. **Heterogeneous Readiness**: One-size-fits-all approaches may fail because user populations vary systematically. The four-segment typology provides a framework for intervention research.
+2. **Heterogeneous Readiness**: One-size-fits-all approaches may fail because user populations vary systematically. The three-segment typology provides a framework for intervention research.
 
-3. **Neglected Affective Barriers**: The Anxious Avoider segment and marginal Trust effect suggest psychological barriers may be underaddressed.
+3. **Neglected Affective Barriers**: The AI Skeptics segment and marginal Trust effect suggest psychological barriers may be underaddressed.
 
 4. **Context-Inappropriate Frameworks**: The shift from Performance Expectancy to Price Value dominance demonstrates why context-specific instruments are valuable.
 
@@ -201,7 +212,7 @@ Four proposed AI-specific constructs demonstrated inadequate reliability and wer
 ```{=latex}
 \begin{table}[H]
 \centering
-\caption{Table 5.1: Constructs Excluded During Validation}
+\caption{Constructs Excluded During Validation}
 \begin{tabular}{@{}lc>{\raggedright\arraybackslash}p{0.30\textwidth}>{\raggedright\arraybackslash}p{0.28\textwidth}@{}}
 \toprule
 \textbf{Construct} & \textbf{Cronbach's $\alpha$} & \textbf{Issue Identified} & \textbf{Future Recommendation} \\

@@ -184,7 +184,7 @@ def main():
 
     exp_col = 'Experience'
     if exp_col in df.columns:
-        exp_order = ['Less than 1 year', '1-3 years', '3-5 years', '5-10 years', '10+ years']
+        exp_order = ['Less than 1 year', '1 to 3 years', '4 to 6 years', '7 to 10 years', '11 or more years']
         exp_numeric = {v: i + 1 for i, v in enumerate(exp_order)}
         df['Experience_Numeric'] = df[exp_col].map(exp_numeric)
 

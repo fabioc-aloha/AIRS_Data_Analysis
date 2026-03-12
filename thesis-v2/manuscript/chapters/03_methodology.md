@@ -29,7 +29,7 @@ The study employs a **sequential mixed methods design** [@creswell2017] with qua
 
 1. **Primary Quantitative Component**: Structured survey measuring UTAUT constructs on Likert scales, analyzed through factor analysis and structural equation modeling
 
-2. **Supplementary Qualitative Component**: Open-ended feedback questions analyzed through thematic analysis to provide contextual depth and identify emergent themes not captured by closed-ended items
+2. **Supplementary Qualitative Component**: Open-ended feedback questions analyzed through automated content analysis with keyword classification to provide contextual depth and identify emergent themes not captured by closed-ended items
 
 This design allows triangulation of findings, with qualitative data enriching interpretation of quantitative patterns (e.g., understanding why certain constructs predict adoption more strongly than others).
 
@@ -62,6 +62,8 @@ The study extends @venkatesh2012consumer's Unified Theory of Acceptance and Use 
 - **Social Influence (SI)**: The degree to which important others believe one should use AI tools
 - **Facilitating Conditions (FC)**: Perceptions of resources and support available for AI tool use
 - **Hedonic Motivation (HM)**: The fun or pleasure derived from using AI tools
+- **Price Value (PV)**: The cognitive trade-off between perceived benefits and monetary cost of AI tools
+- **Habit (HB)**: Automaticity developed through repeated AI tool use
 
 **AI-Specific Extensions:**
 
@@ -125,7 +127,7 @@ Items were adapted from established scales to ensure content validity:
 ```{=latex}
 \begin{table}[H]
 \centering
-\caption{Table 3.1: Survey Instrument Item Sources}
+\caption{Survey Instrument Item Sources}
 \begin{tabular}{@{}lll@{}}
 \toprule
 \textbf{Construct} & \textbf{Source} & \textbf{Adaptation} \\
@@ -161,7 +163,7 @@ Of the 12 constructs proposed, **four AI-specific constructs were excluded** dur
 ```{=latex}
 \begin{table}[H]
 \centering
-\caption{Table 3.2: Excluded Constructs and Psychometric Issues}
+\caption{Excluded Constructs and Psychometric Issues}
 \begin{tabular}{@{}llcll@{}}
 \toprule
 \textbf{Construct} & \textbf{Items} & \textbf{Cronbach's α} & \textbf{Issue} & \textbf{Disposition} \\
@@ -196,7 +198,7 @@ Following psychometric validation (see Chapter 4), the final AIRS instrument com
 ```{=latex}
 \begin{table}[H]
 \centering
-\caption{Table 3.3: Final AIRS Instrument Structure}
+\caption{Final AIRS Instrument Structure}
 \begin{tabular}{@{}ll>{\raggedright\arraybackslash}p{0.45\textwidth}@{}}
 \toprule
 \textbf{Factor} & \textbf{Items} & \textbf{Example Item} \\
@@ -256,7 +258,7 @@ Respondents were classified into three role groups based on self-reported primar
 ```{=latex}
 \begin{table}[H]
 \centering
-\caption{Table 3.4: Role Classification Scheme}
+\caption{Role Classification Scheme}
 \begin{tabular}{@{}l>{\raggedright\arraybackslash}p{0.45\textwidth}rr@{}}
 \toprule
 \textbf{Category} & \textbf{Operational Definition} & \textbf{n} & \textbf{\%} \\
@@ -272,7 +274,7 @@ Leader & Managers (n=71), executives (n=52) & 123 & 23.5\% \\
 \end{table}
 ```
 
-**Note**: For multi-group SEM requiring larger group sizes, Professional and Leader categories were combined (n = 307) to contrast with Student (n = 216). This grouping reflects meaningful theoretical distinctions between student-focused and employment-focused roles.
+**Note**: For multi-group SEM requiring larger group sizes, Professional and Leader categories were combined (n = 307) to contrast with the Student category (n = 216), designated as "Academic" for multi-group analysis. This grouping reflects meaningful theoretical distinctions between academic-focused and employment-focused roles.
 
 ### 3.5.5 Data Collection Procedures
 
@@ -298,7 +300,7 @@ Multiple quality checks were implemented:
 ```{=latex}
 \begin{table}[H]
 \centering
-\caption{Table 3.5: Data Quality Assurance Checks}
+\caption{Data Quality Assurance Checks}
 \begin{tabular}{@{}llp{0.40\textwidth}@{}}
 \toprule
 \textbf{Check} & \textbf{Criterion} & \textbf{Action} \\
@@ -329,10 +331,10 @@ The analysis followed a systematic 10-phase pipeline ensuring replicability and 
 ```{=latex}
 \begin{table}[H]
 \centering
-\caption{Table 3.6: Ten-Phase Analysis Pipeline}
+\caption{Ten-Phase Analysis Pipeline}
 \begin{tabular}{@{}clp{0.50\textwidth}@{}}
 \toprule
-\textbf{Phase} & \textbf{Notebook} & \textbf{Purpose} \\
+\textbf{Phase} & \textbf{Script} & \textbf{Purpose} \\
 \midrule
 0 & Sample Splitting & Create EFA/CFA subsamples \\
 1 & EFA & Explore factor structure \\
@@ -342,7 +344,7 @@ The analysis followed a systematic 10-phase pipeline ensuring replicability and 
 5 & Mediation & Examine indirect effects \\
 6 & Moderation & Test moderating effects \\
 7 & Tool Usage & Behavioral validation \\
-8 & Qualitative & Thematic analysis \\
+8 & Qualitative & Content analysis \\
 9 & Comprehensive Review & Gap analysis \\
 10 & Final Synthesis & Integration \\
 \bottomrule
@@ -396,7 +398,7 @@ flowchart TB
     style P10 fill:#ffec99,stroke:#fab005
 ```
 
-: Figure 3.1: Ten-Phase Analysis Pipeline showing data preparation, measurement model validation, structural analysis, and synthesis stages. *Source: Compiled by Author* {#fig:analysis-pipeline}
+: Ten-Phase Analysis Pipeline showing data preparation, measurement model validation, structural analysis, and synthesis stages. *Source: Compiled by Author* {#fig:analysis-pipeline}
 
 ### 3.6.2 Sample Splitting Strategy
 
@@ -419,7 +421,7 @@ flowchart TD
     style F fill:#d0bfff,stroke:#7950f2
 ```
 
-: Figure 3.2: Split-Sample Cross-Validation Strategy showing random split of N=523 into development (n=261) and holdout (n=262) samples. *Source: Compiled by Author* {#fig:split-sample}
+: Split-Sample Cross-Validation Strategy showing random split of N=523 into development (n=261) and holdout (n=262) samples. *Source: Compiled by Author* {#fig:split-sample}
 
 **Stratification**: Split stratified by AI adoption status to ensure comparable samples
 
@@ -435,7 +437,7 @@ flowchart TD
 
 - Minimizes off-diagonal residual correlations
 - Does not assume multivariate normality
-- Default method in R `psych` package; recommended for ordinal-like Likert data [@deWinter2012]
+- Default method in R `psych` package; recommended for ordinal-like Likert data [@dewinter2009]
 
 **Rotation**: Promax (oblique)
 
@@ -460,7 +462,7 @@ flowchart TD
 ```{=latex}
 \begin{table}[H]
 \centering
-\caption{Table 3.7: EFA Item Retention Criteria}
+\caption{EFA Item Retention Criteria}
 \begin{tabular}{@{}llp{0.45\textwidth}@{}}
 \toprule
 \textbf{Criterion} & \textbf{Threshold} & \textbf{Rationale} \\
@@ -496,7 +498,7 @@ Communality & $h^2 \geq .30$ & Adequate shared variance \\
 ```{=latex}
 \begin{table}[H]
 \centering
-\caption{Table 3.8: Model Fit Index Thresholds}
+\caption{Model Fit Index Thresholds}
 \begin{tabular}{@{}lcccc@{}}
 \toprule
 \textbf{Index} & \textbf{Acceptable} & \textbf{Good} & \textbf{Excellent} \\
@@ -514,7 +516,7 @@ SRMR & $\leq$ .10 & $\leq$ .08 & $\leq$ .05 \\
 \end{table}
 ```
 
-**Software**: Python `semopy` package (v2.3.10)
+**Software**: Python `semopy` package (v2.3.10) for development-phase analysis; R `lavaan` package (v0.6.21) for authoritative fit indices (see §3.6.10)
 
 ### 3.6.5 Measurement Invariance Testing
 
@@ -525,7 +527,7 @@ SRMR & $\leq$ .10 & $\leq$ .08 & $\leq$ .05 \\
 ```{=latex}
 \begin{table}[H]
 \centering
-\caption{Table 3.9: Measurement Invariance Testing Levels}
+\caption{Measurement Invariance Testing Levels}
 \begin{tabular}{@{}llp{0.40\textwidth}@{}}
 \toprule
 \textbf{Level} & \textbf{Constraint} & \textbf{Interpretation} \\
@@ -547,13 +549,13 @@ Scalar & Equal intercepts & Mean comparability \\
 - ΔRMSEA < .015
 - Δχ² non-significant (supplementary)
 
-**Groups**: Student (n = 216) vs. Professional+Leader (n = 307)
+**Groups**: Academic (n = 216) vs. Professional+Leader (n = 307)
 
 ### 3.6.6 Structural Equation Modeling (SEM)
 
 **Purpose**: Test hypothesized relationships between latent constructs
 
-**Sample**: Full sample (N = 523). Following CFA validation on the independent holdout subsample (n = 262), structural modeling uses the complete dataset to maximize statistical power for path estimation. This is standard practice when the measurement model has been confirmed on a separate sample [@kline2023].
+**Sample**: Full sample (N = 523). Following CFA validation on the independent holdout subsample (n = 262), structural modeling uses the complete dataset to maximize statistical power for path estimation. This is standard practice when the measurement model has been confirmed on a separate sample [@kline2016].
 
 **Model**:
 
@@ -594,13 +596,13 @@ flowchart LR
     style TR fill:#b2f2bb,stroke:#40c057
 ```
 
-: Figure 3.3: Structural Model showing Eight Predictors of Behavioral Intention (UTAUT2 Core + AI Trust Extension). *Source: Compiled by Author* {#fig:structural-model}
+: Structural Model showing Eight Predictors of Behavioral Intention (UTAUT2 Core + AI Trust Extension). *Source: Compiled by Author* {#fig:structural-model}
 
 *Note: AI Anxiety was initially proposed but excluded due to inadequate reliability (α = .301).*
 
 **Estimation**: Maximum Likelihood with robust standard errors
 
-**Multi-Group Analysis**: Separate models for Student and Professional+Leader groups
+**Multi-Group Analysis**: Separate models for Academic and Professional+Leader groups
 
 **Moderation Testing**:
 
@@ -612,7 +614,7 @@ flowchart LR
 ```{=latex}
 \begin{table}[H]
 \centering
-\caption{Table 3.10: Effect Size Interpretation Guidelines}
+\caption{Effect Size Interpretation Guidelines}
 \begin{tabular}{@{}cl@{}}
 \toprule
 \textbf{$\beta$} & \textbf{Interpretation} \\
@@ -678,7 +680,7 @@ All analyses were conducted using a dual-language pipeline: Python 3.11 for data
 ```{=latex}
 \begin{table}[H]
 \centering
-\caption{Table 3.11: Statistical Software Packages}
+\caption{Statistical Software Packages}
 \begin{tabular}{@{}lllp{0.38\textwidth}@{}}
 \toprule
 \textbf{Language} & \textbf{Package} & \textbf{Version} & \textbf{Purpose} \\
@@ -723,7 +725,7 @@ Python & matplotlib / seaborn & 3.8.0 / 0.13.0 & Visualization \\
 ```{=latex}
 \begin{table}[H]
 \centering
-\caption{Table 3.12: Internal Consistency Reliability Thresholds}
+\caption{Internal Consistency Reliability Thresholds}
 \begin{tabular}{@{}lcc@{}}
 \toprule
 \textbf{Measure} & \textbf{Minimum} & \textbf{Preferred} \\
@@ -759,7 +761,7 @@ Composite Reliability & .70 & .80 \\
 2. **Heterotrait-Monotrait Ratio (HTMT)**: HTMT < .85 [@henseler2015]
 3. **Maximum correlation**: |r| < .85 between any construct pair
 
-**Known Limitations**: Three construct pairs exhibit high inter-factor correlations that violate the Fornell-Larcker criterion: Performance Expectancy × Price Value (r = .898), Performance Expectancy × Hedonic Motivation (r = .911), and Hedonic Motivation × Price Value (r = .898). HTMT analysis confirms these overlaps: PE × PV (HTMT = .902), PE × HM (HTMT = .900), and HM × PV (HTMT = .904) all exceed the .85 threshold. These overlaps are consistent with UTAUT2 literature, where motivational constructs often share substantial variance in technology acceptance contexts [@venkatesh2012]. All remaining pairwise comparisons pass all discriminant criteria. Several mitigating factors support retaining the eight-factor structure:
+**Known Limitations**: Three construct pairs exhibit high inter-factor correlations that violate the Fornell-Larcker criterion: Performance Expectancy × Price Value (r = .898), Performance Expectancy × Hedonic Motivation (r = .911), and Hedonic Motivation × Price Value (r = .898). HTMT analysis confirms these overlaps: PE × PV (HTMT = .902), PE × HM (HTMT = .900), and HM × PV (HTMT = .904) all exceed the .85 threshold. These overlaps are consistent with UTAUT2 literature, where motivational constructs often share substantial variance in technology acceptance contexts [@venkatesh2012consumer]. All remaining pairwise comparisons pass all discriminant criteria. Several mitigating factors support retaining the eight-factor structure:
 
 1. **HTMT ratios** are computed as a supplementary check; HTMT is considered more robust than Fornell-Larcker for detecting discriminant problems [@henseler2015]
 2. **Model fit** remains excellent (CFI = .975, TLI = .960, RMSEA = .065, SRMR = .026 on holdout; CFI = .979, TLI = .966, RMSEA = .061, SRMR = .022 on full sample), indicating the eight-factor model reproduces the data well
@@ -770,7 +772,7 @@ Composite Reliability & .70 & .80 \\
 
 **Predictive Validity**: AIRS constructs predict actual tool usage behavior (ρ = .69 for BI × tool breadth)
 
-**Known-Groups Validity**: Constructs differentiate between theoretically-distinct groups (e.g., Leaders vs. Students)
+**Known-Groups Validity**: Constructs differentiate between theoretically-distinct groups (e.g., Leaders vs. Academics)
 
 
 
@@ -836,7 +838,7 @@ The survey addressed non-sensitive topics related to technology use attitudes. N
 
 ### 3.9.2 Sampling Limitations
 
-1. **Panel sampling**: While Centiment's verified respondent panels provide quality controls and topic-blinded recruitment, panel sampling remains non-probability sampling that limits generalizability to broader populations. Results may not generalize beyond similar United States professional and student contexts.
+1. **Panel sampling**: While Centiment's verified respondent panels provide quality controls and topic-blinded recruitment, panel sampling remains non-probability sampling that limits generalizability to broader populations. Results may not generalize beyond similar United States professional and academic contexts.
 
 2. **Single country**: While diverse roles represented, findings are limited to U.S. respondents and may not transfer to other cultural contexts.
 
@@ -868,7 +870,7 @@ This chapter has described the research methodology for developing and validatin
 
 - Post-positivist philosophy with mixed methods approach
 - Cross-sectional survey with qualitative supplementation
-- United States professionals and students context
+- United States professionals and academics context
 
 **Instrument**:
 
@@ -879,7 +881,7 @@ This chapter has described the research methodology for developing and validatin
 **Sample**:
 
 - N = 523 United States adults
-- Two population groups: Students (216), Professionals (307)
+- Two population groups: Academics (216), Professionals (307)
 - 50/50 split for cross-validation (EFA n = 261, CFA n = 262)
 
 **Analysis**:
@@ -888,7 +890,7 @@ This chapter has described the research methodology for developing and validatin
 - EFA for structure exploration, CFA for validation
 - Multi-group SEM for hypothesis testing
 - Cluster analysis for user typology
-- Thematic analysis for qualitative insights
+- Automated content analysis for qualitative insights
 
 **Validity**:
 

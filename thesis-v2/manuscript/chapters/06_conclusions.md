@@ -21,12 +21,12 @@ The study employed a rigorous ten-phase psychometric validation approach:
 0. **Sample Splitting**: Created stratified EFA/CFA subsamples (n = 261/262) with random seed = 67 for reproducibility
 1. **Exploratory Factor Analysis** (n = 261): Identified the underlying factor structure through split-sample design
 2. **Confirmatory Factor Analysis** (n = 262): Cross-validated the measurement model on an independent holdout sample
-3. **Measurement Invariance Testing**: Established configural invariance across student and professional populations (metric invariance not fully achieved)
+3. **Measurement Invariance Testing**: Established configural invariance across academic and professional populations (metric invariance not fully achieved)
 4. **Structural Equation Modeling**: Tested hypothesized relationships among latent constructs
 5. **Mediation Analysis**: Examined indirect effects within the structural model
 6. **Moderation Analysis**: Investigated experience and usage frequency as boundary conditions
 7. **Behavioral Validation**: Correlated intentions with actual AI tool usage patterns
-8. **Qualitative Analysis**: Thematic analysis of open-ended responses
+8. **Qualitative Analysis**: Automated content analysis of open-ended responses
 9. **Comprehensive Review**: Gap analysis and cross-validation of findings
 10. **Final Synthesis**: Integration of quantitative and qualitative insights
 
@@ -38,13 +38,13 @@ The study produced several significant findings that advance both theory and pra
 
 **Diagnostic Instrument Validation**: The 8-factor, 16-item AIRS demonstrated excellent psychometric properties (CFI = .975, RMSEA = .065, α range .743-.909, all CR > .750, all AVE > .601) and configural invariance across populations. The 8-factor structure was selected over a more parsimonious 7-factor alternative because AI Trust provides essential diagnostic capability: practitioners can identify trust deficits and design targeted confidence-building interventions, a feature critical for translating research into organizational practice.
 
-**Adoption Drivers**: Contrary to expectations from traditional UTAUT research, Price Value emerged as the dominant predictor (β = .505, p < .001), followed by Hedonic Motivation (β = .217, p = .014) and Social Influence (β = .136, p = .024). Traditional predictors including Performance Expectancy, Effort Expectancy, and Facilitating Conditions were not significant.
+**Adoption Drivers**: The structural model explained 89.7% of variance in Behavioral Intention (R² = .897). Contrary to expectations from traditional UTAUT research, Price Value emerged as the dominant predictor (β = .505, p < .001), followed by Hedonic Motivation (β = .217, p = .014) and Social Influence (β = .136, p = .024). Bootstrap validation (1,000 resamples) confirmed Price Value as robust; Hedonic Motivation and Social Influence confidence intervals included zero, suggesting these effects are sensitive to sample composition. Traditional predictors including Performance Expectancy, Effort Expectancy, and Facilitating Conditions were not significant.
 
-**AI Trust Extension**: AI Trust approached but did not reach conventional significance (β = .106, p = .064), providing tentative support for the theoretical extension while highlighting the need for larger samples in future research.
+**AI Trust Extension**: AI Trust approached but did not reach conventional significance (β = .106, p = .064). The construct is retained as a diagnostic inclusion: detecting this effect size at 80% power requires n > 600, and AI Trust provides unique diagnostic capability for identifying trust-specific adoption barriers that cannot be captured by the other seven constructs. The 2026 transition toward agentic AI systems that act autonomously may elevate trust from a marginal to a dominant predictor in future research.
 
-**Moderator Effects**: Professional experience strengthened the Hedonic Motivation -> Behavioral Intention path (β = .136, p = .009), suggesting that experienced professionals prioritize enjoyment in AI tool evaluation.
+**Moderator Effects**: Professional experience strengthened the Hedonic Motivation -> Behavioral Intention path (β = .136, p = .007), suggesting that experienced professionals prioritize enjoyment in AI tool evaluation.
 
-**User Typology**: Four distinct adoption segments were identified (see §4.6), suggesting heterogeneous adoption readiness patterns that future research can leverage for intervention design.
+**User Typology**: Three distinct adoption segments were identified through cluster analysis (k=3, silhouette=0.271): AI Enthusiasts (31%), Moderate Users (47%), and AI Skeptics (22%), forming a readiness gradient that explains 65.9% of BI variance and providing a framework for future intervention research.
 
 
 
@@ -54,7 +54,7 @@ This dissertation makes four primary contributions to technology acceptance theo
 
 ### 6.3.1 UTAUT2 Extension for AI Contexts
 
-The study extends UTAUT2 with AI-specific constructs, demonstrating that traditional technology acceptance frameworks require modification for AI adoption contexts. The near-significant AI Trust effect and the shift from Performance Expectancy to Price Value dominance (detailed in §4.5) suggest that AI represents a theoretically distinct technology category.
+The study extends UTAUT2 with AI-specific constructs, demonstrating that traditional technology acceptance frameworks require modification for AI adoption contexts. AI Trust is retained as a diagnostic inclusion rather than a structural claim: detecting β = .106 at 80% power requires n > 600, and the construct provides essential organizational diagnostic capability. The shift from Performance Expectancy to Price Value dominance (detailed in §4.5) suggests that AI represents a theoretically distinct technology category.
 
 ### 6.3.2 Context-Specific Adoption Drivers
 
@@ -66,7 +66,7 @@ The experience moderation effect (§4.5.4) introduces career development as a re
 
 ### 6.3.4 User Typology Framework
 
-The empirically-derived four-segment typology provides insights into adoption heterogeneity that can inform future intervention research. Rather than treating users as a homogeneous population, this segmentation reveals that different psychological profiles may respond to different adoption strategies, a hypothesis warranting future experimental validation.
+The empirically-derived three-segment typology provides insights into adoption heterogeneity that can inform future intervention research. Rather than treating users as a homogeneous population, the clear readiness gradient — from high-engagement Enthusiasts (31%) through pragmatic Moderate Users (47%) to resistant Skeptics (22%) — reveals that different psychological profiles may respond to different adoption strategies, a hypothesis warranting future experimental validation.
 
 
 
@@ -76,7 +76,7 @@ The empirically-derived four-segment typology provides insights into adoption he
 
 **Value Demonstration Over Capability Showcasing**: The dominance of Price Value suggests that organizations may benefit from demonstrating clear return on investment rather than simply highlighting AI capabilities. The findings indicate that employees' cost-benefit mental models may be more influential than capability-focused messaging, a hypothesis warranting experimental validation in organizational contexts.
 
-**Segment-Specific Intervention Hypotheses**: The four-segment typology (§4.6) provides a framework for tailored change management research. Preliminary hypotheses suggest that each segment may respond to different intervention approaches, from champion programs for Enthusiasts to anxiety-reduction for Avoiders, pending experimental validation.
+**Segment-Specific Intervention Hypotheses**: The three-segment typology (§4.6) provides a framework for tailored change management research. Preliminary hypotheses suggest that each segment may respond to different intervention approaches — from champion programs and advanced training for Enthusiasts, to ROI demonstrations for Moderate Users, to graduated exposure and psychological safety protocols for Skeptics — pending experimental validation.
 
 **Social Influence Leverage**: The significant Social Influence effect (β = .136) suggests that peer influence matters for AI adoption. The findings indicate that visible AI champions and communities of practice may facilitate adoption, approaches that warrant experimental testing.
 
@@ -86,13 +86,13 @@ The empirically-derived four-segment typology provides insights into adoption he
 
 **Pricing Model Innovation**: The Price Value dominance suggests that pricing strategy significantly influences adoption. Freemium models, transparent pricing, and clear ROI documentation may be more important than feature development for driving adoption.
 
-**Trust-Building Features**: While AI Trust was marginally significant, its near-significance (p = .064) suggests that trust considerations are emerging concerns. The findings indicate that explainability features, reliability demonstrations, and transparency mechanisms may address trust-related hesitation, a hypothesis for design research.
+**Trust-Building Features**: AI Trust was marginally significant (p = .064), and its retention as a diagnostic inclusion reflects the theoretical expectation that trust considerations are emerging concerns in AI adoption. The findings indicate that explainability features, reliability demonstrations, and transparency mechanisms may address trust-related hesitation, a hypothesis for design research. As AI systems transition from tools to autonomous agents, trust requirements are expected to intensify.
 
 **Enjoyment-Focused Design**: The Hedonic Motivation effect indicates that users value enjoyable experiences. The findings suggest that designing AI tools for engagement, not just utility, may enhance adoption, though experimental validation is needed.
 
 ### 6.4.3 For Trainers and Educators
 
-**Anxiety-Informed Pedagogy**: The identification of an "Anxious Avoider" segment (17%) with elevated AI anxiety suggests that training programs may benefit from addressing emotional barriers before technical skills. Anxiety-reduction approaches (such as gradual exposure, peer support, and psychological safety) may be more effective when preceding capability training, though this hypothesis requires experimental validation.
+**Anxiety-Informed Pedagogy**: The AI Skeptics segment (22%), characterized by below-average scores across all adoption readiness constructs, suggests that training programs may benefit from addressing resistance barriers before technical skills. Graduated exposure approaches, peer support, and psychological safety may be more effective when preceding capability training, though this hypothesis requires experimental validation.
 
 **Accessibility Considerations**: The finding that disability status is associated with higher AI anxiety (d = .36) highlights the importance of inclusive AI training design. The findings suggest that materials and interfaces accommodating diverse abilities may better support anxious learners, considerations that warrant attention in training program development.
 
@@ -118,7 +118,7 @@ Based on the empirical findings and identified research gaps, the following reco
 
 4. **Examine career development integration**: The significant experience moderation effect on Hedonic Motivation suggests that career development theory should be integrated with technology acceptance models. Longitudinal research linking career stages to adoption trajectories is warranted.
 
-5. **Validate the user typology framework**: The four-segment typology (Enthusiasts, Cautious Adopters, Moderate Users, Anxious Avoiders) should be validated across populations and used to develop segment-specific theoretical models.
+5. **Validate the user typology framework**: The three-segment typology (AI Enthusiasts, Moderate Users, AI Skeptics) should be validated across populations and used to develop segment-specific theoretical models.
 
 6. **Conduct cross-cultural research**: The Western sample limits generalizability. Comparative studies in collectivist cultures, developing economies, and regions with different AI policy environments are essential for theory refinement.
 
@@ -132,7 +132,7 @@ The following recommendations are offered with an important caveat: this study v
 
 2. **Lead with value propositions** rather than capability demonstrations. The dominance of Price Value (β = .505) over Performance Expectancy (ns) suggests communicating AI benefits in terms of time savings, cost reduction, and ROI rather than technical features.
 
-3. **Attend to affective barriers**: The 17% "Anxious Avoider" segment and marginal Trust effect suggest that emotional responses to AI warrant attention. Future research should test whether anxiety-reduction approaches (gradual exposure, peer support, psychological safety) improve adoption outcomes.
+3. **Attend to affective barriers**: The 22% AI Skeptics segment (mean BI=1.71) and marginal Trust effect (β=.106, p=.064) suggest that emotional responses to AI warrant attention. Future research should test whether anxiety-reduction approaches (gradual exposure, peer support, psychological safety) improve adoption outcomes.
 
 4. **Leverage social influence** by identifying and supporting AI champions who can model positive adoption behaviors. Social Influence was a significant predictor (β = .136), suggesting peer effects matter.
 
@@ -142,7 +142,7 @@ The following recommendations are offered with an important caveat: this study v
 
 7. **Design for accessibility** to ensure that AI adoption does not disadvantage employees with disabilities or those who experience higher baseline technology anxiety (d = .36 disability-anxiety association).
 
-8. **Consider segment heterogeneity**: The four-segment user typology suggests that different groups may respond to different approaches. Experimental research is needed to determine whether segment-specific interventions outperform one-size-fits-all approaches.
+8. **Consider segment heterogeneity**: The three-segment user typology suggests that different groups may respond to different approaches. Experimental research is needed to determine whether segment-specific interventions outperform one-size-fits-all approaches.
 
 
 
@@ -170,6 +170,10 @@ While this study employed rigorous methodology and produced robust findings, sev
 
 ## 6.7 Recommendations for Future Research
 
+### 6.7.0 2026 Contextual Developments
+
+The October–November 2025 data collection positions this AIRS validation as a pre-agentic baseline. Three developments in early 2026 create urgent research opportunities: (a) the open-source AI economics shift (exemplified by DeepSeek R1) may redefine what "price value" means when powerful AI becomes freely available; (b) the emergence of agentic AI systems that act autonomously — rather than responding to queries — fundamentally changes the trust equation, potentially elevating Trust from a marginal to a dominant predictor; and (c) the EU AI Act's enforcement timeline introduces regulatory context as a moderator of adoption drivers. Longitudinal AIRS administration across this transition period would provide uniquely valuable data on how adoption psychology evolves as AI capabilities and governance frameworks mature.
+
 ### 6.7.1 Immediate Research Priorities
 
 1. **Larger Sample Replication**: Achieve n > 600 to provide adequate power (80%) for detecting small effects like the Trust coefficient (β ≈ .106).
@@ -180,36 +184,59 @@ While this study employed rigorous methodology and produced robust findings, sev
 
 4. **Mediation Hypothesis Testing**: With improved measures, test the originally hypothesized mediation paths through Explainability and Ethical Risk.
 
-### 6.7.2 Extended Research Agenda
+### 6.7.2 Extended Research Agenda and Future Hypotheses
 
-1. **Cross-Cultural Validation**: Replicate the AIRS in collectivist cultures, developing economies, and regions with different AI policy environments.
+The following research directions and testable hypotheses emerge from the empirical findings and the 2026 contextual developments:
 
-2. **Industry-Specific Adaptation**: Examine whether AI adoption drivers differ across industries (e.g., healthcare, finance, education) where AI applications and risk profiles vary.
+1. **Cross-Cultural Validation**: Replicate the AIRS in collectivist cultures, developing economies, and regions with different AI policy environments. Social Influence may become the dominant predictor in collectivist cultures, while Trust may strengthen significantly in regulated environments (EU AI Act).
 
-3. **Intervention Effectiveness Studies**: Design and evaluate segment-specific interventions based on the user typology framework to determine whether the identified segments respond differently to targeted approaches.
+2. **Industry-Specific Adaptation (H24)**: Examine whether AI adoption drivers differ across industries (e.g., healthcare, finance, education) where AI applications and risk profiles vary. Hypothesis: PV dominates in cost-sensitive sectors (education, SMB), Trust dominates in high-stakes sectors (healthcare, finance, legal). Design: multi-sector sample, 200+ per industry × 4 industries.
+
+3. **Intervention Effectiveness Studies (H21)**: Design and evaluate segment-specific interventions based on the user typology framework. Hypothesis: the 3 empirical clusters (Enthusiasts, Moderate Users, Skeptics) respond differentially to targeted interventions, enabling more efficient allocation of training budgets. Design: RCT with 3 intervention types × 3 segments.
 
 4. **Accessibility Research**: Investigate the mechanisms underlying the disability-anxiety association and develop inclusive AI training approaches.
 
-5. **High-Stakes AI Contexts**: Examine whether Trust becomes more predictive for consequential AI applications such as autonomous decision-making systems.
+5. **Agentic Trust Escalation (H9)**: As AI transitions from tool to autonomous agent, Trust may shift from marginal (β ≈ .10) to dominant predictor (β > .30) of Behavioral Intention. Design: compare AIRS factor weights for query-based AI versus agentic AI contexts.
 
-6. **Longitudinal Acceptance Tracking**: Recent evidence reveals that public sentiment toward AI has shifted post-ChatGPT, with "not acceptable" responses increasing from 23% to 30% in one year [@baumann2025reduced]. This suggests the need for longitudinal AIRS studies tracking how individual adoption factors change as AI technologies mature and social discourse evolves.
+6. **Open-Source Value Reframing (H10)**: In free/open-source AI contexts, PV's meaning may shift from monetary cost to time/effort investment, maintaining its predictive dominance through semantic evolution. Design: compare AIRS in paid versus free AI tool contexts.
+
+7. **Temporal Construct Drift (H14)**: The relative importance of AIRS factors may shift predictably over a 12-month period as AI matures in the organizational context. Design: longitudinal panel with AIRS administered at baseline, 6 months, and 12 months (n > 600).
+
+8. **Anxiety Sub-Dimensionality (H16)**: AI Anxiety comprises at least 3 distinct dimensions — avoidance anxiety, obsolescence anxiety [@kim2025], and anticipatory anxiety [@frenkenberg2025] — each with differential effects on Behavioral Intention. Design: develop 9–12 item AX scale (3 items × 3–4 dimensions).
+
+9. **AIRS Score Predictive Validity (H22)**: Baseline AIRS composite scores predict actual AI tool adoption rates at 6-month follow-up with r > .50. This would validate AIRS as a practical pre-deployment assessment instrument.
+
+10. **3-Item Scale Improvement (H20)**: Expanding from 2 to 3 items per factor (AIRS-28) will resolve discriminant validity violations in the PE/HM/PV triad while maintaining fit. Design: 28-item CFA comparison with the current 16-item model.
+
+11. **Longitudinal Acceptance Tracking**: Recent evidence reveals that public sentiment toward AI has shifted post-ChatGPT, with "not acceptable" responses increasing from 23% to 30% in one year [@baumann2025reduced]. This suggests the need for longitudinal AIRS studies tracking how individual adoption factors change as AI technologies mature and social discourse evolves.
 
 ### 6.7.3 Research Roadmap: From Validated Scale to Organizational Applications
 
 This dissertation establishes the AIRS as a validated diagnostic instrument. The 8-factor structure already enables identification of specific adoption barriers; the following roadmap outlines the research program required to develop formalized protocols for organizational applications:
 
-**Phase 1: AIRS Score Development** (Near-term)
+**Phase 1: AIRS-28 Development and Score Validation** (2026–2027)
 
+- Expand from 16 to 28 items: add a 3rd item to each existing factor (8 × 3 = 24 items) and reintroduce AI Anxiety as a 4-item sub-dimensional scale (avoidance, obsolescence, anticipatory, FOMO). Expected outcome: resolve discriminant validity violations in the PE/HM/PV triad, recover the AX construct, and maintain excellent fit
 - Develop a scoring algorithm that transforms raw item responses into interpretable individual and organizational readiness scores
-- Establish normative benchmarks across populations (students, professionals, leaders)
+- Establish normative benchmarks across populations (academics, professionals, leaders)
 - Create percentile rankings and readiness classifications (e.g., "emerging," "developing," "proficient," "advanced")
 - Validate score interpretations through criterion-related validity studies linking scores to actual adoption outcomes
+- Practitioner value: a 28-item instrument takes ~7 minutes to administer (vs. ~4 for 16 items) while providing substantially richer diagnostic profiles
 
-**Phase 2: Diagnostic Protocol Development** (Medium-term)
+**Phase 2: Longitudinal Panel Study and Diagnostic Protocol Development** (2026–2027)
 
+- Administer AIRS at 3 time points (baseline, 6 months, 12 months) with n > 600 to resolve power issues for Trust detection, test temporal construct drift (H14), and validate predictive utility (H22)
 - Design administration protocols for organizational AI readiness assessment
 - Develop reporting frameworks that translate AIRS results into actionable organizational insights
 - Pilot diagnostic protocols with partner organizations
+- Capture the pre-agentic to agentic AI transition in real time
+- Practitioner value: provides normative benchmarks, validates AIRS as a pre-deployment assessment tool, and establishes temporal stability/change patterns
+
+**Phase 2b: Cross-Cultural Validation** (2027–2028)
+
+- Replicate AIRS in collectivist cultures (East Asia, Latin America), regulatory-intensive environments (EU), developing economies, and non-English languages
+- Translation, back-translation, and measurement invariance testing
+- Practitioner value: multinational organizations need culturally validated assessment tools; current AIRS is US-only
 
 ### 6.7.4 Appropriate Reliance Research
 
@@ -219,22 +246,22 @@ Future research should therefore extend beyond the adoption decision to investig
 
 1. **AIRS-to-Reliance Calibration**: Do individuals with higher Price Value scores rely more appropriately on AI outputs? Does the marginal Trust effect (β = .106) predict reliance calibration quality?
 
-2. **Segment-Specific Reliance Patterns**: Do the four user segments (Enthusiastic Adopters, Pragmatic Evaluators, Cautious Traditionalists, Anxious Avoiders) exhibit different over-reliance or under-reliance tendencies?
+2. **Segment-Specific Reliance Patterns**: Do the three user segments (AI Enthusiasts, Moderate Users, AI Skeptics) exhibit different over-reliance or under-reliance tendencies?
 
 3. **Intervention Sequencing**: Determine whether appropriate reliance training should precede, accompany, or follow adoption interventions to optimize both willingness and calibration.
 - Establish reliability of organizational-level aggregated scores
 
-**Phase 3: Intervention Framework Development** (Medium-term)
+**Phase 3: Intervention Framework Development** (2028–2029)
 
-- Design experimental studies testing segment-specific interventions:
-  - Enthusiasts: Champion program effectiveness
-  - Cautious Adopters: Evidence-based reassurance interventions
-  - Moderate Users: Use-case targeting approaches
-  - Anxious Avoiders: Anxiety-reduction protocols (graduated exposure, psychological safety, peer support)
+- Design experimental studies testing segment-specific interventions (H21):
+  - AI Enthusiasts: Champion programs, advanced training, early access to emerging tools
+  - Moderate Users: ROI demonstrations, use-case targeting, value-focused messaging
+  - AI Skeptics: Graduated exposure protocols, psychological safety, peer support, anxiety reduction
 - Conduct randomized controlled trials to establish intervention effectiveness
 - Develop practitioner guides for evidence-based intervention selection
+- Test industry moderation effects (H24) across healthcare, education, finance, and technology sectors
 
-**Phase 4: Comprehensive AI Readiness System** (Long-term)
+**Phase 4: Comprehensive AI Readiness System** (2029+)
 
 - Integrate validated AIRS Score, diagnostic protocols, and intervention frameworks into a comprehensive organizational AI readiness system
 - Develop longitudinal tracking capabilities for monitoring readiness progression
@@ -251,6 +278,6 @@ This dissertation addresses a timely challenge: understanding why individuals ad
 
 The findings reveal that AI adoption operates through different mechanisms than previous technology adoption. The dominance of Price Value, the significant role of Hedonic Motivation, and experience as a moderator suggest that AI represents a distinct technology category. Users evaluate AI tools through a value-and-enjoyment lens rather than a pure utility lens, a finding with implications for organizational practice.
 
-The validated AIRS diagnostic instrument provides researchers with a psychometrically sound foundation for investigating AI adoption. The 8-factor structure enables organizations to identify specific adoption barriers, whether trust deficits, inadequate perceived value, or social influence gaps, and design targeted interventions. The four-segment typology offers preliminary evidence of adoption heterogeneity warranting experimental investigation. The theoretical extensions contribute to scholarly conversations about how technology acceptance models must evolve.
+The validated AIRS diagnostic instrument provides researchers with a psychometrically sound foundation for investigating AI adoption. The 8-factor structure enables organizations to identify specific adoption barriers, whether trust deficits, inadequate perceived value, or social influence gaps, and design targeted interventions. The three-segment typology offers preliminary evidence of adoption heterogeneity warranting experimental investigation. The theoretical extensions contribute to scholarly conversations about how technology acceptance models must evolve.
 
 As AI transforms professional work, understanding adoption psychology becomes critical. This dissertation establishes a validated foundation that can enable future diagnostic tools, intervention protocols, and assessment systems. The path forward requires continued research, experimental studies, and commitment to inclusive adoption benefiting all members of the workforce.

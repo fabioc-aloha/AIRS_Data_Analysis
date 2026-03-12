@@ -167,7 +167,7 @@ cat("GAP 3: PROFESSIONAL EXPERIENCE\n")
 cat(strrep("=", 70), "\n")
 
 if ("Experience" %in% names(df)) {
-    exp_order <- c("Less than 1 year", "1-3 years", "3-5 years", "5-10 years", "10+ years")
+    exp_order <- c("Less than 1 year", "1 to 3 years", "4 to 6 years", "7 to 10 years", "11 or more years")
     exp_numeric <- setNames(1:5, exp_order)
     df$Experience_Numeric <- exp_numeric[df$Experience]
 

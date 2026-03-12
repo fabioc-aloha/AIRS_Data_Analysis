@@ -18,7 +18,7 @@
 | Moderate Users | +0.26 | +0.42 | +0.01 | -0.42 | +0.42 | -0.07 | -0.32 |
 | AI Enthusiasts | +1.42 | +1.45 | +1.37 | +1.03 | -0.86 | +1.32 | +0.26 |
 
-*Note: Cluster centroids based on k-means clustering (k=4) using standardized construct scores. Source: Notebook 09.*
+*Note: Cluster centroids based on k-means clustering (k=4) using standardized construct scores. Source: Script 09.*
 
 ## Cluster Interpretation
 

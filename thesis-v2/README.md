@@ -38,7 +38,7 @@ thesis-v2/
 │   ├── front-matter/        # 00_title.md through 06_toc_setup.md
 │   ├── chapters/            # 01-06 chapter files
 │   └── back-matter/         # references.md, appendices.md
-├── figures/                 # PNG figures from notebooks
+├── figures/                 # PNG figures from analysis scripts
 ├── references/
 │   ├── bibliography.bib     # 93 BibTeX references
 │   └── apa-7th-edition.csl  # Citation style
