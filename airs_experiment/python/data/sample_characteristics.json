@@ -1,0 +1,58 @@
+{
+  "total_n": 523,
+  "efa_n": 261,
+  "cfa_n": 262,
+  "efa_pct": 49.9,
+  "cfa_pct": 50.1,
+  "two_group": {
+    "academic": {
+      "n": 216,
+      "pct": 41.3,
+      "ft_student": 196,
+      "pt_student": 20
+    },
+    "professional": {
+      "n": 307,
+      "pct": 58.7
+    }
+  },
+  "three_group": {
+    "student": {
+      "n": 216,
+      "pct": 41.3
+    },
+    "professional": {
+      "n": 184,
+      "pct": 35.2,
+      "ic": 112,
+      "freelancer": 32,
+      "unemployed": 17,
+      "other": 23
+    },
+    "leader": {
+      "n": 123,
+      "pct": 23.5,
+      "manager": 71,
+      "executive": 52
+    }
+  },
+  "ai_adoption": {
+    "overall_pct": 89.5,
+    "efa_pct": 89.7,
+    "cfa_pct": 89.3
+  },
+  "cases_per_item": {
+    "efa": 10.9,
+    "cfa": 10.9
+  },
+  "role_distribution": {
+    "FT_Student": 196,
+    "IC": 112,
+    "Manager": 71,
+    "Executive": 52,
+    "Freelancer": 32,
+    "Other": 23,
+    "PT_Student": 20,
+    "Unemployed": 17
+  }
+}

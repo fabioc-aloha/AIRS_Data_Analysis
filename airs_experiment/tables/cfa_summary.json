@@ -1,99 +1,373 @@
 {
-  "population": "experiment",
-  "n_observations": 262,
+  "analysis_date": "2026-03-11T20:02:17",
+  "population": "ALL",
+  "holdout_n": 262,
+  "full_n": 523,
   "n_factors": 8,
   "n_items": 16,
-  "factor_structure": {
-    "PerfExp": [
-      "PE1",
-      "PE2"
-    ],
-    "EffortExp": [
-      "EE1",
-      "EE2"
-    ],
-    "SocialInf": [
-      "SI1",
-      "SI2"
-    ],
-    "FacilCond": [
-      "FC1",
-      "FC2"
-    ],
-    "HedonicMot": [
-      "HM1",
-      "HM2"
-    ],
-    "PriceValue": [
-      "PV1",
-      "PV2"
-    ],
-    "Habit": [
-      "HB1",
-      "HB2"
-    ],
-    "AITrust": [
-      "TR1",
-      "TR2"
-    ]
+  "dropped_constructs": ["Voluntariness", "Explainability", "EthicalRisk", "Anxiety"],
+  "cfa_structure": {
+    "PerfExp": ["PE1", "PE2"],
+    "EffortExp": ["EE1", "EE2"],
+    "SocialInf": ["SI1", "SI2"],
+    "FacilCond": ["FC1", "FC2"],
+    "HedonicMot": ["HM1", "HM2"],
+    "PriceValue": ["PV1", "PV2"],
+    "Habit": ["HB1", "HB2"],
+    "AITrust": ["TR1", "TR2"]
   },
-  "fit_indices": {
-    "chi2": 159.37934775145305,
+  "fit_indices_holdout": {
+    "chisq": 159.3786,
     "df": 76,
-    "CFI": 0.9746158619248737,
-    "TLI": 0.9599197819866427,
-    "RMSEA": 0.064833907480251,
-    "AIC": 118.7833637576225,
-    "BIC": 332.8840339832883
+    "pvalue": 0,
+    "cfi": 0.9746,
+    "tli": 0.9599,
+    "rmsea": 0.0647,
+    "rmsea.ci.lower": 0.0506,
+    "rmsea.ci.upper": 0.0788,
+    "srmr": 0.0262,
+    "aic": 9905.2471,
+    "bic": 10119.3478
   },
+  "fit_indices_full": {
+    "chisq": 222.5189,
+    "df": 76,
+    "pvalue": 0,
+    "cfi": 0.9787,
+    "tli": 0.9664,
+    "rmsea": 0.0607,
+    "srmr": 0.0217,
+    "aic": 19671.6223,
+    "bic": 19927.1972
+  },
+  "factor_loadings": [
+    {
+      "factor": "PerfExp",
+      "item": "PE1",
+      "loading": 0.7984,
+      "p": 0
+    },
+    {
+      "factor": "PerfExp",
+      "item": "PE2",
+      "loading": 0.842,
+      "p": 0
+    },
+    {
+      "factor": "EffortExp",
+      "item": "EE1",
+      "loading": 0.831,
+      "p": 0
+    },
+    {
+      "factor": "EffortExp",
+      "item": "EE2",
+      "loading": 0.906,
+      "p": 0
+    },
+    {
+      "factor": "SocialInf",
+      "item": "SI1",
+      "loading": 0.8761,
+      "p": 0
+    },
+    {
+      "factor": "SocialInf",
+      "item": "SI2",
+      "loading": 0.6885,
+      "p": 0
+    },
+    {
+      "factor": "FacilCond",
+      "item": "FC1",
+      "loading": 0.7174,
+      "p": 0
+    },
+    {
+      "factor": "FacilCond",
+      "item": "FC2",
+      "loading": 0.8292,
+      "p": 0
+    },
+    {
+      "factor": "HedonicMot",
+      "item": "HM1",
+      "loading": 0.8386,
+      "p": 0
+    },
+    {
+      "factor": "HedonicMot",
+      "item": "HM2",
+      "loading": 0.9066,
+      "p": 0
+    },
+    {
+      "factor": "PriceValue",
+      "item": "PV1",
+      "loading": 0.8883,
+      "p": 0
+    },
+    {
+      "factor": "PriceValue",
+      "item": "PV2",
+      "loading": 0.8895,
+      "p": 0
+    },
+    {
+      "factor": "Habit",
+      "item": "HB1",
+      "loading": 0.9048,
+      "p": 0
+    },
+    {
+      "factor": "Habit",
+      "item": "HB2",
+      "loading": 0.9203,
+      "p": 0
+    },
+    {
+      "factor": "AITrust",
+      "item": "TR1",
+      "loading": 0.8754,
+      "p": 0
+    },
+    {
+      "factor": "AITrust",
+      "item": "TR2",
+      "loading": 0.9171,
+      "p": 0
+    }
+  ],
   "reliability": [
     {
-      "Factor": "PerfExp",
-      "Alpha": 0.8029567113666294,
-      "CR": 0.8044763553672948,
-      "AVE": 0.6730640379371884
+      "factor": "PerfExp",
+      "CR": 0.8046,
+      "AVE": 0.6732,
+      "Alpha": 0.803
     },
     {
-      "Factor": "EffortExp",
-      "Alpha": 0.858774861248105,
-      "CR": 0.8606213627719015,
-      "AVE": 0.7556866714158316
+      "factor": "EffortExp",
+      "CR": 0.8606,
+      "AVE": 0.7557,
+      "Alpha": 0.8588
     },
     {
-      "Factor": "SocialInf",
-      "Alpha": 0.7517293889672745,
-      "CR": 0.763328186337546,
-      "AVE": 0.6206087856540579
+      "factor": "SocialInf",
+      "CR": 0.7635,
+      "AVE": 0.6208,
+      "Alpha": 0.7517
     },
     {
-      "Factor": "FacilCond",
-      "Alpha": 0.7430775976860298,
-      "CR": 0.7499336650010092,
-      "AVE": 0.6011586626414117
+      "factor": "FacilCond",
+      "CR": 0.7499,
+      "AVE": 0.6011,
+      "Alpha": 0.7431
     },
     {
-      "Factor": "HedonicMot",
-      "Alpha": 0.8636032443291701,
-      "CR": 0.8651041248613651,
-      "AVE": 0.7625509679061948
+      "factor": "HedonicMot",
+      "CR": 0.8651,
+      "AVE": 0.7626,
+      "Alpha": 0.8636
     },
     {
-      "Factor": "PriceValue",
-      "Alpha": 0.8826641165006224,
-      "CR": 0.8827370241309336,
-      "AVE": 0.7900889199458001
+      "factor": "PriceValue",
+      "CR": 0.8828,
+      "AVE": 0.7901,
+      "Alpha": 0.8827
     },
     {
-      "Factor": "Habit",
-      "Alpha": 0.9087274409995378,
-      "CR": 0.9088721462111432,
-      "AVE": 0.8329755103827157
+      "factor": "Habit",
+      "CR": 0.9088,
+      "AVE": 0.8329,
+      "Alpha": 0.9087
     },
     {
-      "Factor": "AITrust",
-      "Alpha": 0.8906149320224743,
-      "CR": 0.8910530341467787,
-      "AVE": 0.803598799274763
+      "factor": "AITrust",
+      "CR": 0.8911,
+      "AVE": 0.8037,
+      "Alpha": 0.8906
     }
+  ],
+  "fornell_larcker_violations": 5,
+  "htmt": [
+    {
+      "factor_i": "PerfExp",
+      "factor_j": "EffortExp",
+      "htmt": 0.7277,
+      "status": "OK"
+    },
+    {
+      "factor_i": "PerfExp",
+      "factor_j": "SocialInf",
+      "htmt": 0.8069,
+      "status": "OK"
+    },
+    {
+      "factor_i": "PerfExp",
+      "factor_j": "FacilCond",
+      "htmt": 0.729,
+      "status": "OK"
+    },
+    {
+      "factor_i": "PerfExp",
+      "factor_j": "HedonicMot",
+      "htmt": 0.8996,
+      "status": "MARGINAL"
+    },
+    {
+      "factor_i": "PerfExp",
+      "factor_j": "PriceValue",
+      "htmt": 0.9019,
+      "status": "FAIL"
+    },
+    {
+      "factor_i": "PerfExp",
+      "factor_j": "Habit",
+      "htmt": 0.8293,
+      "status": "OK"
+    },
+    {
+      "factor_i": "PerfExp",
+      "factor_j": "AITrust",
+      "htmt": 0.8103,
+      "status": "OK"
+    },
+    {
+      "factor_i": "EffortExp",
+      "factor_j": "SocialInf",
+      "htmt": 0.5203,
+      "status": "OK"
+    },
+    {
+      "factor_i": "EffortExp",
+      "factor_j": "FacilCond",
+      "htmt": 0.7128,
+      "status": "OK"
+    },
+    {
+      "factor_i": "EffortExp",
+      "factor_j": "HedonicMot",
+      "htmt": 0.6071,
+      "status": "OK"
+    },
+    {
+      "factor_i": "EffortExp",
+      "factor_j": "PriceValue",
+      "htmt": 0.678,
+      "status": "OK"
+    },
+    {
+      "factor_i": "EffortExp",
+      "factor_j": "Habit",
+      "htmt": 0.6121,
+      "status": "OK"
+    },
+    {
+      "factor_i": "EffortExp",
+      "factor_j": "AITrust",
+      "htmt": 0.663,
+      "status": "OK"
+    },
+    {
+      "factor_i": "SocialInf",
+      "factor_j": "FacilCond",
+      "htmt": 0.7394,
+      "status": "OK"
+    },
+    {
+      "factor_i": "SocialInf",
+      "factor_j": "HedonicMot",
+      "htmt": 0.7824,
+      "status": "OK"
+    },
+    {
+      "factor_i": "SocialInf",
+      "factor_j": "PriceValue",
+      "htmt": 0.7942,
+      "status": "OK"
+    },
+    {
+      "factor_i": "SocialInf",
+      "factor_j": "Habit",
+      "htmt": 0.6734,
+      "status": "OK"
+    },
+    {
+      "factor_i": "SocialInf",
+      "factor_j": "AITrust",
+      "htmt": 0.7272,
+      "status": "OK"
+    },
+    {
+      "factor_i": "FacilCond",
+      "factor_j": "HedonicMot",
+      "htmt": 0.7105,
+      "status": "OK"
+    },
+    {
+      "factor_i": "FacilCond",
+      "factor_j": "PriceValue",
+      "htmt": 0.6702,
+      "status": "OK"
+    },
+    {
+      "factor_i": "FacilCond",
+      "factor_j": "Habit",
+      "htmt": 0.6476,
+      "status": "OK"
+    },
+    {
+      "factor_i": "FacilCond",
+      "factor_j": "AITrust",
+      "htmt": 0.7098,
+      "status": "OK"
+    },
+    {
+      "factor_i": "HedonicMot",
+      "factor_j": "PriceValue",
+      "htmt": 0.9035,
+      "status": "FAIL"
+    },
+    {
+      "factor_i": "HedonicMot",
+      "factor_j": "Habit",
+      "htmt": 0.7805,
+      "status": "OK"
+    },
+    {
+      "factor_i": "HedonicMot",
+      "factor_j": "AITrust",
+      "htmt": 0.8501,
+      "status": "MARGINAL"
+    },
+    {
+      "factor_i": "PriceValue",
+      "factor_j": "Habit",
+      "htmt": 0.7918,
+      "status": "OK"
+    },
+    {
+      "factor_i": "PriceValue",
+      "factor_j": "AITrust",
+      "htmt": 0.8252,
+      "status": "OK"
+    },
+    {
+      "factor_i": "Habit",
+      "factor_j": "AITrust",
+      "htmt": 0.8184,
+      "status": "OK"
+    }
+  ],
+  "htmt_violations": 4,
+  "factor_correlations": [
+    [1, 0.7156, 0.8011, 0.7328, 0.9109, 0.8985, 0.8274, 0.8108],
+    [0.7156, 1, 0.5155, 0.7103, 0.6029, 0.6828, 0.6112, 0.6735],
+    [0.8011, 0.5155, 1, 0.7113, 0.7723, 0.7834, 0.6874, 0.7245],
+    [0.7328, 0.7103, 0.7113, 1, 0.7005, 0.6719, 0.6373, 0.7081],
+    [0.9109, 0.6029, 0.7723, 0.7005, 1, 0.898, 0.7864, 0.8427],
+    [0.8985, 0.6828, 0.7834, 0.6719, 0.898, 1, 0.7902, 0.8345],
+    [0.8274, 0.6112, 0.6874, 0.6373, 0.7864, 0.7902, 1, 0.8175],
+    [0.8108, 0.6735, 0.7245, 0.7081, 0.8427, 0.8345, 0.8175, 1]
   ]
 }

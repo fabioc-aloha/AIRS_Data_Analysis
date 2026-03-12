@@ -1,0 +1,174 @@
+{
+  "analysis_date": "2026-03-11T19:48:21",
+  "full_sample_n": 523,
+  "full_sample_fit": {
+    "chi2": 368.716,
+    "df": 134,
+    "cfi": 0.9753,
+    "tli": 0.9649,
+    "rmsea": 0.0579,
+    "srmr": 0.0239,
+    "r_squared_BehIntent": 0.8965,
+    "aic": 23951.06,
+    "bic": 24274.78
+  },
+  "path_coefficients": [
+    {
+      "predictor": "PerfExp",
+      "beta_std": -0.0278,
+      "p": 0.7924,
+      "hypothesis": "H1a",
+      "support": "Not Supported",
+      "ci_lower": -0.4988,
+      "ci_upper": 0.3407,
+      "ci_significant": false
+    },
+    {
+      "predictor": "EffortExp",
+      "beta_std": -0.0078,
+      "p": 0.8733,
+      "hypothesis": "H1b",
+      "support": "Not Supported",
+      "ci_lower": -0.2173,
+      "ci_upper": 0.1307,
+      "ci_significant": false
+    },
+    {
+      "predictor": "SocialInf",
+      "beta_std": 0.1355,
+      "p": 0.0226,
+      "hypothesis": "H1c",
+      "support": "Supported",
+      "ci_lower": -0.0276,
+      "ci_upper": 0.2982,
+      "ci_significant": false
+    },
+    {
+      "predictor": "FacilCond",
+      "beta_std": 0.0587,
+      "p": 0.3378,
+      "hypothesis": "H1d",
+      "support": "Not Supported",
+      "ci_lower": -0.1167,
+      "ci_upper": 0.3063,
+      "ci_significant": false
+    },
+    {
+      "predictor": "HedonicMot",
+      "beta_std": 0.2167,
+      "p": 0.0132,
+      "hypothesis": "H1e",
+      "support": "Supported",
+      "ci_lower": -0.1065,
+      "ci_upper": 0.4828,
+      "ci_significant": false
+    },
+    {
+      "predictor": "PriceValue",
+      "beta_std": 0.5045,
+      "p": 0.0001,
+      "hypothesis": "H1f",
+      "support": "Supported",
+      "ci_lower": 0.2181,
+      "ci_upper": 1.0833,
+      "ci_significant": true
+    },
+    {
+      "predictor": "Habit",
+      "beta_std": 0.0232,
+      "p": 0.6311,
+      "hypothesis": "H1g",
+      "support": "Not Supported",
+      "ci_lower": -0.0874,
+      "ci_upper": 0.1393,
+      "ci_significant": false
+    },
+    {
+      "predictor": "AITrust",
+      "beta_std": 0.1063,
+      "p": 0.0631,
+      "hypothesis": "H2",
+      "support": "Not Supported",
+      "ci_lower": -0.0956,
+      "ci_upper": 0.2475,
+      "ci_significant": false
+    }
+  ],
+  "bootstrap": {
+    "n_iterations": 1000,
+    "results": {
+      "PerfExp": {
+        "ci_lower": -0.4988,
+        "ci_upper": 0.3407,
+        "significant": false,
+        "unstd_est": -0.0315,
+        "std_est": -0.0278
+      },
+      "EffortExp": {
+        "ci_lower": -0.2173,
+        "ci_upper": 0.1307,
+        "significant": false,
+        "unstd_est": -0.0095,
+        "std_est": -0.0078
+      },
+      "SocialInf": {
+        "ci_lower": -0.0276,
+        "ci_upper": 0.2982,
+        "significant": false,
+        "unstd_est": 0.1386,
+        "std_est": 0.1355
+      },
+      "FacilCond": {
+        "ci_lower": -0.1167,
+        "ci_upper": 0.3063,
+        "significant": false,
+        "unstd_est": 0.072,
+        "std_est": 0.0587
+      },
+      "HedonicMot": {
+        "ci_lower": -0.1065,
+        "ci_upper": 0.4828,
+        "significant": false,
+        "unstd_est": 0.2197,
+        "std_est": 0.2167
+      },
+      "PriceValue": {
+        "ci_lower": 0.2181,
+        "ci_upper": 1.0833,
+        "significant": true,
+        "unstd_est": 0.5173,
+        "std_est": 0.5045
+      },
+      "Habit": {
+        "ci_lower": -0.0874,
+        "ci_upper": 0.1393,
+        "significant": false,
+        "unstd_est": 0.0205,
+        "std_est": 0.0232
+      },
+      "AITrust": {
+        "ci_lower": -0.0956,
+        "ci_upper": 0.2475,
+        "significant": false,
+        "unstd_est": 0.1033,
+        "std_est": 0.1063
+      }
+    }
+  },
+  "hypothesis_results": {
+    "H1_supported_paths": 3,
+    "H1_total_paths": 7,
+    "H2_trust_significant": false,
+    "H2_trust_beta": 0.1063,
+    "H2_trust_p": 0.0631,
+    "H3_incremental_validity": false,
+    "H3_delta_aic": 2174.59,
+    "H4_moderation_effects": 2
+  },
+  "model_comparison": {
+    "utaut2_aic": 21776.47,
+    "airs_aic": 23951.06,
+    "delta_aic": 2174.59,
+    "delta_bic": 2225.7
+  }
+}

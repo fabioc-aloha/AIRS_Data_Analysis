@@ -1,43 +1,38 @@
 {
   "$schema": "../SYNAPSE-SCHEMA.json",
   "skillId": "dissertation-defense",
-  "version": "1.1.0",
-  "lastUpdated": "2026-02-10",
+  "version": "1.2.0",
+  "lastUpdated": "2026-03-11",
   "connections": [
     {
-      "target": ".github/skills/book-publishing/SKILL.md",
-      "type": "depends-on",
-      "strength": 0.85,
-      "when": "building thesis PDF or troubleshooting Pandoc/LaTeX pipeline",
-      "yields": "Pandoc + LaTeX build patterns, PDF generation expertise"
-    },
-    {
-      "target": ".github/skills/citation-management/SKILL.md",
+      "target": ".github/skills/slide-design/SKILL.md",
       "type": "depends-on",
       "strength": 0.9,
-      "when": "managing bibliography, fixing citation warnings, APA 7 formatting",
-      "yields": "citeproc rules, @key syntax, bibliography.bib management"
+      "reason": "Defense presentation requires effective slide design"
     },
     {
-      "target": ".github/skills/academic-research/SKILL.md",
-      "type": "depends-on",
+      "target": ".github/skills/executive-storytelling/SKILL.md",
+      "type": "related",
       "strength": 0.8,
-      "when": "reviewing methodology, strengthening theoretical framework",
-      "yields": "Research design patterns, validity frameworks, statistical methods"
+      "reason": "Storytelling structures the defense narrative"
     },
     {
       "target": ".github/skills/practitioner-research/SKILL.md",
       "type": "depends-on",
-      "strength": 0.85,
-      "when": "framing DBA practitioner contribution, business impact questions",
-      "yields": "DBA defense framing, practitioner vs PhD distinctions"
+      "strength": 0.95,
+      "reason": "DBA defense is grounded in practitioner methodology"
     },
     {
-      "target": ".github/skills/gamma-presentations/SKILL.md",
+      "target": ".github/skills/academic-research/SKILL.md",
+      "type": "depends-on",
+      "strength": 0.85,
+      "reason": "Research methodology foundations for defense Q&A"
+    },
+    {
+      "target": ".github/skills/book-publishing/SKILL.md",
       "type": "related",
       "strength": 0.7,
-      "when": "creating or refining defense slide deck",
-      "yields": "Duarte methodology, AI slide generation via Gamma API"
+      "reason": "Thesis PDF publishing pipeline supports defense document prep"
     }
   ],
   "activationContexts": [
@@ -48,10 +43,7 @@
     "doctoral",
     "committee",
     "defend",
-    "examination",
-    "build thesis",
-    "build.ps1",
-    "apa7"
+    "examination"
   ],
   "schemaVersion": "2.1.0",
   "synapses": [

@@ -1,0 +1,53 @@
+{
+  "metadata": {
+    "n": 523,
+    "constructs": ["PE", "EE", "SI", "FC", "HM", "PV", "HB", "TR"],
+    "ground_truth": "K-means k=3"
+  },
+  "cutpoint_method": {
+    "ari_bi_correlation": 0.8764,
+    "practical_thresholds": {
+      "low": 20,
+      "high": 30
+    },
+    "optimized_thresholds": {
+      "low": 21.9512,
+      "high": 30.1084
+    },
+    "accuracy": 0.9178,
+    "eta_squared": 0.6626
+  },
+  "decision_tree_method": {
+    "max_depth": 3,
+    "training_accuracy": 0.8489,
+    "cv_mean": 0.7764,
+    "cv_std": 0.0431,
+    "key_constructs": ["PE", "PV", "HB", "HM", "SI", "TR"],
+    "feature_importance": {
+      "PE": 0.2109,
+      "PV": 0.1507,
+      "HB": 0.1443,
+      "HM": 0.1414,
+      "SI": 0.1366,
+      "TR": 0.1249,
+      "EE": 0.0475,
+      "FC": 0.0436
+    },
+    "eta_squared": 0.6007
+  },
+  "simplified_method": {
+    "top_constructs": ["PV", "HM", "PE"],
+    "thresholds": {
+      "low": 7.8,
+      "high": 12
+    },
+    "accuracy": 0.8375,
+    "eta_squared": 0.6375
+  },
+  "recommendation": "Cut-point method (8 constructs, practical 20/30) offers best balance of accuracy and simplicity",
+  "bi_lookup": {
+    "AI Enthusiasts": 4.2195,
+    "AI Skeptics": 1.7109,
+    "Moderate Users": 3.1834
+  }
+}

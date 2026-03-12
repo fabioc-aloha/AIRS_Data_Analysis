@@ -39,8 +39,8 @@
       "source": "executive-storytelling",
       "target": ".github/skills/coaching-techniques/SKILL.md",
       "type": "supports",
-      "strength": 0.7,
-      "description": "Executive storytelling techniques support coaching conversations",
+      "strength": 0.85,
+      "description": "Executive communication enhances coaching conversations",
       "bidirectional": false
     },
     {
@@ -49,7 +49,7 @@
       "target": ".github/skills/dissertation-defense/SKILL.md",
       "type": "informs",
       "strength": 0.8,
-      "description": "Executive storytelling principles apply to defense presentations",
+      "description": "Executive storytelling principles apply to dissertation defense",
       "bidirectional": false
     },
     {

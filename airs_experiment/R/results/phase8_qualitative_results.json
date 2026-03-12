@@ -1,0 +1,111 @@
+{
+  "sample": {
+    "total_n": 523,
+    "feedback_responses": 522,
+    "substantive_responses": 243,
+    "response_rate_percent": 99.8
+  },
+  "theme_keywords": {
+    "Positive Experience": ["enjoy", "love", "great", "helpful", "useful", "good", "like", "amazing", "excellent", "wonderful", "beneficial"],
+    "Concerns/Caution": ["concern", "worry", "careful", "caution", "risk", "afraid", "fear", "dangerous"],
+    "Accuracy/Reliability": ["accurate", "accuracy", "reliable", "reliability", "trust", "correct", "wrong", "error", "mistake", "inaccurate"],
+    "Learning/Education": ["learn", "study", "school", "education", "research", "student", "homework", "class"],
+    "Work/Productivity": ["work", "job", "task", "productivity", "efficient", "time", "fast", "quick"],
+    "Ethics/Privacy": ["ethic", "privacy", "data", "security", "moral", "honest", "integrity"],
+    "Future/Potential": ["future", "potential", "evolving", "improve", "develop", "growing", "progress"],
+    "Cost/Access": ["cost", "free", "pay", "expensive", "access", "available", "subscription"],
+    "Job Replacement": ["replace", "job", "employment", "automate", "obsolete", "take over"],
+    "Human Element": ["human", "people", "personal", "creative", "think", "critical"]
+  },
+  "rq11_themes": {
+    "n_themes": 10,
+    "theme_frequencies": {
+      "Positive Experience": 24.7,
+      "Work/Productivity": 19.3,
+      "Human Element": 13.6,
+      "Learning/Education": 13.6,
+      "Accuracy/Reliability": 10.7,
+      "Concerns/Caution": 5.8,
+      "Future/Potential": 5.8,
+      "Ethics/Privacy": 5.3,
+      "Cost/Access": 2.5,
+      "Job Replacement": 1.6
+    }
+  },
+  "rq12_group_comparison": {
+    "Positive Experience": {
+      "chi2": 7.105,
+      "p": 0.0287,
+      "dof": 2,
+      "cramers_v": 0.171,
+      "significant": true
+    },
+    "Concerns/Caution": {
+      "chi2": 0.5428,
+      "p": 0.7623,
+      "dof": 2,
+      "cramers_v": 0.0473,
+      "significant": false
+    },
+    "Accuracy/Reliability": {
+      "chi2": 0.769,
+      "p": 0.6808,
+      "dof": 2,
+      "cramers_v": 0.0563,
+      "significant": false
+    },
+    "Learning/Education": {
+      "chi2": 8.454,
+      "p": 0.0146,
+      "dof": 2,
+      "cramers_v": 0.1865,
+      "significant": true
+    },
+    "Work/Productivity": {
+      "chi2": 8.6528,
+      "p": 0.0132,
+      "dof": 2,
+      "cramers_v": 0.1887,
+      "significant": true
+    },
+    "Ethics/Privacy": {
+      "chi2": 5.7235,
+      "p": 0.0572,
+      "dof": 2,
+      "cramers_v": 0.1535,
+      "significant": false
+    },
+    "Future/Potential": {
+      "chi2": 1.876,
+      "p": 0.3914,
+      "dof": 2,
+      "cramers_v": 0.0879,
+      "significant": false
+    },
+    "Cost/Access": {
+      "chi2": 2.0457,
+      "p": 0.3596,
+      "dof": 2,
+      "cramers_v": 0.0918,
+      "significant": false
+    },
+    "Job Replacement": {
+      "chi2": 0.5027,
+      "p": 0.7777,
+      "dof": 2,
+      "cramers_v": 0.0455,
+      "significant": false
+    },
+    "Human Element": {
+      "chi2": 4.0801,
+      "p": 0.13,
+      "dof": 2,
+      "cramers_v": 0.1296,
+      "significant": false
+    }
+  },
+  "key_findings": {
+    "most_common_theme": "Positive Experience",
+    "significant_differences": ["Positive Experience", "Learning/Education", "Work/Productivity"]
+  }
+}

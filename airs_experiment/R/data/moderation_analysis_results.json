@@ -1,0 +1,97 @@
+{
+  "analysis_type": "Moderation Analysis (Phase 6)",
+  "methodology": "Multi-group SEM with z-tests for path coefficient differences",
+  "full_sample_n": 523,
+  "hypotheses_tested": [
+    {
+      "id": "H4c",
+      "path": "HB -> BI",
+      "moderator": "Usage Frequency",
+      "groups": {
+        "low": 376,
+        "high": 147
+      },
+      "delta_beta": -0.1285,
+      "z_statistic": -0.4014,
+      "p_value": 0.6882,
+      "supported": false
+    }
+  ],
+  "overall_summary": {
+    "hypotheses_supported": 0,
+    "hypotheses_not_supported": 5,
+    "key_finding": "No moderation hypotheses supported"
+  },
+  "demographic_moderation": {
+    "industry_moderation": [
+      {
+        "Predictor": "PE",
+        "Interaction": -0.0405,
+        "p_interaction": 0.6222
+      },
+      {
+        "Predictor": "EE",
+        "Interaction": 0.0487,
+        "p_interaction": 0.6545
+      },
+      {
+        "Predictor": "TR",
+        "Interaction": 0.0218,
+        "p_interaction": 0.7753
+      },
+      {
+        "Predictor": "HM",
+        "Interaction": -0.0873,
+        "p_interaction": 0.2188
+      }
+    ],
+    "education_moderation": [
+      {
+        "Predictor": "PE",
+        "Interaction": 0.0719,
+        "p_interaction": 0.2207
+      },
+      {
+        "Predictor": "EE",
+        "Interaction": 0.0488,
+        "p_interaction": 0.5457
+      },
+      {
+        "Predictor": "TR",
+        "Interaction": 0.0835,
+        "p_interaction": 0.1192
+      },
+      {
+        "Predictor": "HM",
+        "Interaction": 0.0173,
+        "p_interaction": 0.7261
+      }
+    ],
+    "experience_moderation": [
+      {
+        "Predictor": "PE",
+        "Interaction": 0.1119,
+        "p_value": 0.0553,
+        "Significant": false
+      },
+      {
+        "Predictor": "EE",
+        "Interaction": 0.1217,
+        "p_value": 0.1611,
+        "Significant": false
+      },
+      {
+        "Predictor": "TR",
+        "Interaction": 0.081,
+        "p_value": 0.1448,
+        "Significant": false
+      },
+      {
+        "Predictor": "HM",
+        "Interaction": 0.1362,
+        "p_value": 0.0067,
+        "Significant": true
+      }
+    ]
+  }
+}

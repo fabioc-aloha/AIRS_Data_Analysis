@@ -1,0 +1,41 @@
+{
+  "population": "ALL",
+  "n_observations": 262,
+  "n_items": 24,
+  "n_constructs": 12,
+  "kmo": 0.9458,
+  "kmo_interpretation": "Marvelous",
+  "bartlett_chi2": 4794.2203,
+  "bartlett_p": 0,
+  "n_factors_kaiser": 2,
+  "n_factors_parallel": 4,
+  "variance_explained_12factors": 0.7419,
+  "constructs_good_reliability": ["PE", "EE", "SI", "FC", "HM", "PV", "HB", "TR"],
+  "constructs_marginal_reliability": [],
+  "constructs_poor_reliability": ["VO", "EX", "ER", "AX"],
+  "validated_factor_structure": {
+    "PE": ["PE1", "PE2"],
+    "EE": ["EE1", "EE2"],
+    "SI": ["SI1", "SI2"],
+    "FC": ["FC1", "FC2"],
+    "HM": ["HM1", "HM2"],
+    "PV": ["PV1", "PV2"],
+    "HB": ["HB1", "HB2"],
+    "TR": ["TR1", "TR2"]
+  },
+  "all_factor_structure": {
+    "PE": ["PE1", "PE2"],
+    "EE": ["EE1", "EE2"],
+    "SI": ["SI1", "SI2"],
+    "FC": ["FC1", "FC2"],
+    "HM": ["HM1", "HM2"],
+    "PV": ["PV1", "PV2"],
+    "HB": ["HB1", "HB2"],
+    "VO": ["VO1", "VO2"],
+    "TR": ["TR1", "TR2"],
+    "EX": ["EX1", "EX2"],
+    "ER": ["ER1", "ER2"],
+    "AX": ["AX1", "AX2"]
+  },
+  "reliability_coefficients": [0.845, 0.845, 0.781, 0.79, 0.913, 0.876, 0.916, 0.53, 0.898, 0.53, 0.512, 0.427]
+}

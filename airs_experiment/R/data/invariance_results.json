@@ -1,0 +1,122 @@
+{
+  "analysis_date": "2026-03-11T19:50:34",
+  "n_total": 523,
+  "n_academic": 216,
+  "n_professional": 307,
+  "configural": {
+    "chisq": 303.0364,
+    "df": 152,
+    "cfi": 0.9791,
+    "tli": 0.967,
+    "rmsea": 0.0616,
+    "srmr": 0.0243,
+    "aic": 19394.8892,
+    "bic": 20042.3456
+  },
+  "metric": {
+    "chisq": 329.238,
+    "df": 160,
+    "cfi": 0.9766,
+    "tli": 0.9649,
+    "rmsea": 0.0636,
+    "srmr": 0.0385,
+    "aic": 19405.0908,
+    "bic": 20018.4705
+  },
+  "scalar": {
+    "chisq": 381.3067,
+    "df": 168,
+    "cfi": 0.9705,
+    "tli": 0.9578,
+    "rmsea": 0.0697,
+    "srmr": 0.0404,
+    "aic": 19441.1595,
+    "bic": 20020.4626
+  },
+  "delta_cfi_configural_metric": 0.0025,
+  "delta_cfi_metric_scalar": 0.0061,
+  "metric_invariance_supported": true,
+  "scalar_invariance_supported": true,
+  "mean_comparisons": [
+    {
+      "Factor": "PerfExp",
+      "Mean_Academic": 3.4838,
+      "SD_Academic": 1.0559,
+      "Mean_Professional": 3.456,
+      "SD_Professional": 1.0969,
+      "Cohens_d": 0.0257,
+      "t_value": 0.2914,
+      "p_value": 0.7709
+    },
+    {
+      "Factor": "EffortExp",
+      "Mean_Academic": 3.8079,
+      "SD_Academic": 0.922,
+      "Mean_Professional": 3.5293,
+      "SD_Professional": 0.9988,
+      "Cohens_d": 0.2878,
+      "t_value": 3.2862,
+      "p_value": 0.0011
+    },
+    {
+      "Factor": "SocialInf",
+      "Mean_Academic": 2.9954,
+      "SD_Academic": 0.9741,
+      "Mean_Professional": 3.2997,
+      "SD_Professional": 1.0717,
+      "Cohens_d": -0.2947,
+      "t_value": -3.3742,
+      "p_value": 0.0008
+    },
+    {
+      "Factor": "FacilCond",
+      "Mean_Academic": 3.4144,
+      "SD_Academic": 0.9442,
+      "Mean_Professional": 3.3029,
+      "SD_Professional": 1.0429,
+      "Cohens_d": 0.111,
+      "t_value": 1.2722,
+      "p_value": 0.2039
+    },
+    {
+      "Factor": "HedonicMot",
+      "Mean_Academic": 3.169,
+      "SD_Academic": 1.1383,
+      "Mean_Professional": 3.4218,
+      "SD_Professional": 1.1298,
+      "Cohens_d": -0.2231,
+      "t_value": -2.5088,
+      "p_value": 0.0125
+    },
+    {
+      "Factor": "PriceValue",
+      "Mean_Academic": 3.4167,
+      "SD_Academic": 1.1554,
+      "Mean_Professional": 3.4365,
+      "SD_Professional": 1.0847,
+      "Cohens_d": -0.0178,
+      "t_value": -0.198,
+      "p_value": 0.8431
+    },
+    {
+      "Factor": "Habit",
+      "Mean_Academic": 3.1389,
+      "SD_Academic": 1.26,
+      "Mean_Professional": 2.9381,
+      "SD_Professional": 1.2431,
+      "Cohens_d": 0.1606,
+      "t_value": 1.8043,
+      "p_value": 0.0718
+    },
+    {
+      "Factor": "AITrust",
+      "Mean_Academic": 3.1782,
+      "SD_Academic": 1.0888,
+      "Mean_Professional": 3.2524,
+      "SD_Professional": 1.1871,
+      "Cohens_d": -0.0647,
+      "t_value": -0.7391,
+      "p_value": 0.4602
+    }
+  ]
+}

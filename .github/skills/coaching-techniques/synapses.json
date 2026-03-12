@@ -9,8 +9,8 @@
       "id": "coaching-stakeholder-001",
       "type": "complements",
       "target": ".github/skills/change-management/SKILL.md",
-      "strength": 0.8,
-      "description": "Coaching skills enhance change management and influence"
+      "strength": 0.85,
+      "description": "Coaching skills enhance change management and relationship building"
     },
     {
       "id": "coaching-frustration-002",
@@ -30,8 +30,8 @@
       "id": "coaching-meeting-004",
       "type": "complements",
       "target": ".github/skills/deep-work-optimization/SKILL.md",
-      "strength": 0.65,
-      "description": "Coaching skills improve 1:1 session effectiveness"
+      "strength": 0.7,
+      "description": "Coaching skills improve focused 1:1 effectiveness"
     }
   ],
   "lastValidated": "2026-02-10",

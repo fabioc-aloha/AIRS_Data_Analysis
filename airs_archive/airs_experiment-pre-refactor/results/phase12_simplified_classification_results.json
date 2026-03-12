@@ -1,0 +1,62 @@
+{
+  "metadata": {
+    "notebook": "12_Simplified_Classification",
+    "date": "2025-12-13T14:10:04.997532",
+    "n_samples": 523,
+    "constructs": [
+      "PE",
+      "EE",
+      "SI",
+      "FC",
+      "HM",
+      "PV",
+      "HB",
+      "TR"
+    ]
+  },
+  "cutpoint_method": {
+    "low_threshold": 21.131249999999994,
+    "high_threshold": 30.75,
+    "accuracy_vs_nb11": 0.9445506692160612,
+    "bi_eta_squared": 0.6671739530678398,
+    "bi_by_typology": {
+      "AI Enthusiasts": 4.21875,
+      "AI Skeptics": 1.5407608695652173,
+      "Moderate Users": 3.098859315589354
+    }
+  },
+  "decision_tree_method": {
+    "accuracy_vs_nb11": 0.8336520076481836,
+    "bi_eta_squared": 0.5481096215221579,
+    "feature_importance": {
+      "PE": 0.4268941349930271,
+      "SI": 0.3435237146235139,
+      "HB": 0.18661527811467052,
+      "PV": 0.03951349774680337,
+      "HM": 0.0034533745219851994,
+      "EE": 0.0,
+      "FC": 0.0,
+      "TR": 0.0
+    },
+    "key_constructs": [
+      "PE",
+      "SI",
+      "HB"
+    ],
+    "tree_depth": 3,
+    "tree_rules": "|--- PE <= 2.75\n|   |--- PV <= 2.75\n|   |   |--- HM <= 2.25\n|   |   |   |--- class: 1\n|   |   |--- HM >  2.25\n|   |   |   |--- class: 1\n|   |--- PV >  2.75\n|   |   |--- class: 0\n|--- PE >  2.75\n|   |--- SI <= 3.75\n|   |   |--- HB <= 1.75\n|   |   |   |--- class: 1\n|   |   |--- HB >  1.75\n|   |   |   |--- class: 0\n|   |--- SI >  3.75\n|   |   |--- HB <= 3.25\n|   |   |   |--- class: 0\n|   |   |--- HB >  3.25\n|   |   |   |--- class: 2\n"
+  },
+  "simplified_method": {
+    "constructs_used": [
+      "PV",
+      "HM",
+      "PE"
+    ],
+    "low_threshold": 8.774999999999999,
+    "high_threshold": 11.850000000000001,
+    "accuracy_vs_nb11": 0.8183556405353728,
+    "bi_eta_squared": 0.6407004434134661
+  },
+  "recommendation": "cutpoint_method",
+  "recommendation_rationale": "Best balance of accuracy (94.5%) and simplicity (sum + 2 thresholds)"
+}

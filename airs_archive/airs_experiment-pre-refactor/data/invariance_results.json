@@ -1,0 +1,25 @@
+{
+  "analysis_date": "2025-12-08T08:54:45.507115",
+  "n_academic": 216,
+  "n_professional": 307,
+  "academic_fit": {
+    "chi2": 167.16084772140965,
+    "df": 76.0,
+    "cfi": 0.9584080809803686,
+    "tli": 0.9343285489163712,
+    "rmsea": 0.074692698763375
+  },
+  "professional_fit": {
+    "chi2": 135.8766666457805,
+    "df": 76.0,
+    "cfi": 0.9881010700059786,
+    "tli": 0.9812122157989136,
+    "rmsea": 0.05074126593178391
+  },
+  "configural_invariance": true,
+  "metric_invariance": false,
+  "mean_loading_diff": 0.08192581435719527,
+  "max_loading_diff": 0.32562199805642067,
+  "n_sig_mean_diffs": 3,
+  "n_medium_large_effects": 0
+}

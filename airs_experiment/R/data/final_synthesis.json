@@ -1,0 +1,102 @@
+{
+  "study_overview": {
+    "purpose": "Develop and validate AIRS instrument",
+    "theoretical_base": "UTAUT2 + AI Trust extension",
+    "sample_size": 523,
+    "validated_model": "Model D: 8 factors, 16 items"
+  },
+  "hypothesis_summary": {
+    "H1_supported": 3,
+    "H1_total": 7,
+    "H2_trust_beta": 0.1063,
+    "H2_trust_p": 0.0631,
+    "H2_marginal": true,
+    "H3_incremental_validity": false,
+    "H4_moderation_effects": 0
+  },
+  "phase_results": {
+    "cfa": {
+      "fit_indices": [],
+      "n_observations": {},
+      "reliability": [
+        {
+          "factor": "PerfExp",
+          "CR": 0.8448,
+          "AVE": 0.7313,
+          "Alpha": 0.8437
+        },
+        {
+          "factor": "EffortExp",
+          "CR": 0.852,
+          "AVE": 0.7424,
+          "Alpha": 0.8508
+        },
+        {
+          "factor": "SocialInf",
+          "CR": 0.7814,
+          "AVE": 0.6449,
+          "Alpha": 0.7678
+        },
+        {
+          "factor": "FacilCond",
+          "CR": 0.7785,
+          "AVE": 0.638,
+          "Alpha": 0.7739
+        },
+        {
+          "factor": "HedonicMot",
+          "CR": 0.8661,
+          "AVE": 0.7644,
+          "Alpha": 0.863
+        },
+        {
+          "factor": "PriceValue",
+          "CR": 0.8582,
+          "AVE": 0.7517,
+          "Alpha": 0.8581
+        },
+        {
+          "factor": "Habit",
+          "CR": 0.8813,
+          "AVE": 0.788,
+          "Alpha": 0.8799
+        },
+        {
+          "factor": "AITrust",
+          "CR": 0.9124,
+          "AVE": 0.8389,
+          "Alpha": 0.912
+        }
+      ]
+    },
+    "structural": {
+      "full_sample_n": 523,
+      "full_sample_fit": {
+        "chi2": 368.716,
+        "df": 134,
+        "cfi": 0.9753,
+        "tli": 0.9649,
+        "rmsea": 0.0579,
+        "srmr": 0.0239,
+        "r_squared_BehIntent": 0.8965,
+        "aic": 23951.06,
+        "bic": 24274.78
+      },
+      "hypothesis_results": {
+        "H1_supported_paths": 3,
+        "H1_total_paths": 7,
+        "H2_trust_significant": false,
+        "H2_trust_beta": 0.1063,
+        "H2_trust_p": 0.0631,
+        "H3_incremental_validity": false,
+        "H3_delta_aic": 2174.59,
+        "H4_moderation_effects": 2
+      }
+    }
+  },
+  "crosstab_analysis": {
+    "n_themed_responses": 143,
+    "themes_analyzed": ["Positive Experience", "Concerns/Caution", "Accuracy/Reliability", "Learning/Education", "Work/Productivity", "Ethics/Privacy"],
+    "significant_associations": 1
+  }
+}

@@ -4,7 +4,7 @@
   "lastUpdated": "2026-03-11",
   "connections": [
     {
-      "target": ".github/skills/teams-app-patterns/SKILL.md",
+      "target": "..\\teams-app-patterns\\SKILL.md",
       "type": "extends",
       "strength": 0.85,
       "when": "Shared MCP tools and @m365agents participant",

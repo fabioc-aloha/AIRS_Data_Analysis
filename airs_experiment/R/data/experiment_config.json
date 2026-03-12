@@ -1,0 +1,14 @@
+{
+  "created": "2026-03-11",
+  "selected_roles": [
+    "ALL"
+  ],
+  "roles_included": ["IC", "Manager", "PT_Student", "Other", "Freelancer", "FT_Student", "Executive", "Unemployed"],
+  "population": "ALL",
+  "population_description": "All respondents (students + professionals) per approved dissertation proposal",
+  "n_total": 523,
+  "n_efa": 262,
+  "n_cfa": 261,
+  "holdout_ratio": 0.5,
+  "random_seed": 67
+}

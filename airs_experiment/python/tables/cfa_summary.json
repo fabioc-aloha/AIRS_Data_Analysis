@@ -1,0 +1,123 @@
+{
+  "population": "combined",
+  "n_observations": 262,
+  "n_factors": 8,
+  "n_items": 16,
+  "factor_structure": {
+    "PE": [
+      "PE1",
+      "PE2"
+    ],
+    "EE": [
+      "EE1",
+      "EE2"
+    ],
+    "SI": [
+      "SI1",
+      "SI2"
+    ],
+    "FC": [
+      "FC1",
+      "FC2"
+    ],
+    "HM": [
+      "HM1",
+      "HM2"
+    ],
+    "PV": [
+      "PV1",
+      "PV2"
+    ],
+    "HB": [
+      "HB1",
+      "HB2"
+    ],
+    "TR": [
+      "TR1",
+      "TR2"
+    ]
+  },
+  "fit_indices": {
+    "chi2": 159.37934775145212,
+    "df": 76,
+    "CFI": 0.974615861924874,
+    "TLI": 0.9599197819866432,
+    "RMSEA": 0.06483390748025063,
+    "SRMR": 0.1293363104967084,
+    "AIC": 118.78336375762251,
+    "BIC": 332.8840339832883
+  },
+  "factor_correlation_diagnostics": {
+    "correlation_range": [
+      0.5154962436629489,
+      0.9108655770219992
+    ],
+    "n_pairs_above_85": 3,
+    "n_heywood_cases": 0,
+    "heywood_pairs": [],
+    "high_correlation_pairs": [
+      {
+        "pair": "HM\u00d7PE",
+        "r": 0.9108655770219992
+      },
+      {
+        "pair": "HM\u00d7PV",
+        "r": 0.8980145193368758
+      },
+      {
+        "pair": "PE\u00d7PV",
+        "r": 0.8983926724521536
+      }
+    ]
+  },
+  "reliability": [
+    {
+      "Factor": "PE",
+      "Alpha": 0.8029567113666294,
+      "CR": NaN,
+      "AVE": NaN
+    },
+    {
+      "Factor": "EE",
+      "Alpha": 0.858774861248105,
+      "CR": NaN,
+      "AVE": NaN
+    },
+    {
+      "Factor": "SI",
+      "Alpha": 0.7517293889672745,
+      "CR": NaN,
+      "AVE": NaN
+    },
+    {
+      "Factor": "FC",
+      "Alpha": 0.7430775976860298,
+      "CR": NaN,
+      "AVE": NaN
+    },
+    {
+      "Factor": "HM",
+      "Alpha": 0.8636032443291701,
+      "CR": NaN,
+      "AVE": NaN
+    },
+    {
+      "Factor": "PV",
+      "Alpha": 0.8826641165006224,
+      "CR": NaN,
+      "AVE": NaN
+    },
+    {
+      "Factor": "HB",
+      "Alpha": 0.9087274409995378,
+      "CR": NaN,
+      "AVE": NaN
+    },
+    {
+      "Factor": "TR",
+      "Alpha": 0.8906149320224743,
+      "CR": NaN,
+      "AVE": NaN
+    }
+  ]
+}

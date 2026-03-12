@@ -1,0 +1,133 @@
+{
+  "industry_moderation": [
+    {
+      "Predictor": "Perf. Expect.",
+      "Main_Effect": 0.7724043528524526,
+      "Interaction": -0.04054118383160063,
+      "p_interaction": 0.6221767595027323,
+      "significant": "False"
+    },
+    {
+      "Predictor": "Effort Expect.",
+      "Main_Effect": 0.6120374401393129,
+      "Interaction": 0.04873592627921542,
+      "p_interaction": 0.65449472498205,
+      "significant": "False"
+    },
+    {
+      "Predictor": "AI Trust",
+      "Main_Effect": 0.7195971027428097,
+      "Interaction": 0.021762670628293592,
+      "p_interaction": 0.7753272787560099,
+      "significant": "False"
+    },
+    {
+      "Predictor": "Hedonic Mot.",
+      "Main_Effect": 0.7951743033053185,
+      "Interaction": -0.08728401814340402,
+      "p_interaction": 0.21875186834674096,
+      "significant": "False"
+    }
+  ],
+  "education_moderation": [
+    {
+      "Predictor": "Perf. Expect.",
+      "Main_Effect": 0.744,
+      "Interaction": 0.072,
+      "p_value": 0.2293,
+      "Significant": false
+    },
+    {
+      "Predictor": "Effort Expect.",
+      "Main_Effect": 0.584,
+      "Interaction": 0.096,
+      "p_value": 0.2419,
+      "Significant": false
+    },
+    {
+      "Predictor": "AI Trust",
+      "Main_Effect": 0.683,
+      "Interaction": 0.099,
+      "p_value": 0.0688,
+      "Significant": false
+    },
+    {
+      "Predictor": "Hedonic Mot.",
+      "Main_Effect": 0.793,
+      "Interaction": 0.007,
+      "p_value": 0.8901,
+      "Significant": false
+    }
+  ],
+  "experience_moderation": [
+    {
+      "Predictor": "Perf. Expect.",
+      "Main_Effect": 0.7219255663430426,
+      "Interaction": 0.11189972207768518,
+      "p_value": 0.05532602430042219,
+      "Significant": "False"
+    },
+    {
+      "Predictor": "Effort Expect.",
+      "Main_Effect": 0.6144681411269097,
+      "Interaction": 0.12171334206056192,
+      "p_value": 0.16113562889016989,
+      "Significant": "False"
+    },
+    {
+      "Predictor": "AI Trust",
+      "Main_Effect": 0.6931249228405644,
+      "Interaction": 0.08099788417697926,
+      "p_value": 0.14484976923637607,
+      "Significant": "False"
+    },
+    {
+      "Predictor": "Hedonic Mot.",
+      "Main_Effect": 0.7166648964908968,
+      "Interaction": 0.13620790907256836,
+      "p_value": 0.0067486850616861205,
+      "Significant": "True"
+    }
+  ],
+  "demographic_moderation_summary": {
+    "industry": {
+      "groups": {
+        "Tech_Finance": 91,
+        "Other": 422
+      },
+      "significant_effects": 0,
+      "conclusion": "No significant moderation - mechanisms equivalent across sectors"
+    },
+    "education": {
+      "groups": {
+        "Higher_Education": 253,
+        "Lower_Education": 260
+      },
+      "significant_effects": 0,
+      "marginal_effects": [
+        "AI Trust (p=.069)"
+      ],
+      "conclusion": "No significant moderation - education affects levels not mechanisms"
+    },
+    "experience": {
+      "groups": {
+        "Early_Career": 192,
+        "Experienced": 321
+      },
+      "significant_effects": 2,
+      "findings": [
+        {
+          "path": "PE \u00d7 Experience",
+          "beta": 0.148,
+          "p": 0.013
+        },
+        {
+          "path": "HM \u00d7 Experience",
+          "beta": 0.136,
+          "p": 0.009
+        }
+      ],
+      "conclusion": "SIGNIFICANT - Career stage moderates adoption mechanisms"
+    }
+  }
+}

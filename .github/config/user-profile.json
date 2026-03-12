@@ -1,62 +1,76 @@
 {
-    "name": "Fabio Correa",
-    "nickname": "Fabio",
-    "pronouns": "he/him",
-    "formality": "balanced",
-    "detailLevel": "balanced",
-    "explanationStyle": "mixed",
-    "humor": true,
-    "encouragement": true,
-    "questionFrequency": "moderate",
-    "proactiveSuggestions": true,
-    "primaryTechnologies": [
-        "Python",
-        "Jupyter",
-        "R",
-        "SPSS",
-        "Pandoc",
-        "LaTeX",
-        "PowerShell"
+  "name": "Fabio Correa",
+  "nickname": "Fabio",
+  "pronouns": "he/him",
+  "formality": "balanced",
+  "detailLevel": "balanced",
+  "explanationStyle": "mixed",
+  "humor": true,
+  "encouragement": true,
+  "questionFrequency": "moderate",
+  "proactiveSuggestions": true,
+  "primaryTechnologies": [
+    "Python",
+    "Jupyter",
+    "R",
+    "SPSS",
+    "Pandoc",
+    "LaTeX",
+    "PowerShell",
+    "python",
+    "data",
+    "markdown",
+    "documentation"
+  ],
+  "northStar": "Defend DBA Dissertation — successfully present and defend the AIRS research at Touro University Worldwide",
+  "learningGoals": [],
+  "expertiseAreas": [
+    "psychometrics",
+    "scale development",
+    "structural equation modeling",
+    "AI adoption research"
+  ],
+  "currentProjects": [
+    "AIRS DBA Thesis",
+    "AIRS Data Analysis Pipeline"
+  ],
+  "projectPersona": {
+    "id": "academic",
+    "confidence": 0.95,
+    "detectedAt": "2026-03-11T22:05:37.661Z",
+    "reasons": [
+      "The project is centered around a doctoral thesis and academic research.",
+      "The directory structure includes extensive documentation, data analysis scripts, and research materials.",
+      "The README emphasizes academic rigor and contributions to both academia and business."
+    ]
+  },
+  "learningStyle": {
+    "type": "mixed",
+    "preferences": [
+      "visual diagrams",
+      "statistical output",
+      "step-by-step methodology"
+    ]
+  },
+  "workStyle": {
+    "planning": "structured",
+    "diagrams": "Mermaid",
+    "mermaidStyle": "GitHub-compatible"
+  },
+  "modelPreferences": {
+    "default": "claude-opus-4-5",
+    "alertOnHeavyLifting": true,
+    "heavyLiftingTasks": [
+      "Meditation/consolidation sessions",
+      "Self-actualization assessments",
+      "Complex multi-file architecture refactoring",
+      "Bootstrap learning (new skill acquisition)"
     ],
-    "northStar": "Defend DBA Dissertation — successfully present and defend the AIRS research at Touro University Worldwide",
-    "learningGoals": [],
-    "expertiseAreas": [
-        "psychometrics",
-        "scale development",
-        "structural equation modeling",
-        "AI adoption research"
-    ],
-    "currentProjects": [
-        "AIRS DBA Thesis",
-        "AIRS Data Analysis Pipeline"
-    ],
-    "projectPersona": "Researcher",
-    "learningStyle": {
-        "type": "mixed",
-        "preferences": [
-            "visual diagrams",
-            "statistical output",
-            "step-by-step methodology"
-        ]
-    },
-    "workStyle": {
-        "planning": "structured",
-        "diagrams": "Mermaid",
-        "mermaidStyle": "GitHub-compatible"
-    },
-    "modelPreferences": {
-        "default": "claude-opus-4-5",
-        "alertOnHeavyLifting": true,
-        "heavyLiftingTasks": [
-            "Meditation/consolidation sessions",
-            "Self-actualization assessments",
-            "Complex multi-file architecture refactoring",
-            "Bootstrap learning (new skill acquisition)"
-        ],
-        "routineTasks": [
-            "Code edits, debugging, simple refactors",
-            "Documentation updates",
-            "File searches and context gathering"
-        ]
-    }
+    "routineTasks": [
+      "Code edits, debugging, simple refactors",
+      "Documentation updates",
+      "File searches and context gathering"
+    ]
+  },
+  "lastUpdated": "2026-03-11T22:05:37.661Z"
 }

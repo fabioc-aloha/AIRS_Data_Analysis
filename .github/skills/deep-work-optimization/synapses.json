@@ -61,8 +61,8 @@
       "source": "deep-work-optimization",
       "target": ".github/skills/work-life-balance/SKILL.md",
       "type": "protects",
-      "strength": 0.7,
-      "description": "Work-life balance protects deep work time from overcommitment",
+      "strength": 0.8,
+      "description": "Balanced scheduling protects deep work time",
       "bidirectional": false
     },
     {

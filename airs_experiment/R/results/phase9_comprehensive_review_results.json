@@ -1,0 +1,227 @@
+{
+  "metadata": {
+    "n": 523,
+    "source": "AIRS_clean.csv",
+    "constructs": ["PE", "EE", "SI", "FC", "HM", "PV", "HB", "VO", "TR", "EX", "ER", "AX", "BI", "Total_Usage"]
+  },
+  "gap_results": {
+    "gap1_education": {
+      "title": "Education Level x BI",
+      "method": "One-way ANOVA",
+      "F": 9.3279,
+      "p": 2.438e-06,
+      "eta_sq": 0.066,
+      "n_groups": 5,
+      "group_ns": {
+        "Bachelor’s degree": 142,
+        "Doctoral or professional degree": 15,
+        "High school or less": 99,
+        "Master’s degree": 83,
+        "Some college or vocational training": 184
+      },
+      "finding": "F=9.328, p=0.0000, eta2=0.0660"
+    },
+    "gap2_industry": {
+      "title": "Industry Sector x BI",
+      "method": "One-way ANOVA",
+      "F": 6.4286,
+      "p": 9.4718e-07,
+      "eta_sq": 0.0842,
+      "n_groups": 9,
+      "top_industry": "Technology or IT",
+      "lowest_industry": "Retail or Hospitality",
+      "finding": "F=6.429, p=0.0000, eta2=0.0842"
+    },
+    "gap3_experience": {
+      "title": "Professional Experience x BI",
+      "method": "Spearman correlation",
+      "rho": "NA",
+      "p": "NA",
+      "peak_experience": "7 to 10 years",
+      "finding": "rho=NA, p=NA"
+    },
+    "gap4_disability": {
+      "title": "Disability x Constructs",
+      "method": "Independent-samples t-test",
+      "yes_n": 68,
+      "no_n": 444,
+      "results": {
+        "BI": {
+          "t": -1.4196,
+          "p": 0.1594,
+          "d": -0.2038,
+          "yes_mean": 3.011,
+          "no_mean": 3.2325
+        },
+        "Total_Usage": {
+          "t": -0.8229,
+          "p": 0.4127,
+          "d": -0.1,
+          "yes_mean": 2.4118,
+          "no_mean": 2.5146
+        },
+        "PE": {
+          "t": -1.0203,
+          "p": 0.3105,
+          "d": -0.1442,
+          "yes_mean": 3.3529,
+          "no_mean": 3.5056
+        },
+        "EE": {
+          "t": -1.5346,
+          "p": 0.1287,
+          "d": -0.235,
+          "yes_mean": 3.4485,
+          "no_mean": 3.6723
+        },
+        "AX": {
+          "t": 2.695,
+          "p": 0.0084,
+          "d": 0.3619,
+          "yes_mean": 3.6838,
+          "no_mean": 3.3547
+        },
+        "TR": {
+          "t": -0.8189,
+          "p": 0.4151,
+          "d": -0.1153,
+          "yes_mean": 3.1324,
+          "no_mean": 3.2624
+        },
+        "EX": {
+          "t": 0.3052,
+          "p": 0.7609,
+          "d": 0.0449,
+          "yes_mean": 3.6029,
+          "no_mean": 3.5642
+        }
+      },
+      "finding": "AX higher in disability group"
+    },
+    "gap5_tool_preferences": {
+      "title": "Primary Tool x Constructs",
+      "method": "Independent-samples t-test (ChatGPT vs Copilot)",
+      "distribution": {
+        "Usage_ChatGPT": 218,
+        "Usage_Gemini": 57,
+        "Usage_MSCopilot": 227,
+        "Usage_Other": 21
+      },
+      "comparison": {
+        "PE": {
+          "t": 3.8456,
+          "p": 0.0001,
+          "chatgpt_mean": 3.672,
+          "copilot_mean": 3.2819
+        },
+        "EE": {
+          "t": 5.7688,
+          "p": 1.5241e-08,
+          "chatgpt_mean": 3.9312,
+          "copilot_mean": 3.4097
+        },
+        "SI": {
+          "t": 1.194,
+          "p": 0.2331,
+          "chatgpt_mean": 3.2317,
+          "copilot_mean": 3.1123
+        },
+        "FC": {
+          "t": 3.5283,
+          "p": 0.0005,
+          "chatgpt_mean": 3.5528,
+          "copilot_mean": 3.2203
+        },
+        "HM": {
+          "t": 1.9487,
+          "p": 0.052,
+          "chatgpt_mean": 3.4174,
+          "copilot_mean": 3.207
+        },
+        "PV": {
+          "t": 4.2665,
+          "p": 0,
+          "chatgpt_mean": 3.6445,
+          "copilot_mean": 3.196
+        },
+        "HB": {
+          "t": 3.3602,
+          "p": 0.0008,
+          "chatgpt_mean": 3.2317,
+          "copilot_mean": 2.8326
+        },
+        "TR": {
+          "t": 3.402,
+          "p": 0.0007,
+          "chatgpt_mean": 3.4106,
+          "copilot_mean": 3.0463
+        },
+        "BI": {
+          "t": 2.7493,
+          "p": 0.0062,
+          "chatgpt_mean": 3.3188,
+          "copilot_mean": 3.0308
+        },
+        "Total_Usage": {
+          "t": 1.6826,
+          "p": 0.0932,
+          "chatgpt_mean": 2.578,
+          "copilot_mean": 2.413
+        }
+      }
+    },
+    "gap6_user_typology": {
+      "title": "K-means User Typology (k=4)",
+      "method": "K-means clustering",
+      "n_clusters": 4,
+      "cluster_vars": ["PE", "EE", "TR", "HB", "AX", "BI"],
+      "clusters": {
+        "Confident Adopters": {
+          "n": 82,
+          "profile": {
+            "PE": 4.4268,
+            "EE": 4.4329,
+            "TR": 4.3598,
+            "HB": 4.0183,
+            "AX": 2.1098,
+            "BI": 4.314
+          }
+        },
+        "Anxious Avoiders": {
+          "n": 93,
+          "profile": {
+            "PE": 1.8441,
+            "EE": 2.5484,
+            "TR": 1.5108,
+            "HB": 1.328,
+            "AX": 3.7366,
+            "BI": 1.4812
+          }
+        },
+        "Anxious Enthusiasts": {
+          "n": 156,
+          "profile": {
+            "PE": 4.1603,
+            "EE": 4.1474,
+            "TR": 3.8942,
+            "HB": 4.0288,
+            "AX": 3.8397,
+            "BI": 3.899
+          }
+        },
+        "Indifferent Users": {
+          "n": 192,
+          "profile": {
+            "PE": 3.2812,
+            "EE": 3.4297,
+            "TR": 3.0182,
+            "HB": 2.5964,
+            "AX": 3.4245,
+            "BI": 2.9466
+          }
+        }
+      }
+    }
+  },
+  "files_generated": ["plots/09_education_comparison.png", "plots/09_industry_comparison.png", "plots/09_experience_effect.png", "plots/09_disability_comparison.png", "plots/09_tool_profiles.png", "plots/09_user_typology.png"]
+}

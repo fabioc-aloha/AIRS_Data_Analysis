@@ -1,17 +1,19 @@
 {
-  "hotFiles": [],
+  "hotFiles": [
+    "airs_experiment/R/run_01_efa.R"
+  ],
   "stalledFiles": [
-    "github/agents/alex-azure.agent.md",
-    "PDF_GENERATION.md",
-    "README.md",
-    "\"archive/data-old/AIRS---AI-Readiness-Scale-labels old.csv\"",
-    "\"archive/thesis-drafts/DRAFT 00.pdf\"",
-    "\"archive/thesis-drafts/DRAFT 01.pdf\"",
-    "\"archive/thesis-drafts/DRAFT 02.pdf\"",
-    "\"archive/thesis-drafts/DRAFT 03.pdf\"",
-    "\"archive/thesis-drafts/DRAFT 05.pdf\"",
-    "\"archive/thesis-drafts/DRAFT 06.pdf\""
+    "github/config/alex-manifest.json",
+    "airs_experiment/00_Create_Split_Samples.ipynb",
+    "airs_experiment/01_EFA_Experiment.ipynb",
+    "airs_experiment/02_CFA_Experiment.ipynb",
+    "airs_experiment/03_Measurement_Invariance.ipynb",
+    "airs_experiment/04_Structural_Model.ipynb",
+    "airs_experiment/05_Mediation_Analysis.ipynb",
+    "airs_experiment/06_Moderation_Analysis.ipynb",
+    "airs_experiment/07_Tool_Usage_Patterns.ipynb",
+    "airs_experiment/08_Qualitative_Feedback.ipynb"
   ],
   "todoHotspots": [],
-  "lastUpdated": 1773243376306
+  "lastUpdated": 1773274684465
 }

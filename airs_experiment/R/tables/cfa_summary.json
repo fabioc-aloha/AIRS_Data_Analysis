@@ -1,0 +1,202 @@
+{
+  "analysis_date": "2026-03-11T19:47:23",
+  "population": "ALL",
+  "holdout_n": 261,
+  "full_n": 523,
+  "n_factors": 8,
+  "n_items": 16,
+  "dropped_constructs": ["Voluntariness", "Explainability", "EthicalRisk", "Anxiety"],
+  "cfa_structure": {
+    "PerfExp": ["PE1", "PE2"],
+    "EffortExp": ["EE1", "EE2"],
+    "SocialInf": ["SI1", "SI2"],
+    "FacilCond": ["FC1", "FC2"],
+    "HedonicMot": ["HM1", "HM2"],
+    "PriceValue": ["PV1", "PV2"],
+    "Habit": ["HB1", "HB2"],
+    "AITrust": ["TR1", "TR2"]
+  },
+  "fit_indices_holdout": {
+    "chisq": 163.4023,
+    "df": 76,
+    "pvalue": 0,
+    "cfi": 0.9728,
+    "tli": 0.9571,
+    "rmsea": 0.0664,
+    "rmsea.ci.lower": 0.0524,
+    "rmsea.ci.upper": 0.0804,
+    "srmr": 0.0289,
+    "aic": 10021.2875,
+    "bic": 10235.1587
+  },
+  "fit_indices_full": {
+    "chisq": 222.5189,
+    "df": 76,
+    "pvalue": 0,
+    "cfi": 0.9787,
+    "tli": 0.9664,
+    "rmsea": 0.0607,
+    "srmr": 0.0217,
+    "aic": 19671.6223,
+    "bic": 19927.1972
+  },
+  "factor_loadings": [
+    {
+      "factor": "PerfExp",
+      "item": "PE1",
+      "loading": 0.8436,
+      "p": 0
+    },
+    {
+      "factor": "PerfExp",
+      "item": "PE2",
+      "loading": 0.8665,
+      "p": 0
+    },
+    {
+      "factor": "EffortExp",
+      "item": "EE1",
+      "loading": 0.8869,
+      "p": 0
+    },
+    {
+      "factor": "EffortExp",
+      "item": "EE2",
+      "loading": 0.8356,
+      "p": 0
+    },
+    {
+      "factor": "SocialInf",
+      "item": "SI1",
+      "loading": 0.897,
+      "p": 0
+    },
+    {
+      "factor": "SocialInf",
+      "item": "SI2",
+      "loading": 0.6965,
+      "p": 0
+    },
+    {
+      "factor": "FacilCond",
+      "item": "FC1",
+      "loading": 0.7545,
+      "p": 0
+    },
+    {
+      "factor": "FacilCond",
+      "item": "FC2",
+      "loading": 0.8407,
+      "p": 0
+    },
+    {
+      "factor": "HedonicMot",
+      "item": "HM1",
+      "loading": 0.8212,
+      "p": 0
+    },
+    {
+      "factor": "HedonicMot",
+      "item": "HM2",
+      "loading": 0.9244,
+      "p": 0
+    },
+    {
+      "factor": "PriceValue",
+      "item": "PV1",
+      "loading": 0.8589,
+      "p": 0
+    },
+    {
+      "factor": "PriceValue",
+      "item": "PV2",
+      "loading": 0.875,
+      "p": 0
+    },
+    {
+      "factor": "Habit",
+      "item": "HB1",
+      "loading": 0.9213,
+      "p": 0
+    },
+    {
+      "factor": "Habit",
+      "item": "HB2",
+      "loading": 0.8528,
+      "p": 0
+    },
+    {
+      "factor": "AITrust",
+      "item": "TR1",
+      "loading": 0.904,
+      "p": 0
+    },
+    {
+      "factor": "AITrust",
+      "item": "TR2",
+      "loading": 0.9277,
+      "p": 0
+    }
+  ],
+  "reliability": [
+    {
+      "factor": "PerfExp",
+      "CR": 0.8448,
+      "AVE": 0.7313,
+      "Alpha": 0.8437
+    },
+    {
+      "factor": "EffortExp",
+      "CR": 0.852,
+      "AVE": 0.7424,
+      "Alpha": 0.8508
+    },
+    {
+      "factor": "SocialInf",
+      "CR": 0.7814,
+      "AVE": 0.6449,
+      "Alpha": 0.7678
+    },
+    {
+      "factor": "FacilCond",
+      "CR": 0.7785,
+      "AVE": 0.638,
+      "Alpha": 0.7739
+    },
+    {
+      "factor": "HedonicMot",
+      "CR": 0.8661,
+      "AVE": 0.7644,
+      "Alpha": 0.863
+    },
+    {
+      "factor": "PriceValue",
+      "CR": 0.8582,
+      "AVE": 0.7517,
+      "Alpha": 0.8581
+    },
+    {
+      "factor": "Habit",
+      "CR": 0.8813,
+      "AVE": 0.788,
+      "Alpha": 0.8799
+    },
+    {
+      "factor": "AITrust",
+      "CR": 0.9124,
+      "AVE": 0.8389,
+      "Alpha": 0.912
+    }
+  ],
+  "fornell_larcker_violations": 3,
+  "factor_correlations": [
+    [1, 0.6909, 0.7679, 0.7813, 0.8711, 0.8961, 0.7677, 0.7482],
+    [0.6909, 1, 0.5017, 0.7054, 0.5878, 0.6568, 0.6314, 0.5082],
+    [0.7679, 0.5017, 1, 0.7935, 0.7093, 0.699, 0.5953, 0.6506],
+    [0.7813, 0.7054, 0.7935, 1, 0.7229, 0.6972, 0.6839, 0.6823],
+    [0.8711, 0.5878, 0.7093, 0.7229, 1, 0.8714, 0.7756, 0.807],
+    [0.8961, 0.6568, 0.699, 0.6972, 0.8714, 1, 0.8251, 0.7828],
+    [0.7677, 0.6314, 0.5953, 0.6839, 0.7756, 0.8251, 1, 0.742],
+    [0.7482, 0.5082, 0.6506, 0.6823, 0.807, 0.7828, 0.742, 1]
+  ]
+}

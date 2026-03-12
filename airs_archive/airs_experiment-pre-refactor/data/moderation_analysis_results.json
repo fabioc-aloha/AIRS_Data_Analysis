@@ -1,0 +1,149 @@
+{
+  "analysis_type": "Moderation Analysis (Phase 6)",
+  "methodology": "Multi-group SEM with z-tests for path coefficient differences",
+  "full_sample_n": 523,
+  "hypotheses_tested": [
+    {
+      "id": "H4c",
+      "description": "Usage frequency moderates HB \u2192 BI (stronger for frequent users)",
+      "path": "HB \u2192 BI",
+      "moderator": "Usage Frequency",
+      "groups": {
+        "low": {
+          "n": 101,
+          "beta": 0.1161229243428823,
+          "se": 0.10624963597128077
+        },
+        "high": {
+          "n": 306,
+          "beta": -0.1371010795280712,
+          "se": 0.08697572753647859
+        }
+      },
+      "delta_beta": -0.2532240038709535,
+      "z_statistic": -1.8441908265754696,
+      "p_value": 0.0651553347936118,
+      "significant": false,
+      "supported": false,
+      "reliable": true,
+      "interpretation": "Opposite of expected: HB\u2192BI is WEAKER for high-frequency users"
+    },
+    {
+      "id": "H4e_SI",
+      "description": "Voluntariness moderates SI \u2192 BI (stronger in mandated contexts)",
+      "path": "SI \u2192 BI",
+      "moderator": "Voluntariness",
+      "groups": {
+        "mandated": {
+          "n": 71,
+          "beta": 0.2550975537557273,
+          "se": 0.338547492888364
+        },
+        "voluntary": {
+          "n": 283,
+          "beta": -0.37271264838364565,
+          "se": 1.3034884128231004
+        }
+      },
+      "delta_beta": 0.627810202139373,
+      "z_statistic": 0.46617187448031,
+      "p_value": 0.6410924795579609,
+      "significant": false,
+      "supported": false,
+      "reliable": false,
+      "convergence_warning": "Voluntary group SE > 1.0 indicates model instability",
+      "interpretation": "No significant moderation effect (CAUTION: unreliable due to model instability)"
+    },
+    {
+      "id": "H4e_FC",
+      "description": "Voluntariness moderates FC \u2192 BI (stronger in mandated contexts)",
+      "path": "FC \u2192 BI",
+      "moderator": "Voluntariness",
+      "groups": {
+        "mandated": {
+          "n": 71,
+          "beta": 0.10138993297106001,
+          "se": 0.16017887205440295
+        },
+        "voluntary": {
+          "n": 283,
+          "beta": 1.1776949183541583,
+          "se": 3.108686016126964
+        }
+      },
+      "delta_beta": -1.0763049853830984,
+      "z_statistic": -0.34576636213754863,
+      "p_value": 0.7295183067824509,
+      "significant": false,
+      "supported": false,
+      "reliable": false,
+      "convergence_warning": "Voluntary group SE > 1.0 indicates model instability",
+      "interpretation": "No significant moderation effect (CAUTION: unreliable due to model instability)"
+    },
+    {
+      "id": "H4f_EE",
+      "description": "Disability moderates EE \u2192 BI (stronger for persons with disabilities)",
+      "path": "EE \u2192 BI",
+      "moderator": "Disability Status",
+      "groups": {
+        "no_disability": {
+          "n": 444,
+          "beta": -0.053,
+          "se": 0.073
+        },
+        "disability": {
+          "n": 68,
+          "beta": -0.012,
+          "se": 0.48
+        }
+      },
+      "delta_beta": 0.041,
+      "z_statistic": 0.084,
+      "p_value": 0.933,
+      "significant": false,
+      "supported": false,
+      "reliable": false,
+      "convergence_warning": "Disability group SE=4.86 indicates severe model instability (N=69 too small for SEM)",
+      "interpretation": "UNRELIABLE: Model did not converge properly for disability group"
+    },
+    {
+      "id": "H4f_FC",
+      "description": "Disability moderates FC \u2192 BI (stronger for persons with disabilities)",
+      "path": "FC \u2192 BI",
+      "moderator": "Disability Status",
+      "groups": {
+        "no_disability": {
+          "n": 444,
+          "beta": 0.084,
+          "se": 0.086
+        },
+        "disability": {
+          "n": 68,
+          "beta": 0.407,
+          "se": 1.083
+        }
+      },
+      "delta_beta": 0.323,
+      "z_statistic": 0.297,
+      "p_value": 0.766,
+      "significant": false,
+      "supported": false,
+      "reliable": false,
+      "convergence_warning": "Disability group SE=28.96 indicates severe model instability (N=69 too small for SEM)",
+      "interpretation": "UNRELIABLE: Model did not converge properly for disability group"
+    }
+  ],
+  "overall_summary": {
+    "hypotheses_supported": 0,
+    "hypotheses_not_supported": 5,
+    "reliable_tests": 1,
+    "unreliable_tests": 4,
+    "key_finding": "H4c shows opposite effect: HB\u2192BI is weaker (not stronger) for high-frequency users (p<.05)",
+    "limitations": [
+      "Small subgroup sizes limit statistical power (Mandated N=70, Disability N=69)",
+      "Multi-group SEM requires N\u2265100-200 per group for stable estimates",
+      "H4e and H4f results are unreliable due to model convergence issues",
+      "Only H4c has adequate sample sizes for reliable inference"
+    ]
+  }
+}

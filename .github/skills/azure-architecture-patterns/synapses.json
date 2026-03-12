@@ -76,7 +76,7 @@
     },
     {
       "id": "AZURE-005",
-      "source": "azure-architecture-patterns.cost-optimization",
+      "source": "azure-architecture-patterns",
       "target": ".github/skills/airs-appropriate-reliance/SKILL.md",
       "type": "parallels",
       "strength": 0.6,

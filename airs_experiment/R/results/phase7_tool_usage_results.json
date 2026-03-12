@@ -1,0 +1,366 @@
+{
+  "sample_size": 523,
+  "rq10a_usage_frequency": {
+    "tools": {
+      "Usage_MSCopilot": {
+        "mean": 2.4914,
+        "std": 1.3776,
+        "median": 2,
+        "never_pct": 36.1377,
+        "active_pct": 48.3748,
+        "heavy_pct": 27.7247
+      },
+      "Usage_ChatGPT": {
+        "mean": 3.0306,
+        "std": 1.4407,
+        "median": 3,
+        "never_pct": 23.9006,
+        "active_pct": 64.2447,
+        "heavy_pct": 44.1683
+      },
+      "Usage_Gemini": {
+        "mean": 2.4761,
+        "std": 1.3872,
+        "median": 2,
+        "never_pct": 36.5201,
+        "active_pct": 47.6099,
+        "heavy_pct": 26.0038
+      },
+      "Usage_Other": {
+        "mean": 1.9331,
+        "std": 1.1766,
+        "median": 1,
+        "never_pct": 53.3461,
+        "active_pct": 30.0191,
+        "heavy_pct": 13.9579
+      }
+    },
+    "finding": "ChatGPT most widely used; Copilot growing segment"
+  },
+  "rq10b_population_comparison": {
+    "analysis_method": "One-way ANOVA (3-group)",
+    "groups": {
+      "Academic": 216,
+      "Leader": 123,
+      "Professional": 184
+    },
+    "anova_results": {
+      "Usage_MSCopilot": {
+        "F": 49.8514,
+        "p": 1.7589e-19,
+        "eta_sq": 0.1593
+      },
+      "Usage_ChatGPT": {
+        "F": 31.7997,
+        "p": 2.8427e-13,
+        "eta_sq": 0.1089
+      },
+      "Usage_Gemini": {
+        "F": 29.6689,
+        "p": 1.7305e-12,
+        "eta_sq": 0.109
+      },
+      "Usage_Other": {
+        "F": 20.0433,
+        "p": 6.9447e-09,
+        "eta_sq": 0.0796
+      }
+    },
+    "finding": "Leaders show highest usage across all tools"
+  },
+  "leader_comparison": {
+    "leader_n": 123,
+    "professional_n": 184,
+    "tool_effects": {
+      "Usage_MSCopilot": {
+        "t": 9.7246,
+        "p": 3.0629e-19,
+        "cohens_d": 1.1484
+      },
+      "Usage_ChatGPT": {
+        "t": 6.2973,
+        "p": 1.2888e-09,
+        "cohens_d": 0.7395
+      },
+      "Usage_Gemini": {
+        "t": 7.5254,
+        "p": 1.0452e-12,
+        "cohens_d": 0.9418
+      },
+      "Usage_Other": {
+        "t": 6.3264,
+        "p": 1.45e-09,
+        "cohens_d": 0.8819
+      }
+    },
+    "construct_effects": {
+      "PerfExp": {
+        "t": 6.1049,
+        "p": 3.5659e-09,
+        "cohens_d": 0.6916
+      },
+      "EffortExp": {
+        "t": 5.4863,
+        "p": 9.6421e-08,
+        "cohens_d": 0.636
+      },
+      "SocialInf": {
+        "t": 6.4501,
+        "p": 5.584e-10,
+        "cohens_d": 0.7689
+      },
+      "FacCond": {
+        "t": 6.7309,
+        "p": 9.477e-11,
+        "cohens_d": 0.7349
+      },
+      "HedMot": {
+        "t": 6.7796,
+        "p": 7.0377e-11,
+        "cohens_d": 0.7361
+      },
+      "PriceVal": {
+        "t": 6.2938,
+        "p": 1.2018e-09,
+        "cohens_d": 0.6938
+      },
+      "Habit": {
+        "t": 5.7145,
+        "p": 3.0947e-08,
+        "cohens_d": 0.6873
+      },
+      "Trust": {
+        "t": 5.862,
+        "p": 1.347e-08,
+        "cohens_d": 0.6715
+      },
+      "BehInt": {
+        "t": 7.0914,
+        "p": 1.1625e-11,
+        "cohens_d": 0.8028
+      }
+    }
+  },
+  "rq10c_correlations": {
+    "Usage_MSCopilot": {
+      "PerfExp": {
+        "rho": 0.4802,
+        "p": 1.6023e-31
+      },
+      "EffortExp": {
+        "rho": 0.3532,
+        "p": 8.2086e-17
+      },
+      "SocialInf": {
+        "rho": 0.5086,
+        "p": 9.214e-36
+      },
+      "FacCond": {
+        "rho": 0.4125,
+        "p": 6.5623e-23
+      },
+      "HedMot": {
+        "rho": 0.5185,
+        "p": 2.4934e-37
+      },
+      "PriceVal": {
+        "rho": 0.4155,
+        "p": 2.9822e-23
+      },
+      "Habit": {
+        "rho": 0.4418,
+        "p": 2.1523e-26
+      },
+      "Trust": {
+        "rho": 0.4393,
+        "p": 4.3972e-26
+      },
+      "BehInt": {
+        "rho": 0.5438,
+        "p": 1.3983e-41
+      }
+    },
+    "Usage_ChatGPT": {
+      "PerfExp": {
+        "rho": 0.5828,
+        "p": 6.8546e-49
+      },
+      "EffortExp": {
+        "rho": 0.5586,
+        "p": 3.0158e-44
+      },
+      "SocialInf": {
+        "rho": 0.4458,
+        "p": 6.6824e-27
+      },
+      "FacCond": {
+        "rho": 0.5095,
+        "p": 6.888e-36
+      },
+      "HedMot": {
+        "rho": 0.519,
+        "p": 2.0911e-37
+      },
+      "PriceVal": {
+        "rho": 0.5711,
+        "p": 1.3238e-46
+      },
+      "Habit": {
+        "rho": 0.6238,
+        "p": 9.7044e-58
+      },
+      "Trust": {
+        "rho": 0.5311,
+        "p": 2.0984e-39
+      },
+      "BehInt": {
+        "rho": 0.5694,
+        "p": 2.852e-46
+      }
+    },
+    "Usage_Gemini": {
+      "PerfExp": {
+        "rho": 0.4758,
+        "p": 6.5763e-31
+      },
+      "EffortExp": {
+        "rho": 0.4201,
+        "p": 8.7973e-24
+      },
+      "SocialInf": {
+        "rho": 0.4471,
+        "p": 4.6007e-27
+      },
+      "FacCond": {
+        "rho": 0.4177,
+        "p": 1.6851e-23
+      },
+      "HedMot": {
+        "rho": 0.5015,
+        "p": 1.1499e-34
+      },
+      "PriceVal": {
+        "rho": 0.471,
+        "p": 3.0891e-30
+      },
+      "Habit": {
+        "rho": 0.464,
+        "p": 2.8217e-29
+      },
+      "Trust": {
+        "rho": 0.4556,
+        "p": 3.6766e-28
+      },
+      "BehInt": {
+        "rho": 0.519,
+        "p": 2.0767e-37
+      }
+    },
+    "Usage_Other": {
+      "PerfExp": {
+        "rho": 0.431,
+        "p": 4.5139e-25
+      },
+      "EffortExp": {
+        "rho": 0.3672,
+        "p": 3.8913e-18
+      },
+      "SocialInf": {
+        "rho": 0.4238,
+        "p": 3.3163e-24
+      },
+      "FacCond": {
+        "rho": 0.4006,
+        "p": 1.4095e-21
+      },
+      "HedMot": {
+        "rho": 0.4584,
+        "p": 1.5512e-28
+      },
+      "PriceVal": {
+        "rho": 0.438,
+        "p": 6.2853e-26
+      },
+      "Habit": {
+        "rho": 0.4187,
+        "p": 1.2829e-23
+      },
+      "Trust": {
+        "rho": 0.39,
+        "p": 1.8996e-20
+      },
+      "BehInt": {
+        "rho": 0.4378,
+        "p": 6.6673e-26
+      }
+    },
+    "Usage_Total": {
+      "PerfExp": {
+        "rho": 0.6568,
+        "p": 6.9838e-66
+      },
+      "EffortExp": {
+        "rho": 0.564,
+        "p": 2.9738e-45
+      },
+      "SocialInf": {
+        "rho": 0.5895,
+        "p": 2.934e-50
+      },
+      "FacCond": {
+        "rho": 0.5718,
+        "p": 9.927e-47
+      },
+      "HedMot": {
+        "rho": 0.6606,
+        "p": 7.2884e-67
+      },
+      "PriceVal": {
+        "rho": 0.6305,
+        "p": 2.5536e-59
+      },
+      "Habit": {
+        "rho": 0.6557,
+        "p": 1.402e-65
+      },
+      "Trust": {
+        "rho": 0.5976,
+        "p": 6.1853e-52
+      },
+      "BehInt": {
+        "rho": 0.6889,
+        "p": 7.9385e-75
+      }
+    }
+  },
+  "rq10d_multi_tool": {
+    "classification": {
+      "Non-User": {
+        "n": 55,
+        "pct": 10.5163,
+        "bi_mean": 1.7045,
+        "bi_std": 0.7377
+      },
+      "Single-Tool": {
+        "n": 79,
+        "pct": 15.1052,
+        "bi_mean": 2.6551,
+        "bi_std": 1.0863
+      },
+      "Dual-Tool": {
+        "n": 107,
+        "pct": 20.4589,
+        "bi_mean": 3.014,
+        "bi_std": 1.029
+      },
+      "Multi-Tool": {
+        "n": 282,
+        "pct": 53.9197,
+        "bi_mean": 3.6862,
+        "bi_std": 0.8319
+      }
+    },
+    "finding": "Multi-tool users have highest BI and readiness"
+  },
+  "criterion_validity_evidence": "Strong: usage correlates with BI and constructs"
+}

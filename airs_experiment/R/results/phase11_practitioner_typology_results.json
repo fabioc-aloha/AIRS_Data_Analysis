@@ -1,0 +1,144 @@
+{
+  "metadata": {
+    "notebook": "11_Practitioner_Typology",
+    "date": "2026-03-11 19:48:58.352267",
+    "n_samples": 523,
+    "constructs_used": ["PE", "EE", "SI", "FC", "HM", "PV", "HB", "TR"],
+    "outcome_variable": "BI"
+  },
+  "clustering": {
+    "n_clusters": 3,
+    "silhouette_score": 0.2703,
+    "cluster_sizes": {
+      "1": 115,
+      "2": 244,
+      "3": 164
+    }
+  },
+  "k4_alternative": {
+    "n_clusters": 4,
+    "silhouette_score": 0.2257,
+    "cluster_sizes": {
+      "1": 151,
+      "2": 191,
+      "3": 92,
+      "4": 89
+    },
+    "defensible": false
+  },
+  "validation": {
+    "bi_anova_f": 524.0356,
+    "bi_anova_p": 1.9524e-95,
+    "bi_eta_squared": 0.6597,
+    "regression_r2": 0.7944,
+    "regression_cv_r2": 0.7849,
+    "cluster_r2": 0.6597
+  },
+  "population_parameters": {
+    "means": {
+      "PE": 3.4675,
+      "EE": 3.6444,
+      "SI": 3.174,
+      "FC": 3.3489,
+      "HM": 3.3174,
+      "PV": 3.4283,
+      "HB": 3.021,
+      "TR": 3.2218
+    },
+    "stds": {
+      "PE": 1.0792,
+      "EE": 0.9766,
+      "SI": 1.0424,
+      "FC": 1.0039,
+      "HM": 1.1391,
+      "PV": 1.1134,
+      "HB": 1.2528,
+      "TR": 1.147
+    }
+  },
+  "centroids": {
+    "AI Skeptics": {
+      "cluster_id": 1,
+      "z_scores": {
+        "PE": -1.3558,
+        "EE": -1.0427,
+        "SI": -1.0429,
+        "FC": -1.0189,
+        "HM": -1.313,
+        "PV": -1.4078,
+        "HB": -1.2696,
+        "TR": -1.2926
+      },
+      "raw_means": {
+        "PE": 2.0043,
+        "EE": 2.6261,
+        "SI": 2.087,
+        "FC": 2.3261,
+        "HM": 1.8217,
+        "PV": 1.8609,
+        "HB": 1.4304,
+        "TR": 1.7391
+      },
+      "expected_BI": 1.7109,
+      "n": 115,
+      "pct": 21.9885
+    },
+    "Moderate Users": {
+      "cluster_id": 2,
+      "z_scores": {
+        "PE": 0.0662,
+        "EE": -0.0135,
+        "SI": -0.1433,
+        "FC": -0.1108,
+        "HM": 0.0002,
+        "PV": 0.081,
+        "HB": -0.0217,
+        "TR": -0.0076
+      },
+      "raw_means": {
+        "PE": 3.5389,
+        "EE": 3.6311,
+        "SI": 3.0246,
+        "FC": 3.2377,
+        "HM": 3.3176,
+        "PV": 3.5184,
+        "HB": 2.9939,
+        "TR": 3.2131
+      },
+      "expected_BI": 3.1834,
+      "n": 244,
+      "pct": 46.6539
+    },
+    "AI Enthusiasts": {
+      "cluster_id": 3,
+      "z_scores": {
+        "PE": 0.8522,
+        "EE": 0.7513,
+        "SI": 0.9445,
+        "FC": 0.8793,
+        "HM": 0.9204,
+        "PV": 0.8667,
+        "HB": 0.9226,
+        "TR": 0.9177
+      },
+      "raw_means": {
+        "PE": 4.3872,
+        "EE": 4.378,
+        "SI": 4.1585,
+        "FC": 4.2317,
+        "HM": 4.3659,
+        "PV": 4.3933,
+        "HB": 4.1768,
+        "TR": 4.2744
+      },
+      "expected_BI": 4.2195,
+      "n": 164,
+      "pct": 31.3576
+    }
+  },
+  "cluster_names": [
+    "AI Skeptics",
+    "Moderate Users",
+    "AI Enthusiasts"
+  ]
+}

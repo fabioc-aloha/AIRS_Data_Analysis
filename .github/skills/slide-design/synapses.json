@@ -42,7 +42,7 @@
       "target": ".github/skills/dissertation-defense/SKILL.md",
       "type": "enables",
       "strength": 0.9,
-      "description": "Defense presentations require effective slide design",
+      "description": "Dissertation defense requires effective slide design",
       "bidirectional": false
     },
     {

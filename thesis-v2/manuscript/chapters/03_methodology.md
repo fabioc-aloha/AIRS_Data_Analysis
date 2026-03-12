@@ -431,10 +431,11 @@ flowchart TD
 
 **Sample**: Development subsample (n = 261)
 
-**Extraction Method**: Principal Axis Factoring (PAF)
+**Extraction Method**: Minimum Residuals (MINRES)
 
-- Selected for robustness to non-normality
-- Accounts for measurement error
+- Minimizes off-diagonal residual correlations
+- Does not assume multivariate normality
+- Default method in R `psych` package; recommended for ordinal-like Likert data [@deWinter2012]
 
 **Rotation**: Promax (oblique)
 
@@ -475,7 +476,7 @@ Communality & $h^2 \geq .30$ & Adequate shared variance \\
 \end{table}
 ```
 
-**Software**: Python `factor_analyzer` package (v0.5.1)
+**Software**: R `psych` package (v2.5.6) with `GPArotation` for oblique rotation
 
 ### 3.6.4 Confirmatory Factor Analysis (CFA)
 
@@ -551,6 +552,8 @@ Scalar & Equal intercepts & Mean comparability \\
 ### 3.6.6 Structural Equation Modeling (SEM)
 
 **Purpose**: Test hypothesized relationships between latent constructs
+
+**Sample**: Full sample (N = 523). Following CFA validation on the independent holdout subsample (n = 262), structural modeling uses the complete dataset to maximize statistical power for path estimation. This is standard practice when the measurement model has been confirmed on a separate sample [@kline2023].
 
 **Model**:
 
@@ -648,7 +651,7 @@ $\geq$ .50 & Large \\
 - Silhouette analysis
 - Theoretical interpretability
 
-**Optimal Solution**: k = 4 clusters
+**Optimal Solution**: k = 3 clusters (supported by silhouette analysis and theoretical interpretability)
 
 ### 3.6.9 Qualitative Analysis
 
@@ -656,37 +659,42 @@ $\geq$ .50 & Large \\
 
 **Data**: Open-ended survey responses (n = 243 substantive responses, 46.5% response rate)
 
-**Method**: Thematic analysis [@braun2006]
+**Method**: Automated content analysis with keyword classification
 
 1. Familiarization with data
-2. Initial coding using keyword matching
-3. Theme development and refinement
+2. Keyword-based coding using predefined dictionaries aligned with UTAUT2 constructs
+3. Theme assignment via pattern matching
 4. Theme prevalence quantification
 5. Role-based comparison
+
+*Note*: This approach uses deterministic keyword matching rather than the iterative interpretive coding of Braun and Clarke's [-@braun2006] thematic analysis. It is better characterized as automated content analysis.
 
 **Themes Identified**: 10 distinct themes (see Chapter 4)
 
 ### 3.6.10 Statistical Software
 
-All analyses conducted using Python 3.11 with the following packages:
+All analyses were conducted using a dual-language pipeline: Python 3.11 for data preparation and exploratory analyses, and R 4.5.2 with `lavaan` for confirmatory and structural modeling. R/`lavaan` served as the primary engine for CFA, SEM, and measurement invariance testing, providing authoritative fit indices across all latent variable models.
 
 ```{=latex}
 \begin{table}[H]
 \centering
 \caption{Table 3.11: Statistical Software Packages}
-\begin{tabular}{@{}llp{0.45\textwidth}@{}}
+\begin{tabular}{@{}lllp{0.38\textwidth}@{}}
 \toprule
-\textbf{Package} & \textbf{Version} & \textbf{Purpose} \\
+\textbf{Language} & \textbf{Package} & \textbf{Version} & \textbf{Purpose} \\
 \midrule
-pandas & 2.1.0 & Data manipulation \\
-numpy & 1.26.0 & Numerical computing \\
-scipy & 1.11.0 & Statistical tests \\
-factor\_analyzer & 0.5.1 & Exploratory factor analysis \\
-semopy & 2.3.10 & Confirmatory factor analysis, SEM \\
-pingouin & 0.5.3 & Effect sizes, reliability \\
-scikit-learn & 1.3.0 & Cluster analysis \\
-matplotlib & 3.8.0 & Visualization \\
-seaborn & 0.13.0 & Statistical graphics \\
+R & lavaan & 0.6.21 & CFA, SEM, measurement invariance \\
+R & semTools & 0.5.8 & Measurement invariance helpers \\
+R & psych & 2.5.6 & EFA, reliability, descriptives \\
+R & cluster & 2.1.8 & Cluster analysis (silhouette) \\
+R & rpart / caret & 4.1.24 / 6.0.94 & Classification trees \\
+Python & pandas & 2.1.0 & Data manipulation \\
+Python & numpy & 1.26.0 & Numerical computing \\
+Python & scipy & 1.11.0 & Statistical tests \\
+Python & factor\_analyzer & 0.5.1 & EFA (development-phase) \\
+Python & semopy & 2.3.10 & SEM (development-phase) \\
+Python & scikit-learn & 1.3.0 & Cluster analysis \\
+Python & matplotlib / seaborn & 3.8.0 / 0.13.0 & Visualization \\
 \bottomrule
 \end{tabular}
 
@@ -695,9 +703,9 @@ seaborn & 0.13.0 & Statistical graphics \\
 \end{table}
 ```
 
-**Environment**: Jupyter notebooks executed in VS Code with Python virtual environment
+**Environment**: Python virtual environment and R 4.5.2 executed in VS Code; R scripts serve as the authoritative analysis pipeline
 
-**Reproducibility**: All random operations use documented seeds; complete analysis pipeline available in GitHub repository
+**Reproducibility**: All random operations use documented seeds (e.g., seed = 67 for sample split); complete analysis pipeline available in GitHub repository
 
 
 
@@ -750,6 +758,13 @@ Composite Reliability & .70 & .80 \\
 1. **Fornell-Larcker Criterion**: √AVE > inter-construct correlations
 2. **Heterotrait-Monotrait Ratio (HTMT)**: HTMT < .85 [@henseler2015]
 3. **Maximum correlation**: |r| < .85 between any construct pair
+
+**Known Limitations**: Three construct pairs exhibit high inter-factor correlations that violate the Fornell-Larcker criterion: Performance Expectancy × Price Value (r = .898), Performance Expectancy × Hedonic Motivation (r = .911), and Hedonic Motivation × Price Value (r = .898). HTMT analysis confirms these overlaps: PE × PV (HTMT = .902), PE × HM (HTMT = .900), and HM × PV (HTMT = .904) all exceed the .85 threshold. These overlaps are consistent with UTAUT2 literature, where motivational constructs often share substantial variance in technology acceptance contexts [@venkatesh2012]. All remaining pairwise comparisons pass all discriminant criteria. Several mitigating factors support retaining the eight-factor structure:
+
+1. **HTMT ratios** are computed as a supplementary check; HTMT is considered more robust than Fornell-Larcker for detecting discriminant problems [@henseler2015]
+2. **Model fit** remains excellent (CFI = .975, TLI = .960, RMSEA = .065, SRMR = .026 on holdout; CFI = .979, TLI = .966, RMSEA = .061, SRMR = .022 on full sample), indicating the eight-factor model reproduces the data well
+3. **Theoretical distinctiveness**: PE captures utilitarian performance expectations, HM reflects intrinsic enjoyment, and PV represents cost-benefit appraisal — conceptually distinct constructs despite empirical overlap
+4. Future studies with larger item pools could strengthen discriminant separation among these three constructs
 
 ### 3.7.4 Criterion Validity
 
