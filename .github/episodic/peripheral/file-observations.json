@@ -3,17 +3,31 @@
     "airs_experiment/R/run_01_efa.R"
   ],
   "stalledFiles": [
-    "github/config/alex-manifest.json",
-    "airs_experiment/00_Create_Split_Samples.ipynb",
-    "airs_experiment/01_EFA_Experiment.ipynb",
-    "airs_experiment/02_CFA_Experiment.ipynb",
-    "airs_experiment/03_Measurement_Invariance.ipynb",
-    "airs_experiment/04_Structural_Model.ipynb",
-    "airs_experiment/05_Mediation_Analysis.ipynb",
-    "airs_experiment/06_Moderation_Analysis.ipynb",
-    "airs_experiment/07_Tool_Usage_Patterns.ipynb",
-    "airs_experiment/08_Qualitative_Feedback.ipynb"
+    "github/episodic/peripheral/file-observations.json",
+    "defence/",
+    "exports/"
   ],
-  "todoHotspots": [],
-  "lastUpdated": 1773274684465
+  "todoHotspots": [
+    {
+      "file": "defence/exports/AIRS v1.pptx",
+      "todoCount": 21,
+      "scannedAt": 1773340505717
+    },
+    {
+      "file": "exports/Artificial-Intelligence-Readiness-Scale-AIRS.pptx",
+      "todoCount": 13,
+      "scannedAt": 1773340505717
+    },
+    {
+      "file": "defence/exports/AIRS v1.pdf",
+      "todoCount": 1,
+      "scannedAt": 1773340505717
+    },
+    {
+      "file": "airs_experiment/plots/09_user_typology.png",
+      "todoCount": 1,
+      "scannedAt": 1773340505717
+    }
+  ],
+  "lastUpdated": 1773340505717
 }
