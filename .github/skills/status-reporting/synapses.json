@@ -2,7 +2,7 @@
   "$schema": "../SYNAPSE-SCHEMA.json",
   "skillId": "status-reporting",
   "version": "1.1.0",
-  "lastUpdated": "2026-03-11",
+  "lastUpdated": "2026-03-13",
   "connections": [
     {
       "target": ".github/skills/proactive-assistance/SKILL.md",
@@ -46,6 +46,12 @@
       "when": "gathering accomplishment data",
       "yields": "commit history and PR summaries"
     }
+  ],
+  "activationContexts": [
+    "status-reporting",
+    "status reporting",
+    "status",
+    "reporting"
   ],
   "schemaVersion": "2.1.0",
   "lastValidated": "2026-02-11"

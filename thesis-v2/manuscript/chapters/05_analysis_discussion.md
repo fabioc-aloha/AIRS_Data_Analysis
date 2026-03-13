@@ -28,7 +28,7 @@ The AI Trust extension approached but did not reach significance (β = .106, p =
 
 ### 5.2.3 Diagnostic Purpose Framing
 
-The 8-factor AIRS structure was retained in its entirety, including the marginally significant AI Trust construct (β = .106, p = .064), because the instrument serves a diagnostic rather than purely predictive purpose. While a more parsimonious model (e.g., excluding non-significant paths) would marginally improve statistical fit, it would sacrifice the diagnostic breadth required for organizational assessment. Practitioners administering AIRS need to identify *which specific readiness dimensions* are deficient in their workforce — trust deficits require different interventions than value perception gaps or social influence deficits. This diagnostic orientation aligns with established psychometric practice in clinical and organizational assessment, where construct coverage reflects theoretical breadth rather than empirical parsimony alone [@clarkwatson1995; @messick1995].
+The 8-factor AIRS structure was retained in its entirety, including the marginally significant AI Trust construct (β = .106, p = .064), because the instrument serves a diagnostic rather than purely predictive purpose. While a more parsimonious model (e.g., excluding non-significant paths) would marginally improve statistical fit, it would sacrifice the diagnostic breadth required for organizational assessment. Practitioners administering AIRS need to identify *which specific readiness dimensions* are deficient in their workforce: trust deficits require different interventions than value perception gaps or social influence deficits. This diagnostic orientation aligns with established psychometric practice in clinical and organizational assessment, where construct coverage reflects theoretical breadth rather than empirical parsimony alone [@clarkwatson1995; @messick1995].
 
 Bootstrap validation (1,000 resamples, R/lavaan) confirmed that only Price Value demonstrates robust significance across both z-test and bootstrap methods. Hedonic Motivation and Social Influence are z-test significant but bootstrap-unstable (CIs including zero), suggesting their structural effects may be sensitive to sample composition. These constructs nonetheless retain diagnostic value: HM demonstrates reversed population effects (Academic β = 0.449 vs. Professional β = −0.301), and SI captures peer influence dynamics relevant to intervention design.
 
@@ -36,7 +36,7 @@ Bootstrap validation (1,000 resamples, R/lavaan) confirmed that only Price Value
 
 The high inter-factor correlations among PE, HM, and PV (r = .898–.911) represent a measurement challenge characteristic of 2-item-per-factor scales measuring conceptually adjacent constructs [@marsh1998]. Five Fornell-Larcker violations and four HTMT ratios exceeding .85 (PE×PV = .902, PE×HM = .900, HM×PV = .904, HM×TR = .850) indicate that the current 16-item scale does not fully achieve discriminant separation for the PE/HM/PV triad.
 
-Three findings support retaining separate factors despite this limitation: (a) the constructs serve distinct diagnostic functions enabling targeted intervention design — low PV requires value messaging while low HM requires engagement redesign; (b) they demonstrate differential population sensitivity, with HM showing reversed effects across academic and professional samples (β = 0.449 vs. −0.301, p = .041); and (c) theoretical continuity with UTAUT2 enables cumulative science and meta-analytic integration. The AIRS-28 development roadmap (§6.7.3) addresses this limitation through item pool expansion, which is expected to improve discriminant separation [@dewinter2009].
+Three findings support retaining separate factors despite this limitation: (a) the constructs serve distinct diagnostic functions enabling targeted intervention design: low PV requires value messaging while low HM requires engagement redesign; (b) they demonstrate differential population sensitivity, with HM showing reversed effects across academic and professional samples (β = 0.449 vs. −0.301, p = .041); and (c) theoretical continuity with UTAUT2 enables cumulative science and meta-analytic integration. The AIRS-28 development roadmap (§6.7.3) addresses this limitation through item pool expansion, which is expected to improve discriminant separation [@dewinter2009].
 
 
 
@@ -86,7 +86,7 @@ Similarly, the non-significance of Effort Expectancy (β = -.008, p = .875) and 
 
 ### 5.3.5 Converging Literature Validation
 
-An important methodological note is warranted regarding the alignment between this study's theoretical framework and the broader 2025 literature. The theoretical framework — including the decision to extend UTAUT2 with AI-specific constructs such as Trust and Anxiety — was specified before fieldwork began in October 2025. During the research design, data collection, and writing phases, a rapidly expanding body of industry research and academic work independently corroborated the study's theoretical positioning and empirical findings.
+An important methodological note is warranted regarding the alignment between this study's theoretical framework and the broader 2025 literature. The theoretical framework, including the decision to extend UTAUT2 with AI-specific constructs such as Trust and Anxiety, was specified before fieldwork began in October 2025. During the research design, data collection, and writing phases, a rapidly expanding body of industry research and academic work independently corroborated the study's theoretical positioning and empirical findings.
 
 **Industry Validation of the Adoption-Value Gap**. When the research framework was designed, the adoption-value gap was an emerging pattern supported primarily by McKinsey's 2023–2024 State of AI reports and early BCG findings. Throughout 2025, this pattern was confirmed by at least eight additional sources:
 
@@ -100,7 +100,7 @@ This converging evidence demonstrates that the adoption-value gap is robust, wid
 
 **Academic Validation of AI-Specific Constructs**. The decision to include AI Anxiety as a proposed inhibitor construct was informed by @tao2020's early dimensional work. Two recent publications further strengthened this theoretical basis:
 
-- @kim2025 identified "annihilation anxiety" (existential concerns about human relevance) as a distinct dimension particularly salient among knowledge workers — precisely the population this study sampled
+- @kim2025 identified "annihilation anxiety" (existential concerns about human relevance) as a distinct dimension particularly salient among knowledge workers, precisely the population this study sampled
 - @frenkenberg2025 distinguished anticipatory anxiety (about future AI capabilities) from present-state anxiety, providing a theoretical explanation for why the two-item AX scale in this study (which conflated avoidance and approach motivations) demonstrated inadequate reliability (α = .301)
 
 These findings validate both the theoretical importance of anxiety as an AI adoption construct and this study's empirical conclusion that more sophisticated, multi-dimensional measurement is required (see §5.6.2).
@@ -121,7 +121,7 @@ The findings support calls for domain-specific UTAUT extensions [@blut2022]. Rat
 
 ### 5.4.3 Price Value Dominance
 
-The finding that Price Value (β = .505) rather than Performance Expectancy drives AI adoption represents a significant theoretical departure from traditional UTAUT research. This suggests AI tools are evaluated through a value lens ("Is it worth it?") rather than a utility lens ("Will it help me?"). Users may assume AI will be useful but evaluate whether the investment—in time, effort, or cost—is justified.
+The finding that Price Value (β = .505) rather than Performance Expectancy drives AI adoption represents a significant theoretical departure from traditional UTAUT research. This suggests AI tools are evaluated through a value lens ("Is it worth it?") rather than a utility lens ("Will it help me?"). Users may assume AI will be useful but evaluate whether the investment (in time, effort, or cost) is justified.
 
 ### 5.4.4 Non-Significance of Traditional Predictors
 
@@ -179,7 +179,7 @@ Pricing strategy may significantly influence adoption, potentially more so than 
 
 ### 5.5.3 For Trainers and Educators
 
-The AI Skeptics segment (22%) — characterized by below-average scores across all adoption readiness constructs — suggests that training programs may benefit from addressing resistance barriers alongside technical skills. The disability-anxiety association (d = .36) highlights the importance of accessibility-centered training design. These findings warrant experimental validation of targeted approaches in AI training contexts.
+The AI Skeptics segment (22%), characterized by below-average scores across all adoption readiness constructs, suggests that training programs may benefit from addressing resistance barriers alongside technical skills. The disability-anxiety association (d = .36) highlights the importance of accessibility-centered training design. These findings warrant experimental validation of targeted approaches in AI training contexts.
 
 ### 5.5.4 For Policy Makers
 

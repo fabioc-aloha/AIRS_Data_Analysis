@@ -66,7 +66,7 @@ The experience moderation effect (§4.5.4) introduces career development as a re
 
 ### 6.3.4 User Typology Framework
 
-The empirically-derived three-segment typology provides insights into adoption heterogeneity that can inform future intervention research. Rather than treating users as a homogeneous population, the clear readiness gradient — from high-engagement Enthusiasts (31%) through pragmatic Moderate Users (47%) to resistant Skeptics (22%) — reveals that different psychological profiles may respond to different adoption strategies, a hypothesis warranting future experimental validation.
+The empirically-derived three-segment typology provides insights into adoption heterogeneity that can inform future intervention research. Rather than treating users as a homogeneous population, the clear readiness gradient, from high-engagement Enthusiasts (31%) through pragmatic Moderate Users (47%) to resistant Skeptics (22%), reveals that different psychological profiles may respond to different adoption strategies, a hypothesis warranting future experimental validation.
 
 
 
@@ -76,7 +76,7 @@ The empirically-derived three-segment typology provides insights into adoption h
 
 **Value Demonstration Over Capability Showcasing**: The dominance of Price Value suggests that organizations may benefit from demonstrating clear return on investment rather than simply highlighting AI capabilities. The findings indicate that employees' cost-benefit mental models may be more influential than capability-focused messaging, a hypothesis warranting experimental validation in organizational contexts.
 
-**Segment-Specific Intervention Hypotheses**: The three-segment typology (§4.6) provides a framework for tailored change management research. Preliminary hypotheses suggest that each segment may respond to different intervention approaches — from champion programs and advanced training for Enthusiasts, to ROI demonstrations for Moderate Users, to graduated exposure and psychological safety protocols for Skeptics — pending experimental validation.
+**Segment-Specific Intervention Hypotheses**: The three-segment typology (§4.6) provides a framework for tailored change management research. Preliminary hypotheses suggest that each segment may respond to different intervention approaches, from champion programs and advanced training for Enthusiasts, to ROI demonstrations for Moderate Users, to graduated exposure and psychological safety protocols for Skeptics, pending experimental validation.
 
 **Social Influence Leverage**: The significant Social Influence effect (β = .136) suggests that peer influence matters for AI adoption. The findings indicate that visible AI champions and communities of practice may facilitate adoption, approaches that warrant experimental testing.
 
@@ -172,7 +172,7 @@ While this study employed rigorous methodology and produced robust findings, sev
 
 ### 6.7.0 2026 Contextual Developments
 
-The October–November 2025 data collection positions this AIRS validation as a pre-agentic baseline. Three developments in early 2026 create urgent research opportunities: (a) the open-source AI economics shift (exemplified by DeepSeek R1) may redefine what "price value" means when powerful AI becomes freely available; (b) the emergence of agentic AI systems that act autonomously — rather than responding to queries — fundamentally changes the trust equation, potentially elevating Trust from a marginal to a dominant predictor; and (c) the EU AI Act's enforcement timeline introduces regulatory context as a moderator of adoption drivers. Longitudinal AIRS administration across this transition period would provide uniquely valuable data on how adoption psychology evolves as AI capabilities and governance frameworks mature.
+The October–November 2025 data collection positions this AIRS validation as a pre-agentic baseline. Three developments in early 2026 create urgent research opportunities: (a) the open-source AI economics shift (exemplified by DeepSeek R1) may redefine what "price value" means when powerful AI becomes freely available; (b) the emergence of agentic AI systems that act autonomously, rather than responding to queries, fundamentally changes the trust equation, potentially elevating Trust from a marginal to a dominant predictor; and (c) the EU AI Act's enforcement timeline introduces regulatory context as a moderator of adoption drivers. Longitudinal AIRS administration across this transition period would provide uniquely valuable data on how adoption psychology evolves as AI capabilities and governance frameworks mature.
 
 ### 6.7.1 Immediate Research Priorities
 
@@ -202,7 +202,7 @@ The following research directions and testable hypotheses emerge from the empiri
 
 7. **Temporal Construct Drift (H14)**: The relative importance of AIRS factors may shift predictably over a 12-month period as AI matures in the organizational context. Design: longitudinal panel with AIRS administered at baseline, 6 months, and 12 months (n > 600).
 
-8. **Anxiety Sub-Dimensionality (H16)**: AI Anxiety comprises at least 3 distinct dimensions — avoidance anxiety, obsolescence anxiety [@kim2025], and anticipatory anxiety [@frenkenberg2025] — each with differential effects on Behavioral Intention. Design: develop 9–12 item AX scale (3 items × 3–4 dimensions).
+8. **Anxiety Sub-Dimensionality (H16)**: AI Anxiety comprises at least 3 distinct dimensions (avoidance anxiety, obsolescence anxiety [@kim2025], and anticipatory anxiety [@frenkenberg2025]), each with differential effects on Behavioral Intention. Design: develop 9–12 item AX scale (3 items × 3–4 dimensions).
 
 9. **AIRS Score Predictive Validity (H22)**: Baseline AIRS composite scores predict actual AI tool adoption rates at 6-month follow-up with r > .50. This would validate AIRS as a practical pre-deployment assessment instrument.
 
@@ -240,7 +240,7 @@ This dissertation establishes the AIRS as a validated diagnostic instrument. The
 
 ### 6.7.4 Appropriate Reliance Research
 
-Critically, adoption readiness represents only the first step in effective AI integration. Microsoft's AETHER group synthesizes appropriate reliance research around two core constructs [@passi2024appropriate]: **Capability-Appropriate Reliance on AI** (CAIR)—matching human reliance to actual AI capability—and **Context-Sensitive Reliance** (CSR)—adapting behavior based on situational factors like stakes and uncertainty. The *New Future of Work Report* further cautions that interventions designed to improve AI acceptance may inadvertently increase over-reliance [@butler2025new], creating a paradox: successfully deploying AI through AIRS-identified pathway optimizations may set the stage for over-reliance problems.
+Critically, adoption readiness represents only the first step in effective AI integration. Microsoft's AETHER group synthesizes appropriate reliance research around two core constructs [@passi2024appropriate]: **Capability-Appropriate Reliance on AI** (CAIR), matching human reliance to actual AI capability, and **Context-Sensitive Reliance** (CSR), adapting behavior based on situational factors like stakes and uncertainty. The *New Future of Work Report* further cautions that interventions designed to improve AI acceptance may inadvertently increase over-reliance [@butler2025new], creating a paradox: successfully deploying AI through AIRS-identified pathway optimizations may set the stage for over-reliance problems.
 
 Future research should therefore extend beyond the adoption decision to investigate:
 

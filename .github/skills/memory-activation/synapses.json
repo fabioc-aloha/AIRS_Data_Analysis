@@ -2,7 +2,7 @@
   "$schema": "../SYNAPSE-SCHEMA.json",
   "skillId": "memory-activation",
   "version": "1.1.0",
-  "lastUpdated": "2026-03-11",
+  "lastUpdated": "2026-03-13",
   "connections": [
     {
       "target": ".github/instructions/skill-selection-optimization.instructions.md",
@@ -39,6 +39,12 @@
       "when": "routing between multiple skill matches",
       "yields": "Chunking strategies, decision simplification"
     }
+  ],
+  "activationContexts": [
+    "memory-activation",
+    "memory activation",
+    "memory",
+    "activation"
   ],
   "notes": "Auto-triggering metacognitive skill for capability discovery before response formation",
   "schemaVersion": "2.0.0",

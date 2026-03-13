@@ -1,0 +1,42 @@
+{
+  "$schema": "../SYNAPSE-SCHEMA.json",
+  "skillId": "persona-detection",
+  "version": "1.1.0",
+  "lastUpdated": "2026-03-11",
+  "connections": [
+    {
+      "target": "..\\..\\instructions\\alex-core.instructions.md",
+      "type": "references",
+      "strength": 0.7,
+      "note": "Active Context persona field updated by detection chain"
+    },
+    {
+      "target": "..\\release-process\\SKILL.md",
+      "type": "validates",
+      "strength": 0.7,
+      "note": "Persona detection tested during pre-publish"
+    },
+    {
+      "target": "..\\brand-asset-management\\SKILL.md",
+      "type": "coordinates-with",
+      "strength": 0.7,
+      "note": "BannerNoun action phrasing and persona avatar mappings are brand decisions"
+    },
+    {
+      "target": "..\\north-star\\SKILL.md",
+      "type": "coordinates-with",
+      "strength": 0.8,
+      "note": "North Star /northstar define sets Persona: field; detection reads it as P5"
+    }
+  ],
+  "schemaVersion": "1.0",
+  "activationBoost": [
+    "persona",
+    "project type",
+    "auto-detect",
+    "P5 slot",
+    "P6 slot",
+    "P7 slot",
+    "working memory"
+  ]
+}

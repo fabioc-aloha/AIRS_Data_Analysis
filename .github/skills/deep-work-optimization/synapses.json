@@ -2,7 +2,7 @@
   "$schema": "../SYNAPSE-SCHEMA.json",
   "skillId": "deep-work-optimization",
   "version": "1.1.0",
-  "lastUpdated": "2026-03-11",
+  "lastUpdated": "2026-03-13",
   "connections": [],
   "activationContexts": [
     {
@@ -32,7 +32,7 @@
     {
       "id": "DEEP-001",
       "source": "deep-work-optimization",
-      "target": ".github/skills/cognitive-load/SKILL.md",
+      "target": ".github/skills/cognitive-load-management/SKILL.md",
       "type": "complements",
       "strength": 0.9,
       "description": "Deep work requires cognitive load awareness; overload prevents flow",
@@ -59,10 +59,10 @@
     {
       "id": "DEEP-004",
       "source": "deep-work-optimization",
-      "target": ".github/skills/work-life-balance/SKILL.md",
+      "target": ".github/skills/meeting-efficiency/SKILL.md",
       "type": "protects",
       "strength": 0.8,
-      "description": "Balanced scheduling protects deep work time",
+      "description": "Efficient meetings protect deep work time",
       "bidirectional": false
     },
     {

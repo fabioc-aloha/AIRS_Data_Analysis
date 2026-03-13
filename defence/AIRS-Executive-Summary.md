@@ -1,24 +1,23 @@
-# Executive Summary
-
-## Development and Validation of the AI Readiness Scale (AIRS): A Psychometric Instrument for Assessing Enterprise AI Adoption
-
+---
+title: "Executive Summary"
+subtitle: "Artificial Intelligence Readiness Scale: Extending UTAUT2 for Enterprise AI Adoption"
+author: "Fabio Correa"
+date: "2026"
 ---
 
 ## 1. Research Problem and Significance
 
-Artificial intelligence adoption in organizations has expanded rapidly. Industry data indicates AI tool usage rose from 50% in 2023 to 72% in 2024 and 88% in 2025 among knowledge workers. At the same time, reported organizational value realization remains limited: only 5% of organizations report measurable value from AI implementations, and 90–95% of generative AI pilot programs do not progress beyond initial trials. This adoption-value gap — where organizations invest in AI tools but do not consistently realize meaningful returns — presents an important problem for both scholarship and practice.
+Artificial intelligence adoption in organizations has expanded rapidly. Industry data indicate that AI tool usage among knowledge workers rose from 50% in 2023 to 72% in 2024 and 88% in 2025. At the same time, reported organizational value realization remains limited: only 5% of organizations report measurable value from AI implementations, and 90–95% of generative AI pilot programs do not progress beyond initial trials. This adoption-value gap, where organizations invest in AI tools but do not consistently realize meaningful returns, presents an important problem for both scholarship and practice.
 
 Three interconnected gaps motivated this research:
 
-1. **Theoretical Gap.** The Unified Theory of Acceptance and Use of Technology (UTAUT2) was validated primarily for consumer mobile technologies. Whether its predictor structure holds for AI tools — a fundamentally different technology category characterized by autonomous decision-making, probabilistic outputs, and evolving capabilities — remained empirically untested.
+1. **Theoretical Gap.** The Unified Theory of Acceptance and Use of Technology (UTAUT2) was validated primarily for consumer mobile technologies. Whether its predictor structure holds for AI tools, a fundamentally different technology category characterized by autonomous decision-making, probabilistic outputs, and evolving capabilities, remained empirically untested.
 
 2. **Measurement Gap.** No validated psychometric instrument existed for measuring AI-specific adoption readiness. Existing scales either operationalized general technology acceptance constructs or addressed narrow AI applications (e.g., healthcare robotics), leaving organizations without a diagnostic tool to assess workforce readiness for enterprise AI deployment.
 
 3. **Practice Gap.** Organizations lacked evidence-based frameworks to identify specific barriers to AI adoption and design targeted interventions. Without systematic measurement, AI implementation strategies remained generic rather than responsive to the particular readiness profile of each workforce.
 
 This dissertation addressed all three gaps by developing and validating the AI Readiness Scale (AIRS), a 16-item psychometric instrument that extends UTAUT2 with an AI Trust construct, offering both a theoretical account of adoption drivers and a practical diagnostic tool for organizational assessment.
-
----
 
 ## 2. Theoretical Framework
 
@@ -27,7 +26,7 @@ This dissertation addressed all three gaps by developing and validating the AI R
 The study built upon the Unified Theory of Acceptance and Use of Technology 2 (UTAUT2), the most comprehensive and widely validated model of technology acceptance. UTAUT2 integrates seven constructs that predict Behavioral Intention to use a technology:
 
 | Construct | Definition |
-|---|---|
+|:--------------------------|:-------------------------------------------------------|
 | Performance Expectancy (PE) | Perceived improvement in job performance from using the technology |
 | Effort Expectancy (EE) | Perceived ease of learning and using the technology |
 | Social Influence (SI) | Degree to which important others believe one should use the technology |
@@ -54,8 +53,6 @@ The study posed one primary and five secondary research questions:
 
 Twelve hypotheses were tested: seven core UTAUT2 path hypotheses (H1a–H1g), one AI Trust hypothesis (H2), two moderation hypotheses (H3–H4), and two behavioral validation hypotheses (H5–H6).
 
----
-
 ## 3. Methodology
 
 ### 3.1 Research Design
@@ -68,7 +65,7 @@ The AIRS instrument was developed through a systematic process:
 
 1. **Initial Item Pool:** 28 items across 12 constructs, adapted from validated UTAUT2 scales and supplemented with AI-specific items for Trust, Explainability, Ethical Risk, and AI Anxiety.
 
-2. **Exploratory Factor Analysis (EFA):** Four competing factor models (Models A–D) were evaluated on the development subsample. Model D — the 8-factor, 16-item solution — was selected based on optimal factor structure, reliability, and theoretical interpretability.
+2. **Exploratory Factor Analysis (EFA):** Four competing factor models (Models A–D) were evaluated on the development subsample. Model D, the 8-factor, 16-item solution, was selected based on optimal factor structure, reliability, and theoretical interpretability.
 
 3. **Construct Exclusion:** Four constructs were dropped due to inadequate item reliability:
    - Voluntariness (α = .41): Items conflated organizational mandates with personal freedom
@@ -85,8 +82,9 @@ The AIRS instrument was developed through a systematic process:
 **Collection Period:** October–November 2025 (3-week window)
 
 **Role Distribution:**
+
 | Group | n | % |
-|---|---|---|
+|:-------------------------------------------------|:----------|:----------|
 | Academic (students) | 216 | 41.3% |
 | Professional (individual contributors, freelancers) | 184 | 35.2% |
 | Leader (managers, executives) | 123 | 23.5% |
@@ -98,7 +96,7 @@ The AIRS instrument was developed through a systematic process:
 A 10-phase analysis pipeline was executed across dual platforms (Python and R/lavaan) for cross-validation:
 
 | Phase | Purpose |
-|---|---|
+|:----------|:----------------------------------------------------------------|
 | 0 | Sample splitting (50/50, seed = 67, stratified by AI adoption) |
 | 1 | Exploratory Factor Analysis (EFA) on development sample (n = 261) |
 | 2 | Confirmatory Factor Analysis (CFA) on holdout sample (n = 262) |
@@ -113,8 +111,6 @@ A 10-phase analysis pipeline was executed across dual platforms (Python and R/la
 **EFA specifications:** MINRES extraction with promax (oblique) rotation; item retention required primary loading ≥ .50, cross-loading gap ≥ .20, and communality ≥ .30.
 
 **CFA/SEM estimation:** Maximum Likelihood with Satorra-Bentler robust corrections (MLM) via R/lavaan 0.6.21. Bootstrap validation: 1,000 resamples for path coefficient robustness.
-
----
 
 ## 4. Key Findings
 
@@ -132,7 +128,7 @@ The 16-item data demonstrated excellent suitability for factor analysis:
 The 8-factor CFA model achieved excellent fit on the independent holdout sample:
 
 | Index | Value | Threshold | Assessment |
-|---|---|---|---|
+|:----------------------|:--------------|:------------------|:------------------|
 | CFI | .975 | ≥ .95 | Excellent |
 | TLI | .960 | ≥ .95 | Excellent |
 | RMSEA | .065 | ≤ .08 | Good |
@@ -146,7 +142,7 @@ Full-sample CFA confirmed these results: CFI = .979, TLI = .966, RMSEA = .061, S
 All eight factors exceeded conventional thresholds for internal consistency:
 
 | Factor | Cronbach's α | Composite Reliability | AVE |
-|---|---|---|---|
+|:-----------------------------|:--------------|:-------------------|:----------|
 | Performance Expectancy | .863 | .866 | .764 |
 | Effort Expectancy | .803 | .805 | .674 |
 | Social Influence | .792 | .793 | .659 |
@@ -156,14 +152,14 @@ All eight factors exceeded conventional thresholds for internal consistency:
 | Habit | .909 | .909 | .833 |
 | AI Trust | .862 | .862 | .758 |
 
-All composite reliabilities exceeded .750 and all AVE values exceeded .50, confirming convergent validity.
+All composite reliabilities met or exceeded .750 and all AVE values exceeded .50, confirming convergent validity.
 
 #### Discriminant Validity
 
 Factor correlations ranged from r = .516 (EE × SI) to r = .911 (PE × PV). Four HTMT ratios exceeded the .85 threshold, concentrated in the PE–HM–PV triad:
 
 | Pair | HTMT | Status |
-|---|---|---|
+|:------------------------|:------------------|:------------------------------|
 | PE × PV | .902 | Exceeds threshold |
 | PE × HM | .900 | Exceeds threshold |
 | HM × PV | .904 | Exceeds threshold |
@@ -173,14 +169,12 @@ These violations are structurally expected for 2-item-per-factor scales with con
 
 #### Measurement Invariance
 
-Configural invariance was achieved across Academic and Professional groups (same factor structure holds in both populations). Metric invariance was partial: mean loading difference = .082, maximum Δλ = .326 (Social Influence). Configural invariance is sufficient for comparing structural relationships across groups.
+Configural invariance was achieved across Academic and Professional groups (same factor structure holds in both populations). Metric invariance was partial: mean loading difference = .082, maximum Δλ = .326 (Social Influence). This level of invariance is sufficient for comparing structural relationships across groups.
 
 | Group | CFI | RMSEA | SRMR |
-|---|---|---|---|
+|:---------------------------------|:-------------|:-------------|:-------------|
 | Academic (n = 216) | .958 | .066 | .038 |
 | Professional+Leader (n = 307) | .986 | .048 | .018 |
-
----
 
 ### 4.2 Structural Model: Hypothesis Testing
 
@@ -188,20 +182,20 @@ The structural model explained 89.7% of the variance in Behavioral Intention (R�
 
 #### Primary Path Coefficients (H1a–H1g, H2)
 
-| Hypothesis | Path | β | p | 95% CI | Bootstrap | Result |
-|---|---|---|---|---|---|---|
-| H1a | PE → BI | −.028 | .791 | [−.234, .178] | — | Not Supported |
-| H1b | EE → BI | −.008 | .875 | [−.108, .092] | — | Not Supported |
-| H1c | SI → BI | **.136** | **.024** | [.018, .254] | CI includes 0 | Supported* |
-| H1d | FC → BI | .059 | .338 | [−.062, .180] | — | Not Supported |
-| H1e | HM → BI | **.217** | **.014** | [.044, .390] | CI includes 0 | Supported* |
-| H1f | PV → BI | **.505** | **<.001** | [.352, .658] | **Confirmed** | **Strongest** |
-| H1g | HB → BI | .023 | .631 | [−.071, .117] | — | Not Supported |
-| H2 | TR → BI | .106 | .064 | [−.006, .218] | CI includes 0 | Marginal |
+| Hypothesis | Path | β | p | 95% CI (z-test) | Bootstrap 95% CI | Result |
+|:---------|:----------|:------|:------|:-----------------|:------------------|:---------------|
+| H1a | PE → BI | −.028 | .791 | [−.234, .178] | --- | Not Supported |
+| H1b | EE → BI | −.008 | .875 | [−.108, .092] | --- | Not Supported |
+| H1c | SI → BI | **.136** | **.024** | [.018, .254] | [−.028, .298] | Supported* |
+| H1d | FC → BI | .059 | .338 | [−.062, .180] | --- | Not Supported |
+| H1e | HM → BI | **.217** | **.014** | [.044, .390] | [−.107, .483] | Supported* |
+| H1f | PV → BI | **.505** | **<.001** | [.352, .658] | **[.218, 1.083]** | **Strongest** |
+| H1g | HB → BI | .023 | .631 | [−.071, .117] | --- | Not Supported |
+| H2 | TR → BI | .106 | .064 | [−.006, .218] | [−.096, .248] | Marginal |
 
-*z-test significant; bootstrap CIs include zero. Interpreted as suggestive rather than conclusive.
+*z-test significant but bootstrap 95% CI includes zero. Interpreted as suggestive rather than conclusive. Bootstrap: 1,000 resamples, R/lavaan 0.6.21. Bootstrap CIs are for unstandardized estimates; β values are standardized.
 
-**Bootstrap Validation (1,000 resamples, R/lavaan):** Only Price Value's path was confirmed as robust (bootstrap 95% CI [0.218, 1.083]). Hedonic Motivation (CI [−0.106, 0.483]) and Social Influence (CI [−0.028, 0.298]) were z-test significant but bootstrap-unstable — their effects may be sensitive to sample composition.
+Only Price Value's path was confirmed as robust under both z-test and bootstrap validation. Hedonic Motivation and Social Influence were z-test significant but bootstrap-unstable, suggesting their effects may be sensitive to sample composition.
 
 #### Dominance of Price Value
 
@@ -216,11 +210,9 @@ This reversal suggests that AI tools represent a **distinct technology category*
 
 Although AI Trust did not reach conventional significance (p = .064) and model comparison favored the 7-factor UTAUT2-only model on parsimony grounds (ΔAIC = +2.01), the 8-factor model was retained as the recommended diagnostic instrument for three reasons:
 
-1. Trust provides unique diagnostic capability for organizations — identifying trust deficits that other constructs cannot detect
+1. Trust provides unique diagnostic capability for organizations, identifying trust deficits that other constructs cannot detect
 2. The marginal effect (β = .106) suggests theoretical relevance; detecting this effect at 80% power requires n > 600 (the present N = 523 yields ~68% power)
 3. Organizations gain actionable insight from separately measuring trust, enabling targeted confidence-building interventions
-
----
 
 ### 4.3 Moderation Effects
 
@@ -242,8 +234,6 @@ Hedonic Motivation showed significant population moderation (p = .041):
 
 This divergence indicates fundamentally different adoption mechanisms: academics adopt AI tools partly for the enjoyment of exploration and learning, while professionals may view the same "enjoyment" dimension as irrelevant or even counterproductive to task-focused work. All other paths showed no significant population differences; Price Value remained dominant for both groups.
 
----
-
 ### 4.4 Behavioral Validation
 
 #### Intention-Usage Relationship (H5: Supported)
@@ -260,30 +250,26 @@ Individual tool correlations:
 One-way ANOVA confirmed a clear hierarchy: Leaders > Professionals > Academics across all usage measures:
 
 | Measure | F(2,520) | p | η² |
-|---|---|---|---|
+|:------------------------------|:-------------------|:----------|:--------------|
 | Tool Breadth | 18.42 | <.001 | .066 |
 | Usage Frequency | 22.15 | <.001 | .078 |
 | Usage Intensity | 15.87 | <.001 | .058 |
 
 Leaders demonstrated particularly elevated usage of Microsoft Copilot (Cohen's d = 1.14 vs. Professionals), likely reflecting enterprise licensing and integration into organizational workflows.
 
----
-
 ### 4.5 User Typology
 
 K-means cluster analysis (k = 3, silhouette = 0.271) identified three distinct user profiles:
 
 | Cluster | n | % | Characterization | Mean BI |
-|---|---|---|---|---|
+|:---------|:-----|:-----|:---------------------------------------------|:----------|
 | AI Enthusiasts | 162 | 31% | Early adopters with high engagement across all dimensions | 4.23 |
-| Moderate Users | 246 | 47% | Pragmatic users near population means | — |
+| Moderate Users | 246 | 47% | Pragmatic users near population means | - |
 | AI Skeptics | 115 | 22% | Resistant users with below-mean readiness scores | 1.71 |
 
 The three-cluster solution explained 65.9% of BI variance (F(2, 520) = 503.47, p < .001, η² = .659), confirming a clear readiness gradient.
 
 This typology has direct organizational application: each segment requires a different intervention strategy. Enthusiasts can serve as change champions; Moderate Users respond to demonstrated value and peer influence; Skeptics require trust-building and anxiety-reduction interventions before engagement strategies will succeed.
-
----
 
 ### 4.6 Exploratory and Supplementary Findings
 
@@ -301,16 +287,14 @@ Open-ended responses (n = 243, 46.5% response rate) revealed:
 
 #### Incremental Validity
 
-Nested model comparison showed the UTAUT2-only model (AIC = 148.58) marginally preferred over the 8-factor AIRS model (AIC = 150.59) on parsimony grounds (ΔAIC = +2.01). This confirms AI Trust's value is diagnostic rather than predictive: it adds organizational assessment capability without meaningfully improving overall model fit.
-
----
+Nested model comparison showed the UTAUT2-only model (AIC = 148.58) was marginally preferred over the 8-factor AIRS model (AIC = 150.59) on parsimony grounds (ΔAIC = +2.01). This confirms AI Trust's value is diagnostic rather than predictive: it adds organizational assessment capability without meaningfully improving overall model fit.
 
 ## 5. Hypothesis Outcome Summary
 
 Of 12 hypotheses tested:
 
 | Category | Hypotheses | Supported | Partial | Not Supported |
-|---|---|---|---|---|
+|:---------------------|:----------|:-------------|:----------|:-----------------|
 | UTAUT2 Core (H1a–g) | 7 | 3 (43%) | 0 | 4 (57%) |
 | AI Extension (H2) | 1 | 0 | 1 (marginal) | 0 |
 | Moderation (H3–H4) | 2 | 0 | 2 | 0 |
@@ -319,15 +303,13 @@ Of 12 hypotheses tested:
 
 The pattern of supported vs. unsupported hypotheses is itself a key finding: it reveals that AI adoption follows a different predictor structure than traditional technology adoption, with cost-value perceptions displacing utility perceptions as the primary driver.
 
----
-
 ## 6. Theoretical Contributions
 
 ### Contribution 1: Empirical Extension of UTAUT2 for Artificial Intelligence
 
 This is the first study to empirically validate UTAUT2 for AI tool adoption with a purpose-built psychometric instrument. The 8-factor structure demonstrates that UTAUT2's theoretical architecture applies to AI contexts, but the relative importance of predictors shifts substantially. The finding that four traditional UTAUT predictors (PE, EE, FC, HB) were non-significant while Price Value dominated represents a meaningful advance in technology acceptance theory.
 
-### Contribution 2: Price Value Dominance — AI as a Distinct Technology Category
+### Contribution 2: Price Value Dominance: AI as a Distinct Technology Category
 
 The emergence of Price Value as the dominant predictor (β = .505) challenges decades of UTAUT research positioning Performance Expectancy as the primary adoption driver. The results suggest that, in AI contexts, utility may function more as a baseline expectation than as a differentiating factor, with adoption decisions more strongly shaped by perceived cost-benefit ratios. This has implications for how technology acceptance models are specified when applied to AI tools.
 
@@ -343,13 +325,11 @@ The empirically derived typology (Enthusiasts, Moderate Users, Skeptics) provide
 
 An important source of external support for the study is that multiple independent industry reports published during the same period (2025) described patterns broadly consistent with the AIRS findings. McKinsey's Global AI Survey (N = 1,993), BCG, MIT Media Lab, Georgian, ISG, Gartner, Deloitte, Lucidworks, and Capgemini each reported evidence aligned with the AIRS results, including the centrality of perceived value, heterogeneous readiness distributions, and the limits of one-size-fits-all adoption strategies. These reports do not substitute for formal replication, but their convergence provides useful contextual support for the study's interpretation.
 
-Additionally, emerging anxiety research corroborates the theoretical relevance of the affective dimension that AIRS identified but could not reliably measure. Kim (2025) documented "annihilation anxiety" — existential fears of AI displacement — while Frenkenberg (2025) identified "anticipatory anxiety" as a distinct pre-adoption barrier. These findings validate the study's decision to include AI Anxiety in the initial item pool and support the recommendation to redesign anxiety items for the AIRS-28 expansion.
+Additionally, emerging anxiety research corroborates the theoretical relevance of the affective dimension that AIRS identified but could not reliably measure. Kim (2025) documented "annihilation anxiety" (existential fears of AI displacement) while Frenkenberg (2025) identified "anticipatory anxiety" as a distinct pre-adoption barrier. These findings validate the study's decision to include AI Anxiety in the initial item pool and support the recommendation to redesign anxiety items for the AIRS-28 expansion.
 
 ### Contribution 6: Adoption-Value Gap Mechanisms
 
-The study identified four specific mechanisms explaining why organizations struggle to realize AI value despite high potential: (1) **value communication misalignment** — organizations emphasize capability rather than ROI; (2) **heterogeneous readiness** — treating the workforce as monolithic when 22% are Skeptics requiring fundamentally different intervention; (3) **neglected affective barriers** — anxiety and hedonic motivation are ignored in favor of rational-utilitarian framings; and (4) **context-inappropriate frameworks** — applying generic technology adoption strategies that fail to account for AI's distinctive characteristics as a technology category. These four mechanisms provide a diagnostic vocabulary for explaining adoption failures and designing targeted responses.
-
----
+The study identified four specific mechanisms explaining why organizations struggle to realize AI value despite high potential: (1) **value communication misalignment**: organizations emphasize capability rather than ROI; (2) **heterogeneous readiness**: treating the workforce as monolithic when 22% are Skeptics requiring fundamentally different intervention; (3) **neglected affective barriers**: anxiety and hedonic motivation are ignored in favor of rational-utilitarian framings; and (4) **context-inappropriate frameworks**: applying generic technology adoption strategies that fail to account for AI's distinctive characteristics as a technology category. These four mechanisms provide a diagnostic vocabulary for explaining adoption failures and designing targeted responses.
 
 ## 7. Practical Implications
 
@@ -374,7 +354,7 @@ The study identified four specific mechanisms explaining why organizations strug
 
 **Adopt anxiety-informed training design.** Training programs should address affective barriers in addition to skill gaps. The finding that users with disabilities experience heightened AI anxiety (d = .36) suggests training should incorporate emotional safety, graduated exposure, and relevant accommodations.
 
-**Differentiate by career stage.** The population moderation finding (Academic HM β = 0.449 vs. Professional HM β = −0.301) means that training approaches effective in educational settings may backfire in professional contexts. Trainers should assess audience composition and adjust framing accordingly — exploration-oriented for academic audiences, value-oriented for professional ones.
+**Differentiate by career stage.** The population moderation finding (Academic HM β = 0.449 vs. Professional HM β = −0.301) means that training approaches effective in educational settings may backfire in professional contexts. Trainers should assess audience composition and adjust framing accordingly: exploration-oriented for academic audiences, value-oriented for professional ones.
 
 ### For Policymakers and Workforce Development
 
@@ -386,16 +366,14 @@ The study identified four specific mechanisms explaining why organizations strug
 
 The dissertation provides eight specific practitioner recommendations derived from the SEM and typology findings:
 
-1. **Conduct baseline AIRS assessment** before designing AI adoption initiatives — diagnose before prescribing.
-2. **Lead with value** — frame AI in terms of cost-benefit returns (PV dominance), not capability showcases.
-3. **Attend to affective barriers** — hedonic motivation and anxiety influence adoption beyond rational calculations.
-4. **Leverage social influence** — peer champions and leadership endorsement are the third significant predictor (SI β = .136).
-5. **Differentiate by experience level** — novice and experienced users respond to different adoption drivers.
-6. **Monitor trust continuously** — trust does not predict adoption directly but functions as a diagnostic indicator and necessary condition.
-7. **Design for accessibility** — universal design principles reduce anxiety-driven non-adoption among users with disabilities.
-8. **Consider segment heterogeneity** — the three-segment distribution means any single intervention strategy will fail for at least one-third of the workforce.
-
----
+1. **Conduct baseline AIRS assessment** before designing AI adoption initiatives: diagnose before prescribing.
+2. **Lead with value**: frame AI in terms of cost-benefit returns (PV dominance), not capability showcases.
+3. **Attend to affective barriers**: hedonic motivation and anxiety influence adoption beyond rational calculations.
+4. **Leverage social influence**: peer champions and leadership endorsement are the third significant predictor (SI β = .136).
+5. **Differentiate by experience level**: novice and experienced users respond to different adoption drivers.
+6. **Monitor trust continuously**: trust does not predict adoption directly but functions as a diagnostic indicator and necessary condition.
+7. **Design for accessibility**: universal design principles reduce anxiety-driven non-adoption among users with disabilities.
+8. **Consider segment heterogeneity**: the three-segment distribution means any single intervention strategy will fail for at least one-third of the workforce.
 
 ## 8. Limitations
 
@@ -411,28 +389,26 @@ The dissertation provides eight specific practitioner recommendations derived fr
 
 4. **Two items per factor.** The 2-item-per-factor structure, while efficient, constrains reliability and contributes to elevated inter-factor correlations. The HTMT violations in the PE–HM–PV triad are partly a structural artifact of this design choice.
 
-5. **Four dropped constructs.** Voluntariness, Explainability, Ethical Risk, and AI Anxiety were excluded due to inadequate reliability. These constructs warrant item redesign and re-investigation in future work — particularly AI Anxiety, which showed a meaningful disability association despite its psychometric failure.
+5. **Four dropped constructs.** Voluntariness, Explainability, Ethical Risk, and AI Anxiety were excluded due to inadequate reliability. These constructs warrant item redesign and re-investigation in future work, particularly AI Anxiety, which showed a meaningful disability association despite its psychometric failure.
 
 6. **Marginal AI Trust.** The AI Trust extension did not reach conventional significance, limiting claims about its structural role. Its diagnostic value is supported by organizational assessment logic rather than predictive superiority.
 
 7. **Western sample.** All participants were U.S.-based, limiting cross-cultural generalizability. AI adoption patterns may differ substantially in non-Western contexts where cultural attitudes toward technology, trust, and organizational hierarchy vary.
 
----
-
 ## 9. Special Section: Neurodiversity and Disability Insights
 
-The AIRS dataset includes 68 participants (13.0%) who self-reported a disability — a proportion consistent with U.S. Census Bureau estimates and sufficient for exploratory between-group analysis. Although the study was not designed as a neurodiversity investigation, the disability-related findings are among the more practically salient results in the dissertation and warrant dedicated discussion.
+The AIRS dataset includes 68 participants (13.0%) who self-reported a disability, a proportion consistent with U.S. Census Bureau estimates and sufficient for exploratory between-group analysis. Although the study was not designed as a neurodiversity investigation, the disability-related findings are among the more practically salient results in the dissertation and warrant dedicated discussion.
 
 ### 9.1 The Core Finding: Disability–Anxiety Association
 
-Participants with disabilities reported significantly higher AI-related anxiety than non-disabled participants (M = 2.89, SD = 1.08 vs. M = 2.48, SD = 0.96; t(521) = 2.76, p = .006, Cohen's d = 0.36). This is a small-to-medium effect size that remained the only statistically significant disability-related finding across all eight UTAUT2 constructs at α = .05. Critically, this finding emerged from the original AI Anxiety items that were subsequently excluded from the final AIRS-16 scale due to inadequate psychometric properties — meaning the association was detected *despite* measurement limitations, suggesting the true effect may be larger than observed.
+Participants with disabilities reported significantly higher AI-related anxiety than non-disabled participants (M = 2.89, SD = 1.08 vs. M = 2.48, SD = 0.96; t(521) = 2.76, p = .006, Cohen's d = 0.36). This is a small-to-medium effect size that remained the only statistically significant disability-related finding across all eight UTAUT2 constructs at α = .05. Critically, this finding emerged from the original AI Anxiety items that were subsequently excluded from the final AIRS-16 scale due to inadequate psychometric properties, meaning the association was detected *despite* measurement limitations, suggesting the true effect may be larger than observed.
 
 ### 9.2 Broader Pattern Across All Constructs
 
 While AI Anxiety was the only construct reaching conventional significance, the full demographic effects analysis reveals a consistent directional pattern:
 
 | Construct | Disability M (SD) | No Disability M (SD) | Cohen's d | p |
-|-----------|-------------------|----------------------|-----------|------|
+|:----------------|:------------------|:---------------------|:----------|:----------|
 | AI Anxiety | **2.89 (1.08)** | **2.48 (0.96)** | **0.36** | **.006** |
 | Hedonic Motivation | **3.45 (0.98)** | **3.72 (0.92)** | **0.28** | **.030** |
 | Effort Expectancy | 3.48 (0.89) | 3.68 (0.81) | 0.24 | .065 |
@@ -442,23 +418,23 @@ While AI Anxiety was the only construct reaching conventional significance, the 
 | Trust | 3.28 (0.92) | 3.41 (0.84) | 0.15 | .238 |
 | Social Influence | 3.32 (0.95) | 3.43 (0.89) | 0.12 | .328 |
 
-Two findings are statistically significant: AI Anxiety (d = .36) and Hedonic Motivation (d = .28, p = .030). The HM finding is noteworthy — participants with disabilities report significantly less enjoyment from AI tools, suggesting that current AI experiences are less pleasurable or more frustrating for this population. The remaining six constructs show consistent directional differences (d = 0.12–0.24) favoring the non-disabled group. While individually non-significant, the uniform direction — lower scores on every positive adoption construct and higher scores on anxiety — constitutes a coherent disadvantage profile rather than random noise.
+Two findings are statistically significant: AI Anxiety (d = .36) and Hedonic Motivation (d = .28, p = .030). The HM finding is noteworthy: participants with disabilities report significantly less enjoyment from AI tools, suggesting that current AI experiences are less pleasurable or more frustrating for this population. The remaining six constructs show consistent directional differences (d = 0.12–0.24) favoring the non-disabled group. While individually non-significant, the uniform direction (lower scores on every positive adoption construct and higher scores on anxiety) constitutes a coherent disadvantage profile rather than random noise.
 
 ### 9.3 Intersection with the User Typology
 
-The three-segment typology (Enthusiasts 31%, Moderate Users 47%, Skeptics 22%) was derived from cluster analysis on the full sample. Although disability status was not used as a clustering variable, the consistent pattern of lower readiness scores among participants with disabilities suggests disproportionate representation in the Skeptics segment. If confirmed in future research with larger disability subsamples, this would mean that the 22% Skeptics category — already identified as requiring fundamentally different intervention — may partially reflect an accessibility-driven readiness gap rather than purely attitudinal resistance.
+The three-segment typology (Enthusiasts 31%, Moderate Users 47%, Skeptics 22%) was derived from cluster analysis on the full sample. Although disability status was not used as a clustering variable, the consistent pattern of lower readiness scores among participants with disabilities suggests disproportionate representation in the Skeptics segment. If confirmed in future research with larger disability subsamples, this would mean that the 22% Skeptics category, already identified as requiring fundamentally different intervention, may partially reflect an accessibility-driven readiness gap rather than purely attitudinal resistance.
 
 ### 9.4 Implications for Neurodivergent and Disabled Users
 
 The AIRS survey captured disability status through a single binary item, which does not distinguish between physical, cognitive, sensory, and neurodiverse conditions. However, several interpretive threads are relevant:
 
-**AI Anxiety may reflect lived experience, not irrational fear.** For users who have repeatedly encountered inaccessible interfaces, poorly designed assistive technology integration, or algorithmic bias, elevated anxiety about a new technology class is a rational response to historical exclusion — not a deficit to be corrected.
+**AI Anxiety may reflect lived experience, not irrational fear.** For users who have repeatedly encountered inaccessible interfaces, poorly designed assistive technology integration, or algorithmic bias, elevated anxiety about a new technology class is a rational response to historical exclusion, not a deficit to be corrected.
 
-**Hedonic Motivation suppression signals a design problem, not a user problem.** The significant HM gap (d = .28) implies that current AI tools are less enjoyable for users with disabilities. This points to accessibility failures in existing AI products — lack of screen reader compatibility, insufficient customization options, or interaction paradigms that assume neurotypical cognitive processing.
+**Hedonic Motivation suppression signals a design problem, not a user problem.** The significant HM gap (d = .28) implies that current AI tools are less enjoyable for users with disabilities. This points to accessibility failures in existing AI products: lack of screen reader compatibility, insufficient customization options, or interaction paradigms that assume neurotypical cognitive processing.
 
-**The dropped AI Anxiety construct may be especially important for this population.** A notable implication of the psychometric results is that AI Anxiety — the construct showing the strongest disability signal — was excluded from the final scale. The AIRS-28 expansion should therefore prioritize redesigning anxiety items using neurodiversity-informed language and item stems that distinguish displacement-related anxiety from accessibility-barrier anxiety.
+**The dropped AI Anxiety construct may be especially important for this population.** A notable implication of the psychometric results is that AI Anxiety, the construct showing the strongest disability signal, was excluded from the final scale. The AIRS-28 expansion should therefore prioritize redesigning anxiety items using neurodiversity-informed language and item stems that distinguish displacement-related anxiety from accessibility-barrier anxiety.
 
-**Universal design as an adoption accelerator.** The data suggest that making AI tools more accessible would not only serve users with disabilities but may reduce anxiety-driven non-adoption more broadly. If the disability–anxiety association reflects design-induced friction, removing that friction benefits the entire user population — the "curb cut effect" applied to AI adoption.
+**Universal design as an adoption accelerator.** The data suggest that making AI tools more accessible would not only serve users with disabilities but may reduce anxiety-driven non-adoption more broadly. If the disability–anxiety association reflects design-induced friction, removing that friction benefits the entire user population: the "curb cut effect" applied to AI adoption.
 
 ### 9.5 Limitations and Future Neurodiversity Research
 
@@ -466,12 +442,10 @@ The current findings are exploratory and carry important caveats:
 
 - **Small subgroup (n = 68)** limits statistical power for detecting smaller effects and prevents multi-category disability analysis.
 - **Binary disability measure** conflates physical, sensory, cognitive, and neurodevelopmental conditions that likely have very different AI interaction profiles.
-- **No neurodiversity-specific items** were included — conditions such as ADHD, autism, dyslexia, and anxiety disorders each interact with technology adoption through distinct mechanisms.
+- **No neurodiversity-specific items** were included; conditions such as ADHD, autism, dyslexia, and anxiety disorders each interact with technology adoption through distinct mechanisms.
 - **Self-report bias** may affect disability disclosure rates, particularly through the Centiment panel where 11 participants selected "Prefer not to answer."
 
 Future research should: (1) recruit larger disability subsamples with condition-specific categorization; (2) develop neurodiversity-informed AIRS items that capture interaction-specific anxiety rather than generalized technology anxiety; (3) investigate whether accessibility features moderate the disability–anxiety relationship; and (4) test whether AIRS-guided interventions differentially benefit neurodiverse users.
-
----
 
 ## 10. Future Research Roadmap
 
@@ -487,7 +461,7 @@ Deploy AIRS in a 12-month longitudinal panel to track how readiness profiles evo
 
 ### Phase 3: Intervention Framework Development (2028–2029)
 
-Design and test AIRS-informed interventions — specific organizational change programs targeted at each user segment. Test whether AIRS-guided interventions outperform generic AI training approaches.
+Design and test AIRS-informed interventions: specific organizational change programs targeted at each user segment. Test whether AIRS-guided interventions outperform generic AI training approaches.
 
 ### Phase 4: Comprehensive Prediction System (2029+)
 
@@ -499,31 +473,27 @@ The dissertation identifies seven specific methodological recommendations for fu
 
 1. **Larger samples (n > 600)** to increase power for multi-group and moderation analyses.
 2. **Improved AI-specific measures** with 3–4 items per dimension to resolve the HTMT violations inherent in 2-item scales.
-3. **PV dominance investigation** — replicate and explain why Price Value overtakes Performance Expectancy in AI contexts specifically.
-4. **Career development integration** — study how adoption mechanisms change across career stages (student → early career → mid-career → senior).
-5. **Typology validation** — confirm the three-segment structure in independent samples and test whether typology membership predicts actual adoption behavior.
-6. **Cross-cultural replication** — establish measurement invariance across non-Western contexts where cultural attitudes toward technology, hierarchy, and trust differ.
-7. **Longitudinal designs** — move beyond cross-sectional snapshots to track readiness trajectories and determine whether AIRS scores predict future behavior.
+3. **PV dominance investigation**: replicate and explain why Price Value overtakes Performance Expectancy in AI contexts specifically.
+4. **Career development integration**: study how adoption mechanisms change across career stages (student → early career → mid-career → senior).
+5. **Typology validation**: confirm the three-segment structure in independent samples and test whether typology membership predicts actual adoption behavior.
+6. **Cross-cultural replication**: establish measurement invariance across non-Western contexts where cultural attitudes toward technology, hierarchy, and trust differ.
+7. **Longitudinal designs**: move beyond cross-sectional snapshots to track readiness trajectories and determine whether AIRS scores predict future behavior.
 
 ### Appropriate Reliance and Over-Reliance Research
 
-A distinctive future direction concerns the paradox that optimizing AI adoption may inadvertently increase over-reliance. The AETHER group's Calibrated AI Reliance (CAIR) and Calibrated Self-Reliance (CSR) constructs suggest that the goal should not be maximum adoption but *appropriate* adoption — knowing when to use AI and when to rely on human judgment. This reframing from "more adoption is better" to "calibrated adoption is optimal" represents an important evolution of the research program. This line of inquiry is also extended in *The Life of Alex Finch* (AlexBooks, March 2026), a documentary biography of human-AI collaboration whose "Calibrated Confidence" chapter and scholarly appendix address over-reliance, verification, and preservation of human judgment in a more public-facing narrative form.
+A distinctive future direction concerns the paradox that optimizing AI adoption may inadvertently increase over-reliance. The AETHER group's Calibrated AI Reliance (CAIR) and Calibrated Self-Reliance (CSR) constructs suggest that the goal should not be maximum adoption but *appropriate* adoption, knowing when to use AI and when to rely on human judgment. This reframing from "more adoption is better" to "calibrated adoption is optimal" represents an important evolution of the research program. This line of inquiry is also extended in *The Life of Alex Finch* (AlexBooks, March 2026), a documentary biography of human-AI collaboration whose "Calibrated Confidence" chapter and scholarly appendix address over-reliance, verification, and preservation of human judgment in a more public-facing narrative form.
 
 ### 2026 Contextual Developments
 
 The AI landscape has shifted materially since data collection (October–November 2025). Three developments frame the ongoing research agenda: (1) the DeepSeek R1 open-source release demonstrating that frontier AI capabilities are no longer exclusive to well-resourced organizations, changing the PV calculation entirely; (2) the emergence of agentic AI systems that operate with greater autonomy, raising new trust and control questions beyond the original AIRS scope; and (3) the EU AI Act's enforcement timeline, introducing regulatory compliance as a new adoption consideration absent from the current UTAUT2 framework. These developments do not invalidate the AIRS findings but they indicate that the construct space will need to expand to remain comprehensive.
 
----
-
 ## 11. Conclusion
 
-This study developed and validated the AI Readiness Scale (AIRS), a 16-item psychometric instrument extending UTAUT2 with AI Trust to assess organizational AI adoption readiness. The instrument demonstrated strong psychometric performance (CFI = .975, all α > .74, all CR > .75) and explained 89.7% of variance in behavioral intention to adopt AI tools.
+This study developed and validated the AI Readiness Scale (AIRS), a 16-item psychometric instrument extending UTAUT2 with AI Trust to assess organizational AI adoption readiness. The instrument demonstrated strong psychometric performance (CFI = .975, all α > .74, all CR ≥ .75) and explained 89.7% of variance in behavioral intention to adopt AI tools.
 
-The central finding — that Price Value, rather than Performance Expectancy, is the strongest predictor of AI adoption intention — qualifies established technology acceptance theory and carries direct practical implications. Organizations investing in AI should emphasize value demonstration and cost-benefit analysis rather than relying primarily on capability showcases. The three-segment user typology (Enthusiasts 31%, Moderate Users 47%, Skeptics 22%) offers a practical framework for workforce segmentation and targeted intervention design.
+The central finding, that Price Value, rather than Performance Expectancy, is the strongest predictor of AI adoption intention, qualifies established technology acceptance theory and carries direct practical implications. Organizations investing in AI should emphasize value demonstration and cost-benefit analysis rather than relying primarily on capability showcases. The three-segment user typology (Enthusiasts 31%, Moderate Users 47%, Skeptics 22%) offers a practical framework for workforce segmentation and targeted intervention design.
 
 The AIRS instrument is sufficiently compact for organizational use while retaining meaningful diagnostic detail. Its 16-item structure supports large-scale administration, and its 8-factor measurement model provides actionable information about barriers related to performance perceptions, ease of use, social influence, facilitating conditions, hedonic motivation, price value, habit, and trust. In practical terms, the instrument helps translate AI readiness from a general concern into a set of measurable conditions that can be monitored and addressed through targeted intervention.
-
----
 
 **Degree:** Doctor of Business Administration (DBA)
 **Data Collection:** October–November 2025
@@ -531,66 +501,35 @@ The AIRS instrument is sufficiently compact for organizational use while retaini
 **Sample:** N = 523 (United States students and professionals)
 **Instrument:** AIRS 16-item scale (8 factors × 2 items + 4 BI items)
 
----
+## Appendix A: AIRS-16 Final Validated Instrument
 
-## Appendix: AIRS-16 Final Validated Instrument
+The AIRS-16 consists of 16 items across 8 constructs, measured on a 5-point Likert scale (1 = Strongly Disagree to 5 = Strongly Agree). All items are rated on the same response anchors.
 
-The AI Readiness Scale (AIRS) consists of 16 predictor items across 8 constructs plus 4 Behavioral Intention outcome items, measured on a 5-point Likert scale (1 = Strongly Disagree to 5 = Strongly Agree).
+| Construct | Item 1 | Item 2 |
+|---|---|---|
+| **Performance Expectancy (PE)** | PE1: AI tools help me accomplish tasks more quickly. | PE2: Using AI improves the quality of my work or studies. |
+| **Effort Expectancy (EE)** | EE1: Learning to use AI tools is easy for me. | EE2: Interacting with AI tools is clear and understandable. |
+| **Social Influence (SI)** | SI1: People whose opinions I value encourage me to use AI tools. | SI2: Leaders in my organization or school support the use of AI tools. |
+| **Facilitating Conditions (FC)** | FC1: I have access to training or tutorials for the AI tools I use. | FC2: The AI tools I use are compatible with other tools or systems I use. |
+| **Hedonic Motivation (HM)** | HM1: Using AI tools is stimulating and engaging. | HM2: AI tools make my work or studies more interesting. |
+| **Price Value (PV)** | PV1: I get more value from AI tools than the effort they require. | PV2: Using AI tools is worth the learning curve. |
+| **Habit (HB)** | HB1: Using AI tools has become a habit for me. | HB2: I tend to rely on AI tools by default when I need help with tasks. |
+| **Trust in AI (TR)** | TR1: I trust AI tools to provide reliable information. | TR2: I trust the AI tools that are available to me. |
 
-### Performance Expectancy (PE)
+**Scoring:** Compute the mean of each construct's two items. The 8 construct scores identify specific adoption barriers for organizational diagnostic use (e.g., low PV = value communication gap; low TR = trust deficit; low SI = insufficient peer/leadership advocacy).
 
-1. **PE1:** AI tools help me accomplish tasks more quickly.
-2. **PE2:** Using AI improves the quality of my work or studies.
+### Behavioral Intention (BI): Research Outcome Variable
 
-### Effort Expectancy (EE)
+The following 4 items measure the dependent variable in the structural model. BI is used for research validation only and is not included in the AIRS-16 real-world implementation, where the goal is to diagnose readiness barriers rather than predict a self-reported intention score.
 
-3. **EE1:** Learning to use AI tools is easy for me.
-4. **EE2:** Interacting with AI tools is clear and understandable.
+| Item | Statement |
+|---|---|
+| BI1 | I am ready to use more AI tools in my work or studies. |
+| BI2 | I would recommend AI tools to others. |
+| BI3 | I see AI as an important part of my future. |
+| BI4 | I plan to increase my use of AI tools in the next six months. |
 
-### Social Influence (SI)
-
-5. **SI1:** People whose opinions I value encourage me to use AI tools.
-6. **SI2:** Leaders in my organization or school support the use of AI tools.
-
-### Facilitating Conditions (FC)
-
-7. **FC1:** I have access to training or tutorials for the AI tools I use.
-8. **FC2:** The AI tools I use are compatible with other tools or systems I use.
-
-### Hedonic Motivation (HM)
-
-9. **HM1:** Using AI tools is stimulating and engaging.
-10. **HM2:** AI tools make my work or studies more interesting.
-
-### Price Value (PV)
-
-11. **PV1:** I get more value from AI tools than the effort they require.
-12. **PV2:** Using AI tools is worth the learning curve.
-
-### Habit (HB)
-
-13. **HB1:** Using AI tools has become a habit for me.
-14. **HB2:** I tend to rely on AI tools by default when I need help with tasks.
-
-### Trust in AI (TR)
-
-15. **TR1:** I trust AI tools to provide reliable information.
-16. **TR2:** I trust the AI tools that are available to me.
-
-### Behavioral Intention (BI) — Outcome Variable
-
-17. **BI1:** I am ready to use more AI tools in my work or studies.
-18. **BI2:** I would recommend AI tools to others.
-19. **BI3:** I see AI as an important part of my future.
-20. **BI4:** I plan to increase my use of AI tools in the next six months.
-
----
-
-**Scoring:** Compute the mean of each construct's items. The 8 predictor scores serve as inputs to the structural model; BI is the outcome. For organizational diagnostic use, individual construct scores identify specific adoption barriers (e.g., low PV = value communication gap; low TR = trust deficit; low SI = insufficient peer/leadership advocacy).
-
----
-
-## Appendix B: AIRS Enterprise — From Research to Practice
+## Appendix B: AIRS Enterprise: From Research to Practice
 
 The AIRS Enterprise platform ([airs.correax.com](https://airs.correax.com/)) translates the validated AIRS-16 instrument into a production SaaS platform that serves three purposes: delivering practical assessment and remediation tools to organizations, enabling longitudinal data collection at scale, and narrowing the research-practice gap that often limits the impact of psychometric instruments.
 
@@ -601,7 +540,7 @@ AIRS Enterprise (v1.2.1, General Availability) extends the AIRS-16 from a static
 **Core Capabilities:**
 
 | Capability | Description |
-|---|---|
+|:----------------|:------------------------------------------------------------|
 | **5-Minute Assessment** | Interactive AIRS-16 with progress tracking, save/resume, and smart follow-up questions |
 | **AIRS Score** | Composite readiness score (8–40) with demonstrated validity (r = .876) |
 | **Typology Classification** | Three-segment classification (94.5% accuracy) matching the empirically derived clusters |
@@ -611,21 +550,21 @@ AIRS Enterprise (v1.2.1, General Availability) extends the AIRS-16 from a static
 | **Organization Management** | Team analytics, department/role segmentation, CSV exports, and impact reporting |
 | **Longitudinal Tracking** | Pre/post assessment comparison with trend analysis and history tracking |
 
-**Technology Stack:** Next.js 16.1, React 19, Prisma ORM with PostgreSQL, Microsoft Entra ID authentication (Microsoft, Google, Apple providers), Azure OpenAI GPT-4o-mini with streaming SSE, deployed on Azure App Service Premium (P2v3) with VNet integration and managed identity — no stored secrets.
+**Technology Stack:** Next.js 16.1, React 19, Prisma ORM with PostgreSQL, Microsoft Entra ID authentication (Microsoft, Google, Apple providers), Azure OpenAI GPT-4o-mini with streaming SSE, deployed on Azure App Service Premium (P2v3) with VNet integration and managed identity with no stored secrets.
 
 ### B.2 Practical Tools: From Score to Action
 
 The platform goes beyond assessment by converting AIRS scores into personalized, actionable guidance through three mechanisms:
 
-**Construct-Level Diagnostics.** Each respondent receives scores on all 8 AIRS constructs (PE, EE, SI, FC, HM, PV, HB, TR), displayed as a radar chart. This profile reveals the specific adoption barriers each individual faces — a low PV score indicates a value communication gap, while a low TR score signals a trust deficit requiring different interventions.
+**Construct-Level Diagnostics.** Each respondent receives scores on all 8 AIRS constructs (PE, EE, SI, FC, HM, PV, HB, TR), displayed as a radar chart. This profile reveals the specific adoption barriers each individual faces. A low PV score indicates a value communication gap, while a low TR score signals a trust deficit requiring different interventions.
 
 **AI-Powered Personalized Guides.** Using Azure OpenAI (GPT-4o-mini) with dynamic context injection, the platform generates individualized action plans that incorporate the respondent's typology, construct profile, career context (via Microsoft Graph integration for job title, department, and organization), and open-ended response themes. Each guide provides quick wins, medium-term strategies, and long-term development paths specific to the respondent's barrier profile.
 
 **Typology-Matched Intervention Frameworks.** The three empirically derived typologies map to named intervention frameworks:
 
-- **Skeptics (AIRS Score ≤ 20) → TRANSFORM Framework.** Trust-building through graduated autonomy — starting with low-risk AI tasks, demonstrating reliability through small wins, and progressively expanding scope. Emphasizes explainability, human-in-the-loop safeguards, and evidence-based value demonstrations.
-- **Moderate Users (AIRS Score 21–30) → REDESIGN Framework.** Workflow integration and ROI demonstration — identifying specific processes where AI adds measurable value, providing social proof through peer success stories, and building competence through structured skill development.
-- **Enthusiasts (AIRS Score > 30) → AMPLIFY Framework.** Champion network activation — leveraging high-readiness individuals as change agents, providing access to advanced AI capabilities, and creating mentorship structures that accelerate adoption across the organization.
+- **Skeptics (AIRS Score ≤ 20) → TRANSFORM Framework.** Trust-building through graduated autonomy: starting with low-risk AI tasks, demonstrating reliability through small wins, and progressively expanding scope. Emphasizes explainability, human-in-the-loop safeguards, and evidence-based value demonstrations.
+- **Moderate Users (AIRS Score 21–30) → REDESIGN Framework.** Workflow integration and ROI demonstration: identifying specific processes where AI adds measurable value, providing social proof through peer success stories, and building competence through structured skill development.
+- **Enthusiasts (AIRS Score > 30) → AMPLIFY Framework.** Champion network activation: leveraging high-readiness individuals as change agents, providing access to advanced AI capabilities, and creating mentorship structures that accelerate adoption across the organization.
 
 ### B.3 Remediation: Evidence-Based Intervention Design
 
@@ -634,7 +573,7 @@ The platform's intervention recommendations draw on multiple evidence bases: the
 **Construct-Specific Interventions:**
 
 | Construct | Barrier Indicator | Evidence-Based Intervention |
-|---|---|---|
+|:-------------|:-------------------|:---------------------------------------------|
 | Price Value | Low perceived ROI | TCO analysis workshops, pilot-to-proof ROI tracking, phased investment models |
 | Hedonic Motivation | Low engagement | Gamification elements, AI sandboxes for exploration, social learning communities |
 | Social Influence | Insufficient advocacy | Peer champion programs, leadership endorsement campaigns, success story sharing |
@@ -646,9 +585,9 @@ The platform's intervention recommendations draw on multiple evidence bases: the
 
 **Organizational Engagement Model.** For enterprise deployments, the platform supports a structured consulting engagement:
 
-1. **Phase 1 — Baseline Assessment (Weeks 1–2):** Organization-wide AIRS-16 administration, typology distribution mapping, department/role/geography segmentation, and barrier prioritization analysis.
-2. **Phase 2 — Targeted Intervention Design (Weeks 3–6):** Segment-specific intervention protocols matched to the organization's typology distribution, culminating in a 90-day action plan.
-3. **Phase 3 — Implementation and Tracking (Ongoing):** Adoption metrics dashboard, 90-day re-assessment cycles, intervention effectiveness analysis through pre/post comparison, and continuous barrier monitoring.
+1. **Phase 1: Baseline Assessment (Weeks 1–2):** Organization-wide AIRS-16 administration, typology distribution mapping, department/role/geography segmentation, and barrier prioritization analysis.
+2. **Phase 2: Targeted Intervention Design (Weeks 3–6):** Segment-specific intervention protocols matched to the organization's typology distribution, culminating in a 90-day action plan.
+3. **Phase 3: Implementation and Tracking (Ongoing):** Adoption metrics dashboard, 90-day re-assessment cycles, intervention effectiveness analysis through pre/post comparison, and continuous barrier monitoring.
 
 ### B.4 Longitudinal Research Design
 

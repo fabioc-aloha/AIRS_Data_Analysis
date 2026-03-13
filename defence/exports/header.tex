@@ -1,0 +1,23 @@
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{float}
+\usepackage{makecell}
+\usepackage{xcolor}
+
+% Table styling
+\renewcommand{\arraystretch}{1.4}
+
+% Smaller font for all tables
+\let\oldlongtable\longtable
+\renewcommand{\longtable}{\small\oldlongtable}
+
+% Keep tables whole — if fewer than 20 lines remain on page, start fresh
+\BeforeBeginEnvironment{longtable}{%
+  \par
+  \dimen0=\dimexpr\pagegoal-\pagetotal\relax
+  \ifdim\dimen0<20\baselineskip
+    \clearpage
+  \fi
+}

@@ -2,7 +2,7 @@
   "$schema": "../SYNAPSE-SCHEMA.json",
   "skillId": "flux-brand-finetune",
   "version": "1.1.0",
-  "lastUpdated": "2026-03-11",
+  "lastUpdated": "2026-03-13",
   "connections": [
     {
       "target": ".github/skills/image-handling/SKILL.md",
@@ -64,6 +64,23 @@
       "when": "storing REPLICATE_API_TOKEN for training and inference API calls",
       "yields": "VS Code SecretStorage API, .env detection patterns"
     }
+  ],
+  "activationContexts": [
+    "flux fine-tune",
+    "flux finetune",
+    "lora training",
+    "train lora",
+    "custom lora",
+    "brand fine-tune",
+    "brand finetune",
+    "train image model",
+    "fine-tune image",
+    "custom image model",
+    "trigger word",
+    "consistent brand imagery",
+    "train flux",
+    "flux brand",
+    "replicate training"
   ],
   "schemaVersion": "2.1.0",
   "lastValidated": "2026-03-05",

@@ -1,40 +1,9 @@
 {
   "$schema": "../SYNAPSE-SCHEMA.json",
   "skillId": "dissertation-defense",
-  "version": "1.2.0",
-  "lastUpdated": "2026-03-11",
-  "connections": [
-    {
-      "target": ".github/skills/slide-design/SKILL.md",
-      "type": "depends-on",
-      "strength": 0.9,
-      "reason": "Defense presentation requires effective slide design"
-    },
-    {
-      "target": ".github/skills/executive-storytelling/SKILL.md",
-      "type": "related",
-      "strength": 0.8,
-      "reason": "Storytelling structures the defense narrative"
-    },
-    {
-      "target": ".github/skills/practitioner-research/SKILL.md",
-      "type": "depends-on",
-      "strength": 0.95,
-      "reason": "DBA defense is grounded in practitioner methodology"
-    },
-    {
-      "target": ".github/skills/academic-research/SKILL.md",
-      "type": "depends-on",
-      "strength": 0.85,
-      "reason": "Research methodology foundations for defense Q&A"
-    },
-    {
-      "target": ".github/skills/book-publishing/SKILL.md",
-      "type": "related",
-      "strength": 0.7,
-      "reason": "Thesis PDF publishing pipeline supports defense document prep"
-    }
-  ],
+  "version": "1.1.0",
+  "lastUpdated": "2026-02-10",
+  "connections": [],
   "activationContexts": [
     "defense",
     "dissertation",
@@ -47,6 +16,20 @@
   ],
   "schemaVersion": "2.1.0",
   "synapses": [
+    {
+      "target": ".github/skills/defense-qa-practice/SKILL.md",
+      "type": "procedural",
+      "strength": "critical",
+      "direction": "bidirectional",
+      "context": "Q&A practice is core to defense preparation"
+    },
+    {
+      "target": ".github/skills/defense-presentation/SKILL.md",
+      "type": "procedural",
+      "strength": "critical",
+      "direction": "bidirectional",
+      "context": "Presentation design and delivery for defense"
+    },
     {
       "target": ".github/skills/gamma-presentations/SKILL.md",
       "type": "procedural",
@@ -74,6 +57,13 @@
       "strength": "moderate",
       "direction": "incoming",
       "context": "Question handling and response techniques"
+    },
+    {
+      "target": ".github/skills/academic-research/SKILL.md",
+      "type": "conceptual",
+      "strength": "moderate",
+      "direction": "incoming",
+      "context": "Academic writing patterns for dissertation"
     },
     {
       "target": ".github/skills/work-life-balance/SKILL.md",

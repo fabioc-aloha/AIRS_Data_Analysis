@@ -765,7 +765,7 @@ Composite Reliability & .70 & .80 \\
 
 1. **HTMT ratios** are computed as a supplementary check; HTMT is considered more robust than Fornell-Larcker for detecting discriminant problems [@henseler2015]
 2. **Model fit** remains excellent (CFI = .975, TLI = .960, RMSEA = .065, SRMR = .026 on holdout; CFI = .979, TLI = .966, RMSEA = .061, SRMR = .022 on full sample), indicating the eight-factor model reproduces the data well
-3. **Theoretical distinctiveness**: PE captures utilitarian performance expectations, HM reflects intrinsic enjoyment, and PV represents cost-benefit appraisal — conceptually distinct constructs despite empirical overlap
+3. **Theoretical distinctiveness**: PE captures utilitarian performance expectations, HM reflects intrinsic enjoyment, and PV represents cost-benefit appraisal, conceptually distinct constructs despite empirical overlap
 4. Future studies with larger item pools could strengthen discriminant separation among these three constructs
 
 ### 3.7.4 Criterion Validity

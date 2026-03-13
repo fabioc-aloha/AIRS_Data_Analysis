@@ -2,7 +2,7 @@
   "$schema": "../SYNAPSE-SCHEMA.json",
   "skillId": "azure-architecture-patterns",
   "version": "1.1.0",
-  "lastUpdated": "2026-03-11",
+  "lastUpdated": "2026-03-13",
   "connections": [],
   "activationContexts": [
     {
@@ -76,11 +76,11 @@
     },
     {
       "id": "AZURE-005",
-      "source": "azure-architecture-patterns",
-      "target": ".github/skills/airs-appropriate-reliance/SKILL.md",
+      "source": "azure-architecture-patterns.cost-optimization",
+      "target": ".github/skills/airs-appropriate-reliance.price-value/SKILL.md",
       "type": "parallels",
       "strength": 0.6,
-      "description": "Cost optimization in architecture parallels price-value in adoption - value clarity drives decisions",
+      "description": "Cost optimization in architecture parallels PV in adoption - value clarity drives decisions",
       "bidirectional": false
     }
   ]

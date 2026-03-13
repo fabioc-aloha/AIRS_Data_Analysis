@@ -2,7 +2,7 @@
   "$schema": "../SYNAPSE-SCHEMA.json",
   "skillId": "executive-storytelling",
   "version": "1.1.0",
-  "lastUpdated": "2026-03-11",
+  "lastUpdated": "2026-03-13",
   "connections": [],
   "activationContexts": [
     {
@@ -37,19 +37,19 @@
     {
       "id": "EXEC-002",
       "source": "executive-storytelling",
-      "target": ".github/skills/coaching-techniques/SKILL.md",
+      "target": ".github/skills/stakeholder-management/SKILL.md",
       "type": "supports",
       "strength": 0.85,
-      "description": "Executive communication enhances coaching conversations",
+      "description": "Executive communication is key stakeholder management tool",
       "bidirectional": false
     },
     {
       "id": "EXEC-003",
       "source": "executive-storytelling",
-      "target": ".github/skills/dissertation-defense/SKILL.md",
+      "target": ".github/skills/defense-presentation/SKILL.md",
       "type": "informs",
       "strength": 0.8,
-      "description": "Executive storytelling principles apply to dissertation defense",
+      "description": "Executive storytelling principles apply to defense presentations",
       "bidirectional": false
     },
     {

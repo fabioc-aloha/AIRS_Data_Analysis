@@ -346,24 +346,24 @@ Table 4.10 presents the standardized path coefficients, 95% confidence intervals
 ```{=latex}
 \begin{table}[H]
 \centering
-\caption{UTAUT2 Core Hypotheses with Confidence Intervals}
+\caption{UTAUT2 Core Hypotheses: z-test and Bootstrap Confidence Intervals}
 \small
-\begin{tabular}{@{}llllclp{0.18\textwidth}@{}}
+\begin{tabular}{@{}llllclclp{0.12\textwidth}@{}}
 \toprule
-\textbf{Hypothesis} & \textbf{Path} & \textbf{Pred.} & \textbf{$\beta$} & \textbf{p} & \textbf{95\% CI} & \textbf{Result} \\
+\textbf{Hyp.} & \textbf{Path} & \textbf{Pred.} & \textbf{$\beta$} & \textbf{p} & \textbf{95\% CI (z-test)} & \textbf{Boot. 95\% CI} & \textbf{Result} \\
 \midrule
-H1a & PE $\rightarrow$ BI & + & --.028 & .791 & [--.234, .178] & Not Supported \\
-H1b & EE $\rightarrow$ BI & + & --.008 & .875 & [--.108, .092] & Not Supported \\
-H1c & SI $\rightarrow$ BI & + & \textbf{.136} & \textbf{.024} & [.018, .254] & \textbf{Supported}\textsuperscript{a} \\
-H1d & FC $\rightarrow$ BI & + & .059 & .338 & [--.062, .180] & Not Supported \\
-H1e & HM $\rightarrow$ BI & + & \textbf{.217} & \textbf{.014} & [.044, .390] & \textbf{Supported}\textsuperscript{a} \\
-H1f & PV $\rightarrow$ BI & + & \textbf{.505} & \textbf{<.001} & [.352, .658] & \textbf{Strongest} \\
-H1g & HB $\rightarrow$ BI & + & .023 & .631 & [--.071, .117] & Not Supported \\
+H1a & PE $\rightarrow$ BI & + & --.028 & .791 & [--.234, .178] & --- & Not Supported \\
+H1b & EE $\rightarrow$ BI & + & --.008 & .875 & [--.108, .092] & --- & Not Supported \\
+H1c & SI $\rightarrow$ BI & + & \textbf{.136} & \textbf{.024} & [.018, .254] & [--.028, .298]\textsuperscript{a} & Supported\textsuperscript{a} \\
+H1d & FC $\rightarrow$ BI & + & .059 & .338 & [--.062, .180] & --- & Not Supported \\
+H1e & HM $\rightarrow$ BI & + & \textbf{.217} & \textbf{.014} & [.044, .390] & [--.107, .483]\textsuperscript{a} & Supported\textsuperscript{a} \\
+H1f & PV $\rightarrow$ BI & + & \textbf{.505} & \textbf{<.001} & [.352, .658] & [.218, 1.083] & \textbf{Strongest} \\
+H1g & HB $\rightarrow$ BI & + & .023 & .631 & [--.071, .117] & --- & Not Supported \\
 \bottomrule
 \end{tabular}
 
 \vspace{0.3em}
-\footnotesize \textsuperscript{a}z-test significant; however, bootstrap validation (1,000 resamples, R/lavaan) yields CIs that include zero (SI: [−.028, .298]; HM: [−.106, .483]). Interpret as suggestive rather than conclusive. See Bootstrap Validation below. \\
+\footnotesize \textsuperscript{a}z-test significant but bootstrap 95\% CI includes zero. Interpreted as suggestive rather than conclusive. Bootstrap: 1,000 resamples, R/lavaan 0.6.21. Bootstrap CIs are for unstandardized estimates; $\beta$ values are standardized. \\
 Source: Compiled by Author
 \end{table}
 ```
@@ -373,16 +373,17 @@ Source: Compiled by Author
 ```{=latex}
 \begin{table}[H]
 \centering
-\caption{AI Trust Extension Hypothesis}
-\begin{tabular}{@{}llllclp{0.22\textwidth}@{}}
+\caption{AI Trust Extension Hypothesis: z-test and Bootstrap Confidence Intervals}
+\begin{tabular}{@{}llllclclp{0.15\textwidth}@{}}
 \toprule
-\textbf{Hypothesis} & \textbf{Path} & \textbf{Pred.} & \textbf{$\beta$} & \textbf{p} & \textbf{95\% CI} & \textbf{Result} \\
+\textbf{Hyp.} & \textbf{Path} & \textbf{Pred.} & \textbf{$\beta$} & \textbf{p} & \textbf{95\% CI (z-test)} & \textbf{Boot. 95\% CI} & \textbf{Result} \\
 \midrule
-H2 & TR $\rightarrow$ BI & + & .106 & .064 & [--.006, .218] & Marginal (Not Sig.) \\
+H2 & TR $\rightarrow$ BI & + & .106 & .064 & [--.006, .218] & [--.096, .248] & Marginal \\
 \bottomrule
 \end{tabular}
 
-\vspace{0.5em}
+\vspace{0.3em}
+\footnotesize Bootstrap: 1,000 resamples, R/lavaan 0.6.21. Bootstrap CIs are for unstandardized estimates; $\beta$ values are standardized. \\
 \footnotesize Source: Compiled by Author
 \end{table}
 ```
