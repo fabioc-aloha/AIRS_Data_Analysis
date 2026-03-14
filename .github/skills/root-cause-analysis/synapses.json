@@ -2,7 +2,7 @@
   "$schema": "../SYNAPSE-SCHEMA.json",
   "skillId": "root-cause-analysis",
   "version": "1.2.0",
-  "lastUpdated": "2026-03-13",
+  "lastUpdated": "2026-03-14",
   "connections": [
     {
       "target": ".github/skills/debugging-patterns/SKILL.md",
@@ -27,14 +27,6 @@
       "reason": "RCA reveals what recovery is needed",
       "when": "RCA reveals what recovery is needed",
       "yields": "error recovery patterns contextual assessment"
-    },
-    {
-      "target": ".github/skills/vscode-extension-patterns/SKILL.md",
-      "type": "informs",
-      "strength": 0.7,
-      "reason": "Systematic debugging techniques for production build issues",
-      "when": "Systematic debugging techniques for production build issues",
-      "yields": "VS Code extension patterns contextual assessment"
     }
   ],
   "activationContexts": [

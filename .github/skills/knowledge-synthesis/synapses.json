@@ -1,7 +1,7 @@
 {
   "$schema": "../SYNAPSE-SCHEMA.json",
   "skillId": "knowledge-synthesis",
-  "lastUpdated": "2026-03-13",
+  "lastUpdated": "2026-03-14",
   "connections": [
     {
       "target": ".github/skills/meditation/SKILL.md",

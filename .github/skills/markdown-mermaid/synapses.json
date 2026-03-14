@@ -1,7 +1,7 @@
 {
   "$schema": "../SYNAPSE-SCHEMA.json",
   "skillId": "markdown-mermaid",
-  "lastUpdated": "2026-03-13",
+  "lastUpdated": "2026-03-14",
   "connections": [
     {
       "target": ".github/skills/academic-research/SKILL.md",
@@ -18,14 +18,6 @@
       "reason": "Mermaid must be in valid markdown",
       "when": "Mermaid must be in valid markdown",
       "yields": "lint clean markdown required patterns and guidance"
-    },
-    {
-      "target": ".github/skills/vscode-extension-patterns/SKILL.md",
-      "type": "integrates",
-      "strength": 0.75,
-      "reason": "Native VS Code rendering since 1.109",
-      "when": "Native VS Code rendering since 1.109",
-      "yields": "VS Code extension patterns integration patterns"
     },
     {
       "target": ".github/skills/graphic-design/SKILL.md",

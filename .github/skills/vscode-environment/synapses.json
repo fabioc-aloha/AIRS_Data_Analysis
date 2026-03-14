@@ -1,7 +1,7 @@
 {
   "$schema": "../SYNAPSE-SCHEMA.json",
   "skillId": "vscode-environment",
-  "lastUpdated": "2026-03-13",
+  "lastUpdated": "2026-03-14",
   "connections": [
     {
       "target": ".github/skills/project-scaffolding/SKILL.md",
@@ -10,14 +10,6 @@
       "reason": "Environment is part of scaffolding",
       "when": "Environment is part of scaffolding",
       "yields": "project scaffolding supporting context"
-    },
-    {
-      "target": ".github/skills/vscode-extension-patterns/SKILL.md",
-      "type": "complements",
-      "strength": 0.7,
-      "reason": "Extension dev needs good environment",
-      "when": "Extension dev needs good environment",
-      "yields": "VS Code extension patterns complementary techniques"
     },
     {
       "target": ".github/skills/git-workflow/SKILL.md",

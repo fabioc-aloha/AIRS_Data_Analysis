@@ -2,8 +2,21 @@
   "$schema": "../SYNAPSE-SCHEMA.json",
   "skillId": "deep-work-optimization",
   "version": "1.1.0",
-  "lastUpdated": "2026-03-13",
-  "connections": [],
+  "lastUpdated": "2026-03-14",
+  "connections": [
+    {
+      "type": "when",
+      "when": "deep work|focus|flow|time block",
+      "target": ".github/skills/frustration-recognition/SKILL.md",
+      "yields": [
+        "frustration-recognition",
+        "meeting-efficiency",
+        "skill-building"
+      ],
+      "weight": 0.8,
+      "notes": "Route deep work requests to adjacent skills that protect focus and build habits"
+    }
+  ],
   "activationContexts": [
     {
       "trigger": "deep work|focus session|concentration|undistracted",
@@ -27,7 +40,7 @@
     }
   ],
   "schemaVersion": "2.1.0",
-  "connectionCount": 6,
+  "connectionCount": 7,
   "synapses": [
     {
       "id": "DEEP-001",

@@ -37,11 +37,11 @@
   "projectPersona": {
     "id": "academic",
     "confidence": 0.95,
-    "detectedAt": "2026-03-11T22:05:37.661Z",
+    "detectedAt": "2026-03-14T23:13:15.352Z",
     "reasons": [
-      "The project is centered around a doctoral thesis and academic research.",
-      "The directory structure includes extensive documentation, data analysis scripts, and research materials.",
-      "The README emphasizes academic rigor and contributions to both academia and business."
+      "The project structure and README indicate a focus on academic research, specifically a doctoral thesis.",
+      "The presence of detailed documentation, data analysis, and literature review aligns with academic workflows.",
+      "The project's goal of extending a theoretical model and creating a diagnostic tool suggests expertise in research methodologies."
     ]
   },
   "learningStyle": {
@@ -72,5 +72,5 @@
       "File searches and context gathering"
     ]
   },
-  "lastUpdated": "2026-03-11T22:05:37.661Z"
+  "lastUpdated": "2026-03-14T23:13:15.352Z"
 }

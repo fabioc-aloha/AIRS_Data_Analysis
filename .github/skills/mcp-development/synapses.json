@@ -2,7 +2,7 @@
   "$schema": "../SYNAPSE-SCHEMA.json",
   "skillId": "mcp-development",
   "version": "1.2.0",
-  "lastUpdated": "2026-03-13",
+  "lastUpdated": "2026-03-14",
   "connections": [
     {
       "target": ".github/skills/ai-agent-design/SKILL.md",
@@ -19,14 +19,6 @@
       "reason": "MCP tools are essentially APIs for AI consumption",
       "when": "MCP tools are essentially APIs for AI consumption",
       "yields": "API design required patterns and guidance"
-    },
-    {
-      "target": ".github/skills/vscode-extension-patterns/SKILL.md",
-      "strength": 0.9,
-      "type": "complements",
-      "reason": "VS Code integrates MCP servers for Copilot",
-      "when": "VS Code integrates MCP servers for Copilot",
-      "yields": "VS Code extension patterns complementary techniques"
     },
     {
       "target": ".github/skills/security-review/SKILL.md",

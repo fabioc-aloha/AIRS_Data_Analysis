@@ -1,7 +1,7 @@
 {
   "$schema": "../SYNAPSE-SCHEMA.json",
   "skillId": "localization",
-  "lastUpdated": "2026-03-13",
+  "lastUpdated": "2026-03-14",
   "connections": [
     {
       "target": ".github/skills/testing-strategies/SKILL.md",
@@ -18,14 +18,6 @@
       "reason": "i18n architecture impacts entire application structure: middleware, routing, data models",
       "when": "i18n architecture impacts entire application structure: middleware, routing, data models",
       "yields": "architecture refinement impact assessment"
-    },
-    {
-      "target": ".github/skills/vscode-extension-patterns/SKILL.md",
-      "type": "applies",
-      "strength": 0.7,
-      "reason": "VS Code extensions use package.nls.json for localization",
-      "when": "VS Code extensions use package.nls.json for localization",
-      "yields": "VS Code extension patterns patterns and guidance"
     },
     {
       "target": ".github/skills/academic-research/SKILL.md",

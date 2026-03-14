@@ -1,7 +1,7 @@
 {
   "$schema": "../SYNAPSE-SCHEMA.json",
   "skillId": "debugging-patterns",
-  "lastUpdated": "2026-03-13",
+  "lastUpdated": "2026-03-14",
   "connections": [
     {
       "target": ".github/skills/git-workflow/SKILL.md",
@@ -9,13 +9,6 @@
       "strength": 0.8,
       "when": "debugging patterns leverages git workflow patterns",
       "yields": "git workflow patterns and guidance"
-    },
-    {
-      "target": ".github/skills/vscode-extension-patterns/SKILL.md",
-      "type": "applies-to",
-      "strength": 0.75,
-      "when": "Applying debugging patterns to VS Code extension patterns domain",
-      "yields": "VS Code extension patterns domain-specific context"
     },
     {
       "target": ".github/skills/testing-strategies/SKILL.md",

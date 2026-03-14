@@ -1,7 +1,7 @@
 {
   "$schema": "../SYNAPSE-SCHEMA.json",
   "skillId": "code-review",
-  "lastUpdated": "2026-03-13",
+  "lastUpdated": "2026-03-14",
   "connections": [
     {
       "target": ".github/instructions/code-review-guidelines.instructions.md",
@@ -50,14 +50,6 @@
       "reason": "Extension audits identify performance bottlenecks",
       "when": "Extension audits identify performance bottlenecks",
       "yields": "performance profiling quality checks and validation"
-    },
-    {
-      "target": ".github/skills/vscode-extension-patterns/SKILL.md",
-      "type": "validates",
-      "strength": 0.8,
-      "reason": "Extension audit methodology validates VS Code patterns",
-      "when": "Extension audit methodology validates VS Code patterns",
-      "yields": "VS Code extension patterns quality checks and validation"
     },
     {
       "target": ".github/skills/ui-ux-design/SKILL.md",

@@ -2,7 +2,7 @@
   "$schema": "../SYNAPSE-SCHEMA.json",
   "skillId": "character-aging-progression",
   "version": "1.1.0",
-  "lastUpdated": "2026-03-13",
+  "lastUpdated": "2026-03-14",
   "connections": [
     {
       "target": ".github/skills/ai-character-reference-generation/SKILL.md",
@@ -11,14 +11,6 @@
       "note": "Builds on character reference generation with age-specific prompts",
       "when": "Extending AI character reference generation with character aging progression",
       "yields": "AI character reference generation extended capabilities"
-    },
-    {
-      "target": ".github/skills/persona-detection/SKILL.md",
-      "type": "complements",
-      "strength": 0.8,
-      "note": "Age progression avatars used in persona fallback system",
-      "when": "Combining character aging progression with persona detection",
-      "yields": "persona detection complementary techniques"
     },
     {
       "target": ".github/skills/brand-asset-management/SKILL.md",

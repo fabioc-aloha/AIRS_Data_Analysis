@@ -2,7 +2,7 @@
   "$schema": "../SYNAPSE-SCHEMA.json",
   "skillId": "observability-monitoring",
   "version": "1.1.0",
-  "lastUpdated": "2026-03-13",
+  "lastUpdated": "2026-03-14",
   "connections": [
     {
       "target": ".github/skills/performance-profiling/SKILL.md",
@@ -35,14 +35,6 @@
       "note": "Audit logging is part of observability",
       "when": "observability monitoring needs security review context",
       "yields": "security review supporting context"
-    },
-    {
-      "target": ".github/skills/azure-architecture-patterns/SKILL.md",
-      "type": "informs",
-      "strength": 0.8,
-      "note": "Azure Monitor, App Insights integration",
-      "when": "observability monitoring provides context to azure architecture patterns",
-      "yields": "azure architecture patterns contextual assessment"
     },
     {
       "target": ".github/skills/debugging-patterns/SKILL.md",

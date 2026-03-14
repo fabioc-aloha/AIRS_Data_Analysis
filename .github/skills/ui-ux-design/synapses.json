@@ -1,7 +1,7 @@
 {
   "$schema": "../SYNAPSE-SCHEMA.json",
   "skillId": "ui-ux-design",
-  "lastUpdated": "2026-03-13",
+  "lastUpdated": "2026-03-14",
   "connections": [
     {
       "target": ".github/skills/correax-brand/SKILL.md",
@@ -34,14 +34,6 @@
       "reason": "Automated accessibility testing validates WCAG compliance",
       "when": "Automated accessibility testing validates WCAG compliance",
       "yields": "testing strategies quality checks and validation"
-    },
-    {
-      "target": ".github/skills/vscode-extension-patterns/SKILL.md",
-      "type": "applies-to",
-      "strength": 0.75,
-      "reason": "Webview UI patterns must follow accessibility standards",
-      "when": "Webview UI patterns must follow accessibility standards",
-      "yields": "VS Code extension patterns domain-specific context"
     },
     {
       "target": ".github/skills/markdown-mermaid/SKILL.md",

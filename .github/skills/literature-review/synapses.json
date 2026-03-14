@@ -2,8 +2,21 @@
   "$schema": "../SYNAPSE-SCHEMA.json",
   "skillId": "literature-review",
   "version": "1.1.0",
-  "lastUpdated": "2026-03-13",
-  "connections": [],
+  "lastUpdated": "2026-03-14",
+  "connections": [
+    {
+      "type": "when",
+      "when": "literature review|lit review|research gap|systematic search",
+      "target": ".github/skills/citation-management/SKILL.md",
+      "yields": [
+        "citation-management",
+        "academic-research",
+        "practitioner-research"
+      ],
+      "weight": 0.88,
+      "notes": "Surface citation and research-method helpers when lit review triggers are detected"
+    }
+  ],
   "activationContexts": [
     {
       "trigger": "literature review|lit review|sources|scholarly sources",
@@ -26,7 +39,7 @@
     }
   ],
   "schemaVersion": "2.1.0",
-  "connectionCount": 5,
+  "connectionCount": 6,
   "synapses": [
     {
       "id": "LIT-001",

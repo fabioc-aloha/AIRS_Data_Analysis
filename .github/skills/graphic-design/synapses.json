@@ -1,7 +1,7 @@
 {
   "$schema": "../SYNAPSE-SCHEMA.json",
   "skillId": "graphic-design",
-  "lastUpdated": "2026-03-13",
+  "lastUpdated": "2026-03-14",
   "connections": [
     {
       "reason": "Visual storytelling and narrative design",
@@ -10,14 +10,6 @@
       "target": ".github/skills/creative-writing/SKILL.md",
       "when": "Visual storytelling and narrative design",
       "yields": "creative writing complementary techniques"
-    },
-    {
-      "reason": "Extension branding, icons, and UI design",
-      "type": "applies",
-      "strength": 0.85,
-      "target": ".github/skills/vscode-extension-patterns/SKILL.md",
-      "when": "Extension branding, icons, and UI design",
-      "yields": "VS Code extension patterns patterns and guidance"
     },
     {
       "reason": "Color theory, GitHub Pastel Palette v2, WCAG contrast, and semantic color mapping for Mermaid diagram styling",

@@ -2,15 +2,8 @@
   "$schema": "../SYNAPSE-SCHEMA.json",
   "skillId": "secrets-management",
   "version": "1.3.0",
-  "lastUpdated": "2026-03-13",
+  "lastUpdated": "2026-03-14",
   "connections": [
-    {
-      "target": ".github/skills/vscode-extension-patterns/SKILL.md",
-      "type": "uses",
-      "strength": 0.85,
-      "when": "implementing VS Code extension APIs and patterns",
-      "yields": "Extension context access, command registration, activation lifecycle"
-    },
     {
       "target": ".github/skills/ui-ux-design/SKILL.md",
       "type": "coordinates-with",

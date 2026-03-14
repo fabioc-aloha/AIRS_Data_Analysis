@@ -1,6 +1,6 @@
 ---
-name: "Muscle Memory Recognition"
-description: "Identify opportunities to build automation scripts (muscles) from repetitive or heavy-lifting tasks"
+name: muscle-memory-recognition
+description: Identify opportunities to build automation scripts (muscles) from repetitive or heavy-lifting tasks
 ---
 
 # Muscle Memory Recognition
@@ -121,7 +121,7 @@ IF (cross-platform required OR heir-critical):
 
 Examples:
 - validate-skills.ps1
-- sync-architecture.js
+- sync-architecture.cjs
 - normalize-paths.ps1
 - gamma-generator.js
 - brain-qa.ps1

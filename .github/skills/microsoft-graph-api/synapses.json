@@ -2,24 +2,8 @@
   "$schema": "../SYNAPSE-SCHEMA.json",
   "skillId": "microsoft-graph-api",
   "version": "1.1.0",
-  "lastUpdated": "2026-03-13",
+  "lastUpdated": "2026-03-14",
   "connections": [
-    {
-      "target": ".github/skills/enterprise-integration/SKILL.md",
-      "type": "extends",
-      "strength": 0.95,
-      "reason": "Provides API reference for enterprise Graph integration",
-      "when": "Provides API reference for enterprise Graph integration",
-      "yields": "enterprise integration extended capabilities"
-    },
-    {
-      "target": ".github/skills/vscode-extension-patterns/SKILL.md",
-      "type": "uses",
-      "strength": 0.7,
-      "reason": "VS Code auth session API for token acquisition",
-      "when": "VS Code auth session API for token acquisition",
-      "yields": "VS Code extension patterns patterns and guidance"
-    },
     {
       "target": ".github/skills/localization/SKILL.md",
       "type": "complements",

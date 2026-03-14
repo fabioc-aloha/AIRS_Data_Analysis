@@ -2,8 +2,21 @@
   "$schema": "../SYNAPSE-SCHEMA.json",
   "skillId": "citation-management",
   "version": "1.1.0",
-  "lastUpdated": "2026-03-13",
-  "connections": [],
+  "lastUpdated": "2026-03-14",
+  "connections": [
+    {
+      "type": "when",
+      "when": "citation|apa|mla|reference|bibliography",
+      "target": ".github/skills/literature-review/SKILL.md",
+      "yields": [
+        "literature-review",
+        "academic-research",
+        "dissertation-defense"
+      ],
+      "weight": 0.9,
+      "notes": "Route citation tasks to research/dissertation helpers"
+    }
+  ],
   "activationContexts": [
     {
       "trigger": "citation|APA|reference|bibliography",
@@ -19,7 +32,7 @@
     }
   ],
   "schemaVersion": "2.1.0",
-  "connectionCount": 4,
+  "connectionCount": 5,
   "synapses": [
     {
       "id": "CITE-001",
