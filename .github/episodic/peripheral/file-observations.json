@@ -3,43 +3,34 @@
     "airs_experiment/R/run_01_efa.R"
   ],
   "stalledFiles": [
-    "github/episodic/peripheral/file-observations.json",
-    "defence/AIRS-Executive-Summary.md",
-    "defence/exports/AIRS-Executive-Summary.pdf",
-    "defence/exports/convert.ps1",
-    "defence/exports/header.tex",
-    "thesis-v2/assets/tables/Table_4.1_Sample_Demographics.md",
-    "thesis-v2/assets/tables/Table_4.4_Hypothesis_Testing.md",
-    "thesis-v2/assets/tables/Table_4.5_Tool_Adoption_Patterns.md",
-    "thesis-v2/assets/tables/Table_4.7_Qualitative_Themes.md",
-    "thesis-v2/manuscript/back-matter/appendices.md"
+    "github/episodic/peripheral/file-observations.json"
   ],
   "todoHotspots": [
     {
       "file": "defence/exports/AIRS v1.pptx",
       "todoCount": 21,
-      "scannedAt": 1773597912776
+      "scannedAt": 1773598056230
     },
     {
       "file": "exports/Artificial-Intelligence-Readiness-Scale-AIRS.pptx",
       "todoCount": 13,
-      "scannedAt": 1773597912776
+      "scannedAt": 1773598056230
     },
     {
       "file": "defence/exports/gamma/AI-Readiness-Scale-AIRS.pptx",
       "todoCount": 12,
-      "scannedAt": 1773597912776
+      "scannedAt": 1773598056230
     },
     {
       "file": "defence/exports/AI-Readiness-Scale-AIRS v2.pptx",
       "todoCount": 3,
-      "scannedAt": 1773597912776
+      "scannedAt": 1773598056230
     },
     {
       "file": "defence/exports/AI-Readiness-Scale-AIRS v3.pptx",
       "todoCount": 2,
-      "scannedAt": 1773597912776
+      "scannedAt": 1773598056230
     }
   ],
-  "lastUpdated": 1773597912776
+  "lastUpdated": 1773598056230
 }
