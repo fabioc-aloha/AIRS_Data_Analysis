@@ -1,36 +1,43 @@
 {
   "hotFiles": [
-    "airs_experiment/R/run_01_efa.R"
+    "airs_experiment/R/run_01_efa.R",
+    "defence/AIRS-Executive-Summary.md"
   ],
   "stalledFiles": [
-    "github/episodic/peripheral/file-observations.json"
+    "github/episodic/peripheral/file-observations.json",
+    "defence/AIRS-Executive-Summary.md",
+    "defence/exports/AIRS-Executive-Summary.pdf",
+    "defence/exports/board-ready-quick-answers.pdf",
+    "defence/exports/debug.tex",
+    "defence/exports/gamma/",
+    "defence/exports/old/"
   ],
   "todoHotspots": [
     {
       "file": "defence/exports/AIRS v1.pptx",
       "todoCount": 21,
-      "scannedAt": 1773598056230
+      "scannedAt": 1773601903782
     },
     {
       "file": "exports/Artificial-Intelligence-Readiness-Scale-AIRS.pptx",
       "todoCount": 13,
-      "scannedAt": 1773598056230
+      "scannedAt": 1773601903782
     },
     {
       "file": "defence/exports/gamma/AI-Readiness-Scale-AIRS.pptx",
       "todoCount": 12,
-      "scannedAt": 1773598056230
+      "scannedAt": 1773601903782
+    },
+    {
+      "file": "defence/exports/gamma/Artificial-Intelligence-Readiness-Scale.pptx",
+      "todoCount": 4,
+      "scannedAt": 1773601903782
     },
     {
       "file": "defence/exports/AI-Readiness-Scale-AIRS v2.pptx",
       "todoCount": 3,
-      "scannedAt": 1773598056230
-    },
-    {
-      "file": "defence/exports/AI-Readiness-Scale-AIRS v3.pptx",
-      "todoCount": 2,
-      "scannedAt": 1773598056230
+      "scannedAt": 1773601903782
     }
   ],
-  "lastUpdated": 1773598056230
+  "lastUpdated": 1773601903782
 }

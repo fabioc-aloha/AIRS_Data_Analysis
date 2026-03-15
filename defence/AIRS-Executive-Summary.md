@@ -1,9 +1,27 @@
 ---
-title: "Executive Summary"
-subtitle: "Artificial Intelligence Readiness Scale: Extending UTAUT2 for Enterprise AI Adoption"
+title: "Artificial Intelligence Readiness Scale: Extending UTAUT2 for Enterprise AI Adoption"
+subtitle: "Executive Summary"
 author: "Fabio Correa"
 date: "2026"
 ---
+
+<div align="center">
+
+# Artificial Intelligence Readiness Scale: Extending UTAUT2 for Enterprise AI Adoption
+### Executive Summary
+**Doctoral Candidate:** Fabio Correa
+Touro University Worldwide (TUW) · 2026
+</div>
+
+---
+
+**Dissertation Committee**
+
+| Name | Role | Signature |
+|:---------------------------|:------------------------------|:-------------------------------|
+| Dr. Karina Kasztelnik | Committee Chair | ______________________________ |
+| Dr. Jerome Jones | Committee Member | ______________________________ |
+| Dr. Donna Day | Committee Member | ______________________________ |
 
 ## 1. Research Problem and Significance
 
