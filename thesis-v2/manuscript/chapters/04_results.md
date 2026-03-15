@@ -45,7 +45,7 @@ AI-Specific Insight & Value perception dominates over utility & PV strongest pre
 \midrule
 RQ1 & What is the factor structure of an AI-specific adoption readiness instrument? & 8-factor structure with 16 items & CFI = .975, TLI = .960, RMSEA = .065; all $\alpha$ > .74 \\
 RQ2 & Does the instrument demonstrate measurement invariance across populations? & Configural invariance achieved; metric invariance partial & $\Delta$CFI = .003, $\Delta$RMSEA = .004; mean $\Delta\lambda$ = .082 \\
-RQ3 & Which factors most strongly predict behavioral intention? & Price Value ($\beta$ = .505), Hedonic Motivation ($\beta$ = .217), Social Influence ($\beta$ = .136) & All p < .05; PV accounts for largest variance \\
+RQ3 & Which factors most strongly predict behavioral intention? & Price Value ($\beta$ = .505), Hedonic Motivation ($\beta$ = .217), Social Influence ($\beta$ = .136) & z-tests p < .05 for PV/HM/SI; **only PV survives bootstrap** (CI [0.218, 1.083]) \\\\
 RQ4 & Does AI Trust predict adoption beyond UTAUT2? & Marginal effect, not statistically significant & $\beta$ = .106, p = .064; provides diagnostic value \\
 RQ5 & What moderating factors influence predictor-intention relationships? & Experience moderates HM$\rightarrow$BI; Population moderates HM$\rightarrow$BI & HM$\times$Exp p = .007; Academic vs Professional $\Delta\beta$ = .750 \\
 \bottomrule

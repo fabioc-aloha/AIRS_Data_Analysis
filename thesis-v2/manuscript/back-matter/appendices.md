@@ -893,7 +893,7 @@ The following summary is retained for quick reference.
 \textbf{Interaction} & \textbf{Path Moderated} & \textbf{Interaction $\beta$} & \textbf{p} & \textbf{Result} \\
 \midrule
 PE $\times$ Experience & PE $\rightarrow$ BI & 0.112 & .055 & [!] Marginal \\
-\textbf{HM $\times$ Experience} & \textbf{HM $\rightarrow$ BI} & \textbf{0.136} & \textbf{.009} & \textbf{[OK] Significant} \\
+\textbf{HM $\times$ Experience} & \textbf{HM $\rightarrow$ BI} & \textbf{0.136} & \textbf{.007} & \textbf{[OK] Significant} \\
 EE $\times$ Experience & EE $\rightarrow$ BI & 0.122 & .161 & [X] Not Significant \\
 TR $\times$ Experience & TR $\rightarrow$ BI & 0.081 & .145 & [X] Not Significant \\
 \bottomrule

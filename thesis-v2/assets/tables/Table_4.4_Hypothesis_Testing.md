@@ -27,13 +27,13 @@
 | Interaction | β | p | Result |
 |-------------|---|---|--------|
 | PE × Experience | 0.112 | .055 | [!] Marginal |
-| HM × Experience | **0.136** | **.009** | [OK] Significant |
+| HM × Experience | **0.136** | **.007** | [OK] Significant |
 | EE × Experience | 0.122 | .161 | [X] Not significant |
 | TR × Experience | 0.081 | .145 | [X] Not significant |
 
-## Population Moderation: Student vs Professional
+## Population Moderation: Academic vs Professional
 
-| Path | Student β | Professional β | Δβ | Moderation |
+| Path | Academic β | Professional β | Δβ | Moderation |
 |------|------------|----------------|-----|------------|
 | PE -> BI | -0.184 | 0.084 | 0.268 | No |
 | EE -> BI | 0.073 | -0.055 | -0.128 | No |

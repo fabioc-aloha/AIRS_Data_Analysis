@@ -23,7 +23,7 @@ This dissertation addressed all three gaps by developing and validating the AI R
 
 ### 2.1 Foundation: UTAUT2
 
-The study built upon the Unified Theory of Acceptance and Use of Technology 2 (UTAUT2), the most comprehensive and widely validated model of technology acceptance. UTAUT2 integrates seven constructs that predict Behavioral Intention to use a technology:
+The study built upon the Unified Theory of Acceptance and Use of Technology 2 (UTAUT2), the most comprehensive and widely validated model of technology acceptance. UTAUT2 integrates seven constructs that predict Behavioral Intention:
 
 | Construct | Definition |
 |:--------------------------|:-------------------------------------------------------|
@@ -34,6 +34,8 @@ The study built upon the Unified Theory of Acceptance and Use of Technology 2 (U
 | Hedonic Motivation (HM) | Pleasure or enjoyment derived from using the technology |
 | Price Value (PV) | Perceived balance between benefits received and monetary cost |
 | Habit (HB) | Extent to which technology use has become automatic |
+
+The AIRS contribution is to test this framework for AI and add an AI Trust extension.
 
 ### 2.2 AI-Specific Extension: AI Trust
 
@@ -52,6 +54,8 @@ The study posed one primary and five secondary research questions:
 - RQ5: User typology based on readiness patterns
 
 Twelve hypotheses were tested: seven core UTAUT2 path hypotheses (H1a–H1g), one AI Trust hypothesis (H2), two moderation hypotheses (H3–H4), and two behavioral validation hypotheses (H5–H6).
+
+
 
 ## 3. Methodology
 
@@ -110,7 +114,7 @@ A 10-phase analysis pipeline was executed across dual platforms (Python and R/la
 
 **EFA specifications:** MINRES extraction with promax (oblique) rotation; item retention required primary loading ≥ .50, cross-loading gap ≥ .20, and communality ≥ .30.
 
-**CFA/SEM estimation:** Maximum Likelihood with Satorra-Bentler robust corrections (MLM) via R/lavaan 0.6.21. Bootstrap validation: 1,000 resamples for path coefficient robustness.
+**CFA/SEM estimation:** Maximum Likelihood with Satorra-Bentler robust corrections (MLM) via R/lavaan 0.6.21. Bootstrap validation: 1,000 resamples for path coefficient robustness. Measurement invariance, moderation, and behavioral validation were tested on the full sample (N=523).
 
 ## 4. Key Findings
 
@@ -143,16 +147,18 @@ All eight factors exceeded conventional thresholds for internal consistency:
 
 | Factor | Cronbach's α | Composite Reliability | AVE |
 |:-----------------------------|:--------------|:-------------------|:----------|
-| Performance Expectancy | .863 | .866 | .764 |
-| Effort Expectancy | .803 | .805 | .674 |
-| Social Influence | .792 | .793 | .659 |
+| Performance Expectancy | .803 | .804 | .673 |
+| Effort Expectancy | .859 | .861 | .756 |
+| Social Influence | .752 | .763 | .621 |
 | Facilitating Conditions | .743 | .750 | .601 |
-| Hedonic Motivation | .909 | .910 | .835 |
-| Price Value | .882 | .883 | .791 |
+| Hedonic Motivation | .864 | .865 | .763 |
+| Price Value | .883 | .883 | .790 |
 | Habit | .909 | .909 | .833 |
-| AI Trust | .862 | .862 | .758 |
+| Trust in AI | .891 | .891 | .804 |
 
 All composite reliabilities met or exceeded .750 and all AVE values exceeded .50, confirming convergent validity.
+
+> *Note:* Values shown are from the **holdout CFA (n = 262, lavaan 0.6.21, MLM)** to match thesis Table 4.x. Full-sample CFA was also run (CFI = .979, TLI = .966, RMSEA = .061, SRMR = .022) with directionally similar reliability/AVE; minor numerical differences reflect sample size and estimation method.
 
 #### Discriminant Validity
 
@@ -186,14 +192,14 @@ The structural model explained 89.7% of the variance in Behavioral Intention (R�
 |:---------|:----------|:------|:------|:-----------------|:------------------|:---------------|
 | H1a | PE → BI | −.028 | .791 | [−.234, .178] | --- | Not Supported |
 | H1b | EE → BI | −.008 | .875 | [−.108, .092] | --- | Not Supported |
-| H1c | SI → BI | **.136** | **.024** | [.018, .254] | [−.028, .298] | Supported* |
+| H1c | SI → BI | **.136** | **.024** | [.018, .254] | [−.028, .298] | Supported‡ |
 | H1d | FC → BI | .059 | .338 | [−.062, .180] | --- | Not Supported |
-| H1e | HM → BI | **.217** | **.014** | [.044, .390] | [−.107, .483] | Supported* |
+| H1e | HM → BI | **.217** | **.014** | [.044, .390] | [−.107, .483] | Supported‡ |
 | H1f | PV → BI | **.505** | **<.001** | [.352, .658] | **[.218, 1.083]** | **Strongest** |
 | H1g | HB → BI | .023 | .631 | [−.071, .117] | --- | Not Supported |
 | H2 | TR → BI | .106 | .064 | [−.006, .218] | [−.096, .248] | Marginal |
 
-*z-test significant but bootstrap 95% CI includes zero. Interpreted as suggestive rather than conclusive. Bootstrap: 1,000 resamples, R/lavaan 0.6.21. Bootstrap CIs are for unstandardized estimates; β values are standardized.
+‡z-test significant but bootstrap 95% CI includes zero; interpret as suggestive rather than conclusive (lavaan 0.6.21, 1,000 resamples).
 
 Only Price Value's path was confirmed as robust under both z-test and bootstrap validation. Hedonic Motivation and Social Influence were z-test significant but bootstrap-unstable, suggesting their effects may be sensitive to sample composition.
 
@@ -213,6 +219,8 @@ Although AI Trust did not reach conventional significance (p = .064) and model c
 1. Trust provides unique diagnostic capability for organizations, identifying trust deficits that other constructs cannot detect
 2. The marginal effect (β = .106) suggests theoretical relevance; detecting this effect at 80% power requires n > 600 (the present N = 523 yields ~68% power)
 3. Organizations gain actionable insight from separately measuring trust, enabling targeted confidence-building interventions
+
+> Sample/power note: n > ~600 is the target for re-testing Trust and mediation hypotheses in AIRS-28.
 
 ### 4.3 Moderation Effects
 
@@ -289,6 +297,8 @@ Open-ended responses (n = 243, 46.5% response rate) revealed:
 
 Nested model comparison showed the UTAUT2-only model (AIC = 148.58) was marginally preferred over the 8-factor AIRS model (AIC = 150.59) on parsimony grounds (ΔAIC = +2.01). This confirms AI Trust's value is diagnostic rather than predictive: it adds organizational assessment capability without meaningfully improving overall model fit.
 
+\Needspace{18\baselineskip}
+
 ## 5. Hypothesis Outcome Summary
 
 Of 12 hypotheses tested:
@@ -323,9 +333,9 @@ The empirically derived typology (Enthusiasts, Moderate Users, Skeptics) provide
 
 ### Contribution 5: Converging 2025 Industry Validation
 
-An important source of external support for the study is that multiple independent industry reports published during the same period (2025) described patterns broadly consistent with the AIRS findings. McKinsey's Global AI Survey (N = 1,993), BCG, MIT Media Lab, Georgian, ISG, Gartner, Deloitte, Lucidworks, and Capgemini each reported evidence aligned with the AIRS results, including the centrality of perceived value, heterogeneous readiness distributions, and the limits of one-size-fits-all adoption strategies. These reports do not substitute for formal replication, but their convergence provides useful contextual support for the study's interpretation.
+Multiple independent industry reports (McKinsey 2025, BCG, MIT Media Lab, Georgian, ISG, Gartner, Deloitte, Lucidworks, Capgemini) reported patterns aligning with AIRS (value centrality, heterogeneous readiness, limits of one-size-fits-all strategies). These do not replace replication but provide useful context.
 
-Additionally, emerging anxiety research corroborates the theoretical relevance of the affective dimension that AIRS identified but could not reliably measure. Kim (2025) documented "annihilation anxiety" (existential fears of AI displacement) while Frenkenberg (2025) identified "anticipatory anxiety" as a distinct pre-adoption barrier. These findings validate the study's decision to include AI Anxiety in the initial item pool and support the recommendation to redesign anxiety items for the AIRS-28 expansion.
+Emerging anxiety research (Kim 2025; Frenkenberg 2025) corroborates the need to redesign AI Anxiety items for AIRS-28.
 
 ### Contribution 6: Adoption-Value Gap Mechanisms
 
@@ -405,7 +415,7 @@ Participants with disabilities reported significantly higher AI-related anxiety 
 
 ### 9.2 Broader Pattern Across All Constructs
 
-While AI Anxiety was the only construct reaching conventional significance, the full demographic effects analysis reveals a consistent directional pattern:
+\Needspace{20\baselineskip}
 
 | Construct | Disability M (SD) | No Disability M (SD) | Cohen's d | p |
 |:----------------|:------------------|:---------------------|:----------|:----------|
@@ -451,21 +461,15 @@ Future research should: (1) recruit larger disability subsamples with condition-
 
 The dissertation proposes a four-phase, multi-year research agenda, complemented by specific recommendations for scholars and awareness of the rapidly evolving AI landscape.
 
-### Phase 1: AIRS-28 Development (2026–2027)
+### Future Research Roadmap (Condensed)
 
-Expand from 16 to 28 items (3–4 items per factor) to improve reliability and resolve discriminant validity concerns. Redesign items for Explainability, Ethical Risk, and AI Anxiety. Target: eliminate all HTMT violations while maintaining excellent model fit.
+**AIRS-28** (2026–2027): Expand to 3–4 items per factor (including redesigned Anxiety, Explainability, Ethical Risk) to resolve HTMT issues; target n > 600 for Trust power.
 
-### Phase 2: Longitudinal Panel and Cross-Cultural Validation (2026–2028)
+**Longitudinal + Cross-Cultural** (2026–2028): 12-month panel to test predictive validity; test invariance in non-Western contexts.
 
-Deploy AIRS in a 12-month longitudinal panel to track how readiness profiles evolve with experience and organizational context. Simultaneously validate AIRS across non-Western cultural contexts to establish cross-cultural measurement invariance.
+**Interventions** (2028–2029): RCTs comparing AIRS-guided vs generic training, segment-specific protocols.
 
-### Phase 3: Intervention Framework Development (2028–2029)
-
-Design and test AIRS-informed interventions: specific organizational change programs targeted at each user segment. Test whether AIRS-guided interventions outperform generic AI training approaches.
-
-### Phase 4: Comprehensive Prediction System (2029+)
-
-Integrate AIRS with behavioral data, organizational context measures, and industry-specific moderators to build a comprehensive AI readiness prediction and monitoring system.
+**Prediction System** (2029+): Integrate AIRS scores with behavioral and context data for organizational readiness monitoring.
 
 ### Scholar Recommendations
 
@@ -503,7 +507,7 @@ The AIRS instrument is sufficiently compact for organizational use while retaini
 
 ## Appendix A: AIRS-16 Final Validated Instrument
 
-The AIRS-16 consists of 16 items across 8 constructs, measured on a 5-point Likert scale (1 = Strongly Disagree to 5 = Strongly Agree). All items are rated on the same response anchors.
+**Scale format:** 5-point Likert (1 = Strongly Disagree, 5 = Strongly Agree). Compute construct means (2 items each). Use BI items for research outcomes only; do not include BI in diagnostic composite.
 
 | Construct | Item 1 | Item 2 |
 |---|---|---|
@@ -516,12 +520,11 @@ The AIRS-16 consists of 16 items across 8 constructs, measured on a 5-point Like
 | **Habit (HB)** | HB1: Using AI tools has become a habit for me. | HB2: I tend to rely on AI tools by default when I need help with tasks. |
 | **Trust in AI (TR)** | TR1: I trust AI tools to provide reliable information. | TR2: I trust the AI tools that are available to me. |
 
-**Scoring:** Compute the mean of each construct's two items. The 8 construct scores identify specific adoption barriers for organizational diagnostic use (e.g., low PV = value communication gap; low TR = trust deficit; low SI = insufficient peer/leadership advocacy).
+**Scoring guide:**
+- Construct score = mean of its two items (range 1–5). Lower scores indicate potential barriers (e.g., PV low → value communication gap; TR low → trust deficit).
+- **Composite AIRS Score (optional research metric):** Sum of eight construct means (range 8–40). Use with caution for diagnostics; construct-level insights are more actionable.
 
-### Behavioral Intention (BI): Research Outcome Variable
-
-The following 4 items measure the dependent variable in the structural model. BI is used for research validation only and is not included in the AIRS-16 real-world implementation, where the goal is to diagnose readiness barriers rather than predict a self-reported intention score.
-
+### Behavioral Intention (BI) — Research Outcome Only
 | Item | Statement |
 |---|---|
 | BI1 | I am ready to use more AI tools in my work or studies. |
@@ -529,89 +532,78 @@ The following 4 items measure the dependent variable in the structural model. BI
 | BI3 | I see AI as an important part of my future. |
 | BI4 | I plan to increase my use of AI tools in the next six months. |
 
-## Appendix B: AIRS Enterprise: From Research to Practice
+> **Note:** BI items were used to validate the structural model; they are not part of the operational AIRS diagnostic score. For organizational deployments, report construct means and typology classification; keep BI for research/validation purposes.
 
-The AIRS Enterprise platform ([airs.correax.com](https://airs.correax.com/)) translates the validated AIRS-16 instrument into a production SaaS platform that serves three purposes: delivering practical assessment and remediation tools to organizations, enabling longitudinal data collection at scale, and narrowing the research-practice gap that often limits the impact of psychometric instruments.
+## Appendix B: AIRS Enterprise — From Research to Practice
+
+AIRS Enterprise ([airs.correax.com](https://airs.correax.com/)) operationalizes the validated AIRS-16 instrument as a production SaaS platform that delivers assessments, typology classification, personalized guidance, and longitudinal analytics. It also serves as a research infrastructure, closing the gap between academic instruments and real-world deployment.
 
 ### B.1 Platform Overview
+- **Version:** v1.2.1 (General Availability)
+- **Architecture:** Azure App Service Premium (P2v3), VNet integration, Managed Identity (no stored secrets), Microsoft Secure Future Initiative (SFI) alignment.
+- **Auth:** Microsoft Entra ID (Microsoft/Google/Apple providers), optional org SSO.
+- **Core stack:** Next.js 16.1, React 19, Prisma + PostgreSQL, Azure OpenAI GPT-4o-mini (streaming SSE), Playwright/Storybook for QA.
+- **Security/Privacy:** SOC 2–aligned controls, zero-trust networking, audit logging, IRB-ready data export.
 
-AIRS Enterprise (v1.2.1, General Availability) extends the AIRS-16 from a static questionnaire into an interactive diagnostic system. The platform is operational, built on Azure infrastructure with zero-trust networking and Microsoft Secure Future Initiative (SFI) compliance.
-
-**Core Capabilities:**
-
+### B.2 Core Capabilities
 | Capability | Description |
-|:----------------|:------------------------------------------------------------|
-| **5-Minute Assessment** | Interactive AIRS-16 with progress tracking, save/resume, and smart follow-up questions |
-| **AIRS Score** | Composite readiness score (8–40) with demonstrated validity (r = .876) |
-| **Typology Classification** | Three-segment classification (94.5% accuracy) matching the empirically derived clusters |
-| **AI-Personalized Guides** | Streaming LLM-generated action plans (3–5 pages) tailored to individual profile and career context |
-| **Results Visualization** | Animated gauge, 8-axis construct radar chart, and typology badge with actionable context |
-| **Multilingual Output** | 29 languages with browser auto-detection for personalized guides |
-| **Organization Management** | Team analytics, department/role segmentation, CSV exports, and impact reporting |
-| **Longitudinal Tracking** | Pre/post assessment comparison with trend analysis and history tracking |
+|---|---|
+| **5-Minute Assessment** | Interactive AIRS-16 with save/resume, progress tracking, smart follow-ups |
+| **AIRS Score** | Composite readiness (8–40), validated correlation **r = .876** |
+| **Typology Classification** | 3-segment classifier (Enthusiasts/Moderate/Skeptics), **94.5% accuracy** |
+| **Cut-point Model** | 8-construct cut-point classifier, **91.4% accuracy** (phase12) |
+| **AI-Personalized Guides** | Streaming LLM (GPT-4o-mini) generates 3–5 page action plans per respondent |
+| **Results Visualization** | Animated gauge, 8-axis radar chart, typology badge with context |
+| **Multilingual Output** | 29 languages with browser auto-detection |
+| **Org Management** | Team/department segmentation, CSV export, impact reporting |
+| **Longitudinal Tracking** | Pre/post comparisons, trend charts, typology drift monitoring |
 
-**Technology Stack:** Next.js 16.1, React 19, Prisma ORM with PostgreSQL, Microsoft Entra ID authentication (Microsoft, Google, Apple providers), Azure OpenAI GPT-4o-mini with streaming SSE, deployed on Azure App Service Premium (P2v3) with VNet integration and managed identity with no stored secrets.
+### B.3 Interventions: Semantics → Actions
+**Evidence sources:** AIRS SEM (PV β = .505; HM β = .217; SI β = .136), McKinsey 2025 (N=1,993), UTAUT2 meta-analyses (417+ studies), change management literature.
 
-### B.2 Practical Tools: From Score to Action
+**Segment frameworks (score bands & verbs)**
 
-The platform goes beyond assessment by converting AIRS scores into personalized, actionable guidance through three mechanisms:
+| Segment | Score Band | Primary Verb | What to Do |
+|:--|:--|:--|:--|
+| **Skeptics** | ≤ 20 | **TRANSFORM** | Trust-building, graduated autonomy, explainability tooling, human-in-the-loop
+| **Moderate Users** | 21–30 | **REDESIGN** | ROI demonstrations, workflow integration, peer proof
+| **Enthusiasts** | > 30 | **AMPLIFY** | Champion networks, advanced access, mentorship loops
 
-**Construct-Level Diagnostics.** Each respondent receives scores on all 8 AIRS constructs (PE, EE, SI, FC, HM, PV, HB, TR), displayed as a radar chart. This profile reveals the specific adoption barriers each individual faces. A low PV score indicates a value communication gap, while a low TR score signals a trust deficit requiring different interventions.
+**Construct-level interventions (formatted for slide use)**
 
-**AI-Powered Personalized Guides.** Using Azure OpenAI (GPT-4o-mini) with dynamic context injection, the platform generates individualized action plans that incorporate the respondent's typology, construct profile, career context (via Microsoft Graph integration for job title, department, and organization), and open-ended response themes. Each guide provides quick wins, medium-term strategies, and long-term development paths specific to the respondent's barrier profile.
+| Construct | Barrier Signal | Intervention Patterns |
+|:--|:--|:--|
+| **Price Value** | Low ROI perception | TCO workshops; pilot→proof tracking; financial storytelling |
+| **Hedonic Motivation** | Low engagement | Gamification; AI sandboxes; social learning |
+| **Social Influence** | Weak advocacy | Champion programs; leadership comms; success stories |
+| **Trust** | Reliability concerns | Explainability tools; human-in-the-loop controls; transparent error reporting |
+| **Performance Expectancy** | Unclear benefits | Role-specific demos; before/after metrics |
+| **Effort Expectancy** | Usability friction | Guided onboarding; contextual help; progressive modes |
+| **Facilitating Conditions** | Infra/tooling gaps | Tool compatibility audits; training catalogs |
+| **Habit** | Low default usage | Default AI-assisted flows; reminders; routines |
 
-**Typology-Matched Intervention Frameworks.** The three empirically derived typologies map to named intervention frameworks:
+> Tip: Use `<br>` inside cells sparingly; semicolons are used here to keep the PDF layout compact while remaining readable.
 
-- **Skeptics (AIRS Score ≤ 20) → TRANSFORM Framework.** Trust-building through graduated autonomy: starting with low-risk AI tasks, demonstrating reliability through small wins, and progressively expanding scope. Emphasizes explainability, human-in-the-loop safeguards, and evidence-based value demonstrations.
-- **Moderate Users (AIRS Score 21–30) → REDESIGN Framework.** Workflow integration and ROI demonstration: identifying specific processes where AI adds measurable value, providing social proof through peer success stories, and building competence through structured skill development.
-- **Enthusiasts (AIRS Score > 30) → AMPLIFY Framework.** Champion network activation: leveraging high-readiness individuals as change agents, providing access to advanced AI capabilities, and creating mentorship structures that accelerate adoption across the organization.
+### B.4 Consulting Model (Org Deployments)
 
-### B.3 Remediation: Evidence-Based Intervention Design
+| Phase | Timeline | Key Activities | Deliverables |
+|:--|:--|:--|:--|
+| **Baseline** | Weeks 1–2 | AIRS assessment across org; typology distribution; barrier prioritization | Baseline dashboard; barrier heatmap; segment mix |
+| **Design** | Weeks 3–6 | Segment-specific intervention design; 90-day action roadmap | Playbooks per segment; prioritized interventions |
+| **Execution & Tracking** | Ongoing (90-day cadence) | Dashboards; 90-day reassessments; effect-size tracking; continuous barrier monitoring | Quarterly impact reports; drift alerts; updated typology mix |
 
-The platform's intervention recommendations draw on multiple evidence bases: the AIRS SEM findings (PV β = .505, HM β = .217, SI β = .136 as the significant predictors), the McKinsey Global AI Survey 2025 (N = 1,993), UTAUT2 meta-analyses (417+ studies), and organizational change management literature.
+### B.5 Longitudinal Research Design
+- **Temporal:** T1 (baseline), T2 (3 mo), T3 (6 mo), T4 (12 mo).
+- **Norms:** Build population norms for 8+ groups (students, early/mid/senior professionals, tech, healthcare, finance, international) with **n = 300–500+** per group (2026–2028 targets).
+- **Org-level metrics:** Team/department AIRS means, typology mixes, barrier heatmaps.
+- **Effectiveness:** Pre/post effect sizes on PV/HM/SI/TR; anxiety/enjoyment tracking where collected.
 
-**Construct-Specific Interventions:**
+### B.6 Competitive Positioning
+Most AI readiness tools are either **validated but static** or **polished but unvalidated**. AIRS Enterprise pairs a published, validated instrument with a production platform and contributes back to the research database. Medium-term (1–3y): benchmark database growth. Long-term (3–5y): integrations with HRIS/LMS, enterprise partnerships, cross-cultural norms.
 
-| Construct | Barrier Indicator | Evidence-Based Intervention |
-|:-------------|:-------------------|:---------------------------------------------|
-| Price Value | Low perceived ROI | TCO analysis workshops, pilot-to-proof ROI tracking, phased investment models |
-| Hedonic Motivation | Low engagement | Gamification elements, AI sandboxes for exploration, social learning communities |
-| Social Influence | Insufficient advocacy | Peer champion programs, leadership endorsement campaigns, success story sharing |
-| Trust | Reliability concerns | Explainability tools, human-in-the-loop with graduated autonomy levels, transparent error reporting |
-| Performance Expectancy | Unclear benefits | Role-specific pilot demonstrations, before/after productivity metrics |
-| Effort Expectancy | Usability barriers | Guided onboarding, contextual help systems, progressive complexity |
-| Facilitating Conditions | Infrastructure gaps | Training programs, tool compatibility audits, dedicated support channels |
-| Habit | Low integration | Default AI-assisted workflows, reminder systems, routine integration coaching |
+### B.7 Research-Practice Bridge
+Every deployment produces structured data (construct scores, typology, demographics) that feeds the normative dataset and informs future recommendations. The platform is IRB-ready and supports reproducible research.
 
-**Organizational Engagement Model.** For enterprise deployments, the platform supports a structured consulting engagement:
+> **Related work:** *The Life of Alex Finch* (AlexBooks, 2026) covers calibrated reliance (CAIR/CSR) for public audiences. The platform adds the instrumentation layer to turn those principles into measurable practices.
 
-1. **Phase 1: Baseline Assessment (Weeks 1–2):** Organization-wide AIRS-16 administration, typology distribution mapping, department/role/geography segmentation, and barrier prioritization analysis.
-2. **Phase 2: Targeted Intervention Design (Weeks 3–6):** Segment-specific intervention protocols matched to the organization's typology distribution, culminating in a 90-day action plan.
-3. **Phase 3: Implementation and Tracking (Ongoing):** Adoption metrics dashboard, 90-day re-assessment cycles, intervention effectiveness analysis through pre/post comparison, and continuous barrier monitoring.
-
-### B.4 Longitudinal Research Design
-
-AIRS Enterprise is designed from the ground up as a research data collection instrument, enabling longitudinal validation studies that most psychometric instruments never achieve post-publication.
-
-**Planned Validation Program:**
-
-- **Temporal Design:** T1 (baseline) → T2 (3 months) → T3 (6 months) → T4 (12 months), measuring score stability, intervention responsiveness, and predictive validity over time.
-- **Normative Benchmarking:** Building population-specific norms across 8+ target groups (students, early/mid/senior career professionals, technology sector, healthcare, finance, international samples) with target samples of N = 300–500+ each, planned for 2026–2028.
-- **Organizational-Level Aggregation:** Computing readiness indices at the team and organizational level, enabling typology-based organizational profiling (e.g., identifying "AI Champion" organizations versus "Trust Gap" or "Skill Gap" profiles).
-- **Intervention Effectiveness Tracking:** Pre/post assessment comparison built into the platform's longitudinal tracking feature, allowing direct measurement of whether targeted interventions produce statistically significant readiness improvements.
-
-**Data Collection at Scale.** The platform's IRB-compliant design, multi-provider authentication, and multilingual support enable data collection across diverse populations without the logistical barriers that typically limit psychometric validation to single convenience samples. Every assessment generates structured data (8 construct scores, composite AIRS score, typology classification, demographic context) that feeds directly into the normative benchmarking database.
-
-### B.5 Competitive Positioning
-
-AIRS Enterprise is positioned at the intersection of psychometric validation and operational deployment. Many existing AI readiness tools are either (a) validated instruments that remain static questionnaires with limited delivery infrastructure, or (b) commercial platforms with polished interfaces but little published validation evidence. AIRS Enterprise addresses this gap by pairing a validated instrument with a production platform that supports personalization and longitudinal tracking.
-
-The medium-term strategy (1–3 years) focuses on building a benchmark database through cumulative data collection, while the longer-term goal (3–5 years) is to establish AIRS as a recognized AI readiness assessment through academic use, organizational partnerships, and integration with enterprise HR and learning management systems.
-
-### B.6 Research-Practice Bridge
-
-The AIRS Enterprise platform represents a deliberate attempt to close the implementation gap that characterizes many academic psychometric instruments. Instead of the familiar pattern in which an instrument is developed, published, and then rarely operationalized, AIRS pairs the validated instrument with a platform that evolves alongside it. Every organizational deployment generates data that strengthens the normative database, and every research finding improves the intervention recommendations delivered to practitioners.
-
-In parallel, *The Life of Alex Finch* extends this bridge in a different format: as a published, book-length documentary biography of AI-human collaboration that translates the dissertation's emerging concern with appropriate reliance, over-reliance, and preservation of human judgment into a broader public narrative. Together, the instrument, platform, and book create complementary paths for advancing the research across academic, organizational, and public audiences.
-
-This bidirectional flow between research and practice embodies the applied mission of the DBA: producing scholarship that directly improves organizational decision-making.
+*Detailed architecture diagrams, API references, and governance controls remain in the full Appendix B for reviewers who need implementation detail.*

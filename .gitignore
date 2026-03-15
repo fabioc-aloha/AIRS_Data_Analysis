@@ -199,6 +199,15 @@ out/
 # Documentation & Reports
 # ============================================================================
 
+# Gamma / export artifacts
+# Keep canonical PDFs if already tracked; ignore generated variants
+/defence/exports/gamma/
+/defence/exports/old/
+/defence/exports/debug.tex
+/defence/exports/*.pptx
+/defence/exports/board-ready-quick-answers.pdf
+
+
 # Keep markdown documentation but exclude generated files
 *.html
 !AIRS_Analysis_Guide_Concise*.html

@@ -24,7 +24,7 @@ const { exec } = require('child_process');
 
 const API_BASE_URL = 'https://public-api.gamma.app';
 const API_VERSION = 'v1.0';
-const DEFAULT_TIMEOUT_MS = 180000; // 3 minutes
+const DEFAULT_TIMEOUT_MS = 420000; // 7 minutes (longer for big decks)
 const POLL_INTERVAL_MS = 3000; // 3 seconds
 const MAX_INPUT_CHARS = 400000;
 
@@ -87,49 +87,69 @@ function getApiKey() {
 // HTTP Client
 // ============================================================================
 
-function httpRequest(method, endpoint, body = null) {
-  return new Promise((resolve, reject) => {
-    const apiKey = getApiKey();
-    const url = new URL(`${API_BASE_URL}/${API_VERSION}${endpoint}`);
+async function httpRequest(method, endpoint, body = null, { timeoutMs = 120000, retries = 3 } = {}) {
+  const apiKey = getApiKey();
+  const url = new URL(`${API_BASE_URL}/${API_VERSION}${endpoint}`);
 
-    const options = {
-      hostname: url.hostname,
-      path: url.pathname,
-      method,
-      headers: {
-        'X-API-KEY': apiKey,
-        'Content-Type': 'application/json',
-      },
-    };
+  const options = {
+    hostname: url.hostname,
+    path: url.pathname,
+    method,
+    headers: {
+      'X-API-KEY': apiKey,
+      'Content-Type': 'application/json',
+    },
+  };
 
-    const req = https.request(options, (res) => {
-      let data = '';
-      res.on('data', (chunk) => (data += chunk));
-      res.on('end', () => {
-        try {
-          const parsed = JSON.parse(data);
-          if (res.statusCode >= 400) {
-            reject(new Error(parsed.message || `HTTP ${res.statusCode}: ${data}`));
-          } else {
-            resolve(parsed);
+  const attempt = (tryIndex) =>
+    new Promise((resolve, reject) => {
+      const req = https.request(options, (res) => {
+        let data = '';
+        res.on('data', (chunk) => (data += chunk));
+        res.on('end', () => {
+          try {
+            const parsed = JSON.parse(data || '{}');
+            if (res.statusCode >= 400) {
+              reject(new Error(parsed.message || `HTTP ${res.statusCode}: ${data}`));
+            } else {
+              resolve(parsed);
+            }
+          } catch {
+            reject(new Error(`Failed to parse response: ${data}`));
           }
-        } catch {
-          reject(new Error(`Failed to parse response: ${data}`));
-        }
+        });
       });
+
+      req.on('error', reject);
+      req.setTimeout(timeoutMs, () => {
+        req.destroy();
+        reject(new Error(`Request timeout after ${timeoutMs}ms`));
+      });
+
+      if (body) {
+        req.write(JSON.stringify(body));
+      }
+      req.end();
+    }).catch(async (err) => {
+      if (tryIndex < retries) {
+        const backoff = Math.min(1000 * Math.pow(2, tryIndex), 8000);
+        log(`HTTP retry ${tryIndex + 1}/${retries}: ${err.message} (backoff ${backoff}ms)`, true);
+        await sleep(backoff);
+        return attempt(tryIndex + 1);
+      }
+      throw err;
     });
 
-    req.on('error', reject);
-    req.setTimeout(30000, () => {
-      req.destroy();
-      reject(new Error('Request timeout'));
-    });
+  return attempt(0);
+}
 
-    if (body) {
-      req.write(JSON.stringify(body));
-    }
-    req.end();
-  });
+function sanitizeFilename(name) {
+  return name
+    .replace(/^https?:\/\//, '')
+    .replace(/[^a-zA-Z0-9._-]+/g, '_')
+    .replace(/_+/g, '_')
+    .replace(/^_+|_+$/g, '')
+    .slice(0, 180);
 }
 
 function downloadFile(url, outputPath) {
@@ -142,7 +162,7 @@ function downloadFile(url, outputPath) {
           const redirectUrl = response.headers.location;
           if (redirectUrl) {
             file.close();
-            fs.unlinkSync(outputPath);
+            if (fs.existsSync(outputPath)) fs.unlinkSync(outputPath);
             downloadFile(redirectUrl, outputPath).then(resolve).catch(reject);
             return;
           }
@@ -160,7 +180,7 @@ function downloadFile(url, outputPath) {
         });
       })
       .on('error', (err) => {
-        fs.unlink(outputPath, () => {}); // Delete partial file
+        if (fs.existsSync(outputPath)) fs.unlink(outputPath, () => {}); // Delete partial file
         reject(err);
       });
   });
@@ -238,6 +258,11 @@ class GammaClient {
     if (!filename) {
       const urlParts = exportUrl.split('/');
       filename = decodeURIComponent(urlParts[urlParts.length - 1]) || 'export.pptx';
+    }
+
+    filename = sanitizeFilename(filename);
+    if (!filename.toLowerCase().endsWith('.pptx') && !filename.toLowerCase().endsWith('.pdf')) {
+      filename += '.pptx';
     }
 
     // Ensure output directory exists
@@ -346,11 +371,35 @@ class GammaGenerator {
         this.options.timeout
       );
 
+      // Debug: log raw status to help diagnose missing export URLs
+      log(`Status payload keys: ${Object.keys(status).join(', ')}`, this.options.verbose);
+      if (this.options.verbose) {
+        // Avoid dumping huge objects; stringify selected fields
+        const safeStatus = {
+          status: status.status,
+          gammaUrl: status.gammaUrl,
+          exportUrl: status.exportUrl,
+          pptxUrl: status.pptxUrl,
+          pdfUrl: status.pdfUrl,
+          exports: status.exports,
+          credits: status.credits,
+        };
+        log(`Status snapshot: ${JSON.stringify(safeStatus, null, 2)}`, true);
+      }
+
+      // Find an export URL in multiple possible fields
+      const exportUrl =
+        status.exportUrl ||
+        status.pptxUrl ||
+        status.pdfUrl ||
+        (status.exports &&
+          (status.exports.pptx?.url || status.exports.pdf?.url || status.exports?.url));
+
       const result = {
         success: true,
         generationId: genResponse.generationId,
         gammaUrl: status.gammaUrl,
-        exportUrl: status.exportUrl || status.pptxUrl || status.pdfUrl,
+        exportUrl,
         credits: status.credits,
       };
 
@@ -358,8 +407,11 @@ class GammaGenerator {
       if (result.exportUrl && this.options.outputDir) {
         result.localFile = await this.client.downloadExport(
           result.exportUrl,
-          this.options.outputDir
+          this.options.outputDir,
+          this.options.filename
         );
+      } else {
+        log('No export URL provided by Gamma. Use the gammaUrl to download manually.', true);
       }
 
       this.printSummary(result);
@@ -367,6 +419,12 @@ class GammaGenerator {
     } catch (err) {
       const errorMessage = err.message || String(err);
       error(errorMessage);
+      if (err && err.errors) {
+        error(`Inner errors: ${err.errors.map((e) => e.message || String(e)).join('; ')}`);
+      }
+      if (err && err.stack) {
+        error(err.stack);
+      }
       return {
         success: false,
         generationId: '',

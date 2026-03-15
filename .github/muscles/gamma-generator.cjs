@@ -24,7 +24,7 @@ const { exec } = require('child_process');
 
 const API_BASE_URL = 'https://public-api.gamma.app';
 const API_VERSION = 'v1.0';
-const DEFAULT_TIMEOUT_MS = 180000; // 3 minutes
+const DEFAULT_TIMEOUT_MS = 420000; // 7 minutes (longer for big decks)
 const POLL_INTERVAL_MS = 3000; // 3 seconds
 const MAX_INPUT_CHARS = 400000;
 
@@ -87,63 +87,87 @@ function getApiKey() {
 // HTTP Client
 // ============================================================================
 
-function httpRequest(method, endpoint, body = null) {
-  return new Promise((resolve, reject) => {
-    const apiKey = getApiKey();
-    const url = new URL(`${API_BASE_URL}/${API_VERSION}${endpoint}`);
+async function httpRequest(method, endpoint, body = null, { timeoutMs = 120000, retries = 3 } = {}) {
+  const apiKey = getApiKey();
+  const url = new URL(`${API_BASE_URL}/${API_VERSION}${endpoint}`);
 
-    const options = {
-      hostname: url.hostname,
-      path: url.pathname,
-      method,
-      headers: {
-        'X-API-KEY': apiKey,
-        'Content-Type': 'application/json',
-      },
-    };
+  const options = {
+    hostname: url.hostname,
+    path: url.pathname,
+    method,
+    headers: {
+      'X-API-KEY': apiKey,
+      'Content-Type': 'application/json',
+    },
+  };
 
-    const req = https.request(options, (res) => {
-      let data = '';
-      res.on('data', (chunk) => (data += chunk));
-      res.on('end', () => {
-        try {
-          const parsed = JSON.parse(data);
-          if (res.statusCode >= 400) {
-            reject(new Error(parsed.message || `HTTP ${res.statusCode}: ${data}`));
-          } else {
-            resolve(parsed);
+  const attempt = (tryIndex) =>
+    new Promise((resolve, reject) => {
+      const req = https.request(options, (res) => {
+        let data = '';
+        res.on('data', (chunk) => (data += chunk));
+        res.on('end', () => {
+          try {
+            const parsed = JSON.parse(data || '{}');
+            if (res.statusCode >= 400) {
+              reject(new Error(parsed.message || `HTTP ${res.statusCode}: ${data}`));
+            } else {
+              resolve(parsed);
+            }
+          } catch {
+            reject(new Error(`Failed to parse response: ${data}`));
           }
-        } catch {
-          reject(new Error(`Failed to parse response: ${data}`));
-        }
+        });
       });
+
+      req.on('error', reject);
+      req.setTimeout(timeoutMs, () => {
+        req.destroy();
+        reject(new Error(`Request timeout after ${timeoutMs}ms`));
+      });
+
+      if (body) {
+        req.write(JSON.stringify(body));
+      }
+      req.end();
+    }).catch(async (err) => {
+      if (tryIndex < retries) {
+        const backoff = Math.min(1000 * Math.pow(2, tryIndex), 8000);
+        log(`HTTP retry ${tryIndex + 1}/${retries}: ${err.message} (backoff ${backoff}ms)`, true);
+        await sleep(backoff);
+        return attempt(tryIndex + 1);
+      }
+      throw err;
     });
 
-    req.on('error', reject);
-    req.setTimeout(30000, () => {
-      req.destroy();
-      reject(new Error('Request timeout'));
-    });
-
-    if (body) {
-      req.write(JSON.stringify(body));
-    }
-    req.end();
-  });
+  return attempt(0);
 }
 
-function downloadFile(url, outputPath) {
+function sanitizeFilename(name) {
+  return name
+    .replace(/^https?:\/\//, '')
+    .replace(/[^a-zA-Z0-9._-]+/g, '_')
+    .replace(/_+/g, '_')
+    .replace(/^_+|_+$/g, '')
+    .slice(0, 180);
+}
+
+function downloadFile(url, outputPath, maxRedirects = 5) {
   return new Promise((resolve, reject) => {
+    if (maxRedirects <= 0) {
+      reject(new Error('Too many redirects'));
+      return;
+    }
     const file = fs.createWriteStream(outputPath);
-    https
+    const req = https
       .get(url, (response) => {
         // Handle redirects
         if (response.statusCode === 301 || response.statusCode === 302) {
           const redirectUrl = response.headers.location;
           if (redirectUrl) {
             file.close();
-            fs.unlinkSync(outputPath);
-            downloadFile(redirectUrl, outputPath).then(resolve).catch(reject);
+            if (fs.existsSync(outputPath)) fs.unlinkSync(outputPath);
+            downloadFile(redirectUrl, outputPath, maxRedirects - 1).then(resolve).catch(reject);
             return;
           }
         }
@@ -153,9 +177,25 @@ function downloadFile(url, outputPath) {
           return;
         }
 
+        // Progress reporting for large files
+        const totalBytes = parseInt(response.headers['content-length'], 10) || 0;
+        let downloadedBytes = 0;
+        let lastReportPct = -10;
+        response.on('data', (chunk) => {
+          downloadedBytes += chunk.length;
+          if (totalBytes > 0) {
+            const pct = Math.floor((downloadedBytes / totalBytes) * 100);
+            if (pct - lastReportPct >= 10) {
+              process.stdout.write(`\r   Progress: ${pct}% (${(downloadedBytes / 1024 / 1024).toFixed(1)} MB)`);
+              lastReportPct = pct;
+            }
+          }
+        });
+
         response.pipe(file);
         file.on('finish', () => {
           file.close();
+          if (totalBytes > 0) process.stdout.write('\n');
           resolve();
         });
       })
@@ -163,6 +203,12 @@ function downloadFile(url, outputPath) {
         fs.unlink(outputPath, () => {}); // Delete partial file
         reject(err);
       });
+    // Download timeout: 5 minutes for large exports
+    req.setTimeout(300000, () => {
+      req.destroy();
+      fs.unlink(outputPath, () => {});
+      reject(new Error('Download timeout after 5 minutes'));
+    });
   });
 }
 
@@ -238,6 +284,11 @@ class GammaClient {
     if (!filename) {
       const urlParts = exportUrl.split('/');
       filename = decodeURIComponent(urlParts[urlParts.length - 1]) || 'export.pptx';
+    }
+
+    filename = sanitizeFilename(filename);
+    if (!filename.toLowerCase().endsWith('.pptx') && !filename.toLowerCase().endsWith('.pdf')) {
+      filename += '.pptx';
     }
 
     // Ensure output directory exists
@@ -346,11 +397,35 @@ class GammaGenerator {
         this.options.timeout
       );
 
+      // Debug: log raw status to help diagnose missing export URLs
+      log(`Status payload keys: ${Object.keys(status).join(', ')}`, this.options.verbose);
+      if (this.options.verbose) {
+        // Avoid dumping huge objects; stringify selected fields
+        const safeStatus = {
+          status: status.status,
+          gammaUrl: status.gammaUrl,
+          exportUrl: status.exportUrl,
+          pptxUrl: status.pptxUrl,
+          pdfUrl: status.pdfUrl,
+          exports: status.exports,
+          credits: status.credits,
+        };
+        log(`Status snapshot: ${JSON.stringify(safeStatus, null, 2)}`, true);
+      }
+
+      // Find an export URL in multiple possible fields
+      const exportUrl =
+        status.exportUrl ||
+        status.pptxUrl ||
+        status.pdfUrl ||
+        (status.exports &&
+          (status.exports.pptx?.url || status.exports.pdf?.url || status.exports?.url));
+
       const result = {
         success: true,
         generationId: genResponse.generationId,
         gammaUrl: status.gammaUrl,
-        exportUrl: status.exportUrl || status.pptxUrl || status.pdfUrl,
+        exportUrl,
         credits: status.credits,
       };
 
@@ -358,8 +433,11 @@ class GammaGenerator {
       if (result.exportUrl && this.options.outputDir) {
         result.localFile = await this.client.downloadExport(
           result.exportUrl,
-          this.options.outputDir
+          this.options.outputDir,
+          this.options.filename
         );
+      } else {
+        log('No export URL provided by Gamma. Use the gammaUrl to download manually.', true);
       }
 
       this.printSummary(result);
@@ -367,6 +445,12 @@ class GammaGenerator {
     } catch (err) {
       const errorMessage = err.message || String(err);
       error(errorMessage);
+      if (err && err.errors) {
+        error(`Inner errors: ${err.errors.map((e) => e.message || String(e)).join('; ')}`);
+      }
+      if (err && err.stack) {
+        error(err.stack);
+      }
       return {
         success: false,
         generationId: '',
@@ -522,7 +606,7 @@ Options:
   --dimensions, -d <size>  Card dimensions (16x9, 4x3, 1x1, 4x5, 9x16)
   --export, -e <type>      Export format: pptx, pdf
   --output, -o <dir>       Output directory for exports (default: ./exports)
-  --timeout <seconds>      Generation timeout in seconds (default: 180)
+  --timeout <seconds>      Generation timeout in seconds (default: 420)
   --quiet, -q              Suppress progress messages
   --open                   Open the exported file after generation
   --draft                  Generate markdown content file only (no API call)

@@ -15,9 +15,9 @@
 
 | Measure | F(2,520) | p | η² | Post-hoc |
 |---------|----------|---|----|---------|
-| Tool Usage (ANOVA) | 18.42 | <.001 | .066 | L > P > S |
+| Tool Usage (ANOVA) | 18.42 | <.001 | .066 | L > P > A |
 
-*Note: L = Leader, P = Professional, S = Student. Post-hoc comparisons use Tukey HSD.*
+*Note: L = Leader, P = Professional, A = Academic. Post-hoc comparisons use Tukey HSD.*
 
 ## Tool Usage × AIRS Construct Correlations (Spearman ρ)
 

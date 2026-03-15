@@ -5,6 +5,7 @@
 \usepackage{float}
 \usepackage{makecell}
 \usepackage{xcolor}
+\usepackage{needspace}
 
 % Table styling
 \renewcommand{\arraystretch}{1.4}
@@ -13,11 +14,11 @@
 \let\oldlongtable\longtable
 \renewcommand{\longtable}{\small\oldlongtable}
 
-% Keep tables whole — if fewer than 20 lines remain on page, start fresh
+% Keep tables whole — if fewer than 10 lines remain on page, start fresh (reduced to avoid blank pages)
 \BeforeBeginEnvironment{longtable}{%
   \par
   \dimen0=\dimexpr\pagegoal-\pagetotal\relax
-  \ifdim\dimen0<20\baselineskip
+  \ifdim\dimen0<10\baselineskip
     \clearpage
   \fi
 }
