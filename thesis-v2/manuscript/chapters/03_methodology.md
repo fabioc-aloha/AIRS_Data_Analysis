@@ -4,7 +4,7 @@
 
 ## 3.1 Introduction
 
-This chapter describes the research methodology employed to develop and validate the AI Readiness Scale (AIRS), a diagnostic instrument for assessing AI adoption readiness, and test the extended UTAUT model for AI tool adoption in higher education. The study follows established scale development procedures [@devellis2021; @hinkin1998] combined with structural equation modeling to examine relationships between latent constructs. The research design prioritizes psychometric rigor through split-sample cross-validation, comprehensive validity assessment, and multi-group invariance testing. The resulting 8-factor structure enables both research applications and organizational diagnostic use, allowing practitioners to identify specific adoption barriers and design targeted interventions.
+This chapter describes the research methodology employed to develop and validate the AI Readiness Scale (AIRS), a diagnostic instrument for assessing AI adoption readiness, and test the extended UTAUT model for AI tool adoption in higher education. The study followed established scale development procedures [@devellis2021; @hinkin1998] combined with structural equation modeling to examine relationships between latent constructs. The research design prioritized psychometric rigor through split-sample cross-validation, comprehensive validity assessment, and multi-group invariance testing. The resulting 8-factor structure enabled both research applications and organizational diagnostic use, allowing practitioners to identify specific adoption barriers and design targeted interventions.
 
 The chapter is organized as follows: Section 3.2 describes the research philosophy and design; Section 3.3 details the theoretical framework and hypotheses; Section 3.4 covers instrument development; Section 3.5 addresses sampling and data collection; Section 3.6 presents the analytical strategy; Section 3.7 discusses reliability and validity; Section 3.8 covers ethical considerations; and Section 3.9 acknowledges methodological limitations.
 
@@ -14,38 +14,38 @@ The chapter is organized as follows: Section 3.2 describes the research philosop
 
 ### 3.2.1 Research Philosophy
 
-This study adopts a **post-positivist** philosophical stance, recognizing that while objective reality exists, our understanding of it is necessarily imperfect and probabilistic [@creswell2018]. This orientation is appropriate for scale development research, which seeks to measure latent psychological constructs through observable indicators while acknowledging measurement error and the provisional nature of theoretical models.
+This study adopted a post-positivist philosophical stance, recognizing that while objective reality exists, our understanding of it is necessarily imperfect and probabilistic [@creswell2018]. This orientation is appropriate for scale development research, which seeks to measure latent psychological constructs through observable indicators while acknowledging measurement error and the provisional nature of theoretical models.
 
-The post-positivist approach manifests in several methodological choices:
+The post-positivist approach manifested in several methodological choices:
 
-- Emphasis on **replication and cross-validation** through split-sample design
-- Use of **probabilistic inference** (confidence intervals, effect sizes) rather than binary significance testing
-- Recognition of **measurement error** through latent variable modeling
-- **Theory-driven** hypothesis testing with openness to unexpected findings
+- Emphasis on replication and cross-validation through split-sample design
+- Use of probabilistic inference (confidence intervals, effect sizes) rather than binary significance testing
+- Recognition of measurement error through latent variable modeling
+- Theory-driven hypothesis testing with openness to unexpected findings
 
 ### 3.2.2 Research Approach
 
-The study employs a **sequential mixed methods design** [@creswell2017] with quantitative primacy:
+The study employed a sequential mixed methods design [@creswell2017] with quantitative primacy:
 
-1. **Primary Quantitative Component**: Structured survey measuring UTAUT constructs on Likert scales, analyzed through factor analysis and structural equation modeling
+1. Primary Quantitative Component: Structured survey measuring UTAUT constructs on Likert scales, analyzed through factor analysis and structural equation modeling
 
-2. **Supplementary Qualitative Component**: Open-ended feedback questions analyzed through automated content analysis with keyword classification to provide contextual depth and identify emergent themes not captured by closed-ended items
+2. Supplementary Qualitative Component: Open-ended feedback questions analyzed through automated content analysis with keyword classification to provide contextual depth and identify emergent themes not captured by closed-ended items
 
-This design allows triangulation of findings, with qualitative data enriching interpretation of quantitative patterns (e.g., understanding why certain constructs predict adoption more strongly than others).
+This design allowed triangulation of findings, with qualitative data enriching interpretation of quantitative patterns (e.g., understanding why certain constructs predicted adoption more strongly than others).
 
 ### 3.2.3 Time Horizon
 
-The study employs a **cross-sectional design** with data collected during October–November 2025. While cross-sectional designs preclude causal inference, they are standard for initial scale validation studies [@devellis2021]. The design captures a snapshot of AI adoption readiness during a period of rapid AI tool proliferation in higher education, providing a baseline for future longitudinal research.
+The study employed a cross-sectional design with data collected during October–November 2025. While cross-sectional designs preclude causal inference, they are standard for initial scale validation studies [@devellis2021]. The design captures a snapshot of AI adoption readiness during a period of rapid AI tool proliferation in higher education, providing a baseline for future longitudinal research.
 
 ### 3.2.4 Research Context
 
-The study was conducted with **United States professionals and students**, encompassing:
+The study was conducted with United States professionals and students, encompassing:
 
 - Full-time and part-time students (undergraduate and postgraduate)
 - Employed professionals (individual contributors, managers, executives)
 - Freelancers and self-employed individuals
 
-Students are included because they are transitioning into an AI-infused job market and will soon make adoption decisions inside organizations; their readiness is therefore directly relevant to near-term enterprise contexts (proposal §7.2). This context was selected for theoretical and practical relevance: knowledge-intensive work settings where AI tools have significant potential impact on productivity, yet adoption patterns remain poorly understood.
+Students are included because they are transitioning into an AI-infused job market and will soon make adoption decisions inside organizations; their readiness is therefore directly relevant to near-term enterprise contexts (proposal §7.2). This context was selected for theoretical and practical relevance: knowledge-intensive work settings where AI tools had significant potential impact on productivity, yet adoption patterns remained poorly understood.
 
 
 
@@ -53,32 +53,32 @@ Students are included because they are transitioning into an AI-infused job mark
 
 ### 3.3.1 Extended UTAUT Model
 
-The study extends @venkatesh2012consumer's Unified Theory of Acceptance and Use of Technology 2 (UTAUT2) with AI-specific constructs. The theoretical model comprises eight latent factors predicting Behavioral Intention to adopt AI tools:
+The study extended @venkatesh2012consumer's Unified Theory of Acceptance and Use of Technology 2 (UTAUT2) with AI-specific constructs. The theoretical model comprised eight latent factors predicting Behavioral Intention to adopt AI tools:
 
-**Core UTAUT2 Constructs:**
+Core UTAUT2 Constructs:
 
-- **Performance Expectancy (PE)**: The degree to which using AI tools will provide benefits in performing activities
-- **Effort Expectancy (EE)**: The degree of ease associated with using AI tools
-- **Social Influence (SI)**: The degree to which important others believe one should use AI tools
-- **Facilitating Conditions (FC)**: Perceptions of resources and support available for AI tool use
-- **Hedonic Motivation (HM)**: The fun or pleasure derived from using AI tools
-- **Price Value (PV)**: The cognitive trade-off between perceived benefits and monetary cost of AI tools
-- **Habit (HB)**: Automaticity developed through repeated AI tool use
+- Performance Expectancy (PE): The degree to which using AI tools will provide benefits in performing activities
+- Effort Expectancy (EE): The degree of ease associated with using AI tools
+- Social Influence (SI): The degree to which important others believe one should use AI tools
+- Facilitating Conditions (FC): Perceptions of resources and support available for AI tool use
+- Hedonic Motivation (HM): The fun or pleasure derived from using AI tools
+- Price Value (PV): The cognitive trade-off between perceived benefits and monetary cost of AI tools
+- Habit (HB): Automaticity developed through repeated AI tool use
 
-**AI-Specific Extensions:**
+AI-Specific Extensions:
 
-- **Trust in AI (TR)**: Confidence in AI systems' reliability, accuracy, and benevolence
-- **AI Anxiety (AX)**: Apprehension or fear associated with AI technology
+- Trust in AI (TR): Confidence in AI systems' reliability, accuracy, and benevolence
+- AI Anxiety (AX): Apprehension or fear associated with AI technology
 
-**Outcome:**
+Outcome:
 
-- **Behavioral Intention (BI)**: Intent to adopt and use AI tools in professional/academic activities
+- Behavioral Intention (BI): Intent to adopt and use AI tools in professional/academic activities
 
 ### 3.3.2 Research Hypotheses
 
 Based on UTAUT theory and emerging AI adoption literature, the following hypotheses were tested:
 
-**Primary Hypotheses (Direct Effects):**
+Primary Hypotheses (Direct Effects):
 
 - H1a: Performance Expectancy positively predicts Behavioral Intention
 - H1b: Effort Expectancy positively predicts Behavioral Intention
@@ -88,18 +88,18 @@ Based on UTAUT theory and emerging AI adoption literature, the following hypothe
 - H1f: Price Value positively predicts Behavioral Intention
 - H1g: Habit positively predicts Behavioral Intention
 
-**AI-Specific Extension Hypothesis:**
+AI-Specific Extension Hypothesis:
 
 - H2: AI Trust positively predicts Behavioral Intention beyond UTAUT2 core constructs
 
 *Note: AI Anxiety (AX) was initially proposed as an inhibitor construct but was excluded from hypothesis testing due to inadequate reliability (α = .301) identified during exploratory factor analysis. See Section 4.2 for construct development outcomes.*
 
-**Moderation Hypotheses:**
+Moderation Hypotheses:
 
 - H3: AI Experience moderates UTAUT relationships (strengthening effects for experienced users)
 - H4: Role group (Academic vs. Professional) moderates UTAUT path coefficients
 
-**Behavioral Validation:**
+Behavioral Validation:
 
 - H5: Behavioral Intention positively relates to actual AI tool usage breadth
 - H6: Role groups differ significantly in AI tool usage patterns
@@ -110,7 +110,7 @@ Based on UTAUT theory and emerging AI adoption literature, the following hypothe
 
 ### 3.4.1 Initial Item Pool
 
-The initial AIRS instrument comprised **28 items across 12 constructs**:
+The initial AIRS instrument comprised 28 items across 12 constructs:
 
 - 7 core UTAUT2 constructs (14 items): PE, EE, SI, FC, HM, PV, HB
 - 5 AI-specific extensions (10 items): TR, AX, VO, EX, ER
@@ -118,7 +118,7 @@ The initial AIRS instrument comprised **28 items across 12 constructs**:
 
 Items were measured on 5-point Likert scales (1 = Strongly Disagree to 5 = Strongly Agree), with negatively-worded items (AX, ER) reverse-scored prior to analysis.
 
-*Note: The final validated instrument comprises **16 items across 8 constructs** (PE, EE, SI, FC, HM, PV, HB, TR) plus the BI outcome. Four constructs (Voluntariness, Explainability, Ethical Risk, AI Anxiety) were excluded during EFA due to inadequate reliability (α = .301–.582). See Chapter 4, Section 4.2 for detailed item disposition.*
+*Note: The final validated instrument comprised 16 items across 8 constructs (PE, EE, SI, FC, HM, PV, HB, TR) plus the BI outcome. Four constructs (Voluntariness, Explainability, Ethical Risk, AI Anxiety) were excluded during EFA due to inadequate reliability (α = .301–.582). See Chapter 4, Section 4.2 for detailed item disposition.*
 
 ### 3.4.2 Item Sources
 
@@ -152,13 +152,13 @@ BI & Venkatesh et al. (2003) & Standard UTAUT items \\
 
 Content validity was established through:
 
-1. **Literature Review**: Items grounded in established UTAUT and technology acceptance literature
-2. **Construct Definition Mapping**: Each item mapped to specific construct definition
-3. **Face Validity Review**: Items reviewed for clarity and appropriateness to AI context
+1. Literature Review: Items grounded in established UTAUT and technology acceptance literature
+2. Construct Definition Mapping: Each item mapped to specific construct definition
+3. Face Validity Review: Items reviewed for clarity and appropriateness to AI context
 
 ### 3.4.4 Construct Exclusion Process
 
-Of the 12 constructs proposed, **four AI-specific constructs were excluded** during exploratory factor analysis due to inadequate psychometric properties:
+Of the 12 constructs proposed, four AI-specific constructs were excluded during exploratory factor analysis due to inadequate psychometric properties:
 
 ```{=latex}
 \begin{table}[H]
@@ -180,20 +180,20 @@ AI Anxiety (AX) & AX1, AX2 & .30 & Item heterogeneity & Dropped \\
 \end{table}
 ```
 
-**Interpretation**: These constructs demonstrated poor inter-item correlations, suggesting the two-item scales measured different facets of multi-dimensional phenomena rather than unitary constructs. For example:
+Interpretation: These constructs demonstrated poor inter-item correlations, suggesting the two-item scales measured different facets of multi-dimensional phenomena rather than unitary constructs. For example:
 
-- **Voluntariness**: VO1 assessed choice to use AI, while VO2 assessed freedom not to use, representing conceptually distinct aspects of voluntary adoption
-- **Explainability**: EX1 assessed understanding AI outputs, while EX2 assessed preference for explanations, reflecting comprehension vs. preference dimensions
-- **Ethical Risk**: ER1 assessed job displacement concerns, while ER2 assessed privacy concerns, representing distinct risk categories
-- **AI Anxiety**: AX1 captured technology avoidance, while AX2 captured fear of obsolescence, reflecting avoidance vs. approach motivations
+- Voluntariness: VO1 assessed choice to use AI, while VO2 assessed freedom not to use, representing conceptually distinct aspects of voluntary adoption
+- Explainability: EX1 assessed understanding AI outputs, while EX2 assessed preference for explanations, reflecting comprehension vs. preference dimensions
+- Ethical Risk: ER1 assessed job displacement concerns, while ER2 assessed privacy concerns, representing distinct risk categories
+- AI Anxiety: AX1 captured technology avoidance, while AX2 captured fear of obsolescence, reflecting avoidance vs. approach motivations
 
-**Resolution**: All four AI-specific constructs were excluded from the final measurement model due to inadequate reliability. These constructs remain theoretically important for AI adoption research and require more comprehensive operationalization with 3-4 items per sub-dimension in future studies.
+Resolution: All four AI-specific constructs were excluded from the final measurement model due to inadequate reliability. These constructs remain theoretically important for AI adoption research and require more comprehensive operationalization with 3-4 items per sub-dimension in future studies.
 
-**Note**: This represents an empirical finding, not a design limitation. The proposal committed to testing these constructs; the data revealed inadequate measurement properties. This transparent reporting aligns with best practices in scale development [@devellis2021].
+This represents an empirical finding, not a design limitation. The proposal committed to testing these constructs; the data revealed inadequate measurement properties. This transparent reporting aligned with best practices in scale development [@devellis2021].
 
 ### 3.4.5 Final Instrument Structure
 
-Following psychometric validation (see Chapter 4), the final AIRS instrument comprises **16 items across 8 factors** (7 UTAUT2 predictors + AI Trust extension):
+Following psychometric validation (see Chapter 4), the final AIRS instrument comprised 16 items across 8 factors (7 UTAUT2 predictors + AI Trust extension):
 
 ```{=latex}
 \begin{table}[H]
@@ -219,7 +219,7 @@ AI Trust & TR1, TR2 & ``I trust AI tools to provide accurate information'' \\
 \end{table}
 ```
 
-*Note: Behavioral Intention (BI) serves as the outcome variable in the structural model.*
+*Note: Behavioral Intention (BI) served as the outcome variable in the structural model.*
 
 
 
@@ -227,7 +227,7 @@ AI Trust & TR1, TR2 & ``I trust AI tools to provide accurate information'' \\
 
 ### 3.5.1 Target Population
 
-The target population comprises adults in the United States who are either students or employed professionals (proposal §7.2). This includes:
+The target population comprised adults in the United States who were either students or employed professionals (proposal §7.2). This included:
 
 - Full-time and part-time students at undergraduate and postgraduate levels
 - Employed professionals in individual contributor roles
@@ -236,7 +236,7 @@ The target population comprises adults in the United States who are either stude
 
 ### 3.5.2 Sampling Strategy
 
-**Panel sampling** was employed through Centiment, a professional survey research platform maintaining verified respondent panels recruited via social media (Facebook, LinkedIn) and other outlets to achieve broad demographic representation.
+Panel sampling was employed through Centiment, a professional survey research platform maintaining verified respondent panels recruited via social media (Facebook, LinkedIn) and other outlets to achieve broad demographic representation.
 
 While panel sampling has limitations similar to convenience sampling regarding generalizability, it is appropriate for initial scale validation studies where the primary goal is psychometric evaluation rather than population inference [@devellis2021]. Additionally, Centiment's topic-blinded recruitment protocol, where survey invitations display only completion time and compensation without revealing subject matter, mitigates self-selection bias common in technology-focused research.
 
@@ -244,12 +244,12 @@ While panel sampling has limitations similar to convenience sampling regarding g
 
 Target sample size was determined based on:
 
-1. **SEM requirements**: Minimum N = 200 for stable Maximum Likelihood estimation [@kline2016]
-2. **Factor analysis**: Minimum 10:1 subject-to-item ratio [@costello2005]
-3. **Multi-group analysis**: Minimum n = 100 per group [@hair2019]
-4. **Split-sample cross-validation**: N > 500 to enable 50/50 split with adequate subsamples
+1. SEM requirements: Minimum N = 200 for stable Maximum Likelihood estimation [@kline2016]
+2. Factor analysis: Minimum 10:1 subject-to-item ratio [@costello2005]
+3. Multi-group analysis: Minimum n = 100 per group [@hair2019]
+4. Split-sample cross-validation: N > 500 to enable 50/50 split with adequate subsamples
 
-**Achieved sample**: N = 523 (exceeds all requirements)
+Achieved sample: N = 523 (exceeded all requirements)
 
 ### 3.5.4 Role Classification
 
@@ -274,24 +274,24 @@ Leader & Managers (n=71), executives (n=52) & 123 & 23.5\% \\
 \end{table}
 ```
 
-**Note**: For multi-group SEM requiring larger group sizes, Professional and Leader categories were combined (n = 307) to contrast with the Student category (n = 216), designated as "Academic" for multi-group analysis. This grouping reflects meaningful theoretical distinctions between academic-focused and employment-focused roles.
+Note: For multi-group SEM requiring larger group sizes, Professional and Leader categories were combined (n = 307) to contrast with the Student category (n = 216), designated as "Academic" for multi-group analysis. This grouping reflects meaningful theoretical distinctions between academic-focused and employment-focused roles.
 
 ### 3.5.5 Data Collection Procedures
 
-**Platform**: Centiment online survey platform
+Platform: Centiment online survey platform
 
-**Collection Period**: October–November 2025 (3-week window)
+Collection Period: October–November 2025 (3-week window)
 
-**Self-Selection Mitigation Strategy**: Self-selection bias was mitigated through Centiment's platform-level recruitment design. According to Centiment's documented methodology, survey notifications to panel members display only the estimated completion time and compensation amount; the survey topic and subject matter are deliberately concealed "in order to avoid selection bias" [@centiment2024]. This platform-level blinding ensured that participants could not self-select based on AI interest when deciding whether to participate. Only after accessing the survey link did the informed consent form disclose the specific focus on AI tools, ensuring ethical transparency while maintaining recruitment neutrality. This two-stage approach (blinded recruitment followed by informed consent) attracts a broader cross-section of respondents rather than selectively recruiting those with pre-existing interest in AI topics.
+Self-Selection Mitigation Strategy: Self-selection bias was mitigated through Centiment's platform-level recruitment design. According to Centiment's documented methodology, survey notifications to panel members display only the estimated completion time and compensation amount; the survey topic and subject matter are deliberately concealed "in order to avoid selection bias" [@centiment2024]. This platform-level blinding ensured that participants could not self-select based on AI interest when deciding whether to participate. Only after accessing the survey link did the informed consent form disclose the specific focus on AI tools, ensuring ethical transparency while maintaining recruitment neutrality. This two-stage approach (blinded recruitment followed by informed consent) attracts a broader cross-section of respondents rather than selectively recruiting those with pre-existing interest in AI topics.
 
-**Procedures**:
+Procedures:
 
 1. Participants received blinded survey invitation (topic not disclosed per Centiment protocol)
 2. Informed consent obtained disclosing AI focus before data collection
 3. Survey completion time: approximately 10-15 minutes
 4. All responses anonymous; no personally identifiable information collected
 
-**Temporal Note**: The literature review (Chapter 2) incorporates industry reports published throughout 2025 to contextualize findings within the current AI adoption landscape. Some cited sources appeared during or shortly after the data collection window; the theoretical framework and hypotheses were specified before fieldwork began.
+Temporal Note: The literature review (Chapter 2) incorporates industry reports published throughout 2025 to contextualize findings within the current AI adoption landscape. Some cited sources appeared during or shortly after the data collection window; the theoretical framework and hypotheses were specified before fieldwork began.
 
 ### 3.5.6 Data Quality Assurance
 
@@ -318,7 +318,7 @@ Duplicate detection & Unique IP/device & Retain first response only \\
 \end{table}
 ```
 
-**Final valid sample**: N = 523 after quality screening
+Final valid sample: N = 523 after quality screening
 
 
 
@@ -423,35 +423,35 @@ flowchart TD
 
 : Split-Sample Cross-Validation Strategy showing random split of N=523 into development (n=261) and holdout (n=262) samples. *Source: Compiled by Author* {#fig:split-sample}
 
-**Stratification**: Split stratified by AI adoption status to ensure comparable samples
+Stratification: Split stratified by AI adoption status to ensure comparable samples
 
-**Reproducibility**: Random seed (67) documented for exact replication
+Reproducibility: Random seed (67) documented for exact replication
 
 ### 3.6.3 Exploratory Factor Analysis (EFA)
 
-**Purpose**: Identify underlying factor structure and reduce item pool
+Purpose: Identify underlying factor structure and reduce item pool
 
-**Sample**: Development subsample (n = 261)
+Sample: Development subsample (n = 261)
 
-**Extraction Method**: Minimum Residuals (MINRES)
+Extraction Method: Minimum Residuals (MINRES)
 
 - Minimizes off-diagonal residual correlations
 - Does not assume multivariate normality
 - Default method in R `psych` package; recommended for ordinal-like Likert data [@dewinter2009]
 
-**Rotation**: Promax (oblique)
+Rotation: Promax (oblique)
 
 - Allows correlated factors (theoretically appropriate)
 - Pattern matrix used for interpretation
 
-**Factor Retention Criteria**:
+Factor Retention Criteria:
 
 1. Kaiser criterion (eigenvalue > 1.0)
 2. Parallel analysis [@horn1965]
 3. Scree plot visual inspection
 4. Theoretical interpretability
 
-**Item Retention Criteria**:
+Item Retention Criteria:
 
 | Criterion | Threshold | Rationale |
 | --- | --- | --- |
@@ -478,22 +478,22 @@ Communality & $h^2 \geq .30$ & Adequate shared variance \\
 \end{table}
 ```
 
-**Software**: R `psych` package (v2.5.6) with `GPArotation` for oblique rotation
+Software: R `psych` package (v2.5.6) with `GPArotation` for oblique rotation
 
 ### 3.6.4 Confirmatory Factor Analysis (CFA)
 
-**Purpose**: Validate factor structure on independent sample
+Purpose: Validate factor structure on independent sample
 
-**Sample**: Holdout subsample (n = 262)
+Sample: Holdout subsample (n = 262)
 
-**Estimation Method**: Maximum Likelihood (ML)
+Estimation Method: Maximum Likelihood (ML)
 
 - Standard for continuous indicators
 - Provides χ² test and fit indices
 
-**Model Specification**: 8-factor correlated model with 16 observed indicators (2 per factor)
+Model Specification: 8-factor correlated model with 16 observed indicators (2 per factor)
 
-**Fit Index Thresholds**:
+Fit Index Thresholds:
 
 ```{=latex}
 \begin{table}[H]
@@ -516,13 +516,13 @@ SRMR & $\leq$ .10 & $\leq$ .08 & $\leq$ .05 \\
 \end{table}
 ```
 
-**Software**: Python `semopy` package (v2.3.10) for development-phase analysis; R `lavaan` package (v0.6.21) for authoritative fit indices (see §3.6.10)
+Software: Python `semopy` package (v2.3.10) for development-phase analysis; R `lavaan` package (v0.6.21) for authoritative fit indices (see §3.6.10)
 
 ### 3.6.5 Measurement Invariance Testing
 
-**Purpose**: Establish construct comparability across role groups for valid multi-group comparison
+Purpose: Establish construct comparability across role groups for valid multi-group comparison
 
-**Levels Tested**:
+Levels Tested:
 
 ```{=latex}
 \begin{table}[H]
@@ -543,21 +543,21 @@ Scalar & Equal intercepts & Mean comparability \\
 \end{table}
 ```
 
-**Criteria for Invariance** [@chen2007]:
+Criteria for Invariance [@chen2007]:
 
 - ΔCFI < .010
 - ΔRMSEA < .015
 - Δχ² non-significant (supplementary)
 
-**Groups**: Academic (n = 216) vs. Professional+Leader (n = 307)
+Groups: Academic (n = 216) vs. Professional+Leader (n = 307)
 
 ### 3.6.6 Structural Equation Modeling (SEM)
 
-**Purpose**: Test hypothesized relationships between latent constructs
+Purpose: Test hypothesized relationships between latent constructs
 
-**Sample**: Full sample (N = 523). Following CFA validation on the independent holdout subsample (n = 262), structural modeling uses the complete dataset to maximize statistical power for path estimation. This is standard practice when the measurement model has been confirmed on a separate sample [@kline2016].
+Sample: Full sample (N = 523). Following CFA validation on the independent holdout subsample (n = 262), structural modeling used the complete dataset to maximize statistical power for path estimation. This was standard practice when the measurement model had been confirmed on a separate sample [@kline2016].
 
-**Model**:
+Model:
 
 ```mermaid
 %%{init: {'theme': 'base', 'themeVariables': {'edgeLabelBackground': '#ffffff'}}}%%
@@ -600,16 +600,16 @@ flowchart LR
 
 *Note: AI Anxiety was initially proposed but excluded due to inadequate reliability (α = .301).*
 
-**Estimation**: Maximum Likelihood with robust standard errors
+Estimation: Maximum Likelihood with robust standard errors
 
-**Multi-Group Analysis**: Separate models for Academic and Professional+Leader groups
+Multi-Group Analysis: Separate models for Academic and Professional+Leader groups
 
-**Moderation Testing**:
+Moderation Testing:
 
 - Experience × UTAUT interactions via latent interaction terms
 - Role moderation via multi-group path comparison (Δχ² tests)
 
-**Effect Size Interpretation** [@cohen1988]:
+Effect Size Interpretation [@cohen1988]:
 
 ```{=latex}
 \begin{table}[H]
@@ -633,35 +633,35 @@ $\geq$ .50 & Large \\
 
 ### 3.6.7 Mediation Analysis
 
-**Purpose**: Examine indirect pathways through the model
+Purpose: Examine indirect pathways through the model
 
-**Method**: Bootstrap estimation (1,000 resamples) for indirect effect confidence intervals
+Method: Bootstrap estimation (1,000 resamples) for indirect effect confidence intervals
 
-**Significance**: 95% CI excluding zero
+Significance: 95% CI excluding zero
 
 ### 3.6.8 Cluster Analysis
 
-**Purpose**: Identify distinct user typologies based on UTAUT profile patterns
+Purpose: Identify distinct user typologies based on UTAUT profile patterns
 
-**Method**: K-means clustering
+Method: K-means clustering
 
-**Variables**: Standardized scores on 8 AIRS constructs
+Variables: Standardized scores on 8 AIRS constructs
 
-**Cluster Selection**:
+Cluster Selection:
 
 - Elbow method
 - Silhouette analysis
 - Theoretical interpretability
 
-**Optimal Solution**: k = 3 clusters (supported by silhouette analysis and theoretical interpretability)
+Optimal Solution: k = 3 clusters (supported by silhouette analysis and theoretical interpretability)
 
 ### 3.6.9 Qualitative Analysis
 
-**Purpose**: Provide contextual depth and identify emergent themes
+Purpose: Provide contextual depth and identify emergent themes
 
-**Data**: Open-ended survey responses (n = 243 substantive responses, 46.5% response rate)
+Data: Open-ended survey responses (n = 243 substantive responses, 46.5% response rate)
 
-**Method**: Automated content analysis with keyword classification
+Method: Automated content analysis with keyword classification
 
 1. Familiarization with data
 2. Keyword-based coding using predefined dictionaries aligned with UTAUT2 constructs
@@ -671,7 +671,7 @@ $\geq$ .50 & Large \\
 
 *Note*: This approach uses deterministic keyword matching rather than the iterative interpretive coding of Braun and Clarke's [-@braun2006] thematic analysis. It is better characterized as automated content analysis.
 
-**Themes Identified**: 10 distinct themes (see Chapter 4)
+Themes Identified: 10 distinct themes (see Chapter 4)
 
 ### 3.6.10 Statistical Software
 
@@ -705,9 +705,9 @@ Python & matplotlib / seaborn & 3.8.0 / 0.13.0 & Visualization \\
 \end{table}
 ```
 
-**Environment**: Python virtual environment and R 4.5.2 executed in VS Code; R scripts serve as the authoritative analysis pipeline
+Environment: Python virtual environment and R 4.5.2 executed in VS Code; R scripts served as the authoritative analysis pipeline
 
-**Reproducibility**: All random operations use documented seeds (e.g., seed = 67 for sample split); complete analysis pipeline available in GitHub repository
+Reproducibility: All random operations used documented seeds (e.g., seed = 67 for sample split); complete analysis pipeline available in GitHub repository
 
 
 
@@ -715,12 +715,12 @@ Python & matplotlib / seaborn & 3.8.0 / 0.13.0 & Visualization \\
 
 ### 3.7.1 Internal Consistency Reliability
 
-**Measures**:
+Measures:
 
-- **Cronbach's Alpha (α)**: Classical reliability coefficient
-- **Composite Reliability (CR)**: SEM-based reliability accounting for differential loadings
+- Cronbach's Alpha (α): Classical reliability coefficient
+- Composite Reliability (CR): SEM-based reliability accounting for differential loadings
 
-**Thresholds**:
+Thresholds:
 
 ```{=latex}
 \begin{table}[H]
@@ -742,37 +742,37 @@ Composite Reliability & .70 & .80 \\
 
 ### 3.7.2 Convergent Validity
 
-**Definition**: Extent to which indicators of a construct share variance
+Definition: Extent to which indicators of a construct share variance
 
-**Assessment**:
+Assessment:
 
-1. **Factor loadings**: All standardized loadings ≥ .70
-2. **Average Variance Extracted (AVE)**: Proportion of variance captured by construct
+1. Factor loadings: All standardized loadings ≥ .70
+2. Average Variance Extracted (AVE): Proportion of variance captured by construct
 
-**Threshold**: AVE ≥ .50 [@fornell1981]
+Threshold: AVE ≥ .50 [@fornell1981]
 
 ### 3.7.3 Discriminant Validity
 
-**Definition**: Extent to which constructs are distinct from one another
+Definition: Extent to which constructs are distinct from one another
 
-**Assessment Methods**:
+Assessment Methods:
 
-1. **Fornell-Larcker Criterion**: √AVE > inter-construct correlations
-2. **Heterotrait-Monotrait Ratio (HTMT)**: HTMT < .85 [@henseler2015]
-3. **Maximum correlation**: |r| < .85 between any construct pair
+1. Fornell-Larcker Criterion: √AVE > inter-construct correlations
+2. Heterotrait-Monotrait Ratio (HTMT): HTMT < .85 [@henseler2015]
+3. Maximum correlation: |r| < .85 between any construct pair
 
-**Known Limitations**: Three construct pairs exhibit high inter-factor correlations that violate the Fornell-Larcker criterion: Performance Expectancy × Price Value (r = .898), Performance Expectancy × Hedonic Motivation (r = .911), and Hedonic Motivation × Price Value (r = .898). HTMT analysis confirms these overlaps: PE × PV (HTMT = .902), PE × HM (HTMT = .900), and HM × PV (HTMT = .904) all exceed the .85 threshold. These overlaps are consistent with UTAUT2 literature, where motivational constructs often share substantial variance in technology acceptance contexts [@venkatesh2012consumer]. All remaining pairwise comparisons pass all discriminant criteria. Several mitigating factors support retaining the eight-factor structure:
+Known Limitations: Three construct pairs exhibited high inter-factor correlations that violated the Fornell-Larcker criterion: Performance Expectancy × Price Value (r = .898), Performance Expectancy × Hedonic Motivation (r = .911), and Hedonic Motivation × Price Value (r = .898). HTMT analysis confirms these overlaps: PE × PV (HTMT = .902), PE × HM (HTMT = .900), and HM × PV (HTMT = .904) all exceed the .85 threshold. These overlaps are consistent with UTAUT2 literature, where motivational constructs often share substantial variance in technology acceptance contexts [@venkatesh2012consumer]. All remaining pairwise comparisons pass all discriminant criteria. Several mitigating factors support retaining the eight-factor structure:
 
-1. **HTMT ratios** are computed as a supplementary check; HTMT is considered more robust than Fornell-Larcker for detecting discriminant problems [@henseler2015]
-2. **Model fit** remains excellent (CFI = .975, TLI = .960, RMSEA = .065, SRMR = .026 on holdout; CFI = .979, TLI = .966, RMSEA = .061, SRMR = .022 on full sample), indicating the eight-factor model reproduces the data well
-3. **Theoretical distinctiveness**: PE captures utilitarian performance expectations, HM reflects intrinsic enjoyment, and PV represents cost-benefit appraisal, conceptually distinct constructs despite empirical overlap
+1. HTMT ratios were computed as a supplementary check; HTMT is considered more robust than Fornell-Larcker for detecting discriminant problems [@henseler2015]
+2. Model fit remained excellent (CFI = .975, TLI = .960, RMSEA = .065, SRMR = .026 on holdout; CFI = .979, TLI = .966, RMSEA = .061, SRMR = .022 on full sample), indicating the eight-factor model reproduces the data well
+3. Theoretical distinctiveness: PE captures utilitarian performance expectations, HM reflects intrinsic enjoyment, and PV represents cost-benefit appraisal, conceptually distinct constructs despite empirical overlap
 4. Future studies with larger item pools could strengthen discriminant separation among these three constructs
 
 ### 3.7.4 Criterion Validity
 
-**Predictive Validity**: AIRS constructs predict actual tool usage behavior (ρ = .69 for BI × tool breadth)
+Predictive Validity: AIRS constructs predicted actual tool usage behavior (ρ = .69 for BI × tool breadth)
 
-**Known-Groups Validity**: Constructs differentiate between theoretically-distinct groups (e.g., Leaders vs. Academics)
+Known-Groups Validity: Constructs differentiated between theoretically-distinct groups (e.g., Leaders vs. Academics)
 
 
 
@@ -800,13 +800,13 @@ Consent was obtained electronically before survey access. Participants could not
 
 ### 3.8.3 Anonymity and Confidentiality
 
-**Anonymity**: No personally identifiable information collected
+Anonymity: No personally identifiable information collected
 
 - No names, emails, or employee IDs
 - IP addresses not recorded
 - Demographic data collected at categorical level only
 
-**Confidentiality**:
+Confidentiality:
 
 - Data stored on encrypted, password-protected systems
 - Access limited to research team
@@ -814,7 +814,7 @@ Consent was obtained electronically before survey access. Participants could not
 
 ### 3.8.4 Data Protection
 
-The study complies with:
+The study complied with:
 
 - IRB approval requirements
 - Institutional data governance policies
@@ -822,7 +822,7 @@ The study complies with:
 
 ### 3.8.5 Participant Welfare
 
-The survey addressed non-sensitive topics related to technology use attitudes. No anticipated risks to participant welfare. Contact information provided for questions or concerns.
+The survey addressed non-sensitive topics related to technology use attitudes. No anticipated risks to participant welfare were identified. Contact information was provided for questions or concerns.
 
 
 
@@ -830,61 +830,61 @@ The survey addressed non-sensitive topics related to technology use attitudes. N
 
 ### 3.9.1 Design Limitations
 
-1. **Cross-sectional design**: Precludes causal inference; relationships may be correlational rather than causal. Future longitudinal studies needed to establish temporal precedence.
+1. Cross-sectional design: Precludes causal inference; relationships may be correlational rather than causal. Future longitudinal studies needed to establish temporal precedence.
 
-2. **Self-reported measures**: Behavioral Intention is a proxy for actual behavior. While BI strongly predicts behavior in UTAUT studies, some intention-behavior gap is expected.
+2. Self-reported measures: Behavioral Intention is a proxy for actual behavior. While BI strongly predicts behavior in UTAUT studies, some intention-behavior gap is expected.
 
-3. **Single time point**: Attitudes and technology contexts change rapidly; findings reflect an October–November 2025 snapshot.
+3. Single time point: Attitudes and technology contexts change rapidly; findings reflect an October–November 2025 snapshot.
 
 ### 3.9.2 Sampling Limitations
 
-1. **Panel sampling**: While Centiment's verified respondent panels provide quality controls and topic-blinded recruitment, panel sampling remains non-probability sampling that limits generalizability to broader populations. Results may not generalize beyond similar United States professional and academic contexts.
+1. Panel sampling: While Centiment's verified respondent panels provide quality controls and topic-blinded recruitment, panel sampling remains non-probability sampling that limits generalizability to broader populations. Results may not generalize beyond similar United States professional and academic contexts.
 
-2. **Single country**: While diverse roles represented, findings are limited to U.S. respondents and may not transfer to other cultural contexts.
+2. Single country: While diverse roles represented, findings are limited to U.S. respondents and may not transfer to other cultural contexts.
 
-3. **Self-selection bias**: Self-selection was substantially mitigated through Centiment's platform-level recruitment design, which conceals survey topics from participants until after they access the survey link (see Section 3.5.5). However, some residual self-selection may occur as participants could withdraw after the informed consent disclosure revealed the AI focus, though withdrawal rates were minimal.
+3. Self-selection bias: Self-selection was substantially mitigated through Centiment's platform-level recruitment design, which conceals survey topics from participants until after they access the survey link (see Section 3.5.5). However, some residual self-selection may occur as participants could withdraw after the informed consent disclosure revealed the AI focus, though withdrawal rates were minimal.
 
 ### 3.9.3 Measurement Limitations
 
-1. **English language only**: Non-English speakers excluded; cross-cultural validity not established.
+1. English language only: Non-English speakers excluded; cross-cultural validity not established.
 
-2. **Two items per construct**: While meeting minimum identification requirements for SEM, more indicators would improve reliability and content coverage.
+2. Two items per construct: While meeting minimum identification requirements for SEM, more indicators would improve reliability and content coverage.
 
-3. **Adapted scales**: Items adapted from existing instruments; some original validation evidence may not transfer perfectly.
+3. Adapted scales: Items adapted from existing instruments; some original validation evidence may not transfer perfectly.
 
 ### 3.9.4 Analytical Limitations
 
-1. **Normality assumptions**: ML estimation assumes multivariate normality; some departures may affect standard errors (though robust methods used where possible).
+1. Normality assumptions: ML estimation assumes multivariate normality; some departures may affect standard errors (though robust methods used where possible).
 
-2. **Common method variance**: Single-source, single-time data collection may inflate correlations. Harman's single-factor test conducted as diagnostic.
+2. Common method variance: Single-source, single-time data collection may inflate correlations. Harman's single-factor test conducted as diagnostic.
 
-3. **Model complexity**: Eight-factor model with limited items requires careful balance between fit and parsimony.
+3. Model complexity: Eight-factor model with limited items requires careful balance between fit and parsimony.
 
 
 
 ## 3.10 Chapter Summary
 
-This chapter has described the research methodology for developing and validating the AI Readiness Scale (AIRS) and testing the extended UTAUT model for AI tool adoption. Key methodological features include:
+This chapter has described the research methodology for developing and validating the AI Readiness Scale (AIRS) and testing the extended UTAUT model for AI tool adoption. Key methodological features included:
 
-**Research Design**:
+Research Design:
 
 - Post-positivist philosophy with mixed methods approach
 - Cross-sectional survey with qualitative supplementation
 - United States professionals and academics context
 
-**Instrument**:
+Instrument:
 
 - 28 initial items across 12 constructs
 - Final validated instrument: 16 items across 8 factors
 - 5-point Likert scale measurement
 
-**Sample**:
+Sample:
 
 - N = 523 United States adults
 - Two population groups: Academics (216), Professionals (307)
 - 50/50 split for cross-validation (EFA n = 261, CFA n = 262)
 
-**Analysis**:
+Analysis:
 
 - 10-phase systematic pipeline
 - EFA for structure exploration, CFA for validation
@@ -892,10 +892,10 @@ This chapter has described the research methodology for developing and validatin
 - Cluster analysis for user typology
 - Automated content analysis for qualitative insights
 
-**Validity**:
+Validity:
 
 - Comprehensive reliability and validity assessment
 - Measurement invariance across role groups
 - Criterion validity through behavioral correlates
 
-The methodology provides a rigorous foundation for the empirical findings presented in Chapter 4, while acknowledging limitations inherent in cross-sectional survey research.
+The methodology provided a rigorous foundation for the empirical findings presented in Chapter 4, while acknowledging limitations inherent in cross-sectional survey research.

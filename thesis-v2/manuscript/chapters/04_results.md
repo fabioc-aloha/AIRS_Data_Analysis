@@ -14,7 +14,7 @@ This section provides a summary of all research questions examined in this disse
 
 ### 4.2.1 Primary Research Question
 
-**RQ: How can UTAUT2 be extended with AI-specific constructs to better predict behavioral intention to adopt AI tools in professional and academic contexts?**
+RQ: How can UTAUT2 be extended with AI-specific constructs to better predict behavioral intention to adopt AI tools in professional and academic contexts?
 
 ```{=latex}
 \begin{table}[H]
@@ -58,7 +58,7 @@ RQ5 & What moderating factors influence predictor-intention relationships? & Exp
 
 ## 4.3 Description of the Sample
 
-The sample comprises N=523 United States adults with representation from both academic and professional contexts. Table 4.2 presents the demographic composition.
+The sample comprised N=523 United States adults with representation from both academic and professional contexts. Table 4.2 presents the demographic composition.
 
 ### 4.3.1 Population Composition
 
@@ -82,11 +82,11 @@ Professionals & 307 & 58.7\% & Individual contributors (n=112), Managers (n=71),
 
 ### 4.3.2 Sample Split for Validation
 
-For psychometric validation, the sample was randomly split (seed=67) into development (n=261, 50%) and holdout (n=262, 50%) subsamples. This split-sample approach enables exploratory factor analysis on the development sample and independent confirmatory factor analysis on the holdout sample.
+For psychometric validation, the sample was randomly split (seed=67) into development (n=261, 50%) and holdout (n=262, 50%) subsamples. This split-sample approach enabled exploratory factor analysis on the development sample and independent confirmatory factor analysis on the holdout sample.
 
 ### 4.3.3 Disability Status
 
-Participants with disabilities comprised 13.0% of the sample (n=68), with 11 participants selecting "Prefer not to answer." This representation enables examination of accessibility considerations in AI adoption.
+Participants with disabilities comprised 13.0% of the sample (n=68), with 11 participants selecting "Prefer not to answer." This representation enabled examination of accessibility considerations in AI adoption.
 
 ## 4.4 Data Screening and Preparation
 
@@ -94,9 +94,9 @@ Participants with disabilities comprised 13.0% of the sample (n=68), with 11 par
 
 Data screening confirmed the suitability of the dataset for factor analytic procedures:
 
-- **Missing Data**: Complete case analysis with no missing values on key UTAUT constructs
-- **Outliers**: Mahalanobis distance identified 0 multivariate outliers at p < .001
-- **Normality**: Mardia's test indicated multivariate non-normality; robust estimation (MLM) was employed
+- Missing Data: Complete case analysis with no missing values on key UTAUT constructs
+- Outliers: Mahalanobis distance identified 0 multivariate outliers at p < .001
+- Normality: Mardia's test indicated multivariate non-normality; robust estimation (MLM) was employed
 
 ### 4.4.2 Factorability Assessment
 
@@ -134,7 +134,7 @@ D & 8 & 16 & .975 & .960 & .065 & .026 & \textbf{Selected} \\
 \end{table}
 ```
 
-**Model D** was selected as the final measurement model based on optimal balance of parsimony and fit, with all items demonstrating factor loadings ≥ .50 and no substantive cross-loadings (< .32). Figure 4.1 presents the scree plot supporting this factor structure.
+Model D was selected as the final measurement model based on optimal balance of parsimony and fit, with all items demonstrating factor loadings ≥ .50 and no substantive cross-loadings (< .32). Figure 4.1 presents the scree plot supporting this factor structure.
 
 ![Scree plot showing eigenvalue decline across factors. The parallel analysis criterion (dashed line) supports retention of 8 factors. *Source: Compiled by Author*](figures/fig_efa_scree.png){#fig:scree-plot}
 
@@ -162,15 +162,15 @@ AI Anxiety (AX) & .301 & Dropped & Items measured avoidance vs. approach anxiety
 \end{table}
 ```
 
-**Interpretation**: The proposed two-item scales for these AI-specific constructs proved insufficient to capture multi-faceted phenomena. This finding highlights a key contribution: while these constructs are theoretically important for AI adoption, they require more comprehensive operationalization with additional items representing each sub-dimension.
+Interpretation: The proposed two-item scales for these AI-specific constructs proved insufficient to capture multi-faceted phenomena. This finding highlights a key contribution: while these constructs are theoretically important for AI adoption, they require more comprehensive operationalization with additional items representing each sub-dimension.
 
-**Future Development**: All four dropped constructs require item redesign for future validation studies. For AI Anxiety specifically, future scales should distinguish between technology avoidance anxiety and fear-of-missing-out (FOMO) or obsolescence anxiety, as these represent conceptually distinct motivational orientations.
+Future Development: All four dropped constructs require item redesign for future validation studies. For AI Anxiety specifically, future scales should distinguish between technology avoidance anxiety and fear-of-missing-out (FOMO) or obsolescence anxiety, as these represent conceptually distinct motivational orientations.
 
 #### Final Factor Structure
 
 The validated measurement model comprises 8 predictor factors (16 items) plus Behavioral Intention as the outcome variable (4 items):
 
-**Predictor Factors (8 factors, 16 items)**:
+Predictor Factors (8 factors, 16 items):
 
 The final measurement model comprises 7 UTAUT2 constructs plus the AI Trust extension:
 
@@ -199,7 +199,7 @@ AI Trust (TR) & TR1, TR2 & Trust in AI systems & .891 & .891 & .804 \\
 \end{table}
 ```
 
-*Note: BI (Behavioral Intention) serves as the outcome variable and is modeled separately in the structural model.*
+*Note: BI (Behavioral Intention) served as the outcome variable and was modeled separately in the structural model.*
 
 ### 4.5.2 Confirmatory Factor Analysis (Holdout Sample)
 
@@ -304,7 +304,7 @@ Professional & 135.88 & 76 & .988 & .981 & .051 & Excellent fit \\
 \end{table}
 ```
 
-**Configural invariance** was supported: the same factor structure held across both groups. **Metric invariance** was not fully achieved (mean loading difference = .082, max = .326), indicating some factor loadings differ across groups. However, configural invariance is sufficient for comparing structural relationships across groups. The maximum factor loading difference (Δλ = .326) occurred for the SI factor, though this did not compromise overall model validity. Figure 4.5 illustrates the loading differences across groups.
+Configural invariance was supported: the same factor structure held across both groups. Metric invariance was not fully achieved (mean loading difference = .082, max = .326), indicating some factor loadings differed across groups. However, configural invariance was sufficient for comparing structural relationships across groups. The maximum factor loading difference (Δλ = .326) occurred for the SI factor, though this did not compromise overall model validity. Figure 4.5 illustrates the loading differences across groups.
 
 ![Factor loading comparison across Academic and Professional groups. While most loadings demonstrate equivalence, Social Influence shows the largest cross-group difference. *Source: Compiled by Author*](figures/fig_invariance_loadings.png){#fig:invariance-loadings}
 
@@ -388,9 +388,9 @@ H2 & TR $\rightarrow$ BI & + & .106 & .064 & [--.006, .218] & [--.096, .248] & M
 \end{table}
 ```
 
-**UTAUT2 Summary**: 3 of 7 UTAUT2 hypotheses supported by z-test. Price Value emerged as dominant predictor, departing from traditional UTAUT findings where Performance Expectancy typically dominates. Bootstrap validation confirmed only Price Value as robust; Social Influence and Hedonic Motivation are z-test significant but bootstrap-unstable (see below).
+UTAUT2 Summary: 3 of 7 UTAUT2 hypotheses were supported by z-test. Price Value emerged as dominant predictor, departing from traditional UTAUT findings where Performance Expectancy typically dominates. Bootstrap validation confirmed only Price Value as robust; Social Influence and Hedonic Motivation are z-test significant but bootstrap-unstable (see below).
 
-**AI Trust Interpretation**: AI Trust approached but did not reach conventional significance (p = .064). However, the 8-factor model including AI Trust was retained as the recommended diagnostic instrument because: (1) Trust provides essential diagnostic capability for organizational assessment, (2) Organizations can identify trust deficits and design targeted interventions, and (3) The marginal effect suggests theoretical relevance warranting further investigation with larger samples. Detecting an effect of β = .106 at 80% power requires n > 600; the present sample (N = 523) yields approximately 68% power, leaving a 32% Type II error risk.
+AI Trust Interpretation: AI Trust approached but did not reach conventional significance (p = .064). However, the 8-factor model including AI Trust was retained as the recommended diagnostic instrument because: (1) Trust provided essential diagnostic capability for organizational assessment, (2) Organizations could identify trust deficits and design targeted interventions, and (3) The marginal effect suggested theoretical relevance warranting further investigation with larger samples. Detecting an effect of β = .106 at 80% power requires n > 600; the present sample (N = 523) yields approximately 68% power, leaving a 32% Type II error risk.
 
 #### Bootstrap Validation
 
@@ -419,15 +419,15 @@ Source: R/lavaan 0.6.21, Compiled by Author
 \end{table}
 ```
 
-The bootstrap results indicate that **only Price Value demonstrates robust significance** across both inferential methods. Hedonic Motivation and Social Influence are z-test significant but bootstrap-unstable, suggesting their structural effects may be sensitive to sample composition. These constructs nonetheless retain diagnostic value within the AIRS instrument: HM demonstrates differential population sensitivity (Academic β = 0.449 vs Professional β = −0.301, p = .041), and SI captures peer influence dynamics relevant to organizational intervention design.
+The bootstrap results indicated that only Price Value demonstrated robust significance across both inferential methods. Hedonic Motivation and Social Influence were z-test significant but bootstrap-unstable, suggesting their structural effects may be sensitive to sample composition. These constructs nonetheless retained diagnostic value within the AIRS instrument: HM demonstrated differential population sensitivity (Academic β = 0.449 vs Professional β = −0.301, p = .041), and SI captured peer influence dynamics relevant to organizational intervention design.
 
-**Key Findings:**
+Key Findings:
 
-- **Price Value** emerged as the strongest predictor (β = .505, p < .001), explaining the largest portion of variance in Behavioral Intention
-- **Hedonic Motivation** was the second strongest predictor (β = .217, p = .014)
-- **Social Influence** was a significant positive predictor (β = .136, p = .024)
-- **AI Trust** approached but did not reach significance (β = .106, p = .064)
-- **Performance Expectancy**, **Effort Expectancy**, **Facilitating Conditions**, and **Habit** were not significant predictors
+- Price Value emerged as the strongest predictor (β = .505, p < .001), explaining the largest portion of variance in Behavioral Intention
+- Hedonic Motivation was the second strongest predictor (β = .217, p = .014)
+- Social Influence was a significant positive predictor (β = .136, p = .024)
+- AI Trust approached but did not reach significance (β = .106, p = .064)
+- Performance Expectancy, Effort Expectancy, Facilitating Conditions, and Habit were not significant predictors
 - Traditional UTAUT predictors showed unexpectedly weak effects, suggesting AI may represent a distinct technology category
 
 Figure 4.6 summarizes the hypothesis test results for the structural model.
@@ -480,9 +480,9 @@ Experience & TR$\times$Exp & 0.081 & .145 & Not significant \\
 \end{table}
 ```
 
-**Interpretation:**
+Interpretation:
 
-- **Experience moderates HM -> BI** (β = .136, p = .007): Experienced professionals (4+ years) weight hedonic motivation more heavily
+- Experience moderates HM -> BI (β = .136, p = .007): Experienced professionals (4+ years) weighted hedonic motivation more heavily
 - Usage-dependent mechanisms: Performance Expectancy matters for new users; Price Value for heavy users
 - Habit is marginally moderated by usage frequency (p = .065)
 
@@ -518,9 +518,9 @@ TR $\rightarrow$ BI & --0.011 & 0.153 & 0.164 & No \\
 \end{table}
 ```
 
-**H3 Result: [!] Partially Supported** – Experience significantly moderates the HM -> BI path (p = .007). Professionals with 4+ years of experience weight hedonic motivation more heavily in AI adoption decisions.
+H3 Result: Partially Supported – Experience significantly moderated the HM -> BI path (p = .007). Professionals with 4+ years of experience weighted hedonic motivation more heavily in AI adoption decisions.
 
-**H4 Result: [!] Partially Supported** – Population significantly moderates HM -> BI (p = .041). Hedonic Motivation is substantially stronger for Academics (β = 0.449) than Professionals (β = -0.301), indicating that enjoyment of AI tools is more important for academic adoption than professional adoption. All other paths showed no significant population differences. Figure 4.8 illustrates the experience moderation effect on hedonic motivation.
+H4 Result: Partially Supported – Population significantly moderated HM -> BI (p = .041). Hedonic Motivation was substantially stronger for Academics (β = 0.449) than Professionals (β = -0.301), indicating that enjoyment of AI tools was more important for academic adoption than professional adoption. All other paths showed no significant population differences. Figure 4.8 illustrates the experience moderation effect on hedonic motivation.
 
 ![Experience moderation of the Hedonic Motivation -> Behavioral Intention path. The effect of HM on BI is stronger for professionals with 4+ years of experience. *Source: Compiled by Author*](figures/fig_experience_moderation.png){#fig:experience-moderation}
 
@@ -546,9 +546,9 @@ AIRS (Extended) & PE, EE, SI, FC, HM, PV, HB, TR & 150.59 & 201.87 & Not preferr
 \end{table}
 ```
 
-**Result**: Although AI Trust showed a marginal effect (β = .106, p = .064), the AIRS model has *higher* AIC (150.59) than UTAUT2-only (148.58), meaning the simpler model is preferred (ΔAIC = +2.01). Lower AIC indicates better parsimony.
+Result: Although AI Trust showed a marginal effect (β = .106, p = .064), the AIRS model had *higher* AIC (150.59) than UTAUT2-only (148.58), meaning the simpler model was preferred (ΔAIC = +2.01). Lower AIC indicates better parsimony.
 
-**Interpretation**: This incremental validity test evaluates **predictive parsimony** only. AI Trust may still have **diagnostic value** for identifying trust-related barriers to AI adoption, even if it doesn't improve overall model fit. The marginal significance of AI Trust (p = .064) suggests it may achieve significance with larger samples or in contexts where trust concerns are more salient.
+Interpretation: This incremental validity test evaluated predictive parsimony only. AI Trust may still have diagnostic value for identifying trust-related barriers to AI adoption, even if it did not improve overall model fit. The marginal significance of AI Trust (p = .064) suggested it may achieve significance with larger samples or in contexts where trust concerns are more salient.
 
 ### 4.6.5 Variance Explained
 
@@ -572,7 +572,7 @@ UTAUT2 + AI Trust (8 predictors) & .897 & 89.7\% variance explained \\
 \end{table}
 ```
 
-Both models demonstrate exceptionally high R² values, indicating that the UTAUT2 framework captures the vast majority of systematic variance in intention to use AI tools. While the UTAUT2-only model achieves marginally higher R², the 8-factor model including AI Trust is recommended as the diagnostic instrument because the trust construct enables practical intervention design: organizations can identify trust deficits and implement targeted confidence-building strategies, a capability essential for translating research into organizational practice.
+Both models demonstrated exceptionally high R² values, indicating that the UTAUT2 framework captured the vast majority of systematic variance in intention to use AI tools. While the UTAUT2-only model achieved marginally higher R², the 8-factor model including AI Trust was recommended as the diagnostic instrument because the trust construct enabled practical intervention design: organizations could identify trust deficits and implement targeted confidence-building strategies, a capability essential for translating research into organizational practice.
 
 
 
@@ -580,9 +580,9 @@ Both models demonstrate exceptionally high R² values, indicating that the UTAUT
 
 #### Mediation Hypotheses
 
-**Design Note**: The originally hypothesized mediation paths (EX -> TR -> BI, ER -> TR -> BI) were **not testable** because Explainability (EX), Ethical Risk (ER), and Anxiety (AX) were excluded from the final model due to inadequate item reliability identified in Phase 1 (α = .301–.582).
+Design Note: The originally hypothesized mediation paths (EX -> TR -> BI, ER -> TR -> BI) were not testable because Explainability (EX), Ethical Risk (ER), and Anxiety (AX) were excluded from the final model due to inadequate item reliability identified in Phase 1 (α = .301–.582).
 
-**Exploratory Mediation Analysis**: Bootstrap mediation testing explored whether AI Trust mediates the effect of Effort Expectancy on Behavioral Intention:
+Exploratory Mediation Analysis: Bootstrap mediation testing explored whether AI Trust mediates the effect of Effort Expectancy on Behavioral Intention:
 
 ```{=latex}
 \begin{table}[H]
@@ -601,7 +601,7 @@ EE $\rightarrow$ TR $\rightarrow$ BI & 0.232 & [--.023, .474] & > .05 & Not Sign
 \end{table}
 ```
 
-The confidence interval includes zero, indicating no significant mediation. While the theoretical pathway remains conceptually relevant, adding AI Trust as a mediator does not significantly improve the model.
+The confidence interval included zero, indicating no significant mediation. While the theoretical pathway remained conceptually relevant, adding AI Trust as a mediator did not significantly improve the model.
 
 ### 4.6.7 Behavioral Validation Hypotheses (H5–H6)
 
@@ -632,7 +632,7 @@ Other AI Tools & 1.93 & 53.3 & 30.0 & 0.78 \\
 \end{table}
 ```
 
-**Leadership Dominance:** Leaders demonstrated significantly higher usage across ALL tool categories (d = 0.74–1.14), with the largest effect for Microsoft Copilot.
+Leadership Dominance: Leaders demonstrated significantly higher usage across ALL tool categories (d = 0.74–1.14), with the largest effect for Microsoft Copilot.
 
 #### Tool Usage and Behavioral Intention (H5)
 
@@ -658,7 +658,7 @@ Gemini Usage $\times$ BI & .52 & <.001 & Moderate positive \\
 \end{table}
 ```
 
-**H5 Result: [OK] Supported** – Higher behavioral intention is strongly associated with more frequent AI tool usage.
+H5 Result: Supported – Higher behavioral intention was strongly associated with more frequent AI tool usage.
 
 #### Role Differences in Tool Usage (H6)
 
@@ -683,7 +683,7 @@ Usage Intensity & 15.87 & <.001 & .058 & L > P > A \\
 \end{table}
 ```
 
-**H6 Result: [OK] Supported** – Leaders demonstrate significantly higher tool usage than Professionals, who in turn exceed Academics.
+H6 Result: Supported – Leaders demonstrated significantly higher tool usage than Professionals, who in turn exceeded Academics.
 
 #### Industry Experience Effect
 
@@ -708,7 +708,7 @@ Anxiety & --.12 & .104 \\
 \end{table}
 ```
 
-Industry experience showed weak, non-significant relationships with UTAUT constructs, suggesting organizational role rather than industry tenure drives AI readiness differences.
+Industry experience showed weak, non-significant relationships with UTAUT constructs, suggesting organizational role rather than industry tenure drove AI readiness differences.
 
 
 
@@ -764,7 +764,7 @@ BI & 3.01 & 3.23 & --1.54 & .124 & 0.20 \\
 \end{table}
 ```
 
-**Key Finding:** Individuals with disabilities reported significantly higher AI-related anxiety (d = 0.36, p = .006), highlighting the importance of accessible and inclusive AI implementation strategies.
+Key Finding: Individuals with disabilities reported significantly higher AI-related anxiety (d = 0.36, p = .006), highlighting the importance of accessible and inclusive AI implementation strategies.
 
 #### Qualitative Findings
 
@@ -889,26 +889,26 @@ Source: Compiled by Author
 
 ### 4.7.3 Key Contributions
 
-1. **Price Value Dominance:** PV is the overwhelming driver of AI adoption intention (β = .505), substantially exceeding other predictors and departing from traditional UTAUT findings where PE typically dominates
+1. Price Value Dominance: PV was the overwhelming driver of AI adoption intention (β = .505), substantially exceeding other predictors and departing from traditional UTAUT findings where PE typically dominates
 
-2. **Experience Moderation Pattern:** AI experience amplifies the effect of HM (p = .007), suggesting experiential learning reinforces enjoyment perceptions
+2. Experience Moderation Pattern: AI experience amplified the effect of HM (p = .007), suggesting experiential learning reinforced enjoyment perceptions
 
-3. **Population Moderation:** Hedonic Motivation is significantly stronger for Academics (β = 0.449) than Professionals (β = -0.301), indicating role-specific adoption drivers
+3. Population Moderation: Hedonic Motivation was significantly stronger for Academics (β = 0.449) than Professionals (β = -0.301), indicating role-specific adoption drivers
 
-4. **Non-Significance of Traditional UTAUT Predictors:** PE, EE, FC, and HB were not significant, suggesting AI may represent a distinct technology category where cost-value considerations outweigh traditional utility perceptions
+4. Non-Significance of Traditional UTAUT Predictors: PE, EE, FC, and HB were not significant, suggesting AI may represent a distinct technology category where cost-value considerations outweigh traditional utility perceptions
 
-5. **User Typology:** Three distinct adoption profiles (AI Enthusiasts [31%], Moderate Users [47%], AI Skeptics [22%]) forming a clear readiness gradient, with the cluster solution explaining 65.9% of BI variance
+5. User Typology: Three distinct adoption profiles (AI Enthusiasts [31%], Moderate Users [47%], AI Skeptics [22%]) formed a clear readiness gradient, with the cluster solution explaining 65.9% of BI variance
 
 ### 4.7.4 Unexpected Findings
 
-- **Non-significant Performance Expectancy:** Contrary to UTAUT predictions and meta-analytic findings, perceived usefulness did not significantly predict adoption intention (β = -.028, p = .791), possibly because utility is a baseline expectation for AI tools
-- **Non-significant Effort Expectancy:** Perceived ease of use did not significantly predict adoption intention, possibly due to the user-friendly nature of modern AI interfaces
-- **Price Value as Strongest Predictor:** The dominance of cost-value perceptions over utility perceptions represents a notable departure from prior UTAUT research
+- Non-significant Performance Expectancy: Contrary to UTAUT predictions and meta-analytic findings, perceived usefulness did not significantly predict adoption intention (β = -.028, p = .791), possibly because utility is a baseline expectation for AI tools
+- Non-significant Effort Expectancy: Perceived ease of use did not significantly predict adoption intention, possibly due to the user-friendly nature of modern AI interfaces
+- Price Value as Strongest Predictor: The dominance of cost-value perceptions over utility perceptions represented a notable departure from prior UTAUT research
 
 ## 4.8 Chapter Conclusion
 
-This chapter presented comprehensive empirical validation of the AIRS diagnostic instrument and structural model examining AI adoption in higher education. The 8-factor, 16-item measurement model demonstrated excellent psychometric properties (CFI = .975, α range .74–.91) with configural invariance across role groups. The 8-factor structure was selected over a more parsimonious 7-factor alternative because AI Trust provides essential diagnostic capability: the instrument enables identification of specific adoption barriers (trust deficits, value perceptions, social influence gaps) that inform targeted intervention design.
+This chapter presented comprehensive empirical validation of the AIRS diagnostic instrument and structural model examining AI adoption in higher education. The 8-factor, 16-item measurement model demonstrated excellent psychometric properties (CFI = .975, α range .74–.91) with configural invariance across role groups. The 8-factor structure was selected over a more parsimonious 7-factor alternative because AI Trust provided essential diagnostic capability: the instrument enabled identification of specific adoption barriers (trust deficits, value perceptions, social influence gaps) that informed targeted intervention design.
 
 Structural equation modeling revealed Price Value as the dominant predictor of Behavioral Intention (β = .505), followed by Hedonic Motivation (β = .217, p = .014) and Social Influence (β = .136, p = .024). AI Trust approached but did not reach significance (β = .106, p = .064). Notably, traditional UTAUT predictors including Performance Expectancy, Effort Expectancy, Facilitating Conditions, and Habit were not significant, suggesting AI tools may represent a distinct technology category. Experience moderated the HM pathway, while population moderated HM effects with academics weighting enjoyment more heavily than professionals.
 
-Exploratory analyses identified three user typologies and qualitative themes reflecting both enthusiasm and concern about AI integration in higher education. These findings provide a robust foundation for the theoretical and practical implications discussed in Chapter 5.
+Exploratory analyses identified three user typologies and qualitative themes reflecting both enthusiasm and concern about AI integration in higher education. These findings provided a robust foundation for the theoretical and practical implications discussed in Chapter 5.

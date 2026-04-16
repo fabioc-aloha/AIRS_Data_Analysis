@@ -3,47 +3,47 @@
 
 ## Appendix A: AI Readiness Scale (AIRS) Final 16-Item Diagnostic Instrument
 
-The final validated 16-item AIRS diagnostic instrument consists of eight constructs measured using a 5-point Likert scale (1 = Strongly Disagree to 5 = Strongly Agree). The 8-factor structure enables both research applications and organizational diagnostic use: practitioners can identify specific adoption barriers (e.g., trust deficits, inadequate perceived value, low social influence) and design targeted interventions.
+The final validated 16-item AIRS diagnostic instrument consisted of eight constructs measured using a 5-point Likert scale (1 = Strongly Disagree to 5 = Strongly Agree). The 8-factor structure enabled both research applications and organizational diagnostic use: practitioners could identify specific adoption barriers (e.g., trust deficits, inadequate perceived value, low social influence) and design targeted interventions.
 
 ### Performance Expectancy (PE)
 
-1. **PE1**: AI tools help me accomplish tasks more quickly.
-2. **PE2**: Using AI improves the quality of my work or studies.
+1. PE1: AI tools help me accomplish tasks more quickly.
+2. PE2: Using AI improves the quality of my work or studies.
 
 ### Effort Expectancy (EE)
 
-3. **EE1**: Learning to use AI tools is easy for me.
-4. **EE2**: Interacting with AI tools is clear and understandable.
+3. EE1: Learning to use AI tools is easy for me.
+4. EE2: Interacting with AI tools is clear and understandable.
 
 ### Social Influence (SI)
 
-5. **SI1**: People whose opinions I value encourage me to use AI tools.
-6. **SI2**: Leaders in my organization or school support the use of AI tools.
+5. SI1: People whose opinions I value encourage me to use AI tools.
+6. SI2: Leaders in my organization or school support the use of AI tools.
 
 ### Facilitating Conditions (FC)
 
-7. **FC1**: I have access to training or tutorials for the AI tools I use.
-8. **FC2**: The AI tools I use are compatible with other tools or systems I use.
+7. FC1: I have access to training or tutorials for the AI tools I use.
+8. FC2: The AI tools I use are compatible with other tools or systems I use.
 
 ### Hedonic Motivation (HM)
 
-9. **HM1**: Using AI tools is stimulating and engaging.
-10. **HM2**: AI tools make my work or studies more interesting.
+9. HM1: Using AI tools is stimulating and engaging.
+10. HM2: AI tools make my work or studies more interesting.
 
 ### Price Value (PV)
 
-11. **PV1**: I get more value from AI tools than the effort they require.
-12. **PV2**: Using AI tools is worth the learning curve.
+11. PV1: I get more value from AI tools than the effort they require.
+12. PV2: Using AI tools is worth the learning curve.
 
 ### Habit (HB)
 
-13. **HB1**: Using AI tools has become a habit for me.
-14. **HB2**: I tend to rely on AI tools by default when I need help with tasks.
+13. HB1: Using AI tools has become a habit for me.
+14. HB2: I tend to rely on AI tools by default when I need help with tasks.
 
 ### Trust in AI (TR)
 
-15. **TR1**: I trust AI tools to provide reliable information.
-16. **TR2**: I trust the AI tools that are available to me.
+15. TR1: I trust AI tools to provide reliable information.
+16. TR2: I trust the AI tools that are available to me.
 
 \newpage
 
@@ -61,12 +61,12 @@ Electronic informed consent was obtained prior to survey administration. Partici
 
 Demographic items collected included:
 
-- **Role**: Current employment/student status (Full-time student, Part-time student, Employed - individual contributor, Employed - manager, Employed - executive, Freelancer/self-employed, Not currently employed, Other)
-- **Education**: Highest level completed (High school or less, Some college/vocational, Associate's degree, Bachelor's degree, Master's degree, Doctoral/professional degree)
-- **Industry**: Primary field of work or study (Technology/IT, Healthcare, Education, Finance/Banking, Manufacturing, Government/Public sector, Retail/Hospitality, Nonprofit, Other)
-- **Experience**: Years of experience in field (Less than 1 year, 1-3 years, 4-6 years, 7-10 years, 11 or more years)
-- **Disability Status**: Self-disclosed (Yes, No, Prefer not to say)
-- **AI Tool Usage**: Frequency of use for Microsoft Copilot, ChatGPT, Google Gemini, and other AI tools (Never, Rarely, Sometimes, Often, Very Often)
+- Role: Current employment/student status (Full-time student, Part-time student, Employed - individual contributor, Employed - manager, Employed - executive, Freelancer/self-employed, Not currently employed, Other)
+- Education: Highest level completed (High school or less, Some college/vocational, Associate's degree, Bachelor's degree, Master's degree, Doctoral/professional degree)
+- Industry: Primary field of work or study (Technology/IT, Healthcare, Education, Finance/Banking, Manufacturing, Government/Public sector, Retail/Hospitality, Nonprofit, Other)
+- Experience: Years of experience in field (Less than 1 year, 1-3 years, 4-6 years, 7-10 years, 11 or more years)
+- Disability Status: Self-disclosed (Yes, No, Prefer not to say)
+- AI Tool Usage: Frequency of use for Microsoft Copilot, ChatGPT, Google Gemini, and other AI tools (Never, Rarely, Sometimes, Often, Very Often)
 
 \newpage
 
@@ -207,9 +207,9 @@ The AI Readiness Scale (AIRS) validated in this dissertation represents Phase 0 
 
 ### E.2 Phase 1: AIRS Score Development
 
-**Research Objective**: Develop a scoring methodology that transforms raw AIRS responses into interpretable individual readiness scores with established normative benchmarks.
+Research Objective: Develop a scoring methodology that transforms raw AIRS responses into interpretable individual readiness scores with established normative benchmarks.
 
-**Key Research Questions**:
+Key Research Questions:
 
 - How should construct scores be weighted to optimize predictive validity?
 - What normative distributions exist across student, professional, and leadership populations?
@@ -217,9 +217,9 @@ The AI Readiness Scale (AIRS) validated in this dissertation represents Phase 0 
 
 ### E.3 Phase 2: Organizational Diagnostics
 
-**Research Objective**: Develop validated protocols for assessing AI readiness at team and organizational levels.
+Research Objective: Develop validated protocols for assessing AI readiness at team and organizational levels.
 
-**Key Research Questions**:
+Key Research Questions:
 
 - What aggregation methods preserve construct validity at organizational levels?
 - Do organizational readiness profiles predict AI implementation success?
@@ -227,11 +227,11 @@ The AI Readiness Scale (AIRS) validated in this dissertation represents Phase 0 
 
 ### E.4 Phase 3: Intervention Research
 
-**Research Objective**: Design and empirically test segment-specific interventions based on the user typology framework.
+Research Objective: Design and empirically test segment-specific interventions based on the user typology framework.
 
-The three-segment typology identified in this dissertation (AI Enthusiasts 31%, Moderate Users 47%, AI Skeptics 22%) suggests that different user populations may respond to different intervention approaches. Future research should employ randomized controlled trials to test whether segment-matched interventions outperform generic approaches.
+The three-segment typology identified in this dissertation (AI Enthusiasts 31%, Moderate Users 47%, AI Skeptics 22%) suggested that different user populations may respond to different intervention approaches. Future research should employ randomized controlled trials to test whether segment-matched interventions outperform generic approaches.
 
-**Key Research Questions**:
+Key Research Questions:
 
 - Do segment-specific interventions outperform one-size-fits-all approaches?
 - What intervention components drive segment-specific effectiveness?
@@ -239,24 +239,24 @@ The three-segment typology identified in this dissertation (AI Enthusiasts 31%, 
 
 ### E.5 Phase 4: Comprehensive AI Readiness Ecosystem
 
-**Research Objective**: Develop an integrated system combining validated assessment, diagnostics, and intervention protocols.
+Research Objective: Develop an integrated system combining validated assessment, diagnostics, and intervention protocols.
 
-**Long-Term Vision**:
+Long-Term Vision:
 
-- **Longitudinal Tracking**: Systems for monitoring organizational AI readiness progression
-- **Industry Adaptations**: Validated modifications for healthcare, finance, education, and manufacturing contexts
-- **Cross-Cultural Validation**: Replication across collectivist cultures, developing economies, and varying policy environments
-- **Practitioner Resources**: Administration guides, interpretation frameworks, and training pathways
+- Longitudinal Tracking: Systems for monitoring organizational AI readiness progression
+- Industry Adaptations: Validated modifications for healthcare, finance, education, and manufacturing contexts
+- Cross-Cultural Validation: Replication across collectivist cultures, developing economies, and varying policy environments
+- Practitioner Resources: Administration guides, interpretation frameworks, and training pathways
 
 ### E.6 Contribution to the Field
 
-This research program addresses a critical gap in the technology adoption literature: while validated measurement instruments exist, the translation of assessment into organizational action remains underdeveloped. The AIRS diagnostic structure provides the foundation for this translation by enabling identification of specific adoption barriers. By systematically building from validated diagnostic measurement through scoring, formalized protocols, intervention research, and ecosystem development, this roadmap offers a research-to-practice pipeline that can ultimately deliver the evidence-based tools organizations need to close the AI adoption-value gap.
+This research program addressed a critical gap in the technology adoption literature: while validated measurement instruments existed, the translation of assessment into organizational action remained underdeveloped. The AIRS diagnostic structure provided the foundation for this translation by enabling identification of specific adoption barriers. By systematically building from validated diagnostic measurement through scoring, formalized protocols, intervention research, and ecosystem development, this roadmap offers a research-to-practice pipeline that can ultimately deliver the evidence-based tools organizations need to close the AI adoption-value gap.
 
 ### E.7 Collaboration and Licensing
 
 The AIRS diagnostic instrument validated in this dissertation is made available for academic research purposes. Organizations interested in applying the AIRS framework for organizational diagnostic assessment should contact the author to discuss appropriate use, validation requirements, and potential research collaboration opportunities.
 
-**Contact**: Fabio Correa, Doctoral Candidate | Touro University Worldwide
+Contact: Dr. Fabio Correa | Touro University Worldwide
 
 \newpage
 
@@ -529,12 +529,12 @@ This appendix provides instructions for accessing the research data, analysis co
 
 ### H.1 Repository Access
 
-**GitHub Repository**: [https://github.com/fabioc-aloha/AIRS_Data_Analysis](https://github.com/fabioc-aloha/AIRS_Data_Analysis)
+GitHub Repository: [https://github.com/fabioc-aloha/AIRS_Data_Analysis](https://github.com/fabioc-aloha/AIRS_Data_Analysis)
 
 The complete research materials are publicly available under dual licensing:
 
-- **Code**: MIT License (open source, free to use and modify)
-- **Documentation**: CC BY 4.0 (attribution required)
+- Code: MIT License (open source, free to use and modify)
+- Documentation: CC BY 4.0 (attribution required)
 
 To access the repository:
 
@@ -568,7 +568,7 @@ docs/ & Data dictionary and methodology documentation \\
 
 ### H.3 Data Files
 
-**Primary Data File**: data/AIRS_clean.csv
+Primary Data File: data/AIRS_clean.csv
 
 This file contains the anonymized survey responses (N=523) with the following characteristics:
 
@@ -576,7 +576,7 @@ This file contains the anonymized survey responses (N=523) with the following ch
 - Variables are labeled according to the Data Dictionary (`docs/DATA_DICTIONARY.md`)
 - Missing values are coded consistently throughout
 
-**Supporting Data Files**:
+Supporting Data Files:
 
 ```{=latex}
 \begin{table}[H]
@@ -603,7 +603,7 @@ AIRS-AI-Readiness-Scale-labels.csv & Variable labels and response options \\
 
 The analysis was conducted using standalone Python and R scripts executed sequentially. Each script is self-contained with documentation.
 
-**Script Execution Order**:
+Script Execution Order:
 
 ```{=latex}
 \begin{table}[H]
@@ -639,13 +639,13 @@ run\_r\_validation.R & R/lavaan cross-validation & Authoritative fit indices \\
 
 ### H.5 Quick Start Guide
 
-**Prerequisites**:
+Prerequisites:
 
 - Python 3.9 or higher
 - R 4.5 or higher (with lavaan, semTools, psych packages)
 - Required Python packages listed in `requirements.txt`
 
-**Installation**:
+Installation:
 
 ```bash
 # Clone the repository
@@ -661,7 +661,7 @@ source .venv/bin/activate  # macOS/Linux
 pip install -r requirements.txt
 ```
 
-**Running the Analysis**:
+Running the Analysis:
 
 ```bash
 # Navigate to experiment folder
@@ -756,21 +756,21 @@ Post-Retention & Data may be retained indefinitely for research purposes \\
 \footnotesize Source: Compiled by Author
 \end{table}
 
-**Privacy Protections**:
+Privacy Protections:
 
 - No personally identifiable information (PII) was collected
 - No IP addresses, names, or email addresses retained
 - Responses cannot be linked to individual participants
 - All demographic variables are categorical (no birthdates, specific locations)
 
-**Public Repository Note**: The GitHub repository contains only de-identified data that poses no privacy risk. The public availability supports research transparency and reproducibility while maintaining participant anonymity.
+Public Repository Note: The GitHub repository contains only de-identified data that poses no privacy risk. The public availability supports research transparency and reproducibility while maintaining participant anonymity.
 
 ### H.10 Contact and Support
 
 For questions about the data, methodology, or reproducing the analysis:
 
-- **Repository Issues**: Use GitHub Issues for technical questions
-- **Research Inquiries**: Contact the author through the repository
+- Repository Issues: Use GitHub Issues for technical questions
+- Research Inquiries: Contact the author through the repository
 
 All materials are provided as-is for research and educational purposes.
 
@@ -778,7 +778,7 @@ All materials are provided as-is for research and educational purposes.
 
 ## Appendix I: Research Questions and Hypotheses Summary
 
-**Note**: The content from this appendix has been incorporated into the main body of the dissertation. See Chapter 4 (§4.2 Research Questions and Hypotheses Overview, §4.6 Findings by Research Question, §4.7 Summary of Findings) and Chapter 5 (§5.4 Implications for Theory, §5.6 Unexpected Findings) for the integrated presentation of research questions, hypotheses, and their outcomes.
+Note: The content from this appendix has been incorporated into the main body of the dissertation. See Chapter 4 (§4.2 Research Questions and Hypotheses Overview, §4.6 Findings by Research Question, §4.7 Summary of Findings) and Chapter 5 (§5.4 Implications for Theory, §5.6 Unexpected Findings) for the integrated presentation of research questions, hypotheses, and their outcomes.
 
 The following summary is retained for quick reference.
 
@@ -786,7 +786,7 @@ The following summary is retained for quick reference.
 
 #### Primary Research Question
 
-**RQ: How can UTAUT2 be extended with AI-specific constructs to better predict behavioral intention to adopt AI tools in professional and academic contexts?**
+RQ: How can UTAUT2 be extended with AI-specific constructs to better predict behavioral intention to adopt AI tools in professional and academic contexts?
 
 \begin{table}[H]
 \centering
@@ -874,7 +874,7 @@ The following summary is retained for quick reference.
 \footnotesize Source: Compiled by Author
 \end{table}
 
-**Interpretation**: AI Trust approached but did not reach conventional significance (p = .064). However, the 8-factor model including AI Trust was retained as the recommended diagnostic instrument because:
+Interpretation: AI Trust approached but did not reach conventional significance (p = .064). However, the 8-factor model including AI Trust was retained as the recommended diagnostic instrument because:
 
 1. Trust provides essential diagnostic capability for organizational assessment
 2. Organizations can identify trust deficits and design targeted interventions
@@ -903,7 +903,7 @@ TR $\times$ Experience & TR $\rightarrow$ BI & 0.081 & .145 & [X] Not Significan
 \footnotesize Source: Compiled by Author
 \end{table}
 
-**H3 Result: [!] Partially Supported** – Experience significantly moderates the HM -> BI path (p = .007). Professionals with 4+ years of experience weight hedonic motivation more heavily in AI adoption decisions.
+H3 Result: [!] Partially Supported – Experience significantly moderates the HM -> BI path (p = .007). Professionals with 4+ years of experience weight hedonic motivation more heavily in AI adoption decisions.
 
 #### H4: Population Moderation
 
@@ -931,7 +931,7 @@ TR $\rightarrow$ BI & -0.011 & 0.153 & 0.164 & .398 & No moderation \\
 \footnotesize Source: Compiled by Author
 \end{table}
 
-**H4 Result: [!] Partially Supported** – Population significantly moderates HM -> BI (p = .041). Hedonic Motivation is substantially stronger for Academics (β = 0.449) than Professionals (β = -0.301), indicating that enjoyment of AI tools is more important for academic adoption than professional adoption.
+H4 Result: [!] Partially Supported – Population significantly moderates HM -> BI (p = .041). Hedonic Motivation is substantially stronger for Academics (β = 0.449) than Professionals (β = -0.301), indicating that enjoyment of AI tools is more important for academic adoption than professional adoption.
 
 ### I.5 Behavioral Validation Hypotheses (H5–H6)
 
@@ -952,7 +952,7 @@ TR $\rightarrow$ BI & -0.011 & 0.153 & 0.164 & .398 & No moderation \\
 \footnotesize Source: Compiled by Author
 \end{table}
 
-**H5 Detail**: Behavioral Intention strongly correlates with actual AI tool usage:
+H5 Detail: Behavioral Intention strongly correlates with actual AI tool usage:
 
 \begin{table}[H]
 \centering
@@ -973,7 +973,7 @@ Google Gemini & .52 & $<$.001 & Moderate positive \\
 \footnotesize Source: Compiled by Author
 \end{table}
 
-**H6 Detail**: Significant role differences in tool usage (Leaders > Professionals > Academics):
+H6 Detail: Significant role differences in tool usage (Leaders > Professionals > Academics):
 
 \begin{table}[H]
 \centering
@@ -1042,10 +1042,10 @@ These constructs remain theoretically important for AI adoption and warrant revi
 
 ### I.8 Key Theoretical Implications
 
-1. **Price Value Dominance**: The finding that PV (β = .505) rather than PE drives AI adoption represents a significant theoretical departure from traditional UTAUT research, suggesting AI tools are evaluated through a value lens ("Is it worth it?") rather than a utility lens ("Will it help me?").
+1. Price Value Dominance: The finding that PV (β = .505) rather than PE drives AI adoption represents a significant theoretical departure from traditional UTAUT research, suggesting AI tools are evaluated through a value lens ("Is it worth it?") rather than a utility lens ("Will it help me?").
 
-2. **Non-Significance of Traditional Predictors**: PE, EE, FC, and HB were not significant, suggesting AI may represent a distinct technology category requiring tailored theoretical frameworks.
+2. Non-Significance of Traditional Predictors: PE, EE, FC, and HB were not significant, suggesting AI may represent a distinct technology category requiring tailored theoretical frameworks.
 
-3. **Experience-Dependent Mechanisms**: The experience moderation of HM suggests that adoption mechanisms differ by user characteristics in ways not previously documented in technology acceptance research.
+3. Experience-Dependent Mechanisms: The experience moderation of HM suggests that adoption mechanisms differ by user characteristics in ways not previously documented in technology acceptance research.
 
-4. **Population-Specific Pathways**: Differential HM effects across populations indicate that adoption interventions may need to be tailored to specific user groups.
+4. Population-Specific Pathways: Differential HM effects across populations indicate that adoption interventions may need to be tailored to specific user groups.
