@@ -1,0 +1,250 @@
+File,Location,Original Text,Corrected Text,Status,Reason
+front-matter/04_acknowledgments.md,Acknowledgments,"Scholarship advances through cumulative contribution, and I am honored to add to this conversation","Scholarship advanced through cumulative contribution, and I was honored to add to this conversation",Fixed,Professor's example - converted to past tense
+chapters/01_introduction.md,Section 1.2,"These figures reveal a paradox: AI is nearly ubiquitous","These figures revealed a paradox: AI was nearly ubiquitous",Fixed,Research findings should be past tense
+chapters/01_introduction.md,Section 1.2,"Understanding why individuals adopt or resist","Understanding why individuals adopted or resisted",Fixed,Research context should be past tense
+chapters/01_introduction.md,Section 1.4,"are presented in Chapter 3","were presented in Chapter 3",Fixed,Chapter references should be past tense
+chapters/01_introduction.md,Section 1.4,"The primary outcome is behavioral intention","The primary outcome was behavioral intention",Fixed,Research design description
+chapters/01_introduction.md,Section 1.4,"This scope limitation is grounded","This scope limitation was grounded",Fixed,Methodological rationale
+chapters/01_introduction.md,Section 1.4,"Foundational Requirements...must demonstrate","Foundational Requirements...had to demonstrate",Fixed,Research requirements description
+chapters/01_introduction.md,Section 1.3,"This dissertation addresses","This dissertation addressed",Fixed,Research purpose statement
+chapters/01_introduction.md,Section 1.5.1,"this research extends technology acceptance theory","this research extended technology acceptance theory",Fixed,Theoretical contribution description
+chapters/01_introduction.md,Section 1.5.1,"addresses the unique characteristics","addressed the unique characteristics",Fixed,Research contribution
+chapters/01_introduction.md,Section 1.5.1,"provides validated operationalizations","provided validated operationalizations",Fixed,Construct validation description
+chapters/01_introduction.md,Section 1.5.1,"ensures that these constructs meet","ensured that these constructs met",Fixed,Quality assurance description
+chapters/01_introduction.md,Section 1.5.1,"advances understanding","advanced understanding",Fixed,Research contribution
+chapters/01_introduction.md,Section 1.5.1,"support the instrument's utility","supported the instrument's utility",Fixed,Findings description
+chapters/02_literature_review.md,Section 2.1,"has outpaced the explanatory capacity","had outpaced the explanatory capacity",Fixed,Literature context at time of research
+chapters/02_literature_review.md,Section 2.1,"organizations have embraced AI","organizations had embraced AI",Fixed,Historical context
+chapters/02_literature_review.md,Section 2.1,"most remain in piloting phases","most remained in piloting phases",Fixed,State at time of research
+chapters/02_literature_review.md,Section 2.1,"McKinsey reports that","McKinsey reported that",Fixed,Citation of evidence
+chapters/02_literature_review.md,Section 2.1,"This adoption-value paradox presents","This adoption-value paradox presented",Fixed,Research problem framing
+chapters/02_literature_review.md,Section 2.1,"why do established technology acceptance models","why did established technology acceptance models",Fixed,Research question framing
+chapters/02_literature_review.md,Section 2.1,"Academic research provides the theoretical architecture","Academic research provided the theoretical architecture",Fixed,Literature review description
+chapters/02_literature_review.md,Section 2.1,"Industry benchmarks...contextualize","Industry benchmarks...contextualized",Fixed,Evidence description
+chapters/02_literature_review.md,Section 2.1,"empirical studies...provide construct-level evidence","empirical studies...provided construct-level evidence",Fixed,Evidence description
+chapters/02_literature_review.md,Section 2.4,"reflects the degree to which","reflected the degree to which",Fixed,Construct definition in research context
+chapters/02_literature_review.md,Section 2.4,"This pattern suggests","This pattern suggested",Fixed,Finding interpretation
+chapters/02_literature_review.md,Section 2.5,"provides the baseline framework","provided the baseline framework",Fixed,Framework description
+chapters/02_literature_review.md,Section 2.5,"it is essential to understand","it was essential to understand",Fixed,Research rationale
+chapters/02_literature_review.md,Section 2.5,"failure rate exceeds","failure rate exceeded",Fixed,Statistics at time of research
+chapters/02_literature_review.md,Section 2.5,"systems operate probabilistically","systems operated probabilistically",Fixed,AI characteristics description
+chapters/02_literature_review.md,Section 2.5,"Users must accept","Users had to accept",Fixed,User requirements description
+chapters/02_literature_review.md,Section 2.5,"anxiety may exhibit","anxiety exhibited",Fixed,Construct behavior description
+chapters/02_literature_review.md,Section 2.6,"Several studies observe that moderate exposure reduces anxiety","Several studies observed that moderate exposure reduced anxiety",Fixed,Literature findings
+chapters/02_literature_review.md,Section 2.6,"This suggests that enablement programs can shift","This suggested that enablement programs could shift",Fixed,Implication statement
+chapters/02_literature_review.md,Section 2.7,"The literature review reveals several gaps","The literature review revealed several gaps",Fixed,Gap identification
+chapters/02_literature_review.md,Section 2.7 Gap 1,"theoretical arguments...are well-developed","theoretical arguments...were well-developed",Fixed,Literature state description
+chapters/02_literature_review.md,Section 2.7 Gap 1,"validated measurement instruments remain scarce","validated measurement instruments remained scarce",Fixed,Gap description
+chapters/02_literature_review.md,Section 2.7 Gap 1,"Most existing AI adoption studies adapt","Most existing AI adoption studies adapted",Fixed,Literature pattern
+chapters/02_literature_review.md,Section 2.7 Gap 2,"Prior research tends to study","Prior research tended to study",Fixed,Literature pattern
+chapters/02_literature_review.md,Section 2.7 Gap 2,"Few studies simultaneously model","Few studies simultaneously modeled",Fixed,Gap description
+chapters/02_literature_review.md,Section 2.7 Gap 3,"Most AI adoption studies examine single populations","Most AI adoption studies examined single populations",Fixed,Literature pattern
+chapters/02_literature_review.md,Section 2.7 Gap 3,"Whether adoption dynamics differ...remains unexamined","Whether adoption dynamics differed...remained unexamined",Fixed,Gap description
+chapters/02_literature_review.md,Section 2.7 Gap 4,"anxiety decreases with calibrated exposure","anxiety decreased with calibrated exposure",Fixed,Theoretical argument
+chapters/02_literature_review.md,Section 2.7 Gap 4,"experience moderation is particularly relevant","experience moderation was particularly relevant",Fixed,Research rationale
+chapters/02_literature_review.md,Section 2.7 Gap 5,"Academic research...often proceeds disconnected","Academic research...often proceeded disconnected",Fixed,Literature critique
+chapters/02_literature_review.md,Section 2.7 Gap 5,"adoption-value gap...reflects organizational barriers","adoption-value gap...reflected organizational barriers",Fixed,Gap description
+chapters/02_literature_review.md,Section 2.7 Gap 5,"acceptance research rarely addresses directly","acceptance research rarely addressed directly",Fixed,Literature limitation
+chapters/02_literature_review.md,Section 2.9,"The following chapter describes the methodology","The following chapter described the methodology",Fixed,Chapter transition
+chapters/03_methodology.md,Section 3.1,"This chapter describes the research methodology","This chapter described the research methodology",Fixed,Chapter introduction
+chapters/03_methodology.md,Section 3.1,"The chapter is organized as follows: Section 3.2 describes","The chapter was organized as follows: Section 3.2 described",Fixed,Chapter roadmap
+chapters/03_methodology.md,Section 3.1,"Section 3.3 details","Section 3.3 detailed",Fixed,Chapter roadmap
+chapters/03_methodology.md,Section 3.1,"Section 3.4 covers","Section 3.4 covered",Fixed,Chapter roadmap
+chapters/03_methodology.md,Section 3.1,"Section 3.5 addresses","Section 3.5 addressed",Fixed,Chapter roadmap
+chapters/03_methodology.md,Section 3.1,"Section 3.6 presents","Section 3.6 presented",Fixed,Chapter roadmap
+chapters/03_methodology.md,Section 3.1,"Section 3.7 discusses","Section 3.7 discussed",Fixed,Chapter roadmap
+chapters/03_methodology.md,Section 3.1,"Section 3.8 covers","Section 3.8 covered",Fixed,Chapter roadmap
+chapters/03_methodology.md,Section 3.1,"Section 3.9 acknowledges","Section 3.9 acknowledged",Fixed,Chapter roadmap
+chapters/03_methodology.md,Section 3.9,"Precludes causal inference","Precluded causal inference",Fixed,Limitation description
+chapters/03_methodology.md,Section 3.9,"is a proxy for actual behavior","was a proxy for actual behavior",Fixed,Construct description
+chapters/03_methodology.md,Section 3.9,"This approach uses","This approach used",Fixed,Method description
+chapters/03_methodology.md,Section 3.9,"constructs are distinct","constructs were distinct",Fixed,Assumption description
+chapters/04_results.md,Section 4.1,"This chapter presents the empirical findings","This chapter presented the empirical findings",Fixed,Chapter introduction
+chapters/04_results.md,Section 4.1,"The chapter is organized to progress","The chapter was organized to progress",Fixed,Chapter structure
+chapters/04_results.md,Section 4.2,"Table 4.2 presents the demographic composition","Table 4.2 presented the demographic composition",Fixed,Table reference
+chapters/04_results.md,Section 4.4,"This section presents the psychometric validation results","This section presented the psychometric validation results",Fixed,Section introduction
+chapters/04_results.md,Section 4.4,"Figure 4.1 presents the scree plot","Figure 4.1 presented the scree plot",Fixed,Figure reference
+chapters/04_results.md,Section 4.4,"Figure 4.2 presents the standardized factor loadings","Figure 4.2 presented the standardized factor loadings",Fixed,Figure reference
+chapters/04_results.md,Section 4.4,"Figure 4.3 presents the factor correlation matrix","Figure 4.3 presented the factor correlation matrix",Fixed,Figure reference
+chapters/04_results.md,Section 4.4,"The implications...are addressed in the Discussion","The implications...were addressed in the Discussion",Fixed,Cross-reference
+chapters/04_results.md,Section 4.4,"violations are concentrated","violations were concentrated",Fixed,Finding description
+chapters/04_results.md,Section 4.4,"violations are expected","violations were expected",Fixed,Expectation description
+chapters/04_results.md,Section 4.5,"This finding highlights","This finding highlighted",Fixed,Interpretation
+chapters/04_results.md,Section 4.5,"AI Trust may still have","AI Trust still had",Fixed,Finding description
+chapters/04_results.md,Section 4.6,"This section presents hypothesis testing results","This section presented hypothesis testing results",Fixed,Section introduction
+chapters/04_results.md,Section 4.6,"Table 4.10 presents the standardized path coefficients","Table 4.10 presented the standardized path coefficients",Fixed,Table reference
+chapters/05_analysis_discussion.md,Section 5.2,"This suggests a hypothesis for future research","This suggested a hypothesis for future research",Fixed,Implication statement
+chapters/05_analysis_discussion.md,Section 5.2,"AI adoption interventions may be more effective","AI adoption interventions might be more effective",Fixed,Future direction
+chapters/05_analysis_discussion.md,Section 5.3,"The finding that Price Value...drives AI adoption represents","The finding that Price Value...drove AI adoption represented",Fixed,Finding interpretation
+chapters/05_analysis_discussion.md,Section 5.3,"This suggests AI tools are evaluated","This suggested AI tools were evaluated",Fixed,Interpretation
+chapters/05_analysis_discussion.md,Section 5.3,"Users may assume AI will be useful","Users might assume AI would be useful",Fixed,User behavior description
+chapters/06_conclusions.md,Section 6.3,"Longitudinal research is needed","Longitudinal research was needed",Fixed,Recommendation description
+chapters/06_conclusions.md,Section 6.3,"Behavioral Intention may not perfectly predict","Behavioral Intention did not perfectly predict",Fixed,Limitation description
+chapters/06_conclusions.md,Section 6.3,"Replication...is recommended","Replication...was recommended",Fixed,Recommendation
+chapters/06_conclusions.md,Section 6.3,"Larger samples may be required","Larger samples were required",Fixed,Requirement description
+chapters/06_conclusions.md,Section 6.3,"generalizability is unknown","generalizability was unknown",Fixed,Limitation description
+chapters/06_conclusions.md,Section 6.4,"AI represents a distinct technology category","AI represented a distinct technology category",Fixed,Theoretical claim
+chapters/06_conclusions.md,Section 6.4,"As AI transforms professional work","As AI transformed professional work",Fixed,Context description
+chapters/06_conclusions.md,Section 6.4,"can enable future diagnostic tools","could enable future diagnostic tools",Fixed,Future application
+chapters/06_conclusions.md,Section 6.4,"are emerging concerns","were emerging concerns",Fixed,Current state description
+chapters/06_conclusions.md,Section 6.7,"Recent evidence reveals that public sentiment has shifted","Recent evidence revealed that public sentiment had shifted",Fixed,Evidence citation
+chapters/06_conclusions.md,Section 6.7,"This suggests the need for longitudinal studies tracking","This suggested the need for longitudinal studies tracking",Fixed,Implication
+chapters/06_conclusions.md,Section 6.7,"as AI technologies mature and social discourse evolves","as AI technologies matured and social discourse evolved",Fixed,Temporal description
+chapters/06_conclusions.md,Section 6.7,"will strengthen theoretical claims","would strengthen theoretical claims",Fixed,Future benefit description
+front-matter/03_abstract.md,Abstract,"suggesting these effects are sensitive to sample composition","suggesting these effects were sensitive to sample composition",Fixed,Finding interpretation
+front-matter/03_abstract.md,Abstract,"the trust construct provides essential diagnostic value","the trust construct provided essential diagnostic value",Fixed,Capability description
+front-matter/03_abstract.md,Abstract,"organizations can assess trust deficits","organizations could assess trust deficits",Fixed,Capability description
+front-matter/03_abstract.md,Abstract,"suggesting AI represents a distinct technology category","suggesting AI represented a distinct technology category",Fixed,Finding interpretation
+front-matter/03_abstract.md,Abstract,"cost-benefit perceptions outweigh conventional utility","cost-benefit perceptions outweighed conventional utility",Fixed,Finding description
+chapters/01_introduction.md,Section 1.5.2,"organizations can identify specific barriers","organizations could identify specific barriers",Fixed,Capability description
+chapters/01_introduction.md,Section 1.5.2,"The instrument's brevity...enables deployment","The instrument's brevity...enabled deployment",Fixed,Capability description
+chapters/01_introduction.md,Section 1.5.3,"The AIRS instrument can support subsequent studies","The AIRS instrument could support subsequent studies",Fixed,Future potential
+chapters/01_introduction.md,Section 1.5.3,"research that builds upon rather than overextends","research that built upon rather than overextended",Fixed,Research scope
+chapters/02_literature_review.md,Section 2.2.3,"This finding aligns with decades of TAM research","This finding aligned with decades of TAM research",Fixed,Literature comparison
+chapters/02_literature_review.md,Section 2.2.3,"has direct implications for AI messaging","had direct implications for AI messaging",Fixed,Implication statement
+chapters/02_literature_review.md,Section 2.2.3,"Effort Expectancy shows moderate effects","Effort Expectancy showed moderate effects",Fixed,Finding description
+chapters/02_literature_review.md,Section 2.2.3,"displays greater context-dependency","displayed greater context-dependency",Fixed,Finding characteristic
+chapters/02_literature_review.md,Section 2.2.3,"effort expectancy may reach ceiling effects","effort expectancy could reach ceiling effects",Fixed,Possibility statement
+chapters/02_literature_review.md,Section 2.2.3,"users assume baseline usability","users assumed baseline usability",Fixed,User behavior
+chapters/02_literature_review.md,Section 2.2.3,"Social Influence demonstrates inconsistent effects","Social Influence demonstrated inconsistent effects",Fixed,Finding description
+chapters/02_literature_review.md,Section 2.2.3,"Facilitating Conditions shows a direct effect","Facilitating Conditions showed a direct effect",Fixed,Finding description
+chapters/02_literature_review.md,Section 2.2.3,"that strengthens with experience","that strengthened with experience",Fixed,Effect description
+chapters/02_literature_review.md,Section 2.2.3,"suggesting infrastructure and support matter more","suggesting infrastructure and support mattered more",Fixed,Implication
+chapters/02_literature_review.md,Section 2.2.3,"@blut2022 identify substantial unexplained variance","@blut2022 identified substantial unexplained variance",Fixed,Citation
+chapters/02_literature_review.md,Section 2.2.3,"call for domain-specific extensions","called for domain-specific extensions",Fixed,Citation
+chapters/02_literature_review.md,Section 2.2.3,"They observe that the red ocean","They observed that the red ocean",Fixed,Citation
+chapters/02_literature_review.md,Section 2.2.3,"has produced diminishing theoretical returns","had produced diminishing theoretical returns",Fixed,Literature state
+chapters/02_literature_review.md,Section 2.2.3,"faithful application...remains productive","faithful application...remained productive",Fixed,Literature assessment
+chapters/02_literature_review.md,Section 2.2.3,"This finding directly motivates the present study","This finding directly motivated the present study",Fixed,Research rationale
+chapters/02_literature_review.md,Section 2.3,"Most organizations can demonstrate AI feasibility","Most organizations could demonstrate AI feasibility",Fixed,Capability description
+chapters/02_literature_review.md,Section 2.3,"but lack the operational design","but lacked the operational design",Fixed,Limitation description
+chapters/02_literature_review.md,Section 2.3,"ISG's report confirms that scaling remains","ISG's report confirmed that scaling remained",Fixed,Citation
+chapters/02_literature_review.md,Section 2.3,"These findings indicate that organizational","These findings indicated that organizational",Fixed,Finding interpretation
+chapters/03_methodology.md,Section 3.7.3,"HTMT analysis confirms these overlaps","HTMT analysis confirmed these overlaps",Fixed,Analysis result
+chapters/03_methodology.md,Section 3.7.3,"all exceed the .85 threshold","all exceeded the .85 threshold",Fixed,Statistical finding
+chapters/03_methodology.md,Section 3.7.3,"These overlaps are consistent with UTAUT2 literature","These overlaps were consistent with UTAUT2 literature",Fixed,Literature comparison
+chapters/03_methodology.md,Section 3.7.3,"motivational constructs often share substantial variance","motivational constructs often shared substantial variance",Fixed,Literature pattern
+chapters/03_methodology.md,Section 3.7.3,"All remaining pairwise comparisons pass","All remaining pairwise comparisons passed",Fixed,Statistical result
+chapters/03_methodology.md,Section 3.7.3,"Several mitigating factors support retaining","Several mitigating factors supported retaining",Fixed,Rationale
+chapters/04_results.md,Section 4.8,"suggesting AI tools may represent a distinct technology category","suggesting AI tools might represent a distinct technology category",Fixed,Finding interpretation
+chapters/04_results.md,Section 4.7,"suggesting AI may represent a distinct technology category","suggesting AI might represent a distinct technology category",Fixed,Finding interpretation
+chapters/05_analysis_discussion.md,Section 5.3.1,"This finding gains significance against","This finding gained significance against",Fixed,Context statement
+chapters/05_analysis_discussion.md,Section 5.3.1,"few organizations achieve measurable returns","few organizations achieved measurable returns",Fixed,Industry state
+chapters/05_analysis_discussion.md,Section 5.3.1,"McKinsey's 2025 global survey reinforces","McKinsey's 2025 global survey reinforced",Fixed,Citation
+chapters/05_analysis_discussion.md,Section 5.3.1,"while 88% of organizations have adopted AI","while 88% of organizations had adopted AI",Fixed,Statistics
+chapters/05_analysis_discussion.md,Section 5.3.1,"only 33% are scaling AI","only 33% were scaling AI",Fixed,Statistics
+chapters/05_analysis_discussion.md,Section 5.3.1,"The gap suggests organizations deploy AI","The gap suggested organizations deployed AI",Fixed,Finding interpretation
+chapters/05_analysis_discussion.md,Section 5.3.1,"The dominance of Price Value...suggests AI tools may represent","The dominance of Price Value...suggested AI tools might represent",Fixed,Finding interpretation
+chapters/05_analysis_discussion.md,Section 5.3.1,"AI adoption appears more influenced","AI adoption appeared more influenced",Fixed,Finding description
+chapters/05_analysis_discussion.md,Section 5.3.2,"The non-significance...is particularly noteworthy","The non-significance...was particularly noteworthy",Fixed,Finding assessment
+chapters/05_analysis_discussion.md,Section 5.3.2,"this finding has been replicated","this finding had been replicated",Fixed,Literature state
+chapters/05_analysis_discussion.md,Section 5.3.2,"The present results challenge this assumption","The present results challenged this assumption",Fixed,Finding interpretation
+chapters/05_analysis_discussion.md,Section 5.3.2,"The non-significance...aligns with industry observations","The non-significance...aligned with industry observations",Fixed,Finding comparison
+chapters/05_analysis_discussion.md,Section 5.3.2,"Deloitte's research identifies skill gaps","Deloitte's research identified skill gaps",Fixed,Citation
+chapters/05_analysis_discussion.md,Section 5.3.2,"This disconnect suggests a maturation","This disconnect suggested a maturation",Fixed,Finding interpretation
+chapters/05_analysis_discussion.md,Section 5.3.2,"contemporary consumer-facing AI...has achieved such usability","contemporary consumer-facing AI...had achieved such usability",Fixed,State description
+chapters/05_analysis_discussion.md,Section 5.3.2,"The barrier has shifted","The barrier had shifted",Fixed,State change
+chapters/05_analysis_discussion.md,Section 5.3.2,"perceived usefulness may be a baseline expectation","perceived usefulness might have been a baseline expectation",Fixed,Possibility statement
+chapters/05_analysis_discussion.md,Section 5.3.2,"Users may assume AI tools will enhance productivity","Users might have assumed AI tools would enhance productivity",Fixed,User behavior
+chapters/05_analysis_discussion.md,Section 5.3.3,"The marginal significance...resonates with industry findings","The marginal significance...resonated with industry findings",Fixed,Finding comparison
+chapters/05_analysis_discussion.md,Section 5.3.3,"Gartner identifies governance maturity","Gartner identified governance maturity",Fixed,Citation
+chapters/05_analysis_discussion.md,Section 5.3.3,"only 32% of organizations have achieved","only 32% of organizations had achieved",Fixed,Statistics
+chapters/05_analysis_discussion.md,Section 5.3.3,"These industry challenges suggest that trust","These industry challenges suggested that trust",Fixed,Finding interpretation
+chapters/05_analysis_discussion.md,Section 5.3.3,"may become increasingly central as AI applications mature","might become increasingly central as AI applications matured",Fixed,Future projection in past context
+chapters/05_analysis_discussion.md,Section 5.3.3,"The marginal significance of AI Trust suggests it may become","The marginal significance of AI Trust suggested it might become",Fixed,Finding interpretation
+chapters/05_analysis_discussion.md,Section 5.3.3,"as AI technologies mature and trust concerns become more salient","as AI technologies matured and trust concerns became more salient",Fixed,Temporal context
+chapters/05_analysis_discussion.md,Section 5.3.3,"The current sample may have insufficient power","The current sample may have had insufficient power",Fixed,Limitation description
+chapters/05_analysis_discussion.md,Section 5.3.3,"trust considerations may be less central","trust considerations may have been less central",Fixed,Possibility statement
+chapters/05_analysis_discussion.md,Section 5.3.3,"for the relatively straightforward AI tools currently in use","for the relatively straightforward AI tools then in use",Fixed,Temporal reference
+chapters/05_analysis_discussion.md,Section 5.3.4,"While UTAUT specifies experience as a moderator","While UTAUT specified experience as a moderator",Fixed,Framework description
+chapters/05_analysis_discussion.md,Section 5.3.4,"it conceptualizes experience as technology familiarity","it conceptualized experience as technology familiarity",Fixed,Framework description
+chapters/05_analysis_discussion.md,Section 5.3.4,"The present finding integrates career development theory","The present finding integrated career development theory",Fixed,Contribution description
+chapters/05_analysis_discussion.md,Section 5.3.4,"suggesting that vocational maturity influences","suggesting that vocational maturity influenced",Fixed,Finding interpretation
+chapters/05_analysis_discussion.md,Section 5.3.4,"This may reflect that experienced users...prioritized","This might reflect that experienced users...prioritized",Fixed,Interpretation
+chapters/05_analysis_discussion.md,Section 5.3.5,"The convergence...provides a form of concurrent validation","The convergence...provided a form of concurrent validation",Fixed,Validation description
+chapters/05_analysis_discussion.md,Section 5.3.5,"the constructs...are precisely those the field has independently identified","the constructs...were precisely those the field had independently identified",Fixed,Literature comparison
+chapters/05_analysis_discussion.md,Section 5.3.5,"This converging evidence demonstrates that the adoption-value gap is robust","This converging evidence demonstrated that the adoption-value gap was robust",Fixed,Finding interpretation
+chapters/05_analysis_discussion.md,Section 5.3.5,"The present study's finding...aligns with this industry consensus","The present study's finding...aligned with this industry consensus",Fixed,Finding comparison
+chapters/05_analysis_discussion.md,Section 5.3.5,"organizations have moved past questions","organizations had moved past questions",Fixed,Industry state
+chapters/05_analysis_discussion.md,Section 5.5,"The AIRS diagnostic instrument...provides a psychometrically sound measure","The AIRS diagnostic instrument...provided a psychometrically sound measure",Fixed,Instrument description
+chapters/05_analysis_discussion.md,Section 5.5,"The 8-factor structure enables identification","The 8-factor structure enabled identification",Fixed,Capability description
+chapters/05_analysis_discussion.md,Section 5.5,"that can inform intervention design","that could inform intervention design",Fixed,Capability statement
+chapters/05_analysis_discussion.md,Section 5.5,"The practical applications suggested below are hypotheses","The practical applications suggested below were hypotheses",Fixed,Scope statement
+chapters/05_analysis_discussion.md,Section 5.5,"Future experimental research is needed","Future experimental research was needed",Fixed,Research need
+chapters/05_analysis_discussion.md,Section 5.5,"The author's research roadmap includes developing","The author's research roadmap included developing",Fixed,Future plans at time of writing
+chapters/05_analysis_discussion.md,Section 5.5.2,"Pricing strategy may significantly influence adoption","Pricing strategy might significantly influence adoption",Fixed,Possibility statement
+chapters/05_analysis_discussion.md,Section 5.5.2,"The dominance of Price Value suggests that pricing models...warrant careful attention","The dominance of Price Value suggested that pricing models...warranted careful attention",Fixed,Finding implication
+chapters/05_analysis_discussion.md,Section 5.5.2,"The significant Hedonic Motivation effect...also suggests value","The significant Hedonic Motivation effect...also suggested value",Fixed,Finding implication
+chapters/05_analysis_discussion.md,Section 5.5.3,"training programs may benefit from addressing resistance barriers","training programs might benefit from addressing resistance barriers",Fixed,Possibility statement
+chapters/05_analysis_discussion.md,Section 5.5.3,"The disability-anxiety association...highlights the importance","The disability-anxiety association...highlighted the importance",Fixed,Finding implication
+chapters/05_analysis_discussion.md,Section 5.5.3,"These findings warrant experimental validation","These findings warranted experimental validation",Fixed,Research need
+chapters/05_analysis_discussion.md,Section 5.5.4,"The validated AIRS diagnostic instrument provides a foundation","The validated AIRS diagnostic instrument provided a foundation",Fixed,Instrument utility
+chapters/05_analysis_discussion.md,Section 5.5.4,"The 8-factor structure enables identification of population-level adoption barriers","The 8-factor structure enabled identification of population-level adoption barriers",Fixed,Capability description
+chapters/05_analysis_discussion.md,Section 5.5.4,"that can inform workforce development policy","that could inform workforce development policy",Fixed,Capability statement
+chapters/05_analysis_discussion.md,Section 5.5.4,"The differential anxiety findings...highlight equity considerations","The differential anxiety findings...highlighted equity considerations",Fixed,Finding implication
+chapters/05_analysis_discussion.md,Section 5.5.4,"that warrant further investigation","that warranted further investigation",Fixed,Research need
+chapters/05_analysis_discussion.md,Section 5.5.5,"adoption interventions may need to be tailored","adoption interventions might need to be tailored",Fixed,Possibility statement
+chapters/05_analysis_discussion.md,Section 5.5.5,"professionals may have prioritized other factors","professionals might have prioritized other factors",Fixed,Possibility statement
+chapters/06_conclusions.md,Section 6.4.2,"Freemium models...may be more important than feature development","Freemium models...might be more important than feature development",Fixed,Possibility statement
+chapters/06_conclusions.md,Section 6.4.3,"training programs may benefit from addressing resistance barriers","training programs might benefit from addressing resistance barriers",Fixed,Possibility statement
+chapters/06_conclusions.md,Section 6.4.3,"Graduated exposure approaches...may be more effective","Graduated exposure approaches...might be more effective",Fixed,Possibility statement
+chapters/06_conclusions.md,Section 6.4.3,"though this hypothesis requires experimental validation","though this hypothesis required experimental validation",Fixed,Research need
+chapters/06_conclusions.md,Section 6.7.4,"This roadmap positioned...a research-to-practice pipeline that can ultimately deliver","This roadmap positioned...a research-to-practice pipeline that could ultimately deliver",Fixed,Capability statement
+chapters/06_conclusions.md,Section 6.7.4,"tools that organizations need","tools that organizations needed",Fixed,Need description
+back-matter/appendices.md,Appendix E,"The AIRS validated in this dissertation represents Phase 0","The AIRS validated in this dissertation represented Phase 0",Fixed,Research program description
+back-matter/appendices.md,Appendix E,"AI Trust provides essential diagnostic capability","AI Trust provided essential diagnostic capability",Fixed,Capability description
+back-matter/appendices.md,Appendix E,"organizations can identify trust deficits","organizations could identify trust deficits",Fixed,Capability statement
+back-matter/appendices.md,Appendix E,"The roadmap below outlines subsequent research phases","The roadmap below outlined subsequent research phases",Fixed,Document description
+back-matter/appendices.md,Appendix I,"These constructs remain theoretically important","These constructs remained theoretically important",Fixed,Construct status
+back-matter/appendices.md,Appendix I,"warrant revised measurement approaches","warranted revised measurement approaches",Fixed,Research need
+back-matter/appendices.md,Appendix I,"The finding that PV...drives AI adoption represents","The finding that PV...drove AI adoption represented",Fixed,Finding description
+back-matter/appendices.md,Appendix I,"suggesting AI tools are evaluated through a value lens","suggesting AI tools were evaluated through a value lens",Fixed,Finding interpretation
+back-matter/appendices.md,Appendix I,"The experience moderation of HM suggests","The experience moderation of HM suggested",Fixed,Finding interpretation
+back-matter/appendices.md,Appendix I,"adoption mechanisms differ by user characteristics","adoption mechanisms differed by user characteristics",Fixed,Finding description
+back-matter/appendices.md,Appendix I,"Differential HM effects...indicate that adoption interventions may need","Differential HM effects...indicated that adoption interventions might need",Fixed,Finding implication
+chapters/05_analysis_discussion.md,Section 5.5,"McKinsey's research confirms that...are three times more likely","McKinsey's research confirmed that...were three times more likely",Fixed,Citation and statistics
+chapters/05_analysis_discussion.md,Section 5.5,"Visible leadership engagement may amplify","Visible leadership engagement might amplify",Fixed,Possibility statement
+back-matter/appendices.md,Appendix I,"different user populations may respond to","different user populations might respond to",Fixed,Possibility statement
+chapters/05_analysis_discussion.md,Section 5.3.4,"user populations vary systematically","user populations varied systematically",Fixed,Finding description
+chapters/05_analysis_discussion.md,Section 5.3.5,"One-size-fits-all approaches may fail because user populations vary","might fail because user populations varied",Fixed,Interpretation
+chapters/05_analysis_discussion.md,Section 5.3.5,"The three-segment typology provides a framework","provided a framework",Fixed,Research contribution
+chapters/06_conclusions.md,Section 6.4.4,"Preliminary hypotheses suggest that each segment may respond","suggested...might respond",Fixed,Hypothesis statement
+chapters/06_conclusions.md,Section 6.2.1,"traditional models like UTAUT2 have demonstrated","had demonstrated",Fixed,Literature state
+chapters/06_conclusions.md,Section 6.1,"This concluding chapter synthesizes...articulates...summarizes...discusses...provides...acknowledges...suggests...offers","synthesized...articulated...summarized...discussed...provided...acknowledged...suggested...offered",Fixed,Chapter introduction verbs
+back-matter/appendices.md,Appendix I,"Trust provides essential diagnostic capability","provided",Fixed,Capability description
+back-matter/appendices.md,Appendix I,"Organizations can identify trust deficits","could identify",Fixed,Capability statement
+back-matter/appendices.md,Appendix I,"The marginal effect suggests","suggested",Fixed,Finding interpretation
+chapters/02_literature_review.md,Section 2.3.2,"Governance practices also shape trust...establishes...decreases...increases","shaped...established...decreased...increased",Fixed,Process descriptions
+chapters/02_literature_review.md,Section 2.3.2,"@stevens2023 find that...contributes to...suggesting that...operates","found...contributed...suggested...operated",Fixed,Citation
+chapters/02_literature_review.md,Section 2.3.1,"Yet adoption has not translated...Boston Consulting Group reports...McKinsey finds...37% cite","had not translated...reported...found...cited",Fixed,Industry evidence
+chapters/02_literature_review.md,Section 2.3.1,"The MIT Media Lab's NANDA Initiative provides...90-95% of...pilots fail...Georgian's AI Benchmark 2025 corroborates","provided...failed...corroborated",Fixed,Industry evidence
+chapters/02_literature_review.md,Section 2.3.2,"Organizations struggle...The gap...creates...constrain...McKinsey finds...Gartner identifies","struggled...created...constrained...found...identified",Fixed,Industry analysis
+chapters/02_literature_review.md,Section 2.3.2,"Capability and Change Barriers...inhibit...identifies...finds...suggests...lack","inhibited...identified...found...suggested...lacked",Fixed,Industry analysis
+chapters/04_results.md,Section 4.1,"The presentation separates...implications are addressed","separated...were addressed",Fixed,Chapter introduction
+chapters/04_results.md,Section 4.2,"Detailed hypothesis testing results are presented","were presented",Fixed,Cross-reference
+chapters/05_analysis_discussion.md,Section 5.1,"This chapter interprets...proceeds...are also addressed...are presented","interpreted...proceeded...were also addressed...were presented",Fixed,Chapter introduction
+chapters/05_analysis_discussion.md,Section 5.2.4,"correlations...represent a measurement challenge...indicate that the current 16-item scale does not fully achieve","represented...indicated...did not fully achieve",Fixed,Measurement issue description
+chapters/05_analysis_discussion.md,Section 5.5.1,"the findings suggest that demonstrating...may be more influential...Capgemini's research supports...achieve","suggested...might be...supported...achieved",Fixed,Practical implications
+chapters/05_analysis_discussion.md,Section 5.3.2,"This finding suggests that AI adoption operates...benefits are now assumed","suggested...operated...were then assumed",Fixed,Finding interpretation
+chapters/03_methodology.md,Section 3.9.2,"panel sampling remains non-probability sampling that limits...Results may not generalize","remained...limited...might not generalize",Fixed,Limitation description
+chapters/02_literature_review.md,Section 2.2.3,"@blut2022's landmark meta-analysis provides...confirms...reveals","provided...confirmed...revealed",Fixed,Citation
+chapters/02_literature_review.md,Section 2.2.3,"@blut2022's meta-analysis confirms","confirmed",Fixed,Citation
+chapters/02_literature_review.md,Section 2.5.2,"Explainability serves as...@shin2021 demonstrates...trust increases...provides an organizational lever...can build","served...demonstrated...increased...provided...could build",Fixed,Trust literature
+chapters/02_literature_review.md,Section 2.5.2,"Governance practices also shape trust...establish...decreases...increases","shaped...established...decreased...increased",Fixed,Governance patterns
+chapters/02_literature_review.md,Section 2.5.2,"@stevens2023 find...contributes...suggesting...operates","found...contributed...suggested...operated",Fixed,Citation
+chapters/05_analysis_discussion.md,Section 5.2.3,"only Price Value demonstrates robust significance...may be sensitive","demonstrated...might be",Fixed,Bootstrap validation
+chapters/05_analysis_discussion.md,Section 5.3.6,"Context-Inappropriate Frameworks: The shift...demonstrates...are valuable","demonstrated...were valuable",Fixed,Framework interpretation
+chapters/04_results.md,Section 4.5.3,"Three findings support retaining...serve...demonstrate...supports...is expected","supported...served...demonstrated...supported...was expected",Fixed,Discriminant validity discussion
+chapters/05_analysis_discussion.md,Section 5.2.4,"Three findings support retaining...serve...demonstrate...enables...addresses...is expected","supported...served...demonstrated...enabled...addressed...was expected",Fixed,Discriminant validity discussion
+chapters/01_introduction.md,Section 1.5.4,"The three-segment user typology...provides a framework...captures...offering...warrant","provided...captured...offered...warranted",Fixed,User typology contribution
+chapters/04_results.md,Various sections,"Figure 4.4 provides...AI Trust provides...Analysis provides","provided",Fixed,Figure and analysis references
+chapters/06_conclusions.md,Section 6.5.1,"The marginal AI Trust effect warrants replication...represent...require","warranted...represented...required",Fixed,Scholar recommendations
+chapters/03_methodology.md,Section 3.5.4,"This grouping reflects meaningful theoretical distinctions","reflected",Fixed,Grouping rationale
+chapters/01_introduction.md,Section 1.1,"This growth represents a fundamental shift...AI is no longer","represented...was no longer",Fixed,Industry context
+chapters/02_literature_review.md,Section 2.3.1,"This acceleration...represents one of the fastest","represented",Fixed,Historical description
+chapters/03_methodology.md,Section 3.6.1,"This represents an empirical finding","represented",Fixed,Empirical finding
+chapters/05_analysis_discussion.md,Various sections,"This finding represents...gap represents...Two-item scales...This represents","represented",Fixed,Finding descriptions
+chapters/06_conclusions.md,Section 6.3.2,"AI represents a theoretically distinct technology category","represented",Fixed,Theoretical finding
+chapters/06_conclusions.md,Section 6.7.4,"adoption readiness represents only the first step...AETHER group synthesizes...Report cautions...may inadvertently","represented...synthesized...cautioned...might inadvertently",Fixed,Future research context
+chapters/01_introduction.md,Section 1.2,"UTAUT2 explains...AI tools present...These include...do not fully address","explained...presented...included...did not fully address",Fixed,Theoretical gap description
+chapters/05_analysis_discussion.md,Section 5.3.4,"This segmentation approach moves beyond...solution captures...explains...confirms...identifies...requires...Figure 5.1 illustrates","moved...captured...explained...confirmed...identified...required...illustrated",Fixed,Segmentation approach

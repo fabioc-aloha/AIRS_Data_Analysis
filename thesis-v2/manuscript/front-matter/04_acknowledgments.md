@@ -13,6 +13,6 @@ To my family, thank you for your understanding during the countless hours devote
 
 To my professional colleagues and the participants who generously shared their experiences with AI tools, thank you for making this research possible. Your insights illuminate the path forward for organizations navigating the AI transformation.
 
-Finally, I acknowledge the broader academic community whose foundational work (particularly Venkatesh and colleagues' development of UTAUT) provided the theoretical architecture upon which this research builds. Scholarship advances through cumulative contribution, and I am honored to add to this conversation.
+Finally, I acknowledge the broader academic community whose foundational work—particularly Venkatesh and colleagues' development of UTAUT—provided the theoretical architecture upon which this research was built. Scholarship advanced through cumulative contribution, and I was honored to add to this conversation.
 
 \newpage

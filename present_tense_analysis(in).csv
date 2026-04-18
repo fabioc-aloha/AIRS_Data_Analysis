@@ -1,0 +1,138 @@
+Page,Flagged Sentences Count,Example Flagged Sentence
+2,1,"Dissertation Approval This dissertation, written by Fabio Correa under the guidance of the Dissertation Committee and approved by all its members, has been accepted in partial fulfillment of the requi..."
+4,2,"Bootstrap valida- tion (1,000 resamples) confirmed Price Value as robust; Hedonic Motivation and Social Influence confidence intervals included zero, suggesting these effects are sensitive to sample c..."
+5,1,"Scholarship advances through cumulative contribution, and I am hon- ored to add to this conversation."
+6,1,"“The question isn’t whether AI will transform work—it’s whether we’ll be ready.” — Dario Amodei, 2024 vi"
+8,1,26 2.3.2 Diagnosing the Gap: Why Adoption Does Not Equal Value .
+20,1,The effect of HM on BI is stronger for professionals with 4+ years of experience.
+22,5,AI READINESS SCALE 7 Chapter 1: Introduction 1.1 Background and Context Artificial intelligence (AI) has evolved from a specialist capability to a foundational driver of en- terprise transformation.
+23,5,"These figures reveal a paradox: AI is nearly ubiquitous, yet most enterprises fail to realize sustained economic or operational returns."
+24,2,"Venkatesh (2021) identified nine unique re- search challenges for AI adoption that existing frameworks do not fully address, calling for empir- ical investigation of AI-specific adoption factors."
+26,4,AI READINESS SCALE 11 1.4 Research Questions and Hypotheses 1.4.1 Research Questions Primary Research Question: How can UTAUT2 be extended with AI-specific constructs to better predict behavioral inte...
+27,1,Full hypothesis specifications with theoretical rationales are presented in Chapter 3 §3.3.2.
+28,2,"Moderation Discovery: Identification of experience as a moderating factor on hedonic motivation pathways contributed novel insights to the technology acceptance literature, suggesting that adop- tion ..."
+29,1,"Moderation Discovery: The moderating effect of professional experience on hedonic motivation pathways indicates that adoption mechanisms may differ by experience level, a finding that suggests hypothe..."
+30,1,Actual Behavior Prediction: The primary outcome is behavioral intention rather than sustained behavioral change.
+31,4,This scope limitation is grounded in both methodological rigor and research ethics considerations.
+32,1,"The AIRS instrument can support subsequent studies examining diagnostic protocols, intervention effectiveness, and or- ganizational applications, research that builds upon rather than overextends the ..."
+33,2,"Key Terms and Definitions Term Definition UTAUT2 Unified Theory of Acceptance and Use of Technology 2 (Venkatesh et al., 2012) AIRS AI Readiness Scale: the 16-item psychometric instrument developed an..."
+35,4,AI READINESS SCALE 20 Chapter 2: Literature Review 2.1 Introduction The rapid enterprise adoption of artificial intelligence has outpaced the explanatory capacity of traditional technology acceptance ...
+36,3,"The literature review not only established scholarly grounding but also identified practical implications: why AI adoption programs fail, what organizational levers matter, and how validated measureme..."
+37,3,AI READINESS SCALE 22 Davis (1989)’s Technology Acceptance Model (TAM) addressed this limitation by introducing two technology-specific beliefs: perceived usefulness (the degree to which a user believ...
+38,3,"Social Influence (SI) reflects the degree to which important others believe the individual should use the technology, synthesizing subjective norm, social factors, and image constructs."
+39,3,"This pattern suggests that for contemporary AI tools with polished interfaces, ease-of-use investments may show diminishing returns relative to other adoption levers."
+40,1,"For the present research, UTAUT2 provides the baseline framework, with modifications appropriate to workplace AI contexts where hedonic mo- tivation and habit remain relevant while price value may be ..."
+41,3,"AI READINESS SCALE 26 2.3 The AI Adoption-Value Gap: Industry Context 2.3.1 Current State of Enterprise AI Adoption Before examining why traditional acceptance models require extension for AI, it is e..."
+42,3,"This failure rate exceeds typical technology project failures, suggesting AI-specific barriers that traditional change management and technology deployment frameworks do not adequately address."
+43,5,2.3.3 Implications for Acceptance Research This industry context has direct implications for technology acceptance research.
+44,4,"This characteristic fundamentally challenges traditional acceptance models, which assume users can form reasoned judgments about technology usefulness based on observable performance."
+45,9,"AI READINESS SCALE 30 2.4.2 Probabilistic Behavior and Model Errors AI systems operate probabilistically, producing outputs that are correct in expectation but not guar- anteed for individual cases."
+46,5,"AI READINESS SCALE 31 ceived ethical risk, referring to anticipated harms that depress adoption intention even when per- formance expectations are favorable."
+47,5,AI READINESS SCALE 32 Research suggests anxiety may exhibit nonlinear relationships with exposure.
+48,4,"When trust is high, performance expectancy shows stronger effects on intention, as users translate positive system evaluations into adoption when they trust the system to perform consistently."
+50,4,(2025) identify annihilation anxiety (existential concerns about human relevance) as a component particularly salient among knowledge workers whose expertise AI may replicate.
+51,4,"AI READINESS SCALE 36 levels favorably, an organizational intervention that traditional acceptance models do not explicitly accommodate."
+52,2,"While UTAUT specifies experience as a moderator of traditional predictors, the moderating role of AI experience on AI-specific constructs is unexplored."
+53,1,Users who believe AI will enhance their job performance should demonstrate greater adoption intention.
+54,5,"Rationale: While meta-analytic effects are moderate and context-dependent, perceived ease of use remains a relevant consideration, particularly for users with limited AI experience."
+55,5,AI READINESS SCALE 40 Rationale: Established patterns of AI use should predict continued intention through automaticity and reinforcement mechanisms.
+56,4,"AI READINESS SCALE 41 2.8.4 Moderation Hypotheses H3 (Experience Moderation): Experience moderates the relationships between predictors and Be- havioral Intention, such that: • (a) The effect of Perfo..."
+57,1,AI READINESS SCALE 42 Rationale: Professionals with greater workplace technology demands and resources may exhibit different AI tool usage patterns than academic participants.
+58,1,AI Anxiety was proposed as an inhibitor but was excluded from the final model due to inadequate reliability (α = .301); its theoretical importance and measurement challenges are discussed in Chapters ...
+59,1,The chapter is organized as follows: Section 3.2 describes the research philosophy and design; Section 3.3 details the theoretical framework and hypotheses; Section 3.4 covers instrument de- velopment...
+60,2,"AI READINESS SCALE 45 3.2 Research Design 3.2.1 Research Philosophy This study adopted a post-positivist philosophical stance, recognizing that while objective reality exists, our understanding of it ..."
+61,2,"While cross-sectional designs preclude causal inference, they are standard for initial scale valida- tion studies (DeVellis & Thorpe, 2021)."
+62,1,The theoretical model comprised eight latent factors predicting Behavioral Intention to adopt AI tools: Core UTAUT2 Constructs: • Performance Expectancy (PE): The degree to which using AI tools will p...
+67,1,"Final AIRS Instrument Structure Factor Items Example Item Performance Expectancy PE1, PE2 “Using AI tools increases my productivity” Effort Expectancy EE1, EE2 “Learning to use AI tools is easy for me..."
+68,1,"While panel sampling has limitations similar to convenience sampling regarding generalizability, it is appropriate for initial scale validation studies where the primary goal is psychometric evalua- t..."
+69,2,"According to Centiment’s documented methodology, survey notifications to panel members display only the estimated completion time and compensation amount; the sur- vey topic and subject matter are del..."
+73,1,Source: Compiled by Author Stratification: Split stratified by AI adoption status to ensure comparable samples Reproducibility: Random seed (67) documented for exact replication 3.6.3 Exploratory Fact...
+79,1,It is better characterized as automated content analysis.
+81,1,"Average Variance Extracted (AVE): Proportion of variance captured by construct Threshold: AVE ≥.50 (Fornell & Larcker, 1981) 3.7.3 Discriminant Validity Definition: Extent to which constructs are dist..."
+82,3,"These overlaps are consistent with UTAUT2 literature, where motivational constructs often share substantial variance in technology acceptance contexts (Venkatesh et al., 2012)."
+84,1,Participants could not proceed without acknowledging consent.
+85,6,Cross-sectional design: Precludes causal inference; relationships may be correlational rather than causal.
+86,4,"However, some residual self-selection may occur as participants could withdraw after the informed consent disclosure revealed the AI focus, though withdrawal rates were minimal."
+87,1,AI READINESS SCALE 72 3.10 Chapter Summary This chapter has described the research methodology for developing and validating the AI Readi- ness Scale (AIRS) and testing the extended UTAUT model for AI...
+89,4,"The chapter is organized to progress systematically from sample description through data preparation, quantitative results, and findings organized by research question."
+90,3,"Research Questions Summary Aspect Answer Evidence Extension Approach UTAUT2 extended with AI Trust construct 8-factor, 16-item validated diagnostic instrument Predictive Power Model explains 89.7% var..."
+94,2,"This finding highlights a key contribution: while these con- structs are theoretically important for AI adoption, they require more comprehensive operational- ization with additional items representin..."
+97,2,"These violations are concentrated in the PE/HM/PV triad and are characteristic of 2-item-per-factor scales measuring conceptually adjacent constructs (Marsh et al., 1998; Winter et al., 2009)."
+99,2,"These violations are expected when 2-item scales measure conceptually adja- cent constructs, as measurement error inflates inter-factor correlations (Marsh et al., 1998)."
+102,3,Bootstrap CIs are for unstandardized estimates; 𝛽values are standardized.
+103,4,"AI READINESS SCALE 88 ment because: (1) Trust provided essential diagnostic capability for organizational assessment, (2) Organizations could identify trust deficits and design targeted interventions,..."
+104,1,"Key Findings: • Price Value emerged as the strongest predictor (β = .505, p < .001), explaining the largest portion of variance in Behavioral Intention • Hedonic Motivation was the second strongest pr..."
+105,1,Experience Moderation Analysis Results Moderator Path Interaction 𝛽 p Status Experience PE×Exp 0.112 .055 Marginal Experience HM×Exp 0.136 .007 Significant Experience EE×Exp 0.122 .161 Not significant...
+108,1,The effect of HM on BI is stronger for professionals with 4+ years of experience.
+109,3,"AI Trust may still have diagnostic value for identifying trust-related barriers to AI adoption, even if it did not improve overall model fit."
+114,1,Qualitative Theme Prevalence Theme n % of Responses Positive Experience 60 24.7% Work/Productivity 47 19.3% Human Element 33 13.6% Learning/Education 33 13.6% Accuracy/Reliability 26 10.7% Future/Pote...
+116,2,"Non-Significance of Traditional UTAUT Predictors: PE, EE, FC, and HB were not signifi- cant, suggesting AI may represent a distinct technology category where cost-value consider- ations outweigh tradi..."
+117,1,"Notably, traditional UTAUT predictors including Performance Expectancy, Effort Expectancy, Facilitating Conditions, and Habit were not significant, suggesting AI tools may represent a distinct technol..."
+118,3,Unexpected findings and study limitations specific to interpretation are also addressed.
+119,2,"While this falls short of conventional significance, the effect is retained as a diagnostic inclusion rather than a structural claim: detecting β = .106 at 80% power requires n > 600, making the prese..."
+120,3,AI READINESS SCALE 105 dimensions are deficient in their workforce: trust deficits require different interventions than value perception gaps or social influence deficits.
+121,2,"AI READINESS SCALE 106 through item pool expansion, which is expected to improve discriminant separation (Winter et al., 2009)."
+122,6,AI READINESS SCALE 107 may be more effective when they prioritize demonstrating clear return on investment rather than focusing solely on capability demonstrations.
+123,7,"AI READINESS SCALE 108 Interpretation: In the AI context, perceived usefulness may be a baseline expectation rather than a differentiating factor."
+124,4,AI READINESS SCALE 109 Interpretation: The marginal significance of AI Trust suggests it may become a more important predictor as AI technologies mature and trust concerns become more salient.
+125,1,AI READINESS SCALE 110 5.3.5 Converging Literature Validation An important methodological note is warranted regarding the alignment between this study’s theo- retical framework and the broader 2025 li...
+126,3,"AI READINESS SCALE 111 This converging evidence demonstrates that the adoption-value gap is robust, widespread, and not an artifact of any single report’s methodology."
+127,4,"AI READINESS SCALE 112 tion, governance) are precisely those the field has independently identified as central to explaining the adoption-value gap."
+128,4,"AI READINESS SCALE 113 5.4.4 Non-Significance of Traditional Predictors The non-significance of PE, EE, FC, and HB suggested AI may represent a distinct technology category requiring tailored theoreti..."
+129,1,Future models should consider how career stage and professional identity influence technology evaluation and adoption decisions.
+131,4,"The 8-factor structure enables identification of specific adoption barriers (e.g., trust deficits, inadequate perceived value, low so- cial influence) that can inform intervention design."
+132,4,"McKinsey’s research confirms that organizations where senior leadership takes ownership of AI initiatives are three times more likely to achieve value from their investments (McKinsey & Company, 2025)..."
+133,7,The 8-factor structure enables identification of population-level adoption barriers that can inform workforce development policy.
+134,1,"This finding suggests that AI adoption operates through different psychological mechanisms than conventional technology adoption, potentially because productiv- ity benefits are now assumed rather tha..."
+135,6,"AI READINESS SCALE 120 Future Development Recommendations: - For AI Anxiety specifically, future scales should dis- tinguish between technology avoidance anxiety and fear-of-missing-out (FOMO) or obso..."
+136,4,The originally proposed mediation hypotheses involving Explainability and Ethical Risk could not be tested because these constructs were excluded during EFA due to inadequate reliability.
+137,1,"While traditional models like UTAUT2 have demonstrated robust explanatory power for conventional technologies, the unique characteristics of AI systems (including opacity, probabilistic reasoning, and..."
+139,3,The 8-factor structure was selected over a more parsimo- nious 7-factor alternative because AI Trust provided essential diagnostic capability: practitioners could identify trust deficits and design ta...
+141,4,"Users evaluated AI tools through a value lens (“Is it worth it?”) rather than a utility lens (“Will it help me?”), with implications for both theory and organizational practice."
+142,6,AI READINESS SCALE 127 6.4 Practical and Managerial Implications 6.4.1 For Organizations Implementing AI Value Demonstration Over Capability Showcasing: The dominance of Price Value suggested that org...
+143,7,"Freemium models, transparent pricing, and clear ROI documentation may be more important than feature development for driving adoption."
+144,5,"AI READINESS SCALE 129 that materials and interfaces accommodating diverse abilities may better support anxious learners, considerations that warrant attention in training program development."
+145,6,Scholars should explore whether this reflects AI’s unique characteristics or broader shifts in technology eval- uation patterns.
+146,5,AI READINESS SCALE 131 6.5.2 Recommendations for Practitioners The following recommendations are offered with an important caveat: this study validated a mea- surement instrument and identified adopti...
+147,8,The marginal Trust effect (p = .064) suggests that trust may become more important as AI moves into higher- stakes decision-making roles.
+148,5,Replication in diverse settings is recommended.
+149,1,"Social Influence may become the domi- nant predictor in collectivist cultures, while Trust may strengthen significantly in regulated environments (EU AI Act)."
+150,3,"Agentic Trust Escalation (H9): As AI transitions from tool to autonomous agent, Trust may shift from marginal (β ≈.10) to dominant predictor (β > .30) of Behavioral Intention."
+151,2,3-Item Scale Improvement (H20): Expanding from 2 to 3 items per factor (AIRS-28) will resolve discriminant validity violations in the PE/HM/PV triad while maintaining fit.
+153,5,"AI READINESS SCALE 138 • Practitioner value: provides normative benchmarks, validates AIRS as a pre-deployment assessment tool, and establishes temporal stability/change patterns Phase 2b: Cross-Cultu..."
+154,2,"Segment-Specific Reliance Patterns: Do the three user segments (AI Enthusiasts, Moderate Users, AI Skeptics) exhibit different over-reliance or under-reliance tendencies?"
+155,3,AI READINESS SCALE 140 This roadmap positioned the current validated scale as the essential foundation for a research-to- practice pipeline that can ultimately deliver the diagnostic and intervention ...
+158,1,IRB approval FAQ: How do we notify respondents of a survey?
+159,2,How your CEO is thinking about AI: The rise of responsible AI leadership [Exec- utive Report].
+161,1,Is more ever too much?
+162,1,Why does appropriate reliance on GenAI matter?
+164,3,"The 8-factor structure enabled both research applications and organizational diagnostic use: practitioners could identify specific adoption barriers (e.g., trust deficits, inadequate perceived value, ..."
+165,6,FC1: I have access to training or tutorials for the AI tools I use.
+168,1,Behavioral Intention (BI) serves as the outcome variable and is modeled separately in the structural model.
+173,2,The 8-factor diagnostic structure was selected over a more parsimonious 7-factor model because AI Trust provides essential diagnostic capability: organizations can identify trust deficits and design t...
+174,5,• Do organizational readiness profiles predict AI implementation success?
+175,1,"By systematically building from validated diagnostic measurement through scoring, formalized protocols, intervention research, and ecosys- tem development, this roadmap offers a research-to-practice p..."
+176,2,AI READINESS SCALE 161 E.7 Collaboration and Licensing The AIRS diagnostic instrument validated in this dissertation is made available for academic re- search purposes.
+177,1,The study was classified as exempt under 45 CFR 46.104(d)(2) as research involving survey procedures where responses are recorded anonymously.
+178,3,"Approval Letter        Institutional Review Board  Approval Letter  For the Protection of Human Subjects    Date of letter: ___November 10, 2025___________________________   Approval Letter   Principa..."
+179,2,To what extent do UTAUT2 constructs predict AI adoption readiness?
+180,4,AI READINESS SCALE 165 F.3 Informed Consent Statement The following informed consent statement was presented to all participants prior to survey admin- istration via the Centiment platform: Participat...
+181,13,AI READINESS SCALE 166 Risks and Discomforts: The risks involved in this study are minimal.
+182,2,Data Retention: De-identified data will be retained until January 2028 in accordance with federal regulations requiring researchers to keep data for a minimum of three years (45 CFR 46).
+183,1,There are no right or wrong answers.
+184,7,Learning to use AI tools is easy for me.
+185,6,"I choose to use AI tools in my work because I find them helpful, not because I am required to."
+186,3,I am ready to use more AI tools in my work or studies.
+187,2,What is your current status?
+188,4,"Do you identify as a person with a disability (for example, vision, mobility, neurodiver- gence)?"
+190,1,H.1 Repository Access GitHub Repository: https://github.com/fabioc-aloha/AIRS_Data_Analysis The complete research materials are publicly available under dual licensing: • Code: MIT License (open sourc...
+191,3,AI READINESS SCALE 176 H.3 Data Files Primary Data File: data/AIRS_clean.csv This file contains the anonymized survey responses (N=523) with the following characteristics: • All personally identifiabl...
+192,1,Analysis Script Execution Order Script Purpose Key Outputs run_00_split_samples.py Create development/holdout split Sample files run_01_efa.py Exploratory Factor Analysis Factor structure run_02_cfa.p...
+194,2,"AI READINESS SCALE 179 H.7 Thesis PDF Generation The dissertation PDF can be regenerated from source files: cd thesis-v2 .\build.ps1 # Windows PowerShell Requirements: Pandoc, XeLaTeX (via MiKTeX or T..."
+195,2,"AI READINESS SCALE 180 Privacy Protections: • No personally identifiable information (PII) was collected • No IP addresses, names, or email addresses retained • Responses cannot be linked to individua..."
+196,3,AI READINESS SCALE 181 Appendix I: Research Questions and Hypotheses Summary Note: The content from this appendix has been incorporated into the main body of the disserta- tion.
+197,3,Secondary Research Questions Summary RQ# Question Answer Supporting Evidence RQ1 What is the factor structure of an AI-specific adoption readiness instrument?
+198,1,Organizations can identify trust deficits and design targeted interventions 3.
+199,1,"Hedonic Motivation is substantially stronger for Academics (β = 0.449) than Professionals (β = -0.301), indicating that enjoyment of AI tools is more important for academic adoption than professional ..."
+200,1,Comprehensive Hypothesis Outcome Summary Category Hypotheses Supported Partial Not Supported UTAUT2 Core (H1a-g) 7 3 (43%) 0 4 (57%) AI Extension (H2) 1 0 1 (marginal) 0 Moderation (H3-H4) 2 0 2 (100%...
+201,3,"Price Value Dominance: The finding that PV (β = .505) rather than PE drives AI adoption represents a significant theoretical departure from traditional UTAUT research, suggesting AI tools are evaluate..."

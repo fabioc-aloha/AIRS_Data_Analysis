@@ -153,7 +153,7 @@ AI Anxiety & AX & .301 & Unacceptable reliability \\
 
 ## Appendix D: Supplementary Figures
 
-This appendix presents additional visualizations from the empirical analysis that support the findings reported in Chapters 4 and 5.
+This appendix presented additional visualizations from the empirical analysis that supported the findings reported in Chapters 4 and 5.
 
 ### D.1 Sample Preparation
 
@@ -177,11 +177,11 @@ This appendix presents additional visualizations from the empirical analysis tha
 
 ## Appendix E: AIRS Research Roadmap and Future Applications
 
-This appendix outlines the research program envisioned to extend the validated AIRS diagnostic instrument into practical organizational applications. The 8-factor structure already enables identification of specific adoption barriers; this roadmap represents a multi-phase research agenda to develop formalized protocols that build systematically on the foundation established in this dissertation.
+This appendix outlined the research program envisioned to extend the validated AIRS diagnostic instrument into practical organizational applications. The 8-factor structure already enabled identification of specific adoption barriers; this roadmap represented a multi-phase research agenda to develop formalized protocols that built systematically on the foundation established in this dissertation.
 
 ### E.1 Research Program Overview
 
-The AI Readiness Scale (AIRS) validated in this dissertation represents Phase 0 of a comprehensive research program aimed at bridging the gap between AI adoption measurement and organizational AI maturity. The 8-factor diagnostic structure was selected over a more parsimonious 7-factor model because AI Trust provides essential diagnostic capability: organizations can identify trust deficits and design targeted interventions. The roadmap below outlines subsequent research phases, each requiring independent empirical validation.
+The AI Readiness Scale (AIRS) validated in this dissertation represented Phase 0 of a comprehensive research program aimed at bridging the gap between AI adoption measurement and organizational AI maturity. The 8-factor diagnostic structure was selected over a more parsimonious 7-factor model because AI Trust provided essential diagnostic capability: organizations could identify trust deficits and design targeted interventions. The roadmap below outlined subsequent research phases, each requiring independent empirical validation.
 
 ```{=latex}
 \begin{table}[H]
@@ -229,7 +229,7 @@ Key Research Questions:
 
 Research Objective: Design and empirically test segment-specific interventions based on the user typology framework.
 
-The three-segment typology identified in this dissertation (AI Enthusiasts 31%, Moderate Users 47%, AI Skeptics 22%) suggested that different user populations may respond to different intervention approaches. Future research should employ randomized controlled trials to test whether segment-matched interventions outperform generic approaches.
+The three-segment typology identified in this dissertation (AI Enthusiasts 31%, Moderate Users 47%, AI Skeptics 22%) suggested that different user populations might respond to different intervention approaches. Future research should employ randomized controlled trials to test whether segment-matched interventions outperform generic approaches.
 
 Key Research Questions:
 
@@ -250,11 +250,11 @@ Long-Term Vision:
 
 ### E.6 Contribution to the Field
 
-This research program addressed a critical gap in the technology adoption literature: while validated measurement instruments existed, the translation of assessment into organizational action remained underdeveloped. The AIRS diagnostic structure provided the foundation for this translation by enabling identification of specific adoption barriers. By systematically building from validated diagnostic measurement through scoring, formalized protocols, intervention research, and ecosystem development, this roadmap offers a research-to-practice pipeline that can ultimately deliver the evidence-based tools organizations need to close the AI adoption-value gap.
+This research program addressed a critical gap in the technology adoption literature: while validated measurement instruments existed, the translation of assessment into organizational action remained underdeveloped. The AIRS diagnostic structure provided the foundation for this translation by enabling identification of specific adoption barriers. By systematically building from validated diagnostic measurement through scoring, formalized protocols, intervention research, and ecosystem development, this roadmap offered a research-to-practice pipeline that could ultimately deliver the evidence-based tools organizations needed to close the AI adoption-value gap.
 
 ### E.7 Collaboration and Licensing
 
-The AIRS diagnostic instrument validated in this dissertation is made available for academic research purposes. Organizations interested in applying the AIRS framework for organizational diagnostic assessment should contact the author to discuss appropriate use, validation requirements, and potential research collaboration opportunities.
+The AIRS diagnostic instrument validated in this dissertation was made available for academic research purposes. Organizations interested in applying the AIRS framework for organizational diagnostic assessment should contact the author to discuss appropriate use, validation requirements, and potential research collaboration opportunities.
 
 Contact: Dr. Fabio Correa | Touro University Worldwide
 
@@ -876,9 +876,9 @@ RQ: How can UTAUT2 be extended with AI-specific constructs to better predict beh
 
 Interpretation: AI Trust approached but did not reach conventional significance (p = .064). However, the 8-factor model including AI Trust was retained as the recommended diagnostic instrument because:
 
-1. Trust provides essential diagnostic capability for organizational assessment
-2. Organizations can identify trust deficits and design targeted interventions
-3. The marginal effect suggests theoretical relevance warranting further investigation with larger samples
+1. Trust provided essential diagnostic capability for organizational assessment
+2. Organizations could identify trust deficits and design targeted interventions
+3. The marginal effect suggested theoretical relevance warranting further investigation with larger samples
 
 ### I.4 Moderation Hypotheses (H3–H4)
 
@@ -1038,14 +1038,14 @@ AI Anxiety (AX) & .301 & Excluded & Validated anxiety scale adaptation \\
 \footnotesize Source: Compiled by Author
 \end{table}
 
-These constructs remain theoretically important for AI adoption and warrant revised measurement approaches in future research.
+These constructs remained theoretically important for AI adoption and warranted revised measurement approaches in future research.
 
 ### I.8 Key Theoretical Implications
 
-1. Price Value Dominance: The finding that PV (β = .505) rather than PE drives AI adoption represents a significant theoretical departure from traditional UTAUT research, suggesting AI tools are evaluated through a value lens ("Is it worth it?") rather than a utility lens ("Will it help me?").
+1. Price Value Dominance: The finding that PV (β = .505) rather than PE drove AI adoption represented a significant theoretical departure from traditional UTAUT research, suggesting AI tools were evaluated through a value lens ("Is it worth it?") rather than a utility lens ("Will it help me?").
 
-2. Non-Significance of Traditional Predictors: PE, EE, FC, and HB were not significant, suggesting AI may represent a distinct technology category requiring tailored theoretical frameworks.
+2. Non-Significance of Traditional Predictors: PE, EE, FC, and HB were not significant, suggesting AI might represent a distinct technology category requiring tailored theoretical frameworks.
 
-3. Experience-Dependent Mechanisms: The experience moderation of HM suggests that adoption mechanisms differ by user characteristics in ways not previously documented in technology acceptance research.
+3. Experience-Dependent Mechanisms: The experience moderation of HM suggested that adoption mechanisms differed by user characteristics in ways not previously documented in technology acceptance research.
 
-4. Population-Specific Pathways: Differential HM effects across populations indicate that adoption interventions may need to be tailored to specific user groups.
+4. Population-Specific Pathways: Differential HM effects across populations indicated that adoption interventions might need to be tailored to specific user groups.

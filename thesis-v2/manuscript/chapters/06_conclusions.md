@@ -4,7 +4,7 @@
 
 ## 6.1 Introduction
 
-This concluding chapter synthesizes the contributions of this dissertation study and articulates its significance for both scholarly advancement and organizational practice. The chapter summarizes the research purpose, methodology, and key findings; discusses theoretical and practical contributions; provides recommendations for practitioners and organizations; acknowledges limitations; suggests directions for future research; and offers closing remarks on the broader implications of this work for AI adoption in professional contexts.
+This concluding chapter synthesized the contributions of this dissertation study and articulated its significance for both scholarly advancement and organizational practice. The chapter summarized the research purpose, methodology, and key findings; discussed theoretical and practical contributions; provided recommendations for practitioners and organizations; acknowledged limitations; suggested directions for future research; and offered closing remarks on the broader implications of this work for AI adoption in professional contexts.
 
 
 
@@ -12,7 +12,7 @@ This concluding chapter synthesizes the contributions of this dissertation study
 
 ### 6.2.1 Research Purpose
 
-This study addressed a critical gap in technology acceptance research: the inadequacy of existing frameworks to explain AI-specific adoption patterns. While traditional models like UTAUT2 have demonstrated robust explanatory power for conventional technologies, the unique characteristics of AI systems (including opacity, probabilistic reasoning, and ethical implications) necessitated theoretical extension. The research purpose was twofold: (1) to develop and validate a psychometrically sound AI Readiness Scale (AIRS) extending UTAUT2 with AI-specific constructs, creating both a research scale and organizational diagnostic instrument, and (2) to identify the key drivers of AI adoption intention in professional and academic contexts.
+This study addressed a critical gap in technology acceptance research: the inadequacy of existing frameworks to explain AI-specific adoption patterns. While traditional models like UTAUT2 had demonstrated robust explanatory power for conventional technologies, the unique characteristics of AI systems (including opacity, probabilistic reasoning, and ethical implications) necessitated theoretical extension. The research purpose was twofold: (1) to develop and validate a psychometrically sound AI Readiness Scale (AIRS) extending UTAUT2 with AI-specific constructs, creating both a research scale and organizational diagnostic instrument, and (2) to identify the key drivers of AI adoption intention in professional and academic contexts.
 
 ### 6.2.2 Methodology Summary
 
@@ -30,7 +30,7 @@ The study employed a rigorous ten-phase psychometric validation approach:
 9. Comprehensive Review: Gap analysis and cross-validation of findings
 10. Final Synthesis: Integration of quantitative and qualitative insights
 
-This multi-phase approach exceeded typical scale development standards and provided robust evidence for the AIRS instrument's validity.
+This multi-phase approach exceeded typical scale development standards and provided strong evidence for the AIRS instrument's validity.
 
 ### 6.2.3 Key Findings
 
@@ -54,7 +54,7 @@ This dissertation made four primary contributions to technology acceptance theor
 
 ### 6.3.1 UTAUT2 Extension for AI Contexts
 
-The study extended UTAUT2 with AI-specific constructs, demonstrating that traditional technology acceptance frameworks required modification for AI adoption contexts. AI Trust was retained as a diagnostic inclusion rather than a structural claim: detecting β = .106 at 80% power required n > 600, and the construct provided essential organizational diagnostic capability. The shift from Performance Expectancy to Price Value dominance (detailed in §4.5) suggested that AI represents a theoretically distinct technology category.
+The study extended UTAUT2 with AI-specific constructs, demonstrating that traditional technology acceptance frameworks required modification for AI adoption contexts. AI Trust was retained as a diagnostic inclusion rather than a structural claim: detecting β = .106 at 80% power required n > 600, and the construct provided essential organizational diagnostic capability. The shift from Performance Expectancy to Price Value dominance (detailed in §4.5) suggested that AI represented a theoretically distinct technology category.
 
 ### 6.3.2 Context-Specific Adoption Drivers
 
@@ -76,7 +76,7 @@ The empirically-derived three-segment typology provided insights into adoption h
 
 Value Demonstration Over Capability Showcasing: The dominance of Price Value suggested that organizations may benefit from demonstrating clear return on investment rather than simply highlighting AI capabilities. The findings indicated that employees' cost-benefit mental models may be more influential than capability-focused messaging, a hypothesis warranting experimental validation in organizational contexts.
 
-Segment-Specific Intervention Hypotheses: The three-segment typology (§4.6) provided a framework for tailored change management research. Preliminary hypotheses suggest that each segment may respond to different intervention approaches, from champion programs and advanced training for Enthusiasts, to ROI demonstrations for Moderate Users, to graduated exposure and psychological safety protocols for Skeptics, pending experimental validation.
+Segment-Specific Intervention Hypotheses: The three-segment typology (§4.6) provided a framework for tailored change management research. Preliminary hypotheses suggested that each segment might respond to different intervention approaches, from champion programs and advanced training for Enthusiasts, to ROI demonstrations for Moderate Users, to graduated exposure and psychological safety protocols for Skeptics, pending experimental validation.
 
 Social Influence Leverage: The significant Social Influence effect (β = .136) suggested that peer influence mattered for AI adoption. The findings indicated that visible AI champions and communities of practice may facilitate adoption, approaches that warrant experimental testing.
 
@@ -84,15 +84,15 @@ Experience-Sensitive Approaches: The moderation finding suggested that experienc
 
 ### 6.4.2 For AI Tool Designers and Vendors
 
-Pricing Model Innovation: The Price Value dominance suggested that pricing strategy significantly influenced adoption. Freemium models, transparent pricing, and clear ROI documentation may be more important than feature development for driving adoption.
+Pricing Model Innovation: The Price Value dominance suggested that pricing strategy significantly influenced adoption. Freemium models, transparent pricing, and clear ROI documentation might be more important than feature development for driving adoption.
 
-Trust-Building Features: AI Trust was marginally significant (p = .064), and its retention as a diagnostic inclusion reflected the theoretical expectation that trust considerations are emerging concerns in AI adoption. The findings indicated that explainability features, reliability demonstrations, and transparency mechanisms may address trust-related hesitation, a hypothesis for design research. As AI systems transition from tools to autonomous agents, trust requirements are expected to intensify.
+Trust-Building Features: AI Trust was marginally significant (p = .064), and its retention as a diagnostic inclusion reflected the theoretical expectation that trust considerations were emerging concerns in AI adoption. The findings indicated that explainability features, reliability demonstrations, and transparency mechanisms might address trust-related hesitation, a hypothesis for design research. As AI systems transitioned from tools to autonomous agents, trust requirements were expected to intensify.
 
 Enjoyment-Focused Design: The Hedonic Motivation effect indicated that users valued enjoyable experiences. The findings suggested that designing AI tools for engagement, not just utility, may enhance adoption, though experimental validation is needed.
 
 ### 6.4.3 For Trainers and Educators
 
-Anxiety-Informed Pedagogy: The AI Skeptics segment (22%), characterized by below-average scores across all adoption readiness constructs, suggested that training programs may benefit from addressing resistance barriers before technical skills. Graduated exposure approaches, peer support, and psychological safety may be more effective when preceding capability training, though this hypothesis requires experimental validation.
+Anxiety-Informed Pedagogy: The AI Skeptics segment (22%), characterized by below-average scores across all adoption readiness constructs, suggested that training programs might benefit from addressing resistance barriers before technical skills. Graduated exposure approaches, peer support, and psychological safety might be more effective when preceding capability training, though this hypothesis required experimental validation.
 
 Accessibility Considerations: The finding that disability status was associated with higher AI anxiety (d = .36) highlighted the importance of inclusive AI training design. The findings suggested that materials and interfaces accommodating diverse abilities may better support anxious learners, considerations that warrant attention in training program development.
 
@@ -110,17 +110,17 @@ Equity Considerations: The differential anxiety findings suggested that AI adopt
 
 Based on the empirical findings and identified research gaps, the following recommendations are offered for the academic community:
 
-1. Replicate with larger samples: The marginal AI Trust effect (β = .106, p = .064) warrants replication with n > 600 to achieve adequate statistical power for detecting small-to-medium effects in AI adoption contexts.
+1. Replicate with larger samples: The marginal AI Trust effect (β = .106, p = .064) warranted replication with n > 600 to achieve adequate statistical power for detecting small-to-medium effects in AI adoption contexts.
 
-2. Develop improved AI-specific measures: The dropped constructs (Voluntariness, Explainability, Ethical Risk) represent important theoretical concepts that require more comprehensive operationalization with 3-4 items per sub-dimension and rigorous cognitive interviewing.
+2. Develop improved AI-specific measures: The dropped constructs (Voluntariness, Explainability, Ethical Risk) represented important theoretical concepts that required more comprehensive operationalization with 3-4 items per sub-dimension and rigorous cognitive interviewing.
 
-3. Investigate Price Value dominance: The unexpected finding that Price Value rather than Performance Expectancy drives AI adoption merits theoretical attention. Scholars should explore whether this reflects AI's unique characteristics or broader shifts in technology evaluation patterns.
+3. Investigate Price Value dominance: The unexpected finding that Price Value rather than Performance Expectancy drove AI adoption merited theoretical attention. Scholars should explore whether this reflected AI's unique characteristics or broader shifts in technology evaluation patterns.
 
-4. Examine career development integration: The significant experience moderation effect on Hedonic Motivation suggests that career development theory should be integrated with technology acceptance models. Longitudinal research linking career stages to adoption trajectories is warranted.
+4. Examine career development integration: The significant experience moderation effect on Hedonic Motivation suggested that career development theory should be integrated with technology acceptance models. Longitudinal research linking career stages to adoption trajectories was warranted.
 
 5. Validate the user typology framework: The three-segment typology (AI Enthusiasts, Moderate Users, AI Skeptics) should be validated across populations and used to develop segment-specific theoretical models.
 
-6. Conduct cross-cultural research: The Western sample limits generalizability. Comparative studies in collectivist cultures, developing economies, and regions with different AI policy environments are essential for theory refinement.
+6. Conduct cross-cultural research: The Western sample limited generalizability. Comparative studies in collectivist cultures, developing economies, and regions with different AI policy environments were essential for theory refinement.
 
 7. Apply longitudinal designs: Cross-sectional limitations preclude causal inference. Panel studies tracking intention-behavior relationships over 6-12 months will strengthen theoretical claims.
 
@@ -148,23 +148,23 @@ The following recommendations are offered with an important caveat: this study v
 
 ## 6.6 Limitations of the Study
 
-While this study employed rigorous methodology and produced robust findings, several limitations should be acknowledged:
+While this study employed rigorous methodology and produced sound findings, several limitations should be acknowledged:
 
 ### 6.6.1 Methodological Limitations
 
-Cross-Sectional Design: The single time-point data collection precluded causal inference. While structural equation modeling suggested directional relationships, alternative causal orderings could not be ruled out. Longitudinal research is needed to establish temporal precedence.
+Cross-Sectional Design: The single time-point data collection precluded causal inference. While structural equation modeling suggested directional relationships, alternative causal orderings could not be ruled out. Longitudinal research was needed to establish temporal precedence.
 
-Self-Reported Intention: Behavioral Intention may not perfectly predict actual behavior. However, the strong correlation between intention and self-reported usage (ρ = .69) provided behavioral validation.
+Self-Reported Intention: Behavioral Intention did not perfectly predict actual behavior. However, the strong correlation between intention and self-reported usage (ρ = .69) provided behavioral validation.
 
-Panel Sampling: While Centiment's topic-blinded recruitment mitigated self-selection bias, the United States panel sample limited generalizability to other countries, cultures, and organizational contexts. Replication in diverse settings is recommended.
+Panel Sampling: While Centiment's topic-blinded recruitment mitigated self-selection bias, the United States panel sample limited generalizability to other countries, cultures, and organizational contexts. Replication in diverse settings was recommended.
 
 ### 6.6.2 Measurement Limitations
 
 Dropped Constructs: Four proposed AI-specific constructs (Voluntariness, Explainability, Ethical Risk, and AI Anxiety) demonstrated inadequate reliability (α = .301–.582) and were excluded from the validated model. This represented an empirical finding about measurement challenges rather than a design failure, but it limited the comprehensiveness of the theoretical extension.
 
-Marginal AI Trust Effect: The Trust effect (β = .106, p = .064) did not reach conventional significance, possibly due to inadequate statistical power. Larger samples may be required to detect this effect reliably.
+Marginal AI Trust Effect: The Trust effect (β = .106, p = .064) did not reach conventional significance, possibly due to inadequate statistical power. Larger samples were required to detect this effect reliably.
 
-Western Sample: Cultural generalizability is unknown. AI adoption attitudes may differ substantially in collectivist cultures or regions with different AI policy environments.
+Western Sample: Cultural generalizability was unknown. AI adoption attitudes might differ substantially in collectivist cultures or regions with different AI policy environments.
 
 
 
@@ -208,7 +208,7 @@ The following research directions and testable hypotheses emerge from the empiri
 
 10. 3-Item Scale Improvement (H20): Expanding from 2 to 3 items per factor (AIRS-28) will resolve discriminant validity violations in the PE/HM/PV triad while maintaining fit. Design: 28-item CFA comparison with the current 16-item model.
 
-11. Longitudinal Acceptance Tracking: Recent evidence reveals that public sentiment toward AI has shifted post-ChatGPT, with "not acceptable" responses increasing from 23% to 30% in one year [@baumann2025reduced]. This suggests the need for longitudinal AIRS studies tracking how individual adoption factors change as AI technologies mature and social discourse evolves.
+11. Longitudinal Acceptance Tracking: Recent evidence revealed that public sentiment toward AI had shifted post-ChatGPT, with "not acceptable" responses increasing from 23% to 30% in one year [@baumann2025reduced]. This suggested the need for longitudinal AIRS studies tracking how individual adoption factors changed as AI technologies matured and social discourse evolved.
 
 ### 6.7.3 Research Roadmap: From Validated Scale to Organizational Applications
 
@@ -240,7 +240,7 @@ Phase 2b: Cross-Cultural Validation (2027–2028)
 
 ### 6.7.4 Appropriate Reliance Research
 
-Critically, adoption readiness represents only the first step in effective AI integration. Microsoft's AETHER group synthesizes appropriate reliance research around two core constructs [@passi2024appropriate]: Capability-Appropriate Reliance on AI (CAIR), matching human reliance to actual AI capability, and Context-Sensitive Reliance (CSR), adapting behavior based on situational factors like stakes and uncertainty. The *New Future of Work Report* further cautions that interventions designed to improve AI acceptance may inadvertently increase over-reliance [@butler2025new], creating a paradox: successfully deploying AI through AIRS-identified pathway optimizations may set the stage for over-reliance problems.
+Critically, adoption readiness represented only the first step in effective AI integration. Microsoft's AETHER group synthesized appropriate reliance research around two core constructs [@passi2024appropriate]: Capability-Appropriate Reliance on AI (CAIR), matching human reliance to actual AI capability, and Context-Sensitive Reliance (CSR), adapting behavior based on situational factors like stakes and uncertainty. The *New Future of Work Report* further cautioned that interventions designed to improve AI acceptance might inadvertently increase over-reliance [@butler2025new], creating a paradox: successfully deploying AI through AIRS-identified pathway optimizations may set the stage for over-reliance problems.
 
 Future research should therefore extend beyond the adoption decision to investigate:
 
@@ -268,7 +268,7 @@ Phase 4: Comprehensive AI Readiness System (2029+)
 - Create industry-specific adaptation guidelines
 - Establish training and certification for AIRS practitioners
 
-This roadmap positioned the current validated scale as the essential foundation for a research-to-practice pipeline that can ultimately deliver the diagnostic and intervention tools that organizations need to close the AI adoption-value gap.
+This roadmap positioned the current validated scale as the essential foundation for a research-to-practice pipeline that could ultimately deliver the diagnostic and intervention tools that organizations needed to close the AI adoption-value gap.
 
 
 
@@ -276,8 +276,8 @@ This roadmap positioned the current validated scale as the essential foundation 
 
 This dissertation addressed a timely challenge: understanding why individuals adopt or resist AI tools in professional contexts. As documented throughout this study, the gap between AI adoption rates and value realization demanded scholarly attention.
 
-The findings revealed that AI adoption operated through different mechanisms than previous technology adoption. The dominance of Price Value, the significant role of Hedonic Motivation, and experience as a moderator suggested that AI represents a distinct technology category. Users evaluated AI tools through a value-and-enjoyment lens rather than a pure utility lens, a finding with implications for organizational practice.
+The findings revealed that AI adoption operated through different mechanisms than previous technology adoption. The dominance of Price Value, the significant role of Hedonic Motivation, and experience as a moderator suggested that AI represented a distinct technology category. Users evaluated AI tools through a value-and-enjoyment lens rather than a pure utility lens, a finding with implications for organizational practice.
 
-The validated AIRS diagnostic instrument provided researchers with a psychometrically sound foundation for investigating AI adoption. The 8-factor structure enabled organizations to identify specific adoption barriers, whether trust deficits, inadequate perceived value, or social influence gaps, and design targeted interventions. The three-segment typology offered preliminary evidence of adoption heterogeneity warranting experimental investigation. The theoretical extensions contributed to scholarly conversations about how technology acceptance models must evolve.
+The validated AIRS diagnostic instrument provided researchers with a psychometrically sound foundation for investigating AI adoption. The 8-factor structure enabled organizations to identify specific adoption barriers, whether trust deficits, inadequate perceived value, or social influence gaps, and to design targeted interventions. The three-segment typology offered preliminary evidence of adoption heterogeneity warranting experimental investigation. The theoretical extensions contributed to scholarly conversations about how technology acceptance models must evolve.
 
-As AI transforms professional work, understanding adoption psychology becomes critical. This dissertation established a validated foundation that can enable future diagnostic tools, intervention protocols, and assessment systems. The path forward requires continued research, experimental studies, and commitment to inclusive adoption benefiting all members of the workforce.
+As AI transformed professional work, understanding adoption psychology became critical. This dissertation established a validated foundation that could enable future diagnostic tools, intervention protocols, and assessment systems. The path forward required continued research, experimental studies, and commitment to inclusive adoption benefiting all members of the workforce.

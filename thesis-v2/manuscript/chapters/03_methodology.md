@@ -4,9 +4,9 @@
 
 ## 3.1 Introduction
 
-This chapter describes the research methodology employed to develop and validate the AI Readiness Scale (AIRS), a diagnostic instrument for assessing AI adoption readiness, and test the extended UTAUT model for AI tool adoption in higher education. The study followed established scale development procedures [@devellis2021; @hinkin1998] combined with structural equation modeling to examine relationships between latent constructs. The research design prioritized psychometric rigor through split-sample cross-validation, comprehensive validity assessment, and multi-group invariance testing. The resulting 8-factor structure enabled both research applications and organizational diagnostic use, allowing practitioners to identify specific adoption barriers and design targeted interventions.
+This chapter described the research methodology employed to develop and validate the AI Readiness Scale (AIRS), a diagnostic instrument for assessing AI adoption readiness, and test the extended UTAUT model for AI tool adoption in higher education. The study followed established scale development procedures [@devellis2021; @hinkin1998] combined with structural equation modeling to examine relationships between latent constructs. The research design prioritized psychometric rigor through split-sample cross-validation, comprehensive validity assessment, and multi-group invariance testing. The resulting 8-factor structure enabled both research applications and organizational diagnostic use, allowing practitioners to identify specific adoption barriers and design targeted interventions.
 
-The chapter is organized as follows: Section 3.2 describes the research philosophy and design; Section 3.3 details the theoretical framework and hypotheses; Section 3.4 covers instrument development; Section 3.5 addresses sampling and data collection; Section 3.6 presents the analytical strategy; Section 3.7 discusses reliability and validity; Section 3.8 covers ethical considerations; and Section 3.9 acknowledges methodological limitations.
+The chapter was organized as follows: Section 3.2 described the research philosophy and design; Section 3.3 detailed the theoretical framework and hypotheses; Section 3.4 covered instrument development; Section 3.5 addressed sampling and data collection; Section 3.6 presented the analytical strategy; Section 3.7 discussed reliability and validity; Section 3.8 covered ethical considerations; and Section 3.9 acknowledged methodological limitations.
 
 
 
@@ -189,7 +189,7 @@ Interpretation: These constructs demonstrated poor inter-item correlations, sugg
 
 Resolution: All four AI-specific constructs were excluded from the final measurement model due to inadequate reliability. These constructs remain theoretically important for AI adoption research and require more comprehensive operationalization with 3-4 items per sub-dimension in future studies.
 
-This represents an empirical finding, not a design limitation. The proposal committed to testing these constructs; the data revealed inadequate measurement properties. This transparent reporting aligned with best practices in scale development [@devellis2021].
+This represented an empirical finding, not a design limitation. The proposal committed to testing these constructs; the data revealed inadequate measurement properties. This transparent reporting aligned with best practices in scale development [@devellis2021].
 
 ### 3.4.5 Final Instrument Structure
 
@@ -274,7 +274,7 @@ Leader & Managers (n=71), executives (n=52) & 123 & 23.5\% \\
 \end{table}
 ```
 
-Note: For multi-group SEM requiring larger group sizes, Professional and Leader categories were combined (n = 307) to contrast with the Student category (n = 216), designated as "Academic" for multi-group analysis. This grouping reflects meaningful theoretical distinctions between academic-focused and employment-focused roles.
+Note: For multi-group SEM requiring larger group sizes, Professional and Leader categories were combined (n = 307) to contrast with the Student category (n = 216), designated as "Academic" for multi-group analysis. This grouping reflected meaningful theoretical distinctions between academic-focused and employment-focused roles.
 
 ### 3.5.5 Data Collection Procedures
 
@@ -669,7 +669,7 @@ Method: Automated content analysis with keyword classification
 4. Theme prevalence quantification
 5. Role-based comparison
 
-*Note*: This approach uses deterministic keyword matching rather than the iterative interpretive coding of Braun and Clarke's [-@braun2006] thematic analysis. It is better characterized as automated content analysis.
+*Note*: This approach used deterministic keyword matching rather than the iterative interpretive coding of Braun and Clarke's [-@braun2006] thematic analysis. It was better characterized as automated content analysis.
 
 Themes Identified: 10 distinct themes (see Chapter 4)
 
@@ -753,7 +753,7 @@ Threshold: AVE ≥ .50 [@fornell1981]
 
 ### 3.7.3 Discriminant Validity
 
-Definition: Extent to which constructs are distinct from one another
+Definition: Extent to which constructs were distinct from one another
 
 Assessment Methods:
 
@@ -761,7 +761,7 @@ Assessment Methods:
 2. Heterotrait-Monotrait Ratio (HTMT): HTMT < .85 [@henseler2015]
 3. Maximum correlation: |r| < .85 between any construct pair
 
-Known Limitations: Three construct pairs exhibited high inter-factor correlations that violated the Fornell-Larcker criterion: Performance Expectancy × Price Value (r = .898), Performance Expectancy × Hedonic Motivation (r = .911), and Hedonic Motivation × Price Value (r = .898). HTMT analysis confirms these overlaps: PE × PV (HTMT = .902), PE × HM (HTMT = .900), and HM × PV (HTMT = .904) all exceed the .85 threshold. These overlaps are consistent with UTAUT2 literature, where motivational constructs often share substantial variance in technology acceptance contexts [@venkatesh2012consumer]. All remaining pairwise comparisons pass all discriminant criteria. Several mitigating factors support retaining the eight-factor structure:
+Known Limitations: Three construct pairs exhibited high inter-factor correlations that violated the Fornell-Larcker criterion: Performance Expectancy × Price Value (r = .898), Performance Expectancy × Hedonic Motivation (r = .911), and Hedonic Motivation × Price Value (r = .898). HTMT analysis confirmed these overlaps: PE × PV (HTMT = .902), PE × HM (HTMT = .900), and HM × PV (HTMT = .904) all exceeded the .85 threshold. These overlaps were consistent with UTAUT2 literature, where motivational constructs often shared substantial variance in technology acceptance contexts [@venkatesh2012consumer]. All remaining pairwise comparisons passed all discriminant criteria. Several mitigating factors supported retaining the eight-factor structure:
 
 1. HTMT ratios were computed as a supplementary check; HTMT is considered more robust than Fornell-Larcker for detecting discriminant problems [@henseler2015]
 2. Model fit remained excellent (CFI = .975, TLI = .960, RMSEA = .065, SRMR = .026 on holdout; CFI = .979, TLI = .966, RMSEA = .061, SRMR = .022 on full sample), indicating the eight-factor model reproduces the data well
@@ -830,15 +830,15 @@ The survey addressed non-sensitive topics related to technology use attitudes. N
 
 ### 3.9.1 Design Limitations
 
-1. Cross-sectional design: Precludes causal inference; relationships may be correlational rather than causal. Future longitudinal studies needed to establish temporal precedence.
+1. Cross-sectional design: Precluded causal inference; relationships may have been correlational rather than causal. Future longitudinal studies were needed to establish temporal precedence.
 
-2. Self-reported measures: Behavioral Intention is a proxy for actual behavior. While BI strongly predicts behavior in UTAUT studies, some intention-behavior gap is expected.
+2. Self-reported measures: Behavioral Intention was a proxy for actual behavior. While BI strongly predicted behavior in UTAUT studies, some intention-behavior gap was expected.
 
 3. Single time point: Attitudes and technology contexts change rapidly; findings reflect an October–November 2025 snapshot.
 
 ### 3.9.2 Sampling Limitations
 
-1. Panel sampling: While Centiment's verified respondent panels provide quality controls and topic-blinded recruitment, panel sampling remains non-probability sampling that limits generalizability to broader populations. Results may not generalize beyond similar United States professional and academic contexts.
+1. Panel sampling: While Centiment's verified respondent panels provided quality controls and topic-blinded recruitment, panel sampling remained non-probability sampling that limited generalizability to broader populations. Results might not generalize beyond similar United States professional and academic contexts.
 
 2. Single country: While diverse roles represented, findings are limited to U.S. respondents and may not transfer to other cultural contexts.
 
