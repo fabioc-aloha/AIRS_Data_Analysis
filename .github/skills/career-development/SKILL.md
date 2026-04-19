@@ -1,6 +1,7 @@
 ---
 name: career-development
 description: Resume crafting, interview preparation, job search strategy, and professional growth planning.
+tier: extended
 applyTo: '**/*resume*,**/*cv*,**/*interview*,**/*job*,**/*career*,**/*cover-letter*,**/*portfolio*,**/*linkedin*'
 ---
 
@@ -127,6 +128,23 @@ Track every application with:
 - Stage (Applied → Phone screen → Interview → Offer → Accepted/Rejected)
 - Follow-up dates
 - Notes from each interaction
+
+```json
+{
+  "applications": [
+    {
+      "company": "Acme Corp",
+      "role": "Senior Engineer",
+      "applied": "2026-04-01",
+      "source": "referral",
+      "contact": "Jane Smith (jane@acme.com)",
+      "stage": "phone-screen",
+      "followUp": "2026-04-08",
+      "notes": "Strong culture fit, team uses similar stack"
+    }
+  ]
+}
+```
 
 ### Networking Without Being Awkward
 

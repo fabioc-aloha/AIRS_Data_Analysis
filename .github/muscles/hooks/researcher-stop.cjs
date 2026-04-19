@@ -2,6 +2,7 @@
 // H20: Research continuity
 // Agent-scoped Stop hook for Researcher mode.
 // Reminds to save unanswered questions and partial findings before the session ends.
+// @reviewed: 2026-04-18
 'use strict';
 
 const fs = require('fs');
@@ -40,7 +41,7 @@ try {
       lines.push(`- ${f}`);
     }
   } else {
-    lines.push('', 'No research files were modified — consider saving findings to alex_docs/research/.');
+    lines.push('', 'No research files were modified -- consider saving findings to alex_docs/research/.');
   }
 } catch { /* research dir not found */ }
 

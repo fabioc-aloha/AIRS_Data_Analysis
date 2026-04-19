@@ -1,6 +1,8 @@
 ---
 name: "proactive-assistance"
 description: "Anticipate user needs and offer help before being asked"
+tier: core
+applyTo: '**/*proactive*,**/*anticipate*,**/*suggest*'
 user-invokable: false
 ---
 

@@ -1,5 +1,7 @@
 ---
 description: "Gamma presentation generation for AI slides and visual storytelling"
+application: "When generating images, managing visual assets, or maintaining brand consistency"
+applyTo: "**/*gamma*,**/*presentation*.md,**/*slides*.md"
 ---
 
 # Gamma Presentation Generation
@@ -166,13 +168,3 @@ Quick reference for:
 - `prompt-engineering`: Effective inputText crafting improves results
 - `presentation-tool-selection`: Decision matrix for Marp vs Gamma vs manual
 - `brand-asset-management`: Consistent visual identity across presentations
-
----
-
-## Synapse Connections
-
-Read `.github/skills/gamma-presentations/synapses.json` for:
-- Semantic routing patterns
-- Tool requirements
-- Connection strengths
-- Bidirectional relationships

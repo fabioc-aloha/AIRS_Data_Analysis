@@ -1,5 +1,8 @@
 ---
+mode: agent
+sem: 1
 description: "Add visual memory (reference photos, voice samples, or video styles) to a skill for self-sufficient face-consistent generation"
+application: "When managing visual memory, adding reference photos, or generating face-consistent images"
 ---
 
 # Visual Memory
@@ -15,9 +18,7 @@ description: "Add visual memory (reference photos, voice samples, or video style
 ```
 
 /visual-memory add-subject <name> — Add a new person with reference photos
-/visual-memory add-voice <name> — Register a voice sample for TTS cloning
-/visual-memory add-video-style <name> — Store a consistent video motion template
-/visual-memory prepare-photos <folder> — Resize + optimize a folder of photos
+/visual-memory add-vre-photos <folder> — Resize + optimize a folder of photos
 /visual-memory status — Show current visual memory inventory
 
 ```
@@ -29,8 +30,7 @@ description: "Add visual memory (reference photos, voice samples, or video style
 ```
 
 /visual-memory add-subject alex
-/visual-memory add-subject claudia --photos ./claudia-photos/
-/visual-memory add-voice alex --file voices/alex-sample.wav
+/visual-memory add-subject jane --photos ./jane-photos/
 /visual-memory prepare-photos ./raw-photos/
 /visual-memory status
 
@@ -139,43 +139,7 @@ console.log(`✅ ${subject.images.length} photos loaded`);
 console.log(`✅ First URI length: ${subject.images[0].dataUri.length} chars`);
 ```
 
----
-
-## Execution: add-voice
-
-### Requirements
-
-- Duration: 5-15 seconds of clear speech
-- Format: WAV or MP3, 16kHz+ sample rate
-- No background noise or music
-
-### Steps
-
-1. Place voice file in `visual-memory/voices/<name>-sample.wav`
-2. Register in `visual-memory.json`:
-
-```json
-{
-  "voices": {
-    "<name>": {
-      "description": "Natural speaking voice",
-      "audioFile": "visual-memory/voices/<name>-sample.wav",
-      "duration": "10s",
-      "model": "chatterbox-turbo"
-    }
-  }
-}
-```
-
-3. Test:
-
-```bash
-node scripts/generate.js \
-  --text "Hello, testing voice clone." \
-  --output test-clone.mp3 \
-  --model chatterbox-turbo \
-  --reference-audio .github/skills/<skill>/visual-memory/voices/<name>-sample.wav
-```
+> **For voice samples**: See [/audio-memory add-voice](audio-memory.prompt.md) in the audio-memory prompt.
 
 ---
 
@@ -197,10 +161,6 @@ console.log("=== Visual Memory Status ===");
 for (const [name, subject] of Object.entries(vm.subjects || {})) {
   if (name.startsWith("_")) continue;
   console.log(`📸 ${name}: ${subject.images?.length ?? 0} photos`);
-}
-for (const [name] of Object.entries(vm.voices || {})) {
-  if (name.startsWith("_")) continue;
-  console.log(`🎤 ${name}: voice sample registered`);
 }
 for (const [name] of Object.entries(vm.videoStyles || {})) {
   if (name.startsWith("_")) continue;

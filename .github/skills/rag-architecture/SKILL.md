@@ -1,6 +1,7 @@
 ---
 name: rag-architecture
 description: Build retrieval-augmented generation systems that ground LLMs in your data.
+tier: standard
 applyTo: '**/*rag*,**/*retrieval*,**/*embedding*,**/*vector*,**/*knowledge*,**/*search*'
 ---
 
@@ -387,7 +388,3 @@ logger.info({
 | Use smaller embedding model | API cost |
 | Compress vectors (PQ) | Storage |
 | Filter before semantic search | Compute |
-
-## Synapses
-
-See [synapses.json](synapses.json) for connections.

@@ -1,22 +1,13 @@
 ---
 description: "Semantic, logic, code, and architectural consistency audit procedure — the mental layer on top of automated scripts"
+application: "When following semantic audit workflows or troubleshooting related issues"
 applyTo: "**/*audit*,**/*qa*"
 ---
 
 # Semantic Audit Procedure
 
-**Classification**: Procedural Memory | Quality Assurance  
-**Activation**: semantic audit, logic check, consistency review, meaning drift  
 **Purpose**: Verify that documented meaning, process logic, code behavior, and architectural claims are internally consistent  
-**Complements**: brain-qa.ps1 (structural), audit-master-alex.ps1 (automated)
-
-## Synapses
-
-- [.github/skills/brain-qa/SKILL.md] (High, Implements, Forward) - "Brain QA skill teaches what to look for; this procedure is the how"
-- [.github/skills/architecture-audit/SKILL.md] (High, Implements, Forward) - "Master audit skill scopes the check; this procedure drives the review"
-- [.github/instructions/dream-state-automation.instructions.md] (Medium, Validates, Forward) - "Dream detects structural issues; semantic audit detects meaning issues"
-
----
+**Complements**: brain-qa.cjs (structural), audit-master-alex.cjs (automated)
 
 ## When to Run
 
@@ -71,7 +62,7 @@ applyTo: "**/*audit*,**/*qa*"
 
 **What to check**:
 - `package.json` contributes.commands → do all have handlers in `src/commands/`?
-- Documented synapse triggers → are they wired in the activation code?
+- Documented activation triggers → are they wired in the activation code?
 - Documented MCP tool names → do they match `alex_*` function names?
 
 ### 4. Architectural Coherence
@@ -88,6 +79,32 @@ applyTo: "**/*audit*,**/*qa*"
 - Active Context: is the dynamic section (Persona, Objective, Focus Trifectas, Principles, Last Assessed) described consistently in copilot-instructions, alex-core, SSO, and meditation?
 - Memory tiers: declared in copilot-instructions, implemented in dream, validated by brain-qa — same categories?
 - Agent ecosystem: listed in copilot-instructions, files in .github/agents/ — same count and names?
+
+### 5. Reader Testing (Doc Comprehension Gate)
+
+**Question**: Could a reader with no prior context understand this document and act on it correctly?
+
+**Procedure**:
+1. After writing or updating any user-facing documentation, predict 5-10 questions a new reader would ask
+2. For each predicted question, verify the document answers it clearly
+3. Fix gaps: if a predicted question has no answer in the doc, add the information
+4. Exit condition: "a reader with no prior context could answer all predicted questions correctly from this document alone"
+
+**Example for a README**:
+
+| Predicted Reader Question | Answered? | Where |
+|--------------------------|-----------|-------|
+| What does this project do? | Yes | First paragraph |
+| How do I install it? | Yes | Installation section |
+| What are the prerequisites? | No | **GAP: add prerequisites** |
+| How do I run it locally? | Yes | Getting Started |
+| Where do I report bugs? | No | **GAP: add contributing link** |
+
+**When to apply**:
+- New documents: always
+- Updated documents: when the update changes the audience or scope
+- Release notes: predict "what changed for me?" and "do I need to do anything?"
+- Heir documentation: predict "how do I get started?" and "what's different from Master?"
 
 ## Output Format
 

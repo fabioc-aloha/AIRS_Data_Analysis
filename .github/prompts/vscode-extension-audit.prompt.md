@@ -1,5 +1,8 @@
 ---
+mode: agent
+sem: 1
 description: Systematic VS Code extension review for API correctness, security, resource management, and 1.109+ agent platform readiness
+application: "When requesting code reviews, PR feedback, or quality assessment"
 ---
 
 # VS Code Extension Audit
@@ -63,11 +66,6 @@ Select-String -Path src -Pattern "getConfiguration.*\.update\(" -Recurse
 2. Extract the key: `.update('settingName', value)`
 3. Build full key: `my-ext.feature.settingName`
 4. Verify key exists in `package.json` `configuration.properties`
-
-**Auto-validate** (if script available):
-```powershell
-.\scripts\validate-manifest.ps1
-```
 
 **Findings Template:**
 ```markdown

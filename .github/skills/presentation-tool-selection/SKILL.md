@@ -1,6 +1,7 @@
 ---
 name: presentation-tool-selection
 description: Best practice decision matrix for choosing between Marp, Gamma, and PptxGenJS based on use case requirements.
+tier: standard
 applyTo: '**/*presentation*,**/*slides*,**/*deck*,**/*pptx*'
 ---
 
@@ -224,7 +225,3 @@ Sometimes the best approach combines tools:
 - "presentation strategy"
 
 ---
-
-## Synapses
-
-See [synapses.json](synapses.json) for connections.

@@ -1,9 +1,11 @@
 ---
+sem: 1
+mode: agent
 description: Generate AI-powered presentations using the Gamma API with Duarte methodology consulting and PPTX/PDF export
+application: "When creating presentations, slides, or visual storytelling content"
 ---
 
 # Generate Gamma Presentation
-
 
 **Command**: `/gamma [topic or file path]`
 
@@ -44,18 +46,18 @@ For presentations that need editing before generation:
 
 ## Key Parameters
 
-| Parameter | Description | Example |
-|-----------|-------------|---------|
-| `--topic` / `-t` | Topic or content to generate from | `--topic "AI Ethics"` |
-| `--file` / `-f` | Path to markdown file | `--file ./deck.md` |
-| `--slides` / `-n` | Number of slides (1-75) | `--slides 12` |
-| `--format` | Output format | `--format presentation` |
-| `--export` / `-e` | Export type | `--export pptx` |
-| `--tone` | Tone description | `--tone "inspiring"` |
-| `--audience` | Target audience | `--audience "executives"` |
-| `--image-model` | AI image model | `--image-model flux-pro` |
-| `--draft` | Create markdown template only | `--draft` |
-| `--open` | Open file after generation | `--open` |
+| Parameter         | Description                       | Example                   |
+| ----------------- | --------------------------------- | ------------------------- |
+| `--topic` / `-t`  | Topic or content to generate from | `--topic "AI Ethics"`     |
+| `--file` / `-f`   | Path to markdown file             | `--file ./deck.md`        |
+| `--slides` / `-n` | Number of slides (1-75)           | `--slides 12`             |
+| `--format`        | Output format                     | `--format presentation`   |
+| `--export` / `-e` | Export type                       | `--export pptx`           |
+| `--tone`          | Tone description                  | `--tone "inspiring"`      |
+| `--audience`      | Target audience                   | `--audience "executives"` |
+| `--image-model`   | AI image model                    | `--image-model flux-pro`  |
+| `--draft`         | Create markdown template only     | `--draft`                 |
+| `--open`          | Open file after generation        | `--open`                  |
 
 ---
 
@@ -71,15 +73,19 @@ For presentations that need editing before generation:
 ## Image Models by Cost
 
 **Cost-effective (2 credits)**:
+
 - `flux-quick`, `flux-kontext`, `imagen-flash`, `luma-flash`
 
 **Standard (8-15 credits)**:
+
 - `flux-pro` (recommended), `imagen-pro`, `ideogram-turbo`, `leonardo`
 
 **Premium (20-33 credits)**:
+
 - `ideogram`, `imagen4`, `gemini`, `recraft`, `gpt-image`, `dalle3`
 
 **Ultra (30-120 credits)**:
+
 - `flux-ultra`, `imagen4-ultra`, `recraft-svg`, `gpt-image-hd`
 
 ---
@@ -87,11 +93,13 @@ For presentations that need editing before generation:
 ## Example Workflows
 
 ### Quick Presentation
+
 ```
 /gamma Introduction to Neural Networks --export pptx --open
 ```
 
 ### Custom Pitch Deck
+
 ```
 /gamma Product Launch Plan \
   --slides 15 \
@@ -103,6 +111,7 @@ For presentations that need editing before generation:
 ```
 
 ### Draft → Edit → Generate
+
 ```
 # Step 1: Create draft
 /gamma Quarterly Business Review --slides 12 --draft --draft-output ./deck.md
@@ -114,6 +123,7 @@ For presentations that need editing before generation:
 ```
 
 ### From Existing Markdown
+
 ```
 /gamma --file ./README.md --slides 10 --dimensions 16x9 --export pptx
 ```
@@ -125,11 +135,13 @@ For presentations that need editing before generation:
 Alex applies expert presentation consulting based on Nancy Duarte's methodology:
 
 ### Story Structure
+
 - **Beginning**: Establish current state ("what is")
 - **Middle**: Contrast with vision ("what could be")
 - **End**: Call to action and "new bliss"
 
 ### Key Principles
+
 1. **Audience as Hero**: Position audience as protagonist
 2. **Sparkline**: Alternate between "what is" and "what could be"
 3. **S.T.A.R. Moments**: Something They'll Always Remember
@@ -154,6 +166,7 @@ Before first use:
 ## Output
 
 Gamma generation produces:
+
 - **Gamma URL**: Live presentation on gamma.app (editable)
 - **Export File**: PPTX or PDF downloaded to `./exports/` or custom path
 - **Credit Report**: Credits used and remaining balance
@@ -164,7 +177,7 @@ Gamma generation produces:
 
 - `/marp` - Generate Marp presentation (markdown-based, offline)
 - `/word` - Convert markdown to Word document
-- `/diagram` - Generate Mermaid diagrams for slides
+- `/diagramming` - Generate Mermaid diagrams for slides
 
 ---
 
@@ -204,5 +217,3 @@ Gamma generation produces:
 For markdown-driven decks, set `--slides` explicitly to match the number of sections you want Gamma to preserve.
 
 Monitor credits at: https://gamma.app/settings
-
-

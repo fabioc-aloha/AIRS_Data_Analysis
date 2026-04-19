@@ -1,20 +1,10 @@
 ---
 description: "Dependency security, version management, and upgrade protocols"
+application: "When following dependency management workflows or troubleshooting related issues"
 applyTo: "**/*package*.json,**/requirements*.txt,**/Cargo.toml,**/go.mod,**/pom.xml"
 ---
 
 # Dependency Management Procedural Memory
-
-**Classification**: Procedural Memory | Security & Maintenance  
-**Activation**: dependency, package, npm, outdated, vulnerability, security, audit, upgrade, breaking change  
-**Priority**: Proactive - Regular maintenance prevents emergencies
-
----
-
-## Synapses
-
-- [.github/instructions/technical-debt-tracking.instructions.md] → (Medium, Feeds, Forward) - "Outdated deps are technical debt"
-- [CHANGELOG.md] → (Medium, Documents, Forward) - "Dependency changes should be logged"
 
 ---
 
@@ -33,7 +23,7 @@ applyTo: "**/*package*.json,**/requirements*.txt,**/Cargo.toml,**/go.mod,**/pom.
 
 ### Step 1: Run Audit
 
-```powershell
+```bash
 npm audit
 ```
 
@@ -48,7 +38,7 @@ npm audit
 
 ### Step 3: Fix Vulnerabilities
 
-```powershell
+```bash
 # Automatic fix (when available)
 npm audit fix
 
@@ -75,7 +65,7 @@ If vulnerability can't be fixed immediately:
 
 ### Step 1: Check Status
 
-```powershell
+```bash
 npm outdated
 ```
 
@@ -100,7 +90,7 @@ typescript   4.9.5    4.9.5   5.3.2    devDependency
 
 ### Step 3: Safe Update Process
 
-```powershell
+```bash
 # Update patches and minors (usually safe)
 npm update
 
@@ -120,7 +110,7 @@ npm info package-name changelog
 ### Pre-Upgrade Assessment
 
 1. **Read the changelog/migration guide**
-   ```powershell
+   ```bash
    npm info <package> repository  # Find repo
    # Then visit CHANGELOG.md or releases page
    ```
@@ -139,7 +129,7 @@ npm info package-name changelog
 
 ### Upgrade Execution
 
-```powershell
+```bash
 # Create upgrade branch
 git checkout -b upgrade/package-name-v2
 
@@ -181,7 +171,7 @@ When adding or keeping a dependency:
 
 ### Commands for Assessment
 
-```powershell
+```bash
 # Check package size impact
 npm install -g @pnpm/package-cost
 package-cost package-name
@@ -202,7 +192,7 @@ npm info package-name
 
 ### Quarterly: Remove Unused Dependencies
 
-```powershell
+```bash
 # Find potentially unused packages
 npx depcheck
 
@@ -247,7 +237,7 @@ npm uninstall package-name
 
 ### When Lock File Changes Unexpectedly
 
-```powershell
+```bash
 # Check what changed
 git diff package-lock.json | head -50
 

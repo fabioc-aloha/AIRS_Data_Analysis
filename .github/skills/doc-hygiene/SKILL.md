@@ -1,6 +1,8 @@
 ---
 name: doc-hygiene
 description: Documentation hygiene — anti-drift rules, count elimination, and living document maintenance
+tier: core
+applyTo: '**/*doc*,**/*readme*,**/*changelog*,**/*drift*'
 ---
 
 # Documentation Hygiene
@@ -18,7 +20,7 @@ Hardcoded counts (e.g., "109 skills", "28 instructions", "6 agents") in prose be
 | **No counts in prose** | "See the skills catalog for the current list" | "Alex has 109 skills" |
 | **Counts in tables OK** | Tables with `| Count | Value |` format are scannable and updatable | Counts buried in paragraphs |
 | **Single source of truth** | One canonical location per metric | Same count in 5 files |
-| **Link, don't copy** | "See [SKILLS-CATALOG.md]" | Duplicate the catalog inline |
+| **Link, don't copy** | "See brain-health-grid for current list" | Duplicate the list inline |
 | **Timestamp proximity** | Counts near a "Last Updated" date are acceptable | Undated counts |
 
 ### Canonical Sources
@@ -33,7 +35,7 @@ The filesystem is always the source of truth. Derive counts from directories, no
 | Agent count | `.github/agents/` directory listing | Filesystem is truth |
 | Muscle count | `.github/muscles/` directory listing | Filesystem is truth |
 | Command count | `package.json` `contributes.commands` (if applicable) | Code is truth |
-| Synapse count | Brain QA validation output | Validated at runtime |
+| Connection count | Brain QA validation output | Validated at runtime |
 
 ### Acceptable Count Locations
 
@@ -63,7 +65,7 @@ All other files should use **descriptive references** instead of counts.
 |------|----------|-------------|
 | **Living** | README, copilot-instructions, ROADMAP, USER-MANUAL | Minimize counts; keep current |
 | **Historical** | Research papers, competitive analyses, archived docs | Counts are snapshots — leave as-is |
-| **Generated** | SKILLS-CATALOG, TRIFECTA-CATALOG | Counts are output of audit — OK |
+| **Generated** | brain-health-grid output | Counts are output of audit — OK |
 
 ## Docs-as-Architecture
 
@@ -90,6 +92,49 @@ Documentation in a cognitive architecture IS architecture. Apply the same engine
 | Moving a file requires updating ALL references in the same commit | Grep for filename in all .md files before moving |
 | Archived docs removed from active indexes | Don't link to `archive/` from living docs |
 | Use relative paths within doc trees | `./architecture/FILE.md` not absolute paths |
+
+### Link Integrity Checker
+
+```bash
+# Find all markdown links and verify they resolve
+find . -name "*.md" -exec grep -oP '\[.*?\]\((?!http)[^)]+\)' {} + | while read match; do
+  file=$(echo "$match" | sed -E 's/.*\(([^)]+)\).*/\1/')
+  dir=$(dirname "$match" | cut -d: -f1)
+  target="$dir/$file"
+  if [ ! -f "$target" ] && [ ! -d "$target" ]; then
+    echo "BROKEN: $match"
+  fi
+done
+```
+
+```typescript
+// Programmatic link integrity check
+import { glob } from 'glob';
+import { readFile } from 'fs/promises';
+import { dirname, resolve, existsSync } from 'path';
+
+async function checkLinkIntegrity(docsRoot: string): Promise<string[]> {
+  const broken: string[] = [];
+  const mdFiles = await glob(`${docsRoot}/**/*.md`);
+  
+  for (const file of mdFiles) {
+    const content = await readFile(file, 'utf-8');
+    const linkRegex = /\[.*?\]\((?!http)([^)]+)\)/g;
+    let match;
+    
+    while ((match = linkRegex.exec(content)) !== null) {
+      const linkPath = match[1].split('#')[0]; // Remove anchors
+      const absolutePath = resolve(dirname(file), linkPath);
+      
+      if (!existsSync(absolutePath)) {
+        broken.push(`${file}: ${match[0]} -> ${absolutePath}`);
+      }
+    }
+  }
+  
+  return broken;
+}
+```
 
 ### Orphan Detection
 

@@ -1,5 +1,13 @@
+#!/usr/bin/env node
 /**
- * Gamma Presentation Generator
+ * @muscle gamma-generator
+ * @inheritance inheritable
+ * @description Gamma API presentation, document, and social content generator
+ * @version 1.0.0
+ * @skill gamma-presentations
+ * @reviewed 2026-04-15
+ * @platform windows,macos,linux
+ * @requires node (GAMMA_API_KEY env var)
  *
  * A robust Node.js script for generating presentations, documents,
  * and social content using the Gamma API.
@@ -24,33 +32,50 @@ const { exec } = require('child_process');
 
 const API_BASE_URL = 'https://public-api.gamma.app';
 const API_VERSION = 'v1.0';
-const DEFAULT_TIMEOUT_MS = 420000; // 7 minutes (longer for big decks)
+const DEFAULT_TIMEOUT_MS = 420000; // 7 minutes -- large decks (40+ slides) need more time
 const POLL_INTERVAL_MS = 3000; // 3 seconds
+const HTTP_MAX_RETRIES = 3;
+const HTTP_REQUEST_TIMEOUT_MS = 120000; // 2 minutes per individual request
+const HTTP_INITIAL_BACKOFF_MS = 1000;
 const MAX_INPUT_CHARS = 400000;
 
 const IMAGE_MODELS = {
-  // Cost-effective (2 credits)
-  'flux-quick': 'flux-1-quick',
+  // Standard (2-15 credits)
+  'flux-quick': 'flux-2-klein',
   'flux-kontext': 'flux-kontext-fast',
   'imagen-flash': 'imagen-3-flash',
   'luma-flash': 'luma-photon-flash-1',
-  // Standard (8-15 credits)
-  'flux-pro': 'flux-1-pro',
-  'imagen-pro': 'imagen-3-pro',
+  'qwen-fast': 'qwen-image-fast',
+  'qwen': 'qwen-image',
+  'flux-pro': 'flux-2-pro',
   'ideogram-turbo': 'ideogram-v3-turbo',
+  'imagen4-fast': 'imagen-4-fast',
+  'luma': 'luma-photon-1',
+  'recraft4': 'recraft-v4',
   'leonardo': 'leonardo-phoenix',
-  // Premium (20-33 credits)
+  // Advanced (20-33 credits)
+  'flux-flex': 'flux-2-flex',
+  'flux-max': 'flux-2-max',
+  'flux-kontext-pro': 'flux-kontext-pro',
   'ideogram': 'ideogram-v3',
   'imagen4': 'imagen-4-pro',
-  'gemini': 'gemini-2.5-flash-image',
   'recraft': 'recraft-v3',
+  'gemini-pro': 'gemini-3-pro-image',
+  'gemini': 'gemini-2.5-flash-image',
   'gpt-image': 'gpt-image-1-medium',
   'dalle3': 'dall-e-3',
-  // Ultra (30-120 credits)
-  'flux-ultra': 'flux-1-ultra',
-  'imagen4-ultra': 'imagen-4-ultra',
+  // Premium (34-75 credits)
+  'nano-banana-mini': 'gemini-3.1-flash-image-mini',
   'recraft-svg': 'recraft-v3-svg',
+  'recraft4-svg': 'recraft-v4-svg',
+  'ideogram-quality': 'ideogram-v3-quality',
+  'nano-banana': 'gemini-3.1-flash-image',
+  'gemini-pro-hd': 'gemini-3-pro-image-hd',
+  'nano-banana-hd': 'gemini-3.1-flash-image-hd',
+  // Ultra (30-125 credits)
+  'imagen4-ultra': 'imagen-4-ultra',
   'gpt-image-hd': 'gpt-image-1-high',
+  'recraft4-pro': 'recraft-v4-pro',
 };
 
 // ============================================================================
@@ -74,10 +99,13 @@ function sleep(ms) {
 function getApiKey() {
   const apiKey = process.env.GAMMA_API_KEY;
   if (!apiKey) {
+    const hint = process.platform === 'win32'
+      ? '$env:GAMMA_API_KEY = "sk-gamma-xxx"'
+      : 'export GAMMA_API_KEY="sk-gamma-xxx"';
     throw new Error(
       'GAMMA_API_KEY environment variable is required.\n' +
         'Get your API key from: https://gamma.app/settings\n' +
-        'Set it with: $env:GAMMA_API_KEY = "sk-gamma-xxx"'
+        `Set it with: ${hint}`
     );
   }
   return apiKey;
@@ -87,60 +115,68 @@ function getApiKey() {
 // HTTP Client
 // ============================================================================
 
-async function httpRequest(method, endpoint, body = null, { timeoutMs = 120000, retries = 3 } = {}) {
-  const apiKey = getApiKey();
-  const url = new URL(`${API_BASE_URL}/${API_VERSION}${endpoint}`);
+function httpRequestOnce(method, endpoint, body = null) {
+  return new Promise((resolve, reject) => {
+    const apiKey = getApiKey();
+    const url = new URL(`${API_BASE_URL}/${API_VERSION}${endpoint}`);
 
-  const options = {
-    hostname: url.hostname,
-    path: url.pathname,
-    method,
-    headers: {
-      'X-API-KEY': apiKey,
-      'Content-Type': 'application/json',
-    },
-  };
+    const options = {
+      hostname: url.hostname,
+      path: url.pathname,
+      method,
+      headers: {
+        'X-API-KEY': apiKey,
+        'Content-Type': 'application/json',
+      },
+    };
 
-  const attempt = (tryIndex) =>
-    new Promise((resolve, reject) => {
-      const req = https.request(options, (res) => {
-        let data = '';
-        res.on('data', (chunk) => (data += chunk));
-        res.on('end', () => {
-          try {
-            const parsed = JSON.parse(data || '{}');
-            if (res.statusCode >= 400) {
-              reject(new Error(parsed.message || `HTTP ${res.statusCode}: ${data}`));
-            } else {
-              resolve(parsed);
-            }
-          } catch {
-            reject(new Error(`Failed to parse response: ${data}`));
+    const req = https.request(options, (res) => {
+      let data = '';
+      res.on('data', (chunk) => (data += chunk));
+      res.on('end', () => {
+        try {
+          const parsed = JSON.parse(data);
+          if (res.statusCode >= 400) {
+            reject(new Error(parsed.message || `HTTP ${res.statusCode}: ${data}`));
+          } else {
+            resolve(parsed);
           }
-        });
+        } catch {
+          reject(new Error(`Failed to parse response: ${data}`));
+        }
       });
-
-      req.on('error', reject);
-      req.setTimeout(timeoutMs, () => {
-        req.destroy();
-        reject(new Error(`Request timeout after ${timeoutMs}ms`));
-      });
-
-      if (body) {
-        req.write(JSON.stringify(body));
-      }
-      req.end();
-    }).catch(async (err) => {
-      if (tryIndex < retries) {
-        const backoff = Math.min(1000 * Math.pow(2, tryIndex), 8000);
-        log(`HTTP retry ${tryIndex + 1}/${retries}: ${err.message} (backoff ${backoff}ms)`, true);
-        await sleep(backoff);
-        return attempt(tryIndex + 1);
-      }
-      throw err;
     });
 
-  return attempt(0);
+    req.on('error', reject);
+    req.setTimeout(HTTP_REQUEST_TIMEOUT_MS, () => {
+      req.destroy();
+      reject(new Error(`Request timeout after ${HTTP_REQUEST_TIMEOUT_MS / 1000}s`));
+    });
+
+    if (body) {
+      req.write(JSON.stringify(body));
+    }
+    req.end();
+  });
+}
+
+async function httpRequest(method, endpoint, body = null) {
+  let lastError;
+  let backoff = HTTP_INITIAL_BACKOFF_MS;
+  for (let attempt = 1; attempt <= HTTP_MAX_RETRIES; attempt++) {
+    try {
+      return await httpRequestOnce(method, endpoint, body);
+    } catch (err) {
+      lastError = err;
+      if (attempt < HTTP_MAX_RETRIES) {
+        const wait = Math.min(backoff, 8000);
+        log(`HTTP ${method} ${endpoint} attempt ${attempt} failed: ${err.message}. Retrying in ${wait}ms...`, true);
+        await sleep(wait);
+        backoff *= 2;
+      }
+    }
+  }
+  throw lastError;
 }
 
 function sanitizeFilename(name) {
@@ -235,7 +271,7 @@ class GammaClient {
 
     log(`Generation started: ${response.generationId}`, this.verbose);
     if (response.warnings) {
-      log(`⚠️ Warnings: ${response.warnings}`, this.verbose);
+      log(`[!] Warnings: ${response.warnings}`, this.verbose);
     }
 
     return response;
@@ -302,7 +338,7 @@ class GammaClient {
     await downloadFile(exportUrl, outputPath);
 
     const stats = fs.statSync(outputPath);
-    log(`✅ Downloaded: ${(stats.size / 1024 / 1024).toFixed(2)} MB`, this.verbose);
+    log(`[OK] Downloaded: ${(stats.size / 1024 / 1024).toFixed(2)} MB`, this.verbose);
 
     return outputPath;
   }
@@ -371,10 +407,21 @@ class GammaGenerator {
     }
 
     // Add card options
-    if (this.options.dimensions) {
-      request.cardOptions = {
-        dimensions: this.options.dimensions,
-      };
+    if (this.options.dimensions || this.options.cardSplit) {
+      request.cardOptions = {};
+      if (this.options.dimensions) {
+        request.cardOptions.dimensions = this.options.dimensions;
+      }
+    }
+
+    // Add card split mode (auto or inputTextBreaks)
+    if (this.options.cardSplit) {
+      request.cardSplit = this.options.cardSplit;
+    }
+
+    // Add style preset
+    if (this.options.stylePreset) {
+      request.stylePreset = this.options.stylePreset;
     }
 
     // Add additional instructions
@@ -461,7 +508,7 @@ class GammaGenerator {
 
   printSummary(result) {
     console.log('\n' + '='.repeat(60));
-    console.log('✅ GENERATION COMPLETE');
+    console.log('[OK] GENERATION COMPLETE');
     console.log('='.repeat(60));
     console.log(`Generation ID: ${result.generationId}`);
     if (result.gammaUrl) {
@@ -566,6 +613,14 @@ function parseArgs() {
         options.instructions = value;
         i++;
         break;
+      case '--card-split':
+        options.cardSplit = value;
+        i++;
+        break;
+      case '--style-preset':
+        options.stylePreset = value;
+        i++;
+        break;
       case '--draft':
         options.draft = true;
         break;
@@ -602,9 +657,11 @@ Options:
   --image-model <name>     AI image model (flux-quick, flux-pro, dalle3, etc.)
   --image-style <text>     Image style description
   --image-source <type>    Image source: aiGenerated, pexels, pictographic, giphy, etc.
-  --instructions, -i <text> Additional instructions for the AI (max 2000 chars)
+  --instructions, -i <text> Additional instructions for the AI (max 5000 chars)
   --dimensions, -d <size>  Card dimensions (16x9, 4x3, 1x1, 4x5, 9x16)
-  --export, -e <type>      Export format: pptx, pdf
+  --card-split <mode>      Card splitting: auto (default) or inputTextBreaks
+  --style-preset <name>    Style preset for the output
+  --export, -e <type>      Export format: pptx, pdf, png
   --output, -o <dir>       Output directory for exports (default: ./exports)
   --timeout <seconds>      Generation timeout in seconds (default: 420)
   --quiet, -q              Suppress progress messages
@@ -620,7 +677,7 @@ Examples:
   # Presentation from file with export
   node .github/muscles/gamma-generator.cjs --file README.md --export pptx
 
-  # Two-step workflow: Draft → Edit → Generate
+  # Two-step workflow: Draft -> Edit -> Generate
   node .github/muscles/gamma-generator.cjs --topic "AI Ethics" --slides 10 --draft --draft-output ./my-deck.md
   # ... edit my-deck.md ...
   node .github/muscles/gamma-generator.cjs --file ./my-deck.md --export pptx --open
@@ -638,10 +695,13 @@ Examples:
     --open
 
 Image Models:
-  Cost-effective (2 credits): flux-quick, flux-kontext, imagen-flash, luma-flash
-  Standard (8-15 credits):    flux-pro, imagen-pro, ideogram-turbo, leonardo
-  Premium (20-33 credits):    ideogram, imagen4, gemini, recraft, gpt-image, dalle3
-  Ultra (30-120 credits):     flux-ultra, imagen4-ultra, recraft-svg, gpt-image-hd
+  Standard (2-15 credits):    flux-quick, flux-kontext, imagen-flash, luma-flash, qwen-fast,
+                              qwen, flux-pro, ideogram-turbo, imagen4-fast, luma, recraft4, leonardo
+  Advanced (20-33 credits):   flux-flex, flux-max, flux-kontext-pro, ideogram, imagen4, recraft,
+                              gemini-pro, gemini, gpt-image, dalle3
+  Premium (34-75 credits):    nano-banana-mini, recraft-svg, recraft4-svg, ideogram-quality,
+                              nano-banana, gemini-pro-hd, nano-banana-hd
+  Ultra (30-125 credits):     imagen4-ultra, gpt-image-hd, recraft4-pro
 
 Environment:
   GAMMA_API_KEY            Required. Get from https://gamma.app/settings
@@ -810,7 +870,7 @@ async function main() {
     fs.writeFileSync(outputPath, draftContent, 'utf-8');
     
     console.log('\n' + '='.repeat(60));
-    console.log('📝 DRAFT CREATED');
+    console.log('[NOTE] DRAFT CREATED');
     console.log('='.repeat(60));
     console.log(`File: ${outputPath}`);
     console.log('');

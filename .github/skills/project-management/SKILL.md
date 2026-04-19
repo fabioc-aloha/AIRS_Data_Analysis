@@ -1,8 +1,8 @@
 ---
 name: project-management
-description: >-
-  Alex project management patterns: rapid AI-assisted iteration, meditation-based retrospectives, session-focused work,
-  and safety-first release gates.
+description: "Alex project management patterns: rapid AI-assisted iteration, meditation-based retrospectives, session-focused work, and safety-first release gates."
+tier: standard
+applyTo: '**/*project*,**/*tracker*,**/*sprint*,**/*iteration*'
 ---
 
 # Project Management Skill
@@ -53,7 +53,7 @@ Based on actual project history (v3.6.0 → v4.2.5 in ~6 days vs months planned)
 |--------------|----------|--------|
 | **Work Sprint** | Variable | Code, docs, features |
 | **Meditation** | 15-45 min | Memory files, insights |
-| **Dream** | 5-15 min | Synapse validation, health report |
+| **Dream** | 5-15 min | Connection validation, health report |
 | **Release** | 30-60 min | Published version, changelog |
 
 ### When to Meditate
@@ -245,21 +245,3 @@ For enterprise contexts requiring formal PM:
 - Fixed-bid contracts with milestone payments
 
 ---
-
-## Synapses
-
-### High-Strength Connections
-
-- [alex-effort-estimation/SKILL.md] (Critical, Uses, Forward) — "Effort estimation methodology"
-- [meditation/SKILL.md] (High, Complements, Bidirectional) — "Consolidation as retrospective"
-
-### Medium-Strength Connections
-
-- [testing-strategies/SKILL.md] (Medium, Plans, Forward) — "Testing in project schedule"
-- [release-preflight/SKILL.md] (Medium, Uses, Forward) — "Release planning within projects"
-- [global-knowledge/SKILL.md] (Medium, Captures, Forward) — "Cross-project learnings"
-
-### Supporting Connections
-
-- [chronicle-2026-01-30-phoenix-to-dawn.md] (Low, Documents, Forward) — "Why safety matters"
-- [bootstrap-learning/SKILL.md] (Low, Accelerates, Forward) — "Learning within projects"

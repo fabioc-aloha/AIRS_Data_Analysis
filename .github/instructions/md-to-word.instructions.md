@@ -1,69 +1,87 @@
 ---
 description: "Markdown to Word document conversion with diagram support"
+application: "When converting Markdown documents to professional Word files"
+applyTo: "**/*.md"
 ---
 
-# Markdown to Word Conversion Instructions
+# Markdown to Word — Auto-Loaded Rules
 
-## Auto-Activation Trigger
+Full documentation, all options, style presets, professional features → see [md-to-word skill](../skills/md-to-word/SKILL.md).
 
-When user requests Word export (`/word`, "convert to word", "export docx", "create word document"):
+## Quick Reference
 
-1. **Use the muscle script**: `.github/muscles/md-to-word.py`
-2. **Do NOT manually run pandoc** — the script handles everything
+### Trigger Phrases
 
-## Key Features (v2.1.0)
+User says: "convert to word", "export docx", "word document", "generate word", "md to docx"
 
-- **90% page coverage** — images fit both horizontally AND vertically
-- **Centered images** — all diagrams centered on page
-- **Smart sizing** — reads actual PNG dimensions, calculates optimal fit
-- **Markdown preprocessing** — fixes bullet lists, checkboxes, spacing
-- **Table formatting** — Microsoft blue headers, borders, alternating rows
-- **Table pagination** — rows don't split across pages; headers stay with data
+### Basic Conversion
 
-## Command
-
-```powershell
-python .github/muscles/md-to-word.py SOURCE.md [OUTPUT.docx]
+```bash
+node .github/muscles/md-to-word.cjs SOURCE.md
 ```
 
-## Sizing Algorithm
+### Common Options
 
-| Page Constraint | Value |
-|-----------------|-------|
-| Usable width | 6.5" (Letter - margins) |
-| Usable height | 9.0" (Letter - margins) |
-| Max image | 90% of usable = 5.85" x 8.1" |
+| Use Case | Command |
+|----------|---------|
+| Basic conversion | `node md-to-word.cjs doc.md` |
+| With Table of Contents | `node md-to-word.cjs doc.md --toc` |
+| Professional report | `node md-to-word.cjs doc.md --style professional --toc --cover` |
+| Academic paper | `node md-to-word.cjs thesis.md --style academic --toc` |
+| Debug issues | `node md-to-word.cjs doc.md --debug --keep-temp` |
 
-The script:
-1. Reads PNG dimensions from file header
-2. Calculates scale to fit within 90% bounds
-3. Applies the most constraining dimension
-4. Pandoc preserves aspect ratio automatically
+## Automatic Handling
 
-## Table Styling
+The muscle script automatically:
 
-| Element | Style |
-|---------|-------|
-| Header | #0078D4 (Microsoft blue), white text |
-| Even rows | #F0F0F0 (light gray) |
-| Odd rows | #FFFFFF (white) |
-| Borders | #666666 outer, #AAAAAA inner |
+| Feature | Automatic Action |
+|---------|------------------|
+| Mermaid diagrams | Rendered to PNG, sized to fit page |
+| SVG images | Converted to PNG via svgexport |
+| Tables | Professional styling (blue headers, borders) |
+| Code blocks | Consolas font, gray background, borders |
+| Links | Blue underlined hyperlinks |
+| Headings | Branded colors, proper spacing |
+| Page numbers | Centered footer |
+| Bullet lists | Spacing fixes applied |
+
+## Style Presets
+
+| Preset | Best For |
+|--------|----------|
+| `professional` | Business docs, specs, reports |
+| `academic` | Papers, dissertations, theses |
+| `course` | Course materials, syllabi |
+| `creative` | Blog posts, narratives |
 
 ## Quality Checklist
 
+Before conversion:
+- [ ] Markdown passes lint (`markdownlint`)
+- [ ] Mermaid diagrams render in preview
+- [ ] All images exist at referenced paths
+- [ ] SVG files have viewBox attribute
+
 After conversion, verify:
-- [ ] All Mermaid diagrams rendered as PNG
-- [ ] Images centered and within page bounds
-- [ ] Tables have blue headers and borders
-- [ ] Tables don't break awkwardly across pages
-- [ ] Bullet lists properly spaced
-- [ ] Headings have consistent styling
+- [ ] All diagrams visible and properly sized
+- [ ] Tables have styled headers
+- [ ] Code blocks are formatted
+- [ ] No content overflows page margins
 
 ## Troubleshooting
 
-| Issue | Solution |
-|-------|----------|
-| mmdc not found | `npm install -g @mermaid-js/mermaid-cli` |
-| python-docx missing | `pip install python-docx` |
-| Diagrams distorted | Update to v2.0.0 (aspect ratio fix) |
-| Lists merged | Update to v2.0.0 (markdown preprocessing) |
+| Problem | Solution |
+|---------|----------|
+| `mmdc not found` | `npm install -g @mermaid-js/mermaid-cli` |
+| `svgexport not found` | `npm install -g svgexport` |
+| `pandoc not found` | `winget install JohnMacFarlane.Pandoc` |
+| Tables plain | Check jszip is available, set NODE_PATH |
+| Images too large | Script auto-sizes; check for complex diagrams |
+| Missing diagrams | Run with `--debug --keep-temp` to inspect |
+
+## Do NOT
+
+- ❌ Run pandoc directly — use the muscle script
+- ❌ Manually size images — auto-sizing handles it
+- ❌ Edit the .docx OOXML by hand — script does post-processing
+- ❌ Convert SVG manually — script handles it

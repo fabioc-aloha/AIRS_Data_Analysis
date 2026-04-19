@@ -2,6 +2,7 @@
 // H3: Validator session start
 // Agent-scoped SessionStart hook for Validator mode.
 // Loads adversarial checklist + recent changes summary for faster QA startup.
+// @reviewed: 2026-04-18
 'use strict';
 
 const { execSync } = require('child_process');
@@ -16,7 +17,7 @@ try {
 const workspaceRoot = input.cwd || path.resolve(__dirname, '../../..');
 const lines = ['[Validator SessionStart] Adversarial review mode active.'];
 
-// ── Recent changes summary ─────────────────────────────────────────────────
+// -- Recent changes summary -------------------------------------------------
 
 try {
   const gitLog = execSync(
@@ -40,7 +41,7 @@ try {
   }
 } catch { /* shallow clone or <3 commits */ }
 
-// ── Adversarial checklist ──────────────────────────────────────────────────
+// -- Adversarial checklist --------------------------------------------------
 
 lines.push(
   '',
@@ -50,12 +51,12 @@ lines.push(
   '- [ ] Architecture: I8 compliance, dependency direction, KISS/DRY',
   '- [ ] Tests: coverage gaps, missing negative tests, flaky risk',
   '- [ ] Docs: drift from code, stale references, broken links',
-  '- [ ] Safety imperatives: I1–I8 compliance verified',
+  '- [ ] Safety imperatives: I1-I8 compliance verified',
   '',
   'Start by reviewing the recent changes above. Look for what could go wrong.'
 );
 
-// ── Output ─────────────────────────────────────────────────────────────────
+// -- Output -----------------------------------------------------------------
 
 console.log(JSON.stringify({
   hookSpecificOutput: {

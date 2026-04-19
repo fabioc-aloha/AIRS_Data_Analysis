@@ -1,6 +1,8 @@
 ---
 name: ai-writing-avoidance
 description: "Help writers produce content that sounds genuinely human by avoiding telltale AI-generated text patterns"
+tier: standard
+applyTo: '**/*writing*,**/*content*,**/*policy*,**/*document*'
 ---
 
 # AI Writing Avoidance
@@ -319,7 +321,7 @@ Run this checklist on any document to audit for AI tells:
 - [Plain Language Guidelines](https://www.plainlanguage.gov/) — Federal guidelines for clear writing
 - Style guides: Strunk & White, AP Style, Chicago Manual
 
-## Synapse Connections
+## Related Skills
 
 - **When writing policies** → Load this skill + documentation-quality-assurance
 - **When reviewing documents** → Load this skill + code-review (for systematic review patterns)

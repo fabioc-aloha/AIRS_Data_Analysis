@@ -1,6 +1,8 @@
 ---
 name: graphic-design
 description: Patterns for visual design, SVG creation, layout composition, typography, and brand identity.
+tier: extended
+applyTo: '**/*design*,**/*svg*,**/*visual*,**/*typography*'
 ---
 
 # Graphic Design Skill
@@ -448,21 +450,3 @@ Every illustration should serve one of these purposes:
 - [ ] Responsive/scalable
 - [ ] Cross-platform compatible
 - [ ] Proper naming conventions
-
-## Synapses
-
-### High-Strength Connections
-
-- [creative-writing] (High, Complements, Bidirectional) — "Visual storytelling"
-- [vscode-extension-patterns] (High, Applies, Forward) — "Extension branding and UI"
-
-### Medium-Strength Connections
-
-- [markdown-mermaid] (Medium, Extends, Bidirectional) — "Diagram visualization"
-- [cognitive-load] (Medium, Applies, Forward) — "Visual information processing"
-- [ascii-art-alignment] (Medium, Complements, Bidirectional) — "Text-based visual design"
-
-### Supporting Connections
-
-- [academic-research] (Low, Supports, Forward) — "Document visual design"
-- [meditation] (Low, Uses, Forward) — "Reflective design iteration"

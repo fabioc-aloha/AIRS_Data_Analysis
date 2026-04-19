@@ -1,8 +1,9 @@
 {
-  "sessions": [
-    {
-      "sessionId": null,
-      "endedAt": "2026-03-10T15:26:07.646Z"
-    }
-  ]
+  "sessions": [],
+  "_schema": {
+    "sessionId": "string | null",
+    "startedAt": "ISO 8601 timestamp",
+    "endedAt": "ISO 8601 timestamp | null"
+  },
+  "_notes": "Session tracking for meditation analysis. Gitignored - local only."
 }

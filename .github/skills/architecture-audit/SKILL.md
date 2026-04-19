@@ -1,6 +1,8 @@
 ---
 name: architecture-audit
 description: Comprehensive **project** consistency review across code, documentation, diagrams, and configuration
+tier: standard
+applyTo: '**/*audit*,**/*review*,**/*consistency*'
 ---
 
 # Architecture Audit
@@ -214,7 +216,7 @@ on:
 ## Integration with Other Skills
 
 - `release-preflight` → Trigger audit before release
-- `brain-qa` → Synapse-specific validation and architecture health
+- `brain-qa` → Connection validation and architecture health
 - `code-review` → Audit as part of PR review
 - `refactoring-patterns` → Audit after major refactoring
 
@@ -244,7 +246,7 @@ on:
 | 4 | Safety Imperatives | Kill switch, protection markers |
 | 5 | Build Artifacts | dist/extension.js exists and recent |
 | 6 | Documentation Cross-Refs | Required links between docs |
-| 7 | Synapse Health | Valid connections, no orphans |
+| 7 | Connection Health | Valid links, no orphans |
 | 8 | alex_docs Audit | Version refs, deprecated terms |
 | 9 | Skill Network Diagram | Node count matches actual skills |
 
@@ -288,11 +290,3 @@ on:
 - [ ] Architectural model: Memory architecture described consistently everywhere
 - [ ] Code behavior: TypeScript handlers match instruction file docs
 - [ ] Version source of truth: package.json is canonical
-
-## Synapses
-
-- [release-preflight/SKILL.md] (High, Enables, Forward) - "Pre-release audit trigger"
-- [brain-qa/SKILL.md] (High, Complements, Bidirectional) - "Health + consistency"
-- [code-review/SKILL.md] (Medium, Extends, Forward) - "Broader than code"
-- [refactoring-patterns/SKILL.md] (Medium, Triggers, Backward) - "Post-refactor audit"
-- [self-actualization.instructions.md] (Medium, Complements, Bidirectional) - "Architecture introspection"

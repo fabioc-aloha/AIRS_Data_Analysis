@@ -1,22 +1,10 @@
 ---
 description: "Mandatory adversarial review protocols for quality-critical operations"
+application: "When following adversarial oversight workflows or troubleshooting related issues"
+applyTo: "**/*review*,**/*audit*,**/*release*,**/*qa*,**/*validation*"
 ---
 
 # Adversarial Oversight Protocol
-
-**Classification**: Procedural Memory | Quality Assurance  
-**Activation**: release, publish, promote skill, architecture change, security, critical  
-**Priority**: MANDATORY - These gates cannot be bypassed
-
----
-
-## Synapses
-
-- [.github/agents/alex-validator.agent.md] → (Critical, Executes, Required) - "Validator agent performs adversarial review"
-- [.github/instructions/code-review-guidelines.instructions.md] → (High, Implements, Forward) - "Code review follows adversarial checklist"
-- [.github/instructions/architecture-decision-records.instructions.md] → (Medium, Triggers, Forward) - "Major changes need ADR + validation"
-- [.github/instructions/empirical-validation.instructions.md] → (High, Strengthens, Bidirectional) - "Evidence-based validation methodology"
-- [.github/agents/alex-builder.agent.md] → (High, Handoff, Bidirectional) - "Builder → Validator workflow"
 
 ---
 
@@ -49,7 +37,7 @@ These operations **MUST** trigger Validator agent review:
 | **Skill Promotion to Master** | Before merge to Master `.github/` | Promotion score < 12 OR trifecta incomplete |
 | **Security-sensitive code** | Any auth/secrets/validation change | Security checklist incomplete |
 | **Breaking changes** | Any major version bump | Migration path undefined |
-| **Global Knowledge promotion** | Before `alex_knowledge_promote` | Pattern score < 5 OR missing citations |
+| **Global Knowledge promotion** | Before manual promotion | Pattern score < 5 OR missing citations |
 
 ### 🟠 HIGH: Strongly Recommend Validator
 
@@ -74,27 +62,10 @@ These operations **MUST** trigger Validator agent review:
 
 ### Standard Pattern: Builder → Validator → Merge
 
-```mermaid
-%%{init: {'theme': 'base', 'themeVariables': { 'primaryColor': '#cce5ff', 'primaryTextColor': '#333', 'lineColor': '#666', 'edgeLabelBackground': '#ffffff'}}}%%
-flowchart TD
-    BUILD["Builder  creates/implements"] --> REQUEST["Request  Validation"]
-    REQUEST --> VALIDATOR["Validator  reviews adversarially"]
-    VALIDATOR -->|Critical Issues| BLOCK["🔴 Block  with detailed notes"]
-    VALIDATOR -->|No Blockers| APPROVE["✅ Approve  with observations"]
-    BLOCK --> FIX["Builder  addresses issues"]
-    FIX --> VALIDATOR
-    APPROVE --> MERGE["Merge/Release/Promote"]
-    
-    style BUILD fill:#cce5ff,stroke:#4a90d9,color:#333
-    style REQUEST fill:#b3d9ff,stroke:#4a90d9,color:#333
-    style VALIDATOR fill:#e6d5f2,stroke:#8b6eb3,color:#333
-    style BLOCK fill:#ffd6d6,stroke:#d73a49,color:#333
-    style APPROVE fill:#c2f0d8,stroke:#4db37d,color:#333
-    style FIX fill:#cce5ff,stroke:#4a90d9,color:#333
-    style MERGE fill:#c2f0d8,stroke:#4db37d,color:#333
-    
-    linkStyle default stroke:#57606a,stroke-width:1.5px
-```
+**Builder** creates/implements → **Request Validation** → **Validator** reviews adversarially
+
+- If critical issues → 🔴 **Block** with detailed notes → **Builder** addresses issues → back to Validator
+- If no blockers → ✅ **Approve** with observations → **Merge/Release/Promote**
 
 ### How to Trigger Validator
 
@@ -170,12 +141,47 @@ Domain-specific checklist based on operation type:
 - [ ] Promotion readiness score ≥ 12
 - [ ] No Master skill overlap
 - [ ] Trifecta completeness verified
-- [ ] Synapses present and valid
+- [ ] Frontmatter complete (applyTo, description)
 - [ ] ApplyTo patterns specified
 - [ ] Examples include code
 
 **Code Review:**
-- [ ] See [code-review-guidelines.instructions.md] checklist
+- [ ] See [.github/instructions/code-review-guidelines.instructions.md] checklist
+
+---
+
+## Multi-Pass Focused-Lens Protocol
+
+Instead of reviewing everything at once, separate Builder-Validator iterations by quality dimension. Each pass has a single lens; defer findings outside that lens to the next pass.
+
+| Pass | Builder Focus | Validator Lens | Defer To |
+|------|--------------|----------------|----------|
+| Draft | Shape and breadth | Skip (rough by design) | Pass 1 |
+| Pass 1 | CORRECTNESS | Correctness only | Pass 2 |
+| Pass 2 | CLARITY | Clarity + maintainability | Pass 3 |
+| Pass 3 | EDGE CASES | Error handling + robustness | Pass 4 |
+| Pass 4 | EXCELLENCE | Full review (all dimensions) | None |
+
+**"Stay in your lane" rule**: If Validator spots a naming issue during the Correctness pass, note it for Pass 2. Focused attention per pass beats trying to catch everything simultaneously.
+
+**When to use all 4 passes**: Release-critical code, new public APIs, security-sensitive changes.
+**When to use 2 passes** (Draft + Full): Internal utilities, small fixes, documentation.
+
+## Named Evaluation Patterns
+
+Reusable self-improvement protocols applicable to any generation task (code, docs, architecture, prompts):
+
+| Pattern | How It Works | Best For |
+|---------|-------------|----------|
+| **Basic Reflection** | Generate, self-critique against criteria, refine | Simple tasks, single-author |
+| **Evaluator-Optimizer** | Separate generation agent from evaluation agent (Builder-Validator) | Complex tasks, quality-critical |
+| **Tool-Reflective** | Generate, run tests/linter/build, fix failures, repeat | Code generation, infrastructure |
+
+**Shared rules for all patterns**:
+- Define clear success criteria BEFORE generating
+- Cap iterations: 3-5 max (diminishing returns beyond)
+- Track convergence: if quality score plateaus for 2 iterations, stop
+- Log full trajectory (all iterations) for learning
 
 ---
 
@@ -218,7 +224,7 @@ If score ≥ 12 AND trifecta complete:
 ```
 
 ### Code Review
-From [code-review-guidelines.instructions.md]:
+From [.github/instructions/code-review-guidelines.instructions.md]:
 
 **Add to High Priority reviews**:
 ```text
@@ -275,39 +281,16 @@ Adversarial oversight succeeds when:
 
 ## Quick Reference: When to Invoke Validator
 
-```mermaid
-%%{init: {'theme': 'base', 'themeVariables': { 'primaryColor': '#cce5ff', 'primaryTextColor': '#333', 'lineColor': '#666', 'edgeLabelBackground': '#ffffff'}}}%%
-flowchart TD
-    TASK["Task or Change"] --> CRITICAL{"Critical operation?"}
-    CRITICAL -->|Yes| MANDATORY["🔴 MANDATORY  Validator Review"]
-    CRITICAL -->|No| HIGH{"High risk?"}
-    HIGH -->|Yes| RECOMMENDED["🟠 RECOMMENDED  Validator Review"]
-    HIGH -->|No| OPTIONAL["🟡 Optional  Consider for complex work"]
-    
-    MANDATORY --> REVIEW["Validation Gate"]
-    RECOMMENDED --> REVIEW
-    OPTIONAL --> REVIEW
-    
-    REVIEW --> REPORT["Validator Delivers Report"]
-    REPORT --> BLOCKED{"Blocked?"}
-    BLOCKED -->|Yes| FIX["Fix Issues"]
-    BLOCKED -->|No| PROCEED["Proceed with Confidence"]
-    FIX --> REVIEW
-    
-    style TASK fill:#b3d9ff,stroke:#4a90d9,color:#333
-    style CRITICAL fill:#e6d5f2,stroke:#8b6eb3,color:#333
-    style HIGH fill:#e6d5f2,stroke:#8b6eb3,color:#333
-    style MANDATORY fill:#ffd6d6,stroke:#d73a49,color:#333
-    style RECOMMENDED fill:#ffe8cc,stroke:#d9822b,color:#333
-    style OPTIONAL fill:#fff8dc,stroke:#9a6700,color:#333
-    style REVIEW fill:#e6d5f2,stroke:#8b6eb3,color:#333
-    style REPORT fill:#cce5ff,stroke:#4a90d9,color:#333
-    style BLOCKED fill:#e6d5f2,stroke:#8b6eb3,color:#333
-    style FIX fill:#ffe8cc,stroke:#d9822b,color:#333
-    style PROCEED fill:#c2f0d8,stroke:#4db37d,color:#333
-    
-    linkStyle default stroke:#57606a,stroke-width:1.5px
-```
+**Task or Change** → Is it critical? → 🔴 **MANDATORY** Validator Review
+
+If not critical → Is it high risk? → 🟠 **RECOMMENDED** Validator Review
+
+If not high risk → 🟡 **Optional** (consider for complex work)
+
+All paths → **Validation Gate** → **Validator Delivers Report**
+
+- If blocked → **Fix Issues** → back to Validation Gate
+- If approved → **Proceed with Confidence**
 
 ---
 

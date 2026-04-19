@@ -1,6 +1,8 @@
 ---
 name: "brand-asset-management"
 description: "Brand hierarchy, visual identity, asset deployment, platform-specific branding guidelines"
+tier: standard
+applyTo: '**/*brand*,**/*asset*,**/*logo*,**/*identity*'
 ---
 
 # Brand Asset Management Skill
@@ -56,7 +58,7 @@ Expert in Alex brand hierarchy, visual identity systems, asset deployment, and p
 
 | Asset | Path | Purpose |
 |-------|------|---------|
-| Animated Banner | `.github/assets/banner.svg` | GitHub READMEs |
+| Animated Banner | `assets/banner.svg` | GitHub READMEs |
 | Static Banner | `assets/banner.png` | Marketplace fallback |
 | Extension Icon | `assets/icon.png` | Marketplace icon |
 | Mono Logo | `assets/logo-mono.svg` | Activity bar |
@@ -104,7 +106,7 @@ Expert in Alex brand hierarchy, visual identity systems, asset deployment, and p
 
 ## PNG Generation
 
-```powershell
+```bash
 npx sharp-cli --input source.svg --output output.png -f png --density 150
 ```
 

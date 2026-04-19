@@ -1,6 +1,8 @@
 ---
 name: infrastructure-as-code
 description: '**Domain**: DevOps & Cloud Engineering'
+tier: standard
+applyTo: '**/*iac*,**/*.bicep,**/*.tf,**/*terraform*,**/*pulumi*'
 ---
 
 # Infrastructure as Code Skill
@@ -838,9 +840,3 @@ az deployment group create --resource-group rg-name --template-file main.bicep
 *Infrastructure as Code skill — Reliable, repeatable infrastructure through code | MCP-Enhanced: Yes | Updated: 2026-02-14*
 
 ---
-
-## Synapses
-
-- [.github/skills/bicep-avm-mastery/SKILL.md] (High, Contains, Forward) - "Deep Bicep and AVM patterns"
-- [.github/skills/azure-architecture-patterns/SKILL.md] (High, Uses, Forward) - "IaC implements cloud architectures"
-- [.github/skills/azure-devops-automation/SKILL.md] (Medium, Uses, Forward) - "CI/CD deploys IaC code"

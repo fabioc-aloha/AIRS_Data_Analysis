@@ -1,6 +1,7 @@
 ---
 name: game-design
 description: Game mechanics, level design, player psychology, systems balancing, and narrative design for game developers.
+tier: extended
 applyTo: '**/*game*,**/*gameplay*,**/*level-design*,**/*player*,**/*npc*,**/*quest*,**/*gamedev*'
 ---
 
@@ -40,8 +41,27 @@ Player experiences: Aesthetics ← Dynamics ← Mechanics
 
 ### Core Loop
 The repeatable cycle that forms the foundation of gameplay:
-```
+
+```text
 Action → Reward → Progression → New Action
+```
+
+### Game Design Document (GDD) Structure
+
+```yaml
+title: "Game Name"
+genre: "Action RPG"
+platform: ["PC", "Console"]
+target_audience: "16-35, hardcore gamers"
+core_loop:
+  action: "Combat encounter"
+  reward: "XP, loot drops"
+  progression: "Level up, unlock skills"
+pillars:
+  - "Player agency in story outcomes"
+  - "Deep crafting system"
+  - "Challenging but fair combat"
+aesthetics: ["Challenge", "Fantasy", "Discovery"]
 ```
 
 ### Nested Loops

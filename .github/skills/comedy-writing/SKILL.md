@@ -1,6 +1,7 @@
 ---
 name: comedy-writing
 description: Joke structure, comedic timing, set construction, callback patterns, and audience engagement for comedy writers.
+tier: extended
 applyTo: '**/*comedy*,**/*standup*,**/*joke*,**/*humor*,**/*sketch*,**/*funny*,**/*satire*'
 ---
 
@@ -81,6 +82,20 @@ A chunk is a thematic unit (e.g., "dating apps", "airport security", "my family"
 - One line per joke (trigger word, not full text)
 - Mark tested vs. new material
 - Track laughs per minute (LPM) — target: 4–6 for club sets
+
+```json
+{
+  "set": "Open Mic - The Laugh Factory",
+  "date": "2026-04-14",
+  "duration_minutes": 5,
+  "jokes": [
+    { "trigger": "dating apps", "type": "core", "laugh": true, "tags_landed": 2 },
+    { "trigger": "airport security", "type": "new", "laugh": false, "notes": "setup too long" },
+    { "trigger": "callback: apps", "type": "callback", "laugh": true }
+  ],
+  "lpm": 4.2
+}
+```
 
 ## Comedic Devices
 

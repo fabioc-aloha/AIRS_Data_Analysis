@@ -1,36 +1,13 @@
 ---
 description: "Microsoft Graph API integration — endpoint calls, MSAL/OAuth authentication, and M365 service patterns"
+application: "When implementing microsoft graph api or reviewing code that uses these patterns"
+applyTo: "**/*graph*,**/*msal*,**/*oauth*,**/*entra*"
 ---
 
-# Microsoft Graph API Instructions
+# Microsoft Graph API — Auto-Loaded Rules
 
-**Auto-loaded when**: Calling Microsoft Graph API endpoints, handling Graph authentication (MSAL/OAuth), or building M365 service integrations
-**Domain**: Microsoft 365, Graph API, Azure AD (Entra ID), OAuth 2.0
-**Synapses**: [microsoft-graph-api/SKILL.md](../skills/microsoft-graph-api/SKILL.md)
-
----
-
-## Purpose
-
-Apply correct Microsoft Graph API patterns: principle of least privilege, progressive scope acquisition, proper token handling, pagination, rate limit management, and error parsing — ensuring reliable and secure M365 service integration.
-
----
-
-## When This Applies
-
-**File Patterns**:
-- `**/src/**/*.ts` — Code calling Graph endpoints or using MSAL
-- Any file referencing `graph.microsoft.com`
-- Authentication code with Microsoft scopes
-
-**Contextual Triggers**:
-- Integrating with M365 services (mail, calendar, users, presence, SharePoint, Teams)
-- Debugging Graph API errors (401, 403, 429, 404)
-- Requesting OAuth scopes for M365 data
-- Implementing Graph SDK client initialization
-- Handling pagination for large Graph result sets
-
----
+Endpoint reference table, scope catalog, service-specific patterns → see microsoft-graph-api skill.
+This instruction covers runtime patterns: auth flow, error handling, pagination, retry.
 
 ## Authentication Protocol
 
@@ -143,38 +120,4 @@ for await (const page of getAllPages<User>(token, '/users')) {
 }
 ```
 
----
-
-## Key Endpoints Quick Reference
-
-### Most Used
-
-```
-GET /me                                    — current user profile
-GET /me/presence                           — presence status
-GET /me/calendar/events                    — calendar events
-GET /me/messages                           — mailbox messages
-GET /me/people                             — relevant contacts
-GET /users/{id}/manager                    — user's manager
-POST /communications/getPresencesByUserId  — bulk presence (up to 650 users)
-```
-
-### Delta Queries (Efficient Sync)
-
-```
-GET /me/calendar/events/delta              — events changed since last sync
-GET /me/messages/delta                     — messages changed since last sync
-```
-
----
-
-## Quality Checklist
-
-Before shipping Graph API code:
-- [ ] Minimum required scopes only (not all M365 permissions upfront)
-- [ ] Silent token acquisition first (`createIfNone: false`)
-- [ ] Using v1.0 endpoint (not `/beta`)
-- [ ] Pagination handled for all list operations
-- [ ] 429 rate limit handling with `Retry-After` header
-- [ ] 401/403 errors surface meaningful messages to user
-- [ ] Token never logged or exposed in output
+Endpoint reference table, scope catalog, service-specific patterns, quality checklist → see microsoft-graph-api skill.

@@ -1,6 +1,7 @@
 ---
 name: socratic-questioning
 description: Help users discover answers, don't just deliver them.
+tier: extended
 applyTo: '**/*teach*,**/*learn*,**/*explain*,**/*understand*,**/*why*'
 ---
 
@@ -166,7 +167,3 @@ After they reach an answer:
 ## The Meta-Skill
 
 The best Socratic questioning is invisible. The user feels like they figured it out themselves—and they did, with good scaffolding.
-
-## Synapses
-
-See [synapses.json](synapses.json) for connections.

@@ -1,6 +1,7 @@
 ---
 name: pii-privacy-regulations
 description: Handling personally identifiable information under European and Australian privacy regulations.
+tier: extended
 applyTo: '**/*privacy*,**/*PII*,**/*personal*,**/*GDPR*,**/*data-protection*,**/*consent*,**/*user-data*'
 ---
 
@@ -356,7 +357,3 @@ function pseudonymize(record: UserRecord): PseudonymizedRecord {
 - Data discovery and classification tools
 
 ---
-
-## Synapses
-
-See [synapses.json](synapses.json) for connections.

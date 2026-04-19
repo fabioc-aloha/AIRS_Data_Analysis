@@ -1,6 +1,7 @@
 ---
 name: prompt-engineering
 description: Craft effective prompts that get the best results from language models.
+tier: standard
 applyTo: '**/*prompt*,**/*llm*,**/*ai*,**/*copilot*,**/*agent*'
 ---
 
@@ -353,7 +354,3 @@ def validate_response(response, expected_format):
 | GPT-3.5/Haiku | Speed, cost | May need more examples |
 | Llama/Mistral | Open source, customizable | Fine-tuning options |
 | Specialized | Domain expertise | Limited scope |
-
-## Synapses
-
-See [synapses.json](synapses.json) for connections.

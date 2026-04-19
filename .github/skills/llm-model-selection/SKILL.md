@@ -1,6 +1,7 @@
 ---
 name: llm-model-selection
 description: Choosing the right model for the task — power vs. cost vs. speed.
+tier: standard
 applyTo: '**/*model*,**/*llm*,**/*copilot*,**/*claude*,**/*gpt*'
 ---
 
@@ -154,7 +155,7 @@ When using **Auto** in VS Code Copilot, the model switches dynamically based on 
 | Self-actualization | Comprehensive architecture assessment |
 | Complex architecture refactoring | Multi-file changes, deep context |
 | Bootstrap learning (new skills) | Skill acquisition needs maximum capability |
-| Synapse validation/dream | Neural maintenance requires full architecture |
+| Connection validation/dream | Architecture maintenance requires full architecture context |
 | Adaptive thinking tasks | Opus 4.6 uses dynamic reasoning depth for optimal results |
 
 ### Warning Protocol
@@ -212,7 +213,3 @@ For **production deployment, user-facing work**:
 | Complex refactor | 10,000-20,000 | $0.15-0.30 | $0.03-0.06 |
 | Full session | 50,000-150,000 | $0.75-2.25 | $0.15-0.45 |
 | Meditation | 30,000-80,000 | $0.45-1.20 | $0.09-0.24 |
-
-## Synapses
-
-See [synapses.json](synapses.json) for connections.

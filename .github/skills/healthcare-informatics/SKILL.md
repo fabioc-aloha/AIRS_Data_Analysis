@@ -1,6 +1,7 @@
 ---
 name: healthcare-informatics
 description: Clinical terminology, healthcare compliance (HIPAA/HITECH), patient safety, and health data management.
+tier: extended
 applyTo: '**/*health*,**/*clinical*,**/*medical*,**/*patient*,**/*hipaa*,**/*ehr*,**/*pharma*'
 ---
 
@@ -57,6 +58,38 @@ PHI is any individually identifiable health information. The 18 HIPAA identifier
 | Business Associate liability | BAs directly liable for HIPAA violations |
 | Audit trail | All access to electronic PHI must be logged |
 | Encryption safe harbor | Encrypted data breach = not a reportable breach |
+
+### FHIR Patient Resource Example
+
+```json
+{
+  "resourceType": "Patient",
+  "id": "example",
+  "identifier": [
+    {
+      "system": "http://hospital.org/mrn",
+      "value": "12345"
+    }
+  ],
+  "name": [
+    {
+      "use": "official",
+      "family": "Doe",
+      "given": ["John"]
+    }
+  ],
+  "gender": "male",
+  "birthDate": "1985-06-15",
+  "address": [
+    {
+      "use": "home",
+      "city": "Springfield",
+      "state": "IL",
+      "postalCode": "62704"
+    }
+  ]
+}
+```
 
 ## Clinical Terminology Standards
 

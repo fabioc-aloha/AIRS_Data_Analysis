@@ -1,6 +1,7 @@
 ---
 name: privacy-responsible-ai
 description: Privacy by design, data protection, and responsible AI principles.
+tier: standard
 applyTo: '**/*privacy*,**/*consent*,**/*data*,**/*PII*,**/*GDPR*,**/*responsible*,**/*ethical*,**/*bias*,**/*fairness*'
 ---
 
@@ -275,7 +276,3 @@ When AI causes harm:
 3. **Notify** — Inform affected users
 4. **Fix** — Root cause + prevention
 5. **Document** — Post-mortem for learning
-
-## Synapses
-
-See [synapses.json](synapses.json) for connections.

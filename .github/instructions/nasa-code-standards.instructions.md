@@ -1,5 +1,7 @@
 ---
 description: "NASA/JPL Power of 10 code quality standards adapted for mission-critical software development"
+application: "When nasa code standards patterns are relevant to the current task"
+applyTo: "**/*.{ts,js,tsx,jsx,py,cs,java,go,rs,rb,c,cpp,h}"
 ---
 
 # NASA Code Standards — Mission-Critical Development
@@ -8,15 +10,6 @@ description: "NASA/JPL Power of 10 code quality standards adapted for mission-cr
 **Adapted**: For modern TypeScript/JavaScript with mission-critical reliability requirements
 
 When the user's project is **mission-critical**, apply these standards rigorously. These rules prevent catastrophic failures in safety-critical systems.
-
----
-
-## Synapses
-
-- [.github/agents/alex-builder.agent.md] → (Critical, Implements, Bidirectional) - "Builder applies NASA rules during code generation"
-- [.github/instructions/code-review-guidelines.instructions.md] → (High, Informs, Forward) - "Reviews check NASA compliance for mission-critical code"
-- [.github/instructions/heir-project-improvement.instructions.md] → (High, Informs, Forward) - "Heir projects inherit NASA checklist for mission-critical work"
-- [.github/instructions/testing-strategies.instructions.md] → (Medium, Complements, Forward) - "Testing validates rule compliance"
 
 ---
 

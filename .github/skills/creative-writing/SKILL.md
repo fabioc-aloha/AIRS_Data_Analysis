@@ -1,6 +1,8 @@
 ---
 name: creative-writing
 description: Patterns for fiction, narrative structure, character development, dialogue, and storytelling craft.
+tier: standard
+applyTo: '**/*fiction*,**/*story*,**/*narrative*,**/*dialogue*,**/*character*'
 ---
 
 # Creative Writing Skill
@@ -461,20 +463,3 @@ Present tense. Active voice. Brief.
 - Sonnet — 14 lines, specific rhyme
 - Haiku — 5-7-5 syllables
 - Villanelle — 19 lines, refrains
-
-## Synapses
-
-### High-Strength Connections
-
-- [academic-research] (High, Extends, Bidirectional) — "Publishing creative writing"
-- [academic-research] (Medium, Complements, Bidirectional) — "Research for historical fiction"
-
-### Medium-Strength Connections
-
-- [knowledge-synthesis] (Medium, Uses, Forward) — "Synthesizing story elements"
-- [cognitive-load] (Medium, Applies, Forward) — "Reader experience management"
-
-### Supporting Connections
-
-- [meditation] (Low, Supports, Forward) — "Creative reflection"
-- [appropriate-reliance] (Low, Applies, Forward) — "Balancing AI assistance with creative voice"

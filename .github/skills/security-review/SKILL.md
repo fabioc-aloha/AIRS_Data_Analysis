@@ -1,6 +1,7 @@
 ---
 name: security-review
 description: Defend before attackers find the gaps - OWASP, STRIDE, and Microsoft SFI
+tier: core
 applyTo: '**/*security*,**/*auth*,**/*password*,**/*token*,**/*credential*,**/*vulnerability*,**/*CVE*,**/*secret*'
 ---
 
@@ -230,7 +231,7 @@ If secrets accidentally committed:
 
 ### Regular Audits
 
-```powershell
+```bash
 # npm
 npm audit
 npm audit fix
@@ -327,15 +328,6 @@ When vulnerability found:
 4. **Verify**: Confirm fix works
 5. **Learn**: Update review checklist
 
-See [incident-response](../incident-response/SKILL.md) for full IR workflow.
+See [incident-response](.github/skills/incident-response/SKILL.md) for full IR workflow.
 
 ---
-
-## Synapses
-
-See [synapses.json](synapses.json) for connections.
-
----
-
-*Consolidated: 2026-02-19*
-*Sources: security-review (2026-02-01) + microsoft-sfi*

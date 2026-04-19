@@ -1,5 +1,6 @@
 ---
 description: "VS Code Chat API patterns for registering participants, routing LLM requests, and handling chat commands"
+application: "When implementing chat participant patterns or reviewing code that uses these patterns"
 applyTo: "**/chat/**/*.ts,**/*participant*.ts"
 ---
 
@@ -7,7 +8,7 @@ applyTo: "**/chat/**/*.ts,**/*participant*.ts"
 
 **Auto-loaded when**: Writing VS Code extension code that uses Chat API, registers a chat participant, or routes requests to an LLM
 **Domain**: VS Code extension development, AI extensibility, Chat API
-**Synapses**: [chat-participant-patterns/SKILL.md](../skills/chat-participant-patterns/SKILL.md)
+**Related Skill**: [chat-participant-patterns/SKILL.md](../skills/chat-participant-patterns/SKILL.md)
 
 ---
 

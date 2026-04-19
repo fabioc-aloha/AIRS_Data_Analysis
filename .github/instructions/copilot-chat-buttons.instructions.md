@@ -1,5 +1,6 @@
 ---
 description: "Copilot Chat action button patterns for interactive follow-up actions in chat responses"
+application: "When implementing copilot chat buttons or reviewing code that uses these patterns"
 applyTo: "**/chat/**/*.ts,**/*participant*.ts"
 ---
 
@@ -88,8 +89,3 @@ After completing this task, call:
 - `stream.button({ command: 'alex.meditate', title: '🧘 Meditate' })`
 - `stream.button({ command: 'alex.dream', title: '🌙 Dream' })`
 ```
-
-## Synapses
-
-- **External Implementation**: VS Code extension chat participant module (1.0, bidirectional) - "stream.button() and followupProvider implementation"
-- [.github/prompts/meditate.prompt.md](../prompts/meditate.prompt.md) (0.9, enhancement, outgoing) - "action suggestions in meditation"

@@ -1,5 +1,7 @@
 ---
 description: "Reusable strategies for detecting natural language in text content"
+application: "When language detection patterns are relevant to the current task"
+applyTo: "**/*detect*,**/*language*,**/*nlp*,**/*text-processing*"
 ---
 
 # Language Detection Patterns
@@ -124,13 +126,6 @@ if (result.confidence < CONFIDENCE_THRESHOLD) {
 | **Spellcheck** | Load correct dictionary |
 | **Code comments** | Identify mixed-language documentation |
 | **Search** | Apply language-specific tokenization |
-
----
-
-## Synapses
-
-- [.github/skills/text-to-speech/SKILL.md] (High, Enables, Bidirectional) - "Primary consumer of detection"
-- [.github/skills/localization/SKILL.md] (Medium, Enables, Forward) - "i18n accessibility features"
 
 ---
 

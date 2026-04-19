@@ -1,6 +1,9 @@
 ---
 name: "visual-memory"
 description: "Embed reference media (photos, voice, video templates) as base64 data URIs in skills for self-sufficient, portable, consistent generation"
+tier: extended
+applyTo: '**/*visual*,**/*reference*,**/*portrait*,**/*base64*'
+muscle: .github/muscles/visual-memory.cjs
 metadata:
   inheritance: inheritable
 ---
@@ -9,7 +12,6 @@ metadata:
 
 > Self-sufficient skills that carry their own reference media — no external folder dependencies.
 
-**Pattern Origin**: AlexBooks (promoted 2026-03-01)
 **Applies To**: Any skill needing consistent visual identity, voice, or motion style across multiple generation tasks.
 
 ---
@@ -30,7 +32,6 @@ Embed optimized reference assets directly in the skill as base64 data URIs. The 
 ```
 skill-folder/
 ├── SKILL.md
-├── synapses.json
 └── visual-memory/
     ├── index.json              ← Metadata only (no binary data)
     ├── visual-memory.json      ← Full base64 data URIs (~30-80KB per photo)
@@ -56,33 +57,17 @@ Reference photos for face-consistent portrait generation. Embedded to eliminate 
 
 **When to use**: Face-consistent portrait generation, AI character references, persona avatars.
 
-### Audio Memory (Voice Samples)
+### Audio Memory
 
-Short voice samples for TTS cloning. Referenced by path (audio files are too large to base64 inline sensibly).
-
-| Spec        | Value                              |
-| ----------- | ---------------------------------- |
-| Duration    | 5-15 seconds of clear speech       |
-| Format      | WAV or MP3                         |
-| Sample rate | 16kHz+                             |
-| Content     | Natural speech, no background noise|
-
-**When to use**: Voice cloning with `chatterbox-turbo` or `qwen/qwen3-tts`.
-
-### Video Memory (Style Templates)
-
-Stored as JSON prompt templates — not actual video files.
-
-**When to use**: Consistent motion patterns across video generation tasks.
-
----
-
+> **Moved to dedicated skill**: See [audio-memory/SKILL.md](../audio-memory/SKILL.md) for voice sample storage and TTS cloning
 ## Implementing Visual Memory in a Skill
 
 ### Step 1: Prepare Photos
 
 ```powershell
-# Install ImageMagick if needed: winget install ImageMagick.ImageMagick
+# Install ImageMagick if needed:
+# macOS: brew install imagemagick
+# Windows: winget install ImageMagick.ImageMagick
 
 # Resize single photo: 512px longest edge @ 85% JPEG quality
 magick input.jpg -resize 512x512> -quality 85 output.jpg
@@ -251,31 +236,6 @@ RIGHT: EXACTLY the person from [Name B]'s reference images, wearing [clothing].
 
 ---
 
-## Audio Memory
-
-### Voice Cloning Setup
-
-```json
-{
-  "voices": {
-    "subject-voice": {
-      "description": "Natural speaking voice",
-      "audioFile": "visual-memory/voices/subject-sample.wav",
-      "duration": "10s",
-      "model": "chatterbox-turbo"
-    }
-  }
-}
-```
-
-### Supported Cloning Models
-
-| Model              | Cost             | Voice Cloning |
-| ------------------ | ---------------- | ------------- |
-| `chatterbox-turbo` | $0.025/1k chars  | ✅            |
-| `qwen/qwen3-tts`   | $0.02/1k chars   | ✅ (3 modes: Voice, Clone, Design) |
-| `minimax/speech-2.8-turbo` | $0.06/1k tokens | ❌ (40+ languages, emotion control) |
-
 ---
 
 ## Video Memory (Style Templates)
@@ -285,31 +245,6 @@ Store consistent motion style as JSON — not actual video files:
 ```json
 {
   "videoStyles": {
-    "portrait-animation": {
-      "description": "Subtle head movements, natural breathing",
-      "promptTemplate": "Head turns slowly, subtle smile, natural breathing, soft lighting",
-      "model": "veo-3",
-      "defaultDuration": 6
-    }
-  }
-}
-```
-
----
-
-## Adding New Memories
-
-### Adding a New Visual Subject
-
-1. Collect 5-8 photos (varied angles: front, 3/4, profile, different lighting)
-2. Resize to 512px longest edge @ 85% JPEG
-3. Convert to base64 data URIs
-4. Add to `visual-memory.json` under `subjects.<name>`
-5. Update `index.json` with file count
-
-**Target photo guidelines:**
-
-| Element    | Recommendation                              |
 | ---------- | ------------------------------------------- |
 | Quantity   | 5-8 photos (more = better likeness)         |
 | Angles     | Front, 3/4 left, 3/4 right, slight profile |
@@ -318,12 +253,7 @@ Store consistent motion style as JSON — not actual video files:
 | File size  | 40-80KB each after 512px/85% optimization   |
 | Total size | ~500KB for 8-10 photos — acceptable         |
 
-### Adding a Voice Sample
-
-1. Record 5-15 seconds of clear natural speech
-2. Export as WAV 16kHz+ or MP3
-3. Store in `visual-memory/voices/`
-4. Register in `voices` section of `visual-memory.json`
+> **For voice samples**: See [audio-memory/SKILL.md](../audio-memory/SKILL.md)
 
 ---
 
@@ -337,3 +267,4 @@ Store consistent motion style as JSON — not actual video files:
 | Version control nightmare  | JSON in version control              |
 | Different results per machine  | Exact consistency everywhere      |
 | ~2MB unoptimized originals | ~50MB → 500KB optimized               |
+> **For voice samples**: See [audio-memory/SKILL.md](../audio-memory/SKILL.md)

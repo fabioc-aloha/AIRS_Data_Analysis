@@ -1,6 +1,7 @@
 ---
 name: "incident-response"
 description: "Calm, systematic crisis handling — from detection through post-mortem to prevention"
+tier: standard
 applyTo: "**/*incident*,**/*outage*,**/*alert*,**/*emergency*"
 ---
 
@@ -114,7 +115,3 @@ One paragraph: what happened, impact, resolution.
 - [ ] Known issues (monitoring gaps, flaky tests)
 - [ ] Pending alerts (expected noise vs real signal)
 - [ ] Escalation contacts (who to call at 3am)
-
-## Synapses
-
-See [synapses.json](synapses.json) for connections.

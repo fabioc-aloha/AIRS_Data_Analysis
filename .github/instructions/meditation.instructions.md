@@ -1,109 +1,89 @@
 ---
 description: "Procedural steps for knowledge consolidation meditation sessions"
+application: "When exploring new domains, synthesizing knowledge, or building expertise"
+applyTo: "**/*meditation*,**/*dream*,**/*consolidation*"
 ---
 
-# Meditation Protocols - Procedural Memory
+# Meditation Protocol
 
-**Classification**: Procedural Memory | Knowledge Consolidation  
-**Activation**: meditate, consolidate, reflect, knowledge integration  
-**Priority**: MANDATORY requirements must be met every session
+Knowledge consolidation — transform working memory into permanent architecture.
 
----
+## Completion Gate
 
-## Synapses
+A meditation is INCOMPLETE unless it produces at least one file change:
 
-- [.github/prompts/meditate.prompt.md] (Critical, Implements, Bidirectional) - "Comprehensive meditation workflow this instruction supports"
-- [.github/instructions/dream-state-automation.instructions.md] (High, Coordinates, Bidirectional) - "Dream precedes meditation; Phase 5 validates via Dream"
-- [.github/instructions/alex-core.instructions.md] (Critical, Enables, Bidirectional) - "Core architecture optimization through meditation"
-- [.github/instructions/embedded-synapse.instructions.md] (High, Validates, Bidirectional) - "Connection strengthening through meditation"
-- [.github/instructions/skill-selection-optimization.instructions.md] (High, Uses, Forward) - "Pre-meditation resource planning for complex sessions"
-- [.github/skills/meditation/SKILL.md] (Critical, Implements, Bidirectional) - "Domain knowledge this procedure operationalizes"
-- [.github/instructions/self-actualization.instructions.md] (Medium, Integrates, Bidirectional) - "Self-actualization may trigger meditation for consolidation"
+| Output | Target |
+|---|---|
+| Repeatable process | `.github/instructions/*.instructions.md` |
+| Domain knowledge | `.github/skills/*/SKILL.md` |
+| Workflow template | `.github/prompts/*.prompt.md` |
+| Cross-project pattern | `/memories/` (user memory) |
+| Repo-specific fact | `/memories/repo/` (repo memory) |
+| Fleet insight | `AI-Memory/insights/GI-*.md` |
 
----
+## 4 Phases (+Fleet Sync)
 
-## Mandatory Requirements (Non-Negotiable)
+### 1. Review
 
-Every meditation session MUST complete ALL three before concluding:
+- Scan conversation for insights, patterns, breakthroughs, mistakes
+- Extract concepts worth persisting (non-obvious, reusable, easy to forget)
+- Discard noise — not everything deserves permanent storage
 
-| # | Requirement | Action | Validation |
-|---|-------------|--------|------------|
-| 1 | **Memory File Persistence** | Create OR update at least one memory file | File saved to `.instructions.md`, `.prompt.md`, or `SKILL.md` |
-| 2 | **Synaptic Enhancement** | Add new OR strengthen existing synapse | Connection uses `[file.md] (strength, type, direction)` format |
-| 3 | **Session Documentation** | Record actions with timestamps | Summary of changes with specific file paths |
+### 2. Connect
 
-**Failure**: If ANY requirement is missing, the meditation is INCOMPLETE.
+- Compare findings against existing instructions, skills, and `/memories/`
+- Identify reinforcements (existing knowledge confirmed) and contradictions (flag for review)
+- Look for cross-domain connections — one genuine insight beats three forced ones
 
----
+### 3. Persist
 
-## 5-Phase Protocol
+- Create or update the right file type (see Completion Gate)
+- Ensure frontmatter is complete (`description`, `applyTo`)
+- Link related skills/instructions via naming or frontmatter references
+- Patterns that pass the 3-workspace test → `/memories/` (user memory)
+- Patterns that are repo-specific → `/memories/repo/`
 
-### Phase 1: Deep Content Analysis
+### 3b. Fleet Sync (v8.0.0+)
 
-1. Analyze conversation for insights, patterns, new knowledge
-2. Extract key concepts, methodologies, breakthroughs
-3. Discover connections between new information and existing knowledge
-4. Organize insights for permanent integration
+After local persistence, update fleet-wide storage:
 
-### Phase 2: Memory File Creation
+| Condition | Action | Target |
+|-----------|--------|--------|
+| Pattern reusable across projects | Create insight file | `AI-Memory/insights/GI-{topic}-{date}.md` |
+| Solved problem elegantly | Add to registry | `successfulPatterns[]` |
+| Encountered recurring friction | Document issue | `frictionPoints[]` |
+| Every meditation | Update health | `health.lastMeditation`, `meditationCount++` |
 
-1. **Procedural**: Create `.instructions.md` for repeatable processes
-2. **Episodic**: Create `.prompt.md` for complex workflows
-3. **Skills**: Add to `SKILL.md` or create new skills
-4. Transfer key learnings from working memory to long-term storage
-5. Mark session complete in Active Context (update Last Assessed via self-actualization)
+Fleet sync is best-effort — if AI-Memory is not accessible (offline, different machine), local updates proceed and fleet updates queue for next sync.
 
-### Phase 3: Synaptic Connection
+### 4. Validate
 
-1. Add new memory files to `copilot-instructions.md` if needed
-2. Establish trigger patterns for new files
-3. Document relationships between new and existing components
-4. Ensure bidirectional connections where appropriate
+Output checklist before concluding:
 
-### Phase 3.5: Skill Validation
-
-1. Scan `.github/skills/*/SKILL.md` for registered skills
-2. Verify `synapses.json` targets are valid
-3. Review connection strengths based on session experience
-4. Add connections for skills that co-activated frequently
-
-### Phase 4: Integration Validation
-
-1. Verify all insights captured in permanent memory
-2. Confirm new knowledge integrates with existing architecture
-3. Test that new connections function properly
-4. **Output validation** (mandatory before concluding):
-
-```
-✓ Memory File: [path/to/file.md] - [created|updated]
-✓ Synapse Added: [target.md] (strength, type, direction) - "activation condition"
-✓ Session Log: [summary of changes]
+```text
+✓ File: [path] — [created|updated]
+✓ Related: [skill-a, skill-b] — linked
+✓ Fleet: project-registry.json health updated
+✓ Fleet: [insight file] created (if applicable)
+✓ Summary: [one-line description of what was consolidated]
 ```
 
-### Phase 5: Post-Meditation Synapse Validation
+If new skills/instructions were created, verify they load correctly.
 
-1. Run `Alex: Dream (Neural Maintenance)` for automated health check
-2. Review generated report in `.github/episodic/`
-3. Verify newly added synapses are valid (target files exist)
-4. Confirm bidirectional connections have reciprocal entries
-5. If issues found → repair before concluding
+### 5. Content Spot-Check (per session)
 
----
+Randomly sample 3-5 existing skills. For each, verify:
 
-## Automatic Consolidation Triggers
+- Are code examples still accurate? (API changes, deprecated methods)
+- Do version references match current reality?
+- Does advice conflict with any other loaded skill/instruction?
+- Is the skill still relevant to active projects?
 
-- Working memory > 7 rules → Execute consolidation
-- Domain learning complete → Consolidate and update Focus Trifectas in Active Context
-- Significant breakthrough → Create permanent memory
-- Cross-domain patterns → Establish new synaptic connections
+Flag issues found — update the skill or note in session memory for follow-up.
 
-## Pre-Meditation Optimization
+## When to Meditate
 
-Meditation is a complex operation (3+ phases). Before starting:
-1. SSO auto-activates to survey needed skills
-2. Pre-load: brain-qa, knowledge-synthesis, global-knowledge
-3. If synapse health unknown, run dream first
-
----
-
-*Meditation procedural memory — operationalizes the unified meditation protocols with mandatory persistence requirements*
+- Session produced reusable knowledge worth persisting
+- Domain learning reached a milestone
+- Cross-domain patterns emerged
+- Working memory feels overloaded (7+ unrecorded insights)

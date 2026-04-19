@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 // H14: Auto-commit suggestion
-// Global Stop hook — if many files are modified and uncommitted, suggest a commit.
+// Global Stop hook -- if many files are modified and uncommitted, suggest a commit.
+// @reviewed: 2026-04-18
 'use strict';
 
 const { execSync } = require('child_process');
@@ -39,7 +40,7 @@ try {
     process.stdout.write(JSON.stringify(response));
   }
 } catch {
-  // git not available — skip silently
+  // git not available -- skip silently
 }
 
 process.exit(0);

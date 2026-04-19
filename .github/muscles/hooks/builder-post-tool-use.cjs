@@ -2,6 +2,7 @@
 // H4: Builder auto-compile reminder
 // Agent-scoped PostToolUse hook for Builder mode.
 // After a .ts file edit, reminds to compile for immediate error feedback.
+// @reviewed: 2026-04-18
 'use strict';
 
 const WRITE_TOOLS = new Set([
@@ -26,7 +27,7 @@ process.stdin.on('end', () => {
         hookSpecificOutput: {
           hookEventName: 'PostToolUse',
           additionalContext:
-            'H4 BUILD CHECK: TypeScript file modified — run `npm run compile` now to catch errors early.\n' +
+            'H4 BUILD CHECK: TypeScript file modified -- run `npm run compile` now to catch errors early.\n' +
             'File: ' + filePath,
         },
       };

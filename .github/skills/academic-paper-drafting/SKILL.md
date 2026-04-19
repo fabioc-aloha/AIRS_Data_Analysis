@@ -1,7 +1,8 @@
 ---
-name: "Academic Paper Drafting Skill"
+name: academic-paper-drafting
 description: "End-to-end academic paper drafting for CHI, HBR, journals, and conferences with venue-specific templates, drafting workflows, and revision strategies."
 applyTo: "**/*paper*,**/*manuscript*,**/*journal*,**/*conference*,**/*CHI*,**/*HBR*,**/*publication*"
+tier: extended
 ---
 
 # Academic Paper Drafting Skill
@@ -380,7 +381,7 @@ RQ3: [Specific question]
 [18+ months, 62+ projects, single user intensive use]
 
 ### 4.2 Metrics Collection
-[Synapse count, skill usage, memory file growth]
+[Connection count, skill usage, memory file growth]
 
 ### 4.3 Qualitative Observations
 [Emergent behaviors, user experience notes]
@@ -389,7 +390,7 @@ RQ3: [Specific question]
 
 ## 5. Results
 ### 5.1 Memory Growth Patterns
-[Quantitative: 945+ synapses, 47+ memory files]
+[Quantitative: 945+ connections, 47+ memory files]
 
 ### 5.2 Cross-Project Knowledge Transfer
 [Evidence of knowledge reuse]
@@ -715,13 +716,8 @@ Sincerely,
 
 ## Related Skills
 
-- [writing-publication](.github/skills/writing-publication/SKILL.md) — General writing patterns
 - [academic-research](.github/skills/academic-research/SKILL.md) — Research methodology
 - [practitioner-research](.github/skills/practitioner-research/SKILL.md) — Practitioner paper style
 - [knowledge-synthesis](.github/skills/knowledge-synthesis/SKILL.md) — Literature synthesis
 - [dissertation-defense](.github/skills/dissertation-defense/SKILL.md) — Dissertation-to-paper pipeline
 - [grant-writing](.github/skills/grant-writing/SKILL.md) — Funding proposals
-
-## Synapses
-
-See [synapses.json](synapses.json) for connections.

@@ -1,6 +1,8 @@
 ---
 name: "testing-strategies"
 description: "Systematic testing for confidence without over-testing — the right test at the right level"
+tier: core
+applyTo: '**/*.test.*,**/*.spec.*,**/test/**,**/__tests__/**'
 ---
 
 # Testing Strategies Skill
@@ -152,7 +154,3 @@ test('processItems rejects oversized batch', () => {
 | Fails only in CI | Environment difference | Pin versions, use containers |
 | Fails after another test | Test pollution | Isolate setup/teardown |
 | Fails on slow machines | Hardcoded timeouts | Use retry with backoff or event-based waits |
-
-## Synapses
-
-See [synapses.json](synapses.json) for connections.

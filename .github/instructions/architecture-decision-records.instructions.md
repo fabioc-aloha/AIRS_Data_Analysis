@@ -1,19 +1,10 @@
 ---
 description: "Architecture Decision Record (ADR) templates and documentation protocols"
+application: "When following architecture decision records workflows or troubleshooting related issues"
+applyTo: "**/decisions/**,**/*ADR*,**/*adr*"
 ---
 
 # Architecture Decision Records (ADR) Procedural Memory
-
-**Classification**: Procedural Memory | Documentation  
-**Activation**: ADR, architecture decision, why did we, design decision, technical decision, trade-off  
-**Priority**: Standard - Document significant decisions for future reference
-
----
-
-## Synapses
-
-- [.github/instructions/deep-thinking.instructions.md] → (High, Supports, Bidirectional) - "ADRs require systematic analysis"
-- [.github/instructions/technical-debt-tracking.instructions.md] → (Medium, Coordinates, Forward) - "Decisions may create intentional debt"
 
 ---
 
@@ -151,7 +142,7 @@ project/
 ```
 ADR-{number}-{short-title}.md
 ADR-001-use-typescript-for-extension.md
-ADR-002-embedded-synapse-notation.md
+ADR-002-skill-relationship-format.md
 ADR-003-scripts-over-cicd.md
 ```
 
@@ -165,19 +156,19 @@ ADR-003-scripts-over-cicd.md
 | ADR | Title | Status | Date |
 |-----|-------|--------|------|
 | [ADR-001](ADR-001-use-typescript.md) | Use TypeScript for Extension | Accepted | 2025-06-15 |
-| [ADR-002](ADR-002-embedded-synapses.md) | Embedded Synapse Notation | Accepted | 2025-08-20 |
+| [ADR-002](ADR-002-skill-relationships.md) | Skill Relationship Format | Superseded | 2025-08-20 |
 | [ADR-003](ADR-003-scripts-over-cicd.md) | Deployment Scripts over CI/CD | Accepted | 2026-01-23 |
 
 ## By Status
 
 ### Accepted
-- ADR-001, ADR-002, ADR-003
+- ADR-001, ADR-003
 
 ### Proposed
 - (none)
 
-### Deprecated
-- (none)
+### Superseded
+- ADR-002 (embedded markdown synapses → frontmatter + semantic search)
 ```
 
 ---

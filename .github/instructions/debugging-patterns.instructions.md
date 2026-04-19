@@ -1,5 +1,6 @@
 ---
 description: "Systematic debugging procedure — reproduce, isolate, hypothesize, fix"
+application: "When following debugging patterns workflows or troubleshooting related issues"
 applyTo: "**/*debug*,**/*error*,**/*fix*,**/*issue*,**/*bug*"
 ---
 
@@ -23,6 +24,17 @@ Activate when: an error occurs, a test fails, or behavior doesn't match expectat
 - Comment out code to narrow the scope
 - Use `git stash` to test against clean state if recent changes may be the cause
 
+```bash
+# Binary search through commits to find the breaking change
+git bisect start
+git bisect bad HEAD
+git bisect good v7.0.0
+# Git checks out midpoint — run your failing test, then:
+git bisect good  # if test passes
+git bisect bad   # if test fails
+git bisect reset # when done
+```
+
 ### Step 3: Read the Error
 
 Stack trace reading pattern:
@@ -31,11 +43,28 @@ Stack trace reading pattern:
 - **Bottom frames**: Entry point (trigger)
 - Ignore `node_modules` frames unless the bug is in a dependency
 
-### Step 4: Hypothesize and Test
+### Step 4: Generate 3+ Competing Hypotheses
 
-- Form ONE hypothesis about the cause
-- Design a test to prove or disprove it
-- If disproved, form the next hypothesis — don't guess blindly
+Generate **at least 3 competing hypotheses** before investigating any one. This prevents anchoring bias (fixating on the first plausible explanation).
+
+For each hypothesis, document:
+
+| Field | Content |
+|-------|--------|
+| **Theory** | What you think is wrong |
+| **Supporting Evidence** | What makes this plausible |
+| **Contradicting Evidence** | What argues against it |
+| **Verification Plan** | Exact steps to prove/disprove |
+| **Fix Approach** | What you'd change if confirmed |
+
+Investigate from most likely to least likely. After each verification:
+- **CONFIRMED**: Apply fix, skip remaining hypotheses
+- **DENIED**: Cross off, move to next
+- **PARTIAL**: Combine with other hypotheses
+
+If all hypotheses fail: re-examine your assumptions, widen scope (check recent deploys, environment changes, dependency updates), form 3 new hypotheses.
+
+For complex bugs, maintain a `HYPOTHESIS.md` in the working directory to track investigation state across sessions.
 
 ### Step 5: Fix ONE Thing
 

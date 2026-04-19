@@ -1,20 +1,10 @@
 ---
 description: "Technical debt identification, tracking, and payoff protocols"
+application: "When following technical debt tracking workflows or troubleshooting related issues"
 applyTo: "**/*TODO*,**/*FIXME*,**/*debt*"
 ---
 
 # Technical Debt Tracking Procedural Memory
-
-**Classification**: Procedural Memory | Code Quality  
-**Activation**: debt, technical debt, TODO, FIXME, HACK, refactor, cleanup, code smell  
-**Priority**: Proactive - Track and manage debt before it accumulates
-
----
-
-## Synapses
-
-- [.github/instructions/deep-thinking.instructions.md] → (Medium, Supports, Forward) - "Debt analysis requires systematic thinking"
-- [CHANGELOG.md] → (Low, Documents, Forward) - "Debt payoff should be documented"
 
 ---
 
@@ -39,23 +29,23 @@ applyTo: "**/*TODO*,**/*FIXME*,**/*debt*"
 | **Doc Debt** | `// DEBT:doc` | Outdated docs, missing comments |
 | **Dependency Debt** | `// DEBT:dep` | Outdated packages, deprecated APIs |
 | **Infrastructure Debt** | `// DEBT:infra` | Build issues, deployment friction |
-| **Cognitive Debt** | `// DEBT:cognitive` | Broken synapses, orphan skills, drift |
+| **Cognitive Debt** | `// DEBT:cognitive` | Incomplete trifectas, orphan skills, drift |
 
 ### Cognitive Debt (Alex-Specific)
 
 > *"Cognitive debt is the gap between the architecture I aspire to and the architecture I actually have."*
 
-Cognitive debt applies to Alex's cognitive architecture — the accumulated decay in synapses, skills, and cross-platform sync.
+Cognitive debt applies to Alex's cognitive architecture — the accumulated decay in skills, trifectas, and cross-platform sync.
 
 | Cognitive Debt Type | Example | Payoff Mechanism |
 |---------------------|---------|------------------|
-| Broken synapses | Pointing to `architecture` instead of `architecture-audit` | `brain-qa` Phase 1 |
+| Missing frontmatter | SKILL.md without applyTo/description | `brain-qa` Phase 1 |
 | Aspirational references | Connecting to skills never created | Remove or create the skill |
-| Heir divergence | Master-Heir synapses out of sync | `brain-qa` Phase 4-6 |
-| Unindexed skills | Skills exist but not in memory-activation | `brain-qa` Phase 2 |
+| Heir divergence | Master-Heir content out of sync | `brain-qa` Phase 4-6 |
+| Unindexed skills | Skills exist but not discoverable | `brain-qa` Phase 2 |
 | Semantic overlap | Multiple triggers for same concept | `brain-qa` Phase 3 |
 
-**Detection**: Run `brain-qa` skill or `Alex: Dream` command
+**Detection**: Run `brain-qa` skill or use the dream prompt
 **Prevention**: Brain QA is now Step 0 in release-preflight checklist
 
 ---
@@ -97,7 +87,7 @@ class MegaHandler {
 
 ### Step 1: Scan for Debt Markers
 
-```powershell
+```bash
 # Find all DEBT markers in codebase
 grep -rn "DEBT:" --include="*.ts" --include="*.js" --include="*.md" .
 
@@ -115,14 +105,32 @@ grep -rn "DEBT:" --include="*.ts" --include="*.js" --include="*.md" .
 | D001 | code | high | Duplicated validation | validator.ts | 45 | 2026-01-23 | @dev | 2h |
 | D002 | design | medium | SRP violation | handler.ts | 12 | 2026-01-15 | - | 4h |
 
-### Step 3: Prioritize
+### Step 3: Prioritize with Composite Scoring
 
-**Prioritization Matrix:**
+Score each debt item with the composite formula:
+
+```
+Debt Score = (Severity x 3) + (Churn x 2) + (Blast Radius x 2) + (Fix Simplicity) + (Age)
+```
+
+| Factor | Scale | How to Measure |
+|--------|-------|----------------|
+| **Severity** | 1-5 | Critical=5, High=4, Medium=3, Low=2, Cosmetic=1 |
+| **Churn** | 1-5 | git log frequency: daily=5, weekly=4, monthly=3, quarterly=2, dormant=1 |
+| **Blast Radius** | 1-5 | Files importing this module: 20+=5, 10-19=4, 5-9=3, 2-4=2, 1=1 |
+| **Fix Simplicity** | 1-5 | Trivial=5, Straightforward=4, Moderate=3, Complex=2, Risky=1 |
+| **Age** | 1-5 | >1yr=5, 6-12mo=4, 3-6mo=3, 1-3mo=2, <1mo=1 |
+
+**Score range**: 9 (minimal) to 45 (urgent). Prioritize highest scores first.
+
+**Key insight**: High churn + many dependents + debt markers = top priority hotspot. Cross-reference `git log --format='%H' --follow <file> | wc -l` with `grep -rn "import.*from.*<module>"` to find these.
+
+**Quick prioritization matrix** (for when composite scoring is overkill):
 
 | | Low Effort | High Effort |
 |---|------------|-------------|
-| **High Impact** | ⭐ Do First | 📋 Plan Carefully |
-| **Low Impact** | ✅ Quick Wins | ❌ Defer |
+| **High Impact** | Do First | Plan Carefully |
+| **Low Impact** | Quick Wins | Defer |
 
 ---
 

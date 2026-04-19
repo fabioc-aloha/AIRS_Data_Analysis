@@ -1,34 +1,12 @@
 ---
 description: "Self-sufficient skills with embedded reference media — visual, audio, and video memory management for face-consistent generation"
+application: "When generating images, managing visual assets, or maintaining brand consistency"
 applyTo: "**/visual-memory*,**/reference-portrait*,**/face-consistent*"
 ---
 
 # Visual Memory
 
-## Activation Triggers
-
-Activate this skill when the user mentions:
-
-**Visual Memory:**
-- "add reference photos", "add to visual memory", "add subject to visual memory"
-- "face consistent generation", "face consistency with photos"
-- "embed reference photos", "base64 reference", "convert to base64"
-- "resize photos for AI", "prepare reference photos"
-- "self-sufficient skill", "portable reference images"
-- "visual-memory.json"
-
-**Audio Memory:**
-- "add voice sample", "clone voice", "add to audio memory"
-- "voice reference", "TTS cloning", "chatterbox reference"
-
-**Video Memory:**
-- "video style template", "consistent motion", "add video style"
-
-**Not this skill:**
-- Generic image generation without likeness requirement
-- SVG / diagram / infographic generation
-
----
+Full activation triggers, encoding workflows, audio/video memory → see visual-memory skill.
 
 ## Quick Reference
 
@@ -82,13 +60,13 @@ Generate a photo of EXACTLY the person shown in the reference images.
 
 1. **Prepare**: Resize photos to `512px @ 85% JPEG` with ImageMagick:
 
-   ```powershell
+   ```bash
    magick input.jpg -resize "512x512>" -quality 85 output.jpg
    ```
 
 2. **Encode**: Convert to base64 Node.js or PowerShell:
 
-   ```powershell
+   ```bash
    "data:image/jpeg;base64," + [Convert]::ToBase64String([IO.File]::ReadAllBytes("photo.jpg"))
    ```
 
@@ -97,6 +75,39 @@ Generate a photo of EXACTLY the person shown in the reference images.
 4. **Update**: Increment count in `index.json`
 
 **Target**: 5-8 photos per subject — front, 3/4 left, 3/4 right, profile, varied lighting.
+
+---
+
+## Simplified Path with `view_image` (VS Code 1.112+)
+
+VS Code 1.112+ ships a built-in `view_image` tool that reads images directly from disk (PNG, JPEG, GIF, WebP, BMP) with automatic resizing. This offers an alternative to the base64 encoding workflow:
+
+| Approach | Pros | Cons |
+| --- | --- | --- |
+| Base64 in JSON | Fully portable, works offline, self-contained skill | Large files, manual encoding step, PII in JSON |
+| Disk path + `view_image` | No encoding needed, smaller repo, photos stay as files | Requires VS Code 1.112+, paths must resolve at runtime |
+
+### Using Disk Paths Instead of Base64
+
+Store original photos in the skill's `visual-memory/` directory and reference them by path:
+
+```json
+{
+  "subjects": {
+    "alex": {
+      "images": [
+        { "path": ".github/skills/visual-memory/visual-memory/alex-1.jpg" },
+        { "path": ".github/skills/visual-memory/visual-memory/alex-2.jpg" }
+      ]
+    }
+  }
+}
+```
+
+The agent reads each photo via `view_image` at generation time instead of loading base64 data URIs. This eliminates the resize-encode-embed pipeline for new subjects.
+
+**When to use base64**: Heir projects that may not have disk access to Master's photo files.  
+**When to use `view_image`**: Master workspace and local development where photos are on disk.
 
 ---
 

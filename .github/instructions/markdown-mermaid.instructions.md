@@ -1,119 +1,90 @@
 ---
 description: "Mermaid diagram creation, technical documentation visuals, diagram type selection, and rendering troubleshooting"
+application: "When writing or reviewing documentation, or ensuring docs stay current"
+applyTo: "**/*.md,**/*mermaid*,**/*diagram*"
 ---
 
-# Markdown & Mermaid Diagram Instructions
+# Markdown & Mermaid — Auto-Loaded Rules
 
-**Auto-loaded when**: Creating Mermaid diagrams, writing technical documentation with visuals, choosing diagram types, or troubleshooting rendering issues
-**Domain**: Technical documentation, Mermaid.js, visual communication
-**Synapses**: [markdown-mermaid/SKILL.md](../skills/markdown-mermaid/SKILL.md)
+## ⚠️ MANDATORY: Copy This Template First
 
----
+**EVERY Mermaid diagram MUST start with this template.** No exceptions. Copy-paste, then customize:
 
-## Purpose
+```text
+%%{init: {'theme': 'base', 'themeVariables': {'lineColor': '#57606a', 'primaryColor': '#ddf4ff', 'primaryBorderColor': '#0969da', 'primaryTextColor': '#1f2328', 'edgeLabelBackground': '#ffffff'}}}%%
+flowchart LR
+    A[Input]:::blue --> B[Process]:::purple --> C[Output]:::green
 
-Produce correct, visually consistent Mermaid diagrams using the ATACCU protocol — preventing parse errors, unstyled nodes, inconsistent palettes, and broken rendering across VS Code, GitHub, and web contexts.
+    classDef blue fill:#ddf4ff,color:#0550ae,stroke:#80ccff
+    classDef green fill:#d3f5db,color:#1a7f37,stroke:#6fdd8b
+    classDef purple fill:#d8b9ff,color:#6639ba,stroke:#bf8aff
+    classDef gold fill:#fff8c5,color:#9a6700,stroke:#d4a72c
+    classDef red fill:#ffebe9,color:#cf222e,stroke:#f5a3a3
+    classDef neutral fill:#eaeef2,color:#24292f,stroke:#d0d7de
 
----
+    linkStyle default stroke:#57606a,stroke-width:1.5px
+```
 
-## When This Applies
-
-**File Patterns**:
-- `**/*.md` — Any markdown file
-
-**Contextual Triggers**:
-- Writing a diagram in a markdown doc
-- Choosing between flowchart, sequence, gantt, classDiagram, quadrant
-- Diagram renders incorrectly in VS Code Preview or GitHub
-- Requesting a visual explanation of architecture or workflow
+**Do NOT write Mermaid without this template.** The init directive, classDef, and linkStyle are required.
 
 ---
 
-## Mandatory Workflow: ATACCU
+Diagram type selection, classDef rules, GitHub Pastel v2 palette, rendering pitfalls, quality gate → see markdown-mermaid skill.
 
-**Every Mermaid diagram must follow these 6 steps — no exceptions:**
+## Critical: Edge Label Background
+
+**ALWAYS use white background for edge labels.** Without this, labels appear with dark boxes in dark mode or break rendering.
+
+```
+edgeLabelBackground: '#ffffff'
+```
+
+This is the single most common Mermaid mistake. Never use `'transparent'` — always `'#ffffff'`.
+
+## ATACCU Workflow (Every Diagram)
 
 | Step | What |
 | ---- | ---- |
-| **A**nalyze | What am I visualizing? Who's the audience? Which diagram type fits? |
-| **T**hink | Layout direction, node count, subgraph strategy, will it be too wide/tall? |
-| **A**pply Skills | GitHub Pastel v2 palette + semantic `classDef` colors + `%%{init}%%` directive |
-| **C**reate | Write Mermaid code. Every node gets a style. Every flowchart gets `linkStyle default`. |
-| **C**heck | Render. Verify: pastels (not saturated), balanced layout, readable labels, gray arrows |
-| **U**pdate | Write to target file. Add `**Figure N:** *description*` caption. |
+| **A**nalyze | What am I visualizing? Audience? Diagram type? |
+| **T**hink | Layout direction, node count, subgraph strategy |
+| **A**pply | **COPY THE TEMPLATE ABOVE** — palette + classDef + init directive |
+| **C**reate | Write code. Every node styled with `:::className`. Every flowchart gets `linkStyle default` |
+| **C**heck | Render. Pastels only, balanced layout, readable labels, gray arrows |
+| **U**pdate | Write to file. Add `**Figure N:** *description*` caption |
 
----
+## Semantic Color Assignment
 
-## Init Directive (Required on Every Diagram)
+| Color | Use For |
+| ----- | ------- |
+| `blue` | Input, source, start |
+| `green` | Output, result, success, data |
+| `purple` | Processing, model, transformation |
+| `gold` | Decision, condition, question |
+| `red` | Error, warning, failure |
+| `neutral` | Context, background, optional |
 
-```
-%%{init: {'theme': 'base', 'themeVariables': {
-  'lineColor': '#57606a',
-  'primaryColor': '#ddf4ff',
-  'primaryBorderColor': '#0969da',
-  'primaryTextColor': '#1f2328',
-  'edgeLabelBackground': '#ffffff'
-}}}%%
-```
+## Quality Checklist
 
----
+- [ ] Init directive is FIRST line in mermaid block
+- [ ] `edgeLabelBackground: '#ffffff'` (NOT transparent)
+- [ ] ALL nodes have `:::className` (no unstyled nodes)
+- [ ] `linkStyle default stroke:#57606a` for flowcharts
+- [ ] Multi-line labels use `<br/>` NOT `\n`
+- [ ] Colors are pastel (light fills, medium text)
+- [ ] Figure label below diagram
 
-## Diagram Type Selection
+Validation command:
 
-| Use | Diagram Type |
-| --- | ------------ |
-| Workflows, pipelines, decision trees | `flowchart LR` (prefer LR over TD for readability) |
-| API calls, time-ordered events | `sequenceDiagram` |
-| Classes, interfaces, inheritance | `classDiagram` |
-| Project timelines, sprints | `gantt` |
-| 2×2 strategy maps | `quadrantChart` |
-| Layered architecture (VS Code 1.109+) | `architecture-beta` |
-
----
-
-## classDiagram Rules (Fail-Proof)
-
-classDiagram has different parser rules than flowchart — these cause silent or verbose parse errors:
-
-| Rule | ❌ Wrong | ✅ Correct |
-| ---- | -------- | --------- |
-| Multiple classes in one classDef | `classDef red A,B,C` | One line per class: `class A:::red` |
-| Reserved word as class name | `class abstract` | `class AbstractBase` |
-| Font-weight in classDef | `classDef x font-weight:bold` | Not supported — omit |
-| Stroke-dasharray with spaces | `stroke-dasharray: 5 5` | `stroke-dasharray:5 5` (no leading space) |
-| Interface keyword | `interface IMyInterface` | `class IMyInterface` with `<<interface>>` |
-
----
-
-## GitHub Pastel v2 Palette
-
-```
-Blue (primary/happy):    fill:#ddf4ff,stroke:#0969da,color:#0550ae
-Green (success/data):    fill:#dcffe4,stroke:#2da44e,color:#116329
-Yellow (warning/config): fill:#fff8c5,stroke:#bf8700,color:#7d4e00
-Purple (AI/cognitive):   fill:#f3eeff,stroke:#8250df,color:#6e40c9
-Pink (UX/output):        fill:#ffeff7,stroke:#bf3989,color:#99286e
-Gray (neutral/infra):    fill:#f6f8fa,stroke:#57606a,color:#24292f
-Red (error/risk):        fill:#ffebe9,stroke:#cf222e,color:#a40e26
+```bash
+# Find mermaid blocks missing init directive
+grep -rn '```mermaid' --include='*.md' -A1 | grep -v 'init:'
 ```
 
----
+## Do NOT
 
-## Common Rendering Pitfalls
-
-- **ArrowHead in label**: `A -->|"label with > sign"| B` — percent-encode `>` as `&gt;`
-- **Special chars in node IDs**: Use alphanumeric IDs only, put display text in `["..."]`
-- **Long lines**: flowchart with 10+ nodes in one row → split with subgraphs
-- **GitHub vs VS Code**: GitHub renders subset of Mermaid; `architecture-beta` only works in VS Code 1.109+
-
----
-
-## Quality Gate — Before Finalizing
-
-- [ ] `%%{init}%%` directive present with `edgeLabelBackground: '#ffffff'`
-- [ ] Every node has a `classDef` applied
-- [ ] `linkStyle default stroke:#57606a` at end of flowcharts
-- [ ] No saturated colors (only GitHub Pastel v2)
-- [ ] Node labels use `<br/>` for line breaks (NOT `\n`)
-- [ ] `**Figure N:** *description*` caption below the code block
-- [ ] Rendered and visually verified (not just syntax-checked)
+- Write ANY Mermaid without the init directive template
+- Use `edgeLabelBackground: 'transparent'` (dark mode breaks)
+- Use `theme: 'dark'` (use `theme: 'base'` with pastels)
+- Forget `linkStyle default` on flowcharts
+- Use `\n` for line breaks (use `<br/>`)
+- Leave nodes unstyled

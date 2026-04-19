@@ -1,0 +1,23 @@
+{
+  "targetSize": 512,
+  "b64EmbedSize": 256,
+  "b64EmbedNote": "Images embedded as base64 in visual-memory.json are resized to b64EmbedSize (256px) to keep context window manageable. Original files remain at targetSize (512px).",
+  "generated": "2026-04-15",
+  "subjects": {
+    "alex": {
+      "sourceOfTruth": {
+        "file": "alex-reference.jpg",
+        "description": "Canonical reference portrait — all generation must maintain consistency with this image",
+        "approximateAge": 16,
+        "origin": "human-curated"
+      },
+      "artifacts": {
+        "description": "Generated age progressions — can be regenerated if model or prompts improve",
+        "origin": "ai-generated",
+        "model": "nano-banana-pro",
+        "files": []
+      }
+    }
+  },
+  "version": "1.1"
+}

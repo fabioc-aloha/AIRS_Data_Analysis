@@ -1,6 +1,8 @@
 ---
 name: "code-review"
 description: "Systematic code review for correctness, security, and growth — not just style enforcement"
+tier: core
+applyTo: '**/*review*,**/*pr*,**/*pull-request*'
 ---
 
 # Code Review Skill
@@ -189,7 +191,3 @@ For safety-critical projects, apply NASA/JPL Power of 10 rules during review:
 - [ ] Smoke test: Extension activates, 3 random commands work
 
 **Pattern applies to**: VS Code extensions, Electron apps, Node.js services with UI
-
-## Synapses
-
-See [synapses.json](synapses.json) for connections.

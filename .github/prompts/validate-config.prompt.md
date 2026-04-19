@@ -1,5 +1,8 @@
 ---
+mode: agent
+sem: 1
 description: Validate VS Code extension manifest consistency: command registration, configuration keys, and graceful degradation patterns
+application: "When developing or maintaining VS Code extensions"
 ---
 
 # Validate Extension Configuration
@@ -19,18 +22,26 @@ You are reviewing a VS Code extension for configuration and manifest consistency
 
 **Process**:
 
-1. **Run automated validation**:
+1. **Find configuration updates** (manual validation):
    ```powershell
-   # Navigate to extension directory if in multi-platform workspace
-   .\scripts\validate-manifest.ps1
+   # Search for configuration writes
+   Select-String -Path src -Pattern "getConfiguration.*\.update\(" -Recurse
+   # Search for configuration reads
+   Select-String -Path src -Pattern "getConfiguration\(" -Recurse
    ```
 
-2. **Review results**:
-   - ✅ **Passing**: Report success, extension is properly configured
-   - ⚠️ **Warnings**: Review each warning to verify try-catch pattern is intentional for dynamic configs
-   - ❌ **Errors**: Critical issues that must be fixed before release
+2. **For each configuration key found**:
+   - Extract the config context: `getConfiguration('my-ext.feature')`
+   - Extract the key: `.get('settingName')` or `.update('settingName')`
+   - Build full key: `my-ext.feature.settingName`
+   - Verify key exists in `package.json` `configuration.properties`
 
-3. **For each error found**:
+3. **Review results**:
+   - ✅ **Passing**: All keys are registered in package.json
+   - ⚠️ **Warnings**: Keys using try-catch for dynamic configs
+   - ❌ **Errors**: Unregistered keys without error handling
+
+4. **For each error found**:
    - **Option A**: Register the configuration in package.json `configuration.properties`
    - **Option B**: Wrap in try-catch if it's non-critical dynamic configuration
    - Document the decision rationale

@@ -1,13 +1,15 @@
 ---
 name: "ai-character-reference-generation"
 description: "Generate consistent visual character references across multiple scenarios using Flux and nano-banana-pro on Replicate"
+tier: standard
+applyTo: '**/*character*,**/*portrait*,**/*avatar*,**/*reference*,**/generate-alex*'
 ---
 
 # AI Character Reference Generation
 
 > Create 17+ consistent character poses from detailed prompts — no reference images needed.
 
-> ⚠️ **Staleness Watch** (Last validated: July 2025 — Flux 1.1 Pro; Feb 2026 — nano-banana-pro): Image generation models on Replicate release new versions and deprecate old ones. Before generating, verify the model identifier at [replicate.com/black-forest-labs](https://replicate.com/black-forest-labs). **Upgrade path**: `black-forest-labs/flux-1.1-pro-ultra` provides higher resolution (up to 4MP) with the same API surface. `black-forest-labs/flux-2-pro` adds multi-reference editing. `google/nano-banana-2` is the faster/cheaper successor to nano-banana-pro (same `image_input` API). Input parameter schema may change between model versions.
+> ⚠️ **Staleness Watch** (Last validated: July 2025 — Flux 1.1 Pro; Feb 2026 — nano-banana-pro): Image generation models on Replicate release new versions and deprecate old ones. Before generating, verify the model identifier at [replicate.com/black-forest-labs](https://replicate.com/black-forest-labs). **Upgrade path**: `black-forest-labs/flux-1.1-pro-ultra` provides higher resolution (up to 4MP) with the same API surface. `black-forest-labs/flux-2-pro` adds multi-reference editing. `google/nano-banana-2` is the faster/cheaper successor to nano-banana-pro (same `image_input` API). Input parameter schema may change between model versions. See also [EXTERNAL-API-REGISTRY.md](../../EXTERNAL-API-REGISTRY.md).
 
 ---
 
@@ -169,6 +171,19 @@ async function generateScene(scenario) {
 - 17 unique poses per character
 - Visual consistency maintained across all images
 - Style consistency within each aesthetic type
+
+---
+
+## Visual Verification (VS Code 1.112+)
+
+After generating a character set, use `view_image` to review outputs without leaving chat:
+
+1. **Identity check** — View each image to confirm the character is recognizable across all poses
+2. **Drift detection** — Compare first and last images in the set for hair, eye color, or feature shifts
+3. **Pose diversity** — Scan full set for duplicate body positions or repetitive compositions
+4. **Artifact scan** — Look for AI artifacts: extra fingers, smeared textures, inconsistent edges
+
+For batch sets, VS Code's image carousel displays them side-by-side for efficient visual QA.
 
 ---
 

@@ -1,8 +1,7 @@
 ---
 name: gamma-presentations
-description: >-
-  Generate professional presentations using the Gamma API with expert storytelling consulting based on Duarte
-  methodology.
+description: "Generate professional presentations using the Gamma API with expert storytelling consulting based on Duarte methodology."
+tier: standard
 applyTo: '**/*presentation*,**/*slides*,**/*deck*,**/*gamma*,**/*pitch*'
 ---
 
@@ -10,7 +9,7 @@ applyTo: '**/*presentation*,**/*slides*,**/*deck*,**/*gamma*,**/*pitch*'
 
 > Generate professional presentations with expert storytelling consulting based on Duarte methodology.
 
-> ⚠️ **Staleness Watch** (Last validated: Mar 2026 — API v1.0 GA): Check [developers.gamma.app](https://developers.gamma.app/) for endpoint changes and pricing updates.
+> ⚠️ **Staleness Watch** (Last validated: Mar 2026 — API v1.0 GA): Check [developers.gamma.app](https://developers.gamma.app/) for endpoint changes and pricing updates. See also [EXTERNAL-API-REGISTRY.md](../../EXTERNAL-API-REGISTRY.md).
 
 ---
 

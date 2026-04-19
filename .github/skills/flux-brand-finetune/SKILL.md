@@ -1,6 +1,8 @@
 ---
 name: "flux-brand-finetune"
 description: "Train and manage custom FLUX LoRA fine-tunes on Replicate for consistent brand character imagery"
+tier: extended
+applyTo: '**/*lora*,**/*finetune*,**/*fine-tune*,**/*flux*'
 metadata:
   inheritance: inheritable
 ---
@@ -10,6 +12,8 @@ metadata:
 > Train custom LoRA models on FLUX Dev for consistent Alex (or any character) imagery across all generated content.
 
 **Pattern**: Train once with 10–20 curated images → get a trigger-word-activated LoRA → generate unlimited consistent images at ~$0.003–0.04/image.
+
+> **Staleness Watch**: See [EXTERNAL-API-REGISTRY.md](../../EXTERNAL-API-REGISTRY.md) for source URLs and recheck cadence
 
 ---
 
@@ -102,7 +106,9 @@ The trigger word activates your LoRA concept in prompts.
 New-Item -ItemType Directory -Path "training-data" -Force
 
 # Optionally resize images to 1024px (if oversized)
-# Requires ImageMagick: winget install ImageMagick.ImageMagick
+# Requires ImageMagick:
+# macOS: brew install imagemagick
+# Windows: winget install ImageMagick.ImageMagick
 Get-ChildItem training-data/*.jpg, training-data/*.png | ForEach-Object {
     magick $_.FullName -resize "1024x1024>" $_.FullName
 }
@@ -308,6 +314,19 @@ ALEXFNCH presenting at a tech conference, standing on stage, gesturing toward a 
 
 ALEXFNCH in a cozy library, reading a leather-bound book, warm lamplight, bokeh background, editorial photography
 ```
+
+---
+
+## Visual Verification (VS Code 1.112+)
+
+After generating with your LoRA, use `view_image` to evaluate output quality:
+
+1. **Identity fidelity** — Does the character match the training data?
+2. **Prompt adherence** — Does the scene match the prompt, or is the LoRA overfitting?
+3. **LoRA scale tuning** — Compare outputs at 0.6, 0.8, 1.0 to find the sweet spot
+4. **Artifact scan** — Check for training artifacts: repeated backgrounds, frozen expressions, texture smearing
+
+When iterating on LoRA scale or prompt structure, compare outputs side-by-side via the image carousel.
 
 ---
 
