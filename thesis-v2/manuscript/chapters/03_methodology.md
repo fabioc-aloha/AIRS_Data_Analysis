@@ -45,7 +45,7 @@ The study was conducted with United States professionals and students, encompass
 - Employed professionals (individual contributors, managers, executives)
 - Freelancers and self-employed individuals
 
-Students are included because they are transitioning into an AI-infused job market and will soon make adoption decisions inside organizations; their readiness is therefore directly relevant to near-term enterprise contexts (proposal §7.2). This context was selected for theoretical and practical relevance: knowledge-intensive work settings where AI tools had significant potential impact on productivity, yet adoption patterns remained poorly understood.
+Students were included because they were transitioning into an AI-infused job market and would soon make adoption decisions inside organizations; their readiness was therefore directly relevant to near-term enterprise contexts (proposal §7.2). This context was selected for theoretical and practical relevance: knowledge-intensive work settings where AI tools had significant potential impact on productivity, yet adoption patterns remained poorly understood.
 
 
 

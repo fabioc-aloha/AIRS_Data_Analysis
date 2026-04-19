@@ -30,6 +30,16 @@ Turn research into published scholarship — from blank page to accepted manuscr
 - Figures must be interpretable in grayscale
 - Abstract should work standalone (no forward references)
 
+## Editorial Passes Require Critical Thinking
+
+Complex style rules (APA7 verb tense, citation format, hedge language) are **judgment tasks**, not find-replace operations. Before any editorial pass:
+
+1. **Alternative hypotheses** — "Is this present tense intentional?" (scale items, figure captions, established facts use present)
+2. **Evidence needed** — What does APA7 say about *this specific context*?
+3. **Falsifiability** — What would prove this word should stay as-is?
+
+Pattern-matching approaches ("change all present to past") will miss nuance and require multiple correction passes. Start with critical thinking to do it right the first time.
+
 ## Skill Reference
 
 Full drafting workflow in `.github/skills/academic-paper-drafting/SKILL.md`.

@@ -130,19 +130,19 @@ The following recommendations are offered with an important caveat: this study v
 
 1. Consider baseline AIRS assessment before implementing AI initiatives to understand the distribution of adoption readiness in the population. The validated instrument can inform planning, though formal diagnostic protocols require additional development.
 
-2. Lead with value propositions rather than capability demonstrations. The dominance of Price Value (β = .505) over Performance Expectancy (ns) suggests communicating AI benefits in terms of time savings, cost reduction, and ROI rather than technical features.
+2. Lead with value propositions rather than capability demonstrations. The dominance of Price Value (β = .505) over Performance Expectancy (ns) suggested communicating AI benefits in terms of time savings, cost reduction, and ROI rather than technical features.
 
-3. Attend to affective barriers: The 22% AI Skeptics segment (mean BI=1.71) and marginal Trust effect (β=.106, p=.064) suggest that emotional responses to AI warrant attention. Future research should test whether anxiety-reduction approaches (gradual exposure, peer support, psychological safety) improve adoption outcomes.
+3. Attend to affective barriers: The 22% AI Skeptics segment (mean BI=1.71) and marginal Trust effect (β=.106, p=.064) suggested that emotional responses to AI warranted attention. Future research should test whether anxiety-reduction approaches (gradual exposure, peer support, psychological safety) improve adoption outcomes.
 
 4. Leverage social influence by identifying and supporting AI champions who can model positive adoption behaviors. Social Influence was a significant predictor (β = .136), suggesting peer effects matter.
 
-5. Differentiate by experience level: The significant experience moderation effect suggests that newer employees may weight different factors than senior professionals when evaluating AI tools.
+5. Differentiate by experience level: The significant experience moderation effect suggested that newer employees might weight different factors than senior professionals when evaluating AI tools.
 
-6. Monitor trust perceptions as AI applications become more consequential. The marginal Trust effect (p = .064) suggests that trust may become more important as AI moves into higher-stakes decision-making roles.
+6. Monitor trust perceptions as AI applications become more consequential. The marginal Trust effect (p = .064) suggested that trust might become more important as AI moves into higher-stakes decision-making roles.
 
 7. Design for accessibility to ensure that AI adoption does not disadvantage employees with disabilities or those who experience higher baseline technology anxiety (d = .36 disability-anxiety association).
 
-8. Consider segment heterogeneity: The three-segment user typology suggests that different groups may respond to different approaches. Experimental research is needed to determine whether segment-specific interventions outperform one-size-fits-all approaches.
+8. Consider segment heterogeneity: The three-segment user typology suggested that different groups might respond to different approaches. Experimental research is needed to determine whether segment-specific interventions outperform one-size-fits-all approaches.
 
 
 

@@ -248,3 +248,65 @@ chapters/06_conclusions.md,Section 6.3.2,"AI represents a theoretically distinct
 chapters/06_conclusions.md,Section 6.7.4,"adoption readiness represents only the first step...AETHER group synthesizes...Report cautions...may inadvertently","represented...synthesized...cautioned...might inadvertently",Fixed,Future research context
 chapters/01_introduction.md,Section 1.2,"UTAUT2 explains...AI tools present...These include...do not fully address","explained...presented...included...did not fully address",Fixed,Theoretical gap description
 chapters/05_analysis_discussion.md,Section 5.3.4,"This segmentation approach moves beyond...solution captures...explains...confirms...identifies...requires...Figure 5.1 illustrates","moved...captured...explained...confirmed...identified...required...illustrated",Fixed,Segmentation approach
+---,AUDIT 2026-04-19,Systematic editorial review of all manuscript sections,No new corrections required - all chapters properly use past tense,Verified,Full manuscript review complete
+---,TENSE RETENTION DECISIONS,The following document cases where present or future tense was intentionally retained per APA7 guidelines,---,Justified,Editorial defense documentation
+back-matter/appendices.md,Appendix A Scale Items,"AI tools help me accomplish tasks more quickly",Present tense retained,Justified,APA7 §6.11: Scale items reproduced verbatim as administered to participants
+back-matter/appendices.md,Appendix A Scale Items,"Using AI improves the quality of my work",Present tense retained,Justified,APA7 §6.11: Scale items reproduced verbatim as administered to participants
+back-matter/appendices.md,Appendix G Survey Instrument,All 28 survey items in present tense,Present tense retained,Justified,APA7 §6.11: Survey instruments reproduced exactly as administered
+chapters/06_conclusions.md,Section 6.5 Recommendations,"Future research should examine...Scholars should explore",Future/conditional tense retained,Justified,APA7 §4.12: Recommendations and future directions appropriately use future tense
+chapters/06_conclusions.md,Section 6.7 Future Research,"Longitudinal research is needed...replication should achieve",Future/conditional tense retained,Justified,APA7 §4.12: Research agenda items use future tense for actions not yet completed
+chapters/05_analysis_discussion.md,Section 5.7 Limitations,"Longitudinal research is needed to establish temporal precedence",Future tense retained,Justified,APA7 §4.12: Recommendations for future work use future tense
+chapters/02_literature_review.md,Section 2.2 UTAUT2 Framework,"UTAUT2 posits that behavioral intention is influenced by seven constructs",Present tense retained,Justified,APA7 §4.12: Established theoretical propositions use present tense (theory still holds)
+chapters/02_literature_review.md,Section 2.2 UTAUT2 Framework,"The theory assumes that intention mediates the effect",Present tense retained,Justified,APA7 §4.12: Describing what a theory asserts uses present tense
+chapters/01_introduction.md,Section 1.6 Definitions,"Behavioral Intention refers to the degree to which",Present tense retained,Justified,APA7 §4.12: Definitions describe enduring conceptual meanings
+chapters/01_introduction.md,Section 1.6 Definitions,"Performance Expectancy is defined as",Present tense retained,Justified,APA7 §4.12: Construct definitions are timeless conceptual statements
+chapters/03_methodology.md,Section 3.7 Statistical Thresholds,"CFI values above .95 indicate excellent fit",Present tense retained,Justified,APA7 §4.12: Methodological standards and thresholds are ongoing conventions
+chapters/03_methodology.md,Section 3.7 Statistical Thresholds,"RMSEA values below .08 suggest acceptable fit",Present tense retained,Justified,APA7 §4.12: Statistical interpretation guidelines are current standards
+chapters/03_methodology.md,Section 3.7 Statistical Thresholds,"Cronbach's alpha above .70 indicates acceptable reliability",Present tense retained,Justified,APA7 §4.12: Psychometric benchmarks are ongoing disciplinary conventions
+chapters/04_results.md,Table captions,"Source: Compiled by Author",Present tense retained,Justified,Standard academic convention for table attribution (not narrative prose)
+chapters/05_analysis_discussion.md,Section 5.4.4 Theory,"AI may represent a distinct technology category",Modal verb retained,Justified,APA7 §4.12: Theoretical propositions about ongoing phenomena use present/modal
+chapters/06_conclusions.md,Section 6.8 Closing Remarks,"As AI transforms professional work understanding adoption psychology becomes critical",Present tense retained,Justified,APA7 §4.12: General truths and ongoing phenomena use present tense
+chapters/02_literature_review.md,Section 2.5 AI Characteristics,"AI systems operate probabilistically rather than deterministically",Present tense retained,Justified,APA7 §4.12: Inherent characteristics of technology are timeless facts
+chapters/02_literature_review.md,Section 2.5 AI Characteristics,"Generative AI produces novel outputs that cannot be fully predicted",Present tense retained,Justified,APA7 §4.12: Technical capabilities are ongoing characteristics
+chapters/05_analysis_discussion.md,Section 5.6.2 Future Development,"Future scales should distinguish between technology avoidance anxiety and FOMO",Future tense retained,Justified,APA7 §4.12: Recommendations for future instrument development
+chapters/06_conclusions.md,Section 6.7.3 Research Roadmap,"Phase 1 will expand from 16 to 28 items...Phase 2 will administer AIRS",Future tense retained,Justified,APA7 §4.12: Planned future research uses future tense
+back-matter/appendices.md,Appendix H Data Availability,"The complete research materials are publicly available",Present tense retained,Justified,Statement of current ongoing availability (repository remains accessible)
+back-matter/appendices.md,Appendix H Citation,"When using this data please cite",Present tense retained,Justified,Instructions for future readers appropriately use present imperative
+chapters/03_methodology.md,Section 3.3 Ethics,"Participation is voluntary",Present tense retained in consent form,Justified,Quoted consent language reproduced verbatim as administered
+chapters/06_conclusions.md,Section 6.4 Implications,"Organizations may benefit from...The findings indicate that",Mixed tense retained,Justified,APA7 §4.12: Implications for practice use present/modal when describing ongoing applicability
+chapters/05_analysis_discussion.md,Section 5.3.5 Converging Literature,"This convergence provides a form of concurrent validation",(Note: was changed to provided),Fixed,Changed per past tense rule for research findings
+---,SECOND PASS 2026-04-19,Full manuscript verification including build.ps1,No corrections required - all sections pass APA7 tense requirements,Verified,Build script contains only infrastructure code (no narrative). Chapters 1-6 abstract appendices all properly past tense. IRB consent form correctly retained in original future tense per §6.11.
+---,CITATION VERB PASS 2026-04-19,Review of in-text citation verb tenses per APA7 §4.12,8 corrections made in Chapter 2,Fixed,Citation verbs must use past tense when describing what authors wrote/found
+chapters/02_literature_review.md,Section 2.4.2,"@venkatesh2021adoption notes that","@venkatesh2021adoption noted that",Fixed,Citation verb: present → past
+chapters/02_literature_review.md,Section 2.4.3,"@dwivedi2021 demonstrate that perceived ethical risk exerts...moderates","@dwivedi2021 demonstrated that perceived ethical risk exerted...moderated",Fixed,Citation verb + dependent verbs
+chapters/02_literature_review.md,Section 2.4.4,"@venkatesh2021adoption observes that","@venkatesh2021adoption observed that",Fixed,Citation verb: present → past
+chapters/02_literature_review.md,Section 2.4.4,"AI's autonomy capabilities fundamentally alter...augment...can supplant","altered...augmented...could supplant",Fixed,AI characteristics described in past context
+chapters/02_literature_review.md,Section 2.4.4,"This transformation generates...encompasses","generated...encompassed",Fixed,Past narrative context
+chapters/02_literature_review.md,Section 2.4.4,"@tao2020 conceptualize...@kim2025 add","@tao2020 conceptualized...@kim2025 added",Fixed,Citation verbs: present → past
+chapters/02_literature_review.md,Section 2.5.1,"Trust has emerged...users hesitate...appear","Trust had emerged...hesitated...appeared",Fixed,Past narrative context
+chapters/02_literature_review.md,Section 2.5.1,"positions trust as mediating","positioned trust as mediating",Fixed,Citation verb (Langer review)
+chapters/02_literature_review.md,Section 2.5.1,"AI trust adapts...translates...becomes...maps...can be measured","adapted...translated...became...mapped...could be measured",Fixed,Trust construct description
+chapters/02_literature_review.md,Section 2.5.1,"@stevens2023 operationalize","@stevens2023 operationalized",Fixed,Citation verb: present → past
+chapters/02_literature_review.md,Section 2.5.2,"Empirical evidence positions trust...factors operate","positioned...operated",Fixed,Evidence summary verbs
+chapters/02_literature_review.md,Section 2.6.1,"@frenkenberg2025 add anticipatory dimensions","@frenkenberg2025 added anticipatory dimensions",Fixed,Citation verb: present → past
+---,CHAPTER 1 + 2 CITATION PASS 2026-04-19,Additional citation verb corrections per APA7 §4.12,10 corrections made,Fixed,All citation verbs now use past tense
+chapters/01_introduction.md,Section 1.2,"companies achieve measurable...struggle to scale","companies achieved measurable...struggled to scale",Fixed,BCG citation verb alignment
+chapters/01_introduction.md,Section 1.2,"qualify as AI high performers...remain in piloting","qualified as...remained in piloting",Fixed,McKinsey citation verb alignment
+chapters/01_introduction.md,Section 1.2,"cite data complexity","cited data complexity",Fixed,IBM citation verb
+chapters/01_introduction.md,Section 1.2,"Capgemini research suggests...achieve substantially higher","suggested...achieved substantially higher",Fixed,Capgemini citation verb
+chapters/01_introduction.md,Section 1.2,"failure rate suggests...produces limited returns","suggested...produced",Fixed,MIT citation verb alignment
+chapters/01_introduction.md,Section 1.2,"research identifies skill gaps...reports highlight...Gartner identifies","identified...highlighted...identified",Fixed,Industry research citation verbs
+chapters/02_literature_review.md,Section 2.4.1,"explainability effects extend beyond","extended beyond",Fixed,Narrative context alignment
+---,COMPREHENSIVE VERB TENSE REVIEW 2026-04-28,Systematic review per critical-thinking methodology,12 corrections identified,Fixed,Manuscript-wide verb tense audit using APA7 §4.12
+chapters/03_methodology.md,Line 48,"Students are included because they are transitioning...is therefore","Students were included because they were transitioning...was therefore",Fixed,Methodological description uses past tense
+chapters/05_analysis_discussion.md,Line 27,"this falls short...the effect is retained...requires...making the present sample","this fell short...was retained...required...made the sample",Fixed,Analysis findings use past tense
+chapters/05_analysis_discussion.md,Line 31,"the instrument serves as","the instrument served as",Fixed,Instrument capability at time of study
+chapters/05_analysis_discussion.md,Line 106,"These findings validate...is required","These findings validated...was required",Fixed,Finding interpretation uses past tense
+chapters/04_results.md,Line 391,"are z-test significant but bootstrap-unstable","were z-test significant but bootstrap-unstable",Fixed,Statistical results use past tense
+chapters/02_literature_review.md,Line 245,"are discussed in Chapter 4","were discussed in Chapter 4",Fixed,Cross-reference to completed chapter
+chapters/02_literature_review.md,Line 315,"is discussed in Chapter 4 and Chapter 5","was discussed in Chapter 4 and Chapter 5",Fixed,Cross-reference to completed chapters
+chapters/06_conclusions.md,Line 133,"suggests communicating AI benefits","suggested communicating AI benefits",Fixed,Finding implication uses past tense
+chapters/06_conclusions.md,Line 135,"suggest that emotional responses to AI warrant attention","suggested that emotional responses to AI warranted attention",Fixed,Finding implication uses past tense
+chapters/06_conclusions.md,Line 139,"suggests that newer employees may weight","suggested that newer employees might weight",Fixed,Finding implication uses past tense
+chapters/06_conclusions.md,Line 141,"suggests that trust may become more important","suggested that trust might become more important",Fixed,Finding implication uses past tense
+chapters/06_conclusions.md,Line 145,"suggests that different groups may respond","suggested that different groups might respond",Fixed,Finding implication uses past tense

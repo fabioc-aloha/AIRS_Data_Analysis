@@ -388,7 +388,7 @@ H2 & TR $\rightarrow$ BI & + & .106 & .064 & [--.006, .218] & [--.096, .248] & M
 \end{table}
 ```
 
-UTAUT2 Summary: 3 of 7 UTAUT2 hypotheses were supported by z-test. Price Value emerged as dominant predictor, departing from traditional UTAUT findings where Performance Expectancy typically dominates. Bootstrap validation confirmed only Price Value as robust; Social Influence and Hedonic Motivation are z-test significant but bootstrap-unstable (see below).
+UTAUT2 Summary: 3 of 7 UTAUT2 hypotheses were supported by z-test. Price Value emerged as dominant predictor, departing from traditional UTAUT findings where Performance Expectancy typically dominates. Bootstrap validation confirmed only Price Value as robust; Social Influence and Hedonic Motivation were z-test significant but bootstrap-unstable (see below).
 
 AI Trust Interpretation: AI Trust approached but did not reach conventional significance (p = .064). However, the 8-factor model including AI Trust was retained as the recommended diagnostic instrument because: (1) Trust provided essential diagnostic capability for organizational assessment, (2) Organizations could identify trust deficits and design targeted interventions, and (3) The marginal effect suggested theoretical relevance warranting further investigation with larger samples. Detecting an effect of β = .106 at 80% power requires n > 600; the present sample (N = 523) yields approximately 68% power, leaving a 32% Type II error risk.
 

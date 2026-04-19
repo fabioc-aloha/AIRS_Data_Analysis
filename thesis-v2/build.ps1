@@ -66,7 +66,7 @@ $Config = @{
     Template     = Join-Path $RootDir 'templates/apa7-thesis.tex'
     BibFile      = Join-Path $RootDir 'references/bibliography.bib'
     CslFile      = Join-Path $RootDir 'references/apa-7th-edition.csl'
-    OutputPdf    = Join-Path $RootDir 'output/AIRS_Dissertation.pdf'
+    OutputPdf    = Join-Path $RootDir 'output/CORREA_AIRS_Dissertation.pdf'
     
     # Chapter order
     ChapterFiles = @(
@@ -353,9 +353,12 @@ function Build-Pdf {
         '\makeatletter',
         '\renewcommand{\@afterheading}{\@nobreaktrue\everypar{\@nobreakfalse\everypar{}}}',
         '\makeatother',
-        # APA heading formats (visual only — pagination handled by Lua filter keep-headings.lua)
-        '\titleformat{\section}[block]{\normalfont\Large\bfseries\centering}{}{0em}{}',
-        '\titleformat{\subsection}[block]{\normalfont\large\bfseries}{}{0em}{}',
+        # APA 7 heading formats: same font size (12pt), differentiated by bold/italic/centering
+        # Level 1: Centered, Bold, Title Case
+        '\titleformat{\section}[block]{\normalfont\normalsize\bfseries\centering}{}{0em}{}',
+        # Level 2: Left-aligned, Bold, Title Case
+        '\titleformat{\subsection}[block]{\normalfont\normalsize\bfseries}{}{0em}{}',
+        # Level 3: Left-aligned, Bold Italic, Title Case
         '\titleformat{\subsubsection}[block]{\normalfont\normalsize\bfseries\itshape}{}{0em}{}',
         
         # === Keep lists with preceding paragraph (for inline bold headings) ===

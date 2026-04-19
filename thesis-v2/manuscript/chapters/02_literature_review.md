@@ -133,11 +133,11 @@ Many AI systems, particularly those employing deep learning, functioned as parti
 
 @venkatesh2021adoption identified model opacity as a primary barrier to AI adoption: when users had "little or no visibility into the underlying algorithm or process that renders the decision," they could not calibrate trust or develop the performance expectations that drove adoption in transparent systems. @doshivelez2017 argued that interpretability and explainability became central to justified reliance when systems were opaque and consequential.
 
-The construct of perceived explainability—whether users could understand and utilize reasons behind AI outputs with sufficient clarity to justify action—emerged from this limitation. @shin2021 distinguished explainability from causability (the user's ability to infer cause-effect logic adequate for decision-making), demonstrating that higher perceived explainability increased both trust and intention to use. Critically, explainability effects extend beyond system perceptions to trust in the human teams responsible for deployment and oversight, indicating organizational implications beyond individual acceptance.
+The construct of perceived explainability—whether users could understand and utilize reasons behind AI outputs with sufficient clarity to justify action—emerged from this limitation. @shin2021 distinguished explainability from causability (the user's ability to infer cause-effect logic adequate for decision-making), demonstrating that higher perceived explainability increased both trust and intention to use. Critically, explainability effects extended beyond system perceptions to trust in the human teams responsible for deployment and oversight, indicating organizational implications beyond individual acceptance.
 
 ### 2.4.2 Probabilistic Behavior and Model Errors
 
-AI systems operated probabilistically, producing outputs that were correct in expectation but not guaranteed for individual cases. This characteristic distinguished AI from deterministic software where identical inputs yielded identical outputs. @venkatesh2021adoption notes that "almost by definition, a model is bound to make mistakes, given that it is, after all, a representation of reality."
+AI systems operated probabilistically, producing outputs that were correct in expectation but not guaranteed for individual cases. This characteristic distinguished AI from deterministic software where identical inputs yielded identical outputs. @venkatesh2021adoption noted that "almost by definition, a model is bound to make mistakes, given that it is, after all, a representation of reality."
 
 For adoption, this probabilistic nature created a trust challenge. Users had to accept that errors would occur while maintaining sufficient confidence to rely on outputs for consequential decisions. Traditional acceptance models did not explicitly address this calibrated-trust requirement. The UTAUT construct of performance expectancy assumes users can assess technology usefulness; probabilistic AI requires users to assess expected utility across a distribution of possible outcomes, some of which will be incorrect.
 
@@ -147,15 +147,15 @@ Furthermore, AI models learned over time, meaning initial performance did not pr
 
 AI introduced distinctive ethical exposures around bias, privacy, and accountability that shaped willingness to rely on outputs. The widely-publicized case of Amazon's AI hiring tool (which systematically discriminated against women job applicants) illustrated how AI systems could encode and amplify biases present in training data [@schuetz2020].
 
-@floridi2018 articulated an ethical framework identifying AI-specific risks: autonomy erosion, privacy invasion, unfair discrimination, and accountability gaps. These risks generated perceived ethical risk, referring to anticipated harms that depressed adoption intention even when performance expectations were favorable. @dwivedi2021 demonstrate that perceived ethical risk exerts direct negative effects on intention and moderates the influence of traditional predictors like performance expectancy and social influence.
+@floridi2018 articulated an ethical framework identifying AI-specific risks: autonomy erosion, privacy invasion, unfair discrimination, and accountability gaps. These risks generated perceived ethical risk, referring to anticipated harms that depressed adoption intention even when performance expectations were favorable. @dwivedi2021 demonstrated that perceived ethical risk exerted direct negative effects on intention and moderated the influence of traditional predictors like performance expectancy and social influence.
 
 In enterprise contexts, ethical risk connected to organizational legitimacy and governance. Users assessed not only whether AI worked but whether reliance was appropriate given fairness, privacy, and accountability implications. When organizations failed to establish clear governance (bias audits, escalation pathways, human-in-the-loop procedures) users limited consequential reliance regardless of system capability.
 
 ### 2.4.4 Autonomy and Human Role Transformation
 
-AI's autonomy capabilities fundamentally alter the human role in work processes. Traditional decision support technologies augment human judgment; AI can supplant it. @venkatesh2021adoption observes that "with AI tools, the human decision maker (i.e., employee) could thus be relegated to playing a secondary role or have no role to play."
+AI's autonomy capabilities fundamentally altered the human role in work processes. Traditional decision support technologies augmented human judgment; AI could supplant it. @venkatesh2021adoption observed that "with AI tools, the human decision maker (i.e., employee) could thus be relegated to playing a secondary role or have no role to play."
 
-This transformation generates AI-related anxiety, understood as affective responses to autonomy, opacity, and rapid change. Unlike technology anxiety rooted in difficulty of use, AI anxiety encompasses concerns about job displacement, loss of professional agency, and erosion of human expertise. @tao2020 conceptualize AI anxiety through multiple dimensions including privacy-related anxiety, bias-related anxiety, and opacity-related anxiety. @kim2025 add anticipatory anxiety about future disruptions and existential concerns about human obsolescence.
+This transformation generated AI-related anxiety, understood as affective responses to autonomy, opacity, and rapid change. Unlike technology anxiety rooted in difficulty of use, AI anxiety encompassed concerns about job displacement, loss of professional agency, and erosion of human expertise. @tao2020 conceptualized AI anxiety through multiple dimensions including privacy-related anxiety, bias-related anxiety, and opacity-related anxiety. @kim2025 added anticipatory anxiety about future disruptions and existential concerns about human obsolescence.
 
 Research suggested anxiety exhibited nonlinear relationships with exposure. Moderate, calibrated exposure could reduce anxiety as users developed realistic expectations and coping strategies, while minimal exposure left fears unchallenged and intensive exposure overwhelmed adaptive capacity [@frenkenberg2025]. This pattern implied that training and hands-on experience could shift affective responses favorably, an organizational lever absent from traditional acceptance frameworks.
 
@@ -165,13 +165,13 @@ Research suggested anxiety exhibited nonlinear relationships with exposure. Mode
 
 ### 2.5.1 Conceptualizing AI Trust
 
-Trust has emerged as a gateway condition for AI adoption: without sufficient trust, users hesitate to rely on outputs even when systems appear useful. @langer2023's comprehensive review of empirical research on trust in AI positions trust as mediating the relationship between system properties and behavioral outcomes across application areas.
+Trust had emerged as a gateway condition for AI adoption: without sufficient trust, users hesitated to rely on outputs even when systems appeared useful. @langer2023's comprehensive review of empirical research on trust in AI positioned trust as mediating the relationship between system properties and behavioral outcomes across application areas.
 
-AI trust adapts the ability-integrity-benevolence triad from interpersonal trust research to algorithmic agents [@siau2018]. Ability translates to perceived AI competence and accuracy; integrity becomes perceptions of fairness and consistency; benevolence maps to alignment between AI outputs and user or organizational goals. @stevens2023 operationalize these facets in the Trust and Acceptance of AI Technology (TrAAIT) scale, demonstrating that multi-dimensional trust can be measured reliably in professional settings.
+AI trust adapted the ability-integrity-benevolence triad from interpersonal trust research to algorithmic agents [@siau2018]. Ability translated to perceived AI competence and accuracy; integrity became perceptions of fairness and consistency; benevolence mapped to alignment between AI outputs and user or organizational goals. @stevens2023 operationalized these facets in the Trust and Acceptance of AI Technology (TrAAIT) scale, demonstrating that multi-dimensional trust could be measured reliably in professional settings.
 
 ### 2.5.2 Trust as Mediator and Amplifier
 
-Empirical evidence positions trust as both a direct predictor of adoption intention and a mechanism through which other factors operate. When trust was high, performance expectancy showed stronger effects on intention, as users translated positive system evaluations into adoption when they trusted the system to perform consistently. When trust was low, even objectively capable systems failed to generate adoption intention because users doubted whether observed performance would generalize to their consequential decisions.
+Empirical evidence positioned trust as both a direct predictor of adoption intention and a mechanism through which other factors operated. When trust was high, performance expectancy showed stronger effects on intention, as users translated positive system evaluations into adoption when they trusted the system to perform consistently. When trust was low, even objectively capable systems failed to generate adoption intention because users doubted whether observed performance would generalize to their consequential decisions.
 
 Explainability served as a primary antecedent of trust. @shin2021 demonstrated that when users perceived AI explanations as clear, sufficient, and actionable, trust increased. This explainability-to-trust pathway provided an organizational lever: investing in explanation design could build trust without altering underlying AI capability.
 
@@ -232,7 +232,7 @@ flowchart LR
 
 AI-related anxiety captures affective responses to AI autonomy, opacity, and the pace of technological change. Unlike general technology anxiety rooted in difficulty of use, AI anxiety encompasses broader concerns about human obsolescence, loss of agency, and unpredictable societal transformation.
 
-@tao2020 developed a multi-dimensional AI anxiety scale identifying distinct facets: anxiety about AI learning and communication, AI social influence, AI configuration, and AI development trajectory. @frenkenberg2025 add anticipatory dimensions, distinguishing anxiety about current AI from anxiety about future AI capabilities. @kim2025 identified annihilation anxiety (existential concerns about human relevance) as a component particularly salient among knowledge workers whose expertise AI replicated.
+@tao2020 developed a multi-dimensional AI anxiety scale identifying distinct facets: anxiety about AI learning and communication, AI social influence, AI configuration, and AI development trajectory. @frenkenberg2025 added anticipatory dimensions, distinguishing anxiety about current AI from anxiety about future AI capabilities. @kim2025 identified annihilation anxiety (existential concerns about human relevance) as a component particularly salient among knowledge workers whose expertise AI replicated.
 
 ### 2.6.2 Anxiety as Inhibitor
 
@@ -242,7 +242,7 @@ Importantly, anxiety effects may be nonlinear with exposure. Several studies obs
 
 ### 2.6.3 Anxiety in the Present Research
 
-The present research initially proposed AI Anxiety as an inhibitor construct extending UTAUT2, operationalized as affective unease about AI autonomy, opacity, and potential negative consequences. This construct was expected to negatively predict behavioral intention and may moderate the effects of positive predictors, particularly for users with limited AI experience. However, empirical analysis revealed inadequate reliability for the two-item AI Anxiety scale (α = .301), preventing formal hypothesis testing. The measurement challenge and its implications for future research are discussed in Chapter 4 (§4.2) and Chapter 5 (§5.6.2).
+The present research initially proposed AI Anxiety as an inhibitor construct extending UTAUT2, operationalized as affective unease about AI autonomy, opacity, and potential negative consequences. This construct was expected to negatively predict behavioral intention and may moderate the effects of positive predictors, particularly for users with limited AI experience. However, empirical analysis revealed inadequate reliability for the two-item AI Anxiety scale (α = .301), preventing formal hypothesis testing. The measurement challenge and its implications for future research were discussed in Chapter 4 (§4.2) and Chapter 5 (§5.6.2).
 
 
 
@@ -312,7 +312,7 @@ H2 (AI Trust): AI Trust positively predicts Behavioral Intention to use AI tools
 
 *Rationale*: Building on @langer2023's review and @stevens2023's validation work, trust serves as a gateway condition for AI adoption. Users who trust AI systems to be reliable, competent, and aligned with their interests should demonstrate greater adoption intention.
 
-Proposed Inhibitor (AI Anxiety): AI Anxiety was hypothesized to negatively predict Behavioral Intention to use AI tools. However, empirical analysis revealed inadequate reliability for the AI Anxiety scale (α = .301), preventing formal hypothesis testing. This measurement challenge with anxiety constructs is discussed in Chapter 4 and Chapter 5.
+Proposed Inhibitor (AI Anxiety): AI Anxiety was hypothesized to negatively predict Behavioral Intention to use AI tools. However, empirical analysis revealed inadequate reliability for the AI Anxiety scale (α = .301), preventing formal hypothesis testing. This measurement challenge with anxiety constructs was discussed in Chapter 4 and Chapter 5.
 
 *Theoretical Rationale*: Drawing on @tao2020, @kim2025, and @frenkenberg2025, anxiety about AI autonomy, opacity, and consequences should inhibit adoption intention even when other perceptions are favorable. Future research with improved anxiety measurement is recommended.
 
