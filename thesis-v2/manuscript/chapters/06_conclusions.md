@@ -140,7 +140,7 @@ The following recommendations are offered with an important caveat: this study v
 
 6. Monitor trust perceptions as AI applications become more consequential. The marginal Trust effect (p = .064) suggests that trust might become more important as AI moves into higher-stakes decision-making roles.
 
-7. Design for accessibility to ensure that AI adoption does not disadvantage employees with disabilities—whether physical (vision, mobility) or neurodivergent (ADHD, autism, dyslexia)—who experience higher baseline technology anxiety (d = .36 disability-anxiety association).
+7. Design for accessibility to ensure that AI adoption does not disadvantage employees with disabilities, whether physical (vision, mobility) or neurodivergent (ADHD, autism, dyslexia), who experience higher baseline technology anxiety (d = .36 disability-anxiety association).
 
 8. Consider segment heterogeneity: The three-segment user typology suggests that different groups might respond to different approaches. Experimental research is needed to determine whether segment-specific interventions outperform one-size-fits-all approaches.
 

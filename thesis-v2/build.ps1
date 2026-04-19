@@ -242,7 +242,8 @@ function Build-Pdf {
         '03_abstract.md',
         '04_acknowledgments.md',
         '05_dedication.md',
-        '06_toc_setup.md'
+        '06_data_availability.md',
+        '07_toc_setup.md'
     )
     
     # Chapters
@@ -294,6 +295,14 @@ function Build-Pdf {
         '\renewcommand{\cftsecafterpnum}{\vskip 3pt}',
         '\renewcommand{\cftsubsecafterpnum}{\vskip 2pt}',
         '\AtBeginDocument{\addtocontents{toc}{\protect\setstretch{1.25}}}',
+        
+        # === TOC/LOT/LOF Title fonts: APA7 style (centered, bold, 12pt) ===
+        '\renewcommand{\cfttoctitlefont}{\hfill\normalsize\bfseries}',
+        '\renewcommand{\cftaftertoctitle}{\hfill}',
+        '\renewcommand{\cftlottitlefont}{\hfill\normalsize\bfseries}',
+        '\renewcommand{\cftafterlottitle}{\hfill}',
+        '\renewcommand{\cftloftitlefont}{\hfill\normalsize\bfseries}',
+        '\renewcommand{\cftafterloftitle}{\hfill}',
         
         # === Suppress auto-generated section numbers in TOC (markdown has manual numbers) ===
         '\setlength{\cftsecnumwidth}{0pt}',

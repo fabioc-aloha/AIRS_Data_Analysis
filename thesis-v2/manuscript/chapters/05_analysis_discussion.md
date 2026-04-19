@@ -50,7 +50,7 @@ Comparison with Prior Research: This finding represented a significant departure
 
 Industry Context: This finding gained significance against the adoption-value gap documented in §2.3: despite high adoption rates, few organizations achieved measurable returns. McKinsey's 2025 global survey reinforced this pattern: while 88% of organizations had adopted AI, only 33% were "scaling" AI beyond isolated pilots, with larger companies (48%) significantly outpacing SMBs (29%) in achieving systematic deployment [@mckinseyStateAI2025]. The gap suggested organizations deployed AI without effectively communicating value to end users, precisely the construct captured by Price Value.
 
-Interpretation: In the AI context, users appeared primarily motivated by perceived value relative to cost rather than raw productivity benefits (PE, ns), ease of use (EE, ns), organizational support (FC, ns), or habit (HB, ns). This suggested a hypothesis for future research: AI adoption interventions might be more effective when they prioritized demonstrating clear return on investment rather than focusing solely on capability demonstrations.
+Interpretation: In the AI context, users appeared primarily motivated by perceived value relative to cost rather than raw productivity benefits (PE, ns), ease of use (EE, ns), organizational support (FC, ns), or habit (HB, ns). This suggested a hypothesis for future research: AI adoption interventions might be more effective when they prioritize demonstrating clear return on investment rather than focusing solely on capability demonstrations.
 
 Theoretical Implications: The dominance of Price Value over Performance Expectancy suggested AI tools might represent a distinct technology category. Unlike previous technologies where utility perceptions drove adoption, AI adoption appeared more influenced by value propositions, potentially reflecting the freemium pricing models common in AI tools, concerns about ongoing subscription costs, or cost-benefit analyses comparing AI tools to traditional methods.
 
@@ -163,7 +163,7 @@ Source: Compiled by Author
 
 The findings offered insights for organizations navigating AI adoption challenges. As documented in §2.3, the gap between adoption and value realization represented a critical business challenge. While this study validated a measurement instrument rather than testing interventions, the empirical findings suggested several evidence-informed directions.
 
-Important Scope Note: The AIRS diagnostic instrument validated in this study provided a psychometrically sound measure of AI adoption readiness constructs. The 8-factor structure enabled identification of specific adoption barriers (e.g., trust deficits, inadequate perceived value, low social influence) that could inform intervention design. The practical applications suggested below were hypotheses derived from the empirical findings. Future experimental research was needed to validate intervention effectiveness. The author's research roadmap included developing formal AIRS Score algorithms, diagnostic protocols, and intervention frameworks as subsequent research phases.
+Important Scope Note: The AIRS diagnostic instrument validated in this study provided a psychometrically sound measure of AI adoption readiness constructs. The 8-factor structure enabled identification of specific adoption barriers (e.g., trust deficits, inadequate perceived value, low social influence) that could inform intervention design. The practical applications suggested below were hypotheses derived from the empirical findings. Future experimental research is needed to validate intervention effectiveness. The author's research roadmap included developing formal AIRS Score algorithms, diagnostic protocols, and intervention frameworks as subsequent research phases.
 
 ### 5.5.1 For Organizations
 
@@ -179,7 +179,7 @@ Pricing strategy might significantly influence adoption, potentially more so tha
 
 ### 5.5.3 For Trainers and Educators
 
-The AI Skeptics segment (22%), characterized by below-average scores across all adoption readiness constructs, suggested that training programs might benefit from addressing resistance barriers alongside technical skills. The disability-anxiety association (d = .36) highlighted the importance of accessibility-centered training design—addressing both physical accessibility (screen readers, motor-accessible interfaces) and neurodivergent considerations (predictable interactions, reduced cognitive load). These findings warranted experimental validation of targeted approaches in AI training contexts.
+The AI Skeptics segment (22%), characterized by below-average scores across all adoption readiness constructs, suggested that training programs might benefit from addressing resistance barriers alongside technical skills. The disability-anxiety association (d = .36) highlighted the importance of accessibility-centered training design, addressing both physical accessibility (screen readers, motor-accessible interfaces) and neurodivergent considerations (predictable interactions, reduced cognitive load). These findings warranted experimental validation of targeted approaches in AI training contexts.
 
 ### 5.5.4 For Policy Makers
 

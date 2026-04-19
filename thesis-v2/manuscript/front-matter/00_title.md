@@ -1,14 +1,15 @@
 \pagenumbering{roman}
 \thispagestyle{empty}
 \begin{center}
+\begin{doublespace}
 
 \vspace*{1in}
 
-{\LARGE \textbf{Artificial Intelligence Readiness Scale:}}
+\textbf{Artificial Intelligence Readiness Scale:}
 
-{\LARGE \textbf{Extending UTAUT2 for Enterprise AI Adoption}}
+\textbf{Extending UTAUT2 for Enterprise AI Adoption}
 
-\vspace{1.5in}
+\vspace{1in}
 
 A Dissertation
 
@@ -32,6 +33,7 @@ Fabio Correa
 
 2026
 
+\end{doublespace}
 \end{center}
 
 \newpage
