@@ -32,7 +32,7 @@ Performance Expectancy (PE) captures the degree to which using technology will h
 
 Effort Expectancy (EE) represents the ease associated with technology use, incorporating perceived ease of use (TAM), complexity (innovation diffusion), and ease of use from other frameworks.
 
-Social Influence (SI) reflected the degree to which important others believed the individual should use the technology, synthesizing subjective norm, social factors, and image constructs.
+Social Influence (SI) reflects the degree to which important others believe the individual should use the technology, synthesizing subjective norm, social factors, and image constructs.
 
 Facilitating Conditions (FC) captures organizational and technical infrastructure supporting use, including perceived behavioral control, facilitating conditions, and compatibility from prior models.
 
@@ -111,7 +111,7 @@ The MIT Media Lab's NANDA Initiative provided perhaps the most sobering assessme
 
 Industry analyses converge on three systemic barriers underlying the adoption-value gap:
 
-Scaling Failure: Most organizations could demonstrate AI feasibility in controlled pilots but lacked the operational design, governance architecture, and change infrastructure to move innovations into production. Georgian's AI Benchmark 2025 found that only 32% of enterprises had deployed AI across multiple business functions [@georgian2025], while ISG's State of Enterprise AI Adoption report confirmed that scaling remained the top challenge across industries [@isg2025]. These findings indicated that organizational rather than technological constraints limit scaling.
+Scaling Failure: Most organizations could demonstrate AI feasibility in controlled pilots but lacked the operational design, governance architecture, and change infrastructure to move innovations into production. Georgian's AI Benchmark 2025 found that only 32% of enterprises had deployed AI across multiple business functions [@georgian2025], while ISG's State of Enterprise AI Adoption report confirmed that scaling remained the top challenge across industries [@isg2025]. These findings indicated that organizational rather than technological constraints limited scaling.
 
 Governance and Trust Deficits: Organizations struggled with ownership, compliance, bias mitigation, and ethical use policies. The gap between AI deployment speed and governance framework development created risk exposure that prudent organizations constrained through limited adoption scope. McKinsey found that AI high performers were three times more likely than their peers to have senior leaders who demonstrated strong ownership and commitment to AI initiatives [@mckinseyStateAI2025]. Gartner identified governance maturity as a primary differentiator between AI leaders and laggards, with substantial proportions of AI projects facing delay or cancellation due to unclear governance frameworks [@gartner2025].
 
@@ -141,7 +141,7 @@ AI systems operated probabilistically, producing outputs that were correct in ex
 
 For adoption, this probabilistic nature created a trust challenge. Users had to accept that errors would occur while maintaining sufficient confidence to rely on outputs for consequential decisions. Traditional acceptance models did not explicitly address this calibrated-trust requirement. The UTAUT construct of performance expectancy assumes users can assess technology usefulness; probabilistic AI requires users to assess expected utility across a distribution of possible outcomes, some of which will be incorrect.
 
-Furthermore, AI models learned over time, meaning initial performance did not predict mature performance. Users who experienced early errors formed negative performance expectations that persisted even as systems improved, a dynamic traditional acceptance models did not capture.
+AI models also learned over time, meaning initial performance did not predict mature performance. Users who experienced early errors formed negative performance expectations that persisted even as systems improved, a dynamic traditional acceptance models did not capture.
 
 ### 2.4.3 Ethical Exposure and Accountability
 
@@ -238,7 +238,7 @@ AI-related anxiety captures affective responses to AI autonomy, opacity, and the
 
 Anxiety operates as an inhibitor in adoption models, exerting direct negative effects on intention and potentially attenuating the positive influence of performance expectancy and other drivers. Users experiencing high AI anxiety may acknowledge system usefulness while remaining unwilling to rely on AI for consequential decisions.
 
-Importantly, anxiety effects may be nonlinear with exposure. Several studies observed that moderate, structured exposure to AI reduced anxiety by replacing vague fears with realistic expectations and coping strategies. This suggested that enablement programs and hands-on training could shift anxiety levels favorably, an organizational intervention that traditional acceptance models did not explicitly accommodate.
+Anxiety effects may also be nonlinear with exposure. Several studies observed that moderate, structured exposure to AI reduced anxiety by replacing vague fears with realistic expectations and coping strategies. This suggested that enablement programs and hands-on training could shift anxiety levels favorably, an organizational intervention that traditional acceptance models did not explicitly accommodate.
 
 ### 2.6.3 Anxiety in the Present Research
 

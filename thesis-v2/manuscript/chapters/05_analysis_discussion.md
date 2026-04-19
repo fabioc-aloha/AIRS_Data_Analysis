@@ -64,7 +64,7 @@ Industry Context: The non-significance of Effort Expectancy and Facilitating Con
 
 Interpretation: In the AI context, perceived usefulness might have been a baseline expectation rather than a differentiating factor. Users might have assumed AI tools would enhance productivity, making cost-benefit considerations (Price Value) and enjoyment (Hedonic Motivation) the deciding factors.
 
-Similarly, the non-significance of Effort Expectancy (β = -.008, p = .875) and Facilitating Conditions (β = .059, p = .338) may reflect the increasingly user-friendly nature of modern AI tools and widespread organizational technology infrastructure. Contemporary AI interfaces have achieved remarkable usability, potentially creating ceiling effects for ease-of-use perceptions.
+Similarly, the non-significance of Effort Expectancy (β = -.008, p = .875) and Facilitating Conditions (β = .059, p = .338) might have reflected the increasingly user-friendly nature of modern AI tools and widespread organizational technology infrastructure. Contemporary AI interfaces have achieved remarkable usability, potentially creating ceiling effects for ease-of-use perceptions.
 
 ### 5.3.3 AI Trust Marginality
 
@@ -125,11 +125,11 @@ The finding that Price Value (β = .505) rather than Performance Expectancy drov
 
 ### 5.4.4 Non-Significance of Traditional Predictors
 
-The non-significance of PE, EE, FC, and HB suggested AI may represent a distinct technology category requiring tailored theoretical frameworks. Unlike previous technologies where utility perceptions drove adoption, AI adoption appears more influenced by value propositions, potentially reflecting:
+The non-significance of PE, EE, FC, and HB suggested AI might represent a distinct technology category requiring tailored theoretical frameworks. Unlike previous technologies where utility perceptions drove adoption, AI adoption appeared more influenced by value propositions, potentially reflecting:
 
-- Freemium pricing models common in AI tools create cost-benefit salience
-- Maturation of AI interfaces has created ceiling effects for ease-of-use perceptions
-- Widespread organizational technology infrastructure makes facilitating conditions a baseline expectation
+- Freemium pricing models common in AI tools created cost-benefit salience
+- Maturation of AI interfaces had created ceiling effects for ease-of-use perceptions
+- Widespread organizational technology infrastructure made facilitating conditions a baseline expectation
 
 ### 5.4.5 Experience-Dependent Mechanisms
 
@@ -179,7 +179,7 @@ Pricing strategy might significantly influence adoption, potentially more so tha
 
 ### 5.5.3 For Trainers and Educators
 
-The AI Skeptics segment (22%), characterized by below-average scores across all adoption readiness constructs, suggested that training programs might benefit from addressing resistance barriers alongside technical skills. The disability-anxiety association (d = .36) highlighted the importance of accessibility-centered training design. These findings warranted experimental validation of targeted approaches in AI training contexts.
+The AI Skeptics segment (22%), characterized by below-average scores across all adoption readiness constructs, suggested that training programs might benefit from addressing resistance barriers alongside technical skills. The disability-anxiety association (d = .36) highlighted the importance of accessibility-centered training design—addressing both physical accessibility (screen readers, motor-accessible interfaces) and neurodivergent considerations (predictable interactions, reduced cognitive load). These findings warranted experimental validation of targeted approaches in AI training contexts.
 
 ### 5.5.4 For Policy Makers
 
@@ -187,13 +187,13 @@ The validated AIRS diagnostic instrument provided a foundation for future organi
 
 ### 5.5.5 Understanding the Adoption-Value Gap
 
-The findings illuminate mechanisms that may contribute to the adoption-value gap documented in §2.3:
+The findings illuminated mechanisms that might have contributed to the adoption-value gap documented in §2.3:
 
-1. Value Communication Misalignment: Organizations may lead with capability demonstrations when users actually evaluate cost-benefit ratios. Future research should test whether value-focused messaging improves outcomes.
+1. Value Communication Misalignment: Organizations might have led with capability demonstrations when users actually evaluated cost-benefit ratios. Future research should test whether value-focused messaging improves outcomes.
 
-2. Heterogeneous Readiness: One-size-fits-all approaches might fail because user populations varied systematically. The three-segment typology provided a framework for intervention research.
+2. Heterogeneous Readiness: One-size-fits-all approaches might have failed because user populations varied systematically. The three-segment typology provided a framework for intervention research.
 
-3. Neglected Affective Barriers: The AI Skeptics segment and marginal Trust effect suggest psychological barriers may be underaddressed.
+3. Neglected Affective Barriers: The AI Skeptics segment and marginal Trust effect suggested psychological barriers might have been underaddressed.
 
 4. Context-Inappropriate Frameworks: The shift from Performance Expectancy to Price Value dominance demonstrated why context-specific instruments were valuable.
 
@@ -238,9 +238,9 @@ Future Development Recommendations:
 
 ### 5.6.3 Disability and Accessibility
 
-Finding: Disability associated with higher AI-related anxiety responses (d = .36), based on exploratory analysis of original AX items prior to exclusion.
+Finding: Disability status was associated with higher AI-related anxiety responses (d = .36), based on exploratory analysis of original AX items prior to exclusion.
 
-Interpretation: This unexpected finding highlighted accessibility considerations in AI adoption. Users with disabilities may experience heightened anxiety about AI technologies, potentially due to concerns about accessibility, job displacement, or past negative experiences with technology. Inclusive AI design and training approaches are warranted.
+Interpretation: This unexpected finding highlighted accessibility considerations in AI adoption. The disability measure encompassed both physical disabilities (vision, mobility) and neurodivergence (ADHD, autism, dyslexia), so the specific mechanisms driving the anxiety association remain unclear. Possible explanations include: (a) concerns about AI accessibility for users with sensory or motor impairments, (b) neurodivergent users experiencing heightened cognitive load from unpredictable AI outputs, (c) fears of job displacement affecting workers who already face employment barriers, or (d) past negative experiences with technology designed without accessibility in mind. Future research should disaggregate by disability type to identify specific intervention targets. Inclusive AI design and training approaches are warranted.
 
 
 
@@ -262,4 +262,4 @@ Several limitations should be considered when interpreting these findings:
 
 2. Marginal AI Trust: Trust approached but did not reach significance (p = .064). This may have reflected inadequate statistical power (β = .106 requires n > 600 for 80% power at α = .05) or genuine marginality of trust in current AI adoption decisions.
 
-3. Western sample: Cultural generalizability is unknown. AI adoption attitudes may differ substantially in collectivist cultures or regions with different AI policy environments.
+3. Western sample: Cultural generalizability was unknown. AI adoption attitudes might differ substantially in collectivist cultures or regions with different AI policy environments.

@@ -238,7 +238,7 @@ The target population comprised adults in the United States who were either stud
 
 Panel sampling was employed through Centiment, a professional survey research platform maintaining verified respondent panels recruited via social media (Facebook, LinkedIn) and other outlets to achieve broad demographic representation.
 
-While panel sampling has limitations similar to convenience sampling regarding generalizability, it is appropriate for initial scale validation studies where the primary goal is psychometric evaluation rather than population inference [@devellis2021]. Additionally, Centiment's topic-blinded recruitment protocol, where survey invitations display only completion time and compensation without revealing subject matter, mitigates self-selection bias common in technology-focused research.
+While panel sampling has limitations similar to convenience sampling regarding generalizability, it is appropriate for initial scale validation studies where the primary goal is psychometric evaluation rather than population inference [@devellis2021]. Centiment's topic-blinded recruitment protocol, where survey invitations display only completion time and compensation without revealing subject matter, also mitigated self-selection bias common in technology-focused research.
 
 ### 3.5.3 Sample Size Determination
 
@@ -291,7 +291,7 @@ Procedures:
 3. Survey completion time: approximately 10-15 minutes
 4. All responses anonymous; no personally identifiable information collected
 
-Temporal Note: The literature review (Chapter 2) incorporates industry reports published throughout 2025 to contextualize findings within the current AI adoption landscape. Some cited sources appeared during or shortly after the data collection window; the theoretical framework and hypotheses were specified before fieldwork began.
+Temporal Note: The literature review (Chapter 2) incorporated industry reports published throughout 2025 to contextualize findings within the current AI adoption landscape. Some cited sources appeared during or shortly after the data collection window; the theoretical framework and hypotheses were specified before fieldwork began.
 
 ### 3.5.6 Data Quality Assurance
 
@@ -764,7 +764,7 @@ Assessment Methods:
 Known Limitations: Three construct pairs exhibited high inter-factor correlations that violated the Fornell-Larcker criterion: Performance Expectancy × Price Value (r = .898), Performance Expectancy × Hedonic Motivation (r = .911), and Hedonic Motivation × Price Value (r = .898). HTMT analysis confirmed these overlaps: PE × PV (HTMT = .902), PE × HM (HTMT = .900), and HM × PV (HTMT = .904) all exceeded the .85 threshold. These overlaps were consistent with UTAUT2 literature, where motivational constructs often shared substantial variance in technology acceptance contexts [@venkatesh2012consumer]. All remaining pairwise comparisons passed all discriminant criteria. Several mitigating factors supported retaining the eight-factor structure:
 
 1. HTMT ratios were computed as a supplementary check; HTMT is considered more robust than Fornell-Larcker for detecting discriminant problems [@henseler2015]
-2. Model fit remained excellent (CFI = .975, TLI = .960, RMSEA = .065, SRMR = .026 on holdout; CFI = .979, TLI = .966, RMSEA = .061, SRMR = .022 on full sample), indicating the eight-factor model reproduces the data well
+2. Model fit remained excellent (CFI = .975, TLI = .960, RMSEA = .065, SRMR = .026 on holdout; CFI = .979, TLI = .966, RMSEA = .061, SRMR = .022 on full sample), indicating the eight-factor model reproduced the data well
 3. Theoretical distinctiveness: PE captures utilitarian performance expectations, HM reflects intrinsic enjoyment, and PV represents cost-benefit appraisal, conceptually distinct constructs despite empirical overlap
 4. Future studies with larger item pools could strengthen discriminant separation among these three constructs
 
@@ -834,15 +834,15 @@ The survey addressed non-sensitive topics related to technology use attitudes. N
 
 2. Self-reported measures: Behavioral Intention was a proxy for actual behavior. While BI strongly predicted behavior in UTAUT studies, some intention-behavior gap was expected.
 
-3. Single time point: Attitudes and technology contexts change rapidly; findings reflect an October–November 2025 snapshot.
+3. Single time point: Attitudes and technology contexts change rapidly; findings reflected an October–November 2025 snapshot.
 
 ### 3.9.2 Sampling Limitations
 
 1. Panel sampling: While Centiment's verified respondent panels provided quality controls and topic-blinded recruitment, panel sampling remained non-probability sampling that limited generalizability to broader populations. Results might not generalize beyond similar United States professional and academic contexts.
 
-2. Single country: While diverse roles represented, findings are limited to U.S. respondents and may not transfer to other cultural contexts.
+2. Single country: While diverse roles were represented, findings were limited to U.S. respondents and might not transfer to other cultural contexts.
 
-3. Self-selection bias: Self-selection was substantially mitigated through Centiment's platform-level recruitment design, which conceals survey topics from participants until after they access the survey link (see Section 3.5.5). However, some residual self-selection may occur as participants could withdraw after the informed consent disclosure revealed the AI focus, though withdrawal rates were minimal.
+3. Self-selection bias: Self-selection was substantially mitigated through Centiment's platform-level recruitment design, which conceals survey topics from participants until after they access the survey link (see Section 3.5.5). However, some residual self-selection might have occurred as participants could withdraw after the informed consent disclosure revealed the AI focus, though withdrawal rates were minimal.
 
 ### 3.9.3 Measurement Limitations
 
@@ -850,15 +850,15 @@ The survey addressed non-sensitive topics related to technology use attitudes. N
 
 2. Two items per construct: While meeting minimum identification requirements for SEM, more indicators would improve reliability and content coverage.
 
-3. Adapted scales: Items adapted from existing instruments; some original validation evidence may not transfer perfectly.
+3. Adapted scales: Items adapted from existing instruments; some original validation evidence might not have transferred perfectly.
 
 ### 3.9.4 Analytical Limitations
 
-1. Normality assumptions: ML estimation assumes multivariate normality; some departures may affect standard errors (though robust methods used where possible).
+1. Normality assumptions: ML estimation assumes multivariate normality; some departures might have affected standard errors (though robust methods were used where possible).
 
-2. Common method variance: Single-source, single-time data collection may inflate correlations. Harman's single-factor test conducted as diagnostic.
+2. Common method variance: Single-source, single-time data collection might have inflated correlations. Harman's single-factor test was conducted as diagnostic.
 
-3. Model complexity: Eight-factor model with limited items requires careful balance between fit and parsimony.
+3. Model complexity: Eight-factor model with limited items required careful balance between fit and parsimony.
 
 
 

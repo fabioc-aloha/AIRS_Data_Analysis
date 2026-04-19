@@ -266,7 +266,7 @@ All items use a **5-point Likert scale**:
 | `Education` | What is your highest level of education completed? | 1=High school, 2=Some college, 3=Associate's, 4=Bachelor's, 5=Master's, 6=Doctoral |
 | `Industry` | Which industry or field best describes your primary area of work or study? | Text/categorical |
 | `Experience` | How many years of work or study experience do you have in your field? | 1=<1 year, 2=1-3, 3=4-6, 4=7-10, 5=>10 years |
-| `Disability` | Do you identify as a person with a disability? | 1=Yes, 2=No, 3=Prefer not to say |
+| `Disability` | Do you identify as a person with a disability (for example, vision, mobility, neurodivergence)? | 1=Yes, 2=No, 3=Prefer not to say |
 | `Feedback` | Do you have any other feedback about your experiences with AI tools? | Open-text response |
 
 ---

@@ -25,9 +25,9 @@ RQ: How can UTAUT2 be extended with AI-specific constructs to better predict beh
 \textbf{Aspect} & \textbf{Answer} & \textbf{Evidence} \\
 \midrule
 Extension Approach & UTAUT2 extended with AI Trust construct & 8-factor, 16-item validated diagnostic instrument \\
-Predictive Power & Model explains 89.7\% variance in BI & R² = .897 (8-factor model) \\
+Predictive Power & Model explained 89.7\% variance in BI & R² = .897 (8-factor model) \\
 Key Finding & Traditional UTAUT predictors less important for AI & PE, EE, FC, HB non-significant \\
-AI-Specific Insight & Value perception dominates over utility & PV strongest predictor ($\beta$ = .505) \\
+AI-Specific Insight & Value perception dominated over utility & PV strongest predictor ($\beta$ = .505) \\
 \bottomrule
 \end{tabular}
 \end{table}
@@ -86,7 +86,7 @@ For psychometric validation, the sample was randomly split (seed=67) into develo
 
 ### 4.3.3 Disability Status
 
-Participants with disabilities comprised 13.0% of the sample (n=68), with 11 participants selecting "Prefer not to answer." This representation enabled examination of accessibility considerations in AI adoption.
+Participants who identified as having a disability comprised 13.0% of the sample (n=68), with 11 participants selecting "Prefer not to answer." The survey question asked respondents whether they identified as a person with a disability, providing examples that spanned physical disabilities (vision, mobility) and neurodivergence (e.g., ADHD, autism, dyslexia). This broad operationalization captured disability status across multiple dimensions rather than disaggregating by disability type. The 13% representation enabled examination of accessibility considerations in AI adoption, though future research with larger disability subsamples could examine whether specific disability types exhibit differential AI adoption patterns.
 
 ## 4.4 Data Screening and Preparation
 
@@ -740,13 +740,14 @@ AI Skeptics & 115 & 22\% & Low & Low & Low & Low & Resistant, below-mean readine
 
 #### Disability Status Analysis
 
-Participants with disabilities (n=68, 13.0%) were compared to those without (n=444):
+Participants with disabilities (n=68, 13.0%) were compared to participants without disabilities (n=444):
 
 ```{=latex}
 \begin{table}[H]
 \centering
 \caption{Disability Status Comparison of UTAUT Constructs}
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.18\textwidth}cccccc@{}}
+\begin{tabular}{@{}>{
+aggedright\arraybackslash}p{0.18\textwidth}cccccc@{}}
 \toprule
 \textbf{Construct} & \textbf{Disability M} & \textbf{No Disability M} & \textbf{t} & \textbf{p} & \textbf{d} \\
 \midrule
@@ -764,7 +765,7 @@ BI & 3.01 & 3.23 & --1.54 & .124 & 0.20 \\
 \end{table}
 ```
 
-Key Finding: Individuals with disabilities reported significantly higher AI-related anxiety (d = 0.36, p = .006), highlighting the importance of accessible and inclusive AI implementation strategies.
+Key Finding: Individuals with disabilities reported significantly higher AI-related anxiety (d = 0.36, p = .006). Because the disability measure aggregated across physical disabilities (vision, mobility) and neurodivergence, this finding warrants disaggregated investigation in future research to identify whether specific disability types drive the anxiety association.
 
 #### Qualitative Findings
 

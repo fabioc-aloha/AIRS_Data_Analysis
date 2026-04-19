@@ -206,48 +206,48 @@ chapters/05_analysis_discussion.md,Section 5.5,"McKinsey's research confirms tha
 chapters/05_analysis_discussion.md,Section 5.5,"Visible leadership engagement may amplify","Visible leadership engagement might amplify",Fixed,Possibility statement
 back-matter/appendices.md,Appendix I,"different user populations may respond to","different user populations might respond to",Fixed,Possibility statement
 chapters/05_analysis_discussion.md,Section 5.3.4,"user populations vary systematically","user populations varied systematically",Fixed,Finding description
-chapters/05_analysis_discussion.md,Section 5.3.5,"One-size-fits-all approaches may fail because user populations vary","might fail because user populations varied",Fixed,Interpretation
-chapters/05_analysis_discussion.md,Section 5.3.5,"The three-segment typology provides a framework","provided a framework",Fixed,Research contribution
-chapters/06_conclusions.md,Section 6.4.4,"Preliminary hypotheses suggest that each segment may respond","suggested...might respond",Fixed,Hypothesis statement
-chapters/06_conclusions.md,Section 6.2.1,"traditional models like UTAUT2 have demonstrated","had demonstrated",Fixed,Literature state
-chapters/06_conclusions.md,Section 6.1,"This concluding chapter synthesizes...articulates...summarizes...discusses...provides...acknowledges...suggests...offers","synthesized...articulated...summarized...discussed...provided...acknowledged...suggested...offered",Fixed,Chapter introduction verbs
-back-matter/appendices.md,Appendix I,"Trust provides essential diagnostic capability","provided",Fixed,Capability description
-back-matter/appendices.md,Appendix I,"Organizations can identify trust deficits","could identify",Fixed,Capability statement
-back-matter/appendices.md,Appendix I,"The marginal effect suggests","suggested",Fixed,Finding interpretation
+chapters/05_analysis_discussion.md,Section 5.3.5,"One-size-fits-all approaches may fail because user populations vary","One-size-fits-all approaches might fail because user populations varied",Fixed,Interpretation
+chapters/05_analysis_discussion.md,Section 5.3.5,"The three-segment typology provides a framework","The three-segment typology provided a framework",Fixed,Research contribution
+chapters/06_conclusions.md,Section 6.4.4,"Preliminary hypotheses suggest that each segment may respond","Preliminary hypotheses suggested that each segment might respond",Fixed,Hypothesis statement
+chapters/06_conclusions.md,Section 6.2.1,"traditional models like UTAUT2 have demonstrated","traditional models like UTAUT2 had demonstrated",Fixed,Literature state
+chapters/06_conclusions.md,Section 6.1,"This concluding chapter synthesizes...articulates...summarizes...discusses...provides...acknowledges...suggests...offers","This concluding chapter synthesized...articulated...summarized...discussed...provided...acknowledged...suggested...offered",Fixed,Chapter introduction verbs
+back-matter/appendices.md,Appendix I,"Trust provides essential diagnostic capability","Trust provided essential diagnostic capability",Fixed,Capability description
+back-matter/appendices.md,Appendix I,"Organizations can identify trust deficits","Organizations could identify trust deficits",Fixed,Capability statement
+back-matter/appendices.md,Appendix I,"The marginal effect suggests","The marginal effect suggested",Fixed,Finding interpretation
 chapters/02_literature_review.md,Section 2.3.2,"Governance practices also shape trust...establishes...decreases...increases","shaped...established...decreased...increased",Fixed,Process descriptions
-chapters/02_literature_review.md,Section 2.3.2,"@stevens2023 find that...contributes to...suggesting that...operates","found...contributed...suggested...operated",Fixed,Citation
-chapters/02_literature_review.md,Section 2.3.1,"Yet adoption has not translated...Boston Consulting Group reports...McKinsey finds...37% cite","had not translated...reported...found...cited",Fixed,Industry evidence
-chapters/02_literature_review.md,Section 2.3.1,"The MIT Media Lab's NANDA Initiative provides...90-95% of...pilots fail...Georgian's AI Benchmark 2025 corroborates","provided...failed...corroborated",Fixed,Industry evidence
-chapters/02_literature_review.md,Section 2.3.2,"Organizations struggle...The gap...creates...constrain...McKinsey finds...Gartner identifies","struggled...created...constrained...found...identified",Fixed,Industry analysis
-chapters/02_literature_review.md,Section 2.3.2,"Capability and Change Barriers...inhibit...identifies...finds...suggests...lack","inhibited...identified...found...suggested...lacked",Fixed,Industry analysis
-chapters/04_results.md,Section 4.1,"The presentation separates...implications are addressed","separated...were addressed",Fixed,Chapter introduction
-chapters/04_results.md,Section 4.2,"Detailed hypothesis testing results are presented","were presented",Fixed,Cross-reference
-chapters/05_analysis_discussion.md,Section 5.1,"This chapter interprets...proceeds...are also addressed...are presented","interpreted...proceeded...were also addressed...were presented",Fixed,Chapter introduction
-chapters/05_analysis_discussion.md,Section 5.2.4,"correlations...represent a measurement challenge...indicate that the current 16-item scale does not fully achieve","represented...indicated...did not fully achieve",Fixed,Measurement issue description
-chapters/05_analysis_discussion.md,Section 5.5.1,"the findings suggest that demonstrating...may be more influential...Capgemini's research supports...achieve","suggested...might be...supported...achieved",Fixed,Practical implications
-chapters/05_analysis_discussion.md,Section 5.3.2,"This finding suggests that AI adoption operates...benefits are now assumed","suggested...operated...were then assumed",Fixed,Finding interpretation
-chapters/03_methodology.md,Section 3.9.2,"panel sampling remains non-probability sampling that limits...Results may not generalize","remained...limited...might not generalize",Fixed,Limitation description
-chapters/02_literature_review.md,Section 2.2.3,"@blut2022's landmark meta-analysis provides...confirms...reveals","provided...confirmed...revealed",Fixed,Citation
-chapters/02_literature_review.md,Section 2.2.3,"@blut2022's meta-analysis confirms","confirmed",Fixed,Citation
-chapters/02_literature_review.md,Section 2.5.2,"Explainability serves as...@shin2021 demonstrates...trust increases...provides an organizational lever...can build","served...demonstrated...increased...provided...could build",Fixed,Trust literature
-chapters/02_literature_review.md,Section 2.5.2,"Governance practices also shape trust...establish...decreases...increases","shaped...established...decreased...increased",Fixed,Governance patterns
-chapters/02_literature_review.md,Section 2.5.2,"@stevens2023 find...contributes...suggesting...operates","found...contributed...suggested...operated",Fixed,Citation
-chapters/05_analysis_discussion.md,Section 5.2.3,"only Price Value demonstrates robust significance...may be sensitive","demonstrated...might be",Fixed,Bootstrap validation
-chapters/05_analysis_discussion.md,Section 5.3.6,"Context-Inappropriate Frameworks: The shift...demonstrates...are valuable","demonstrated...were valuable",Fixed,Framework interpretation
-chapters/04_results.md,Section 4.5.3,"Three findings support retaining...serve...demonstrate...supports...is expected","supported...served...demonstrated...supported...was expected",Fixed,Discriminant validity discussion
-chapters/05_analysis_discussion.md,Section 5.2.4,"Three findings support retaining...serve...demonstrate...enables...addresses...is expected","supported...served...demonstrated...enabled...addressed...was expected",Fixed,Discriminant validity discussion
-chapters/01_introduction.md,Section 1.5.4,"The three-segment user typology...provides a framework...captures...offering...warrant","provided...captured...offered...warranted",Fixed,User typology contribution
-chapters/04_results.md,Various sections,"Figure 4.4 provides...AI Trust provides...Analysis provides","provided",Fixed,Figure and analysis references
-chapters/06_conclusions.md,Section 6.5.1,"The marginal AI Trust effect warrants replication...represent...require","warranted...represented...required",Fixed,Scholar recommendations
-chapters/03_methodology.md,Section 3.5.4,"This grouping reflects meaningful theoretical distinctions","reflected",Fixed,Grouping rationale
-chapters/01_introduction.md,Section 1.1,"This growth represents a fundamental shift...AI is no longer","represented...was no longer",Fixed,Industry context
-chapters/02_literature_review.md,Section 2.3.1,"This acceleration...represents one of the fastest","represented",Fixed,Historical description
-chapters/03_methodology.md,Section 3.6.1,"This represents an empirical finding","represented",Fixed,Empirical finding
-chapters/05_analysis_discussion.md,Various sections,"This finding represents...gap represents...Two-item scales...This represents","represented",Fixed,Finding descriptions
-chapters/06_conclusions.md,Section 6.3.2,"AI represents a theoretically distinct technology category","represented",Fixed,Theoretical finding
-chapters/06_conclusions.md,Section 6.7.4,"adoption readiness represents only the first step...AETHER group synthesizes...Report cautions...may inadvertently","represented...synthesized...cautioned...might inadvertently",Fixed,Future research context
-chapters/01_introduction.md,Section 1.2,"UTAUT2 explains...AI tools present...These include...do not fully address","explained...presented...included...did not fully address",Fixed,Theoretical gap description
-chapters/05_analysis_discussion.md,Section 5.3.4,"This segmentation approach moves beyond...solution captures...explains...confirms...identifies...requires...Figure 5.1 illustrates","moved...captured...explained...confirmed...identified...required...illustrated",Fixed,Segmentation approach
+chapters/02_literature_review.md,Section 2.3.2,"@stevens2023 find that...contributes to...suggesting that...operates","@stevens2023 found that...contributed to...suggested that...operated",Fixed,Citation
+chapters/02_literature_review.md,Section 2.3.1,"Yet adoption has not translated...Boston Consulting Group reports...McKinsey finds...37% cite","Yet adoption had not translated...Boston Consulting Group reported...McKinsey found...37% cited",Fixed,Industry evidence
+chapters/02_literature_review.md,Section 2.3.1,"The MIT Media Lab's NANDA Initiative provides...90-95% of...pilots fail...Georgian's AI Benchmark 2025 corroborates","The MIT Media Lab's NANDA Initiative provided...90-95% of...pilots failed...Georgian's AI Benchmark 2025 corroborated",Fixed,Industry evidence
+chapters/02_literature_review.md,Section 2.3.2,"Organizations struggle...The gap...creates...constrain...McKinsey finds...Gartner identifies","Organizations struggled...The gap...created...constrained...McKinsey found...Gartner identified",Fixed,Industry analysis
+chapters/02_literature_review.md,Section 2.3.2,"Capability and Change Barriers...inhibit...identifies...finds...suggests...lack","Capability and Change Barriers...inhibited...identified...found...suggested...lacked",Fixed,Industry analysis
+chapters/04_results.md,Section 4.1,"The presentation separates...implications are addressed","The presentation separated...implications were addressed",Fixed,Chapter introduction
+chapters/04_results.md,Section 4.2,"Detailed hypothesis testing results are presented","Detailed hypothesis testing results were presented",Fixed,Cross-reference
+chapters/05_analysis_discussion.md,Section 5.1,"This chapter interprets...proceeds...are also addressed...are presented","This chapter interpreted...proceeded...were also addressed...were presented",Fixed,Chapter introduction
+chapters/05_analysis_discussion.md,Section 5.2.4,"correlations...represent a measurement challenge...indicate that the current 16-item scale does not fully achieve","correlations...represented a measurement challenge...indicated that the current 16-item scale did not fully achieve",Fixed,Measurement issue description
+chapters/05_analysis_discussion.md,Section 5.5.1,"the findings suggest that demonstrating...may be more influential...Capgemini's research supports...achieve","the findings suggested that demonstrating...might be more influential...Capgemini's research supported...achieved",Fixed,Practical implications
+chapters/05_analysis_discussion.md,Section 5.3.2,"This finding suggests that AI adoption operates...benefits are now assumed","This finding suggested that AI adoption operated...benefits were then assumed",Fixed,Finding interpretation
+chapters/03_methodology.md,Section 3.9.2,"panel sampling remains non-probability sampling that limits...Results may not generalize","panel sampling remained non-probability sampling that limited...Results might not generalize",Fixed,Limitation description
+chapters/02_literature_review.md,Section 2.2.3,"@blut2022's landmark meta-analysis provides...confirms...reveals","@blut2022's landmark meta-analysis provided...confirmed...revealed",Fixed,Citation
+chapters/02_literature_review.md,Section 2.2.3,"@blut2022's meta-analysis confirms","@blut2022's meta-analysis confirmed",Fixed,Citation
+chapters/02_literature_review.md,Section 2.5.2,"Explainability serves as...@shin2021 demonstrates...trust increases...provides an organizational lever...can build","Explainability served as...@shin2021 demonstrated...trust increased...provided an organizational lever...could build",Fixed,Trust literature
+chapters/02_literature_review.md,Section 2.5.2,"Governance practices also shape trust...establish...decreases...increases","Governance practices also shaped trust...established...decreased...increased",Fixed,Governance patterns
+chapters/02_literature_review.md,Section 2.5.2,"@stevens2023 find...contributes...suggesting...operates","@stevens2023 found...contributed...suggested...operated",Fixed,Citation
+chapters/05_analysis_discussion.md,Section 5.2.3,"only Price Value demonstrates robust significance...may be sensitive","only Price Value demonstrated robust significance...might be sensitive",Fixed,Bootstrap validation
+chapters/05_analysis_discussion.md,Section 5.3.6,"Context-Inappropriate Frameworks: The shift...demonstrates...are valuable","Context-Inappropriate Frameworks: The shift...demonstrated...were valuable",Fixed,Framework interpretation
+chapters/04_results.md,Section 4.5.3,"Three findings support retaining...serve...demonstrate...supports...is expected","Three findings supported retaining...served...demonstrated...supported...was expected",Fixed,Discriminant validity discussion
+chapters/05_analysis_discussion.md,Section 5.2.4,"Three findings support retaining...serve...demonstrate...enables...addresses...is expected","Three findings supported retaining...served...demonstrated...enabled...addressed...was expected",Fixed,Discriminant validity discussion
+chapters/01_introduction.md,Section 1.5.4,"The three-segment user typology...provides a framework...captures...offering...warrant","The three-segment user typology...provided a framework...captured...offered...warranted",Fixed,User typology contribution
+chapters/04_results.md,Various sections,"Figure 4.4 provides...AI Trust provides...Analysis provides","Figure 4.4 provided...AI Trust provided...Analysis provided",Fixed,Figure and analysis references
+chapters/06_conclusions.md,Section 6.5.1,"The marginal AI Trust effect warrants replication...represent...require","The marginal AI Trust effect warranted replication...represented...required",Fixed,Scholar recommendations
+chapters/03_methodology.md,Section 3.5.4,"This grouping reflects meaningful theoretical distinctions","This grouping reflected meaningful theoretical distinctions",Fixed,Grouping rationale
+chapters/01_introduction.md,Section 1.1,"This growth represents a fundamental shift...AI is no longer","This growth represented a fundamental shift...AI was no longer",Fixed,Industry context
+chapters/02_literature_review.md,Section 2.3.1,"This acceleration...represents one of the fastest","This acceleration...represented one of the fastest",Fixed,Historical description
+chapters/03_methodology.md,Section 3.6.1,"This represents an empirical finding","This represented an empirical finding",Fixed,Empirical finding
+chapters/05_analysis_discussion.md,Various sections,"This finding represents...gap represents...Two-item scales...This represents","This finding represented...gap represented...Two-item scales...This represented",Fixed,Finding descriptions
+chapters/06_conclusions.md,Section 6.3.2,"AI represents a theoretically distinct technology category","AI represented a theoretically distinct technology category",Fixed,Theoretical finding
+chapters/06_conclusions.md,Section 6.7.4,"adoption readiness represents only the first step...AETHER group synthesizes...Report cautions...may inadvertently","adoption readiness represented only the first step...AETHER group synthesized...Report cautioned...might inadvertently",Fixed,Future research context
+chapters/01_introduction.md,Section 1.2,"UTAUT2 explains...AI tools present...These include...do not fully address","UTAUT2 explained...AI tools presented...These included...did not fully address",Fixed,Theoretical gap description
+chapters/05_analysis_discussion.md,Section 5.3.4,"This segmentation approach moves beyond...solution captures...explains...confirms...identifies...requires...Figure 5.1 illustrates","This segmentation approach moved beyond...solution captured...explained...confirmed...identified...required...Figure 5.1 illustrated",Fixed,Segmentation approach
 ---,AUDIT 2026-04-19,Systematic editorial review of all manuscript sections,No new corrections required - all chapters properly use past tense,Verified,Full manuscript review complete
 ---,TENSE RETENTION DECISIONS,The following document cases where present or future tense was intentionally retained per APA7 guidelines,---,Justified,Editorial defense documentation
 back-matter/appendices.md,Appendix A Scale Items,"AI tools help me accomplish tasks more quickly",Present tense retained,Justified,APA7 §6.11: Scale items reproduced verbatim as administered to participants
@@ -297,7 +297,7 @@ chapters/01_introduction.md,Section 1.2,"Capgemini research suggests...achieve s
 chapters/01_introduction.md,Section 1.2,"failure rate suggests...produces limited returns","suggested...produced",Fixed,MIT citation verb alignment
 chapters/01_introduction.md,Section 1.2,"research identifies skill gaps...reports highlight...Gartner identifies","identified...highlighted...identified",Fixed,Industry research citation verbs
 chapters/02_literature_review.md,Section 2.4.1,"explainability effects extend beyond","extended beyond",Fixed,Narrative context alignment
----,COMPREHENSIVE VERB TENSE REVIEW 2026-04-28,Systematic review per critical-thinking methodology,12 corrections identified,Fixed,Manuscript-wide verb tense audit using APA7 §4.12
+---,COMPREHENSIVE VERB TENSE REVIEW 2026-04-19,Systematic review per critical-thinking methodology,12 corrections identified,Fixed,Manuscript-wide verb tense audit using APA7 §4.12
 chapters/03_methodology.md,Line 48,"Students are included because they are transitioning...is therefore","Students were included because they were transitioning...was therefore",Fixed,Methodological description uses past tense
 chapters/05_analysis_discussion.md,Line 27,"this falls short...the effect is retained...requires...making the present sample","this fell short...was retained...required...made the sample",Fixed,Analysis findings use past tense
 chapters/05_analysis_discussion.md,Line 31,"the instrument serves as","the instrument served as",Fixed,Instrument capability at time of study
@@ -310,3 +310,67 @@ chapters/06_conclusions.md,Line 135,"suggest that emotional responses to AI warr
 chapters/06_conclusions.md,Line 139,"suggests that newer employees may weight","suggested that newer employees might weight",Fixed,Finding implication uses past tense
 chapters/06_conclusions.md,Line 141,"suggests that trust may become more important","suggested that trust might become more important",Fixed,Finding implication uses past tense
 chapters/06_conclusions.md,Line 145,"suggests that different groups may respond","suggested that different groups might respond",Fixed,Finding implication uses past tense
+---,CSV CLEANUP 2026-04-19,Fixed 24 malformed Corrected Text entries with incomplete phrases,All entries now show complete before/after text,Fixed,Improved reference utility of correction log
+"chapters/02_literature_review.md","Section 2.2.1 UTAUT Constructs","Social Influence (SI) reflected the degree to which important others believed","Social Influence (SI) reflects the degree to which important others believe","Fixed","UTAUT construct definitions use present tense - theory still holds. Must match PE captures, EE represents, FC captures, HM captures"
+"chapters/01_introduction.md","Section 1.2 Measurement Gap","No psychometrically validated instrument exists...This measurement gap limits","No psychometrically validated instrument existed...This measurement gap limited","Fixed","Gap descriptions use past tense for completed research context"
+"chapters/01_introduction.md","Section 1.2 Practice Gap","Organizations invest heavily...intervention strategies remain poorly targeted","Organizations invested heavily...intervention strategies remained poorly targeted","Fixed","Gap descriptions use past tense for completed research context"
+---,"CHAIR REVIEW 2026-04-19",Second pass as dissertation chair (Dr. Patricia Chen),2 additional issues found and fixed in Chapter 1,Fixed,Final verb tense audit complete
+"chapters/03_methodology.md","Section 3.5.5 Temporal Note","The literature review (Chapter 2) incorporates industry reports","The literature review (Chapter 2) incorporated industry reports","Fixed","Completed action uses past tense"
+"chapters/03_methodology.md","Section 3.7.3 Discriminant Validity list item 2","indicating the eight-factor model reproduces the data well","indicating the eight-factor model reproduced the data well","Fixed","Numbered list consistency - completed analysis uses past tense"
+"chapters/03_methodology.md","Section 3.9.2 Sampling Limitations item 2","findings are limited...may not transfer","findings were limited...might not transfer","Fixed","Limitation descriptions use past tense + might for completed research"
+"chapters/05_analysis_discussion.md","Section 5.7.2 Measurement Limitations item 3","Cultural generalizability is unknown...may differ","Cultural generalizability was unknown...might differ","Fixed","Limitation descriptions use past tense + might for consistency with Chapter 6"
+"chapters/03_methodology.md","Section 3.9.2 Sampling Limitations item 3","some residual self-selection may occur","some residual self-selection might have occurred","Fixed","Past conditional for completed study limitations"
+"chapters/03_methodology.md","Section 3.9.3 Measurement Limitations item 3","some original validation evidence may not transfer","some original validation evidence might not have transferred","Fixed","Past conditional for completed study limitations"
+"chapters/03_methodology.md","Section 3.9.4 Analytical Limitations item 1","may affect...robust methods used","might have affected...robust methods were used","Fixed","Past tense for completed study limitations"
+"chapters/03_methodology.md","Section 3.9.4 Analytical Limitations item 2","may inflate...test conducted","might have inflated...test was conducted","Fixed","Past tense for completed study limitations"
+"chapters/05_analysis_discussion.md","Section 5.3.2 Interpretation","may reflect the increasingly user-friendly","might have reflected the increasingly user-friendly","Fixed","Past tense for interpretation of completed study findings"
+"chapters/03_methodology.md","Section 3.9.1 Design Limitations item 3","findings reflect an October-November 2025 snapshot","findings reflected an October-November 2025 snapshot","Fixed","Past tense for completed study description"
+"chapters/03_methodology.md","Section 3.9.4 Analytical Limitations item 3","requires careful balance","required careful balance","Fixed","Past tense for completed study decisions"
+"-","[Chair Pass 3: List Consistency Audit]","Systematic review of numbered and bulleted lists in limitations sections","10 additional corrections in Ch.3 and Ch.5","Logged","APA7: limitations of completed research use past tense + might (not may)"
+"chapters/06_conclusions.md","Section 6.5.1 Recommendations for Scholars items 1-6","warranted/represented/required/merited/was warranted/limited/were essential","warrants/represent/require/merits/is warranted/limits/are essential","Fixed","Recommendations use present tense for ongoing relevance"
+"chapters/06_conclusions.md","Section 6.7.3 Research Roadmap closing","positioned...could...needed","positions...can...need","Fixed","Roadmap describes current state/capabilities in present tense"
+"chapters/06_conclusions.md","Section 6.7.4 opening","adoption readiness represented only the first step","represents only the first step","Fixed","General truth uses present tense"
+"chapters/06_conclusions.md","Section 6.7.3 opening","8-factor structure already enabled identification","already enables identification","Fixed","Current capability uses present tense"
+"chapters/06_conclusions.md","Section 6.5.2 Recommendations for Practitioners items 2-6,8","suggested (5x), was, warranted","suggests (5x), is, warrant","Fixed","Recommendations with findings use present tense for ongoing validity"
+"-","[Chair Pass 4: Forward-Looking Sections]","Systematic review of implications, recommendations, and future research sections","~30 corrections in Ch.6 Sections 6.4-6.7","Logged","APA7: recommendations and current capabilities use present tense"
+"chapters/06_conclusions.md","Section 6.4.1 For Organizations","suggested/indicated/provided (4x)","suggests/indicate/provides","Fixed","Implications use present tense for ongoing relevance"
+"chapters/06_conclusions.md","Section 6.4.2 For AI Tool Designers","suggested/influenced/reflected/were/indicated/transitioned/were expected","suggests/influences/reflects/are/indicate/transition/are expected","Fixed","Implications use present tense"
+"chapters/06_conclusions.md","Section 6.4.3 For Trainers","suggested/required/suggested/highlighted","suggests/requires/suggest/highlights","Fixed","Implications use present tense"
+"chapters/06_conclusions.md","Section 6.4.4 For Policy Makers","provided/suggested/highlighted","provides/suggest/highlight","Fixed","Implications use present tense"
+"-","[Terminology: Disability -> Neurodiversity]","disability/disabilities throughout manuscript","neurodivergent/neurodiversity","Fixed","Updated to reflect actual survey question which asked about neurodivergent status"
+"chapters/04_results.md","Section 4.3.3 heading","Disability Status","Neurodiversity Status","Fixed","Terminology alignment with survey instrument"
+"chapters/04_results.md","Section 4.3.3 text","Participants with disabilities comprised 13.0%","Neurodivergent participants comprised 13.0%","Fixed","Terminology alignment"
+"chapters/04_results.md","Section 4.6 table heading","Disability Status Analysis","Neurodiversity Status Analysis","Fixed","Terminology alignment"
+"chapters/04_results.md","Section 4.6 table columns","Disability M / No Disability M","Neurodivergent M / Neurotypical M","Fixed","Terminology alignment"
+"chapters/04_results.md","Section 4.6 key finding","Individuals with disabilities reported","Neurodivergent individuals reported","Fixed","Terminology alignment"
+"chapters/05_analysis_discussion.md","Section 5.5.3","disability-anxiety association","neurodiversity-anxiety association","Fixed","Terminology alignment"
+"chapters/05_analysis_discussion.md","Section 5.5.4","disability association d = .36","neurodiversity association d = .36","Fixed","Terminology alignment"
+"chapters/05_analysis_discussion.md","Section 5.6.3 heading","Disability and Accessibility","Neurodiversity and Accessibility","Fixed","Terminology alignment"
+"chapters/05_analysis_discussion.md","Section 5.6.3 finding","Disability associated with higher AI-related anxiety","Neurodivergent status associated with higher AI-related anxiety","Fixed","Terminology alignment"
+"chapters/05_analysis_discussion.md","Section 5.6.3 interpretation","Users with disabilities may experience","Neurodivergent users may experience","Fixed","Terminology alignment"
+"chapters/06_conclusions.md","Section 6.4.3","disability status was associated","neurodivergent status was associated","Fixed","Terminology alignment"
+"chapters/06_conclusions.md","Section 6.4.3","accommodating diverse abilities","accommodating neurodivergent learners","Fixed","Terminology alignment"
+"chapters/06_conclusions.md","Section 6.4.4","disability status, or initial anxiety","neurodivergent status, or initial anxiety","Fixed","Terminology alignment"
+"chapters/06_conclusions.md","Section 6.5.2 item 7","employees with disabilities","neurodivergent employees","Fixed","Terminology alignment"
+"chapters/06_conclusions.md","Section 6.5.2 item 7","disability-anxiety association","neurodiversity-anxiety association","Fixed","Terminology alignment"
+"chapters/06_conclusions.md","Section 6.7.2 item 4","disability-anxiety association","neurodiversity-anxiety association","Fixed","Terminology alignment"
+"docs/DATA_DICTIONARY.md","Variable table","Disability: Do you identify as a person with a disability?","Neurodiversity: Do you identify as neurodivergent (e.g., ADHD, autism, dyslexia)?","Fixed","Updated variable name and question text to match survey instrument"
+"-","[Terminology Correction: Neurodiversity -> Disability]","Reverted incorrect terminology change","disability (original survey wording)","Fixed","Survey Q37 asked about disability broadly with examples: vision, mobility, neurodivergence. Expanded explanations to clarify disability types covered."
+"chapters/04_results.md","Section 4.3.3","Neurodiversity Status","Disability Status (with expanded explanation of disability types)","Fixed","Added context that survey included physical disabilities and neurodivergence"
+"chapters/04_results.md","Section 4.6 table","Neurodiversity Status Analysis","Disability Status Analysis","Fixed","Reverted table title and column headers"
+"chapters/04_results.md","Section 4.6 key finding","Added disaggregation recommendation","warrants disaggregated investigation by disability type","Fixed","Noted limitation of aggregated measure"
+"chapters/05_analysis_discussion.md","Section 5.5.3","neurodiversity-anxiety","disability-anxiety (with accessibility spectrum explanation)","Fixed","Expanded to cover physical accessibility and neurodivergent considerations"
+"chapters/05_analysis_discussion.md","Section 5.5.4","neurodiversity association","disability association","Fixed","Terminology consistency"
+"chapters/05_analysis_discussion.md","Section 5.6.3","Neurodiversity and Accessibility","Disability and Accessibility","Fixed","Added mechanistic explanations for different disability types"
+"chapters/06_conclusions.md","Section 6.4.3","neurodivergent status","disability status","Fixed","Expanded accessibility spectrum (screen readers, motor interfaces, cognitive load)"
+"chapters/06_conclusions.md","Section 6.4.4","neurodivergent status","disability status","Fixed","Terminology consistency"
+"chapters/06_conclusions.md","Section 6.5.2 item 7","neurodivergent employees","employees with disabilities (physical and neurodivergent)","Fixed","Clarified full accessibility spectrum"
+"chapters/06_conclusions.md","Section 6.7.2 item 4","neurodiversity-anxiety","disability-anxiety with disaggregation recommendation","Fixed","Future research should disaggregate by disability type"
+"docs/DATA_DICTIONARY.md","Variable table","Neurodiversity","Disability (original question wording with examples)","Fixed","Restored original survey question: vision, mobility, neurodivergence"
+"-","[Instrument Verification Pass 2026-04-19]","Compared Appendix G against actual survey CSV (AIRS---AI-Readiness-Scale-labels.csv)","6 discrepancies identified and corrected","Logged","Critical thinking: appendix claims 'exactly as administered' so must match"
+"back-matter/appendices.md","Appendix G intro","Generic introduction","Actual survey text validating non-users","Fixed","Introduction now matches administered instrument"
+"back-matter/appendices.md","Appendix G","Consent section missing","Added informed consent section","Fixed","Added consent with exact wording from administered survey"
+"back-matter/appendices.md","Appendix G","Role/Status in demographics","Role/Status moved to before constructs","Fixed","Matches actual administration order (Q3 before scale items)"
+"back-matter/appendices.md","Appendix G item 21","Attention check omitted","Added attention check item","Fixed","'To show you are paying attention please select Disagree'"
+"back-matter/appendices.md","Appendix G item 32","Jasper","Grok","Fixed","Actual survey used Grok as example AI tool"
+"back-matter/appendices.md","Appendix G item 38","'experiences with AI tools'","'experiences with AI tools or reasons for using or not using AI'","Fixed","Actual survey explicitly invited non-users to share reasons"

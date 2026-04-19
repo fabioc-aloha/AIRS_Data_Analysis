@@ -357,11 +357,36 @@ This appendix reproduces the complete AI Readiness Scale (AIRS) survey instrumen
 
 ### Survey Introduction
 
-**Welcome to the AI Readiness Survey**
+Thank you for participating in this study. Your perspective matters, whether you use generative AI often, rarely, or not at all. Your responses are anonymous and will be reported only in aggregate. By sharing your experience, you help us understand both adoption and non-use so we can design better tools, training, and support. Please answer each question honestly based on your work or study experience.
 
-Thank you for participating in this research study. This survey explores your experiences and perceptions regarding artificial intelligence (AI) tools in work and educational settings.
+---
 
-The survey takes approximately 10-15 minutes to complete. Please answer all questions honestly based on your current experiences. There are no right or wrong answers.
+### Informed Consent
+
+By clicking "Yes, I agree" below and completing the online survey, you confirm that you:
+
+- Have read this consent form and understand the information contained in it.
+- Are at least 18 years of age.
+- Voluntarily agree to participate in this research study.
+
+**Response options**: Yes, I agree | No, I do not agree
+
+---
+
+### Participant Status
+
+**What is your current status?**
+
+- Full-time student
+- Part-time student
+- Employed - individual contributor
+- Employed - manager
+- Employed - executive or leader
+- Freelancer or self-employed
+- Not currently employed
+- Other
+
+*Note: This question was administered before the scale items to enable role-based conditional logic.*
 
 ---
 
@@ -424,25 +449,26 @@ The survey takes approximately 10-15 minutes to complete. Please answer all ques
 
 19. I understand how the AI tools I use generate their outputs.
 20. I prefer AI tools that explain their recommendations.
+21. To show that you are paying attention please select "Disagree." *(Attention check item; excluded from scale scoring)*
 
 #### Perceived Ethical Risk
 
-21. I worry that AI tools could replace jobs in my field.
-22. I am concerned about privacy risks when using AI tools.
+22. I worry that AI tools could replace jobs in my field.
+23. I am concerned about privacy risks when using AI tools.
 
 #### AI Anxiety
 
-23. I feel uneasy about the increasing use of AI.
-24. I worry that I may be left behind if I do not keep up with AI.
+24. I feel uneasy about the increasing use of AI.
+25. I worry that I may be left behind if I do not keep up with AI.
 
 ---
 
 ### Section 3: AI Adoption Readiness (Behavioral Intention)
 
-25. I am ready to use more AI tools in my work or studies.
-26. I would recommend AI tools to others.
-27. I see AI as an important part of my future.
-28. I plan to increase my use of AI tools in the next six months.
+26. I am ready to use more AI tools in my work or studies.
+27. I would recommend AI tools to others.
+28. I see AI as an important part of my future.
+29. I plan to increase my use of AI tools in the next six months.
 
 ---
 
@@ -452,31 +478,21 @@ The survey takes approximately 10-15 minutes to complete. Please answer all ques
 
 **Scale**: 1 = Never | 2 = Rarely | 3 = Sometimes | 4 = Often | 5 = Very often (Daily)
 
-29. Microsoft 365 Copilot or Microsoft Copilot
-30. ChatGPT
-31. Google Gemini
-32. Other AI tools (for example, Claude, Perplexity, Jasper)
+30. Microsoft 365 Copilot or Microsoft Copilot
+31. ChatGPT
+32. Google Gemini
+33. Other AI tools (for example, Claude, Perplexity, Grok)
 
 ---
 
 ### Section 5: Demographics
 
-33. **What is your highest level of education completed?**
+34. **What is your highest level of education completed?**
     - High school or less
     - Some college or vocational training
     - Bachelor's degree
     - Master's degree
     - Doctoral or professional degree
-
-34. **What is your current status?**
-    - Full-time student
-    - Part-time student
-    - Employed - individual contributor
-    - Employed - manager
-    - Employed - executive or leader
-    - Freelancer or self-employed
-    - Not currently employed
-    - Other
 
 35. **Which industry or field best describes your primary area of work or study?**
     - Technology or IT
@@ -505,7 +521,7 @@ The survey takes approximately 10-15 minutes to complete. Please answer all ques
 
 ### Section 6: Open Feedback (Optional)
 
-38. **Do you have any other feedback about your experiences with AI tools?**
+38. **Do you have any other feedback about your experiences with AI tools or reasons for using or not using AI?**
 
 [Open text response field]
 

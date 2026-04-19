@@ -74,33 +74,33 @@ The empirically-derived three-segment typology provided insights into adoption h
 
 ### 6.4.1 For Organizations Implementing AI
 
-Value Demonstration Over Capability Showcasing: The dominance of Price Value suggested that organizations may benefit from demonstrating clear return on investment rather than simply highlighting AI capabilities. The findings indicated that employees' cost-benefit mental models may be more influential than capability-focused messaging, a hypothesis warranting experimental validation in organizational contexts.
+Value Demonstration Over Capability Showcasing: The dominance of Price Value suggests that organizations may benefit from demonstrating clear return on investment rather than simply highlighting AI capabilities. The findings indicate that employees' cost-benefit mental models may be more influential than capability-focused messaging, a hypothesis warranting experimental validation in organizational contexts.
 
-Segment-Specific Intervention Hypotheses: The three-segment typology (§4.6) provided a framework for tailored change management research. Preliminary hypotheses suggested that each segment might respond to different intervention approaches, from champion programs and advanced training for Enthusiasts, to ROI demonstrations for Moderate Users, to graduated exposure and psychological safety protocols for Skeptics, pending experimental validation.
+Segment-Specific Intervention Hypotheses: The three-segment typology (§4.6) provides a framework for tailored change management research. Preliminary hypotheses suggest that each segment might respond to different intervention approaches, from champion programs and advanced training for Enthusiasts, to ROI demonstrations for Moderate Users, to graduated exposure and psychological safety protocols for Skeptics, pending experimental validation.
 
-Social Influence Leverage: The significant Social Influence effect (β = .136) suggested that peer influence mattered for AI adoption. The findings indicated that visible AI champions and communities of practice may facilitate adoption, approaches that warrant experimental testing.
+Social Influence Leverage: The significant Social Influence effect (β = .136) suggests that peer influence matters for AI adoption. The findings indicate that visible AI champions and communities of practice may facilitate adoption, approaches that warrant experimental testing.
 
-Experience-Sensitive Approaches: The moderation finding suggested that experienced professionals may respond differently to AI adoption messaging than newer employees. The findings indicated that senior staff may respond more to intrinsic satisfaction and intellectual engagement aspects of AI tools, while junior staff may respond more to value propositions and career development benefits, hypotheses requiring experimental validation.
+Experience-Sensitive Approaches: The moderation finding suggests that experienced professionals may respond differently to AI adoption messaging than newer employees. The findings indicate that senior staff may respond more to intrinsic satisfaction and intellectual engagement aspects of AI tools, while junior staff may respond more to value propositions and career development benefits, hypotheses requiring experimental validation.
 
 ### 6.4.2 For AI Tool Designers and Vendors
 
-Pricing Model Innovation: The Price Value dominance suggested that pricing strategy significantly influenced adoption. Freemium models, transparent pricing, and clear ROI documentation might be more important than feature development for driving adoption.
+Pricing Model Innovation: The Price Value dominance suggests that pricing strategy significantly influences adoption. Freemium models, transparent pricing, and clear ROI documentation might be more important than feature development for driving adoption.
 
-Trust-Building Features: AI Trust was marginally significant (p = .064), and its retention as a diagnostic inclusion reflected the theoretical expectation that trust considerations were emerging concerns in AI adoption. The findings indicated that explainability features, reliability demonstrations, and transparency mechanisms might address trust-related hesitation, a hypothesis for design research. As AI systems transitioned from tools to autonomous agents, trust requirements were expected to intensify.
+Trust-Building Features: AI Trust was marginally significant (p = .064), and its retention as a diagnostic inclusion reflects the theoretical expectation that trust considerations are emerging concerns in AI adoption. The findings indicate that explainability features, reliability demonstrations, and transparency mechanisms might address trust-related hesitation, a hypothesis for design research. As AI systems transition from tools to autonomous agents, trust requirements are expected to intensify.
 
-Enjoyment-Focused Design: The Hedonic Motivation effect indicated that users valued enjoyable experiences. The findings suggested that designing AI tools for engagement, not just utility, may enhance adoption, though experimental validation is needed.
+Enjoyment-Focused Design: The Hedonic Motivation effect indicates that users value enjoyable experiences. The findings suggest that designing AI tools for engagement, not just utility, may enhance adoption, though experimental validation is needed.
 
 ### 6.4.3 For Trainers and Educators
 
-Anxiety-Informed Pedagogy: The AI Skeptics segment (22%), characterized by below-average scores across all adoption readiness constructs, suggested that training programs might benefit from addressing resistance barriers before technical skills. Graduated exposure approaches, peer support, and psychological safety might be more effective when preceding capability training, though this hypothesis required experimental validation.
+Anxiety-Informed Pedagogy: The AI Skeptics segment (22%), characterized by below-average scores across all adoption readiness constructs, suggests that training programs might benefit from addressing resistance barriers before technical skills. Graduated exposure approaches, peer support, and psychological safety might be more effective when preceding capability training, though this hypothesis requires experimental validation.
 
-Accessibility Considerations: The finding that disability status was associated with higher AI anxiety (d = .36) highlighted the importance of inclusive AI training design. The findings suggested that materials and interfaces accommodating diverse abilities may better support anxious learners, considerations that warrant attention in training program development.
+Accessibility Considerations: The finding that disability status was associated with higher AI anxiety (d = .36) highlights the importance of inclusive AI training design. The disability measure captured both physical disabilities (vision, mobility) and neurodivergence (ADHD, autism, dyslexia), suggesting that accessibility considerations span multiple dimensions: screen reader compatibility and motor-accessible interfaces for users with sensory/physical disabilities, predictable interaction patterns for neurodivergent users, and reduced cognitive load for learners who experience technology anxiety. Training program development should address this full spectrum of accessibility needs.
 
 ### 6.4.4 For Policy Makers and Organizational Leaders
 
-Workforce Readiness Research: The validated AIRS instrument provided a foundation for future organizational AI readiness assessment research. Policy makers may benefit from population-level assessments, though such applications require additional validation beyond the scope of this scale development study.
+Workforce Readiness Research: The validated AIRS instrument provides a foundation for future organizational AI readiness assessment research. Policy makers may benefit from population-level assessments, though such applications require additional validation beyond the scope of this scale development study.
 
-Equity Considerations: The differential anxiety findings suggested that AI adoption may create or exacerbate workforce inequities. The findings highlighted the importance of ensuring that all employees, regardless of experience level, disability status, or initial anxiety, have equitable access to AI benefits.
+Equity Considerations: The differential anxiety findings suggest that AI adoption may create or exacerbate workforce inequities. The findings highlight the importance of ensuring that all employees, regardless of experience level, disability status, or initial anxiety, have equitable access to AI benefits.
 
 
 
@@ -110,17 +110,17 @@ Equity Considerations: The differential anxiety findings suggested that AI adopt
 
 Based on the empirical findings and identified research gaps, the following recommendations are offered for the academic community:
 
-1. Replicate with larger samples: The marginal AI Trust effect (β = .106, p = .064) warranted replication with n > 600 to achieve adequate statistical power for detecting small-to-medium effects in AI adoption contexts.
+1. Replicate with larger samples: The marginal AI Trust effect (β = .106, p = .064) warrants replication with n > 600 to achieve adequate statistical power for detecting small-to-medium effects in AI adoption contexts.
 
-2. Develop improved AI-specific measures: The dropped constructs (Voluntariness, Explainability, Ethical Risk) represented important theoretical concepts that required more comprehensive operationalization with 3-4 items per sub-dimension and rigorous cognitive interviewing.
+2. Develop improved AI-specific measures: The dropped constructs (Voluntariness, Explainability, Ethical Risk) represent important theoretical concepts that require more comprehensive operationalization with 3-4 items per sub-dimension and rigorous cognitive interviewing.
 
-3. Investigate Price Value dominance: The unexpected finding that Price Value rather than Performance Expectancy drove AI adoption merited theoretical attention. Scholars should explore whether this reflected AI's unique characteristics or broader shifts in technology evaluation patterns.
+3. Investigate Price Value dominance: The unexpected finding that Price Value rather than Performance Expectancy drove AI adoption merits theoretical attention. Scholars should explore whether this reflects AI's unique characteristics or broader shifts in technology evaluation patterns.
 
-4. Examine career development integration: The significant experience moderation effect on Hedonic Motivation suggested that career development theory should be integrated with technology acceptance models. Longitudinal research linking career stages to adoption trajectories was warranted.
+4. Examine career development integration: The significant experience moderation effect on Hedonic Motivation suggests that career development theory should be integrated with technology acceptance models. Longitudinal research linking career stages to adoption trajectories is warranted.
 
 5. Validate the user typology framework: The three-segment typology (AI Enthusiasts, Moderate Users, AI Skeptics) should be validated across populations and used to develop segment-specific theoretical models.
 
-6. Conduct cross-cultural research: The Western sample limited generalizability. Comparative studies in collectivist cultures, developing economies, and regions with different AI policy environments were essential for theory refinement.
+6. Conduct cross-cultural research: The Western sample limits generalizability. Comparative studies in collectivist cultures, developing economies, and regions with different AI policy environments are essential for theory refinement.
 
 7. Apply longitudinal designs: Cross-sectional limitations preclude causal inference. Panel studies tracking intention-behavior relationships over 6-12 months will strengthen theoretical claims.
 
@@ -130,19 +130,19 @@ The following recommendations are offered with an important caveat: this study v
 
 1. Consider baseline AIRS assessment before implementing AI initiatives to understand the distribution of adoption readiness in the population. The validated instrument can inform planning, though formal diagnostic protocols require additional development.
 
-2. Lead with value propositions rather than capability demonstrations. The dominance of Price Value (β = .505) over Performance Expectancy (ns) suggested communicating AI benefits in terms of time savings, cost reduction, and ROI rather than technical features.
+2. Lead with value propositions rather than capability demonstrations. The dominance of Price Value (β = .505) over Performance Expectancy (ns) suggests communicating AI benefits in terms of time savings, cost reduction, and ROI rather than technical features.
 
-3. Attend to affective barriers: The 22% AI Skeptics segment (mean BI=1.71) and marginal Trust effect (β=.106, p=.064) suggested that emotional responses to AI warranted attention. Future research should test whether anxiety-reduction approaches (gradual exposure, peer support, psychological safety) improve adoption outcomes.
+3. Attend to affective barriers: The 22% AI Skeptics segment (mean BI=1.71) and marginal Trust effect (β=.106, p=.064) suggest that emotional responses to AI warrant attention. Future research should test whether anxiety-reduction approaches (gradual exposure, peer support, psychological safety) improve adoption outcomes.
 
-4. Leverage social influence by identifying and supporting AI champions who can model positive adoption behaviors. Social Influence was a significant predictor (β = .136), suggesting peer effects matter.
+4. Leverage social influence by identifying and supporting AI champions who can model positive adoption behaviors. Social Influence is a significant predictor (β = .136), suggesting peer effects matter.
 
-5. Differentiate by experience level: The significant experience moderation effect suggested that newer employees might weight different factors than senior professionals when evaluating AI tools.
+5. Differentiate by experience level: The significant experience moderation effect suggests that newer employees might weight different factors than senior professionals when evaluating AI tools.
 
-6. Monitor trust perceptions as AI applications become more consequential. The marginal Trust effect (p = .064) suggested that trust might become more important as AI moves into higher-stakes decision-making roles.
+6. Monitor trust perceptions as AI applications become more consequential. The marginal Trust effect (p = .064) suggests that trust might become more important as AI moves into higher-stakes decision-making roles.
 
-7. Design for accessibility to ensure that AI adoption does not disadvantage employees with disabilities or those who experience higher baseline technology anxiety (d = .36 disability-anxiety association).
+7. Design for accessibility to ensure that AI adoption does not disadvantage employees with disabilities—whether physical (vision, mobility) or neurodivergent (ADHD, autism, dyslexia)—who experience higher baseline technology anxiety (d = .36 disability-anxiety association).
 
-8. Consider segment heterogeneity: The three-segment user typology suggested that different groups might respond to different approaches. Experimental research is needed to determine whether segment-specific interventions outperform one-size-fits-all approaches.
+8. Consider segment heterogeneity: The three-segment user typology suggests that different groups might respond to different approaches. Experimental research is needed to determine whether segment-specific interventions outperform one-size-fits-all approaches.
 
 
 
@@ -194,7 +194,7 @@ The following research directions and testable hypotheses emerge from the empiri
 
 3. Intervention Effectiveness Studies (H21): Design and evaluate segment-specific interventions based on the user typology framework. Hypothesis: the 3 empirical clusters (Enthusiasts, Moderate Users, Skeptics) respond differentially to targeted interventions, enabling more efficient allocation of training budgets. Design: RCT with 3 intervention types × 3 segments.
 
-4. Accessibility Research: Investigate the mechanisms underlying the disability-anxiety association and develop inclusive AI training approaches.
+4. Accessibility Research: Investigate the mechanisms underlying the disability-anxiety association. Because the disability measure aggregated physical disabilities and neurodivergence, future research should disaggregate by disability type to identify whether specific accessibility barriers (sensory, motor, cognitive) drive the anxiety effect, enabling targeted intervention development.
 
 5. Agentic Trust Escalation (H9): As AI transitions from tool to autonomous agent, Trust may shift from marginal (β ≈ .10) to dominant predictor (β > .30) of Behavioral Intention. Design: compare AIRS factor weights for query-based AI versus agentic AI contexts.
 
@@ -212,7 +212,7 @@ The following research directions and testable hypotheses emerge from the empiri
 
 ### 6.7.3 Research Roadmap: From Validated Scale to Organizational Applications
 
-This dissertation established the AIRS as a validated diagnostic instrument. The 8-factor structure already enabled identification of specific adoption barriers; the following roadmap outlines the research program required to develop formalized protocols for organizational applications:
+This dissertation established the AIRS as a validated diagnostic instrument. The 8-factor structure already enables identification of specific adoption barriers; the following roadmap outlines the research program required to develop formalized protocols for organizational applications:
 
 Phase 1: AIRS-28 Development and Score Validation (2026–2027)
 
@@ -240,7 +240,7 @@ Phase 2b: Cross-Cultural Validation (2027–2028)
 
 ### 6.7.4 Appropriate Reliance Research
 
-Critically, adoption readiness represented only the first step in effective AI integration. Microsoft's AETHER group synthesized appropriate reliance research around two core constructs [@passi2024appropriate]: Capability-Appropriate Reliance on AI (CAIR), matching human reliance to actual AI capability, and Context-Sensitive Reliance (CSR), adapting behavior based on situational factors like stakes and uncertainty. The *New Future of Work Report* further cautioned that interventions designed to improve AI acceptance might inadvertently increase over-reliance [@butler2025new], creating a paradox: successfully deploying AI through AIRS-identified pathway optimizations may set the stage for over-reliance problems.
+Critically, adoption readiness represents only the first step in effective AI integration. Microsoft's AETHER group synthesized appropriate reliance research around two core constructs [@passi2024appropriate]: Capability-Appropriate Reliance on AI (CAIR), matching human reliance to actual AI capability, and Context-Sensitive Reliance (CSR), adapting behavior based on situational factors like stakes and uncertainty. The *New Future of Work Report* further cautioned that interventions designed to improve AI acceptance might inadvertently increase over-reliance [@butler2025new], creating a paradox: successfully deploying AI through AIRS-identified pathway optimizations may set the stage for over-reliance problems.
 
 Future research should therefore extend beyond the adoption decision to investigate:
 
@@ -268,7 +268,7 @@ Phase 4: Comprehensive AI Readiness System (2029+)
 - Create industry-specific adaptation guidelines
 - Establish training and certification for AIRS practitioners
 
-This roadmap positioned the current validated scale as the essential foundation for a research-to-practice pipeline that could ultimately deliver the diagnostic and intervention tools that organizations needed to close the AI adoption-value gap.
+This roadmap positions the current validated scale as the essential foundation for a research-to-practice pipeline that can ultimately deliver the diagnostic and intervention tools that organizations need to close the AI adoption-value gap.
 
 
 
