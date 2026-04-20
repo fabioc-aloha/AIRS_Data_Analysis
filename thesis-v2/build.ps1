@@ -237,7 +237,6 @@ function Build-Pdf {
     # Front matter files - will be added via --include-before-body to appear BEFORE TOC
     $frontMatterFiles = @(
         '00_title.md',
-        '01_approval.md',
         '02_copyright.md',
         '03_abstract.md',
         '04_acknowledgments.md',
