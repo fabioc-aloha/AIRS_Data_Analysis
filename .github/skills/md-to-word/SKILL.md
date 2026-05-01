@@ -1,10 +1,14 @@
 ---
+type: skill
+lifecycle: stable
 name: "md-to-word"
 description: "Convert Markdown with Mermaid diagrams and SVG illustrations to professional Word documents"
 tier: standard
 applyTo: '**/*docx*,**/*word*,**/*md-to-word*,**/*export*'
 muscle: .github/muscles/md-to-word.cjs
 inheritance: inheritable
+currency: 2026-04-30
+lastReviewed: 2026-04-30
 ---
 
 # Markdown to Word Conversion
@@ -79,7 +83,7 @@ All Mermaid diagram types are supported:
 | **Mindmap** | `mindmap` | Width priority |
 | **Timeline** | `timeline` | Width priority |
 
-Diagrams are rendered at 8x scale (2400px width) for crisp printing, then sized to fit within page bounds.
+Diagrams are rendered at 4x scale (4800px width) for crisp printing, then sized to fit within page bounds.
 
 ---
 
@@ -126,12 +130,14 @@ node .github/muscles/md-to-word.cjs docs/plan.md --keep-temp
 ### Quick Install (All Dependencies)
 
 **macOS**
+
 ```bash
 brew install pandoc
 npm install -g @mermaid-js/mermaid-cli svgexport
 ```
 
 **Windows**
+
 ```powershell
 winget install JohnMacFarlane.Pandoc
 npm install -g @mermaid-js/mermaid-cli svgexport
@@ -190,6 +196,7 @@ SVG files are automatically detected and converted to PNG for Word compatibility
 **Requirements**: `svgexport` (`npm install -g svgexport`)
 
 **Best practices for SVG sources**:
+
 - Use viewBox for scalable graphics
 - Embed fonts or use web-safe font stack
 - Keep file size under 500KB for fast conversion
@@ -199,14 +206,21 @@ SVG files are automatically detected and converted to PNG for Word compatibility
 
 ## Image Sizing Algorithm
 
-The script automatically fits images to page bounds:
+The script automatically fits images to page bounds. The constraints are codified
+in `md-to-word.cjs`:
 
 ```
 Page: 8.5" × 11" (Letter)
 Margins: 1" each side
 Usable area: 6.5" × 9.0"
-Max image: 6.5" × 3.6" (40% height for inline fit)
+MAX_IMAGE_WIDTH_RATIO  = 0.90   →  max width  ≈ 5.85"
+MAX_IMAGE_HEIGHT_RATIO = 0.60   →  max height ≈ 5.40"
 ```
+
+These ratios apply width-priority for landscape/wide diagrams (LR flowcharts,
+gantts, sequence diagrams) and height-priority for portrait/tall diagrams (TB/TD
+flowcharts with multiple subgraphs). The algorithm picks the more restrictive
+constraint so the image fits in both dimensions.
 
 ### Algorithm Steps
 
@@ -214,6 +228,49 @@ Max image: 6.5" × 3.6" (40% height for inline fit)
 2. **Calculate scale factors** for width and height constraints
 3. **Apply most restrictive** — ensures fit in both dimensions
 4. **Specify constraining dimension** — pandoc preserves aspect ratio
+
+---
+
+## Mermaid Palette and Fidelity
+
+When a Mermaid block has no `classDef`, no `%%{init}%%` directive, and no
+explicit theme variables, the converter injects a **default pastel palette**
+(GitHub-style soft colors with dark text) before rendering. This gives WYSIWYG
+fidelity to authors who don't styled-by-design every diagram.
+
+### Why per-diagram-type injection matters
+
+| Diagram type | Honors `classDef`? | Color path |
+|---|---|---|
+| `flowchart` / `graph` | Yes | `classDef` (preferred) or injected init |
+| `classDiagram` | Partial | `classDef` or injected init |
+| `sequenceDiagram` | **No** | `themeVariables` only (e.g. `actorBkg`, `noteBkgColor`) |
+| `stateDiagram-v2` | **No** | `themeVariables` only (`primaryColor`, `mainBkg`, `labelBoxBkgColor`) |
+| `erDiagram` | No | `themeVariables` only |
+
+Without diagram-type-aware injection, sequence and state diagrams would render
+as flat neutral nodes regardless of any `classDef` the author wrote.
+
+### Behavior
+
+- `flowchart` / `graph` / `classDiagram` with `classDef` → **respected, no
+  injection** (author wins)
+- `flowchart` / `graph` without `classDef` → **palette injected** + lint nudge
+- `sequenceDiagram` / `stateDiagram-v2` without `%%{init}%%` or explicit
+  `actorBkg` / `primaryColor` → **palette injected** (only path to colors)
+- Any block with `%%{init}%%` already present → **respected, no injection**
+
+### Opting out
+
+Pass `--no-default-palette` to disable injection. Diagrams without `classDef` or
+explicit theme will then render with mermaid's default neutral theme, and a
+warning is emitted per affected diagram.
+
+### Lint warnings
+
+During preprocessing the converter emits `💡` nudges for unstyled flowcharts
+("inject default pastel palette") and `⚠️` warnings when `--no-default-palette`
+is set on diagrams that would have rendered flat.
 
 ---
 
@@ -236,27 +293,33 @@ All tables receive professional OOXML styling:
 ## Professional Features
 
 ### Page Numbers
+
 Centered page numbers in the footer, gray text (9pt).
 
 ### Heading Hierarchy
+
 - H1: Brand color, underline, 360/120 twip spacing
 - H2: Secondary color, 280/80 twip spacing
 - H3: Tertiary color, 240/80 twip spacing
 - All headings: keepNext + keepLines (no orphans)
 
 ### Code Blocks
+
 - Font: Consolas 9pt
 - Background: Light gray (#F5F5F5)
 - Border: Left accent bar (#CCCCCC)
 - Keep together: Won't split across pages
 
 ### Hyperlinks
+
 - Color: Microsoft blue (#0563C1)
 - Style: Single underline
 - Applied to both inline links and reference links
 
 ### Captions
+
 Paragraphs starting with "Table N" or "Figure N":
+
 - Centered, italic, 9pt gray
 - keepNext binding to following content
 
@@ -351,7 +414,7 @@ node .github/muscles/md-to-word.cjs spec.md --watch
   run: |
     npm install -g @mermaid-js/mermaid-cli svgexport
     node .github/muscles/md-to-word.cjs docs/spec.md --toc --cover
-    
+
 - name: Upload artifacts
   uses: actions/upload-artifact@v4
   with:
@@ -384,6 +447,7 @@ node .github/muscles/md-to-word.cjs spec.md --watch
 
 | Version | Changes |
 |---------|---------|
+| **5.4.0** | Diagram-type-aware Mermaid palette injection (sequence/state get themeVariables, flowcharts respect classDef), `--no-default-palette` opt-out, lint warnings for unstyled diagrams, sizing constants documented |
 | **5.3.0** | Style presets (professional, academic, course, creative), --cover, --toc |
 | **5.0.0** | SVG auto-conversion via svgexport, watch mode, recursive processing |
 | **4.0.0** | OOXML post-processing: page numbers, hyperlinks, code block styling |
@@ -394,11 +458,35 @@ node .github/muscles/md-to-word.cjs spec.md --watch
 
 ---
 
+## Conversion Acceptance Decision Table
+
+| Condition | Verdict | Action |
+|-----------|---------|--------|
+| All headings use correct Word styles (Heading 1-6) | Accept | Verify TOC generates from styles |
+| Headings are bold plain text instead of styled | Reject | Check pandoc heading-style mapping |
+| Tables render with borders and header row formatting | Accept | Spot-check alignment |
+| Tables overflow page width or lose column alignment | Reject | Adjust column widths or split wide tables |
+| Images embedded at correct resolution | Accept | Verify no placeholder boxes |
+| Images missing or show `[image]` placeholder | Reject | Check image paths resolve; pandoc `--resource-path` |
+| Mermaid diagrams converted to PNG and embedded | Accept | Verify labels readable at print size |
+| Mermaid diagrams missing entirely | Reject | Pre-render with mermaid-cli before pandoc |
+| Code blocks use monospace font with syntax coloring | Accept | Verify long lines don't overflow |
+| Code blocks use body font or lose indentation | Warning | Check pandoc `--highlight-style` setting |
+| Page breaks at expected section boundaries | Accept | Required for multi-section documents |
+| Headers/footers match brand template | Accept | Verify reference.docx applied correctly |
+| File opens without macro warnings | Accept | Required — no macros in output |
+| File size >10MB for text-only document | Warning | Check for uncompressed embedded images |
+
+---
+
 ## Related Skills
 
 | Skill | Relationship |
 |-------|--------------|
 | **markdown-mermaid** | Mermaid syntax and ATACCU compliance |
+| **lint-clean-markdown** | Pre-flight the source — pass clean Markdown in |
+| **markdown-sanitization-chain** | Sanitize user-supplied Markdown before conversion |
+| **mermaid-mode-fragility** | Why we default to flowchart mode |
 | **svg-graphics** | Vector graphics creation |
 | **brand-asset-management** | Visual identity for headers/footers |
 | **pptx-generation** | Similar workflow for PowerPoint output |

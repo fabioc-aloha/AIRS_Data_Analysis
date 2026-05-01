@@ -1,12 +1,15 @@
 ---
+type: instruction
+lifecycle: stable
+inheritance: inheritable
 description: "Prevent terminal command failures from shell metacharacter interpretation, output capture issues, and hanging commands"
 application: "When running terminal commands, especially those with special characters or long output"
 applyTo: "**"
+currency: 2026-04-30
+lastReviewed: 2026-04-30
 ---
 
 # Terminal Command Safety
-
-Full examples in `.github/skills/terminal-command-safety/SKILL.md`.
 
 ## Backtick Hazard (Critical)
 
@@ -41,3 +44,16 @@ Terminal output can be silently lost or truncated.
 4. Avoid heredoc blocks (desync terminal parser)
 5. One command at a time — no chaining unrelated commands
 6. Kill stuck: `send_to_terminal` with Ctrl+C, or start fresh terminal
+
+## VS Code 1.117 Terminal Improvements
+
+Two behavioral changes reduce manual output handling:
+
+1. **Auto-include output after `send_to_terminal`**: Terminal output is automatically included in the next turn after `send_to_terminal`. No need to call `get_terminal_output` immediately after — the output arrives with the next user/system message.
+2. **Background terminal notifications**: When an async terminal command completes, a system notification fires automatically. No need to poll with `get_terminal_output` — wait for the notification instead.
+
+These reduce the need for manual output capture patterns in 1.117+ environments. The redirect-to-file fallback remains valid for edge cases.
+
+## Falsifier — Backtick Hazard
+
+The Backtick Hazard rule is load-bearing because the underlying defect is unfixed in VS Code through 1.118. Tracking issue: [microsoft/vscode#295620](https://github.com/microsoft/vscode/issues/295620) ("Copilot with Claude models fails to handle backticks with gh") — open, milestone *On Deck*, no scheduled fix. Adjacent terminal-tool work shipped in 1.118 ([PR #307960](https://github.com/microsoft/vscode/pull/307960) heredoc handling) does not address backtick interpretation in double-quoted arguments. Re-evaluate this rule when #295620 closes; until then, the temp-file pattern is mandatory.

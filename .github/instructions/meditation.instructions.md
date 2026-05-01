@@ -1,89 +1,130 @@
 ---
-description: "Procedural steps for knowledge consolidation meditation sessions"
-application: "When exploring new domains, synthesizing knowledge, or building expertise"
-applyTo: "**/*meditation*,**/*dream*,**/*consolidation*"
+type: instruction
+lifecycle: stable
+inheritance: inheritable
+description: "Knowledge consolidation — transform working memory into permanent architecture"
+application: "When ending significant sessions or when patterns emerge worth persisting"
+applyTo: "**/*meditat*,**/*consolidat*"
+currency: 2026-04-30
+lastReviewed: 2026-04-30
 ---
 
 # Meditation Protocol
 
-Knowledge consolidation — transform working memory into permanent architecture.
-
-## Completion Gate
-
-A meditation is INCOMPLETE unless it produces at least one file change:
-
-| Output | Target |
-|---|---|
-| Repeatable process | `.github/instructions/*.instructions.md` |
-| Domain knowledge | `.github/skills/*/SKILL.md` |
-| Workflow template | `.github/prompts/*.prompt.md` |
-| Cross-project pattern | `/memories/` (user memory) |
-| Repo-specific fact | `/memories/repo/` (repo memory) |
-| Fleet insight | `AI-Memory/insights/GI-*.md` |
-
-## 4 Phases (+Fleet Sync)
-
-### 1. Review
-
-- Scan conversation for insights, patterns, breakthroughs, mistakes
-- Extract concepts worth persisting (non-obvious, reusable, easy to forget)
-- Discard noise — not everything deserves permanent storage
-
-### 2. Connect
-
-- Compare findings against existing instructions, skills, and `/memories/`
-- Identify reinforcements (existing knowledge confirmed) and contradictions (flag for review)
-- Look for cross-domain connections — one genuine insight beats three forced ones
-
-### 3. Persist
-
-- Create or update the right file type (see Completion Gate)
-- Ensure frontmatter is complete (`description`, `applyTo`)
-- Link related skills/instructions via naming or frontmatter references
-- Patterns that pass the 3-workspace test → `/memories/` (user memory)
-- Patterns that are repo-specific → `/memories/repo/`
-
-### 3b. Fleet Sync (v8.0.0+)
-
-After local persistence, update fleet-wide storage:
-
-| Condition | Action | Target |
-|-----------|--------|--------|
-| Pattern reusable across projects | Create insight file | `AI-Memory/insights/GI-{topic}-{date}.md` |
-| Solved problem elegantly | Add to registry | `successfulPatterns[]` |
-| Encountered recurring friction | Document issue | `frictionPoints[]` |
-| Every meditation | Update health | `health.lastMeditation`, `meditationCount++` |
-
-Fleet sync is best-effort — if AI-Memory is not accessible (offline, different machine), local updates proceed and fleet updates queue for next sync.
-
-### 4. Validate
-
-Output checklist before concluding:
-
-```text
-✓ File: [path] — [created|updated]
-✓ Related: [skill-a, skill-b] — linked
-✓ Fleet: project-registry.json health updated
-✓ Fleet: [insight file] created (if applicable)
-✓ Summary: [one-line description of what was consolidated]
-```
-
-If new skills/instructions were created, verify they load correctly.
-
-### 5. Content Spot-Check (per session)
-
-Randomly sample 3-5 existing skills. For each, verify:
-
-- Are code examples still accurate? (API changes, deprecated methods)
-- Do version references match current reality?
-- Does advice conflict with any other loaded skill/instruction?
-- Is the skill still relevant to active projects?
-
-Flag issues found — update the skill or note in session memory for follow-up.
+Consolidate learning into permanent architecture. Transform session insights into durable knowledge.
 
 ## When to Meditate
 
-- Session produced reusable knowledge worth persisting
-- Domain learning reached a milestone
-- Cross-domain patterns emerged
-- Working memory feels overloaded (7+ unrecorded insights)
+- End of significant work session
+- After solving a hard problem with reusable insights
+- When user says "let's meditate" or "consolidate what we learned"
+- Before long breaks from a project
+
+## The Ritual
+
+### 1. Review — What happened?
+
+Scan the session:
+
+- What problems did we solve?
+- What mistakes did we make?
+- What patterns emerged?
+- What would help future sessions?
+
+### 2. Extract — What's worth keeping?
+
+| If pattern is... | Create |
+|------------------|--------|
+| Reusable domain knowledge | Skill (`.github/skills/*/SKILL.md`) |
+| Always-on behavior | Instruction (`.github/instructions/*.instructions.md`) |
+| Automatable task | Muscle (`.github/muscles/*.cjs`) |
+| Repeatable workflow | Prompt (`.github/prompts/*.prompt.md`) |
+| User preference | User memory (`/memories/`) |
+| Project convention | Repo memory (`/memories/repo/`) |
+
+### 3. Write — Persist the knowledge
+
+For skills and instructions:
+
+- Use proper frontmatter (type, lifecycle, description, applyTo)
+- Include concrete examples, not just abstractions
+- Add tables with real data (thresholds, trade-offs)
+- Avoid the "capabilities list" anti-pattern
+
+### 4. Chronicle — Record the session
+
+Write to `.github/episodic/meditation-YYYY-MM-DD-<topic>.md`:
+
+```markdown
+# Meditation: <Topic>
+
+**Date**: YYYY-MM-DD
+**Session focus**: What we worked on
+**Duration**: Approximate
+
+## What We Accomplished
+- [Key outcomes]
+
+## Patterns Extracted
+- [What became skills/instructions]
+
+## Lessons Learned
+- [Insights worth remembering]
+
+## Open Questions
+- [What remains unresolved]
+```
+
+### 5. Handoff — Enable session continuity
+
+Write explicit state snapshot at session end:
+
+```markdown
+## Session Handoff
+
+### State
+- **In progress**: [What we were working on]
+- **Blocked by**: [Any blockers or waiting items]
+- **Next action**: [Specific next step]
+
+### Context to reload
+- [Key files to read]
+- [Decisions made this session]
+- [User preferences learned]
+```
+
+At session start, read the most recent meditation and surface: *"Last session we were working on X, blocked by Y. Ready to continue?"*
+
+### 6. Post-Mortem — Learn from failures
+
+When something went wrong, write structured analysis:
+
+```markdown
+## Failure Post-Mortem
+
+### What happened
+[Concrete description of the failure]
+
+### Root cause
+[The actual reason, not the symptom]
+
+### Pattern
+[The generalizable mistake type]
+
+### Prevention
+[How to avoid this class of error]
+```
+
+Tag failures in the chronicle for retrieval: `#failure #<category>`
+
+## Quality Bar
+
+A meditation is complete when:
+
+- [ ] Key patterns are persisted (not just acknowledged)
+- [ ] Chronicle captures session narrative
+- [ ] Session handoff enables continuity
+- [ ] Failures are analyzed, not just noted
+- [ ] INDEX.md updated with new entries
+- [ ] Future Alex can pick up where we left off
+- [ ] No important insight lives only in context window

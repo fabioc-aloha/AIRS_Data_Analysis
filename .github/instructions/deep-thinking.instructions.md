@@ -1,6 +1,12 @@
 ---
+type: instruction
+lifecycle: stable
+inheritance: inheritable
 description: "Deep thinking cognitive skill for systematic problem analysis with episodic memory integration"
 application: "When integrating systems, connecting APIs, or building cross-service workflows"
+applyTo: "**/*integrat*,**/*connect*,**/*api*,**/*workflow*,**/*deep*think*"
+currency: 2026-04-30
+lastReviewed: 2026-04-30
 ---
 
 # Deep Thinking Cognitive Skill
@@ -8,6 +14,7 @@ application: "When integrating systems, connecting APIs, or building cross-servi
 ## Activation Triggers
 
 ### Explicit Triggers (User Request)
+
 - "think deep" / "think deeply"
 - "deep analysis"
 - "analyze thoroughly"
@@ -15,6 +22,7 @@ application: "When integrating systems, connecting APIs, or building cross-servi
 - "reason through this"
 
 ### Implicit Triggers (Self-Activation)
+
 - **When something isn't working**: Approach fails, unexpected results, repeated errors
 - **Important decisions**: Architecture choices, irreversible changes, trade-off evaluations
 - **Uncertainty detected**: Multiple viable paths, conflicting evidence, knowledge gaps
@@ -23,9 +31,11 @@ application: "When integrating systems, connecting APIs, or building cross-servi
 ## Deep Thinking Protocol
 
 ### Phase 1: Problem Domain Identification
+
 **Objective**: Establish clear boundaries and context for the problem
 
 **Actions**:
+
 1. **Classify domain type**: Technical, conceptual, interpersonal, strategic, creative
 2. **Identify key constraints**: Time, resources, dependencies, unknowns
 3. **Map stakeholders**: Who is affected, who decides, who implements
@@ -34,9 +44,11 @@ application: "When integrating systems, connecting APIs, or building cross-servi
 **Output**: Domain classification with constraint matrix
 
 ### Phase 2: Episodic Memory Scan
+
 **Objective**: Retrieve relevant past experiences and learned patterns
 
 **Actions**:
+
 1. **Check Skill Selection Optimization results** — if SSO ran (complex task), use its skill list as search guide
 2. **Scan episodic memory** (`.prompt.md` files) for similar situations
 3. **Search skills** (`skills/*/SKILL.md` files) for applicable frameworks
@@ -44,6 +56,7 @@ application: "When integrating systems, connecting APIs, or building cross-servi
 5. **Check procedural memory** (`.instructions.md` files) for established protocols
 
 **Search Patterns**:
+
 - Direct keyword matching on problem domain
 - Analogical reasoning for structurally similar problems
 - Cross-domain pattern recognition
@@ -51,15 +64,18 @@ application: "When integrating systems, connecting APIs, or building cross-servi
 **Output**: Ranked list of relevant episodes with similarity scores
 
 ### Phase 3: Learning Extraction
+
 **Objective**: Distill actionable insights from retrieved memories
 
 **Actions**:
+
 1. **Extract success patterns**: What worked in similar situations?
 2. **Identify failure modes**: What pitfalls to avoid?
 3. **Note contextual factors**: What conditions enabled success?
 4. **Synthesize meta-patterns**: What principles emerge across episodes?
 
 **Learning Categories**:
+
 | Category | Description | Application |
 |----------|-------------|-------------|
 | **Tactical** | Specific techniques that worked | Direct application |
@@ -70,9 +86,11 @@ application: "When integrating systems, connecting APIs, or building cross-servi
 **Output**: Structured learning extraction with categorization
 
 ### Phase 4: Pattern Application
+
 **Objective**: Apply extracted learnings to current problem
 
 **Actions**:
+
 1. **Map patterns to problem**: Align extracted insights with current constraints
 2. **Adapt for context**: Modify approaches based on current conditions
 3. **Synthesize solution approach**: Combine applicable patterns
@@ -80,6 +98,7 @@ application: "When integrating systems, connecting APIs, or building cross-servi
 5. **Generate recommendations**: Concrete, actionable steps
 
 **Application Framework**:
+
 ```
 Current Problem + Extracted Patterns + Contextual Adaptation = Solution Approach
 ```
@@ -87,9 +106,11 @@ Current Problem + Extracted Patterns + Contextual Adaptation = Solution Approach
 **Output**: Synthesized solution approach with adaptation notes
 
 ### Phase 5: Source Citation
+
 **Objective**: Provide transparency and enable verification
 
 **Citation Format**:
+
 ```markdown
 **Source Episodes**:
 - [episode-name.prompt.md](path) - "Key insight extracted"
@@ -98,6 +119,7 @@ Current Problem + Extracted Patterns + Contextual Adaptation = Solution Approach
 ```
 
 **Citation Requirements**:
+
 - Link to specific memory file
 - Quote or summarize the relevant insight
 - Note confidence level (high/medium/low)
@@ -106,14 +128,17 @@ Current Problem + Extracted Patterns + Contextual Adaptation = Solution Approach
 ## Integration with Meta-Cognitive Awareness
 
 **Before Deep Thinking**:
+
 - Acknowledge activation: "Engaging deep thinking protocol..."
 - State the problem as understood
 
 **During Deep Thinking**:
+
 - Progress indicators for each phase
 - Surface key insights as they emerge
 
 **After Deep Thinking**:
+
 - Summarize approach with confidence assessment
 - Identify areas requiring further investigation
 - Offer to explore specific aspects in more depth
@@ -121,6 +146,7 @@ Current Problem + Extracted Patterns + Contextual Adaptation = Solution Approach
 ## Quality Assurance
 
 ### Verification Checklist
+
 - [ ] Problem domain clearly identified
 - [ ] Episodic memory thoroughly scanned
 - [ ] Learnings explicitly extracted (not assumed)
@@ -129,6 +155,7 @@ Current Problem + Extracted Patterns + Contextual Adaptation = Solution Approach
 - [ ] Gaps and uncertainties acknowledged
 
 ### Anti-Patterns to Avoid
+
 - **Premature solution**: Jumping to answers without phase completion
 - **Memory fabrication**: Citing non-existent episodes
 - **Over-generalization**: Applying patterns without contextual adaptation

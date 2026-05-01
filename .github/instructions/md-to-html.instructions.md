@@ -1,7 +1,12 @@
 ---
+type: instruction
+lifecycle: stable
+inheritance: inheritable
 description: "Convert Markdown to standalone HTML with embedded CSS, images, and Mermaid diagrams"
 application: "When converting Markdown files to HTML for sharing, print, or offline viewing"
 applyTo: "**/*.md"
+currency: 2026-04-30
+lastReviewed: 2026-04-30
 ---
 
 # Markdown to HTML Conversion
