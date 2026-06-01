@@ -12,14 +12,15 @@
 
 The AIRS is positioned as a **diagnostic instrument**, not merely a predictive model. This distinction is academically critical and underpins the argument for retaining all 8 factors including marginal constructs:
 
-| Purpose | Goal | Factor Retention Criterion | Analogy |
-|---------|------|---------------------------|---------|
-| **Predictive** | Maximize R² with fewest predictors | Drop non-significant paths | Regression screening |
+| Purpose        | Goal                                      | Factor Retention Criterion                                           | Analogy                              |
+| -------------- | ----------------------------------------- | -------------------------------------------------------------------- | ------------------------------------ |
+| **Predictive** | Maximize R² with fewest predictors        | Drop non-significant paths                                           | Regression screening                 |
 | **Diagnostic** | Map the full adoption readiness landscape | Retain theoretically meaningful dimensions even if structurally weak | Clinical assessment (MMPI, NEO-PI-R) |
 
 **Key argument**: The Beck Depression Inventory retains somatic items that may not significantly predict overall depression scores in every sample, yet removing them would cripple clinical utility. Similarly, AIRS retains AI Trust (p = .064) and structurally non-significant factors because they identify *specific intervention targets* that a parsimonious model cannot.
 
 **Academic precedent**:
+
 - Clark & Watson (1995) argue that construct coverage should reflect theoretical breadth, not just empirical parsimony
 - Messick (1995) warns that consequential validity (what happens when you *use* the scores) matters as much as structural validity
 - In psychometrics, the "bandwidth-fidelity dilemma" (Cronbach & Gleser, 1965) acknowledges that broader instruments sacrifice signal precision for diagnostic breadth — and this is the right trade-off for organizational assessment
@@ -29,6 +30,7 @@ The AIRS is positioned as a **diagnostic instrument**, not merely a predictive m
 **Statistical argument**: The study is *underpowered* for detecting Trust's effect. A post-hoc power analysis shows that detecting beta = .106 with 80% power at alpha = .05 requires n > 600. The N = 523 yields approximately 68% power — meaning there's a 32% probability of Type II error. Failing to reject H0 does not confirm H0.
 
 **Theoretical argument**: Trust is *uniquely salient* for AI in ways it is not for conventional technology:
+
 - AI systems exhibit opacity, probabilistic outputs, and potential for autonomous action
 - No prior technology category requires users to delegate cognitive authority to the tool
 - The 2025-2026 regulatory environment (EU AI Act compliance timelines, US executive orders on AI safety) makes trust institutionally relevant
@@ -43,12 +45,14 @@ The AIRS is positioned as a **diagnostic instrument**, not merely a predictive m
 The 5 Fornell-Larcker violations and 4 HTMT flags in the PE/HM/PV triad are real and must be disclosed honestly. However, *collapsing* them into fewer factors would destroy diagnostic utility:
 
 **Why they correlate highly**:
+
 - PE (productivity), HM (enjoyment), and PV (value) represent *conceptually adjacent but interventionally distinct* dimensions
 - With 2-item-per-factor scales, measurement error inflates correlations (Marsh et al., 1998)
 - The sample context (US adults evaluating consumer AI tools) may produce range restriction that inflates correlations
 - In the full sample (N = 523), CFA fit actually *improves* (CFI = .979), confirming the 8-factor structure
 
 **Why they should remain separate**:
+
 1. **Interventional distinctness**: An organization scoring low on PV but high on HM needs pricing/ROI messaging, not gamification. Collapsing them into "Positive AI Evaluation" loses this.
 2. **Population sensitivity**: The Academic vs. Professional group differences (HM: Academic beta = 0.449 vs. Professional beta = -0.301) prove these constructs behave *differently* across populations. A merged factor masks this.
 3. **Drift detection**: Over time, as AI matures, PE may become more important while PV declines (or vice versa). Separate measurement enables tracking this evolution.
@@ -90,6 +94,7 @@ The dominant industry theme of early 2026 is the transition from **AI as tool** 
 - Gartner predicts 33% of enterprise software will include agentic capabilities by 2028
 
 **AIRS implication**: This shifts the psychological model fundamentally:
+
 - **Trust** moves from marginal to potentially *dominant*: delegating cognitive work to a chatbot is different from delegating autonomous action to an agent
 - **Voluntariness** becomes critical: agentic AI may be organizationally mandated
 - **Ethical Risk** escalates: agents that act autonomously raise accountability questions
@@ -139,35 +144,35 @@ Microsoft's AETHER framework (Passi et al., 2024) and the New Future of Work Rep
 
 ### 3.1 Hypotheses Derived from 2026 Context
 
-| # | Hypothesis | Rationale | AIRS Constructs |
-|---|-----------|-----------|-----------------|
-| H9 | **Agentic Trust Escalation**: As AI transitions from tool to agent, Trust will shift from marginal (beta ~.10) to dominant predictor (beta > .30) of BI | Agentic AI requires delegating autonomous action, fundamentally changing the trust equation | TR → BI, moderated by AI autonomy level |
-| H10 | **Open-Source Value Reframing**: In free/open-source AI contexts, PV's meaning shifts from monetary cost to time/effort investment, maintaining its predictive dominance through semantic evolution | DeepSeek R1 and open models eliminate monetary cost but not learning/integration costs | PV → BI, contexts: paid vs. free AI |
-| H11 | **Regulatory Trust Amplification**: In regulated environments (EU AI Act), Trust → BI strengthens while HM → BI weakens | Compliance frameworks make trust institutionally salient while constraining exploratory use | TR × Regulatory_Context → BI |
-| H12 | **AI Literacy Mediation**: Individual AI literacy mediates FC → BI and PE → BI, explaining why these paths are non-significant at the aggregate level | Infrastructure and perceived usefulness may only translate to adoption for literate users | FC → AI_Literacy → BI; PE → AI_Literacy → BI |
-| H13 | **Acceptance-Adoption Divergence**: As AI social discourse becomes more negative, the gap between AIRS-predicted BI and actual adoption behavior will widen | External pressures increasingly override personal attitudes (Baumann et al., 2025) | BI → Behavior gap, moderated by social discourse valence |
-| H14 | **Temporal Construct Drift**: The relative importance of AIRS factors (PE, PV, HM, TR) will shift predictably over a 12-month period as AI matures in the organizational context | Technology maturation changes what users evaluate; PV dominance may be historically contingent | Longitudinal panel: AIRS factor beta trajectories |
-| H15 | **Appropriate Reliance Calibration**: Individuals with higher PV scores exhibit better-calibrated reliance on AI (neither over- nor under-reliance) compared to those with high HM scores | Value-oriented adopters engage in more deliberate cost-benefit analysis of AI outputs; enjoyment-oriented adopters may over-rely | PV, HM → Reliance Calibration Quality |
+| #   | Hypothesis                                                                                                                                                                                          | Rationale                                                                                                                        | AIRS Constructs                                          |
+| --- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------- |
+| H9  | **Agentic Trust Escalation**: As AI transitions from tool to agent, Trust will shift from marginal (beta ~.10) to dominant predictor (beta > .30) of BI                                             | Agentic AI requires delegating autonomous action, fundamentally changing the trust equation                                      | TR → BI, moderated by AI autonomy level                  |
+| H10 | **Open-Source Value Reframing**: In free/open-source AI contexts, PV's meaning shifts from monetary cost to time/effort investment, maintaining its predictive dominance through semantic evolution | DeepSeek R1 and open models eliminate monetary cost but not learning/integration costs                                           | PV → BI, contexts: paid vs. free AI                      |
+| H11 | **Regulatory Trust Amplification**: In regulated environments (EU AI Act), Trust → BI strengthens while HM → BI weakens                                                                             | Compliance frameworks make trust institutionally salient while constraining exploratory use                                      | TR × Regulatory_Context → BI                             |
+| H12 | **AI Literacy Mediation**: Individual AI literacy mediates FC → BI and PE → BI, explaining why these paths are non-significant at the aggregate level                                               | Infrastructure and perceived usefulness may only translate to adoption for literate users                                        | FC → AI_Literacy → BI; PE → AI_Literacy → BI             |
+| H13 | **Acceptance-Adoption Divergence**: As AI social discourse becomes more negative, the gap between AIRS-predicted BI and actual adoption behavior will widen                                         | External pressures increasingly override personal attitudes (Baumann et al., 2025)                                               | BI → Behavior gap, moderated by social discourse valence |
+| H14 | **Temporal Construct Drift**: The relative importance of AIRS factors (PE, PV, HM, TR) will shift predictably over a 12-month period as AI matures in the organizational context                    | Technology maturation changes what users evaluate; PV dominance may be historically contingent                                   | Longitudinal panel: AIRS factor beta trajectories        |
+| H15 | **Appropriate Reliance Calibration**: Individuals with higher PV scores exhibit better-calibrated reliance on AI (neither over- nor under-reliance) compared to those with high HM scores           | Value-oriented adopters engage in more deliberate cost-benefit analysis of AI outputs; enjoyment-oriented adopters may over-rely | PV, HM → Reliance Calibration Quality                    |
 
 ### 3.2 Hypotheses Derived from Measurement Refinement
 
-| # | Hypothesis | Rationale | Design |
-|---|-----------|-----------|--------|
-| H16 | **Anxiety Sub-Dimensionality**: AI Anxiety comprises at least 3 distinct dimensions — avoidance anxiety, obsolescence anxiety (Kim, 2025), and anticipatory anxiety (Frenkenberg & Hochman, 2025) — each with differential effects on BI | Two-item alpha = .301 proves multi-dimensionality; 2025-2026 literature specifies the dimensions | Develop 9-12 item AX scale (3 items x 3-4 dimensions) |
-| H17 | **Explainability as Trust Antecedent**: Explainability does not directly predict BI but operates through Trust as a mediator | XAI research shows explainability builds trust, which then drives adoption | EX → TR → BI (mediation) |
-| H18 | **Ethical Risk as BI Inhibitor**: Ethical Risk has a negative direct effect on BI that is additive (not redundant) to low Trust | Privacy, bias, and job displacement concerns represent distinct risk dimensions beyond trust | ER → BI (negative), controlling for TR |
-| H19 | **Voluntariness × Trust Interaction**: In mandatory adoption contexts, Trust becomes a stronger predictor because users cannot exit; in voluntary contexts, low trust simply leads to non-adoption | Mandatory use removes the "vote with your feet" option, making trust the primary coping mechanism | VO × TR → BI (interaction) |
-| H20 | **3-Item Scale Improvement**: Expanding from 2 to 3 items per factor will resolve discriminant validity violations in the PE/HM/PV triad while maintaining fit | Measurement error from 2-item scales inflates correlations; 3 items provide enough variance for separation | 24-item AIRS CFA comparison: 2-item vs. 3-item |
+| #   | Hypothesis                                                                                                                                                                                                                               | Rationale                                                                                                  | Design                                                |
+| --- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------- | ----------------------------------------------------- |
+| H16 | **Anxiety Sub-Dimensionality**: AI Anxiety comprises at least 3 distinct dimensions — avoidance anxiety, obsolescence anxiety (Kim, 2025), and anticipatory anxiety (Frenkenberg & Hochman, 2025) — each with differential effects on BI | Two-item alpha = .301 proves multi-dimensionality; 2025-2026 literature specifies the dimensions           | Develop 9-12 item AX scale (3 items x 3-4 dimensions) |
+| H17 | **Explainability as Trust Antecedent**: Explainability does not directly predict BI but operates through Trust as a mediator                                                                                                             | XAI research shows explainability builds trust, which then drives adoption                                 | EX → TR → BI (mediation)                              |
+| H18 | **Ethical Risk as BI Inhibitor**: Ethical Risk has a negative direct effect on BI that is additive (not redundant) to low Trust                                                                                                          | Privacy, bias, and job displacement concerns represent distinct risk dimensions beyond trust               | ER → BI (negative), controlling for TR                |
+| H19 | **Voluntariness × Trust Interaction**: In mandatory adoption contexts, Trust becomes a stronger predictor because users cannot exit; in voluntary contexts, low trust simply leads to non-adoption                                       | Mandatory use removes the "vote with your feet" option, making trust the primary coping mechanism          | VO × TR → BI (interaction)                            |
+| H20 | **3-Item Scale Improvement**: Expanding from 2 to 3 items per factor will resolve discriminant validity violations in the PE/HM/PV triad while maintaining fit                                                                           | Measurement error from 2-item scales inflates correlations; 3 items provide enough variance for separation | 24-item AIRS CFA comparison: 2-item vs. 3-item        |
 
 ### 3.3 Hypotheses for Practitioner-Oriented Research
 
-| # | Hypothesis | Practitioner Value | Study Design |
-|---|-----------|-------------------|--------------|
-| H21 | **Segment-Specific Intervention Effectiveness**: The 3 empirical clusters (Enthusiasts, Moderate Users, Skeptics) respond differentially to targeted interventions | Organizations can allocate training budgets more efficiently | RCT: 3 intervention types × 3 segments |
-| H22 | **AIRS Score Predicts Adoption Outcomes**: Baseline AIRS composite scores predict actual AI tool adoption rates at 6-month follow-up with r > .50 | Validates AIRS as a practical pre-deployment assessment | Longitudinal: AIRS baseline → 6-month behavior |
-| H23 | **Cross-Domain Transfer**: Individuals with high AIRS scores for one AI domain (e.g., writing assistants) show elevated adoption readiness for adjacent domains (e.g., coding assistants) but not distant domains (e.g., autonomous vehicles) | Training investment in one AI domain may generalize | Within-person design: AIRS across 3 AI domain contexts |
-| H24 | **Industry Moderation**: AIRS factor weights differ systematically by industry — PV dominates in cost-sensitive sectors (education, SMB), Trust dominates in high-stakes sectors (healthcare, finance, legal) | Enables industry-specific deployment of AIRS | Multi-sector sample: 200+ per industry × 4 industries |
-| H25 | **Leadership Cascade Effect**: Leader AIRS profiles predict team adoption rates above and beyond individual team member scores | Leaders' adoption readiness influences organizational climate | Multi-level model: leader AIRS → team adoption |
+| #   | Hypothesis                                                                                                                                                                                                                                    | Practitioner Value                                            | Study Design                                           |
+| --- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------- | ------------------------------------------------------ |
+| H21 | **Segment-Specific Intervention Effectiveness**: The 3 empirical clusters (Enthusiasts, Moderate Users, Skeptics) respond differentially to targeted interventions                                                                            | Organizations can allocate training budgets more efficiently  | RCT: 3 intervention types × 3 segments                 |
+| H22 | **AIRS Score Predicts Adoption Outcomes**: Baseline AIRS composite scores predict actual AI tool adoption rates at 6-month follow-up with r > .50                                                                                             | Validates AIRS as a practical pre-deployment assessment       | Longitudinal: AIRS baseline → 6-month behavior         |
+| H23 | **Cross-Domain Transfer**: Individuals with high AIRS scores for one AI domain (e.g., writing assistants) show elevated adoption readiness for adjacent domains (e.g., coding assistants) but not distant domains (e.g., autonomous vehicles) | Training investment in one AI domain may generalize           | Within-person design: AIRS across 3 AI domain contexts |
+| H24 | **Industry Moderation**: AIRS factor weights differ systematically by industry — PV dominates in cost-sensitive sectors (education, SMB), Trust dominates in high-stakes sectors (healthcare, finance, legal)                                 | Enables industry-specific deployment of AIRS                  | Multi-sector sample: 200+ per industry × 4 industries  |
+| H25 | **Leadership Cascade Effect**: Leader AIRS profiles predict team adoption rates above and beyond individual team member scores                                                                                                                | Leaders' adoption readiness influences organizational climate | Multi-level model: leader AIRS → team adoption         |
 
 ---
 
@@ -176,6 +181,7 @@ Microsoft's AETHER framework (Passi et al., 2024) and the New Future of Work Rep
 ### 4.1 Immediate Priority: AIRS-28 Development (2026-2027)
 
 Expand from 16 to 28 items to:
+
 - Add a 3rd item to each existing factor (8 factors × 3 items = 24 items)
 - Reintroduce AI Anxiety as a 4-item sub-dimensional scale (avoidance, obsolescence, anticipatory, FOMO)
 - Expected outcome: Resolve discriminant validity violations, recover AX construct, maintain excellent fit
@@ -185,6 +191,7 @@ Expand from 16 to 28 items to:
 ### 4.2 Near-Term: Longitudinal Panel Study (2026-2027)
 
 Administer AIRS at 3 time points (baseline, 6 months, 12 months) to:
+
 - Test H14 (Temporal Construct Drift) — track how factor importance evolves
 - Test H22 (AIRS Score Predicts Adoption Outcomes) — validate predictive utility
 - Capture the pre-agentic to agentic AI transition in real time
@@ -195,6 +202,7 @@ Administer AIRS at 3 time points (baseline, 6 months, 12 months) to:
 ### 4.3 Medium-Term: Intervention Effectiveness RCT (2027)
 
 Design segment-specific interventions based on the 3-cluster typology and test effectiveness:
+
 - **Enthusiasts**: Champion/mentor programs, early access, advanced training
 - **Moderate Users**: ROI demonstrations, use-case targeting, value-focused messaging
 - **Skeptics**: Graduated exposure protocols, psychological safety, anxiety reduction, peer support
@@ -204,6 +212,7 @@ Design segment-specific interventions based on the 3-cluster typology and test e
 ### 4.4 Medium-Term: Cross-Cultural Validation (2027-2028)
 
 Replicate AIRS in:
+
 - **Collectivist cultures** (East Asia, Latin America): SI may become dominant predictor
 - **Regulatory-intensive environments** (EU): TR may strengthen significantly
 - **Developing economies**: PV meaning may differ (access cost vs. quality value)
@@ -214,6 +223,7 @@ Replicate AIRS in:
 ### 4.5 Long-Term: AIRS Scoring System and Organizational Dashboard (2028+)
 
 Develop a composite scoring algorithm with:
+
 - Individual readiness profiles (radar charts across 8+ factors)
 - Organizational readiness heat maps (aggregate by team, department, role)
 - Normative percentile rankings (vs. industry and population benchmarks)
@@ -258,28 +268,29 @@ The user's instinct — to value diagnostic and exploratory breadth over statist
 
 ---
 
-*This document provides strategic recommendations. Integration into the thesis manuscript should follow the established correction workflow in FACT_CHECK_AUDIT.md and CORRECTION_TRACKER.md.*
+*This document provides strategic recommendations. The pre-defense correction workflow (FACT_CHECK_AUDIT.md and CORRECTION_TRACKER.md) is archived at `airs_archive/editorial-workflow/`.*
 
 ---
 
-## Cross-Reference: FACT_CHECK_AUDIT.md Reconciliation
+## Cross-Reference: Fact-Check Audit Reconciliation
 
-✅ **ALL ITEMS IMPLEMENTED** (March 12, 2026)
+✅ **ALL ITEMS IMPLEMENTED** (March 12, 2026; defense passed April 2026)
 
 The following audit discrepancies have been resolved by decisions in this document and applied to the thesis:
 
-| Audit Item | Decision | This Document | Thesis Status |
-|---|---|---|---|
-| **D1** (SRMR values wrong) | Replace with lavaan values | — | ✅ Ch4 + Ch5 fixed |
-| **D2** (R² = .852 wrong) | Replace with .897 | — | ✅ Ch4 fixed |
-| **D3** (Bootstrap CIs fabricated) | Option A: z-test significance + bootstrap caveat | §1.1 Diagnostic vs. Predictive | ✅ Table 4.10 footnoted, Table 4.11b added |
-| **D4** (4-cluster typology) | 3-cluster rewrite | §4.3 Intervention RCT uses 3 segments | ✅ All chapters fixed |
-| **D5** (Discriminant validity overclaim) | Option A + diagnostic framing | §1.3 PE/HM/PV Triad Defense | ✅ Ch4 rewritten, Ch5 §5.2.4 added |
-| **D6** (Per-group fits wrong) | Replace with lavaan values | — | ✅ Table 4.9 rewritten |
-| **D7** (AI Trust not supported) | Option A + enhanced: diagnostic inclusion | §1.2 Trust Retention Defense | ✅ Ch5 §5.2.2, Ch6 §6.2.3/§6.3.1/§6.4.2 |
-| **D8** (p = .009 vs .007) | Replace with .007 | — | ✅ All 8 locations fixed |
+| Audit Item                               | Decision                                         | This Document                         | Thesis Status                              |
+| ---------------------------------------- | ------------------------------------------------ | ------------------------------------- | ------------------------------------------ |
+| **D1** (SRMR values wrong)               | Replace with lavaan values                       | —                                     | ✅ Ch4 + Ch5 fixed                         |
+| **D2** (R² = .852 wrong)                 | Replace with .897                                | —                                     | ✅ Ch4 fixed                               |
+| **D3** (Bootstrap CIs fabricated)        | Option A: z-test significance + bootstrap caveat | §1.1 Diagnostic vs. Predictive        | ✅ Table 4.10 footnoted, Table 4.11b added |
+| **D4** (4-cluster typology)              | 3-cluster rewrite                                | §4.3 Intervention RCT uses 3 segments | ✅ All chapters fixed                      |
+| **D5** (Discriminant validity overclaim) | Option A + diagnostic framing                    | §1.3 PE/HM/PV Triad Defense           | ✅ Ch4 rewritten, Ch5 §5.2.4 added         |
+| **D6** (Per-group fits wrong)            | Replace with lavaan values                       | —                                     | ✅ Table 4.9 rewritten                     |
+| **D7** (AI Trust not supported)          | Option A + enhanced: diagnostic inclusion        | §1.2 Trust Retention Defense          | ✅ Ch5 §5.2.2, Ch6 §6.2.3/§6.3.1/§6.4.2    |
+| **D8** (p = .009 vs .007)                | Replace with .007                                | —                                     | ✅ All 8 locations fixed                   |
 
 **New material added to thesis** (from this document):
+
 - ✅ Ch5 §5.2.3: Diagnostic purpose framing (from §6, paragraph 1)
 - ✅ Ch5 §5.2.4: Discriminant validity framing (from §6, paragraph 2)
 - ✅ Ch6 §6.7.0: 2026 contextual developments (from §2)
