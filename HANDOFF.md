@@ -2,9 +2,9 @@
 
 Last updated: 2026-06-01
 
-## Project status: CLOSED — public, replication-ready
+## Project status: CLOSED — replication-ready
 
-The AIRS dissertation was defended in April 2026, the DBA was conferred by Touro University Worldwide, and this repo is now the canonical public artifact for academic replication. No further development planned in this repo.
+The AIRS dissertation was defended in April 2026, the DBA was conferred by Touro University Worldwide, and this repo is the canonical artifact for academic replication. No further development planned.
 
 ## Recent shipped (2026-06-01 session)
 
@@ -12,17 +12,14 @@ The AIRS dissertation was defended in April 2026, the DBA was conferred by Touro
 | --------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `84ffade` | `[behaviour] chore: upgrade Alex_ACT_Edition v1.2.0 -> v3.2.1` (fresh bootstrap after upstream sync-contract change; 148 Edition files + 3 heir-owned templates + recovered episodic) |
 | `330d8d9` | `docs: reflect DBA defense + conferral (April 2026)` (README + 6 corollary docs)                                                                                                      |
-| `dacaf86` | `chore: move planning artifacts to private AIRS_Future_Research repo` (7 files migrated; private companion repo created)                                                              |
+| `dacaf86` | `chore: move planning artifacts to AIRS_Future_Research repo` (7 files migrated to a separate sibling repository)                                                                     |
 | `8f9dcb4` | `chore: post-defense root cleanup + domain-knowledge triage` (17→9 root files; 25→15 DK files; 10 pre-Edition artifacts retired to archive)                                           |
 
 Plus this meditation commit, if you're reading after it lands.
 
-## Public + private split
+## Sibling repository
 
-| Repo                                                                           | Visibility | Contents                                                                                                                                                     |
-| ------------------------------------------------------------------------------ | ---------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| [`AIRS_Data_Analysis`](https://github.com/fabioc-aloha/AIRS_Data_Analysis)     | Public     | Final dissertation, validated AIRS-16 instrument, analysis pipeline (11 notebooks), defense slides, field-deployment guides, data dictionary, IRB approval   |
-| [`AIRS_Future_Research`](https://github.com/fabioc-aloha/AIRS_Future_Research) | Private    | `CONFIDENTIAL_RESEARCH_ROADMAP.md` (proprietary scoring algorithm, ORI methodology, normative benchmarking plan), pre-defense planning drafts, working notes |
+Pre-defense planning materials, the proprietary scoring algorithm, the organizational readiness index methodology, and the future-research roadmap live at `../AIRS_Future_Research` (separate sibling repository, not part of this dissertation artifact). The dissertation appendices in this repo contain the canonical final versions of everything needed for academic replication.
 
 ## Replication readiness (assessed 2026-06-01)
 
@@ -39,7 +36,7 @@ Plus this meditation commit, if you're reading after it lands.
 
 ## Open items (optional future-proofing)
 
-These are **not blockers**. The repo is publication-ready as-is.
+These are **not blockers**. The repo is replication-ready as-is.
 
 - [ ] `pip freeze > requirements.lock` for bit-exact Python reproduction
 - [ ] `renv::snapshot()` to pin R packages (lavaan, semTools, etc.)
@@ -50,9 +47,8 @@ These are **not blockers**. The repo is publication-ready as-is.
 If a future session opens this repo:
 
 1. **Don't add new features.** Project is closed. Edits should be limited to (a) replication-support fixes if researchers report issues, (b) typo corrections, (c) citation updates as papers cite this work.
-2. **Read this file first** — the public/private split is the most important fact.
-3. **Confidential migration is non-recoverable**. `CONFIDENTIAL_RESEARCH_ROADMAP.md` was on public `main` from 2026-02-21 to 2026-06-01 (~3 months). History was not scrubbed by explicit decision. Don't re-litigate.
-4. **Sibling private repo lives at `../AIRS_Future_Research`** — clone it if you need access to the IP roadmap.
+2. **Read this file first** — the sibling-repository note above is the most important fact.
+3. **Sibling repo at `../AIRS_Future_Research`** — clone it if you need access to the IP roadmap or pre-defense planning materials.
 
 ## Brain state
 
