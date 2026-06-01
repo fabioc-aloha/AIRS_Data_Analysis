@@ -26,26 +26,26 @@ The **AI Readiness Scale for Individuals (AIRS-16)** is a validated 16-item psyc
 
 ### Instrument Overview
 
-| Metric | Value |
-| ------ | ----- |
-| Items | 16 (2 per construct) |
-| Constructs | 8 (extended UTAUT2) |
-| Time to Complete | 3-5 minutes |
-| Response Scale | 5-point Likert |
-| Scoring | AIRS Score (8-40) |
+| Metric           | Value                |
+| ---------------- | -------------------- |
+| Items            | 16 (2 per construct) |
+| Constructs       | 8 (extended UTAUT2)  |
+| Time to Complete | 3-5 minutes          |
+| Response Scale   | 5-point Likert       |
+| Scoring          | AIRS Score (8-40)    |
 
 ### The 8 AIRS Constructs
 
-| # | Construct | Abbreviation | Definition |
-| - | --------- | ------------ | ---------- |
-| 1 | Performance Expectancy | PE | Belief AI improves productivity |
-| 2 | Effort Expectancy | EE | Perceived ease of AI use |
-| 3 | Social Influence | SI | Influence of peers/leaders on AI use |
-| 4 | Facilitating Conditions | FC | Available support and resources |
-| 5 | Hedonic Motivation | HM | Enjoyment from using AI |
-| 6 | Price Value | PV | Perceived benefit vs. cost/effort |
-| 7 | Habit | HB | Automaticity in AI tool use |
-| 8 | Trust in AI | TR | Confidence in AI reliability/accuracy |
+| #   | Construct               | Abbreviation | Definition                            |
+| --- | ----------------------- | ------------ | ------------------------------------- |
+| 1   | Performance Expectancy  | PE           | Belief AI improves productivity       |
+| 2   | Effort Expectancy       | EE           | Perceived ease of AI use              |
+| 3   | Social Influence        | SI           | Influence of peers/leaders on AI use  |
+| 4   | Facilitating Conditions | FC           | Available support and resources       |
+| 5   | Hedonic Motivation      | HM           | Enjoyment from using AI               |
+| 6   | Price Value             | PV           | Perceived benefit vs. cost/effort     |
+| 7   | Habit                   | HB           | Automaticity in AI tool use           |
+| 8   | Trust in AI             | TR           | Confidence in AI reliability/accuracy |
 
 ---
 
@@ -55,16 +55,16 @@ The **AI Readiness Scale for Individuals (AIRS-16)** is a validated 16-item psyc
 
 **Surprising finding**: Traditional UTAUT predictors (PE, EE, FC, HB) do NOT significantly predict AI Behavioral Intention when all factors are considered together.
 
-| Predictor | β Weight | p-value | Significant? |
-| --------- | -------- | ------- | ------------ |
-| **Price Value (PV)** | **0.505** | **< .001** | **✓ YES** |
-| **Hedonic Motivation (HM)** | **0.217** | **= .014** | **✓ YES** |
-| **Social Influence (SI)** | **0.136** | **= .024** | **✓ YES** |
-| Performance Expectancy (PE) | 0.054 | = .244 | ✗ No |
-| Effort Expectancy (EE) | 0.024 | = .503 | ✗ No |
-| Facilitating Conditions (FC) | -0.003 | = .924 | ✗ No |
-| Habit (HB) | 0.042 | = .199 | ✗ No |
-| Trust in AI (TR) | 0.037 | = .345 | ✗ No |
+| Predictor                    | β Weight  | p-value    | Significant? |
+| ---------------------------- | --------- | ---------- | ------------ |
+| **Price Value (PV)**         | **0.505** | **< .001** | **✓ YES**    |
+| **Hedonic Motivation (HM)**  | **0.217** | **= .014** | **✓ YES**    |
+| **Social Influence (SI)**    | **0.136** | **= .024** | **✓ YES**    |
+| Performance Expectancy (PE)  | 0.054     | = .244     | ✗ No         |
+| Effort Expectancy (EE)       | 0.024     | = .503     | ✗ No         |
+| Facilitating Conditions (FC) | -0.003    | = .924     | ✗ No         |
+| Habit (HB)                   | 0.042     | = .199     | ✗ No         |
+| Trust in AI (TR)             | 0.037     | = .345     | ✗ No         |
 
 **Implication**: Organizations should focus on:
 
@@ -74,21 +74,21 @@ The **AI Readiness Scale for Individuals (AIRS-16)** is a validated 16-item psyc
 
 ### 2. Three AI Readiness Typologies
 
-| AIRS Score | Typology | % of Sample | Behavioral Profile |
-| --------- | -------- | ----------- | ----------------- |
-| **≤ 20** | AI Skeptics | 17% | Low intention, significant barriers |
-| **21-30** | Moderate Users | 67% | Selective adoption, pragmatic |
-| **> 30** | AI Enthusiasts | 16% | High intention, proactive adoption |
+| AIRS Score | Typology       | % of Sample | Behavioral Profile                  |
+| ---------- | -------------- | ----------- | ----------------------------------- |
+| **≤ 20**   | AI Skeptics    | 17%         | Low intention, significant barriers |
+| **21-30**  | Moderate Users | 67%         | Selective adoption, pragmatic       |
+| **> 30**   | AI Enthusiasts | 16%         | High intention, proactive adoption  |
 
 **Classification Accuracy**: 94.5% using simple 20/30 cut-points
 
 ### 3. The Movable Middle Opportunity
 
-| Segment | % Market | Investment Priority |
-| ------- | -------- | ------------------- |
-| AI Enthusiasts | 16% | Low — already converted |
-| **Cautious + Moderate** | **67%** | **HIGH — most movable** |
-| AI Skeptics | 17% | Low-Medium — high effort required |
+| Segment                 | % Market | Investment Priority               |
+| ----------------------- | -------- | --------------------------------- |
+| AI Enthusiasts          | 16%      | Low — already converted           |
+| **Cautious + Moderate** | **67%**  | **HIGH — most movable**           |
+| AI Skeptics             | 17%      | Low-Medium — high effort required |
 
 **Strategic insight**: Two-thirds of users are persuadable with targeted interventions.
 
@@ -98,26 +98,26 @@ The **AI Readiness Scale for Individuals (AIRS-16)** is a validated 16-item psyc
 
 ### Model Fit Statistics
 
-| Metric | Value | Threshold | Status |
-| ------ | ----- | --------- | ------ |
-| CFI | 0.975 | > 0.95 | ✓ Excellent |
-| TLI | 0.960 | > 0.95 | ✓ Excellent |
-| RMSEA | 0.065 | < 0.08 | ✓ Good |
-| R² (BI) | 0.852 | — | 85.2% variance explained |
-| AIRS-BI Correlation | 0.876 | > 0.70 | ✓ Strong |
+| Metric              | Value | Threshold | Status                   |
+| ------------------- | ----- | --------- | ------------------------ |
+| CFI                 | 0.975 | > 0.95    | ✓ Excellent              |
+| TLI                 | 0.960 | > 0.95    | ✓ Excellent              |
+| RMSEA               | 0.065 | < 0.08    | ✓ Good                   |
+| R² (BI)             | 0.852 | —         | 85.2% variance explained |
+| AIRS-BI Correlation | 0.876 | > 0.70    | ✓ Strong                 |
 
 ### Reliability (Internal Consistency)
 
-| Construct | Cronbach's α | CR | AVE |
+| Construct | Cronbach's α | CR   | AVE  |
 | --------- | ------------ | ---- | ---- |
-| PE | .803 | .804 | .673 |
-| EE | .859 | .861 | .756 |
-| SI | .752 | .763 | .621 |
-| FC | .743 | .750 | .601 |
-| HM | .864 | .865 | .763 |
-| PV | .883 | .883 | .790 |
-| HB | .909 | .909 | .833 |
-| TR | .891 | .891 | .804 |
+| PE        | .803         | .804 | .673 |
+| EE        | .859         | .861 | .756 |
+| SI        | .752         | .763 | .621 |
+| FC        | .743         | .750 | .601 |
+| HM        | .864         | .865 | .763 |
+| PV        | .883         | .883 | .790 |
+| HB        | .909         | .909 | .833 |
+| TR        | .891         | .891 | .804 |
 
 All constructs exceed minimum thresholds: α ≥ .70, CR ≥ .70, AVE ≥ .50.
 
@@ -127,12 +127,12 @@ All constructs exceed minimum thresholds: α ≥ .70, CR ≥ .70, AVE ≥ .50.
 
 Four constructs were tested but excluded due to poor reliability:
 
-| Construct | α | Reason for Exclusion |
-| --------- | - | ------------------- |
-| Voluntariness (VO) | 0.28 | Very poor reliability |
-| Experience (EX) | 0.63 | Below threshold |
-| Ethical Reservations (ER) | 0.65 | Below threshold |
-| AI Anxiety (AX) | 0.64 | Below threshold |
+| Construct                 | α    | Reason for Exclusion  |
+| ------------------------- | ---- | --------------------- |
+| Voluntariness (VO)        | 0.28 | Very poor reliability |
+| Experience (EX)           | 0.63 | Below threshold       |
+| Ethical Reservations (ER) | 0.65 | Below threshold       |
+| AI Anxiety (AX)           | 0.64 | Below threshold       |
 
 **Note**: These may be valid constructs but required more item development.
 
@@ -187,20 +187,20 @@ Range: 8 to 40
 
 ### Classification Rules
 
-| Score | Classification | Action |
-| ----- | ------------- | ------ |
-| 8-20 | AI Skeptic | High-touch, trust-building |
-| 21-30 | Moderate User | Value demonstration, social proof |
-| 31-40 | AI Enthusiast | Advanced features, leadership roles |
+| Score | Classification | Action                              |
+| ----- | -------------- | ----------------------------------- |
+| 8-20  | AI Skeptic     | High-touch, trust-building          |
+| 21-30 | Moderate User  | Value demonstration, social proof   |
+| 31-40 | AI Enthusiast  | Advanced features, leadership roles |
 
 ### Key Predictor Weights
 
-| Factor | β | Priority |
-| ------ | - | -------- |
-| Price Value | 0.505 | #1 — Focus here |
-| Hedonic Motivation | 0.170 | #2 — Make it enjoyable |
-| Social Influence | 0.114 | #3 — Leverage champions |
-| All others | < 0.06 | Not direct predictors |
+| Factor             | β      | Priority                |
+| ------------------ | ------ | ----------------------- |
+| Price Value        | 0.505  | #1 — Focus here         |
+| Hedonic Motivation | 0.170  | #2 — Make it enjoyable  |
+| Social Influence   | 0.114  | #3 — Leverage champions |
+| All others         | < 0.06 | Not direct predictors   |
 
 ---
 
@@ -236,13 +236,14 @@ Range: 8 to 40
 ## Citation
 
 ```bibtex
-@phdthesis{correa2025airs,
+@phdthesis{correa2026airs,
   author = {Correa, Fabio},
-  title = {Development and Validation of the AI Readiness Scale for Individuals (AIRS-16)},
-  school = {[University Name]},
-  year = {2025},
-  type = {DBA Thesis},
-  note = {N = 523, R² = .852}
+  title  = {Development and Validation of the {AI} Readiness Scale for Individuals ({AIRS-16})},
+  school = {Touro University Worldwide},
+  year   = {2026},
+  month  = {April},
+  type   = {Doctor of Business Administration dissertation},
+  note   = {N = 523, R² = .852}
 }
 ```
 

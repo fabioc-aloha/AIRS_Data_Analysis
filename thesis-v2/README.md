@@ -1,4 +1,4 @@
-<!-- markdownlint-disable MD033 MD041 -->
+<!-- markdownlint-disable MD033 MD036 MD041 -->
 <div align="center">
 
 # 📄 AIRS Thesis v2
@@ -13,26 +13,26 @@
 *Modern Pandoc/XeLaTeX build system for the AI Readiness Scale dissertation*
 
 </div>
-<!-- markdownlint-enable MD033 MD041 -->
+<!-- markdownlint-enable MD033 MD036 MD041 -->
 
 ---
 
 ## ✨ Features
 
-| Feature | Description |
-|:--------|:------------|
-| 📑 **APA 7 Formatting** | Running headers, figure/table captions, double spacing, 1" margins |
-| 📖 **Smart Pagination** | Section breaks, widow/orphan control, list grouping |
-| 📊 **Mermaid Diagrams** | Auto-extraction and rendering from markdown code blocks |
-| 📝 **Modular Front Matter** | Separate files for title, approval, abstract, etc. |
-| 🔢 **Page Numbering** | Roman numerals (front matter) → Arabic (chapters) |
-| 👁️ **Watch Mode** | Auto-rebuild on file changes |
+| Feature                     | Description                                                        |
+| --------------------------- | ------------------------------------------------------------------ |
+| 📑 **APA 7 Formatting**     | Running headers, figure/table captions, double spacing, 1" margins |
+| 📖 **Smart Pagination**     | Section breaks, widow/orphan control, list grouping                |
+| 📊 **Mermaid Diagrams**     | Auto-extraction and rendering from markdown code blocks            |
+| 📝 **Modular Front Matter** | Separate files for title, approval, abstract, etc.                 |
+| 🔢 **Page Numbering**       | Roman numerals (front matter) → Arabic (chapters)                  |
+| 👁️ **Watch Mode**           | Auto-rebuild on file changes                                       |
 
 ---
 
 ## 📁 Structure
 
-```
+```text
 thesis-v2/
 ├── manuscript/
 │   ├── front-matter/        # 00_title.md through 06_toc_setup.md
@@ -53,11 +53,11 @@ thesis-v2/
 
 ### Prerequisites
 
-| Tool | Version | Install |
-|:-----|:--------|:--------|
-| Pandoc | 2.19+ | [pandoc.org](https://pandoc.org/installing.html) |
-| XeLaTeX | Latest | [MiKTeX](https://miktex.org/) or [TeX Live](https://www.tug.org/texlive/) |
-| Mermaid CLI | Latest | `npm install -g @mermaid-js/mermaid-cli` |
+| Tool        | Version | Install                                                                   |
+| ----------- | ------- | ------------------------------------------------------------------------- |
+| Pandoc      | 2.19+   | [pandoc.org](https://pandoc.org/installing.html)                          |
+| XeLaTeX     | Latest  | [MiKTeX](https://miktex.org/) or [TeX Live](https://www.tug.org/texlive/) |
+| Mermaid CLI | Latest  | `npm install -g @mermaid-js/mermaid-cli`                                  |
 
 ### Build Commands
 
@@ -74,29 +74,32 @@ thesis-v2/
 
 ## 📋 APA 7 Compliance
 
-| Element | Implementation |
-|:--------|:---------------|
-| **Running header** | Short title (left), page number (right) |
-| **Figure captions** | **Figure X.** *Title in italics* (below) |
-| **Table captions** | **Table X.** *Title in italics* (above) |
-| **Font** | Times New Roman, 12pt |
-| **Spacing** | Double (single in abstract and tables) |
-| **Margins** | 1 inch all sides |
-| **Page numbers** | Roman (i hidden, ii-vi shown, vii+ TOC), Arabic (1+ body) |
+| Element             | Implementation                                            |
+| ------------------- | --------------------------------------------------------- |
+| **Running header**  | Short title (left), page number (right)                   |
+| **Figure captions** | **Figure X.** *Title in italics* (below)                  |
+| **Table captions**  | **Table X.** *Title in italics* (above)                   |
+| **Font**            | Times New Roman, 12pt                                     |
+| **Spacing**         | Double (single in abstract and tables)                    |
+| **Margins**         | 1 inch all sides                                          |
+| **Page numbers**    | Roman (i hidden, ii-vi shown, vii+ TOC), Arabic (1+ body) |
 
 ---
 
 ## 📤 Output
 
-| File | Description |
-|:-----|:------------|
-| `output/AIRS_Dissertation.pdf` | ~170 pages, 2.2 MB |
-| `output/mermaid/*.png` | 6 rendered diagrams |
+| File                                        | Description                               |
+| ------------------------------------------- | ----------------------------------------- |
+| `output/CORREA_AIRS_Dissertation FINAL.pdf` | Defended dissertation, 186 pages, 2.85 MB |
+| `output/CORREA_AIRS_Dissertation.docx`      | Word version (2.08 MB)                    |
+| `output/mermaid/*.png`                      | Rendered diagrams                         |
 
 ---
 
+<!-- markdownlint-disable MD033 -->
 <div align="center">
 
-**v2.1** · February 21, 2026
+**v3.0** · Defended April 2026 · DBA conferred by Touro University Worldwide
 
 </div>
+<!-- markdownlint-enable MD033 -->

@@ -8,36 +8,40 @@
 
 # Artificial Intelligence Readiness Scale (AIRS)
 
-Extending Model for Enterprise AI Adoption
+Extending UTAUT2 for Enterprise AI Adoption
 
 <!-- markdownlint-disable MD033 -->
 <table>
-  <tr><td><strong>Researcher</strong></td><td>Fabio Correa</td></tr>
+  <tr><td><strong>Researcher</strong></td><td>Fabio Correa, DBA</td></tr>
   <tr><td><strong>Institution</strong></td><td>Touro University Worldwide</td></tr>
-  <tr><td><strong>Program</strong></td><td>Doctor of Business Administration (DBA)</td></tr>
-  <tr><td><strong>Updated</strong></td><td>February 21, 2026</td></tr>
+  <tr><td><strong>Degree</strong></td><td>Doctor of Business Administration (DBA), conferred April 2026</td></tr>
+  <tr><td><strong>Defended</strong></td><td>April 2026</td></tr>
 </table>
 <!-- markdownlint-enable MD033 -->
 
-> 📝 **[View Current Thesis (PDF)](thesis-v2/output/AIRS_Dissertation.pdf)** | **[Build System](thesis-v2/README.md)** | Chair approved - Defense scheduled
+> 🎓 **Defense passed · DBA conferred April 2026 · Touro University Worldwide**
+>
+> 📝 **[View Final Dissertation (PDF)](thesis-v2/output/CORREA_AIRS_Dissertation%20FINAL.pdf)** · **[Build System](thesis-v2/README.md)** · **[Defense Slides](defence/exports/AIRS%20v3.pdf)**
 
 ---
 
 ## Project Status
 
-| Component | Status | Progress |
-| --------- | ------ | -------- |
-| **Analysis Pipeline** | ✅ Complete | 11/11 notebooks verified |
-| **Thesis Chapter 1** | ✅ Complete | Introduction (~2,800 words) |
-| **Thesis Chapter 2** | ✅ Complete | Literature Review (~5,200 words) |
-| **Thesis Chapter 3** | ✅ Complete | Methodology (~3,800 words) |
-| **Thesis Chapter 4** | ✅ Complete | Results (~3,200 words) |
-| **Thesis Chapter 5** | ✅ Complete | Analysis & Discussion (~4,100 words) |
-| **Thesis Chapter 6** | ✅ Complete | Conclusions (~2,500 words) |
-| **Bibliography** | ✅ Complete | 93 references verified |
-| **Tables & Figures** | ✅ Complete | 61 tables + 15 figures, all LaTeX formatted |
-| **IRB Approval** | ✅ Complete | Letter embedded |
-| **Chair Review** | ✅ Approved | Defense scheduled |
+| Component             | Status                               | Progress                                    |
+| --------------------- | ------------------------------------ | ------------------------------------------- |
+| **Analysis Pipeline** | ✅ Complete                          | 11/11 notebooks verified                    |
+| **Thesis Chapter 1**  | ✅ Complete                          | Introduction (~2,800 words)                 |
+| **Thesis Chapter 2**  | ✅ Complete                          | Literature Review (~5,200 words)            |
+| **Thesis Chapter 3**  | ✅ Complete                          | Methodology (~3,800 words)                  |
+| **Thesis Chapter 4**  | ✅ Complete                          | Results (~3,200 words)                      |
+| **Thesis Chapter 5**  | ✅ Complete                          | Analysis & Discussion (~4,100 words)        |
+| **Thesis Chapter 6**  | ✅ Complete                          | Conclusions (~2,500 words)                  |
+| **Bibliography**      | ✅ Complete                          | 93 references verified                      |
+| **Tables & Figures**  | ✅ Complete                          | 61 tables + 15 figures, all LaTeX formatted |
+| **IRB Approval**      | ✅ Complete                          | Letter embedded                             |
+| **Chair Approval**    | ✅ Complete                          | Final dissertation accepted                 |
+| **Defense**           | 🎓 Passed                            | April 2026                                  |
+| **Degree Conferred**  | 🎓 Doctor of Business Administration | Touro University Worldwide, April 2026      |
 
 ---
 
@@ -45,13 +49,13 @@ Extending Model for Enterprise AI Adoption
 
 This research bridges **academic rigor** with **business impact**:
 
-| Academic Contribution | Business Contribution |
-| --------------------- | --------------------- |
-| Extends UTAUT2 with AI-specific constructs | 16-item diagnostic tool for AI readiness |
-| Rigorous EFA→CFA→SEM validation | Intervention targeting for 4 user segments |
-| Novel moderator discovery (Experience) | Tailored training by experience level |
-| Cross-population validation | Leaders as AI champions (d=0.74-1.14) |
-| Empirical gap closure | Links to McKinsey/BCG adoption-value gap |
+| Academic Contribution                      | Business Contribution                      |
+| ------------------------------------------ | ------------------------------------------ |
+| Extends UTAUT2 with AI-specific constructs | 16-item diagnostic tool for AI readiness   |
+| Rigorous EFA→CFA→SEM validation            | Intervention targeting for 4 user segments |
+| Novel moderator discovery (Experience)     | Tailored training by experience level      |
+| Cross-population validation                | Leaders as AI champions (d=0.74-1.14)      |
+| Empirical gap closure                      | Links to McKinsey/BCG adoption-value gap   |
 
 ---
 
@@ -61,14 +65,14 @@ This research develops and validates the **AI Readiness Scale (AIRS)**, a psycho
 
 ### Key Findings
 
-| Finding | Evidence |
-| ------- | -------- |
-| **Validated 8-factor model** | 16 items, CFI=.975, TLI=.960, RMSEA=.065 |
-| **Price Value dominates** | β=.505 (p<.001), strongest predictor |
-| **Experience moderates adoption** | HM×Exp (p=.007) significant |
-| **Four user typologies identified** | Enthusiasts 16%, Cautious 30%, Moderate 37%, Anxious 17% |
-| **Leaders dominate tool usage** | d=0.74-1.14 across all AI tools |
-| **Model explains 85.2% variance** | R²=.852 in Behavioral Intention (8-factor diagnostic model) |
+| Finding                             | Evidence                                                    |
+| ----------------------------------- | ----------------------------------------------------------- |
+| **Validated 8-factor model**        | 16 items, CFI=.975, TLI=.960, RMSEA=.065                    |
+| **Price Value dominates**           | β=.505 (p<.001), strongest predictor                        |
+| **Experience moderates adoption**   | HM×Exp (p=.007) significant                                 |
+| **Four user typologies identified** | Enthusiasts 16%, Cautious 30%, Moderate 37%, Anxious 17%    |
+| **Leaders dominate tool usage**     | d=0.74-1.14 across all AI tools                             |
+| **Model explains 85.2% variance**   | R²=.852 in Behavioral Intention (8-factor diagnostic model) |
 
 ### Practical Impact
 
@@ -82,20 +86,20 @@ Organizations now have a **validated 16-item diagnostic instrument** for assessi
 
 ## Sample Overview
 
-| Parameter | Value |
-| --------- | ----- |
-| **Full Sample** | N = 523 |
+| Parameter           | Value         |
+| ------------------- | ------------- |
+| **Full Sample**     | N = 523       |
 | **EFA Development** | n = 261 (50%) |
-| **CFA Holdout** | n = 262 (50%) |
-| **Random Seed** | 67 |
+| **CFA Holdout**     | n = 262 (50%) |
+| **Random Seed**     | 67            |
 
 ### Role Distribution
 
-| Role | n | % |
-| ---- | - | - |
-| Student | 216 | 41.3% |
+| Role         | n   | %     |
+| ------------ | --- | ----- |
+| Student      | 216 | 41.3% |
 | Professional | 184 | 35.2% |
-| Leader | 123 | 23.5% |
+| Leader       | 123 | 23.5% |
 
 ---
 
@@ -142,41 +146,41 @@ flowchart LR
 
 | Index | Value | Threshold | Interpretation |
 | ----- | ----- | --------- | -------------- |
-| CFI | .975 | ≥.95 | Excellent |
-| TLI | .960 | ≥.95 | Excellent |
-| RMSEA | .065 | ≤.08 | Good |
-| SRMR | .048 | ≤.08 | Excellent |
+| CFI   | .975  | ≥.95      | Excellent      |
+| TLI   | .960  | ≥.95      | Excellent      |
+| RMSEA | .065  | ≤.08      | Good           |
+| SRMR  | .048  | ≤.08      | Excellent      |
 
 ### Reliability
 
-| Factor | α | CR | AVE |
-| ------ | --- | --- | --- |
-| Performance Expectancy | .803 | .804 | .673 |
-| Effort Expectancy | .859 | .861 | .756 |
-| Social Influence | .752 | .763 | .621 |
+| Factor                  | α    | CR   | AVE  |
+| ----------------------- | ---- | ---- | ---- |
+| Performance Expectancy  | .803 | .804 | .673 |
+| Effort Expectancy       | .859 | .861 | .756 |
+| Social Influence        | .752 | .763 | .621 |
 | Facilitating Conditions | .743 | .750 | .601 |
-| Hedonic Motivation | .864 | .865 | .763 |
-| Price Value | .883 | .883 | .790 |
-| Habit | .909 | .909 | .833 |
-| AI Trust | .891 | .891 | .804 |
+| Hedonic Motivation      | .864 | .865 | .763 |
+| Price Value             | .883 | .883 | .790 |
+| Habit                   | .909 | .909 | .833 |
+| AI Trust                | .891 | .891 | .804 |
 
 ---
 
 ## Hypothesis Testing Results
 
-| ID | Hypothesis | Result | Evidence |
-| -- | ---------- | ------ | -------- |
-| H1a | PE → BI (+) | ❌ Not Supported | β=-.028, p=.791 |
-| H1b | EE → BI (+) | ❌ Not Supported | β=-.008, p=.875 |
-| H1c | SI → BI (+) | ✅ Supported | β=.136, p=.024 |
-| H1d | FC → BI (+) | ❌ Not Supported | β=.059, p=.338 |
-| H1e | HM → BI (+) | ✅ Supported | β=.217, p=.014 |
-| H1f | PV → BI (+) | ✅ Supported (Strongest) | β=.505, p<.001 |
-| H1g | HB → BI (+) | ❌ Not Supported | β=.023, p=.631 |
-| H2 | TR → BI (+) | ❌ Marginal | β=.106, p=.064 |
-| H3 | Experience moderates | ⚠️ Partial | HM×Exp p=.007 |
-| H4 | BI predicts usage | ✅ Supported | ρ=.69, p<.001 |
-| H5 | Role differs in usage | ✅ Supported | Leaders > Others |
+| ID  | Hypothesis            | Result                   | Evidence         |
+| --- | --------------------- | ------------------------ | ---------------- |
+| H1a | PE → BI (+)           | ❌ Not Supported         | β=-.028, p=.791  |
+| H1b | EE → BI (+)           | ❌ Not Supported         | β=-.008, p=.875  |
+| H1c | SI → BI (+)           | ✅ Supported             | β=.136, p=.024   |
+| H1d | FC → BI (+)           | ❌ Not Supported         | β=.059, p=.338   |
+| H1e | HM → BI (+)           | ✅ Supported             | β=.217, p=.014   |
+| H1f | PV → BI (+)           | ✅ Supported (Strongest) | β=.505, p<.001   |
+| H1g | HB → BI (+)           | ❌ Not Supported         | β=.023, p=.631   |
+| H2  | TR → BI (+)           | ❌ Marginal              | β=.106, p=.064   |
+| H3  | Experience moderates  | ⚠️ Partial               | HM×Exp p=.007    |
+| H4  | BI predicts usage     | ✅ Supported             | ρ=.69, p<.001    |
+| H5  | Role differs in usage | ✅ Supported             | Leaders > Others |
 
 ---
 
@@ -184,19 +188,19 @@ flowchart LR
 
 All notebooks in `airs_experiment/` are complete and verified:
 
-| Phase | Notebook | Purpose | Status |
-| ----- | -------- | ------- | ------ |
-| 0 | `00_Create_Split_Samples` | Sample preparation | ✅ |
-| 1 | `01_EFA_Experiment` | Factor exploration | ✅ |
-| 2 | `02_CFA_Experiment` | Model validation | ✅ |
-| 3 | `03_Measurement_Invariance` | Group equivalence | ✅ |
-| 4 | `04_Structural_Model` | Hypothesis testing | ✅ |
-| 5 | `05_Mediation_Analysis` | Indirect effects | ✅ |
-| 6 | `06_Moderation_Analysis` | Interaction effects | ✅ |
-| 7 | `07_Tool_Usage_Patterns` | Behavioral validation | ✅ |
-| 8 | `08_Qualitative_Feedback` | Thematic analysis | ✅ |
-| 9 | `09_Comprehensive_Review` | Gap analysis | ✅ |
-| 10 | `10_Final_Synthesis` | Integration | ✅ |
+| Phase | Notebook                    | Purpose               | Status |
+| ----- | --------------------------- | --------------------- | ------ |
+| 0     | `00_Create_Split_Samples`   | Sample preparation    | ✅     |
+| 1     | `01_EFA_Experiment`         | Factor exploration    | ✅     |
+| 2     | `02_CFA_Experiment`         | Model validation      | ✅     |
+| 3     | `03_Measurement_Invariance` | Group equivalence     | ✅     |
+| 4     | `04_Structural_Model`       | Hypothesis testing    | ✅     |
+| 5     | `05_Mediation_Analysis`     | Indirect effects      | ✅     |
+| 6     | `06_Moderation_Analysis`    | Interaction effects   | ✅     |
+| 7     | `07_Tool_Usage_Patterns`    | Behavioral validation | ✅     |
+| 8     | `08_Qualitative_Feedback`   | Thematic analysis     | ✅     |
+| 9     | `09_Comprehensive_Review`   | Gap analysis          | ✅     |
+| 10    | `10_Final_Synthesis`        | Integration           | ✅     |
 
 ---
 
@@ -209,16 +213,16 @@ AIRS_Data_Analysis/
 │   ├── plots/                # Generated visualizations
 │   ├── results/              # JSON output files
 │   └── tables/               # CSV summary tables
-├── thesis-v2/                # DBA thesis (APA 7 build system)
+├── thesis-v2/                # Final DBA dissertation (APA 7 build system)
 │   ├── manuscript/
 │   │   ├── front-matter/     # Title, abstract, acknowledgments
 │   │   ├── chapters/         # Chapter files (1-6)
 │   │   └── back-matter/      # References, appendices
 │   ├── figures/              # PNG figures from notebooks
 │   ├── references/           # Bibliography (93 refs) + CSL
-│   ├── output/               # Generated PDF + Mermaid diagrams
+│   ├── output/               # Final PDF (CORREA_AIRS_Dissertation FINAL.pdf) + diagrams
 │   └── build.ps1             # PowerShell build script
-├── defense/                  # Final defense presentations (PPTX, PDF)
+├── defence/                  # Defense slides (PPTX, PDF) + executive summary
 ├── research/                 # Literature, IRB, and industry sources
 ├── docs/                     # Documentation, planning, field deployment
 ├── domain-knowledge/         # Legacy research methodology knowledge base
@@ -233,16 +237,16 @@ AIRS_Data_Analysis/
 
 ### Current Version (thesis-v2)
 
-| Document | Location | Words |
-| -------- | -------- | ----- |
-| Chapter 1: Introduction | `thesis-v2/manuscript/chapters/01_introduction.md` | ~2,800 |
-| Chapter 2: Literature Review | `thesis-v2/manuscript/chapters/02_literature_review.md` | ~5,200 |
-| Chapter 3: Methodology | `thesis-v2/manuscript/chapters/03_methodology.md` | ~3,800 |
-| Chapter 4: Results | `thesis-v2/manuscript/chapters/04_results.md` | ~3,200 |
-| Chapter 5: Analysis & Discussion | `thesis-v2/manuscript/chapters/05_analysis_discussion.md` | ~4,100 |
-| Chapter 6: Conclusions | `thesis-v2/manuscript/chapters/06_conclusions.md` | ~2,500 |
-| Appendices A-I | `thesis-v2/manuscript/back-matter/appendices.md` | Complete |
-| Bibliography | `thesis-v2/references/bibliography.bib` | 93 refs |
+| Document                         | Location                                                  | Words    |
+| -------------------------------- | --------------------------------------------------------- | -------- |
+| Chapter 1: Introduction          | `thesis-v2/manuscript/chapters/01_introduction.md`        | ~2,800   |
+| Chapter 2: Literature Review     | `thesis-v2/manuscript/chapters/02_literature_review.md`   | ~5,200   |
+| Chapter 3: Methodology           | `thesis-v2/manuscript/chapters/03_methodology.md`         | ~3,800   |
+| Chapter 4: Results               | `thesis-v2/manuscript/chapters/04_results.md`             | ~3,200   |
+| Chapter 5: Analysis & Discussion | `thesis-v2/manuscript/chapters/05_analysis_discussion.md` | ~4,100   |
+| Chapter 6: Conclusions           | `thesis-v2/manuscript/chapters/06_conclusions.md`         | ~2,500   |
+| Appendices A-I                   | `thesis-v2/manuscript/back-matter/appendices.md`          | Complete |
+| Bibliography                     | `thesis-v2/references/bibliography.bib`                   | 93 refs  |
 
 ### Build Commands
 
@@ -257,11 +261,11 @@ See [`thesis-v2/README.md`](thesis-v2/README.md) for full documentation.
 
 ### Key Methodological Decisions Documented
 
-| Decision | Rationale | Location |
-| -------- | --------- | -------- |
+| Decision                                   | Rationale                        | Location                 |
+| ------------------------------------------ | -------------------------------- | ------------------------ |
 | 4 constructs dropped (VO, EX, ER, AX-orig) | Poor reliability (α = .301–.582) | Ch 3 §3.4.4, Ch 4 §4.2.1 |
-| AIRS vs UTAUT2 comparison | ΔR² = .016 (modest improvement) | Ch 4 §4.3.5 |
-| H5 mediation untestable | EX/ER excluded from model | Ch 5 §5.6.2, §5.7.1 |
+| AIRS vs UTAUT2 comparison                  | ΔR² = .016 (modest improvement)  | Ch 4 §4.3.5              |
+| H5 mediation untestable                    | EX/ER excluded from model        | Ch 5 §5.6.2, §5.7.1      |
 
 ---
 
@@ -278,11 +282,15 @@ Key dependencies: pandas, numpy, scipy, factor_analyzer, semopy, pingouin, sciki
 ### Run Analysis
 
 ```bash
+
 # Navigate to experiment folder
+
 cd airs_experiment
 
 # Run notebooks sequentially
+
 # 00 → 01 → 02 → ... → 10
+
 ```
 
 ### Use the AIRS-16 Scale
@@ -290,8 +298,11 @@ cd airs_experiment
 The validated 16-item scale measures 8 predictor constructs plus Behavioral Intention:
 
 ```python
+
 # Calculate construct scores (mean of 2 items each)
+
 # 8 Predictor Constructs (16 items)
+
 PE = mean(PE1, PE2)  # Performance Expectancy
 EE = mean(EE1, EE2)  # Effort Expectancy
 SI = mean(SI1, SI2)  # Social Influence
@@ -302,6 +313,7 @@ HB = mean(HB1, HB2)  # Habit
 TR = mean(TR1, TR2)  # AI Trust
 
 # Outcome Variable (4 items)
+
 BI = mean(BI1, BI2, BI3, BI4)  # Behavioral Intention
 ```
 
@@ -330,12 +342,13 @@ Full bibliography: `thesis-v2/references/bibliography.bib`
 ## Citation
 
 ```bibtex
-@phdthesis{correa2025airs,
+@phdthesis{correa2026airs,
   author = {Correa, Fabio},
-  title = {Artificial Intelligence Readiness Scale: Extending Model for Enterprise AI Adoption},
+  title  = {Artificial Intelligence Readiness Scale: Extending {UTAUT2} for Enterprise {AI} Adoption},
   school = {Touro University Worldwide},
-  year = {2025},
-  type = {Doctoral dissertation}
+  year   = {2026},
+  month  = {April},
+  type   = {Doctor of Business Administration dissertation}
 }
 ```
 
@@ -348,5 +361,5 @@ Documentation: [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)
 
 ---
 
-**Last Updated**: February 21, 2026
-**Version**: 7.2 (Project reorganized for defense)
+**Last Updated**: June 1, 2026 \
+**Version**: 8.0 (Post-defense — DBA conferred)
