@@ -1,15 +1,21 @@
 {
-  "heir_id": "airs-data-analysis",
-  "heir_name": "AIRS Data Analysis",
+  "$schema": "https://github.com/fabioc-aloha/Alex_ACT_Supervisor/blob/main/fleet/schema/act-heir.schema.json",
+  "spec_version": "1.0",
   "edition": "Alex_ACT_Edition",
-  "edition_version": "1.2.0",
-  "repo_url": "",
-  "deployed_at": "2026-04-26T00:00:00Z",
-  "last_sync_at": "2026-05-05T20:57:10Z",
+  "edition_version": "3.2.1",
+  "heir_id": "airs-data-analysis",
+  "heir_name": "AIRS_Data_Analysis",
+  "repo_url": "https://github.com/fabioc-aloha/AIRS_Data_Analysis",
+  "deployed_at": "2026-06-01T21:59:54Z",
+  "last_sync_at": "2026-06-01T21:59:54Z",
   "contact": {
-    "owner": "fabioc-aloha"
+    "owner": "fabioc-aloha",
+    "feedback_channel": "issues"
   },
   "opt_in": {
-    "fleet_inventory": true
-  }
+    "fleet_inventory": true,
+    "announcements": true,
+    "telemetry": false
+  },
+  "notes": ""
 }

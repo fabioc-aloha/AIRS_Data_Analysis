@@ -1,7 +1,4 @@
 ---
-type: resource
-lifecycle: stable
-inheritance: inheritable
 lastReviewed: 2026-04-30
 ---
 
@@ -21,12 +18,12 @@ Run these commands to understand the user's setup:
 
 ```bash
 # bash/zsh (macOS/Linux)
-code --list-extensions | grep -iE "mermaid|markdown"
+code.cmd --list-extensions | grep -iE "mermaid|markdown"
 ```
 
 ```powershell
 # PowerShell (Windows)
-code --list-extensions | Select-String -Pattern "mermaid|markdown"
+code.cmd --list-extensions | Select-String -Pattern "mermaid|markdown"
 ```
 
 ### Step 2: Resolve Extension Conflicts
@@ -42,7 +39,7 @@ code --list-extensions | Select-String -Pattern "mermaid|markdown"
 
 ```bash
 # bash/zsh/PowerShell (cross-platform)
-code --uninstall-extension shd101wyy.markdown-preview-enhanced
+code.cmd --uninstall-extension shd101wyy.markdown-preview-enhanced
 ```
 
 ### Step 3: Apply Mermaid Settings
@@ -65,26 +62,15 @@ For `bierner.markdown-mermaid` (recommended):
 
 ### Step 4: Custom CSS (Optional)
 
-For additional styling control, copy the CSS from this skill:
-
-```powershell
-# Copy markdown-light.css to workspace
-$skillPath = ".github/skills/markdown-mermaid/markdown-light.css"
-$targetPath = ".vscode/markdown-light.css"
-
-if (Test-Path $skillPath) {
-    Copy-Item $skillPath $targetPath -Force
-    Write-Host "Copied CSS to $targetPath"
-}
-```
-
-Then add to settings:
+Edition ships a curated stylesheet at `.vscode/markdown-light.css` (Mermaid-friendly light theme + blockquote/table polish). The bootstrap-copied `.vscode/settings.json` already activates it via:
 
 ```json
 {
   "markdown.styles": [".vscode/markdown-light.css"]
 }
 ```
+
+The CSS file is edition-owned and refreshed on every `/upgrade`. The settings.json is heir-owned — if you remove the `markdown.styles` entry, Edition won't add it back. Heir-side CSS customizations should go in `.vscode/local-markdown.css` and be added to `markdown.styles` alongside the shipped CSS.
 
 ### Step 5: Test Rendering
 
@@ -135,3 +121,7 @@ Open with native preview (`Ctrl+Shift+V`) and verify:
 | `darkModeTheme` | default, neutral, dark, forest, base | dark | Theme for dark mode |
 | `languages` | array of strings | ["mermaid"] | Code block language identifiers |
 | `maxTextSize` | number | 50000 | Max characters before truncation |
+
+## Would Revise If
+
+Revise if the recommended extension (`bierner.markdown-mermaid`) is deprecated or replaced by a different canonical choice, if the settings keys in Step 3 no longer match the extension's current schema, or if the conflict-resolution recommendation produces broken setups in heir environments 2+ times.

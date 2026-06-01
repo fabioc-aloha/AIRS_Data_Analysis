@@ -1,7 +1,6 @@
 ---
 description: "Session-start orientation — heir identity, git state, uncommitted age, unread announcements"
-mode: agent
-lastReviewed: 2026-04-30
+lastReviewed: 2026-05-26
 ---
 
 # Status
@@ -20,8 +19,8 @@ Run at session start (or anytime) to surface where things stand. Read-only — n
    - Last commit hash, subject, relative time
    - If uncommitted >24h old, surface as a soft nudge (not a demand)
 
-3. **Announcements** -- resolve AI-Memory root using the standard algorithm (check `cognitive-config.json` for `ai_memory_root`, then auto-discover cloud drives, skip `ai_memory_exclude`; CLI: `node .github/scripts/_registry.cjs --resolve .`). Read `<root>/announcements/alex-act/*.md` if it exists.
-   - Read `<root>/announcements/alex-act/.acks.json` (if missing, treat as empty `{}`)
+3. **Announcements** -- resolve shared memory bus via `resolveMemoryBus()` (sibling `../Alex_ACT_Memory`; CLI: `node .github/scripts/_registry.cjs --resolve .`). Read `<root>/announcements/*.md` if it exists.
+   - Read `<root>/announcements/.acks.json` (if missing, treat as empty `{}`)
    - List unacknowledged announcements (filename not in `.acks.json[heir_id]`)
    - Show their titles + dates. Don't mark them read — the user does that with `/news`
 
@@ -44,3 +43,7 @@ Run at session start (or anytime) to surface where things stand. Read-only — n
 
 - Not in a git repo (suggest the user `cd` into a heir first)
 - `.act-heir.json` missing (suggest bootstrap)
+
+## Would Revise If
+
+Revisit this prompt by **2026-08-26** (90 days) or sooner if any of the following fires: the workflow it invokes ceases to produce its intended output (skill body changed but prompt steps stale); the visible markers / verification steps in its body are consistently skipped; or the slash-command name is no longer discoverable in the prompt picker.

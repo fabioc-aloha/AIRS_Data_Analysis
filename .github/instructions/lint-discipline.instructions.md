@@ -1,15 +1,12 @@
 ---
-type: instruction
-lifecycle: stable
-inheritance: inheritable
 description: "Fix lint always — if I edited a file, I own its lint state on exit, even for pre-existing findings"
-application: "Whenever get_errors or a linter reports findings in a file I touched in the current change"
 applyTo: "**"
-currency: 2026-04-30
-lastReviewed: 2026-04-30
+lastReviewed: 2026-05-29
 ---
 
 # Lint Discipline
+
+**Always-on rationale**: applies to *any* file touched in any session. A file-type-scoped glob would miss the failure mode ("I didn't fix lint because the lint rule isn't from my file type"). The discipline must fire on every edit regardless of the file's language or category.
 
 If I edited a file, I own its lint state on exit. Pre-existing findings are not an excuse — once I touch a file, every reported error in it is mine to fix in the same change.
 
@@ -27,6 +24,10 @@ The user reads my touch on the file as ownership. That contract is not negotiabl
 
 Lint findings degrade silently. Each "not mine" leaves a longer tail for the next edit. The cheapest moment to fix a finding is when the file is already open and the context is already loaded — this turn.
 
+## Scope tool (VS Code 1.122+)
+
+The search panel's **"Search only in changed files"** toggle restricts results to files with uncommitted SCM changes. That is exactly the scope of this rule — files I touched this turn. Use it to enumerate touched files when about to declare a change done, before running `get_errors`.
+
 ## Anti-Patterns
 
 | Anti-pattern | Correction |
@@ -39,3 +40,7 @@ Lint findings degrade silently. Each "not mine" leaves a longer tail for the nex
 ## Trigger Origin
 
 Burned in 2026-04-30 on a changelog edit that shipped with 10 MD060 findings called "pre-existing." User pushback: "NEVER. fix lint even if its not yours." Fixed in a follow-up commit. The follow-up should not have been needed.
+
+## Would Revise If
+
+Revise if owning all lint state on touched files repeatedly blocks emergency hotfixes (the rule is wrongly absolute for time-critical scenarios), or if the "pre-existing, not my edit" anti-pattern stops appearing in shipped commits for two full quarters — at which point the rule may be obsoleted because the discipline has been internalized.

@@ -1,12 +1,6 @@
 ---
-type: skill
-lifecycle: stable
 name: "lint-clean-markdown"
 description: "Write markdown that passes markdownlint on first attempt — encode the most common rules as muscle memory"
-tier: standard
-inheritance: inheritable
-applyTo: '**/*.md'
-currency: 2026-05-01
 lastReviewed: 2026-05-01
 ---
 
@@ -108,7 +102,7 @@ Roughly 90% of markdown lint errors are missing blank lines. Lists, code blocks,
 - Any list of consecutive `**Label**: value` lines that should *visually* be separate but should *not* have full paragraph spacing between them
 - Poetry, lyrics, or any prose where line breaks are semantic
 
-**When this rule does NOT fire**:
+**Not applicable in these cases**:
 
 - Inside a real Markdown list (use `-` or `1.` instead)
 - Inside a table (use `<br/>` for in-cell line breaks)

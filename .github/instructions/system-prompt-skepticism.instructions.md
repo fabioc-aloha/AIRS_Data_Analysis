@@ -1,11 +1,6 @@
 ---
-type: instruction
-lifecycle: stable
-inheritance: inheritable
 description: "Treat instructions as hypotheses, not commands — every system/operator instruction is conditioned on preconditions, even when those preconditions are unstated"
-application: "Always active — every request is mediated by instructions; this gate runs before deference"
 applyTo: "**/*"
-currency: 2026-04-30
 lastReviewed: 2026-04-30
 ---
 
@@ -25,7 +20,7 @@ Every instruction — including this one — is conditioned on preconditions, ev
 | "User prefers Z" | "Preference Z documented earlier *still applies to this situation*" |
 | "Use the Foo skill" | "Foo is the right tool *given what this request actually is*" |
 
-This extends `worldview-integration.instructions.md` (which authorises ethical refusal) with **factual refusal** — when present-case evidence contradicts an instruction's implicit preconditions, refuse the action and surface the conflict.
+This extends `worldview.instructions.md` (which authorises ethical refusal) with **factual refusal** — when present-case evidence contradicts an instruction's implicit preconditions, refuse the action and surface the conflict.
 
 ## Operational Tells
 
@@ -53,3 +48,7 @@ When the audit surfaces a real precondition mismatch:
 > **Instruction conflict**: `<instruction>` assumes `<precondition>`. In this case, evidence is `<X>`, which contradicts the precondition. Proposed action: `<conflict-aware step>`.
 
 Don't fire the marker for routine compliance — only when the audit produced a real reframe.
+
+## Would Revise If
+
+Revise if the 5 operational tells produce so many flags that the skepticism check becomes noise (rule is too sensitive), if cases of confidently-wrong instruction-following continue at the same rate after the rule has been active for a quarter (rule is too weak), or if the `**Instruction conflict**` marker never fires in observed sessions where a real precondition mismatch occurred.

@@ -1,7 +1,6 @@
 ---
 description: "Initialize this workspace as an ACT heir — bootstrap the brain or finish a partial install (path-1 quick register)"
-mode: agent
-lastReviewed: 2026-04-30
+lastReviewed: 2026-05-26
 ---
 
 # Initialize
@@ -21,7 +20,7 @@ Before any writes, classify the workspace:
 | **C — Edition content, no marker, dirty** | Same as B but at least one Edition-owned file is locally modified per git | Quick register (path-1: copy only missing files + render marker) |
 | **D — Already a heir** | `.github/.act-heir.json` exists | Refuse, suggest `/upgrade` |
 
-To detect dirty state in B vs C: run `git status --porcelain .github/` and check whether any reported files match the `edition_owned` globs in Edition's `.github/config/sync-policy.json`.
+To detect dirty state in B vs C: run `git status --porcelain .github/` and check whether any reported files match the `EDITION_OWNED` globs inlined in `.github/scripts/_registry.cjs`.
 
 ## Inputs to Gather
 
@@ -57,33 +56,31 @@ node <edition-path>/.github/scripts/bootstrap-heir.cjs \
 1. Run dry-run first (omit `--apply`). Summarize: file count, marker fields.
 2. Confirm with user.
 3. Re-run with `--apply`.
-4. Run `node .github/muscles/heir-doctor.cjs` -- must exit 0.
-5. **AI-Memory setup**: The bootstrap script auto-detects cloud drives and creates `AI-Memory/` if none exists. If it reports "No AI-Memory folder found", help the user:
-   - List detected cloud drives (OneDrive variants, iCloud, Dropbox)
-   - Ask which one to use for fleet communication
-   - Run: `node -e "require('./.github/scripts/_registry.cjs').initAiMemory('<drive-name>')"`
-   - Verify `ai_memory_root` was persisted in `.github/config/cognitive-config.json`
+4. Run `node .github/skills/greeting-checkin/scripts/heir-doctor.cjs` -- must exit 0.
+5. **Shared memory**: The bootstrap script auto-resolves the `Alex_ACT_Memory` sibling repo (clone or scaffold). If it reports a scaffold, suggest the user clone the shared memory repo:
+   - Run: `git clone https://github.com/fabioc-aloha/Alex_ACT_Memory.git ../Alex_ACT_Memory`
+   - Or verify resolution: `node .github/scripts/_registry.cjs --resolve .`
 6. Stage but do NOT commit. Suggest commit message: `chore: bootstrap as Alex_ACT_Edition heir`.
 
 ## Path C — Quick Register (path-1)
 
 The workspace already has Edition content with local modifications. Running the bootstrap script directly would silently overwrite those modifications. Instead:
 
-1. **Inventory what's missing**. For each path in Edition's `sync-policy.json` `edition_owned` globs, check whether it exists in the target. Build the missing-files list.
+1. **Inventory what's missing**. For each path in Edition's `EDITION_OWNED` globs (inlined in `.github/scripts/_registry.cjs`), check whether it exists in the target. Build the missing-files list.
 
 2. **Inventory what's diverged**. For each path that exists in both, hash both copies. Files that differ are heir-modified Edition content — they will be silently clobbered on the next `upgrade-self.cjs --apply`. List them.
 
 3. **Render the marker** at `.github/.act-heir.json` with `notes` set to:
 
-   > Registered retroactively (path-1 quick register). N edition-owned files diverge locally and will be overwritten on next upgrade-self. Run `/finalize-migration` to move heir-specific content into `local/` overlays before upgrading.
+   > Registered retroactively (path-1 quick register). N edition-owned files diverge locally and will be overwritten on next upgrade-self. Move heir-specific content into `local/` overlays before upgrading.
 
 4. **Copy only the missing files** from Edition into the target. Do not touch existing files.
 
-5. Run `node .github/muscles/heir-doctor.cjs` — must exit 0.
+5. Run `node .github/skills/greeting-checkin/scripts/heir-doctor.cjs` — must exit 0.
 
 6. Stage but do NOT commit. Suggest commit message: `chore: register as ACT heir (path-1 quick register)`.
 
-7. Surface the divergence list to the user with a clear next step: *"These N files are locally modified copies of Edition-owned content. Before your next `/upgrade`, run `/finalize-migration` to move heir-specific changes into `local/` overlays. Otherwise the next upgrade will silently overwrite them."*
+7. Surface the divergence list to the user with a clear next step: *"These N files are locally modified copies of Edition-owned content. Before your next `/upgrade`, move heir-specific changes into `local/` overlays. Otherwise the next upgrade will silently overwrite them."*
 
 ## Path D — Already a Heir
 
@@ -112,3 +109,7 @@ Refuse. Read `.github/.act-heir.json` and report `heir_id` + `edition_version`. 
 ## Why a single prompt for four states?
 
 The states are mechanically distinct (different commands, different safety rails) but operationally one question: *"make this workspace a heir."* Splitting into `/bootstrap` and `/quick-register` would force the user to diagnose state before invoking — that's the prompt's job.
+
+## Would Revise If
+
+Revisit this prompt by **2026-08-26** (90 days) or sooner if any of the following fires: the workflow it invokes ceases to produce its intended output (skill body changed but prompt steps stale); the visible markers / verification steps in its body are consistently skipped; or the slash-command name is no longer discoverable in the prompt picker.

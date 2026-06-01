@@ -1,11 +1,6 @@
 ---
-type: instruction
-lifecycle: stable
-inheritance: inheritable
 description: "Privacy by design, data protection, and responsible AI principles"
-application: "When handling PII, designing AI systems, or ensuring ethical AI use"
 applyTo: "**/*privacy*,**/*pii*,**/*responsible*ai*,**/*ethic*"
-currency: 2026-04-30
 lastReviewed: 2026-04-30
 ---
 
@@ -40,3 +35,7 @@ lastReviewed: 2026-04-30
 - Logging PII in plaintext
 - No data retention policy
 - AI decisions without appeal
+
+## Would Revise If
+
+Revise if the privacy-by-design 5 steps are treated as a checklist rather than design principles (theater not discipline), if the PII handling table misses a category that arises in real heir work (e.g. biometric, location, behavioral), or if the responsible-AI principles are cited in code review without being operationalized at actual decision points.

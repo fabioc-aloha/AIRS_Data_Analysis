@@ -1,14 +1,10 @@
 ---
-type: skill
-lifecycle: stable
 name: "meditation"
 description: "Consolidate session learning into permanent architecture — extract patterns into skills, instructions, prompts, or memory"
-tier: core
-applyTo: '**/*meditat*,**/*consolidat*'
-inheritance: inheritable
-currency: 2026-04-30
-lastReviewed: 2026-04-30
+lastReviewed: 2026-05-31
 ---
+
+<!-- intentional divergence from Supervisor: Edition omits the "Brain Retraining (longer cycles)" section and Cardinal Rule 3 audit criteria — those govern Supervisor's curation cadence (weekly brain-qa, quarterly retraining ADRs) which heirs don't run. Edition also generalizes the script-location rows (heirs may not have a `scripts/` root). Audited 2026-05-31. -->
 
 # Meditation
 
@@ -43,10 +39,11 @@ Separate signal from noise. For each candidate pattern, ask: *"Is this already c
 | Reusable domain knowledge | Skill (`.github/skills/<name>/SKILL.md`) |
 | Always-on behavior or rule | Instruction (`.github/instructions/<name>.instructions.md`) |
 | Repeatable workflow / slash command | Prompt (`.github/prompts/<name>.prompt.md`) |
-| Automatable mechanical task | Muscle (`.github/muscles/<name>.cjs`) |
+| Automatable task tied to one skill | Script in that skill's folder (`.github/skills/<skill>/scripts/<name>.cjs`) |
+| Cross-cutting automation | Script (`.github/scripts/<name>.cjs`) |
 | User preference (cross-project) | User memory (`/memories/<name>.md`) |
 | Project / repo convention | Repo memory (`/memories/repo/<name>.md`) |
-| Session continuity for next chat | Session memory (`/memories/session/<name>.md`) |
+| Cross-session handoff (next session needs to know) | Repo file (`HANDOFF.md` at repo root) — NOT session memory |
 
 ### 3. Write
 
@@ -81,10 +78,12 @@ Skip the chronicle for short sessions or when nothing new emerged.
 
 ### 5. Handoff (when ending a session)
 
-If the user is closing the thread, write to `/memories/session/<topic>-handoff.md`:
+If the user is closing the thread, write to repo-root `HANDOFF.md`:
 
 ```markdown
-# Session Handoff — <Topic>
+# Session Handoff
+
+Last updated: YYYY-MM-DD HH:MM
 
 ## Just shipped
 - [SHAs / files / outcomes]
@@ -93,7 +92,7 @@ If the user is closing the thread, write to `/memories/session/<topic>-handoff.m
 - [Specific next step + file paths]
 
 ## Pending queue
-- [Ordered todos]
+- [ ] [Ordered todos]
 
 ## Resume point
 - [Where to pick up]

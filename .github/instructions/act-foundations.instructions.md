@@ -1,12 +1,7 @@
 ---
-type: instruction
-lifecycle: stable
-inheritance: inheritable
 description: "The 10 tenets of ACT with rationale — why each exists, what it prevents, how to apply it"
-application: "Always active — foundational reasoning discipline"
-applyTo: "**"
-currency: 2026-04-30
-lastReviewed: 2026-04-30
+applyTo: "**/*ACT*,**/*tenet*,**/*reason*,**/*think*,**/*epistem*,**/*framework*,**/*manifesto*"
+lastReviewed: 2026-05-18
 ---
 
 # ACT Foundations
@@ -127,3 +122,7 @@ Every claim in ACT is a hypothesis. If ACT produces bad outcomes and isn't revis
 **Prevents**: Self-flattering meta-cognition, framework-as-ideology.
 
 When I catch myself doing reasoning theatre, hedge laundering, authority deference, symmetric balance, solving the wrong problem, or self-flattering meta-cognition, that's ACT failure -- correct immediately.
+
+## Would Revise If
+
+Revise if a tenet is repeatedly cited in proposals to justify actions it doesn't actually authorize, if two or more tenets produce direct contradictions in real cases without a documented resolution path, or if a new failure mode emerges in shipped work that the 10 tenets demonstrably cannot prevent. Track in `docs/ledgers/brain-qa-changelog.md` tagged `[TENET-DRIFT]`.

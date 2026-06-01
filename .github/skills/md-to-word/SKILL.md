@@ -1,17 +1,10 @@
 ---
-type: skill
-lifecycle: stable
 name: "md-to-word"
 description: "Convert Markdown with Mermaid diagrams and SVG illustrations to professional Word documents"
-tier: standard
-applyTo: '**/*docx*,**/*word*,**/*md-to-word*,**/*export*'
-muscle: .github/muscles/md-to-word.cjs
-inheritance: inheritable
-currency: 2026-04-30
-lastReviewed: 2026-04-30
+lastReviewed: 2026-05-18
 ---
 
-# Markdown to Word Conversion
+# Md To Word
 
 > One command to professional Word documents — diagrams, tables, and formatting done right on first attempt.
 
@@ -93,13 +86,13 @@ Diagrams are rendered at 4x scale (4800px width) for crisp printing, then sized 
 
 ```bash
 # From your project root
-node .github/muscles/md-to-word.cjs docs/spec.md
+node .github/skills/md-to-word/scripts/md-to-word.cjs docs/spec.md
 
 # With custom output name
-node .github/muscles/md-to-word.cjs README.md output.docx
+node .github/skills/md-to-word/scripts/md-to-word.cjs README.md output.docx
 
 # Keep intermediate files for debugging
-node .github/muscles/md-to-word.cjs docs/plan.md --keep-temp
+node .github/skills/md-to-word/scripts/md-to-word.cjs docs/plan.md --keep-temp
 ```
 
 ### What It Does
@@ -149,7 +142,7 @@ npm install -g @mermaid-js/mermaid-cli svgexport
 
 | Option | Default | Description |
 |--------|---------|-------------|
-| `--toc` | off | Generate Table of Contents |
+| `--toc` | off | Generate Table of Contents. A `[toc]` marker in the source is **stripped but does not auto-enable TOC** (since v5.5.0). When the marker is found without `--toc`, a warning is logged so the heir can either pass `--toc` explicitly or remove the marker. |
 | `--cover` | off | Generate cover page from H1 + date |
 | `--style PRESET` | professional | Style preset (see below) |
 | `--page-size SIZE` | letter | Page size: letter, a4, 6x9 |
@@ -187,10 +180,10 @@ SVG files are automatically detected and converted to PNG for Word compatibility
 
 ```markdown
 <!-- This SVG reference in your Markdown... -->
-![Architecture](assets/architecture.svg)
+![Architecture](<your-diagram>.svg)
 
 <!-- ...becomes this embedded PNG in Word -->
-![Architecture](images/architecture.png){width=5.8in}
+![Architecture](<your-diagram>.png){width=5.8in}
 ```
 
 **Requirements**: `svgexport` (`npm install -g svgexport`)
@@ -276,15 +269,16 @@ is set on diagrams that would have rendered flat.
 
 ## Table Formatting
 
-All tables receive professional OOXML styling:
+All tables receive professional OOXML styling (tightened in v5.5.0 for denser, more reference-document-style tables):
 
 | Element | Style |
 |---------|-------|
-| **Header row** | Microsoft blue (#0078D4), white text, bold 10pt |
+| **Header row** | Microsoft blue (#0078D4), white text, bold **9pt** |
 | **Even data rows** | Light gray (#F0F0F0) |
 | **Odd data rows** | White (#FFFFFF) |
+| **Data cell font** | **8.5pt** black |
 | **Borders** | Gray outer (#666666), light inner (#AAAAAA) |
-| **Cell padding** | 2pt top/bottom, 4pt left/right |
+| **Cell padding** | **1pt top/bottom, 3pt left/right** |
 | **Pagination** | cantSplit + keepWithNext (no orphan headers) |
 | **Repeat headers** | Header row repeats on each page for long tables |
 
@@ -377,14 +371,14 @@ textutil -convert docx document.html -output document.docx
 ```powershell
 # Windows PowerShell
 Get-ChildItem docs/*.md | ForEach-Object {
-    node .github/muscles/md-to-word.cjs $_.FullName --style professional
+    node .github/skills/md-to-word/scripts/md-to-word.cjs $_.FullName --style professional
 }
 ```
 
 ```bash
 # macOS/Linux
 for f in docs/*.md; do
-    node .github/muscles/md-to-word.cjs "$f" --style professional
+    node .github/skills/md-to-word/scripts/md-to-word.cjs "$f" --style professional
 done
 ```
 
@@ -392,14 +386,14 @@ done
 
 ```bash
 # All .md files in docs/ and subdirectories
-node .github/muscles/md-to-word.cjs docs --recursive --style professional
+node .github/skills/md-to-word/scripts/md-to-word.cjs docs --recursive --style professional
 ```
 
 ### Watch Mode
 
 ```bash
 # Auto-rebuild when source changes
-node .github/muscles/md-to-word.cjs spec.md --watch
+node .github/skills/md-to-word/scripts/md-to-word.cjs spec.md --watch
 ```
 
 ---
@@ -413,7 +407,7 @@ node .github/muscles/md-to-word.cjs spec.md --watch
 - name: Generate Word Documents
   run: |
     npm install -g @mermaid-js/mermaid-cli svgexport
-    node .github/muscles/md-to-word.cjs docs/spec.md --toc --cover
+    node .github/skills/md-to-word/scripts/md-to-word.cjs docs/spec.md --toc --cover
 
 - name: Upload artifacts
   uses: actions/upload-artifact@v4
@@ -427,7 +421,7 @@ node .github/muscles/md-to-word.cjs spec.md --watch
 ```json
 {
   "scripts": {
-    "docs:word": "node .github/muscles/md-to-word.cjs docs/README.md --style professional --toc"
+    "docs:word": "node .github/skills/md-to-word/scripts/md-to-word.cjs docs/README.md --style professional --toc"
   }
 }
 ```
@@ -436,10 +430,10 @@ node .github/muscles/md-to-word.cjs spec.md --watch
 
 ## For Heir Projects
 
-1. Copy `.github/muscles/md-to-word.cjs` to your project
-2. Copy shared modules from `.github/muscles/shared/` (markdown-preprocessor, mermaid-pipeline)
+1. Copy `.github/skills/md-to-word/scripts/md-to-word.cjs` to your project
+2. Copy shared modules from `.github/scripts/shared/` (markdown-preprocessor, mermaid-pipeline)
 3. Install prerequisites: `npm install -g @mermaid-js/mermaid-cli svgexport`
-4. Run: `node .github/muscles/md-to-word.cjs your-doc.md`
+4. Run: `node .github/skills/md-to-word/scripts/md-to-word.cjs your-doc.md`
 
 ---
 
@@ -447,6 +441,7 @@ node .github/muscles/md-to-word.cjs spec.md --watch
 
 | Version | Changes |
 |---------|---------|
+| **5.5.0** | Tighter table styling (header 10pt→9pt, data 9pt→8.5pt, cell margins 2pt/4pt → 1pt/3pt). `[toc]` marker in source now strips the line but does **not** auto-enable TOC — warning logged instead, requires explicit `--toc` to generate. Coverage smoke test corpus added at `docs/testing/md-to-word-coverage.md`. |
 | **5.4.0** | Diagram-type-aware Mermaid palette injection (sequence/state get themeVariables, flowcharts respect classDef), `--no-default-palette` opt-out, lint warnings for unstyled diagrams, sizing constants documented |
 | **5.3.0** | Style presets (professional, academic, course, creative), --cover, --toc |
 | **5.0.0** | SVG auto-conversion via svgexport, watch mode, recursive processing |
@@ -487,12 +482,7 @@ node .github/muscles/md-to-word.cjs spec.md --watch
 | **lint-clean-markdown** | Pre-flight the source — pass clean Markdown in |
 | **markdown-sanitization-chain** | Sanitize user-supplied Markdown before conversion |
 | **markdown-mermaid § Mode Fragility** | Why we default to flowchart mode |
-| **svg-graphics** | Vector graphics creation |
-| **brand-asset-management** | Visual identity for headers/footers |
-| **pptx-generation** | Similar workflow for PowerPoint output |
 | **md-to-html** | HTML output with same preprocessing |
-| **md-scaffold** | Templates for clean Markdown structure |
-| **book-publishing** | Pandoc PDF for print publishing |
 
 ## Falsifiability
 

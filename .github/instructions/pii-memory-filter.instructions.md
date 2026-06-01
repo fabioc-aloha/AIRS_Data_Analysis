@@ -1,15 +1,12 @@
 ---
-type: instruction
-lifecycle: stable
-inheritance: inheritable
 description: "PII filter at memory write boundaries — prevent sensitive data from entering persistent storage tiers"
-application: "Always active — unconscious filter before writing to any persistent memory tier"
 applyTo: "**"
-currency: 2026-04-30
-lastReviewed: 2026-04-30
+lastReviewed: 2026-05-29
 ---
 
 # PII Memory Filter
+
+**Always-on rationale**: persistent-storage writes can happen on any turn (memory tool, file creation, announcement). The PII filter must fire before every write boundary regardless of the surrounding context; a scoped glob would let writes from non-matching contexts bypass the check.
 
 Always-active unconscious behavior. Self-monitor before every write to persistent storage.
 
@@ -22,8 +19,10 @@ This filter applies whenever you write to ANY persistent tier:
 | User Memory | `memory create /memories/` | Yes (200 lines) |
 | Repo Memory | `memory create /memories/repo/` | No |
 | Session Memory | `memory create /memories/session/` | No |
-| AI-Memory | File creation in `AI-Memory/` | No |
-| Feedback | File creation in `AI-Memory/feedback/` | No |
+| Shared Memory | File creation in `../Alex_ACT_Memory/` | No |
+| Feedback | File creation in `../Alex_ACT_Memory/feedback/` | No |
+
+For tier *selection* (where content goes), see [memory-triggers.instructions.md § Memory Tier Selection](memory-triggers.instructions.md). This filter constrains *what* may be written; MT constrains *where*.
 
 ## Never Write These Categories
 
@@ -46,9 +45,9 @@ Before writing to ANY persistent tier, verify the content does NOT contain:
 | **User Memory** | Workflow preferences, communication style, tool patterns | Any PII, project-specific data |
 | **Repo Memory** | Build commands, code conventions, architecture facts | Credentials, user identity |
 | **Session Memory** | Task context, file references, in-progress state | Health data, financial data |
-| **AI-Memory knowledge** | Patterns, insights, technical knowledge | Contact info, health data |
-| **AI-Memory announcements** | Upgrade notices, breaking changes | No PII by design |
-| **AI-Memory feedback** | Skill name + category + severity (structured schema only) | Free-text context with domain data |
+| **Shared memory knowledge** | Patterns, insights, technical knowledge | Contact info, health data |
+| **Shared memory announcements** | Upgrade notices, breaking changes | No PII by design |
+| **Shared memory feedback** | Skill name + category + severity (structured schema only) | Free-text context with domain data |
 
 ## Self-Check Protocol
 
@@ -62,7 +61,11 @@ Before writing to persistent storage, ask:
 
 When the user asks to store something containing PII:
 
-- **Contact info** → Store in `AI-Memory/user-profile.json` (L3, on-demand only, never auto-loaded)
+- **Contact info** → Store in `../Alex_ACT_Memory/profile/<username>/user-profile.json` (L3, on-demand only, never auto-loaded)
 - **Health data** → Decline. Explain no memory tier is appropriate for L4 health data.
 - **Credentials** → Direct to VS Code SecretStorage or environment variables
 - **Work patterns** → Generalize: "prefers TDD" not "wrote 47 tests on Tuesday"
+
+## Would Revise If
+
+Revise if the never-write list catches PII so rarely that the cost of the always-on filter exceeds its protection value, if the per-tier allowed/not-allowed table has obvious gaps in real PII categories arising in heir work, or if a documented PII leak occurs through a category the filter should have caught (post-mortem the gap, then extend the table).

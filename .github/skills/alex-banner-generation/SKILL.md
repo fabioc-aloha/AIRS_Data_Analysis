@@ -1,14 +1,7 @@
 ---
-type: skill
-lifecycle: stable
 name: "alex-banner-generation"
 description: "Generate on-brand Alex — ACT Edition SVG banners for documents (READMEs, plans, notes, release artifacts)"
-tier: standard
-inheritance: inheritable
-applyTo: '**/*banner*,**/assets/**,**/README*,**/PLAN*,**/CHANGELOG*'
-muscle: .github/muscles/generate-banner.cjs
-currency: 2026-04-30
-lastReviewed: 2026-04-30
+lastReviewed: 2026-05-26
 ---
 
 # Alex Banner Generation
@@ -64,7 +57,7 @@ Ask the user only for what's missing. Defaults:
 ### Step 2 — Generate
 
 ```sh
-node .github/muscles/generate-banner.cjs \
+node .github/skills/alex-banner-generation/scripts/generate-banner.cjs \
   --title "Document Title" \
   --subtitle "One-line purpose statement." \
   --watermark PLAN
@@ -125,6 +118,9 @@ Don't ship PNGs unless required — they double the asset weight and can drift f
 
 ## Falsifiability
 
-- This skill is wrong if banners are consistently rejected aesthetically by the user, or if the SVG pipeline renders incorrectly in >10% of target environments (GitHub, VS Code preview, browsers)
-- The template inventory is stale if the muscle adds new templates this skill does not document
-- The color/font constraints are arbitrary if users frequently need customization the skill forbids
+Revisit this skill by **2026-08-26** (90 days) or sooner if any of the following fires:
+
+- Banners shipped via this skill are aesthetically rejected by the user ≥3 times in a quarter
+- The SVG pipeline renders incorrectly in >10% of target environments (GitHub, VS Code preview, browsers) over any 30-day window
+- The muscle adds new template categories without a corresponding entry being added to this skill within the same change
+- Users request customization the skill forbids (custom colors/fonts/dimensions) ≥3 times in a quarter — signal the brand constants are too tight

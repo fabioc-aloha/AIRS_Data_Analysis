@@ -1,11 +1,6 @@
 ---
-type: instruction
-lifecycle: stable
-inheritance: inheritable
 description: "Critical thinking framework — challenge assumptions, evaluate evidence, detect bias, and test falsifiability"
-application: "When evaluating claims, reviewing proposals, assessing evidence quality, or performing adversarial analysis"
 applyTo: "**/*"
-currency: 2026-04-30
 lastReviewed: 2026-04-30
 ---
 
@@ -35,3 +30,7 @@ Challenge what you think is right through structured skepticism.
 ## Skill Reference
 
 Full framework in `.github/skills/critical-thinking/SKILL.md`.
+
+## Would Revise If
+
+Revise if the 7-step protocol consistently produces no behavior change at decision points where it should (theater not discipline), if the Two-Hypothesis Floor degrades to performative alternatives without "because" reasons, or if the falsifiability requirement on conclusions reduces to boilerplate "would revise if evidence emerges" with no specific evidence named.

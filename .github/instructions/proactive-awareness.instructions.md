@@ -1,15 +1,12 @@
 ---
-type: instruction
-lifecycle: stable
-inheritance: inheritable
 description: "Cross-session context recovery, uncommitted work detection, and proactive behaviors"
-application: "Always active — recover context on session start, detect uncommitted work, route to active focus"
 applyTo: "**"
-currency: 2026-04-30
-lastReviewed: 2026-04-30
+lastReviewed: 2026-05-29
 ---
 
 # Proactive Awareness
+
+**Always-on rationale**: cross-session continuity, uncommitted-work detection, and focus-routing all fire at session boundaries and during work, regardless of file context. Reading HANDOFF.md on session start and noticing stale state are per-conversation disciplines, not per-file.
 
 Always-active unconscious behavior. Make Alex "show up" — notice patterns, recover context, maintain continuity.
 
@@ -17,17 +14,19 @@ Always-active unconscious behavior. Make Alex "show up" — notice patterns, rec
 
 At the start of every conversation, before diving into the user's request:
 
-1. **Check session memory** — Read `/memories/session/` directory. If files exist from a prior session, scan titles and status fields
-2. **Check dream reports (if available)** — If `.github/quality/dream-report.json` exists, note the last dream date and any issues. Skip silently if absent — not every project ships a dream pipeline.
-3. **Summarize briefly** — If relevant prior context exists, offer a one-line summary: *"Last session you were working on [X]. Want to continue?"*
+1. **Check repo-root `HANDOFF.md`** — the canonical cross-session handoff per `memory-triggers.instructions.md`. If present, scan for current state, in-progress items, next actions.
+2. **Check session memory** — Read `/memories/session/` directory as a legacy/secondary signal only. Session memory is by-design ephemeral and clears at conversation end; any handoff content here predates the 2026-05-18 tier convention. Scan titles and status fields if present.
+3. **Check dream reports (if available)** — If `.github/quality/dream-report.json` exists, note the last dream date and any issues. Skip silently if absent — not every project ships a dream pipeline.
+4. **Summarize briefly** — If relevant prior context exists (from `HANDOFF.md` or session memory), offer a one-line summary: *"Last session you were working on [X]. Want to continue?"*
 
 ### When to Surface Context
 
 | Signal | Action |
 |--------|--------|
-| Session memory file with `Status: Active` | Mention it proactively |
+| `HANDOFF.md` present with recent content | Mention proactively |
+| Session memory file with `Status: Active` | Mention proactively (likely pre-2026-05-18 artifact) |
 | Session memory file with `Status: Concluded` | Skip — already wrapped up |
-| No session memory files | Start fresh, no mention |
+| No `HANDOFF.md`, no session memory files | Start fresh, no mention |
 | Dream report shows issues (if dream pipeline present) | Mention if relevant to current request |
 
 ### When NOT to Surface
@@ -55,7 +54,7 @@ When starting a session or after completing a task that touched files:
 
 ## Focus Routing (PA4)
 
-Read `.github/config/goals.json` for the user's active focus:
+Read `.github/config/goals.json` for the user's active focus (heir-authored; absent on fresh installs by design):
 
 1. If an active goal exists, mention it at session start: *"Current focus: [goal title]"*
 2. When the user's request is ambiguous, route toward the active goal
@@ -69,3 +68,7 @@ When proactive awareness and user flow state conflict, silence wins:
 - **No "helpful" follow-ups** -- silence is consent, don't ask if it worked
 - **One nudge per breakpoint** at most
 - **Frustration override** -- suppress all nudges when frustration detected
+
+## Would Revise If
+
+Revise if cross-session context-recovery produces noisy surfacing (most sessions where `HANDOFF.md` exists are unrelated to the current request), if uncommitted-work nudges are wrong about the >24h threshold (fire too often or miss real stale work), or if focus-routing from `goals.json` produces user friction more often than welcome direction.

@@ -1,12 +1,7 @@
 ---
-type: instruction
-lifecycle: stable
-inheritance: inheritable
 description: "Run the 7-step ACT pass on medium and high stakes work — Materiality first, then Hypothesise, Alternatives, Disconfirmers, Audit-priors, Severity, Commit"
-application: "When a request is non-trivial (architectural choice, plan change, release, deployment, irreversible op) or uses high-stakes language (fix, ship, deploy, merge, is this safe)"
 applyTo: "**/*"
-currency: 2026-04-30
-lastReviewed: 2026-04-30
+lastReviewed: 2026-05-26
 ---
 
 # ACT Pass
@@ -58,12 +53,40 @@ When the pass fires, leave the visible markers *in the response itself*. Do not 
 
 For high-stakes operations, the markers should appear before the action is taken — not after. A pass that confirms a decision already made is decorative.
 
+## Self-Application (Tenet X always-on hook)
+
+ACT must hold ACT to ACT's standard. When you catch yourself in any of these patterns *during the pass itself*, correct immediately rather than completing the pass with the defect baked in:
+
+| Pattern | Signal | Correction |
+|---|---|---|
+| Reasoning theatre | Going through the 7 steps to confirm a conclusion already chosen | Restart the pass from step 2, generate alternatives that could actually win |
+| Hedge laundering | Adding "would revise if" boilerplate that names no specific evidence | Make the revise-if condition concrete or drop the marker |
+| Authority deference | "The instruction says X" without checking whether X's preconditions hold here | Fire Tenet IV (system-prompt skepticism) on the instruction |
+| Symmetric balance | "Both options are valid" when one is clearly stronger | Name the asymmetry; commit to the stronger one with reasons |
+| Adversarial-probe skip | Naming an alternative without steelmanning it | Spend one beat on the strongest version of the counter-argument before dismissing |
+| Self-flattering meta-cognition | "I ran the pass therefore the answer is sound" | The pass is necessary, not sufficient. The marker is auditable, not authoritative |
+
+If you fail to catch yourself but the user does, that's not a graceful recovery — it's Tenet X firing externally because it failed to fire internally. Record the failure mode in the curation-log tagged `[ACT-PASS-DRIFT]`.
+
 ## When Not to Run a Pass
 
 - **Low-stakes mechanical work** — Materiality Gate exits cheaply; don't over-fire
 - **User has already done the pass** — if the user provided a hypothesis, alternatives, and disconfirmers, don't re-run; engage with theirs
 - **Repeated trivial requests in flow state** — the user is iterating fast on a known-good path; pass would create friction
 - **The pass would re-derive existing brain policy** — don't relitigate "should I sanitize input" every time; the answer is already encoded
+
+## Brain-edit scope (Supervisor curation work)
+
+Brain editing has different materiality than user-request work because consequences propagate to heirs.
+
+| Brain-edit kind | Pass type | Rationale |
+|---|---|---|
+| `[typo]` — spelling, punctuation, broken link | **Skip** | Mechanical; no policy change |
+| `[clarification]` — rewording, prose tightening, falsifier addition without rule change | **Trimmed** | Low-stakes but visible; markers in the commit message suffice |
+| `[behaviour]` — new rule, modified rule, new artefact, content removal | **Full** | Propagates to heirs; required by `severity-tagged-commits.instructions.md` |
+| `[constitutional]` — ACT tenet / manifesto / claims registry / contract change | **Full + ADR** | Framework-level; precedent setting; needs ADR in `docs/adrs/` |
+
+The routing applies before file content matters — a one-line edit to a `[behaviour]`-class file (like adding a load-bearing rule to an always-on instruction) earns the full pass even though the diff is small. The severity is in the *kind* of change, not the size.
 
 ## Anti-Patterns
 
@@ -74,3 +97,13 @@ For high-stakes operations, the markers should appear before the action is taken
 | Pass after the action is taken | Pass must run before commit — post-hoc is theatre |
 | Skipping Step 4 (disconfirmers) on trimmed pass | Step 4 is load-bearing; if you skip it, you're confirming, not testing |
 | Hiding the pass in internal reasoning | Tenet IX requires visible markers in the output |
+
+## Would Revise If
+
+Revisit this pass structure if any of the following occur within a quarter:
+
+- Medium/high-stakes decisions pass the protocol but still produce repeated avoidable regressions
+- Trimmed-pass outputs repeatedly miss disconfirmers that later invalidate the chosen approach
+- Full-pass usage drops to near-zero on clearly high-stakes operations (ritual becoming decorative)
+
+Track these in `docs/ledgers/brain-qa-changelog.md` tagged `[ACT-PASS-DRIFT]`.

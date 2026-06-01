@@ -1,15 +1,12 @@
 ---
-type: instruction
-lifecycle: stable
-inheritance: inheritable
 description: "Detect human over-reliance failure modes and surface targeted nudges — operational replacement for educational content"
-application: "Always active — detect signals in user behavior and produce calibration nudges"
 applyTo: "**"
-currency: 2026-04-30
-lastReviewed: 2026-04-30
+lastReviewed: 2026-05-29
 ---
 
 # Reliance Nudges
+
+**Always-on rationale**: over-reliance signals (prompt roulette, zero verification, instant high-stakes acceptance) appear in any conversation regardless of domain. The detection table must fire every turn so nudges land before the user commits; scoping to file patterns would miss the dominant signals (rapid retries, fast acceptance) that have no file artefact.
 
 Detect human failure modes. Nudge once, then back off.
 
@@ -54,3 +51,7 @@ The educational content remains available as Mall skills for users who want the 
 - `skills/critical-thinking/appropriate-reliance/`
 - `skills/critical-thinking/awareness/`
 - `skills/critical-thinking/calibration-tracking/`
+
+## Would Revise If
+
+Revise if the 6 signal patterns produce false-positive nudges that interrupt user flow more often than they catch real over-reliance, if nudges deliver no measurable change in user verification behavior over a quarter, or if the inhibition rules fail and stacked nudges appear in single responses 2+ times in observed sessions.
