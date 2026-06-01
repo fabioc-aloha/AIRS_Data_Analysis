@@ -4,13 +4,12 @@ Core documentation for the AIRS dissertation project (defended April 2026, DBA c
 
 ## Current Files
 
-| File                                | Description                                         |
-| ----------------------------------- | --------------------------------------------------- |
-| `DATA_DICTIONARY.md`                | Complete variable definitions, scales, and coding   |
-| `AIRS Model.png`                    | Conceptual framework diagram                        |
-| `AIRS-STRATEGIC-RECOMMENDATIONS.md` | Strategic implications for practitioners            |
-| `field-deployment/`                 | Practitioner-facing instruments and summaries       |
-| `planning/`                         | Research proposal, analysis plan, survey instrument |
+| File                                | Description                                       |
+| ----------------------------------- | ------------------------------------------------- |
+| `DATA_DICTIONARY.md`                | Complete variable definitions, scales, and coding |
+| `AIRS Model.png`                    | Conceptual framework diagram                      |
+| `AIRS-STRATEGIC-RECOMMENDATIONS.md` | Strategic implications for practitioners          |
+| `field-deployment/`                 | Practitioner-facing instruments and summaries     |
 
 ## Related Documentation
 
@@ -24,15 +23,15 @@ Core documentation for the AIRS dissertation project (defended April 2026, DBA c
 
 ### Quick Reference
 
-| Topic                   | Location                                                  |
-| ----------------------- | --------------------------------------------------------- |
-| Final dissertation PDF  | `thesis-v2/output/CORREA_AIRS_Dissertation FINAL.pdf`     |
-| Thesis chapters         | `thesis-v2/manuscript/chapters/`                          |
-| Survey instrument       | `docs/planning/AIRS Survey Instrument v5.md`              |
-| Analysis methodology    | `docs/planning/ANALYSIS_PLAN_v2.md`                       |
-| Variable specifications | `docs/DATA_DICTIONARY.md`                                 |
-| Hypotheses              | `thesis-v2/manuscript/chapters/01_introduction.md` (§1.4) |
-| Defense slides          | `defence/exports/AIRS v3.pdf`                             |
+| Topic                   | Location                                                         |
+| ----------------------- | ---------------------------------------------------------------- |
+| Final dissertation PDF  | `thesis-v2/output/CORREA_AIRS_Dissertation FINAL.pdf`            |
+| Thesis chapters         | `thesis-v2/manuscript/chapters/`                                 |
+| Survey instrument       | `thesis-v2/manuscript/back-matter/appendices.md` (App. A and G)  |
+| Analysis methodology    | `thesis-v2/manuscript/chapters/03_methodology.md`                |
+| Variable specifications | `docs/DATA_DICTIONARY.md`                                        |
+| Hypotheses              | `thesis-v2/manuscript/chapters/01_introduction.md` (§1.4)        |
+| Defense slides          | `defence/exports/AIRS v3.pdf`                                    |
 
 ## Archived Documentation
 
@@ -42,3 +41,7 @@ Superseded and historical documentation has been moved to `airs_archive/`:
 - Phase development diagrams and outdated docs (`airs_archive/docs-outdated/`)
 - Completed fact-check and audit reports
 - Legacy notebooks and scripts (`airs_archive/notebooks/`, `airs_archive/scripts-archive/`)
+
+## Private companion repository
+
+Pre-defense planning drafts (DBA proposal, analysis plan, 24-item superset, subsample analysis notes) and proprietary IP (scoring algorithm, organizational readiness index, future-research roadmap) live in a private companion repo: `AIRS_Future_Research` (not publicly accessible). The published dissertation appendices contain the canonical final versions of all artifacts needed for academic reproducibility.
