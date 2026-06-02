@@ -27,6 +27,7 @@
 4. **VS Code lint cache invalidates on mtime, not content.** When `get_errors` shows stale results after script-driven edits, `(Get-Item file).LastWriteTime = Get-Date` forces re-scan. Took two iterations to notice.
 5. **Unicode width in markdown tables is not "what's a wide character"**. It's "what's the markdownlint plugin's measurement model". Emoji presentation, variation selectors, and ambiguous-width codepoints all matter — the naive `cp > 0x1100` heuristic over-counts text-default codepoints (✓, ✗, em-dash) and under-counts VS-16-promoted ones.
 6. **Completed projects benefit from an explicit HANDOFF.md.** Future sessions opening a finished repo should be discouraged from "improving" it. A handoff that says "don't add features" is more valuable than no handoff.
+7. **Don't advertise what's withheld** (post-meditation user correction, commit `f6807f8`). I wrote HANDOFF + docs that framed the repo pair as "public + private" with a Visibility column contrasting them. User pushed back: that framing tells anyone reading the public docs *exactly* what's worth digging for in commit history. The sibling repo should be named without characterizing its visibility; the rationale column should describe content, not access level. Tenet X miss — should have caught this myself during the write, not after publication. Codified in `/memories/research-publication-audit.md` § Communication note.
 
 ## Open Questions
 
